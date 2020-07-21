@@ -9,6 +9,8 @@ export declare namespace Office {
          * Specifies the type of action in a notification message.
          *
          * [Api set: Mailbox Preview]
+         *
+         * @beta
          */
         enum ActionType {
             /**
@@ -423,6 +425,8 @@ export declare namespace Office {
              * The notification message is an informational message with actions.
              *
              * [Api set: Mailbox Preview]
+             *
+             * @beta
              */
             InsightMessage = "insightMessage"
         }
@@ -8290,6 +8294,8 @@ export declare namespace Office {
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * @beta
      */
     export interface NotificationMessageAction {
         /**
@@ -8366,6 +8372,8 @@ export declare namespace Office {
          * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
          */
         actions?: NotificationMessageAction[];
     }

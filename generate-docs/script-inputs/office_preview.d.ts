@@ -7888,6 +7888,8 @@ declare namespace Office {
          * Specifies the type of action in a notification message.
          *
          * [Api set: Mailbox Preview]
+         *
+         * @beta
          */
         enum ActionType {
             /**
@@ -8302,6 +8304,8 @@ declare namespace Office {
              * The notification message is an informational message with actions.
              *
              * [Api set: Mailbox Preview]
+             *
+             * @beta
              */
             InsightMessage = "insightMessage"
         }
@@ -16169,6 +16173,8 @@ declare namespace Office {
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * @beta
      */
     interface NotificationMessageAction {
         /**
@@ -16245,6 +16251,8 @@ declare namespace Office {
          * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
          */
         actions?: NotificationMessageAction[];
     }
@@ -26356,14 +26364,14 @@ declare namespace Excel {
          */
         reapplyFilters(): void;
         /**
-         * Sets the style applied to the slicer.
+         * Sets the style applied to the table.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param style The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
+         * @param style The style to apply to the table. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
          */
-        setStyle(style: string | PivotTableStyle | BuiltInTableStyle): void;
+        setStyle(style: string | TableStyle | BuiltInTableStyle): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -40971,9 +40979,9 @@ declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param style The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
+         * @param style The style to apply to the slicer. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
          */
-        setStyle(style: string | PivotTableStyle | BuiltInSlicerStyle): void;
+        setStyle(style: string | SlicerStyle | BuiltInSlicerStyle): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *

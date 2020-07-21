@@ -12440,14 +12440,14 @@
                 {
                   "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.ActionType:enum",
-                  "docComment": "/**\n * Specifies the type of action in a notification message.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "docComment": "/**\n * Specifies the type of action in a notification message.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
                       "text": "enum ActionType "
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "ActionType",
                   "members": [
                     {
@@ -12464,7 +12464,7 @@
                           "text": "\"showTaskPane\""
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "ShowTaskPane",
                       "initializerTokenRange": {
                         "startIndex": 1,
@@ -13927,7 +13927,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.ItemNotificationMessageType.InsightMessage:member",
-                      "docComment": "/**\n * The notification message is an informational message with actions.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * The notification message is an informational message with actions.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13938,7 +13938,7 @@
                           "text": "\"insightMessage\""
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "InsightMessage",
                       "initializerTokenRange": {
                         "startIndex": 1,
@@ -23735,14 +23735,14 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.NotificationMessageAction:interface",
-              "docComment": "/**\n * The definition of the action for a notification message.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
+              "docComment": "/**\n * The definition of the action for a notification message.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface NotificationMessageAction "
                 }
               ],
-              "releaseTag": "Public",
+              "releaseTag": "Beta",
               "name": "NotificationMessageAction",
               "members": [
                 {
@@ -23763,7 +23763,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "actionText",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -23793,7 +23793,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "actionType",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -23818,7 +23818,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "commandId",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -23843,7 +23843,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "contextData",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -23869,7 +23869,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.NotificationMessageDetails#actions:member",
-                  "docComment": "/**\n * Specifies actions for the message. Limit: 2 actions. This limit doesn't count the \"Dismiss\" action as it's included by default. Only applicable when the type is `InsightMessage`. Specifying this property for an unsupported type or including too many actions throws an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
+                  "docComment": "/**\n * Specifies actions for the message. Limit: 2 actions. This limit doesn't count the \"Dismiss\" action as it's included by default. Only applicable when the type is `InsightMessage`. Specifying this property for an unsupported type or including too many actions throws an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23889,7 +23889,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "actions",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,

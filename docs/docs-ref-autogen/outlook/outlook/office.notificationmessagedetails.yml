@@ -39,6 +39,7 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+    isPreview: true
     name: actions
     fullName: actions
     langs:

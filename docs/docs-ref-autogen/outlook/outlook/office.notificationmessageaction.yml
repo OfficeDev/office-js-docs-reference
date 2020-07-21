@@ -14,6 +14,7 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+    isPreview: true
     name: Office.NotificationMessageAction
     fullName: Office.NotificationMessageAction
     langs:
@@ -27,6 +28,7 @@ items:
       - 'outlook!Office.NotificationMessageAction#contextData:member'
   - uid: 'outlook!Office.NotificationMessageAction#actionText:member'
     summary: The text of the action link.
+    isPreview: true
     name: actionText
     fullName: actionText
     langs:
@@ -39,6 +41,7 @@ items:
           - string
   - uid: 'outlook!Office.NotificationMessageAction#actionType:member'
     summary: The type of action to be performed. `ActionType.ShowTaskPane` is the only supported action.
+    isPreview: true
     name: actionType
     fullName: actionType
     langs:
@@ -51,6 +54,7 @@ items:
           - 'outlook!Office.NotificationMessageAction#actionType~0:complex'
   - uid: 'outlook!Office.NotificationMessageAction#commandId:member'
     summary: The button defined in the manifest based on the item type.
+    isPreview: true
     name: commandId
     fullName: commandId
     langs:
@@ -63,6 +67,7 @@ items:
           - string
   - uid: 'outlook!Office.NotificationMessageAction#contextData:member'
     summary: Any JSON data the button needs to pass on.
+    isPreview: true
     name: contextData
     fullName: contextData
     langs:

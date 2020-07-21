@@ -41,6 +41,7 @@ items:
       The notification message is an informational message with actions.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
     name: InsightMessage
     fullName: InsightMessage
     langs:

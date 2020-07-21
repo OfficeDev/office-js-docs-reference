@@ -5,6 +5,7 @@ items:
       Specifies the type of action in a notification message.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
     name: Office.MailboxEnums.ActionType
     fullName: Office.MailboxEnums.ActionType
     langs:
@@ -15,6 +16,7 @@ items:
       - 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
   - uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
     summary: The `showTaskPane` action.
+    isPreview: true
     name: ShowTaskPane
     fullName: ShowTaskPane
     langs:

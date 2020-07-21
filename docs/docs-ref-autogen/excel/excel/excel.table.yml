@@ -699,7 +699,7 @@ items:
             - 'excel!Excel.Table:class'
   - uid: 'excel!Excel.Table#setStyle:member(1)'
     summary: >-
-      Sets the style applied to the slicer.
+      Sets the style applied to the table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -711,7 +711,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setStyle(style: string | PivotTableStyle | BuiltInTableStyle): void;'
+      content: 'setStyle(style: string | TableStyle | BuiltInTableStyle): void;'
       return:
         type:
           - void
@@ -719,8 +719,8 @@ items:
       parameters:
         - id: style
           description: >-
-            The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that
-            does not match the name of any style.
+            The style to apply to the table. An `InvalidArgumentException` is thrown if a string is provided that does
+            not match the name of any style.
           type:
             - 'excel!Excel.Table#setStyle~0:complex'
   - uid: 'excel!Excel.Table#showBandedColumns:member'
@@ -976,14 +976,14 @@ references:
   - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Table#setStyle~0:complex'
-    name: string | PivotTableStyle | BuiltInTableStyle
-    fullName: string | Excel.PivotTableStyle | Excel.BuiltInTableStyle
+    name: string | TableStyle | BuiltInTableStyle
+    fullName: string | Excel.TableStyle | Excel.BuiltInTableStyle
     spec.typeScript:
       - name: 'string | '
         fullName: 'string | '
-      - uid: 'excel!Excel.PivotTableStyle:class'
-        name: PivotTableStyle
-        fullName: Excel.PivotTableStyle
+      - uid: 'excel!Excel.TableStyle:class'
+        name: TableStyle
+        fullName: Excel.TableStyle
       - name: ' | '
         fullName: ' | '
       - uid: 'excel!Excel.BuiltInTableStyle:enum'
