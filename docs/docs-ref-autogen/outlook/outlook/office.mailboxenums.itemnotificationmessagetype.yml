@@ -18,6 +18,7 @@ items:
     children:
       - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
       - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
+      - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InsightMessage:member'
       - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
   - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
     summary: The notification message is an error message.
@@ -35,6 +36,18 @@ items:
       - typeScript
     type: field
     numericValue: '"informationalMessage"'
+  - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InsightMessage:member'
+    summary: |-
+      The notification message is an informational message with actions.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: InsightMessage
+    fullName: InsightMessage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"insightMessage"'
   - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
     summary: The notification message is a progress indicator.
     name: ProgressIndicator
