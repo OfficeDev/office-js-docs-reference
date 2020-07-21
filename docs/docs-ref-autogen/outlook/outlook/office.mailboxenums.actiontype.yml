@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.ActionType:enum'
+    summary: |-
+      Specifies the type of action in a notification message.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: Office.MailboxEnums.ActionType
+    fullName: Office.MailboxEnums.ActionType
+    langs:
+      - typeScript
+    type: enum
+    package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+  - uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+    summary: The `showTaskPane` action.
+    name: ShowTaskPane
+    fullName: ShowTaskPane
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"showTaskPane"'

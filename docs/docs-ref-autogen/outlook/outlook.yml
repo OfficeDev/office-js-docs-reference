@@ -39,6 +39,7 @@ items:
       - 'outlook!Office.LocationDetails:interface'
       - 'outlook!Office.LocationIdentifier:interface'
       - 'outlook!Office.Mailbox:interface'
+      - 'outlook!Office.MailboxEnums.ActionType:enum'
       - 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
       - 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
       - 'outlook!Office.MailboxEnums.AttachmentStatus:enum'
@@ -65,6 +66,7 @@ items:
       - 'outlook!Office.Message:interface'
       - 'outlook!Office.MessageCompose:interface'
       - 'outlook!Office.MessageRead:interface'
+      - 'outlook!Office.NotificationMessageAction:interface'
       - 'outlook!Office.NotificationMessageDetails:interface'
       - 'outlook!Office.NotificationMessages:interface'
       - 'outlook!Office.OfficeThemeChangedEventArgs:interface'
@@ -152,6 +154,8 @@ references:
     name: Office.LocationIdentifier
   - uid: 'outlook!Office.Mailbox:interface'
     name: Office.Mailbox
+  - uid: 'outlook!Office.MailboxEnums.ActionType:enum'
+    name: Office.MailboxEnums.ActionType
   - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
     name: Office.MailboxEnums.AppointmentSensitivityType
   - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
@@ -204,6 +208,8 @@ references:
     name: Office.MessageCompose
   - uid: 'outlook!Office.MessageRead:interface'
     name: Office.MessageRead
+  - uid: 'outlook!Office.NotificationMessageAction:interface'
+    name: Office.NotificationMessageAction
   - uid: 'outlook!Office.NotificationMessageDetails:interface'
     name: Office.NotificationMessageDetails
   - uid: 'outlook!Office.NotificationMessages:interface'
