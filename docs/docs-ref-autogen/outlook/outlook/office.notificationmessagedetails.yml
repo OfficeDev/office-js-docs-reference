@@ -21,11 +21,35 @@ items:
     type: interface
     package: outlook!
     children:
+      - 'outlook!Office.NotificationMessageDetails#actions:member'
       - 'outlook!Office.NotificationMessageDetails#icon:member'
       - 'outlook!Office.NotificationMessageDetails#key:member'
       - 'outlook!Office.NotificationMessageDetails#message:member'
       - 'outlook!Office.NotificationMessageDetails#persistent:member'
       - 'outlook!Office.NotificationMessageDetails#type:member'
+  - uid: 'outlook!Office.NotificationMessageDetails#actions:member'
+    summary: >-
+      Specifies actions for the message. Limit: 2 actions. This limit doesn't count the "Dismiss" action as it's
+      included by default. Only applicable when the type is `InsightMessage`<!-- -->. Specifying this property for an
+      unsupported type or including too many actions throws an error.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: true
+    name: actions
+    fullName: actions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'actions?: NotificationMessageAction[];'
+      return:
+        type:
+          - 'outlook!Office.NotificationMessageDetails#actions~0:complex'
   - uid: 'outlook!Office.NotificationMessageDetails#icon:member'
     summary: >-
       A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.
@@ -73,10 +97,10 @@ items:
           - string
   - uid: 'outlook!Office.NotificationMessageDetails#persistent:member'
     summary: >-
-      Only applicable when type is `InformationalMessage`<!-- -->. If true, the message remains until removed by this
-      add-in or dismissed by the user. If false, it is removed when the user navigates to a different item. For error
-      notifications, the message persists until the user sees it once. Specifying this parameter for an unsupported type
-      throws an exception.
+      Specifies if the message should be persistent. Only applicable when type is `InformationalMessage`<!-- -->. If
+      true, the message remains until removed by this add-in or dismissed by the user. If false, it is removed when the
+      user navigates to a different item. For error notifications, the message persists until the user sees it once.
+      Specifying this parameter for an unsupported type throws an exception.
     name: persistent
     fullName: persistent
     langs:
@@ -89,11 +113,16 @@ items:
           - '!Boolean:interface'
   - uid: 'outlook!Office.NotificationMessageDetails#type:member'
     summary: >-
-      Specifies the `ItemNotificationMessageType` of message. If type is `ProgressIndicator` or `ErrorMessage`<!-- -->,
-      an icon is automatically supplied and the message is not persistent. Therefore the icon and persistent properties
-      are not valid for these types of messages. Including them will result in an `ArgumentException`<!-- -->. If type
-      is `ProgressIndicator`<!-- -->, the developer should remove or replace the progress indicator when the action is
-      complete.
+      Specifies the `ItemNotificationMessageType` of message.
+
+
+      If type is `ProgressIndicator` or `ErrorMessage`<!-- -->, an icon is automatically supplied and the message is not
+      persistent. Therefore the icon and persistent properties are not valid for these types of messages. Including them
+      will result in an `ArgumentException`<!-- -->.
+
+
+      If type is `ProgressIndicator`<!-- -->, the developer should remove or replace the progress indicator when the
+      action is complete.
     name: type
     fullName: type
     langs:
@@ -105,6 +134,15 @@ items:
         type:
           - 'outlook!Office.NotificationMessageDetails#type~0:complex'
 references:
+  - uid: 'outlook!Office.NotificationMessageDetails#actions~0:complex'
+    name: 'NotificationMessageAction[]'
+    fullName: 'Office.NotificationMessageAction[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.NotificationMessageAction:interface'
+        name: NotificationMessageAction
+        fullName: Office.NotificationMessageAction
+      - name: '[]'
+        fullName: '[]'
   - uid: '!Boolean:interface'
     name: Boolean
   - uid: 'outlook!Office.NotificationMessageDetails#type~0:complex'

@@ -8,6 +8,8 @@ items:
         items:
           - name: MailboxEnums
             items:
+              - name: ActionType
+                uid: 'outlook!Office.MailboxEnums.ActionType:enum'
               - name: AppointmentSensitivityType
                 uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
               - name: AttachmentContentFormat
@@ -114,6 +116,8 @@ items:
             uid: 'outlook!Office.MessageCompose:interface'
           - name: MessageRead
             uid: 'outlook!Office.MessageRead:interface'
+          - name: NotificationMessageAction
+            uid: 'outlook!Office.NotificationMessageAction:interface'
           - name: NotificationMessageDetails
             uid: 'outlook!Office.NotificationMessageDetails:interface'
           - name: NotificationMessages

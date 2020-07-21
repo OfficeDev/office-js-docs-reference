@@ -420,7 +420,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setStyle(style: string | PivotTableStyle | BuiltInSlicerStyle): void;'
+      content: 'setStyle(style: string | SlicerStyle | BuiltInSlicerStyle): void;'
       return:
         type:
           - void
@@ -428,8 +428,8 @@ items:
       parameters:
         - id: style
           description: >-
-            The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that
-            does not match the name of any style.
+            The style to apply to the slicer. An `InvalidArgumentException` is thrown if a string is provided that does
+            not match the name of any style.
           type:
             - 'excel!Excel.Slicer#setStyle~0:complex'
   - uid: 'excel!Excel.Slicer#slicerItems:member'
@@ -608,14 +608,14 @@ references:
   - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Slicer#setStyle~0:complex'
-    name: string | PivotTableStyle | BuiltInSlicerStyle
-    fullName: string | Excel.PivotTableStyle | Excel.BuiltInSlicerStyle
+    name: string | SlicerStyle | BuiltInSlicerStyle
+    fullName: string | Excel.SlicerStyle | Excel.BuiltInSlicerStyle
     spec.typeScript:
       - name: 'string | '
         fullName: 'string | '
-      - uid: 'excel!Excel.PivotTableStyle:class'
-        name: PivotTableStyle
-        fullName: Excel.PivotTableStyle
+      - uid: 'excel!Excel.SlicerStyle:class'
+        name: SlicerStyle
+        fullName: Excel.SlicerStyle
       - name: ' | '
         fullName: ' | '
       - uid: 'excel!Excel.BuiltInSlicerStyle:enum'

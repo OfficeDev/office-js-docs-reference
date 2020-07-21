@@ -12439,6 +12439,42 @@
               "members": [
                 {
                   "kind": "Enum",
+                  "canonicalReference": "outlook!Office.MailboxEnums.ActionType:enum",
+                  "docComment": "/**\n * Specifies the type of action in a notification message.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enum ActionType "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "ActionType",
+                  "members": [
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member",
+                      "docComment": "/**\n * The `showTaskPane` action.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "ShowTaskPane = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"showTaskPane\""
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "ShowTaskPane",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum",
                   "docComment": "/**\n * Specifies the sensitivity type of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @beta\n */\n",
                   "excerptTokens": [
@@ -13883,6 +13919,27 @@
                       ],
                       "releaseTag": "Public",
                       "name": "InformationalMessage",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.ItemNotificationMessageType.InsightMessage:member",
+                      "docComment": "/**\n * The notification message is an informational message with actions.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "InsightMessage = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"insightMessage\""
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "InsightMessage",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -23677,6 +23734,127 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "outlook!Office.NotificationMessageAction:interface",
+              "docComment": "/**\n * The definition of the action for a notification message.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface NotificationMessageAction "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "NotificationMessageAction",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.NotificationMessageAction#actionText:member",
+                  "docComment": "/**\n * The text of the action link.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "actionText: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "actionText",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.NotificationMessageAction#actionType:member",
+                  "docComment": "/**\n * The type of action to be performed. `ActionType.ShowTaskPane` is the only supported action.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "actionType: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.ActionType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.ActionType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "actionType",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.NotificationMessageAction#commandId:member",
+                  "docComment": "/**\n * The button defined in the manifest based on the item type.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "commandId: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "commandId",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.NotificationMessageAction#contextData:member",
+                  "docComment": "/**\n * Any JSON data the button needs to pass on.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "contextData: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "contextData",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "outlook!Office.NotificationMessageDetails:interface",
               "docComment": "/**\n * An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
@@ -23688,6 +23866,36 @@
               "releaseTag": "Public",
               "name": "NotificationMessageDetails",
               "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.NotificationMessageDetails#actions:member",
+                  "docComment": "/**\n * Specifies actions for the message. Limit: 2 actions. This limit doesn't count the \"Dismiss\" action as it's included by default. Only applicable when the type is `InsightMessage`. Specifying this property for an unsupported type or including too many actions throws an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "actions?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "NotificationMessageAction",
+                      "canonicalReference": "outlook!Office.NotificationMessageAction:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "actions",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.NotificationMessageDetails#icon:member",
@@ -23766,7 +23974,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.NotificationMessageDetails#persistent:member",
-                  "docComment": "/**\n * Only applicable when type is `InformationalMessage`. If true, the message remains until removed by this add-in or dismissed by the user. If false, it is removed when the user navigates to a different item. For error notifications, the message persists until the user sees it once. Specifying this parameter for an unsupported type throws an exception.\n */\n",
+                  "docComment": "/**\n * Specifies if the message should be persistent. Only applicable when type is `InformationalMessage`. If true, the message remains until removed by this add-in or dismissed by the user. If false, it is removed when the user navigates to a different item. For error notifications, the message persists until the user sees it once. Specifying this parameter for an unsupported type throws an exception.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23792,7 +24000,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.NotificationMessageDetails#type:member",
-                  "docComment": "/**\n * Specifies the `ItemNotificationMessageType` of message. If type is `ProgressIndicator` or `ErrorMessage`, an icon is automatically supplied and the message is not persistent. Therefore the icon and persistent properties are not valid for these types of messages. Including them will result in an `ArgumentException`. If type is `ProgressIndicator`, the developer should remove or replace the progress indicator when the action is complete.\n */\n",
+                  "docComment": "/**\n * Specifies the `ItemNotificationMessageType` of message.\n *\n * If type is `ProgressIndicator` or `ErrorMessage`, an icon is automatically supplied and the message is not persistent. Therefore the icon and persistent properties are not valid for these types of messages. Including them will result in an `ArgumentException`.\n *\n * If type is `ProgressIndicator`, the developer should remove or replace the progress indicator when the action is complete.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
