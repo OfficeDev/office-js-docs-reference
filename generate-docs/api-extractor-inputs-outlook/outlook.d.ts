@@ -8363,7 +8363,7 @@ export declare namespace Office {
          */
         persistent?: Boolean;
         /**
-         * Specifies actions for the message. Limit: 2 actions. This limit doesn't count the "Dismiss" action as it's included by default.
+         * Specifies actions for the message. Limit: 1 action. This limit doesn't count the "Dismiss" action which is included by default.
          * Only applicable when the type is `InsightMessage`.
          * Specifying this property for an unsupported type or including too many actions throws an error.
          *
@@ -8394,6 +8394,9 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * **Important**: Only one notification of type `InsightMessage` is allowed per add-in.
+         * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
+         *
          * [Api set: Mailbox 1.3]
          *
          * @remarks
@@ -8416,6 +8419,9 @@ export declare namespace Office {
          * Adds a notification to an item.
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
+         *
+         * **Important**: Only one notification of type `InsightMessage` is allowed per add-in.
+         * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
          *
          * [Api set: Mailbox 1.3]
          *
