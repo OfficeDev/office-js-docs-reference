@@ -29,7 +29,7 @@ items:
       - 'outlook!Office.NotificationMessageDetails#type:member'
   - uid: 'outlook!Office.NotificationMessageDetails#actions:member'
     summary: >-
-      Specifies actions for the message. Limit: 2 actions. This limit doesn't count the "Dismiss" action as it's
+      Specifies actions for the message. Limit: 1 action. This limit doesn't count the "Dismiss" action which is
       included by default. Only applicable when the type is `InsightMessage`<!-- -->. Specifying this property for an
       unsupported type or including too many actions throws an error.
 
