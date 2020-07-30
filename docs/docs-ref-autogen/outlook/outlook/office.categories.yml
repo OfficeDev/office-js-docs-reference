@@ -172,8 +172,13 @@ items:
           type:
             - 'outlook!Office.Categories#addAsync~1:complex'
   - uid: 'outlook!Office.Categories#getAsync:member(1)'
-    summary: |-
+    summary: >-
       Gets an item's categories.
+
+
+      **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the
+      Outlook version so make sure to handle both cases.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -208,13 +213,18 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. If adding categories fails, the `asyncResult.error` property will
+            of type `Office.AsyncResult`<!-- -->. If getting categories fails, the `asyncResult.error` property will
             contain an error code.
           type:
             - 'outlook!Office.Categories#getAsync~0:complex'
   - uid: 'outlook!Office.Categories#getAsync:member(2)'
-    summary: |-
+    summary: >-
       Gets an item's categories.
+
+
+      **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the
+      Outlook version so make sure to handle both cases.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -266,7 +276,8 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            of type `Office.AsyncResult`<!-- -->. If getting categories fails, the `asyncResult.error` property will
+            contain an error code.
           type:
             - 'outlook!Office.Categories#getAsync~1:complex'
   - uid: 'outlook!Office.Categories#removeAsync:member(1)'
