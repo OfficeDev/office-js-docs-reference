@@ -4144,6 +4144,9 @@ export declare namespace Office {
         /**
          * Gets an item's categories.
          *
+         * **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the Outlook version
+         * so make sure to handle both cases.
+         *
          * [Api set: Mailbox 1.8]
          *
          * @remarks
@@ -4155,11 +4158,14 @@ export declare namespace Office {
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. If adding categories fails, the `asyncResult.error` property will contain an error code.
+         *                 type `Office.AsyncResult`. If getting categories fails, the `asyncResult.error` property will contain an error code.
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<CategoryDetails[]>) => void): void;
         /**
          * Gets an item's categories.
+         *
+         * **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the Outlook version
+         * so make sure to handle both cases.
          *
          * [Api set: Mailbox 1.8]
          *
@@ -4170,7 +4176,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`.
+         *                 type `Office.AsyncResult`. If getting categories fails, the `asyncResult.error` property will contain an error code.
          */
         getAsync(callback: (asyncResult: CommonAPI.AsyncResult<CategoryDetails[]>) => void): void;
         /**
