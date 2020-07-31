@@ -21,79 +21,11 @@ tryCatch(async () => {
 
     console.log("\nCompleted Office json cross-referencing cleanup");
 
-    console.log("\nCleaning up Outlook json cross-referencing...");
-
-    const outlookJsonPath = path.resolve("../json/outlook");
-    const outlookFilename = "outlook.api.json";
-    console.log("\nStarting outlook...");
-    let outlookJson = fsx.readFileSync(`${outlookJsonPath}/${outlookFilename}`).toString();
-    fsx.writeFileSync(`${outlookJsonPath}/${outlookFilename}`, cleanUpOutlookJson(outlookJson));
-    console.log("\Completed outlook");
-    for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
-        console.log(`\nStarting outlook_1_${i}...`);
-        outlookJson = fsx.readFileSync(`${outlookJsonPath}_1_${i}/${outlookFilename}`).toString();
-        fsx.writeFileSync(`${outlookJsonPath}_1_${i}/${outlookFilename}`, cleanUpOutlookJson(outlookJson));
-        console.log(`Completed outlook_1_${i}`);
-    }
-
-    console.log("\nCompleted Outlook json cross-referencing cleanup");
-
-    console.log("\nCleaning up Excel json cross-referencing...");
-
-    const excelJsonPath = path.resolve("../json/excel");
-    const excelFilename = "excel.api.json";
-    console.log("\nStarting excel...");
-    let excelJson = fsx.readFileSync(`${excelJsonPath}/${excelFilename}`).toString();
-    fsx.writeFileSync(`${excelJsonPath}/${excelFilename}`, cleanUpRichApiJson(excelJson));
-    excelJson = fsx.readFileSync(`${excelJsonPath}_online/${excelFilename}`).toString();
-    fsx.writeFileSync(`${excelJsonPath}_online/${excelFilename}`, cleanUpRichApiJson(excelJson));
-    console.log("Completed excel");
-    for (let i = CURRENT_EXCEL_RELEASE; i > 0; i--) {
-        console.log(`\nStarting excel${i}...`);
-        excelJson = fsx.readFileSync(`${excelJsonPath}_1_${i}/${excelFilename}`).toString();
-        fsx.writeFileSync(`${excelJsonPath}_1_${i}/${excelFilename}`, cleanUpRichApiJson(excelJson));
-        console.log(`Completed excel${i}`);
-    }
-
-    console.log("\nCompleted Excel json cross-referencing cleanup");
-
-    console.log("\nCleaning up Word json cross-referencing...");
-
-    const wordJsonPath = path.resolve("../json/word");
-    const wordFilename = "word.api.json";
-    console.log("\nStarting word...");
-    let wordJson = fsx.readFileSync(`${wordJsonPath}/${wordFilename}`).toString();
-    fsx.writeFileSync(`${wordJsonPath}/${wordFilename}`, cleanUpRichApiJson(wordJson));
-    console.log("Completed word");
-    for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
-        console.log(`\nStarting word_1_${i}...`);
-        wordJson = fsx.readFileSync(`${wordJsonPath}_1_${i}/${wordFilename}`).toString();
-        fsx.writeFileSync(`${wordJsonPath}_1_${i}/${wordFilename}`, cleanUpRichApiJson(wordJson));
-        console.log(`Completed word_1_${i}`);
-    }
-
-    console.log("\nCompleted Word json cross-referencing cleanup");
-
-    console.log("\nCleaning up Visio json cross-referencing...");
-
-    const visioJsonPath = path.resolve("../json/visio");
-    const visioFilename = "visio.api.json";
-    console.log("\nStarting visio...");
-    let visioJson = fsx.readFileSync(`${visioJsonPath}/${visioFilename}`).toString();
-    fsx.writeFileSync(`${visioJsonPath}/${visioFilename}`, cleanUpRichApiJson(visioJson));
-    console.log("Completed visio");
-
-    console.log("\nCompleted Visio json cross-referencing cleanup");
-
-    console.log("\nCleaning up OneNote json cross-referencing...");
-
-    const onenoteJsonPath = path.resolve("../json/onenote");
-    const onenoteFilename = "onenote.api.json";
-    console.log("\nStarting onenote...");
-    let onenoteJson = fsx.readFileSync(`${onenoteJsonPath}/${onenoteFilename}`).toString();
-    fsx.writeFileSync(`${onenoteJsonPath}/${onenoteFilename}`, cleanUpRichApiJson(onenoteJson));
-    console.log("Completed onenote");
-    console.log("\nCompleted OneNote json cross-referencing cleanup");
+    cleanUpJson("outlook");
+    cleanUpJson("excel");
+    cleanUpJson("word");
+    cleanUpJson("onenote");
+    cleanUpJson("visio");
 
     // ----
     // Process Snippets
@@ -257,6 +189,54 @@ tryCatch(async () => {
     console.log("Moving Office Runtime APIs to Common API");
     fsx.copySync(officeRuntimeJson, `../json/office/office-runtime.api.json`);
 });
+
+function cleanUpJson(host: string) {
+    console.log(`\nCleaning up ${host} json cross-referencing...`);
+
+    const jsonPath = path.resolve(`../json/${host}`);
+    const fileName = `${host}.api.json`;
+    console.log(`\nStarting ${host}...`);
+    let json = fsx.readFileSync(`${jsonPath}/${fileName}`).toString();
+    let cleanJson;
+    if (host === "outlook") {
+        cleanJson = cleanUpOutlookJson(json);
+    } else {
+        cleanJson = cleanUpRichApiJson(json);
+    }
+    fsx.writeFileSync(`${jsonPath}/${fileName}`, cleanJson);
+    console.log(`\nCompleted ${host}`);
+    let currentRelease;
+    if (host === "outlook") {
+        currentRelease = CURRENT_OUTLOOK_RELEASE;
+    } else if (host === "excel") {
+        currentRelease = CURRENT_EXCEL_RELEASE;
+        // Handle ExcelApiOnline corner case.
+        console.log(`\nStarting ${host}_online...`);
+        json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_online`);
+    } else if (host === "word") {
+        currentRelease = CURRENT_WORD_RELEASE;
+    } else {
+        currentRelease = 0;
+    }
+
+    if (currentRelease > 0) {
+        for (let i = currentRelease; i > 0; i--) {
+            console.log(`\nStarting ${host}_1_${i}...`);
+            json = fsx.readFileSync(`${jsonPath}_1_${i}/${fileName}`).toString();
+            if (host === "outlook") {
+                cleanJson = cleanUpOutlookJson(json);
+            } else {
+                cleanJson = cleanUpRichApiJson(json);
+            }
+            fsx.writeFileSync(`${jsonPath}_1_${i}/${fileName}`, cleanJson);
+            console.log(`Completed ${host}_1_${i}`);
+        }
+    }
+
+    console.log(`\nCompleted ${host} json cross-referencing cleanup`);
+}
 
 function cleanUpOutlookJson(jsonString : string) {
     const outlookSearchString = "outlook!";
