@@ -84,6 +84,7 @@ items:
       - 'outlook!Office.RoamingSettings:interface'
       - 'outlook!Office.Sensitivity:interface'
       - 'outlook!Office.SeriesTime:interface'
+      - 'outlook!Office.SessionData:interface'
       - 'outlook!Office.SharedProperties:interface'
       - 'outlook!Office.Subject:interface'
       - 'outlook!Office.TaskSuggestion:interface'
@@ -244,6 +245,8 @@ references:
     name: Office.Sensitivity
   - uid: 'outlook!Office.SeriesTime:interface'
     name: Office.SeriesTime
+  - uid: 'outlook!Office.SessionData:interface'
+    name: Office.SessionData
   - uid: 'outlook!Office.SharedProperties:interface'
     name: Office.SharedProperties
   - uid: 'outlook!Office.Subject:interface'
