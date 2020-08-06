@@ -152,6 +152,8 @@ items:
             uid: 'outlook!Office.Sensitivity:interface'
           - name: SeriesTime
             uid: 'outlook!Office.SeriesTime:interface'
+          - name: SessionData
+            uid: 'outlook!Office.SessionData:interface'
           - name: SharedProperties
             uid: 'outlook!Office.SharedProperties:interface'
           - name: Subject

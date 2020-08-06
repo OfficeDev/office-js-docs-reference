@@ -1,0 +1,395 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.SessionData:interface'
+    summary: |-
+      Provides methods to manage an item's session data.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: true
+    name: Office.SessionData
+    fullName: Office.SessionData
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.SessionData#clearAsync:member(1)'
+      - 'outlook!Office.SessionData#getAllAsync:member(1)'
+      - 'outlook!Office.SessionData#getAsync:member(1)'
+      - 'outlook!Office.SessionData#removeAsync:member(1)'
+      - 'outlook!Office.SessionData#setAsync:member(1)'
+  - uid: 'outlook!Office.SessionData#clearAsync:member(1)'
+    summary: |-
+      Clears all session data key-value pairs.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
+
+      Office.context.mailbox.item.sessionData.clearAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("sessionData.clearAsync succeeded");
+        } else {
+          console.log("Failed to clear sessionData. Error: " + JSON.stringify(asyncResult.error));
+        }
+      });
+
+      ```
+    isPreview: true
+    name: 'clearAsync(options, callback)'
+    fullName: 'clearAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        clearAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type:
+            - 'outlook!Office.SessionData#clearAsync~0:complex'
+  - uid: 'outlook!Office.SessionData#getAllAsync:member(1)'
+    summary: |-
+      Gets all session data key-value pairs.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
+
+      Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("The sessionData is " + JSON.stringify(asyncResult.value));
+        } else {
+          console.log("Failed to get all sessionData. Error: " + JSON.stringify(asyncResult.error));
+        }
+      });
+
+      ```
+    isPreview: true
+    name: getAllAsync(callback)
+    fullName: getAllAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAllAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type:
+            - 'outlook!Office.SessionData#getAllAsync~0:complex'
+  - uid: 'outlook!Office.SessionData#getAsync:member(1)'
+    summary: |-
+      Gets the session data value of the specified key.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
+
+      Office.context.mailbox.item.sessionData.getAsync(
+        "Date",
+        function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("The sessionData value is " + JSON.stringify(asyncResult.value));
+        } else {
+          console.log("Failed to get sessionData. Error: " + JSON.stringify(asyncResult.error));
+        }
+      });
+
+      ```
+    isPreview: true
+    name: 'getAsync(name, callback)'
+    fullName: 'getAsync(name, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(name: string, callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The session data key.
+          type:
+            - string
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
+          type:
+            - 'outlook!Office.SessionData#getAsync~0:complex'
+  - uid: 'outlook!Office.SessionData#removeAsync:member(1)'
+    summary: |-
+      Removes a session data key-value pair.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
+
+      Office.context.mailbox.item.sessionData.removeAsync(
+        "Date",
+        function callback(asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("sessionData.removeAsync succeeded");
+          } else {
+            console.log("Failed to remove sessionData. Error: " + JSON.stringify(asyncResult.error));
+          }
+        }
+      );
+
+      ```
+    isPreview: true
+    name: 'removeAsync(name, options, callback)'
+    fullName: 'removeAsync(name, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeAsync(name:string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The session data key.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type:
+            - 'outlook!Office.SessionData#removeAsync~0:complex'
+  - uid: 'outlook!Office.SessionData#setAsync:member(1)'
+    summary: |-
+      Sets a session data key-value pair.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
+
+      Office.context.mailbox.item.sessionData.setAsync(
+        "Date",
+        "7/24/2020",
+        function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("sessionData.setAsync succeeded");
+        } else {
+          console.log("Failed to set sessionData. Error: " + JSON.stringify(asyncResult.error));
+        }
+      });
+
+      ```
+    isPreview: true
+    name: 'setAsync(name, value, options, callback)'
+    fullName: 'setAsync(name, value, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setAsync(name:string, value:string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The session data key.
+          type:
+            - string
+        - id: value
+          description: The session data value as a string.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
+          type:
+            - 'outlook!Office.SessionData#setAsync~0:complex'
+references:
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.SessionData#clearAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.SessionData#getAllAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.SessionData#getAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.SessionData#removeAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.SessionData#setAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
