@@ -1554,7 +1554,41 @@ items:
       return:
         type:
           - 'excel!Excel.PivotTableScopedCollection:class'
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+
+          await Excel.run(async (context) => {
+            const activeRange = context.workbook.getSelectedRange();
+
+            // Get all the PivotTables that intersect with this range.
+            const partiallyContainedPivotTables = activeRange.getPivotTables();
+            // Get all the PivotTables that are completely contained within this range.
+            const fullyContainedPivotTables = activeRange.getPivotTables(true);
+
+            partiallyContainedPivotTables.load("name");
+            fullyContainedPivotTables.load("name");
+            await context.sync();
+
+            // Display the names in the console.
+            console.log("PivotTables in the current range:")
+            partiallyContainedPivotTables.items.forEach((pivotTable) => {
+              console.log(`\t${pivotTable.name}`);
+            });
+            console.log("PivotTables completely contained in the current range:")
+            fullyContainedPivotTables.items.forEach((pivotTable) => {
+              console.log(`\t${pivotTable.name}`);
+            });
+          });
+
+          ```
       parameters:
         - id: fullyContained
           description: >-
