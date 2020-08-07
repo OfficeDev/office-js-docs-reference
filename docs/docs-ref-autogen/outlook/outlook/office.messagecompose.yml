@@ -72,6 +72,7 @@ items:
       - 'outlook!Office.MessageCompose#saveAsync:member(1)'
       - 'outlook!Office.MessageCompose#saveAsync:member(2)'
       - 'outlook!Office.MessageCompose#seriesId:member'
+      - 'outlook!Office.MessageCompose#sessionData:member'
       - 'outlook!Office.MessageCompose#setSelectedDataAsync:member(1)'
       - 'outlook!Office.MessageCompose#setSelectedDataAsync:member(2)'
       - 'outlook!Office.MessageCompose#subject:member'
@@ -3231,6 +3232,50 @@ items:
       return:
         type:
           - string
+  - uid: 'outlook!Office.MessageCompose#sessionData:member'
+    summary: |-
+      Manages the [SessionData](xref:outlook!Office.SessionData:interface) of an item in Compose mode.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
+
+      Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("The sessionData is " + JSON.stringify(asyncResult.value));
+        } else {
+          console.log("Failed to get all sessionData. Error: " + JSON.stringify(asyncResult.error));
+        }
+      });
+
+      ```
+    isPreview: true
+    name: sessionData
+    fullName: sessionData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sessionData: SessionData;'
+      return:
+        type:
+          - 'outlook!Office.SessionData:interface'
   - uid: 'outlook!Office.MessageCompose#setSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
@@ -4032,6 +4077,8 @@ references:
         fullName: Office.AsyncResult
       - name: <string>) => void
         fullName: <string>) => void
+  - uid: 'outlook!Office.SessionData:interface'
+    name: SessionData
   - uid: 'outlook!Office.MessageCompose#setSelectedDataAsync~0:complex'
     name: Office.AsyncContextOptions & CoercionTypeOptions
     fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions

@@ -1505,6 +1505,20 @@ export declare namespace Office {
          */
         seriesId: string;
         /**
+         * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * @beta
+         */
+        sessionData: SessionData;
+        /**
          * Gets or sets the date and time that the appointment is to begin.
          *
          * The `start` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value.
@@ -6274,6 +6288,20 @@ export declare namespace Office {
          */
         seriesId: string;
         /**
+         * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * @beta
+         */
+        sessionData: SessionData;
+        /**
          * Gets or sets the description that appears in the subject field of an item.
          *
          * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
@@ -9570,6 +9598,116 @@ export declare namespace Office {
          * @param time - Start time of all instances represented by standard datetime string format: "THH:mm:ss:mmm".
          */
         setStartTime(time: string): void;
+    }
+    /**
+     * Provides methods to  manage an item's session data.
+     *
+     * [Api set: Mailbox Preview]
+     *
+     * @remarks
+     *
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+     *
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * @beta
+     */
+    export interface SessionData {
+        /**
+         * Clears all session data key-value pairs.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @beta
+         */
+        clearAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Gets all session data key-value pairs.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @beta
+         */
+        getAllAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets the session data value of the specified key.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param name - The session data key.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
+         *                 type `Office.AsyncResult`.
+         *
+         * @beta
+         */
+        getAsync(name: string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Removes a session data key-value pair.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param name - The session data key.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @beta
+         */
+        removeAsync(name:string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Sets a session data key-value pair.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+
+         * @param name - The session data key.
+         * @param value - The session data value as a string.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
+         *                 type `Office.AsyncResult`.
+         *
+         * @beta
+         */
+        setAsync(name:string, value:string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
      * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
