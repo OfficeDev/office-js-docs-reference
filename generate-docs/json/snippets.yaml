@@ -3512,6 +3512,33 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+'Excel.Range#getPivotTables:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+
+    await Excel.run(async (context) => {
+      const activeRange = context.workbook.getSelectedRange();
+
+      // Get all the PivotTables that intersect with this range.
+      const partiallyContainedPivotTables = activeRange.getPivotTables();
+      // Get all the PivotTables that are completely contained within this range.
+      const fullyContainedPivotTables = activeRange.getPivotTables(true);
+
+      partiallyContainedPivotTables.load("name");
+      fullyContainedPivotTables.load("name");
+      await context.sync();
+
+      // Display the names in the console.
+      console.log("PivotTables in the current range:")
+      partiallyContainedPivotTables.items.forEach((pivotTable) => {
+        console.log(`\t${pivotTable.name}`);
+      });
+      console.log("PivotTables completely contained in the current range:")
+      fullyContainedPivotTables.items.forEach((pivotTable) => {
+        console.log(`\t${pivotTable.name}`);
+      });
+    });
 'Excel.Range#getRow:member(1)':
   - |-
     Excel.run(function (ctx) { 
@@ -3543,6 +3570,28 @@
         formulaRanges.format.fill.color = "orange";
 
         return context.sync();
+    });
+'Excel.Range#getSpillingToRange:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/dynamic-arrays.yaml
+
+    await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+
+      // Set G4 to a formula that returns a dynamic array.
+      const targetCell = sheet.getRange("G4");
+      targetCell.formulas = [["=A4:D4"]];
+
+      // Get the address of the cells that the dynamic array spilled into.
+      const spillRange = targetCell.getSpillingToRange();
+      spillRange.load("address");
+
+      // Fit the columns for readability.
+      sheet.getUsedRange().format.autofitColumns();
+      await context.sync();
+
+      console.log(`Copying the table headers spilled into ${spillRange.address}.`);
     });
 'Excel.Range#getUsedRange:member(1)':
   - >-
@@ -5709,6 +5758,23 @@
 
         await context.sync();
     })
+'Excel.Workbook#pivotTables:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+
+    await Excel.run(async (context) => {
+      // Get the names of all the PivotTables in the workbook.
+      const pivotTables = context.workbook.pivotTables;
+      pivotTables.load("name");
+      await context.sync();
+
+      // Display the names in the console.
+      console.log("PivotTables in the workbook:")
+      pivotTables.items.forEach((pivotTable) => {
+        console.log(`\t${pivotTable.name}`);
+      });
+    });
 'Excel.Workbook#properties:member':
   - >-
     // Link to full sample:
@@ -6190,6 +6256,23 @@
         console.log("The worksheet click handler is registered.");
 
         await context.sync();
+    });
+'Excel.Worksheet#pivotTables:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+
+    await Excel.run(async (context) => {
+      // Get the names of all the PivotTables in the current worksheet.
+      const pivotTables = context.workbook.worksheets.getActiveWorksheet().pivotTables;
+      pivotTables.load("name");
+      await context.sync();
+
+      // Display the names in the console.
+      console.log("PivotTables in the current worksheet:")
+      pivotTables.items.forEach((pivotTable) => {
+        console.log(`\t${pivotTable.name}`);
+      });
     });
 'Excel.Worksheet#position:member':
   - |-

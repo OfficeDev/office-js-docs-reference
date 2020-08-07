@@ -1462,6 +1462,31 @@ items:
       return:
         type:
           - 'excel!Excel.PivotTableCollection:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+
+          await Excel.run(async (context) => {
+            // Get the names of all the PivotTables in the current worksheet.
+            const pivotTables = context.workbook.worksheets.getActiveWorksheet().pivotTables;
+            pivotTables.load("name");
+            await context.sync();
+
+            // Display the names in the console.
+            console.log("PivotTables in the current worksheet:")
+            pivotTables.items.forEach((pivotTable) => {
+              console.log(`\t${pivotTable.name}`);
+            });
+          });
+
+          ```
   - uid: 'excel!Excel.Worksheet#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
