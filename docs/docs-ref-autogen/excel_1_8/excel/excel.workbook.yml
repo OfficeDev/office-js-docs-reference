@@ -335,6 +335,31 @@ items:
       return:
         type:
           - 'excel!Excel.PivotTableCollection:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+
+          await Excel.run(async (context) => {
+            // Get the names of all the PivotTables in the workbook.
+            const pivotTables = context.workbook.pivotTables;
+            pivotTables.load("name");
+            await context.sync();
+
+            // Display the names in the console.
+            console.log("PivotTables in the workbook:")
+            pivotTables.items.forEach((pivotTable) => {
+              console.log(`\t${pivotTable.name}`);
+            });
+          });
+
+          ```
   - uid: 'excel!Excel.Workbook#properties:member'
     summary: |-
       Gets the workbook properties.
