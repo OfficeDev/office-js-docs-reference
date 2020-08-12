@@ -65,7 +65,7 @@ items:
         description: ''
       parameters:
         - id: options
-          description: Optional. Accepts an `AuthOptions object` to define sign-on behaviors.
+          description: Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
           type:
             - 'office!Office.AuthOptions:interface'
         - id: callback
