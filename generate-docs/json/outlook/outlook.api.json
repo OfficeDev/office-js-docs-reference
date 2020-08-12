@@ -27930,7 +27930,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "clearAsync(options?: "
+                      "text": "clearAsync(options: "
                     },
                     {
                       "kind": "Reference",
@@ -27939,7 +27939,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", callback?: "
+                      "text": ", callback: "
                     },
                     {
                       "kind": "Content",
@@ -27986,6 +27986,58 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "clearAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SessionData#clearAsync:member(2)",
+                  "docComment": "/**\n * Clears all session data key-value pairs.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "clearAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
                       }
                     }
                   ],
@@ -28117,7 +28169,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "removeAsync(name:"
+                      "text": "removeAsync(name: "
                     },
                     {
                       "kind": "Content",
@@ -28125,7 +28177,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -28134,7 +28186,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", callback?: "
+                      "text": ", callback: "
                     },
                     {
                       "kind": "Content",
@@ -28195,12 +28247,79 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SessionData#removeAsync:member(2)",
+                  "docComment": "/**\n * Removes a session data key-value pair.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "removeAsync(name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "name",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "removeAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#setAsync:member(1)",
                   "docComment": "/**\n * Sets a session data key-value pair.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "setAsync(name:"
+                      "text": "setAsync(name: "
                     },
                     {
                       "kind": "Content",
@@ -28208,7 +28327,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", value:"
+                      "text": ", value: "
                     },
                     {
                       "kind": "Content",
@@ -28216,7 +28335,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -28225,7 +28344,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", callback?: "
+                      "text": ", callback: "
                     },
                     {
                       "kind": "Content",
@@ -28286,6 +28405,88 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SessionData#setAsync:member(2)",
+                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", value: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "name",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "value",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
                       }
                     }
                   ],

@@ -1001,20 +1001,20 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Auth:interface",
-              "docComment": "/**\n * The Office Auth namespace, Office.context.auth, provides a method that allows the Office host to obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.\n *\n * @beta\n */\n",
+              "docComment": "/**\n * The Office Auth namespace, `Office.context.auth`, provides a method that allows the Office client application to obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface Auth "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "Auth",
               "members": [
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(1)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @param options - Optional. Accepts an AuthOptions object to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can use parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If AsyncResult.status is \"succeeded\", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @param options - Optional. Accepts an `AuthOptions object` to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1059,7 +1059,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -1082,7 +1082,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(2)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @param callback - Optional. Accepts a callback method that can use parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If AsyncResult.status is \"succeeded\", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1118,7 +1118,7 @@
                     "startIndex": 5,
                     "endIndex": 6
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -1137,7 +1137,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.AuthOptions:interface",
-              "docComment": "/**\n * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the getAccessTokenAsync method.\n */\n",
+              "docComment": "/**\n * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessTokenAsync` method.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -1149,8 +1149,58 @@
               "members": [
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.AuthOptions#allowConsentPrompt:member",
+                  "docComment": "/**\n * Allows Office to get an access token silently or through interactive consent, if one is required. Default value is `false`. If set to `false`, Office will silently try to get an access token. If it fails to do so, Office will return a descriptive error. If set to `true`, Office will show an interactive consent UI after it fails to silently get an access token. The prompt will only allow consent to the AAD profile scope, not to any Microsoft Graph scopes.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "allowConsentPrompt?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "allowConsentPrompt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.AuthOptions#allowSignInPrompt:member",
+                  "docComment": "/**\n * Allows Office to get an access token silently provided consent is present or show interactive UI to sign in the user. Default value is `false`. If set to `false`, Office will silently try to get an access token. If it fails to do so, Office will return a descriptive error. If set to `true`, Office will show an interactive sign-in UI after it fails to silently get an access token.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "allowSignInPrompt?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "allowSignInPrompt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AuthOptions#asyncContext:member",
-                  "docComment": "/**\n * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.\n */\n",
+                  "docComment": "/**\n * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object that is passed to a callback.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1159,6 +1209,10 @@
                     {
                       "kind": "Content",
                       "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
                     }
                   ],
                   "releaseTag": "Public",
@@ -1171,7 +1225,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AuthOptions#authChallenge:member",
-                  "docComment": "/**\n * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a \"second try\" call of getAccessTokenAsync after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used with the authChallenge option.\n */\n",
+                  "docComment": "/**\n * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a \"second try\" call of `getAccessTokenAsync` after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used with the `authChallenge` option.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1180,6 +1234,10 @@
                     {
                       "kind": "Content",
                       "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
                     }
                   ],
                   "releaseTag": "Public",
@@ -1192,7 +1250,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AuthOptions#forceAddAccount:member",
-                  "docComment": "/**\n * Prompts the user to add their Office account (or to switch to it, if it is already added).\n */\n",
+                  "docComment": "/**\n * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.\n *\n * @deprecated\n *\n * Use `allowSignInPrompt` instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1204,7 +1262,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ","
+                      "text": ";"
                     }
                   ],
                   "releaseTag": "Public",
@@ -1217,7 +1275,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AuthOptions#forceConsent:member",
-                  "docComment": "/**\n * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has been revoked.\n */\n",
+                  "docComment": "/**\n * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has been revoked. Default value is `false`.\n *\n * @deprecated\n *\n * Use `allowConsentPrompt` instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1229,11 +1287,36 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ","
+                      "text": ";"
                     }
                   ],
                   "releaseTag": "Public",
                   "name": "forceConsent",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.AuthOptions#forMSGraphAccess:member",
+                  "docComment": "/**\n * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`. Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "forMSGraphAccess?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "forMSGraphAccess",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -7172,7 +7255,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Dialog#addEventHandler:member(1)",
-                  "docComment": "/**\n * Registers an event handler. The two supported events are:\n *\n * - DialogMessageReceived. Triggered when the dialog box sends a message to its parent.\n *\n * - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.\n */\n",
+                  "docComment": "/**\n * Registers an event handler. The two supported events are:\n *\n * - DialogMessageReceived. Triggered when the dialog box sends a message to its parent.\n *\n * - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.\n *\n * @param eventType - Must be either DialogMessageReceived or DialogEventReceived.\n *\n * @param handler - A function which accepts either an object with a `message` property, if eventType is DialogMessageReceived, or an object with an `error` property, if eventType is DialogEventReceived.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7188,9 +7271,8 @@
                       "text": ", handler: "
                     },
                     {
-                      "kind": "Reference",
-                      "text": "Function",
-                      "canonicalReference": "!Function:interface"
+                      "kind": "Content",
+                      "text": "(args: {message: string | boolean} | {error: number}) => void"
                     },
                     {
                       "kind": "Content",
@@ -29274,7 +29356,16 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "(result: any) => void"
+                      "text": "(result: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "DialogParentMessageReceivedEventArgs",
+                      "canonicalReference": "office!Office.DialogParentMessageReceivedEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
                     },
                     {
                       "kind": "Content",
@@ -29316,8 +29407,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 11,
-                    "endIndex": 12
+                    "startIndex": 13,
+                    "endIndex": 14
                   },
                   "releaseTag": "Beta",
                   "overloadIndex": 1,
@@ -29333,21 +29424,21 @@
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 6
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 5,
-                        "endIndex": 6
+                        "startIndex": 7,
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 7,
-                        "endIndex": 10
+                        "startIndex": 9,
+                        "endIndex": 12
                       }
                     }
                   ],

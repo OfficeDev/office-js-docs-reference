@@ -2099,6 +2099,24 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+'Excel.CustomPropertyCollection#add:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+
+    await Excel.run(async (context) => {
+      // Get the key/value pair from the task pane.
+      const userKey = $("#key").text();
+      const userValue = $("#value").text();
+
+      // Add the custom property.
+      const customDocProperties = context.workbook.properties.custom;
+      customDocProperties.add(userKey, userValue);
+
+      await context.sync();
+
+      console.log(`Successfully set custom document property ${userKey}:${userValue}.`);
+    });
 'Excel.CustomXmlPart#delete:member(1)':
   - >-
     // Link to full sample:
@@ -2588,6 +2606,23 @@
         };
 
         await context.sync();
+    });
+'Excel.DocumentProperties#custom:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+
+    await Excel.run(async (context) => {
+      // Load the keys and values of all custom properties.
+      const customDocProperties = context.workbook.properties.custom;
+      customDocProperties.load(["key", "value"]);
+      await context.sync();
+
+      // Log each custom property to the console.
+      // Note that your document may have more properties than those you have set using this snippet.
+      customDocProperties.items.forEach((property) => {
+        console.log(`${property.key}:${property.value}`);
+      });
     });
 'Excel.IconSetConditionalFormat#criteria:member':
   - >-
@@ -5935,6 +5970,23 @@
 
         console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
     });
+'Excel.Worksheet#customProperties:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+
+    await Excel.run(async (context) => {
+      // Load the keys and values of all custom properties in the current worksheet.
+      const customWorksheetProperties = context.workbook.worksheets.getActiveWorksheet().customProperties;
+      customWorksheetProperties.load(["key", "value"]);
+      await context.sync();
+
+      // Log each custom property to the console.
+      // Note that your document may have more properties than those you have set using this snippet.
+      customWorksheetProperties.items.forEach((property) => {
+        console.log(`${property.key}:${property.value}`);
+      });
+    });
 'Excel.Worksheet#delete:member(1)':
   - |-
     Excel.run(function (ctx) { 
@@ -6577,6 +6629,24 @@
 
         await context.sync();
         console.log("A handler has been registered for the OnDeactivate event.");
+    });
+'Excel.WorksheetCustomPropertyCollection#add:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+
+    await Excel.run(async (context) => {
+      // Get the key/value pair from the task pane.
+      const userKey = $("#key").text();
+      const userValue = $("#value").text();
+
+      // Add the custom property.
+      const customWorksheetProperties = context.workbook.worksheets.getActiveWorksheet().customProperties;
+      customWorksheetProperties.add(userKey, userValue);
+
+      await context.sync();
+
+      console.log(`Successfully set custom worksheet property ${userKey}:${userValue}.`);
     });
 'Excel.WorksheetFreezePanes#freezeAt:member(1)':
   - >-
