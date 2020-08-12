@@ -46,7 +46,32 @@ items:
       return:
         type:
           - 'excel!Excel.WorksheetCustomProperty:class'
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+
+          await Excel.run(async (context) => {
+            // Get the key/value pair from the task pane.
+            const userKey = $("#key").text();
+            const userValue = $("#value").text();
+
+            // Add the custom property.
+            const customWorksheetProperties = context.workbook.worksheets.getActiveWorksheet().customProperties;
+            customWorksheetProperties.add(userKey, userValue);
+
+            await context.sync();
+
+            console.log(`Successfully set custom worksheet property ${userKey}:${userValue}.`);
+          });
+
+          ```
       parameters:
         - id: key
           description: >-
