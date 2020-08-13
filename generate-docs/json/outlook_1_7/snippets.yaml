@@ -6021,7 +6021,7 @@
     // of a recurring appointment series to 11:30 PM.
     var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartTime("T23:30:00");
-'Office.SessionData#clearAsync:member(1)':
+'Office.SessionData#clearAsync:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
@@ -6059,7 +6059,7 @@
         console.log("Failed to get sessionData. Error: " + JSON.stringify(asyncResult.error));
       }
     });
-'Office.SessionData#removeAsync:member(1)':
+'Office.SessionData#removeAsync:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
@@ -6074,7 +6074,7 @@
         }
       }
     );
-'Office.SessionData#setAsync:member(1)':
+'Office.SessionData#setAsync:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml

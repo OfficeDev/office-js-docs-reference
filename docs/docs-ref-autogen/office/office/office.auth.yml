@@ -2,10 +2,9 @@
 items:
   - uid: 'office!Office.Auth:interface'
     summary: >-
-      The Office Auth namespace, Office.context.auth, provides a method that allows the Office host to obtain an access
-      token to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's
-      Microsoft Graph data without requiring the user to sign in a second time.
-    isPreview: true
+      The Office Auth namespace, `Office.context.auth`<!-- -->, provides a method that allows the Office client
+      application to obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to
+      access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
     name: Office.Auth
     fullName: Office.Auth
     langs:
@@ -18,13 +17,13 @@ items:
   - uid: 'office!Office.Auth#getAccessTokenAsync:member(1)'
     summary: >-
       Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables
-      add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web
+      add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web
       application by using the ["on behalf of" OAuth
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->.
 
 
-      Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     remarks: >-
       **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
 
@@ -34,7 +33,7 @@ items:
 
 
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users
-      sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
+      sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
       account types to access resources in the Microsoft Graph.
 
 
@@ -53,7 +52,6 @@ items:
       });
 
       ```
-    isPreview: true
     name: 'getAccessTokenAsync(options, callback)'
     fullName: 'getAccessTokenAsync(options, callback)'
     langs:
@@ -67,26 +65,26 @@ items:
         description: ''
       parameters:
         - id: options
-          description: Optional. Accepts an AuthOptions object to define sign-on behaviors.
+          description: Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
           type:
             - 'office!Office.AuthOptions:interface'
         - id: callback
           description: >-
-            Optional. Accepts a callback method that can use parse the token for the user's ID or use the token in the
-            "on behalf of" flow to get access to Microsoft Graph. If AsyncResult.status is "succeeded", then
-            AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+            Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the "on
+            behalf of" flow to get access to Microsoft Graph. If `AsyncResult.status` is "succeeded", then
+            `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.
           type:
             - 'office!Office.Auth#getAccessTokenAsync~0:complex'
   - uid: 'office!Office.Auth#getAccessTokenAsync:member(2)'
     summary: >-
       Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables
-      add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web
+      add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web
       application by using the ["on behalf of" OAuth
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->.
 
 
-      Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     remarks: >-
       **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
 
@@ -96,9 +94,8 @@ items:
 
 
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users
-      sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
+      sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
       account types to access resources in the Microsoft Graph.
-    isPreview: true
     name: getAccessTokenAsync(callback)
     fullName: getAccessTokenAsync(callback)
     langs:
@@ -113,9 +110,9 @@ items:
       parameters:
         - id: callback
           description: >-
-            Optional. Accepts a callback method that can use parse the token for the user's ID or use the token in the
-            "on behalf of" flow to get access to Microsoft Graph. If AsyncResult.status is "succeeded", then
-            AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+            Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the "on
+            behalf of" flow to get access to Microsoft Graph. If `AsyncResult.status` is "succeeded", then
+            `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.
           type:
             - 'office!Office.Auth#getAccessTokenAsync~1:complex'
 references:

@@ -2,7 +2,6 @@
 items:
   - uid: 'office-runtime!OfficeRuntime.Auth:interface'
     summary: Interface that contains authorization related APIs.
-    isPreview: true
     name: OfficeRuntime.Auth
     fullName: OfficeRuntime.Auth
     langs:
@@ -14,7 +13,7 @@ items:
   - uid: 'office-runtime!OfficeRuntime.Auth#getAccessToken:member(1)'
     summary: >-
       Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables
-      add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web
+      add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web
       application by using the ["on behalf of" OAuth
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office
@@ -22,9 +21,8 @@ items:
       both user account types to access resources in the Microsoft Graph.
 
 
-      Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-    remarks: '**Hosts**: Excel, PowerPoint, Word'
-    isPreview: true
+      **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+    remarks: '**Hosts**: Excel, Outlook, PowerPoint, Word'
     name: getAccessToken(options)
     fullName: getAccessToken(options)
     langs:
@@ -35,10 +33,10 @@ items:
       return:
         type:
           - 'office-runtime!OfficeRuntime.Auth#getAccessToken~0:complex'
-        description: ''
+        description: Promise to the access token.
       parameters:
         - id: options
-          description: 'Optional. Accepts an AuthOptions object to define sign-on behaviors. returns: Promise to the access token.'
+          description: Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
           type:
             - 'office-runtime!OfficeRuntime.AuthOptions:interface'
 references:
