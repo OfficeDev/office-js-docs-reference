@@ -484,6 +484,9 @@ items:
 
       When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to
       convert the local time on the client to UTC for the server.
+
+
+      **Important**: In the Windows client, you can't use this property to update the end of a recurrence.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -1161,6 +1164,9 @@ items:
 
       When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method
       to convert the local time on the client to UTC for the server.
+
+
+      **Important**: In the Windows client, you can't use this property to update the start of a recurrence.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
