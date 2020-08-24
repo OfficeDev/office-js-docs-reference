@@ -57,6 +57,54 @@ items:
       return:
         type:
           - 'excel!Excel.DatetimeFormatInfo:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info-date-time.yaml
+
+          await Excel.run(async (context) => {
+            context.application.cultureInfo.datetimeFormat.load([
+              "longDatePattern",
+              "shortDatePattern",
+              "dateSeparator",
+              "longTimePattern",
+              "timeSeparator"
+            ]);
+            await context.sync();
+
+            // Use the cultural settings API to retrieve the user's system date and time settings.
+            const systemLongDatePattern = context.application.cultureInfo.datetimeFormat.longDatePattern;
+            const systemShortDatePattern = context.application.cultureInfo.datetimeFormat.shortDatePattern;
+            const systemDateSeparator = context.application.cultureInfo.datetimeFormat.dateSeparator;
+            const systemLongTimePattern = context.application.cultureInfo.datetimeFormat.longTimePattern;
+            const systemTimeSeparator = context.application.cultureInfo.datetimeFormat.timeSeparator;
+
+            // Write the date and time settings in your table. 
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const dateTimeData = sheet.getRange("A2:B6");
+            dateTimeData.values = [
+              ["Long date", systemLongDatePattern], 
+              ["Short date", systemShortDatePattern], 
+              ["Date separator", systemDateSeparator], 
+              ["Long time format", systemLongTimePattern],
+              ["Time separator", systemTimeSeparator]
+            ];
+
+            sheet.tables
+              .getItemAt(0)
+              .getRange()
+              .format.autofitColumns();
+
+            await context.sync();
+          });
+
+          ```
   - uid: 'excel!Excel.CultureInfo#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
