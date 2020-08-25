@@ -2066,6 +2066,46 @@
 
         await context.sync();
     });
+'Excel.CultureInfo#datetimeFormat:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info-date-time.yaml
+
+    await Excel.run(async (context) => {
+      context.application.cultureInfo.datetimeFormat.load([
+        "longDatePattern",
+        "shortDatePattern",
+        "dateSeparator",
+        "longTimePattern",
+        "timeSeparator"
+      ]);
+      await context.sync();
+
+      // Use the cultural settings API to retrieve the user's system date and time settings.
+      const systemLongDatePattern = context.application.cultureInfo.datetimeFormat.longDatePattern;
+      const systemShortDatePattern = context.application.cultureInfo.datetimeFormat.shortDatePattern;
+      const systemDateSeparator = context.application.cultureInfo.datetimeFormat.dateSeparator;
+      const systemLongTimePattern = context.application.cultureInfo.datetimeFormat.longTimePattern;
+      const systemTimeSeparator = context.application.cultureInfo.datetimeFormat.timeSeparator;
+
+      // Write the date and time settings in your table. 
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+      const dateTimeData = sheet.getRange("A2:B6");
+      dateTimeData.values = [
+        ["Long date", systemLongDatePattern], 
+        ["Short date", systemShortDatePattern], 
+        ["Date separator", systemDateSeparator], 
+        ["Long time format", systemLongTimePattern],
+        ["Time separator", systemTimeSeparator]
+      ];
+
+      sheet.tables
+        .getItemAt(0)
+        .getRange()
+        .format.autofitColumns();
+
+      await context.sync();
+    });
 'Excel.CustomConditionalFormat#format:member':
   - >-
     // Link to full sample:
@@ -3367,6 +3407,29 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+'Excel.Range#getDirectPrecedents:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
+
+    await Excel.run(async (context) => {
+      // Precedents are cells referenced by the formula in a cell.
+      let range = context.workbook.getActiveCell();
+      let directPredecents = range.getDirectPrecedents();
+      range.load("address");
+      directPredecents.areas.load("address");
+      await context.sync();
+
+      console.log(`Direct precedent cells of ${range.address}:`);
+
+      // Use the direct precedents API to loop through precedents of the active cell. 
+      for (var i = 0; i < directPredecents.areas.items.length; i++) {
+        // Highlight and console the address of each precedent cell.
+        directPredecents.areas.items[i].format.fill.color = "Yellow";
+        console.log(`  ${directPredecents.areas.items[i].address}`);
+      }
+      await context.sync();
+    });
 'Excel.Range#getEntireColumn:member(1)':
   - |-
     // Note: the grid properties of the Range (values, numberFormat, formulas) 
@@ -4097,6 +4160,29 @@
         }
 
         await context.sync();
+    });
+'Excel.Range#workbookRangeAreas:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
+
+    await Excel.run(async (context) => {
+      // Precedents are cells referenced by the formula in a cell.
+      let range = context.workbook.getActiveCell();
+      let directPredecents = range.getDirectPrecedents();
+      range.load("address");
+      directPredecents.areas.load("address");
+      await context.sync();
+
+      console.log(`Direct precedent cells of ${range.address}:`);
+
+      // Use the direct precedents API to loop through precedents of the active cell. 
+      for (var i = 0; i < directPredecents.areas.items.length; i++) {
+        // Highlight and console the address of each precedent cell.
+        directPredecents.areas.items[i].format.fill.color = "Yellow";
+        console.log(`  ${directPredecents.areas.items[i].address}`);
+      }
+      await context.sync();
     });
 'Excel.RangeAreas#format:member':
   - >-
