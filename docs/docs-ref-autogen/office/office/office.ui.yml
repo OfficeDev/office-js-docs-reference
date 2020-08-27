@@ -24,7 +24,7 @@ items:
   - uid: 'office!Office.UI#addHandlerAsync:member(1)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: TBD
+      **Requirement set**: DialogAPI 1.2
 
 
       You can add multiple event handlers for the specified event type as long as the name of each event handler

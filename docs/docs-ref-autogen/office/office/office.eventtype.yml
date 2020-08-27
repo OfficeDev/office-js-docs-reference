@@ -119,7 +119,6 @@ items:
     type: field
   - uid: 'office!Office.EventType.DialogParentMessageReceived:member'
     summary: Triggers when a host page sends a message to a child dialog box with `messageChild`<!-- -->.
-    isPreview: true
     name: DialogParentMessageReceived
     fullName: DialogParentMessageReceived
     langs:

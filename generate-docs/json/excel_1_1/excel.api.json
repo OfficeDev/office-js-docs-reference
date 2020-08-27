@@ -35951,7 +35951,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#formulas:member",
-                  "docComment": "/**\n * Represents the formula in A1-style notation.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35977,7 +35977,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#formulasLocal:member",
-                  "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

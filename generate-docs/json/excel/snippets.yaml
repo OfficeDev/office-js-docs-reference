@@ -3415,18 +3415,18 @@
     await Excel.run(async (context) => {
       // Precedents are cells referenced by the formula in a cell.
       let range = context.workbook.getActiveCell();
-      let directPredecents = range.getDirectPrecedents();
+      let directPrecedents = range.getDirectPrecedents();
       range.load("address");
-      directPredecents.areas.load("address");
+      directPrecedents.areas.load("address");
       await context.sync();
 
       console.log(`Direct precedent cells of ${range.address}:`);
 
       // Use the direct precedents API to loop through precedents of the active cell. 
-      for (var i = 0; i < directPredecents.areas.items.length; i++) {
+      for (var i = 0; i < directPrecedents.areas.items.length; i++) {
         // Highlight and console the address of each precedent cell.
-        directPredecents.areas.items[i].format.fill.color = "Yellow";
-        console.log(`  ${directPredecents.areas.items[i].address}`);
+        directPrecedents.areas.items[i].format.fill.color = "Yellow";
+        console.log(`  ${directPrecedents.areas.items[i].address}`);
       }
       await context.sync();
     });
@@ -4160,29 +4160,6 @@
         }
 
         await context.sync();
-    });
-'Excel.Range#workbookRangeAreas:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
-
-    await Excel.run(async (context) => {
-      // Precedents are cells referenced by the formula in a cell.
-      let range = context.workbook.getActiveCell();
-      let directPredecents = range.getDirectPrecedents();
-      range.load("address");
-      directPredecents.areas.load("address");
-      await context.sync();
-
-      console.log(`Direct precedent cells of ${range.address}:`);
-
-      // Use the direct precedents API to loop through precedents of the active cell. 
-      for (var i = 0; i < directPredecents.areas.items.length; i++) {
-        // Highlight and console the address of each precedent cell.
-        directPredecents.areas.items[i].format.fill.color = "Yellow";
-        console.log(`  ${directPredecents.areas.items[i].address}`);
-      }
-      await context.sync();
     });
 'Excel.RangeAreas#format:member':
   - >-
@@ -6011,6 +5988,29 @@
     await Excel.run(async (context) => {
         let workbook = context.workbook;
         workbook.protection.unprotect(password);
+    });
+'Excel.WorkbookRangeAreas#areas:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
+
+    await Excel.run(async (context) => {
+      // Precedents are cells referenced by the formula in a cell.
+      let range = context.workbook.getActiveCell();
+      let directPrecedents = range.getDirectPrecedents();
+      range.load("address");
+      directPrecedents.areas.load("address");
+      await context.sync();
+
+      console.log(`Direct precedent cells of ${range.address}:`);
+
+      // Use the direct precedents API to loop through precedents of the active cell. 
+      for (var i = 0; i < directPrecedents.areas.items.length; i++) {
+        // Highlight and console the address of each precedent cell.
+        directPrecedents.areas.items[i].format.fill.color = "Yellow";
+        console.log(`  ${directPrecedents.areas.items[i].address}`);
+      }
+      await context.sync();
     });
 'Excel.Worksheet#activate:member(1)':
   - |-

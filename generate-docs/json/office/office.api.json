@@ -7341,7 +7341,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Dialog#messageChild:member(1)",
-                  "docComment": "/**\n * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.\n *\n * @remarks\n *\n * **Requirement set**: TBD\n *\n * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.\n *\n * @remarks\n *\n * **Requirement set**: TBD\n *\n * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7368,7 +7368,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -7563,14 +7563,14 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.DialogParentMessageReceivedEventArgs:interface",
-              "docComment": "/**\n * Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.\n *\n * To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the {@link Office.UI} object.\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.\n *\n * To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the {@link Office.UI} object.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface DialogParentMessageReceivedEventArgs "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "DialogParentMessageReceivedEventArgs",
               "members": [
                 {
@@ -7591,7 +7591,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "message",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -7617,7 +7617,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -11505,14 +11505,14 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.DialogParentMessageReceived:member",
-                  "docComment": "/**\n * Triggers when a host page sends a message to a child dialog box with `messageChild`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Triggers when a host page sends a message to a child dialog box with `messageChild`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
                       "text": "DialogParentMessageReceived"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "DialogParentMessageReceived",
                   "initializerTokenRange": {
                     "startIndex": 0,
@@ -29339,7 +29339,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.UI#addHandlerAsync:member(1)",
-                  "docComment": "/**\n * Adds an event handler to the object using the specified event type.\n *\n * @remarks\n *\n * **Requirement set**: TBD\n *\n * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.\n *\n * @param eventType - Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.\n *\n * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.\n *\n * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Adds an event handler to the object using the specified event type.\n *\n * @remarks\n *\n * **Requirement set**: DialogApi 1.2\n *\n * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.\n *\n * @param eventType - Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.\n *\n * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.\n *\n * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
