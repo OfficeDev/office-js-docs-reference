@@ -874,7 +874,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: TBD
+         * **Requirement set**: DialogApi 1.2
          *
          * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
          *
@@ -1673,8 +1673,6 @@ export declare namespace Office {
         /**
          * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.
          *
-         * @beta
-         *
          * @remarks
          *
          * **Requirement set**: TBD
@@ -1923,8 +1921,6 @@ export declare namespace Office {
         DialogMessageReceived,
         /**
          * Triggers when a host page sends a message to a child dialog box with `messageChild`.
-         *
-         * @beta
          */
         DialogParentMessageReceived,
         /**
@@ -5113,8 +5109,6 @@ export declare namespace Office {
     }
     /**
      * Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.
-     *
-     * @beta
      *
      * To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the
      * {@link Office.UI} object.
