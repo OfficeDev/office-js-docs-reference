@@ -803,7 +803,7 @@ items:
           - 'excel!Excel.RangeFormat:class'
   - uid: 'excel!Excel.Range#formulas:member'
     summary: |-
-      Represents the formula in A1-style notation.
+      Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
@@ -819,7 +819,8 @@ items:
   - uid: 'excel!Excel.Range#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
-      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
+      returned instead.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -835,7 +836,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Range#formulasR1C1:member'
     summary: |-
-      Represents the formula in R1C1-style notation.
+      Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1

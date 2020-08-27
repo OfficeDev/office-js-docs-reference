@@ -7,7 +7,6 @@ items:
 
       To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the
       [Office.UI](xref:office!Office.UI:interface) object.
-    isPreview: true
     name: Office.DialogParentMessageReceivedEventArgs
     fullName: Office.DialogParentMessageReceivedEventArgs
     langs:
@@ -19,7 +18,6 @@ items:
       - 'office!Office.DialogParentMessageReceivedEventArgs#type:member'
   - uid: 'office!Office.DialogParentMessageReceivedEventArgs#message:member'
     summary: 'Gets the content of the message sent from the parent page, which can be any string or stringified data.'
-    isPreview: true
     name: message
     fullName: message
     langs:
@@ -34,7 +32,6 @@ items:
     summary: >-
       Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
       that was raised.
-    isPreview: true
     name: type
     fullName: type
     langs:

@@ -813,7 +813,7 @@ items:
           - 'excel!Excel.RangeFormat:class'
   - uid: 'excel!Excel.Range#formulas:member'
     summary: |-
-      Represents the formula in A1-style notation.
+      Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
@@ -829,7 +829,8 @@ items:
   - uid: 'excel!Excel.Range#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
-      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
+      returned instead.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -845,7 +846,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Range#formulasR1C1:member'
     summary: |-
-      Represents the formula in R1C1-style notation.
+      Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
@@ -1186,18 +1187,18 @@ items:
           await Excel.run(async (context) => {
             // Precedents are cells referenced by the formula in a cell.
             let range = context.workbook.getActiveCell();
-            let directPredecents = range.getDirectPrecedents();
+            let directPrecedents = range.getDirectPrecedents();
             range.load("address");
-            directPredecents.areas.load("address");
+            directPrecedents.areas.load("address");
             await context.sync();
 
             console.log(`Direct precedent cells of ${range.address}:`);
 
             // Use the direct precedents API to loop through precedents of the active cell. 
-            for (var i = 0; i < directPredecents.areas.items.length; i++) {
+            for (var i = 0; i < directPrecedents.areas.items.length; i++) {
               // Highlight and console the address of each precedent cell.
-              directPredecents.areas.items[i].format.fill.color = "Yellow";
-              console.log(`  ${directPredecents.areas.items[i].address}`);
+              directPrecedents.areas.items[i].format.fill.color = "Yellow";
+              console.log(`  ${directPrecedents.areas.items[i].address}`);
             }
             await context.sync();
           });
