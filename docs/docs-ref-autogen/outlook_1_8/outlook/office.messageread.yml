@@ -1871,10 +1871,16 @@ items:
           The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching
           `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
   - uid: 'outlook!Office.MessageRead#getSharedPropertiesAsync:member(1)'
-    summary: |-
+    summary: >-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
+
+      For more information around using this API, see the [delegate
+      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+
+
       **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1966,10 +1972,16 @@ items:
           type:
             - 'outlook!Office.MessageRead#getSharedPropertiesAsync~0:complex'
   - uid: 'outlook!Office.MessageRead#getSharedPropertiesAsync:member(2)'
-    summary: |-
+    summary: >-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
+
+      For more information around using this API, see the [delegate
+      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+
+
       **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
