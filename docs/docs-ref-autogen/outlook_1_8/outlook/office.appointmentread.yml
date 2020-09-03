@@ -1693,7 +1693,7 @@ items:
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
-      **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1794,7 +1794,7 @@ items:
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
-      **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
