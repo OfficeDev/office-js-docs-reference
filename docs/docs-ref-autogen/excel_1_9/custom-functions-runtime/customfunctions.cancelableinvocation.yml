@@ -22,7 +22,9 @@ items:
     children:
       - 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
   - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
-    summary: Event handler called when the custom function is canceled.
+    summary: >-
+      Event handler called when the custom function is canceled. \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: onCanceled
     fullName: onCanceled
     langs:

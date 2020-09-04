@@ -10,6 +10,7 @@ items:
     package: custom-functions-runtime!
     children:
       - 'custom-functions-runtime!CustomFunctions.Invocation#address:member'
+      - 'custom-functions-runtime!CustomFunctions.Invocation#parameterAddresses:member'
   - uid: 'custom-functions-runtime!CustomFunctions.Invocation#address:member'
     summary: >-
       The cell address where the function is being called, if requested, otherwise undefined.
@@ -19,7 +20,8 @@ items:
       "requiresAddress": true }`
 
 
-      If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`<!-- -->.
+      If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`<!-- -->. \[
+      [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: address
     fullName: address
     langs:
@@ -27,6 +29,28 @@ items:
     type: property
     syntax:
       content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: 'custom-functions-runtime!CustomFunctions.Invocation#parameterAddresses:member'
+    summary: >-
+      The range addresses where the function parameters are located, if requested, otherwise undefined.
+
+
+      To request the parameter addresses for the function, in the metadata JSON file, the function options should
+      specify: `{ "requiresParameterAddresses": true }`
+
+
+      If the metadata JSON file is being generated from JSDoc comments, include the tag
+      `@requiresParameterAddresses`<!-- -->. \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: parameterAddresses
+    fullName: parameterAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parameterAddresses?: string;'
       return:
         type:
           - string
