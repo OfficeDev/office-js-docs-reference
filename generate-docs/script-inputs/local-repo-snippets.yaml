@@ -340,6 +340,23 @@ Excel.ChartAxisTitle#load:member(2):
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.ChartAxisTitle#textOrientation:member:
+  - >-
+    await Excel.run(async (context) => {
+      // Get a chart named "Sales Chart" from the "Sample" worksheet.
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      let chart = sheet.charts.getItem("Sales Chart");
+
+      // Set the value axis title to "Profits".
+      chart.axes.valueAxis.title.text = "Profits";
+
+      /* Set the value axis text orientation to 0.
+        For charts with a y-axis, this makes the label on the y-axis horizontal, 
+        instead of the default look of rotated-vertically.
+        */ 
+      chart.axes.valueAxis.title.textOrientation = 0;
+      await context.sync();
+    });
 Excel.Chart#onActivated:member:
   - |-
     Excel.run(function (context){
