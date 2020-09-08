@@ -21,7 +21,9 @@ items:
     children:
       - 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
   - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
-    summary: Set the result for the custom function. May be called more than once.
+    summary: >-
+      Set the result for the custom function. May be called more than once. \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: setResult
     fullName: setResult
     langs:
@@ -37,12 +39,12 @@ references:
     name: CancelableInvocation
   - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult~0:complex'
     name: '(value: ResultType | Error) => void'
-    fullName: '(value: ResultType | Error) => void'
+    fullName: '(value: ResultType | CustomFunctions.Error) => void'
     spec.typeScript:
       - name: '(value: ResultType | '
         fullName: '(value: ResultType | '
-      - uid: '!Error:interface'
+      - uid: 'custom-functions-runtime!CustomFunctions.Error:class'
         name: Error
-        fullName: Error
+        fullName: CustomFunctions.Error
       - name: ) => void
         fullName: ) => void
