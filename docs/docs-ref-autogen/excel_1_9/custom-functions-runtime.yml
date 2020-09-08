@@ -10,6 +10,8 @@ items:
       - 'custom-functions-runtime!CustomFunctions.associate:function(1)'
       - 'custom-functions-runtime!CustomFunctions.associate:function(2)'
       - 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
+      - 'custom-functions-runtime!CustomFunctions.Error:class'
+      - 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
       - 'custom-functions-runtime!CustomFunctions.Invocation:interface'
       - 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'
   - uid: 'custom-functions-runtime!CustomFunctions.associate:function(1)'
@@ -68,6 +70,10 @@ references:
         fullName: ' }'
   - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
     name: CustomFunctions.CancelableInvocation
+  - uid: 'custom-functions-runtime!CustomFunctions.Error:class'
+    name: CustomFunctions.Error
+  - uid: 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
+    name: CustomFunctions.ErrorCode
   - uid: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
     name: CustomFunctions.Invocation
   - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'

@@ -15,6 +15,10 @@ items:
                   - name: CancelableInvocation
                     uid: >-
                       custom-functions-runtime!CustomFunctions.CancelableInvocation:interface
+                  - name: Error
+                    uid: 'custom-functions-runtime!CustomFunctions.Error:class'
+                  - name: ErrorCode
+                    uid: 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
                   - name: Invocation
                     uid: >-
                       custom-functions-runtime!CustomFunctions.Invocation:interface

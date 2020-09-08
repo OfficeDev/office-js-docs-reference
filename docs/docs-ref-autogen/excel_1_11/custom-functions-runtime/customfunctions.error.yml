@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'custom-functions-runtime!CustomFunctions.Error:class'
+    summary: >-
+      Use this class to handle errors and write custom error messages. \[ [API set: CustomFunctionsRuntime
+      1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: CustomFunctions.Error
+    fullName: CustomFunctions.Error
+    langs:
+      - typeScript
+    type: class
+    package: custom-functions-runtime!
+    children:
+      - 'custom-functions-runtime!CustomFunctions.Error:constructor(1)'
+      - 'custom-functions-runtime!CustomFunctions.Error#errorCode:member'
+      - 'custom-functions-runtime!CustomFunctions.Error#errorMessage:member'
+  - uid: 'custom-functions-runtime!CustomFunctions.Error:constructor(1)'
+    summary: Constructs a new instance of the `Error` class
+    name: '(constructor)(errorCode, errorMessage)'
+    fullName: '(constructor)(errorCode, errorMessage)'
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(errorCode: ErrorCode, errorMessage?: string);'
+      parameters:
+        - id: errorCode
+          description: ''
+          type:
+            - 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
+        - id: errorMessage
+          description: ''
+          type:
+            - string
+  - uid: 'custom-functions-runtime!CustomFunctions.Error#errorCode:member'
+    summary: >-
+      The error code returned by your custom function. \[ [API set: CustomFunctionsRuntime
+      1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: errorCode
+    fullName: errorCode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorCode: ErrorCode;'
+      return:
+        type:
+          - 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
+  - uid: 'custom-functions-runtime!CustomFunctions.Error#errorMessage:member'
+    summary: >-
+      Your custom error message, such as "This stock price is unavailable". Custom messages are only available with
+      certain error codes. \[ [API set: CustomFunctionsRuntime
+      1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: errorMessage
+    fullName: errorMessage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorMessage?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
+    name: ErrorCode
