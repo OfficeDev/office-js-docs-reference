@@ -597,7 +597,7 @@ declare namespace Office {
         /**
          * Specifies the controls in the tab, such as menu items, buttons, etc.
          */
-        controls?: Control[];
+        controls: Control[];
     }
     /**
      * Represents an individual control or command and the state it should have.
@@ -15358,6 +15358,10 @@ declare namespace Office {
         from: EmailAddressDetails;
         /**
          * Gets the internet message identifier for an email message.
+         *
+         * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
+         * consider using {@link https://docs.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get this
+         * {@link https://docs.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | property from the server}.
          *
          * @remarks
          *

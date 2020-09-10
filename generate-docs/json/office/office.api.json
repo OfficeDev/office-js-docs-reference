@@ -27905,7 +27905,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "controls?: "
+                      "text": "controls: "
                     },
                     {
                       "kind": "Reference",
