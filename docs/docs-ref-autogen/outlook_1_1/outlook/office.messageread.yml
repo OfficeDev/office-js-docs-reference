@@ -1139,7 +1139,14 @@ items:
           type:
             - string
   - uid: 'outlook!Office.MessageRead#internetMessageId:member'
-    summary: Gets the internet message identifier for an email message.
+    summary: >-
+      Gets the internet message identifier for an email message.
+
+
+      **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent
+      items. In that case, consider using [Exchange Web
+      Services](https://docs.microsoft.com/office/dev/add-ins/outlook/web-services) to get this [property from the
+      server](https://docs.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid)<!-- -->.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
