@@ -19,7 +19,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'controls?: Control[];'
+      content: 'controls: Control[];'
       return:
         type:
           - 'office!Office.Tab#controls~0:complex'
