@@ -1,0 +1,409 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DocumentProperties:class'
+    summary: |-
+      Represents workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DocumentProperties
+    fullName: Excel.DocumentProperties
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.DocumentProperties#author:member'
+      - 'excel!Excel.DocumentProperties#category:member'
+      - 'excel!Excel.DocumentProperties#comments:member'
+      - 'excel!Excel.DocumentProperties#company:member'
+      - 'excel!Excel.DocumentProperties#context:member'
+      - 'excel!Excel.DocumentProperties#creationDate:member'
+      - 'excel!Excel.DocumentProperties#custom:member'
+      - 'excel!Excel.DocumentProperties#keywords:member'
+      - 'excel!Excel.DocumentProperties#lastAuthor:member'
+      - 'excel!Excel.DocumentProperties#load:member(1)'
+      - 'excel!Excel.DocumentProperties#load:member(2)'
+      - 'excel!Excel.DocumentProperties#load:member(3)'
+      - 'excel!Excel.DocumentProperties#manager:member'
+      - 'excel!Excel.DocumentProperties#revisionNumber:member'
+      - 'excel!Excel.DocumentProperties#set:member(1)'
+      - 'excel!Excel.DocumentProperties#set:member(2)'
+      - 'excel!Excel.DocumentProperties#subject:member'
+      - 'excel!Excel.DocumentProperties#title:member'
+      - 'excel!Excel.DocumentProperties#toJSON:member(1)'
+  - uid: 'excel!Excel.DocumentProperties#author:member'
+    summary: |-
+      The author of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#category:member'
+    summary: |-
+      The category of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#comments:member'
+    summary: |-
+      The comments of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#company:member'
+    summary: |-
+      The company of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DocumentProperties#creationDate:member'
+    summary: |-
+      Gets the creation date of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.DocumentProperties#custom:member'
+    summary: |-
+      Gets the collection of custom properties of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly custom: Excel.CustomPropertyCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomPropertyCollection:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+
+          await Excel.run(async (context) => {
+            // Load the keys and values of all custom properties.
+            const customDocProperties = context.workbook.properties.custom;
+            customDocProperties.load(["key", "value"]);
+            await context.sync();
+
+            // Log each custom property to the console.
+            // Note that your document may have more properties than those you have set using this snippet.
+            customDocProperties.items.forEach((property) => {
+              console.log(`${property.key}:${property.value}`);
+            });
+          });
+
+          ```
+  - uid: 'excel!Excel.DocumentProperties#keywords:member'
+    summary: |-
+      The keywords of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#lastAuthor:member'
+    summary: |-
+      Gets the last author of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lastAuthor
+    fullName: lastAuthor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lastAuthor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;'
+      return:
+        type:
+          - 'excel!Excel.DocumentProperties:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - uid: 'excel!Excel.DocumentProperties#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.DocumentProperties;'
+      return:
+        type:
+          - 'excel!Excel.DocumentProperties:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DocumentProperties#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.DocumentProperties;
+      return:
+        type:
+          - 'excel!Excel.DocumentProperties:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.DocumentProperties#manager:member'
+    summary: |-
+      The manager of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#revisionNumber:member'
+    summary: |-
+      Gets the revision number of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: revisionNumber
+    fullName: revisionNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'revisionNumber: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.DocumentProperties#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.DocumentProperties): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.DocumentProperties#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.DocumentProperties): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.DocumentProperties:class'
+  - uid: 'excel!Excel.DocumentProperties#subject:member'
+    summary: |-
+      The subject of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#title:member'
+    summary: |-
+      The title of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.DocumentProperties object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.DocumentPropertiesData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.CustomPropertyCollection:class'
+    name: Excel.CustomPropertyCollection
+  - uid: 'excel!Excel.DocumentProperties:class'
+    name: Excel.DocumentProperties
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+    name: Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+    name: Interfaces.DocumentPropertiesUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+    name: Excel.Interfaces.DocumentPropertiesData

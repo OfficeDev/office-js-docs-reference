@@ -1,0 +1,266 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomProperty:class'
+    summary: |-
+      Represents a custom property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CustomProperty
+    fullName: Excel.CustomProperty
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.CustomProperty#context:member'
+      - 'excel!Excel.CustomProperty#delete:member(1)'
+      - 'excel!Excel.CustomProperty#key:member'
+      - 'excel!Excel.CustomProperty#load:member(1)'
+      - 'excel!Excel.CustomProperty#load:member(2)'
+      - 'excel!Excel.CustomProperty#load:member(3)'
+      - 'excel!Excel.CustomProperty#set:member(1)'
+      - 'excel!Excel.CustomProperty#set:member(2)'
+      - 'excel!Excel.CustomProperty#toJSON:member(1)'
+      - 'excel!Excel.CustomProperty#type:member'
+      - 'excel!Excel.CustomProperty#value:member'
+  - uid: 'excel!Excel.CustomProperty#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CustomProperty#delete:member(1)'
+    summary: |-
+      Deletes the custom property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.CustomProperty#key:member'
+    summary: >-
+      The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are
+      automatically trimmed to 255 characters on other platforms).
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CustomProperty#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.CustomPropertyLoadOptions:interface'
+  - uid: 'excel!Excel.CustomProperty#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CustomProperty#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.CustomProperty;
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.CustomProperty#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.CustomProperty): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.CustomProperty#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.CustomProperty): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.CustomProperty:class'
+  - uid: 'excel!Excel.CustomProperty#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.CustomProperty object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.CustomPropertyData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.CustomPropertyData:interface'
+        description: ''
+  - uid: 'excel!Excel.CustomProperty#type:member'
+    summary: |-
+      The type of the value used for the custom property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty#type~0:complex'
+  - uid: 'excel!Excel.CustomProperty#value:member'
+    summary: >-
+      The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger
+      values are automatically trimmed to 255 characters on other platforms).
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.CustomProperty:class'
+    name: Excel.CustomProperty
+  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions:interface'
+    name: Excel.Interfaces.CustomPropertyLoadOptions
+  - uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
+    name: Interfaces.CustomPropertyUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
+    name: Excel.Interfaces.CustomPropertyData
+  - uid: 'excel!Excel.CustomProperty#type~0:complex'
+    name: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
+    fullName: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
+    spec.typeScript:
+      - uid: 'excel!Excel.DocumentPropertyType:enum'
+        name: Excel.DocumentPropertyType
+        fullName: Excel.DocumentPropertyType
+      - name: ' | "Number" | "Boolean" | "Date" | "String" | "Float"'
+        fullName: ' | "Number" | "Boolean" | "Date" | "String" | "Float"'

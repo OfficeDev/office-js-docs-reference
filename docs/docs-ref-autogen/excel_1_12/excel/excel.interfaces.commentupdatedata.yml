@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
+    summary: 'An interface for updating data on the Comment object, for use in `comment.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.CommentUpdateData
+    fullName: Excel.Interfaces.CommentUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CommentUpdateData#content:member'
+      - 'excel!Excel.Interfaces.CommentUpdateData#resolved:member'
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData#content:member'
+    summary: |-
+      The comment's content. The string is plain text.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData#resolved:member'
+    summary: |-
+      The comment thread status. A value of "true" means the comment thread is resolved.
+
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolved?: boolean;'
+      return:
+        type:
+          - boolean

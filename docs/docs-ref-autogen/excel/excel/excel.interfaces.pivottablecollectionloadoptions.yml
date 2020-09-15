@@ -18,6 +18,7 @@ items:
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#id:member'
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member'
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#refreshOnOpen:member'
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#useCustomSortLists:member'
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#$all:member'
@@ -40,9 +41,7 @@ items:
       given PivotField in the table.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowMultipleFiltersPerField
     fullName: allowMultipleFiltersPerField
     langs:
@@ -112,6 +111,25 @@ items:
     type: property
     syntax:
       content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#refreshOnOpen:member'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the PivotTable refreshes when the workbook opens. Corresponds
+      to "Refresh on load" setting in the UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: refreshOnOpen
+    fullName: refreshOnOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'refreshOnOpen?: boolean;'
       return:
         type:
           - boolean

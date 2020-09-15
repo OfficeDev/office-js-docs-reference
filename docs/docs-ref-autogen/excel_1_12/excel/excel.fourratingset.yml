@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FourRatingSet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FourRatingSet
+    fullName: Excel.FourRatingSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FourRatingSet#fourBars:member'
+      - 'excel!Excel.FourRatingSet#oneBar:member'
+      - 'excel!Excel.FourRatingSet#threeBars:member'
+      - 'excel!Excel.FourRatingSet#twoBars:member'
+  - uid: 'excel!Excel.FourRatingSet#fourBars:member'
+    name: fourBars
+    fullName: fourBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourBars: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRatingSet#oneBar:member'
+    name: oneBar
+    fullName: oneBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'oneBar: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRatingSet#threeBars:member'
+    name: threeBars
+    fullName: threeBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeBars: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRatingSet#twoBars:member'
+    name: twoBars
+    fullName: twoBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'twoBars: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

@@ -17,6 +17,7 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CultureInfo#context:member'
+      - 'excel!Excel.CultureInfo#datetimeFormat:member'
       - 'excel!Excel.CultureInfo#load:member(1)'
       - 'excel!Excel.CultureInfo#load:member(2)'
       - 'excel!Excel.CultureInfo#load:member(3)'
@@ -37,6 +38,71 @@ items:
       return:
         type:
           - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CultureInfo#datetimeFormat:member'
+    summary: >-
+      Defines the culturally appropriate format of displaying date and time. This is based on current system culture
+      settings.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: datetimeFormat
+    fullName: datetimeFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly datetimeFormat: Excel.DatetimeFormatInfo;'
+      return:
+        type:
+          - 'excel!Excel.DatetimeFormatInfo:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info-date-time.yaml
+
+          await Excel.run(async (context) => {
+            context.application.cultureInfo.datetimeFormat.load([
+              "longDatePattern",
+              "shortDatePattern",
+              "dateSeparator",
+              "longTimePattern",
+              "timeSeparator"
+            ]);
+            await context.sync();
+
+            // Use the cultural settings API to retrieve the user's system date and time settings.
+            const systemLongDatePattern = context.application.cultureInfo.datetimeFormat.longDatePattern;
+            const systemShortDatePattern = context.application.cultureInfo.datetimeFormat.shortDatePattern;
+            const systemDateSeparator = context.application.cultureInfo.datetimeFormat.dateSeparator;
+            const systemLongTimePattern = context.application.cultureInfo.datetimeFormat.longTimePattern;
+            const systemTimeSeparator = context.application.cultureInfo.datetimeFormat.timeSeparator;
+
+            // Write the date and time settings in your table. 
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const dateTimeData = sheet.getRange("A2:B6");
+            dateTimeData.values = [
+              ["Long date", systemLongDatePattern], 
+              ["Short date", systemShortDatePattern], 
+              ["Date separator", systemDateSeparator], 
+              ["Long time format", systemLongTimePattern],
+              ["Time separator", systemTimeSeparator]
+            ];
+
+            sheet.tables
+              .getItemAt(0)
+              .getRange()
+              .format.autofitColumns();
+
+            await context.sync();
+          });
+
+          ```
   - uid: 'excel!Excel.CultureInfo#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -162,6 +228,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+  - uid: 'excel!Excel.DatetimeFormatInfo:class'
+    name: Excel.DatetimeFormatInfo
   - uid: 'excel!Excel.CultureInfo:class'
     name: Excel.CultureInfo
   - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'

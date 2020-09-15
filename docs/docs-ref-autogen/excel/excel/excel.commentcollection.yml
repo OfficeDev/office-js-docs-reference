@@ -327,13 +327,10 @@ items:
           type:
             - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.CommentCollection#onAdded:member'
-    summary: >-
+    summary: |-
       Occurs when the comments are added.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
     fullName: onAdded
     langs:
@@ -345,13 +342,10 @@ items:
         type:
           - 'excel!Excel.CommentCollection#onAdded~0:complex'
   - uid: 'excel!Excel.CommentCollection#onChanged:member'
-    summary: >-
+    summary: |-
       Occurs when comments or replies in a comment collection are changed, including when replies are deleted.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: onChanged
     langs:
@@ -363,13 +357,10 @@ items:
         type:
           - 'excel!Excel.CommentCollection#onChanged~0:complex'
   - uid: 'excel!Excel.CommentCollection#onDeleted:member'
-    summary: >-
+    summary: |-
       Occurs when comments are deleted in the comment collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
     fullName: onDeleted
     langs:

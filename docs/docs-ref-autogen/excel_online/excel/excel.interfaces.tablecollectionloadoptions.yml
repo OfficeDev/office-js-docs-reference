@@ -30,6 +30,7 @@ items:
       - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showTotals:member'
       - 'excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member'
       - 'excel!Excel.Interfaces.TableCollectionLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#tableStyle:member'
       - 'excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#$all:member'
     summary: >-
@@ -291,6 +292,21 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#tableStyle:member'
+    summary: |-
+      For EACH ITEM in the collection: The style applied to the Table.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tableStyle
+    fullName: tableStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableStyle?: Excel.Interfaces.TableStyleLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member'
     summary: |-
       For EACH ITEM in the collection: The worksheet containing the current table.
@@ -315,5 +331,7 @@ references:
     name: Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
     name: Excel.Interfaces.TableSortLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
+    name: Excel.Interfaces.TableStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
     name: Excel.Interfaces.WorksheetLoadOptions

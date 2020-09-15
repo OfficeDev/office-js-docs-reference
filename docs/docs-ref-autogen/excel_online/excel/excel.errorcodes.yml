@@ -11,6 +11,7 @@ items:
       - 'excel!Excel.ErrorCodes.accessDenied:member'
       - 'excel!Excel.ErrorCodes.apiNotFound:member'
       - 'excel!Excel.ErrorCodes.conflict:member'
+      - 'excel!Excel.ErrorCodes.filteredRangeConflict:member'
       - 'excel!Excel.ErrorCodes.generalException:member'
       - 'excel!Excel.ErrorCodes.insertDeleteConflict:member'
       - 'excel!Excel.ErrorCodes.invalidArgument:member'
@@ -48,6 +49,13 @@ items:
       - typeScript
     type: field
     numericValue: '"Conflict"'
+  - uid: 'excel!Excel.ErrorCodes.filteredRangeConflict:member'
+    name: filteredRangeConflict
+    fullName: filteredRangeConflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FilteredRangeConflict"'
   - uid: 'excel!Excel.ErrorCodes.generalException:member'
     name: generalException
     fullName: generalException

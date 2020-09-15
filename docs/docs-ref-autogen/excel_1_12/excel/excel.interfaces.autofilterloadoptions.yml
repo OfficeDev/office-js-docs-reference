@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+    summary: >-
+      Represents the AutoFilter object. AutoFilter turns the values in Excel column into specific filters based on the
+      cell contents.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.AutoFilterLoadOptions
+    fullName: Excel.Interfaces.AutoFilterLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#criteria:member'
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#enabled:member'
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#isDataFiltered:member'
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#criteria:member'
+    summary: |-
+      An array that holds all the filter criteria in the autofiltered range.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#enabled:member'
+    summary: |-
+      Specifies if the AutoFilter is enabled.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#isDataFiltered:member'
+    summary: |-
+      Specifies if the AutoFilter has filter criteria.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isDataFiltered
+    fullName: isDataFiltered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDataFiltered?: boolean;'
+      return:
+        type:
+          - boolean

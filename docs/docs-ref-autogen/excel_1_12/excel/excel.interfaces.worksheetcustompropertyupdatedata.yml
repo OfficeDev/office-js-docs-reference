@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+    summary: >-
+      An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({
+      ... })`<!-- -->.
+    name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
+    fullName: Excel.Interfaces.WorksheetCustomPropertyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

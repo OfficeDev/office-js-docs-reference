@@ -1,0 +1,496 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartDataLabels:class'
+    summary: |-
+      Represents a collection of all the data labels on a chart point.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartDataLabels
+    fullName: Excel.ChartDataLabels
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.ChartDataLabels#autoText:member'
+      - 'excel!Excel.ChartDataLabels#context:member'
+      - 'excel!Excel.ChartDataLabels#format:member'
+      - 'excel!Excel.ChartDataLabels#horizontalAlignment:member'
+      - 'excel!Excel.ChartDataLabels#linkNumberFormat:member'
+      - 'excel!Excel.ChartDataLabels#load:member(1)'
+      - 'excel!Excel.ChartDataLabels#load:member(2)'
+      - 'excel!Excel.ChartDataLabels#load:member(3)'
+      - 'excel!Excel.ChartDataLabels#numberFormat:member'
+      - 'excel!Excel.ChartDataLabels#position:member'
+      - 'excel!Excel.ChartDataLabels#separator:member'
+      - 'excel!Excel.ChartDataLabels#set:member(1)'
+      - 'excel!Excel.ChartDataLabels#set:member(2)'
+      - 'excel!Excel.ChartDataLabels#showBubbleSize:member'
+      - 'excel!Excel.ChartDataLabels#showCategoryName:member'
+      - 'excel!Excel.ChartDataLabels#showLegendKey:member'
+      - 'excel!Excel.ChartDataLabels#showPercentage:member'
+      - 'excel!Excel.ChartDataLabels#showSeriesName:member'
+      - 'excel!Excel.ChartDataLabels#showValue:member'
+      - 'excel!Excel.ChartDataLabels#textOrientation:member'
+      - 'excel!Excel.ChartDataLabels#toJSON:member(1)'
+      - 'excel!Excel.ChartDataLabels#verticalAlignment:member'
+  - uid: 'excel!Excel.ChartDataLabels#autoText:member'
+    summary: |-
+      Specifies if data labels automatically generate appropriate text based on context.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartDataLabels#format:member'
+    summary: |-
+      Specifies the format of chart data labels, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartDataLabelFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabelFormat:class'
+  - uid: 'excel!Excel.ChartDataLabels#horizontalAlignment:member'
+    summary: >-
+      Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
+      property is valid only when TextOrientation of data label is 0.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabels#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.ChartDataLabels#linkNumberFormat:member'
+    summary: >-
+      Specifies if the number format is linked to the cells. If true, the number format will change in the labels when
+      it changes in the cells.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;'
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabels:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - uid: 'excel!Excel.ChartDataLabels#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartDataLabels;'
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabels:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Make Series Name shown in Datalabels and set the position of datalabels to be "top";
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              chart.datalabels.showValue = true;
+              chart.datalabels.position = "top";
+              chart.datalabels.showSeriesName = true;
+              return ctx.sync().then(function() {
+                      console.log("Datalabels Shown");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartDataLabels#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartDataLabels;
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabels:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartDataLabels#numberFormat:member'
+    summary: |-
+      Specifies the format code for data labels.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartDataLabels#position:member'
+    summary: >-
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabels#position~0:complex'
+  - uid: 'excel!Excel.ChartDataLabels#separator:member'
+    summary: |-
+      String representing the separator used for the data labels on a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: separator
+    fullName: separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartDataLabels#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartDataLabels): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartDataLabelsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartDataLabels#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartDataLabels): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartDataLabels:class'
+  - uid: 'excel!Excel.ChartDataLabels#showBubbleSize:member'
+    summary: |-
+      Specifies if the data label bubble size is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBubbleSize
+    fullName: showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#showCategoryName:member'
+    summary: |-
+      Specifies if the data label category name is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showCategoryName
+    fullName: showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#showLegendKey:member'
+    summary: |-
+      Specifies if the data label legend key is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendKey
+    fullName: showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#showPercentage:member'
+    summary: |-
+      Specifies if the data label percentage is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showPercentage
+    fullName: showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#showSeriesName:member'
+    summary: |-
+      Specifies if the data label series name is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showSeriesName
+    fullName: showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#showValue:member'
+    summary: |-
+      Specifies if the data label value is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showValue
+    fullName: showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabels#textOrientation:member'
+    summary: >-
+      Represents the angle to which the text is oriented for data labels. The value should either be an integer from -90
+      to 90 or the integer 180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartDataLabels#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartDataLabelsData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
+        description: ''
+  - uid: 'excel!Excel.ChartDataLabels#verticalAlignment:member'
+    summary: >-
+      Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This
+      property is valid only when TextOrientation of data label is -90, 90, or 180.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabels#verticalAlignment~0:complex'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartDataLabelFormat:class'
+    name: Excel.ChartDataLabelFormat
+  - uid: 'excel!Excel.ChartDataLabels#horizontalAlignment~0:complex'
+    name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+    fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+        name: Excel.ChartTextHorizontalAlignment
+        fullName: Excel.ChartTextHorizontalAlignment
+      - name: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
+        fullName: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
+  - uid: 'excel!Excel.ChartDataLabels:class'
+    name: Excel.ChartDataLabels
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: 'excel!Excel.ChartDataLabels#position~0:complex'
+    name: >-
+      Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+      | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+    fullName: >-
+      Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+      | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartDataLabelPosition:enum'
+        name: Excel.ChartDataLabelPosition
+        fullName: Excel.ChartDataLabelPosition
+      - name: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
+        fullName: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+    name: Interfaces.ChartDataLabelsUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
+    name: Excel.Interfaces.ChartDataLabelsData
+  - uid: 'excel!Excel.ChartDataLabels#verticalAlignment~0:complex'
+    name: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+    fullName: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+        name: Excel.ChartTextVerticalAlignment
+        fullName: Excel.ChartTextVerticalAlignment
+      - name: ' | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"'
+        fullName: ' | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"'

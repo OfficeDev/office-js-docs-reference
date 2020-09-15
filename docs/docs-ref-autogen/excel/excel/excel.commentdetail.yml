@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.CommentDetail:interface'
-    summary: >-
+    summary: |-
       A structure for the comment ID and IDs of its related replies.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CommentDetail
     fullName: Excel.CommentDetail
     langs:
@@ -18,13 +15,10 @@ items:
       - 'excel!Excel.CommentDetail#commentId:member'
       - 'excel!Excel.CommentDetail#replyIds:member'
   - uid: 'excel!Excel.CommentDetail#commentId:member'
-    summary: >-
+    summary: |-
       Represents the ID of comment.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: commentId
     fullName: commentId
     langs:
@@ -36,13 +30,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.CommentDetail#replyIds:member'
-    summary: >-
+    summary: |-
       Represents the IDs of the related replies belong to comment.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: replyIds
     fullName: replyIds
     langs:

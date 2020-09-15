@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+    summary: Provides ways to load properties of only a subset of members of a collection.
+    name: Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.CollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CollectionLoadOptions#$skip:member'
+      - 'excel!Excel.Interfaces.CollectionLoadOptions#$top:member'
+  - uid: 'excel!Excel.Interfaces.CollectionLoadOptions#$skip:member'
+    summary: >-
+      Specify the number of items in the collection that are to be skipped and not included in the result. If top is
+      specified, the selection of result will start after skipping the specified number of items.
+    name: $skip
+    fullName: $skip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$skip?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.CollectionLoadOptions#$top:member'
+    summary: Specify the number of items in the queried collection to be included in the result.
+    name: $top
+    fullName: $top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$top?: number;'
+      return:
+        type:
+          - number

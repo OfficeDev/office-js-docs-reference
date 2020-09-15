@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
+    summary: |-
+      Provides information about the left-clicked/tapped event and its related worksheet.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetSingleClickedEventArgs
+    fullName: Excel.WorksheetSingleClickedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#address:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#offsetX:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#offsetY:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#type:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#address:member'
+    summary: |-
+      Gets the address that represents the cell which was left-clicked/tapped for a specific worksheet.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-worksheet-single-click.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onSingleClicked.add((event) => {
+                  return Excel.run((context) => {
+                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
+                      return context.sync();
+                  });
+              });
+
+              console.log("The worksheet click handler is registered.");
+
+              await context.sync();
+          });
+
+          ```
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#offsetX:member'
+    summary: >-
+      The distance, in points, from the left-clicked/tapped point to the left (or right for right-to-left languages)
+      gridline edge of the left-clicked/tapped cell.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: offsetX
+    fullName: offsetX
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offsetX: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#offsetY:member'
+    summary: >-
+      The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped
+      cell.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: offsetY
+    fullName: offsetY
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offsetY: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#type:member'
+    summary: |-
+      Gets the type of the event.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetSingleClicked";'
+      return:
+        type:
+          - '"WorksheetSingleClicked"'
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#worksheetId:member'
+    summary: |-
+      Gets the id of the worksheet in which the cell was left-clicked/tapped.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

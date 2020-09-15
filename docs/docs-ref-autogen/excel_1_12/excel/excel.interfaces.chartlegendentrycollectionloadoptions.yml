@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of legendEntries.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#index:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#visible:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#height:member'
+    summary: |-
+      For EACH ITEM in the collection: Specifies the height of the legendEntry on the chart legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#index:member'
+    summary: |-
+      For EACH ITEM in the collection: Specifies the index of the legendEntry in the chart legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#left:member'
+    summary: |-
+      For EACH ITEM in the collection: Specifies the left of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#top:member'
+    summary: |-
+      For EACH ITEM in the collection: Specifies the top of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#visible:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the visible of a chart legend entry.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#width:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the width of the legendEntry on the chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean

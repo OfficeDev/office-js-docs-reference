@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
+    summary: 'An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.PivotTableStyleUpdateData
+    fullName: Excel.Interfaces.PivotTableStyleUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
+    summary: |-
+      Gets the name of the PivotTableStyle.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string

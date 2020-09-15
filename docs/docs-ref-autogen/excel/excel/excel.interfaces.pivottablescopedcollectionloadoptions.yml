@@ -6,7 +6,7 @@ items:
       PivotTable's top-left corner. They are ordered top to bottom and then left to right.
 
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
     fullName: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
     langs:
@@ -20,6 +20,7 @@ items:
       - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#id:member'
       - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#layout:member'
       - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#refreshOnOpen:member'
       - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#useCustomSortLists:member'
       - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#$all:member'
@@ -42,9 +43,7 @@ items:
       given PivotField in the table.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowMultipleFiltersPerField
     fullName: allowMultipleFiltersPerField
     langs:
@@ -114,6 +113,25 @@ items:
     type: property
     syntax:
       content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#refreshOnOpen:member'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the PivotTable refreshes when the workbook opens. Corresponds
+      to "Refresh on load" setting in the UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: refreshOnOpen
+    fullName: refreshOnOpen
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'refreshOnOpen?: boolean;'
       return:
         type:
           - boolean

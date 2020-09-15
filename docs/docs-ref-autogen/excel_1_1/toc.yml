@@ -131,7 +131,7 @@ items:
           - name: RunOptions
             uid: 'excel!Excel.RunOptions:interface'
           - name: Session
-            uid: 'excel!Excel.Session:class'
+            uid: 'excel!Excel.Session:interface'
           - name: Table
             uid: 'excel!Excel.Table:class'
           - name: TableCollection

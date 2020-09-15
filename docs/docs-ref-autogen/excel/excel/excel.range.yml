@@ -1160,9 +1160,7 @@ items:
       same worksheet or in multiple worksheets.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDirectPrecedents()
     fullName: getDirectPrecedents()
     langs:
@@ -1549,8 +1547,8 @@ items:
           ```
   - uid: 'excel!Excel.Range#getMergedAreas:member(1)'
     summary: >-
-      Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in
-      this range is more than 512, the API will fail to return the result.
+      Returns a `RangeAreas` object that represents the merged areas in this range. Note that if the merged areas count
+      in this range is more than 512, the API will fail to return the result.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1624,7 +1622,7 @@ items:
     summary: |-
       Gets a scoped collection of PivotTables that overlap with the range.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPivotTables(fullyContained)
     fullName: getPivotTables(fullyContained)
     langs:
@@ -2013,9 +2011,7 @@ items:
       more than one cell.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSpillingToRange()
     fullName: getSpillingToRange()
     langs:
@@ -2062,9 +2058,7 @@ items:
       or spill range can't be found, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSpillingToRangeOrNullObject()
     fullName: getSpillingToRangeOrNullObject()
     langs:
@@ -2082,9 +2076,7 @@ items:
       more than one cell.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSpillParent()
     fullName: getSpillParent()
     langs:
@@ -2102,9 +2094,7 @@ items:
       more than once cells are give, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSpillParentOrNullObject()
     fullName: getSpillParentOrNullObject()
     langs:
@@ -2406,9 +2396,7 @@ items:
       do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasSpill
     fullName: hasSpill
     langs:
@@ -2890,13 +2878,10 @@ items:
           });
           ```
   - uid: 'excel!Excel.Range#numberFormatCategories:member'
-    summary: >-
+    summary: |-
       Represents the category of number format of each cell.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatCategories
     fullName: numberFormatCategories
     langs:
@@ -3059,9 +3044,7 @@ items:
       saved as an array formula and some would not be.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: savedAsArray
     fullName: savedAsArray
     langs:

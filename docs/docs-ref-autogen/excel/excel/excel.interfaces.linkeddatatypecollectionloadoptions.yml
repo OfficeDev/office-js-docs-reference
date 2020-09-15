@@ -1,0 +1,211 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface'
+    summary: >-
+      Represents a collection of linked data types.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions
+    fullName: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#dataProvider:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#fontIconCodePoint:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#lastRefreshed:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#periodicRefreshInterval:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#refreshDataLoadWarnings:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#refreshMode:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#serviceId:member'
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#supportedRefreshModes:member'
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#dataProvider:member'
+    summary: >-
+      For EACH ITEM in the collection: The name of the data provider for the linked data type. This may change when
+      information is retrieved from the service.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dataProvider
+    fullName: dataProvider
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataProvider?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#fontIconCodePoint:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns the code point for the font icon to be used in the data type options
+      pane. 1st-party only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: fontIconCodePoint
+    fullName: fontIconCodePoint
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fontIconCodePoint?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#lastRefreshed:member'
+    summary: >-
+      For EACH ITEM in the collection: The local time-zone date and time since the workbook was opened when the linked
+      data type was last refreshed. Returns `undefined` if the linked data type has not been refreshed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: lastRefreshed
+    fullName: lastRefreshed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lastRefreshed?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#name:member'
+    summary: >-
+      For EACH ITEM in the collection: The name of the linked data type. This may change when information is retrieved
+      from the service.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#periodicRefreshInterval:member'
+    summary: >-
+      For EACH ITEM in the collection: The frequency, in seconds, at which the linked data type is refreshed if
+      `refreshMode` is set to "Periodic".
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: periodicRefreshInterval
+    fullName: periodicRefreshInterval
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'periodicRefreshInterval?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#refreshDataLoadWarnings:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns any warnings encountered after an attempt to load refresh data for this
+      linked data type from the workbook. 1st-party only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: refreshDataLoadWarnings
+    fullName: refreshDataLoadWarnings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'refreshDataLoadWarnings?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#refreshMode:member'
+    summary: >-
+      For EACH ITEM in the collection: The mechanism by which the data for the linked data type is retrieved.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: refreshMode
+    fullName: refreshMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'refreshMode?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#serviceId:member'
+    summary: >-
+      For EACH ITEM in the collection: The unique id of the linked data type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: serviceId
+    fullName: serviceId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'serviceId?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#supportedRefreshModes:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns an array with all the refresh modes supported by the linked data type.
+      The contents of the array may change when information is retrieved from the service.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: supportedRefreshModes
+    fullName: supportedRefreshModes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'supportedRefreshModes?: boolean;'
+      return:
+        type:
+          - boolean

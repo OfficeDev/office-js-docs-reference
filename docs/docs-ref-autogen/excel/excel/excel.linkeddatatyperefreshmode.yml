@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
+    summary: >-
+      Representation of a refresh mode.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.LinkedDataTypeRefreshMode
+    fullName: Excel.LinkedDataTypeRefreshMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.LinkedDataTypeRefreshMode.manual:member'
+      - 'excel!Excel.LinkedDataTypeRefreshMode.onLoad:member'
+      - 'excel!Excel.LinkedDataTypeRefreshMode.periodic:member'
+      - 'excel!Excel.LinkedDataTypeRefreshMode.unknown:member'
+  - uid: 'excel!Excel.LinkedDataTypeRefreshMode.manual:member'
+    summary: Manual refresh. Refresh does not get triggered automatically.
+    isPreview: true
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manual"'
+  - uid: 'excel!Excel.LinkedDataTypeRefreshMode.onLoad:member'
+    summary: Refresh on workbook load only.
+    isPreview: true
+    name: onLoad
+    fullName: onLoad
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OnLoad"'
+  - uid: 'excel!Excel.LinkedDataTypeRefreshMode.periodic:member'
+    summary: Refresh periodically based on an interval. It will also trigger a refresh on workbook load.
+    isPreview: true
+    name: periodic
+    fullName: periodic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Periodic"'
+  - uid: 'excel!Excel.LinkedDataTypeRefreshMode.unknown:member'
+    summary: Refresh mode is unknown or unsupported.
+    isPreview: true
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

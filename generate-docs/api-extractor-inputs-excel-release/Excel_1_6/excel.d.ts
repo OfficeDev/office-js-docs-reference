@@ -197,19 +197,7 @@ export declare namespace Excel {
     }
     /** [Api set: ExcelApi 1.2] */
 	var icons: IconCollections;
-    /**
-     * Provides connection session for a remote workbook.
-     */
-    export class Session {
-        private static WorkbookSessionIdHeaderName;
-        private static WorkbookSessionIdHeaderNameLower;
-        constructor(workbookUrl?: string, requestHeaders?: {
-            [name: string]: string;
-        }, persisted?: boolean);
-        /**
-         * Close the session.
-         */
-        close(): Promise<void>;
+    export interface Session {
     }
     /**
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
@@ -264,6 +252,17 @@ export declare namespace Excel {
     export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      *
      * Provides information about the selection that raised the "SelectionChanged" event.
@@ -356,6 +355,10 @@ export declare namespace Excel {
          */
         settings: Excel.SettingCollection;
     }
+    
+    
+    
+    
     
     
     
@@ -698,6 +701,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly charts: Excel.ChartCollection;
+        
         
         
         
@@ -1265,6 +1269,7 @@ export declare namespace Excel {
          */
         formulasR1C1: any[][];
         
+        
         /**
          *
          * Represents if all cells of the current range are hidden.
@@ -1284,6 +1289,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         numberFormat: any[][];
+        
         
         /**
          *
@@ -1306,6 +1312,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly rowIndex: number;
+        
         
         /**
          *
@@ -1435,6 +1442,7 @@ export declare namespace Excel {
          * @param count - Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsBefore(count?: number): Excel.Range;
+        
         /**
          * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
          *
@@ -1526,6 +1534,10 @@ export declare namespace Excel {
          * @param count - Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getRowsBelow(count?: number): Excel.Range;
+        
+        
+        
+        
         
         
         
@@ -1656,6 +1668,7 @@ export declare namespace Excel {
          */
         address: string;
     }
+    
     
     
     
@@ -3534,7 +3547,7 @@ export declare namespace Excel {
         italic: boolean;
         /**
          *
-         * Font name (e.g., "Calibri")
+         * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -4082,7 +4095,7 @@ export declare namespace Excel {
         
         /**
          *
-         * Specifies the name of a series in a chart.
+         * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -4112,6 +4125,8 @@ export declare namespace Excel {
         set(properties: Interfaces.ChartSeriesUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartSeries): void;
+        
+        
         
         
         
@@ -6045,6 +6060,7 @@ export declare namespace Excel {
     
     
     
+    
     /**
      *
      * Represents a cell icon.
@@ -6374,6 +6390,7 @@ export declare namespace Excel {
          */
         readonly worksheet: Excel.Worksheet;
         
+        
         /**
          *
          * Id of the PivotTable.
@@ -6437,6 +6454,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.PivotTableData;
     }
+    
+    
     
     
     
@@ -8209,6 +8228,7 @@ export declare namespace Excel {
     
     
     
+    
     /**
      * [Api set: ExcelApi 1.1]
      */
@@ -8921,6 +8941,8 @@ export declare namespace Excel {
         justify = "Justify",
         distributed = "Distributed"
     }
+    
+    
     
     
     
@@ -12403,6 +12425,7 @@ export declare namespace Excel {
         accessDenied = "AccessDenied",
         apiNotFound = "ApiNotFound",
         conflict = "Conflict",
+        filteredRangeConflict = "FilteredRangeConflict",
         generalException = "GeneralException",
         insertDeleteConflict = "InsertDeleteConflict",
         invalidArgument = "InvalidArgument",
@@ -12657,6 +12680,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
+            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -12924,7 +12948,7 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g., "Calibri")
+             * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -13102,7 +13126,7 @@ export declare namespace Excel {
             
             /**
              *
-             * Specifies the name of a series in a chart.
+             * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -13728,6 +13752,7 @@ export declare namespace Excel {
         /** An interface for updating data on the PivotTable object, for use in `pivotTable.set({ ... })`. */
         export interface PivotTableUpdateData {
             
+            
             /**
              *
              * Name of the PivotTable.
@@ -13739,6 +13764,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
+            
             
             
             
@@ -13806,6 +13832,14 @@ export declare namespace Excel {
             
             
             
+        }
+        /** An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ... })`. */
+        export interface WorksheetCustomPropertyUpdateData {
+            
+        }
+        /** An interface for updating data on the WorksheetCustomPropertyCollection object, for use in `worksheetCustomPropertyCollection.set({ ... })`. */
+        export interface WorksheetCustomPropertyCollectionUpdateData {
+            items?: Excel.Interfaces.WorksheetCustomPropertyData[];
         }
         /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
@@ -14478,6 +14512,10 @@ export declare namespace Excel {
         export interface RangeCollectionUpdateData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface for updating data on the RangeAreasCollection object, for use in `rangeAreasCollection.set({ ... })`. */
+        export interface RangeAreasCollectionUpdateData {
+            items?: Excel.Interfaces.RangeAreasData[];
+        }
         /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
         export interface CommentCollectionUpdateData {
             items?: Excel.Interfaces.CommentData[];
@@ -14574,6 +14612,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
         export interface SlicerUpdateData {
+            
             
             
             
@@ -14709,6 +14748,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             charts?: Excel.Interfaces.ChartData[];
+            
             
             
             /**
@@ -14880,6 +14920,7 @@ export declare namespace Excel {
              */
             formulasR1C1?: any[][];
             
+            
             /**
              *
              * Represents if all cells of the current range are hidden.
@@ -14899,6 +14940,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             numberFormat?: any[][];
+            
             
             /**
              *
@@ -14921,6 +14963,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             rowIndex?: number;
+            
             
             /**
              *
@@ -14956,6 +14999,12 @@ export declare namespace Excel {
             
             
             
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `workbookRangeAreas.toJSON()`. */
+        export interface WorkbookRangeAreasData {
             
             
             
@@ -15181,6 +15230,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortData;
+            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -15497,7 +15547,7 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g., "Calibri")
+             * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -15691,7 +15741,7 @@ export declare namespace Excel {
             
             /**
              *
-             * Specifies the name of a series in a chart.
+             * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -16369,9 +16419,18 @@ export declare namespace Excel {
         export interface CultureInfoData {
             
             
+            
         }
         /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
         export interface NumberFormatInfoData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`. */
+        export interface DatetimeFormatInfoData {
+            
+            
+            
             
             
         }
@@ -16416,6 +16475,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              *
              * Id of the PivotTable.
@@ -16434,6 +16494,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
+            
             
             
             
@@ -16511,6 +16572,15 @@ export declare namespace Excel {
             
             
             
+        }
+        /** An interface describing the data returned by calling `worksheetCustomProperty.toJSON()`. */
+        export interface WorksheetCustomPropertyData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `worksheetCustomPropertyCollection.toJSON()`. */
+        export interface WorksheetCustomPropertyCollectionData {
+            items?: Excel.Interfaces.WorksheetCustomPropertyData[];
         }
         /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {
@@ -17199,12 +17269,17 @@ export declare namespace Excel {
         export interface RangeCollectionData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface describing the data returned by calling `rangeAreasCollection.toJSON()`. */
+        export interface RangeAreasCollectionData {
+            items?: Excel.Interfaces.RangeAreasData[];
+        }
         /** An interface describing the data returned by calling `commentCollection.toJSON()`. */
         export interface CommentCollectionData {
             items?: Excel.Interfaces.CommentData[];
         }
         /** An interface describing the data returned by calling `comment.toJSON()`. */
         export interface CommentData {
+            
             
             
             
@@ -17221,6 +17296,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `commentReply.toJSON()`. */
         export interface CommentReplyData {
+            
             
             
             
@@ -17335,6 +17411,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `slicer.toJSON()`. */
         export interface SlicerData {
+            
             
             
             
@@ -17722,6 +17799,7 @@ export declare namespace Excel {
              */
             formulasR1C1?: boolean;
             
+            
             /**
              *
              * Represents if all cells of the current range are hidden.
@@ -17741,6 +17819,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             numberFormat?: boolean;
+            
             
             /**
              *
@@ -17763,6 +17842,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             rowIndex?: boolean;
+            
             
             /**
              *
@@ -17788,6 +17868,7 @@ export declare namespace Excel {
             values?: boolean;
             
         }
+        
         
         /**
          *
@@ -18245,6 +18326,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
+            
             /**
             *
             * For EACH ITEM in the collection: The worksheet containing the current table.
@@ -18361,6 +18443,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
+            
             /**
             *
             * The worksheet containing the current table.
@@ -18847,7 +18930,7 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g., "Calibri")
+             * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19169,7 +19252,7 @@ export declare namespace Excel {
             
             /**
              *
-             * For EACH ITEM in the collection: Specifies the name of a series in a chart.
+             * For EACH ITEM in the collection: Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19244,7 +19327,7 @@ export declare namespace Excel {
             
             /**
              *
-             * Specifies the name of a series in a chart.
+             * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19998,6 +20081,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          *
          * A scoped collection of custom XML parts.
@@ -20099,6 +20183,7 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             
+            
             /**
              *
              * For EACH ITEM in the collection: Id of the PivotTable.
@@ -20136,6 +20221,7 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             
+            
             /**
              *
              * Id of the PivotTable.
@@ -20152,6 +20238,8 @@ export declare namespace Excel {
             name?: boolean;
             
         }
+        
+        
         
         
         
@@ -21042,6 +21130,7 @@ export declare namespace Excel {
              */
             style?: boolean;
         }
+        
         
         
         

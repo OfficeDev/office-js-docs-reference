@@ -94,8 +94,8 @@ items:
       *Note**: This API is currently only supported for Office on Windows and Mac.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiAddFromBase64String
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)'
     fullName: 'addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)'
@@ -179,8 +179,8 @@ items:
       *Note**: This API is currently only supported for Office on Windows and Mac.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiAddFromBase64String
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFromBase64(base64File, sheetNamesToInsert, positionTypeString, relativeTo)'
     fullName: 'addFromBase64(base64File, sheetNamesToInsert, positionTypeString, relativeTo)'
     langs:

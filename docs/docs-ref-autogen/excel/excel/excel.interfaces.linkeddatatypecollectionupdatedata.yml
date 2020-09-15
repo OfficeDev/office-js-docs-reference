@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the LinkedDataTypeCollection object, for use in `linkedDataTypeCollection.set({
+      ... })`<!-- -->.
+    name: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
+    fullName: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.LinkedDataTypeData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.LinkedDataTypeData[]'
+    fullName: 'Excel.Interfaces.LinkedDataTypeData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.LinkedDataTypeData:interface'
+        name: Excel.Interfaces.LinkedDataTypeData
+        fullName: Excel.Interfaces.LinkedDataTypeData
+      - name: '[]'
+        fullName: '[]'

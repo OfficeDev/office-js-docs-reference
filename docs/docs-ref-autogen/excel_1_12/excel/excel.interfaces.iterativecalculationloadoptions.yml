@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
+    summary: |-
+      Represents the Iterative Calculation settings.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.IterativeCalculationLoadOptions
+    fullName: Excel.Interfaces.IterativeCalculationLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#enabled:member'
+      - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#maxChange:member'
+      - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#maxIteration:member'
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#enabled:member'
+    summary: |-
+      True if Excel will use iteration to resolve circular references.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#maxChange:member'
+    summary: |-
+      Specifies the maximum amount of change between each iteration as Excel resolves circular references.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maxChange
+    fullName: maxChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxChange?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions#maxIteration:member'
+    summary: |-
+      Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maxIteration
+    fullName: maxIteration
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxIteration?: boolean;'
+      return:
+        type:
+          - boolean

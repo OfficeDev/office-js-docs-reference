@@ -1,0 +1,226 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeGroup:class'
+    summary: >-
+      Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`<!--
+      -->.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeGroup
+    fullName: Excel.ShapeGroup
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeGroup#context:member'
+      - 'excel!Excel.ShapeGroup#id:member'
+      - 'excel!Excel.ShapeGroup#load:member(1)'
+      - 'excel!Excel.ShapeGroup#load:member(2)'
+      - 'excel!Excel.ShapeGroup#load:member(3)'
+      - 'excel!Excel.ShapeGroup#shape:member'
+      - 'excel!Excel.ShapeGroup#shapes:member'
+      - 'excel!Excel.ShapeGroup#toJSON:member(1)'
+      - 'excel!Excel.ShapeGroup#ungroup:member(1)'
+  - uid: 'excel!Excel.ShapeGroup#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ShapeGroup#id:member'
+    summary: |-
+      Specifies the shape identifier.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ShapeGroup#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ShapeGroupLoadOptions): Excel.ShapeGroup;'
+      return:
+        type:
+          - 'excel!Excel.ShapeGroup:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
+  - uid: 'excel!Excel.ShapeGroup#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ShapeGroup;'
+      return:
+        type:
+          - 'excel!Excel.ShapeGroup:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ShapeGroup#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ShapeGroup;
+      return:
+        type:
+          - 'excel!Excel.ShapeGroup:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ShapeGroup#shape:member'
+    summary: |-
+      Returns the Shape object associated with the group.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Excel.Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.ShapeGroup#shapes:member'
+    summary: |-
+      Returns the collection of Shape objects.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shapes
+    fullName: shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shapes: Excel.GroupShapeCollection;'
+      return:
+        type:
+          - 'excel!Excel.GroupShapeCollection:class'
+  - uid: 'excel!Excel.ShapeGroup#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ShapeGroup object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ShapeGroupData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ShapeGroupData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ShapeGroupData:interface'
+        description: ''
+  - uid: 'excel!Excel.ShapeGroup#ungroup:member(1)'
+    summary: |-
+      Ungroups any grouped shapes in the specified shape group.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: ungroup()
+    fullName: ungroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type:
+          - void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+
+              const shapeGroup = sheet.shapes.getItem("Group").group;
+              shapeGroup.ungroup();
+              console.log("Shapes ungrouped");
+
+              await context.sync();
+          });
+
+          ```
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ShapeGroup:class'
+    name: Excel.ShapeGroup
+  - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
+    name: Excel.Interfaces.ShapeGroupLoadOptions
+  - uid: 'excel!Excel.Shape:class'
+    name: Excel.Shape
+  - uid: 'excel!Excel.GroupShapeCollection:class'
+    name: Excel.GroupShapeCollection
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData:interface'
+    name: Excel.Interfaces.ShapeGroupData

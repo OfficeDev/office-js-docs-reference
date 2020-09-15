@@ -31,6 +31,7 @@ items:
       - 'excel!Excel.Slicer#set:member(1)'
       - 'excel!Excel.Slicer#set:member(2)'
       - 'excel!Excel.Slicer#slicerItems:member'
+      - 'excel!Excel.Slicer#slicerStyle:member'
       - 'excel!Excel.Slicer#sortBy:member'
       - 'excel!Excel.Slicer#style:member'
       - 'excel!Excel.Slicer#toJSON:member(1)'
@@ -400,6 +401,21 @@ items:
       return:
         type:
           - 'excel!Excel.SlicerItemCollection:class'
+  - uid: 'excel!Excel.Slicer#slicerStyle:member'
+    summary: |-
+      The style applied to the Slicer.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: slicerStyle
+    fullName: slicerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicerStyle: Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
   - uid: 'excel!Excel.Slicer#sortBy:member'
     summary: >-
       Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
@@ -544,6 +560,8 @@ references:
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SlicerItemCollection:class'
     name: Excel.SlicerItemCollection
+  - uid: 'excel!Excel.SlicerStyle:class'
+    name: Excel.SlicerStyle
   - uid: 'excel!Excel.Slicer#sortBy~0:complex'
     name: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
     fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"

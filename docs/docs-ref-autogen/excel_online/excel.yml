@@ -108,6 +108,7 @@ items:
       - 'excel!Excel.ChartSeries:class'
       - 'excel!Excel.ChartSeriesBy:enum'
       - 'excel!Excel.ChartSeriesCollection:class'
+      - 'excel!Excel.ChartSeriesDimension:enum'
       - 'excel!Excel.ChartSeriesFormat:class'
       - 'excel!Excel.ChartSplitType:enum'
       - 'excel!Excel.ChartTextHorizontalAlignment:enum'
@@ -130,7 +131,12 @@ items:
       - 'excel!Excel.ColumnProperties:interface'
       - 'excel!Excel.ColumnPropertiesLoadOptions:interface'
       - 'excel!Excel.Comment:class'
+      - 'excel!Excel.CommentAddedEventArgs:interface'
+      - 'excel!Excel.CommentChangedEventArgs:interface'
+      - 'excel!Excel.CommentChangeType:enum'
       - 'excel!Excel.CommentCollection:class'
+      - 'excel!Excel.CommentDeletedEventArgs:interface'
+      - 'excel!Excel.CommentDetail:interface'
       - 'excel!Excel.CommentMention:interface'
       - 'excel!Excel.CommentReply:class'
       - 'excel!Excel.CommentReplyCollection:class'
@@ -191,7 +197,9 @@ items:
       - 'excel!Excel.DataValidationPrompt:interface'
       - 'excel!Excel.DataValidationRule:interface'
       - 'excel!Excel.DataValidationType:enum'
+      - 'excel!Excel.DateFilterCondition:enum'
       - 'excel!Excel.DateTimeDataValidation:interface'
+      - 'excel!Excel.DatetimeFormatInfo:class'
       - 'excel!Excel.DeleteShiftDirection:enum'
       - 'excel!Excel.DocumentProperties:class'
       - 'excel!Excel.DocumentPropertyItem:enum'
@@ -454,6 +462,8 @@ items:
       - 'excel!Excel.Interfaces.DataValidationData:interface'
       - 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
       - 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
@@ -549,6 +559,9 @@ items:
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionData:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.RangeAreasData:interface'
       - 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
       - 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
@@ -689,16 +702,25 @@ items:
       - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
       - 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
+      - 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetData:interface'
       - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
       - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
       - 'excel!Excel.IterativeCalculation:class'
+      - 'excel!Excel.LabelFilterCondition:enum'
       - 'excel!Excel.Line:class'
       - 'excel!Excel.LinkedDataTypeState:enum'
       - 'excel!Excel.ListDataValidation:interface'
@@ -707,6 +729,7 @@ items:
       - 'excel!Excel.NamedItemCollection:class'
       - 'excel!Excel.NamedItemScope:enum'
       - 'excel!Excel.NamedItemType:enum'
+      - 'excel!Excel.NumberFormatCategory:enum'
       - 'excel!Excel.NumberFormatInfo:class'
       - 'excel!Excel.PageBreak:class'
       - 'excel!Excel.PageBreakCollection:class'
@@ -717,20 +740,26 @@ items:
       - 'excel!Excel.PaperType:enum'
       - 'excel!Excel.PictureFormat:enum'
       - 'excel!Excel.PivotAxis:enum'
+      - 'excel!Excel.PivotDateFilter:interface'
       - 'excel!Excel.PivotField:class'
       - 'excel!Excel.PivotFieldCollection:class'
+      - 'excel!Excel.PivotFilters:interface'
       - 'excel!Excel.PivotFilterTopBottomCriterion:enum'
+      - 'excel!Excel.PivotFilterType:enum'
       - 'excel!Excel.PivotHierarchy:class'
       - 'excel!Excel.PivotHierarchyCollection:class'
       - 'excel!Excel.PivotItem:class'
       - 'excel!Excel.PivotItemCollection:class'
+      - 'excel!Excel.PivotLabelFilter:interface'
       - 'excel!Excel.PivotLayout:class'
       - 'excel!Excel.PivotLayoutType:enum'
+      - 'excel!Excel.PivotManualFilter:interface'
       - 'excel!Excel.PivotTable:class'
       - 'excel!Excel.PivotTableCollection:class'
       - 'excel!Excel.PivotTableScopedCollection:class'
       - 'excel!Excel.PivotTableStyle:class'
       - 'excel!Excel.PivotTableStyleCollection:class'
+      - 'excel!Excel.PivotValueFilter:interface'
       - 'excel!Excel.Placement:enum'
       - 'excel!Excel.postprocessBindingDescriptor:function(1)'
       - 'excel!Excel.PresetCriteriaConditionalFormat:class'
@@ -741,6 +770,7 @@ items:
       - 'excel!Excel.ProtectionSelectionMode:enum'
       - 'excel!Excel.Range:class'
       - 'excel!Excel.RangeAreas:class'
+      - 'excel!Excel.RangeAreasCollection:class'
       - 'excel!Excel.RangeBorder:class'
       - 'excel!Excel.RangeBorderCollection:class'
       - 'excel!Excel.RangeCollection:class'
@@ -776,7 +806,7 @@ items:
       - 'excel!Excel.SearchCriteria:interface'
       - 'excel!Excel.SearchDirection:enum'
       - 'excel!Excel.SelectionChangedEventArgs:interface'
-      - 'excel!Excel.Session:class'
+      - 'excel!Excel.Session:interface'
       - 'excel!Excel.SettableCellProperties:interface'
       - 'excel!Excel.SettableColumnProperties:interface'
       - 'excel!Excel.SettableRowProperties:interface'
@@ -858,11 +888,14 @@ items:
       - 'excel!Excel.TimelineStyle:class'
       - 'excel!Excel.TimelineStyleCollection:class'
       - 'excel!Excel.TopBottomConditionalFormat:class'
+      - 'excel!Excel.TopBottomSelectionType:enum'
+      - 'excel!Excel.ValueFilterCondition:enum'
       - 'excel!Excel.VerticalAlignment:enum'
       - 'excel!Excel.Workbook:class'
       - 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
       - 'excel!Excel.WorkbookCreated:class'
       - 'excel!Excel.WorkbookProtection:class'
+      - 'excel!Excel.WorkbookRangeAreas:class'
       - 'excel!Excel.Worksheet:class'
       - 'excel!Excel.WorksheetActivatedEventArgs:interface'
       - 'excel!Excel.WorksheetAddedEventArgs:interface'
@@ -870,6 +903,8 @@ items:
       - 'excel!Excel.WorksheetChangedEventArgs:interface'
       - 'excel!Excel.WorksheetCollection:class'
       - 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
+      - 'excel!Excel.WorksheetCustomProperty:class'
+      - 'excel!Excel.WorksheetCustomPropertyCollection:class'
       - 'excel!Excel.WorksheetDeactivatedEventArgs:interface'
       - 'excel!Excel.WorksheetDeletedEventArgs:interface'
       - 'excel!Excel.WorksheetFormatChangedEventArgs:interface'
@@ -1329,6 +1364,8 @@ references:
     name: Excel.ChartSeriesBy
   - uid: 'excel!Excel.ChartSeriesCollection:class'
     name: Excel.ChartSeriesCollection
+  - uid: 'excel!Excel.ChartSeriesDimension:enum'
+    name: Excel.ChartSeriesDimension
   - uid: 'excel!Excel.ChartSeriesFormat:class'
     name: Excel.ChartSeriesFormat
   - uid: 'excel!Excel.ChartSplitType:enum'
@@ -1373,8 +1410,18 @@ references:
     name: Excel.ColumnPropertiesLoadOptions
   - uid: 'excel!Excel.Comment:class'
     name: Excel.Comment
+  - uid: 'excel!Excel.CommentAddedEventArgs:interface'
+    name: Excel.CommentAddedEventArgs
+  - uid: 'excel!Excel.CommentChangedEventArgs:interface'
+    name: Excel.CommentChangedEventArgs
+  - uid: 'excel!Excel.CommentChangeType:enum'
+    name: Excel.CommentChangeType
   - uid: 'excel!Excel.CommentCollection:class'
     name: Excel.CommentCollection
+  - uid: 'excel!Excel.CommentDeletedEventArgs:interface'
+    name: Excel.CommentDeletedEventArgs
+  - uid: 'excel!Excel.CommentDetail:interface'
+    name: Excel.CommentDetail
   - uid: 'excel!Excel.CommentMention:interface'
     name: Excel.CommentMention
   - uid: 'excel!Excel.CommentReply:class'
@@ -1502,8 +1549,12 @@ references:
     name: Excel.DataValidationRule
   - uid: 'excel!Excel.DataValidationType:enum'
     name: Excel.DataValidationType
+  - uid: 'excel!Excel.DateFilterCondition:enum'
+    name: Excel.DateFilterCondition
   - uid: 'excel!Excel.DateTimeDataValidation:interface'
     name: Excel.DateTimeDataValidation
+  - uid: 'excel!Excel.DatetimeFormatInfo:class'
+    name: Excel.DatetimeFormatInfo
   - uid: 'excel!Excel.DeleteShiftDirection:enum'
     name: Excel.DeleteShiftDirection
   - uid: 'excel!Excel.DocumentProperties:class'
@@ -2026,6 +2077,10 @@ references:
     name: Excel.Interfaces.DataValidationLoadOptions
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
     name: Excel.Interfaces.DataValidationUpdateData
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoData
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
     name: Excel.Interfaces.DocumentPropertiesData
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
@@ -2216,6 +2271,12 @@ references:
     name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
     name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionData:interface'
+    name: Excel.Interfaces.RangeAreasCollectionData
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionLoadOptions:interface'
+    name: Excel.Interfaces.RangeAreasCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
+    name: Excel.Interfaces.RangeAreasCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
     name: Excel.Interfaces.RangeAreasData
   - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
@@ -2496,6 +2557,10 @@ references:
     name: Excel.Interfaces.WorkbookProtectionData
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
     name: Excel.Interfaces.WorkbookProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
+    name: Excel.Interfaces.WorkbookRangeAreasData
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
+    name: Excel.Interfaces.WorkbookRangeAreasLoadOptions
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
     name: Excel.Interfaces.WorkbookUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
@@ -2504,6 +2569,18 @@ references:
     name: Excel.Interfaces.WorksheetCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
     name: Excel.Interfaces.WorksheetCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyCollectionData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
     name: Excel.Interfaces.WorksheetData
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
@@ -2516,6 +2593,8 @@ references:
     name: Excel.Interfaces.WorksheetUpdateData
   - uid: 'excel!Excel.IterativeCalculation:class'
     name: Excel.IterativeCalculation
+  - uid: 'excel!Excel.LabelFilterCondition:enum'
+    name: Excel.LabelFilterCondition
   - uid: 'excel!Excel.Line:class'
     name: Excel.Line
   - uid: 'excel!Excel.LinkedDataTypeState:enum'
@@ -2532,6 +2611,8 @@ references:
     name: Excel.NamedItemScope
   - uid: 'excel!Excel.NamedItemType:enum'
     name: Excel.NamedItemType
+  - uid: 'excel!Excel.NumberFormatCategory:enum'
+    name: Excel.NumberFormatCategory
   - uid: 'excel!Excel.NumberFormatInfo:class'
     name: Excel.NumberFormatInfo
   - uid: 'excel!Excel.PageBreak:class'
@@ -2552,12 +2633,18 @@ references:
     name: Excel.PictureFormat
   - uid: 'excel!Excel.PivotAxis:enum'
     name: Excel.PivotAxis
+  - uid: 'excel!Excel.PivotDateFilter:interface'
+    name: Excel.PivotDateFilter
   - uid: 'excel!Excel.PivotField:class'
     name: Excel.PivotField
   - uid: 'excel!Excel.PivotFieldCollection:class'
     name: Excel.PivotFieldCollection
+  - uid: 'excel!Excel.PivotFilters:interface'
+    name: Excel.PivotFilters
   - uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
     name: Excel.PivotFilterTopBottomCriterion
+  - uid: 'excel!Excel.PivotFilterType:enum'
+    name: Excel.PivotFilterType
   - uid: 'excel!Excel.PivotHierarchy:class'
     name: Excel.PivotHierarchy
   - uid: 'excel!Excel.PivotHierarchyCollection:class'
@@ -2566,10 +2653,14 @@ references:
     name: Excel.PivotItem
   - uid: 'excel!Excel.PivotItemCollection:class'
     name: Excel.PivotItemCollection
+  - uid: 'excel!Excel.PivotLabelFilter:interface'
+    name: Excel.PivotLabelFilter
   - uid: 'excel!Excel.PivotLayout:class'
     name: Excel.PivotLayout
   - uid: 'excel!Excel.PivotLayoutType:enum'
     name: Excel.PivotLayoutType
+  - uid: 'excel!Excel.PivotManualFilter:interface'
+    name: Excel.PivotManualFilter
   - uid: 'excel!Excel.PivotTable:class'
     name: Excel.PivotTable
   - uid: 'excel!Excel.PivotTableCollection:class'
@@ -2580,6 +2671,8 @@ references:
     name: Excel.PivotTableStyle
   - uid: 'excel!Excel.PivotTableStyleCollection:class'
     name: Excel.PivotTableStyleCollection
+  - uid: 'excel!Excel.PivotValueFilter:interface'
+    name: Excel.PivotValueFilter
   - uid: 'excel!Excel.Placement:enum'
     name: Excel.Placement
   - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
@@ -2598,6 +2691,8 @@ references:
     name: Excel.Range
   - uid: 'excel!Excel.RangeAreas:class'
     name: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreasCollection:class'
+    name: Excel.RangeAreasCollection
   - uid: 'excel!Excel.RangeBorder:class'
     name: Excel.RangeBorder
   - uid: 'excel!Excel.RangeBorderCollection:class'
@@ -2796,7 +2891,7 @@ references:
     name: Excel.SearchDirection
   - uid: 'excel!Excel.SelectionChangedEventArgs:interface'
     name: Excel.SelectionChangedEventArgs
-  - uid: 'excel!Excel.Session:class'
+  - uid: 'excel!Excel.Session:interface'
     name: Excel.Session
   - uid: 'excel!Excel.SettableCellProperties:interface'
     name: Excel.SettableCellProperties
@@ -2960,6 +3055,10 @@ references:
     name: Excel.TimelineStyleCollection
   - uid: 'excel!Excel.TopBottomConditionalFormat:class'
     name: Excel.TopBottomConditionalFormat
+  - uid: 'excel!Excel.TopBottomSelectionType:enum'
+    name: Excel.TopBottomSelectionType
+  - uid: 'excel!Excel.ValueFilterCondition:enum'
+    name: Excel.ValueFilterCondition
   - uid: 'excel!Excel.VerticalAlignment:enum'
     name: Excel.VerticalAlignment
   - uid: 'excel!Excel.Workbook:class'
@@ -2970,6 +3069,8 @@ references:
     name: Excel.WorkbookCreated
   - uid: 'excel!Excel.WorkbookProtection:class'
     name: Excel.WorkbookProtection
+  - uid: 'excel!Excel.WorkbookRangeAreas:class'
+    name: Excel.WorkbookRangeAreas
   - uid: 'excel!Excel.Worksheet:class'
     name: Excel.Worksheet
   - uid: 'excel!Excel.WorksheetActivatedEventArgs:interface'
@@ -2984,6 +3085,10 @@ references:
     name: Excel.WorksheetCollection
   - uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
     name: Excel.WorksheetColumnSortedEventArgs
+  - uid: 'excel!Excel.WorksheetCustomProperty:class'
+    name: Excel.WorksheetCustomProperty
+  - uid: 'excel!Excel.WorksheetCustomPropertyCollection:class'
+    name: Excel.WorksheetCustomPropertyCollection
   - uid: 'excel!Excel.WorksheetDeactivatedEventArgs:interface'
     name: Excel.WorksheetDeactivatedEventArgs
   - uid: 'excel!Excel.WorksheetDeletedEventArgs:interface'

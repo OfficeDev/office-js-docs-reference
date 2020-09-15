@@ -698,7 +698,7 @@ items:
           - name: SelectionChangedEventArgs
             uid: 'excel!Excel.SelectionChangedEventArgs:interface'
           - name: Session
-            uid: 'excel!Excel.Session:class'
+            uid: 'excel!Excel.Session:interface'
           - name: SettableCellProperties
             uid: 'excel!Excel.SettableCellProperties:interface'
           - name: SettableColumnProperties
