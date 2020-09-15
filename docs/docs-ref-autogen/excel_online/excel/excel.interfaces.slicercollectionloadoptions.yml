@@ -19,6 +19,7 @@ items:
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#isFilterCleared:member'
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#left:member'
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member'
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#sortBy:member'
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#style:member'
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#top:member'
@@ -133,6 +134,21 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member'
+    summary: |-
+      For EACH ITEM in the collection: The style applied to the Slicer.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: slicerStyle
+    fullName: slicerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'slicerStyle?: Excel.Interfaces.SlicerStyleLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.SlicerStyleLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#sortBy:member'
     summary: >-
       For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are:
@@ -219,5 +235,7 @@ items:
         type:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
+  - uid: 'excel!Excel.Interfaces.SlicerStyleLoadOptions:interface'
+    name: Excel.Interfaces.SlicerStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
     name: Excel.Interfaces.WorksheetLoadOptions

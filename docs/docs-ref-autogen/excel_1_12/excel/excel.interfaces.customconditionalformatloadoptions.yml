@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
+    summary: |-
+      Represents a custom conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.CustomConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.CustomConditionalFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#rule:member'
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#format:member'
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#rule:member'
+    summary: |-
+      Specifies the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.Interfaces.ConditionalFormatRuleLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalFormatRuleLoadOptions

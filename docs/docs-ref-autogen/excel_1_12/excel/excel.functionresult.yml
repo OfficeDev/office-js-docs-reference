@@ -1,0 +1,202 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FunctionResult:class'
+    summary: |-
+      An object containing the result of a function-evaluation operation
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.FunctionResult
+    fullName: Excel.FunctionResult
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.FunctionResult#context:member'
+      - 'excel!Excel.FunctionResult#error:member'
+      - 'excel!Excel.FunctionResult#load:member(1)'
+      - 'excel!Excel.FunctionResult#load:member(2)'
+      - 'excel!Excel.FunctionResult#load:member(3)'
+      - 'excel!Excel.FunctionResult#toJSON:member(1)'
+      - 'excel!Excel.FunctionResult#value:member'
+  - uid: 'excel!Excel.FunctionResult#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.FunctionResult#error:member'
+    summary: >-
+      Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
+      succeeded, and its result is written to the Value field. The error is always in the English locale.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: error
+    fullName: error
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly error: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FunctionResult#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;'
+      return:
+        type:
+          - 'excel!Excel.FunctionResult#load~0:complex'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.FunctionResultLoadOptions:interface'
+  - uid: 'excel!Excel.FunctionResult#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): FunctionResult<T>;'
+      return:
+        type:
+          - 'excel!Excel.FunctionResult#load~1:complex'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.FunctionResult#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): FunctionResult<T>;
+      return:
+        type:
+          - 'excel!Excel.FunctionResult#load~2:complex'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.FunctionResult#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original FunctionResult<T> object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Interfaces.FunctionResultData<T>`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Interfaces.FunctionResultData<T>;'
+      return:
+        type:
+          - 'excel!Excel.FunctionResult#toJSON~0:complex'
+        description: ''
+  - uid: 'excel!Excel.FunctionResult#value:member'
+    summary: >-
+      The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
+      property is not set).
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: T;'
+      return:
+        type:
+          - T
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.FunctionResult#load~0:complex'
+    name: FunctionResult<T>
+    fullName: Excel.FunctionResult<T>
+    spec.typeScript:
+      - uid: 'excel!Excel.FunctionResult:class'
+        name: FunctionResult
+        fullName: Excel.FunctionResult
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.Interfaces.FunctionResultLoadOptions:interface'
+    name: Excel.Interfaces.FunctionResultLoadOptions
+  - uid: 'excel!Excel.FunctionResult#load~1:complex'
+    name: FunctionResult<T>
+    fullName: Excel.FunctionResult<T>
+    spec.typeScript:
+      - uid: 'excel!Excel.FunctionResult:class'
+        name: FunctionResult
+        fullName: Excel.FunctionResult
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.FunctionResult#load~2:complex'
+    name: FunctionResult<T>
+    fullName: Excel.FunctionResult<T>
+    spec.typeScript:
+      - uid: 'excel!Excel.FunctionResult:class'
+        name: FunctionResult
+        fullName: Excel.FunctionResult
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.FunctionResult#toJSON~0:complex'
+    name: Interfaces.FunctionResultData<T>
+    fullName: Excel.Interfaces.FunctionResultData<T>
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.FunctionResultData:interface'
+        name: Interfaces.FunctionResultData
+        fullName: Excel.Interfaces.FunctionResultData
+      - name: <T>
+        fullName: <T>

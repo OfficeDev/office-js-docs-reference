@@ -29,6 +29,7 @@ items:
       - 'excel!Excel.PivotLayout#load:member(1)'
       - 'excel!Excel.PivotLayout#load:member(2)'
       - 'excel!Excel.PivotLayout#load:member(3)'
+      - 'excel!Excel.PivotLayout#pivotStyle:member'
       - 'excel!Excel.PivotLayout#preserveFormatting:member'
       - 'excel!Excel.PivotLayout#set:member(1)'
       - 'excel!Excel.PivotLayout#set:member(2)'
@@ -350,6 +351,21 @@ items:
                           select?: string;
                           expand?: string;
                       }
+  - uid: 'excel!Excel.PivotLayout#pivotStyle:member'
+    summary: |-
+      The style applied to the PivotTable.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pivotStyle
+    fullName: pivotStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotStyle: Excel.PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:class'
   - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
     summary: >-
       Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
@@ -613,6 +629,8 @@ references:
     name: Excel.PivotLayout
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
     name: Excel.Interfaces.PivotLayoutLoadOptions
+  - uid: 'excel!Excel.PivotTableStyle:class'
+    name: Excel.PivotTableStyle
   - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
     name: Interfaces.PivotLayoutUpdateData
   - uid: 'office!OfficeExtension.UpdateOptions:interface'

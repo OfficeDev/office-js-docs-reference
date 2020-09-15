@@ -1,0 +1,237 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    summary: |-
+      Represents the filtering criteria applied to a column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.FilterCriteria
+    fullName: Excel.FilterCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FilterCriteria#color:member'
+      - 'excel!Excel.FilterCriteria#criterion1:member'
+      - 'excel!Excel.FilterCriteria#criterion2:member'
+      - 'excel!Excel.FilterCriteria#dynamicCriteria:member'
+      - 'excel!Excel.FilterCriteria#filterOn:member'
+      - 'excel!Excel.FilterCriteria#icon:member'
+      - 'excel!Excel.FilterCriteria#operator:member'
+      - 'excel!Excel.FilterCriteria#subField:member'
+      - 'excel!Excel.FilterCriteria#values:member'
+  - uid: 'excel!Excel.FilterCriteria#color:member'
+    summary: |-
+      The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#criterion1:member'
+    summary: >-
+      The first criterion used to filter data. Used as an operator in the case of "custom" filtering. For example "<!--
+      -->&gt;<!-- -->50" for number greater than 50 or "=*s" for values ending in "s".
+
+
+      Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if filterOn is set to
+      "topItems").
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criterion1
+    fullName: criterion1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion1?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#criterion2:member'
+    summary: |-
+      The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criterion2
+    fullName: criterion2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion2?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#dynamicCriteria:member'
+    summary: >-
+      The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic"
+      filtering.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dynamicCriteria
+    fullName: dynamicCriteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        dynamicCriteria?: Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
+        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
+        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
+        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
+        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
+        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
+        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";
+      return:
+        type:
+          - 'excel!Excel.FilterCriteria#dynamicCriteria~0:complex'
+  - uid: 'excel!Excel.FilterCriteria#filterOn:member'
+    summary: |-
+      The property used by the filter to determine whether the values should stay visible.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: filterOn
+    fullName: filterOn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        filterOn: Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
+        "TopItems" | "TopPercent" | "Icon" | "Custom";
+      return:
+        type:
+          - 'excel!Excel.FilterCriteria#filterOn~0:complex'
+  - uid: 'excel!Excel.FilterCriteria#icon:member'
+    summary: |-
+      The icon used to filter cells. Used with "icon" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: Excel.Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FilterCriteria#operator:member'
+    summary: |-
+      The operator used to combine criterion 1 and 2 when using "custom" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator?: Excel.FilterOperator | "And" | "Or";'
+      return:
+        type:
+          - 'excel!Excel.FilterCriteria#operator~0:complex'
+  - uid: 'excel!Excel.FilterCriteria#subField:member'
+    summary: |-
+      The property used by the filter to do rich filter on richvalues.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subField
+    fullName: subField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FilterCriteria#values:member'
+    summary: |-
+      The set of values to be used as part of "values" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: Array<string | FilterDatetime>;'
+      return:
+        type:
+          - 'excel!Excel.FilterCriteria#values~0:complex'
+references:
+  - uid: 'excel!Excel.FilterCriteria#dynamicCriteria~0:complex'
+    name: >-
+      Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
+      "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
+      "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" |
+      "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" |
+      "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" |
+      "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" |
+      "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
+    fullName: >-
+      Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
+      "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
+      "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" |
+      "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" |
+      "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" |
+      "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" |
+      "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
+    spec.typeScript:
+      - uid: 'excel!Excel.DynamicFilterCriteria:enum'
+        name: Excel.DynamicFilterCriteria
+        fullName: Excel.DynamicFilterCriteria
+      - name: ' | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"'
+        fullName: ' | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"'
+  - uid: 'excel!Excel.FilterCriteria#filterOn~0:complex'
+    name: >-
+      Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" |
+      "TopPercent" | "Icon" | "Custom"
+    fullName: >-
+      Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" |
+      "TopPercent" | "Icon" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.FilterOn:enum'
+        name: Excel.FilterOn
+        fullName: Excel.FilterOn
+      - name: ' | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"'
+        fullName: ' | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"'
+  - uid: 'excel!Excel.Icon:interface'
+    name: Excel.Icon
+  - uid: 'excel!Excel.FilterCriteria#operator~0:complex'
+    name: Excel.FilterOperator | "And" | "Or"
+    fullName: Excel.FilterOperator | "And" | "Or"
+    spec.typeScript:
+      - uid: 'excel!Excel.FilterOperator:enum'
+        name: Excel.FilterOperator
+        fullName: Excel.FilterOperator
+      - name: ' | "And" | "Or"'
+        fullName: ' | "And" | "Or"'
+  - uid: 'excel!Excel.FilterCriteria#values~0:complex'
+    name: Array<string | FilterDatetime>
+    fullName: Array<string | Excel.FilterDatetime>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'excel!Excel.FilterDatetime:interface'
+        name: FilterDatetime
+        fullName: Excel.FilterDatetime
+      - name: '>'
+        fullName: '>'

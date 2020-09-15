@@ -49,7 +49,7 @@ items:
       from -90 to 90 or the integer 180 for vertically-oriented text.
 
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:

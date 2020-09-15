@@ -1013,8 +1013,57 @@
               "members": [
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Auth#getAccessToken:member(1)",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAccessToken(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AuthOptions",
+                      "canonicalReference": "office!Office.AuthOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getAccessToken"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(1)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use Office.auth.getAccessToken instead.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1082,7 +1131,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(2)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1137,7 +1186,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.AuthOptions:interface",
-              "docComment": "/**\n * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessTokenAsync` method.\n */\n",
+              "docComment": "/**\n * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -1225,7 +1274,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AuthOptions#authChallenge:member",
-                  "docComment": "/**\n * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a \"second try\" call of `getAccessTokenAsync` after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used with the `authChallenge` option.\n */\n",
+                  "docComment": "/**\n * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a \"second try\" call of `getAccessToken` after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used with the `authChallenge` option.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31731,7 +31780,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "office!OfficeExtension.EventHandlers#remove:member(1)",
-                  "docComment": "/**\n * Removes the specified function from the event handler list so that it will not be called on subsequent events.\n *\n * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler. More information can be found in {@link https://docs.microsoft.com/office/dev/add-ins/develop/common-coding-issues#removing-event-handlers | Coding guidance for common issues and unexpected platform behaviors}.\n *\n * @param handler - A reference to a function previously provided to the `add` method as an event handler.\n */\n",
+                  "docComment": "/**\n * Removes the specified function from the event handler list so that it will not be called on subsequent events.\n *\n * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler. More information can be found in {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.\n *\n * @param handler - A reference to a function previously provided to the `add` method as an event handler.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

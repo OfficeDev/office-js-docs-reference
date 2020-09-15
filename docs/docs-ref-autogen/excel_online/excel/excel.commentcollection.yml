@@ -26,6 +26,9 @@ items:
       - 'excel!Excel.CommentCollection#load:member(1)'
       - 'excel!Excel.CommentCollection#load:member(2)'
       - 'excel!Excel.CommentCollection#load:member(3)'
+      - 'excel!Excel.CommentCollection#onAdded:member'
+      - 'excel!Excel.CommentCollection#onChanged:member'
+      - 'excel!Excel.CommentCollection#onDeleted:member'
       - 'excel!Excel.CommentCollection#toJSON:member(1)'
   - uid: 'excel!Excel.CommentCollection#add:member(1)'
     summary: >-
@@ -323,6 +326,51 @@ items:
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
             - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.CommentCollection#onAdded:member'
+    summary: |-
+      Occurs when the comments are added.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onAdded
+    fullName: onAdded
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.CommentAddedEventArgs>;'
+      return:
+        type:
+          - 'excel!Excel.CommentCollection#onAdded~0:complex'
+  - uid: 'excel!Excel.CommentCollection#onChanged:member'
+    summary: |-
+      Occurs when comments or replies in a comment collection are changed, including when replies are deleted.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onChanged
+    fullName: onChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.CommentChangedEventArgs>;'
+      return:
+        type:
+          - 'excel!Excel.CommentCollection#onChanged~0:complex'
+  - uid: 'excel!Excel.CommentCollection#onDeleted:member'
+    summary: |-
+      Occurs when comments are deleted in the comment collection.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onDeleted
+    fullName: onDeleted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.CommentDeletedEventArgs>;'
+      return:
+        type:
+          - 'excel!Excel.CommentCollection#onDeleted~0:complex'
   - uid: 'excel!Excel.CommentCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -429,5 +477,47 @@ references:
         fullName: Excel.Interfaces.CollectionLoadOptions
   - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.CommentCollection#onAdded~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.CommentAddedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.CommentAddedEventArgs>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.CommentAddedEventArgs:interface'
+        name: Excel.CommentAddedEventArgs
+        fullName: Excel.CommentAddedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.CommentCollection#onChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.CommentChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.CommentChangedEventArgs>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.CommentChangedEventArgs:interface'
+        name: Excel.CommentChangedEventArgs
+        fullName: Excel.CommentChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.CommentCollection#onDeleted~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.CommentDeletedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.CommentDeletedEventArgs>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.CommentDeletedEventArgs:interface'
+        name: Excel.CommentDeletedEventArgs
+        fullName: Excel.CommentDeletedEventArgs
+      - name: '>'
+        fullName: '>'
   - uid: 'excel!Excel.Interfaces.CommentCollectionData:interface'
     name: Excel.Interfaces.CommentCollectionData

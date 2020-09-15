@@ -64,13 +64,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.CommentReplyData#contentType:member'
-    summary: >-
+    summary: |-
       The content type of the reply.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: contentType
     fullName: contentType
     langs:

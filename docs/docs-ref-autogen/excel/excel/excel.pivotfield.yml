@@ -42,9 +42,7 @@ items:
       invalid or cannot be applied, an exception is thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyFilter(filter)
     fullName: applyFilter(filter)
     langs:
@@ -62,13 +60,10 @@ items:
           type:
             - 'excel!Excel.PivotFilters:interface'
   - uid: 'excel!Excel.PivotField#clearAllFilters:member(1)'
-    summary: >-
+    summary: |-
       Clears all criteria from all of the field's filters. This removes any active filtering on the field.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearAllFilters()
     fullName: clearAllFilters()
     langs:
@@ -81,13 +76,10 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.PivotField#clearFilter:member(1)'
-    summary: >-
+    summary: |-
       Clears all existing criteria from the field's filter of the given type (if one is currently applied).
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearFilter(filterType)
     fullName: clearFilter(filterType)
     langs:
@@ -105,12 +97,10 @@ items:
           type:
             - 'excel!Excel.PivotFilterType:enum'
   - uid: 'excel!Excel.PivotField#clearFilter:member(2)'
-    summary: >-
+    summary: |-
       Clears all existing criteria from the field's filter of the given type (if one is currently applied).
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearFilter(filterTypeString)
     fullName: clearFilter(filterTypeString)
     langs:
@@ -142,13 +132,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.PivotField#getFilters:member(1)'
-    summary: >-
+    summary: |-
       Gets all filters currently applied on the field.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFilters()
     fullName: getFilters()
     langs:
@@ -176,13 +163,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.PivotField#isFiltered:member(1)'
-    summary: >-
+    summary: |-
       Checks if there are any applied filters on the field.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isFiltered(filterType)
     fullName: isFiltered(filterType)
     langs:
@@ -202,12 +186,10 @@ items:
           type:
             - 'excel!Excel.PivotFilterType:enum'
   - uid: 'excel!Excel.PivotField#isFiltered:member(2)'
-    summary: >-
+    summary: |-
       Checks if there are any applied filters on the field.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isFiltered(filterTypeString)
     fullName: isFiltered(filterTypeString)
     langs:

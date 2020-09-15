@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionData:interface'
+    summary: An interface describing the data returned by calling `chartTrendlineCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartTrendlineCollectionData
+    fullName: Excel.Interfaces.ChartTrendlineCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartTrendlineCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.ChartTrendlineData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartTrendlineCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.ChartTrendlineData[]'
+    fullName: 'Excel.Interfaces.ChartTrendlineData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
+        name: Excel.Interfaces.ChartTrendlineData
+        fullName: Excel.Interfaces.ChartTrendlineData
+      - name: '[]'
+        fullName: '[]'

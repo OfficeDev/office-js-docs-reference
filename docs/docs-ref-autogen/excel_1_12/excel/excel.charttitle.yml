@@ -1,0 +1,563 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTitle:class'
+    summary: |-
+      Represents a chart title object of a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTitle
+    fullName: Excel.ChartTitle
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTitle#context:member'
+      - 'excel!Excel.ChartTitle#format:member'
+      - 'excel!Excel.ChartTitle#getSubstring:member(1)'
+      - 'excel!Excel.ChartTitle#height:member'
+      - 'excel!Excel.ChartTitle#horizontalAlignment:member'
+      - 'excel!Excel.ChartTitle#left:member'
+      - 'excel!Excel.ChartTitle#load:member(1)'
+      - 'excel!Excel.ChartTitle#load:member(2)'
+      - 'excel!Excel.ChartTitle#load:member(3)'
+      - 'excel!Excel.ChartTitle#overlay:member'
+      - 'excel!Excel.ChartTitle#position:member'
+      - 'excel!Excel.ChartTitle#set:member(1)'
+      - 'excel!Excel.ChartTitle#set:member(2)'
+      - 'excel!Excel.ChartTitle#setFormula:member(1)'
+      - 'excel!Excel.ChartTitle#showShadow:member'
+      - 'excel!Excel.ChartTitle#text:member'
+      - 'excel!Excel.ChartTitle#textOrientation:member'
+      - 'excel!Excel.ChartTitle#toJSON:member(1)'
+      - 'excel!Excel.ChartTitle#top:member'
+      - 'excel!Excel.ChartTitle#verticalAlignment:member'
+      - 'excel!Excel.ChartTitle#visible:member'
+      - 'excel!Excel.ChartTitle#width:member'
+  - uid: 'excel!Excel.ChartTitle#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTitle#format:member'
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartTitleFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTitleFormat:class'
+  - uid: 'excel!Excel.ChartTitle#getSubstring:member(1)'
+    summary: |-
+      Get the substring of a chart title. Line break '<!-- -->\\<!-- -->n' also counts one character.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length: number): Excel.ChartFormatString;'
+      return:
+        type:
+          - 'excel!Excel.ChartFormatString:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
+
+          await Excel.run(async (context) => {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let chart = sheet.charts.getItemAt(0);
+
+              // Get first seven characters of the title and color them green.
+              chart.title.getSubstring(0, 7).font.color = "Yellow";
+              await context.sync();
+          });
+
+          ```
+      parameters:
+        - id: start
+          description: Start position of substring to be retrieved. Position start with 0.
+          type:
+            - number
+        - id: length
+          description: Length of substring to be retrieved.
+          type:
+            - number
+  - uid: 'excel!Excel.ChartTitle#height:member'
+    summary: |-
+      Returns the height, in points, of the chart title. Null if chart title is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTitle#horizontalAlignment:member'
+    summary: |-
+      Specifies the horizontal alignment for chart title.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - 'excel!Excel.ChartTitle#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.ChartTitle#left:member'
+    summary: >-
+      Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart
+      title is not visible.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTitle#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+  - uid: 'excel!Excel.ChartTitle#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartTitle;'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Get the text of Chart Title from Chart1.
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              
+              var title = chart.title;
+              title.load('text');
+              return ctx.sync().then(function() {
+                      console.log(title.text);
+              }).catch(function(error) {
+                  console.log("Error: " + error);
+                  if (error instanceof OfficeExtension.Error) {
+                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                  }
+              });
+          });
+          ```
+          ```javascript
+          // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              
+              chart.title.text= "My Chart"; 
+              chart.title.visible=true;
+              chart.title.overlay=true;
+              
+              return ctx.sync().then(function() {
+                  console.log("Char Title Changed");
+              }).catch(function(error) {
+                  console.log("Error: " + error);
+                  if (error instanceof OfficeExtension.Error) {
+                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                  }
+              });
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTitle#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartTitle;
+      return:
+        type:
+          - 'excel!Excel.ChartTitle:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartTitle#overlay:member'
+    summary: |-
+      Specifies if the chart title will overlay the chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTitle#position:member'
+    summary: |-
+      Represents the position of chart title. See Excel.ChartTitlePosition for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle#position~0:complex'
+  - uid: 'excel!Excel.ChartTitle#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartTitle): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartTitle#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartTitle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartTitle:class'
+  - uid: 'excel!Excel.ChartTitle#setFormula:member(1)'
+    summary: |-
+      Sets a string value that represents the formula of chart title using A1-style notation.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: A string that represents the formula to set.
+          type:
+            - string
+  - uid: 'excel!Excel.ChartTitle#showShadow:member'
+    summary: |-
+      Represents a boolean value that determines if the chart title has a shadow.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTitle#text:member'
+    summary: |-
+      Specifies the chart's title text.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTitle#textOrientation:member'
+    summary: >-
+      Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from
+      -90 to 90 or the integer 180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const title = sheet.charts.getItemAt(0).title;
+              title.textOrientation = -45;
+
+              await context.sync();
+          });
+
+          ```
+  - uid: 'excel!Excel.ChartTitle#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartTitleData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartTitleData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartTitleData:interface'
+        description: ''
+  - uid: 'excel!Excel.ChartTitle#top:member'
+    summary: >-
+      Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
+      is not visible.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTitle#verticalAlignment:member'
+    summary: |-
+      Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.ChartTitle#visible:member'
+    summary: |-
+      Specifies if the chart title is visibile.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTitle#width:member'
+    summary: |-
+      Specifies the width, in points, of the chart title. Null if chart title is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartTitleFormat:class'
+    name: Excel.ChartTitleFormat
+  - uid: 'excel!Excel.ChartFormatString:class'
+    name: Excel.ChartFormatString
+  - uid: 'excel!Excel.ChartTitle#horizontalAlignment~0:complex'
+    name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+    fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+        name: Excel.ChartTextHorizontalAlignment
+        fullName: Excel.ChartTextHorizontalAlignment
+      - name: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
+        fullName: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
+  - uid: 'excel!Excel.ChartTitle:class'
+    name: Excel.ChartTitle
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+    name: Excel.Interfaces.ChartTitleLoadOptions
+  - uid: 'excel!Excel.ChartTitle#position~0:complex'
+    name: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
+    fullName: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTitlePosition:enum'
+        name: Excel.ChartTitlePosition
+        fullName: Excel.ChartTitlePosition
+      - name: ' | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
+        fullName: ' | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
+  - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
+    name: Interfaces.ChartTitleUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
+    name: Excel.Interfaces.ChartTitleData
+  - uid: 'excel!Excel.ChartTitle#verticalAlignment~0:complex'
+    name: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+    fullName: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+        name: Excel.ChartTextVerticalAlignment
+        fullName: Excel.ChartTextVerticalAlignment
+      - name: ' | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"'
+        fullName: ' | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"'

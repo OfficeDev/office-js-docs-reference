@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+    summary: An interface describing the data returned by calling `worksheetCustomProperty.toJSON()`<!-- -->.
+    name: Excel.Interfaces.WorksheetCustomPropertyData
+    fullName: Excel.Interfaces.WorksheetCustomPropertyData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

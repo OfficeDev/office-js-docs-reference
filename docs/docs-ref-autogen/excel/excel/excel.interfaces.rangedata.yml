@@ -232,9 +232,7 @@ items:
       do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasSpill
     fullName: hasSpill
     langs:
@@ -366,13 +364,10 @@ items:
         type:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeData#numberFormatCategories:member'
-    summary: >-
+    summary: |-
       Represents the category of number format of each cell.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatCategories
     fullName: numberFormatCategories
     langs:
@@ -453,9 +448,7 @@ items:
       saved as an array formula and some would not be.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: savedAsArray
     fullName: savedAsArray
     langs:

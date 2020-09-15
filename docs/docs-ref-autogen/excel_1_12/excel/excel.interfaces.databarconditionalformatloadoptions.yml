@@ -1,0 +1,170 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
+    summary: |-
+      Represents an Excel Conditional Data Bar Type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.DataBarConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.DataBarConditionalFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisColor:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#barDirection:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#lowerBoundRule:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#negativeFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#positiveFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#showDataBarOnly:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#upperBoundRule:member'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisColor:member'
+    summary: >-
+      HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML
+      color (e.g., "orange"). "" (empty string) if no axis is present or set.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axisColor
+    fullName: axisColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axisColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisFormat:member'
+    summary: |-
+      Representation of how the axis is determined for an Excel data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axisFormat
+    fullName: axisFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axisFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#barDirection:member'
+    summary: |-
+      Specifies the direction that the data bar graphic should be based on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: barDirection
+    fullName: barDirection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'barDirection?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#lowerBoundRule:member'
+    summary: >-
+      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. The
+      `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of
+      `x.lowerBoundRule.formula = ...`<!-- -->).
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lowerBoundRule
+    fullName: lowerBoundRule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lowerBoundRule?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#negativeFormat:member'
+    summary: |-
+      Representation of all values to the left of the axis in an Excel data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: negativeFormat
+    fullName: negativeFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#positiveFormat:member'
+    summary: |-
+      Representation of all values to the right of the axis in an Excel data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: positiveFormat
+    fullName: positiveFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#showDataBarOnly:member'
+    summary: |-
+      If true, hides the values from the cells where the data bar is applied.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showDataBarOnly
+    fullName: showDataBarOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showDataBarOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#upperBoundRule:member'
+    summary: >-
+      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. The
+      `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of
+      `x.upperBoundRule.formula = ...`<!-- -->).
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: upperBoundRule
+    fullName: upperBoundRule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'upperBoundRule?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions

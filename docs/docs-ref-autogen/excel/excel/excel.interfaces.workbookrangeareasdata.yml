@@ -18,9 +18,7 @@ items:
       of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addresses
     fullName: addresses
     langs:
@@ -37,9 +35,7 @@ items:
       in one worksheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: areas
     fullName: areas
     langs:
@@ -51,13 +47,10 @@ items:
         type:
           - 'excel!Excel.Interfaces.WorkbookRangeAreasData#areas~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member'
-    summary: >-
-      Returns a collection of ranges that comprises this object.
+    summary: |-
+      Returns ranges that comprise this object in a RangeCollection object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ranges
     fullName: ranges
     langs:

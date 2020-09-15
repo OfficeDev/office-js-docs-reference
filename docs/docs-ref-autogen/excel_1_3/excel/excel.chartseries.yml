@@ -144,7 +144,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
-      Specifies the name of a series in a chart.
+      Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name

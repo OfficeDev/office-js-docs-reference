@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'
+    summary: 'An interface for updating data on the ChartLineFormat object, for use in `chartLineFormat.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.ChartLineFormatUpdateData
+    fullName: Excel.Interfaces.ChartLineFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartLineFormatUpdateData#color:member'
+      - 'excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member'
+      - 'excel!Excel.Interfaces.ChartLineFormatUpdateData#weight:member'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData#color:member'
+    summary: |-
+      HTML color code representing the color of lines in the chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member'
+    summary: |-
+      Represents the line style. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        lineStyle?: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25"
+        | "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData#weight:member'
+    summary: |-
+      Represents weight of the line, in points.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle~0:complex'
+    name: >-
+      Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
+      "Grey75" | "Automatic" | "RoundDot"
+    fullName: >-
+      Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
+      "Grey75" | "Automatic" | "RoundDot"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartLineStyle:enum'
+        name: Excel.ChartLineStyle
+        fullName: Excel.ChartLineStyle
+      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
+        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'

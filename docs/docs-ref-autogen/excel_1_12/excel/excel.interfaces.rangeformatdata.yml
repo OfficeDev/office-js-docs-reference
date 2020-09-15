@@ -1,0 +1,327 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
+    summary: An interface describing the data returned by calling `rangeFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.RangeFormatData
+    fullName: Excel.Interfaces.RangeFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.RangeFormatData#autoIndent:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#borders:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#columnWidth:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#fill:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#font:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#indentLevel:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#protection:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#readingOrder:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#rowHeight:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#shrinkToFit:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#textOrientation:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#useStandardHeight:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#useStandardWidth:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#autoIndent:member'
+    summary: |-
+      Specifies if text is automatically indented when text alignment is set to equal distribution.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#borders:member'
+    summary: |-
+      Collection of border objects that apply to the overall range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders?: Excel.Interfaces.RangeBorderData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatData#borders~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#columnWidth:member'
+    summary: |-
+      Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnWidth
+    fullName: columnWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#fill:member'
+    summary: |-
+      Returns the fill object defined on the overall range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill?: Excel.Interfaces.RangeFillData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFillData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#font:member'
+    summary: |-
+      Returns the font object defined on the overall range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.RangeFontData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFontData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member'
+    summary: |-
+      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#indentLevel:member'
+    summary: |-
+      An integer from 0 to 250 that indicates the indent level.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#protection:member'
+    summary: |-
+      Returns the format protection object for a range.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.FormatProtectionData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.FormatProtectionData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#readingOrder:member'
+    summary: |-
+      The reading order for the range.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatData#readingOrder~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#rowHeight:member'
+    summary: |-
+      The height of all rows in the range. If the row heights are not uniform, null will be returned.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHeight
+    fullName: rowHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHeight?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#shrinkToFit:member'
+    summary: |-
+      Specifies if text automatically shrinks to fit in the available column width.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#textOrientation:member'
+    summary: >-
+      The text orientation of all the cells within the range. The text orientation should be an integer either from -90
+      to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform, then null will be
+      returned.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#useStandardHeight:member'
+    summary: >-
+      Determines if the row height of the Range object equals the standard height of the sheet. Returns True if the row
+      height of the Range object equals the standard height of the sheet. Returns Null if the range contains more than
+      one row and the rows aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useStandardHeight
+    fullName: useStandardHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useStandardHeight?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#useStandardWidth:member'
+    summary: >-
+      Specifies if the column width of the Range object equals the standard width of the sheet. Returns True if the
+      column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
+      than one column and the columns aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useStandardWidth
+    fullName: useStandardWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useStandardWidth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member'
+    summary: |-
+      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
+    summary: >-
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      wrap setting
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wrapText
+    fullName: wrapText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wrapText?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#borders~0:complex'
+    name: 'Excel.Interfaces.RangeBorderData[]'
+    fullName: 'Excel.Interfaces.RangeBorderData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
+        name: Excel.Interfaces.RangeBorderData
+        fullName: Excel.Interfaces.RangeBorderData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
+    name: Excel.Interfaces.RangeFillData
+  - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
+    name: Excel.Interfaces.RangeFontData
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment~0:complex'
+    name: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    fullName: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.HorizontalAlignment:enum'
+        name: Excel.HorizontalAlignment
+        fullName: Excel.HorizontalAlignment
+      - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+        fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+  - uid: 'excel!Excel.Interfaces.FormatProtectionData:interface'
+    name: Excel.Interfaces.FormatProtectionData
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#readingOrder~0:complex'
+    name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ReadingOrder:enum'
+        name: Excel.ReadingOrder
+        fullName: Excel.ReadingOrder
+      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment~0:complex'
+    name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.VerticalAlignment:enum'
+        name: Excel.VerticalAlignment
+        fullName: Excel.VerticalAlignment
+      - name: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
+        fullName: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'

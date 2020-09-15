@@ -539,8 +539,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member'
-    summary: |-
-      For EACH ITEM in the collection: Specifies the name of a series in a chart.
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of a series in a chart. The name's length should not be
+      greater than 255 characters.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name

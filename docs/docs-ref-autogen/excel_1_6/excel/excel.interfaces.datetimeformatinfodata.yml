@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+    summary: An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`<!-- -->.
+    name: Excel.Interfaces.DatetimeFormatInfoData
+    fullName: Excel.Interfaces.DatetimeFormatInfoData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

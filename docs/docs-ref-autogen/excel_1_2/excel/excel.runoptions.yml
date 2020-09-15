@@ -39,7 +39,7 @@ references:
         fullName: OfficeExtension.RunOptions
       - name: <
         fullName: <
-      - uid: 'excel!Excel.Session:class'
+      - uid: 'excel!Excel.Session:interface'
         name: Session
         fullName: Excel.Session
       - name: '> '

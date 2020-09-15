@@ -34,7 +34,8 @@ popd
 pushd tools
 call npm install
 call npm run build
-call node version-remover ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts "ExcelApiOnline 1.1" ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts "ExcelApiOnline 1.1" ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts "ExcelApi 1.12" ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts "ExcelApi 1.11" ..\api-extractor-inputs-excel-release\Excel_1_10\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_10\excel.d.ts "ExcelApi 1.10" ..\api-extractor-inputs-excel-release\Excel_1_9\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_9\excel.d.ts "ExcelApi 1.9" ..\api-extractor-inputs-excel-release\Excel_1_8\excel.d.ts
@@ -64,6 +65,8 @@ call ..\node_modules\.bin\api-extractor run
 cd ..\api-extractor-inputs-excel
 call ..\node_modules\.bin\api-extractor run
 cd ..\api-extractor-inputs-excel-release\excel_online
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\excel_1_12
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\excel_1_11
 call ..\..\node_modules\.bin\api-extractor run
@@ -162,6 +165,7 @@ call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_8 --o
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_9 --output-folder .\yaml\excel_1_9 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_10 --output-folder .\yaml\excel_1_10 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_11 --output-folder .\yaml\excel_1_11 --office 2> nul
+call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_11 --output-folder .\yaml\excel_1_12 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_online --output-folder .\yaml\excel_online --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\onenote --output-folder .\yaml\onenote --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office

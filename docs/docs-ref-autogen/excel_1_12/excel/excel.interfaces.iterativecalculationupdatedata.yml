@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
+    summary: >-
+      An interface for updating data on the IterativeCalculation object, for use in `iterativeCalculation.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.IterativeCalculationUpdateData
+    fullName: Excel.Interfaces.IterativeCalculationUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.IterativeCalculationUpdateData#enabled:member'
+      - 'excel!Excel.Interfaces.IterativeCalculationUpdateData#maxChange:member'
+      - 'excel!Excel.Interfaces.IterativeCalculationUpdateData#maxIteration:member'
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData#enabled:member'
+    summary: |-
+      True if Excel will use iteration to resolve circular references.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData#maxChange:member'
+    summary: |-
+      Specifies the maximum amount of change between each iteration as Excel resolves circular references.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maxChange
+    fullName: maxChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxChange?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData#maxIteration:member'
+    summary: |-
+      Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maxIteration
+    fullName: maxIteration
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxIteration?: number;'
+      return:
+        type:
+          - number

@@ -6,7 +6,7 @@ items:
       PivotTable's top-left corner. They are ordered top to bottom and then left to right.
 
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotTableScopedCollection
     fullName: Excel.PivotTableScopedCollection
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Gets the number of PivotTables in the collection.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount()
     langs:
@@ -62,7 +62,7 @@ items:
       to right, such that top-left table is the first PivotTable in the collection.
 
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFirst()
     fullName: getFirst()
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Gets a PivotTable by name.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem(key)
     langs:
@@ -99,7 +99,7 @@ items:
     summary: |-
       Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject(name)
     langs:

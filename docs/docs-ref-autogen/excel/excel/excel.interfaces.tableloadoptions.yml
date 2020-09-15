@@ -288,13 +288,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableLoadOptions#tableStyle:member'
-    summary: >-
+    summary: |-
       The style applied to the Table.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tableStyle
     fullName: tableStyle
     langs:

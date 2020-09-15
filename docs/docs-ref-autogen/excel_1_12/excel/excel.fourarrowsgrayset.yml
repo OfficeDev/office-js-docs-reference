@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FourArrowsGraySet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FourArrowsGraySet
+    fullName: Excel.FourArrowsGraySet
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FourArrowsGraySet#grayDownArrow:member'
+      - 'excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member'
+      - 'excel!Excel.FourArrowsGraySet#grayUpArrow:member'
+      - 'excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayDownArrow:member'
+    name: grayDownArrow
+    fullName: grayDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member'
+    name: grayDownInclineArrow
+    fullName: grayDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownInclineArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayUpArrow:member'
+    name: grayUpArrow
+    fullName: grayUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member'
+    name: grayUpInclineArrow
+    fullName: grayUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpInclineArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon
