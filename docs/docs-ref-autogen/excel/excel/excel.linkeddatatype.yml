@@ -1,0 +1,375 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.LinkedDataType:class'
+    summary: >-
+      Represents a linked data type. A linked data type is a data type connected to an online data source.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.LinkedDataType
+    fullName: Excel.LinkedDataType
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.LinkedDataType#context:member'
+      - 'excel!Excel.LinkedDataType#dataProvider:member'
+      - 'excel!Excel.LinkedDataType#lastRefreshed:member'
+      - 'excel!Excel.LinkedDataType#load:member(1)'
+      - 'excel!Excel.LinkedDataType#load:member(2)'
+      - 'excel!Excel.LinkedDataType#load:member(3)'
+      - 'excel!Excel.LinkedDataType#name:member'
+      - 'excel!Excel.LinkedDataType#periodicRefreshInterval:member'
+      - 'excel!Excel.LinkedDataType#refreshMode:member'
+      - 'excel!Excel.LinkedDataType#requestRefresh:member(1)'
+      - 'excel!Excel.LinkedDataType#requestSetRefreshMode:member(1)'
+      - 'excel!Excel.LinkedDataType#requestSetRefreshMode:member(2)'
+      - 'excel!Excel.LinkedDataType#serviceId:member'
+      - 'excel!Excel.LinkedDataType#supportedRefreshModes:member'
+      - 'excel!Excel.LinkedDataType#toJSON:member(1)'
+  - uid: 'excel!Excel.LinkedDataType#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    isPreview: true
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.LinkedDataType#dataProvider:member'
+    summary: >-
+      The name of the data provider for the linked data type. This may change when information is retrieved from the
+      service.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dataProvider
+    fullName: dataProvider
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataProvider: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.LinkedDataType#lastRefreshed:member'
+    summary: >-
+      The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
+      Returns `undefined` if the linked data type has not been refreshed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: lastRefreshed
+    fullName: lastRefreshed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lastRefreshed: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.LinkedDataType#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.LinkedDataTypeLoadOptions): Excel.LinkedDataType;'
+      return:
+        type:
+          - 'excel!Excel.LinkedDataType:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.LinkedDataTypeLoadOptions:interface'
+  - uid: 'excel!Excel.LinkedDataType#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.LinkedDataType;'
+      return:
+        type:
+          - 'excel!Excel.LinkedDataType:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.LinkedDataType#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.LinkedDataType;
+      return:
+        type:
+          - 'excel!Excel.LinkedDataType:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.LinkedDataType#name:member'
+    summary: >-
+      The name of the linked data type. This may change when information is retrieved from the service.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.LinkedDataType#periodicRefreshInterval:member'
+    summary: >-
+      The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: periodicRefreshInterval
+    fullName: periodicRefreshInterval
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly periodicRefreshInterval: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.LinkedDataType#refreshMode:member'
+    summary: >-
+      The mechanism by which the data for the linked data type is retrieved.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: refreshMode
+    fullName: refreshMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly refreshMode: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";'
+      return:
+        type:
+          - 'excel!Excel.LinkedDataType#refreshMode~0:complex'
+  - uid: 'excel!Excel.LinkedDataType#requestRefresh:member(1)'
+    summary: >-
+      Makes a request to refresh the linked data type. If the service is busy or otherwise temporarily inaccessible, the
+      request will not be fulfilled.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: requestRefresh()
+    fullName: requestRefresh()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'requestRefresh(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.LinkedDataType#requestSetRefreshMode:member(1)'
+    summary: >-
+      Makes a request to change the refresh mode for this linked data type. If the given refresh mode is not supported
+      by this linked data type the mode is left unchanged. If set to "Periodic", the refresh interval is set to a
+      predetermined value based on the particular linked data type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: requestSetRefreshMode(refreshMode)
+    fullName: requestSetRefreshMode(refreshMode)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'requestSetRefreshMode(refreshMode: Excel.LinkedDataTypeRefreshMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: refreshMode
+          description: The intended mode to which this linked data type is requested to change.
+          type:
+            - 'excel!Excel.LinkedDataTypeRefreshMode:enum'
+  - uid: 'excel!Excel.LinkedDataType#requestSetRefreshMode:member(2)'
+    summary: >-
+      Makes a request to change the refresh mode for this linked data type. If the given refresh mode is not supported
+      by this linked data type the mode is left unchanged. If set to "Periodic", the refresh interval is set to a
+      predetermined value based on the particular linked data type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: requestSetRefreshMode(refreshModeString)
+    fullName: requestSetRefreshMode(refreshModeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'requestSetRefreshMode(refreshModeString: "Unknown" | "Manual" | "OnLoad" | "Periodic"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: refreshModeString
+          description: The intended mode to which this linked data type is requested to change.
+          type:
+            - '"Unknown" | "Manual" | "OnLoad" | "Periodic"'
+  - uid: 'excel!Excel.LinkedDataType#serviceId:member'
+    summary: >-
+      The unique id of the linked data type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: serviceId
+    fullName: serviceId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly serviceId: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.LinkedDataType#supportedRefreshModes:member'
+    summary: >-
+      Returns an array with all the refresh modes supported by the linked data type. The contents of the array may
+      change when information is retrieved from the service.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: supportedRefreshModes
+    fullName: supportedRefreshModes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly supportedRefreshModes: Excel.LinkedDataTypeRefreshMode[];'
+      return:
+        type:
+          - 'excel!Excel.LinkedDataType#supportedRefreshModes~0:complex'
+  - uid: 'excel!Excel.LinkedDataType#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.LinkedDataType object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.LinkedDataTypeData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    isPreview: true
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.LinkedDataTypeData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.LinkedDataTypeData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.LinkedDataType:class'
+    name: Excel.LinkedDataType
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeLoadOptions:interface'
+    name: Excel.Interfaces.LinkedDataTypeLoadOptions
+  - uid: 'excel!Excel.LinkedDataType#refreshMode~0:complex'
+    name: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic"
+    fullName: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic"
+    spec.typeScript:
+      - uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
+        name: Excel.LinkedDataTypeRefreshMode
+        fullName: Excel.LinkedDataTypeRefreshMode
+      - name: ' | "Unknown" | "Manual" | "OnLoad" | "Periodic"'
+        fullName: ' | "Unknown" | "Manual" | "OnLoad" | "Periodic"'
+  - uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
+    name: Excel.LinkedDataTypeRefreshMode
+  - uid: 'excel!Excel.LinkedDataType#supportedRefreshModes~0:complex'
+    name: 'Excel.LinkedDataTypeRefreshMode[]'
+    fullName: 'Excel.LinkedDataTypeRefreshMode[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
+        name: Excel.LinkedDataTypeRefreshMode
+        fullName: Excel.LinkedDataTypeRefreshMode
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeData:interface'
+    name: Excel.Interfaces.LinkedDataTypeData

@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
+    summary: |-
+      Represents ColorScale criteria for conditional formatting.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#criteria:member'
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#threeColorScale:member'
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#criteria:member'
+    summary: |-
+      The criteria of the color scale. Midpoint is optional when using a two point color scale.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#threeColorScale:member'
+    summary: >-
+      If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
+      maximum).
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: threeColorScale
+    fullName: threeColorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeColorScale?: boolean;'
+      return:
+        type:
+          - boolean

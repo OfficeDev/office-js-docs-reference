@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
+    summary: |-
+      WorkbookRangeAreas represents a collection of one or more rectangular ranges in multi worksheet.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorkbookRangeAreasLoadOptions
+    fullName: Excel.Interfaces.WorkbookRangeAreasLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions#addresses:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions#addresses:member'
+    summary: >-
+      Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block
+      of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addresses
+    fullName: addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses?: boolean;'
+      return:
+        type:
+          - boolean

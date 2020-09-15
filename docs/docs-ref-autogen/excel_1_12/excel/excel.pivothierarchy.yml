@@ -1,0 +1,238 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotHierarchy:class'
+    summary: |-
+      Represents the Excel PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotHierarchy
+    fullName: Excel.PivotHierarchy
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.PivotHierarchy#context:member'
+      - 'excel!Excel.PivotHierarchy#fields:member'
+      - 'excel!Excel.PivotHierarchy#id:member'
+      - 'excel!Excel.PivotHierarchy#load:member(1)'
+      - 'excel!Excel.PivotHierarchy#load:member(2)'
+      - 'excel!Excel.PivotHierarchy#load:member(3)'
+      - 'excel!Excel.PivotHierarchy#name:member'
+      - 'excel!Excel.PivotHierarchy#set:member(1)'
+      - 'excel!Excel.PivotHierarchy#set:member(2)'
+      - 'excel!Excel.PivotHierarchy#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotHierarchy#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotHierarchy#fields:member'
+    summary: |-
+      Returns the PivotFields associated with the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fields: Excel.PivotFieldCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotFieldCollection:class'
+  - uid: 'excel!Excel.PivotHierarchy#id:member'
+    summary: |-
+      Id of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotHierarchy#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.PivotHierarchyLoadOptions): Excel.PivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.PivotHierarchyLoadOptions:interface'
+  - uid: 'excel!Excel.PivotHierarchy#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotHierarchy#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PivotHierarchy;
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PivotHierarchy#name:member'
+    summary: |-
+      Name of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotHierarchy#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PivotHierarchy): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.PivotHierarchyUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.PivotHierarchy#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:class'
+  - uid: 'excel!Excel.PivotHierarchy#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PivotHierarchy object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.PivotHierarchyData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotHierarchyData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PivotFieldCollection:class'
+    name: Excel.PivotFieldCollection
+  - uid: 'excel!Excel.PivotHierarchy:class'
+    name: Excel.PivotHierarchy
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyLoadOptions:interface'
+    name: Excel.Interfaces.PivotHierarchyLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyUpdateData:interface'
+    name: Interfaces.PivotHierarchyUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
+    name: Excel.Interfaces.PivotHierarchyData

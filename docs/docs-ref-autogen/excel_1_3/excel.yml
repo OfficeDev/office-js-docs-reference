@@ -248,6 +248,7 @@ items:
       - 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface'
       - 'excel!Excel.Interfaces.DataValidationData:interface'
       - 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
       - 'excel!Excel.Interfaces.FilterData:interface'
@@ -316,6 +317,8 @@ items:
       - 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionData:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.RangeAreasData:interface'
       - 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
       - 'excel!Excel.Interfaces.RangeBorderCollectionData:interface'
@@ -424,10 +427,15 @@ items:
       - 'excel!Excel.Interfaces.WorkbookData:interface'
       - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
+      - 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
       - 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetData:interface'
       - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
@@ -459,7 +467,7 @@ items:
       - 'excel!Excel.run:function(5)'
       - 'excel!Excel.RunOptions:interface'
       - 'excel!Excel.SelectionChangedEventArgs:interface'
-      - 'excel!Excel.Session:class'
+      - 'excel!Excel.Session:interface'
       - 'excel!Excel.SheetVisibility:enum'
       - 'excel!Excel.SortDataOption:enum'
       - 'excel!Excel.SortField:interface'
@@ -1174,6 +1182,8 @@ references:
     name: Excel.Interfaces.DataValidationData
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
     name: Excel.Interfaces.DataValidationUpdateData
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoData
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
     name: Excel.Interfaces.DocumentPropertiesData
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
@@ -1310,6 +1320,10 @@ references:
     name: Excel.Interfaces.PresetCriteriaConditionalFormatData
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
     name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionData:interface'
+    name: Excel.Interfaces.RangeAreasCollectionData
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
+    name: Excel.Interfaces.RangeAreasCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
     name: Excel.Interfaces.RangeAreasData
   - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
@@ -1526,6 +1540,8 @@ references:
     name: Excel.Interfaces.WorkbookLoadOptions
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
     name: Excel.Interfaces.WorkbookProtectionData
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
+    name: Excel.Interfaces.WorkbookRangeAreasData
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
     name: Excel.Interfaces.WorkbookUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
@@ -1534,6 +1550,14 @@ references:
     name: Excel.Interfaces.WorksheetCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
     name: Excel.Interfaces.WorksheetCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyCollectionData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyData
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
     name: Excel.Interfaces.WorksheetData
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
@@ -1722,7 +1746,7 @@ references:
         fullName: <T>
   - uid: 'excel!Excel.SelectionChangedEventArgs:interface'
     name: Excel.SelectionChangedEventArgs
-  - uid: 'excel!Excel.Session:class'
+  - uid: 'excel!Excel.Session:interface'
     name: Excel.Session
   - uid: 'excel!Excel.SheetVisibility:enum'
     name: Excel.SheetVisibility

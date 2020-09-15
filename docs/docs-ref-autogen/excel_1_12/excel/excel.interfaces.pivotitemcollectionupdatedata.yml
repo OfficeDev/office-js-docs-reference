@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotItemCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the PivotItemCollection object, for use in `pivotItemCollection.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.PivotItemCollectionUpdateData
+    fullName: Excel.Interfaces.PivotItemCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PivotItemCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.PivotItemCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotItemData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotItemCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotItemCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.PivotItemData[]'
+    fullName: 'Excel.Interfaces.PivotItemData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotItemData:interface'
+        name: Excel.Interfaces.PivotItemData
+        fullName: Excel.Interfaces.PivotItemData
+      - name: '[]'
+        fullName: '[]'

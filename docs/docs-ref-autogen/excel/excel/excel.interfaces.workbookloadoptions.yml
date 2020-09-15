@@ -22,6 +22,7 @@ items:
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#calculationEngineVersion:member'
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#chartDataPointTrack:member'
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#isDirty:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#linkedDataTypes:member'
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#previouslySaved:member'
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#properties:member'
@@ -139,6 +140,24 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#linkedDataTypes:member'
+    summary: >-
+      Returns a collection of linked data types that are part of the workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: linkedDataTypes
+    fullName: linkedDataTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkedDataTypes?: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     summary: |-
       Gets the workbook name.
@@ -287,6 +306,8 @@ references:
     name: Excel.Interfaces.ApplicationLoadOptions
   - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
     name: Excel.Interfaces.BindingCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface'
+    name: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
     name: Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'

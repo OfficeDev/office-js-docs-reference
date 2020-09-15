@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
+    summary: An interface describing the data returned by calling `workbookRangeAreas.toJSON()`<!-- -->.
+    name: Excel.Interfaces.WorkbookRangeAreasData
+    fullName: Excel.Interfaces.WorkbookRangeAreasData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

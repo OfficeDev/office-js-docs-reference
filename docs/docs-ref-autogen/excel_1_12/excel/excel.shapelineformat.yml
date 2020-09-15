@@ -1,0 +1,322 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeLineFormat:class'
+    summary: >-
+      Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents
+      the border of the shape.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeLineFormat
+    fullName: Excel.ShapeLineFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeLineFormat#color:member'
+      - 'excel!Excel.ShapeLineFormat#context:member'
+      - 'excel!Excel.ShapeLineFormat#dashStyle:member'
+      - 'excel!Excel.ShapeLineFormat#load:member(1)'
+      - 'excel!Excel.ShapeLineFormat#load:member(2)'
+      - 'excel!Excel.ShapeLineFormat#load:member(3)'
+      - 'excel!Excel.ShapeLineFormat#set:member(1)'
+      - 'excel!Excel.ShapeLineFormat#set:member(2)'
+      - 'excel!Excel.ShapeLineFormat#style:member'
+      - 'excel!Excel.ShapeLineFormat#toJSON:member(1)'
+      - 'excel!Excel.ShapeLineFormat#transparency:member'
+      - 'excel!Excel.ShapeLineFormat#visible:member'
+      - 'excel!Excel.ShapeLineFormat#weight:member'
+  - uid: 'excel!Excel.ShapeLineFormat#color:member'
+    summary: >-
+      Represents the line color in HTML color format, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
+      (e.g., "orange").
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ShapeLineFormat#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ShapeLineFormat#dashStyle:member'
+    summary: >-
+      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent dash
+      styles. See Excel.ShapeLineStyle for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dashStyle
+    fullName: dashStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        dashStyle: Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" |
+        "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
+      return:
+        type:
+          - 'excel!Excel.ShapeLineFormat#dashStyle~0:complex'
+  - uid: 'excel!Excel.ShapeLineFormat#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ShapeLineFormatLoadOptions): Excel.ShapeLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ShapeLineFormat:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ShapeLineFormat#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ShapeLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ShapeLineFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ShapeLineFormat#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ShapeLineFormat;
+      return:
+        type:
+          - 'excel!Excel.ShapeLineFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ShapeLineFormat#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ShapeLineFormat): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ShapeLineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ShapeLineFormat#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ShapeLineFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ShapeLineFormat:class'
+  - uid: 'excel!Excel.ShapeLineFormat#style:member'
+    summary: >-
+      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent
+      styles. See Excel.ShapeLineStyle for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";'
+      return:
+        type:
+          - 'excel!Excel.ShapeLineFormat#style~0:complex'
+  - uid: 'excel!Excel.ShapeLineFormat#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ShapeLineFormat object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ShapeLineFormatData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ShapeLineFormatData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ShapeLineFormatData:interface'
+        description: ''
+  - uid: 'excel!Excel.ShapeLineFormat#transparency:member'
+    summary: >-
+      Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear).
+      Returns null when the shape has inconsistent transparencies.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: transparency
+    fullName: transparency
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ShapeLineFormat#visible:member'
+    summary: >-
+      Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent
+      visibilities.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ShapeLineFormat#weight:member'
+    summary: >-
+      Represents the weight of the line, in points. Returns null when the line is not visible or there are inconsistent
+      line weights.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ShapeLineFormat#dashStyle~0:complex'
+    name: >-
+      Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" |
+      "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot"
+    fullName: >-
+      Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" |
+      "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeLineDashStyle:enum'
+        name: Excel.ShapeLineDashStyle
+        fullName: Excel.ShapeLineDashStyle
+      - name: ' | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot"'
+        fullName: ' | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot"'
+  - uid: 'excel!Excel.ShapeLineFormat:class'
+    name: Excel.ShapeLineFormat
+  - uid: 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
+    name: Excel.Interfaces.ShapeLineFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
+    name: Interfaces.ShapeLineFormatUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.ShapeLineFormat#style~0:complex'
+    name: Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"
+    fullName: Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeLineStyle:enum'
+        name: Excel.ShapeLineStyle
+        fullName: Excel.ShapeLineStyle
+      - name: ' | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"'
+        fullName: ' | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"'
+  - uid: 'excel!Excel.Interfaces.ShapeLineFormatData:interface'
+    name: Excel.Interfaces.ShapeLineFormatData

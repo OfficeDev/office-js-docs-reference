@@ -75,7 +75,7 @@ references:
     spec.typeScript:
       - name: 'string | '
         fullName: 'string | '
-      - uid: 'excel!Excel.Session:class'
+      - uid: 'excel!Excel.Session:interface'
         name: Session
         fullName: Excel.Session
   - uid: 'excel!Excel.Application:class'

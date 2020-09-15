@@ -3,7 +3,7 @@ items:
   - uid: 'office!Office.AuthOptions:interface'
     summary: >-
       Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with
-      the `getAccessTokenAsync` method.
+      the `getAccessToken` method.
     name: Office.AuthOptions
     fullName: Office.AuthOptions
     langs:
@@ -70,9 +70,9 @@ items:
       Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft
       Graph requires multifactor authentication. The string value identifies the type of additional factor that is
       required. In most cases, you won't know at development time whether the user's tenant requires an additional
-      factor or what the string should be. So this option would be used in a "second try" call of `getAccessTokenAsync`
-      after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be
-      used with the `authChallenge` option.
+      factor or what the string should be. So this option would be used in a "second try" call of `getAccessToken` after
+      Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used
+      with the `authChallenge` option.
     name: authChallenge
     fullName: authChallenge
     langs:

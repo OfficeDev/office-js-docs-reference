@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions:interface'
+    summary: |-
+      Represents the legendEntry in legendEntryCollection.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLegendEntryLoadOptions
+    fullName: Excel.Interfaces.ChartLegendEntryLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#index:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#visible:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#height:member'
+    summary: |-
+      Specifies the height of the legendEntry on the chart legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#index:member'
+    summary: |-
+      Specifies the index of the legendEntry in the chart legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#left:member'
+    summary: |-
+      Specifies the left of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#top:member'
+    summary: |-
+      Specifies the top of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#visible:member'
+    summary: |-
+      Represents the visible of a chart legend entry.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#width:member'
+    summary: |-
+      Represents the width of the legendEntry on the chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean

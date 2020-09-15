@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
+    summary: |-
+      Represents a Color Scale Criterion which contains a type, value, and a color.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalColorScaleCriterion
+    fullName: Excel.ConditionalColorScaleCriterion
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalColorScaleCriterion#color:member'
+      - 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
+      - 'excel!Excel.ConditionalColorScaleCriterion#type:member'
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#color:member'
+    summary: |-
+      HTML color code representation of the color scale color (e.g., \#FF0000 represents Red).
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
+    summary: |-
+      A number, a formula, or null (if Type is LowestValue).
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#type:member'
+    summary: |-
+      What the criterion conditional formula should be based on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        type: Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" |
+        "Percent" | "Formula" | "Percentile";
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriterion#type~0:complex'
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#type~0:complex'
+    name: >-
+      Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" |
+      "Formula" | "Percentile"
+    fullName: >-
+      Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" |
+      "Formula" | "Percentile"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
+        name: Excel.ConditionalFormatColorCriterionType
+        fullName: Excel.ConditionalFormatColorCriterionType
+      - name: ' | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"'
+        fullName: ' | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"'

@@ -340,9 +340,7 @@ items:
       depending on the dimension specified and how the data is mapped for the chart series.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDimensionValues(dimension)
     fullName: getDimensionValues(dimension)
     langs:
@@ -365,8 +363,7 @@ items:
       depending on the dimension specified and how the data is mapped for the chart series.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDimensionValues(dimensionString)
     fullName: getDimensionValues(dimensionString)
     langs:
@@ -374,7 +371,7 @@ items:
     type: method
     syntax:
       content: >-
-        getDimensionValues(dimensionString: "Categories" | "Values" | "XValues" | "YValues"):
+        getDimensionValues(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"):
         OfficeExtension.ClientResult<string[]>;
       return:
         type:
@@ -384,7 +381,7 @@ items:
         - id: dimensionString
           description: the dimension of axis where the data from
           type:
-            - '"Categories" | "Values" | "XValues" | "YValues"'
+            - '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
   - uid: 'excel!Excel.ChartSeries#gradientMaximumColor:member'
     summary: |-
       Specifies the color for maximum value of a region map chart series.
@@ -908,7 +905,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
-      Specifies the name of a series in a chart.
+      Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name

@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+    summary: 'An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.NamedItemUpdateData
+    fullName: Excel.Interfaces.NamedItemUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.NamedItemUpdateData#comment:member'
+      - 'excel!Excel.Interfaces.NamedItemUpdateData#formula:member'
+      - 'excel!Excel.Interfaces.NamedItemUpdateData#visible:member'
+  - uid: 'excel!Excel.Interfaces.NamedItemUpdateData#comment:member'
+    summary: |-
+      Specifies the comment associated with this name.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comment
+    fullName: comment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comment?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.NamedItemUpdateData#formula:member'
+    summary: |-
+      The formula of the named item. Formula always starts with a '=' sign.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.Interfaces.NamedItemUpdateData#visible:member'
+    summary: |-
+      Specifies if the object is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

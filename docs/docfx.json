@@ -20,6 +20,7 @@
           "excel_1_9/**",
           "excel_1_10/**",
           "excel_1_11/**",
+          "excel_1_12/**",
           "excel_online/**",
           "office/**",
           "onenote/**",
@@ -93,6 +94,8 @@
           "excel_1_10.yml",
           "excel_1_11/**",
           "excel_1_11.yml",
+          "excel_1_12/**",
+          "excel_1_12.yml",
           "excel_online/**",
           "excel_online.yml",
           "office/**",
@@ -1093,6 +1096,49 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
+
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.12",
+      "src": "docs-ref-autogen/excel_1_12",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.12",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_1_12.yml"
+      ],
+      "group": "excel-js-1.12",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.12",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "excel-js-1.12",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
     
     {
       "files": [
@@ -1550,6 +1596,10 @@
         "dest": "excel-js-1.11",
         "moniker_range": "excel-js-1.11"
       },
+      "excel-js-1.12": {
+        "dest": "excel-js-1.12",
+        "moniker_range": "excel-js-1.12"
+      },
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
@@ -1697,6 +1747,12 @@
         "docs-ref-autogen/excel_1_11/excel/**": [
           "excel 1.11"
         ],
+        "docs-ref-autogen/excel_1_12/**": [
+          "excel 1.12"
+        ],
+        "docs-ref-autogen/excel_1_12/excel/**": [
+          "excel 1.12"
+        ],
         "docs-ref-autogen/excel_online/**": [
           "excel online"
         ],
@@ -1835,6 +1891,7 @@
         "docs-ref-autogen/excel_1_9/excel/**": "excel",
         "docs-ref-autogen/excel_1_10/excel/**": "excel",
         "docs-ref-autogen/excel_1_11/excel/**": "excel",
+        "docs-ref-autogen/excel_1_12/excel/**": "excel",
         "docs-ref-autogen/excel_online/excel/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office/office/**": "non-product-specific",

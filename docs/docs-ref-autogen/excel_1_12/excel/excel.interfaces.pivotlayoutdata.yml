@@ -1,0 +1,148 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData:interface'
+    summary: An interface describing the data returned by calling `pivotLayout.toJSON()`<!-- -->.
+    name: Excel.Interfaces.PivotLayoutData
+    fullName: Excel.Interfaces.PivotLayoutData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PivotLayoutData#autoFormat:member'
+      - 'excel!Excel.Interfaces.PivotLayoutData#enableFieldList:member'
+      - 'excel!Excel.Interfaces.PivotLayoutData#layoutType:member'
+      - 'excel!Excel.Interfaces.PivotLayoutData#preserveFormatting:member'
+      - 'excel!Excel.Interfaces.PivotLayoutData#showColumnGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutData#showRowGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutData#subtotalLocation:member'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#autoFormat:member'
+    summary: |-
+      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFormat
+    fullName: autoFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#enableFieldList:member'
+    summary: |-
+      Specifies if the field list can be shown in the UI.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableFieldList
+    fullName: enableFieldList
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableFieldList?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#layoutType:member'
+    summary: >-
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotLayoutData#layoutType~0:complex'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#preserveFormatting:member'
+    summary: >-
+      Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
+      sorting, or changing page field items.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: preserveFormatting
+    fullName: preserveFormatting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preserveFormatting?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#showColumnGrandTotals:member'
+    summary: |-
+      Specifies if the PivotTable report shows grand totals for columns.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showColumnGrandTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#showRowGrandTotals:member'
+    summary: |-
+      Specifies if the PivotTable report shows grand totals for rows.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRowGrandTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#subtotalLocation:member'
+    summary: >-
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotLayoutData#subtotalLocation~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#layoutType~0:complex'
+    name: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    fullName: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotLayoutType:enum'
+        name: Excel.PivotLayoutType
+        fullName: Excel.PivotLayoutType
+      - name: ' | "Compact" | "Tabular" | "Outline"'
+        fullName: ' | "Compact" | "Tabular" | "Outline"'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#subtotalLocation~0:complex'
+    name: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    fullName: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    spec.typeScript:
+      - uid: 'excel!Excel.SubtotalLocationType:enum'
+        name: Excel.SubtotalLocationType
+        fullName: Excel.SubtotalLocationType
+      - name: ' | "AtTop" | "AtBottom" | "Off"'
+        fullName: ' | "AtTop" | "AtBottom" | "Off"'

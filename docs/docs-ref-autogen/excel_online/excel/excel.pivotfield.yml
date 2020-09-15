@@ -14,8 +14,15 @@ items:
       - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
+      - 'excel!Excel.PivotField#applyFilter:member(1)'
+      - 'excel!Excel.PivotField#clearAllFilters:member(1)'
+      - 'excel!Excel.PivotField#clearFilter:member(1)'
+      - 'excel!Excel.PivotField#clearFilter:member(2)'
       - 'excel!Excel.PivotField#context:member'
+      - 'excel!Excel.PivotField#getFilters:member(1)'
       - 'excel!Excel.PivotField#id:member'
+      - 'excel!Excel.PivotField#isFiltered:member(1)'
+      - 'excel!Excel.PivotField#isFiltered:member(2)'
       - 'excel!Excel.PivotField#items:member'
       - 'excel!Excel.PivotField#load:member(1)'
       - 'excel!Excel.PivotField#load:member(2)'
@@ -29,6 +36,87 @@ items:
       - 'excel!Excel.PivotField#sortByValues:member(2)'
       - 'excel!Excel.PivotField#subtotals:member'
       - 'excel!Excel.PivotField#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotField#applyFilter:member(1)'
+    summary: >-
+      Sets one or more of the field's current PivotFilters and applies them to the field. If the provided filters are
+      invalid or cannot be applied, an exception is thrown.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyFilter(filter)
+    fullName: applyFilter(filter)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyFilter(filter: Excel.PivotFilters): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filter
+          description: A configured specific PivotFilter or a PivotFilters interface containing multiple configured filters.
+          type:
+            - 'excel!Excel.PivotFilters:interface'
+  - uid: 'excel!Excel.PivotField#clearAllFilters:member(1)'
+    summary: |-
+      Clears all criteria from all of the field's filters. This removes any active filtering on the field.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clearAllFilters()
+    fullName: clearAllFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAllFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PivotField#clearFilter:member(1)'
+    summary: |-
+      Clears all existing criteria from the field's filter of the given type (if one is currently applied).
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clearFilter(filterType)
+    fullName: clearFilter(filterType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilter(filterType: Excel.PivotFilterType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filterType
+          description: The type of filter on the field of which to clear all criteria.
+          type:
+            - 'excel!Excel.PivotFilterType:enum'
+  - uid: 'excel!Excel.PivotField#clearFilter:member(2)'
+    summary: |-
+      Clears all existing criteria from the field's filter of the given type (if one is currently applied).
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clearFilter(filterTypeString)
+    fullName: clearFilter(filterTypeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilter(filterTypeString: "Unknown" | "Value" | "Manual" | "Label" | "Date"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filterTypeString
+          description: The type of filter on the field of which to clear all criteria.
+          type:
+            - '"Unknown" | "Value" | "Manual" | "Label" | "Date"'
   - uid: 'excel!Excel.PivotField#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -43,6 +131,22 @@ items:
       return:
         type:
           - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotField#getFilters:member(1)'
+    summary: |-
+      Gets all filters currently applied on the field.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getFilters()
+    fullName: getFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilters(): OfficeExtension.ClientResult<Excel.PivotFilters>;'
+      return:
+        type:
+          - 'excel!Excel.PivotField#getFilters~0:complex'
+        description: A PivotFilters interface with all active filters.
   - uid: 'excel!Excel.PivotField#id:member'
     summary: |-
       Id of the PivotField.
@@ -58,6 +162,54 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.PivotField#isFiltered:member(1)'
+    summary: |-
+      Checks if there are any applied filters on the field.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isFiltered(filterType)
+    fullName: isFiltered(filterType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'isFiltered(filterType?: Excel.PivotFilterType): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type:
+          - 'excel!Excel.PivotField#isFiltered~0:complex'
+        description: >-
+          True if the field has a filter of type `filterType` applied. If filterType is not specified, true is returned
+          if the field has any applied filters.
+      parameters:
+        - id: filterType
+          description: 'The filter type to check. If no type is provided, this method will check if any filter is applied.'
+          type:
+            - 'excel!Excel.PivotFilterType:enum'
+  - uid: 'excel!Excel.PivotField#isFiltered:member(2)'
+    summary: |-
+      Checks if there are any applied filters on the field.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isFiltered(filterTypeString)
+    fullName: isFiltered(filterTypeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        isFiltered(filterTypeString?: "Unknown" | "Value" | "Manual" | "Label" | "Date"):
+        OfficeExtension.ClientResult<boolean>;
+      return:
+        type:
+          - 'excel!Excel.PivotField#isFiltered~1:complex'
+        description: >-
+          True if the field has a filter of type `filterType` applied. If filterType is not specified, true is returned
+          if the field has any applied filters.
+      parameters:
+        - id: filterTypeString
+          description: 'The filter type to check. If no type is provided, this method will check if any filter is applied.'
+          type:
+            - '"Unknown" | "Value" | "Manual" | "Label" | "Date"'
   - uid: 'excel!Excel.PivotField#items:member'
     summary: |-
       Returns the PivotFields associated with the PivotField.
@@ -354,8 +506,44 @@ items:
 references:
   - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.PivotFilters:interface'
+    name: Excel.PivotFilters
+  - uid: 'excel!Excel.PivotFilterType:enum'
+    name: Excel.PivotFilterType
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+  - uid: 'excel!Excel.PivotField#getFilters~0:complex'
+    name: OfficeExtension.ClientResult<Excel.PivotFilters>
+    fullName: OfficeExtension.ClientResult<Excel.PivotFilters>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotFilters:interface'
+        name: Excel.PivotFilters
+        fullName: Excel.PivotFilters
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.PivotField#isFiltered~0:complex'
+    name: OfficeExtension.ClientResult<boolean>
+    fullName: OfficeExtension.ClientResult<boolean>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <boolean>
+        fullName: <boolean>
+  - uid: 'excel!Excel.PivotField#isFiltered~1:complex'
+    name: OfficeExtension.ClientResult<boolean>
+    fullName: OfficeExtension.ClientResult<boolean>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <boolean>
+        fullName: <boolean>
   - uid: 'excel!Excel.PivotItemCollection:class'
     name: Excel.PivotItemCollection
   - uid: 'excel!Excel.PivotField:class'

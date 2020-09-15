@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarDirection:enum'
+    summary: |-
+      Represents the Data Bar direction within a cell.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalDataBarDirection
+    fullName: Excel.ConditionalDataBarDirection
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalDataBarDirection.context:member'
+      - 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
+      - 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
+  - uid: 'excel!Excel.ConditionalDataBarDirection.context:member'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Context"'
+  - uid: 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
+    name: leftToRight
+    fullName: leftToRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftToRight"'
+  - uid: 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
+    name: rightToLeft
+    fullName: rightToLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightToLeft"'

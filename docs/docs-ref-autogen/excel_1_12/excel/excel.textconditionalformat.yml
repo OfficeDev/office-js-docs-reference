@@ -1,0 +1,270 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TextConditionalFormat:class'
+    summary: |-
+      Represents a specific text conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.TextConditionalFormat
+    fullName: Excel.TextConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.TextConditionalFormat#context:member'
+      - 'excel!Excel.TextConditionalFormat#format:member'
+      - 'excel!Excel.TextConditionalFormat#load:member(1)'
+      - 'excel!Excel.TextConditionalFormat#load:member(2)'
+      - 'excel!Excel.TextConditionalFormat#load:member(3)'
+      - 'excel!Excel.TextConditionalFormat#rule:member'
+      - 'excel!Excel.TextConditionalFormat#set:member(1)'
+      - 'excel!Excel.TextConditionalFormat#set:member(2)'
+      - 'excel!Excel.TextConditionalFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.TextConditionalFormat#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TextConditionalFormat#format:member'
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B16:D18");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+              await context.sync();
+          });
+
+          ```
+  - uid: 'excel!Excel.TextConditionalFormat#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TextConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
+  - uid: 'excel!Excel.TextConditionalFormat#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TextConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TextConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TextConditionalFormat#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.TextConditionalFormat;
+      return:
+        type:
+          - 'excel!Excel.TextConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.TextConditionalFormat#rule:member'
+    summary: |-
+      The rule of the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: Excel.ConditionalTextComparisonRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalTextComparisonRule:interface'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B16:D18");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+              await context.sync();
+          });
+
+          ```
+  - uid: 'excel!Excel.TextConditionalFormat#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.TextConditionalFormat): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.TextConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.TextConditionalFormat#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.TextConditionalFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.TextConditionalFormat:class'
+  - uid: 'excel!Excel.TextConditionalFormat#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.TextConditionalFormat object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.TextConditionalFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TextConditionalFormatData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ConditionalRangeFormat:class'
+    name: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.TextConditionalFormat:class'
+    name: Excel.TextConditionalFormat
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
+    name: Excel.Interfaces.TextConditionalFormatLoadOptions
+  - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
+    name: Excel.ConditionalTextComparisonRule
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
+    name: Interfaces.TextConditionalFormatUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
+    name: Excel.Interfaces.TextConditionalFormatData

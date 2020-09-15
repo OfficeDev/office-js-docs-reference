@@ -195,7 +195,7 @@ items:
                       }
   - uid: 'excel!Excel.RangeFont#name:member'
     summary: |-
-      Font name (e.g., "Calibri")
+      Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name

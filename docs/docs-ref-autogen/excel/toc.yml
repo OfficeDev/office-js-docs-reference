@@ -222,6 +222,8 @@ items:
                 uid: 'excel!Excel.InsertShiftDirection:enum'
               - name: LabelFilterCondition
                 uid: 'excel!Excel.LabelFilterCondition:enum'
+              - name: LinkedDataTypeRefreshMode
+                uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
               - name: LinkedDataTypeState
                 uid: 'excel!Excel.LinkedDataTypeState:enum'
               - name: NamedItemScope
@@ -647,6 +649,12 @@ items:
             uid: 'excel!Excel.IterativeCalculation:class'
           - name: Line
             uid: 'excel!Excel.Line:class'
+          - name: LinkedDataType
+            uid: 'excel!Excel.LinkedDataType:class'
+          - name: LinkedDataTypeAddedEventArgs
+            uid: 'excel!Excel.LinkedDataTypeAddedEventArgs:interface'
+          - name: LinkedDataTypeCollection
+            uid: 'excel!Excel.LinkedDataTypeCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
           - name: NamedItem
@@ -735,6 +743,10 @@ items:
             uid: 'excel!Excel.RangeView:class'
           - name: RangeViewCollection
             uid: 'excel!Excel.RangeViewCollection:class'
+          - name: RefreshModeChangedEventArgs
+            uid: 'excel!Excel.RefreshModeChangedEventArgs:interface'
+          - name: RefreshRequestCompletedEventArgs
+            uid: 'excel!Excel.RefreshRequestCompletedEventArgs:interface'
           - name: RemoveDuplicatesResult
             uid: 'excel!Excel.RemoveDuplicatesResult:class'
           - name: ReplaceCriteria
@@ -758,7 +770,7 @@ items:
           - name: SelectionChangedEventArgs
             uid: 'excel!Excel.SelectionChangedEventArgs:interface'
           - name: Session
-            uid: 'excel!Excel.Session:class'
+            uid: 'excel!Excel.Session:interface'
           - name: SettableCellProperties
             uid: 'excel!Excel.SettableCellProperties:interface'
           - name: SettableColumnProperties

@@ -13,12 +13,17 @@ items:
     package: excel!
     children:
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#altTextDescription:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#altTextTitle:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#autoFormat:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#emptyCellText:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#enableFieldList:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#fillEmptyCells:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#layoutType:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#pivotStyle:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#preserveFormatting:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showFieldHeaders:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#subtotalLocation:member'
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
@@ -32,6 +37,54 @@ items:
     type: property
     syntax:
       content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#altTextDescription:member'
+    summary: >-
+      The alt text description of the PivotTable.
+
+
+      Alt text provides alternative, text-based representations of the information contained in the PivotTable. This
+      information is useful for people with vision or cognitive impairments who may not be able to see or understand the
+      table. A title can be read to a person with a disability and is used to determine whether they wish to hear the
+      description of the content.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#altTextTitle:member'
+    summary: >-
+      The alt text title of the PivotTable.
+
+
+      Alt text provides alternative, text-based representations of the information contained in the PivotTable. This
+      information is useful for people with vision or cognitive impairments who may not be able to see or understand the
+      table. A title can be read to a person with a disability and is used to determine whether they wish to hear the
+      description of the content.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle?: boolean;'
       return:
         type:
           - boolean
@@ -50,6 +103,26 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#emptyCellText:member'
+    summary: >-
+      The text that is automatically filled into any empty cell in the PivotTable if `fillEmptyCells == true`<!-- -->.
+      Note that this value persists if `fillEmptyCells` is set to false, and that setting this value does not set that
+      property to true. By default, this is an empty string.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: emptyCellText
+    fullName: emptyCellText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emptyCellText?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#enableFieldList:member'
     summary: |-
       Specifies if the field list can be shown in the UI.
@@ -62,6 +135,25 @@ items:
     type: property
     syntax:
       content: 'enableFieldList?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#fillEmptyCells:member'
+    summary: >-
+      Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`<!-- -->. False by
+      default. Note that the value of `emptyCellText` persists when this property is set to false.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: fillEmptyCells
+    fullName: fillEmptyCells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fillEmptyCells?: boolean;'
       return:
         type:
           - boolean
@@ -83,13 +175,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#pivotStyle:member'
-    summary: >-
+    summary: |-
       The style applied to the PivotTable.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotStyle
     fullName: pivotStyle
     langs:
@@ -129,6 +218,24 @@ items:
     type: property
     syntax:
       content: 'showColumnGrandTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showFieldHeaders:member'
+    summary: >-
+      Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: showFieldHeaders
+    fullName: showFieldHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showFieldHeaders?: boolean;'
       return:
         type:
           - boolean

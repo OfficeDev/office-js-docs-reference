@@ -20,6 +20,7 @@ items:
       - 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
       - 'excel!Excel.EventType.linkedDataTypeRefreshModeChanged:member'
       - 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
+      - 'excel!Excel.EventType.recordingStateChangedEvent:member'
       - 'excel!Excel.EventType.ribbonCommandExecuted:member'
       - 'excel!Excel.EventType.shapeActivated:member'
       - 'excel!Excel.EventType.shapeDeactivated:member'
@@ -30,6 +31,7 @@ items:
       - 'excel!Excel.EventType.tableSelectionChanged:member'
       - 'excel!Excel.EventType.visualChange:member'
       - 'excel!Excel.EventType.visualSelectionChanged:member'
+      - 'excel!Excel.EventType.wacoperationEvent:member'
       - 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
       - 'excel!Excel.EventType.worksheetActivated:member'
       - 'excel!Excel.EventType.worksheetAdded:member'
@@ -154,6 +156,14 @@ items:
       - typeScript
     type: field
     numericValue: '"LinkedDataTypeRefreshRequestCompleted"'
+  - uid: 'excel!Excel.EventType.recordingStateChangedEvent:member'
+    summary: RecordingStateChangedEvent represents the event fired when macro recording starts or stops.
+    name: recordingStateChangedEvent
+    fullName: recordingStateChangedEvent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RecordingStateChangedEvent"'
   - uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
     summary: 'RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon'
     name: ribbonCommandExecuted
@@ -240,6 +250,13 @@ items:
       - typeScript
     type: field
     numericValue: '"VisualSelectionChanged"'
+  - uid: 'excel!Excel.EventType.wacoperationEvent:member'
+    name: wacoperationEvent
+    fullName: wacoperationEvent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WACOperationEvent"'
   - uid: 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
     summary: >-
       WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an

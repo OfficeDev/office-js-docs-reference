@@ -300,13 +300,10 @@ items:
           type:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#customProperties:member'
-    summary: >-
+    summary: |-
       Gets a collection of worksheet-level custom properties.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customProperties
     fullName: customProperties
     langs:

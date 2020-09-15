@@ -1,0 +1,223 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of all the slicer objects on the workbook or a worksheet.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.SlicerCollectionLoadOptions
+    fullName: Excel.Interfaces.SlicerCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#caption:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#isFilterCleared:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#sortBy:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#width:member'
+      - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#caption:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the caption of slicer.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: caption
+    fullName: caption
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'caption?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#height:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the height, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#id:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the unique id of slicer.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#isFilterCleared:member'
+    summary: |-
+      For EACH ITEM in the collection: True if all filters currently applied on the slicer are cleared.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isFilterCleared
+    fullName: isFilterCleared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isFilterCleared?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#left:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the distance, in points, from the left side of the slicer to the left
+      of the worksheet. Throws an "The argument is invalid or missing or has an incorrect format." exception when set
+      with negative value as input.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#name:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the name of slicer.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#sortBy:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are:
+      "DataSourceOrder", "Ascending", "Descending".
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sortBy
+    fullName: sortBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortBy?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#style:member'
+    summary: >-
+      For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are:
+      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1"
+      through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#top:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the slicer to the top of
+      the worksheet. Throws an "The argument is invalid or missing or has an incorrect format." exception when set with
+      negative value as input.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#width:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the width, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the worksheet containing the slicer.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

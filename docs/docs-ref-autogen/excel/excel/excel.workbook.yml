@@ -38,6 +38,7 @@ items:
       - 'excel!Excel.Workbook#getSelectedRange:member(1)'
       - 'excel!Excel.Workbook#getSelectedRanges:member(1)'
       - 'excel!Excel.Workbook#isDirty:member'
+      - 'excel!Excel.Workbook#linkedDataTypes:member'
       - 'excel!Excel.Workbook#load:member(1)'
       - 'excel!Excel.Workbook#load:member(2)'
       - 'excel!Excel.Workbook#load:member(3)'
@@ -489,6 +490,24 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Workbook#linkedDataTypes:member'
+    summary: >-
+      Returns a collection of linked data types that are part of the workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: linkedDataTypes
+    fullName: linkedDataTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly linkedDataTypes: Excel.LinkedDataTypeCollection;'
+      return:
+        type:
+          - 'excel!Excel.LinkedDataTypeCollection:class'
   - uid: 'excel!Excel.Workbook#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -1136,6 +1155,8 @@ references:
         fullName: <boolean>
   - uid: 'excel!Excel.RangeAreas:class'
     name: Excel.RangeAreas
+  - uid: 'excel!Excel.LinkedDataTypeCollection:class'
+    name: Excel.LinkedDataTypeCollection
   - uid: 'excel!Excel.Workbook:class'
     name: Excel.Workbook
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'

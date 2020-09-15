@@ -10995,7 +10995,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartSeries#name:member",
-                  "docComment": "/**\n * Specifies the name of a series in a chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14834,6 +14834,27 @@
                   ],
                   "releaseTag": "Public",
                   "name": "conflict",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.filteredRangeConflict:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "filteredRangeConflict = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"FilteredRangeConflict\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "filteredRangeConflict",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -22425,7 +22446,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the name of a series in a chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22564,7 +22585,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartSeriesData#name:member",
-                      "docComment": "/**\n * Specifies the name of a series in a chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22837,7 +22858,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member",
-                      "docComment": "/**\n * Specifies the name of a series in a chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22930,7 +22951,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartSeriesUpdateData#name:member",
-                      "docComment": "/**\n * Specifies the name of a series in a chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25279,6 +25300,21 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.DatetimeFormatInfoData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface DatetimeFormatInfoData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "DatetimeFormatInfoData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.DocumentPropertiesData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `documentProperties.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -27241,6 +27277,98 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.RangeAreasCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `rangeAreasCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface RangeAreasCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RangeAreasCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.RangeAreasCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.RangeAreasData",
+                          "canonicalReference": "excel!Excel.Interfaces.RangeAreasData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the RangeAreasCollection object, for use in `rangeAreasCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface RangeAreasCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RangeAreasCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.RangeAreasCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.RangeAreasData",
+                          "canonicalReference": "excel!Excel.Interfaces.RangeAreasData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.RangeAreasData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `rangeAreas.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -28578,7 +28706,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontData#name:member",
-                      "docComment": "/**\n * Font name (e.g., \"Calibri\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Font name (e.g., \"Calibri\"). The name's length should not be greater than 31 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28774,7 +28902,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontLoadOptions#name:member",
-                      "docComment": "/**\n * Font name (e.g., \"Calibri\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Font name (e.g., \"Calibri\"). The name's length should not be greater than 31 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28940,7 +29068,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontUpdateData#name:member",
-                      "docComment": "/**\n * Font name (e.g., \"Calibri\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Font name (e.g., \"Calibri\"). The name's length should not be greater than 31 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33802,6 +33930,21 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.WorkbookRangeAreasData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `workbookRangeAreas.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface WorkbookRangeAreasData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "WorkbookRangeAreasData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.WorkbookUpdateData:interface",
                   "docComment": "/**\n * An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`.\n */\n",
                   "excerptTokens": [
@@ -34098,6 +34241,128 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `worksheetCustomPropertyCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface WorksheetCustomPropertyCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "WorksheetCustomPropertyCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.WorksheetCustomPropertyData",
+                          "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the WorksheetCustomPropertyCollection object, for use in `worksheetCustomPropertyCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface WorksheetCustomPropertyCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "WorksheetCustomPropertyCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.WorksheetCustomPropertyData",
+                          "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `worksheetCustomProperty.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface WorksheetCustomPropertyData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "WorksheetCustomPropertyData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface WorksheetCustomPropertyUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "WorksheetCustomPropertyUpdateData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -38615,7 +38880,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFont#name:member",
-                  "docComment": "/**\n * Font name (e.g., \"Calibri\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Font name (e.g., \"Calibri\"). The name's length should not be greater than 31 characters.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39674,7 +39939,7 @@
                     {
                       "kind": "Reference",
                       "text": "Session",
-                      "canonicalReference": "excel!Excel.Session:class"
+                      "canonicalReference": "excel!Excel.Session:interface"
                     },
                     {
                       "kind": "Content",
@@ -40238,7 +40503,7 @@
                 {
                   "kind": "Reference",
                   "text": "Session",
-                  "canonicalReference": "excel!Excel.Session:class"
+                  "canonicalReference": "excel!Excel.Session:interface"
                 },
                 {
                   "kind": "Content",
@@ -40282,113 +40547,19 @@
               ]
             },
             {
-              "kind": "Class",
-              "canonicalReference": "excel!Excel.Session:class",
-              "docComment": "/**\n * Provides connection session for a remote workbook.\n */\n",
+              "kind": "Interface",
+              "canonicalReference": "excel!Excel.Session:interface",
+              "docComment": "",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "export class Session "
+                  "text": "export interface Session "
                 }
               ],
               "releaseTag": "Public",
               "name": "Session",
-              "members": [
-                {
-                  "kind": "Constructor",
-                  "canonicalReference": "excel!Excel.Session:constructor(1)",
-                  "docComment": "/**\n * Constructs a new instance of the `Session` class\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "constructor(workbookUrl?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", requestHeaders?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "{\n            [name: string]: string;\n        }"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", persisted?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ");"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "overloadIndex": 1,
-                  "parameters": [
-                    {
-                      "parameterName": "workbookUrl",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      }
-                    },
-                    {
-                      "parameterName": "requestHeaders",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
-                      }
-                    },
-                    {
-                      "parameterName": "persisted",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 5,
-                        "endIndex": 6
-                      }
-                    }
-                  ]
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "excel!Excel.Session#close:member(1)",
-                  "docComment": "/**\n * Close the session.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "close(): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Promise",
-                      "canonicalReference": "!Promise:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<void>"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 3
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 1,
-                  "parameters": [],
-                  "name": "close"
-                }
-              ],
-              "implementsTokenRanges": []
+              "members": [],
+              "extendsTokenRanges": []
             },
             {
               "kind": "Enum",

@@ -1,0 +1,112 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+    summary: |-
+      This object represents the attributes for a chart's error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions
+    fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#endStyleCap:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#include:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#type:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#endStyleCap:member'
+    summary: |-
+      Specifies if error bars have an end style cap.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endStyleCap
+    fullName: endStyleCap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endStyleCap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#format:member'
+    summary: |-
+      Specifies the formatting type of the error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#include:member'
+    summary: |-
+      Specifies which parts of the error bars to include.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: include
+    fullName: include
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'include?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#type:member'
+    summary: |-
+      The type of range marked by the error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#visible:member'
+    summary: |-
+      Specifies whether the error bars are displayed.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions

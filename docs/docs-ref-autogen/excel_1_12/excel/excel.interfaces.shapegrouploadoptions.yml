@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
+    summary: >-
+      Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`<!--
+      -->.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ShapeGroupLoadOptions
+    fullName: Excel.Interfaces.ShapeGroupLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ShapeGroupLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ShapeGroupLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.ShapeGroupLoadOptions#shape:member'
+  - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions#id:member'
+    summary: |-
+      Specifies the shape identifier.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions#shape:member'
+    summary: |-
+      Returns the Shape object associated with the group.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+    name: Excel.Interfaces.ShapeLoadOptions

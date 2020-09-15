@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
+    summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+    name: Excel.Interfaces.CustomXmlPartData
+    fullName: Excel.Interfaces.CustomXmlPartData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CustomXmlPartData#id:member'
+      - 'excel!Excel.Interfaces.CustomXmlPartData#namespaceUri:member'
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartData#id:member'
+    summary: |-
+      The custom XML part's ID.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartData#namespaceUri:member'
+    summary: |-
+      The custom XML part's namespace URI.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: namespaceUri
+    fullName: namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'namespaceUri?: string;'
+      return:
+        type:
+          - string

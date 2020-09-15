@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in
+      `rowColumnPivotHierarchyCollection.set({ ... })`<!-- -->.
+    name: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
+        name: Excel.Interfaces.RowColumnPivotHierarchyData
+        fullName: Excel.Interfaces.RowColumnPivotHierarchyData
+      - name: '[]'
+        fullName: '[]'

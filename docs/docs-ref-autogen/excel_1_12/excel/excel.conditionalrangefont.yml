@@ -1,0 +1,294 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFont:class'
+    summary: |-
+      This object represents the font attributes (font style, color, etc.) for an object.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFont#bold:member'
+      - 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#color:member'
+      - 'excel!Excel.ConditionalRangeFont#context:member'
+      - 'excel!Excel.ConditionalRangeFont#italic:member'
+      - 'excel!Excel.ConditionalRangeFont#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#load:member(2)'
+      - 'excel!Excel.ConditionalRangeFont#load:member(3)'
+      - 'excel!Excel.ConditionalRangeFont#set:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#set:member(2)'
+      - 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+      - 'excel!Excel.ConditionalRangeFont#toJSON:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#underline:member'
+  - uid: 'excel!Excel.ConditionalRangeFont#bold:member'
+    summary: |-
+      Specifies if the font is bold.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+    summary: |-
+      Resets the font formats.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalRangeFont#color:member'
+    summary: |-
+      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeFont#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeFont#italic:member'
+    summary: |-
+      Specifies if the font is italic.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeFont;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalRangeFont;
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ConditionalRangeFont#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ConditionalRangeFont): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ConditionalRangeFont#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ConditionalRangeFont): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ConditionalRangeFont:class'
+  - uid: 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+    summary: |-
+      Specifies the strikethrough status of the font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ConditionalRangeFont object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFontData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ConditionalRangeFontData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
+        description: ''
+  - uid: 'excel!Excel.ConditionalRangeFont#underline:member'
+    summary: |-
+      The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont#underline~0:complex'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ConditionalRangeFont:class'
+    name: Excel.ConditionalRangeFont
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalRangeFontLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
+    name: Interfaces.ConditionalRangeFontUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
+    name: Excel.Interfaces.ConditionalRangeFontData
+  - uid: 'excel!Excel.ConditionalRangeFont#underline~0:complex'
+    name: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    fullName: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+        name: Excel.ConditionalRangeFontUnderlineStyle
+        fullName: Excel.ConditionalRangeFontUnderlineStyle
+      - name: ' | "None" | "Single" | "Double"'
+        fullName: ' | "None" | "Single" | "Double"'

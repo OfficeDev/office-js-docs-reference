@@ -1,0 +1,370 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataBarConditionalFormat:class'
+    summary: |-
+      Represents an Excel Conditional Data Bar Type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataBarConditionalFormat
+    fullName: Excel.DataBarConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.DataBarConditionalFormat#axisColor:member'
+      - 'excel!Excel.DataBarConditionalFormat#axisFormat:member'
+      - 'excel!Excel.DataBarConditionalFormat#barDirection:member'
+      - 'excel!Excel.DataBarConditionalFormat#context:member'
+      - 'excel!Excel.DataBarConditionalFormat#load:member(1)'
+      - 'excel!Excel.DataBarConditionalFormat#load:member(2)'
+      - 'excel!Excel.DataBarConditionalFormat#load:member(3)'
+      - 'excel!Excel.DataBarConditionalFormat#lowerBoundRule:member'
+      - 'excel!Excel.DataBarConditionalFormat#negativeFormat:member'
+      - 'excel!Excel.DataBarConditionalFormat#positiveFormat:member'
+      - 'excel!Excel.DataBarConditionalFormat#set:member(1)'
+      - 'excel!Excel.DataBarConditionalFormat#set:member(2)'
+      - 'excel!Excel.DataBarConditionalFormat#showDataBarOnly:member'
+      - 'excel!Excel.DataBarConditionalFormat#toJSON:member(1)'
+      - 'excel!Excel.DataBarConditionalFormat#upperBoundRule:member'
+  - uid: 'excel!Excel.DataBarConditionalFormat#axisColor:member'
+    summary: >-
+      HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML
+      color (e.g., "orange"). "" (empty string) if no axis is present or set.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axisColor
+    fullName: axisColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axisColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DataBarConditionalFormat#axisFormat:member'
+    summary: |-
+      Representation of how the axis is determined for an Excel data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axisFormat
+    fullName: axisFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axisFormat: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint";'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat#axisFormat~0:complex'
+  - uid: 'excel!Excel.DataBarConditionalFormat#barDirection:member'
+    summary: |-
+      Specifies the direction that the data bar graphic should be based on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: barDirection
+    fullName: barDirection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'barDirection: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat#barDirection~0:complex'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B8:E13");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.dataBar);
+              conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+
+              await context.sync();
+          });
+
+          ```
+  - uid: 'excel!Excel.DataBarConditionalFormat#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DataBarConditionalFormat#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
+  - uid: 'excel!Excel.DataBarConditionalFormat#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.DataBarConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DataBarConditionalFormat#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.DataBarConditionalFormat;
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.DataBarConditionalFormat#lowerBoundRule:member'
+    summary: >-
+      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. The
+      `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of
+      `x.lowerBoundRule.formula = ...`<!-- -->).
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lowerBoundRule
+    fullName: lowerBoundRule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lowerBoundRule: Excel.ConditionalDataBarRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarRule:interface'
+  - uid: 'excel!Excel.DataBarConditionalFormat#negativeFormat:member'
+    summary: |-
+      Representation of all values to the left of the axis in an Excel data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: negativeFormat
+    fullName: negativeFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly negativeFormat: Excel.ConditionalDataBarNegativeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+  - uid: 'excel!Excel.DataBarConditionalFormat#positiveFormat:member'
+    summary: |-
+      Representation of all values to the right of the axis in an Excel data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: positiveFormat
+    fullName: positiveFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly positiveFormat: Excel.ConditionalDataBarPositiveFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+  - uid: 'excel!Excel.DataBarConditionalFormat#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.DataBarConditionalFormat): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.DataBarConditionalFormat#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.DataBarConditionalFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.DataBarConditionalFormat:class'
+  - uid: 'excel!Excel.DataBarConditionalFormat#showDataBarOnly:member'
+    summary: |-
+      If true, hides the values from the cells where the data bar is applied.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showDataBarOnly
+    fullName: showDataBarOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showDataBarOnly: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.DataBarConditionalFormat#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.DataBarConditionalFormat object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.DataBarConditionalFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.DataBarConditionalFormatData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
+        description: ''
+  - uid: 'excel!Excel.DataBarConditionalFormat#upperBoundRule:member'
+    summary: >-
+      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. The
+      `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of
+      `x.upperBoundRule.formula = ...`<!-- -->).
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: upperBoundRule
+    fullName: upperBoundRule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'upperBoundRule: Excel.ConditionalDataBarRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarRule:interface'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.DataBarConditionalFormat#axisFormat~0:complex'
+    name: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
+    fullName: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
+        name: Excel.ConditionalDataBarAxisFormat
+        fullName: Excel.ConditionalDataBarAxisFormat
+      - name: ' | "Automatic" | "None" | "CellMidPoint"'
+        fullName: ' | "Automatic" | "None" | "CellMidPoint"'
+  - uid: 'excel!Excel.DataBarConditionalFormat#barDirection~0:complex'
+    name: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalDataBarDirection:enum'
+        name: Excel.ConditionalDataBarDirection
+        fullName: Excel.ConditionalDataBarDirection
+      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.DataBarConditionalFormat:class'
+    name: Excel.DataBarConditionalFormat
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
+    name: Excel.Interfaces.DataBarConditionalFormatLoadOptions
+  - uid: 'excel!Excel.ConditionalDataBarRule:interface'
+    name: Excel.ConditionalDataBarRule
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+    name: Excel.ConditionalDataBarNegativeFormat
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+    name: Excel.ConditionalDataBarPositiveFormat
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
+    name: Interfaces.DataBarConditionalFormatUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
+    name: Excel.Interfaces.DataBarConditionalFormatData

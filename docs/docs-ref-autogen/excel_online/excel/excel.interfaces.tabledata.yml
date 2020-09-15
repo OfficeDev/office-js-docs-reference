@@ -24,6 +24,7 @@ items:
       - 'excel!Excel.Interfaces.TableData#showTotals:member'
       - 'excel!Excel.Interfaces.TableData#sort:member'
       - 'excel!Excel.Interfaces.TableData#style:member'
+      - 'excel!Excel.Interfaces.TableData#tableStyle:member'
   - uid: 'excel!Excel.Interfaces.TableData#autoFilter:member'
     summary: |-
       Represents the AutoFilter object of the table.
@@ -265,6 +266,21 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.Interfaces.TableData#tableStyle:member'
+    summary: |-
+      The style applied to the Table.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tableStyle
+    fullName: tableStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableStyle?: Excel.Interfaces.TableStyleData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TableStyleData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
     name: Excel.Interfaces.AutoFilterData
@@ -288,3 +304,5 @@ references:
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
     name: Excel.Interfaces.TableSortData
+  - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+    name: Excel.Interfaces.TableStyleData

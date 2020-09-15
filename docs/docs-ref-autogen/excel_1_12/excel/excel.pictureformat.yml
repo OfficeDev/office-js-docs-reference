@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PictureFormat:enum'
+    summary: |-
+      The format of the image.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PictureFormat
+    fullName: Excel.PictureFormat
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.PictureFormat.bmp:member'
+      - 'excel!Excel.PictureFormat.gif:member'
+      - 'excel!Excel.PictureFormat.jpeg:member'
+      - 'excel!Excel.PictureFormat.png:member'
+      - 'excel!Excel.PictureFormat.svg:member'
+      - 'excel!Excel.PictureFormat.unknown:member'
+  - uid: 'excel!Excel.PictureFormat.bmp:member'
+    summary: Bitmap image.
+    name: bmp
+    fullName: bmp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BMP"'
+  - uid: 'excel!Excel.PictureFormat.gif:member'
+    summary: Graphics Interchange Format.
+    name: gif
+    fullName: gif
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GIF"'
+  - uid: 'excel!Excel.PictureFormat.jpeg:member'
+    summary: Joint Photographic Experts Group.
+    name: jpeg
+    fullName: jpeg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"JPEG"'
+  - uid: 'excel!Excel.PictureFormat.png:member'
+    summary: Portable Network Graphics.
+    name: png
+    fullName: png
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PNG"'
+  - uid: 'excel!Excel.PictureFormat.svg:member'
+    summary: Scalable Vector Graphic.
+    name: svg
+    fullName: svg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SVG"'
+  - uid: 'excel!Excel.PictureFormat.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UNKNOWN"'

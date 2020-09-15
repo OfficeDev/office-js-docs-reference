@@ -682,19 +682,7 @@ export declare namespace Excel {
     }
     /** [Api set: ExcelApi 1.2] */
 	var icons: IconCollections;
-    /**
-     * Provides connection session for a remote workbook.
-     */
-    export class Session {
-        private static WorkbookSessionIdHeaderName;
-        private static WorkbookSessionIdHeaderNameLower;
-        constructor(workbookUrl?: string, requestHeaders?: {
-            [name: string]: string;
-        }, persisted?: boolean);
-        /**
-         * Close the session.
-         */
-        close(): Promise<void>;
+    export interface Session {
     }
     /**
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
@@ -749,6 +737,17 @@ export declare namespace Excel {
     export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      *
      * Provides information about the selection that raised the "SelectionChanged" event.
@@ -1648,6 +1647,10 @@ export declare namespace Excel {
          */
         worksheetId: string;
     }
+    
+    
+    
+    
     /**
      *
      * Provides information about the shape that raised the Activated event.
@@ -2435,6 +2438,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         readonly comments: Excel.CommentCollection;
+        
         /**
          *
          * Gets an object that can be used to manipulate frozen panes on the worksheet.
@@ -3423,6 +3427,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         formulasR1C1: any[][];
+        
         /**
          *
          * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
@@ -3479,6 +3484,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         numberFormat: any[][];
+        
         /**
          *
          * Represents Excel's number format code for the given range, based on the language settings of the user.​
@@ -3509,6 +3515,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly rowIndex: number;
+        
         /**
          *
          * Represents the style of the current range.
@@ -3767,6 +3774,7 @@ export declare namespace Excel {
          * @param count - Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsBefore(count?: number): Excel.Range;
+        
         /**
          * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
          *
@@ -3913,6 +3921,10 @@ export declare namespace Excel {
          * @param cellValueType - If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
         getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        
+        
+        
+        
         /**
          * Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding region is a range bounded by any combination of blank rows and blank columns relative to this range.
          *
@@ -4518,6 +4530,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.RangeAreasData;
     }
+    
     /**
      *
      * Represents the search criteria to be used.
@@ -7510,7 +7523,7 @@ export declare namespace Excel {
         italic: boolean;
         /**
          *
-         * Font name (e.g., "Calibri")
+         * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8515,7 +8528,7 @@ export declare namespace Excel {
         markerStyle: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
         /**
          *
-         * Specifies the name of a series in a chart.
+         * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8617,6 +8630,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         delete(): void;
+        
+        
         /**
          * Sets the bubble sizes for a chart series. Only works for bubble charts.
          *
@@ -12657,6 +12672,7 @@ export declare namespace Excel {
     export class CultureInfo extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          *
          * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
@@ -12748,6 +12764,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.NumberFormatInfoData;
     }
+    
     /**
      *
      * Represents a cell icon.
@@ -13122,6 +13139,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          */
         readonly worksheet: Excel.Worksheet;
+        
         /**
          *
          * Specifies if the PivotTable allows values in the data body to be edited by the user.
@@ -13212,6 +13230,7 @@ export declare namespace Excel {
     export class PivotLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          *
          * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -14137,6 +14156,13 @@ export declare namespace Excel {
         set(properties: Interfaces.PivotFieldUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.PivotField): void;
+        
+        
+        
+        
+        
+        
+        
         /**
          * Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.
          *
@@ -14589,6 +14615,8 @@ export declare namespace Excel {
          */
         filter = "Filter"
     }
+    
+    
     /**
      *
      * Represents workbook properties.
@@ -18225,6 +18253,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.RangeCollectionData;
     }
+    
     /**
      *
      * Represents the entity that is mentioned in comments.
@@ -18363,6 +18392,9 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CommentCollection;
+        
+        
+        
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -18406,6 +18438,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         content: string;
+        
         /**
          *
          * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
@@ -18607,6 +18640,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         content: string;
+        
         /**
          *
          * Gets the creation time of the comment reply.
@@ -20107,6 +20141,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         readonly slicerItems: Excel.SlicerItemCollection;
+        
         /**
          *
          * Represents the worksheet containing the slicer.
@@ -22015,6 +22050,7 @@ export declare namespace Excel {
          */
         hidden = "Hidden"
     }
+    
     /**
      * [Api set: ExcelApi 1.7]
      */
@@ -23183,6 +23219,7 @@ export declare namespace Excel {
         addIns = "AddIns",
         help = "Help"
     }
+    
     /**
      *
      * An object containing the result of a function-evaluation operation
@@ -26624,6 +26661,7 @@ export declare namespace Excel {
         accessDenied = "AccessDenied",
         apiNotFound = "ApiNotFound",
         conflict = "Conflict",
+        filteredRangeConflict = "FilteredRangeConflict",
         generalException = "GeneralException",
         insertDeleteConflict = "InsertDeleteConflict",
         invalidArgument = "InvalidArgument",
@@ -27031,6 +27069,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
+            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -27413,7 +27452,7 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g., "Calibri")
+             * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -27922,7 +27961,7 @@ export declare namespace Excel {
             markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
             /**
              *
-             * Specifies the name of a series in a chart.
+             * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29429,6 +29468,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the PivotTable object, for use in `pivotTable.set({ ... })`. */
         export interface PivotTableUpdateData {
+            
             /**
              *
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
@@ -29453,6 +29493,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
+            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -29670,6 +29711,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.8]
              */
             visible?: boolean;
+        }
+        /** An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ... })`. */
+        export interface WorksheetCustomPropertyUpdateData {
+            
+        }
+        /** An interface for updating data on the WorksheetCustomPropertyCollection object, for use in `worksheetCustomPropertyCollection.set({ ... })`. */
+        export interface WorksheetCustomPropertyCollectionUpdateData {
+            items?: Excel.Interfaces.WorksheetCustomPropertyData[];
         }
         /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
@@ -30757,6 +30806,10 @@ export declare namespace Excel {
         export interface RangeCollectionUpdateData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface for updating data on the RangeAreasCollection object, for use in `rangeAreasCollection.set({ ... })`. */
+        export interface RangeAreasCollectionUpdateData {
+            items?: Excel.Interfaces.RangeAreasData[];
+        }
         /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
         export interface CommentCollectionUpdateData {
             items?: Excel.Interfaces.CommentData[];
@@ -31163,6 +31216,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
         export interface SlicerUpdateData {
+            
             /**
             *
             * Represents the worksheet containing the slicer.
@@ -31557,6 +31611,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.10]
             */
             comments?: Excel.Interfaces.CommentData[];
+            
             /**
             *
             * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
@@ -31802,6 +31857,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: any[][];
+            
             /**
              *
              * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
@@ -31858,6 +31914,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             numberFormat?: any[][];
+            
             /**
              *
              * Represents Excel's number format code for the given range, based on the language settings of the user.​
@@ -31888,6 +31945,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             rowIndex?: number;
+            
             /**
              *
              * Represents the style of the current range.
@@ -32014,6 +32072,12 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             style?: string;
+        }
+        /** An interface describing the data returned by calling `workbookRangeAreas.toJSON()`. */
+        export interface WorkbookRangeAreasData {
+            
+            
+            
         }
         /** An interface describing the data returned by calling `rangeView.toJSON()`. */
         export interface RangeViewData {
@@ -32266,6 +32330,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortData;
+            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -32722,7 +32787,7 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g., "Calibri")
+             * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -33259,7 +33324,7 @@ export declare namespace Excel {
             markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
             /**
              *
-             * Specifies the name of a series in a chart.
+             * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34955,6 +35020,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `cultureInfo.toJSON()`. */
         export interface CultureInfoData {
+            
             /**
             *
             * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
@@ -34986,6 +35052,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.11]
              */
             numberGroupSeparator?: string;
+        }
+        /** An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`. */
+        export interface DatetimeFormatInfoData {
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`. */
         export interface CustomXmlPartScopedCollectionData {
@@ -35057,6 +35131,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.8]
             */
             rowHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];
+            
             /**
              *
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
@@ -35088,6 +35163,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
+            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -35375,6 +35451,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.8]
              */
             visible?: boolean;
+        }
+        /** An interface describing the data returned by calling `worksheetCustomProperty.toJSON()`. */
+        export interface WorksheetCustomPropertyData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `worksheetCustomPropertyCollection.toJSON()`. */
+        export interface WorksheetCustomPropertyCollectionData {
+            items?: Excel.Interfaces.WorksheetCustomPropertyData[];
         }
         /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {
@@ -36556,6 +36641,10 @@ export declare namespace Excel {
         export interface RangeCollectionData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface describing the data returned by calling `rangeAreasCollection.toJSON()`. */
+        export interface RangeAreasCollectionData {
+            items?: Excel.Interfaces.RangeAreasData[];
+        }
         /** An interface describing the data returned by calling `commentCollection.toJSON()`. */
         export interface CommentCollectionData {
             items?: Excel.Interfaces.CommentData[];
@@ -36590,6 +36679,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             content?: string;
+            
             /**
              *
              * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
@@ -36653,6 +36743,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             content?: string;
+            
             /**
              *
              * Gets the creation time of the comment reply.
@@ -37195,6 +37286,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.10]
             */
             slicerItems?: Excel.Interfaces.SlicerItemData[];
+            
             /**
             *
             * Represents the worksheet containing the slicer.
@@ -37950,6 +38042,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: boolean;
+            
             /**
              *
              * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
@@ -38006,6 +38099,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             numberFormat?: boolean;
+            
             /**
              *
              * Represents Excel's number format code for the given range, based on the language settings of the user.​
@@ -38036,6 +38130,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             rowIndex?: boolean;
+            
             /**
              *
              * Represents the style of the current range.
@@ -38166,6 +38261,7 @@ export declare namespace Excel {
              */
             style?: boolean;
         }
+        
         /**
          *
          * RangeView represents a set of visible cells of the parent range.
@@ -38677,6 +38773,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
+            
             /**
             *
             * For EACH ITEM in the collection: The worksheet containing the current table.
@@ -38803,6 +38900,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
+            
             /**
             *
             * For EACH ITEM in the collection: The worksheet containing the current table.
@@ -38930,6 +39028,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
+            
             /**
             *
             * The worksheet containing the current table.
@@ -39594,7 +39693,7 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g., "Calibri")
+             * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40344,7 +40443,7 @@ export declare namespace Excel {
             markerStyle?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies the name of a series in a chart.
+             * For EACH ITEM in the collection: Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40673,7 +40772,7 @@ export declare namespace Excel {
             markerStyle?: boolean;
             /**
              *
-             * Specifies the name of a series in a chart.
+             * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -42909,6 +43008,7 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
             *
             * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
@@ -42950,6 +43050,7 @@ export declare namespace Excel {
              */
             numberGroupSeparator?: boolean;
         }
+        
         /**
          *
          * A scoped collection of custom XML parts.
@@ -43056,6 +43157,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.3]
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            
             /**
              *
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
@@ -43111,6 +43213,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.3]
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            
             /**
              *
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
@@ -43151,6 +43254,7 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -43681,6 +43785,8 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
+        
+        
         /**
          *
          * Represents workbook properties.
@@ -45670,6 +45776,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
@@ -45726,6 +45833,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             numberFormat?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Represents Excel's number format code for the given range, based on the language settings of the user.​
@@ -45756,6 +45864,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             rowIndex?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Represents the style of the current range.
@@ -45801,6 +45910,7 @@ export declare namespace Excel {
              */
             width?: boolean;
         }
+        
         /**
          *
          * Represents a collection of comment objects that are part of the workbook.
@@ -45833,6 +45943,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             content?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
@@ -45901,6 +46012,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             content?: boolean;
+            
             /**
              *
              * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
@@ -45969,6 +46081,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             content?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Gets the creation time of the comment reply.
@@ -46037,6 +46150,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             content?: boolean;
+            
             /**
              *
              * Gets the creation time of the comment reply.
@@ -47130,6 +47244,7 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
             *
             * Represents the worksheet containing the slicer.
@@ -47223,6 +47338,7 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
             *
             * For EACH ITEM in the collection: Represents the worksheet containing the slicer.

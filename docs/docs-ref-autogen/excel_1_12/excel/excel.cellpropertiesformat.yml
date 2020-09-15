@@ -1,0 +1,280 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellPropertiesFormat:interface'
+    summary: |-
+      Represents the returned format properties of getCellProperties or format input parameter of setCellProperties.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesFormat
+    fullName: Excel.CellPropertiesFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellPropertiesFormat#autoIndent:member'
+      - 'excel!Excel.CellPropertiesFormat#borders:member'
+      - 'excel!Excel.CellPropertiesFormat#fill:member'
+      - 'excel!Excel.CellPropertiesFormat#font:member'
+      - 'excel!Excel.CellPropertiesFormat#horizontalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormat#indentLevel:member'
+      - 'excel!Excel.CellPropertiesFormat#protection:member'
+      - 'excel!Excel.CellPropertiesFormat#readingOrder:member'
+      - 'excel!Excel.CellPropertiesFormat#shrinkToFit:member'
+      - 'excel!Excel.CellPropertiesFormat#textOrientation:member'
+      - 'excel!Excel.CellPropertiesFormat#useStandardHeight:member'
+      - 'excel!Excel.CellPropertiesFormat#useStandardWidth:member'
+      - 'excel!Excel.CellPropertiesFormat#verticalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormat#wrapText:member'
+  - uid: 'excel!Excel.CellPropertiesFormat#autoIndent:member'
+    summary: |-
+      Represents the `autoIndent` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormat#borders:member'
+    summary: |-
+      Represents the `borders` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders?: Excel.CellBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.CellBorderCollection:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#fill:member'
+    summary: |-
+      Represents the `fill` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill?: Excel.CellPropertiesFill;'
+      return:
+        type:
+          - 'excel!Excel.CellPropertiesFill:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#font:member'
+    summary: |-
+      Represents the `font` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.CellPropertiesFont;'
+      return:
+        type:
+          - 'excel!Excel.CellPropertiesFont:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#horizontalAlignment:member'
+    summary: |-
+      Represents the `horizontalAlignment` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
+      return:
+        type:
+          - 'excel!Excel.CellPropertiesFormat#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.CellPropertiesFormat#indentLevel:member'
+    summary: |-
+      Represents the `indentLevel` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.CellPropertiesFormat#protection:member'
+    summary: |-
+      Represents the `protection` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.CellPropertiesProtection;'
+      return:
+        type:
+          - 'excel!Excel.CellPropertiesProtection:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#readingOrder:member'
+    summary: |-
+      Represents the `readingOrder` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - 'excel!Excel.CellPropertiesFormat#readingOrder~0:complex'
+  - uid: 'excel!Excel.CellPropertiesFormat#shrinkToFit:member'
+    summary: |-
+      Represents the `shrinkToFit` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormat#textOrientation:member'
+    summary: |-
+      Represents the `textOrientation` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.CellPropertiesFormat#useStandardHeight:member'
+    summary: |-
+      Represents the `useStandardHeight` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useStandardHeight
+    fullName: useStandardHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useStandardHeight?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormat#useStandardWidth:member'
+    summary: |-
+      Represents the `useStandardWidth` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useStandardWidth
+    fullName: useStandardWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useStandardWidth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormat#verticalAlignment:member'
+    summary: |-
+      Represents the `verticalAlignment` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
+      return:
+        type:
+          - 'excel!Excel.CellPropertiesFormat#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.CellPropertiesFormat#wrapText:member'
+    summary: |-
+      Represents the `wrapText` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wrapText
+    fullName: wrapText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wrapText?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.CellBorderCollection:interface'
+    name: Excel.CellBorderCollection
+  - uid: 'excel!Excel.CellPropertiesFill:interface'
+    name: Excel.CellPropertiesFill
+  - uid: 'excel!Excel.CellPropertiesFont:interface'
+    name: Excel.CellPropertiesFont
+  - uid: 'excel!Excel.CellPropertiesFormat#horizontalAlignment~0:complex'
+    name: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    fullName: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.HorizontalAlignment:enum'
+        name: Excel.HorizontalAlignment
+        fullName: Excel.HorizontalAlignment
+      - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+        fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+  - uid: 'excel!Excel.CellPropertiesProtection:interface'
+    name: Excel.CellPropertiesProtection
+  - uid: 'excel!Excel.CellPropertiesFormat#readingOrder~0:complex'
+    name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ReadingOrder:enum'
+        name: Excel.ReadingOrder
+        fullName: Excel.ReadingOrder
+      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.CellPropertiesFormat#verticalAlignment~0:complex'
+    name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.VerticalAlignment:enum'
+        name: Excel.VerticalAlignment
+        fullName: Excel.VerticalAlignment
+      - name: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
+        fullName: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
