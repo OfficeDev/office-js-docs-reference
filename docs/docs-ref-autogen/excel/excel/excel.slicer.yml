@@ -448,10 +448,13 @@ items:
         type:
           - 'excel!Excel.SlicerItemCollection:class'
   - uid: 'excel!Excel.Slicer#slicerStyle:member'
-    summary: |-
+    summary: >-
       The style applied to the Slicer.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: slicerStyle
     fullName: slicerStyle
     langs:
