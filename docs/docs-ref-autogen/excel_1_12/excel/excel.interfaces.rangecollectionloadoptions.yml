@@ -21,6 +21,7 @@ items:
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulas:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulasLocal:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hasSpill:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#height:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hidden:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hyperlink:member'
@@ -29,10 +30,12 @@ items:
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#left:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#linkedDataTypeState:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatCategories:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatLocal:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowCount:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowHidden:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowIndex:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#savedAsArray:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#style:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#text:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#top:member'
@@ -230,6 +233,24 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hasSpill:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents if all cells have a spill border. Returns true if all cells have a
+      spill border, or false if all cells do not have a spill border. Returns null if there are cells both with and
+      without spill borders within the range.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasSpill
+    fullName: hasSpill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasSpill?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#height:member'
     summary: >-
       For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to
@@ -354,6 +375,21 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatCategories:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the category of number format of each cell.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormatCategories
+    fullName: numberFormatCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatCategories?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatLocal:member'
     summary: >-
       For EACH ITEM in the collection: Represents Excel's number format code for the given range, based on the language
@@ -415,6 +451,24 @@ items:
     type: property
     syntax:
       content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#savedAsArray:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents if ALL the cells would be saved as an array formula. Returns true if
+      ALL cells would be saved as an array formula, or false if ALL cells would NOT be saved as an array formula.
+      Returns null if some cells would be saved as an array formula and some would not be.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: savedAsArray
+    fullName: savedAsArray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'savedAsArray?: boolean;'
       return:
         type:
           - boolean

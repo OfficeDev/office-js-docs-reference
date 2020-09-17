@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotFilterType:enum'
+    summary: |-
+      A simple enum that represents a type of filter for a PivotField.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotFilterType
+    fullName: Excel.PivotFilterType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.PivotFilterType.date:member'
+      - 'excel!Excel.PivotFilterType.label:member'
+      - 'excel!Excel.PivotFilterType.manual:member'
+      - 'excel!Excel.PivotFilterType.unknown:member'
+      - 'excel!Excel.PivotFilterType.value:member'
+  - uid: 'excel!Excel.PivotFilterType.date:member'
+    summary: >-
+      Filters PivotItems with a date in place of a label. Note: A PivotField cannot simultaneously have a label filter
+      and a date filter applied.
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Date"'
+  - uid: 'excel!Excel.PivotFilterType.label:member'
+    summary: >-
+      Filters PivotItems based on their labels. Note: A PivotField cannot simultaneously have a label filter and a date
+      filter applied.
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Label"'
+  - uid: 'excel!Excel.PivotFilterType.manual:member'
+    summary: Filters specific manually selected PivotItems from the PivotTable.
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manual"'
+  - uid: 'excel!Excel.PivotFilterType.unknown:member'
+    summary: PivotFilterType is unknown or unsupported.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'
+  - uid: 'excel!Excel.PivotFilterType.value:member'
+    summary: Filters based on the value of a PivotItem with respect to a DataPivotHierarchy.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Value"'

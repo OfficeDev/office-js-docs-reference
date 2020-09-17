@@ -10,3 +10,20 @@ items:
       - typeScript
     type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData#value:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData#value:member'
+    summary: |-
+      Gets or sets the value of the custom property.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: string;'
+      return:
+        type:
+          - string

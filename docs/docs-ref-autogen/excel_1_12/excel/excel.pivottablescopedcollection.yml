@@ -1,0 +1,255 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableScopedCollection:class'
+    summary: >-
+      Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the
+      PivotTable's top-left corner. They are ordered top to bottom and then left to right.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotTableScopedCollection
+    fullName: Excel.PivotTableScopedCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableScopedCollection#context:member'
+      - 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#items:member'
+      - 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#load:member(2)'
+      - 'excel!Excel.PivotTableScopedCollection#load:member(3)'
+      - 'excel!Excel.PivotTableScopedCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotTableScopedCollection#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+    summary: |-
+      Gets the number of PivotTables in the collection.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableScopedCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+    summary: >-
+      Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top to bottom and left
+      to right, such that top-left table is the first PivotTable in the collection.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getFirst()
+    fullName: getFirst()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Excel.PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:class'
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+    summary: |-
+      Gets a PivotTable by name.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:class'
+        description: ''
+      parameters:
+        - id: key
+          description: Name of the PivotTable to be retrieved.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+    summary: |-
+      Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:class'
+        description: ''
+      parameters:
+        - id: name
+          description: Name of the PivotTable to be retrieved.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.PivotTable[];'
+      return:
+        type:
+          - 'excel!Excel.PivotTableScopedCollection#items~0:complex'
+  - uid: 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.PivotTableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.PivotTableScopedCollection;
+      return:
+        type:
+          - 'excel!Excel.PivotTableScopedCollection:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.PivotTableScopedCollection#load~0:complex'
+  - uid: 'excel!Excel.PivotTableScopedCollection#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotTableScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableScopedCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableScopedCollection#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotTableScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableScopedCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.PivotTableScopedCollection#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.PivotTableScopedCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableScopedCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.PivotTableScopedCollectionData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PivotTableScopedCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.PivotTable:class'
+    name: Excel.PivotTable
+  - uid: 'excel!Excel.PivotTableScopedCollection#items~0:complex'
+    name: 'Excel.PivotTable[]'
+    fullName: 'Excel.PivotTable[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotTable:class'
+        name: Excel.PivotTable
+        fullName: Excel.PivotTable
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.PivotTableScopedCollection:class'
+    name: Excel.PivotTableScopedCollection
+  - uid: 'excel!Excel.PivotTableScopedCollection#load~0:complex'
+    name: Excel.Interfaces.PivotTableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.PivotTableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions:interface'
+        name: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
+        fullName: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+    name: Excel.Interfaces.PivotTableScopedCollectionData

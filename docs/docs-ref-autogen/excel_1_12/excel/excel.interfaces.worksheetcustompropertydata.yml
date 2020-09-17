@@ -8,3 +8,38 @@ items:
       - typeScript
     type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyData#key:member'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyData#value:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData#key:member'
+    summary: >-
+      Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255
+      characters (larger values will cause an "InvalidArgument" error to be thrown.)
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData#value:member'
+    summary: |-
+      Gets or sets the value of the custom property.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: string;'
+      return:
+        type:
+          - string
