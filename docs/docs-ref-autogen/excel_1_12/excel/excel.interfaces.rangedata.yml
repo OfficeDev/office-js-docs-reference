@@ -21,6 +21,7 @@ items:
       - 'excel!Excel.Interfaces.RangeData#formulas:member'
       - 'excel!Excel.Interfaces.RangeData#formulasLocal:member'
       - 'excel!Excel.Interfaces.RangeData#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeData#hasSpill:member'
       - 'excel!Excel.Interfaces.RangeData#height:member'
       - 'excel!Excel.Interfaces.RangeData#hidden:member'
       - 'excel!Excel.Interfaces.RangeData#hyperlink:member'
@@ -29,10 +30,12 @@ items:
       - 'excel!Excel.Interfaces.RangeData#left:member'
       - 'excel!Excel.Interfaces.RangeData#linkedDataTypeState:member'
       - 'excel!Excel.Interfaces.RangeData#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeData#numberFormatCategories:member'
       - 'excel!Excel.Interfaces.RangeData#numberFormatLocal:member'
       - 'excel!Excel.Interfaces.RangeData#rowCount:member'
       - 'excel!Excel.Interfaces.RangeData#rowHidden:member'
       - 'excel!Excel.Interfaces.RangeData#rowIndex:member'
+      - 'excel!Excel.Interfaces.RangeData#savedAsArray:member'
       - 'excel!Excel.Interfaces.RangeData#style:member'
       - 'excel!Excel.Interfaces.RangeData#text:member'
       - 'excel!Excel.Interfaces.RangeData#top:member'
@@ -223,6 +226,23 @@ items:
       return:
         type:
           - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeData#hasSpill:member'
+    summary: >-
+      Represents if all cells have a spill border. Returns true if all cells have a spill border, or false if all cells
+      do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasSpill
+    fullName: hasSpill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasSpill?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'excel!Excel.Interfaces.RangeData#height:member'
     summary: |-
       Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
@@ -343,6 +363,21 @@ items:
       return:
         type:
           - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeData#numberFormatCategories:member'
+    summary: |-
+      Represents the category of number format of each cell.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormatCategories
+    fullName: numberFormatCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatCategories?: Excel.NumberFormatCategory[][];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeData#numberFormatCategories~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeData#numberFormatLocal:member'
     summary: >-
       Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
@@ -406,6 +441,24 @@ items:
       return:
         type:
           - number
+  - uid: 'excel!Excel.Interfaces.RangeData#savedAsArray:member'
+    summary: >-
+      Represents if ALL the cells would be saved as an array formula. Returns true if ALL cells would be saved as an
+      array formula, or false if ALL cells would NOT be saved as an array formula. Returns null if some cells would be
+      saved as an array formula and some would not be.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: savedAsArray
+    fullName: savedAsArray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'savedAsArray?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'excel!Excel.Interfaces.RangeData#style:member'
     summary: >-
       Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
@@ -526,6 +579,15 @@ references:
       - uid: 'excel!Excel.LinkedDataTypeState:enum'
         name: Excel.LinkedDataTypeState
         fullName: Excel.LinkedDataTypeState
+      - name: '[][]'
+        fullName: '[][]'
+  - uid: 'excel!Excel.Interfaces.RangeData#numberFormatCategories~0:complex'
+    name: 'Excel.NumberFormatCategory[][]'
+    fullName: 'Excel.NumberFormatCategory[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.NumberFormatCategory:enum'
+        name: Excel.NumberFormatCategory
+        fullName: Excel.NumberFormatCategory
       - name: '[][]'
         fullName: '[][]'
   - uid: 'excel!Excel.Interfaces.RangeData#valueTypes~0:complex'

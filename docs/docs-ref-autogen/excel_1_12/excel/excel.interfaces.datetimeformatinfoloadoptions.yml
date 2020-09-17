@@ -1,0 +1,109 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+    summary: |-
+      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
+    fullName: Excel.Interfaces.DatetimeFormatInfoLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#dateSeparator:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#timeSeparator:member'
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#dateSeparator:member'
+    summary: |-
+      Gets the string used as the date separator. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dateSeparator
+    fullName: dateSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateSeparator?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member'
+    summary: |-
+      Gets the format string for a long date value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: longDatePattern
+    fullName: longDatePattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'longDatePattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member'
+    summary: |-
+      Gets the format string for a long time value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: longTimePattern
+    fullName: longTimePattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'longTimePattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member'
+    summary: |-
+      Gets the format string for a short date value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shortDatePattern
+    fullName: shortDatePattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shortDatePattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#timeSeparator:member'
+    summary: |-
+      Gets the string used as the time separator. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: timeSeparator
+    fullName: timeSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timeSeparator?: boolean;'
+      return:
+        type:
+          - boolean

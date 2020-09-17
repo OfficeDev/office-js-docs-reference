@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
       - 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#textOrientation:member'
       - 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
     summary: |-
@@ -42,6 +43,23 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#textOrientation:member'
+    summary: >-
+      Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer
+      from -90 to 90 or the integer 180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
     summary: |-
       Specifies if the axis title is visibile.

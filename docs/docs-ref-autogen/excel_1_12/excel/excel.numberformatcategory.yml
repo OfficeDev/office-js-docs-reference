@@ -1,0 +1,132 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NumberFormatCategory:enum'
+    summary: |-
+      Represents a category of number formats.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.NumberFormatCategory
+    fullName: Excel.NumberFormatCategory
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.NumberFormatCategory.accounting:member'
+      - 'excel!Excel.NumberFormatCategory.currency:member'
+      - 'excel!Excel.NumberFormatCategory.custom:member'
+      - 'excel!Excel.NumberFormatCategory.date:member'
+      - 'excel!Excel.NumberFormatCategory.fraction:member'
+      - 'excel!Excel.NumberFormatCategory.general:member'
+      - 'excel!Excel.NumberFormatCategory.number:member'
+      - 'excel!Excel.NumberFormatCategory.percentage:member'
+      - 'excel!Excel.NumberFormatCategory.scientific:member'
+      - 'excel!Excel.NumberFormatCategory.special:member'
+      - 'excel!Excel.NumberFormatCategory.text:member'
+      - 'excel!Excel.NumberFormatCategory.time:member'
+  - uid: 'excel!Excel.NumberFormatCategory.accounting:member'
+    summary: Accounting formats line up the currency symbols and decimal points in a column.
+    name: accounting
+    fullName: accounting
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accounting"'
+  - uid: 'excel!Excel.NumberFormatCategory.currency:member'
+    summary: Currency formats are used for general monetary values. Use Accounting formats to align decimal points in a column.
+    name: currency
+    fullName: currency
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Currency"'
+  - uid: 'excel!Excel.NumberFormatCategory.custom:member'
+    summary: A custom format that is not a part of any category.
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: 'excel!Excel.NumberFormatCategory.date:member'
+    summary: >-
+      Date formats display date and time serial numbers as date values. Date formats that begin with an asterisk (*)
+      respond to changes in regional date and time settings that are specified for the operating system. Formats without
+      an asterisk are not affected by operating system settings.
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Date"'
+  - uid: 'excel!Excel.NumberFormatCategory.fraction:member'
+    summary: >-
+      Fraction formats display the cell value as a whole number with the remainder rounded to the nearest fraction
+      value.
+    name: fraction
+    fullName: fraction
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Fraction"'
+  - uid: 'excel!Excel.NumberFormatCategory.general:member'
+    summary: General format cells have no specific number format.
+    name: general
+    fullName: general
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"General"'
+  - uid: 'excel!Excel.NumberFormatCategory.number:member'
+    summary: >-
+      Number is used for general display of numbers. Currency and Accounting offer specialized formatting for monetary
+      value.
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: 'excel!Excel.NumberFormatCategory.percentage:member'
+    summary: Percentage formats multiply the cell value by 100 and displays the result with a percent symbol.
+    name: percentage
+    fullName: percentage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percentage"'
+  - uid: 'excel!Excel.NumberFormatCategory.scientific:member'
+    summary: Scientific formats display the cell value as a number between 1 and 10 multiplied by a power of 10.
+    name: scientific
+    fullName: scientific
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Scientific"'
+  - uid: 'excel!Excel.NumberFormatCategory.special:member'
+    summary: Special formats are useful for tracking list and database values.
+    name: special
+    fullName: special
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Special"'
+  - uid: 'excel!Excel.NumberFormatCategory.text:member'
+    summary: Text format cells are treated as text even when a number is in the cell. The cell is displayed exactly as entered.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Text"'
+  - uid: 'excel!Excel.NumberFormatCategory.time:member'
+    summary: >-
+      Time formats display date and time serial numbers as date values. Time formats that begin with an asterisk (*)
+      respond to changes in regional date and time settings that are specified for the operating system. Formats without
+      an asterisk are not affected by operating system settings.
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Time"'

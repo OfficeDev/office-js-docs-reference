@@ -21,6 +21,7 @@ items:
       - 'office!Office.UI#displayDialogAsync:member(1)'
       - 'office!Office.UI#displayDialogAsync:member(2)'
       - 'office!Office.UI#messageParent:member(1)'
+      - 'office!Office.UI#openBrowserWindow:member(1)'
   - uid: 'office!Office.UI#addHandlerAsync:member(1)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
@@ -350,6 +351,27 @@ items:
             serialized to a string including JSON and XML can be sent.
           type:
             - boolean | string
+  - uid: 'office!Office.UI#openBrowserWindow:member(1)'
+    summary: Opens a browser window and loads the specified URL.
+    remarks: >-
+      **Requirement set**: [OpenBrowserWindowAPI
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-requirement-sets)
+    name: openBrowserWindow(url)
+    fullName: openBrowserWindow(url)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'openBrowserWindow(url: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: url
+          description: 'The full URL to be opened including protocol (e.g., https), and port number, if any.'
+          type:
+            - string
 references:
   - uid: 'office!Office.EventType:enum'
     name: Office.EventType

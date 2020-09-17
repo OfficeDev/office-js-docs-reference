@@ -14353,13 +14353,6 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * The style applied to the PivotTable.
-         *
-         * [Api set: ExcelApi 1.12]
-         */
-        readonly pivotStyle: Excel.PivotTableStyle;
-        /**
-         *
          * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
          *
          * [Api set: ExcelApi 1.9]
@@ -21535,13 +21528,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         readonly slicerItems: Excel.SlicerItemCollection;
-        /**
-         *
-         * The style applied to the Slicer.
-         *
-         * [Api set: ExcelApi 1.12]
-         */
-        readonly slicerStyle: Excel.SlicerStyle;
         /**
          *
          * Represents the worksheet containing the slicer.

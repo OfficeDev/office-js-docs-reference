@@ -22668,7 +22668,8 @@ export declare namespace Excel {
          *
          * The style applied to the Slicer.
          *
-         * [Api set: ExcelApi 1.12]
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly slicerStyle: Excel.SlicerStyle;
         /**
