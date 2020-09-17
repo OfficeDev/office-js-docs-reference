@@ -15,6 +15,7 @@ items:
       - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#$all:member'
       - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#format:member'
       - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#text:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#textOrientation:member'
       - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#visible:member'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#$all:member'
     summary: >-
@@ -57,6 +58,23 @@ items:
     type: property
     syntax:
       content: 'text?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#textOrientation:member'
+    summary: >-
+      Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer
+      from -90 to 90 or the integer 180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: boolean;'
       return:
         type:
           - boolean

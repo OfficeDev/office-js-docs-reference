@@ -16,6 +16,7 @@ items:
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#authorEmail:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#authorName:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#content:member'
+      - 'excel!Excel.Interfaces.CommentReplyLoadOptions#contentType:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#creationDate:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#id:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#mentions:member'
@@ -77,6 +78,21 @@ items:
     type: property
     syntax:
       content: 'content?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentReplyLoadOptions#contentType:member'
+    summary: |-
+      The content type of the reply.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: contentType
+    fullName: contentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentType?: boolean;'
       return:
         type:
           - boolean

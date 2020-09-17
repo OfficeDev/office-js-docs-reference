@@ -1,0 +1,214 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DatetimeFormatInfo:class'
+    summary: |-
+      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DatetimeFormatInfo
+    fullName: Excel.DatetimeFormatInfo
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.DatetimeFormatInfo#context:member'
+      - 'excel!Excel.DatetimeFormatInfo#dateSeparator:member'
+      - 'excel!Excel.DatetimeFormatInfo#load:member(1)'
+      - 'excel!Excel.DatetimeFormatInfo#load:member(2)'
+      - 'excel!Excel.DatetimeFormatInfo#load:member(3)'
+      - 'excel!Excel.DatetimeFormatInfo#longDatePattern:member'
+      - 'excel!Excel.DatetimeFormatInfo#longTimePattern:member'
+      - 'excel!Excel.DatetimeFormatInfo#shortDatePattern:member'
+      - 'excel!Excel.DatetimeFormatInfo#timeSeparator:member'
+      - 'excel!Excel.DatetimeFormatInfo#toJSON:member(1)'
+  - uid: 'excel!Excel.DatetimeFormatInfo#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DatetimeFormatInfo#dateSeparator:member'
+    summary: |-
+      Gets the string used as the date separator. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dateSeparator
+    fullName: dateSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dateSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DatetimeFormatInfo#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.DatetimeFormatInfoLoadOptions): Excel.DatetimeFormatInfo;'
+      return:
+        type:
+          - 'excel!Excel.DatetimeFormatInfo:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+  - uid: 'excel!Excel.DatetimeFormatInfo#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.DatetimeFormatInfo;'
+      return:
+        type:
+          - 'excel!Excel.DatetimeFormatInfo:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DatetimeFormatInfo#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.DatetimeFormatInfo;
+      return:
+        type:
+          - 'excel!Excel.DatetimeFormatInfo:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.DatetimeFormatInfo#longDatePattern:member'
+    summary: |-
+      Gets the format string for a long date value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: longDatePattern
+    fullName: longDatePattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly longDatePattern: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DatetimeFormatInfo#longTimePattern:member'
+    summary: |-
+      Gets the format string for a long time value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: longTimePattern
+    fullName: longTimePattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly longTimePattern: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DatetimeFormatInfo#shortDatePattern:member'
+    summary: |-
+      Gets the format string for a short date value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shortDatePattern
+    fullName: shortDatePattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shortDatePattern: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DatetimeFormatInfo#timeSeparator:member'
+    summary: |-
+      Gets the string used as the time separator. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: timeSeparator
+    fullName: timeSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly timeSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DatetimeFormatInfo#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.DatetimeFormatInfo object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.DatetimeFormatInfoData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.DatetimeFormatInfoData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.DatetimeFormatInfo:class'
+    name: Excel.DatetimeFormatInfo
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoData

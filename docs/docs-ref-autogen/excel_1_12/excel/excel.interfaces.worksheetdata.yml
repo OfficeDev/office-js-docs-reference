@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetData#autoFilter:member'
       - 'excel!Excel.Interfaces.WorksheetData#charts:member'
       - 'excel!Excel.Interfaces.WorksheetData#comments:member'
+      - 'excel!Excel.Interfaces.WorksheetData#customProperties:member'
       - 'excel!Excel.Interfaces.WorksheetData#enableCalculation:member'
       - 'excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks:member'
       - 'excel!Excel.Interfaces.WorksheetData#id:member'
@@ -76,6 +77,21 @@ items:
       return:
         type:
           - 'excel!Excel.Interfaces.WorksheetData#comments~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#customProperties:member'
+    summary: |-
+      Gets a collection of worksheet-level custom properties.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: customProperties
+    fullName: customProperties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customProperties?: Excel.Interfaces.WorksheetCustomPropertyData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorksheetData#customProperties~0:complex'
   - uid: 'excel!Excel.Interfaces.WorksheetData#enableCalculation:member'
     summary: >-
       Determines if Excel should recalculate the worksheet when necessary. True if Excel recalculates the worksheet when
@@ -393,6 +409,15 @@ references:
       - uid: 'excel!Excel.Interfaces.CommentData:interface'
         name: Excel.Interfaces.CommentData
         fullName: Excel.Interfaces.CommentData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#customProperties~0:complex'
+    name: 'Excel.Interfaces.WorksheetCustomPropertyData[]'
+    fullName: 'Excel.Interfaces.WorksheetCustomPropertyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+        name: Excel.Interfaces.WorksheetCustomPropertyData
+        fullName: Excel.Interfaces.WorksheetCustomPropertyData
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks~0:complex'
