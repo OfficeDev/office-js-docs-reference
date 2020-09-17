@@ -12674,7 +12674,6 @@ export declare namespace Excel {
     export class PivotLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
-        
         /**
          *
          * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.

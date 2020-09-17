@@ -9711,7 +9711,6 @@ export declare namespace Excel {
         context: RequestContext;
         
         
-        
         /**
          *
          * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.

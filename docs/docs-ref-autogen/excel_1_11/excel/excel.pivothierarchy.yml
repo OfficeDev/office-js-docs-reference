@@ -53,6 +53,41 @@ items:
       return:
         type:
           - 'excel!Excel.PivotFieldCollection:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+
+          await Excel.run(async (context) => {
+            // Add a PivotFilter to filter on the values correlated with a row.
+
+            // Get the PivotTable.
+            const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+            // Get the "Farm" field.
+            const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
+
+            // See if any value filter is currently applied to this field, if not, create a new one and apply it to the field.
+            if (field.isFiltered(Excel.PivotFilterType.value)) {
+              // Filter to only include rows with more than 500 wholesale crates sold.
+              const filter: Excel.PivotValueFilter = {
+                condition: Excel.ValueFilterCondition.greaterThan,
+                comparator: 500,
+                value: "Sum of Crates Sold Wholesale"
+              };
+              field.applyFilter({ valueFilter: filter });
+            }
+
+            await context.sync();
+          });
+
+          ```
   - uid: 'excel!Excel.PivotHierarchy#id:member'
     summary: |-
       Id of the PivotHierarchy.
