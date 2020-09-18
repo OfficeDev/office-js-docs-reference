@@ -2679,19 +2679,14 @@ items:
           - 'outlook!Office.NotificationMessages:interface'
   - uid: 'outlook!Office.AppointmentCompose#optionalAttendees:member'
     summary: >-
-      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
+      Provides access to the optional attendees of an event. The type of object and level of access depend on the mode
       of the current item.
 
 
-      The `optionalAttendees` property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that
-      provides methods to get or update the optional attendees for a meeting. By default, the collection is limited to a
-      maximum of 100 members. However, on Windows and Mac, the following limits apply.
-
-
-      - Get 500 members maximum.
-
-
-      - Set a maximum of 100 members per call, up to 500 members total.
+      The `optionalAttendees` property returns a `Recipients` object that provides methods to get or update the optional
+      attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on
+      how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
+      for more details.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -3187,19 +3182,14 @@ items:
             - 'outlook!Office.AppointmentCompose#removeHandlerAsync~3:complex'
   - uid: 'outlook!Office.AppointmentCompose#requiredAttendees:member'
     summary: >-
-      Provides access to the required attendees of an event. The type of object and level of access depends on the mode
+      Provides access to the required attendees of an event. The type of object and level of access depend on the mode
       of the current item.
 
 
-      The `requiredAttendees` property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that
-      provides methods to get or update the required attendees for a meeting. By default, the collection is limited to a
-      maximum of 100 members. However, on Windows and Mac, the following limits apply.
-
-
-      - Get 500 members maximum.
-
-
-      - Set a maximum of 100 members per call, up to 500 members total.
+      The `requiredAttendees` property returns a `Recipients` object that provides methods to get or update the required
+      attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on
+      how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
+      for more details.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:

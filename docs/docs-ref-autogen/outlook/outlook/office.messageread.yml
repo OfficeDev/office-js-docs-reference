@@ -429,13 +429,25 @@ items:
           - 'outlook!Office.Categories:interface'
   - uid: 'outlook!Office.MessageRead#cc:member'
     summary: >-
-      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on
       the mode of the current item.
 
 
-      The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the
-      Cc line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on
-      the web, you can get 20 members maximum, while on Windows and Mac, you can get 500 members maximum.
+      The `cc` property returns an array that contains an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the
+      **Cc** line of the message. Collection size limits:
+
+
+      - Windows: 500 members
+
+
+      - Mac: 100 members
+
+
+      - Web browser: 20 members
+
+
+      - Other: No limit
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -3202,13 +3214,25 @@ items:
           - string
   - uid: 'outlook!Office.MessageRead#to:member'
     summary: >-
-      Provides access to the recipients on the To line of a message. The type of object and level of access depends on
-      the mode of the current item.
+      Provides access to the recipients on the **To** line of a message. The type of object and level of access depend
+      on the mode of the current item.
 
 
-      The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the
-      To line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on
-      the web, you can get 20 members maximum, while on Windows and Mac, you can get 500 members maximum.
+      The `to` property returns an array that contains an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the
+      **To** line of the message. Collection size limits:
+
+
+      - Windows: 500 members
+
+
+      - Mac: 100 members
+
+
+      - Web browser: 20 members
+
+
+      - Other: No limit
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
