@@ -43,14 +43,14 @@ items:
 
       If the metadata JSON file is being generated from JSDoc comments, include the tag
       `@requiresParameterAddresses`<!-- -->. \[ [API set: CustomFunctionsRuntime
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: parameterAddresses
     fullName: parameterAddresses
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'parameterAddresses?: string;'
+      content: 'parameterAddresses?: string[];'
       return:
         type:
-          - string
+          - 'string[]'

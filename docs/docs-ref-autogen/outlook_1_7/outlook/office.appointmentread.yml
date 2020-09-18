@@ -1815,14 +1815,22 @@ items:
           - 'outlook!Office.NotificationMessages:interface'
   - uid: 'outlook!Office.AppointmentRead#optionalAttendees:member'
     summary: >-
-      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
+      Provides access to the optional attendees of an event. The type of object and level of access depend on the mode
       of the current item.
 
 
       The `optionalAttendees` property returns an array that contains an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee to the
-      meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
-      get 500 members maximum.
+      meeting. Collection size limits:
+
+
+      - Windows: 500 members
+
+
+      - Mac: 100 members
+
+
+      - Other: No limit
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -2058,14 +2066,22 @@ items:
             - 'outlook!Office.AppointmentRead#removeHandlerAsync~3:complex'
   - uid: 'outlook!Office.AppointmentRead#requiredAttendees:member'
     summary: >-
-      Provides access to the required attendees of an event. The type of object and level of access depends on the mode
+      Provides access to the required attendees of an event. The type of object and level of access depend on the mode
       of the current item.
 
 
       The `requiredAttendees` property returns an array that contains an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee to the
-      meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
-      get 500 members maximum.
+      meeting. Collection size limits:
+
+
+      - Windows: 500 members
+
+
+      - Mac: 100 members
+
+
+      - Other: No limit
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:

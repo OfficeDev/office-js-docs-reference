@@ -312,7 +312,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "custom-functions-runtime!CustomFunctions.ErrorCode:enum",
-              "docComment": "/**\n * Error codes for custom functions. These errors will appear in the cell that invoked the function.\n */\n",
+              "docComment": "/**\n * Error codes for custom functions. The error codes will appear in the cell that invoked the function.\n *\n * Custom error messages will appear in addition to these error codes. Custom messages will display in the error indicator menu, which is accessed by clicking the error flag on each cell with an error.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -346,7 +346,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "custom-functions-runtime!CustomFunctions.ErrorCode.invalidName:member",
-                  "docComment": "/**\n * There is a typo in the function name. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
+                  "docComment": "/**\n * This error code indicates that there is a typo in the function name. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -367,7 +367,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "custom-functions-runtime!CustomFunctions.ErrorCode.invalidNumber:member",
-                  "docComment": "/**\n * There is a problem with a number used in the function. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
+                  "docComment": "/**\n * This error code indicates that there is a problem with a number used in the function. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -388,7 +388,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "custom-functions-runtime!CustomFunctions.ErrorCode.invalidReference:member",
-                  "docComment": "/**\n * The function refers to an invalid cell. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
+                  "docComment": "/**\n * This error code indicates that the function refers to an invalid cell. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -409,7 +409,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "custom-functions-runtime!CustomFunctions.ErrorCode.invalidValue:member",
-                  "docComment": "/**\n * This error code indicates that a value used in the function is of the wrong data type. A custom error message can also be used in place of the error code, if desired. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
+                  "docComment": "/**\n * This error code indicates that a value used in the function is of the wrong data type. A custom error message can be used in addition to the error code, if desired. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -430,7 +430,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "custom-functions-runtime!CustomFunctions.ErrorCode.notAvailable:member",
-                  "docComment": "/**\n * This error code indicates that the function or service isn't available. A custom error message can also be used in place of the error code, if desired. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
+                  "docComment": "/**\n * This error code indicates that the function or service isn't available. A custom error message can be used in addition to the error code, if desired. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -451,7 +451,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "custom-functions-runtime!CustomFunctions.ErrorCode.nullReference:member",
-                  "docComment": "/**\n * The ranges in the function don't intersect. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
+                  "docComment": "/**\n * This error code indicates that the ranges in the function don't intersect. A custom error message can't be used. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -512,7 +512,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "custom-functions-runtime!CustomFunctions.Invocation#parameterAddresses:member",
-                  "docComment": "/**\n * The range addresses where the function parameters are located, if requested, otherwise undefined.\n *\n * To request the parameter addresses for the function, in the metadata JSON file, the function options should specify: `{ \"requiresParameterAddresses\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresParameterAddresses`. [Api set: CustomFunctionsRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * The range addresses where the function parameters are located, if requested, otherwise undefined.\n *\n * To request the parameter addresses for the function, in the metadata JSON file, the function options should specify: `{ \"requiresParameterAddresses\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresParameterAddresses`. [Api set: CustomFunctionsRuntime 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -520,7 +520,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "string"
+                      "text": "string[]"
                     },
                     {
                       "kind": "Content",
