@@ -805,18 +805,12 @@ items:
             - 'outlook!Office.MessageCompose#addItemAttachmentAsync~1:complex'
   - uid: 'outlook!Office.MessageCompose#bcc:member'
     summary: >-
-      Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a
+      Gets an object that provides methods to get or update the recipients on the **Bcc** (blind carbon copy) line of a
       message.
 
 
-      By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and
-      Mac, the following limits apply.
-
-
-      - Get 500 members maximum.
-
-
-      - Set a maximum of 100 members per call, up to 500 members total.
+      Depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get
+      or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1060,19 +1054,14 @@ items:
           - 'outlook!Office.Categories:interface'
   - uid: 'outlook!Office.MessageCompose#cc:member'
     summary: >-
-      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on
       the mode of the current item.
 
 
-      The `cc` property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to
-      get or update the recipients on the **Cc** line of the message. By default, the collection is limited to a maximum
-      of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.
-
-
-      - Get 500 members maximum.
-
-
-      - Set a maximum of 100 members per call, up to 500 members total.
+      The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the
+      **Cc** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply
+      on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
+      object for more details.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -2993,19 +2982,14 @@ items:
           - 'outlook!Office.Subject:interface'
   - uid: 'outlook!Office.MessageCompose#to:member'
     summary: >-
-      Provides access to the recipients on the To line of a message. The type of object and level of access depends on
-      the mode of the current item.
+      Provides access to the recipients on the **To** line of a message. The type of object and level of access depend
+      on the mode of the current item.
 
 
-      The `to` property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to
-      get or update the recipients on the **To** line of the message. By default, the collection is limited to a maximum
-      of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.
-
-
-      - Get 500 members maximum.
-
-
-      - Set a maximum of 100 members per call, up to 500 members total.
+      The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the
+      **To** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply
+      on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
+      object for more details.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:

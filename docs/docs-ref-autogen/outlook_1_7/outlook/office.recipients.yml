@@ -28,16 +28,34 @@ items:
       - 'outlook!Office.Recipients#setAsync:member(1)'
       - 'outlook!Office.Recipients#setAsync:member(2)'
   - uid: 'outlook!Office.Recipients#addAsync:member(1)'
-    summary: |-
+    summary: >-
       Adds a recipient list to the existing recipients for an appointment or message.
+
 
       The recipients parameter can be an array of one of the following:
 
+
       - Strings containing SMTP email addresses
+
 
       - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
+
       - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
+
+
+      Maximum number that can be added:
+
+
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
+      field on the item is 500 recipients.
+
+
+      - Mac, web browser: 100 recipients
+
+
+      - Other: No limit
+
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -87,16 +105,34 @@ items:
           type:
             - 'outlook!Office.Recipients#addAsync~1:complex'
   - uid: 'outlook!Office.Recipients#addAsync:member(2)'
-    summary: |-
+    summary: >-
       Adds a recipient list to the existing recipients for an appointment or message.
+
 
       The recipients parameter can be an array of one of the following:
 
+
       - Strings containing SMTP email addresses
+
 
       - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
+
       - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
+
+
+      Maximum number that can be added:
+
+
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
+      field on the item is 500 recipients.
+
+
+      - Mac, web browser: 100 recipients
+
+
+      - Other: No limit
+
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -177,7 +213,13 @@ items:
 
 
       When the call completes, the `asyncResult.value` property will contain an array of
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
+
+
+      - Windows, Mac, web browser: 500 members
+
+
+      - Other: No limit
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -223,7 +265,13 @@ items:
 
 
       When the call completes, the `asyncResult.value` property will contain an array of
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
+
+
+      - Windows, Mac, web browser: 500 members
+
+
+      - Other: No limit
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -380,6 +428,12 @@ items:
 
       - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
+      Maximum number that can be set:
+
+      - Windows, Mac, web browser: 100 recipients
+
+      - Other: No limit
+
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -440,6 +494,12 @@ items:
       - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
       - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
+
+      Maximum number that can be set:
+
+      - Windows, Mac, web browser: 100 recipients
+
+      - Other: No limit
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

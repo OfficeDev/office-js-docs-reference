@@ -766,17 +766,17 @@ items:
 
             `toRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the To line. The array is limited to a maximum of 100 entries.
+            on the **To** line. The array is limited to a maximum of 100 entries.
 
 
             `ccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the Cc line. The array is limited to a maximum of 100 entries.
+            on the **Cc** line. The array is limited to a maximum of 100 entries.
 
 
             `bccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the Bcc line. The array is limited to a maximum of 100 entries.
+            on the **Bcc** line. The array is limited to a maximum of 100 entries.
 
 
             `subject`<!-- -->: A string containing the subject of the message. The string is limited to a maximum of 255
