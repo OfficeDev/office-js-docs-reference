@@ -1135,7 +1135,7 @@ declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-requirement-sets | OpenBrowserWindowApi 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}
          *  
          * @param url The full URL to be opened including protocol (e.g., https), and port number, if any.
          */
@@ -1475,6 +1475,10 @@ declare namespace Office {
          */
          column?: number
     }
+	/**
+	 * Used to strongly type the `handler` property of RemoveHandlerOptions.
+	 */
+	 type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
     /**
      * Provides options to determine which event handler or handlers are removed.
      */
@@ -1482,7 +1486,7 @@ declare namespace Office {
         /**
          * The handler to be removed. If not specified all handlers for the specified event type are removed.
          */
-        handler?: string
+        handler?: BindingEventHandler
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
