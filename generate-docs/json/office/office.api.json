@@ -2176,6 +2176,49 @@
               "extendsTokenRanges": []
             },
             {
+              "kind": "TypeAlias",
+              "canonicalReference": "office!Office.BindingEventHandler:type",
+              "docComment": "/**\n * Used to strongly type the `handler` property of RemoveHandlerOptions.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type BindingEventHandler = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(eventArgs?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Office.BindingDataChangedEventArgs",
+                  "canonicalReference": "office!Office.BindingDataChangedEventArgs:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Office.BindingSelectionChangedEventArgs",
+                  "canonicalReference": "office!Office.BindingSelectionChangedEventArgs:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "BindingEventHandler",
+              "typeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
               "kind": "Interface",
               "canonicalReference": "office!Office.Bindings:interface",
               "docComment": "/**\n * Represents the bindings the add-in has within the document.\n */\n",
@@ -26184,8 +26227,9 @@
                       "text": "handler?: "
                     },
                     {
-                      "kind": "Content",
-                      "text": "string"
+                      "kind": "Reference",
+                      "text": "BindingEventHandler",
+                      "canonicalReference": "office!Office.BindingEventHandler:type"
                     }
                   ],
                   "releaseTag": "Public",

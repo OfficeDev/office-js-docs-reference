@@ -1180,7 +1180,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/direct-precedents.yaml
 
           await Excel.run(async (context) => {
             // Precedents are cells referenced by the formula in a cell.
@@ -1642,7 +1642,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
           await Excel.run(async (context) => {
             const activeRange = context.workbook.getSelectedRange();
@@ -2031,7 +2031,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/dynamic-arrays.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/dynamic-arrays.yaml
 
           await Excel.run(async (context) => {
             const sheet = context.workbook.worksheets.getItem("Sample");

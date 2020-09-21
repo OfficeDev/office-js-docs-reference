@@ -40,7 +40,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
           await Excel.run(async (context) => {
             // Add a date-based PivotFilter.
@@ -95,7 +95,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
           await Excel.run(async (context) => {
             // Add a PivotFilter to filter based on the strings of item labels.
@@ -145,7 +145,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
           await Excel.run(async (context) => {
             // Add a PivotFilter to filter on manually-selected items.
@@ -194,7 +194,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
           await Excel.run(async (context) => {
             // Add a PivotFilter to filter on the values correlated with a row.

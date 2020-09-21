@@ -33,7 +33,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'handler?: string'
+      content: 'handler?: BindingEventHandler'
       return:
         type:
-          - string
+          - 'office!Office.BindingEventHandler:type'
+references:
+  - uid: 'office!Office.BindingEventHandler:type'
+    name: BindingEventHandler

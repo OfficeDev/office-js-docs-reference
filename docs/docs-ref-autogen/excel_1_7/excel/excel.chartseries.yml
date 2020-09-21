@@ -625,7 +625,63 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-bubble-chart.yaml
+
+          await Excel.run(async (context) => {
+            /*
+              The table is expected to look like this:
+              Product, Inventory, Price, Current Market Share
+              Calamansi, 2000, $2.45, 10%
+              ...
+
+              We want a each bubble to represent a single row.
+            */
+
+            // Get the worksheet and table data.
+            const sheet = context.workbook.worksheets.getItem("Sample");
+            const table = sheet.tables.getItem("Sales");
+            const dataRange = table.getDataBodyRange();
+
+            // Get the table data without the row names.
+            const valueRange = dataRange.getOffsetRange(0, 1).getResizedRange(0, -1);
+
+            // Create the chart.
+            const bubbleChart = sheet.charts.add(Excel.ChartType.bubble, valueRange);
+            bubbleChart.name = "Product Chart";
+
+            // Remove the default series, since we want a unique series for each row.
+            bubbleChart.series.getItemAt(0).delete();
+
+            // Load the data necessary to make a chart series.
+            dataRange.load(["rowCount", "values"]);
+            await context.sync();
+
+            // For each row, create a chart series (a bubble).
+            for (let i = 0; i < dataRange.rowCount; i++) {
+              const newSeries = bubbleChart.series.add(dataRange.values[i][0], i);
+              newSeries.setXAxisValues(dataRange.getCell(i, 1));
+              newSeries.setValues(dataRange.getCell(i, 2));
+              newSeries.setBubbleSizes(dataRange.getCell(i, 3));
+
+              // Show the product name and market share percentage.
+              newSeries.dataLabels.showSeriesName = true;
+              newSeries.dataLabels.showBubbleSize = true;
+              newSeries.dataLabels.showValue = false;
+            }
+
+            await context.sync();
+          });
+
+          ```
       parameters:
         - id: sourceData
           description: The Range object corresponding to the source data.

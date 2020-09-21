@@ -1459,6 +1459,10 @@ export declare namespace Office {
          */
          column?: number
     }
+	/**
+	 * Used to strongly type the `handler` property of RemoveHandlerOptions.
+	 */
+	 type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
     /**
      * Provides options to determine which event handler or handlers are removed.
      */
@@ -1466,7 +1470,7 @@ export declare namespace Office {
         /**
          * The handler to be removed. If not specified all handlers for the specified event type are removed.
          */
-        handler?: string
+        handler?: BindingEventHandler
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
