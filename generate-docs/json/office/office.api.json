@@ -29778,7 +29778,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.UI#openBrowserWindow:member(1)",
-                  "docComment": "/**\n * Opens a browser window and loads the specified URL.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-requirement-sets | OpenBrowserWindowApi 1.1}\n *\n * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.\n */\n",
+                  "docComment": "/**\n * Opens a browser window and loads the specified URL.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}\n *\n * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

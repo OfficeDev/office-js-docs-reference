@@ -355,7 +355,7 @@ items:
     summary: Opens a browser window and loads the specified URL.
     remarks: >-
       **Requirement set**: [OpenBrowserWindowAPI
-      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-requirement-sets)
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets)
     name: openBrowserWindow(url)
     fullName: openBrowserWindow(url)
     langs:
