@@ -50,7 +50,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/custom-properties.yaml
 
           await Excel.run(async (context) => {
             // Get the key/value pair from the task pane.

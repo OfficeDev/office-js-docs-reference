@@ -1092,6 +1092,31 @@
 
       await context.sync();
     });
+'Excel.ChartSeries#getDimensionValues:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-bubble-chart.yaml
+
+    await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+
+      // The sample chart is of type `Excel.ChartType.bubble`.
+      const bubbleChart = sheet.charts.getItem("Product Chart");
+
+      // Get the first series in the chart.
+      const firstSeries = bubbleChart.series.getItemAt(0);
+
+      // Get the values for the dimensions we're interested in.
+      const bubbleSize = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.bubbleSizes);
+      const xValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.xvalues);
+      const yValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.yvalues);
+      const category = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.categories);
+
+      await context.sync();
+
+      // Log the information.
+      console.log(`Series ${category.value} - X:${xValues.value},Y:${yValues.value},Bubble:${bubbleSize.value}`);
+    });
 'Excel.ChartSeries#load:member(2)':
   - |-
     // Rename the 1st series of Chart1 to "New Series Name"
@@ -1234,6 +1259,55 @@
         series3.markerBackgroundColor = "purple";
 
         await context.sync();
+    });
+'Excel.ChartSeries#setBubbleSizes:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-bubble-chart.yaml
+
+    await Excel.run(async (context) => {
+      /*
+        The table is expected to look like this:
+        Product, Inventory, Price, Current Market Share
+        Calamansi, 2000, $2.45, 10%
+        ...
+
+        We want each bubble to represent a single row.
+      */
+
+      // Get the worksheet and table data.
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const table = sheet.tables.getItem("Sales");
+      const dataRange = table.getDataBodyRange();
+
+      // Get the table data without the row names.
+      const valueRange = dataRange.getOffsetRange(0, 1).getResizedRange(0, -1);
+
+      // Create the chart.
+      const bubbleChart = sheet.charts.add(Excel.ChartType.bubble, valueRange);
+      bubbleChart.name = "Product Chart";
+
+      // Remove the default series, since we want a unique series for each row.
+      bubbleChart.series.getItemAt(0).delete();
+
+      // Load the data necessary to make a chart series.
+      dataRange.load(["rowCount", "values"]);
+      await context.sync();
+
+      // For each row, create a chart series (a bubble).
+      for (let i = 0; i < dataRange.rowCount; i++) {
+        const newSeries = bubbleChart.series.add(dataRange.values[i][0], i);
+        newSeries.setXAxisValues(dataRange.getCell(i, 1));
+        newSeries.setValues(dataRange.getCell(i, 2));
+        newSeries.setBubbleSizes(dataRange.getCell(i, 3));
+
+        // Show the product name and market share percentage.
+        newSeries.dataLabels.showSeriesName = true;
+        newSeries.dataLabels.showBubbleSize = true;
+        newSeries.dataLabels.showValue = false;
+      }
+
+      await context.sync();
     });
 'Excel.ChartSeries#setValues:member(1)':
   - >-
@@ -1507,6 +1581,115 @@
         sheet.comments.add("A2", "TODO: add data.");
         await context.sync();
     });
+'Excel.CommentCollection#onAdded:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+
+    await Excel.run(async (context) => {
+        const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+
+        // Register the onAdded, onChanged, and onDeleted comment event handlers.
+        comments.onAdded.add(commentAdded);
+        comments.onChanged.add(commentChanged);
+        comments.onDeleted.add(commentDeleted);
+
+        await context.sync();
+
+        console.log("Added event handlers for when comments are added, changed, or deleted.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+
+    async function commentAdded(event: Excel.CommentAddedEventArgs) {
+        await Excel.run(async (context) => {
+            // Retrieve the added comment using the comment ID.
+            // Note: This method assumes only a single comment is added at a time. 
+            const addedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+            // Load the added comment's data.
+            addedComment.load(["content", "authorName", "creationDate"]);
+
+            await context.sync();
+
+            // Print out the added comment's data.
+            console.log(`A comment was added:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+            console.log(`    Comment content:${addedComment.content}`);
+            console.log(`    Comment author:${addedComment.authorName}`);
+            console.log(`    Creation date:${addedComment.creationDate}`);
+        });
+    }
+'Excel.CommentCollection#onChanged:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+
+    await Excel.run(async (context) => {
+        const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+
+        // Register the onAdded, onChanged, and onDeleted comment event handlers.
+        comments.onAdded.add(commentAdded);
+        comments.onChanged.add(commentChanged);
+        comments.onDeleted.add(commentDeleted);
+
+        await context.sync();
+
+        console.log("Added event handlers for when comments are added, changed, or deleted.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+
+    async function commentChanged(event: Excel.CommentChangedEventArgs) {
+        await Excel.run(async (context) => {
+            // Retrieve the changed comment using the comment ID.
+            // Note: This method assumes only a single comment is changed at a time. 
+            const changedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+            // Load the changed comment's data.
+            changedComment.load(["content", "authorName", "creationDate"]);
+
+            await context.sync();
+
+            // Print out the changed comment's data.
+            console.log(`A comment was changed:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+            console.log(`    Updated comment content: ${changedComment.content}`);
+            console.log(`    Comment author: ${changedComment.authorName}`);
+            console.log(`    Creation date: ${changedComment.creationDate}`);
+        });
+    }
+'Excel.CommentCollection#onDeleted:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+
+    await Excel.run(async (context) => {
+        const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+
+        // Register the onAdded, onChanged, and onDeleted comment event handlers.
+        comments.onAdded.add(commentAdded);
+        comments.onChanged.add(commentChanged);
+        comments.onDeleted.add(commentDeleted);
+
+        await context.sync();
+
+        console.log("Added event handlers for when comments are added, changed, or deleted.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+
+    async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
+        await Excel.run(async (context) => {
+            // Print out the deleted comment's ID.
+            // Note: This method assumes only a single comment is deleted at a time. 
+            console.log(`A comment was deleted:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+        });
+    }
 'Excel.CommentReply#content:member':
   - >-
     // Link to full sample:
@@ -2086,7 +2269,7 @@
 'Excel.CultureInfo#datetimeFormat:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info-date-time.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/culture-info-date-time.yaml
 
     await Excel.run(async (context) => {
       context.application.cultureInfo.datetimeFormat.load([
@@ -2159,7 +2342,7 @@
 'Excel.CustomPropertyCollection#add:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/custom-properties.yaml
 
     await Excel.run(async (context) => {
       // Get the key/value pair from the task pane.
@@ -2667,7 +2850,7 @@
 'Excel.DocumentProperties#custom:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/custom-properties.yaml
 
     await Excel.run(async (context) => {
       // Load the keys and values of all custom properties.
@@ -3096,7 +3279,7 @@
 'Excel.PivotField#clearAllFilters:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
     await Excel.run(async (context) => {
       // Clear all the PivotFilters.
@@ -3115,7 +3298,7 @@
 'Excel.PivotFilters#dateFilter:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
     await Excel.run(async (context) => {
       // Add a date-based PivotFilter.
@@ -3147,7 +3330,7 @@
 'Excel.PivotFilters#labelFilter:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
     await Excel.run(async (context) => {
       // Add a PivotFilter to filter based on the strings of item labels.
@@ -3174,7 +3357,7 @@
 'Excel.PivotFilters#manualFilter:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
     await Excel.run(async (context) => {
       // Add a PivotFilter to filter on manually-selected items.
@@ -3200,7 +3383,7 @@
 'Excel.PivotFilters#valueFilter:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
     await Excel.run(async (context) => {
       // Add a PivotFilter to filter on the values correlated with a row.
@@ -3227,7 +3410,7 @@
 'Excel.PivotHierarchy#fields:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-pivotfilters.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
     await Excel.run(async (context) => {
       // Add a PivotFilter to filter on the values correlated with a row.
@@ -3585,7 +3768,7 @@
 'Excel.Range#getDirectPrecedents:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/direct-precedents.yaml
 
     await Excel.run(async (context) => {
       // Precedents are cells referenced by the formula in a cell.
@@ -3788,7 +3971,7 @@
 'Excel.Range#getPivotTables:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
     await Excel.run(async (context) => {
       const activeRange = context.workbook.getSelectedRange();
@@ -3847,7 +4030,7 @@
 'Excel.Range#getSpillingToRange:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/dynamic-arrays.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/dynamic-arrays.yaml
 
     await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -4335,29 +4518,6 @@
         }
 
         await context.sync();
-    });
-'Excel.Range#workbookRangeAreas:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
-
-    await Excel.run(async (context) => {
-      // Precedents are cells referenced by the formula in a cell.
-      let range = context.workbook.getActiveCell();
-      let directPrecedents = range.getDirectPrecedents();
-      range.load("address");
-      directPrecedents.areas.load("address");
-      await context.sync();
-
-      console.log(`Direct precedent cells of ${range.address}:`);
-
-      // Use the direct precedents API to loop through precedents of the active cell. 
-      for (var i = 0; i < directPrecedents.areas.items.length; i++) {
-        // Highlight and console the address of each precedent cell.
-        directPrecedents.areas.items[i].format.fill.color = "Yellow";
-        console.log(`  ${directPrecedents.areas.items[i].address}`);
-      }
-      await context.sync();
     });
 'Excel.RangeAreas#format:member':
   - >-
@@ -6057,7 +6217,7 @@
 'Excel.Workbook#pivotTables:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
     await Excel.run(async (context) => {
       // Get the names of all the PivotTables in the workbook.
@@ -6190,7 +6350,7 @@
 'Excel.WorkbookRangeAreas#areas:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/direct-precedents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/direct-precedents.yaml
 
     await Excel.run(async (context) => {
       // Precedents are cells referenced by the formula in a cell.
@@ -6257,7 +6417,7 @@
 'Excel.Worksheet#customProperties:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/custom-properties.yaml
 
     await Excel.run(async (context) => {
       // Load the keys and values of all custom properties in the current worksheet.
@@ -6596,7 +6756,7 @@
 'Excel.Worksheet#pivotTables:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
     await Excel.run(async (context) => {
       // Get the names of all the PivotTables in the current worksheet.
@@ -6917,7 +7077,7 @@
 'Excel.WorksheetCustomPropertyCollection#add:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/custom-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/custom-properties.yaml
 
     await Excel.run(async (context) => {
       // Get the key/value pair from the task pane.

@@ -1215,7 +1215,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/pivottable-get-pivottables.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
           await Excel.run(async (context) => {
             // Get the names of all the PivotTables in the current worksheet.
