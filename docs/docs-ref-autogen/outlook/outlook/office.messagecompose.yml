@@ -1353,16 +1353,10 @@ items:
           type:
             - 'outlook!Office.MessageCompose#disableClientSignatureAsync~1:complex'
   - uid: 'outlook!Office.MessageCompose#from:member'
-    summary: >-
+    summary: |-
       Gets the email address of the sender of a message.
 
-
-      The `from` and `sender` properties represent the same person unless the message is sent by a delegate. In that
-      case, the `from` property represents the owner, and the `sender` property represents the delegate.
-
-
       The `from` property returns a `From` object that provides a method to get the from value.
-
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

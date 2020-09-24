@@ -19632,7 +19632,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#from:member",
-                  "docComment": "/**\n * Gets the email address of the sender of a message.\n *\n * The `from` and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the owner, and the `sender` property represents the delegate.\n *\n * The `from` property returns a `From` object that provides a method to get the from value.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Gets the email address of the sender of a message.\n *\n * The `from` property returns a `From` object that provides a method to get the from value.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
