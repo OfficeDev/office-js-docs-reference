@@ -14,7 +14,7 @@ items:
       .pptx file.
 
 
-      \[ [API set: PowerPointApi 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.1](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     name: PowerPoint.createPresentation(base64File)
     fullName: PowerPoint.createPresentation(base64File)
     langs:
