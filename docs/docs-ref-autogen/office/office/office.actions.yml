@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Actions:interface'
+    summary: Used to associate an action name to a function.
+    name: Office.Actions
+    fullName: Office.Actions
+    langs:
+      - typeScript
+    type: interface
+    package: office!
+    children:
+      - 'office!Office.Actions#associate:member'
+  - uid: 'office!Office.Actions#associate:member'
+    summary: Function to associate a name with the action function.
+    name: associate
+    fullName: associate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'associate: (actionName: string, action: (arg?: any) => void) => void;'
+      return:
+        type:
+          - '(actionName: string, action: (arg?: any) => void) => void'

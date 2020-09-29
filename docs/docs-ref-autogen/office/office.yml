@@ -7,6 +7,7 @@ items:
       - typeScript
     type: package
     children:
+      - 'office!Office.Actions:interface'
       - 'office!Office.ActiveView:enum'
       - 'office!Office.AddBindingFromNamedItemOptions:interface'
       - 'office!Office.AddBindingFromPromptOptions:interface'
@@ -385,6 +386,8 @@ items:
           type:
             - boolean
 references:
+  - uid: 'office!Office.Actions:interface'
+    name: Office.Actions
   - uid: 'office!Office.ActiveView:enum'
     name: Office.ActiveView
   - uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
