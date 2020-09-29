@@ -315,6 +315,10 @@ export declare namespace Office {
      */
     export function useShortNamespace(useShortNamespace: boolean): void;
     /**
+     * Provides a method for associating action names with functions that carry out an action.
+     */
+    const actions: Actions;
+    /**
      * Represents the add-in.
      */
     const addin: Addin;
@@ -504,6 +508,15 @@ export declare namespace Office {
         * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
         */
         value: T;
+    }
+    /**
+     * Used to associate an action name to a function.
+     */
+    export interface Actions {
+        /**
+         * Function to associate a name with the action function.
+         */
+        associate: (actionName: string, action: (arg?: any) => void) => void;
     }
     /**
      * Message used in the `onVisibilityModeChanged` invocation.
