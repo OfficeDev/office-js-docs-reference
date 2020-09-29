@@ -29,6 +29,69 @@
           "name": "Office",
           "members": [
             {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.Actions:interface",
+              "docComment": "/**\n * Used to associate an action name to a function.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Actions "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Actions",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Actions#associate:member",
+                  "docComment": "/**\n * Function to associate a name with the action function.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "associate: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(actionName: string, action: (arg?: any) => void) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "associate",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "office!Office.actions:var",
+              "docComment": "/**\n * Provides a method for associating action names with functions that carry out an action.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "actions: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Actions",
+                  "canonicalReference": "office!Office.Actions:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "actions",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
               "kind": "Enum",
               "canonicalReference": "office!Office.ActiveView:enum",
               "docComment": "/**\n * Specifies the state of the active view of the document, for example, whether the user can edit the document.\n */\n",
