@@ -55,8 +55,13 @@ items:
         type:
           - string
   - uid: 'outlook!Office.SharedProperties#targetMailbox:member'
-    summary: |-
-      The target/owner's mailbox. Use with `targetRestUrl` to construct REST operation's URL.
+    summary: >-
+      The location of the owner's mailbox for the delegate's access. This location may differ based on the Outlook
+      client.
+
+
+      Use with `targetRestUrl` to construct the REST operation's URL.
+
 
       Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     name: targetMailbox
@@ -70,10 +75,10 @@ items:
         type:
           - string
   - uid: 'outlook!Office.SharedProperties#targetRestUrl:member'
-    summary: >-
-      The REST API's base URL (currently https://outlook.office.com/api). Use with `targetMailbox` to construct REST
-      operation's URL.
+    summary: |-
+      The REST API's base URL (currently https://outlook.office.com/api).
 
+      Use with `targetMailbox` to construct the REST operation's URL.
 
       Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     name: targetRestUrl

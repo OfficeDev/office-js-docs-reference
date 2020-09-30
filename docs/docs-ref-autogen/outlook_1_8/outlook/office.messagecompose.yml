@@ -1833,6 +1833,19 @@ items:
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
 
+      **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the
+      following conditions are met.
+
+
+      1. The owner shares at least one mailbox folder with the delegate.
+
+
+      2. The delegate drafts a message in the shared folder.
+
+
+      After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
+
+
       For more information around using this API, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
@@ -1877,7 +1890,7 @@ items:
               let sharedProperties = result2.value;
               let delegatePermissions = sharedProperties.delegatePermissions;
 
-              // Determine if user can do the expected operation, e.g., do they have Write permission?
+              // Determine if user has the appropriate permission to do the operation.
               if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
                 var ewsId = Office.context.mailbox.item.itemId;
                 var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
@@ -1934,6 +1947,19 @@ items:
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
 
+      **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the
+      following conditions are met.
+
+
+      1. The owner shares at least one mailbox folder with the delegate.
+
+
+      2. The delegate drafts a message in the shared folder.
+
+
+      After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
+
+
       For more information around using this API, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
@@ -1962,7 +1988,7 @@ items:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
       if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-        console.error("Try this sample on a message from a shared folder.");
+        console.error("Try this sample on an item from a shared folder.");
         return;
       }
 
