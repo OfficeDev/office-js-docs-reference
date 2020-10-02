@@ -467,7 +467,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#onVisibilityModeChanged:member(1)",
-                  "docComment": "/**\n * Adds a listener for the `onVisbilityModeChanged` event.\n *\n * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves when the listener is added.\n */\n",
+                  "docComment": "/**\n * Adds a listener for the `onVisbilityModeChanged` event.\n *\n * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves to a function when the listener is added. The `RemoveEventListener` type is defined with `type RemoveEventListener = () => Promise<void>`. Calling it removes the listener.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26283,7 +26283,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.RemoveHandlerOptions#handler:member",
-                  "docComment": "/**\n * The handler to be removed. If not specified all handlers for the specified event type are removed.\n */\n",
+                  "docComment": "/**\n * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed. The `BindingEventHandler` type is defined with `type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
