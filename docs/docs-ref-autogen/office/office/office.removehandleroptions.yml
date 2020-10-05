@@ -26,7 +26,10 @@ items:
         type:
           - any
   - uid: 'office!Office.RemoveHandlerOptions#handler:member'
-    summary: The handler to be removed. If not specified all handlers for the specified event type are removed.
+    summary: >-
+      The handler to be removed. If a particular handler is not specified, then all handlers for the specified event
+      type are removed. The `BindingEventHandler` type is defined with `type BindingEventHandler = (eventArgs?:
+      Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any`<!-- -->.
     name: handler
     fullName: handler
     langs:

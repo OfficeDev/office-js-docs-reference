@@ -136,6 +136,17 @@ items:
       return:
         type:
           - 'office!Office.ContextInformation:interface'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          var contextInfo = Office.context.diagnostics;
+          console.log("Office application: " + contextInfo.host);
+          console.log("Office version: " + contextInfo.version);
+          console.log("Platform: " + contextInfo.platform);
+          ```
   - uid: 'office!Office.Context#displayLanguage:member'
     summary: Gets the locale (language) specified by the user for the UI of the Office host application.
     remarks: >-
