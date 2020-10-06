@@ -557,7 +557,7 @@ export declare namespace Office {
         /**
          * Adds a listener for the `onVisbilityModeChanged` event.
          * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.
-         * @returns A promise that resolves when the listener is added.
+         * @returns A promise that resolves to a function when the listener is added. The `RemoveEventListener` type is defined with `type RemoveEventListener = () => Promise<void>`. Calling it removes the listener.
          */
         onVisibilityModeChanged(
             listener: (message: VisibilityModeChangedMessage) => void,
@@ -1481,7 +1481,7 @@ export declare namespace Office {
      */
     export interface RemoveHandlerOptions {
         /**
-         * The handler to be removed. If not specified all handlers for the specified event type are removed.
+         * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed. The `BindingEventHandler` type is defined with `type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any`.
          */
         handler?: BindingEventHandler
         /**

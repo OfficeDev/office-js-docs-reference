@@ -24,6 +24,15 @@ items:
       return:
         type:
           - 'office!Office.HostType:enum'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          var contextInfo = Office.context.diagnostics;
+          console.log("Office application: " + contextInfo.host);
+          ```
   - uid: 'office!Office.ContextInformation#platform:member'
     summary: Gets the platform on which the add-in is running.
     name: platform
@@ -36,6 +45,15 @@ items:
       return:
         type:
           - 'office!Office.PlatformType:enum'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          var contextInfo = Office.context.diagnostics;
+          console.log("Platform: " + contextInfo.platform);
+          ```
   - uid: 'office!Office.ContextInformation#version:member'
     summary: Gets the version of Office on which the add-in is running.
     name: version
@@ -48,6 +66,15 @@ items:
       return:
         type:
           - string
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          var contextInfo = Office.context.diagnostics;
+          console.log("Office version: " + contextInfo.version);
+          ```
 references:
   - uid: 'office!Office.HostType:enum'
     name: Office.HostType

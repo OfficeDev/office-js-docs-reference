@@ -55,7 +55,9 @@ items:
       return:
         type:
           - 'office!Office.Addin#onVisibilityModeChanged~0:complex'
-        description: A promise that resolves when the listener is added.
+        description: >-
+          A promise that resolves to a function when the listener is added. The `RemoveEventListener` type is defined
+          with `type RemoveEventListener = () => Promise<void>`<!-- -->. Calling it removes the listener.
       parameters:
         - id: listener
           description: >-
