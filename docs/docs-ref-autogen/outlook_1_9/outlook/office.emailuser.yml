@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.EmailUser:interface'
+    summary: Represents an email account on an Exchange Server.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Read
+    name: Office.EmailUser
+    fullName: Office.EmailUser
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.EmailUser#displayName:member'
+      - 'outlook!Office.EmailUser#emailAddress:member'
+  - uid: 'outlook!Office.EmailUser#displayName:member'
+    summary: Gets the display name associated with an email address.
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.EmailUser#emailAddress:member'
+    summary: Gets the SMTP email address.
+    name: emailAddress
+    fullName: emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string

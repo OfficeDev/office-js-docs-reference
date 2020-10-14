@@ -59,7 +59,7 @@ items:
       set to `null`<!-- -->.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -97,7 +97,6 @@ items:
       );
 
       ```
-    isPreview: true
     name: 'appendOnSendAsync(data, options, callback)'
     fullName: 'appendOnSendAsync(data, options, callback)'
     langs:
@@ -153,7 +152,7 @@ items:
       set to `null`<!-- -->.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -173,7 +172,6 @@ items:
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the
       message body is in plain text.
-    isPreview: true
     name: 'appendOnSendAsync(data, callback)'
     fullName: 'appendOnSendAsync(data, callback)'
     langs:

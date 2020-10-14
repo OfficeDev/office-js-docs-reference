@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
+    summary: |-
+      Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: Office.AttachmentsChangedEventArgs
+    fullName: Office.AttachmentsChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.AttachmentsChangedEventArgs#attachmentDetails:member'
+      - 'outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member'
+      - 'outlook!Office.AttachmentsChangedEventArgs#type:member'
+  - uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentDetails:member'
+    summary: >-
+      Represents the set of attachments that were added or removed. For each such attachment, gets `id`<!-- -->,
+      `name`<!-- -->, `size`<!-- -->, and `attachmentType` properties.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: attachmentDetails
+    fullName: attachmentDetails
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachmentDetails: object[];'
+      return:
+        type:
+          - 'object[]'
+  - uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member'
+    summary: >-
+      Gets whether the attachments were added or removed. See
+      [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum) for details.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: attachmentStatus
+    fullName: attachmentStatus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachmentStatus: MailboxEnums.AttachmentStatus | string;'
+      return:
+        type:
+          - 'outlook!Office.AttachmentsChangedEventArgs#attachmentStatus~0:complex'
+  - uid: 'outlook!Office.AttachmentsChangedEventArgs#type:member'
+    summary: |-
+      Gets the type of the event. See `Office.EventType` for details.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "olkAttachmentsChanged";'
+      return:
+        type:
+          - '"olkAttachmentsChanged"'
+references:
+  - uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentStatus~0:complex'
+    name: MailboxEnums.AttachmentStatus | string
+    fullName: Office.MailboxEnums.AttachmentStatus | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.AttachmentStatus:enum'
+        name: MailboxEnums.AttachmentStatus
+        fullName: Office.MailboxEnums.AttachmentStatus
+      - name: ' | string'
+        fullName: ' | string'
