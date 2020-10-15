@@ -18,7 +18,6 @@ items:
       - 'excel!Excel.Interfaces.TableUpdateData#showHeaders:member'
       - 'excel!Excel.Interfaces.TableUpdateData#showTotals:member'
       - 'excel!Excel.Interfaces.TableUpdateData#style:member'
-      - 'excel!Excel.Interfaces.TableUpdateData#tableStyle:member'
   - uid: 'excel!Excel.Interfaces.TableUpdateData#highlightFirstColumn:member'
     summary: |-
       Specifies if the first column contains special formatting.
@@ -168,21 +167,3 @@ items:
       return:
         type:
           - string
-  - uid: 'excel!Excel.Interfaces.TableUpdateData#tableStyle:member'
-    summary: |-
-      The style applied to the Table.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tableStyle
-    fullName: tableStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tableStyle?: Excel.Interfaces.TableStyleUpdateData;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
-    name: Excel.Interfaces.TableStyleUpdateData

@@ -682,8 +682,10 @@ export declare namespace Excel {
     }
     /** [Api set: ExcelApi 1.2] */
 	var icons: IconCollections;
+    
     export interface Session {
     }
+    
     /**
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
      */
@@ -3829,6 +3831,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         getLastRow(): Excel.Range;
+        
         /**
          * Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
          *
@@ -13327,9 +13330,9 @@ export declare namespace Excel {
          *
          * @param axis - The axis from which to get the PivotItems. Must be either "row" or "column."
          * @param cell - A single cell within the PivotTable's data body.
-         * @returns A collection of PivotItems that are used to calculate the values in the specified row.
+         * @returns A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
          */
-        getPivotItems(axis: Excel.PivotAxis, cell: Range | string): OfficeExtension.ClientResult<Excel.PivotItem[]>;
+        getPivotItems(axis: Excel.PivotAxis, cell: Range | string): Excel.PivotItemCollection;
         /**
          * Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
          *
@@ -13337,9 +13340,9 @@ export declare namespace Excel {
          *
          * @param axisString - The axis from which to get the PivotItems. Must be either "row" or "column."
          * @param cell - A single cell within the PivotTable's data body.
-         * @returns A collection of PivotItems that are used to calculate the values in the specified row.
+         * @returns A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
          */
-        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string): OfficeExtension.ClientResult<Excel.PivotItem[]>;
+        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string): Excel.PivotItemCollection;
         /**
          * Returns the range the PivotTable exists on, excluding the filter area.
          *
@@ -26671,6 +26674,7 @@ export declare namespace Excel {
         itemNotFound = "ItemNotFound",
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
+        pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
         requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
@@ -27067,7 +27071,6 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
-            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -29491,7 +29494,6 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
-            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -31214,7 +31216,6 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
         export interface SlicerUpdateData {
-            
             /**
             *
             * Represents the worksheet containing the slicer.
@@ -32328,7 +32329,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortData;
-            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -35161,7 +35161,6 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
-            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -37284,7 +37283,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.10]
             */
             slicerItems?: Excel.Interfaces.SlicerItemData[];
-            
             /**
             *
             * Represents the worksheet containing the slicer.
@@ -38771,7 +38769,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
-            
             /**
             *
             * For EACH ITEM in the collection: The worksheet containing the current table.
@@ -38898,7 +38895,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
-            
             /**
             *
             * For EACH ITEM in the collection: The worksheet containing the current table.
@@ -39026,7 +39022,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
-            
             /**
             *
             * The worksheet containing the current table.
@@ -43252,7 +43247,6 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
-            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -47242,7 +47236,6 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
-            
             /**
             *
             * Represents the worksheet containing the slicer.
@@ -47336,7 +47329,6 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
-            
             /**
             *
             * For EACH ITEM in the collection: Represents the worksheet containing the slicer.

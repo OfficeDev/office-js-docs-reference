@@ -1551,9 +1551,7 @@ items:
       in this range is more than 512, the API will fail to return the result.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getMergedAreas()
     fullName: getMergedAreas()
     langs:
