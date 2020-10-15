@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.CommentDeletedEventArgs:interface'
     summary: |-
-      Provides information about the comment(s) that raised the Deleted event.
+      Provides information about the comments that raised the Deleted event.
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CommentDeletedEventArgs

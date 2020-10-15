@@ -205,8 +205,10 @@ export declare namespace Excel {
     }
     /** [Api set: ExcelApi 1.2] */
 	var icons: IconCollections;
+    
     export interface Session {
     }
+    
     /**
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
      */
@@ -2355,6 +2357,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         getLastRow(): Excel.Range;
+        
         /**
          * Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
          *
@@ -18279,6 +18282,7 @@ export declare namespace Excel {
         itemNotFound = "ItemNotFound",
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
+        pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
         requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
@@ -18595,7 +18599,6 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
-            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -20595,7 +20598,6 @@ export declare namespace Excel {
         export interface PivotLayoutUpdateData {
             
             
-            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -21768,7 +21770,6 @@ export declare namespace Excel {
             
             
             
-            
         }
         /** An interface for updating data on the SlicerCollection object, for use in `slicerCollection.set({ ... })`. */
         export interface SlicerCollectionUpdateData {
@@ -22516,7 +22517,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortData;
-            
             /**
              *
              * Specifies if the first column contains special formatting.
@@ -24878,7 +24878,6 @@ export declare namespace Excel {
         export interface PivotLayoutData {
             
             
-            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -26225,7 +26224,6 @@ export declare namespace Excel {
             
             
             
-            
         }
         /** An interface describing the data returned by calling `slicerCollection.toJSON()`. */
         export interface SlicerCollectionData {
@@ -27331,7 +27329,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
-            
             /**
             *
             * For EACH ITEM in the collection: The worksheet containing the current table.
@@ -27454,7 +27451,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
-            
             /**
             *
             * The worksheet containing the current table.
@@ -30910,7 +30906,6 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
-            
             
             
             /**

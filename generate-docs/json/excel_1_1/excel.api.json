@@ -15114,6 +15114,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.pivotTableRangeConflict:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "pivotTableRangeConflict = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"PivotTableRangeConflict\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "pivotTableRangeConflict",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.rangeExceedsLimit:member",
                   "docComment": "",
                   "excerptTokens": [
