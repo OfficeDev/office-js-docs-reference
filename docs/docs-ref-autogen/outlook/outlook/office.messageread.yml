@@ -723,7 +723,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with <b>some bold text</b>.");
 
@@ -786,7 +786,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyAllFormAsync("This is a reply ALL with <b>some bold text</b>.", function(
         asyncResult
@@ -948,7 +948,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
 
@@ -957,7 +957,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-with-attachments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
       Office.context.mailbox.item.displayReplyForm({
         htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -1032,7 +1032,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyFormAsync("This is a reply with <i>some text in italics</i>.", function(
         asyncResult
@@ -1045,11 +1045,11 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-with-attachments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
-      // The async version is only available in preview, and
+      // The async version is only available starting with requirement set 1.9,
 
-      // provides a callback when the new appointment form has been created.
+      // and provides a callback when the new appointment form has been created.
 
       Office.context.mailbox.item.displayReplyFormAsync(
         {
