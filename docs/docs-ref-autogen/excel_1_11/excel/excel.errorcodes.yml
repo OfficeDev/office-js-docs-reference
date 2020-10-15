@@ -24,6 +24,7 @@ items:
       - 'excel!Excel.ErrorCodes.itemNotFound:member'
       - 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
       - 'excel!Excel.ErrorCodes.notImplemented:member'
+      - 'excel!Excel.ErrorCodes.pivotTableRangeConflict:member'
       - 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
       - 'excel!Excel.ErrorCodes.requestAborted:member'
       - 'excel!Excel.ErrorCodes.unsupportedOperation:member'
@@ -140,6 +141,13 @@ items:
       - typeScript
     type: field
     numericValue: '"NotImplemented"'
+  - uid: 'excel!Excel.ErrorCodes.pivotTableRangeConflict:member'
+    name: pivotTableRangeConflict
+    fullName: pivotTableRangeConflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PivotTableRangeConflict"'
   - uid: 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
     name: rangeExceedsLimit
     fullName: rangeExceedsLimit

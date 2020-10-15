@@ -349,11 +349,11 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getPivotItems(axis: Excel.PivotAxis, cell: Range | string): OfficeExtension.ClientResult<Excel.PivotItem[]>;'
+      content: 'getPivotItems(axis: Excel.PivotAxis, cell: Range | string): Excel.PivotItemCollection;'
       return:
         type:
-          - 'excel!Excel.PivotLayout#getPivotItems~0:complex'
-        description: A collection of PivotItems that are used to calculate the values in the specified row.
+          - 'excel!Excel.PivotItemCollection:class'
+        description: A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axis
           description: The axis from which to get the PivotItems. Must be either "row" or "column."
@@ -362,7 +362,7 @@ items:
         - id: cell
           description: A single cell within the PivotTable's data body.
           type:
-            - 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+            - 'excel!Excel.PivotLayout#getPivotItems~0:complex'
   - uid: 'excel!Excel.PivotLayout#getPivotItems:member(2)'
     summary: |-
       Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
@@ -376,11 +376,11 @@ items:
     syntax:
       content: >-
         getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string):
-        OfficeExtension.ClientResult<Excel.PivotItem[]>;
+        Excel.PivotItemCollection;
       return:
         type:
-          - 'excel!Excel.PivotLayout#getPivotItems~2:complex'
-        description: A collection of PivotItems that are used to calculate the values in the specified row.
+          - 'excel!Excel.PivotItemCollection:class'
+        description: A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axisString
           description: The axis from which to get the PivotItems. Must be either "row" or "column."
@@ -389,7 +389,7 @@ items:
         - id: cell
           description: A single cell within the PivotTable's data body.
           type:
-            - 'excel!Excel.PivotLayout#getPivotItems~3:complex'
+            - 'excel!Excel.PivotLayout#getPivotItems~1:complex'
   - uid: 'excel!Excel.PivotLayout#getRange:member(1)'
     summary: |-
       Returns the range the PivotTable exists on, excluding the filter area.
@@ -516,6 +516,7 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: pivotStyle
     fullName: pivotStyle
     langs:
@@ -833,23 +834,11 @@ references:
         fullName: Excel.Range
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.PivotLayout#getPivotItems~0:complex'
-    name: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
-    fullName: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.PivotItem:class'
-        name: Excel.PivotItem
-        fullName: Excel.PivotItem
-      - name: '[]>'
-        fullName: '[]>'
+  - uid: 'excel!Excel.PivotItemCollection:class'
+    name: Excel.PivotItemCollection
   - uid: 'excel!Excel.PivotAxis:enum'
     name: Excel.PivotAxis
-  - uid: 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~0:complex'
     name: Range | string
     fullName: Excel.Range | string
     spec.typeScript:
@@ -858,21 +847,7 @@ references:
         fullName: Excel.Range
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.PivotLayout#getPivotItems~2:complex'
-    name: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
-    fullName: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.PivotItem:class'
-        name: Excel.PivotItem
-        fullName: Excel.PivotItem
-      - name: '[]>'
-        fullName: '[]>'
-  - uid: 'excel!Excel.PivotLayout#getPivotItems~3:complex'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~1:complex'
     name: Range | string
     fullName: Excel.Range | string
     spec.typeScript:
