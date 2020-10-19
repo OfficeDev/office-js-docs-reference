@@ -109,9 +109,15 @@ tryCatch(async () => {
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true)
     );
 
-    console.log("create file: powerpoint.d.ts");
+    console.log("create file: powerpoint.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other")
+    );
+
+    console.log("create file: powerpoint.d.ts (release)");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_1/powerpoint.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other")
     );
 

@@ -34,6 +34,7 @@
           "outlook_1_7/**",
           "outlook_1_8/**",
           "powerpoint/**",
+          "powerpoint_1_1/**",
           "visio/**",
           "word/**",
           "word_1_1/**",
@@ -122,6 +123,8 @@
           "outlook_1_8.yml", 
           "powerpoint/**",
           "powerpoint.yml",  
+          "powerpoint_1_1/**",
+          "powerpoint_1_1.yml",  
           "visio/**",
           "visio.yml",  
           "word/**",
@@ -1232,7 +1235,7 @@
         "**/*.yml"
       ],
       "group": "powerpoint-js-1.1",
-      "src": "docs-ref-autogen/powerpoint",
+      "src": "docs-ref-autogen/powerpoint_1_1",
       "dest": "api"
     },
     {
@@ -1246,7 +1249,7 @@
     },
     {
       "files": [
-        "powerpoint.yml"
+        "powerpoint_1_1.yml"
       ],
       "group": "powerpoint-js-1.1",
       "src": "docs-ref-autogen",
@@ -1265,6 +1268,49 @@
         "toc.yml"
       ],
       "group": "powerpoint-js-1.1",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "powerpoint-js-preview",
+      "src": "docs-ref-autogen/powerpoint",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "powerpoint-js-preview",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "powerpoint.yml"
+      ],
+      "group": "powerpoint-js-preview",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "powerpoint-js-preview",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "powerpoint-js-preview",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1608,6 +1654,10 @@
         "dest": "onenote-js-1.1",
         "moniker_range": "onenote-js-1.1"
       },
+      "powerpoint-js-preview": {
+        "dest": "powerpoint-js-preview",
+        "moniker_range": "powerpoint-js-preview"
+      },
       "powerpoint-js-1.1": {
         "dest": "powerpoint-js-1.1",
         "moniker_range": "powerpoint-js-1.1"
@@ -1829,7 +1879,16 @@
           "common"
         ],
         "docs-ref-autogen/powerpoint/**": [
-          "powerpoint"
+          "powerpoint preview"
+        ],
+        "docs-ref-autogen/powerpoint/powerpoint/**": [
+          "powerpoint preview"
+        ],
+        "docs-ref-autogen/powerpoint_1_1/**": [
+          "powerpoint 1.1"
+        ],
+        "docs-ref-autogen/powerpoint_1_1/powerpoint/**": [
+          "powerpoint 1.1"
         ],
         "docs-ref-autogen/visio/**": [
           "visio"
@@ -1917,6 +1976,9 @@
         "docs-ref-autogen/outlook_1_8/outlook/**": "outlook",
         "docs-ref-autogen/overview/**": "non-product-specific",
         "docs-ref-autogen/powerpoint/**": "powerpoint",
+        "docs-ref-autogen/powerpoint/powerpoint/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_1/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_1/powerpoint/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/visio/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",

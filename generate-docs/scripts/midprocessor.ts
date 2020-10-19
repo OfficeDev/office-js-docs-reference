@@ -8,6 +8,7 @@ const CURRENT_EXCEL_RELEASE = 12;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 8;
 const CURRENT_WORD_RELEASE = 3;
+const CURRENT_POWERPOINT_RELEASE = 1;
 
 tryCatch(async () => {
     // ----
@@ -24,6 +25,7 @@ tryCatch(async () => {
     cleanUpJson("outlook");
     cleanUpJson("excel");
     cleanUpJson("word");
+    cleanUpJson("powerpoint");
     cleanUpJson("onenote");
     cleanUpJson("visio");
 
@@ -169,6 +171,9 @@ tryCatch(async () => {
     }
 
     fsx.writeFileSync("../json/powerpoint/snippets.yaml", yaml.safeDump(powerpointSnippets));
+    for (let i = CURRENT_POWERPOINT_RELEASE; i > 0; i--) {
+        fsx.writeFileSync(`../json/powerpoint_1_${i}/snippets.yaml`, yaml.safeDump(powerpointSnippets));
+    }
 
     fsx.writeFileSync("../json/visio/snippets.yaml", yaml.safeDump(visioSnippets));
 
@@ -217,6 +222,8 @@ function cleanUpJson(host: string) {
         console.log(`\nCompleted ${host}_online`);
     } else if (host === "word") {
         currentRelease = CURRENT_WORD_RELEASE;
+    } else if (host === "powerpoint") {
+        currentRelease = CURRENT_POWERPOINT_RELEASE;
     } else {
         currentRelease = 0;
     }
