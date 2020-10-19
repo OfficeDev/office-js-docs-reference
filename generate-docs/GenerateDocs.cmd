@@ -181,7 +181,7 @@ call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_6 -
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_7 --output-folder .\yaml\outlook_1_7 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_8 --output-folder .\yaml\outlook_1_8 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint --output-folder .\yaml\powerpoint --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint --office 2> nul
+call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\visio --output-folder .\yaml\visio --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word --output-folder .\yaml\word --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul

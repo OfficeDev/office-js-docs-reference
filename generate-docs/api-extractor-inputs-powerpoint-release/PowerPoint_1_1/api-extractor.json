@@ -6,7 +6,7 @@
   },
   "docModel": {
     "enabled": true,
-    "apiJsonFilePath": "../json/powerpoint/<unscopedPackageName>.api.json"
+    "apiJsonFilePath": "../../json/powerpoint_1_1/<unscopedPackageName>.api.json"
   },
   "dtsRollup": {
     "enabled": false
@@ -14,6 +14,9 @@
   "messages": {
     "extractorMessageReporting": {
       "ae-missing-release-tag": {
+        "logLevel": "none"
+      },
+      "ae-forgotten-export": {
         "logLevel": "none"
       }
     },

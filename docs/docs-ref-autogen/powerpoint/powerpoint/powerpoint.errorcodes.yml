@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
+    name: PowerPoint.ErrorCodes
+    fullName: PowerPoint.ErrorCodes
+    langs:
+      - typeScript
+    type: enum
+    package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.ErrorCodes.generalException:member'
+  - uid: 'powerpoint!PowerPoint.ErrorCodes.generalException:member'
+    name: generalException
+    fullName: generalException
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeneralException"'
