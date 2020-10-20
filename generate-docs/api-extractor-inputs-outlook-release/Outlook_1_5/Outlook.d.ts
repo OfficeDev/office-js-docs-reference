@@ -1309,6 +1309,7 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
+        
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
@@ -1331,6 +1332,7 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
         
         
         /**
@@ -1572,6 +1574,8 @@ export declare namespace Office {
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
      */
     export interface Body {
+        
+        
         /**
          * Returns the current body in a specified format.
          *
@@ -1899,6 +1903,7 @@ export declare namespace Office {
          * @param name - The name of the custom property to be returned.
          */
         get(name: string): any;
+        
         /**
          * Removes the specified property from the custom property collection.
          *
@@ -2581,6 +2586,7 @@ export declare namespace Office {
          * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.
          */
         displayAppointmentForm(itemId: string): void;
+        
         /**
          * Displays an existing message.
          *
@@ -2605,6 +2611,7 @@ export declare namespace Office {
          * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
          */
         displayMessageForm(itemId: string): void;
+        
         /**
          * Displays a form for creating a new calendar appointment.
          *
@@ -2632,6 +2639,8 @@ export declare namespace Office {
          * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
          */
         displayNewAppointmentForm(parameters: AppointmentForm): void;
+        
+        
         
         /**
          * Gets a string that contains a token used to call REST APIs or Exchange Web Services (EWS).
@@ -3842,6 +3851,7 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
+        
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
@@ -3864,6 +3874,7 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
         
         
         

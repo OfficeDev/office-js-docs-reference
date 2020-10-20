@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.LocationIdentifier:interface'
+    summary: |-
+      Represents the ID of a location.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var locations = [
+          {
+              "id": "Contoso",
+              "type": Office.MailboxEnums.LocationType.Custom
+          }
+      ];
+
+      ```
+    name: Office.LocationIdentifier
+    fullName: Office.LocationIdentifier
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.LocationIdentifier#id:member'
+      - 'outlook!Office.LocationIdentifier#type:member'
+  - uid: 'outlook!Office.LocationIdentifier#id:member'
+    summary: |-
+      The location's unique ID.
+
+      For `Room` type, it's the room's email address.
+
+      For `Custom` type, it's the `displayName`<!-- -->.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.LocationIdentifier#type:member'
+    summary: The location's type.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: MailboxEnums.LocationType | string;'
+      return:
+        type:
+          - 'outlook!Office.LocationIdentifier#type~0:complex'
+references:
+  - uid: 'outlook!Office.LocationIdentifier#type~0:complex'
+    name: MailboxEnums.LocationType | string
+    fullName: Office.MailboxEnums.LocationType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.LocationType:enum'
+        name: MailboxEnums.LocationType
+        fullName: Office.MailboxEnums.LocationType
+      - name: ' | string'
+        fullName: ' | string'

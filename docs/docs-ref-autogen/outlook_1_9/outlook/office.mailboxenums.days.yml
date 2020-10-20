@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.Days:enum'
+    summary: |-
+      Specifies the day of week or type of day.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.MailboxEnums.Days
+    fullName: Office.MailboxEnums.Days
+    langs:
+      - typeScript
+    type: enum
+    package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.Days.Day:member'
+      - 'outlook!Office.MailboxEnums.Days.Fri:member'
+      - 'outlook!Office.MailboxEnums.Days.Mon:member'
+      - 'outlook!Office.MailboxEnums.Days.Sat:member'
+      - 'outlook!Office.MailboxEnums.Days.Sun:member'
+      - 'outlook!Office.MailboxEnums.Days.Thu:member'
+      - 'outlook!Office.MailboxEnums.Days.Tue:member'
+      - 'outlook!Office.MailboxEnums.Days.Wed:member'
+      - 'outlook!Office.MailboxEnums.Days.Weekday:member'
+      - 'outlook!Office.MailboxEnums.Days.WeekendDay:member'
+  - uid: 'outlook!Office.MailboxEnums.Days.Day:member'
+    summary: Day of week.
+    name: Day
+    fullName: Day
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"day"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Fri:member'
+    summary: Friday
+    name: Fri
+    fullName: Fri
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"fri"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Mon:member'
+    summary: Monday
+    name: Mon
+    fullName: Mon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"mon"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Sat:member'
+    summary: Saturday
+    name: Sat
+    fullName: Sat
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"sat"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Sun:member'
+    summary: Sunday
+    name: Sun
+    fullName: Sun
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"sun"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Thu:member'
+    summary: Thursday
+    name: Thu
+    fullName: Thu
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"thu"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Tue:member'
+    summary: Tuesday
+    name: Tue
+    fullName: Tue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"tue"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Wed:member'
+    summary: Wednesday
+    name: Wed
+    fullName: Wed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"wed"'
+  - uid: 'outlook!Office.MailboxEnums.Days.Weekday:member'
+    summary: 'Week day (excludes weekend days): ''Mon'', ''Tue'', ''Wed'', ''Thu'', and ''Fri''.'
+    name: Weekday
+    fullName: Weekday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"weekday"'
+  - uid: 'outlook!Office.MailboxEnums.Days.WeekendDay:member'
+    summary: 'Weekend day: ''Sat'' and ''Sun''.'
+    name: WeekendDay
+    fullName: WeekendDay
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"weekendDay"'
