@@ -723,7 +723,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with <b>some bold text</b>.");
 
@@ -768,7 +768,7 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -786,7 +786,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyAllFormAsync("This is a reply ALL with <b>some bold text</b>.", function(
         asyncResult
@@ -795,7 +795,6 @@ items:
       });
 
       ```
-    isPreview: true
     name: 'displayReplyAllFormAsync(formData, options, callback)'
     fullName: 'displayReplyAllFormAsync(formData, options, callback)'
     langs:
@@ -949,7 +948,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
 
@@ -958,7 +957,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-with-attachments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
       Office.context.mailbox.item.displayReplyForm({
         htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -1015,7 +1014,7 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -1033,7 +1032,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyFormAsync("This is a reply with <i>some text in italics</i>.", function(
         asyncResult
@@ -1046,11 +1045,11 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-with-attachments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
-      // The async version is only available in preview, and
+      // The async version is only available starting with requirement set 1.9,
 
-      // provides a callback when the new appointment form has been created.
+      // and provides a callback when the new appointment form has been created.
 
       Office.context.mailbox.item.displayReplyFormAsync(
         {
@@ -1066,7 +1065,6 @@ items:
       );
 
       ```
-    isPreview: true
     name: 'displayReplyFormAsync(formData, options, callback)'
     fullName: 'displayReplyFormAsync(formData, options, callback)'
     langs:

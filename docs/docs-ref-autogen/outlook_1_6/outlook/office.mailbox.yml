@@ -531,7 +531,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-appointment.yaml
 
       var itemId = $("#itemId").val();
 
@@ -594,7 +594,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-message.yaml
 
       var itemId = $("#itemId").val();
 
@@ -660,7 +660,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-appointment.yaml
 
       var start = new Date();
 
@@ -728,7 +728,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-message.yaml
 
       Office.context.mailbox.displayNewMessageForm({
         toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item

@@ -105,7 +105,7 @@ tryCatch(async () => {
 
     console.log("create file: outlook.d.ts (release)");
     fsx.writeFileSync(
-        '../api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts',
+        '../api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true)
     );
 
