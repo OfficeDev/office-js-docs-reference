@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
+    summary: |-
+      Specifies the week of the month.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.MailboxEnums.WeekNumber
+    fullName: Office.MailboxEnums.WeekNumber
+    langs:
+      - typeScript
+    type: enum
+    package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.WeekNumber.First:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Last:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.First:member'
+    summary: First week of the month.
+    name: First
+    fullName: First
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"first"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
+    summary: Fourth week of the month.
+    name: Fourth
+    fullName: Fourth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"fourth"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Last:member'
+    summary: Last week of the month.
+    name: Last
+    fullName: Last
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"last"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
+    summary: Second week of the month.
+    name: Second
+    fullName: Second
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"second"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
+    summary: Third week of the month.
+    name: Third
+    fullName: Third
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"third"'

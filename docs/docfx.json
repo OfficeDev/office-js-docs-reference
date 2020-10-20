@@ -33,6 +33,7 @@
           "outlook_1_6/**",
           "outlook_1_7/**",
           "outlook_1_8/**",
+          "outlook_1_9/**",
           "powerpoint/**",
           "powerpoint_1_1/**",
           "visio/**",
@@ -121,6 +122,8 @@
           "outlook_1_7.yml", 
           "outlook_1_8/**",
           "outlook_1_8.yml", 
+          "outlook_1_9/**",
+          "outlook_1_9.yml", 
           "powerpoint/**",
           "powerpoint.yml",  
           "powerpoint_1_1/**",
@@ -572,6 +575,49 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.8",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.9",
+        "src": "docs-ref-autogen/outlook_1_9",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.9",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook_1_9.yml"
+        ],
+        "group": "outlook-js-1.9",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.9",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-js-1.9",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -1594,6 +1640,10 @@
         "dest": "outlook-js-1.8",
         "moniker_range": "outlook-js-1.8"
       },
+      "outlook-js-1.9": {
+        "dest": "outlook-js-1.9",
+        "moniker_range": "outlook-js-1.9"
+      },
       "excel-js-preview": {
         "dest": "excel-js-preview",
         "moniker_range": "excel-js-preview"
@@ -1875,6 +1925,12 @@
         "docs-ref-autogen/outlook_1_8/outlook/**": [
           "outlook 1.8"
         ],
+        "docs-ref-autogen/outlook_1_9/**": [
+          "outlook 1.9"
+        ],
+        "docs-ref-autogen/outlook_1_9/outlook/**": [
+          "outlook 1.9"
+        ],
         "docs-ref-autogen/overview/**": [
           "common"
         ],
@@ -1965,6 +2021,7 @@
         "docs-ref-autogen/outlook_1_6/**": "outlook",
         "docs-ref-autogen/outlook_1_7/**": "outlook",
         "docs-ref-autogen/outlook_1_8/**": "outlook",
+        "docs-ref-autogen/outlook_1_9/**": "outlook",
         "docs-ref-autogen/outlook/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_1/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_2/outlook/**": "outlook",
@@ -1974,6 +2031,7 @@
         "docs-ref-autogen/outlook_1_6/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_7/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_8/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_9/outlook/**": "outlook",
         "docs-ref-autogen/overview/**": "non-product-specific",
         "docs-ref-autogen/powerpoint/**": "powerpoint",
         "docs-ref-autogen/powerpoint/powerpoint/**": "powerpoint",

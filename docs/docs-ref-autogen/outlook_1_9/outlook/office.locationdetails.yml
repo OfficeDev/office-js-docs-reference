@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.LocationDetails:interface'
+    summary: |-
+      Represents a location. Read only.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (place) {
+              console.log("Display name: " + place.displayName);
+              console.log("Type: " + place.locationIdentifier.type);
+              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+                  console.log("Email address: " + place.emailAddress);
+              }
+          });
+      }
+
+      ```
+    name: Office.LocationDetails
+    fullName: Office.LocationDetails
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.LocationDetails#displayName:member'
+      - 'outlook!Office.LocationDetails#emailAddress:member'
+      - 'outlook!Office.LocationDetails#locationIdentifier:member'
+  - uid: 'outlook!Office.LocationDetails#displayName:member'
+    summary: The location's display name.
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.LocationDetails#emailAddress:member'
+    summary: The email address associated with the location.
+    name: emailAddress
+    fullName: emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.LocationDetails#locationIdentifier:member'
+    summary: The `LocationIdentifier` of the location.
+    name: locationIdentifier
+    fullName: locationIdentifier
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locationIdentifier: LocationIdentifier;'
+      return:
+        type:
+          - 'outlook!Office.LocationIdentifier:interface'
+references:
+  - uid: 'outlook!Office.LocationIdentifier:interface'
+    name: LocationIdentifier

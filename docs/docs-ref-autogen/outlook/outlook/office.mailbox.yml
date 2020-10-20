@@ -536,7 +536,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-appointment.yaml
 
       var itemId = $("#itemId").val();
 
@@ -584,7 +584,7 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -602,21 +602,20 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-appointment.yaml
 
       var itemId = $("#itemId").val();
 
 
       // The async version will return error 9049 if the item is not found.
 
-      // The async version is only available in preview.
+      // The async version is only available starting with requirement set 1.9.
 
       Office.context.mailbox.displayAppointmentFormAsync(itemId, function(asyncResult) {
         console.log("Result: " + JSON.stringify(asyncResult));
       });
 
       ```
-    isPreview: true
     name: 'displayAppointmentFormAsync(itemId, options, callback)'
     fullName: 'displayAppointmentFormAsync(itemId, options, callback)'
     langs:
@@ -687,7 +686,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-message.yaml
 
       var itemId = $("#itemId").val();
 
@@ -736,7 +735,7 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -754,21 +753,20 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-message.yaml
 
       var itemId = $("#itemId").val();
 
 
       // The async version will return error 9049 if the item is not found.
 
-      // The async version is only available in preview.
+      // The async version is only available starting with requirement set 1.9.
 
       Office.context.mailbox.displayMessageFormAsync(itemId, function (asyncResult) {
        console.log("Result: " + JSON.stringify(asyncResult));
       });
 
       ```
-    isPreview: true
     name: 'displayMessageFormAsync(itemId, options, callback)'
     fullName: 'displayMessageFormAsync(itemId, options, callback)'
     langs:
@@ -842,7 +840,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-appointment.yaml
 
       var start = new Date();
 
@@ -907,7 +905,7 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -925,7 +923,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-appointment.yaml
 
       var start = new Date();
 
@@ -934,9 +932,9 @@ items:
       end.setHours(start.getHours() + 1);
 
 
-      // The async version is only available in preview, and provides
+      // The async version is only available starting with requirement set 1.9,
 
-      // a callback when the new appointment form has been created.
+      // and provides a callback when the new appointment form has been created.
 
       Office.context.mailbox.displayNewAppointmentFormAsync(
         {
@@ -955,7 +953,6 @@ items:
       );
 
       ```
-    isPreview: true
     name: 'displayNewAppointmentFormAsync(parameters, options, callback)'
     fullName: 'displayNewAppointmentFormAsync(parameters, options, callback)'
     langs:
@@ -1017,7 +1014,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-message.yaml
 
       Office.context.mailbox.displayNewMessageForm({
         toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
@@ -1110,7 +1107,7 @@ items:
       exception is thrown.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -1128,11 +1125,11 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-message.yaml
 
-      // The async version is only available in preview, and
+      // The async version is only available starting with requirement set 1.9,
 
-      // provides a callback when the new message form has been created.
+      // and provides a callback when the new message form has been created.
 
       Office.context.mailbox.displayNewMessageFormAsync(
         {
@@ -1155,7 +1152,6 @@ items:
       );
 
       ```
-    isPreview: true
     name: 'displayNewMessageFormAsync(parameters, options, callback)'
     fullName: 'displayNewMessageFormAsync(parameters, options, callback)'
     langs:

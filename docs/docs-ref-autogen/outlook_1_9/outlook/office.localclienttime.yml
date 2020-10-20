@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.LocalClientTime:interface'
+    summary: Represents a date and time in the local client's time zone. Read mode only.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Read
+    name: Office.LocalClientTime
+    fullName: Office.LocalClientTime
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.LocalClientTime#date:member'
+      - 'outlook!Office.LocalClientTime#hours:member'
+      - 'outlook!Office.LocalClientTime#milliseconds:member'
+      - 'outlook!Office.LocalClientTime#minutes:member'
+      - 'outlook!Office.LocalClientTime#month:member'
+      - 'outlook!Office.LocalClientTime#seconds:member'
+      - 'outlook!Office.LocalClientTime#timezoneOffset:member'
+      - 'outlook!Office.LocalClientTime#year:member'
+  - uid: 'outlook!Office.LocalClientTime#date:member'
+    summary: Integer value representing the day of the month.
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: number;'
+      return:
+        type:
+          - number
+  - uid: 'outlook!Office.LocalClientTime#hours:member'
+    summary: Integer value representing the hour on a 24-hour clock.
+    name: hours
+    fullName: hours
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hours: number;'
+      return:
+        type:
+          - number
+  - uid: 'outlook!Office.LocalClientTime#milliseconds:member'
+    summary: Integer value representing the milliseconds.
+    name: milliseconds
+    fullName: milliseconds
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'milliseconds: number;'
+      return:
+        type:
+          - number
+  - uid: 'outlook!Office.LocalClientTime#minutes:member'
+    summary: Integer value representing the minutes.
+    name: minutes
+    fullName: minutes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minutes: number;'
+      return:
+        type:
+          - number
+  - uid: 'outlook!Office.LocalClientTime#month:member'
+    summary: 'Integer value representing the month, beginning with 0 for January to 11 for December.'
+    name: month
+    fullName: month
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'month: number;'
+      return:
+        type:
+          - number
+  - uid: 'outlook!Office.LocalClientTime#seconds:member'
+    summary: Integer value representing the seconds.
+    name: seconds
+    fullName: seconds
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seconds: number;'
+      return:
+        type:
+          - number
+  - uid: 'outlook!Office.LocalClientTime#timezoneOffset:member'
+    summary: Integer value representing the number of minutes difference between the local time zone and UTC.
+    name: timezoneOffset
+    fullName: timezoneOffset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timezoneOffset: number;'
+      return:
+        type:
+          - number
+  - uid: 'outlook!Office.LocalClientTime#year:member'
+    summary: Integer value representing the year.
+    name: year
+    fullName: year
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'year: number;'
+      return:
+        type:
+          - number
