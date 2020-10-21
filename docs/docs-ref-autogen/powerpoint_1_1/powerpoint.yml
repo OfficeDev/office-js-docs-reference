@@ -10,30 +10,21 @@ items:
       - 'powerpoint!PowerPoint.Application:class'
       - 'powerpoint!PowerPoint.createPresentation:function(1)'
       - 'powerpoint!PowerPoint.ErrorCodes:enum'
-      - 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
-      - 'powerpoint!PowerPoint.InsertSlideOptions:interface'
       - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
       - 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
       - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
-      - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
-      - 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
-      - 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
-      - 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
-      - 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
       - 'powerpoint!PowerPoint.Presentation:class'
       - 'powerpoint!PowerPoint.RequestContext:class'
       - 'powerpoint!PowerPoint.run:function(1)'
       - 'powerpoint!PowerPoint.run:function(2)'
       - 'powerpoint!PowerPoint.run:function(3)'
-      - 'powerpoint!PowerPoint.Slide:class'
-      - 'powerpoint!PowerPoint.SlideCollection:class'
   - uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
     summary: >-
       Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
       .pptx file.
 
 
-      \[ [API set: PowerPointApi 1.1](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: PowerPoint.createPresentation(base64File)
     fullName: PowerPoint.createPresentation(base64File)
     langs:
@@ -181,26 +172,12 @@ references:
         fullName: <void>
   - uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
     name: PowerPoint.ErrorCodes
-  - uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
-    name: PowerPoint.InsertSlideFormatting
-  - uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
-    name: PowerPoint.InsertSlideOptions
   - uid: 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
     name: PowerPoint.Interfaces.CollectionLoadOptions
   - uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
     name: PowerPoint.Interfaces.PresentationData
   - uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
     name: PowerPoint.Interfaces.PresentationLoadOptions
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
-    name: PowerPoint.Interfaces.SlideCollectionData
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
-    name: PowerPoint.Interfaces.SlideCollectionLoadOptions
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
-    name: PowerPoint.Interfaces.SlideCollectionUpdateData
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
-    name: PowerPoint.Interfaces.SlideData
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
-    name: PowerPoint.Interfaces.SlideLoadOptions
   - uid: 'powerpoint!PowerPoint.Presentation:class'
     name: PowerPoint.Presentation
   - uid: 'powerpoint!PowerPoint.RequestContext:class'
@@ -291,7 +268,3 @@ references:
         fullName: OfficeExtension.IPromise
       - name: <T>
         fullName: <T>
-  - uid: 'powerpoint!PowerPoint.Slide:class'
-    name: PowerPoint.Slide
-  - uid: 'powerpoint!PowerPoint.SlideCollection:class'
-    name: PowerPoint.SlideCollection

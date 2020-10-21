@@ -11,20 +11,12 @@ items:
             items:
               - name: ErrorCodes
                 uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
-              - name: InsertSlideFormatting
-                uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
           - name: Application
             uid: 'powerpoint!PowerPoint.Application:class'
-          - name: InsertSlideOptions
-            uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
           - name: Presentation
             uid: 'powerpoint!PowerPoint.Presentation:class'
           - name: RequestContext
             uid: 'powerpoint!PowerPoint.RequestContext:class'
-          - name: Slide
-            uid: 'powerpoint!PowerPoint.Slide:class'
-          - name: SlideCollection
-            uid: 'powerpoint!PowerPoint.SlideCollection:class'
       - name: Common API
         uid: office!
         items:
