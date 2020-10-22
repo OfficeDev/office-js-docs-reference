@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.RequestContext:class'
+    summary: >-
+      The RequestContext object facilitates requests to the PowerPoint application. Since the Office add-in and the
+      PowerPoint application run in two different processes, the request context is required to get access to the
+      PowerPoint object model from the add-in.
+    name: PowerPoint.RequestContext
+    fullName: PowerPoint.RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'powerpoint!OfficeExtension.ClientRequestContext:class'
+    package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.RequestContext:constructor(1)'
+      - 'powerpoint!PowerPoint.RequestContext#application:member'
+      - 'powerpoint!PowerPoint.RequestContext#presentation:member'
+  - uid: 'powerpoint!PowerPoint.RequestContext:constructor(1)'
+    summary: Constructs a new instance of the `RequestContext` class
+    name: (constructor)(url)
+    fullName: (constructor)(url)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(url?: string);'
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - string
+  - uid: 'powerpoint!PowerPoint.RequestContext#application:member'
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Application;'
+      return:
+        type:
+          - 'powerpoint!PowerPoint.Application:class'
+  - uid: 'powerpoint!PowerPoint.RequestContext#presentation:member'
+    name: presentation
+    fullName: presentation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly presentation: Presentation;'
+      return:
+        type:
+          - 'powerpoint!PowerPoint.Presentation:class'
+references:
+  - uid: 'powerpoint!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext
+  - uid: 'powerpoint!PowerPoint.Application:class'
+    name: Application
+  - uid: 'powerpoint!PowerPoint.Presentation:class'
+    name: Presentation

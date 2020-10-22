@@ -1,0 +1,15 @@
+'PowerPoint.createPresentation:function(1)':
+  - |-
+    var myFile = document.getElementById("file");
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        // strip off the metadata before the base64-encoded string
+        var startIndex = event.target.result.indexOf("base64,");
+        var copyBase64 = event.target.result.substr(startIndex + 7);
+
+        PowerPoint.createPresentation(copyBase64);        
+    };
+
+    // read in the file as a data URL so we can parse the base64-encoded string
+    reader.readAsDataURL(myFile.files[0]);

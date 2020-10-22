@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
+    summary: An interface describing the data returned by calling `slide.toJSON()`<!-- -->.
+    name: PowerPoint.Interfaces.SlideData
+    fullName: PowerPoint.Interfaces.SlideData
+    langs:
+      - typeScript
+    type: interface
+    package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.Interfaces.SlideData#id:member'
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideData#id:member'
+    summary: |-
+      Gets the unique ID of the slide.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string

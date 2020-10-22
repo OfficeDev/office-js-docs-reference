@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
+    summary: |-
+      Represents the collection of slides in the presentation.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    name: PowerPoint.Interfaces.SlideCollectionLoadOptions
+    fullName: PowerPoint.Interfaces.SlideCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#$all:member'
+      - 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#id:member'
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#id:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets the unique ID of the slide.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
+    summary: 'An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`<!-- -->.'
+    name: PowerPoint.Interfaces.SlideCollectionUpdateData
+    fullName: PowerPoint.Interfaces.SlideCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData#items:member'
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.SlideData[];'
+      return:
+        type:
+          - 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData#items~0:complex'
+    name: 'PowerPoint.Interfaces.SlideData[]'
+    fullName: 'PowerPoint.Interfaces.SlideData[]'
+    spec.typeScript:
+      - uid: 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
+        name: PowerPoint.Interfaces.SlideData
+        fullName: PowerPoint.Interfaces.SlideData
+      - name: '[]'
+        fullName: '[]'
