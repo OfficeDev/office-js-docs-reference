@@ -25,12 +25,12 @@ items:
   - uid: 'office!Office.UI#addHandlerAsync:member(1)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: DialogAPI 1.2
+      **Requirement set**: [DialogAPI
+      1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
 
 
       You can add multiple event handlers for the specified event type as long as the name of each event handler
       function is unique.
-    isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -69,11 +69,18 @@ items:
   - uid: 'office!Office.UI#closeContainer:member(1)'
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
-      **Hosts**: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)
+      **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
 
 
-      **Requirement set**:
+      **Requirement sets**:
+
+
+      -
       [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
+
+
+      - [Mailbox
+      1.5](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
       The behavior of this method is specified by the following:
@@ -101,7 +108,7 @@ items:
   - uid: 'office!Office.UI#displayDialogAsync:member(1)'
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      **Hosts**: Word, Excel, Outlook, PowerPoint
+      **Hosts**: Excel, Outlook, PowerPoint, Word
 
 
       **Requirement sets**:
@@ -115,7 +122,7 @@ items:
       1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
-      This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
+      This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the
       Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
       [Specify Office hosts and API
       requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
@@ -233,7 +240,7 @@ items:
       1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
-      This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
+      This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the
       Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
       [Specify Office hosts and API
       requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
