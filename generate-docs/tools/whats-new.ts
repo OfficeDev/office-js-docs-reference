@@ -39,6 +39,7 @@ tryCatch(async () => {
             { name: "Excel", value: "Excel" },
             { name: "OneNote", value: "OneNote" },
             { name: "Outlook", value: "Exchange" },
+            { name: "PowerPoint", value: "PowerPoint" },
             { name: "Visio", value: "Visio" },
             { name: "Word", value: "Word" }
         ]
