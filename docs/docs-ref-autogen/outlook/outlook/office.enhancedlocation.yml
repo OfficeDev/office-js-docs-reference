@@ -22,63 +22,9 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.EnhancedLocation#addAsync:member(1)'
-      - 'outlook!Office.EnhancedLocation#addAsync:member(2)'
       - 'outlook!Office.EnhancedLocation#getAsync:member(1)'
-      - 'outlook!Office.EnhancedLocation#getAsync:member(2)'
       - 'outlook!Office.EnhancedLocation#removeAsync:member(1)'
-      - 'outlook!Office.EnhancedLocation#removeAsync:member(2)'
   - uid: 'outlook!Office.EnhancedLocation#addAsync:member(1)'
-    summary: |-
-      Adds to the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-
-
-      **Errors**:
-
-
-      - `InvalidFormatError`<!-- -->: The format of the specified data object is not valid.
-    name: 'addAsync(locationIdentifiers, options, callback)'
-    fullName: 'addAsync(locationIdentifiers, options, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: locationIdentifiers
-          description: The locations to be added to the current list of locations.
-          type:
-            - 'outlook!Office.EnhancedLocation#addAsync~0:complex'
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Check the `status` property of
-            `asyncResult` to determine if the call succeeded.
-          type:
-            - 'outlook!Office.EnhancedLocation#addAsync~1:complex'
-  - uid: 'outlook!Office.EnhancedLocation#addAsync:member(2)'
     summary: |-
       Adds to the set of locations associated with the appointment.
 
@@ -128,15 +74,15 @@ items:
       });
 
       ```
-    name: 'addAsync(locationIdentifiers, callback)'
-    fullName: 'addAsync(locationIdentifiers, callback)'
+    name: 'addAsync(locationIdentifiers, options, callback)'
+    fullName: 'addAsync(locationIdentifiers, options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+        addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -145,42 +91,7 @@ items:
         - id: locationIdentifiers
           description: The locations to be added to the current list of locations.
           type:
-            - 'outlook!Office.EnhancedLocation#addAsync~2:complex'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Check the `status` property of
-            `asyncResult` to determine if the call succeeded.
-          type:
-            - 'outlook!Office.EnhancedLocation#addAsync~3:complex'
-  - uid: 'outlook!Office.EnhancedLocation#getAsync:member(1)'
-    summary: |-
-      Gets the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: 'getAsync(options, callback)'
-    fullName: 'getAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<LocationDetails[]>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
+            - 'outlook!Office.EnhancedLocation#addAsync~0:complex'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
@@ -190,10 +101,11 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Check the `status` property of
+            `asyncResult` to determine if the call succeeded.
           type:
-            - 'outlook!Office.EnhancedLocation#getAsync~0:complex'
-  - uid: 'outlook!Office.EnhancedLocation#getAsync:member(2)'
+            - 'outlook!Office.EnhancedLocation#addAsync~1:complex'
+  - uid: 'outlook!Office.EnhancedLocation#getAsync:member(1)'
     summary: |-
       Gets the set of locations associated with the appointment.
 
@@ -236,61 +148,20 @@ items:
       });
 
       ```
-    name: getAsync(callback)
-    fullName: getAsync(callback)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<LocationDetails[]>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.EnhancedLocation#getAsync~1:complex'
-  - uid: 'outlook!Office.EnhancedLocation#removeAsync:member(1)'
-    summary: >-
-      Removes the set of locations associated with the appointment.
-
-
-      If there are multiple locations with the same name, all matching locations will be removed even if only one was
-      specified in `locationIdentifiers`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    name: 'removeAsync(locationIdentifiers, options, callback)'
-    fullName: 'removeAsync(locationIdentifiers, options, callback)'
+    name: 'getAsync(options, callback)'
+    fullName: 'getAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<LocationDetails[]>) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: locationIdentifiers
-          description: The locations to be removed from the current list of locations.
-          type:
-            - 'outlook!Office.EnhancedLocation#removeAsync~0:complex'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
@@ -300,11 +171,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Check the `status` property of
-            `asyncResult` to determine if the call succeeded.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
-            - 'outlook!Office.EnhancedLocation#removeAsync~1:complex'
-  - uid: 'outlook!Office.EnhancedLocation#removeAsync:member(2)'
+            - 'outlook!Office.EnhancedLocation#getAsync~0:complex'
+  - uid: 'outlook!Office.EnhancedLocation#removeAsync:member(1)'
     summary: >-
       Removes the set of locations associated with the appointment.
 
@@ -353,15 +223,15 @@ items:
       });
 
       ```
-    name: 'removeAsync(locationIdentifiers, callback)'
-    fullName: 'removeAsync(locationIdentifiers, callback)'
+    name: 'removeAsync(locationIdentifiers, options, callback)'
+    fullName: 'removeAsync(locationIdentifiers, options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+        removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -370,14 +240,20 @@ items:
         - id: locationIdentifiers
           description: The locations to be removed from the current list of locations.
           type:
-            - 'outlook!Office.EnhancedLocation#removeAsync~2:complex'
+            - 'outlook!Office.EnhancedLocation#removeAsync~0:complex'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Check the `status` property of
             `asyncResult` to determine if the call succeeded.
           type:
-            - 'outlook!Office.EnhancedLocation#removeAsync~3:complex'
+            - 'outlook!Office.EnhancedLocation#removeAsync~1:complex'
 references:
   - uid: 'outlook!Office.EnhancedLocation#addAsync~0:complex'
     name: 'LocationIdentifier[]'
@@ -391,26 +267,6 @@ references:
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.EnhancedLocation#addAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.EnhancedLocation#addAsync~2:complex'
-    name: 'LocationIdentifier[]'
-    fullName: 'Office.LocationIdentifier[]'
-    spec.typeScript:
-      - uid: 'outlook!Office.LocationIdentifier:interface'
-        name: LocationIdentifier
-        fullName: Office.LocationIdentifier
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'outlook!Office.EnhancedLocation#addAsync~3:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:
@@ -437,22 +293,6 @@ references:
         fullName: Office.LocationDetails
       - name: '[]>) => void'
         fullName: '[]>) => void'
-  - uid: 'outlook!Office.EnhancedLocation#getAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<LocationDetails[]>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.LocationDetails[]>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.LocationDetails:interface'
-        name: LocationDetails
-        fullName: Office.LocationDetails
-      - name: '[]>) => void'
-        fullName: '[]>) => void'
   - uid: 'outlook!Office.EnhancedLocation#removeAsync~0:complex'
     name: 'LocationIdentifier[]'
     fullName: 'Office.LocationIdentifier[]'
@@ -463,26 +303,6 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'outlook!Office.EnhancedLocation#removeAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.EnhancedLocation#removeAsync~2:complex'
-    name: 'LocationIdentifier[]'
-    fullName: 'Office.LocationIdentifier[]'
-    spec.typeScript:
-      - uid: 'outlook!Office.LocationIdentifier:interface'
-        name: LocationIdentifier
-        fullName: Office.LocationIdentifier
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'outlook!Office.EnhancedLocation#removeAsync~3:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:

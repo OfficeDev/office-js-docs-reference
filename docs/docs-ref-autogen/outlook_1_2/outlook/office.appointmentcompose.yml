@@ -29,9 +29,7 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)'
-      - 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(2)'
       - 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(1)'
-      - 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(2)'
       - 'outlook!Office.AppointmentCompose#body:member'
       - 'outlook!Office.AppointmentCompose#end:member'
       - 'outlook!Office.AppointmentCompose#getSelectedDataAsync:member(1)'
@@ -41,10 +39,8 @@ items:
       - 'outlook!Office.AppointmentCompose#location:member'
       - 'outlook!Office.AppointmentCompose#optionalAttendees:member'
       - 'outlook!Office.AppointmentCompose#removeAttachmentAsync:member(1)'
-      - 'outlook!Office.AppointmentCompose#removeAttachmentAsync:member(2)'
       - 'outlook!Office.AppointmentCompose#requiredAttendees:member'
       - 'outlook!Office.AppointmentCompose#setSelectedDataAsync:member(1)'
-      - 'outlook!Office.AppointmentCompose#setSelectedDataAsync:member(2)'
       - 'outlook!Office.AppointmentCompose#start:member'
       - 'outlook!Office.AppointmentCompose#subject:member'
   - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)'
@@ -168,80 +164,6 @@ items:
             an `Error` object that provides a description of the error.
           type:
             - 'outlook!Office.AppointmentCompose#addFileAttachmentAsync~1:complex'
-  - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(2)'
-    summary: >-
-      Adds a file to a message or appointment as an attachment.
-
-
-      The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the
-      compose form.
-
-
-      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
-      same session.
-
-
-      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
-      `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
-      issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Organizer
-
-
-      **Errors**:
-
-
-      - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
-
-
-      - `FileTypeNotSupported`<!-- -->: The attachment has an extension that is not allowed.
-
-
-      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-    name: 'addFileAttachmentAsync(uri, attachmentName, callback)'
-    fullName: 'addFileAttachmentAsync(uri, attachmentName, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult:
-        Office.AsyncResult<string>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: uri
-          description: >-
-            The URI that provides the location of the file to attach to the message or appointment. The maximum length
-            is 2048 characters.
-          type:
-            - string
-        - id: attachmentName
-          description: >-
-            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
-            characters.
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
-            the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain
-            an `Error` object that provides a description of the error.
-          type:
-            - 'outlook!Office.AppointmentCompose#addFileAttachmentAsync~2:complex'
   - uid: 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(1)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -360,73 +282,6 @@ items:
             `Error` object that provides a description of the error.
           type:
             - 'outlook!Office.AppointmentCompose#addItemAttachmentAsync~0:complex'
-  - uid: 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(2)'
-    summary: >-
-      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
-
-
-      The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`<!-- -->,
-      which contains either the attachment identifier or a code that indicates any error that occurred while attaching
-      the item. You can use the `options` parameter to pass state information to the callback method, if needed.
-
-
-      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
-      same session.
-
-
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Organizer
-
-
-      **Errors**:
-
-
-      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-    name: 'addItemAttachmentAsync(itemId, attachmentName, callback)'
-    fullName: 'addItemAttachmentAsync(itemId, attachmentName, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult:
-        Office.AsyncResult<string>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: itemId
-          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
-          type:
-            - any
-        - id: attachmentName
-          description: >-
-            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
-            characters.
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
-            the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an
-            `Error` object that provides a description of the error.
-          type:
-            - 'outlook!Office.AppointmentCompose#addItemAttachmentAsync~1:complex'
   - uid: 'outlook!Office.AppointmentCompose#body:member'
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -1152,59 +1007,6 @@ items:
             property will contain an error code with the reason for the failure.
           type:
             - 'outlook!Office.AppointmentCompose#removeAttachmentAsync~0:complex'
-  - uid: 'outlook!Office.AppointmentCompose#removeAttachmentAsync:member(2)'
-    summary: >-
-      Removes an attachment from a message or appointment.
-
-
-      The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
-      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Organizer
-
-
-      **Errors**:
-
-
-      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    name: 'removeAttachmentAsync(attachmentId, callback)'
-    fullName: 'removeAttachmentAsync(attachmentId, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: Office.AsyncResult<void>) => void):
-        void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: attachmentId
-          description: The identifier of the attachment to remove.
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. If removing the attachment fails, the `asyncResult.error`
-            property will contain an error code with the reason for the failure.
-          type:
-            - 'outlook!Office.AppointmentCompose#removeAttachmentAsync~1:complex'
   - uid: 'outlook!Office.AppointmentCompose#requiredAttendees:member'
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depend on the mode
@@ -1335,6 +1137,27 @@ items:
       Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
@@ -1373,81 +1196,6 @@ items:
             parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.AppointmentCompose#setSelectedDataAsync~1:complex'
-  - uid: 'outlook!Office.AppointmentCompose#setSelectedDataAsync:member(2)'
-    summary: >-
-      Asynchronously inserts data into the body or subject of a message.
-
-
-      The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of
-      the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body
-      or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Organizer
-
-
-      **Errors**:
-
-
-      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
-
-      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Selected text has been updated successfully.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
-    name: 'setSelectedDataAsync(data, callback)'
-    fullName: 'setSelectedDataAsync(data, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: >-
-            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
-            passed in, an `ArgumentOutOfRange` exception is thrown.
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->.
-          type:
-            - 'outlook!Office.AppointmentCompose#setSelectedDataAsync~2:complex'
   - uid: 'outlook!Office.AppointmentCompose#start:member'
     summary: >-
       Gets or sets the date and time that the appointment is to begin.
@@ -1607,31 +1355,9 @@ references:
         fullName: Office.AsyncResult
       - name: <string>) => void
         fullName: <string>) => void
-  - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync~2:complex'
-    name: '(asyncResult: Office.AsyncResult<string>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <string>) => void
-        fullName: <string>) => void
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.AppointmentCompose#addItemAttachmentAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<string>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <string>) => void
-        fullName: <string>) => void
-  - uid: 'outlook!Office.AppointmentCompose#addItemAttachmentAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<string>) => void'
     fullName: '(asyncResult: Office.AsyncResult<string>) => void'
     spec.typeScript:
@@ -1726,17 +1452,6 @@ references:
         fullName: Office.AsyncResult
       - name: <void>) => void
         fullName: <void>) => void
-  - uid: 'outlook!Office.AppointmentCompose#removeAttachmentAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
   - uid: 'outlook!Office.AppointmentCompose#setSelectedDataAsync~0:complex'
     name: Office.AsyncContextOptions & CoercionTypeOptions
     fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
@@ -1750,17 +1465,6 @@ references:
         name: CoercionTypeOptions
         fullName: Office.CoercionTypeOptions
   - uid: 'outlook!Office.AppointmentCompose#setSelectedDataAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.AppointmentCompose#setSelectedDataAsync~2:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:

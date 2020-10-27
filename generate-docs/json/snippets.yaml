@@ -7481,7 +7481,7 @@
         }
       }
     );
-'Office.AppointmentCompose#addHandlerAsync:member(2)':
+'Office.AppointmentCompose#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -7622,7 +7622,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/25-item-save-and-close/close.yaml
 
     Office.context.mailbox.item.close();
-'Office.AppointmentCompose#disableClientSignatureAsync:member(2)':
+'Office.AppointmentCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
@@ -7803,7 +7803,7 @@
                 // Handle attachment formats that are not supported.
         }
     }
-'Office.AppointmentCompose#getAttachmentsAsync:member(2)':
+'Office.AppointmentCompose#getAttachmentsAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
@@ -7823,7 +7823,7 @@
             }
         }
     });
-'Office.AppointmentCompose#getInitializationContextAsync:member(2)':
+'Office.AppointmentCompose#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -7970,7 +7970,7 @@
         console.log("Appointment set to all-day event.");
       }
     });
-'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(2)':
+'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
@@ -8464,7 +8464,6 @@
   - >-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
     coercionType : "html" });
-'Office.AppointmentCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
     // Link to full sample:
@@ -8530,7 +8529,7 @@
       }
       console.log(`Successfully set subject to ${subject}`);
     });
-'Office.AppointmentRead#addHandlerAsync:member(2)':
+'Office.AppointmentRead#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -9023,7 +9022,7 @@
     that has the word "Way" in it.
 
     console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
-'Office.AppointmentRead#getInitializationContextAsync:member(2)':
+'Office.AppointmentRead#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -10353,7 +10352,7 @@
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-'Office.Body#getTypeAsync:member(2)':
+'Office.Body#getTypeAsync:member(1)':
   - |-
     Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
         if (asyncResult.status === "failed") {
@@ -10435,7 +10434,6 @@
         }
       }
     );
-'Office.Body#setSignatureAsync:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
@@ -10454,7 +10452,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.Categories#addAsync:member(2)':
+'Office.Categories#addAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
@@ -10502,7 +10500,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.Categories#removeAsync:member(2)':
+'Office.Categories#removeAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
@@ -13329,7 +13327,7 @@
     requiredAttendees.forEach(function (requiredAttendee) {
         console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
     });
-'Office.EnhancedLocation#addAsync:member(2)':
+'Office.EnhancedLocation#addAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
@@ -13353,7 +13351,7 @@
         console.error(`Failed to add locations. Error message: ${result.error.message}`);
       }
     });
-'Office.EnhancedLocation#getAsync:member(2)':
+'Office.EnhancedLocation#getAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
@@ -13375,7 +13373,7 @@
         console.log("There are no locations.");
       }
     });
-'Office.EnhancedLocation#removeAsync:member(2)':
+'Office.EnhancedLocation#removeAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
@@ -13545,7 +13543,7 @@
             });
         });
     }
-'Office.From#getAsync:member(2)':
+'Office.From#getAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
@@ -13558,7 +13556,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.InternetHeaders#getAsync:member(2)':
+'Office.InternetHeaders#getAsync:member(1)':
   - >-
     Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"],
     callback);
@@ -13568,11 +13566,11 @@
         var dictionary = asyncResult.value;
         var header1_value = dictionary["header1"];
     }
-'Office.InternetHeaders#removeAsync:member(2)':
+'Office.InternetHeaders#removeAsync:member(1)':
   - >-
     Office.context.mailbox.item.internetHeaders.removeAsync(["header1",
     "header2"]);
-'Office.InternetHeaders#setAsync:member(2)':
+'Office.InternetHeaders#setAsync:member(1)':
   - >-
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1",
     "header2": "value2"});
@@ -13588,7 +13586,7 @@
         console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
       }
     });
-'Office.IsAllDayEvent#setAsync:member(2)':
+'Office.IsAllDayEvent#setAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
@@ -13625,7 +13623,7 @@
       }
       console.log(`Appointment location: ${result.value}`);
     });
-'Office.Location#setAsync:member(2)':
+'Office.Location#setAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
@@ -13660,7 +13658,7 @@
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
-'Office.Mailbox#addHandlerAsync:member(2)':
+'Office.Mailbox#addHandlerAsync:member(1)':
   - |-
     Office.initialize = function (reason) {
         $(document).ready(function () {
@@ -14171,7 +14169,7 @@
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("EWS ID (from REST ID): " + ewsId2);
-'Office.MasterCategories#addAsync:member(2)':
+'Office.MasterCategories#addAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
@@ -14210,7 +14208,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.MasterCategories#removeAsync:member(2)':
+'Office.MasterCategories#removeAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
@@ -14359,7 +14357,7 @@
         }
       }
     );
-'Office.MessageCompose#addHandlerAsync:member(2)':
+'Office.MessageCompose#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -14595,7 +14593,7 @@
 
     console.log(`Conversation ID:
     ${Office.context.mailbox.item.conversationId}`);
-'Office.MessageCompose#disableClientSignatureAsync:member(2)':
+'Office.MessageCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
@@ -14667,7 +14665,7 @@
                 // Handle attachment formats that are not supported.
         }
     }
-'Office.MessageCompose#getAttachmentsAsync:member(2)':
+'Office.MessageCompose#getAttachmentsAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
@@ -14706,7 +14704,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.MessageCompose#getInitializationContextAsync:member(2)':
+'Office.MessageCompose#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -14839,7 +14837,7 @@
         var dictionary = asyncResult.value;
         var header1_value = dictionary["header1"];
     }
-'Office.MessageCompose#isClientSignatureEnabledAsync:member(2)':
+'Office.MessageCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
@@ -15070,7 +15068,6 @@
   - >-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
     coercionType : "html" });
-'Office.MessageCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
     // Link to full sample:
@@ -15153,7 +15150,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.MessageRead#addHandlerAsync:member(2)':
+'Office.MessageRead#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -15669,7 +15666,7 @@
     that has the word "Way" in it.
 
     console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
-'Office.MessageRead#getInitializationContextAsync:member(2)':
+'Office.MessageRead#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -16211,7 +16208,7 @@
     for (var i = 0; i < msgTo.length; i++) {
       console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
     }
-'Office.NotificationMessages#addAsync:member(2)':
+'Office.NotificationMessages#addAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
@@ -16268,7 +16265,7 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-'Office.NotificationMessages#getAllAsync:member(2)':
+'Office.NotificationMessages#getAllAsync:member(1)':
   - >-
     // Get all notifications.
 
@@ -16288,7 +16285,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-'Office.NotificationMessages#removeAsync:member(2)':
+'Office.NotificationMessages#removeAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
@@ -16297,7 +16294,7 @@
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
-'Office.NotificationMessages#replaceAsync:member(2)':
+'Office.NotificationMessages#replaceAsync:member(1)':
   - |-
     // Replace a notification with an informational notification.
     Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
@@ -16333,7 +16330,7 @@
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
-'Office.Organizer#getAsync:member(2)':
+'Office.Organizer#getAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
@@ -16363,7 +16360,7 @@
         console.log("Type: " + JSON.stringify(phoneNumber.type));
         console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
     });
-'Office.Recipients#addAsync:member(2)':
+'Office.Recipients#addAsync:member(1)':
   - |-
     // The following example creates an array of EmailUser objects
     // and adds them to the To recipients of the message.
@@ -16579,7 +16576,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.Recurrence#getAsync:member(2)':
+'Office.Recurrence#getAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
@@ -16596,7 +16593,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.Recurrence#setAsync:member(2)':
+'Office.Recurrence#setAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
@@ -16769,7 +16766,7 @@
         console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
       }
     });
-'Office.Sensitivity#setAsync:member(2)':
+'Office.Sensitivity#setAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
@@ -16889,7 +16886,7 @@
     // of a recurring appointment series to 11:30 PM.
     var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartTime("T23:30:00");
-'Office.SessionData#clearAsync:member(2)':
+'Office.SessionData#clearAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
@@ -16927,7 +16924,7 @@
         console.log("Failed to get sessionData. Error: " + JSON.stringify(asyncResult.error));
       }
     });
-'Office.SessionData#removeAsync:member(2)':
+'Office.SessionData#removeAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
@@ -16942,7 +16939,7 @@
         }
       }
     );
-'Office.SessionData#setAsync:member(2)':
+'Office.SessionData#setAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/session-data-apis.yaml
@@ -17035,7 +17032,7 @@
     function callback(asyncResult) {
         var subject = asyncResult.value;
     }
-'Office.Subject#setAsync:member(2)':
+'Office.Subject#setAsync:member(1)':
   - >-
     Office.context.mailbox.item.subject.setAsync("New subject!", function
     (asyncResult) {
@@ -17272,7 +17269,6 @@
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
-'Office.Time#setAsync:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
