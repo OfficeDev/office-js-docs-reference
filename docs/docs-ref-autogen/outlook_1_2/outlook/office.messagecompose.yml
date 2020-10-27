@@ -1017,6 +1017,27 @@ items:
       Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:

@@ -7481,7 +7481,7 @@
         }
       }
     );
-'Office.AppointmentCompose#addHandlerAsync:member(2)':
+'Office.AppointmentCompose#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -7823,7 +7823,7 @@
             }
         }
     });
-'Office.AppointmentCompose#getInitializationContextAsync:member(2)':
+'Office.AppointmentCompose#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -8464,7 +8464,6 @@
   - >-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
     coercionType : "html" });
-'Office.AppointmentCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
     // Link to full sample:
@@ -8530,7 +8529,7 @@
       }
       console.log(`Successfully set subject to ${subject}`);
     });
-'Office.AppointmentRead#addHandlerAsync:member(2)':
+'Office.AppointmentRead#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -9023,7 +9022,7 @@
     that has the word "Way" in it.
 
     console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
-'Office.AppointmentRead#getInitializationContextAsync:member(2)':
+'Office.AppointmentRead#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -10353,7 +10352,7 @@
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-'Office.Body#getTypeAsync:member(2)':
+'Office.Body#getTypeAsync:member(1)':
   - |-
     Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
         if (asyncResult.status === "failed") {
@@ -13557,7 +13556,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.InternetHeaders#getAsync:member(2)':
+'Office.InternetHeaders#getAsync:member(1)':
   - >-
     Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"],
     callback);
@@ -13567,11 +13566,11 @@
         var dictionary = asyncResult.value;
         var header1_value = dictionary["header1"];
     }
-'Office.InternetHeaders#removeAsync:member(2)':
+'Office.InternetHeaders#removeAsync:member(1)':
   - >-
     Office.context.mailbox.item.internetHeaders.removeAsync(["header1",
     "header2"]);
-'Office.InternetHeaders#setAsync:member(2)':
+'Office.InternetHeaders#setAsync:member(1)':
   - >-
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1",
     "header2": "value2"});
@@ -13659,7 +13658,7 @@
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
-'Office.Mailbox#addHandlerAsync:member(2)':
+'Office.Mailbox#addHandlerAsync:member(1)':
   - |-
     Office.initialize = function (reason) {
         $(document).ready(function () {
@@ -14358,7 +14357,7 @@
         }
       }
     );
-'Office.MessageCompose#addHandlerAsync:member(2)':
+'Office.MessageCompose#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -14705,7 +14704,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.MessageCompose#getInitializationContextAsync:member(2)':
+'Office.MessageCompose#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -15069,7 +15068,6 @@
   - >-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
     coercionType : "html" });
-'Office.MessageCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
     // Link to full sample:
@@ -15152,7 +15150,7 @@
         console.error(asyncResult.error);
       }
     });
-'Office.MessageRead#addHandlerAsync:member(2)':
+'Office.MessageRead#addHandlerAsync:member(1)':
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -15668,7 +15666,7 @@
     that has the word "Way" in it.
 
     console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
-'Office.MessageRead#getInitializationContextAsync:member(2)':
+'Office.MessageRead#getInitializationContextAsync:member(1)':
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -16269,12 +16267,6 @@
     handleResult);
 'Office.NotificationMessages#getAllAsync:member(1)':
   - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
-
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-'Office.NotificationMessages#getAllAsync:member(2)':
-  - >-
     // Get all notifications.
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(function
@@ -16288,6 +16280,11 @@
             });
         }
     });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
 'Office.NotificationMessages#removeAsync:member(1)':
   - >-
     // Link to full sample:
@@ -16298,6 +16295,14 @@
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
 'Office.NotificationMessages#replaceAsync:member(1)':
+  - |-
+    // Replace a notification with an informational notification.
+    Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
+        type: "informationalMessage",
+        message : "The message was processed successfully.",
+        icon : "iconid",
+        persistent: false
+    });
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
@@ -16313,15 +16318,6 @@
         persistent: false
       },
       handleResult);
-'Office.NotificationMessages#replaceAsync:member(2)':
-  - |-
-    // Replace a notification with an informational notification.
-    Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
-        type: "informationalMessage",
-        message : "The message was processed successfully.",
-        icon : "iconid",
-        persistent: false
-    });
 'Office.OfficeTheme:interface':
   - |-
     function applyOfficeTheme(){
@@ -16364,7 +16360,7 @@
         console.log("Type: " + JSON.stringify(phoneNumber.type));
         console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
     });
-'Office.Recipients#addAsync:member(2)':
+'Office.Recipients#addAsync:member(1)':
   - |-
     // The following example creates an array of EmailUser objects
     // and adds them to the To recipients of the message.
@@ -17036,7 +17032,7 @@
     function callback(asyncResult) {
         var subject = asyncResult.value;
     }
-'Office.Subject#setAsync:member(2)':
+'Office.Subject#setAsync:member(1)':
   - >-
     Office.context.mailbox.item.subject.setAsync("New subject!", function
     (asyncResult) {

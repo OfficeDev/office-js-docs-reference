@@ -147,6 +147,20 @@ items:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The subject parameter is longer than 255 characters.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
+          if (asyncResult.status === "failed") {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          }
+      });
+
+      ```
     name: 'setAsync(subject, options, callback)'
     fullName: 'setAsync(subject, options, callback)'
     langs:

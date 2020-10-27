@@ -70,6 +70,22 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
+
+
+      function callback(asyncResult) {
+          var dictionary = asyncResult.value;
+          var header1_value = dictionary["header1"];
+      }
+
+      ```
     name: 'getAsync(names, options, callback)'
     fullName: 'getAsync(names, options, callback)'
     langs:
@@ -119,6 +135,16 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
+
+      ```
     name: 'removeAsync(names, options, callback)'
     fullName: 'removeAsync(names, options, callback)'
     langs:
@@ -171,6 +197,16 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
+
+      ```
     name: 'setAsync(headers, options, callback)'
     fullName: 'setAsync(headers, options, callback)'
     langs:

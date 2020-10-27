@@ -358,6 +358,25 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function myHandlerFunction(eventarg) {
+          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+              var attachment = eventarg.attachmentDetails;
+              console.log("Event Fired and Attachment Added!");
+              getAttachmentContentAsync(attachment.id, options, callback);
+          }
+      }
+
+
+      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -2344,6 +2363,27 @@ items:
       ```javascript
 
       Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: 'setSelectedDataAsync(data, options, callback)'

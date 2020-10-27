@@ -65,6 +65,30 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.initialize = function (reason) {
+          $(document).ready(function () {
+              Office.context.mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, function (result) {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                      // Handle error.
+                  }
+              });
+          });
+      };
+
+
+      function loadNewItem(eventArgs) {
+          // Load the properties of the newly selected item.
+          loadProps(Office.context.mailbox.item);
+      }
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:

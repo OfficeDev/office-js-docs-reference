@@ -40,6 +40,22 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
+          if (asyncResult.status === "failed") {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          } else {
+              console.log("Body type: " + asyncResult.value);
+          }
+      });
+
+      ```
     name: 'getTypeAsync(options, callback)'
     fullName: 'getTypeAsync(options, callback)'
     langs:

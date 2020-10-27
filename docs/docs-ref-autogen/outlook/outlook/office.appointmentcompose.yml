@@ -343,6 +343,25 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function myHandlerFunction(eventarg) {
+          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+              var attachment = eventarg.attachmentDetails;
+              console.log("Event Fired and Attachment Added!");
+              getAttachmentContentAsync(attachment.id, options, callback);
+          }
+      }
+
+
+      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -1191,6 +1210,37 @@ items:
 
       More information on [actionable
       messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get the initialization context (if present).
+
+      Office.context.mailbox.item.getInitializationContextAsync(
+          function(asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                  if (asyncResult.value != null && asyncResult.value.length > 0) {
+                      // The value is a string, parse to an object.
+                      var context = JSON.parse(asyncResult.value);
+                      // Do something with context.
+                  } else {
+                      // Empty context, treat as no context.
+                  }
+              } else {
+                  if (asyncResult.error.code == 9020) {
+                      // GenericResponseError returned when there is no context.
+                      // Treat as no context.
+                  } else {
+                      // Handle the error.
+                  }
+              }
+          }
+      );
+
+      ```
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: 'getInitializationContextAsync(options, callback)'
@@ -3054,6 +3104,27 @@ items:
       ```javascript
 
       Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: 'setSelectedDataAsync(data, options, callback)'
