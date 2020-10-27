@@ -24,7 +24,6 @@ items:
       - 'outlook!Office.Location#getAsync:member(1)'
       - 'outlook!Office.Location#getAsync:member(2)'
       - 'outlook!Office.Location#setAsync:member(1)'
-      - 'outlook!Office.Location#setAsync:member(2)'
   - uid: 'outlook!Office.Location#getAsync:member(1)'
     summary: >-
       Gets the location of an appointment.
@@ -169,6 +168,27 @@ items:
 
 
       - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
+      var location = "my office";
+
+      Office.context.mailbox.item.location.setAsync(location, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set location to ${location}`);
+      });
+
+      ```
     name: 'setAsync(location, options, callback)'
     fullName: 'setAsync(location, options, callback)'
     langs:
@@ -200,75 +220,6 @@ items:
             property will contain an error code.
           type:
             - 'outlook!Office.Location#setAsync~0:complex'
-  - uid: 'outlook!Office.Location#setAsync:member(2)'
-    summary: >-
-      Sets the location of an appointment.
-
-
-      The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment.
-      Setting the location of an appointment overwrites the current location.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-
-
-      **Errors**:
-
-
-      - `DataExceedsMaximumSize`<!-- -->: The location parameter is longer than 255 characters.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
-
-      var location = "my office";
-
-      Office.context.mailbox.item.location.setAsync(location, (result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Successfully set location to ${location}`);
-      });
-
-      ```
-    name: 'setAsync(location, callback)'
-    fullName: 'setAsync(location, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAsync(location: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: location
-          description: The location of the appointment. The string is limited to 255 characters.
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. If setting the location fails, the `asyncResult.error`
-            property will contain an error code.
-          type:
-            - 'outlook!Office.Location#setAsync~1:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
@@ -295,17 +246,6 @@ references:
       - name: <string>) => void
         fullName: <string>) => void
   - uid: 'outlook!Office.Location#setAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.Location#setAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:

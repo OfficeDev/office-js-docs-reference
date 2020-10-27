@@ -24,7 +24,6 @@ items:
       - 'outlook!Office.Subject#getAsync:member(1)'
       - 'outlook!Office.Subject#getAsync:member(2)'
       - 'outlook!Office.Subject#setAsync:member(1)'
-      - 'outlook!Office.Subject#setAsync:member(2)'
   - uid: 'outlook!Office.Subject#getAsync:member(1)'
     summary: >-
       Gets the subject of an appointment or message.
@@ -179,69 +178,6 @@ items:
             property will contain an error code.
           type:
             - 'outlook!Office.Subject#setAsync~0:complex'
-  - uid: 'outlook!Office.Subject#setAsync:member(2)'
-    summary: >-
-      Sets the subject of an appointment or message.
-
-
-      The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or
-      message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
-      place.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-
-
-      **Errors**:
-
-
-      - `DataExceedsMaximumSize`<!-- -->: The subject parameter is longer than 255 characters.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          }
-      });
-
-      ```
-    name: 'setAsync(data, callback)'
-    fullName: 'setAsync(data, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: ''
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. If setting the subject fails, the `asyncResult.error`
-            property will contain an error code.
-          type:
-            - 'outlook!Office.Subject#setAsync~1:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
@@ -268,17 +204,6 @@ references:
       - name: <string>) => void
         fullName: <string>) => void
   - uid: 'outlook!Office.Subject#setAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.Subject#setAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:

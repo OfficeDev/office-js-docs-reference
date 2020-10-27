@@ -29,7 +29,6 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.AppointmentRead#addHandlerAsync:member(1)'
-      - 'outlook!Office.AppointmentRead#addHandlerAsync:member(2)'
       - 'outlook!Office.AppointmentRead#attachments:member'
       - 'outlook!Office.AppointmentRead#body:member'
       - 'outlook!Office.AppointmentRead#categories:member'
@@ -40,7 +39,6 @@ items:
       - 'outlook!Office.AppointmentRead#end:member'
       - 'outlook!Office.AppointmentRead#enhancedLocation:member'
       - 'outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)'
-      - 'outlook!Office.AppointmentRead#getAttachmentContentAsync:member(2)'
       - 'outlook!Office.AppointmentRead#getEntities:member(1)'
       - 'outlook!Office.AppointmentRead#getEntitiesByType:member(1)'
       - 'outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)'
@@ -61,7 +59,6 @@ items:
       - 'outlook!Office.AppointmentRead#organizer:member'
       - 'outlook!Office.AppointmentRead#recurrence:member'
       - 'outlook!Office.AppointmentRead#removeHandlerAsync:member(1)'
-      - 'outlook!Office.AppointmentRead#removeHandlerAsync:member(2)'
       - 'outlook!Office.AppointmentRead#requiredAttendees:member'
       - 'outlook!Office.AppointmentRead#seriesId:member'
       - 'outlook!Office.AppointmentRead#start:member'
@@ -122,75 +119,6 @@ items:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#addHandlerAsync~1:complex'
-  - uid: 'outlook!Office.AppointmentRead#addHandlerAsync:member(2)'
-    summary: >-
-      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
-
-
-      Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
-      for supported events.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Attendee
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function myHandlerFunction(eventarg) {
-          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-              var attachment = eventarg.attachmentDetails;
-              console.log("Event Fired and Attachment Added!");
-              getAttachmentContentAsync(attachment.id, options, callback);
-          }
-      }
-
-
-      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
-
-      ```
-    name: 'addHandlerAsync(eventType, handler, callback)'
-    fullName: 'addHandlerAsync(eventType, handler, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should invoke the handler.
-          type:
-            - 'outlook!Office.AppointmentRead#addHandlerAsync~2:complex'
-        - id: handler
-          description: >-
-            The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
-          type:
-            - any
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.AppointmentRead#addHandlerAsync~3:complex'
   - uid: 'outlook!Office.AppointmentRead#attachments:member'
     summary: Gets the item's attachments as an array.
     remarks: >-
@@ -1018,64 +946,6 @@ items:
             `asyncResult.error` property will contain an error code with the reason for the failure.
           type:
             - 'outlook!Office.AppointmentRead#getAttachmentContentAsync~0:complex'
-  - uid: 'outlook!Office.AppointmentRead#getAttachmentContentAsync:member(2)'
-    summary: >-
-      Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
-
-
-      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
-      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
-      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
-      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Attendee
-
-
-      **Errors**:
-
-
-      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
-      images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task
-      item).
-
-
-      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    name: 'getAttachmentContentAsync(attachmentId, callback)'
-    fullName: 'getAttachmentContentAsync(attachmentId, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult:
-        Office.AsyncResult<AttachmentContent>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: attachmentId
-          description: The identifier of the attachment you want to get.
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the
-            `asyncResult.error` property will contain an error code with the reason for the failure.
-          type:
-            - 'outlook!Office.AppointmentRead#getAttachmentContentAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#getEntities:member(1)'
     summary: |-
       Gets the entities found in the selected item's body.
@@ -2531,50 +2401,6 @@ items:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#removeHandlerAsync~1:complex'
-  - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync:member(2)'
-    summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
-
-
-      Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
-      for supported events.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Attendee
-    name: 'removeHandlerAsync(eventType, callback)'
-    fullName: 'removeHandlerAsync(eventType, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should revoke the handler.
-          type:
-            - 'outlook!Office.AppointmentRead#removeHandlerAsync~2:complex'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.AppointmentRead#removeHandlerAsync~3:complex'
   - uid: 'outlook!Office.AppointmentRead#requiredAttendees:member'
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depend on the mode
@@ -2808,26 +2634,6 @@ references:
         fullName: Office.AsyncResult
       - name: <void>) => void
         fullName: <void>) => void
-  - uid: 'outlook!Office.AppointmentRead#addHandlerAsync~2:complex'
-    name: Office.EventType | string
-    fullName: Office.EventType | string
-    spec.typeScript:
-      - uid: 'office!Office.EventType:enum'
-        name: Office.EventType
-        fullName: Office.EventType
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'outlook!Office.AppointmentRead#addHandlerAsync~3:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
   - uid: 'outlook!Office.AppointmentRead#attachments~0:complex'
     name: 'AttachmentDetails[]'
     fullName: 'Office.AttachmentDetails[]'
@@ -2864,22 +2670,6 @@ references:
   - uid: 'outlook!Office.EnhancedLocation:interface'
     name: EnhancedLocation
   - uid: 'outlook!Office.AppointmentRead#getAttachmentContentAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<AttachmentContent>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentContent>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.AttachmentContent:interface'
-        name: AttachmentContent
-        fullName: Office.AttachmentContent
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: 'outlook!Office.AppointmentRead#getAttachmentContentAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<AttachmentContent>) => void'
     fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentContent>) => void'
     spec.typeScript:
@@ -3040,26 +2830,6 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync~2:complex'
-    name: Office.EventType | string
-    fullName: Office.EventType | string
-    spec.typeScript:
-      - uid: 'office!Office.EventType:enum'
-        name: Office.EventType
-        fullName: Office.EventType
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync~3:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:

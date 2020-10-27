@@ -24,11 +24,8 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.Body#getTypeAsync:member(1)'
-      - 'outlook!Office.Body#getTypeAsync:member(2)'
       - 'outlook!Office.Body#prependAsync:member(1)'
-      - 'outlook!Office.Body#prependAsync:member(2)'
       - 'outlook!Office.Body#setSelectedDataAsync:member(1)'
-      - 'outlook!Office.Body#setSelectedDataAsync:member(2)'
   - uid: 'outlook!Office.Body#getTypeAsync:member(1)'
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -70,55 +67,6 @@ items:
             values in the `asyncResult.value` property.
           type:
             - 'outlook!Office.Body#getTypeAsync~0:complex'
-  - uid: 'outlook!Office.Body#getTypeAsync:member(2)'
-    summary: |-
-      Gets a value that indicates whether the content is in HTML or text format.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Body type: " + asyncResult.value);
-          }
-      });
-
-      ```
-    name: getTypeAsync(callback)
-    fullName: getTypeAsync(callback)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTypeAsync(callback?: (asyncResult: Office.AsyncResult<Office.CoercionType>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. The content type is returned as one of the `CoercionType`
-            values in the `asyncResult.value` property.
-          type:
-            - 'outlook!Office.Body#getTypeAsync~1:complex'
   - uid: 'outlook!Office.Body#prependAsync:member(1)'
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -196,58 +144,6 @@ items:
             `asyncResult.error` property.
           type:
             - 'outlook!Office.Body#prependAsync~1:complex'
-  - uid: 'outlook!Office.Body#prependAsync:member(2)'
-    summary: >-
-      Adds the specified content to the beginning of the item body.
-
-
-      The `prependAsync` method inserts the specified string at the beginning of the item body. After insertion, the
-      cursor is returned to its original place, relative to the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-
-
-      **Errors**:
-
-
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
-    name: 'prependAsync(data, callback)'
-    fullName: 'prependAsync(data, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'prependAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type:
-            - 'outlook!Office.Body#prependAsync~2:complex'
   - uid: 'outlook!Office.Body#setSelectedDataAsync:member(1)'
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -331,84 +227,10 @@ items:
             `asyncResult.error` property.
           type:
             - 'outlook!Office.Body#setSelectedDataAsync~1:complex'
-  - uid: 'outlook!Office.Body#setSelectedDataAsync:member(2)'
-    summary: >-
-      Replaces the selection in the body with the specified text.
-
-
-      The `setSelectedDataAsync` method inserts the specified string at the cursor location in the body of the item, or,
-      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
-      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
-      insertion, the cursor is placed at the end of the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-
-
-      **Errors**:
-
-
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.
-
-
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
-      message body is in plain text.
-    name: 'setSelectedDataAsync(data, callback)'
-    fullName: 'setSelectedDataAsync(data, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type:
-            - 'outlook!Office.Body#setSelectedDataAsync~2:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.Body#getTypeAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'office!Office.CoercionType:enum'
-        name: Office.CoercionType
-        fullName: Office.CoercionType
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: 'outlook!Office.Body#getTypeAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
     fullName: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
     spec.typeScript:
@@ -447,17 +269,6 @@ references:
         fullName: Office.AsyncResult
       - name: <void>) => void
         fullName: <void>) => void
-  - uid: 'outlook!Office.Body#prependAsync~2:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
   - uid: 'outlook!Office.Body#setSelectedDataAsync~0:complex'
     name: Office.AsyncContextOptions & CoercionTypeOptions
     fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
@@ -471,17 +282,6 @@ references:
         name: CoercionTypeOptions
         fullName: Office.CoercionTypeOptions
   - uid: 'outlook!Office.Body#setSelectedDataAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.Body#setSelectedDataAsync~2:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:

@@ -23,55 +23,11 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.SessionData#clearAsync:member(1)'
-      - 'outlook!Office.SessionData#clearAsync:member(2)'
       - 'outlook!Office.SessionData#getAllAsync:member(1)'
       - 'outlook!Office.SessionData#getAsync:member(1)'
       - 'outlook!Office.SessionData#removeAsync:member(1)'
-      - 'outlook!Office.SessionData#removeAsync:member(2)'
       - 'outlook!Office.SessionData#setAsync:member(1)'
-      - 'outlook!Office.SessionData#setAsync:member(2)'
   - uid: 'outlook!Office.SessionData#clearAsync:member(1)'
-    summary: |-
-      Clears all session data key-value pairs.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    isPreview: true
-    name: 'clearAsync(options, callback)'
-    fullName: 'clearAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        clearAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.SessionData#clearAsync~0:complex'
-  - uid: 'outlook!Office.SessionData#clearAsync:member(2)'
     summary: |-
       Clears all session data key-value pairs.
 
@@ -105,24 +61,32 @@ items:
 
       ```
     isPreview: true
-    name: clearAsync(callback)
-    fullName: clearAsync(callback)
+    name: 'clearAsync(options, callback)'
+    fullName: 'clearAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'clearAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        clearAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
-            - 'outlook!Office.SessionData#clearAsync~1:complex'
+            - 'outlook!Office.SessionData#clearAsync~0:complex'
   - uid: 'outlook!Office.SessionData#getAllAsync:member(1)'
     summary: |-
       Gets all session data key-value pairs.
@@ -247,51 +211,6 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    isPreview: true
-    name: 'removeAsync(name, options, callback)'
-    fullName: 'removeAsync(name, options, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        removeAsync(name: string, options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: The session data key.
-          type:
-            - string
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.SessionData#removeAsync~0:complex'
-  - uid: 'outlook!Office.SessionData#removeAsync:member(2)'
-    summary: |-
-      Removes a session data key-value pair.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
 
 
       #### Examples
@@ -315,51 +234,14 @@ items:
 
       ```
     isPreview: true
-    name: 'removeAsync(name, callback)'
-    fullName: 'removeAsync(name, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeAsync(name: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: The session data key.
-          type:
-            - string
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.SessionData#removeAsync~1:complex'
-  - uid: 'outlook!Office.SessionData#setAsync:member(1)'
-    summary: |-
-      Sets a session data key-value pair.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    isPreview: true
-    name: 'setAsync(name, value, options, callback)'
-    fullName: 'setAsync(name, value, options, callback)'
+    name: 'removeAsync(name, options, callback)'
+    fullName: 'removeAsync(name, options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        setAsync(name: string, value: string, options: Office.AsyncContextOptions, callback: (asyncResult:
+        removeAsync(name: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -368,10 +250,6 @@ items:
       parameters:
         - id: name
           description: The session data key.
-          type:
-            - string
-        - id: value
-          description: The session data value as a string.
           type:
             - string
         - id: options
@@ -383,10 +261,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
-            - 'outlook!Office.SessionData#setAsync~0:complex'
-  - uid: 'outlook!Office.SessionData#setAsync:member(2)'
+            - 'outlook!Office.SessionData#removeAsync~0:complex'
+  - uid: 'outlook!Office.SessionData#setAsync:member(1)'
     summary: |-
       Sets a session data key-value pair.
 
@@ -423,13 +301,15 @@ items:
 
       ```
     isPreview: true
-    name: 'setAsync(name, value, callback)'
-    fullName: 'setAsync(name, value, callback)'
+    name: 'setAsync(name, value, options, callback)'
+    fullName: 'setAsync(name, value, options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(name: string, value: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(name: string, value: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -443,27 +323,22 @@ items:
           description: The session data value as a string.
           type:
             - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->.
           type:
-            - 'outlook!Office.SessionData#setAsync~1:complex'
+            - 'outlook!Office.SessionData#setAsync~0:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.SessionData#clearAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.SessionData#clearAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:
@@ -507,29 +382,7 @@ references:
         fullName: Office.AsyncResult
       - name: <void>) => void
         fullName: <void>) => void
-  - uid: 'outlook!Office.SessionData#removeAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
   - uid: 'outlook!Office.SessionData#setAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.SessionData#setAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:
