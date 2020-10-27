@@ -28,7 +28,6 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.Mailbox#addHandlerAsync:member(1)'
-      - 'outlook!Office.Mailbox#addHandlerAsync:member(2)'
       - 'outlook!Office.Mailbox#convertToEwsId:member(1)'
       - 'outlook!Office.Mailbox#convertToLocalClientTime:member(1)'
       - 'outlook!Office.Mailbox#convertToRestId:member(1)'
@@ -45,64 +44,9 @@ items:
       - 'outlook!Office.Mailbox#item:member'
       - 'outlook!Office.Mailbox#makeEwsRequestAsync:member(1)'
       - 'outlook!Office.Mailbox#removeHandlerAsync:member(1)'
-      - 'outlook!Office.Mailbox#removeHandlerAsync:member(2)'
       - 'outlook!Office.Mailbox#restUrl:member'
       - 'outlook!Office.Mailbox#userProfile:member'
   - uid: 'outlook!Office.Mailbox#addHandlerAsync:member(1)'
-    summary: >-
-      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
-
-
-      Refer to the Mailbox object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox#events)
-      for supported events.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType | string, handler: (type: Office.EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should invoke the handler.
-          type:
-            - 'outlook!Office.Mailbox#addHandlerAsync~0:complex'
-        - id: handler
-          description: >-
-            The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
-          type:
-            - 'outlook!Office.Mailbox#addHandlerAsync~1:complex'
-        - id: options
-          description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->.
-          type:
-            - 'outlook!Office.Mailbox#addHandlerAsync~2:complex'
-  - uid: 'outlook!Office.Mailbox#addHandlerAsync:member(2)'
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -146,15 +90,15 @@ items:
       }
 
       ```
-    name: 'addHandlerAsync(eventType, handler, callback)'
-    fullName: 'addHandlerAsync(eventType, handler, callback)'
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType | string, handler: (type: Office.EventType) => void,
-        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: (type: Office.EventType) => void, options?:
+        Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -163,19 +107,23 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - 'outlook!Office.Mailbox#addHandlerAsync~3:complex'
+            - 'outlook!Office.Mailbox#addHandlerAsync~0:complex'
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
             The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
           type:
-            - 'outlook!Office.Mailbox#addHandlerAsync~4:complex'
+            - 'outlook!Office.Mailbox#addHandlerAsync~1:complex'
+        - id: options
+          description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->.
           type:
-            - 'outlook!Office.Mailbox#addHandlerAsync~5:complex'
+            - 'outlook!Office.Mailbox#addHandlerAsync~2:complex'
   - uid: 'outlook!Office.Mailbox#convertToEwsId:member(1)'
     summary: >-
       Converts an item ID formatted for REST into EWS format.
@@ -1481,50 +1429,6 @@ items:
             parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.Mailbox#removeHandlerAsync~1:complex'
-  - uid: 'outlook!Office.Mailbox#removeHandlerAsync:member(2)'
-    summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
-
-
-      Refer to the Mailbox object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox#events)
-      for supported events.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: 'removeHandlerAsync(eventType, callback)'
-    fullName: 'removeHandlerAsync(eventType, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should revoke the handler.
-          type:
-            - 'outlook!Office.Mailbox#removeHandlerAsync~2:complex'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->.
-          type:
-            - 'outlook!Office.Mailbox#removeHandlerAsync~3:complex'
   - uid: 'outlook!Office.Mailbox#restUrl:member'
     summary: >-
       Gets the URL of the REST endpoint for this email account.
@@ -1658,37 +1562,6 @@ references:
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.Mailbox#addHandlerAsync~2:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.Mailbox#addHandlerAsync~3:complex'
-    name: Office.EventType | string
-    fullName: Office.EventType | string
-    spec.typeScript:
-      - uid: 'office!Office.EventType:enum'
-        name: Office.EventType
-        fullName: Office.EventType
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'outlook!Office.Mailbox#addHandlerAsync~4:complex'
-    name: '(type: Office.EventType) => void'
-    fullName: '(type: Office.EventType) => void'
-    spec.typeScript:
-      - name: '(type: '
-        fullName: '(type: '
-      - uid: 'office!Office.EventType:enum'
-        name: Office.EventType
-        fullName: Office.EventType
-      - name: ) => void
-        fullName: ) => void
-  - uid: 'outlook!Office.Mailbox#addHandlerAsync~5:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:
@@ -1839,26 +1712,6 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'outlook!Office.Mailbox#removeHandlerAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.Mailbox#removeHandlerAsync~2:complex'
-    name: Office.EventType | string
-    fullName: Office.EventType | string
-    spec.typeScript:
-      - uid: 'office!Office.EventType:enum'
-        name: Office.EventType
-        fullName: Office.EventType
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'outlook!Office.Mailbox#removeHandlerAsync~3:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:

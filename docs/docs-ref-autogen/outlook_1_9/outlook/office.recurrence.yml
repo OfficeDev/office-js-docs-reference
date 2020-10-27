@@ -38,57 +38,12 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.Recurrence#getAsync:member(1)'
-      - 'outlook!Office.Recurrence#getAsync:member(2)'
       - 'outlook!Office.Recurrence#recurrenceProperties:member'
       - 'outlook!Office.Recurrence#recurrenceTimeZone:member'
       - 'outlook!Office.Recurrence#recurrenceType:member'
       - 'outlook!Office.Recurrence#seriesTime:member'
       - 'outlook!Office.Recurrence#setAsync:member(1)'
-      - 'outlook!Office.Recurrence#setAsync:member(2)'
   - uid: 'outlook!Office.Recurrence#getAsync:member(1)'
-    summary: |-
-      Returns the current recurrence object of an appointment series.
-
-      This method returns the entire `Recurrence` object for the appointment series.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: 'getAsync(options, callback)'
-    fullName: 'getAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Recurrence>) =>
-        void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `value` property of the
-            result is a `Recurrence` object.
-          type:
-            - 'outlook!Office.Recurrence#getAsync~0:complex'
-  - uid: 'outlook!Office.Recurrence#getAsync:member(2)'
     summary: |-
       Returns the current recurrence object of an appointment series.
 
@@ -128,25 +83,33 @@ items:
       });
 
       ```
-    name: getAsync(callback)
-    fullName: getAsync(callback)
+    name: 'getAsync(options, callback)'
+    fullName: 'getAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<Recurrence>) => void): void;'
+      content: >-
+        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Recurrence>) =>
+        void): void;
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `value` property of the
             result is a `Recurrence` object.
           type:
-            - 'outlook!Office.Recurrence#getAsync~1:complex'
+            - 'outlook!Office.Recurrence#getAsync~0:complex'
   - uid: 'outlook!Office.Recurrence#recurrenceProperties:member'
     summary: |-
       Gets or sets the properties of the recurring appointment series.
@@ -269,58 +232,6 @@ items:
 
 
       - `InvalidEndTime`<!-- -->: The appointment end time is before its start time.
-    name: 'setAsync(recurrencePattern, options, callback)'
-    fullName: 'setAsync(recurrencePattern, options, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: recurrencePattern
-          description: A recurrence object.
-          type:
-            - 'outlook!Office.Recurrence:interface'
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.Recurrence#setAsync~0:complex'
-  - uid: 'outlook!Office.Recurrence#setAsync:member(2)'
-    summary: |-
-      Sets the recurrence pattern of an appointment series.
-
-      **Note**: `setAsync` should only be available for series items and not instance items.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-
-
-      **Errors**:
-
-
-      - `InvalidEndTime`<!-- -->: The appointment end time is before its start time.
 
 
       #### Examples
@@ -380,13 +291,15 @@ items:
       });
 
       ```
-    name: 'setAsync(recurrencePattern, callback)'
-    fullName: 'setAsync(recurrencePattern, callback)'
+    name: 'setAsync(recurrencePattern, options, callback)'
+    fullName: 'setAsync(recurrencePattern, options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(recurrencePattern: Recurrence, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -396,32 +309,22 @@ items:
           description: A recurrence object.
           type:
             - 'outlook!Office.Recurrence:interface'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
-            - 'outlook!Office.Recurrence#setAsync~1:complex'
+            - 'outlook!Office.Recurrence#setAsync~0:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.Recurrence#getAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<Recurrence>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.Recurrence>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.Recurrence:interface'
-        name: Recurrence
-        fullName: Office.Recurrence
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: 'outlook!Office.Recurrence#getAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<Recurrence>) => void'
     fullName: '(asyncResult: Office.AsyncResult<Office.Recurrence>) => void'
     spec.typeScript:
@@ -455,17 +358,6 @@ references:
   - uid: 'outlook!Office.Recurrence:interface'
     name: Recurrence
   - uid: 'outlook!Office.Recurrence#setAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.Recurrence#setAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
     spec.typeScript:
