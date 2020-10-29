@@ -157,10 +157,13 @@ items:
         type:
           - 'excel!Excel.Interfaces.PivotLayoutData#layoutType~0:complex'
   - uid: 'excel!Excel.Interfaces.PivotLayoutData#pivotStyle:member'
-    summary: |-
+    summary: >-
       The style applied to the PivotTable.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: pivotStyle
     fullName: pivotStyle
     langs:
