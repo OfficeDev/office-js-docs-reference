@@ -214,7 +214,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "constructor(errorCode: "
+                      "text": "constructor(code: "
                     },
                     {
                       "kind": "Reference",
@@ -223,7 +223,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", errorMessage?: "
+                      "text": ", message?: "
                     },
                     {
                       "kind": "Content",
@@ -238,14 +238,14 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "errorCode",
+                      "parameterName": "code",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
                       }
                     },
                     {
-                      "parameterName": "errorMessage",
+                      "parameterName": "message",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
@@ -255,12 +255,12 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "custom-functions-runtime!CustomFunctions.Error#errorCode:member",
+                  "canonicalReference": "custom-functions-runtime!CustomFunctions.Error#code:member",
                   "docComment": "/**\n * The error code returned by your custom function. [Api set: CustomFunctionsRuntime 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "errorCode: "
+                      "text": "code: "
                     },
                     {
                       "kind": "Reference",
@@ -273,7 +273,7 @@
                     }
                   ],
                   "releaseTag": "Public",
-                  "name": "errorCode",
+                  "name": "code",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -282,12 +282,12 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "custom-functions-runtime!CustomFunctions.Error#errorMessage:member",
+                  "canonicalReference": "custom-functions-runtime!CustomFunctions.Error#message:member",
                   "docComment": "/**\n * Your custom error message, such as \"This stock price is unavailable\". Custom messages are only available with certain error codes. [Api set: CustomFunctionsRuntime 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "errorMessage?: "
+                      "text": "message?: "
                     },
                     {
                       "kind": "Content",
@@ -299,7 +299,7 @@
                     }
                   ],
                   "releaseTag": "Public",
-                  "name": "errorMessage",
+                  "name": "message",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
