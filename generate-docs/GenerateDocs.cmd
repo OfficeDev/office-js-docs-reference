@@ -46,6 +46,7 @@ call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_5\excel.
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_4\excel.d.ts "ExcelApi 1.4" ..\api-extractor-inputs-excel-release\Excel_1_3\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_3\excel.d.ts "ExcelApi 1.3" ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts "ExcelApi 1.2" ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts "ExcelApi 1.1" .\tool-inputs\excel-base.d.ts
 
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts "Mailbox 1.9" ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts "Mailbox 1.8" ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts
@@ -55,9 +56,48 @@ call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_5\ou
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts "Mailbox 1.4" ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts "Mailbox 1.3" ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts "Mailbox 1.2" ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts "Mailbox 1.1" .\tool-inputs\outlook-base.d.ts
+
+call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts
 
 call node version-remover ..\api-extractor-inputs-word-release\word_1_3\word.d.ts "WordApi 1.3" ..\api-extractor-inputs-word-release\word_1_2\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_2\word.d.ts "WordApi 1.2" ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
+call node version-remover ..\api-extractor-inputs-word-release\word_1_1\word.d.ts "WordApi 1.1" .\tool-inputs\word-base.d.ts
+
+
+call node whats-new excel ..\api-extractor-inputs-excel\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts ..\..\docs\requirement-set-tables\excel-preview
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts ..\..\docs\requirement-set-tables\excel-online
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_12
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_10\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_11
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_10\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_9\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_10
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_9\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_8\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_9
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_8\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_7\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_8
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_7\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_6\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_7
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_6\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_5\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_6
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_5\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_4\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_5
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_4\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_3\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_4
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_3\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_3
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_2
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts .\tool-inputs\excel-base.d.ts ..\..\docs\requirement-set-tables\excel-1_1
+
+call node whats-new outlook ..\api-extractor-inputs-outlook\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-preview
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_8
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_7
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_6
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_5
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_4
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_3
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_2
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts .\tool-inputs\outlook-base.d.ts ..\..\docs\requirement-set-tables\outlook-1_1
+
+call node whats-new powerpoint ..\api-extractor-inputs-powerpoint\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts ..\..\docs\requirement-set-tables\powerpoint-preview
+call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts .\tool-inputs\powerpoint-base.d.ts ..\..\docs\requirement-set-tables\powerpoint-1_1
+
+call node whats-new word ..\api-extractor-inputs-word\word.d.ts ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\..\docs\requirement-set-tables\word-preview
+call node whats-new word ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\api-extractor-inputs-word-release\word_1_2\word.d.ts ..\..\docs\requirement-set-tables\word-1_3
+call node whats-new word ..\api-extractor-inputs-word-release\word_1_2\word.d.ts ..\api-extractor-inputs-word-release\word_1_1\word.d.ts ..\..\docs\requirement-set-tables\word-1_2
+call node whats-new word ..\api-extractor-inputs-word-release\word_1_1\word.d.ts .\tool-inputs\word-base.d.ts ..\..\docs\requirement-set-tables\word-1_1
+
 popd
 
 cd api-extractor-inputs-office
