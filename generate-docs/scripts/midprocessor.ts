@@ -193,6 +193,14 @@ tryCatch(async () => {
 
     console.log("Moving Office Runtime APIs to Common API");
     fsx.copySync(officeRuntimeJson, `../json/office/office-runtime.api.json`);
+
+    console.log("Cleaning up What's New markdown files.");
+    let filePath = `../../docs/requirement-set-tables/outlook-preview.md`;
+    fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
+    for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
+        filePath = `../../docs/requirement-set-tables/outlook-1_${i}.md`;
+        fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
+    }
 });
 
 function cleanUpJson(host: string) {
@@ -259,6 +267,10 @@ function cleanUpOutlookJson(jsonString : string) {
 
 function cleanUpRichApiJson(jsonString : string) {
     return jsonString.replace(/(excel|word|visio|onenote)\!OfficeExtension/g, "office!OfficeExtension");
+}
+
+function cleanUpOutlookMarkdown(markdownString : string) {
+    return markdownString.replace(/CommonAPI/gm, "Office");
 }
 
 async function tryCatch(call: () => Promise<void>) {
