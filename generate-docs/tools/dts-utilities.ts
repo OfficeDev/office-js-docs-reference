@@ -181,7 +181,7 @@ export class APISet {
                         // remove unnecessary parts of the declaration string
                         let newItemText = field.declarationString.replace(/;/g, "");
                         newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
-                        newItemText = newItemText.replace(/\|/g, "\\|");
+                        newItemText = newItemText.replace(/\|/g, "\\|").replace(/\n|\t/gm, "");
                         if (field.type === FieldType.Property) {
                             newItemText = newItemText.replace("?", "");
                         }
