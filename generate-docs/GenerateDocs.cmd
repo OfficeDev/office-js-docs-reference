@@ -79,6 +79,7 @@ call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_2\excel.
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts .\tool-inputs\excel-base.d.ts ..\..\docs\requirement-set-tables\excel-1_1
 
 call node whats-new outlook ..\api-extractor-inputs-outlook\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-preview
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_9
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_8
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_7
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_6
