@@ -14,10 +14,10 @@
 ||[saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/outlook.messagecompose#saveasync-callback--asyncresult-)|Asynchronously saves an item.|
 ||[saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/outlook.messagecompose#saveasync-options--callback--asyncresult-)|Asynchronously saves an item.|
 |[MessageRead](/javascript/api/outlook/outlook.messageread)|[notificationMessages](/javascript/api/outlook/outlook.messageread#notificationmessages)|Gets the notification messages for an item.|
-|[NotificationMessageDetails](/javascript/api/outlook/outlook.notificationmessagedetails)|[icon](/javascript/api/outlook/outlook.notificationmessagedetails#icon)|A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.|
+|[NotificationMessageDetails](/javascript/api/outlook/outlook.notificationmessagedetails)|[icon](/javascript/api/outlook/outlook.notificationmessagedetails#icon)|A reference to an icon that is defined in the manifest in the `Resources` section.|
 ||[key](/javascript/api/outlook/outlook.notificationmessagedetails#key)|The identifier for the notification message.|
-||[message](/javascript/api/outlook/outlook.notificationmessagedetails#message)|The text of the notification message. Maximum length is 150 characters.|
-||[persistent](/javascript/api/outlook/outlook.notificationmessagedetails#persistent)|Specifies if the message should be persistent. Only applicable when type is `InformationalMessage`.|
+||[message](/javascript/api/outlook/outlook.notificationmessagedetails#message)|The text of the notification message.|
+||[persistent](/javascript/api/outlook/outlook.notificationmessagedetails#persistent)|Specifies if the message should be persistent.|
 ||[type](/javascript/api/outlook/outlook.notificationmessagedetails#type)|Specifies the `ItemNotificationMessageType` of message.|
 |[NotificationMessages](/javascript/api/outlook/outlook.notificationmessages)|[addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/outlook.notificationmessages#addasync-key--jsonmessage--options--callback--asyncresult-)|Adds a notification to an item.|
 ||[getAllAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void)](/javascript/api/outlook/outlook.notificationmessages#getallasync-options--callback--asyncresult-)|Returns all keys and messages for an item.|

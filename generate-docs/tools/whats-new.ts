@@ -27,7 +27,7 @@ tryCatch(async () => {
     if (!fsx.existsSync(outputPath + ".md")) {
         fsx.createFileSync(outputPath + ".md");
     }
-    
+
     fsx.writeFileSync(outputPath + ".md", diffAPI.getAsMarkdown(relativePath));
 });
 

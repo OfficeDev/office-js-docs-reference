@@ -214,10 +214,17 @@ export class APISet {
 
 function extractFirstSentenceFromComment(commentText) {
     const firstSentenceIndex = commentText.indexOf("* ") + 2;
-    let endIndex = commentText.indexOf("\n", firstSentenceIndex);
-    if (endIndex === -1) {
-        // this is necessary if the comment is a single line (as in collections)
-        endIndex = commentText.indexOf("\*/");
+    const multiSentenceEndIndex = commentText.indexOf(". ", firstSentenceIndex);
+    const lineBreakEndIndex = commentText.indexOf("\n", firstSentenceIndex);
+    const singleLineEndIndex = commentText.indexOf("\*/", firstSentenceIndex);
+
+    let endIndex;
+    if (multiSentenceEndIndex > 0 && lineBreakEndIndex > 0) {
+        endIndex = Math.min(multiSentenceEndIndex + 1, lineBreakEndIndex);
+    } else if (multiSentenceEndIndex === -1 && lineBreakEndIndex === -1) {
+        endIndex = singleLineEndIndex;
+    } else {
+        endIndex = Math.max(multiSentenceEndIndex + 1, lineBreakEndIndex);
     }
 
     return commentText.substring(firstSentenceIndex, endIndex).trim();

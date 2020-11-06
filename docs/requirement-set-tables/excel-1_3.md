@@ -11,9 +11,9 @@
 ||[items](/javascript/api/excel/excel.pivottablecollection#items)|Gets the loaded child items in this collection.|
 ||[refreshAll()](/javascript/api/excel/excel.pivottablecollection#refreshall--)|Refreshes all the pivot tables in the collection.|
 |[Range](/javascript/api/excel/excel.range)|[getVisibleView()](/javascript/api/excel/excel.range#getvisibleview--)|Represents the visible rows of the current range.|
-|[RangeView](/javascript/api/excel/excel.rangeview)|[formulas](/javascript/api/excel/excel.rangeview#formulas)|Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.|
-||[formulasLocal](/javascript/api/excel/excel.rangeview#formulaslocal)|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is returned instead.|
-||[formulasR1C1](/javascript/api/excel/excel.rangeview#formulasr1c1)|Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.|
+|[RangeView](/javascript/api/excel/excel.rangeview)|[formulas](/javascript/api/excel/excel.rangeview#formulas)|Represents the formula in A1-style notation.|
+||[formulasLocal](/javascript/api/excel/excel.rangeview#formulaslocal)|Represents the formula in A1-style notation, in the user's language and number-formatting locale.|
+||[formulasR1C1](/javascript/api/excel/excel.rangeview#formulasr1c1)|Represents the formula in R1C1-style notation.|
 ||[getRange()](/javascript/api/excel/excel.rangeview#getrange--)|Gets the parent range associated with the current RangeView.|
 ||[numberFormat](/javascript/api/excel/excel.rangeview#numberformat)|Represents Excel's number format code for the given cell.|
 ||[cellAddresses](/javascript/api/excel/excel.rangeview#celladdresses)|Represents the cell addresses of the RangeView.|
@@ -21,15 +21,15 @@
 ||[index](/javascript/api/excel/excel.rangeview#index)|Returns a value that represents the index of the RangeView.|
 ||[rowCount](/javascript/api/excel/excel.rangeview#rowcount)|The number of visible rows.|
 ||[rows](/javascript/api/excel/excel.rangeview#rows)|Represents a collection of range views associated with the range.|
-||[text](/javascript/api/excel/excel.rangeview#text)|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.|
+||[text](/javascript/api/excel/excel.rangeview#text)|Text values of the specified range.|
 ||[valueTypes](/javascript/api/excel/excel.rangeview#valuetypes)|Represents the type of data of each cell.|
-||[values](/javascript/api/excel/excel.rangeview#values)|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.|
-|[RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection)|[getItemAt(index: number)](/javascript/api/excel/excel.rangeviewcollection#getitemat-index-)|Gets a RangeView Row via its index. Zero-Indexed.|
+||[values](/javascript/api/excel/excel.rangeview#values)|Represents the raw values of the specified range view.|
+|[RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection)|[getItemAt(index: number)](/javascript/api/excel/excel.rangeviewcollection#getitemat-index-)|Gets a RangeView Row via its index.|
 ||[items](/javascript/api/excel/excel.rangeviewcollection#items)|Gets the loaded child items in this collection.|
 |[Table](/javascript/api/excel/excel.table)|[highlightFirstColumn](/javascript/api/excel/excel.table#highlightfirstcolumn)|Specifies if the first column contains special formatting.|
 ||[highlightLastColumn](/javascript/api/excel/excel.table#highlightlastcolumn)|Specifies if the last column contains special formatting.|
 ||[showBandedColumns](/javascript/api/excel/excel.table#showbandedcolumns)|Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.|
 ||[showBandedRows](/javascript/api/excel/excel.table#showbandedrows)|Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.|
-||[showFilterButton](/javascript/api/excel/excel.table#showfilterbutton)|Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.|
+||[showFilterButton](/javascript/api/excel/excel.table#showfilterbutton)|Specifies if the filter buttons are visible at the top of each column header.|
 |[Workbook](/javascript/api/excel/excel.workbook)|[pivotTables](/javascript/api/excel/excel.workbook#pivottables)|Represents a collection of PivotTables associated with the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[pivotTables](/javascript/api/excel/excel.worksheet#pivottables)|Collection of PivotTables that are part of the worksheet.|

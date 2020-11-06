@@ -1,12 +1,12 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Application](/javascript/api/excel/excel.application)|[calculate(calculationType: Excel.CalculationType)](/javascript/api/excel/excel.application#calculate-calculationtype-)|Recalculate all currently opened workbooks in Excel.|
-||[calculationMode](/javascript/api/excel/excel.application#calculationmode)|Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.|
-|[Binding](/javascript/api/excel/excel.binding)|[getRange()](/javascript/api/excel/excel.binding#getrange--)|Returns the range represented by the binding. Will throw an error if binding is not of the correct type.|
-||[getTable()](/javascript/api/excel/excel.binding#gettable--)|Returns the table represented by the binding. Will throw an error if binding is not of the correct type.|
-||[getText()](/javascript/api/excel/excel.binding#gettext--)|Returns the text represented by the binding. Will throw an error if binding is not of the correct type.|
+||[calculationMode](/javascript/api/excel/excel.application#calculationmode)|Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode.|
+|[Binding](/javascript/api/excel/excel.binding)|[getRange()](/javascript/api/excel/excel.binding#getrange--)|Returns the range represented by the binding.|
+||[getTable()](/javascript/api/excel/excel.binding#gettable--)|Returns the table represented by the binding.|
+||[getText()](/javascript/api/excel/excel.binding#gettext--)|Returns the text represented by the binding.|
 ||[id](/javascript/api/excel/excel.binding#id)|Represents binding identifier.|
-||[type](/javascript/api/excel/excel.binding#type)|Returns the type of the binding. See Excel.BindingType for details.|
+||[type](/javascript/api/excel/excel.binding#type)|Returns the type of the binding.|
 |[BindingCollection](/javascript/api/excel/excel.bindingcollection)|[getItem(id: string)](/javascript/api/excel/excel.bindingcollection#getitem-id-)|Gets a binding object by ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.bindingcollection#getitemat-index-)|Gets a binding object based on its position in the items array.|
 ||[count](/javascript/api/excel/excel.bindingcollection#count)|Returns the number of bindings in the collection.|
@@ -30,10 +30,10 @@
 |[ChartAxes](/javascript/api/excel/excel.chartaxes)|[categoryAxis](/javascript/api/excel/excel.chartaxes#categoryaxis)|Represents the category axis in a chart.|
 ||[seriesAxis](/javascript/api/excel/excel.chartaxes#seriesaxis)|Represents the series axis of a 3-dimensional chart.|
 ||[valueAxis](/javascript/api/excel/excel.chartaxes#valueaxis)|Represents the value axis in an axis.|
-|[ChartAxis](/javascript/api/excel/excel.chartaxis)|[majorUnit](/javascript/api/excel/excel.chartaxis#majorunit)|Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.|
-||[maximum](/javascript/api/excel/excel.chartaxis#maximum)|Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-||[minimum](/javascript/api/excel/excel.chartaxis#minimum)|Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-||[minorUnit](/javascript/api/excel/excel.chartaxis#minorunit)|Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
+|[ChartAxis](/javascript/api/excel/excel.chartaxis)|[majorUnit](/javascript/api/excel/excel.chartaxis#majorunit)|Represents the interval between two major tick marks.|
+||[maximum](/javascript/api/excel/excel.chartaxis#maximum)|Represents the maximum value on the value axis.|
+||[minimum](/javascript/api/excel/excel.chartaxis#minimum)|Represents the minimum value on the value axis.|
+||[minorUnit](/javascript/api/excel/excel.chartaxis#minorunit)|Represents the interval between two minor tick marks.|
 ||[format](/javascript/api/excel/excel.chartaxis#format)|Represents the formatting of a chart object, which includes line and font formatting.|
 ||[majorGridlines](/javascript/api/excel/excel.chartaxis#majorgridlines)|Returns a Gridlines object that represents the major gridlines for the specified axis.|
 ||[minorGridlines](/javascript/api/excel/excel.chartaxis#minorgridlines)|Returns a Gridlines object that represents the minor gridlines for the specified axis.|
@@ -43,15 +43,15 @@
 |[ChartAxisTitle](/javascript/api/excel/excel.chartaxistitle)|[format](/javascript/api/excel/excel.chartaxistitle#format)|Specifies the formatting of chart axis title.|
 ||[text](/javascript/api/excel/excel.chartaxistitle#text)|Specifies the axis title.|
 ||[visible](/javascript/api/excel/excel.chartaxistitle#visible)|Specifies if the axis title is visibile.|
-|[ChartAxisTitleFormat](/javascript/api/excel/excel.chartaxistitleformat)|[font](/javascript/api/excel/excel.chartaxistitleformat#font)|Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.|
+|[ChartAxisTitleFormat](/javascript/api/excel/excel.chartaxistitleformat)|[font](/javascript/api/excel/excel.chartaxistitleformat#font)|Specifies the chart axis title's font attributes, such as font name, font size, color, etc.|
 |[ChartCollection](/javascript/api/excel/excel.chartcollection)|[add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy)](/javascript/api/excel/excel.chartcollection#add-type--sourcedata--seriesby-)|Creates a new chart.|
-||[getItem(name: string)](/javascript/api/excel/excel.chartcollection#getitem-name-)|Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.|
+||[getItem(name: string)](/javascript/api/excel/excel.chartcollection#getitem-name-)|Gets a chart using its name.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.chartcollection#getitemat-index-)|Gets a chart based on its position in the collection.|
 ||[count](/javascript/api/excel/excel.chartcollection#count)|Returns the number of charts in the worksheet.|
 ||[items](/javascript/api/excel/excel.chartcollection#items)|Gets the loaded child items in this collection.|
 |[ChartDataLabelFormat](/javascript/api/excel/excel.chartdatalabelformat)|[fill](/javascript/api/excel/excel.chartdatalabelformat#fill)|Represents the fill format of the current chart data label.|
 ||[font](/javascript/api/excel/excel.chartdatalabelformat#font)|Represents the font attributes (font name, font size, color, etc.) for a chart data label.|
-|[ChartDataLabels](/javascript/api/excel/excel.chartdatalabels)|[position](/javascript/api/excel/excel.chartdatalabels#position)|DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.|
+|[ChartDataLabels](/javascript/api/excel/excel.chartdatalabels)|[position](/javascript/api/excel/excel.chartdatalabels#position)|DataLabelPosition value that represents the position of the data label.|
 ||[format](/javascript/api/excel/excel.chartdatalabels#format)|Specifies the format of chart data labels, which includes fill and font formatting.|
 ||[separator](/javascript/api/excel/excel.chartdatalabels#separator)|String representing the separator used for the data labels on a chart.|
 ||[showBubbleSize](/javascript/api/excel/excel.chartdatalabels#showbubblesize)|Specifies if the data label bubble size is visible.|
@@ -67,16 +67,16 @@
 ||[italic](/javascript/api/excel/excel.chartfont#italic)|Represents the italic status of the font.|
 ||[name](/javascript/api/excel/excel.chartfont#name)|Font name (e.g., "Calibri")|
 ||[size](/javascript/api/excel/excel.chartfont#size)|Size of the font (e.g., 11)|
-||[underline](/javascript/api/excel/excel.chartfont#underline)|Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.|
+||[underline](/javascript/api/excel/excel.chartfont#underline)|Type of underline applied to the font.|
 |[ChartGridlines](/javascript/api/excel/excel.chartgridlines)|[format](/javascript/api/excel/excel.chartgridlines#format)|Represents the formatting of chart gridlines.|
 ||[visible](/javascript/api/excel/excel.chartgridlines#visible)|Specifies if the axis gridlines are visible.|
 |[ChartGridlinesFormat](/javascript/api/excel/excel.chartgridlinesformat)|[line](/javascript/api/excel/excel.chartgridlinesformat#line)|Represents chart line formatting.|
 |[ChartLegend](/javascript/api/excel/excel.chartlegend)|[overlay](/javascript/api/excel/excel.chartlegend#overlay)|Specifies if the chart legend should overlap with the main body of the chart.|
-||[position](/javascript/api/excel/excel.chartlegend#position)|Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.|
+||[position](/javascript/api/excel/excel.chartlegend#position)|Specifies the position of the legend on the chart.|
 ||[format](/javascript/api/excel/excel.chartlegend#format)|Represents the formatting of a chart legend, which includes fill and font formatting.|
 ||[visible](/javascript/api/excel/excel.chartlegend#visible)|Specifies if the ChartLegend is visible.|
 |[ChartLegendFormat](/javascript/api/excel/excel.chartlegendformat)|[fill](/javascript/api/excel/excel.chartlegendformat#fill)|Represents the fill format of an object, which includes background formatting information.|
-||[font](/javascript/api/excel/excel.chartlegendformat#font)|Represents the font attributes such as font name, font size, color, etc. of a chart legend.|
+||[font](/javascript/api/excel/excel.chartlegendformat#font)|Represents the font attributes such as font name, font size, color, etc.|
 |[ChartLineFormat](/javascript/api/excel/excel.chartlineformat)|[clear()](/javascript/api/excel/excel.chartlineformat#clear--)|Clear the line format of a chart element.|
 ||[color](/javascript/api/excel/excel.chartlineformat#color)|HTML color code representing the color of lines in the chart.|
 |[ChartPoint](/javascript/api/excel/excel.chartpoint)|[format](/javascript/api/excel/excel.chartpoint#format)|Encapsulates the format properties chart point.|
@@ -85,7 +85,7 @@
 |[ChartPointsCollection](/javascript/api/excel/excel.chartpointscollection)|[getItemAt(index: number)](/javascript/api/excel/excel.chartpointscollection#getitemat-index-)|Retrieve a point based on its position within the series.|
 ||[count](/javascript/api/excel/excel.chartpointscollection#count)|Returns the number of chart points in the series.|
 ||[items](/javascript/api/excel/excel.chartpointscollection#items)|Gets the loaded child items in this collection.|
-|[ChartSeries](/javascript/api/excel/excel.chartseries)|[name](/javascript/api/excel/excel.chartseries#name)|Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|[name](/javascript/api/excel/excel.chartseries#name)|Specifies the name of a series in a chart.|
 ||[format](/javascript/api/excel/excel.chartseries#format)|Represents the formatting of a chart series, which includes fill and line formatting.|
 ||[points](/javascript/api/excel/excel.chartseries#points)|Returns a collection of all points in the series.|
 |[ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection)|[getItemAt(index: number)](/javascript/api/excel/excel.chartseriescollection#getitemat-index-)|Retrieves a series based on its position in the collection.|
@@ -99,47 +99,47 @@
 ||[visible](/javascript/api/excel/excel.charttitle#visible)|Specifies if the chart title is visibile.|
 |[ChartTitleFormat](/javascript/api/excel/excel.charttitleformat)|[fill](/javascript/api/excel/excel.charttitleformat#fill)|Represents the fill format of an object, which includes background formatting information.|
 ||[font](/javascript/api/excel/excel.charttitleformat#font)|Represents the font attributes (font name, font size, color, etc.) for an object.|
-|[NamedItem](/javascript/api/excel/excel.nameditem)|[getRange()](/javascript/api/excel/excel.nameditem#getrange--)|Returns the range object that is associated with the name. Throws an error if the named item's type is not a range.|
+|[NamedItem](/javascript/api/excel/excel.nameditem)|[getRange()](/javascript/api/excel/excel.nameditem#getrange--)|Returns the range object that is associated with the name.|
 ||[name](/javascript/api/excel/excel.nameditem#name)|The name of the object.|
-||[type](/javascript/api/excel/excel.nameditem#type)|Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.|
-||[value](/javascript/api/excel/excel.nameditem#value)|Represents the value computed by the name's formula. For a named range, will return the range address.|
+||[type](/javascript/api/excel/excel.nameditem#type)|Specifies the type of the value returned by the name's formula.|
+||[value](/javascript/api/excel/excel.nameditem#value)|Represents the value computed by the name's formula.|
 ||[visible](/javascript/api/excel/excel.nameditem#visible)|Specifies if the object is visible.|
 |[NamedItemCollection](/javascript/api/excel/excel.nameditemcollection)|[getItem(name: string)](/javascript/api/excel/excel.nameditemcollection#getitem-name-)|Gets a NamedItem object using its name.|
 ||[items](/javascript/api/excel/excel.nameditemcollection#items)|Gets the loaded child items in this collection.|
 |[Range](/javascript/api/excel/excel.range)|[clear(applyTo?: Excel.ClearApplyTo)](/javascript/api/excel/excel.range#clear-applyto-)|Clear range values, format, fill, border, etc.|
 ||[delete(shift: Excel.DeleteShiftDirection)](/javascript/api/excel/excel.range#delete-shift-)|Deletes the cells associated with the range.|
-||[formulas](/javascript/api/excel/excel.range#formulas)|Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.|
-||[formulasLocal](/javascript/api/excel/excel.range#formulaslocal)|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is returned instead.|
-||[getBoundingRect(anotherRange: Range \| string)](/javascript/api/excel/excel.range#getboundingrect-anotherrange-)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E15".|
-||[getCell(row: number, column: number)](/javascript/api/excel/excel.range#getcell-row--column-)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
+||[formulas](/javascript/api/excel/excel.range#formulas)|Represents the formula in A1-style notation.|
+||[formulasLocal](/javascript/api/excel/excel.range#formulaslocal)|Represents the formula in A1-style notation, in the user's language and number-formatting locale.|
+||[getBoundingRect(anotherRange: Range \| string)](/javascript/api/excel/excel.range#getboundingrect-anotherrange-)|Gets the smallest range object that encompasses the given ranges.|
+||[getCell(row: number, column: number)](/javascript/api/excel/excel.range#getcell-row--column-)|Gets the range object containing the single cell based on row and column numbers.|
 ||[getColumn(column: number)](/javascript/api/excel/excel.range#getcolumn-column-)|Gets a column contained in the range.|
 ||[getEntireColumn()](/javascript/api/excel/excel.range#getentirecolumn--)|Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").|
 ||[getEntireRow()](/javascript/api/excel/excel.range#getentirerow--)|Gets an object that represents the entire row of the range (for example, if the current range represents cells "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").|
 ||[getIntersection(anotherRange: Range \| string)](/javascript/api/excel/excel.range#getintersection-anotherrange-)|Gets the range object that represents the rectangular intersection of the given ranges.|
-||[getLastCell()](/javascript/api/excel/excel.range#getlastcell--)|Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".|
-||[getLastColumn()](/javascript/api/excel/excel.range#getlastcolumn--)|Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".|
-||[getLastRow()](/javascript/api/excel/excel.range#getlastrow--)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
-||[getOffsetRange(rowOffset: number, columnOffset: number)](/javascript/api/excel/excel.range#getoffsetrange-rowoffset--columnoffset-)|Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.|
+||[getLastCell()](/javascript/api/excel/excel.range#getlastcell--)|Gets the last cell within the range.|
+||[getLastColumn()](/javascript/api/excel/excel.range#getlastcolumn--)|Gets the last column within the range.|
+||[getLastRow()](/javascript/api/excel/excel.range#getlastrow--)|Gets the last row within the range.|
+||[getOffsetRange(rowOffset: number, columnOffset: number)](/javascript/api/excel/excel.range#getoffsetrange-rowoffset--columnoffset-)|Gets an object which represents a range that's offset from the specified range.|
 ||[getRow(row: number)](/javascript/api/excel/excel.range#getrow-row-)|Gets a row contained in the range.|
-||[insert(shift: Excel.InsertShiftDirection)](/javascript/api/excel/excel.range#insert-shift-)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
+||[insert(shift: Excel.InsertShiftDirection)](/javascript/api/excel/excel.range#insert-shift-)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space.|
 ||[numberFormat](/javascript/api/excel/excel.range#numberformat)|Represents Excel's number format code for the given range.|
-||[address](/javascript/api/excel/excel.range#address)|Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").|
+||[address](/javascript/api/excel/excel.range#address)|Specifies the range reference in A1-style.|
 ||[addressLocal](/javascript/api/excel/excel.range#addresslocal)|Specifies the range reference for the specified range in the language of the user.|
-||[cellCount](/javascript/api/excel/excel.range#cellcount)|Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).|
+||[cellCount](/javascript/api/excel/excel.range#cellcount)|Specifies the number of cells in the range.|
 ||[columnCount](/javascript/api/excel/excel.range#columncount)|Specifies the total number of columns in the range.|
-||[columnIndex](/javascript/api/excel/excel.range#columnindex)|Specifies the column number of the first cell in the range. Zero-indexed.|
+||[columnIndex](/javascript/api/excel/excel.range#columnindex)|Specifies the column number of the first cell in the range.|
 ||[format](/javascript/api/excel/excel.range#format)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.|
 ||[rowCount](/javascript/api/excel/excel.range#rowcount)|Returns the total number of rows in the range.|
-||[rowIndex](/javascript/api/excel/excel.range#rowindex)|Returns the row number of the first cell in the range. Zero-indexed.|
-||[text](/javascript/api/excel/excel.range#text)|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.|
+||[rowIndex](/javascript/api/excel/excel.range#rowindex)|Returns the row number of the first cell in the range.|
+||[text](/javascript/api/excel/excel.range#text)|Text values of the specified range.|
 ||[valueTypes](/javascript/api/excel/excel.range#valuetypes)|Specifies the type of data in each cell.|
 ||[worksheet](/javascript/api/excel/excel.range#worksheet)|The worksheet containing the current range.|
 ||[select()](/javascript/api/excel/excel.range#select--)|Selects the specified range in the Excel UI.|
-||[values](/javascript/api/excel/excel.range#values)|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.|
+||[values](/javascript/api/excel/excel.range#values)|Represents the raw values of the specified range.|
 |[RangeBorder](/javascript/api/excel/excel.rangeborder)|[color](/javascript/api/excel/excel.rangeborder#color)|HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").|
-||[sideIndex](/javascript/api/excel/excel.rangeborder#sideindex)|Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.|
-||[style](/javascript/api/excel/excel.rangeborder#style)|One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.|
-||[weight](/javascript/api/excel/excel.rangeborder#weight)|Specifies the weight of the border around a range. See Excel.BorderWeight for details.|
+||[sideIndex](/javascript/api/excel/excel.rangeborder#sideindex)|Constant value that indicates the specific side of the border.|
+||[style](/javascript/api/excel/excel.rangeborder#style)|One of the constants of line style specifying the line style for the border.|
+||[weight](/javascript/api/excel/excel.rangeborder#weight)|Specifies the weight of the border around a range.|
 |[RangeBorderCollection](/javascript/api/excel/excel.rangebordercollection)|[getItem(index: Excel.BorderIndex)](/javascript/api/excel/excel.rangebordercollection#getitem-index-)|Gets a border object using its name.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.rangebordercollection#getitemat-index-)|Gets a border object using its index.|
 ||[count](/javascript/api/excel/excel.rangebordercollection#count)|Number of border objects in the collection.|
@@ -149,15 +149,15 @@
 |[RangeFont](/javascript/api/excel/excel.rangefont)|[bold](/javascript/api/excel/excel.rangefont#bold)|Represents the bold status of font.|
 ||[color](/javascript/api/excel/excel.rangefont#color)|HTML color code representation of the text color (e.g., #FF0000 represents Red).|
 ||[italic](/javascript/api/excel/excel.rangefont#italic)|Specifies the italic status of the font.|
-||[name](/javascript/api/excel/excel.rangefont#name)|Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.|
+||[name](/javascript/api/excel/excel.rangefont#name)|Font name (e.g., "Calibri").|
 ||[size](/javascript/api/excel/excel.rangefont#size)|Font size.|
-||[underline](/javascript/api/excel/excel.rangefont#underline)|Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.|
-|[RangeFormat](/javascript/api/excel/excel.rangeformat)|[horizontalAlignment](/javascript/api/excel/excel.rangeformat#horizontalalignment)|Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.|
+||[underline](/javascript/api/excel/excel.rangefont#underline)|Type of underline applied to the font.|
+|[RangeFormat](/javascript/api/excel/excel.rangeformat)|[horizontalAlignment](/javascript/api/excel/excel.rangeformat#horizontalalignment)|Represents the horizontal alignment for the specified object.|
 ||[borders](/javascript/api/excel/excel.rangeformat#borders)|Collection of border objects that apply to the overall range.|
 ||[fill](/javascript/api/excel/excel.rangeformat#fill)|Returns the fill object defined on the overall range.|
 ||[font](/javascript/api/excel/excel.rangeformat#font)|Returns the font object defined on the overall range.|
-||[verticalAlignment](/javascript/api/excel/excel.rangeformat#verticalalignment)|Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.|
-||[wrapText](/javascript/api/excel/excel.rangeformat#wraptext)|Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
+||[verticalAlignment](/javascript/api/excel/excel.rangeformat#verticalalignment)|Represents the vertical alignment for the specified object.|
+||[wrapText](/javascript/api/excel/excel.rangeformat#wraptext)|Specifies if Excel wraps the text in the object.|
 |[Table](/javascript/api/excel/excel.table)|[delete()](/javascript/api/excel/excel.table#delete--)|Deletes the table.|
 ||[getDataBodyRange()](/javascript/api/excel/excel.table#getdatabodyrange--)|Gets the range object associated with the data body of the table.|
 ||[getHeaderRowRange()](/javascript/api/excel/excel.table#getheaderrowrange--)|Gets the range object associated with header row of the table.|
@@ -165,12 +165,12 @@
 ||[getTotalRowRange()](/javascript/api/excel/excel.table#gettotalrowrange--)|Gets the range object associated with totals row of the table.|
 ||[name](/javascript/api/excel/excel.table#name)|Name of the table.|
 ||[columns](/javascript/api/excel/excel.table#columns)|Represents a collection of all the columns in the table.|
-||[id](/javascript/api/excel/excel.table#id)|Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.|
+||[id](/javascript/api/excel/excel.table#id)|Returns a value that uniquely identifies the table in a given workbook.|
 ||[rows](/javascript/api/excel/excel.table#rows)|Represents a collection of all the rows in the table.|
-||[showHeaders](/javascript/api/excel/excel.table#showheaders)|Specifies if the header row is visible. This value can be set to show or remove the header row.|
-||[showTotals](/javascript/api/excel/excel.table#showtotals)|Specifies if the total row is visible. This value can be set to show or remove the total row.|
-||[style](/javascript/api/excel/excel.table#style)|Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.|
-|[TableCollection](/javascript/api/excel/excel.tablecollection)|[add(address: Range \| string, hasHeaders: boolean)](/javascript/api/excel/excel.tablecollection#add-address--hasheaders-)|Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
+||[showHeaders](/javascript/api/excel/excel.table#showheaders)|Specifies if the header row is visible.|
+||[showTotals](/javascript/api/excel/excel.table#showtotals)|Specifies if the total row is visible.|
+||[style](/javascript/api/excel/excel.table#style)|Constant value that represents the Table style.|
+|[TableCollection](/javascript/api/excel/excel.tablecollection)|[add(address: Range \| string, hasHeaders: boolean)](/javascript/api/excel/excel.tablecollection#add-address--hasheaders-)|Create a new table.|
 ||[getItem(key: string)](/javascript/api/excel/excel.tablecollection#getitem-key-)|Gets a table by Name or ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.tablecollection#getitemat-index-)|Gets a table based on its position in the collection.|
 ||[count](/javascript/api/excel/excel.tablecollection#count)|Returns the number of tables in the workbook.|
@@ -182,8 +182,8 @@
 ||[getTotalRowRange()](/javascript/api/excel/excel.tablecolumn#gettotalrowrange--)|Gets the range object associated with the totals row of the column.|
 ||[name](/javascript/api/excel/excel.tablecolumn#name)|Specifies the name of the table column.|
 ||[id](/javascript/api/excel/excel.tablecolumn#id)|Returns a unique key that identifies the column within the table.|
-||[index](/javascript/api/excel/excel.tablecolumn#index)|Returns the index number of the column within the columns collection of the table. Zero-indexed.|
-||[values](/javascript/api/excel/excel.tablecolumn#values)|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.|
+||[index](/javascript/api/excel/excel.tablecolumn#index)|Returns the index number of the column within the columns collection of the table.|
+||[values](/javascript/api/excel/excel.tablecolumn#values)|Represents the raw values of the specified range.|
 |[TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection)|[add(index?: number, values?: Array<Array<boolean \| string \| number>> \| boolean \| string \| number, name?: string)](/javascript/api/excel/excel.tablecolumncollection#add-index--values--name-)|Adds a new column to the table.|
 ||[getItem(key: number \| string)](/javascript/api/excel/excel.tablecolumncollection#getitem-key-)|Gets a column object by Name or ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.tablecolumncollection#getitemat-index-)|Gets a column based on its position in the collection.|
@@ -191,29 +191,29 @@
 ||[items](/javascript/api/excel/excel.tablecolumncollection#items)|Gets the loaded child items in this collection.|
 |[TableRow](/javascript/api/excel/excel.tablerow)|[delete()](/javascript/api/excel/excel.tablerow#delete--)|Deletes the row from the table.|
 ||[getRange()](/javascript/api/excel/excel.tablerow#getrange--)|Returns the range object associated with the entire row.|
-||[index](/javascript/api/excel/excel.tablerow#index)|Returns the index number of the row within the rows collection of the table. Zero-indexed.|
-||[values](/javascript/api/excel/excel.tablerow#values)|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.|
-|[TableRowCollection](/javascript/api/excel/excel.tablerowcollection)|[add(index?: number, values?: Array<Array<boolean \| string \| number>> \| boolean \| string \| number)](/javascript/api/excel/excel.tablerowcollection#add-index--values-)|Adds one or more rows to the table. The return object will be the top of the newly added row(s).|
+||[index](/javascript/api/excel/excel.tablerow#index)|Returns the index number of the row within the rows collection of the table.|
+||[values](/javascript/api/excel/excel.tablerow#values)|Represents the raw values of the specified range.|
+|[TableRowCollection](/javascript/api/excel/excel.tablerowcollection)|[add(index?: number, values?: Array<Array<boolean \| string \| number>> \| boolean \| string \| number)](/javascript/api/excel/excel.tablerowcollection#add-index--values-)|Adds one or more rows to the table.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.tablerowcollection#getitemat-index-)|Gets a row based on its position in the collection.|
 ||[count](/javascript/api/excel/excel.tablerowcollection#count)|Returns the number of rows in the table.|
 ||[items](/javascript/api/excel/excel.tablerowcollection#items)|Gets the loaded child items in this collection.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[getSelectedRange()](/javascript/api/excel/excel.workbook#getselectedrange--)|Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[getSelectedRange()](/javascript/api/excel/excel.workbook#getselectedrange--)|Gets the currently selected single range from the workbook.|
 ||[application](/javascript/api/excel/excel.workbook#application)|Represents the Excel application instance that contains this workbook.|
 ||[bindings](/javascript/api/excel/excel.workbook#bindings)|Represents a collection of bindings that are part of the workbook.|
 ||[names](/javascript/api/excel/excel.workbook#names)|Represents a collection of workbook scoped named items (named ranges and constants).|
 ||[tables](/javascript/api/excel/excel.workbook#tables)|Represents a collection of tables associated with the workbook.|
 ||[worksheets](/javascript/api/excel/excel.workbook#worksheets)|Represents a collection of worksheets associated with the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[activate()](/javascript/api/excel/excel.worksheet#activate--)|Activate the worksheet in the Excel UI.|
-||[delete()](/javascript/api/excel/excel.worksheet#delete--)|Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.|
-||[getCell(row: number, column: number)](/javascript/api/excel/excel.worksheet#getcell-row--column-)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid.|
+||[delete()](/javascript/api/excel/excel.worksheet#delete--)|Deletes the worksheet from the workbook.|
+||[getCell(row: number, column: number)](/javascript/api/excel/excel.worksheet#getcell-row--column-)|Gets the range object containing the single cell based on row and column numbers.|
 ||[getRange(address?: string)](/javascript/api/excel/excel.worksheet#getrange-address-)|Gets the range object, representing a single rectangular block of cells, specified by the address or name.|
 ||[name](/javascript/api/excel/excel.worksheet#name)|The display name of the worksheet.|
 ||[position](/javascript/api/excel/excel.worksheet#position)|The zero-based position of the worksheet within the workbook.|
 ||[charts](/javascript/api/excel/excel.worksheet#charts)|Returns a collection of charts that are part of the worksheet.|
-||[id](/javascript/api/excel/excel.worksheet#id)|Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.|
+||[id](/javascript/api/excel/excel.worksheet#id)|Returns a value that uniquely identifies the worksheet in a given workbook.|
 ||[tables](/javascript/api/excel/excel.worksheet#tables)|Collection of tables that are part of the worksheet.|
 ||[visibility](/javascript/api/excel/excel.worksheet#visibility)|The Visibility of the worksheet.|
-|[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[add(name?: string)](/javascript/api/excel/excel.worksheetcollection#add-name-)|Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.|
+|[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[add(name?: string)](/javascript/api/excel/excel.worksheetcollection#add-name-)|Adds a new worksheet to the workbook.|
 ||[getActiveWorksheet()](/javascript/api/excel/excel.worksheetcollection#getactiveworksheet--)|Gets the currently active worksheet in the workbook.|
 ||[getItem(key: string)](/javascript/api/excel/excel.worksheetcollection#getitem-key-)|Gets a worksheet object using its Name or ID.|
 ||[items](/javascript/api/excel/excel.worksheetcollection#items)|Gets the loaded child items in this collection.|

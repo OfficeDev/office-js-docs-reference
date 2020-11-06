@@ -1,21 +1,21 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Comment](/javascript/api/excel/excel.comment)|[content](/javascript/api/excel/excel.comment#content)|The comment's content. The string is plain text.|
+|[Comment](/javascript/api/excel/excel.comment)|[content](/javascript/api/excel/excel.comment#content)|The comment's content.|
 ||[delete()](/javascript/api/excel/excel.comment#delete--)|Deletes the comment and all the connected replies.|
 ||[getLocation()](/javascript/api/excel/excel.comment#getlocation--)|Gets the cell where this comment is located.|
 ||[authorEmail](/javascript/api/excel/excel.comment#authoremail)|Gets the email of the comment's author.|
 ||[authorName](/javascript/api/excel/excel.comment#authorname)|Gets the name of the comment's author.|
-||[creationDate](/javascript/api/excel/excel.comment#creationdate)|Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.|
+||[creationDate](/javascript/api/excel/excel.comment#creationdate)|Gets the creation time of the comment.|
 ||[id](/javascript/api/excel/excel.comment#id)|Specifies the comment identifier.|
 ||[replies](/javascript/api/excel/excel.comment#replies)|Represents a collection of reply objects associated with the comment.|
-|[CommentCollection](/javascript/api/excel/excel.commentcollection)|[add(cellAddress: Range \| string, content: string, contentType?: Excel.ContentType)](/javascript/api/excel/excel.commentcollection#add-celladdress--content--contenttype-)|Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.|
+|[CommentCollection](/javascript/api/excel/excel.commentcollection)|[add(cellAddress: Range \| string, content: string, contentType?: Excel.ContentType)](/javascript/api/excel/excel.commentcollection#add-celladdress--content--contenttype-)|Creates a new comment with the given content on the given cell.|
 ||[getCount()](/javascript/api/excel/excel.commentcollection#getcount--)|Gets the number of comments in the collection.|
 ||[getItem(commentId: string)](/javascript/api/excel/excel.commentcollection#getitem-commentid-)|Gets a comment from the collection based on its ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.commentcollection#getitemat-index-)|Gets a comment from the collection based on its position.|
 ||[getItemByCell(cellAddress: Range \| string)](/javascript/api/excel/excel.commentcollection#getitembycell-celladdress-)|Gets the comment from the specified cell.|
 ||[getItemByReplyId(replyId: string)](/javascript/api/excel/excel.commentcollection#getitembyreplyid-replyid-)|Gets the comment to which the given reply is connected.|
 ||[items](/javascript/api/excel/excel.commentcollection#items)|Gets the loaded child items in this collection.|
-|[CommentReply](/javascript/api/excel/excel.commentreply)|[content](/javascript/api/excel/excel.commentreply#content)|The comment reply's content. The string is plain text.|
+|[CommentReply](/javascript/api/excel/excel.commentreply)|[content](/javascript/api/excel/excel.commentreply#content)|The comment reply's content.|
 ||[delete()](/javascript/api/excel/excel.commentreply#delete--)|Deletes the comment reply.|
 ||[getLocation()](/javascript/api/excel/excel.commentreply#getlocation--)|Gets the cell where this comment reply is located.|
 ||[getParentComment()](/javascript/api/excel/excel.commentreply#getparentcomment--)|Gets the parent comment of this reply.|
@@ -37,7 +37,7 @@
 ||[getCount()](/javascript/api/excel/excel.pivottablestylecollection#getcount--)|Gets the number of PivotTable styles in the collection.|
 ||[getDefault()](/javascript/api/excel/excel.pivottablestylecollection#getdefault--)|Gets the default PivotTableStyle for the parent object's scope.|
 ||[getItem(name: string)](/javascript/api/excel/excel.pivottablestylecollection#getitem-name-)|Gets a PivotTableStyle by name.|
-||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.pivottablestylecollection#getitemornullobject-name-)|Gets a PivotTableStyle by name. If the PivotTableStyle does not exist, will return a null object.|
+||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.pivottablestylecollection#getitemornullobject-name-)|Gets a PivotTableStyle by name.|
 ||[items](/javascript/api/excel/excel.pivottablestylecollection#items)|Gets the loaded child items in this collection.|
 ||[setDefault(newDefaultStyle: PivotTableStyle \| string)](/javascript/api/excel/excel.pivottablestylecollection#setdefault-newdefaultstyle-)|Sets the default PivotTableStyle for use in the parent object's scope.|
 |[Range](/javascript/api/excel/excel.range)|[group(groupOption: Excel.GroupOption)](/javascript/api/excel/excel.range#group-groupoption-)|Groups columns and rows for an outline.|
@@ -61,16 +61,16 @@
 ||[isFilterCleared](/javascript/api/excel/excel.slicer#isfiltercleared)|True if all filters currently applied on the slicer are cleared.|
 ||[slicerItems](/javascript/api/excel/excel.slicer#sliceritems)|Represents the collection of SlicerItems that are part of the slicer.|
 ||[worksheet](/javascript/api/excel/excel.slicer#worksheet)|Represents the worksheet containing the slicer.|
-||[selectItems(items?: string[])](/javascript/api/excel/excel.slicer#selectitems-items-)|Selects slicer items based on their keys. The previous selections are cleared.|
-||[sortBy](/javascript/api/excel/excel.slicer#sortby)|Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".|
-||[style](/javascript/api/excel/excel.slicer#style)|Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.|
+||[selectItems(items?: string[])](/javascript/api/excel/excel.slicer#selectitems-items-)|Selects slicer items based on their keys.|
+||[sortBy](/javascript/api/excel/excel.slicer#sortby)|Represents the sort order of the items in the slicer.|
+||[style](/javascript/api/excel/excel.slicer#style)|Constant value that represents the Slicer style.|
 ||[top](/javascript/api/excel/excel.slicer#top)|Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.|
 ||[width](/javascript/api/excel/excel.slicer#width)|Represents the width, in points, of the slicer.|
 |[SlicerCollection](/javascript/api/excel/excel.slicercollection)|[add(slicerSource: string \| PivotTable \| Table, sourceField: string \| PivotField \| number \| TableColumn, slicerDestination?: string \| Worksheet)](/javascript/api/excel/excel.slicercollection#add-slicersource--sourcefield--slicerdestination-)|Adds a new slicer to the workbook.|
 ||[getCount()](/javascript/api/excel/excel.slicercollection#getcount--)|Returns the number of slicers in the collection.|
 ||[getItem(key: string)](/javascript/api/excel/excel.slicercollection#getitem-key-)|Gets a slicer object using its name or id.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.slicercollection#getitemat-index-)|Gets a slicer based on its position in the collection.|
-||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.slicercollection#getitemornullobject-key-)|Gets a slicer using its name or id. If the slicer does not exist, will return a null object.|
+||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.slicercollection#getitemornullobject-key-)|Gets a slicer using its name or id.|
 ||[items](/javascript/api/excel/excel.slicercollection#items)|Gets the loaded child items in this collection.|
 |[SlicerItem](/javascript/api/excel/excel.sliceritem)|[isSelected](/javascript/api/excel/excel.sliceritem#isselected)|True if the slicer item is selected.|
 ||[hasData](/javascript/api/excel/excel.sliceritem#hasdata)|True if the slicer item has data.|
@@ -79,7 +79,7 @@
 |[SlicerItemCollection](/javascript/api/excel/excel.sliceritemcollection)|[getCount()](/javascript/api/excel/excel.sliceritemcollection#getcount--)|Returns the number of slicer items in the slicer.|
 ||[getItem(key: string)](/javascript/api/excel/excel.sliceritemcollection#getitem-key-)|Gets a slicer item object using its key or name.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.sliceritemcollection#getitemat-index-)|Gets a slicer item based on its position in the collection.|
-||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.sliceritemcollection#getitemornullobject-key-)|Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object.|
+||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.sliceritemcollection#getitemornullobject-key-)|Gets a slicer item using its key or name.|
 ||[items](/javascript/api/excel/excel.sliceritemcollection#items)|Gets the loaded child items in this collection.|
 |[SlicerStyle](/javascript/api/excel/excel.slicerstyle)|[delete()](/javascript/api/excel/excel.slicerstyle#delete--)|Deletes the SlicerStyle.|
 ||[duplicate()](/javascript/api/excel/excel.slicerstyle#duplicate--)|Creates a duplicate of this SlicerStyle with copies of all the style elements.|
@@ -89,7 +89,7 @@
 ||[getCount()](/javascript/api/excel/excel.slicerstylecollection#getcount--)|Gets the number of slicer styles in the collection.|
 ||[getDefault()](/javascript/api/excel/excel.slicerstylecollection#getdefault--)|Gets the default SlicerStyle for the parent object's scope.|
 ||[getItem(name: string)](/javascript/api/excel/excel.slicerstylecollection#getitem-name-)|Gets a SlicerStyle by name.|
-||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.slicerstylecollection#getitemornullobject-name-)|Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.|
+||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.slicerstylecollection#getitemornullobject-name-)|Gets a SlicerStyle by name.|
 ||[items](/javascript/api/excel/excel.slicerstylecollection#items)|Gets the loaded child items in this collection.|
 ||[setDefault(newDefaultStyle: SlicerStyle \| string)](/javascript/api/excel/excel.slicerstylecollection#setdefault-newdefaultstyle-)|Sets the default SlicerStyle for use in the parent object's scope.|
 |[TableStyle](/javascript/api/excel/excel.tablestyle)|[delete()](/javascript/api/excel/excel.tablestyle#delete--)|Deletes the TableStyle.|
@@ -100,7 +100,7 @@
 ||[getCount()](/javascript/api/excel/excel.tablestylecollection#getcount--)|Gets the number of table styles in the collection.|
 ||[getDefault()](/javascript/api/excel/excel.tablestylecollection#getdefault--)|Gets the default TableStyle for the parent object's scope.|
 ||[getItem(name: string)](/javascript/api/excel/excel.tablestylecollection#getitem-name-)|Gets a TableStyle by name.|
-||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.tablestylecollection#getitemornullobject-name-)|Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.|
+||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.tablestylecollection#getitemornullobject-name-)|Gets a TableStyle by name.|
 ||[items](/javascript/api/excel/excel.tablestylecollection#items)|Gets the loaded child items in this collection.|
 ||[setDefault(newDefaultStyle: TableStyle \| string)](/javascript/api/excel/excel.tablestylecollection#setdefault-newdefaultstyle-)|Sets the default TableStyle for use in the parent object's scope.|
 |[TimelineStyle](/javascript/api/excel/excel.timelinestyle)|[delete()](/javascript/api/excel/excel.timelinestyle#delete--)|Deletes the TableStyle.|
@@ -111,11 +111,11 @@
 ||[getCount()](/javascript/api/excel/excel.timelinestylecollection#getcount--)|Gets the number of timeline styles in the collection.|
 ||[getDefault()](/javascript/api/excel/excel.timelinestylecollection#getdefault--)|Gets the default TimelineStyle for the parent object's scope.|
 ||[getItem(name: string)](/javascript/api/excel/excel.timelinestylecollection#getitem-name-)|Gets a TimelineStyle by name.|
-||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.timelinestylecollection#getitemornullobject-name-)|Gets a TimelineStyle by name. If the TimelineStyle does not exist, will return a null object.|
+||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.timelinestylecollection#getitemornullobject-name-)|Gets a TimelineStyle by name.|
 ||[items](/javascript/api/excel/excel.timelinestylecollection#items)|Gets the loaded child items in this collection.|
 ||[setDefault(newDefaultStyle: TimelineStyle \| string)](/javascript/api/excel/excel.timelinestylecollection#setdefault-newdefaultstyle-)|Sets the default TimelineStyle for use in the parent object's scope.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[getActiveSlicer()](/javascript/api/excel/excel.workbook#getactiveslicer--)|Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.|
-||[getActiveSlicerOrNullObject()](/javascript/api/excel/excel.workbook#getactiveslicerornullobject--)|Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[getActiveSlicer()](/javascript/api/excel/excel.workbook#getactiveslicer--)|Gets the currently active slicer in the workbook.|
+||[getActiveSlicerOrNullObject()](/javascript/api/excel/excel.workbook#getactiveslicerornullobject--)|Gets the currently active slicer in the workbook.|
 ||[comments](/javascript/api/excel/excel.workbook#comments)|Represents a collection of Comments associated with the workbook.|
 ||[pivotTableStyles](/javascript/api/excel/excel.workbook#pivottablestyles)|Represents a collection of PivotTableStyles associated with the workbook.|
 ||[slicerStyles](/javascript/api/excel/excel.workbook#slicerstyles)|Represents a collection of SlicerStyles associated with the workbook.|
@@ -123,21 +123,21 @@
 ||[tableStyles](/javascript/api/excel/excel.workbook#tablestyles)|Represents a collection of TableStyles associated with the workbook.|
 ||[timelineStyles](/javascript/api/excel/excel.workbook#timelinestyles)|Represents a collection of TimelineStyles associated with the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[comments](/javascript/api/excel/excel.worksheet#comments)|Returns a collection of all the Comments objects on the worksheet.|
-||[onColumnSorted](/javascript/api/excel/excel.worksheet#oncolumnsorted)|Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.|
-||[onRowSorted](/javascript/api/excel/excel.worksheet#onrowsorted)|Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.|
-||[onSingleClicked](/javascript/api/excel/excel.worksheet#onsingleclicked)|Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in the following cases:|
+||[onColumnSorted](/javascript/api/excel/excel.worksheet#oncolumnsorted)|Occurs when one or more columns have been sorted.|
+||[onRowSorted](/javascript/api/excel/excel.worksheet#onrowsorted)|Occurs when one or more rows have been sorted.|
+||[onSingleClicked](/javascript/api/excel/excel.worksheet#onsingleclicked)|Occurs when a left-clicked/tapped action happens in the worksheet.|
 ||[slicers](/javascript/api/excel/excel.worksheet#slicers)|Returns a collection of slicers that are part of the worksheet.|
 ||[showOutlineLevels(rowLevels: number, columnLevels: number)](/javascript/api/excel/excel.worksheet#showoutlinelevels-rowlevels--columnlevels-)|Shows row or column groups by their outline levels.|
-|[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[onColumnSorted](/javascript/api/excel/excel.worksheetcollection#oncolumnsorted)|Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.|
-||[onRowSorted](/javascript/api/excel/excel.worksheetcollection#onrowsorted)|Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.|
-||[onSingleClicked](/javascript/api/excel/excel.worksheetcollection#onsingleclicked)|Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when clicking in the following cases:|
-|[WorksheetColumnSortedEventArgs](/javascript/api/excel/excel.worksheetcolumnsortedeventargs)|[address](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#address)|Gets the range address that represents the sorted areas of a specific worksheet. Only columns changed as a result of the sort operation are returned.|
-||[source](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#source)|Gets the source of the event. See Excel.EventSource for details.|
-||[type](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#type)|Gets the type of the event. See Excel.EventType for details.|
+|[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[onColumnSorted](/javascript/api/excel/excel.worksheetcollection#oncolumnsorted)|Occurs when one or more columns have been sorted.|
+||[onRowSorted](/javascript/api/excel/excel.worksheetcollection#onrowsorted)|Occurs when one or more rows have been sorted.|
+||[onSingleClicked](/javascript/api/excel/excel.worksheetcollection#onsingleclicked)|Occurs when left-clicked/tapped operation happens in the worksheet collection.|
+|[WorksheetColumnSortedEventArgs](/javascript/api/excel/excel.worksheetcolumnsortedeventargs)|[address](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#address)|Gets the range address that represents the sorted areas of a specific worksheet.|
+||[source](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#source)|Gets the source of the event.|
+||[type](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#worksheetid)|Gets the id of the worksheet where the sorting happened.|
-|[WorksheetRowSortedEventArgs](/javascript/api/excel/excel.worksheetrowsortedeventargs)|[address](/javascript/api/excel/excel.worksheetrowsortedeventargs#address)|Gets the range address that represents the sorted areas of a specific worksheet. Only rows changed as a result of the sort operation are returned.|
-||[source](/javascript/api/excel/excel.worksheetrowsortedeventargs#source)|Gets the source of the event. See Excel.EventSource for details.|
-||[type](/javascript/api/excel/excel.worksheetrowsortedeventargs#type)|Gets the type of the event. See Excel.EventType for details.|
+|[WorksheetRowSortedEventArgs](/javascript/api/excel/excel.worksheetrowsortedeventargs)|[address](/javascript/api/excel/excel.worksheetrowsortedeventargs#address)|Gets the range address that represents the sorted areas of a specific worksheet.|
+||[source](/javascript/api/excel/excel.worksheetrowsortedeventargs#source)|Gets the source of the event.|
+||[type](/javascript/api/excel/excel.worksheetrowsortedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetrowsortedeventargs#worksheetid)|Gets the id of the worksheet where the sorting happened.|
 |[WorksheetSingleClickedEventArgs](/javascript/api/excel/excel.worksheetsingleclickedeventargs)|[address](/javascript/api/excel/excel.worksheetsingleclickedeventargs#address)|Gets the address that represents the cell which was left-clicked/tapped for a specific worksheet.|
 ||[offsetX](/javascript/api/excel/excel.worksheetsingleclickedeventargs#offsetx)|The distance, in points, from the left-clicked/tapped point to the left (or right for right-to-left languages) gridline edge of the left-clicked/tapped cell.|

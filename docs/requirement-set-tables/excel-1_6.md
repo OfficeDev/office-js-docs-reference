@@ -1,9 +1,9 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Application](/javascript/api/excel/excel.application)|[suspendApiCalculationUntilNextSync()](/javascript/api/excel/excel.application#suspendapicalculationuntilnextsync--)|Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.|
+|[Application](/javascript/api/excel/excel.application)|[suspendApiCalculationUntilNextSync()](/javascript/api/excel/excel.application#suspendapicalculationuntilnextsync--)|Suspends calculation until the next "context.sync()" is called.|
 |[CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat)|[format](/javascript/api/excel/excel.cellvalueconditionalformat#format)|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.|
 ||[rule](/javascript/api/excel/excel.cellvalueconditionalformat#rule)|Specifies the Rule object on this conditional format.|
-|[ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat)|[criteria](/javascript/api/excel/excel.colorscaleconditionalformat#criteria)|The criteria of the color scale. Midpoint is optional when using a two point color scale.|
+|[ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat)|[criteria](/javascript/api/excel/excel.colorscaleconditionalformat#criteria)|The criteria of the color scale.|
 ||[threeColorScale](/javascript/api/excel/excel.colorscaleconditionalformat#threecolorscale)|If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).|
 |[ConditionalCellValueRule](/javascript/api/excel/excel.conditionalcellvaluerule)|[formula1](/javascript/api/excel/excel.conditionalcellvaluerule#formula1)|The formula, if required, to evaluate the conditional format rule on.|
 ||[formula2](/javascript/api/excel/excel.conditionalcellvaluerule#formula2)|The formula, if required, to evaluate the conditional format rule on.|
@@ -24,9 +24,9 @@
 |[ConditionalDataBarRule](/javascript/api/excel/excel.conditionaldatabarrule)|[formula](/javascript/api/excel/excel.conditionaldatabarrule#formula)|The formula, if required, to evaluate the databar rule on.|
 ||[type](/javascript/api/excel/excel.conditionaldatabarrule#type)|The type of rule for the databar.|
 |[ConditionalFormat](/javascript/api/excel/excel.conditionalformat)|[delete()](/javascript/api/excel/excel.conditionalformat#delete--)|Deletes this conditional format.|
-||[getRange()](/javascript/api/excel/excel.conditionalformat#getrange--)|Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to multiple ranges.|
+||[getRange()](/javascript/api/excel/excel.conditionalformat#getrange--)|Returns the range the conditonal format is applied to.|
 ||[getRangeOrNullObject()](/javascript/api/excel/excel.conditionalformat#getrangeornullobject--)|Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to multiple ranges.|
-||[priority](/javascript/api/excel/excel.conditionalformat#priority)|The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also|
+||[priority](/javascript/api/excel/excel.conditionalformat#priority)|The priority (or index) within the conditional format collection that this conditional format currently exists in.|
 ||[cellValue](/javascript/api/excel/excel.conditionalformat#cellvalue)|Returns the cell value conditional format properties if the current conditional format is a CellValue type.|
 ||[cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#cellvalueornullobject)|Returns the cell value conditional format properties if the current conditional format is a CellValue type.|
 ||[colorScale](/javascript/api/excel/excel.conditionalformat#colorscale)|Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.|
@@ -38,13 +38,13 @@
 ||[iconSet](/javascript/api/excel/excel.conditionalformat#iconset)|Returns the IconSet conditional format properties if the current conditional format is an IconSet type.|
 ||[iconSetOrNullObject](/javascript/api/excel/excel.conditionalformat#iconsetornullobject)|Returns the IconSet conditional format properties if the current conditional format is an IconSet type.|
 ||[id](/javascript/api/excel/excel.conditionalformat#id)|The Priority of the Conditional Format within the current ConditionalFormatCollection.|
-||[preset](/javascript/api/excel/excel.conditionalformat#preset)|Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.|
-||[presetOrNullObject](/javascript/api/excel/excel.conditionalformat#presetornullobject)|Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.|
+||[preset](/javascript/api/excel/excel.conditionalformat#preset)|Returns the preset criteria conditional format.|
+||[presetOrNullObject](/javascript/api/excel/excel.conditionalformat#presetornullobject)|Returns the preset criteria conditional format.|
 ||[textComparison](/javascript/api/excel/excel.conditionalformat#textcomparison)|Returns the specific text conditional format properties if the current conditional format is a text type.|
 ||[textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#textcomparisonornullobject)|Returns the specific text conditional format properties if the current conditional format is a text type.|
 ||[topBottom](/javascript/api/excel/excel.conditionalformat#topbottom)|Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.|
 ||[topBottomOrNullObject](/javascript/api/excel/excel.conditionalformat#topbottomornullobject)|Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.|
-||[type](/javascript/api/excel/excel.conditionalformat#type)|A type of conditional format. Only one can be set at a time.|
+||[type](/javascript/api/excel/excel.conditionalformat#type)|A type of conditional format.|
 ||[stopIfTrue](/javascript/api/excel/excel.conditionalformat#stopiftrue)|If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.|
 |[ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection)|[add(type: Excel.ConditionalFormatType)](/javascript/api/excel/excel.conditionalformatcollection#add-type-)|Adds a new conditional format to the collection at the first/top priority.|
 ||[clearAll()](/javascript/api/excel/excel.conditionalformatcollection#clearall--)|Clears all conditional formats active on the current specified range.|
@@ -61,8 +61,8 @@
 ||[type](/javascript/api/excel/excel.conditionaliconcriterion#type)|What the icon conditional formula should be based on.|
 |[ConditionalPresetCriteriaRule](/javascript/api/excel/excel.conditionalpresetcriteriarule)|[criterion](/javascript/api/excel/excel.conditionalpresetcriteriarule#criterion)|The criterion of the conditional format.|
 |[ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder)|[color](/javascript/api/excel/excel.conditionalrangeborder#color)|HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").|
-||[sideIndex](/javascript/api/excel/excel.conditionalrangeborder#sideindex)|Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.|
-||[style](/javascript/api/excel/excel.conditionalrangeborder#style)|One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.|
+||[sideIndex](/javascript/api/excel/excel.conditionalrangeborder#sideindex)|Constant value that indicates the specific side of the border.|
+||[style](/javascript/api/excel/excel.conditionalrangeborder#style)|One of the constants of line style specifying the line style for the border.|
 |[ConditionalRangeBorderCollection](/javascript/api/excel/excel.conditionalrangebordercollection)|[getItem(index: Excel.ConditionalRangeBorderIndex)](/javascript/api/excel/excel.conditionalrangebordercollection#getitem-index-)|Gets a border object using its name.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.conditionalrangebordercollection#getitemat-index-)|Gets a border object using its index.|
 ||[bottom](/javascript/api/excel/excel.conditionalrangebordercollection#bottom)|Gets the bottom border.|
@@ -78,8 +78,8 @@
 ||[color](/javascript/api/excel/excel.conditionalrangefont#color)|HTML color code representation of the text color (e.g., #FF0000 represents Red).|
 ||[italic](/javascript/api/excel/excel.conditionalrangefont#italic)|Specifies if the font is italic.|
 ||[strikethrough](/javascript/api/excel/excel.conditionalrangefont#strikethrough)|Specifies the strikethrough status of the font.|
-||[underline](/javascript/api/excel/excel.conditionalrangefont#underline)|The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.|
-|[ConditionalRangeFormat](/javascript/api/excel/excel.conditionalrangeformat)|[numberFormat](/javascript/api/excel/excel.conditionalrangeformat#numberformat)|Represents Excel's number format code for the given range. Cleared if null is passed in.|
+||[underline](/javascript/api/excel/excel.conditionalrangefont#underline)|The type of underline applied to the font.|
+|[ConditionalRangeFormat](/javascript/api/excel/excel.conditionalrangeformat)|[numberFormat](/javascript/api/excel/excel.conditionalrangeformat#numberformat)|Represents Excel's number format code for the given range.|
 ||[borders](/javascript/api/excel/excel.conditionalrangeformat#borders)|Collection of border objects that apply to the overall conditional format range.|
 ||[fill](/javascript/api/excel/excel.conditionalrangeformat#fill)|Returns the fill object defined on the overall conditional format range.|
 ||[font](/javascript/api/excel/excel.conditionalrangeformat#font)|Returns the font object defined on the overall conditional format range.|
@@ -97,8 +97,8 @@
 ||[positiveFormat](/javascript/api/excel/excel.databarconditionalformat#positiveformat)|Representation of all values to the right of the axis in an Excel data bar.|
 ||[showDataBarOnly](/javascript/api/excel/excel.databarconditionalformat#showdatabaronly)|If true, hides the values from the cells where the data bar is applied.|
 ||[upperBoundRule](/javascript/api/excel/excel.databarconditionalformat#upperboundrule)|The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.|
-|[IconSetConditionalFormat](/javascript/api/excel/excel.iconsetconditionalformat)|[criteria](/javascript/api/excel/excel.iconsetconditionalformat#criteria)|An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.|
-||[reverseIconOrder](/javascript/api/excel/excel.iconsetconditionalformat#reverseiconorder)|If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.|
+|[IconSetConditionalFormat](/javascript/api/excel/excel.iconsetconditionalformat)|[criteria](/javascript/api/excel/excel.iconsetconditionalformat#criteria)|An array of Criteria and IconSets for the rules and potential custom icons for conditional icons.|
+||[reverseIconOrder](/javascript/api/excel/excel.iconsetconditionalformat#reverseiconorder)|If true, reverses the icon orders for the IconSet.|
 ||[showIconOnly](/javascript/api/excel/excel.iconsetconditionalformat#showicononly)|If true, hides the values and only shows icons.|
 ||[style](/javascript/api/excel/excel.iconsetconditionalformat#style)|If set, displays the IconSet option for the conditional format.|
 |[PresetCriteriaConditionalFormat](/javascript/api/excel/excel.presetcriteriaconditionalformat)|[format](/javascript/api/excel/excel.presetcriteriaconditionalformat#format)|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.|
