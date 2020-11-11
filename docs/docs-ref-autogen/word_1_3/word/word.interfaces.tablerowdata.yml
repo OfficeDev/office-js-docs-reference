@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'cells?: Word.Interfaces.TableCellData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.TableCellData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.TableRowData#font:member'
     package: word!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: horizontalAlignment
     uid: 'word!Word.Interfaces.TableRowData#horizontalAlignment:member'
     package: word!
@@ -87,7 +87,7 @@ properties:
         "Centered" | "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: isHeader
     uid: 'word!Word.Interfaces.TableRowData#isHeader:member'
@@ -202,5 +202,5 @@ properties:
         | "Bottom";
       return:
         type: >-
-          word!Word.<xref uid="VerticalAlignment:enum" /> | "Mixed" | "Top" |
+          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
           "Center" | "Bottom"

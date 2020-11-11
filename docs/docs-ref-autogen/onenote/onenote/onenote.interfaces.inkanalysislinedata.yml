@@ -47,8 +47,8 @@ properties:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisParagraphData:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface" />
   - name: words
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#words:member'
     package: onenote!
@@ -67,5 +67,5 @@ properties:
       content: 'words?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="InkAnalysisWordData:interface"
+          <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface"
           />[]

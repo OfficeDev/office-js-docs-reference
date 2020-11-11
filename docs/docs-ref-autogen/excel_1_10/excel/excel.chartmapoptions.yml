@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: labelStrategy
     uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
     package: excel!
@@ -49,7 +49,7 @@ properties:
         "ShowAll";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMapLabelStrategy:enum" /> | "None" |
+          <xref uid="excel!Excel.ChartMapLabelStrategy:enum" /> | "None" |
           "BestFit" | "ShowAll"
   - name: level
     uid: 'excel!Excel.ChartMapOptions#level:member'
@@ -71,7 +71,7 @@ properties:
         "County" | "State" | "Country" | "Continent" | "World";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMapAreaLevel:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartMapAreaLevel:enum" /> | "Automatic" |
           "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
           "World"
   - name: projectionType
@@ -94,7 +94,7 @@ properties:
         | "Miller" | "Robinson" | "Albers";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMapProjectionType:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartMapProjectionType:enum" /> | "Automatic" |
           "Mercator" | "Miller" | "Robinson" | "Albers"
 methods:
   - name: load(options)
@@ -115,10 +115,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartMapOptionsLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartMapOptions:class" />'
+        type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartMapOptions#load:member(2)'
@@ -139,7 +139,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartMapOptions:class" />'
+        type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartMapOptions#load:member(3)'
@@ -170,7 +170,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartMapOptions:class" />'
+        type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartMapOptions#set:member(1)'
@@ -197,13 +197,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartMapOptionsUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -222,7 +222,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartMapOptions:class" />'
+          type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
       return:
         type: void
         description: ''
@@ -245,6 +245,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartMapOptionsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartMapOptionsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartMapOptionsData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

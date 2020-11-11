@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'fourBars: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: noBars
     uid: 'excel!Excel.FiveRatingSet#noBars:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'noBars: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: oneBar
     uid: 'excel!Excel.FiveRatingSet#oneBar:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'oneBar: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: threeBars
     uid: 'excel!Excel.FiveRatingSet#threeBars:member'
     package: excel!
@@ -59,7 +59,7 @@ properties:
     syntax:
       content: 'threeBars: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: twoBars
     uid: 'excel!Excel.FiveRatingSet#twoBars:member'
     package: excel!
@@ -71,4 +71,4 @@ properties:
     syntax:
       content: 'twoBars: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: dataProvider
     uid: 'excel!Excel.LinkedDataType#dataProvider:member'
     package: excel!
@@ -127,7 +127,7 @@ properties:
         "Manual" | "OnLoad" | "Periodic";
       return:
         type: >-
-          excel!Excel.<xref uid="LinkedDataTypeRefreshMode:enum" /> | "Unknown"
+          <xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" /> | "Unknown"
           | "Manual" | "OnLoad" | "Periodic"
   - name: serviceId
     uid: 'excel!Excel.LinkedDataType#serviceId:member'
@@ -166,7 +166,7 @@ properties:
     syntax:
       content: 'readonly supportedRefreshModes: Excel.LinkedDataTypeRefreshMode[];'
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataTypeRefreshMode:enum" />[]'
+        type: '<xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" />[]'
 methods:
   - name: load(options)
     uid: 'excel!Excel.LinkedDataType#load:member(1)'
@@ -186,10 +186,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="LinkedDataTypeLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.LinkedDataTypeLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataType:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataType:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.LinkedDataType#load:member(2)'
@@ -210,7 +210,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataType:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataType:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.LinkedDataType#load:member(3)'
@@ -241,7 +241,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataType:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataType:class" />'
         description: ''
   - name: requestRefresh()
     uid: 'excel!Excel.LinkedDataType#requestRefresh:member(1)'
@@ -289,7 +289,7 @@ methods:
           description: >-
             The intended mode to which this linked data type is requested to
             change.
-          type: 'excel!Excel.<xref uid="LinkedDataTypeRefreshMode:enum" />'
+          type: '<xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" />'
       return:
         type: void
         description: ''
@@ -342,6 +342,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.LinkedDataTypeData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="LinkedDataTypeData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.LinkedDataTypeData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

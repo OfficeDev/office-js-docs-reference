@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: items
     uid: 'word!Word.ContentControlCollection#items:member'
     package: word!
@@ -45,7 +45,7 @@ properties:
     syntax:
       content: 'readonly items: Word.ContentControl[];'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />[]'
+        type: '<xref uid="word!Word.ContentControl:class" />[]'
 methods:
   - name: getById(id)
     uid: 'word!Word.ContentControlCollection#getById:member(1)'
@@ -69,7 +69,7 @@ methods:
           description: Required. A content control identifier.
           type: number
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: |-
 
 
@@ -119,7 +119,7 @@ methods:
           description: Required. A tag set on a content control.
           type: string
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: >-
 
 
@@ -166,7 +166,7 @@ methods:
           description: Required. The title of a content control.
           type: string
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: >-
 
 
@@ -235,7 +235,7 @@ methods:
           description: The index.
           type: number
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.ContentControlCollection#load:member(1)'
@@ -255,11 +255,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="ContentControlCollectionLoadOptions:interface" /> &
-            word!Word.Interfaces.<xref uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="word!Word.Interfaces.ContentControlCollectionLoadOptions:interface"
+            /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: >-
 
 
@@ -362,7 +363,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.ContentControlCollection#load:member(3)'
@@ -385,9 +386,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.ContentControlCollection#toJSON:member(1)'
@@ -410,8 +411,8 @@ methods:
       content: 'toJSON(): Word.Interfaces.ContentControlCollectionData;'
       return:
         type: >-
-          word!Word.Interfaces.<xref
-          uid="ContentControlCollectionData:interface" />
+          <xref
+          uid="word!Word.Interfaces.ContentControlCollectionData:interface" />
         description: ''
   - name: track()
     uid: 'word!Word.ContentControlCollection#track:member(1)'
@@ -431,7 +432,7 @@ methods:
     syntax:
       content: 'track(): Word.ContentControlCollection;'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.ContentControlCollection#untrack:member(1)'
@@ -450,6 +451,6 @@ methods:
     syntax:
       content: 'untrack(): Word.ContentControlCollection;'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

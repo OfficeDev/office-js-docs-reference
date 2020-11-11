@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: protected
     uid: 'excel!Excel.WorkbookProtection#protected:member'
     package: excel!
@@ -66,10 +66,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="WorkbookProtectionLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="WorkbookProtection:class" />'
+        type: '<xref uid="excel!Excel.WorkbookProtection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.WorkbookProtection#load:member(2)'
@@ -90,7 +91,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="WorkbookProtection:class" />'
+        type: '<xref uid="excel!Excel.WorkbookProtection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.WorkbookProtection#load:member(3)'
@@ -121,7 +122,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="WorkbookProtection:class" />'
+        type: '<xref uid="excel!Excel.WorkbookProtection:class" />'
         description: ''
   - name: protect(password)
     uid: 'excel!Excel.WorkbookProtection#protect:member(1)'
@@ -209,7 +210,7 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorkbookProtectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorkbookProtectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookProtectionData:interface" />'
         description: ''
   - name: unprotect(password)
     uid: 'excel!Excel.WorkbookProtection#unprotect:member(1)'
@@ -266,4 +267,4 @@ methods:
           });
 
           ```
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: filter
     uid: 'excel!Excel.TableColumn#filter:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly filter: Excel.Filter;'
       return:
-        type: 'excel!Excel.<xref uid="Filter:class" />'
+        type: '<xref uid="excel!Excel.Filter:class" />'
   - name: id
     uid: 'excel!Excel.TableColumn#id:member'
     package: excel!
@@ -176,7 +176,7 @@ methods:
     syntax:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -214,7 +214,7 @@ methods:
     syntax:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -253,7 +253,7 @@ methods:
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -292,7 +292,7 @@ methods:
     syntax:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -332,10 +332,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="TableColumnLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.TableColumnLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.TableColumn#load:member(2)'
@@ -356,7 +356,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: |-
 
 
@@ -406,7 +406,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.TableColumn#set:member(1)'
@@ -433,13 +433,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="TableColumnUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.TableColumnUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -458,7 +458,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="TableColumn:class" />'
+          type: '<xref uid="excel!Excel.TableColumn:class" />'
       return:
         type: void
         description: ''
@@ -480,6 +480,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableColumnData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableColumnData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableColumnData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

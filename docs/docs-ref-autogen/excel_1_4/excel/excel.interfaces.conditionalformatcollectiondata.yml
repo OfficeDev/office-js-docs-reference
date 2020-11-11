@@ -23,5 +23,5 @@ properties:
       content: 'items?: Excel.Interfaces.ConditionalFormatData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ConditionalFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface"
           />[]

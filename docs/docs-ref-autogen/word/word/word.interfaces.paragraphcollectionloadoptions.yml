@@ -88,7 +88,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
   - name: isLastParagraph
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#isLastParagraph:member'
     package: word!
@@ -221,7 +221,7 @@ properties:
     syntax:
       content: 'list?: Word.Interfaces.ListLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ListLoadOptions:interface" />'
   - name: listItem
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member'
     package: word!
@@ -240,7 +240,7 @@ properties:
     syntax:
       content: 'listItem?: Word.Interfaces.ListItemLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListItemLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ListItemLoadOptions:interface" />'
   - name: listItemOrNullObject
     uid: >-
       word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member
@@ -260,7 +260,7 @@ properties:
     syntax:
       content: 'listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListItemLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ListItemLoadOptions:interface" />'
   - name: listOrNullObject
     uid: >-
       word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member
@@ -280,7 +280,7 @@ properties:
     syntax:
       content: 'listOrNullObject?: Word.Interfaces.ListLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ListLoadOptions:interface" />'
   - name: outlineLevel
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
     package: word!
@@ -317,7 +317,7 @@ properties:
     syntax:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
   - name: parentContentControl
     uid: >-
       word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member
@@ -338,7 +338,7 @@ properties:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentContentControlOrNullObject
     uid: >-
@@ -363,7 +363,7 @@ properties:
         Word.Interfaces.ContentControlLoadOptions;
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentTable
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTable:member'
@@ -383,7 +383,7 @@ properties:
     syntax:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: parentTableCell
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member'
     package: word!
@@ -402,7 +402,7 @@ properties:
     syntax:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableCellOrNullObject
     uid: >-
       word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member
@@ -422,7 +422,7 @@ properties:
     syntax:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableOrNullObject
     uid: >-
       word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableOrNullObject:member
@@ -442,7 +442,7 @@ properties:
     syntax:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: rightIndent
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
     package: word!

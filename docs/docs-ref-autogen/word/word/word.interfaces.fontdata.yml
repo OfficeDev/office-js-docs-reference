@@ -230,7 +230,7 @@ properties:
         "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type: >-
-          word!Word.<xref uid="UnderlineType:enum" /> | "Mixed" | "None" |
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
           "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
           "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
           "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |

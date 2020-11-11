@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'datetimeFormat?: Excel.Interfaces.DatetimeFormatInfoData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="DatetimeFormatInfoData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.DatetimeFormatInfoData:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.CultureInfoData#name:member'
     package: excel!
@@ -67,4 +67,4 @@ properties:
     syntax:
       content: 'numberFormat?: Excel.Interfaces.NumberFormatInfoData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NumberFormatInfoData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.NumberFormatInfoData:interface" />'

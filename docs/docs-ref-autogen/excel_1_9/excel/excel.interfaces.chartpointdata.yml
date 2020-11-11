@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'dataLabel?: Excel.Interfaces.ChartDataLabelData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartDataLabelData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelData:interface" />'
   - name: format
     uid: 'excel!Excel.Interfaces.ChartPointData#format:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartPointFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartPointFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointFormatData:interface" />'
   - name: hasDataLabel
     uid: 'excel!Excel.Interfaces.ChartPointData#hasDataLabel:member'
     package: excel!
@@ -144,7 +144,7 @@ properties:
         "Circle" | "Plus" | "Picture";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMarkerStyle:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" |
           "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" |
           "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - name: value

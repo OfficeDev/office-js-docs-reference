@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: highlight
     uid: 'visio!Visio.ShapeView#highlight:member'
     package: visio!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'highlight: Visio.Highlight;'
       return:
-        type: 'visio!Visio.<xref uid="Highlight:interface" />'
+        type: '<xref uid="visio!Visio.Highlight:interface" />'
         description: |-
 
 
@@ -93,7 +93,7 @@ methods:
       parameters:
         - id: OverlayType
           description: An Overlay Type. Can be 'Text' or 'Image'.
-          type: 'visio!Visio.<xref uid="OverlayType:enum" />'
+          type: '<xref uid="visio!Visio.OverlayType:enum" />'
         - id: Content
           description: Content of Overlay.
           type: string
@@ -101,10 +101,10 @@ methods:
           description: >-
             Horizontal Alignment of Overlay. Can be 'Left', 'Center', or
             'Right'.
-          type: 'visio!Visio.<xref uid="OverlayHorizontalAlignment:enum" />'
+          type: '<xref uid="visio!Visio.OverlayHorizontalAlignment:enum" />'
         - id: OverlayVerticalAlignment
           description: 'Vertical Alignment of Overlay. Can be ''Top'', ''Middle'', ''Bottom''.'
-          type: 'visio!Visio.<xref uid="OverlayVerticalAlignment:enum" />'
+          type: '<xref uid="visio!Visio.OverlayVerticalAlignment:enum" />'
         - id: Width
           description: Overlay Width.
           type: number
@@ -112,7 +112,7 @@ methods:
           description: Overlay Height.
           type: number
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: |-
 
 
@@ -177,7 +177,7 @@ methods:
           description: Overlay Height.
           type: number
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.ShapeView#load:member(1)'
@@ -215,9 +215,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'visio!Visio.Interfaces.<xref uid="ShapeViewLoadOptions:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.ShapeViewLoadOptions:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="ShapeView:class" />'
+        type: '<xref uid="visio!Visio.ShapeView:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.ShapeView#load:member(2)'
@@ -238,7 +238,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="ShapeView:class" />'
+        type: '<xref uid="visio!Visio.ShapeView:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.ShapeView#load:member(3)'
@@ -263,7 +263,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="ShapeView:class" />'
+        type: '<xref uid="visio!Visio.ShapeView:class" />'
         description: ''
   - name: removeOverlay(OverlayId)
     uid: 'visio!Visio.ShapeView#removeOverlay:member(1)'
@@ -329,12 +329,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'visio!Visio.Interfaces.<xref uid="ShapeViewUpdateData:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.ShapeViewUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -353,7 +353,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'visio!Visio.<xref uid="ShapeView:class" />'
+          type: '<xref uid="visio!Visio.ShapeView:class" />'
       return:
         type: void
         description: ''
@@ -401,6 +401,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.ShapeViewData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeViewData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeViewData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

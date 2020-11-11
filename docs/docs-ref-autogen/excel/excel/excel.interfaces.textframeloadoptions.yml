@@ -217,7 +217,7 @@ properties:
     syntax:
       content: 'textRange?: Excel.Interfaces.TextRangeLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TextRangeLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TextRangeLoadOptions:interface" />'
   - name: topMargin
     uid: 'excel!Excel.Interfaces.TextFrameLoadOptions#topMargin:member'
     package: excel!

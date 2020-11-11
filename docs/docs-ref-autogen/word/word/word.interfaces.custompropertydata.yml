@@ -50,7 +50,7 @@ properties:
         "Boolean";
       return:
         type: >-
-          word!Word.<xref uid="DocumentPropertyType:enum" /> | "String" |
+          <xref uid="word!Word.DocumentPropertyType:enum" /> | "String" |
           "Number" | "Date" | "Boolean"
   - name: value
     uid: 'word!Word.Interfaces.CustomPropertyData#value:member'

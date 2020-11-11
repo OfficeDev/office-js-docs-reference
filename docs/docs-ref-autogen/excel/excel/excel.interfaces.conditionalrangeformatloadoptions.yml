@@ -50,8 +50,9 @@ properties:
       content: 'borders?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions:interface"
+          />
   - name: fill
     uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#fill:member'
     package: excel!
@@ -70,8 +71,9 @@ properties:
       content: 'fill?: Excel.Interfaces.ConditionalRangeFillLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeFillLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeFillLoadOptions:interface"
+          />
   - name: font
     uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#font:member'
     package: excel!
@@ -90,8 +92,9 @@ properties:
       content: 'font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeFontLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface"
+          />
   - name: numberFormat
     uid: >-
       excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#numberFormat:member

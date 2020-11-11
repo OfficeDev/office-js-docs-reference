@@ -47,5 +47,5 @@ properties:
       content: 'type?: Excel.BindingType | "Range" | "Table" | "Text";'
       return:
         type: >-
-          excel!Excel.<xref uid="BindingType:enum" /> | "Range" | "Table" |
+          <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" |
           "Text"

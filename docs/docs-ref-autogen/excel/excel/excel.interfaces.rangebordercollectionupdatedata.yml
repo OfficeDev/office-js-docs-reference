@@ -22,7 +22,7 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.RangeBorderData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeBorderData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.RangeBorderData:interface" />[]'
   - name: tintAndShade
     uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData#tintAndShade:member'
     package: excel!

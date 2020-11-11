@@ -63,8 +63,9 @@ properties:
       content: 'cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="TableCellCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface"
+          />
   - name: id
     uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#id:member'
     package: onenote!
@@ -100,7 +101,7 @@ properties:
     syntax:
       content: 'parentTable?: OneNote.Interfaces.TableLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableLoadOptions:interface" />'
   - name: rowIndex
     uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#rowIndex:member'
     package: onenote!

@@ -36,7 +36,7 @@ properties:
     syntax:
       content: 'oldNextSibling: CustomXmlNode;'
       return:
-        type: 'office!Office.<xref uid="CustomXmlNode:interface" />'
+        type: '<xref uid="office!Office.CustomXmlNode:interface" />'
   - name: oldNode
     uid: 'office!Office.NodeDeletedEventArgs#oldNode:member'
     package: office!
@@ -56,4 +56,4 @@ properties:
     syntax:
       content: 'oldNode: CustomXmlNode;'
       return:
-        type: 'office!Office.<xref uid="CustomXmlNode:interface" />'
+        type: '<xref uid="office!Office.CustomXmlNode:interface" />'

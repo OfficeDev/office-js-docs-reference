@@ -149,7 +149,7 @@ properties:
     syntax:
       content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalFormatCollection:class" />'
+        type: '<xref uid="excel!Excel.ConditionalFormatCollection:class" />'
   - name: context
     uid: 'excel!Excel.Range#context:member'
     package: excel!
@@ -163,7 +163,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: dataValidation
     uid: 'excel!Excel.Range#dataValidation:member'
     package: excel!
@@ -181,7 +181,7 @@ properties:
     syntax:
       content: 'readonly dataValidation: Excel.DataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidation:class" />'
+        type: '<xref uid="excel!Excel.DataValidation:class" />'
   - name: format
     uid: 'excel!Excel.Range#format:member'
     package: excel!
@@ -200,7 +200,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.RangeFormat;'
       return:
-        type: 'excel!Excel.<xref uid="RangeFormat:class" />'
+        type: '<xref uid="excel!Excel.RangeFormat:class" />'
   - name: formulas
     uid: 'excel!Excel.Range#formulas:member'
     package: excel!
@@ -295,7 +295,7 @@ properties:
     syntax:
       content: 'hyperlink: Excel.RangeHyperlink;'
       return:
-        type: 'excel!Excel.<xref uid="RangeHyperlink:interface" />'
+        type: '<xref uid="excel!Excel.RangeHyperlink:interface" />'
         description: >-
 
 
@@ -513,7 +513,7 @@ properties:
     syntax:
       content: 'readonly sort: Excel.RangeSort;'
       return:
-        type: 'excel!Excel.<xref uid="RangeSort:class" />'
+        type: '<xref uid="excel!Excel.RangeSort:class" />'
         description: >-
 
 
@@ -653,7 +653,7 @@ properties:
     syntax:
       content: 'readonly valueTypes: Excel.RangeValueType[][];'
       return:
-        type: 'excel!Excel.<xref uid="RangeValueType:enum" />[][]'
+        type: '<xref uid="excel!Excel.RangeValueType:enum" />[][]'
   - name: worksheet
     uid: 'excel!Excel.Range#worksheet:member'
     package: excel!
@@ -671,7 +671,7 @@ properties:
     syntax:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
 methods:
   - name: calculate()
     uid: 'excel!Excel.Range#calculate:member(1)'
@@ -713,7 +713,7 @@ methods:
           description: >-
             Optional. Determines the type of clear action. See
             Excel.ClearApplyTo for details.
-          type: 'excel!Excel.<xref uid="ClearApplyTo:enum" />'
+          type: '<xref uid="excel!Excel.ClearApplyTo:enum" />'
       return:
         type: void
         description: |-
@@ -784,7 +784,7 @@ methods:
           description: >-
             Specifies which way to shift the cells. See
             Excel.DeleteShiftDirection for details.
-          type: 'excel!Excel.<xref uid="DeleteShiftDirection:enum" />'
+          type: '<xref uid="excel!Excel.DeleteShiftDirection:enum" />'
       return:
         type: void
         description: |-
@@ -858,7 +858,7 @@ methods:
           description: The number of columns of the new range size.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getBoundingRect(anotherRange)
     uid: 'excel!Excel.Range#getBoundingRect:member(1)'
@@ -880,9 +880,9 @@ methods:
       parameters:
         - id: anotherRange
           description: The range object or address or range name.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -932,7 +932,7 @@ methods:
           description: Column number of the cell to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -977,7 +977,7 @@ methods:
           description: Column number of the range to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1024,7 +1024,7 @@ methods:
             within the current range. The default value is 1.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getColumnsBefore(count)
     uid: 'excel!Excel.Range#getColumnsBefore:member(1)'
@@ -1051,7 +1051,7 @@ methods:
             within the current range. The default value is 1.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getEntireColumn()
     uid: 'excel!Excel.Range#getEntireColumn:member(1)'
@@ -1072,7 +1072,7 @@ methods:
     syntax:
       content: 'getEntireColumn(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -1122,7 +1122,7 @@ methods:
     syntax:
       content: 'getEntireRow(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1171,7 +1171,7 @@ methods:
     syntax:
       content: 'getImage(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getIntersection(anotherRange)
     uid: 'excel!Excel.Range#getIntersection:member(1)'
@@ -1195,9 +1195,9 @@ methods:
           description: >-
             The range object or range address that will be used to determine the
             intersection of ranges.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1242,9 +1242,9 @@ methods:
           description: >-
             The range object or range address that will be used to determine the
             intersection of ranges.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -1330,7 +1330,7 @@ methods:
     syntax:
       content: 'getLastCell(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1370,7 +1370,7 @@ methods:
     syntax:
       content: 'getLastColumn(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1410,7 +1410,7 @@ methods:
     syntax:
       content: 'getLastRow(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1465,7 +1465,7 @@ methods:
             negative values are offset to the left.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1520,7 +1520,7 @@ methods:
             range, or a negative number to decrease it.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRow(row)
     uid: 'excel!Excel.Range#getRow:member(1)'
@@ -1543,7 +1543,7 @@ methods:
           description: Row number of the range to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1590,7 +1590,7 @@ methods:
             the current range. The default value is 1.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRowsBelow(count)
     uid: 'excel!Excel.Range#getRowsBelow:member(1)'
@@ -1617,7 +1617,7 @@ methods:
             the current range. The default value is 1.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getSurroundingRegion()
     uid: 'excel!Excel.Range#getSurroundingRegion:member(1)'
@@ -1638,7 +1638,7 @@ methods:
     syntax:
       content: 'getSurroundingRegion(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getUsedRange(valuesOnly)
     uid: 'excel!Excel.Range#getUsedRange:member(1)'
@@ -1664,7 +1664,7 @@ methods:
             1.2\]
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -1754,7 +1754,7 @@ methods:
           description: Considers only cells with values as used cells.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -1817,7 +1817,7 @@ methods:
     syntax:
       content: 'getVisibleView(): Excel.RangeView;'
       return:
-        type: 'excel!Excel.<xref uid="RangeView:class" />'
+        type: '<xref uid="excel!Excel.RangeView:class" />'
         description: ''
   - name: insert(shift)
     uid: 'excel!Excel.Range#insert:member(1)'
@@ -1842,9 +1842,9 @@ methods:
           description: >-
             Specifies which way to shift the cells. See
             Excel.InsertShiftDirection for details.
-          type: 'excel!Excel.<xref uid="InsertShiftDirection:enum" />'
+          type: '<xref uid="excel!Excel.InsertShiftDirection:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1890,7 +1890,7 @@ methods:
             Excel.InsertShiftDirection for details.
           type: '"Down" | "Right"'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Range#load:member(1)'
@@ -1907,9 +1907,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="RangeLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.RangeLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Range#load:member(2)'
@@ -1930,7 +1930,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1983,7 +1983,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: merge(across)
     uid: 'excel!Excel.Range#merge:member(1)'
@@ -2142,12 +2142,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="RangeUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -2166,7 +2166,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Range:class" />'
+          type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void
         description: ''
@@ -2207,7 +2207,7 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeData:interface" />'
         description: ''
   - name: track()
     uid: 'excel!Excel.Range#track:member(1)'
@@ -2227,7 +2227,7 @@ methods:
     syntax:
       content: 'track(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: unmerge()
     uid: 'excel!Excel.Range#unmerge:member(1)'
@@ -2283,7 +2283,7 @@ methods:
     syntax:
       content: 'untrack(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -2308,4 +2308,4 @@ methods:
               await context.sync();
           });
           ```
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

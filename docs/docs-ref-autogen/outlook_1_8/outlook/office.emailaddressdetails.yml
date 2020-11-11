@@ -34,7 +34,7 @@ properties:
     syntax:
       content: 'appointmentResponse: MailboxEnums.ResponseType | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="ResponseType:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.ResponseType:enum" /> | string'
         description: >-
 
 
@@ -117,7 +117,7 @@ properties:
     syntax:
       content: 'recipientType: MailboxEnums.RecipientType | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="RecipientType:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.RecipientType:enum" /> | string'
         description: >-
 
 

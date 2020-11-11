@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
 methods:
   - name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
     uid: 'excel!Excel.RangeSort#apply:member(1)'
@@ -52,7 +52,7 @@ methods:
       parameters:
         - id: fields
           description: The list of conditions to sort on.
-          type: 'excel!Excel.<xref uid="SortField:interface" />[]'
+          type: '<xref uid="excel!Excel.SortField:interface" />[]'
         - id: matchCase
           description: Optional. Whether to have the casing impact string ordering.
           type: boolean
@@ -61,10 +61,10 @@ methods:
           type: boolean
         - id: orientation
           description: Optional. Whether the operation is sorting rows or columns.
-          type: 'excel!Excel.<xref uid="SortOrientation:enum" />'
+          type: '<xref uid="excel!Excel.SortOrientation:enum" />'
         - id: method
           description: Optional. The ordering method used for Chinese characters.
-          type: 'excel!Excel.<xref uid="SortMethod:enum" />'
+          type: '<xref uid="excel!Excel.SortMethod:enum" />'
       return:
         type: void
         description: ''
@@ -90,7 +90,7 @@ methods:
       parameters:
         - id: fields
           description: The list of conditions to sort on.
-          type: 'excel!Excel.<xref uid="SortField:interface" />[]'
+          type: '<xref uid="excel!Excel.SortField:interface" />[]'
         - id: matchCase
           description: Optional. Whether to have the casing impact string ordering.
           type: boolean
@@ -132,4 +132,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

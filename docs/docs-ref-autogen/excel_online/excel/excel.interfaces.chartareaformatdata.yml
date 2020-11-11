@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBorderData:interface" />'
   - name: colorScheme
     uid: 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member'
     package: excel!
@@ -57,7 +57,7 @@ properties:
         "MonochromaticPalette13";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartColorScheme:enum" /> | "ColorfulPalette1"
+          <xref uid="excel!Excel.ChartColorScheme:enum" /> | "ColorfulPalette1"
           | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
           "MonochromaticPalette1" | "MonochromaticPalette2" |
           "MonochromaticPalette3" | "MonochromaticPalette4" |
@@ -84,7 +84,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartFontData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontData:interface" />'
   - name: roundedCorners
     uid: 'excel!Excel.Interfaces.ChartAreaFormatData#roundedCorners:member'
     package: excel!

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: count
     uid: 'onenote!OneNote.InkStrokeCollection#count:member'
     package: onenote!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: OneNote.InkStroke[];'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />[]'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />[]'
 methods:
   - name: getItem(index)
     uid: 'onenote!OneNote.InkStrokeCollection#getItem:member(1)'
@@ -84,7 +84,7 @@ methods:
             InkStroke object in the collection.
           type: number | string
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'onenote!OneNote.InkStrokeCollection#getItemAt:member(1)'
@@ -107,7 +107,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.InkStrokeCollection#load:member(1)'
@@ -148,12 +148,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="InkStrokeCollectionLoadOptions:interface" /> &
-            onenote!OneNote.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface"
+            /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="InkStrokeCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.InkStrokeCollection#load:member(2)'
@@ -174,7 +174,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStrokeCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.InkStrokeCollection#load:member(3)'
@@ -189,9 +189,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStrokeCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.InkStrokeCollection#toJSON:member(1)'
@@ -214,8 +214,8 @@ methods:
       content: 'toJSON(): OneNote.Interfaces.InkStrokeCollectionData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkStrokeCollectionData:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkStrokeCollectionData:interface" />
         description: ''
   - name: track()
     uid: 'onenote!OneNote.InkStrokeCollection#track:member(1)'
@@ -235,7 +235,7 @@ methods:
     syntax:
       content: 'track(): OneNote.InkStrokeCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStrokeCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.InkStrokeCollection#untrack:member(1)'
@@ -254,6 +254,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.InkStrokeCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStrokeCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

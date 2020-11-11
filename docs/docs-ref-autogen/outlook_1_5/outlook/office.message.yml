@@ -25,4 +25,4 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
-extends: 'outlook!Office.<xref uid="Item:interface" />'
+extends: '<xref uid="outlook!Office.Item:interface" />'

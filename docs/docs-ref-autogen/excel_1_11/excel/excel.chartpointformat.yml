@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'readonly border: Excel.ChartBorder;'
       return:
-        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        type: '<xref uid="excel!Excel.ChartBorder:class" />'
   - name: context
     uid: 'excel!Excel.ChartPointFormat#context:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: fill
     uid: 'excel!Excel.ChartPointFormat#fill:member'
     package: excel!
@@ -66,7 +66,7 @@ properties:
     syntax:
       content: 'readonly fill: Excel.ChartFill;'
       return:
-        type: 'excel!Excel.<xref uid="ChartFill:class" />'
+        type: '<xref uid="excel!Excel.ChartFill:class" />'
 methods:
   - name: load(options)
     uid: 'excel!Excel.ChartPointFormat#load:member(1)'
@@ -86,10 +86,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartPointFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="ChartPointFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartPointFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartPointFormat#load:member(2)'
@@ -110,7 +111,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartPointFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartPointFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartPointFormat#load:member(3)'
@@ -141,7 +142,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartPointFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartPointFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartPointFormat#set:member(1)'
@@ -168,13 +169,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartPointFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartPointFormatUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -193,7 +194,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartPointFormat:class" />'
+          type: '<xref uid="excel!Excel.ChartPointFormat:class" />'
       return:
         type: void
         description: ''
@@ -216,6 +217,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartPointFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartPointFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointFormatData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

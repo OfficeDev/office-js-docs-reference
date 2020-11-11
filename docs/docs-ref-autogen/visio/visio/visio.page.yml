@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'readonly allShapes: Visio.ShapeCollection;'
       return:
-        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
   - name: comments
     uid: 'visio!Visio.Page#comments:member'
     package: visio!
@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
-        type: 'visio!Visio.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
   - name: context
     uid: 'visio!Visio.Page#context:member'
     package: visio!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: height
     uid: 'visio!Visio.Page#height:member'
     package: visio!
@@ -154,7 +154,7 @@ properties:
     syntax:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
-        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
   - name: view
     uid: 'visio!Visio.Page#view:member'
     package: visio!
@@ -172,7 +172,7 @@ properties:
     syntax:
       content: 'readonly view: Visio.PageView;'
       return:
-        type: 'visio!Visio.<xref uid="PageView:class" />'
+        type: '<xref uid="visio!Visio.PageView:class" />'
   - name: width
     uid: 'visio!Visio.Page#width:member'
     package: visio!
@@ -247,9 +247,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'visio!Visio.Interfaces.<xref uid="PageLoadOptions:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.PageLoadOptions:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="Page:class" />'
+        type: '<xref uid="visio!Visio.Page:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.Page#load:member(2)'
@@ -270,7 +270,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="Page:class" />'
+        type: '<xref uid="visio!Visio.Page:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.Page#load:member(3)'
@@ -295,7 +295,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="Page:class" />'
+        type: '<xref uid="visio!Visio.Page:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'visio!Visio.Page#set:member(1)'
@@ -321,12 +321,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'visio!Visio.Interfaces.<xref uid="PageUpdateData:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.PageUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -345,7 +345,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'visio!Visio.<xref uid="Page:class" />'
+          type: '<xref uid="visio!Visio.Page:class" />'
       return:
         type: void
         description: ''
@@ -367,6 +367,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.PageData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="PageData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

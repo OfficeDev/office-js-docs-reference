@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'field?: Excel.Interfaces.PivotFieldLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotFieldLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PivotFieldLoadOptions:interface" />'
   - name: id
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#id:member'
     package: excel!

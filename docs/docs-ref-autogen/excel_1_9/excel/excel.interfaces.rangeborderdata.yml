@@ -52,7 +52,7 @@ properties:
         "DiagonalUp";
       return:
         type: >-
-          excel!Excel.<xref uid="BorderIndex:enum" /> | "EdgeTop" | "EdgeBottom"
+          <xref uid="excel!Excel.BorderIndex:enum" /> | "EdgeTop" | "EdgeBottom"
           | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
           "DiagonalDown" | "DiagonalUp"
   - name: style
@@ -76,7 +76,7 @@ properties:
         "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
       return:
         type: >-
-          excel!Excel.<xref uid="BorderLineStyle:enum" /> | "None" |
+          <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" |
           "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
           "SlantDashDot"
   - name: tintAndShade
@@ -119,5 +119,5 @@ properties:
       content: 'weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
       return:
         type: >-
-          excel!Excel.<xref uid="BorderWeight:enum" /> | "Hairline" | "Thin" |
+          <xref uid="excel!Excel.BorderWeight:enum" /> | "Hairline" | "Thin" |
           "Medium" | "Thick"

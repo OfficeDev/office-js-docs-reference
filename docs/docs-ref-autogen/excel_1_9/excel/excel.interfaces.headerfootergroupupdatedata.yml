@@ -30,7 +30,7 @@ properties:
     syntax:
       content: 'defaultForAllPages?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
   - name: evenPages
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#evenPages:member'
     package: excel!
@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'evenPages?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
   - name: firstPage
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#firstPage:member'
     package: excel!
@@ -68,7 +68,7 @@ properties:
     syntax:
       content: 'firstPage?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
   - name: oddPages
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#oddPages:member'
     package: excel!
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'oddPages?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
   - name: state
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member'
     package: excel!
@@ -109,7 +109,7 @@ properties:
         "OddAndEven" | "FirstOddAndEven";
       return:
         type: >-
-          excel!Excel.<xref uid="HeaderFooterState:enum" /> | "Default" |
+          <xref uid="excel!Excel.HeaderFooterState:enum" /> | "Default" |
           "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
   - name: useSheetMargins
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetMargins:member'

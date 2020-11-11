@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.TableStyleCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.TableStyle[];'
       return:
-        type: 'excel!Excel.<xref uid="TableStyle:class" />[]'
+        type: '<xref uid="excel!Excel.TableStyle:class" />[]'
 methods:
   - name: 'add(name, makeUniqueName)'
     uid: 'excel!Excel.TableStyleCollection#add:member(1)'
@@ -70,7 +70,7 @@ methods:
             name in order to make it unique, if needed.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="TableStyle:class" />'
+        type: '<xref uid="excel!Excel.TableStyle:class" />'
         description: The newly created TableStyle.
   - name: getCount()
     uid: 'excel!Excel.TableStyleCollection#getCount:member(1)'
@@ -89,7 +89,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getDefault()
     uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
@@ -108,7 +108,7 @@ methods:
     syntax:
       content: 'getDefault(): Excel.TableStyle;'
       return:
-        type: 'excel!Excel.<xref uid="TableStyle:class" />'
+        type: '<xref uid="excel!Excel.TableStyle:class" />'
         description: The TableStyle object that is the current default TableStyle.
   - name: getItem(name)
     uid: 'excel!Excel.TableStyleCollection#getItem:member(1)'
@@ -131,7 +131,7 @@ methods:
           description: Name of the TableStyle to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="TableStyle:class" />'
+        type: '<xref uid="excel!Excel.TableStyle:class" />'
         description: The TableStyle object whose name matches the input.
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
@@ -155,7 +155,7 @@ methods:
           description: Name of the TableStyle to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="TableStyle:class" />'
+        type: '<xref uid="excel!Excel.TableStyle:class" />'
         description: The TableStyle object whose name matches the input.
   - name: load(options)
     uid: 'excel!Excel.TableStyleCollection#load:member(1)'
@@ -175,12 +175,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="TableStyleCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="TableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.TableStyleCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.TableStyleCollection#load:member(2)'
@@ -201,7 +201,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="TableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.TableStyleCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.TableStyleCollection#load:member(3)'
@@ -224,9 +224,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="TableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.TableStyleCollection:class" />'
         description: ''
   - name: setDefault(newDefaultStyle)
     uid: 'excel!Excel.TableStyleCollection#setDefault:member(1)'
@@ -249,7 +249,7 @@ methods:
           description: >-
             The TableStyle object or name of the TableStyle object that should
             be the new default.
-          type: 'excel!Excel.<xref uid="TableStyle:class" /> | string'
+          type: '<xref uid="excel!Excel.TableStyle:class" /> | string'
       return:
         type: void
         description: ''
@@ -274,7 +274,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.TableStyleCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="TableStyleCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.TableStyleCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

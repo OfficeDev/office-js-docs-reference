@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.Paragraph#id:member'
     package: onenote!
@@ -66,7 +66,7 @@ properties:
     syntax:
       content: 'readonly image: OneNote.Image;'
       return:
-        type: 'onenote!OneNote.<xref uid="Image:class" />'
+        type: '<xref uid="onenote!OneNote.Image:class" />'
   - name: inkWords
     uid: 'onenote!OneNote.Paragraph#inkWords:member'
     package: onenote!
@@ -85,7 +85,7 @@ properties:
     syntax:
       content: 'readonly inkWords: OneNote.InkWordCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkWordCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkWordCollection:class" />'
   - name: outline
     uid: 'onenote!OneNote.Paragraph#outline:member'
     package: onenote!
@@ -103,7 +103,7 @@ properties:
     syntax:
       content: 'readonly outline: OneNote.Outline;'
       return:
-        type: 'onenote!OneNote.<xref uid="Outline:class" />'
+        type: '<xref uid="onenote!OneNote.Outline:class" />'
   - name: paragraphs
     uid: 'onenote!OneNote.Paragraph#paragraphs:member'
     package: onenote!
@@ -121,7 +121,7 @@ properties:
     syntax:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
   - name: parentParagraph
     uid: 'onenote!OneNote.Paragraph#parentParagraph:member'
     package: onenote!
@@ -140,7 +140,7 @@ properties:
     syntax:
       content: 'readonly parentParagraph: OneNote.Paragraph;'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
   - name: parentParagraphOrNull
     uid: 'onenote!OneNote.Paragraph#parentParagraphOrNull:member'
     package: onenote!
@@ -159,7 +159,7 @@ properties:
     syntax:
       content: 'readonly parentParagraphOrNull: OneNote.Paragraph;'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
   - name: parentTableCell
     uid: 'onenote!OneNote.Paragraph#parentTableCell:member'
     package: onenote!
@@ -178,7 +178,7 @@ properties:
     syntax:
       content: 'readonly parentTableCell: OneNote.TableCell;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
   - name: parentTableCellOrNull
     uid: 'onenote!OneNote.Paragraph#parentTableCellOrNull:member'
     package: onenote!
@@ -197,7 +197,7 @@ properties:
     syntax:
       content: 'readonly parentTableCellOrNull: OneNote.TableCell;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
   - name: richText
     uid: 'onenote!OneNote.Paragraph#richText:member'
     package: onenote!
@@ -216,7 +216,7 @@ properties:
     syntax:
       content: 'readonly richText: OneNote.RichText;'
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
   - name: table
     uid: 'onenote!OneNote.Paragraph#table:member'
     package: onenote!
@@ -235,7 +235,7 @@ properties:
     syntax:
       content: 'readonly table: OneNote.Table;'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
   - name: type
     uid: 'onenote!OneNote.Paragraph#type:member'
     package: onenote!
@@ -256,7 +256,7 @@ properties:
         "Ink" | "Other";
       return:
         type: >-
-          onenote!OneNote.<xref uid="ParagraphType:enum" /> | "RichText" |
+          <xref uid="onenote!OneNote.ParagraphType:enum" /> | "RichText" |
           "Image" | "Table" | "Ink" | "Other"
 methods:
   - name: 'addNoteTag(type, status)'
@@ -280,12 +280,12 @@ methods:
       parameters:
         - id: type
           description: The type of the NoteTag.
-          type: 'onenote!OneNote.<xref uid="NoteTagType:enum" />'
+          type: '<xref uid="onenote!OneNote.NoteTagType:enum" />'
         - id: status
           description: The status of the NoteTag.
-          type: 'onenote!OneNote.<xref uid="NoteTagStatus:enum" />'
+          type: '<xref uid="onenote!OneNote.NoteTagStatus:enum" />'
       return:
-        type: 'onenote!OneNote.<xref uid="NoteTag:class" />'
+        type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
   - name: 'addNoteTag(typeString, status)'
     uid: 'onenote!OneNote.Paragraph#addNoteTag:member(2)'
@@ -321,7 +321,7 @@ methods:
             "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" |
             "TaskNotSyncedYet" | "TaskRemoved"
       return:
-        type: 'onenote!OneNote.<xref uid="NoteTag:class" />'
+        type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
   - name: delete()
     uid: 'onenote!OneNote.Paragraph#delete:member(1)'
@@ -399,8 +399,8 @@ methods:
       content: 'getParagraphInfo(): OfficeExtension.ClientResult<OneNote.ParagraphInfo>;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
-          />&lt;onenote!OneNote.<xref uid="ParagraphInfo:interface" />&gt;
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
+          uid="onenote!OneNote.ParagraphInfo:interface" />&gt;
         description: ''
   - name: 'insertHtmlAsSibling(insertLocation, html)'
     uid: 'onenote!OneNote.Paragraph#insertHtmlAsSibling:member(1)'
@@ -423,7 +423,7 @@ methods:
       parameters:
         - id: insertLocation
           description: The location of new contents relative to the current Paragraph.
-          type: 'onenote!OneNote.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: html
           description: >-
             An HTML string that describes the visual presentation of the
@@ -526,7 +526,7 @@ methods:
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
-          type: 'onenote!OneNote.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: base64EncodedImage
           description: HTML string to append.
           type: string
@@ -541,7 +541,7 @@ methods:
             and image height will be respected.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="Image:class" />'
+        type: '<xref uid="onenote!OneNote.Image:class" />'
         description: |-
 
 
@@ -622,7 +622,7 @@ methods:
             and image height will be respected.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="Image:class" />'
+        type: '<xref uid="onenote!OneNote.Image:class" />'
         description: ''
   - name: 'insertRichTextAsSibling(insertLocation, paragraphText)'
     uid: 'onenote!OneNote.Paragraph#insertRichTextAsSibling:member(1)'
@@ -645,12 +645,12 @@ methods:
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
-          type: 'onenote!OneNote.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: paragraphText
           description: HTML string to append.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: |-
 
 
@@ -716,7 +716,7 @@ methods:
           description: HTML string to append.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: ''
   - name: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
     uid: 'onenote!OneNote.Paragraph#insertTableAsSibling:member(1)'
@@ -740,7 +740,7 @@ methods:
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
-          type: 'onenote!OneNote.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: rowCount
           description: The number of rows in the table.
           type: number
@@ -753,7 +753,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
   - name: 'insertTableAsSibling(insertLocationString, rowCount, columnCount, values)'
     uid: 'onenote!OneNote.Paragraph#insertTableAsSibling:member(2)'
@@ -790,7 +790,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.Paragraph#load:member(1)'
@@ -831,10 +831,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="ParagraphLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.Paragraph#load:member(2)'
@@ -855,7 +855,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: |-
 
 
@@ -952,7 +952,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'onenote!OneNote.Paragraph#set:member(1)'
@@ -979,13 +979,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="ParagraphUpdateData:interface"
+            <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1004,7 +1004,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+          type: '<xref uid="onenote!OneNote.Paragraph:class" />'
       return:
         type: void
         description: ''
@@ -1026,7 +1026,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.ParagraphData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ParagraphData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.Paragraph#track:member(1)'
@@ -1046,7 +1046,7 @@ methods:
     syntax:
       content: 'track(): OneNote.Paragraph;'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.Paragraph#untrack:member(1)'
@@ -1065,6 +1065,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.Paragraph;'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

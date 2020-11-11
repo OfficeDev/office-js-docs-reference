@@ -29,7 +29,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartAxisTitleFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatData:interface"
           />
   - name: text
     uid: 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'

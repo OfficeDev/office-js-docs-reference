@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
   - name: cellIndex
     uid: 'word!Word.TableCell#cellIndex:member'
     package: word!
@@ -83,7 +83,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: horizontalAlignment
     uid: 'word!Word.TableCell#horizontalAlignment:member'
     package: word!
@@ -105,7 +105,7 @@ properties:
         "Centered" | "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: parentRow
     uid: 'word!Word.TableCell#parentRow:member'
@@ -124,7 +124,7 @@ properties:
     syntax:
       content: 'readonly parentRow: Word.TableRow;'
       return:
-        type: 'word!Word.<xref uid="TableRow:class" />'
+        type: '<xref uid="word!Word.TableRow:class" />'
   - name: parentTable
     uid: 'word!Word.TableCell#parentTable:member'
     package: word!
@@ -142,7 +142,7 @@ properties:
     syntax:
       content: 'readonly parentTable: Word.Table;'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
   - name: rowIndex
     uid: 'word!Word.TableCell#rowIndex:member'
     package: word!
@@ -219,7 +219,7 @@ properties:
         "Bottom";
       return:
         type: >-
-          word!Word.<xref uid="VerticalAlignment:enum" /> | "Mixed" | "Top" |
+          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
           "Center" | "Bottom"
   - name: width
     uid: 'word!Word.TableCell#width:member'
@@ -298,9 +298,9 @@ methods:
       parameters:
         - id: borderLocation
           description: Required. The border location.
-          type: 'word!Word.<xref uid="BorderLocation:enum" />'
+          type: '<xref uid="word!Word.BorderLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="TableBorder:class" />'
+        type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
   - name: getBorder(borderLocationString)
     uid: 'word!Word.TableCell#getBorder:member(2)'
@@ -328,7 +328,7 @@ methods:
             "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
             "InsideVertical" | "Inside" | "Outside" | "All"
       return:
-        type: 'word!Word.<xref uid="TableBorder:class" />'
+        type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
   - name: getCellPadding(cellPaddingLocation)
     uid: 'word!Word.TableCell#getCellPadding:member(1)'
@@ -353,9 +353,9 @@ methods:
           description: >-
             Required. The cell padding location can be 'Top', 'Left', 'Bottom',
             or 'Right'.
-          type: 'word!Word.<xref uid="CellPaddingLocation:enum" />'
+          type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getCellPadding(cellPaddingLocationString)
     uid: 'word!Word.TableCell#getCellPadding:member(2)'
@@ -382,7 +382,7 @@ methods:
             or 'Right'.
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getNext()
     uid: 'word!Word.TableCell#getNext:member(1)'
@@ -401,7 +401,7 @@ methods:
     syntax:
       content: 'getNext(): Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
         description: ''
   - name: getNextOrNullObject()
     uid: 'word!Word.TableCell#getNextOrNullObject:member(1)'
@@ -420,7 +420,7 @@ methods:
     syntax:
       content: 'getNextOrNullObject(): Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
         description: ''
   - name: 'insertColumns(insertLocation, columnCount, values)'
     uid: 'word!Word.TableCell#insertColumns:member(1)'
@@ -445,7 +445,7 @@ methods:
       parameters:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: columnCount
           description: Required. Number of columns to add.
           type: number
@@ -514,7 +514,7 @@ methods:
       parameters:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: rowCount
           description: Required. Number of rows to add.
           type: number
@@ -524,7 +524,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'word!Word.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="word!Word.TableRowCollection:class" />'
         description: ''
   - name: 'insertRows(insertLocationString, rowCount, values)'
     uid: 'word!Word.TableCell#insertRows:member(2)'
@@ -559,7 +559,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'word!Word.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="word!Word.TableRowCollection:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.TableCell#load:member(1)'
@@ -576,9 +576,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="TableCellLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.TableCell#load:member(2)'
@@ -599,7 +599,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.TableCell#load:member(3)'
@@ -630,7 +630,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.TableCell#set:member(1)'
@@ -656,12 +656,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="TableCellUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.TableCellUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -680,7 +680,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="TableCell:class" />'
+          type: '<xref uid="word!Word.TableCell:class" />'
       return:
         type: void
         description: ''
@@ -707,7 +707,7 @@ methods:
           description: >-
             Required. The cell padding location can be 'Top', 'Left', 'Bottom',
             or 'Right'.
-          type: 'word!Word.<xref uid="CellPaddingLocation:enum" />'
+          type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
         - id: cellPadding
           description: Required. The cell padding.
           type: number
@@ -790,7 +790,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.TableCellData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableCellData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.TableCell#track:member(1)'
@@ -810,7 +810,7 @@ methods:
     syntax:
       content: 'track(): Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.TableCell#untrack:member(1)'
@@ -829,6 +829,6 @@ methods:
     syntax:
       content: 'untrack(): Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

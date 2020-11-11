@@ -59,7 +59,7 @@ properties:
     syntax:
       content: 'assignees: EmailUser[];'
       return:
-        type: 'outlook!Office.<xref uid="EmailUser:interface" />[]'
+        type: '<xref uid="outlook!Office.EmailUser:interface" />[]'
   - name: taskString
     uid: 'outlook!Office.TaskSuggestion#taskString:member'
     package: outlook!

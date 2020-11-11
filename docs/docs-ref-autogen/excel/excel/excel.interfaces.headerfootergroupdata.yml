@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'defaultForAllPages?: Excel.Interfaces.HeaderFooterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterData:interface" />'
   - name: evenPages
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#evenPages:member'
     package: excel!
@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'evenPages?: Excel.Interfaces.HeaderFooterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterData:interface" />'
   - name: firstPage
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#firstPage:member'
     package: excel!
@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'firstPage?: Excel.Interfaces.HeaderFooterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterData:interface" />'
   - name: oddPages
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#oddPages:member'
     package: excel!
@@ -86,7 +86,7 @@ properties:
     syntax:
       content: 'oddPages?: Excel.Interfaces.HeaderFooterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterData:interface" />'
   - name: state
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#state:member'
     package: excel!
@@ -108,7 +108,7 @@ properties:
         "OddAndEven" | "FirstOddAndEven";
       return:
         type: >-
-          excel!Excel.<xref uid="HeaderFooterState:enum" /> | "Default" |
+          <xref uid="excel!Excel.HeaderFooterState:enum" /> | "Default" |
           "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
   - name: useSheetMargins
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#useSheetMargins:member'

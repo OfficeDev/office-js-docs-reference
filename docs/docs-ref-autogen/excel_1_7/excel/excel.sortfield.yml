@@ -70,7 +70,7 @@ properties:
       content: 'dataOption?: Excel.SortDataOption | "Normal" | "TextAsNumber";'
       return:
         type: >-
-          excel!Excel.<xref uid="SortDataOption:enum" /> | "Normal" |
+          <xref uid="excel!Excel.SortDataOption:enum" /> | "Normal" |
           "TextAsNumber"
   - name: icon
     uid: 'excel!Excel.SortField#icon:member'
@@ -90,7 +90,7 @@ properties:
     syntax:
       content: 'icon?: Excel.Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: key
     uid: 'excel!Excel.SortField#key:member'
     package: excel!
@@ -128,5 +128,5 @@ properties:
       content: 'sortOn?: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon";'
       return:
         type: >-
-          excel!Excel.<xref uid="SortOn:enum" /> | "Value" | "CellColor" |
+          <xref uid="excel!Excel.SortOn:enum" /> | "Value" | "CellColor" |
           "FontColor" | "Icon"

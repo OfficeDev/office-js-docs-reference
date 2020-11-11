@@ -48,8 +48,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTrendlineLabelFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartTrendlineLabelFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface"
+          />
   - name: formula
     uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#formula:member'
     package: excel!
@@ -110,7 +111,7 @@ properties:
         "Left" | "Right" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextHorizontalAlignment:enum" /> |
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> |
           "Center" | "Left" | "Right" | "Justify" | "Distributed"
   - name: left
     uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#left:member'
@@ -230,7 +231,7 @@ properties:
         "Bottom" | "Top" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextVerticalAlignment:enum" /> | "Center"
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center"
           | "Bottom" | "Top" | "Justify" | "Distributed"
   - name: width
     uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#width:member'

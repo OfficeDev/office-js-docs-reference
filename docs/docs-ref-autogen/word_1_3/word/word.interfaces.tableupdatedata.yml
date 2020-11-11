@@ -32,7 +32,7 @@ properties:
         "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: font
     uid: 'word!Word.Interfaces.TableUpdateData#font:member'
@@ -52,7 +52,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontUpdateData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
   - name: headerRowCount
     uid: 'word!Word.Interfaces.TableUpdateData#headerRowCount:member'
     package: word!
@@ -92,7 +92,7 @@ properties:
         "Centered" | "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: shadingColor
     uid: 'word!Word.Interfaces.TableUpdateData#shadingColor:member'
@@ -240,7 +240,7 @@ properties:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type: >-
-          word!Word.<xref uid="Style:enum" /> | "Other" | "Normal" | "Heading1"
+          <xref uid="word!Word.Style:enum" /> | "Other" | "Normal" | "Heading1"
           | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
           "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
           "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" |
@@ -386,7 +386,7 @@ properties:
         | "Bottom";
       return:
         type: >-
-          word!Word.<xref uid="VerticalAlignment:enum" /> | "Mixed" | "Top" |
+          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
           "Center" | "Bottom"
   - name: width
     uid: 'word!Word.Interfaces.TableUpdateData#width:member'

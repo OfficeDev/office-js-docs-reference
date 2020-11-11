@@ -105,7 +105,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.ShapeFillLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeFillLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeFillLoadOptions:interface" />'
   - name: geometricShape
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member'
     package: excel!
@@ -125,7 +125,7 @@ properties:
       content: 'geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="GeometricShapeLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.GeometricShapeLoadOptions:interface"
           />
   - name: geometricShapeType
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShapeType:member'
@@ -165,7 +165,7 @@ properties:
     syntax:
       content: 'group?: Excel.Interfaces.ShapeGroupLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeGroupLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeGroupLoadOptions:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#height:member'
     package: excel!
@@ -221,7 +221,7 @@ properties:
     syntax:
       content: 'image?: Excel.Interfaces.ImageLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ImageLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ImageLoadOptions:interface" />'
   - name: left
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#left:member'
     package: excel!
@@ -281,7 +281,7 @@ properties:
     syntax:
       content: 'line?: Excel.Interfaces.LineLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="LineLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.LineLoadOptions:interface" />'
   - name: lineFormat
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lineFormat:member'
     package: excel!
@@ -300,8 +300,8 @@ properties:
       content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ShapeLineFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface" />
   - name: lockAspectRatio
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lockAspectRatio:member'
     package: excel!
@@ -355,7 +355,7 @@ properties:
     syntax:
       content: 'parentGroup?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
   - name: rotation
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#rotation:member'
     package: excel!
@@ -391,7 +391,7 @@ properties:
     syntax:
       content: 'textFrame?: Excel.Interfaces.TextFrameLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TextFrameLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TextFrameLoadOptions:interface" />'
   - name: top
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#top:member'
     package: excel!

@@ -47,8 +47,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartErrorBarsFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartErrorBarsFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface"
+          />
   - name: include
     uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#include:member'
     package: excel!
@@ -69,7 +70,7 @@ properties:
         "PlusValues";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartErrorBarsInclude:enum" /> | "Both" |
+          <xref uid="excel!Excel.ChartErrorBarsInclude:enum" /> | "Both" |
           "MinusValues" | "PlusValues"
   - name: type
     uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#type:member'
@@ -91,7 +92,7 @@ properties:
         "StError" | "Custom";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartErrorBarsType:enum" /> | "FixedValue" |
+          <xref uid="excel!Excel.ChartErrorBarsType:enum" /> | "FixedValue" |
           "Percent" | "StDev" | "StError" | "Custom"
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#visible:member'

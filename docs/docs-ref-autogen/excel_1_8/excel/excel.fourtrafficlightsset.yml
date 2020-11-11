@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'blackCircleWithBorder: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: greenCircle
     uid: 'excel!Excel.FourTrafficLightsSet#greenCircle:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'greenCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: redCircleWithBorder
     uid: 'excel!Excel.FourTrafficLightsSet#redCircleWithBorder:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'redCircleWithBorder: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: yellowCircle
     uid: 'excel!Excel.FourTrafficLightsSet#yellowCircle:member'
     package: excel!
@@ -59,4 +59,4 @@ properties:
     syntax:
       content: 'yellowCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

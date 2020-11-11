@@ -197,8 +197,8 @@ properties:
       content: 'pivotStyle?: Excel.Interfaces.PivotTableStyleLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="PivotTableStyleLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.PivotTableStyleLoadOptions:interface" />
   - name: preserveFormatting
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#preserveFormatting:member'
     package: excel!

@@ -24,7 +24,7 @@ properties:
     syntax:
       content: 'context: ClientRequestContext;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+        type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
   - name: isNullObject
     uid: 'office!OfficeExtension.ClientObject#isNullObject:member'
     package: office!

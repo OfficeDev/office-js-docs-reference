@@ -52,8 +52,9 @@ properties:
       content: 'cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CellValueConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface"
+          />
   - name: cellValueOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member
@@ -77,8 +78,9 @@ properties:
         Excel.Interfaces.CellValueConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CellValueConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface"
+          />
   - name: colorScale
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member
@@ -99,8 +101,9 @@ properties:
       content: 'colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ColorScaleConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface"
+          />
   - name: colorScaleOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member
@@ -123,8 +126,9 @@ properties:
         Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ColorScaleConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface"
+          />
   - name: custom
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#custom:member
@@ -145,8 +149,9 @@ properties:
       content: 'custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CustomConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface"
+          />
   - name: customOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#customOrNullObject:member
@@ -169,8 +174,9 @@ properties:
         Excel.Interfaces.CustomConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CustomConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface"
+          />
   - name: dataBar
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member
@@ -191,8 +197,9 @@ properties:
       content: 'dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DataBarConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface"
+          />
   - name: dataBarOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member
@@ -215,8 +222,9 @@ properties:
         Excel.Interfaces.DataBarConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DataBarConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface"
+          />
   - name: iconSet
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member
@@ -237,8 +245,9 @@ properties:
       content: 'iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IconSetConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface"
+          />
   - name: iconSetOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member
@@ -261,8 +270,9 @@ properties:
         Excel.Interfaces.IconSetConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IconSetConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface"
+          />
   - name: id
     uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#id:member'
     package: excel!
@@ -302,8 +312,9 @@ properties:
       content: 'preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="PresetCriteriaConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface"
+          />
   - name: presetOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member
@@ -326,8 +337,9 @@ properties:
         Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="PresetCriteriaConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface"
+          />
   - name: priority
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#priority:member
@@ -398,8 +410,9 @@ properties:
       content: 'textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TextConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface"
+          />
   - name: textComparisonOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member
@@ -423,8 +436,9 @@ properties:
         Excel.Interfaces.TextConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TextConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface"
+          />
   - name: topBottom
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member
@@ -446,8 +460,9 @@ properties:
       content: 'topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TopBottomConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface"
+          />
   - name: topBottomOrNullObject
     uid: >-
       excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member
@@ -471,8 +486,9 @@ properties:
         Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TopBottomConditionalFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface"
+          />
   - name: type
     uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#type:member'
     package: excel!

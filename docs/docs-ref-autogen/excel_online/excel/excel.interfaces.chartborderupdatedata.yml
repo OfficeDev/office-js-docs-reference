@@ -51,7 +51,7 @@ properties:
         "Automatic" | "RoundDot";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartLineStyle:enum" /> | "None" | "Continuous"
+          <xref uid="excel!Excel.ChartLineStyle:enum" /> | "None" | "Continuous"
           | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
           "Grey75" | "Automatic" | "RoundDot"
   - name: weight

@@ -177,8 +177,8 @@ properties:
       content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="HeaderFooterGroupUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface" />
   - name: leftMargin
     uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#leftMargin:member'
     package: excel!
@@ -215,7 +215,7 @@ properties:
       content: 'orientation?: Excel.PageOrientation | "Portrait" | "Landscape";'
       return:
         type: >-
-          excel!Excel.<xref uid="PageOrientation:enum" /> | "Portrait" |
+          <xref uid="excel!Excel.PageOrientation:enum" /> | "Portrait" |
           "Landscape"
   - name: paperSize
     uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member'
@@ -244,7 +244,7 @@ properties:
         "FanfoldStdGerman" | "FanfoldLegalGerman";
       return:
         type: >-
-          excel!Excel.<xref uid="PaperType:enum" /> | "Letter" | "LetterSmall" |
+          <xref uid="excel!Excel.PaperType:enum" /> | "Letter" | "LetterSmall" |
           "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
           "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" |
           "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" |
@@ -274,7 +274,7 @@ properties:
         "InPlace";
       return:
         type: >-
-          excel!Excel.<xref uid="PrintComments:enum" /> | "NoComments" |
+          <xref uid="excel!Excel.PrintComments:enum" /> | "NoComments" |
           "EndSheet" | "InPlace"
   - name: printErrors
     uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member'
@@ -296,7 +296,7 @@ properties:
         "NotAvailable";
       return:
         type: >-
-          excel!Excel.<xref uid="PrintErrorType:enum" /> | "AsDisplayed" |
+          <xref uid="excel!Excel.PrintErrorType:enum" /> | "AsDisplayed" |
           "Blank" | "Dash" | "NotAvailable"
   - name: printGridlines
     uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printGridlines:member'
@@ -353,7 +353,7 @@ properties:
       content: 'printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";'
       return:
         type: >-
-          excel!Excel.<xref uid="PrintOrder:enum" /> | "DownThenOver" |
+          <xref uid="excel!Excel.PrintOrder:enum" /> | "DownThenOver" |
           "OverThenDown"
   - name: rightMargin
     uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#rightMargin:member'
@@ -410,4 +410,4 @@ properties:
     syntax:
       content: 'zoom?: Excel.PageLayoutZoomOptions;'
       return:
-        type: 'excel!Excel.<xref uid="PageLayoutZoomOptions:interface" />'
+        type: '<xref uid="excel!Excel.PageLayoutZoomOptions:interface" />'

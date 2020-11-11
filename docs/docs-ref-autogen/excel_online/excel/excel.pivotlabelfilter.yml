@@ -59,7 +59,7 @@ properties:
         "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between";
       return:
         type: >-
-          excel!Excel.<xref uid="LabelFilterCondition:enum" /> | "Unknown" |
+          <xref uid="excel!Excel.LabelFilterCondition:enum" /> | "Unknown" |
           "Equals" | "BeginsWith" | "EndsWith" | "Contains" | "GreaterThan" |
           "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between"
   - name: exclusive

@@ -106,7 +106,7 @@ properties:
         "Pict" | "Pdf" | "Svg";
       return:
         type: >-
-          word!Word.<xref uid="ImageFormat:enum" /> | "Unsupported" |
+          <xref uid="word!Word.ImageFormat:enum" /> | "Unsupported" |
           "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" |
           "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
   - name: lockAspectRatio

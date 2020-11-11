@@ -79,7 +79,7 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -88,8 +88,8 @@ methods:
             property of the result is the appointment's organizer value, as an
             `EmailAddressDetails` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="EmailAddressDetails:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.EmailAddressDetails:interface"
             />&gt;) =&gt; void
       return:
         type: void

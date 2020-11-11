@@ -202,7 +202,7 @@ functions:
       parameters:
         - id: reason
           description: Indicates how the app was initialized.
-          type: 'office!Office.<xref uid="InitializationReason:enum" />'
+          type: '<xref uid="office!Office.InitializationReason:enum" />'
       return:
         type: void
         description: ''
@@ -256,12 +256,12 @@ functions:
             info. Alternatively, rather than use a callback, an add-in may
             simply wait for the Promise returned by the function to resolve.
           type: >-
-            (info: { host: office!Office.<xref uid="HostType:enum" />, platform:
-            office!Office.<xref uid="PlatformType:enum" /> }) =&gt; any
+            (info: { host: <xref uid="office!Office.HostType:enum" />, platform:
+            <xref uid="office!Office.PlatformType:enum" /> }) =&gt; any
       return:
         type: >-
-          Promise&lt;{ host: office!Office.<xref uid="HostType:enum" />,
-          platform: office!Office.<xref uid="PlatformType:enum" /> }&gt;
+          Promise&lt;{ host: <xref uid="office!Office.HostType:enum" />,
+          platform: <xref uid="office!Office.PlatformType:enum" /> }&gt;
         description: >-
           A Promise that contains the host and platform info, once
           initialization is completed.
@@ -333,10 +333,10 @@ functions:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
-        type: 'office!Office.<xref uid="Binding:interface" />'
+        type: '<xref uid="office!Office.Binding:interface" />'
         description: ''
   - name: Office.useShortNamespace(useShortNamespace)
     uid: 'office!Office.useShortNamespace:function(1)'

@@ -64,8 +64,8 @@ properties:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="PageContentLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.PageContentLoadOptions:interface" />
   - name: paragraphs
     uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member'
     package: onenote!
@@ -84,5 +84,6 @@ properties:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="ParagraphCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface"
+          />

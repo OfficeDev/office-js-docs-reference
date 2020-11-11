@@ -62,4 +62,4 @@ properties:
     syntax:
       content: 'page?: OneNote.Interfaces.PageLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="PageLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageLoadOptions:interface" />'

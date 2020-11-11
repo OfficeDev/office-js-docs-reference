@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'fields?: Excel.SortField[];'
       return:
-        type: 'excel!Excel.<xref uid="SortField:interface" />[]'
+        type: '<xref uid="excel!Excel.SortField:interface" />[]'
   - name: matchCase
     uid: 'excel!Excel.Interfaces.TableSortData#matchCase:member'
     package: excel!
@@ -64,4 +64,4 @@ properties:
     syntax:
       content: 'method?: Excel.SortMethod | "PinYin" | "StrokeCount";'
       return:
-        type: 'excel!Excel.<xref uid="SortMethod:enum" /> | "PinYin" | "StrokeCount"'
+        type: '<xref uid="excel!Excel.SortMethod:enum" /> | "PinYin" | "StrokeCount"'

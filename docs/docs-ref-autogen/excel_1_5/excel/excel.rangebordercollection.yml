@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: count
     uid: 'excel!Excel.RangeBorderCollection#count:member'
     package: excel!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.RangeBorder[];'
       return:
-        type: 'excel!Excel.<xref uid="RangeBorder:class" />[]'
+        type: '<xref uid="excel!Excel.RangeBorder:class" />[]'
 methods:
   - name: getItem(index)
     uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
@@ -81,9 +81,9 @@ methods:
           description: >-
             Index value of the border object to be retrieved. See
             Excel.BorderIndex for details.
-          type: 'excel!Excel.<xref uid="BorderIndex:enum" />'
+          type: '<xref uid="excel!Excel.BorderIndex:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeBorder:class" />'
+        type: '<xref uid="excel!Excel.RangeBorder:class" />'
         description: |-
 
 
@@ -137,7 +137,7 @@ methods:
             "InsideVertical" | "InsideHorizontal" | "DiagonalDown" |
             "DiagonalUp"
       return:
-        type: 'excel!Excel.<xref uid="RangeBorder:class" />'
+        type: '<xref uid="excel!Excel.RangeBorder:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
@@ -160,7 +160,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="RangeBorder:class" />'
+        type: '<xref uid="excel!Excel.RangeBorder:class" />'
         description: |-
 
 
@@ -202,12 +202,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="RangeBorderCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="RangeBorderCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.RangeBorderCollection#load:member(2)'
@@ -228,7 +228,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="RangeBorderCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
         description: |-
 
 
@@ -276,9 +276,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeBorderCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.RangeBorderCollection#toJSON:member(1)'
@@ -301,7 +301,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.RangeBorderCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="RangeBorderCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.RangeBorderCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

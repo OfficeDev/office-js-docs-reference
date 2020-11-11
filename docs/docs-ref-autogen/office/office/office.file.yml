@@ -76,7 +76,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -179,8 +179,8 @@ methods:
             -->. The `value` property of the result is the
             [Office.Slice](xref:office!Office.Slice:interface) object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Slice:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Slice:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''

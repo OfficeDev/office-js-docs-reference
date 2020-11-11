@@ -24,10 +24,10 @@ constructors:
       parameters:
         - id: context
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
         - id: handlers
           description: ''
-          type: 'office!OfficeExtension.<xref uid="EventHandlers:class" />&lt;T&gt;'
+          type: '<xref uid="office!OfficeExtension.EventHandlers:class" />&lt;T&gt;'
         - id: handler
           description: ''
           type: '(args: T) =&gt; Promise&lt;any&gt;'
@@ -43,7 +43,7 @@ properties:
     syntax:
       content: 'context: ClientRequestContext;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+        type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
 methods:
   - name: remove()
     uid: 'office!OfficeExtension.EventHandlerResult#remove:member(1)'

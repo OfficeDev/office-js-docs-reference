@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: type
     uid: 'word!Word.TableBorder#type:member'
     package: word!
@@ -71,7 +71,7 @@ properties:
         "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
         type: >-
-          word!Word.<xref uid="BorderType:enum" /> | "Mixed" | "None" | "Single"
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single"
           | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
           "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall"
           | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" |
@@ -115,9 +115,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="TableBorderLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.TableBorderLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="TableBorder:class" />'
+        type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.TableBorder#load:member(2)'
@@ -138,7 +138,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="TableBorder:class" />'
+        type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.TableBorder#load:member(3)'
@@ -169,7 +169,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="TableBorder:class" />'
+        type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.TableBorder#set:member(1)'
@@ -195,12 +195,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="TableBorderUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.TableBorderUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -219,7 +219,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="TableBorder:class" />'
+          type: '<xref uid="word!Word.TableBorder:class" />'
       return:
         type: void
         description: ''
@@ -241,7 +241,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.TableBorderData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableBorderData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableBorderData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.TableBorder#track:member(1)'
@@ -261,7 +261,7 @@ methods:
     syntax:
       content: 'track(): Word.TableBorder;'
       return:
-        type: 'word!Word.<xref uid="TableBorder:class" />'
+        type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.TableBorder#untrack:member(1)'
@@ -280,6 +280,6 @@ methods:
     syntax:
       content: 'untrack(): Word.TableBorder;'
       return:
-        type: 'word!Word.<xref uid="TableBorder:class" />'
+        type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

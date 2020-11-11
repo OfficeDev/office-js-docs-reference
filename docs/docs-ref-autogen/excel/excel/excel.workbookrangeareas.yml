@@ -54,7 +54,7 @@ properties:
     syntax:
       content: 'readonly areas: Excel.RangeAreasCollection;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreasCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeAreasCollection:class" />'
         description: >-
 
 
@@ -99,7 +99,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: ranges
     uid: 'excel!Excel.WorkbookRangeAreas#ranges:member'
     package: excel!
@@ -117,7 +117,7 @@ properties:
     syntax:
       content: 'readonly ranges: Excel.RangeCollection;'
       return:
-        type: 'excel!Excel.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeCollection:class" />'
 methods:
   - name: getRangeAreasBySheet(key)
     uid: 'excel!Excel.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
@@ -141,7 +141,7 @@ methods:
           description: The name or id of the worksheet.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: getRangeAreasOrNullObjectBySheet(key)
     uid: 'excel!Excel.WorkbookRangeAreas#getRangeAreasOrNullObjectBySheet:member(1)'
@@ -165,7 +165,7 @@ methods:
           description: The name or id of the worksheet.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.WorkbookRangeAreas#load:member(1)'
@@ -185,10 +185,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="WorkbookRangeAreasLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="WorkbookRangeAreas:class" />'
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.WorkbookRangeAreas#load:member(2)'
@@ -209,7 +210,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="WorkbookRangeAreas:class" />'
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.WorkbookRangeAreas#load:member(3)'
@@ -240,7 +241,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="WorkbookRangeAreas:class" />'
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.WorkbookRangeAreas#toJSON:member(1)'
@@ -261,7 +262,7 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorkbookRangeAreasData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorkbookRangeAreasData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookRangeAreasData:interface" />'
         description: ''
   - name: track()
     uid: 'excel!Excel.WorkbookRangeAreas#track:member(1)'
@@ -281,7 +282,7 @@ methods:
     syntax:
       content: 'track(): Excel.WorkbookRangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="WorkbookRangeAreas:class" />'
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
   - name: untrack()
     uid: 'excel!Excel.WorkbookRangeAreas#untrack:member(1)'
@@ -300,6 +301,6 @@ methods:
     syntax:
       content: 'untrack(): Excel.WorkbookRangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="WorkbookRangeAreas:class" />'
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

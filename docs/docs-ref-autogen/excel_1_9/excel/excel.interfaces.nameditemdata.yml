@@ -29,7 +29,7 @@ properties:
       content: 'arrayValues?: Excel.Interfaces.NamedItemArrayValuesData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="NamedItemArrayValuesData:interface"
+          <xref uid="excel!Excel.Interfaces.NamedItemArrayValuesData:interface"
           />
   - name: comment
     uid: 'excel!Excel.Interfaces.NamedItemData#comment:member'
@@ -104,7 +104,7 @@ properties:
       content: 'scope?: Excel.NamedItemScope | "Worksheet" | "Workbook";'
       return:
         type: >-
-          excel!Excel.<xref uid="NamedItemScope:enum" /> | "Worksheet" |
+          <xref uid="excel!Excel.NamedItemScope:enum" /> | "Worksheet" |
           "Workbook"
   - name: type
     uid: 'excel!Excel.Interfaces.NamedItemData#type:member'
@@ -128,7 +128,7 @@ properties:
         | "Range" | "Error" | "Array";
       return:
         type: >-
-          excel!Excel.<xref uid="NamedItemType:enum" /> | "String" | "Integer" |
+          <xref uid="excel!Excel.NamedItemType:enum" /> | "String" | "Integer" |
           "Double" | "Boolean" | "Range" | "Error" | "Array"
   - name: value
     uid: 'excel!Excel.Interfaces.NamedItemData#value:member'

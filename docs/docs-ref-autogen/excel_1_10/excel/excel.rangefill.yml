@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: pattern
     uid: 'excel!Excel.RangeFill#pattern:member'
     package: excel!
@@ -73,7 +73,7 @@ properties:
         "LinearGradient" | "RectangularGradient";
       return:
         type: >-
-          excel!Excel.<xref uid="FillPattern:enum" /> | "None" | "Solid" |
+          <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" |
           "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
           "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical"
           | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8"
@@ -193,9 +193,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="RangeFillLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.RangeFillLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeFill:class" />'
+        type: '<xref uid="excel!Excel.RangeFill:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.RangeFill#load:member(2)'
@@ -216,7 +216,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="RangeFill:class" />'
+        type: '<xref uid="excel!Excel.RangeFill:class" />'
         description: |-
 
 
@@ -284,7 +284,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="RangeFill:class" />'
+        type: '<xref uid="excel!Excel.RangeFill:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.RangeFill#set:member(1)'
@@ -310,12 +310,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="RangeFillUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.RangeFillUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -334,7 +334,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="RangeFill:class" />'
+          type: '<xref uid="excel!Excel.RangeFill:class" />'
       return:
         type: void
         description: ''
@@ -356,6 +356,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeFillData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFillData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFillData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

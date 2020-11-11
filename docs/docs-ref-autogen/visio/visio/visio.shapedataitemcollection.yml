@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: items
     uid: 'visio!Visio.ShapeDataItemCollection#items:member'
     package: visio!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Visio.ShapeDataItem[];'
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />[]'
+        type: '<xref uid="visio!Visio.ShapeDataItem:class" />[]'
 methods:
   - name: getCount()
     uid: 'visio!Visio.ShapeDataItemCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'visio!Visio.ShapeDataItemCollection#getItem:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: Key is the name of the ShapeDataItem to be retrieved.
           type: string
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItem:class" />'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.ShapeDataItemCollection#load:member(1)'
@@ -149,12 +149,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            visio!Visio.Interfaces.<xref
-            uid="ShapeDataItemCollectionLoadOptions:interface" /> &
-            visio!Visio.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface"
+            /> & <xref
+            uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItemCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItemCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.ShapeDataItemCollection#load:member(2)'
@@ -175,7 +175,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItemCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItemCollection:class" />'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.ShapeDataItemCollection#load:member(3)'
@@ -192,9 +192,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItemCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItemCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.ShapeDataItemCollection#toJSON:member(1)'
@@ -217,7 +217,7 @@ methods:
       content: 'toJSON(): Visio.Interfaces.ShapeDataItemCollectionData;'
       return:
         type: >-
-          visio!Visio.Interfaces.<xref
-          uid="ShapeDataItemCollectionData:interface" />
+          <xref
+          uid="visio!Visio.Interfaces.ShapeDataItemCollectionData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

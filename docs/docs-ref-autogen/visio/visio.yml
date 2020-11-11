@@ -109,7 +109,7 @@ functions:
             different processes, the request context is required to get access
             to the Visio object model from the add-in.
           type: >-
-            (context: visio!Visio.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
@@ -135,8 +135,8 @@ functions:
             context as the passed-in object, which means that any changes
             applied to the object will be picked up by "context.sync()".
           type: >-
-            office!OfficeExtension.<xref uid="ClientObject:class" /> |
-            office!OfficeExtension.<xref uid="EmbeddedSession:class" />
+            <xref uid="office!OfficeExtension.ClientObject:class" /> | <xref
+            uid="office!OfficeExtension.EmbeddedSession:class" />
         - id: batch
           description: >-
             A function that takes in an Visio.RequestContext and returns a
@@ -144,7 +144,7 @@ functions:
             promise is resolved, any tracked objects that were automatically
             allocated during execution will be released.
           type: >-
-            (context: visio!Visio.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
@@ -170,7 +170,7 @@ functions:
             context. The batch will use this shared request context, which means
             that any changes applied to these objects will be picked up by
             "context.sync()".
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />[]'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
             A function that takes in a Visio.RequestContext and returns a
@@ -178,7 +178,7 @@ functions:
             promise is resolved, any tracked objects that were automatically
             allocated during execution will be released.
           type: >-
-            (context: visio!Visio.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
@@ -222,7 +222,7 @@ functions:
             created). This means that the batch will be able to pick up changes
             made to existing API objects, if those objects were derived from
             this same context.
-          type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise
@@ -232,7 +232,7 @@ functions:
             processes, the RequestContext is required to get access to the Visio
             object model from the add-in.
           type: >-
-            (context: visio!Visio.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;

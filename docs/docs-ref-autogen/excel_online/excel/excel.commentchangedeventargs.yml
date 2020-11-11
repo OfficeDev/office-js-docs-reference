@@ -36,7 +36,7 @@ properties:
         "ReplyEdited";
       return:
         type: >-
-          excel!Excel.<xref uid="CommentChangeType:enum" /> | "CommentEdited" |
+          <xref uid="excel!Excel.CommentChangeType:enum" /> | "CommentEdited" |
           "CommentResolved" | "CommentReopened" | "ReplyAdded" | "ReplyDeleted"
           | "ReplyEdited"
   - name: commentDetails
@@ -57,7 +57,7 @@ properties:
     syntax:
       content: 'commentDetails: Excel.CommentDetail[];'
       return:
-        type: 'excel!Excel.<xref uid="CommentDetail:interface" />[]'
+        type: '<xref uid="excel!Excel.CommentDetail:interface" />[]'
   - name: source
     uid: 'excel!Excel.CommentChangedEventArgs#source:member'
     package: excel!
@@ -75,7 +75,7 @@ properties:
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: 'excel!Excel.<xref uid="EventSource:enum" /> | "Local" | "Remote"'
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
   - name: type
     uid: 'excel!Excel.CommentChangedEventArgs#type:member'
     package: excel!

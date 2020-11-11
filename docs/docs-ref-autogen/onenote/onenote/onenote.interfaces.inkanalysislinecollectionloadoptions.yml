@@ -67,8 +67,9 @@ properties:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisParagraphLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface"
+          />
   - name: words
     uid: >-
       onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#words:member
@@ -89,5 +90,6 @@ properties:
       content: 'words?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisWordCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface"
+          />

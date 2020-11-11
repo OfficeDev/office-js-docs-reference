@@ -105,5 +105,5 @@ properties:
         | "Double";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalRangeFontUnderlineStyle:enum" /> |
+          <xref uid="excel!Excel.ConditionalRangeFontUnderlineStyle:enum" /> |
           "None" | "Single" | "Double"

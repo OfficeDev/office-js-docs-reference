@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'greenFlag: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: redFlag
     uid: 'excel!Excel.ThreeFlagsSet#redFlag:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'redFlag: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: yellowFlag
     uid: 'excel!Excel.ThreeFlagsSet#yellowFlag:member'
     package: excel!
@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'yellowFlag: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

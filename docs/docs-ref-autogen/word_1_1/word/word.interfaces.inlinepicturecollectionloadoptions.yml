@@ -150,7 +150,7 @@ properties:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: width
     uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'

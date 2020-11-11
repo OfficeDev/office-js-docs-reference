@@ -42,7 +42,7 @@ properties:
         "DuplicateValues";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalFormatPresetCriterion:enum" /> |
+          <xref uid="excel!Excel.ConditionalFormatPresetCriterion:enum" /> |
           "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors" |
           "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" |
           "ThisWeek" | "NextWeek" | "LastMonth" | "ThisMonth" | "NextMonth" |

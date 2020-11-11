@@ -48,7 +48,7 @@ properties:
       content: 'dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartDataLabelLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface"
           />
   - name: format
     uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#format:member'
@@ -68,8 +68,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPointFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface" />
   - name: hasDataLabel
     uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#hasDataLabel:member'
     package: excel!

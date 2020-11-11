@@ -26,7 +26,7 @@ properties:
     syntax:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="AutoFilterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.AutoFilterData:interface" />'
   - name: columns
     uid: 'excel!Excel.Interfaces.TableData#columns:member'
     package: excel!
@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'columns?: Excel.Interfaces.TableColumnData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableColumnData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableColumnData:interface" />[]'
   - name: highlightFirstColumn
     uid: 'excel!Excel.Interfaces.TableData#highlightFirstColumn:member'
     package: excel!
@@ -160,7 +160,7 @@ properties:
     syntax:
       content: 'rows?: Excel.Interfaces.TableRowData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableRowData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableRowData:interface" />[]'
   - name: showBandedColumns
     uid: 'excel!Excel.Interfaces.TableData#showBandedColumns:member'
     package: excel!
@@ -273,7 +273,7 @@ properties:
     syntax:
       content: 'sort?: Excel.Interfaces.TableSortData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableSortData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableSortData:interface" />'
   - name: style
     uid: 'excel!Excel.Interfaces.TableData#style:member'
     package: excel!
@@ -313,4 +313,4 @@ properties:
     syntax:
       content: 'tableStyle?: Excel.Interfaces.TableStyleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableStyleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableStyleData:interface" />'

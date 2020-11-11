@@ -81,7 +81,7 @@ properties:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="ParagraphLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
           />
   - name: wordAlternates
     uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#wordAlternates:member'

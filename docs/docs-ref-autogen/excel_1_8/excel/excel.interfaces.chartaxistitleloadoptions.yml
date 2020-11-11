@@ -48,8 +48,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartAxisTitleFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions:interface"
+          />
   - name: text
     uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#text:member'
     package: excel!

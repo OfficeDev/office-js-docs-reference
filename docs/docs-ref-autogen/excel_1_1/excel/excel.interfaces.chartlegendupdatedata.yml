@@ -30,8 +30,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartLegendFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartLegendFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface" />
   - name: overlay
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
     package: excel!
@@ -72,7 +72,7 @@ properties:
         "Left" | "Right" | "Corner" | "Custom";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartLegendPosition:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartLegendPosition:enum" /> | "Invalid" |
           "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'

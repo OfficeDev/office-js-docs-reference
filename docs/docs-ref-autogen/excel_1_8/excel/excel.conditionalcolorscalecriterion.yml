@@ -73,6 +73,6 @@ properties:
         "Percentile";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalFormatColorCriterionType:enum" /> |
+          <xref uid="excel!Excel.ConditionalFormatColorCriterionType:enum" /> |
           "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" |
           "Formula" | "Percentile"

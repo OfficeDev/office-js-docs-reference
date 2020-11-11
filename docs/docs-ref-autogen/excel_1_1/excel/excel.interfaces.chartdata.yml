@@ -26,7 +26,7 @@ properties:
     syntax:
       content: 'axes?: Excel.Interfaces.ChartAxesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxesData:interface" />'
   - name: dataLabels
     uid: 'excel!Excel.Interfaces.ChartData#dataLabels:member'
     package: excel!
@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartDataLabelsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelsData:interface" />'
   - name: format
     uid: 'excel!Excel.Interfaces.ChartData#format:member'
     package: excel!
@@ -62,7 +62,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAreaFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAreaFormatData:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ChartData#height:member'
     package: excel!
@@ -117,7 +117,7 @@ properties:
     syntax:
       content: 'legend?: Excel.Interfaces.ChartLegendData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartLegendData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartLegendData:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.ChartData#name:member'
     package: excel!
@@ -153,7 +153,7 @@ properties:
     syntax:
       content: 'series?: Excel.Interfaces.ChartSeriesData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartSeriesData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesData:interface" />[]'
   - name: title
     uid: 'excel!Excel.Interfaces.ChartData#title:member'
     package: excel!
@@ -172,7 +172,7 @@ properties:
     syntax:
       content: 'title?: Excel.Interfaces.ChartTitleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleData:interface" />'
   - name: top
     uid: 'excel!Excel.Interfaces.ChartData#top:member'
     package: excel!

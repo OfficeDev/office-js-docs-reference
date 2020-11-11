@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: items
     uid: 'word!Word.ListCollection#items:member'
     package: word!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Word.List[];'
       return:
-        type: 'word!Word.<xref uid="List:class" />[]'
+        type: '<xref uid="word!Word.List:class" />[]'
 methods:
   - name: getById(id)
     uid: 'word!Word.ListCollection#getById:member(1)'
@@ -64,7 +64,7 @@ methods:
           description: Required. A list identifier.
           type: number
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: getByIdOrNullObject(id)
     uid: 'word!Word.ListCollection#getByIdOrNullObject:member(1)'
@@ -88,7 +88,7 @@ methods:
           description: Required. A list identifier.
           type: number
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: getFirst()
     uid: 'word!Word.ListCollection#getFirst:member(1)'
@@ -108,7 +108,7 @@ methods:
     syntax:
       content: 'getFirst(): Word.List;'
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: getFirstOrNullObject()
     uid: 'word!Word.ListCollection#getFirstOrNullObject:member(1)'
@@ -128,7 +128,7 @@ methods:
     syntax:
       content: 'getFirstOrNullObject(): Word.List;'
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: getItem(index)
     uid: 'word!Word.ListCollection#getItem:member(1)'
@@ -151,7 +151,7 @@ methods:
           description: A number that identifies the index location of a list object.
           type: number
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.ListCollection#load:member(1)'
@@ -171,11 +171,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref uid="ListCollectionLoadOptions:interface"
-            /> & word!Word.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref uid="word!Word.Interfaces.ListCollectionLoadOptions:interface"
+            /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'word!Word.<xref uid="ListCollection:class" />'
+        type: '<xref uid="word!Word.ListCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.ListCollection#load:member(2)'
@@ -196,7 +196,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="ListCollection:class" />'
+        type: '<xref uid="word!Word.ListCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.ListCollection#load:member(3)'
@@ -219,9 +219,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'word!Word.<xref uid="ListCollection:class" />'
+        type: '<xref uid="word!Word.ListCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.ListCollection#toJSON:member(1)'
@@ -242,7 +242,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.ListCollectionData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListCollectionData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ListCollectionData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.ListCollection#track:member(1)'
@@ -262,7 +262,7 @@ methods:
     syntax:
       content: 'track(): Word.ListCollection;'
       return:
-        type: 'word!Word.<xref uid="ListCollection:class" />'
+        type: '<xref uid="word!Word.ListCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.ListCollection#untrack:member(1)'
@@ -281,6 +281,6 @@ methods:
     syntax:
       content: 'untrack(): Word.ListCollection;'
       return:
-        type: 'word!Word.<xref uid="ListCollection:class" />'
+        type: '<xref uid="word!Word.ListCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

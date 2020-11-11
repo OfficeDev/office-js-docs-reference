@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: floatingInk
     uid: 'onenote!OneNote.InkStroke#floatingInk:member'
     package: onenote!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly floatingInk: OneNote.FloatingInk;'
       return:
-        type: 'onenote!OneNote.<xref uid="FloatingInk:class" />'
+        type: '<xref uid="onenote!OneNote.FloatingInk:class" />'
   - name: id
     uid: 'onenote!OneNote.InkStroke#id:member'
     package: onenote!
@@ -105,10 +105,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="InkStrokeLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.InkStroke#load:member(2)'
@@ -129,7 +129,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'onenote!OneNote.InkStroke#load:member(3)'
@@ -154,7 +154,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.InkStroke#toJSON:member(1)'
@@ -174,7 +174,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.InkStrokeData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="InkStrokeData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkStrokeData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.InkStroke#track:member(1)'
@@ -194,7 +194,7 @@ methods:
     syntax:
       content: 'track(): OneNote.InkStroke;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.InkStroke#untrack:member(1)'
@@ -213,6 +213,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.InkStroke;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStroke:class" />'
+        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

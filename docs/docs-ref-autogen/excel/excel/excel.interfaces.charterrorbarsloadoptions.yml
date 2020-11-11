@@ -66,8 +66,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartErrorBarsFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface"
+          />
   - name: include
     uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#include:member'
     package: excel!

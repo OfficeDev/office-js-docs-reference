@@ -26,7 +26,7 @@ properties:
     syntax:
       content: 'axes?: Excel.Interfaces.ChartAxesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxesData:interface" />'
   - name: chartType
     uid: 'excel!Excel.Interfaces.ChartData#chartType:member'
     package: excel!
@@ -69,7 +69,7 @@ properties:
         "Sunburst" | "Funnel";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartType:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
           "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
           "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
           "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
@@ -110,7 +110,7 @@ properties:
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartDataLabelsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelsData:interface" />'
   - name: format
     uid: 'excel!Excel.Interfaces.ChartData#format:member'
     package: excel!
@@ -128,7 +128,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAreaFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAreaFormatData:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ChartData#height:member'
     package: excel!
@@ -201,7 +201,7 @@ properties:
     syntax:
       content: 'legend?: Excel.Interfaces.ChartLegendData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartLegendData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartLegendData:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.ChartData#name:member'
     package: excel!
@@ -237,7 +237,7 @@ properties:
     syntax:
       content: 'series?: Excel.Interfaces.ChartSeriesData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartSeriesData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesData:interface" />[]'
   - name: showAllFieldButtons
     uid: 'excel!Excel.Interfaces.ChartData#showAllFieldButtons:member'
     package: excel!
@@ -274,7 +274,7 @@ properties:
     syntax:
       content: 'title?: Excel.Interfaces.ChartTitleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleData:interface" />'
   - name: top
     uid: 'excel!Excel.Interfaces.ChartData#top:member'
     package: excel!

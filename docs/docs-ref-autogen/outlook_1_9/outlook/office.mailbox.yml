@@ -84,7 +84,7 @@ properties:
     syntax:
       content: 'diagnostics: Diagnostics;'
       return:
-        type: 'outlook!Office.<xref uid="Diagnostics:interface" />'
+        type: '<xref uid="outlook!Office.Diagnostics:interface" />'
   - name: ewsUrl
     uid: 'outlook!Office.Mailbox#ewsUrl:member'
     package: outlook!
@@ -180,15 +180,15 @@ properties:
         MessageRead & Appointment & AppointmentCompose & AppointmentRead;
       return:
         type: >-
-          outlook!Office.<xref uid="Item:interface" /> & outlook!Office.<xref
-          uid="ItemCompose:interface" /> & outlook!Office.<xref
-          uid="ItemRead:interface" /> & outlook!Office.<xref
-          uid="Message:interface" /> & outlook!Office.<xref
-          uid="MessageCompose:interface" /> & outlook!Office.<xref
-          uid="MessageRead:interface" /> & outlook!Office.<xref
-          uid="Appointment:interface" /> & outlook!Office.<xref
-          uid="AppointmentCompose:interface" /> & outlook!Office.<xref
-          uid="AppointmentRead:interface" />
+          <xref uid="outlook!Office.Item:interface" /> & <xref
+          uid="outlook!Office.ItemCompose:interface" /> & <xref
+          uid="outlook!Office.ItemRead:interface" /> & <xref
+          uid="outlook!Office.Message:interface" /> & <xref
+          uid="outlook!Office.MessageCompose:interface" /> & <xref
+          uid="outlook!Office.MessageRead:interface" /> & <xref
+          uid="outlook!Office.Appointment:interface" /> & <xref
+          uid="outlook!Office.AppointmentCompose:interface" /> & <xref
+          uid="outlook!Office.AppointmentRead:interface" />
   - name: masterCategories
     uid: 'outlook!Office.Mailbox#masterCategories:member'
     package: outlook!
@@ -283,7 +283,7 @@ properties:
     syntax:
       content: 'masterCategories: MasterCategories;'
       return:
-        type: 'outlook!Office.<xref uid="MasterCategories:interface" />'
+        type: '<xref uid="outlook!Office.MasterCategories:interface" />'
   - name: restUrl
     uid: 'outlook!Office.Mailbox#restUrl:member'
     package: outlook!
@@ -402,7 +402,7 @@ properties:
     syntax:
       content: 'userProfile: UserProfile;'
       return:
-        type: 'outlook!Office.<xref uid="UserProfile:interface" />'
+        type: '<xref uid="outlook!Office.UserProfile:interface" />'
 methods:
   - name: 'addHandlerAsync(eventType, handler, options, callback)'
     uid: 'outlook!Office.Mailbox#addHandlerAsync:member(1)'
@@ -464,26 +464,26 @@ methods:
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
-          type: 'office!Office.<xref uid="EventType:enum" /> | string'
+          type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single
             parameter, which is an object literal. The type property on the
             parameter will match the `eventType` parameter passed to
             `addHandlerAsync`<!-- -->.
-          type: '(type: office!Office.<xref uid="EventType:enum" />) =&gt; void'
+          type: '(type: <xref uid="office!Office.EventType:enum" />) =&gt; void'
         - id: options
           description: >-
             Optional. Provides an option for preserving context data of any
             type, unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -562,7 +562,7 @@ methods:
           description: >-
             A value indicating the version of the Outlook REST API used to
             retrieve the item ID.
-          type: 'outlook!Office.MailboxEnums.<xref uid="RestVersion:enum" /> | string'
+          type: '<xref uid="outlook!Office.MailboxEnums.RestVersion:enum" /> | string'
       return:
         type: string
         description: ''
@@ -606,7 +606,7 @@ methods:
           description: A `Date` object.
           type: Date
       return:
-        type: 'outlook!Office.<xref uid="LocalClientTime:interface" />'
+        type: '<xref uid="outlook!Office.LocalClientTime:interface" />'
         description: ''
   - name: 'convertToRestId(itemId, restVersion)'
     uid: 'outlook!Office.Mailbox#convertToRestId:member(1)'
@@ -707,7 +707,7 @@ methods:
           description: >-
             A value indicating the version of the Outlook REST API that the
             converted ID will be used with.
-          type: 'outlook!Office.MailboxEnums.<xref uid="RestVersion:enum" /> | string'
+          type: '<xref uid="outlook!Office.MailboxEnums.RestVersion:enum" /> | string'
       return:
         type: string
         description: ''
@@ -769,7 +769,7 @@ methods:
       parameters:
         - id: input
           description: The local time value to convert.
-          type: 'outlook!Office.<xref uid="LocalClientTime:interface" />'
+          type: '<xref uid="outlook!Office.LocalClientTime:interface" />'
       return:
         type: Date
         description: A Date object with the time expressed in UTC.
@@ -924,14 +924,14 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -1082,14 +1082,14 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -1173,7 +1173,7 @@ methods:
           description: >-
             An `AppointmentForm` describing the new appointment. All properties
             are optional.
-          type: 'outlook!Office.<xref uid="AppointmentForm:interface" />'
+          type: '<xref uid="outlook!Office.AppointmentForm:interface" />'
       return:
         type: void
         description: ''
@@ -1273,20 +1273,20 @@ methods:
           description: >-
             An `AppointmentForm` describing the new appointment. All properties
             are optional.
-          type: 'outlook!Office.<xref uid="AppointmentForm:interface" />'
+          type: '<xref uid="outlook!Office.AppointmentForm:interface" />'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -1551,14 +1551,14 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -1724,7 +1724,7 @@ methods:
             value is `false`<!-- -->. `asyncContext`<!-- -->: Any state data
             that is passed to the asynchronous method.
           type: >-
-            office!Office.<xref uid="AsyncContextOptions:interface" /> & {
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & {
             isRest?: boolean }
         - id: callback
           description: >-
@@ -1735,7 +1735,7 @@ methods:
             `asyncResult.error` and `asyncResult.diagnostics` properties may
             provide additional information.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -1846,7 +1846,7 @@ methods:
             `asyncResult.error` and `asyncResult.diagnostics` properties may
             provide additional information.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
@@ -1927,7 +1927,7 @@ methods:
             `asyncResult.error` and `asyncResult.diagnostics` properties may
             provide additional information.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
@@ -2145,7 +2145,7 @@ methods:
             the XML of the EWS request provided as a string. If the result
             exceeds 1 MB in size, an error message is returned instead.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
@@ -2189,19 +2189,19 @@ methods:
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
-          type: 'office!Office.<xref uid="EventType:enum" /> | string'
+          type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: options
           description: >-
             Optional. Provides an option for preserving context data of any
             type, unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

@@ -30,8 +30,8 @@ properties:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeFormatData:interface" />
   - name: rule
     uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#rule:member'
     package: excel!
@@ -49,4 +49,4 @@ properties:
     syntax:
       content: 'rule?: Excel.ConditionalPresetCriteriaRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalPresetCriteriaRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalPresetCriteriaRule:interface" />'

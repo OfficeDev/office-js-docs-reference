@@ -117,4 +117,4 @@ properties:
     syntax:
       content: 'view?: Visio.Interfaces.ShapeViewLoadOptions;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeViewLoadOptions:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeViewLoadOptions:interface" />'

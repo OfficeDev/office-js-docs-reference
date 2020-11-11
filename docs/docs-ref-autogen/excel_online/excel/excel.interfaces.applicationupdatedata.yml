@@ -35,7 +35,7 @@ properties:
         "AutomaticExceptTables" | "Manual";
       return:
         type: >-
-          excel!Excel.<xref uid="CalculationMode:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.CalculationMode:enum" /> | "Automatic" |
           "AutomaticExceptTables" | "Manual"
   - name: iterativeCalculation
     uid: 'excel!Excel.Interfaces.ApplicationUpdateData#iterativeCalculation:member'
@@ -57,5 +57,6 @@ properties:
       content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IterativeCalculationUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IterativeCalculationUpdateData:interface"
+          />

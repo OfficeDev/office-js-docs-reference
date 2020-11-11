@@ -24,7 +24,7 @@ properties:
     syntax:
       content: 'document: Document;'
       return:
-        type: 'office!Office.<xref uid="Document:interface" />'
+        type: '<xref uid="office!Office.Document:interface" />'
   - name: type
     uid: 'office!Office.DocumentSelectionChangedEventArgs#type:member'
     package: office!
@@ -38,4 +38,4 @@ properties:
     syntax:
       content: 'type: EventType;'
       return:
-        type: 'office!Office.<xref uid="EventType:enum" />'
+        type: '<xref uid="office!Office.EventType:enum" />'

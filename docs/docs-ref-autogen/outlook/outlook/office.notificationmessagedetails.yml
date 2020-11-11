@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'actions?: NotificationMessageAction[];'
       return:
-        type: 'outlook!Office.<xref uid="NotificationMessageAction:interface" />[]'
+        type: '<xref uid="outlook!Office.NotificationMessageAction:interface" />[]'
   - name: icon
     uid: 'outlook!Office.NotificationMessageDetails#icon:member'
     package: outlook!
@@ -136,5 +136,6 @@ properties:
       content: 'type: MailboxEnums.ItemNotificationMessageType | string;'
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref
-          uid="ItemNotificationMessageType:enum" /> | string
+          <xref
+          uid="outlook!Office.MailboxEnums.ItemNotificationMessageType:enum" />
+          | string

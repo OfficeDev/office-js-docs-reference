@@ -24,4 +24,4 @@ properties:
     syntax:
       content: 'tabs: Tab[];'
       return:
-        type: 'office!Office.<xref uid="Tab:interface" />[]'
+        type: '<xref uid="office!Office.Tab:interface" />[]'

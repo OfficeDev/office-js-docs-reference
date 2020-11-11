@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyData:interface" />'
   - name: cellIndex
     uid: 'word!Word.Interfaces.TableCellData#cellIndex:member'
     package: word!
@@ -87,7 +87,7 @@ properties:
         "Centered" | "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: rowIndex
     uid: 'word!Word.Interfaces.TableCellData#rowIndex:member'
@@ -165,7 +165,7 @@ properties:
         | "Bottom";
       return:
         type: >-
-          word!Word.<xref uid="VerticalAlignment:enum" /> | "Mixed" | "Top" |
+          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
           "Center" | "Bottom"
   - name: width
     uid: 'word!Word.Interfaces.TableCellData#width:member'

@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'custom?: Excel.CustomDataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="CustomDataValidation:interface" />'
+        type: '<xref uid="excel!Excel.CustomDataValidation:interface" />'
   - name: date
     uid: 'excel!Excel.DataValidationRule#date:member'
     package: excel!
@@ -51,7 +51,7 @@ properties:
     syntax:
       content: 'date?: Excel.DateTimeDataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="DateTimeDataValidation:interface" />'
+        type: '<xref uid="excel!Excel.DateTimeDataValidation:interface" />'
   - name: decimal
     uid: 'excel!Excel.DataValidationRule#decimal:member'
     package: excel!
@@ -69,7 +69,7 @@ properties:
     syntax:
       content: 'decimal?: Excel.BasicDataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="BasicDataValidation:interface" />'
+        type: '<xref uid="excel!Excel.BasicDataValidation:interface" />'
   - name: list
     uid: 'excel!Excel.DataValidationRule#list:member'
     package: excel!
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'list?: Excel.ListDataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="ListDataValidation:interface" />'
+        type: '<xref uid="excel!Excel.ListDataValidation:interface" />'
         description: >-
 
 
@@ -139,7 +139,7 @@ properties:
     syntax:
       content: 'textLength?: Excel.BasicDataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="BasicDataValidation:interface" />'
+        type: '<xref uid="excel!Excel.BasicDataValidation:interface" />'
   - name: time
     uid: 'excel!Excel.DataValidationRule#time:member'
     package: excel!
@@ -157,7 +157,7 @@ properties:
     syntax:
       content: 'time?: Excel.DateTimeDataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="DateTimeDataValidation:interface" />'
+        type: '<xref uid="excel!Excel.DateTimeDataValidation:interface" />'
   - name: wholeNumber
     uid: 'excel!Excel.DataValidationRule#wholeNumber:member'
     package: excel!
@@ -175,7 +175,7 @@ properties:
     syntax:
       content: 'wholeNumber?: Excel.BasicDataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="BasicDataValidation:interface" />'
+        type: '<xref uid="excel!Excel.BasicDataValidation:interface" />'
         description: >-
 
 

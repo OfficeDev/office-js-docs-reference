@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: items
     uid: 'visio!Visio.CommentCollection#items:member'
     package: visio!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Visio.Comment[];'
       return:
-        type: 'visio!Visio.<xref uid="Comment:class" />[]'
+        type: '<xref uid="visio!Visio.Comment:class" />[]'
 methods:
   - name: getCount()
     uid: 'visio!Visio.CommentCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'visio!Visio.CommentCollection#getItem:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: Key is the name of the Comment to be retrieved.
           type: string
       return:
-        type: 'visio!Visio.<xref uid="Comment:class" />'
+        type: '<xref uid="visio!Visio.Comment:class" />'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.CommentCollection#load:member(1)'
@@ -153,12 +153,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            visio!Visio.Interfaces.<xref
-            uid="CommentCollectionLoadOptions:interface" /> &
-            visio!Visio.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="visio!Visio.Interfaces.CommentCollectionLoadOptions:interface"
+            /> & <xref
+            uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'visio!Visio.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.CommentCollection#load:member(2)'
@@ -179,7 +179,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.CommentCollection#load:member(3)'
@@ -194,9 +194,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.CommentCollection#toJSON:member(1)'
@@ -218,6 +218,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.CommentCollectionData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="CommentCollectionData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.CommentCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

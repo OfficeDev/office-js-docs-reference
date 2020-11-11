@@ -138,7 +138,7 @@ properties:
       content: 'conditionalFormats?: Excel.Interfaces.ConditionalFormatData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ConditionalFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface"
           />[]
   - name: dataValidation
     uid: 'excel!Excel.Interfaces.RangeData#dataValidation:member'
@@ -157,7 +157,7 @@ properties:
     syntax:
       content: 'dataValidation?: Excel.Interfaces.DataValidationData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="DataValidationData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.DataValidationData:interface" />'
   - name: format
     uid: 'excel!Excel.Interfaces.RangeData#format:member'
     package: excel!
@@ -176,7 +176,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatData:interface" />'
   - name: formulas
     uid: 'excel!Excel.Interfaces.RangeData#formulas:member'
     package: excel!
@@ -287,7 +287,7 @@ properties:
     syntax:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
-        type: 'excel!Excel.<xref uid="RangeHyperlink:interface" />'
+        type: '<xref uid="excel!Excel.RangeHyperlink:interface" />'
   - name: isEntireColumn
     uid: 'excel!Excel.Interfaces.RangeData#isEntireColumn:member'
     package: excel!
@@ -360,7 +360,7 @@ properties:
     syntax:
       content: 'linkedDataTypeState?: Excel.LinkedDataTypeState[][];'
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataTypeState:enum" />[][]'
+        type: '<xref uid="excel!Excel.LinkedDataTypeState:enum" />[][]'
   - name: numberFormat
     uid: 'excel!Excel.Interfaces.RangeData#numberFormat:member'
     package: excel!
@@ -552,7 +552,7 @@ properties:
     syntax:
       content: 'valueTypes?: Excel.RangeValueType[][];'
       return:
-        type: 'excel!Excel.<xref uid="RangeValueType:enum" />[][]'
+        type: '<xref uid="excel!Excel.RangeValueType:enum" />[][]'
   - name: width
     uid: 'excel!Excel.Interfaces.RangeData#width:member'
     package: excel!

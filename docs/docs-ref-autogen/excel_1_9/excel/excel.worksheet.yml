@@ -36,7 +36,7 @@ properties:
     syntax:
       content: 'readonly autoFilter: Excel.AutoFilter;'
       return:
-        type: 'excel!Excel.<xref uid="AutoFilter:class" />'
+        type: '<xref uid="excel!Excel.AutoFilter:class" />'
         description: >-
 
 
@@ -75,7 +75,7 @@ properties:
     syntax:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
-        type: 'excel!Excel.<xref uid="ChartCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartCollection:class" />'
   - name: context
     uid: 'excel!Excel.Worksheet#context:member'
     package: excel!
@@ -89,7 +89,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: enableCalculation
     uid: 'excel!Excel.Worksheet#enableCalculation:member'
     package: excel!
@@ -128,7 +128,7 @@ properties:
     syntax:
       content: 'readonly freezePanes: Excel.WorksheetFreezePanes;'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetFreezePanes:class" />'
+        type: '<xref uid="excel!Excel.WorksheetFreezePanes:class" />'
   - name: horizontalPageBreaks
     uid: 'excel!Excel.Worksheet#horizontalPageBreaks:member'
     package: excel!
@@ -147,7 +147,7 @@ properties:
     syntax:
       content: 'readonly horizontalPageBreaks: Excel.PageBreakCollection;'
       return:
-        type: 'excel!Excel.<xref uid="PageBreakCollection:class" />'
+        type: '<xref uid="excel!Excel.PageBreakCollection:class" />'
   - name: id
     uid: 'excel!Excel.Worksheet#id:member'
     package: excel!
@@ -203,7 +203,7 @@ properties:
     syntax:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
-        type: 'excel!Excel.<xref uid="NamedItemCollection:class" />'
+        type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
   - name: onActivated
     uid: 'excel!Excel.Worksheet#onActivated:member'
     package: excel!
@@ -224,9 +224,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="WorksheetActivatedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
         description: |-
 
 
@@ -264,9 +263,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="WorksheetCalculatedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
         description: |-
 
 
@@ -304,9 +302,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="WorksheetChangedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
         description: >-
 
 
@@ -347,9 +344,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="WorksheetDeactivatedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
         description: |-
 
 
@@ -387,9 +383,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref
-          uid="WorksheetFormatChangedEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
     package: excel!
@@ -410,9 +405,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref
-          uid="WorksheetSelectionChangedEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
         description: |-
 
 
@@ -447,7 +441,7 @@ properties:
     syntax:
       content: 'readonly pageLayout: Excel.PageLayout;'
       return:
-        type: 'excel!Excel.<xref uid="PageLayout:class" />'
+        type: '<xref uid="excel!Excel.PageLayout:class" />'
   - name: pivotTables
     uid: 'excel!Excel.Worksheet#pivotTables:member'
     package: excel!
@@ -465,7 +459,7 @@ properties:
     syntax:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableCollection:class" />'
         description: >-
 
 
@@ -545,7 +539,7 @@ properties:
     syntax:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetProtection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
         description: |-
 
 
@@ -600,7 +594,7 @@ properties:
     syntax:
       content: 'readonly shapes: Excel.ShapeCollection;'
       return:
-        type: 'excel!Excel.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.ShapeCollection:class" />'
   - name: showGridlines
     uid: 'excel!Excel.Worksheet#showGridlines:member'
     package: excel!
@@ -755,7 +749,7 @@ properties:
     syntax:
       content: 'readonly tables: Excel.TableCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
   - name: verticalPageBreaks
     uid: 'excel!Excel.Worksheet#verticalPageBreaks:member'
     package: excel!
@@ -774,7 +768,7 @@ properties:
     syntax:
       content: 'readonly verticalPageBreaks: Excel.PageBreakCollection;'
       return:
-        type: 'excel!Excel.<xref uid="PageBreakCollection:class" />'
+        type: '<xref uid="excel!Excel.PageBreakCollection:class" />'
   - name: visibility
     uid: 'excel!Excel.Worksheet#visibility:member'
     package: excel!
@@ -793,7 +787,7 @@ properties:
       content: 'visibility: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
         type: >-
-          excel!Excel.<xref uid="SheetVisibility:enum" /> | "Visible" | "Hidden"
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
           | "VeryHidden"
 methods:
   - name: activate()
@@ -879,15 +873,15 @@ methods:
             The location in the workbook to place the newly created worksheet.
             The default value is "None", which inserts the worksheet at the
             beginning of the worksheet.
-          type: 'excel!Excel.<xref uid="WorksheetPositionType:enum" />'
+          type: '<xref uid="excel!Excel.WorksheetPositionType:enum" />'
         - id: relativeTo
           description: >-
             The existing worksheet which determines the newly created
             worksheet's position. This is only needed if `positionType` is
             "Before" or "After".
-          type: 'excel!Excel.<xref uid="Worksheet:class" />'
+          type: '<xref uid="excel!Excel.Worksheet:class" />'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: >-
           The newly created worksheet.
 
@@ -945,9 +939,9 @@ methods:
             The existing worksheet which determines the newly created
             worksheet's position. This is only needed if `positionType` is
             "Before" or "After".
-          type: 'excel!Excel.<xref uid="Worksheet:class" />'
+          type: '<xref uid="excel!Excel.Worksheet:class" />'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: The newly created worksheet.
   - name: delete()
     uid: 'excel!Excel.Worksheet#delete:member(1)'
@@ -1016,9 +1010,9 @@ methods:
           description: >-
             Additional search criteria, including whether the search needs to
             match the entire cell or be case sensitive.
-          type: 'excel!Excel.<xref uid="WorksheetSearchCriteria:interface" />'
+          type: '<xref uid="excel!Excel.WorksheetSearchCriteria:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: >-
           A RangeArea object, comprising one or more rectangular ranges, that
           matches the search criteria. If no cells meet this criteria, an
@@ -1051,9 +1045,9 @@ methods:
           description: >-
             Additional search criteria, including whether the search needs to
             match the entire cell or be case sensitive.
-          type: 'excel!Excel.<xref uid="WorksheetSearchCriteria:interface" />'
+          type: '<xref uid="excel!Excel.WorksheetSearchCriteria:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: >-
           A RangeArea object, comprising one or more rectangular ranges, that
           matches the search criteria. If there are no matches, this function
@@ -1111,7 +1105,7 @@ methods:
           description: the column number of the cell to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1157,7 +1151,7 @@ methods:
             any hidden ones.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: >-
 
 
@@ -1219,7 +1213,7 @@ methods:
             any hidden ones.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: getPrevious(visibleOnly)
     uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
@@ -1245,7 +1239,7 @@ methods:
             any hidden ones.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: >-
 
 
@@ -1303,7 +1297,7 @@ methods:
             any hidden ones.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: getRange(address)
     uid: 'excel!Excel.Worksheet#getRange:member(1)'
@@ -1330,7 +1324,7 @@ methods:
             is returned.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1404,7 +1398,7 @@ methods:
           description: Number of columns to include in the range.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRanges(address)
     uid: 'excel!Excel.Worksheet#getRanges:member(1)'
@@ -1431,7 +1425,7 @@ methods:
             specified, an RangeArea object for the entire worksheet is returned.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: >-
 
 
@@ -1479,7 +1473,7 @@ methods:
             (ignoring formatting). \[Api set: ExcelApi 1.2\]
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -1524,7 +1518,7 @@ methods:
           description: Optional. Considers only cells with values as used cells.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Worksheet#load:member(1)'
@@ -1541,9 +1535,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Worksheet#load:member(2)'
@@ -1564,7 +1558,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: |-
 
 
@@ -1615,7 +1609,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: 'replaceAll(text, replacement, criteria)'
     uid: 'excel!Excel.Worksheet#replaceAll:member(1)'
@@ -1645,9 +1639,9 @@ methods:
           type: string
         - id: criteria
           description: Additional Replace Criteria.
-          type: 'excel!Excel.<xref uid="ReplaceCriteria:interface" />'
+          type: '<xref uid="excel!Excel.ReplaceCriteria:interface" />'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of replacements performed.
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Worksheet#set:member(1)'
@@ -1673,12 +1667,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="WorksheetUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1697,7 +1691,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Worksheet:class" />'
+          type: '<xref uid="excel!Excel.Worksheet:class" />'
       return:
         type: void
         description: ''
@@ -1719,6 +1713,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

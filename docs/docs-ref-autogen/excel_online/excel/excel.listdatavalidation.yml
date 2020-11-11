@@ -52,4 +52,4 @@ properties:
     syntax:
       content: 'source: string | Range;'
       return:
-        type: 'string | excel!Excel.<xref uid="Range:class" />'
+        type: 'string | <xref uid="excel!Excel.Range:class" />'

@@ -29,7 +29,7 @@ properties:
       content: 'axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisGroup:enum" /> | "Primary" |
+          <xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" |
           "Secondary"
   - name: binOptions
     uid: 'excel!Excel.Interfaces.ChartSeriesData#binOptions:member'
@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'binOptions?: Excel.Interfaces.ChartBinOptionsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBinOptionsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBinOptionsData:interface" />'
   - name: boxwhiskerOptions
     uid: 'excel!Excel.Interfaces.ChartSeriesData#boxwhiskerOptions:member'
     package: excel!
@@ -67,8 +67,8 @@ properties:
       content: 'boxwhiskerOptions?: Excel.Interfaces.ChartBoxwhiskerOptionsData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartBoxwhiskerOptionsData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface" />
   - name: bubbleScale
     uid: 'excel!Excel.Interfaces.ChartSeriesData#bubbleScale:member'
     package: excel!
@@ -131,7 +131,7 @@ properties:
         "Sunburst" | "Funnel";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartType:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
           "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
           "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
           "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
@@ -172,7 +172,7 @@ properties:
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartDataLabelsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelsData:interface" />'
   - name: doughnutHoleSize
     uid: 'excel!Excel.Interfaces.ChartSeriesData#doughnutHoleSize:member'
     package: excel!
@@ -269,7 +269,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartSeriesFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesFormatData:interface" />'
   - name: gapWidth
     uid: 'excel!Excel.Interfaces.ChartSeriesData#gapWidth:member'
     package: excel!
@@ -328,7 +328,7 @@ properties:
         "Number" | "Percent";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartGradientStyleType:enum" /> |
+          <xref uid="excel!Excel.ChartGradientStyleType:enum" /> |
           "ExtremeValue" | "Number" | "Percent"
   - name: gradientMaximumValue
     uid: 'excel!Excel.Interfaces.ChartSeriesData#gradientMaximumValue:member'
@@ -386,7 +386,7 @@ properties:
         "Number" | "Percent";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartGradientStyleType:enum" /> |
+          <xref uid="excel!Excel.ChartGradientStyleType:enum" /> |
           "ExtremeValue" | "Number" | "Percent"
   - name: gradientMidpointValue
     uid: 'excel!Excel.Interfaces.ChartSeriesData#gradientMidpointValue:member'
@@ -444,7 +444,7 @@ properties:
         "Number" | "Percent";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartGradientStyleType:enum" /> |
+          <xref uid="excel!Excel.ChartGradientStyleType:enum" /> |
           "ExtremeValue" | "Number" | "Percent"
   - name: gradientMinimumValue
     uid: 'excel!Excel.Interfaces.ChartSeriesData#gradientMinimumValue:member'
@@ -484,7 +484,7 @@ properties:
         "ThreePhaseColor";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartGradientStyle:enum" /> | "TwoPhaseColor" |
+          <xref uid="excel!Excel.ChartGradientStyle:enum" /> | "TwoPhaseColor" |
           "ThreePhaseColor"
   - name: hasDataLabels
     uid: 'excel!Excel.Interfaces.ChartSeriesData#hasDataLabels:member'
@@ -558,7 +558,7 @@ properties:
     syntax:
       content: 'mapOptions?: Excel.Interfaces.ChartMapOptionsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartMapOptionsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartMapOptionsData:interface" />'
   - name: markerBackgroundColor
     uid: 'excel!Excel.Interfaces.ChartSeriesData#markerBackgroundColor:member'
     package: excel!
@@ -635,7 +635,7 @@ properties:
         "Circle" | "Plus" | "Picture";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMarkerStyle:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" |
           "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" |
           "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - name: name
@@ -696,7 +696,7 @@ properties:
         | "Overlapping";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartParentLabelStrategy:enum" /> | "None" |
+          <xref uid="excel!Excel.ChartParentLabelStrategy:enum" /> | "None" |
           "Banner" | "Overlapping"
   - name: plotOrder
     uid: 'excel!Excel.Interfaces.ChartSeriesData#plotOrder:member'
@@ -733,7 +733,7 @@ properties:
     syntax:
       content: 'points?: Excel.Interfaces.ChartPointData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartPointData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointData:interface" />[]'
   - name: secondPlotSize
     uid: 'excel!Excel.Interfaces.ChartSeriesData#secondPlotSize:member'
     package: excel!
@@ -849,7 +849,7 @@ properties:
         "SplitByPercentValue" | "SplitByCustomSplit";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartSplitType:enum" /> | "SplitByPosition" |
+          <xref uid="excel!Excel.ChartSplitType:enum" /> | "SplitByPosition" |
           "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
   - name: splitValue
     uid: 'excel!Excel.Interfaces.ChartSeriesData#splitValue:member'
@@ -887,7 +887,7 @@ properties:
     syntax:
       content: 'trendlines?: Excel.Interfaces.ChartTrendlineData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTrendlineData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTrendlineData:interface" />[]'
   - name: varyByCategories
     uid: 'excel!Excel.Interfaces.ChartSeriesData#varyByCategories:member'
     package: excel!
@@ -924,7 +924,7 @@ properties:
     syntax:
       content: 'xErrorBars?: Excel.Interfaces.ChartErrorBarsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartErrorBarsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartErrorBarsData:interface" />'
   - name: yErrorBars
     uid: 'excel!Excel.Interfaces.ChartSeriesData#yErrorBars:member'
     package: excel!
@@ -942,4 +942,4 @@ properties:
     syntax:
       content: 'yErrorBars?: Excel.Interfaces.ChartErrorBarsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartErrorBarsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartErrorBarsData:interface" />'

@@ -111,5 +111,6 @@ properties:
       content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IterativeCalculationLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface"
+          />

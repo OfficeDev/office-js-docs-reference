@@ -67,7 +67,7 @@ properties:
       content: 'layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
         type: >-
-          excel!Excel.<xref uid="PivotLayoutType:enum" /> | "Compact" |
+          <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" |
           "Tabular" | "Outline"
   - name: preserveFormatting
     uid: 'excel!Excel.Interfaces.PivotLayoutData#preserveFormatting:member'
@@ -146,5 +146,5 @@ properties:
         "Off";
       return:
         type: >-
-          excel!Excel.<xref uid="SubtotalLocationType:enum" /> | "AtTop" |
+          <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" |
           "AtBottom" | "Off"

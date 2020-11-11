@@ -31,7 +31,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: errorAlert
     uid: 'excel!Excel.DataValidation#errorAlert:member'
     package: excel!
@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'errorAlert: Excel.DataValidationErrorAlert;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidationErrorAlert:interface" />'
+        type: '<xref uid="excel!Excel.DataValidationErrorAlert:interface" />'
         description: >-
 
 
@@ -126,7 +126,7 @@ properties:
     syntax:
       content: 'prompt: Excel.DataValidationPrompt;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidationPrompt:interface" />'
+        type: '<xref uid="excel!Excel.DataValidationPrompt:interface" />'
         description: >-
 
 
@@ -189,7 +189,7 @@ properties:
     syntax:
       content: 'rule: Excel.DataValidationRule;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidationRule:interface" />'
+        type: '<xref uid="excel!Excel.DataValidationRule:interface" />'
         description: >-
 
 
@@ -245,7 +245,7 @@ properties:
         "Inconsistent" | "MixedCriteria";
       return:
         type: >-
-          excel!Excel.<xref uid="DataValidationType:enum" /> | "None" |
+          <xref uid="excel!Excel.DataValidationType:enum" /> | "None" |
           "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" |
           "Custom" | "Inconsistent" | "MixedCriteria"
   - name: valid
@@ -308,7 +308,7 @@ methods:
     syntax:
       content: 'getInvalidCells(): Excel.RangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: getInvalidCellsOrNullObject()
     uid: 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
@@ -329,7 +329,7 @@ methods:
     syntax:
       content: 'getInvalidCellsOrNullObject(): Excel.RangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.DataValidation#load:member(1)'
@@ -349,10 +349,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="DataValidationLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.DataValidationLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="DataValidation:class" />'
+        type: '<xref uid="excel!Excel.DataValidation:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.DataValidation#load:member(2)'
@@ -373,7 +373,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="DataValidation:class" />'
+        type: '<xref uid="excel!Excel.DataValidation:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.DataValidation#load:member(3)'
@@ -404,7 +404,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="DataValidation:class" />'
+        type: '<xref uid="excel!Excel.DataValidation:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.DataValidation#set:member(1)'
@@ -431,13 +431,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="DataValidationUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.DataValidationUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -456,7 +456,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="DataValidation:class" />'
+          type: '<xref uid="excel!Excel.DataValidation:class" />'
       return:
         type: void
         description: ''
@@ -479,6 +479,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.DataValidationData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="DataValidationData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.DataValidationData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'image?: OneNote.Interfaces.ImageUpdateData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ImageUpdateData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.ImageUpdateData:interface" />'
   - name: table
     uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData#table:member'
     package: onenote!
@@ -48,4 +48,4 @@ properties:
     syntax:
       content: 'table?: OneNote.Interfaces.TableUpdateData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableUpdateData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableUpdateData:interface" />'

@@ -53,7 +53,7 @@ properties:
         "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeLineDashStyle:enum" /> | "Dash" |
+          <xref uid="excel!Excel.ShapeLineDashStyle:enum" /> | "Dash" |
           "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" |
           "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot"
           | "SystemDashDot"
@@ -79,7 +79,7 @@ properties:
         "ThickThin" | "ThinThick" | "ThinThin";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeLineStyle:enum" /> | "Single" |
+          <xref uid="excel!Excel.ShapeLineStyle:enum" /> | "Single" |
           "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"
   - name: transparency
     uid: 'excel!Excel.Interfaces.ShapeLineFormatUpdateData#transparency:member'

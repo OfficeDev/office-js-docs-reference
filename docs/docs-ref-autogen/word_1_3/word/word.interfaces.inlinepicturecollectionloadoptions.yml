@@ -148,7 +148,7 @@ properties:
     syntax:
       content: 'paragraph?: Word.Interfaces.ParagraphLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ParagraphLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ParagraphLoadOptions:interface" />'
   - name: parentContentControl
     uid: >-
       word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member
@@ -169,7 +169,7 @@ properties:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentContentControlOrNullObject
     uid: >-
@@ -194,7 +194,7 @@ properties:
         Word.Interfaces.ContentControlLoadOptions;
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentTable
     uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTable:member'
@@ -214,7 +214,7 @@ properties:
     syntax:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: parentTableCell
     uid: >-
       word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member
@@ -234,7 +234,7 @@ properties:
     syntax:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableCellOrNullObject
     uid: >-
       word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member
@@ -255,7 +255,7 @@ properties:
     syntax:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableOrNullObject
     uid: >-
       word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableOrNullObject:member
@@ -275,7 +275,7 @@ properties:
     syntax:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: width
     uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
     package: word!

@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'greenUpTriangle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: redDownTriangle
     uid: 'excel!Excel.ThreeTrianglesSet#redDownTriangle:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'redDownTriangle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: yellowDash
     uid: 'excel!Excel.ThreeTrianglesSet#yellowDash:member'
     package: excel!
@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'yellowDash: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: name
     uid: 'excel!Excel.NamedItem#name:member'
     package: excel!
@@ -87,7 +87,7 @@ properties:
       content: 'readonly scope: Excel.NamedItemScope | "Worksheet" | "Workbook";'
       return:
         type: >-
-          excel!Excel.<xref uid="NamedItemScope:enum" /> | "Worksheet" |
+          <xref uid="excel!Excel.NamedItemScope:enum" /> | "Worksheet" |
           "Workbook"
   - name: type
     uid: 'excel!Excel.NamedItem#type:member'
@@ -111,7 +111,7 @@ properties:
         "Boolean" | "Range" | "Error" | "Array";
       return:
         type: >-
-          excel!Excel.<xref uid="NamedItemType:enum" /> | "String" | "Integer" |
+          <xref uid="excel!Excel.NamedItemType:enum" /> | "String" | "Integer" |
           "Double" | "Boolean" | "Range" | "Error" | "Array"
   - name: value
     uid: 'excel!Excel.NamedItem#value:member'
@@ -168,7 +168,7 @@ properties:
     syntax:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
   - name: worksheetOrNullObject
     uid: 'excel!Excel.NamedItem#worksheetOrNullObject:member'
     package: excel!
@@ -187,7 +187,7 @@ properties:
     syntax:
       content: 'readonly worksheetOrNullObject: Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
 methods:
   - name: delete()
     uid: 'excel!Excel.NamedItem#delete:member(1)'
@@ -255,7 +255,7 @@ methods:
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -297,7 +297,7 @@ methods:
     syntax:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.NamedItem#load:member(1)'
@@ -314,9 +314,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="NamedItemLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.NamedItemLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="NamedItem:class" />'
+        type: '<xref uid="excel!Excel.NamedItem:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.NamedItem#load:member(2)'
@@ -337,7 +337,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="NamedItem:class" />'
+        type: '<xref uid="excel!Excel.NamedItem:class" />'
         description: |-
 
 
@@ -387,7 +387,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="NamedItem:class" />'
+        type: '<xref uid="excel!Excel.NamedItem:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.NamedItem#set:member(1)'
@@ -413,12 +413,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="NamedItemUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.NamedItemUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -437,7 +437,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="NamedItem:class" />'
+          type: '<xref uid="excel!Excel.NamedItem:class" />'
       return:
         type: void
         description: ''
@@ -459,6 +459,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.NamedItemData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NamedItemData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

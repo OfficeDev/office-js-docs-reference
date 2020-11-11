@@ -24,5 +24,6 @@ properties:
       content: 'items?: Excel.Interfaces.WorksheetCustomPropertyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="WorksheetCustomPropertyData:interface" />[]
+          <xref
+          uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface"
+          />[]

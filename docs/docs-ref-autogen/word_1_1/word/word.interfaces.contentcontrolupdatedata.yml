@@ -32,7 +32,7 @@ properties:
         "Hidden";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlAppearance:enum" /> | "BoundingBox"
+          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
           | "Tags" | "Hidden"
   - name: cannotDelete
     uid: 'word!Word.Interfaces.ContentControlUpdateData#cannotDelete:member'
@@ -109,7 +109,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontUpdateData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
   - name: placeholderText
     uid: 'word!Word.Interfaces.ContentControlUpdateData#placeholderText:member'
     package: word!

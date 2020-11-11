@@ -27,7 +27,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: style
     uid: 'word!Word.Interfaces.RangeData#style:member'
     package: word!

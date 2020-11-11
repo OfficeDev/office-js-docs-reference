@@ -40,4 +40,4 @@ properties:
     syntax:
       content: 'handler?: BindingEventHandler'
       return:
-        type: 'office!Office.<xref uid="BindingEventHandler:type" />'
+        type: '<xref uid="office!Office.BindingEventHandler:type" />'

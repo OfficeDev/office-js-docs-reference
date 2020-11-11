@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'enhancedLocations: LocationDetails[];'
       return:
-        type: 'outlook!Office.<xref uid="LocationDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.LocationDetails:interface" />[]'
   - name: type
     uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#type:member'
     package: outlook!

@@ -31,8 +31,9 @@ properties:
       content: 'cellValue?: Excel.Interfaces.CellValueConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CellValueConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CellValueConditionalFormatData:interface"
+          />
   - name: cellValueOrNullObject
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#cellValueOrNullObject:member'
     package: excel!
@@ -53,8 +54,9 @@ properties:
       content: 'cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CellValueConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CellValueConditionalFormatData:interface"
+          />
   - name: colorScale
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#colorScale:member'
     package: excel!
@@ -74,8 +76,9 @@ properties:
       content: 'colorScale?: Excel.Interfaces.ColorScaleConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ColorScaleConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface"
+          />
   - name: colorScaleOrNullObject
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#colorScaleOrNullObject:member'
     package: excel!
@@ -97,8 +100,9 @@ properties:
         Excel.Interfaces.ColorScaleConditionalFormatData;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ColorScaleConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface"
+          />
   - name: custom
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#custom:member'
     package: excel!
@@ -118,8 +122,8 @@ properties:
       content: 'custom?: Excel.Interfaces.CustomConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CustomConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CustomConditionalFormatData:interface" />
   - name: customOrNullObject
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#customOrNullObject:member'
     package: excel!
@@ -139,8 +143,8 @@ properties:
       content: 'customOrNullObject?: Excel.Interfaces.CustomConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CustomConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CustomConditionalFormatData:interface" />
   - name: dataBar
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#dataBar:member'
     package: excel!
@@ -160,8 +164,8 @@ properties:
       content: 'dataBar?: Excel.Interfaces.DataBarConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DataBarConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DataBarConditionalFormatData:interface" />
   - name: dataBarOrNullObject
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#dataBarOrNullObject:member'
     package: excel!
@@ -181,8 +185,8 @@ properties:
       content: 'dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DataBarConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DataBarConditionalFormatData:interface" />
   - name: iconSet
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#iconSet:member'
     package: excel!
@@ -202,8 +206,8 @@ properties:
       content: 'iconSet?: Excel.Interfaces.IconSetConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IconSetConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IconSetConditionalFormatData:interface" />
   - name: iconSetOrNullObject
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#iconSetOrNullObject:member'
     package: excel!
@@ -223,8 +227,8 @@ properties:
       content: 'iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IconSetConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IconSetConditionalFormatData:interface" />
   - name: id
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#id:member'
     package: excel!
@@ -263,8 +267,9 @@ properties:
       content: 'preset?: Excel.Interfaces.PresetCriteriaConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="PresetCriteriaConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface"
+          />
   - name: presetOrNullObject
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#presetOrNullObject:member'
     package: excel!
@@ -286,8 +291,9 @@ properties:
         Excel.Interfaces.PresetCriteriaConditionalFormatData;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="PresetCriteriaConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface"
+          />
   - name: priority
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#priority:member'
     package: excel!
@@ -353,7 +359,7 @@ properties:
       content: 'textComparison?: Excel.Interfaces.TextConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="TextConditionalFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.TextConditionalFormatData:interface"
           />
   - name: textComparisonOrNullObject
     uid: >-
@@ -376,7 +382,7 @@ properties:
       content: 'textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="TextConditionalFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.TextConditionalFormatData:interface"
           />
   - name: topBottom
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#topBottom:member'
@@ -398,8 +404,9 @@ properties:
       content: 'topBottom?: Excel.Interfaces.TopBottomConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TopBottomConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TopBottomConditionalFormatData:interface"
+          />
   - name: topBottomOrNullObject
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#topBottomOrNullObject:member'
     package: excel!
@@ -420,8 +427,9 @@ properties:
       content: 'topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TopBottomConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TopBottomConditionalFormatData:interface"
+          />
   - name: type
     uid: 'excel!Excel.Interfaces.ConditionalFormatData#type:member'
     package: excel!
@@ -443,6 +451,6 @@ properties:
         "CellValue";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalFormatType:enum" /> | "Custom" |
+          <xref uid="excel!Excel.ConditionalFormatType:enum" /> | "Custom" |
           "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria"
           | "ContainsText" | "CellValue"

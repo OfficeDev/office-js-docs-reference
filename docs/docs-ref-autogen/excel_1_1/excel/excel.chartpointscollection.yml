@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: count
     uid: 'excel!Excel.ChartPointsCollection#count:member'
     package: excel!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.ChartPoint[];'
       return:
-        type: 'excel!Excel.<xref uid="ChartPoint:class" />[]'
+        type: '<xref uid="excel!Excel.ChartPoint:class" />[]'
 methods:
   - name: getItemAt(index)
     uid: 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
@@ -81,7 +81,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="ChartPoint:class" />'
+        type: '<xref uid="excel!Excel.ChartPoint:class" />'
         description: |-
 
 
@@ -120,12 +120,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartPointsCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartPointsCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartPointsCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartPointsCollection#load:member(2)'
@@ -146,7 +146,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartPointsCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartPointsCollection:class" />'
         description: |-
 
 
@@ -205,9 +205,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ChartPointsCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartPointsCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.ChartPointsCollection#toJSON:member(1)'
@@ -230,7 +230,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ChartPointsCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartPointsCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartPointsCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

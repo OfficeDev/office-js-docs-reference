@@ -30,7 +30,7 @@ methods:
           description: >-
             Represents the updates to be made to the ribbon. Note that only the
             changes specified in the input parameter are made.
-          type: 'office!Office.<xref uid="RibbonUpdaterData:interface" />'
+          type: '<xref uid="office!Office.RibbonUpdaterData:interface" />'
       return:
         type: Promise&lt;void&gt;
         description: ''

@@ -44,4 +44,4 @@ properties:
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ParagraphData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphData:interface" />[]'

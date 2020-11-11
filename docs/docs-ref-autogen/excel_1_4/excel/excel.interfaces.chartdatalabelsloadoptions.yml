@@ -49,8 +49,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartDataLabelFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface"
+          />
   - name: position
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member'
     package: excel!

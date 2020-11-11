@@ -73,7 +73,7 @@ properties:
         "Information";
       return:
         type: >-
-          excel!Excel.<xref uid="DataValidationAlertStyle:enum" /> | "Stop" |
+          <xref uid="excel!Excel.DataValidationAlertStyle:enum" /> | "Stop" |
           "Warning" | "Information"
   - name: title
     uid: 'excel!Excel.DataValidationErrorAlert#title:member'

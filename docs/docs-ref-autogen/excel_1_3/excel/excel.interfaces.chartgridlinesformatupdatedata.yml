@@ -29,5 +29,5 @@ properties:
       content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartLineFormatUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartLineFormatUpdateData:interface"
           />

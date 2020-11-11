@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'readonly cells: OneNote.TableCellCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableCellCollection:class" />'
+        type: '<xref uid="onenote!OneNote.TableCellCollection:class" />'
   - name: context
     uid: 'onenote!OneNote.TableRow#context:member'
     package: onenote!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.TableRow#id:member'
     package: onenote!
@@ -100,7 +100,7 @@ properties:
     syntax:
       content: 'readonly parentTable: OneNote.Table;'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
   - name: rowIndex
     uid: 'onenote!OneNote.TableRow#rowIndex:member'
     package: onenote!
@@ -160,14 +160,14 @@ methods:
       parameters:
         - id: insertLocation
           description: Where the new rows should be inserted relative to the current row.
-          type: 'onenote!OneNote.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: values
           description: >-
             Strings to insert in the new row, specified as an array. Must not
             have more cells than in the current row. Optional.
           type: 'string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: |-
 
 
@@ -239,7 +239,7 @@ methods:
             have more cells than in the current row. Optional.
           type: 'string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.TableRow#load:member(1)'
@@ -278,10 +278,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="TableRowLoadOptions:interface"
+            <xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions:interface"
             />
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.TableRow#load:member(2)'
@@ -302,7 +302,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: |-
 
 
@@ -417,7 +417,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
   - name: setShadingColor(colorCode)
     uid: 'onenote!OneNote.TableRow#setShadingColor:member(1)'
@@ -461,7 +461,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.TableRowData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableRowData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableRowData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.TableRow#track:member(1)'
@@ -481,7 +481,7 @@ methods:
     syntax:
       content: 'track(): OneNote.TableRow;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.TableRow#untrack:member(1)'
@@ -500,6 +500,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.TableRow;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

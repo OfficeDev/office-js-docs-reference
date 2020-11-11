@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'image?: OneNote.Interfaces.ImageUpdateData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ImageUpdateData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.ImageUpdateData:interface" />'
   - name: left
     uid: 'onenote!OneNote.Interfaces.PageContentUpdateData#left:member'
     package: onenote!

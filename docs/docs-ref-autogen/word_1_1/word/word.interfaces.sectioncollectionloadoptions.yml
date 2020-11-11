@@ -49,4 +49,4 @@ properties:
     syntax:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'

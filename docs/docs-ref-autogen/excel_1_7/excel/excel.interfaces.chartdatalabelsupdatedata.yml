@@ -30,8 +30,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartDataLabelFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface"
+          />
   - name: position
     uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member'
     package: excel!
@@ -54,7 +55,7 @@ properties:
         "Bottom" | "BestFit" | "Callout";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartDataLabelPosition:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" |
           "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
           | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - name: separator

@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
   - name: horizontalAlignment
     uid: >-
       word!Word.Interfaces.TableRowCollectionLoadOptions#horizontalAlignment:member
@@ -126,7 +126,7 @@ properties:
     syntax:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: preferredHeight
     uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#preferredHeight:member'
     package: word!

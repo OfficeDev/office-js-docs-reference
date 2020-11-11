@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'actionType: string | MailboxEnums.ActionType;'
       return:
-        type: 'string | outlook!Office.MailboxEnums.<xref uid="ActionType:enum" />'
+        type: 'string | <xref uid="outlook!Office.MailboxEnums.ActionType:enum" />'
   - name: commandId
     uid: 'outlook!Office.NotificationMessageAction#commandId:member'
     package: outlook!

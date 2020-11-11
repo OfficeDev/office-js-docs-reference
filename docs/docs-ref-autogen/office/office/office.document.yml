@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'bindings: Bindings;'
       return:
-        type: 'office!Office.<xref uid="Bindings:interface" />'
+        type: '<xref uid="office!Office.Bindings:interface" />'
   - name: customXmlParts
     uid: 'office!Office.Document#customXmlParts:member'
     package: office!
@@ -62,7 +62,7 @@ properties:
     syntax:
       content: 'customXmlParts: CustomXmlParts;'
       return:
-        type: 'office!Office.<xref uid="CustomXmlParts:interface" />'
+        type: '<xref uid="office!Office.CustomXmlParts:interface" />'
         description: |-
 
 
@@ -91,7 +91,7 @@ properties:
     syntax:
       content: 'mode: DocumentMode;'
       return:
-        type: 'office!Office.<xref uid="DocumentMode:enum" />'
+        type: '<xref uid="office!Office.DocumentMode:enum" />'
         description: >-
 
 
@@ -174,7 +174,7 @@ properties:
     syntax:
       content: 'settings: Settings;'
       return:
-        type: 'office!Office.<xref uid="Settings:interface" />'
+        type: '<xref uid="office!Office.Settings:interface" />'
   - name: url
     uid: 'office!Office.Document#url:member'
     package: office!
@@ -231,7 +231,7 @@ methods:
             specified as `Office.EventType.Document.SelectionChanged` or
             `Office.EventType.Document.ActiveViewChanged`<!-- -->, or the
             corresponding text value of this enumeration.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
@@ -242,7 +242,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -250,7 +250,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -596,7 +596,7 @@ methods:
             specified as `Office.EventType.Document.SelectionChanged` or
             `Office.EventType.Document.ActiveViewChanged`<!-- -->, or the
             corresponding text value of this enumeration.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
@@ -610,7 +610,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -637,7 +637,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -649,7 +649,7 @@ methods:
             edit slides, such as Normal or Outline View. "read" corresponds to
             either Slide Show or Reading View.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;"edit" | "read"&gt;) =&gt; void
       return:
         type: void
@@ -703,7 +703,7 @@ methods:
             edit slides, such as Normal or Outline View. "read" corresponds to
             either Slide Show or Reading View.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;"edit" | "read"&gt;) =&gt; void
       return:
         type: void
@@ -869,12 +869,12 @@ methods:
       parameters:
         - id: fileType
           description: The format in which the file will be returned
-          type: 'office!Office.<xref uid="FileType:enum" />'
+          type: '<xref uid="office!Office.FileType:enum" />'
         - id: options
           description: >-
             Provides options for setting the size of slices that the document
             will be divided into.
-          type: 'office!Office.<xref uid="GetFileOptions:interface" />'
+          type: '<xref uid="office!Office.GetFileOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -882,8 +882,8 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is the File object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="File:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.File:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -947,7 +947,7 @@ methods:
       parameters:
         - id: fileType
           description: The format in which the file will be returned
-          type: 'office!Office.<xref uid="FileType:enum" />'
+          type: '<xref uid="office!Office.FileType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -955,8 +955,8 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is the File object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="File:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.File:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -983,7 +983,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only
@@ -992,9 +992,8 @@ methods:
             -->. The `value` property of the result is the file's properties
             (with the URL found at `asyncResult.value.url`<!-- -->).
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="FileProperties:interface" />&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.FileProperties:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1058,9 +1057,8 @@ methods:
             -->. The `value` property of the result is the file's properties
             (with the URL found at `asyncResult.value.url`<!-- -->).
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="FileProperties:interface" />&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.FileProperties:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1086,7 +1084,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -1095,7 +1093,7 @@ methods:
             -->. The `value` property of the result is the highest index number
             in the current project's resource collection.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;number&gt;) =&gt; void
       return:
         type: void
@@ -1126,7 +1124,7 @@ methods:
             -->. The `value` property of the result is the highest index number
             in the current project's resource collection.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;number&gt;) =&gt; void
       return:
         type: void
@@ -1247,7 +1245,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -1256,7 +1254,7 @@ methods:
             -->. The `value` property of the result is the highest index number
             in the current project's task collection.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;number&gt;) =&gt; void
       return:
         type: void
@@ -1287,7 +1285,7 @@ methods:
             -->. The `value` property of the result is the highest index number
             in the current project's task collection.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;number&gt;) =&gt; void
       return:
         type: void
@@ -1408,7 +1406,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -1417,7 +1415,7 @@ methods:
             -->. The `value` property of the result contains the `fieldValue`
             property, which represents the value of the specified field.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -1446,7 +1444,7 @@ methods:
             -->. The `value` property of the result contains the `fieldValue`
             property, which represents the value of the specified field.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -1561,7 +1559,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -1570,7 +1568,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -1606,7 +1604,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -1730,7 +1728,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -1739,7 +1737,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -1773,7 +1771,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -2099,12 +2097,12 @@ methods:
           description: >-
             The type of data structure to return. See the remarks section for
             each host's supported coercion types.
-          type: 'office!Office.<xref uid="CoercionType:enum" />'
+          type: '<xref uid="office!Office.CoercionType:enum" />'
         - id: options
           description: >-
             Provides options for customizing what data is returned and how it is
             formatted.
-          type: 'office!Office.<xref uid="GetSelectedDataOptions:interface" />'
+          type: '<xref uid="office!Office.GetSelectedDataOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -2115,7 +2113,7 @@ methods:
             specified with the coercionType parameter. (See Remarks for more
             information about data coercion.)
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;T&gt;) =&gt; void
       return:
         type: void
@@ -2201,7 +2199,7 @@ methods:
           description: >-
             The type of data structure to return. See the remarks section for
             each host's supported coercion types.
-          type: 'office!Office.<xref uid="CoercionType:enum" />'
+          type: '<xref uid="office!Office.CoercionType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -2212,7 +2210,7 @@ methods:
             specified with the coercionType parameter. (See Remarks for more
             information about data coercion.)
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;T&gt;) =&gt; void
       return:
         type: void
@@ -2234,7 +2232,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -2243,7 +2241,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -2269,7 +2267,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -2398,7 +2396,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -2407,7 +2405,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -2433,7 +2431,7 @@ methods:
             -->. The `value` property of the result is the GUID of the resource
             as a string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -2542,7 +2540,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -2553,7 +2551,7 @@ methods:
             constant. `viewType` - The type of view, as the integer value of a
             ProjectViewTypes constant.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -2583,7 +2581,7 @@ methods:
             constant. `viewType` - The type of view, as the integer value of a
             ProjectViewTypes constant.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -2670,7 +2668,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -2683,7 +2681,7 @@ methods:
             `resourceNames` - The comma-separated list of the names of resources
             that are assigned to the task.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -2718,7 +2716,7 @@ methods:
             `resourceNames` - The comma-separated list of the names of resources
             that are assigned to the task.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -2837,7 +2835,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -2846,7 +2844,7 @@ methods:
             -->. The `value` property of the result is the GUID of the task as a
             string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -2880,7 +2878,7 @@ methods:
             -->. The `value` property of the result is the GUID of the task as a
             string.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -2993,7 +2991,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -3002,7 +3000,7 @@ methods:
             -->. The `value` property of the result contains the `fieldValue`
             property, which represents the value of the specified field.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -3036,7 +3034,7 @@ methods:
             -->. The `value` property of the result contains the `fieldValue`
             property, which represents the value of the specified field.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -3162,7 +3160,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -3173,7 +3171,7 @@ methods:
             task list. `serverUrl` - the URL of the synchronized SharePoint task
             list.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -3201,7 +3199,7 @@ methods:
             task list. `serverUrl` - the URL of the synchronized SharePoint task
             list.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -3249,12 +3247,12 @@ methods:
           type: string | number
         - id: goToType
           description: The type of the location to go to.
-          type: 'office!Office.<xref uid="GoToType:enum" />'
+          type: '<xref uid="office!Office.GoToType:enum" />'
         - id: options
           description: >-
             Provides options for whether to select the location that is
             navigated to.
-          type: 'office!Office.<xref uid="GoToByIdOptions:interface" />'
+          type: '<xref uid="office!Office.GoToByIdOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -3262,7 +3260,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is the current view.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -3457,7 +3455,7 @@ methods:
           type: string | number
         - id: goToType
           description: The type of the location to go to.
-          type: 'office!Office.<xref uid="GoToType:enum" />'
+          type: '<xref uid="office!Office.GoToType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -3465,7 +3463,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is the current view.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -3490,12 +3488,12 @@ methods:
           description: >-
             The event type. For document can be 'Document.SelectionChanged' or
             'Document.ActiveViewChanged'.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: options
           description: >-
             Provides options to determine which event handler or handlers are
             removed.
-          type: 'office!Office.<xref uid="RemoveHandlerOptions:interface" />'
+          type: '<xref uid="office!Office.RemoveHandlerOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -3503,7 +3501,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -3625,7 +3623,7 @@ methods:
           description: >-
             The event type. For document can be 'Document.SelectionChanged' or
             'Document.ActiveViewChanged'.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -3633,7 +3631,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -3669,7 +3667,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -3677,7 +3675,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -3715,7 +3713,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -4191,10 +4189,10 @@ methods:
             columns" feature only when one of the following conditions is met:
             (1) you are writing to all the cells of the column, or (2) there are
             already at least two different formulas in the column.
-          type: 'string | office!Office.<xref uid="TableData:class" /> | any[][]'
+          type: 'string | <xref uid="office!Office.TableData:class" /> | any[][]'
         - id: options
           description: Provides options for how to insert data to the selection.
-          type: 'office!Office.<xref uid="SetSelectedDataOptions:interface" />'
+          type: '<xref uid="office!Office.SetSelectedDataOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -4203,7 +4201,7 @@ methods:
             -->. The AsyncResult.value property always returns undefined because
             there is no object or data to retrieve.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -4415,7 +4413,7 @@ methods:
             columns" feature only when one of the following conditions is met:
             (1) you are writing to all the cells of the column, or (2) there are
             already at least two different formulas in the column.
-          type: 'string | office!Office.<xref uid="TableData:class" /> | any[][]'
+          type: 'string | <xref uid="office!Office.TableData:class" /> | any[][]'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -4424,7 +4422,7 @@ methods:
             -->. The AsyncResult.value property always returns undefined because
             there is no object or data to retrieve.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -4459,7 +4457,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -4467,7 +4465,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -4505,7 +4503,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

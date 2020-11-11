@@ -36,7 +36,7 @@ properties:
                 };
       return:
         type: |-
-          excel!Excel.<xref uid="CellPropertiesFormat:interface" /> & {
+          <xref uid="excel!Excel.CellPropertiesFormat:interface" /> & {
                       rowHeight?: number;
                   }
   - name: rowHidden
@@ -57,4 +57,4 @@ properties:
       content: 'rowHidden?: boolean;'
       return:
         type: boolean
-extends: 'excel!Excel.<xref uid="SettableCellProperties:interface" />'
+extends: '<xref uid="excel!Excel.SettableCellProperties:interface" />'

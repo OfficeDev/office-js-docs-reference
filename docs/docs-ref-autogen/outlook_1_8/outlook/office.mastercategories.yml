@@ -102,20 +102,20 @@ methods:
       parameters:
         - id: categories
           description: The categories to be added to the master list on the mailbox.
-          type: 'outlook!Office.<xref uid="CategoryDetails:interface" />[]'
+          type: '<xref uid="outlook!Office.CategoryDetails:interface" />[]'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -152,7 +152,7 @@ methods:
             An object literal that contains one or more of the following
             properties. `asyncContext`<!-- -->: Developers can provide any
             object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback`
@@ -160,8 +160,8 @@ methods:
             `Office.AsyncResult`<!-- -->. If adding categories fails, the
             `asyncResult.error` property will contain an error code.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="CategoryDetails:interface" />[]&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CategoryDetails:interface" />[]&gt;)
             =&gt; void
       return:
         type: void
@@ -224,8 +224,8 @@ methods:
             parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="CategoryDetails:interface" />[]&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CategoryDetails:interface" />[]&gt;)
             =&gt; void
       return:
         type: void
@@ -295,7 +295,7 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -303,7 +303,7 @@ methods:
             `Office.AsyncResult`<!-- -->. If removing categories fails, the
             `asyncResult.error` property will contain an error code.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

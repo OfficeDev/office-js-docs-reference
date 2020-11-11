@@ -30,7 +30,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartAxisFormatUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface"
           />
   - name: majorGridlines
     uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member'
@@ -51,7 +51,7 @@ properties:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartGridlinesUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartGridlinesUpdateData:interface"
           />
   - name: majorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorUnit:member'
@@ -131,7 +131,7 @@ properties:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartGridlinesUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartGridlinesUpdateData:interface"
           />
   - name: minorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorUnit:member'
@@ -171,5 +171,5 @@ properties:
       content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartAxisTitleUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface"
           />

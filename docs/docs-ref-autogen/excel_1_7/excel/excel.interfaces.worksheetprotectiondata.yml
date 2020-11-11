@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'options?: Excel.WorksheetProtectionOptions;'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetProtectionOptions:interface" />'
+        type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
   - name: protected
     uid: 'excel!Excel.Interfaces.WorksheetProtectionData#protected:member'
     package: excel!

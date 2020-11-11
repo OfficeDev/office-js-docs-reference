@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'field?: Excel.Interfaces.PivotFieldUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotFieldUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PivotFieldUpdateData:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#name:member'
     package: excel!
@@ -100,7 +100,7 @@ properties:
     syntax:
       content: 'showAs?: Excel.ShowAsRule;'
       return:
-        type: 'excel!Excel.<xref uid="ShowAsRule:interface" />'
+        type: '<xref uid="excel!Excel.ShowAsRule:interface" />'
   - name: summarizeBy
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member'
     package: excel!
@@ -122,7 +122,7 @@ properties:
         | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
       return:
         type: >-
-          excel!Excel.<xref uid="AggregationFunction:enum" /> | "Unknown" |
+          <xref uid="excel!Excel.AggregationFunction:enum" /> | "Unknown" |
           "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product"
           | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" |
           "Variance" | "VarianceP"

@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'format?: Excel.CellPropertiesFormat;'
       return:
-        type: 'excel!Excel.<xref uid="CellPropertiesFormat:interface" />'
+        type: '<xref uid="excel!Excel.CellPropertiesFormat:interface" />'
   - name: hyperlink
     uid: 'excel!Excel.SettableCellProperties#hyperlink:member'
     package: excel!
@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
-        type: 'excel!Excel.<xref uid="RangeHyperlink:interface" />'
+        type: '<xref uid="excel!Excel.RangeHyperlink:interface" />'
   - name: style
     uid: 'excel!Excel.SettableCellProperties#style:member'
     package: excel!

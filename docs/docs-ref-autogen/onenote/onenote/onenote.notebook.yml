@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.Notebook#id:member'
     package: onenote!
@@ -137,7 +137,7 @@ properties:
     syntax:
       content: 'readonly sectionGroups: OneNote.SectionGroupCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroupCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroupCollection:class" />'
   - name: sections
     uid: 'onenote!OneNote.Notebook#sections:member'
     package: onenote!
@@ -155,7 +155,7 @@ properties:
     syntax:
       content: 'readonly sections: OneNote.SectionCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionCollection:class" />'
 methods:
   - name: addSection(name)
     uid: 'onenote!OneNote.Notebook#addSection:member(1)'
@@ -178,7 +178,7 @@ methods:
           description: The name of the new section.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -230,7 +230,7 @@ methods:
           description: The name of the new section.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroup:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
         description: |-
 
 
@@ -278,7 +278,7 @@ methods:
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -338,10 +338,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="NotebookLoadOptions:interface"
+            <xref uid="onenote!OneNote.Interfaces.NotebookLoadOptions:interface"
             />
       return:
-        type: 'onenote!OneNote.<xref uid="Notebook:class" />'
+        type: '<xref uid="onenote!OneNote.Notebook:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.Notebook#load:member(2)'
@@ -362,7 +362,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="Notebook:class" />'
+        type: '<xref uid="onenote!OneNote.Notebook:class" />'
         description: |-
 
 
@@ -516,7 +516,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="Notebook:class" />'
+        type: '<xref uid="onenote!OneNote.Notebook:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.Notebook#toJSON:member(1)'
@@ -536,7 +536,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.NotebookData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="NotebookData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.NotebookData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.Notebook#track:member(1)'
@@ -556,7 +556,7 @@ methods:
     syntax:
       content: 'track(): OneNote.Notebook;'
       return:
-        type: 'onenote!OneNote.<xref uid="Notebook:class" />'
+        type: '<xref uid="onenote!OneNote.Notebook:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.Notebook#untrack:member(1)'
@@ -575,6 +575,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.Notebook;'
       return:
-        type: 'onenote!OneNote.<xref uid="Notebook:class" />'
+        type: '<xref uid="onenote!OneNote.Notebook:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

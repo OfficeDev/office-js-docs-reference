@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'fields?: Excel.Interfaces.PivotFieldData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotFieldData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotFieldData:interface" />[]'
   - name: id
     uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#id:member'
     package: excel!

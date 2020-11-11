@@ -112,5 +112,6 @@ properties:
       content: 'type: MailboxEnums.ItemNotificationMessageType | string;'
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref
-          uid="ItemNotificationMessageType:enum" /> | string
+          <xref
+          uid="outlook!Office.MailboxEnums.ItemNotificationMessageType:enum" />
+          | string

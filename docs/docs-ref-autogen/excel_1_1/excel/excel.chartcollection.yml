@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: count
     uid: 'excel!Excel.ChartCollection#count:member'
     package: excel!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Chart[];'
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />[]'
+        type: '<xref uid="excel!Excel.Chart:class" />[]'
 methods:
   - name: 'add(type, sourceData, seriesBy)'
     uid: 'excel!Excel.ChartCollection#add:member(1)'
@@ -81,17 +81,17 @@ methods:
       parameters:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
-          type: 'excel!Excel.<xref uid="ChartType:enum" />'
+          type: '<xref uid="excel!Excel.ChartType:enum" />'
         - id: sourceData
           description: The Range object corresponding to the source data.
-          type: 'excel!Excel.<xref uid="Range:class" />'
+          type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series
             on the chart. See Excel.ChartSeriesBy for details.
-          type: 'excel!Excel.<xref uid="ChartSeriesBy:enum" />'
+          type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: >-
 
 
@@ -191,14 +191,14 @@ methods:
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
         - id: sourceData
           description: The Range object corresponding to the source data.
-          type: 'excel!Excel.<xref uid="Range:class" />'
+          type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series
             on the chart. See Excel.ChartSeriesBy for details.
           type: '"Auto" | "Columns" | "Rows"'
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: ''
   - name: getItem(name)
     uid: 'excel!Excel.ChartCollection#getItem:member(1)'
@@ -222,7 +222,7 @@ methods:
           description: Name of the chart to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: |-
 
 
@@ -264,7 +264,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: |-
 
 
@@ -302,12 +302,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            <xref
+            uid="excel!Excel.Interfaces.ChartCollectionLoadOptions:interface" />
+            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="ChartCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartCollection#load:member(2)'
@@ -328,7 +328,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartCollection:class" />'
         description: |-
 
 
@@ -371,9 +371,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ChartCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.ChartCollection#toJSON:member(1)'
@@ -394,6 +394,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartCollectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

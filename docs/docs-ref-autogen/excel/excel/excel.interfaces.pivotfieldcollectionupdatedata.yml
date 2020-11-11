@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.PivotFieldData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotFieldData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotFieldData:interface" />[]'

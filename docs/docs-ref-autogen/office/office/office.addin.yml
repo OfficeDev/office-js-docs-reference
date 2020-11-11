@@ -22,7 +22,7 @@ methods:
     syntax:
       content: 'getStartupBehavior(): Promise<Office.StartupBehavior>;'
       return:
-        type: 'Promise&lt;office!Office.<xref uid="StartupBehavior:enum" />&gt;'
+        type: 'Promise&lt;<xref uid="office!Office.StartupBehavior:enum" />&gt;'
         description: ''
   - name: hide()
     uid: 'office!Office.Addin#hide:member(1)'
@@ -56,10 +56,11 @@ methods:
             The listener function that is called when the event is emitted. This
             function takes in a message for the receiving component.
           type: >-
-            (message: office!Office.<xref
-            uid="VisibilityModeChangedMessage:interface" />) =&gt; void
+            (message: <xref
+            uid="office!Office.VisibilityModeChangedMessage:interface" />) =&gt;
+            void
       return:
-        type: 'Promise&lt;office!Office.<xref uid="RemoveEventListener:type" />&gt;'
+        type: 'Promise&lt;<xref uid="office!Office.RemoveEventListener:type" />&gt;'
         description: >-
           A promise that resolves to a function when the listener is added. The
           `RemoveEventListener` type is defined with `type RemoveEventListener =
@@ -79,7 +80,7 @@ methods:
       parameters:
         - id: behavior
           description: Specifies startup behavior of the add-in.
-          type: 'office!Office.<xref uid="StartupBehavior:enum" />'
+          type: '<xref uid="office!Office.StartupBehavior:enum" />'
       return:
         type: Promise&lt;void&gt;
         description: ''

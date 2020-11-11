@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: id
     uid: 'excel!Excel.Binding#id:member'
     package: excel!
@@ -67,9 +67,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="BindingDataChangedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.BindingDataChangedEventArgs:interface" />&gt;
         description: >-
 
 
@@ -119,9 +118,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref
-          uid="BindingSelectionChangedEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.BindingSelectionChangedEventArgs:interface" />&gt;
   - name: type
     uid: 'excel!Excel.Binding#type:member'
     package: excel!
@@ -140,7 +138,7 @@ properties:
       content: 'readonly type: Excel.BindingType | "Range" | "Table" | "Text";'
       return:
         type: >-
-          excel!Excel.<xref uid="BindingType:enum" /> | "Range" | "Table" |
+          <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" |
           "Text"
 methods:
   - name: getRange()
@@ -161,7 +159,7 @@ methods:
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -200,7 +198,7 @@ methods:
     syntax:
       content: 'getTable(): Excel.Table;'
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: |-
 
 
@@ -239,7 +237,7 @@ methods:
     syntax:
       content: 'getText(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -275,9 +273,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="BindingLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.BindingLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Binding:class" />'
+        type: '<xref uid="excel!Excel.Binding:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Binding#load:member(2)'
@@ -298,7 +296,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Binding:class" />'
+        type: '<xref uid="excel!Excel.Binding:class" />'
         description: |-
 
 
@@ -347,7 +345,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Binding:class" />'
+        type: '<xref uid="excel!Excel.Binding:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.Binding#toJSON:member(1)'
@@ -367,6 +365,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.BindingData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="BindingData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.BindingData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

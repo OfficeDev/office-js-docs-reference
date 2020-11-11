@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'settings: Settings;'
       return:
-        type: 'office!Office.<xref uid="Settings:interface" />'
+        type: '<xref uid="office!Office.Settings:interface" />'
   - name: type
     uid: 'office!Office.SettingsChangedEventArgs#type:member'
     package: office!
@@ -60,4 +60,4 @@ properties:
     syntax:
       content: 'type: EventType;'
       return:
-        type: 'office!Office.<xref uid="EventType:enum" />'
+        type: '<xref uid="office!Office.EventType:enum" />'

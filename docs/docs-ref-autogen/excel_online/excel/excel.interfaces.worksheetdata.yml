@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="AutoFilterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.AutoFilterData:interface" />'
   - name: charts
     uid: 'excel!Excel.Interfaces.WorksheetData#charts:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'charts?: Excel.Interfaces.ChartData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartData:interface" />[]'
   - name: comments
     uid: 'excel!Excel.Interfaces.WorksheetData#comments:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'comments?: Excel.Interfaces.CommentData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CommentData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.CommentData:interface" />[]'
   - name: customProperties
     uid: 'excel!Excel.Interfaces.WorksheetData#customProperties:member'
     package: excel!
@@ -83,8 +83,9 @@ properties:
       content: 'customProperties?: Excel.Interfaces.WorksheetCustomPropertyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="WorksheetCustomPropertyData:interface" />[]
+          <xref
+          uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface"
+          />[]
   - name: enableCalculation
     uid: 'excel!Excel.Interfaces.WorksheetData#enableCalculation:member'
     package: excel!
@@ -123,7 +124,7 @@ properties:
     syntax:
       content: 'horizontalPageBreaks?: Excel.Interfaces.PageBreakData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PageBreakData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PageBreakData:interface" />[]'
   - name: id
     uid: 'excel!Excel.Interfaces.WorksheetData#id:member'
     package: excel!
@@ -179,7 +180,7 @@ properties:
     syntax:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NamedItemData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />[]'
   - name: pageLayout
     uid: 'excel!Excel.Interfaces.WorksheetData#pageLayout:member'
     package: excel!
@@ -197,7 +198,7 @@ properties:
     syntax:
       content: 'pageLayout?: Excel.Interfaces.PageLayoutData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PageLayoutData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PageLayoutData:interface" />'
   - name: pivotTables
     uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
     package: excel!
@@ -215,7 +216,7 @@ properties:
     syntax:
       content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotTableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />[]'
   - name: position
     uid: 'excel!Excel.Interfaces.WorksheetData#position:member'
     package: excel!
@@ -252,7 +253,7 @@ properties:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="WorksheetProtectionData:interface"
+          <xref uid="excel!Excel.Interfaces.WorksheetProtectionData:interface"
           />
   - name: shapes
     uid: 'excel!Excel.Interfaces.WorksheetData#shapes:member'
@@ -271,7 +272,7 @@ properties:
     syntax:
       content: 'shapes?: Excel.Interfaces.ShapeData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeData:interface" />[]'
   - name: showGridlines
     uid: 'excel!Excel.Interfaces.WorksheetData#showGridlines:member'
     package: excel!
@@ -325,7 +326,7 @@ properties:
     syntax:
       content: 'slicers?: Excel.Interfaces.SlicerData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerData:interface" />[]'
   - name: standardHeight
     uid: 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
     package: excel!
@@ -406,7 +407,7 @@ properties:
     syntax:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />[]'
   - name: verticalPageBreaks
     uid: 'excel!Excel.Interfaces.WorksheetData#verticalPageBreaks:member'
     package: excel!
@@ -425,7 +426,7 @@ properties:
     syntax:
       content: 'verticalPageBreaks?: Excel.Interfaces.PageBreakData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PageBreakData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PageBreakData:interface" />[]'
   - name: visibility
     uid: 'excel!Excel.Interfaces.WorksheetData#visibility:member'
     package: excel!
@@ -446,5 +447,5 @@ properties:
         "VeryHidden";
       return:
         type: >-
-          excel!Excel.<xref uid="SheetVisibility:enum" /> | "Visible" | "Hidden"
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
           | "VeryHidden"

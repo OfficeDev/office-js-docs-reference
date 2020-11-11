@@ -71,5 +71,5 @@ properties:
         | "PictureAndTexture" | "Mixed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeFillType:enum" /> | "NoFill" | "Solid" |
+          <xref uid="excel!Excel.ShapeFillType:enum" /> | "NoFill" | "Solid" |
           "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"

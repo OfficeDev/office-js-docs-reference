@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'contentControl: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: eventType
     uid: 'word!Word.ContentControlEventArgs#eventType:member'
     package: word!
@@ -55,7 +55,7 @@ properties:
         "AnnotationDeleted";
       return:
         type: >-
-          word!Word.<xref uid="EventType:enum" /> | "ContentControlDeleted" |
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
           "ContentControlSelectionChanged" | "ContentControlDataChanged" |
           "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
           "AnnotationDeleted"

@@ -48,4 +48,4 @@ properties:
     syntax:
       content: 'numberFormat?: Excel.Interfaces.NumberFormatInfoData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NumberFormatInfoData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.NumberFormatInfoData:interface" />'

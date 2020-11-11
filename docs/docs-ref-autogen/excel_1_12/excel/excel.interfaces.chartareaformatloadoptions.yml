@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBorderLoadOptions:interface" />'
   - name: colorScheme
     uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions#colorScheme:member'
     package: excel!
@@ -85,7 +85,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontLoadOptions:interface" />'
   - name: roundedCorners
     uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions#roundedCorners:member'
     package: excel!

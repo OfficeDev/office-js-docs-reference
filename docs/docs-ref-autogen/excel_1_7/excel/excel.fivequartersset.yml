@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'blackCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: circleWithOneWhiteQuarter
     uid: 'excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'circleWithOneWhiteQuarter: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: circleWithThreeWhiteQuarters
     uid: 'excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'circleWithThreeWhiteQuarters: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: circleWithTwoWhiteQuarters
     uid: 'excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member'
     package: excel!
@@ -59,7 +59,7 @@ properties:
     syntax:
       content: 'circleWithTwoWhiteQuarters: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: whiteCircleAllWhiteQuarters
     uid: 'excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member'
     package: excel!
@@ -71,4 +71,4 @@ properties:
     syntax:
       content: 'whiteCircleAllWhiteQuarters: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

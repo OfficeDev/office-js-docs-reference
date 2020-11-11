@@ -219,7 +219,7 @@ methods:
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
         - id: asyncContext
           description: Optional. Any state data that is passed to the callback method.

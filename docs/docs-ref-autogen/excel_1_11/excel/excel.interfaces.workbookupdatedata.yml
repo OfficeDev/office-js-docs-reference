@@ -69,8 +69,8 @@ properties:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DocumentPropertiesUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface" />
   - name: usePrecisionAsDisplayed
     uid: 'excel!Excel.Interfaces.WorkbookUpdateData#usePrecisionAsDisplayed:member'
     package: excel!

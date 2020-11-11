@@ -51,7 +51,7 @@ properties:
     syntax:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ApplicationLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ApplicationLoadOptions:interface" />'
   - name: autoSave
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#autoSave:member'
     package: excel!
@@ -88,8 +88,8 @@ properties:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="BindingCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.BindingCollectionLoadOptions:interface" />
   - name: calculationEngineVersion
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#calculationEngineVersion:member'
     package: excel!
@@ -166,8 +166,9 @@ properties:
       content: 'linkedDataTypes?: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="LinkedDataTypeCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface"
+          />
   - name: name
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     package: excel!
@@ -222,8 +223,9 @@ properties:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DocumentPropertiesLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface"
+          />
   - name: protection
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
     package: excel!
@@ -242,8 +244,9 @@ properties:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="WorkbookProtectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface"
+          />
   - name: readOnly
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#readOnly:member'
     package: excel!
@@ -299,8 +302,8 @@ properties:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
   - name: use1904DateSystem
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#use1904DateSystem:member'
     package: excel!

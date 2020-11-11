@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.NamedItemData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NamedItemData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />[]'

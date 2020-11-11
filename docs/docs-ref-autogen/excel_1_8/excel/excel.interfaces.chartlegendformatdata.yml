@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBorderData:interface" />'
   - name: font
     uid: 'excel!Excel.Interfaces.ChartLegendFormatData#font:member'
     package: excel!
@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartFontData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontData:interface" />'

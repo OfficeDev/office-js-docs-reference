@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.RangeData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="RangeData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.RangeData:interface" />[]'

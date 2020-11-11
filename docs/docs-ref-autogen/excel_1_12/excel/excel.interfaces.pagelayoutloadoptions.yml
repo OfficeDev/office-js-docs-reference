@@ -198,8 +198,8 @@ properties:
       content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="HeaderFooterGroupLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface" />
   - name: leftMargin
     uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions#leftMargin:member'
     package: excel!

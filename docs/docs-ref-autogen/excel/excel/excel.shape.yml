@@ -86,7 +86,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: fill
     uid: 'excel!Excel.Shape#fill:member'
     package: excel!
@@ -104,7 +104,7 @@ properties:
     syntax:
       content: 'readonly fill: Excel.ShapeFill;'
       return:
-        type: 'excel!Excel.<xref uid="ShapeFill:class" />'
+        type: '<xref uid="excel!Excel.ShapeFill:class" />'
         description: >-
 
 
@@ -146,7 +146,7 @@ properties:
     syntax:
       content: 'readonly geometricShape: Excel.GeometricShape;'
       return:
-        type: 'excel!Excel.<xref uid="GeometricShape:class" />'
+        type: '<xref uid="excel!Excel.GeometricShape:class" />'
   - name: geometricShapeType
     uid: 'excel!Excel.Shape#geometricShapeType:member'
     package: excel!
@@ -217,7 +217,7 @@ properties:
         "ChartStar" | "ChartPlus";
       return:
         type: >-
-          excel!Excel.<xref uid="GeometricShapeType:enum" /> | "LineInverse" |
+          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" |
           "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
           "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
           "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
@@ -287,7 +287,7 @@ properties:
     syntax:
       content: 'readonly group: Excel.ShapeGroup;'
       return:
-        type: 'excel!Excel.<xref uid="ShapeGroup:class" />'
+        type: '<xref uid="excel!Excel.ShapeGroup:class" />'
         description: >-
 
 
@@ -365,7 +365,7 @@ properties:
     syntax:
       content: 'readonly image: Excel.Image;'
       return:
-        type: 'excel!Excel.<xref uid="Image:class" />'
+        type: '<xref uid="excel!Excel.Image:class" />'
   - name: left
     uid: 'excel!Excel.Shape#left:member'
     package: excel!
@@ -425,7 +425,7 @@ properties:
     syntax:
       content: 'readonly line: Excel.Line;'
       return:
-        type: 'excel!Excel.<xref uid="Line:class" />'
+        type: '<xref uid="excel!Excel.Line:class" />'
         description: >-
 
 
@@ -469,7 +469,7 @@ properties:
     syntax:
       content: 'readonly lineFormat: Excel.ShapeLineFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ShapeLineFormat:class" />'
+        type: '<xref uid="excel!Excel.ShapeLineFormat:class" />'
   - name: lockAspectRatio
     uid: 'excel!Excel.Shape#lockAspectRatio:member'
     package: excel!
@@ -546,8 +546,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="ShapeActivatedEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ShapeActivatedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.Shape#onDeactivated:member'
     package: excel!
@@ -568,9 +568,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="ShapeDeactivatedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ShapeDeactivatedEventArgs:interface" />&gt;
   - name: parentGroup
     uid: 'excel!Excel.Shape#parentGroup:member'
     package: excel!
@@ -588,7 +587,7 @@ properties:
     syntax:
       content: 'readonly parentGroup: Excel.Shape;'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
   - name: placement
     uid: 'excel!Excel.Shape#placement:member'
     package: excel!
@@ -607,7 +606,7 @@ properties:
       content: 'placement: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";'
       return:
         type: >-
-          excel!Excel.<xref uid="Placement:enum" /> | "TwoCell" | "OneCell" |
+          <xref uid="excel!Excel.Placement:enum" /> | "TwoCell" | "OneCell" |
           "Absolute"
   - name: rotation
     uid: 'excel!Excel.Shape#rotation:member'
@@ -668,7 +667,7 @@ properties:
     syntax:
       content: 'readonly textFrame: Excel.TextFrame;'
       return:
-        type: 'excel!Excel.<xref uid="TextFrame:class" />'
+        type: '<xref uid="excel!Excel.TextFrame:class" />'
   - name: top
     uid: 'excel!Excel.Shape#top:member'
     package: excel!
@@ -709,7 +708,7 @@ properties:
         "GeometricShape" | "Group" | "Line";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeType:enum" /> | "Unsupported" | "Image" |
+          <xref uid="excel!Excel.ShapeType:enum" /> | "Unsupported" | "Image" |
           "GeometricShape" | "Group" | "Line"
   - name: visible
     uid: 'excel!Excel.Shape#visible:member'
@@ -790,9 +789,9 @@ methods:
           description: >-
             The sheet to which the shape object will be pasted. The default
             value is the copied Shape's worksheet.
-          type: 'excel!Excel.<xref uid="Worksheet:class" /> | string'
+          type: '<xref uid="excel!Excel.Worksheet:class" /> | string'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: delete()
     uid: 'excel!Excel.Shape#delete:member(1)'
@@ -862,9 +861,9 @@ methods:
       parameters:
         - id: format
           description: Specifies the format of the image.
-          type: 'excel!Excel.<xref uid="PictureFormat:enum" />'
+          type: '<xref uid="excel!Excel.PictureFormat:enum" />'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: >-
 
 
@@ -914,7 +913,7 @@ methods:
           description: Specifies the format of the image.
           type: '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: incrementLeft(increment)
     uid: 'excel!Excel.Shape#incrementLeft:member(1)'
@@ -1066,9 +1065,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Shape#load:member(2)'
@@ -1089,7 +1088,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.Shape#load:member(3)'
@@ -1120,7 +1119,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
     uid: 'excel!Excel.Shape#scaleHeight:member(1)'
@@ -1154,13 +1153,13 @@ methods:
             Specifies whether the shape is scaled relative to its original or
             current size. The original size scaling option only works for
             images.
-          type: 'excel!Excel.<xref uid="ShapeScaleType:enum" />'
+          type: '<xref uid="excel!Excel.ShapeScaleType:enum" />'
         - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position
             when the shape is scaled. If omitted, it represents the shape's
             upper left corner retains its position.
-          type: 'excel!Excel.<xref uid="ShapeScaleFrom:enum" />'
+          type: '<xref uid="excel!Excel.ShapeScaleFrom:enum" />'
       return:
         type: void
         description: >-
@@ -1258,13 +1257,13 @@ methods:
             Specifies whether the shape is scaled relative to its original or
             current size. The original size scaling option only works for
             images.
-          type: 'excel!Excel.<xref uid="ShapeScaleType:enum" />'
+          type: '<xref uid="excel!Excel.ShapeScaleType:enum" />'
         - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position
             when the shape is scaled. If omitted, it represents the shape's
             upper left corner retains its position.
-          type: 'excel!Excel.<xref uid="ShapeScaleFrom:enum" />'
+          type: '<xref uid="excel!Excel.ShapeScaleFrom:enum" />'
       return:
         type: void
         description: ''
@@ -1335,12 +1334,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ShapeUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ShapeUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1359,7 +1358,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Shape:class" />'
+          type: '<xref uid="excel!Excel.Shape:class" />'
       return:
         type: void
         description: ''
@@ -1385,7 +1384,7 @@ methods:
           description: >-
             Where to move the shape in the z-order stack relative to the other
             shapes. See Excel.ShapeZOrder for details.
-          type: 'excel!Excel.<xref uid="ShapeZOrder:enum" />'
+          type: '<xref uid="excel!Excel.ShapeZOrder:enum" />'
       return:
         type: void
         description: >-
@@ -1453,6 +1452,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ShapeData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

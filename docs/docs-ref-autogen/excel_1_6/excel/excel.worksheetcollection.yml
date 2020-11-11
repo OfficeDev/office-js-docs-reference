@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.WorksheetCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Worksheet[];'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />[]'
+        type: '<xref uid="excel!Excel.Worksheet:class" />[]'
 methods:
   - name: add(name)
     uid: 'excel!Excel.WorksheetCollection#add:member(1)'
@@ -68,7 +68,7 @@ methods:
             new worksheet.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: |-
 
 
@@ -106,7 +106,7 @@ methods:
     syntax:
       content: 'getActiveWorksheet(): Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: |-
 
 
@@ -149,7 +149,7 @@ methods:
             any hidden ones.
           type: boolean
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getFirst(visibleOnly)
     uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
@@ -174,7 +174,7 @@ methods:
             any hidden ones.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: >-
 
 
@@ -233,7 +233,7 @@ methods:
           description: The Name or ID of the worksheet.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: getItemOrNullObject(key)
     uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
@@ -257,7 +257,7 @@ methods:
           description: The Name or ID of the worksheet.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: getLast(visibleOnly)
     uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
@@ -282,7 +282,7 @@ methods:
             any hidden ones.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: >-
 
 
@@ -338,12 +338,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="WorksheetCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="WorksheetCollection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.WorksheetCollection#load:member(2)'
@@ -364,7 +364,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetCollection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
         description: |-
 
 
@@ -409,9 +409,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetCollection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.WorksheetCollection#toJSON:member(1)'
@@ -434,7 +434,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="WorksheetCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

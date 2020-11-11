@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.FloatingInk#id:member'
     package: onenote!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly inkStrokes: OneNote.InkStrokeCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStrokeCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
   - name: pageContent
     uid: 'onenote!OneNote.FloatingInk#pageContent:member'
     package: onenote!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'readonly pageContent: OneNote.PageContent;'
       return:
-        type: 'onenote!OneNote.<xref uid="PageContent:class" />'
+        type: '<xref uid="onenote!OneNote.PageContent:class" />'
 methods:
   - name: load(option)
     uid: 'onenote!OneNote.FloatingInk#load:member(1)'
@@ -123,10 +123,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="FloatingInkLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="FloatingInk:class" />'
+        type: '<xref uid="onenote!OneNote.FloatingInk:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.FloatingInk#load:member(2)'
@@ -147,7 +147,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="FloatingInk:class" />'
+        type: '<xref uid="onenote!OneNote.FloatingInk:class" />'
         description: |-
 
 
@@ -215,7 +215,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="FloatingInk:class" />'
+        type: '<xref uid="onenote!OneNote.FloatingInk:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.FloatingInk#toJSON:member(1)'
@@ -236,7 +236,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.FloatingInkData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="FloatingInkData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.FloatingInk#track:member(1)'
@@ -256,7 +256,7 @@ methods:
     syntax:
       content: 'track(): OneNote.FloatingInk;'
       return:
-        type: 'onenote!OneNote.<xref uid="FloatingInk:class" />'
+        type: '<xref uid="onenote!OneNote.FloatingInk:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.FloatingInk#untrack:member(1)'
@@ -275,6 +275,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.FloatingInk;'
       return:
-        type: 'onenote!OneNote.<xref uid="FloatingInk:class" />'
+        type: '<xref uid="onenote!OneNote.FloatingInk:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -40,7 +40,7 @@ properties:
         "Hidden";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlAppearance:enum" /> | "BoundingBox"
+          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
           | "Tags" | "Hidden"
   - name: cannotDelete
     uid: 'word!Word.ContentControl#cannotDelete:member'
@@ -117,7 +117,7 @@ properties:
     syntax:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
   - name: context
     uid: 'word!Word.ContentControl#context:member'
     package: word!
@@ -131,7 +131,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: font
     uid: 'word!Word.ContentControl#font:member'
     package: word!
@@ -150,7 +150,7 @@ properties:
     syntax:
       content: 'readonly font: Word.Font;'
       return:
-        type: 'word!Word.<xref uid="Font:class" />'
+        type: '<xref uid="word!Word.Font:class" />'
   - name: id
     uid: 'word!Word.ContentControl#id:member'
     package: word!
@@ -187,7 +187,7 @@ properties:
     syntax:
       content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
-        type: 'word!Word.<xref uid="InlinePictureCollection:class" />'
+        type: '<xref uid="word!Word.InlinePictureCollection:class" />'
   - name: lists
     uid: 'word!Word.ContentControl#lists:member'
     package: word!
@@ -205,7 +205,7 @@ properties:
     syntax:
       content: 'readonly lists: Word.ListCollection;'
       return:
-        type: 'word!Word.<xref uid="ListCollection:class" />'
+        type: '<xref uid="word!Word.ListCollection:class" />'
   - name: onDataChanged
     uid: 'word!Word.ContentControl#onDataChanged:member'
     package: word!
@@ -228,8 +228,8 @@ properties:
         OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;word!Word.<xref uid="ContentControlEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
   - name: onDeleted
     uid: 'word!Word.ContentControl#onDeleted:member'
     package: word!
@@ -252,8 +252,8 @@ properties:
         OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;word!Word.<xref uid="ContentControlEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'word!Word.ContentControl#onSelectionChanged:member'
     package: word!
@@ -274,8 +274,8 @@ properties:
         OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;word!Word.<xref uid="ContentControlEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
   - name: paragraphs
     uid: 'word!Word.ContentControl#paragraphs:member'
     package: word!
@@ -293,7 +293,7 @@ properties:
     syntax:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
   - name: parentBody
     uid: 'word!Word.ContentControl#parentBody:member'
     package: word!
@@ -311,7 +311,7 @@ properties:
     syntax:
       content: 'readonly parentBody: Word.Body;'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
   - name: parentContentControl
     uid: 'word!Word.ContentControl#parentContentControl:member'
     package: word!
@@ -330,7 +330,7 @@ properties:
     syntax:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: parentContentControlOrNullObject
     uid: 'word!Word.ContentControl#parentContentControlOrNullObject:member'
     package: word!
@@ -349,7 +349,7 @@ properties:
     syntax:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: parentTable
     uid: 'word!Word.ContentControl#parentTable:member'
     package: word!
@@ -368,7 +368,7 @@ properties:
     syntax:
       content: 'readonly parentTable: Word.Table;'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
   - name: parentTableCell
     uid: 'word!Word.ContentControl#parentTableCell:member'
     package: word!
@@ -387,7 +387,7 @@ properties:
     syntax:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
   - name: parentTableCellOrNullObject
     uid: 'word!Word.ContentControl#parentTableCellOrNullObject:member'
     package: word!
@@ -406,7 +406,7 @@ properties:
     syntax:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
   - name: parentTableOrNullObject
     uid: 'word!Word.ContentControl#parentTableOrNullObject:member'
     package: word!
@@ -425,7 +425,7 @@ properties:
     syntax:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
   - name: placeholderText
     uid: 'word!Word.ContentControl#placeholderText:member'
     package: word!
@@ -555,7 +555,7 @@ properties:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type: >-
-          word!Word.<xref uid="Style:enum" /> | "Other" | "Normal" | "Heading1"
+          <xref uid="word!Word.Style:enum" /> | "Other" | "Normal" | "Heading1"
           | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
           "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
           "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" |
@@ -632,7 +632,7 @@ properties:
         "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlType:enum" /> | "Unknown" |
+          <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
           "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
@@ -655,7 +655,7 @@ properties:
     syntax:
       content: 'readonly tables: Word.TableCollection;'
       return:
-        type: 'word!Word.<xref uid="TableCollection:class" />'
+        type: '<xref uid="word!Word.TableCollection:class" />'
   - name: tag
     uid: 'word!Word.ContentControl#tag:member'
     package: word!
@@ -769,7 +769,7 @@ properties:
         "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlType:enum" /> | "Unknown" |
+          <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
           "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
@@ -927,7 +927,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -987,7 +987,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -1051,9 +1051,9 @@ methods:
           description: >-
             Optional. The range location can be 'Whole', 'Before', 'Start',
             'End', 'After', or 'Content'.
-          type: 'word!Word.<xref uid="RangeLocation:enum" />'
+          type: '<xref uid="word!Word.RangeLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: getRange(rangeLocationString)
     uid: 'word!Word.ContentControl#getRange:member(2)'
@@ -1081,7 +1081,7 @@ methods:
             'End', 'After', or 'Content'.
           type: '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'getTextRanges(endingMarks, trimSpacing)'
     uid: 'word!Word.ContentControl#getTextRanges:member(1)'
@@ -1117,7 +1117,7 @@ methods:
             ranges are included in the range collection.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: 'insertBreak(breakType, insertLocation)'
     uid: 'word!Word.ContentControl#insertBreak:member(1)'
@@ -1142,10 +1142,10 @@ methods:
       parameters:
         - id: breakType
           description: Required. Type of break.
-          type: 'word!Word.<xref uid="BreakType:enum" />'
+          type: '<xref uid="word!Word.BreakType:enum" />'
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: void
         description: ''
@@ -1250,9 +1250,9 @@ methods:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace'
             cannot be used with 'RichTextTable' and 'RichTextTableRow' content
             controls.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertFileFromBase64(base64File, insertLocationString)'
     uid: 'word!Word.ContentControl#insertFileFromBase64:member(2)'
@@ -1283,7 +1283,7 @@ methods:
             controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertHtml(html, insertLocation)'
     uid: 'word!Word.ContentControl#insertHtml:member(1)'
@@ -1312,9 +1312,9 @@ methods:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace'
             cannot be used with 'RichTextTable' and 'RichTextTableRow' content
             controls.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertHtml(html, insertLocationString)'
     uid: 'word!Word.ContentControl#insertHtml:member(2)'
@@ -1345,7 +1345,7 @@ methods:
             controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: |-
 
 
@@ -1419,9 +1419,9 @@ methods:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace'
             cannot be used with 'RichTextTable' and 'RichTextTableRow' content
             controls.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
     uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(2)'
@@ -1456,7 +1456,7 @@ methods:
             controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: 'insertOoxml(ooxml, insertLocation)'
     uid: 'word!Word.ContentControl#insertOoxml:member(1)'
@@ -1485,9 +1485,9 @@ methods:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace'
             cannot be used with 'RichTextTable' and 'RichTextTableRow' content
             controls.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertOoxml(ooxml, insertLocationString)'
     uid: 'word!Word.ContentControl#insertOoxml:member(2)'
@@ -1518,7 +1518,7 @@ methods:
             controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: >-
 
 
@@ -1599,9 +1599,9 @@ methods:
             Required. The value can be 'Start', 'End', 'Before', or 'After'.
             'Before' and 'After' cannot be used with 'RichTextTable',
             'RichTextTableRow' and 'RichTextTableCell' content controls.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: 'insertParagraph(paragraphText, insertLocationString)'
     uid: 'word!Word.ContentControl#insertParagraph:member(2)'
@@ -1632,7 +1632,7 @@ methods:
             'RichTextTableRow' and 'RichTextTableCell' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: |-
 
 
@@ -1705,14 +1705,14 @@ methods:
             Required. The value can be 'Start', 'End', 'Before', or 'After'.
             'Before' and 'After' cannot be used with 'RichTextTable',
             'RichTextTableRow' and 'RichTextTableCell' content controls.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: values
           description: >-
             Optional 2D array. Cells are filled if the corresponding strings are
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
         description: ''
   - name: 'insertTable(rowCount, columnCount, insertLocationString, values)'
     uid: 'word!Word.ContentControl#insertTable:member(2)'
@@ -1753,7 +1753,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
         description: ''
   - name: 'insertText(text, insertLocation)'
     uid: 'word!Word.ContentControl#insertText:member(1)'
@@ -1782,9 +1782,9 @@ methods:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace'
             cannot be used with 'RichTextTable' and 'RichTextTableRow' content
             controls.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertText(text, insertLocationString)'
     uid: 'word!Word.ContentControl#insertText:member(2)'
@@ -1815,7 +1815,7 @@ methods:
             controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: >-
 
 
@@ -1886,10 +1886,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+            <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
             />
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: |-
 
 
@@ -1979,7 +1979,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.ContentControl#load:member(3)'
@@ -2010,7 +2010,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
   - name: 'search(searchText, searchOptions)'
     uid: 'word!Word.ContentControl#search:member(1)'
@@ -2046,7 +2046,7 @@ methods:
         - id: searchOptions
           description: Optional. Options for the search.
           type: |-
-            word!Word.<xref uid="SearchOptions:class" /> | {
+            <xref uid="word!Word.SearchOptions:class" /> | {
                         ignorePunct?: boolean;
                         ignoreSpace?: boolean;
                         matchCase?: boolean;
@@ -2056,7 +2056,7 @@ methods:
                         matchWildcards?: boolean;
                     }
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: |-
 
 
@@ -2119,7 +2119,7 @@ methods:
           description: >-
             Optional. The selection mode can be 'Select', 'Start', or 'End'.
             'Select' is the default.
-          type: 'word!Word.<xref uid="SelectionMode:enum" />'
+          type: '<xref uid="word!Word.SelectionMode:enum" />'
       return:
         type: void
         description: ''
@@ -2220,13 +2220,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            word!Word.Interfaces.<xref uid="ContentControlUpdateData:interface"
+            <xref uid="word!Word.Interfaces.ContentControlUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -2245,7 +2245,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="ContentControl:class" />'
+          type: '<xref uid="word!Word.ContentControl:class" />'
       return:
         type: void
         description: ''
@@ -2293,7 +2293,7 @@ methods:
             ranges are included in the range collection.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.ContentControl#toJSON:member(1)'
@@ -2314,7 +2314,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.ContentControlData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ContentControlData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.ContentControl#track:member(1)'
@@ -2334,7 +2334,7 @@ methods:
     syntax:
       content: 'track(): Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.ContentControl#untrack:member(1)'
@@ -2353,6 +2353,6 @@ methods:
     syntax:
       content: 'untrack(): Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

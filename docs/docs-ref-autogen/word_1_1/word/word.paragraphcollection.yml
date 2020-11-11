@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: items
     uid: 'word!Word.ParagraphCollection#items:member'
     package: word!
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'readonly items: Word.Paragraph[];'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />[]'
+        type: '<xref uid="word!Word.Paragraph:class" />[]'
 methods:
   - name: load(options)
     uid: 'word!Word.ParagraphCollection#load:member(1)'
@@ -61,11 +61,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="ParagraphCollectionLoadOptions:interface" /> &
-            word!Word.Interfaces.<xref uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="word!Word.Interfaces.ParagraphCollectionLoadOptions:interface"
+            /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: |-
 
 
@@ -119,7 +120,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.ParagraphCollection#load:member(3)'
@@ -142,9 +143,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.ParagraphCollection#toJSON:member(1)'
@@ -166,7 +167,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.ParagraphCollectionData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ParagraphCollectionData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ParagraphCollectionData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.ParagraphCollection#track:member(1)'
@@ -186,7 +187,7 @@ methods:
     syntax:
       content: 'track(): Word.ParagraphCollection;'
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.ParagraphCollection#untrack:member(1)'
@@ -205,6 +206,6 @@ methods:
     syntax:
       content: 'untrack(): Word.ParagraphCollection;'
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: count
     uid: 'onenote!OneNote.SectionGroupCollection#count:member'
     package: onenote!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: OneNote.SectionGroup[];'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroup:class" />[]'
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />[]'
 methods:
   - name: getByName(name)
     uid: 'onenote!OneNote.SectionGroupCollection#getByName:member(1)'
@@ -81,7 +81,7 @@ methods:
           description: The name of the section group.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroupCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroupCollection:class" />'
         description: |-
 
 
@@ -144,7 +144,7 @@ methods:
             group in the collection.
           type: number | string
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroup:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'onenote!OneNote.SectionGroupCollection#getItemAt:member(1)'
@@ -167,7 +167,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroup:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.SectionGroupCollection#load:member(1)'
@@ -209,12 +209,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="SectionGroupCollectionLoadOptions:interface" /> &
-            onenote!OneNote.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface"
+            /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroupCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroupCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.SectionGroupCollection#load:member(2)'
@@ -235,7 +235,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroupCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroupCollection:class" />'
         description: |-
 
 
@@ -285,9 +285,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroupCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroupCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.SectionGroupCollection#toJSON:member(1)'
@@ -310,8 +310,9 @@ methods:
       content: 'toJSON(): OneNote.Interfaces.SectionGroupCollectionData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionGroupCollectionData:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionGroupCollectionData:interface"
+          />
         description: ''
   - name: track()
     uid: 'onenote!OneNote.SectionGroupCollection#track:member(1)'
@@ -331,7 +332,7 @@ methods:
     syntax:
       content: 'track(): OneNote.SectionGroupCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroupCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroupCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.SectionGroupCollection#untrack:member(1)'
@@ -350,6 +351,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.SectionGroupCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroupCollection:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroupCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

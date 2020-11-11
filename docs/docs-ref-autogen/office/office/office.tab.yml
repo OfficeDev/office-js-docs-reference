@@ -20,7 +20,7 @@ properties:
     syntax:
       content: 'controls: Control[];'
       return:
-        type: 'office!Office.<xref uid="Control:interface" />[]'
+        type: '<xref uid="office!Office.Control:interface" />[]'
   - name: id
     uid: 'office!Office.Tab#id:member'
     package: office!

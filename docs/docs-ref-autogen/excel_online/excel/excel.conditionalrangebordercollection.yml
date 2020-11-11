@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'readonly bottom: Excel.ConditionalRangeBorder;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
   - name: context
     uid: 'excel!Excel.ConditionalRangeBorderCollection#context:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: count
     uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
     package: excel!
@@ -76,7 +76,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.ConditionalRangeBorder[];'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />[]'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />[]'
   - name: left
     uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     package: excel!
@@ -94,7 +94,7 @@ properties:
     syntax:
       content: 'readonly left: Excel.ConditionalRangeBorder;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
   - name: right
     uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
     package: excel!
@@ -112,7 +112,7 @@ properties:
     syntax:
       content: 'readonly right: Excel.ConditionalRangeBorder;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
   - name: top
     uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
     package: excel!
@@ -130,7 +130,7 @@ properties:
     syntax:
       content: 'readonly top: Excel.ConditionalRangeBorder;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
 methods:
   - name: getItem(index)
     uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
@@ -155,9 +155,9 @@ methods:
           description: >-
             Index value of the border object to be retrieved. See
             Excel.ConditionalRangeBorderIndex for details.
-          type: 'excel!Excel.<xref uid="ConditionalRangeBorderIndex:enum" />'
+          type: '<xref uid="excel!Excel.ConditionalRangeBorderIndex:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
         description: ''
   - name: getItem(indexString)
     uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(2)'
@@ -184,7 +184,7 @@ methods:
             Excel.ConditionalRangeBorderIndex for details.
           type: '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
@@ -207,7 +207,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
@@ -229,12 +229,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalRangeBorderCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorderCollection:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorderCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(2)'
@@ -257,7 +257,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorderCollection:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorderCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(3)'
@@ -280,9 +280,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorderCollection:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorderCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.ConditionalRangeBorderCollection#toJSON:member(1)'
@@ -305,7 +305,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

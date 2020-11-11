@@ -73,5 +73,5 @@ properties:
       content: 'searchDirection?: Excel.SearchDirection | "Forward" | "Backwards";'
       return:
         type: >-
-          excel!Excel.<xref uid="SearchDirection:enum" /> | "Forward" |
+          <xref uid="excel!Excel.SearchDirection:enum" /> | "Forward" |
           "Backwards"

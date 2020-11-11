@@ -27,7 +27,7 @@ properties:
     syntax:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ContentControlData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.BodyData#font:member'
     package: word!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: inlinePictures
     uid: 'word!Word.Interfaces.BodyData#inlinePictures:member'
     package: word!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="InlinePictureData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
   - name: paragraphs
     uid: 'word!Word.Interfaces.BodyData#paragraphs:member'
     package: word!
@@ -83,7 +83,7 @@ properties:
     syntax:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ParagraphData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'
   - name: style
     uid: 'word!Word.Interfaces.BodyData#style:member'
     package: word!

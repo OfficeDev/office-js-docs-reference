@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
   - name: context
     uid: 'word!Word.Section#context:member'
     package: word!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
 methods:
   - name: getFooter(type)
     uid: 'word!Word.Section#getFooter:member(1)'
@@ -70,9 +70,9 @@ methods:
           description: >-
             Required. The type of footer to return. This value can be:
             'Primary', 'FirstPage', or 'EvenPages'.
-          type: 'word!Word.<xref uid="HeaderFooterType:enum" />'
+          type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
         description: >-
 
 
@@ -115,7 +115,7 @@ methods:
             'Primary', 'FirstPage', or 'EvenPages'.
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
         description: |-
 
 
@@ -180,9 +180,9 @@ methods:
           description: >-
             Required. The type of header to return. This value can be:
             'Primary', 'FirstPage', or 'EvenPages'.
-          type: 'word!Word.<xref uid="HeaderFooterType:enum" />'
+          type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
         description: >-
 
 
@@ -225,7 +225,7 @@ methods:
             'Primary', 'FirstPage', or 'EvenPages'.
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
         description: |-
 
 
@@ -286,7 +286,7 @@ methods:
     syntax:
       content: 'getNext(): Word.Section;'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: getNextOrNullObject()
     uid: 'word!Word.Section#getNextOrNullObject:member(1)'
@@ -306,7 +306,7 @@ methods:
     syntax:
       content: 'getNextOrNullObject(): Word.Section;'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.Section#load:member(1)'
@@ -323,9 +323,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="SectionLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.SectionLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.Section#load:member(2)'
@@ -346,7 +346,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.Section#load:member(3)'
@@ -377,7 +377,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.Section#set:member(1)'
@@ -403,12 +403,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="SectionUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.SectionUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -427,7 +427,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="Section:class" />'
+          type: '<xref uid="word!Word.Section:class" />'
       return:
         type: void
         description: ''
@@ -449,7 +449,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.SectionData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SectionData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.Section#track:member(1)'
@@ -469,7 +469,7 @@ methods:
     syntax:
       content: 'track(): Word.Section;'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.Section#untrack:member(1)'
@@ -488,6 +488,6 @@ methods:
     syntax:
       content: 'untrack(): Word.Section;'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -81,8 +81,9 @@ properties:
       content: 'contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="PageContentCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface"
+          />
   - name: id
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#id:member'
     package: onenote!
@@ -120,8 +121,8 @@ properties:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />
   - name: pageLevel
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#pageLevel:member'
     package: onenote!
@@ -157,7 +158,7 @@ properties:
     syntax:
       content: 'parentSection?: OneNote.Interfaces.SectionLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="SectionLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionLoadOptions:interface" />'
   - name: title
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#title:member'
     package: onenote!

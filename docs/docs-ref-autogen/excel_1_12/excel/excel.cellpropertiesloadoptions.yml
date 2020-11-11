@@ -105,7 +105,7 @@ properties:
     syntax:
       content: 'format?: Excel.CellPropertiesFormatLoadOptions;'
       return:
-        type: 'excel!Excel.<xref uid="CellPropertiesFormatLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.CellPropertiesFormatLoadOptions:interface" />'
   - name: hidden
     uid: 'excel!Excel.CellPropertiesLoadOptions#hidden:member'
     package: excel!

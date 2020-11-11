@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontUpdateData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
   - name: horizontalAlignment
     uid: 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member'
     package: word!
@@ -51,7 +51,7 @@ properties:
         "Centered" | "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: preferredHeight
     uid: 'word!Word.Interfaces.TableRowUpdateData#preferredHeight:member'
@@ -129,5 +129,5 @@ properties:
         | "Bottom";
       return:
         type: >-
-          word!Word.<xref uid="VerticalAlignment:enum" /> | "Mixed" | "Top" |
+          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
           "Center" | "Bottom"

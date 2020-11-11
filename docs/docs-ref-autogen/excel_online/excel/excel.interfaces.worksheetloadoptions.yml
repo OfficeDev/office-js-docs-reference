@@ -51,7 +51,7 @@ properties:
     syntax:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="AutoFilterLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface" />'
   - name: charts
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
     package: excel!
@@ -70,8 +70,8 @@ properties:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartCollectionLoadOptions:interface" />
   - name: enableCalculation
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#enableCalculation:member'
     package: excel!
@@ -147,7 +147,7 @@ properties:
     syntax:
       content: 'pageLayout?: Excel.Interfaces.PageLayoutLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PageLayoutLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PageLayoutLoadOptions:interface" />'
   - name: position
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
     package: excel!
@@ -184,8 +184,9 @@ properties:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="WorksheetProtectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface"
+          />
   - name: showGridlines
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
     package: excel!
@@ -303,8 +304,8 @@ properties:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
   - name: visibility
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
     package: excel!

@@ -51,8 +51,9 @@ properties:
       content: 'arrayValues?: Excel.Interfaces.NamedItemArrayValuesLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="NamedItemArrayValuesLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface"
+          />
   - name: comment
     uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#comment:member'
     package: excel!
@@ -201,7 +202,7 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
   - name: worksheetOrNullObject
     uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#worksheetOrNullObject:member'
     package: excel!
@@ -220,4 +221,4 @@ properties:
     syntax:
       content: 'worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

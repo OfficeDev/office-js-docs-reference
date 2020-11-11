@@ -25,9 +25,9 @@ properties:
       content: 'previousObjects?: ClientObject | ClientObject[] | ClientRequestContext;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientObject:class" /> |
-          office!OfficeExtension.<xref uid="ClientObject:class" />[] |
-          office!OfficeExtension.<xref uid="ClientRequestContext:class" />
+          <xref uid="office!OfficeExtension.ClientObject:class" /> | <xref
+          uid="office!OfficeExtension.ClientObject:class" />[] | <xref
+          uid="office!OfficeExtension.ClientRequestContext:class" />
   - name: session
     uid: 'office!OfficeExtension.RunOptions#session:member'
     package: office!
@@ -40,5 +40,5 @@ properties:
       content: 'session?: RequestUrlAndHeaderInfo | T;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="RequestUrlAndHeaderInfo:interface"
+          <xref uid="office!OfficeExtension.RequestUrlAndHeaderInfo:interface"
           /> | T

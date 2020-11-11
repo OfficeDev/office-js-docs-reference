@@ -39,5 +39,5 @@ properties:
     syntax:
       content: 'readonly document: Document;'
       return:
-        type: 'word!Word.<xref uid="Document:class" />'
-extends: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+        type: '<xref uid="word!Word.Document:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'

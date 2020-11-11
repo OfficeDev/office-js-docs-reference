@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.SlicerCollection#items:member'
     package: excel!
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Slicer[];'
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />[]'
+        type: '<xref uid="excel!Excel.Slicer:class" />[]'
 methods:
   - name: 'add(slicerSource, sourceField, slicerDestination)'
     uid: 'excel!Excel.SlicerCollection#add:member(1)'
@@ -72,25 +72,25 @@ methods:
             object. When a string is passed, it is interpreted as the name/id of
             a PivotTable/Table.
           type: >-
-            string | excel!Excel.<xref uid="PivotTable:class" /> |
-            excel!Excel.<xref uid="Table:class" />
+            string | <xref uid="excel!Excel.PivotTable:class" /> | <xref
+            uid="excel!Excel.Table:class" />
         - id: sourceField
           description: >-
             The field in the data source to filter by. It can be a PivotField
             object, a TableColumn object, the id of a PivotField or the id/name
             of TableColumn.
           type: >-
-            string | excel!Excel.<xref uid="PivotField:class" /> | number |
-            excel!Excel.<xref uid="TableColumn:class" />
+            string | <xref uid="excel!Excel.PivotField:class" /> | number |
+            <xref uid="excel!Excel.TableColumn:class" />
         - id: slicerDestination
           description: >-
             Optional. The worksheet where the new slicer will be created in. It
             can be a Worksheet object or the name/id of a worksheet. This
             parameter can be omitted if the slicer collection is retrieved from
             worksheet.
-          type: 'string | excel!Excel.<xref uid="Worksheet:class" />'
+          type: 'string | <xref uid="excel!Excel.Worksheet:class" />'
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: >-
           The new slicer.
 
@@ -131,7 +131,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
@@ -154,7 +154,7 @@ methods:
           description: The name or id of the slicer.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: >-
 
 
@@ -198,7 +198,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: ''
   - name: getItemOrNullObject(key)
     uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
@@ -222,7 +222,7 @@ methods:
           description: Name or Id of the slicer to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.SlicerCollection#load:member(1)'
@@ -242,12 +242,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="SlicerCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="SlicerCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.SlicerCollection#load:member(2)'
@@ -268,7 +268,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="SlicerCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.SlicerCollection#load:member(3)'
@@ -291,9 +291,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="SlicerCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.SlicerCollection#toJSON:member(1)'
@@ -315,6 +315,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.SlicerCollectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerCollectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.SettingData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SettingData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.SettingData:interface" />[]'

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: layoutType
     uid: 'excel!Excel.PivotLayout#layoutType:member'
     package: excel!
@@ -48,7 +48,7 @@ properties:
       content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
         type: >-
-          excel!Excel.<xref uid="PivotLayoutType:enum" /> | "Compact" |
+          <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" |
           "Tabular" | "Outline"
   - name: showColumnGrandTotals
     uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
@@ -107,7 +107,7 @@ properties:
         "Off";
       return:
         type: >-
-          excel!Excel.<xref uid="SubtotalLocationType:enum" /> | "AtTop" |
+          <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" |
           "AtBottom" | "Off"
 methods:
   - name: getColumnLabelRange()
@@ -127,7 +127,7 @@ methods:
     syntax:
       content: 'getColumnLabelRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getDataBodyRange()
     uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
@@ -146,7 +146,7 @@ methods:
     syntax:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -193,7 +193,7 @@ methods:
     syntax:
       content: 'getFilterAxisRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRange()
     uid: 'excel!Excel.PivotLayout#getRange:member(1)'
@@ -212,7 +212,7 @@ methods:
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRowLabelRange()
     uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
@@ -231,7 +231,7 @@ methods:
     syntax:
       content: 'getRowLabelRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.PivotLayout#load:member(1)'
@@ -251,10 +251,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="PivotLayoutLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.PivotLayoutLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="PivotLayout:class" />'
+        type: '<xref uid="excel!Excel.PivotLayout:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PivotLayout#load:member(2)'
@@ -275,7 +275,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PivotLayout:class" />'
+        type: '<xref uid="excel!Excel.PivotLayout:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PivotLayout#load:member(3)'
@@ -306,7 +306,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="PivotLayout:class" />'
+        type: '<xref uid="excel!Excel.PivotLayout:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.PivotLayout#set:member(1)'
@@ -333,13 +333,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="PivotLayoutUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -358,7 +358,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="PivotLayout:class" />'
+          type: '<xref uid="excel!Excel.PivotLayout:class" />'
       return:
         type: void
         description: ''
@@ -380,6 +380,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotLayoutData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotLayoutData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PivotLayoutData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

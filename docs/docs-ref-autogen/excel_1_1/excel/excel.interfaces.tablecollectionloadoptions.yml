@@ -50,8 +50,9 @@ properties:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableColumnCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
+          />
   - name: id
     uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#id:member'
     package: excel!
@@ -115,8 +116,9 @@ properties:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableRowCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface"
+          />
   - name: showHeaders
     uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showHeaders:member'
     package: excel!

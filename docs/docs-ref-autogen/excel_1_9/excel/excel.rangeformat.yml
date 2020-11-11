@@ -52,7 +52,7 @@ properties:
     syntax:
       content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
-        type: 'excel!Excel.<xref uid="RangeBorderCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
   - name: columnWidth
     uid: 'excel!Excel.RangeFormat#columnWidth:member'
     package: excel!
@@ -85,7 +85,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: fill
     uid: 'excel!Excel.RangeFormat#fill:member'
     package: excel!
@@ -103,7 +103,7 @@ properties:
     syntax:
       content: 'readonly fill: Excel.RangeFill;'
       return:
-        type: 'excel!Excel.<xref uid="RangeFill:class" />'
+        type: '<xref uid="excel!Excel.RangeFill:class" />'
   - name: font
     uid: 'excel!Excel.RangeFormat#font:member'
     package: excel!
@@ -121,7 +121,7 @@ properties:
     syntax:
       content: 'readonly font: Excel.RangeFont;'
       return:
-        type: 'excel!Excel.<xref uid="RangeFont:class" />'
+        type: '<xref uid="excel!Excel.RangeFont:class" />'
   - name: horizontalAlignment
     uid: 'excel!Excel.RangeFormat#horizontalAlignment:member'
     package: excel!
@@ -144,7 +144,7 @@ properties:
         "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="HorizontalAlignment:enum" /> | "General" |
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
           "Left" | "Center" | "Right" | "Fill" | "Justify" |
           "CenterAcrossSelection" | "Distributed"
   - name: indentLevel
@@ -182,7 +182,7 @@ properties:
     syntax:
       content: 'readonly protection: Excel.FormatProtection;'
       return:
-        type: 'excel!Excel.<xref uid="FormatProtection:class" />'
+        type: '<xref uid="excel!Excel.FormatProtection:class" />'
   - name: readingOrder
     uid: 'excel!Excel.RangeFormat#readingOrder:member'
     package: excel!
@@ -203,7 +203,7 @@ properties:
         "RightToLeft";
       return:
         type: >-
-          excel!Excel.<xref uid="ReadingOrder:enum" /> | "Context" |
+          <xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" |
           "LeftToRight" | "RightToLeft"
   - name: rowHeight
     uid: 'excel!Excel.RangeFormat#rowHeight:member'
@@ -352,7 +352,7 @@ properties:
         | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="VerticalAlignment:enum" /> | "Top" | "Center" |
+          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
           "Bottom" | "Justify" | "Distributed"
   - name: wrapText
     uid: 'excel!Excel.RangeFormat#wrapText:member'
@@ -432,10 +432,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="RangeFormatLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="RangeFormat:class" />'
+        type: '<xref uid="excel!Excel.RangeFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.RangeFormat#load:member(2)'
@@ -456,7 +456,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="RangeFormat:class" />'
+        type: '<xref uid="excel!Excel.RangeFormat:class" />'
         description: |-
 
 
@@ -548,7 +548,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="RangeFormat:class" />'
+        type: '<xref uid="excel!Excel.RangeFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.RangeFormat#set:member(1)'
@@ -575,13 +575,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="RangeFormatUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -600,7 +600,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="RangeFormat:class" />'
+          type: '<xref uid="excel!Excel.RangeFormat:class" />'
       return:
         type: void
         description: ''
@@ -622,6 +622,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

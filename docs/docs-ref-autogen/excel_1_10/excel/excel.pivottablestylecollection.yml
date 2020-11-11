@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.PivotTableStyleCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.PivotTableStyle[];'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />[]'
+        type: '<xref uid="excel!Excel.PivotTableStyle:class" />[]'
 methods:
   - name: 'add(name, makeUniqueName)'
     uid: 'excel!Excel.PivotTableStyleCollection#add:member(1)'
@@ -70,7 +70,7 @@ methods:
             name in order to make it unique, if needed.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
         description: The newly created PivotTableStyle.
   - name: getCount()
     uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
@@ -89,7 +89,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getDefault()
     uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
@@ -108,7 +108,7 @@ methods:
     syntax:
       content: 'getDefault(): Excel.PivotTableStyle;'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
         description: >-
           The PivotTableStyle object that is the current default
           PivotTableStyle.
@@ -133,7 +133,7 @@ methods:
           description: Name of the PivotTableStyle to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
         description: The PivotTableStyle object whose name matches the input.
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
@@ -157,7 +157,7 @@ methods:
           description: Name of the PivotTableStyle to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
         description: The PivotTableStyle object whose name matches the input.
   - name: load(options)
     uid: 'excel!Excel.PivotTableStyleCollection#load:member(1)'
@@ -178,12 +178,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="PivotTableStyleCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyleCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PivotTableStyleCollection#load:member(2)'
@@ -206,7 +206,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyleCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PivotTableStyleCollection#load:member(3)'
@@ -229,9 +229,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyleCollection:class" />'
         description: ''
   - name: setDefault(newDefaultStyle)
     uid: 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
@@ -254,7 +254,7 @@ methods:
           description: >-
             The PivotTableStyle object or name of the PivotTableStyle object
             that should be the new default.
-          type: 'excel!Excel.<xref uid="PivotTableStyle:class" /> | string'
+          type: '<xref uid="excel!Excel.PivotTableStyle:class" /> | string'
       return:
         type: void
         description: ''
@@ -279,7 +279,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.PivotTableStyleCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="PivotTableStyleCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.PivotTableStyleCollectionData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

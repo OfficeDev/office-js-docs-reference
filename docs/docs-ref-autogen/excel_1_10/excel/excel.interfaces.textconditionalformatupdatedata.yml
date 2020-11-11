@@ -30,8 +30,9 @@ properties:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface"
+          />
   - name: rule
     uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member'
     package: excel!
@@ -49,4 +50,4 @@ properties:
     syntax:
       content: 'rule?: Excel.ConditionalTextComparisonRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalTextComparisonRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalTextComparisonRule:interface" />'

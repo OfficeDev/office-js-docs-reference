@@ -118,7 +118,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: creationDate
     uid: 'word!Word.DocumentProperties#creationDate:member'
     package: word!
@@ -154,7 +154,7 @@ properties:
     syntax:
       content: 'readonly customProperties: Word.CustomPropertyCollection;'
       return:
-        type: 'word!Word.<xref uid="CustomPropertyCollection:class" />'
+        type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
   - name: format
     uid: 'word!Word.DocumentProperties#format:member'
     package: word!
@@ -381,10 +381,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="DocumentPropertiesLoadOptions:interface" />
+            <xref
+            uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface"
+            />
       return:
-        type: 'word!Word.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.DocumentProperties#load:member(2)'
@@ -405,7 +406,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.DocumentProperties#load:member(3)'
@@ -436,7 +437,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.DocumentProperties#set:member(1)'
@@ -463,13 +464,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="DocumentPropertiesUpdateData:interface" />
+            <xref
+            uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -488,7 +489,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="DocumentProperties:class" />'
+          type: '<xref uid="word!Word.DocumentProperties:class" />'
       return:
         type: void
         description: ''
@@ -511,7 +512,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.DocumentPropertiesData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="DocumentPropertiesData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.DocumentProperties#track:member(1)'
@@ -531,7 +532,7 @@ methods:
     syntax:
       content: 'track(): Word.DocumentProperties;'
       return:
-        type: 'word!Word.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.DocumentProperties#untrack:member(1)'
@@ -550,6 +551,6 @@ methods:
     syntax:
       content: 'untrack(): Word.DocumentProperties;'
       return:
-        type: 'word!Word.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

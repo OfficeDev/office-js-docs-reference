@@ -49,4 +49,4 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontLoadOptions:interface" />'

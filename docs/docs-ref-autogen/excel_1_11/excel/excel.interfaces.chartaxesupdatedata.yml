@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'categoryAxis?: Excel.Interfaces.ChartAxisUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisUpdateData:interface" />'
   - name: seriesAxis
     uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#seriesAxis:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'seriesAxis?: Excel.Interfaces.ChartAxisUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisUpdateData:interface" />'
   - name: valueAxis
     uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#valueAxis:member'
     package: excel!
@@ -64,4 +64,4 @@ properties:
     syntax:
       content: 'valueAxis?: Excel.Interfaces.ChartAxisUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisUpdateData:interface" />'

@@ -27,7 +27,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: hyperlink
     uid: 'word!Word.Interfaces.RangeData#hyperlink:member'
     package: word!
@@ -66,7 +66,7 @@ properties:
     syntax:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="InlinePictureData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
   - name: isEmpty
     uid: 'word!Word.Interfaces.RangeData#isEmpty:member'
     package: word!
@@ -176,7 +176,7 @@ properties:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type: >-
-          word!Word.<xref uid="Style:enum" /> | "Other" | "Normal" | "Heading1"
+          <xref uid="word!Word.Style:enum" /> | "Other" | "Normal" | "Heading1"
           | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
           "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
           "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" |

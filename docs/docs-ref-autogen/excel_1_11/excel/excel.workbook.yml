@@ -36,7 +36,7 @@ properties:
     syntax:
       content: 'readonly application: Excel.Application;'
       return:
-        type: 'excel!Excel.<xref uid="Application:class" />'
+        type: '<xref uid="excel!Excel.Application:class" />'
   - name: autoSave
     uid: 'excel!Excel.Workbook#autoSave:member'
     package: excel!
@@ -72,7 +72,7 @@ properties:
     syntax:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
-        type: 'excel!Excel.<xref uid="BindingCollection:class" />'
+        type: '<xref uid="excel!Excel.BindingCollection:class" />'
   - name: calculationEngineVersion
     uid: 'excel!Excel.Workbook#calculationEngineVersion:member'
     package: excel!
@@ -128,7 +128,7 @@ properties:
     syntax:
       content: 'readonly comments: Excel.CommentCollection;'
       return:
-        type: 'excel!Excel.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="excel!Excel.CommentCollection:class" />'
   - name: context
     uid: 'excel!Excel.Workbook#context:member'
     package: excel!
@@ -142,7 +142,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: customXmlParts
     uid: 'excel!Excel.Workbook#customXmlParts:member'
     package: excel!
@@ -160,7 +160,7 @@ properties:
     syntax:
       content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPartCollection:class" />'
   - name: dataConnections
     uid: 'excel!Excel.Workbook#dataConnections:member'
     package: excel!
@@ -178,7 +178,7 @@ properties:
     syntax:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
-        type: 'excel!Excel.<xref uid="DataConnectionCollection:class" />'
+        type: '<xref uid="excel!Excel.DataConnectionCollection:class" />'
   - name: functions
     uid: 'excel!Excel.Workbook#functions:member'
     package: excel!
@@ -197,7 +197,7 @@ properties:
     syntax:
       content: 'readonly functions: Excel.Functions;'
       return:
-        type: 'excel!Excel.<xref uid="Functions:class" />'
+        type: '<xref uid="excel!Excel.Functions:class" />'
   - name: isDirty
     uid: 'excel!Excel.Workbook#isDirty:member'
     package: excel!
@@ -254,7 +254,7 @@ properties:
     syntax:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
-        type: 'excel!Excel.<xref uid="NamedItemCollection:class" />'
+        type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
   - name: onAutoSaveSettingChanged
     uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
     package: excel!
@@ -275,9 +275,9 @@ properties:
         OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref
-          uid="WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface"
+          />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Workbook#onSelectionChanged:member'
     package: excel!
@@ -298,9 +298,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="SelectionChangedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
   - name: pivotTables
     uid: 'excel!Excel.Workbook#pivotTables:member'
     package: excel!
@@ -318,7 +317,7 @@ properties:
     syntax:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableCollection:class" />'
         description: >-
 
 
@@ -361,7 +360,7 @@ properties:
     syntax:
       content: 'readonly pivotTableStyles: Excel.PivotTableStyleCollection;'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableStyleCollection:class" />'
   - name: previouslySaved
     uid: 'excel!Excel.Workbook#previouslySaved:member'
     package: excel!
@@ -397,7 +396,7 @@ properties:
     syntax:
       content: 'readonly properties: Excel.DocumentProperties;'
       return:
-        type: 'excel!Excel.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="excel!Excel.DocumentProperties:class" />'
         description: >-
 
 
@@ -452,7 +451,7 @@ properties:
     syntax:
       content: 'readonly protection: Excel.WorkbookProtection;'
       return:
-        type: 'excel!Excel.<xref uid="WorkbookProtection:class" />'
+        type: '<xref uid="excel!Excel.WorkbookProtection:class" />'
   - name: readOnly
     uid: 'excel!Excel.Workbook#readOnly:member'
     package: excel!
@@ -488,7 +487,7 @@ properties:
     syntax:
       content: 'readonly settings: Excel.SettingCollection;'
       return:
-        type: 'excel!Excel.<xref uid="SettingCollection:class" />'
+        type: '<xref uid="excel!Excel.SettingCollection:class" />'
   - name: slicers
     uid: 'excel!Excel.Workbook#slicers:member'
     package: excel!
@@ -506,7 +505,7 @@ properties:
     syntax:
       content: 'readonly slicers: Excel.SlicerCollection;'
       return:
-        type: 'excel!Excel.<xref uid="SlicerCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerCollection:class" />'
   - name: slicerStyles
     uid: 'excel!Excel.Workbook#slicerStyles:member'
     package: excel!
@@ -524,7 +523,7 @@ properties:
     syntax:
       content: 'readonly slicerStyles: Excel.SlicerStyleCollection;'
       return:
-        type: 'excel!Excel.<xref uid="SlicerStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerStyleCollection:class" />'
   - name: styles
     uid: 'excel!Excel.Workbook#styles:member'
     package: excel!
@@ -542,7 +541,7 @@ properties:
     syntax:
       content: 'readonly styles: Excel.StyleCollection;'
       return:
-        type: 'excel!Excel.<xref uid="StyleCollection:class" />'
+        type: '<xref uid="excel!Excel.StyleCollection:class" />'
         description: >-
 
 
@@ -593,7 +592,7 @@ properties:
     syntax:
       content: 'readonly tables: Excel.TableCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
   - name: tableStyles
     uid: 'excel!Excel.Workbook#tableStyles:member'
     package: excel!
@@ -611,7 +610,7 @@ properties:
     syntax:
       content: 'readonly tableStyles: Excel.TableStyleCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TableStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.TableStyleCollection:class" />'
   - name: timelineStyles
     uid: 'excel!Excel.Workbook#timelineStyles:member'
     package: excel!
@@ -629,7 +628,7 @@ properties:
     syntax:
       content: 'readonly timelineStyles: Excel.TimelineStyleCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TimelineStyleCollection:class" />'
+        type: '<xref uid="excel!Excel.TimelineStyleCollection:class" />'
   - name: usePrecisionAsDisplayed
     uid: 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
     package: excel!
@@ -667,7 +666,7 @@ properties:
     syntax:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetCollection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
 methods:
   - name: close(closeBehavior)
     uid: 'excel!Excel.Workbook#close:member(1)'
@@ -688,7 +687,7 @@ methods:
       parameters:
         - id: closeBehavior
           description: workbook close behavior.
-          type: 'excel!Excel.<xref uid="CloseBehavior:enum" />'
+          type: '<xref uid="excel!Excel.CloseBehavior:enum" />'
       return:
         type: void
         description: >-
@@ -747,7 +746,7 @@ methods:
     syntax:
       content: 'getActiveCell(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -789,7 +788,7 @@ methods:
     syntax:
       content: 'getActiveChart(): Excel.Chart;'
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: ''
   - name: getActiveChartOrNullObject()
     uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
@@ -809,7 +808,7 @@ methods:
     syntax:
       content: 'getActiveChartOrNullObject(): Excel.Chart;'
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: ''
   - name: getActiveSlicer()
     uid: 'excel!Excel.Workbook#getActiveSlicer:member(1)'
@@ -829,7 +828,7 @@ methods:
     syntax:
       content: 'getActiveSlicer(): Excel.Slicer;'
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: ''
   - name: getActiveSlicerOrNullObject()
     uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
@@ -849,7 +848,7 @@ methods:
     syntax:
       content: 'getActiveSlicerOrNullObject(): Excel.Slicer;'
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: ''
   - name: getIsActiveCollabSession()
     uid: 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
@@ -871,7 +870,7 @@ methods:
       content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
+          <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;boolean&gt;
         description: ''
   - name: getSelectedRange()
@@ -892,7 +891,7 @@ methods:
     syntax:
       content: 'getSelectedRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -931,7 +930,7 @@ methods:
     syntax:
       content: 'getSelectedRanges(): Excel.RangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: >-
 
 
@@ -967,9 +966,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="WorkbookLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorkbookLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Workbook#load:member(2)'
@@ -990,7 +989,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.Workbook#load:member(3)'
@@ -1021,7 +1020,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
         description: ''
   - name: save(saveBehavior)
     uid: 'excel!Excel.Workbook#save:member(1)'
@@ -1042,7 +1041,7 @@ methods:
       parameters:
         - id: saveBehavior
           description: workbook save behavior.
-          type: 'excel!Excel.<xref uid="SaveBehavior:enum" />'
+          type: '<xref uid="excel!Excel.SaveBehavior:enum" />'
       return:
         type: void
         description: >-
@@ -1108,12 +1107,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="WorkbookUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1132,7 +1131,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Workbook:class" />'
+          type: '<xref uid="excel!Excel.Workbook:class" />'
       return:
         type: void
         description: ''
@@ -1154,6 +1153,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorkbookData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

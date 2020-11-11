@@ -51,7 +51,7 @@ properties:
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: 'excel!Excel.<xref uid="EventSource:enum" /> | "Local" | "Remote"'
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
   - name: type
     uid: 'excel!Excel.WorksheetFormatChangedEventArgs#type:member'
     package: excel!
@@ -108,9 +108,9 @@ methods:
       parameters:
         - id: ctx
           description: ''
-          type: 'excel!Excel.<xref uid="RequestContext:class" />'
+          type: '<xref uid="excel!Excel.RequestContext:class" />'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRangeOrNullObject(ctx)
     uid: 'excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)'
@@ -132,7 +132,7 @@ methods:
       parameters:
         - id: ctx
           description: ''
-          type: 'excel!Excel.<xref uid="RequestContext:class" />'
+          type: '<xref uid="excel!Excel.RequestContext:class" />'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''

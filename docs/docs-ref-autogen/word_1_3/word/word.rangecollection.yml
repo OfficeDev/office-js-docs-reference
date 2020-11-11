@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: items
     uid: 'word!Word.RangeCollection#items:member'
     package: word!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Word.Range[];'
       return:
-        type: 'word!Word.<xref uid="Range:class" />[]'
+        type: '<xref uid="word!Word.Range:class" />[]'
 methods:
   - name: getFirst()
     uid: 'word!Word.RangeCollection#getFirst:member(1)'
@@ -60,7 +60,7 @@ methods:
     syntax:
       content: 'getFirst(): Word.Range;'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: getFirstOrNullObject()
     uid: 'word!Word.RangeCollection#getFirstOrNullObject:member(1)'
@@ -80,7 +80,7 @@ methods:
     syntax:
       content: 'getFirstOrNullObject(): Word.Range;'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.RangeCollection#load:member(1)'
@@ -100,11 +100,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="RangeCollectionLoadOptions:interface" /> &
-            word!Word.Interfaces.<xref uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="word!Word.Interfaces.RangeCollectionLoadOptions:interface" /> &
+            <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.RangeCollection#load:member(2)'
@@ -125,7 +125,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.RangeCollection#load:member(3)'
@@ -148,9 +148,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.RangeCollection#toJSON:member(1)'
@@ -171,7 +171,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.RangeCollectionData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="RangeCollectionData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.RangeCollectionData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.RangeCollection#track:member(1)'
@@ -191,7 +191,7 @@ methods:
     syntax:
       content: 'track(): Word.RangeCollection;'
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.RangeCollection#untrack:member(1)'
@@ -210,6 +210,6 @@ methods:
     syntax:
       content: 'untrack(): Word.RangeCollection;'
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

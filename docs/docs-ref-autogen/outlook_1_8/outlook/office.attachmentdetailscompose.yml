@@ -39,7 +39,7 @@ properties:
       content: 'attachmentType: MailboxEnums.AttachmentType | string;'
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref uid="AttachmentType:enum" /> |
+          <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> |
           string
   - name: id
     uid: 'outlook!Office.AttachmentDetailsCompose#id:member'

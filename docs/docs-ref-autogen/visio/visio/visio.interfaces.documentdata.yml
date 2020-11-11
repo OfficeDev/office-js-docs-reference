@@ -27,7 +27,7 @@ properties:
     syntax:
       content: 'application?: Visio.Interfaces.ApplicationData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ApplicationData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ApplicationData:interface" />'
   - name: pages
     uid: 'visio!Visio.Interfaces.DocumentData#pages:member'
     package: visio!
@@ -45,7 +45,7 @@ properties:
     syntax:
       content: 'pages?: Visio.Interfaces.PageData[];'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="PageData:interface" />[]'
+        type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />[]'
   - name: view
     uid: 'visio!Visio.Interfaces.DocumentData#view:member'
     package: visio!
@@ -63,4 +63,4 @@ properties:
     syntax:
       content: 'view?: Visio.Interfaces.DocumentViewData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="DocumentViewData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.DocumentViewData:interface" />'

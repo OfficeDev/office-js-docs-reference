@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
   - name: contentControls
     uid: 'word!Word.Document#contentControls:member'
     package: word!
@@ -55,7 +55,7 @@ properties:
     syntax:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
   - name: context
     uid: 'word!Word.Document#context:member'
     package: word!
@@ -69,7 +69,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: customXmlParts
     uid: 'word!Word.Document#customXmlParts:member'
     package: word!
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
   - name: onContentControlAdded
     uid: 'word!Word.Document#onContentControlAdded:member'
     package: word!
@@ -109,8 +109,8 @@ properties:
         OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;word!Word.<xref uid="ContentControlEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
   - name: properties
     uid: 'word!Word.Document#properties:member'
     package: word!
@@ -128,7 +128,7 @@ properties:
     syntax:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
-        type: 'word!Word.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
         description: >-
 
 
@@ -186,7 +186,7 @@ properties:
     syntax:
       content: 'readonly sections: Word.SectionCollection;'
       return:
-        type: 'word!Word.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="word!Word.SectionCollection:class" />'
   - name: settings
     uid: 'word!Word.Document#settings:member'
     package: word!
@@ -204,7 +204,7 @@ properties:
     syntax:
       content: 'readonly settings: Word.SettingCollection;'
       return:
-        type: 'word!Word.<xref uid="SettingCollection:class" />'
+        type: '<xref uid="word!Word.SettingCollection:class" />'
 methods:
   - name: deleteBookmark(name)
     uid: 'word!Word.Document#deleteBookmark:member(1)'
@@ -250,7 +250,7 @@ methods:
           description: 'Required. The bookmark name, which is case-insensitive.'
           type: string
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: getBookmarkRangeOrNullObject(name)
     uid: 'word!Word.Document#getBookmarkRangeOrNullObject:member(1)'
@@ -274,7 +274,7 @@ methods:
           description: 'Required. The bookmark name, which is case-insensitive.'
           type: string
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: getSelection()
     uid: 'word!Word.Document#getSelection:member(1)'
@@ -294,7 +294,7 @@ methods:
     syntax:
       content: 'getSelection(): Word.Range;'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: |-
 
 
@@ -344,9 +344,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="DocumentLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.DocumentLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="Document:class" />'
+        type: '<xref uid="word!Word.Document:class" />'
         description: |-
 
 
@@ -402,7 +402,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="Document:class" />'
+        type: '<xref uid="word!Word.Document:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.Document#load:member(3)'
@@ -433,7 +433,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="Document:class" />'
+        type: '<xref uid="word!Word.Document:class" />'
         description: ''
   - name: save()
     uid: 'word!Word.Document#save:member(1)'
@@ -518,12 +518,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="DocumentUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -542,7 +542,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="Document:class" />'
+          type: '<xref uid="word!Word.Document:class" />'
       return:
         type: void
         description: ''
@@ -564,7 +564,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.DocumentData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="DocumentData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.DocumentData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.Document#track:member(1)'
@@ -584,7 +584,7 @@ methods:
     syntax:
       content: 'track(): Word.Document;'
       return:
-        type: 'word!Word.<xref uid="Document:class" />'
+        type: '<xref uid="word!Word.Document:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.Document#untrack:member(1)'
@@ -603,6 +603,6 @@ methods:
     syntax:
       content: 'untrack(): Word.Document;'
       return:
-        type: 'word!Word.<xref uid="Document:class" />'
+        type: '<xref uid="word!Word.Document:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

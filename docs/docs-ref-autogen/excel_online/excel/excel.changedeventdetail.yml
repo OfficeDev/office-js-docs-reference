@@ -76,7 +76,7 @@ properties:
         "Integer" | "Double" | "Boolean" | "Error" | "RichValue";
       return:
         type: >-
-          excel!Excel.<xref uid="RangeValueType:enum" /> | "Unknown" | "Empty" |
+          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" |
           "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
   - name: valueTypeBefore
     uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
@@ -98,5 +98,5 @@ properties:
         "Integer" | "Double" | "Boolean" | "Error" | "RichValue";
       return:
         type: >-
-          excel!Excel.<xref uid="RangeValueType:enum" /> | "Unknown" | "Empty" |
+          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" |
           "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"

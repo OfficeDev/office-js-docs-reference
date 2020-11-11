@@ -15,4 +15,4 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
-extends: 'office!Office.<xref uid="Binding:interface" />'
+extends: '<xref uid="office!Office.Binding:interface" />'

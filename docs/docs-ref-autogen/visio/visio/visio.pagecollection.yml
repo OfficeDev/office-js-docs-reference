@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: items
     uid: 'visio!Visio.PageCollection#items:member'
     package: visio!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Visio.Page[];'
       return:
-        type: 'visio!Visio.<xref uid="Page:class" />[]'
+        type: '<xref uid="visio!Visio.Page:class" />[]'
 methods:
   - name: getCount()
     uid: 'visio!Visio.PageCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'visio!Visio.PageCollection#getItem:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: Key is the name or Id of the page to be retrieved.
           type: number | string
       return:
-        type: 'visio!Visio.<xref uid="Page:class" />'
+        type: '<xref uid="visio!Visio.Page:class" />'
         description: |-
 
 
@@ -140,12 +140,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            visio!Visio.Interfaces.<xref
-            uid="PageCollectionLoadOptions:interface" /> &
-            visio!Visio.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            <xref
+            uid="visio!Visio.Interfaces.PageCollectionLoadOptions:interface" />
+            & <xref uid="visio!Visio.Interfaces.CollectionLoadOptions:interface"
             />
       return:
-        type: 'visio!Visio.<xref uid="PageCollection:class" />'
+        type: '<xref uid="visio!Visio.PageCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.PageCollection#load:member(2)'
@@ -166,7 +166,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="PageCollection:class" />'
+        type: '<xref uid="visio!Visio.PageCollection:class" />'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.PageCollection#load:member(3)'
@@ -181,9 +181,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="PageCollection:class" />'
+        type: '<xref uid="visio!Visio.PageCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.PageCollection#toJSON:member(1)'
@@ -204,6 +204,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.PageCollectionData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="PageCollectionData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.PageCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

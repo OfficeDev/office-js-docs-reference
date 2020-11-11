@@ -124,7 +124,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: doubleStrikeThrough
     uid: 'word!Word.Font#doubleStrikeThrough:member'
     package: word!
@@ -424,7 +424,7 @@ properties:
         "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type: >-
-          word!Word.<xref uid="UnderlineType:enum" /> | "Mixed" | "None" |
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
           "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
           "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
           "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
@@ -475,9 +475,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="Font:class" />'
+        type: '<xref uid="word!Word.Font:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.Font#load:member(2)'
@@ -498,7 +498,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="Font:class" />'
+        type: '<xref uid="word!Word.Font:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.Font#load:member(3)'
@@ -529,7 +529,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="Font:class" />'
+        type: '<xref uid="word!Word.Font:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.Font#set:member(1)'
@@ -555,12 +555,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="FontUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -579,7 +579,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="Font:class" />'
+          type: '<xref uid="word!Word.Font:class" />'
       return:
         type: void
         description: ''
@@ -601,7 +601,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.Font#track:member(1)'
@@ -621,7 +621,7 @@ methods:
     syntax:
       content: 'track(): Word.Font;'
       return:
-        type: 'word!Word.<xref uid="Font:class" />'
+        type: '<xref uid="word!Word.Font:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.Font#untrack:member(1)'
@@ -640,6 +640,6 @@ methods:
     syntax:
       content: 'untrack(): Word.Font;'
       return:
-        type: 'word!Word.<xref uid="Font:class" />'
+        type: '<xref uid="word!Word.Font:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

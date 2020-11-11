@@ -34,7 +34,7 @@ properties:
       content: 'readonly axisGroup: Excel.ChartAxisGroup | "Primary" | "Secondary";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisGroup:enum" /> | "Primary" |
+          <xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" |
           "Secondary"
   - name: baseTimeUnit
     uid: 'excel!Excel.ChartAxis#baseTimeUnit:member'
@@ -54,7 +54,7 @@ properties:
       content: 'baseTimeUnit: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTimeUnit:enum" /> | "Days" | "Months"
+          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
           | "Years"
   - name: categoryType
     uid: 'excel!Excel.ChartAxis#categoryType:member'
@@ -76,7 +76,7 @@ properties:
         "DateAxis";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisCategoryType:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartAxisCategoryType:enum" /> | "Automatic" |
           "TextAxis" | "DateAxis"
   - name: context
     uid: 'excel!Excel.ChartAxis#context:member'
@@ -91,7 +91,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: customDisplayUnit
     uid: 'excel!Excel.ChartAxis#customDisplayUnit:member'
     package: excel!
@@ -133,7 +133,7 @@ properties:
         "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisDisplayUnit:enum" /> | "None" |
+          <xref uid="excel!Excel.ChartAxisDisplayUnit:enum" /> | "None" |
           "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
           "Millions" | "TenMillions" | "HundredMillions" | "Billions" |
           "Trillions" | "Custom"
@@ -182,7 +182,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartAxisFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxisFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartAxisFormat:class" />'
   - name: height
     uid: 'excel!Excel.ChartAxis#height:member'
     package: excel!
@@ -257,7 +257,7 @@ properties:
     syntax:
       content: 'readonly majorGridlines: Excel.ChartGridlines;'
       return:
-        type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+        type: '<xref uid="excel!Excel.ChartGridlines:class" />'
   - name: majorTickMark
     uid: 'excel!Excel.ChartAxis#majorTickMark:member'
     package: excel!
@@ -279,7 +279,7 @@ properties:
         "Outside";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTickMark:enum" /> | "None" | "Cross" |
+          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
           "Inside" | "Outside"
   - name: majorTimeUnitScale
     uid: 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
@@ -302,7 +302,7 @@ properties:
         "Years";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTimeUnit:enum" /> | "Days" | "Months"
+          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
           | "Years"
   - name: majorUnit
     uid: 'excel!Excel.ChartAxis#majorUnit:member'
@@ -381,7 +381,7 @@ properties:
     syntax:
       content: 'readonly minorGridlines: Excel.ChartGridlines;'
       return:
-        type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+        type: '<xref uid="excel!Excel.ChartGridlines:class" />'
   - name: minorTickMark
     uid: 'excel!Excel.ChartAxis#minorTickMark:member'
     package: excel!
@@ -403,7 +403,7 @@ properties:
         "Outside";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTickMark:enum" /> | "None" | "Cross" |
+          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
           "Inside" | "Outside"
   - name: minorTimeUnitScale
     uid: 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
@@ -426,7 +426,7 @@ properties:
         "Years";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTimeUnit:enum" /> | "Days" | "Months"
+          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
           | "Years"
   - name: minorUnit
     uid: 'excel!Excel.ChartAxis#minorUnit:member'
@@ -485,7 +485,7 @@ properties:
       content: 'scaleType: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisScaleType:enum" /> | "Linear" |
+          <xref uid="excel!Excel.ChartAxisScaleType:enum" /> | "Linear" |
           "Logarithmic"
   - name: showDisplayUnitLabel
     uid: 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
@@ -549,7 +549,7 @@ properties:
         "High" | "Low" | "None";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTickLabelPosition:enum" /> |
+          <xref uid="excel!Excel.ChartAxisTickLabelPosition:enum" /> |
           "NextToAxis" | "High" | "Low" | "None"
   - name: tickLabelSpacing
     uid: 'excel!Excel.ChartAxis#tickLabelSpacing:member'
@@ -606,7 +606,7 @@ properties:
     syntax:
       content: 'readonly title: Excel.ChartAxisTitle;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxisTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
   - name: top
     uid: 'excel!Excel.ChartAxis#top:member'
     package: excel!
@@ -646,7 +646,7 @@ properties:
         "Series";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisType:enum" /> | "Invalid" | "Category"
+          <xref uid="excel!Excel.ChartAxisType:enum" /> | "Invalid" | "Category"
           | "Value" | "Series"
   - name: visible
     uid: 'excel!Excel.ChartAxis#visible:member'
@@ -701,9 +701,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartAxisLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartAxisLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartAxis#load:member(2)'
@@ -724,7 +724,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
         description: |-
 
 
@@ -775,7 +775,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartAxis#set:member(1)'
@@ -801,12 +801,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartAxisUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartAxisUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -825,7 +825,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+          type: '<xref uid="excel!Excel.ChartAxis:class" />'
       return:
         type: void
         description: ''
@@ -848,7 +848,7 @@ methods:
       parameters:
         - id: sourceData
           description: The Range object corresponding to the source data.
-          type: 'excel!Excel.<xref uid="Range:class" />'
+          type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void
         description: ''
@@ -893,6 +893,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

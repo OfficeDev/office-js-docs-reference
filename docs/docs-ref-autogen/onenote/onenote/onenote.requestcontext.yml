@@ -35,5 +35,5 @@ properties:
     syntax:
       content: 'readonly application: Application;'
       return:
-        type: 'onenote!OneNote.<xref uid="Application:class" />'
-extends: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.Application:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'

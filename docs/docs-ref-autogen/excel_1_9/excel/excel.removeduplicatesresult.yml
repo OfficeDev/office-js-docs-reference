@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: removed
     uid: 'excel!Excel.RemoveDuplicatesResult#removed:member'
     package: excel!
@@ -108,10 +108,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="RemoveDuplicatesResultLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.RemoveDuplicatesResultLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="RemoveDuplicatesResult:class" />'
+        type: '<xref uid="excel!Excel.RemoveDuplicatesResult:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.RemoveDuplicatesResult#load:member(2)'
@@ -132,7 +133,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="RemoveDuplicatesResult:class" />'
+        type: '<xref uid="excel!Excel.RemoveDuplicatesResult:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.RemoveDuplicatesResult#load:member(3)'
@@ -163,7 +164,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="RemoveDuplicatesResult:class" />'
+        type: '<xref uid="excel!Excel.RemoveDuplicatesResult:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.RemoveDuplicatesResult#toJSON:member(1)'
@@ -185,7 +186,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.RemoveDuplicatesResultData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RemoveDuplicatesResultData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.RemoveDuplicatesResultData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

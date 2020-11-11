@@ -31,7 +31,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -40,9 +40,8 @@ methods:
             -->. The `value` property of the result is the newly created
             CustomXmlPart object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="CustomXmlPart:interface" />&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.CustomXmlPart:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -105,9 +104,8 @@ methods:
             -->. The `value` property of the result is the newly created
             CustomXmlPart object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="CustomXmlPart:interface" />&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.CustomXmlPart:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -159,7 +157,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -169,9 +167,8 @@ methods:
             that represents the specified custom XML part. If there is no custom
             XML part with the specified id, the method returns null.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="CustomXmlPart:interface" />&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.CustomXmlPart:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -204,9 +201,8 @@ methods:
             that represents the specified custom XML part. If there is no custom
             XML part with the specified id, the method returns null.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="CustomXmlPart:interface" />&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.CustomXmlPart:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -232,7 +228,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -241,9 +237,8 @@ methods:
             -->. The `value` property of the result is an array of CustomXmlPart
             objects that match the specified namespace.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="CustomXmlPart:interface" />[]&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.CustomXmlPart:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -295,9 +290,8 @@ methods:
             -->. The `value` property of the result is an array of CustomXmlPart
             objects that match the specified namespace.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="CustomXmlPart:interface" />[]&gt;)
-            =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.CustomXmlPart:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''

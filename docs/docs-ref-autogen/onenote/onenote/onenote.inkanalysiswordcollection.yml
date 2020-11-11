@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: count
     uid: 'onenote!OneNote.InkAnalysisWordCollection#count:member'
     package: onenote!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: OneNote.InkAnalysisWord[];'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWord:class" />[]'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWord:class" />[]'
 methods:
   - name: getItem(index)
     uid: 'onenote!OneNote.InkAnalysisWordCollection#getItem:member(1)'
@@ -84,7 +84,7 @@ methods:
             InkAnalysisWord object in the collection.
           type: number | string
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWord:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWord:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'onenote!OneNote.InkAnalysisWordCollection#getItemAt:member(1)'
@@ -107,7 +107,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWord:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWord:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(1)'
@@ -150,12 +150,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="InkAnalysisWordCollectionLoadOptions:interface" /> &
-            onenote!OneNote.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface"
+            /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWordCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(2)'
@@ -178,7 +178,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWordCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(3)'
@@ -195,9 +195,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWordCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.InkAnalysisWordCollection#toJSON:member(1)'
@@ -220,8 +220,9 @@ methods:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisWordCollectionData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisWordCollectionData:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface"
+          />
         description: ''
   - name: track()
     uid: 'onenote!OneNote.InkAnalysisWordCollection#track:member(1)'
@@ -241,7 +242,7 @@ methods:
     syntax:
       content: 'track(): OneNote.InkAnalysisWordCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWordCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.InkAnalysisWordCollection#untrack:member(1)'
@@ -260,6 +261,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.InkAnalysisWordCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysisWordCollection:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

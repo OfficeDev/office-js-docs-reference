@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: types
     uid: 'excel!Excel.NamedItemArrayValues#types:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly types: Excel.RangeValueType[][];'
       return:
-        type: 'excel!Excel.<xref uid="RangeValueType:enum" />[][]'
+        type: '<xref uid="excel!Excel.RangeValueType:enum" />[][]'
   - name: values
     uid: 'excel!Excel.NamedItemArrayValues#values:member'
     package: excel!
@@ -84,10 +84,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="NamedItemArrayValuesLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="NamedItemArrayValues:class" />'
+        type: '<xref uid="excel!Excel.NamedItemArrayValues:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.NamedItemArrayValues#load:member(2)'
@@ -108,7 +109,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="NamedItemArrayValues:class" />'
+        type: '<xref uid="excel!Excel.NamedItemArrayValues:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.NamedItemArrayValues#load:member(3)'
@@ -139,7 +140,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="NamedItemArrayValues:class" />'
+        type: '<xref uid="excel!Excel.NamedItemArrayValues:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.NamedItemArrayValues#toJSON:member(1)'
@@ -161,7 +162,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.NamedItemArrayValuesData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="NamedItemArrayValuesData:interface"
+          <xref uid="excel!Excel.Interfaces.NamedItemArrayValuesData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

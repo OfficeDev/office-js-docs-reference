@@ -84,8 +84,8 @@ properties:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartDataLabelsLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />
   - name: doughnutHoleSize
     uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#doughnutHoleSize:member'
     package: excel!
@@ -183,8 +183,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartSeriesFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface" />
   - name: gapWidth
     uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#gapWidth:member'
     package: excel!
@@ -389,8 +389,9 @@ properties:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPointsCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface"
+          />
   - name: secondPlotSize
     uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#secondPlotSize:member'
     package: excel!

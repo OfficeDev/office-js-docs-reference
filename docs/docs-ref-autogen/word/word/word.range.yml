@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
   - name: context
     uid: 'word!Word.Range#context:member'
     package: word!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: font
     uid: 'word!Word.Range#font:member'
     package: word!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'readonly font: Word.Font;'
       return:
-        type: 'word!Word.<xref uid="Font:class" />'
+        type: '<xref uid="word!Word.Font:class" />'
   - name: hyperlink
     uid: 'word!Word.Range#hyperlink:member'
     package: word!
@@ -104,7 +104,7 @@ properties:
     syntax:
       content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
-        type: 'word!Word.<xref uid="InlinePictureCollection:class" />'
+        type: '<xref uid="word!Word.InlinePictureCollection:class" />'
   - name: isEmpty
     uid: 'word!Word.Range#isEmpty:member'
     package: word!
@@ -140,7 +140,7 @@ properties:
     syntax:
       content: 'readonly lists: Word.ListCollection;'
       return:
-        type: 'word!Word.<xref uid="ListCollection:class" />'
+        type: '<xref uid="word!Word.ListCollection:class" />'
   - name: paragraphs
     uid: 'word!Word.Range#paragraphs:member'
     package: word!
@@ -158,7 +158,7 @@ properties:
     syntax:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
   - name: parentBody
     uid: 'word!Word.Range#parentBody:member'
     package: word!
@@ -176,7 +176,7 @@ properties:
     syntax:
       content: 'readonly parentBody: Word.Body;'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
   - name: parentContentControl
     uid: 'word!Word.Range#parentContentControl:member'
     package: word!
@@ -195,7 +195,7 @@ properties:
     syntax:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: parentContentControlOrNullObject
     uid: 'word!Word.Range#parentContentControlOrNullObject:member'
     package: word!
@@ -214,7 +214,7 @@ properties:
     syntax:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: parentTable
     uid: 'word!Word.Range#parentTable:member'
     package: word!
@@ -233,7 +233,7 @@ properties:
     syntax:
       content: 'readonly parentTable: Word.Table;'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
   - name: parentTableCell
     uid: 'word!Word.Range#parentTableCell:member'
     package: word!
@@ -252,7 +252,7 @@ properties:
     syntax:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
   - name: parentTableCellOrNullObject
     uid: 'word!Word.Range#parentTableCellOrNullObject:member'
     package: word!
@@ -271,7 +271,7 @@ properties:
     syntax:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
   - name: parentTableOrNullObject
     uid: 'word!Word.Range#parentTableOrNullObject:member'
     package: word!
@@ -290,7 +290,7 @@ properties:
     syntax:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
   - name: style
     uid: 'word!Word.Range#style:member'
     package: word!
@@ -382,7 +382,7 @@ properties:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type: >-
-          word!Word.<xref uid="Style:enum" /> | "Other" | "Normal" | "Heading1"
+          <xref uid="word!Word.Style:enum" /> | "Other" | "Normal" | "Heading1"
           | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
           "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
           "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" |
@@ -451,7 +451,7 @@ properties:
     syntax:
       content: 'readonly tables: Word.TableCollection;'
       return:
-        type: 'word!Word.<xref uid="TableCollection:class" />'
+        type: '<xref uid="word!Word.TableCollection:class" />'
   - name: text
     uid: 'word!Word.Range#text:member'
     package: word!
@@ -540,11 +540,11 @@ methods:
       parameters:
         - id: range
           description: Required. The range to compare with this range.
-          type: 'word!Word.<xref uid="Range:class" />'
+          type: '<xref uid="word!Word.Range:class" />'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
-          />&lt;word!Word.<xref uid="LocationRelation:enum" />&gt;
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
+          uid="word!Word.LocationRelation:enum" />&gt;
         description: ''
   - name: delete()
     uid: 'word!Word.Range#delete:member(1)'
@@ -614,9 +614,9 @@ methods:
       parameters:
         - id: range
           description: Required. Another range.
-          type: 'word!Word.<xref uid="Range:class" />'
+          type: '<xref uid="word!Word.Range:class" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: expandToOrNullObject(range)
     uid: 'word!Word.Range#expandToOrNullObject:member(1)'
@@ -639,9 +639,9 @@ methods:
       parameters:
         - id: range
           description: Required. Another range.
-          type: 'word!Word.<xref uid="Range:class" />'
+          type: '<xref uid="word!Word.Range:class" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'getBookmarks(includeHidden, includeAdjacent)'
     uid: 'word!Word.Range#getBookmarks:member(1)'
@@ -676,7 +676,7 @@ methods:
           type: boolean
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
+          <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: ''
   - name: getHtml()
@@ -702,7 +702,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -749,7 +749,7 @@ methods:
     syntax:
       content: 'getHyperlinkRanges(): Word.RangeCollection;'
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: 'getNextTextRange(endingMarks, trimSpacing)'
     uid: 'word!Word.Range#getNextTextRange:member(1)'
@@ -784,7 +784,7 @@ methods:
             characters at the start and end of the range are included.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'getNextTextRangeOrNullObject(endingMarks, trimSpacing)'
     uid: 'word!Word.Range#getNextTextRangeOrNullObject:member(1)'
@@ -819,7 +819,7 @@ methods:
             characters at the start and end of the range are included.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: getOoxml()
     uid: 'word!Word.Range#getOoxml:member(1)'
@@ -838,7 +838,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -890,9 +890,9 @@ methods:
           description: >-
             Optional. The range location can be 'Whole', 'Start', 'End',
             'After', or 'Content'.
-          type: 'word!Word.<xref uid="RangeLocation:enum" />'
+          type: '<xref uid="word!Word.RangeLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: getRange(rangeLocationString)
     uid: 'word!Word.Range#getRange:member(2)'
@@ -920,7 +920,7 @@ methods:
             'After', or 'Content'.
           type: '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'getTextRanges(endingMarks, trimSpacing)'
     uid: 'word!Word.Range#getTextRanges:member(1)'
@@ -956,7 +956,7 @@ methods:
             ranges are included in the range collection.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: >-
 
 
@@ -1042,10 +1042,10 @@ methods:
       parameters:
         - id: breakType
           description: Required. The break type to add.
-          type: 'word!Word.<xref uid="BreakType:enum" />'
+          type: '<xref uid="word!Word.BreakType:enum" />'
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: void
         description: ''
@@ -1125,7 +1125,7 @@ methods:
     syntax:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: >-
 
 
@@ -1184,9 +1184,9 @@ methods:
           description: >-
             Required. The value can be 'Replace', 'Start', 'End', 'Before', or
             'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: |-
 
 
@@ -1245,7 +1245,7 @@ methods:
             'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertHtml(html, insertLocation)'
     uid: 'word!Word.Range#insertHtml:member(1)'
@@ -1273,9 +1273,9 @@ methods:
           description: >-
             Required. The value can be 'Replace', 'Start', 'End', 'Before', or
             'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: |-
 
 
@@ -1333,7 +1333,7 @@ methods:
             'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     uid: 'word!Word.Range#insertInlinePictureFromBase64:member(1)'
@@ -1361,9 +1361,9 @@ methods:
           description: >-
             Required. The value can be 'Replace', 'Start', 'End', 'Before', or
             'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
     uid: 'word!Word.Range#insertInlinePictureFromBase64:member(2)'
@@ -1394,7 +1394,7 @@ methods:
             'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: 'insertOoxml(ooxml, insertLocation)'
     uid: 'word!Word.Range#insertOoxml:member(1)'
@@ -1422,9 +1422,9 @@ methods:
           description: >-
             Required. The value can be 'Replace', 'Start', 'End', 'Before', or
             'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: >-
 
 
@@ -1494,7 +1494,7 @@ methods:
             'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertParagraph(paragraphText, insertLocation)'
     uid: 'word!Word.Range#insertParagraph:member(1)'
@@ -1520,9 +1520,9 @@ methods:
           type: string
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: |-
 
 
@@ -1578,7 +1578,7 @@ methods:
           description: Required. The value can be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: 'insertTable(rowCount, columnCount, insertLocation, values)'
     uid: 'word!Word.Range#insertTable:member(1)'
@@ -1607,14 +1607,14 @@ methods:
           type: number
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: values
           description: >-
             Optional 2D array. Cells are filled if the corresponding strings are
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
         description: ''
   - name: 'insertTable(rowCount, columnCount, insertLocationString, values)'
     uid: 'word!Word.Range#insertTable:member(2)'
@@ -1651,7 +1651,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
         description: ''
   - name: 'insertText(text, insertLocation)'
     uid: 'word!Word.Range#insertText:member(1)'
@@ -1679,9 +1679,9 @@ methods:
           description: >-
             Required. The value can be 'Replace', 'Start', 'End', 'Before', or
             'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: |-
 
 
@@ -1739,7 +1739,7 @@ methods:
             'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: intersectWith(range)
     uid: 'word!Word.Range#intersectWith:member(1)'
@@ -1762,9 +1762,9 @@ methods:
       parameters:
         - id: range
           description: Required. Another range.
-          type: 'word!Word.<xref uid="Range:class" />'
+          type: '<xref uid="word!Word.Range:class" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: intersectWithOrNullObject(range)
     uid: 'word!Word.Range#intersectWithOrNullObject:member(1)'
@@ -1787,9 +1787,9 @@ methods:
       parameters:
         - id: range
           description: Required. Another range.
-          type: 'word!Word.<xref uid="Range:class" />'
+          type: '<xref uid="word!Word.Range:class" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.Range#load:member(1)'
@@ -1806,9 +1806,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="RangeLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.Range#load:member(2)'
@@ -1829,7 +1829,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.Range#load:member(3)'
@@ -1860,7 +1860,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'search(searchText, searchOptions)'
     uid: 'word!Word.Range#search:member(1)'
@@ -1895,7 +1895,7 @@ methods:
         - id: searchOptions
           description: Optional. Options for the search.
           type: |-
-            word!Word.<xref uid="SearchOptions:class" /> | {
+            <xref uid="word!Word.SearchOptions:class" /> | {
                         ignorePunct?: boolean;
                         ignoreSpace?: boolean;
                         matchCase?: boolean;
@@ -1905,7 +1905,7 @@ methods:
                         matchWildcards?: boolean;
                     }
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: select(selectionMode)
     uid: 'word!Word.Range#select:member(1)'
@@ -1928,7 +1928,7 @@ methods:
           description: >-
             Optional. The selection mode can be 'Select', 'Start', or 'End'.
             'Select' is the default.
-          type: 'word!Word.<xref uid="SelectionMode:enum" />'
+          type: '<xref uid="word!Word.SelectionMode:enum" />'
       return:
         type: void
         description: |-
@@ -2012,12 +2012,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="RangeUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -2036,7 +2036,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="Range:class" />'
+          type: '<xref uid="word!Word.Range:class" />'
       return:
         type: void
         description: ''
@@ -2084,7 +2084,7 @@ methods:
             ranges are included in the range collection.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.Range#toJSON:member(1)'
@@ -2104,7 +2104,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.RangeData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="RangeData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.RangeData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.Range#track:member(1)'
@@ -2124,7 +2124,7 @@ methods:
     syntax:
       content: 'track(): Word.Range;'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.Range#untrack:member(1)'
@@ -2143,6 +2143,6 @@ methods:
     syntax:
       content: 'untrack(): Word.Range;'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

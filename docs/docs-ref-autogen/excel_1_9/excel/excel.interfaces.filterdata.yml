@@ -28,4 +28,4 @@ properties:
     syntax:
       content: 'criteria?: Excel.FilterCriteria;'
       return:
-        type: 'excel!Excel.<xref uid="FilterCriteria:interface" />'
+        type: '<xref uid="excel!Excel.FilterCriteria:interface" />'

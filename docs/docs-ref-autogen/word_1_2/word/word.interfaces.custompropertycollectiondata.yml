@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.CustomPropertyData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="CustomPropertyData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.CustomPropertyData:interface" />[]'

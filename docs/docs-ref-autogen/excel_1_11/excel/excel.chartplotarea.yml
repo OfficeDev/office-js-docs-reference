@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.ChartPlotArea#format:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartPlotAreaFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartPlotAreaFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartPlotAreaFormat:class" />'
   - name: height
     uid: 'excel!Excel.ChartPlotArea#height:member'
     package: excel!
@@ -173,7 +173,7 @@ properties:
       content: 'position: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartPlotAreaPosition:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartPlotAreaPosition:enum" /> | "Automatic" |
           "Custom"
   - name: top
     uid: 'excel!Excel.ChartPlotArea#top:member'
@@ -230,10 +230,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartPlotAreaLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartPlotArea:class" />'
+        type: '<xref uid="excel!Excel.ChartPlotArea:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartPlotArea#load:member(2)'
@@ -254,7 +254,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartPlotArea:class" />'
+        type: '<xref uid="excel!Excel.ChartPlotArea:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartPlotArea#load:member(3)'
@@ -285,7 +285,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartPlotArea:class" />'
+        type: '<xref uid="excel!Excel.ChartPlotArea:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartPlotArea#set:member(1)'
@@ -312,13 +312,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ChartPlotAreaUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -337,7 +337,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartPlotArea:class" />'
+          type: '<xref uid="excel!Excel.ChartPlotArea:class" />'
       return:
         type: void
         description: ''
@@ -360,6 +360,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartPlotAreaData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartPlotAreaData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPlotAreaData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

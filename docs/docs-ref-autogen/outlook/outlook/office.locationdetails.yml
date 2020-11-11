@@ -79,4 +79,4 @@ properties:
     syntax:
       content: 'locationIdentifier: LocationIdentifier;'
       return:
-        type: 'outlook!Office.<xref uid="LocationIdentifier:interface" />'
+        type: '<xref uid="outlook!Office.LocationIdentifier:interface" />'

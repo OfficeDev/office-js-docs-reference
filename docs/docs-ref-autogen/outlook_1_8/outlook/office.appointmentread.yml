@@ -96,7 +96,7 @@ properties:
     syntax:
       content: 'attachments: AttachmentDetails[];'
       return:
-        type: 'outlook!Office.<xref uid="AttachmentDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.AttachmentDetails:interface" />[]'
   - name: body
     uid: 'outlook!Office.AppointmentRead#body:member'
     package: outlook!
@@ -148,7 +148,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: 'outlook!Office.<xref uid="Body:interface" />'
+        type: '<xref uid="outlook!Office.Body:interface" />'
   - name: categories
     uid: 'outlook!Office.AppointmentRead#categories:member'
     package: outlook!
@@ -260,7 +260,7 @@ properties:
     syntax:
       content: 'categories: Categories;'
       return:
-        type: 'outlook!Office.<xref uid="Categories:interface" />'
+        type: '<xref uid="outlook!Office.Categories:interface" />'
   - name: dateTimeCreated
     uid: 'outlook!Office.AppointmentRead#dateTimeCreated:member'
     package: outlook!
@@ -438,7 +438,7 @@ properties:
     syntax:
       content: 'enhancedLocation: EnhancedLocation;'
       return:
-        type: 'outlook!Office.<xref uid="EnhancedLocation:interface" />'
+        type: '<xref uid="outlook!Office.EnhancedLocation:interface" />'
   - name: itemClass
     uid: 'outlook!Office.AppointmentRead#itemClass:member'
     package: outlook!
@@ -601,7 +601,7 @@ properties:
     syntax:
       content: 'itemType: MailboxEnums.ItemType | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="ItemType:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.ItemType:enum" /> | string'
   - name: location
     uid: 'outlook!Office.AppointmentRead#location:member'
     package: outlook!
@@ -814,7 +814,7 @@ properties:
     syntax:
       content: 'notificationMessages: NotificationMessages;'
       return:
-        type: 'outlook!Office.<xref uid="NotificationMessages:interface" />'
+        type: '<xref uid="outlook!Office.NotificationMessages:interface" />'
   - name: optionalAttendees
     uid: 'outlook!Office.AppointmentRead#optionalAttendees:member'
     package: outlook!
@@ -875,7 +875,7 @@ properties:
     syntax:
       content: 'optionalAttendees: EmailAddressDetails[];'
       return:
-        type: 'outlook!Office.<xref uid="EmailAddressDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />[]'
   - name: organizer
     uid: 'outlook!Office.AppointmentRead#organizer:member'
     package: outlook!
@@ -911,7 +911,7 @@ properties:
     syntax:
       content: 'organizer: EmailAddressDetails;'
       return:
-        type: 'outlook!Office.<xref uid="EmailAddressDetails:interface" />'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />'
   - name: recurrence
     uid: 'outlook!Office.AppointmentRead#recurrence:member'
     package: outlook!
@@ -976,7 +976,7 @@ properties:
     syntax:
       content: 'recurrence: Recurrence;'
       return:
-        type: 'outlook!Office.<xref uid="Recurrence:interface" />'
+        type: '<xref uid="outlook!Office.Recurrence:interface" />'
   - name: requiredAttendees
     uid: 'outlook!Office.AppointmentRead#requiredAttendees:member'
     package: outlook!
@@ -1037,7 +1037,7 @@ properties:
     syntax:
       content: 'requiredAttendees: EmailAddressDetails[];'
       return:
-        type: 'outlook!Office.<xref uid="EmailAddressDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />[]'
   - name: seriesId
     uid: 'outlook!Office.AppointmentRead#seriesId:member'
     package: outlook!
@@ -1247,7 +1247,7 @@ methods:
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
-          type: 'office!Office.<xref uid="EventType:enum" /> | string'
+          type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single
@@ -1260,14 +1260,14 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -1418,7 +1418,7 @@ methods:
             the reply form. The string is limited to 32 KB OR a
             [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
             that contains body or attachment data and a callback function.
-          type: 'string | outlook!Office.<xref uid="ReplyFormData:interface" />'
+          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
       return:
         type: void
         description: ''
@@ -1585,7 +1585,7 @@ methods:
             the reply form. The string is limited to 32 KB OR a
             [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
             that contains body or attachment data and a callback function.
-          type: 'string | outlook!Office.<xref uid="ReplyFormData:interface" />'
+          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
       return:
         type: void
         description: ''
@@ -1700,7 +1700,7 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -1709,8 +1709,8 @@ methods:
             the call fails, the `asyncResult.error` property will contain an
             error code with the reason for the failure.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="AttachmentContent:interface" />&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;)
             =&gt; void
       return:
         type: void
@@ -1800,7 +1800,7 @@ methods:
     syntax:
       content: 'getEntities(): Entities;'
       return:
-        type: 'outlook!Office.<xref uid="Entities:interface" />'
+        type: '<xref uid="outlook!Office.Entities:interface" />'
         description: ''
   - name: getEntitiesByType(entityType)
     uid: 'outlook!Office.AppointmentRead#getEntitiesByType:member(1)'
@@ -1862,13 +1862,13 @@ methods:
             <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td>
             </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr>
             </table>
-          type: 'outlook!Office.MailboxEnums.<xref uid="EntityType:enum" /> | string'
+          type: '<xref uid="outlook!Office.MailboxEnums.EntityType:enum" /> | string'
       return:
         type: >-
-          (string | outlook!Office.<xref uid="Contact:interface" /> |
-          outlook!Office.<xref uid="MeetingSuggestion:interface" /> |
-          outlook!Office.<xref uid="PhoneNumber:interface" /> |
-          outlook!Office.<xref uid="TaskSuggestion:interface" />)[]
+          (string | <xref uid="outlook!Office.Contact:interface" /> | <xref
+          uid="outlook!Office.MeetingSuggestion:interface" /> | <xref
+          uid="outlook!Office.PhoneNumber:interface" /> | <xref
+          uid="outlook!Office.TaskSuggestion:interface" />)[]
         description: >-
           If the value passed in `entityType` is not a valid member of the
           `EntityType` enumeration, the method returns null. If no entities of
@@ -1930,10 +1930,10 @@ methods:
           type: string
       return:
         type: >-
-          (string | outlook!Office.<xref uid="Contact:interface" /> |
-          outlook!Office.<xref uid="MeetingSuggestion:interface" /> |
-          outlook!Office.<xref uid="PhoneNumber:interface" /> |
-          outlook!Office.<xref uid="TaskSuggestion:interface" />)[]
+          (string | <xref uid="outlook!Office.Contact:interface" /> | <xref
+          uid="outlook!Office.MeetingSuggestion:interface" /> | <xref
+          uid="outlook!Office.PhoneNumber:interface" /> | <xref
+          uid="outlook!Office.TaskSuggestion:interface" />)[]
         description: >-
           If there is no `ItemHasKnownEntity` element in the manifest with a
           `FilterName` element value that matches the `name` parameter, the
@@ -2250,7 +2250,7 @@ methods:
     syntax:
       content: 'getSelectedEntities(): Entities;'
       return:
-        type: 'outlook!Office.<xref uid="Entities:interface" />'
+        type: '<xref uid="outlook!Office.Entities:interface" />'
         description: ''
   - name: getSelectedRegExMatches()
     uid: 'outlook!Office.AppointmentRead#getSelectedRegExMatches:member(1)'
@@ -2470,7 +2470,7 @@ methods:
             An object literal that contains one or more of the following
             properties. `asyncContext`<!-- -->: Developers can provide any
             object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback`
@@ -2478,8 +2478,8 @@ methods:
             `Office.AsyncResult`<!-- -->. The `value` property of the result is
             the properties of the shared item.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="SharedProperties:interface" />&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;)
             =&gt; void
       return:
         type: void
@@ -2548,8 +2548,8 @@ methods:
             `Office.AsyncResult`<!-- -->. The `value` property of the result is
             the properties of the shared item.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="SharedProperties:interface" />&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;)
             =&gt; void
       return:
         type: void
@@ -2671,8 +2671,8 @@ methods:
             parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="CustomProperties:interface" />&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;)
             =&gt; void
         - id: userContext
           description: >-
@@ -2719,22 +2719,22 @@ methods:
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
-          type: 'office!Office.<xref uid="EventType:enum" /> | string'
+          type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-extends: 'outlook!Office.<xref uid="Appointment:interface" />'
+extends: '<xref uid="outlook!Office.Appointment:interface" />'

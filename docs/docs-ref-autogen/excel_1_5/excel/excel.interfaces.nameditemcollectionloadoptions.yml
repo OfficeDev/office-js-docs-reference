@@ -164,7 +164,7 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
   - name: worksheetOrNullObject
     uid: >-
       excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheetOrNullObject:member
@@ -185,4 +185,4 @@ properties:
     syntax:
       content: 'worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

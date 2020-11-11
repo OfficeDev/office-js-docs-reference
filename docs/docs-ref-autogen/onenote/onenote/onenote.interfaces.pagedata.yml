@@ -62,7 +62,7 @@ properties:
     syntax:
       content: 'contents?: OneNote.Interfaces.PageContentData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="PageContentData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageContentData:interface" />[]'
   - name: id
     uid: 'onenote!OneNote.Interfaces.PageData#id:member'
     package: onenote!
@@ -99,7 +99,7 @@ properties:
     syntax:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="InkAnalysisData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisData:interface" />'
   - name: pageLevel
     uid: 'onenote!OneNote.Interfaces.PageData#pageLevel:member'
     package: onenote!

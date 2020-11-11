@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
   - name: properties
     uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member'
     package: word!
@@ -69,8 +69,8 @@ properties:
       content: 'properties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref
-          uid="DocumentPropertiesLoadOptions:interface" />
+          <xref
+          uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />
   - name: saved
     uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#saved:member'
     package: word!

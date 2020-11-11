@@ -32,7 +32,7 @@ properties:
         "Hidden";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlAppearance:enum" /> | "BoundingBox"
+          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
           | "Tags" | "Hidden"
   - name: cannotDelete
     uid: 'word!Word.Interfaces.ContentControlData#cannotDelete:member'
@@ -109,7 +109,7 @@ properties:
     syntax:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ContentControlData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.ContentControlData#font:member'
     package: word!
@@ -128,7 +128,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: id
     uid: 'word!Word.Interfaces.ContentControlData#id:member'
     package: word!
@@ -165,7 +165,7 @@ properties:
     syntax:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="InlinePictureData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
   - name: paragraphs
     uid: 'word!Word.Interfaces.ContentControlData#paragraphs:member'
     package: word!
@@ -183,7 +183,7 @@ properties:
     syntax:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ParagraphData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'
   - name: placeholderText
     uid: 'word!Word.Interfaces.ContentControlData#placeholderText:member'
     package: word!
@@ -320,7 +320,7 @@ properties:
         "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlType:enum" /> | "Unknown" |
+          <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
           "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"

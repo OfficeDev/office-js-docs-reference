@@ -56,7 +56,7 @@ properties:
       content: 'attachmentStatus: MailboxEnums.AttachmentStatus | string;'
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref uid="AttachmentStatus:enum" /> |
+          <xref uid="outlook!Office.MailboxEnums.AttachmentStatus:enum" /> |
           string
   - name: type
     uid: 'outlook!Office.AttachmentsChangedEventArgs#type:member'

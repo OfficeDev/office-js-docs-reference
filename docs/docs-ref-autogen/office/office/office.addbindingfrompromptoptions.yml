@@ -78,4 +78,4 @@ properties:
     syntax:
       content: 'sampleData?: Office.TableData'
       return:
-        type: 'office!Office.<xref uid="TableData:class" />'
+        type: '<xref uid="office!Office.TableData:class" />'

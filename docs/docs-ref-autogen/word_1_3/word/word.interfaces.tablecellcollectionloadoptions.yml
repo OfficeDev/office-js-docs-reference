@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
   - name: cellIndex
     uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
     package: word!
@@ -123,7 +123,7 @@ properties:
     syntax:
       content: 'parentRow?: Word.Interfaces.TableRowLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableRowLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableRowLoadOptions:interface" />'
   - name: parentTable
     uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentTable:member'
     package: word!
@@ -141,7 +141,7 @@ properties:
     syntax:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: rowIndex
     uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
     package: word!

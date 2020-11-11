@@ -54,7 +54,7 @@ properties:
                 };
       return:
         type: |-
-          excel!Excel.<xref uid="CellPropertiesFormat:interface" /> & {
+          <xref uid="excel!Excel.CellPropertiesFormat:interface" /> & {
                       columnWidth?: number;
                   }
-extends: 'excel!Excel.<xref uid="SettableCellProperties:interface" />'
+extends: '<xref uid="excel!Excel.SettableCellProperties:interface" />'

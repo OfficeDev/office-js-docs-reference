@@ -118,7 +118,7 @@ properties:
     syntax:
       content: 'view?: Visio.Interfaces.PageViewLoadOptions;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="PageViewLoadOptions:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.PageViewLoadOptions:interface" />'
   - name: width
     uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#width:member'
     package: visio!

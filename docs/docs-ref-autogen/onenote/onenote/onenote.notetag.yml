@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.NoteTag#id:member'
     package: onenote!
@@ -68,7 +68,7 @@ properties:
         "TaskRemoved";
       return:
         type: >-
-          onenote!OneNote.<xref uid="NoteTagStatus:enum" /> | "Unknown" |
+          <xref uid="onenote!OneNote.NoteTagStatus:enum" /> | "Unknown" |
           "Normal" | "Completed" | "Disabled" | "OutlookTask" |
           "TaskNotSyncedYet" | "TaskRemoved"
   - name: type
@@ -92,7 +92,7 @@ properties:
         | "Critical" | "ToDoPriority1" | "ToDoPriority2";
       return:
         type: >-
-          onenote!OneNote.<xref uid="NoteTagType:enum" /> | "Unknown" | "ToDo" |
+          <xref uid="onenote!OneNote.NoteTagType:enum" /> | "Unknown" | "ToDo" |
           "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
           "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
 methods:
@@ -133,10 +133,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="NoteTagLoadOptions:interface"
+            <xref uid="onenote!OneNote.Interfaces.NoteTagLoadOptions:interface"
             />
       return:
-        type: 'onenote!OneNote.<xref uid="NoteTag:class" />'
+        type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.NoteTag#load:member(2)'
@@ -157,7 +157,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="NoteTag:class" />'
+        type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'onenote!OneNote.NoteTag#load:member(3)'
@@ -182,7 +182,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="NoteTag:class" />'
+        type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.NoteTag#toJSON:member(1)'
@@ -202,7 +202,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.NoteTagData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="NoteTagData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.NoteTagData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.NoteTag#track:member(1)'
@@ -222,7 +222,7 @@ methods:
     syntax:
       content: 'track(): OneNote.NoteTag;'
       return:
-        type: 'onenote!OneNote.<xref uid="NoteTag:class" />'
+        type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.NoteTag#untrack:member(1)'
@@ -241,6 +241,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.NoteTag;'
       return:
-        type: 'onenote!OneNote.<xref uid="NoteTag:class" />'
+        type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

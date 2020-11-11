@@ -34,7 +34,7 @@ properties:
     syntax:
       content: 'customIcon?: Excel.Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: formula
     uid: 'excel!Excel.ConditionalIconCriterion#formula:member'
     package: excel!
@@ -125,7 +125,7 @@ properties:
         "GreaterThan" | "GreaterThanOrEqual";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalIconCriterionOperator:enum" /> |
+          <xref uid="excel!Excel.ConditionalIconCriterionOperator:enum" /> |
           "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
         description: >-
 
@@ -216,7 +216,7 @@ properties:
         "Percent" | "Formula" | "Percentile";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalFormatIconRuleType:enum" /> |
+          <xref uid="excel!Excel.ConditionalFormatIconRuleType:enum" /> |
           "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"
         description: >-
 

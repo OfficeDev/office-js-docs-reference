@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: OneNote.Interfaces.SectionGroupData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="SectionGroupData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionGroupData:interface" />[]'

@@ -26,7 +26,7 @@ constructors:
         - id: code
           description: ''
           type: >-
-            custom-functions-runtime!CustomFunctions.<xref uid="ErrorCode:enum"
+            <xref uid="custom-functions-runtime!CustomFunctions.ErrorCode:enum"
             />
         - id: message
           description: ''
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'code: ErrorCode;'
       return:
-        type: 'custom-functions-runtime!CustomFunctions.<xref uid="ErrorCode:enum" />'
+        type: '<xref uid="custom-functions-runtime!CustomFunctions.ErrorCode:enum" />'
   - name: message
     uid: 'custom-functions-runtime!CustomFunctions.Error#message:member'
     package: custom-functions-runtime!

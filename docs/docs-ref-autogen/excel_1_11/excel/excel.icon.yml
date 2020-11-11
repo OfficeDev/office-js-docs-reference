@@ -57,7 +57,7 @@ properties:
         "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
       return:
         type: >-
-          excel!Excel.<xref uid="IconSet:enum" /> | "Invalid" | "ThreeArrows" |
+          <xref uid="excel!Excel.IconSet:enum" /> | "Invalid" | "ThreeArrows" |
           "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
           "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" |
           "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" |

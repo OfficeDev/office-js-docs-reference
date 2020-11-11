@@ -55,7 +55,7 @@ properties:
         "CellMidPoint";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalDataBarAxisFormat:enum" /> |
+          <xref uid="excel!Excel.ConditionalDataBarAxisFormat:enum" /> |
           "Automatic" | "None" | "CellMidPoint"
   - name: barDirection
     uid: 'excel!Excel.DataBarConditionalFormat#barDirection:member'
@@ -77,7 +77,7 @@ properties:
         "LeftToRight" | "RightToLeft";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalDataBarDirection:enum" /> |
+          <xref uid="excel!Excel.ConditionalDataBarDirection:enum" /> |
           "Context" | "LeftToRight" | "RightToLeft"
         description: >-
 
@@ -114,7 +114,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: lowerBoundRule
     uid: 'excel!Excel.DataBarConditionalFormat#lowerBoundRule:member'
     package: excel!
@@ -135,7 +135,7 @@ properties:
     syntax:
       content: 'lowerBoundRule: Excel.ConditionalDataBarRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarRule:interface" />'
   - name: negativeFormat
     uid: 'excel!Excel.DataBarConditionalFormat#negativeFormat:member'
     package: excel!
@@ -153,7 +153,7 @@ properties:
     syntax:
       content: 'readonly negativeFormat: Excel.ConditionalDataBarNegativeFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarNegativeFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarNegativeFormat:class" />'
   - name: positiveFormat
     uid: 'excel!Excel.DataBarConditionalFormat#positiveFormat:member'
     package: excel!
@@ -172,7 +172,7 @@ properties:
     syntax:
       content: 'readonly positiveFormat: Excel.ConditionalDataBarPositiveFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarPositiveFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarPositiveFormat:class" />'
   - name: showDataBarOnly
     uid: 'excel!Excel.DataBarConditionalFormat#showDataBarOnly:member'
     package: excel!
@@ -211,7 +211,7 @@ properties:
     syntax:
       content: 'upperBoundRule: Excel.ConditionalDataBarRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarRule:interface" />'
 methods:
   - name: load(options)
     uid: 'excel!Excel.DataBarConditionalFormat#load:member(1)'
@@ -231,10 +231,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="DataBarConditionalFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="DataBarConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.DataBarConditionalFormat#load:member(2)'
@@ -255,7 +256,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="DataBarConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.DataBarConditionalFormat#load:member(3)'
@@ -286,7 +287,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="DataBarConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.DataBarConditionalFormat#set:member(1)'
@@ -313,13 +314,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="DataBarConditionalFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -338,7 +340,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="DataBarConditionalFormat:class" />'
+          type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
       return:
         type: void
         description: ''
@@ -362,7 +364,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.DataBarConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DataBarConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DataBarConditionalFormatData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

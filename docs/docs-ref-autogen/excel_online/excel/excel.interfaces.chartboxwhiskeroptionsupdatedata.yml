@@ -32,7 +32,7 @@ properties:
         "Exclusive";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartBoxQuartileCalculation:enum" /> |
+          <xref uid="excel!Excel.ChartBoxQuartileCalculation:enum" /> |
           "Inclusive" | "Exclusive"
   - name: showInnerPoints
     uid: >-

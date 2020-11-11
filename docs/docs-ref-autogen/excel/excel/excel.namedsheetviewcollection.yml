@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.NamedSheetViewCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.NamedSheetView[];'
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetView:class" />[]'
+        type: '<xref uid="excel!Excel.NamedSheetView:class" />[]'
 methods:
   - name: add(name)
     uid: 'excel!Excel.NamedSheetViewCollection#add:member(1)'
@@ -66,7 +66,7 @@ methods:
             worksheet.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetView:class" />'
         description: The newly created sheet view object.
   - name: enterTemporary()
     uid: 'excel!Excel.NamedSheetViewCollection#enterTemporary:member(1)'
@@ -89,7 +89,7 @@ methods:
     syntax:
       content: 'enterTemporary(): Excel.NamedSheetView;'
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetView:class" />'
         description: The newly created sheet view object.
   - name: exit()
     uid: 'excel!Excel.NamedSheetViewCollection#exit:member(1)'
@@ -127,7 +127,7 @@ methods:
     syntax:
       content: 'getActive(): Excel.NamedSheetView;'
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetView:class" />'
         description: The currently active sheet view for this worksheet.
   - name: getCount()
     uid: 'excel!Excel.NamedSheetViewCollection#getCount:member(1)'
@@ -147,7 +147,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.NamedSheetViewCollection#getItem:member(1)'
@@ -172,7 +172,7 @@ methods:
             to get the temporary sheet view, if the temporary view exists.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetView:class" />'
         description: >-
           The sheet view with the given name, or the temporary view if the empty
           string was provided. If there is no current temporary view and the
@@ -198,7 +198,7 @@ methods:
           description: The index of the sheet view object in the collection.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetView:class" />'
         description: The sheet view at the given index.
   - name: load(options)
     uid: 'excel!Excel.NamedSheetViewCollection#load:member(1)'
@@ -218,12 +218,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="NamedSheetViewCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.NamedSheetViewCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetViewCollection:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetViewCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.NamedSheetViewCollection#load:member(2)'
@@ -244,7 +244,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetViewCollection:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetViewCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.NamedSheetViewCollection#load:member(3)'
@@ -267,9 +267,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="NamedSheetViewCollection:class" />'
+        type: '<xref uid="excel!Excel.NamedSheetViewCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.NamedSheetViewCollection#toJSON:member(1)'
@@ -292,7 +292,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.NamedSheetViewCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="NamedSheetViewCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.NamedSheetViewCollectionData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

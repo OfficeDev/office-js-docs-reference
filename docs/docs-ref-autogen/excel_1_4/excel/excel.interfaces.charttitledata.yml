@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartTitleFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleFormatData:interface" />'
   - name: overlay
     uid: 'excel!Excel.Interfaces.ChartTitleData#overlay:member'
     package: excel!

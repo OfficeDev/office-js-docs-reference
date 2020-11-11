@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'delegatePermissions: MailboxEnums.DelegatePermissions;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="DelegatePermissions:enum" />'
+        type: '<xref uid="outlook!Office.MailboxEnums.DelegatePermissions:enum" />'
   - name: owner
     uid: 'outlook!Office.SharedProperties#owner:member'
     package: outlook!

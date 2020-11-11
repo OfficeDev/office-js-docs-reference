@@ -240,4 +240,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

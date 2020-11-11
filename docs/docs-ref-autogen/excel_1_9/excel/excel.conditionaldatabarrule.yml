@@ -54,6 +54,6 @@ properties:
         "Percentile";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalFormatRuleType:enum" /> | "Invalid"
+          <xref uid="excel!Excel.ConditionalFormatRuleType:enum" /> | "Invalid"
           | "Automatic" | "LowestValue" | "HighestValue" | "Number" | "Percent"
           | "Formula" | "Percentile"

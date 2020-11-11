@@ -284,5 +284,5 @@ properties:
         "SingleAccountant" | "DoubleAccountant";
       return:
         type: >-
-          excel!Excel.<xref uid="RangeUnderlineStyle:enum" /> | "None" |
+          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" |
           "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

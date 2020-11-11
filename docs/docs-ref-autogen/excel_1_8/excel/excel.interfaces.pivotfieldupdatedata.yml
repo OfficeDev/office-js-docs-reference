@@ -64,4 +64,4 @@ properties:
     syntax:
       content: 'subtotals?: Excel.Subtotals;'
       return:
-        type: 'excel!Excel.<xref uid="Subtotals:interface" />'
+        type: '<xref uid="excel!Excel.Subtotals:interface" />'

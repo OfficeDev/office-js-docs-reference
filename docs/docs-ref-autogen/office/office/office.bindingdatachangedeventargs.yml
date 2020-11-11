@@ -22,7 +22,7 @@ properties:
     syntax:
       content: 'binding: Binding;'
       return:
-        type: 'office!Office.<xref uid="Binding:interface" />'
+        type: '<xref uid="office!Office.Binding:interface" />'
   - name: type
     uid: 'office!Office.BindingDataChangedEventArgs#type:member'
     package: office!
@@ -36,4 +36,4 @@ properties:
     syntax:
       content: 'type: EventType;'
       return:
-        type: 'office!Office.<xref uid="EventType:enum" />'
+        type: '<xref uid="office!Office.EventType:enum" />'

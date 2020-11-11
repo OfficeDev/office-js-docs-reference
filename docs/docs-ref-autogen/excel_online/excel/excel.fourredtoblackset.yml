@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'blackCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: grayCircle
     uid: 'excel!Excel.FourRedToBlackSet#grayCircle:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'grayCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: pinkCircle
     uid: 'excel!Excel.FourRedToBlackSet#pinkCircle:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'pinkCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: redCircle
     uid: 'excel!Excel.FourRedToBlackSet#redCircle:member'
     package: excel!
@@ -59,4 +59,4 @@ properties:
     syntax:
       content: 'redCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

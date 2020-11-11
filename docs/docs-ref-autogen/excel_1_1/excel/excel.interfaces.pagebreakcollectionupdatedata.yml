@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.PageBreakData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PageBreakData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PageBreakData:interface" />[]'

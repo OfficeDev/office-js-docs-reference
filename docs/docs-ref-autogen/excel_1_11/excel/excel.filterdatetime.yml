@@ -55,5 +55,5 @@ properties:
         | "Hour" | "Minute" | "Second";
       return:
         type: >-
-          excel!Excel.<xref uid="FilterDatetimeSpecificity:enum" /> | "Year" |
+          <xref uid="excel!Excel.FilterDatetimeSpecificity:enum" /> | "Year" |
           "Month" | "Day" | "Hour" | "Minute" | "Second"

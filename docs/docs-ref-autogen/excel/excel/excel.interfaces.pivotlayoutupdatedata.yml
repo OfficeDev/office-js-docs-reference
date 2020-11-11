@@ -160,7 +160,7 @@ properties:
       content: 'layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
         type: >-
-          excel!Excel.<xref uid="PivotLayoutType:enum" /> | "Compact" |
+          <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" |
           "Tabular" | "Outline"
   - name: pivotStyle
     uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#pivotStyle:member'
@@ -180,7 +180,7 @@ properties:
       content: 'pivotStyle?: Excel.Interfaces.PivotTableStyleUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="PivotTableStyleUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.PivotTableStyleUpdateData:interface"
           />
   - name: preserveFormatting
     uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#preserveFormatting:member'
@@ -278,5 +278,5 @@ properties:
         "Off";
       return:
         type: >-
-          excel!Excel.<xref uid="SubtotalLocationType:enum" /> | "AtTop" |
+          <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" |
           "AtBottom" | "Off"

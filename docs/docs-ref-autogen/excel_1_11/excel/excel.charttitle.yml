@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.ChartTitle#format:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartTitleFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartTitleFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartTitleFormat:class" />'
   - name: height
     uid: 'excel!Excel.ChartTitle#height:member'
     package: excel!
@@ -87,7 +87,7 @@ properties:
         "Left" | "Right" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextHorizontalAlignment:enum" /> |
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> |
           "Center" | "Left" | "Right" | "Justify" | "Distributed"
   - name: left
     uid: 'excel!Excel.ChartTitle#left:member'
@@ -147,7 +147,7 @@ properties:
         "Left" | "Right";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTitlePosition:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartTitlePosition:enum" /> | "Automatic" |
           "Top" | "Bottom" | "Left" | "Right"
   - name: showShadow
     uid: 'excel!Excel.ChartTitle#showShadow:member'
@@ -266,7 +266,7 @@ properties:
         "Bottom" | "Top" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextVerticalAlignment:enum" /> | "Center"
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center"
           | "Bottom" | "Top" | "Justify" | "Distributed"
   - name: visible
     uid: 'excel!Excel.ChartTitle#visible:member'
@@ -331,7 +331,7 @@ methods:
           description: Length of substring to be retrieved.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="ChartFormatString:class" />'
+        type: '<xref uid="excel!Excel.ChartFormatString:class" />'
         description: >-
 
 
@@ -371,10 +371,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ChartTitleLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.ChartTitleLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="ChartTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartTitle:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartTitle#load:member(2)'
@@ -395,7 +395,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartTitle:class" />'
         description: >-
 
 
@@ -475,7 +475,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartTitle:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartTitle#set:member(1)'
@@ -501,12 +501,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartTitleUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartTitleUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -525,7 +525,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartTitle:class" />'
+          type: '<xref uid="excel!Excel.ChartTitle:class" />'
       return:
         type: void
         description: ''
@@ -571,6 +571,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartTitleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

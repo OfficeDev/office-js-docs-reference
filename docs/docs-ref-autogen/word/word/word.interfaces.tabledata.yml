@@ -30,7 +30,7 @@ properties:
         "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: font
     uid: 'word!Word.Interfaces.TableData#font:member'
@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: headerRowCount
     uid: 'word!Word.Interfaces.TableData#headerRowCount:member'
     package: word!
@@ -90,7 +90,7 @@ properties:
         "Centered" | "Right" | "Justified";
       return:
         type: >-
-          word!Word.<xref uid="Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
   - name: isUniform
     uid: 'word!Word.Interfaces.TableData#isUniform:member'
@@ -164,7 +164,7 @@ properties:
     syntax:
       content: 'rows?: Word.Interfaces.TableRowData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableRowData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.TableRowData:interface" />[]'
   - name: shadingColor
     uid: 'word!Word.Interfaces.TableData#shadingColor:member'
     package: word!
@@ -311,7 +311,7 @@ properties:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type: >-
-          word!Word.<xref uid="Style:enum" /> | "Other" | "Normal" | "Heading1"
+          <xref uid="word!Word.Style:enum" /> | "Other" | "Normal" | "Heading1"
           | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
           "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
           "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" |
@@ -435,7 +435,7 @@ properties:
     syntax:
       content: 'tables?: Word.Interfaces.TableData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.TableData:interface" />[]'
   - name: values
     uid: 'word!Word.Interfaces.TableData#values:member'
     package: word!
@@ -475,7 +475,7 @@ properties:
         | "Bottom";
       return:
         type: >-
-          word!Word.<xref uid="VerticalAlignment:enum" /> | "Mixed" | "Top" |
+          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
           "Center" | "Bottom"
   - name: width
     uid: 'word!Word.Interfaces.TableData#width:member'

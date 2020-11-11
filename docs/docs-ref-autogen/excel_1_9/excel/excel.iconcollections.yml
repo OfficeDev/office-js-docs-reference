@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'fiveArrows: FiveArrowsSet;'
       return:
-        type: 'excel!Excel.<xref uid="FiveArrowsSet:interface" />'
+        type: '<xref uid="excel!Excel.FiveArrowsSet:interface" />'
   - name: fiveArrowsGray
     uid: 'excel!Excel.IconCollections#fiveArrowsGray:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'fiveArrowsGray: FiveArrowsGraySet;'
       return:
-        type: 'excel!Excel.<xref uid="FiveArrowsGraySet:interface" />'
+        type: '<xref uid="excel!Excel.FiveArrowsGraySet:interface" />'
   - name: fiveBoxes
     uid: 'excel!Excel.IconCollections#fiveBoxes:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'fiveBoxes: FiveBoxesSet;'
       return:
-        type: 'excel!Excel.<xref uid="FiveBoxesSet:interface" />'
+        type: '<xref uid="excel!Excel.FiveBoxesSet:interface" />'
   - name: fiveQuarters
     uid: 'excel!Excel.IconCollections#fiveQuarters:member'
     package: excel!
@@ -59,7 +59,7 @@ properties:
     syntax:
       content: 'fiveQuarters: FiveQuartersSet;'
       return:
-        type: 'excel!Excel.<xref uid="FiveQuartersSet:interface" />'
+        type: '<xref uid="excel!Excel.FiveQuartersSet:interface" />'
   - name: fiveRating
     uid: 'excel!Excel.IconCollections#fiveRating:member'
     package: excel!
@@ -71,7 +71,7 @@ properties:
     syntax:
       content: 'fiveRating: FiveRatingSet;'
       return:
-        type: 'excel!Excel.<xref uid="FiveRatingSet:interface" />'
+        type: '<xref uid="excel!Excel.FiveRatingSet:interface" />'
   - name: fourArrows
     uid: 'excel!Excel.IconCollections#fourArrows:member'
     package: excel!
@@ -83,7 +83,7 @@ properties:
     syntax:
       content: 'fourArrows: FourArrowsSet;'
       return:
-        type: 'excel!Excel.<xref uid="FourArrowsSet:interface" />'
+        type: '<xref uid="excel!Excel.FourArrowsSet:interface" />'
   - name: fourArrowsGray
     uid: 'excel!Excel.IconCollections#fourArrowsGray:member'
     package: excel!
@@ -95,7 +95,7 @@ properties:
     syntax:
       content: 'fourArrowsGray: FourArrowsGraySet;'
       return:
-        type: 'excel!Excel.<xref uid="FourArrowsGraySet:interface" />'
+        type: '<xref uid="excel!Excel.FourArrowsGraySet:interface" />'
   - name: fourRating
     uid: 'excel!Excel.IconCollections#fourRating:member'
     package: excel!
@@ -107,7 +107,7 @@ properties:
     syntax:
       content: 'fourRating: FourRatingSet;'
       return:
-        type: 'excel!Excel.<xref uid="FourRatingSet:interface" />'
+        type: '<xref uid="excel!Excel.FourRatingSet:interface" />'
   - name: fourRedToBlack
     uid: 'excel!Excel.IconCollections#fourRedToBlack:member'
     package: excel!
@@ -119,7 +119,7 @@ properties:
     syntax:
       content: 'fourRedToBlack: FourRedToBlackSet;'
       return:
-        type: 'excel!Excel.<xref uid="FourRedToBlackSet:interface" />'
+        type: '<xref uid="excel!Excel.FourRedToBlackSet:interface" />'
   - name: fourTrafficLights
     uid: 'excel!Excel.IconCollections#fourTrafficLights:member'
     package: excel!
@@ -131,7 +131,7 @@ properties:
     syntax:
       content: 'fourTrafficLights: FourTrafficLightsSet;'
       return:
-        type: 'excel!Excel.<xref uid="FourTrafficLightsSet:interface" />'
+        type: '<xref uid="excel!Excel.FourTrafficLightsSet:interface" />'
   - name: threeArrows
     uid: 'excel!Excel.IconCollections#threeArrows:member'
     package: excel!
@@ -143,7 +143,7 @@ properties:
     syntax:
       content: 'threeArrows: ThreeArrowsSet;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeArrowsSet:interface" />'
+        type: '<xref uid="excel!Excel.ThreeArrowsSet:interface" />'
   - name: threeArrowsGray
     uid: 'excel!Excel.IconCollections#threeArrowsGray:member'
     package: excel!
@@ -155,7 +155,7 @@ properties:
     syntax:
       content: 'threeArrowsGray: ThreeArrowsGraySet;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeArrowsGraySet:interface" />'
+        type: '<xref uid="excel!Excel.ThreeArrowsGraySet:interface" />'
   - name: threeFlags
     uid: 'excel!Excel.IconCollections#threeFlags:member'
     package: excel!
@@ -167,7 +167,7 @@ properties:
     syntax:
       content: 'threeFlags: ThreeFlagsSet;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeFlagsSet:interface" />'
+        type: '<xref uid="excel!Excel.ThreeFlagsSet:interface" />'
   - name: threeSigns
     uid: 'excel!Excel.IconCollections#threeSigns:member'
     package: excel!
@@ -179,7 +179,7 @@ properties:
     syntax:
       content: 'threeSigns: ThreeSignsSet;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeSignsSet:interface" />'
+        type: '<xref uid="excel!Excel.ThreeSignsSet:interface" />'
   - name: threeStars
     uid: 'excel!Excel.IconCollections#threeStars:member'
     package: excel!
@@ -191,7 +191,7 @@ properties:
     syntax:
       content: 'threeStars: ThreeStarsSet;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeStarsSet:interface" />'
+        type: '<xref uid="excel!Excel.ThreeStarsSet:interface" />'
   - name: threeSymbols
     uid: 'excel!Excel.IconCollections#threeSymbols:member'
     package: excel!
@@ -203,7 +203,7 @@ properties:
     syntax:
       content: 'threeSymbols: ThreeSymbolsSet;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeSymbolsSet:interface" />'
+        type: '<xref uid="excel!Excel.ThreeSymbolsSet:interface" />'
   - name: threeSymbols2
     uid: 'excel!Excel.IconCollections#threeSymbols2:member'
     package: excel!
@@ -215,7 +215,7 @@ properties:
     syntax:
       content: 'threeSymbols2: ThreeSymbols2Set;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeSymbols2Set:interface" />'
+        type: '<xref uid="excel!Excel.ThreeSymbols2Set:interface" />'
   - name: threeTrafficLights1
     uid: 'excel!Excel.IconCollections#threeTrafficLights1:member'
     package: excel!
@@ -227,7 +227,7 @@ properties:
     syntax:
       content: 'threeTrafficLights1: ThreeTrafficLights1Set;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeTrafficLights1Set:interface" />'
+        type: '<xref uid="excel!Excel.ThreeTrafficLights1Set:interface" />'
   - name: threeTrafficLights2
     uid: 'excel!Excel.IconCollections#threeTrafficLights2:member'
     package: excel!
@@ -239,7 +239,7 @@ properties:
     syntax:
       content: 'threeTrafficLights2: ThreeTrafficLights2Set;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeTrafficLights2Set:interface" />'
+        type: '<xref uid="excel!Excel.ThreeTrafficLights2Set:interface" />'
   - name: threeTriangles
     uid: 'excel!Excel.IconCollections#threeTriangles:member'
     package: excel!
@@ -251,4 +251,4 @@ properties:
     syntax:
       content: 'threeTriangles: ThreeTrianglesSet;'
       return:
-        type: 'excel!Excel.<xref uid="ThreeTrianglesSet:interface" />'
+        type: '<xref uid="excel!Excel.ThreeTrianglesSet:interface" />'

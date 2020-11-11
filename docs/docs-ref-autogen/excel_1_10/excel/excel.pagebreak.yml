@@ -43,7 +43,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: rowIndex
     uid: 'excel!Excel.PageBreak#rowIndex:member'
     package: excel!
@@ -99,7 +99,7 @@ methods:
     syntax:
       content: 'getCellAfterBreak(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.PageBreak#load:member(1)'
@@ -116,9 +116,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="PageBreakLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.PageBreakLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="PageBreak:class" />'
+        type: '<xref uid="excel!Excel.PageBreak:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PageBreak#load:member(2)'
@@ -139,7 +139,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PageBreak:class" />'
+        type: '<xref uid="excel!Excel.PageBreak:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PageBreak#load:member(3)'
@@ -170,7 +170,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="PageBreak:class" />'
+        type: '<xref uid="excel!Excel.PageBreak:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.PageBreak#toJSON:member(1)'
@@ -190,6 +190,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.PageBreakData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PageBreakData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PageBreakData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

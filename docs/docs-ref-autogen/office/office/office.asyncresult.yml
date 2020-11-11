@@ -152,7 +152,7 @@ properties:
     syntax:
       content: 'error: Office.Error;'
       return:
-        type: 'office!Office.<xref uid="Error:interface" />'
+        type: '<xref uid="office!Office.Error:interface" />'
         description: |-
 
 
@@ -188,7 +188,7 @@ properties:
     syntax:
       content: 'status: AsyncResultStatus;'
       return:
-        type: 'office!Office.<xref uid="AsyncResultStatus:enum" />'
+        type: '<xref uid="office!Office.AsyncResultStatus:enum" />'
         description: |-
 
 

@@ -55,7 +55,7 @@ properties:
     syntax:
       content: 'document: Visio.Document;'
       return:
-        type: 'visio!Visio.<xref uid="Document:class" />'
+        type: '<xref uid="visio!Visio.Document:class" />'
   - name: success
     uid: 'visio!Visio.DataRefreshCompleteEventArgs#success:member'
     package: visio!

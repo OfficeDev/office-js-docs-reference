@@ -84,4 +84,4 @@ properties:
     syntax:
       content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'

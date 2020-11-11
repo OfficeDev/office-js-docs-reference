@@ -49,8 +49,9 @@ properties:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RangeBorderCollectionUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface"
+          />
   - name: fill
     uid: 'excel!Excel.Interfaces.StyleUpdateData#fill:member'
     package: excel!
@@ -68,7 +69,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.RangeFillUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFillUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFillUpdateData:interface" />'
   - name: font
     uid: 'excel!Excel.Interfaces.StyleUpdateData#font:member'
     package: excel!
@@ -86,7 +87,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.RangeFontUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFontUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFontUpdateData:interface" />'
   - name: formulaHidden
     uid: 'excel!Excel.Interfaces.StyleUpdateData#formulaHidden:member'
     package: excel!
@@ -127,7 +128,7 @@ properties:
         "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="HorizontalAlignment:enum" /> | "General" |
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
           "Left" | "Center" | "Right" | "Fill" | "Justify" |
           "CenterAcrossSelection" | "Distributed"
   - name: includeAlignment
@@ -336,7 +337,7 @@ properties:
         "RightToLeft";
       return:
         type: >-
-          excel!Excel.<xref uid="ReadingOrder:enum" /> | "Context" |
+          <xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" |
           "LeftToRight" | "RightToLeft"
   - name: shrinkToFit
     uid: 'excel!Excel.Interfaces.StyleUpdateData#shrinkToFit:member'
@@ -396,7 +397,7 @@ properties:
         "Bottom" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="VerticalAlignment:enum" /> | "Top" | "Center" |
+          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
           "Bottom" | "Justify" | "Distributed"
   - name: wrapText
     uid: 'excel!Excel.Interfaces.StyleUpdateData#wrapText:member'

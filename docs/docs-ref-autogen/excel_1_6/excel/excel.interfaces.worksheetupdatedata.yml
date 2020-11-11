@@ -67,5 +67,5 @@ properties:
         "VeryHidden";
       return:
         type: >-
-          excel!Excel.<xref uid="SheetVisibility:enum" /> | "Visible" | "Hidden"
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
           | "VeryHidden"

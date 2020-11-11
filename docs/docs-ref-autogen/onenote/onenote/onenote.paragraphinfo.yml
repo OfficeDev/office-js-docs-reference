@@ -69,7 +69,7 @@ properties:
       content: 'listType: OneNote.ListType | "None" | "Number" | "Bullet";'
       return:
         type: >-
-          onenote!OneNote.<xref uid="ListType:enum" /> | "None" | "Number" |
+          <xref uid="onenote!OneNote.ListType:enum" /> | "None" | "Number" |
           "Bullet"
   - name: numberType
     uid: 'onenote!OneNote.ParagraphInfo#numberType:member'
@@ -101,7 +101,7 @@ properties:
         "Custom";
       return:
         type: >-
-          onenote!OneNote.<xref uid="NumberType:enum" /> | "None" | "Arabic" |
+          <xref uid="onenote!OneNote.NumberType:enum" /> | "None" | "Arabic" |
           "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" |
           "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" |
           "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" | "DbNum4" |

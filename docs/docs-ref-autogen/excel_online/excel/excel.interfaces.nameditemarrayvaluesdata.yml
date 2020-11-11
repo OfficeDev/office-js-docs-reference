@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'types?: Excel.RangeValueType[][];'
       return:
-        type: 'excel!Excel.<xref uid="RangeValueType:enum" />[][]'
+        type: '<xref uid="excel!Excel.RangeValueType:enum" />[][]'
   - name: values
     uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#values:member'
     package: excel!

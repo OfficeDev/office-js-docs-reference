@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'comparator?: Excel.FilterDatetime;'
       return:
-        type: 'excel!Excel.<xref uid="FilterDatetime:interface" />'
+        type: '<xref uid="excel!Excel.FilterDatetime:interface" />'
   - name: condition
     uid: 'excel!Excel.PivotDateFilter#condition:member'
     package: excel!
@@ -68,7 +68,7 @@ properties:
         "AllDatesInPeriodDecember";
       return:
         type: >-
-          excel!Excel.<xref uid="DateFilterCondition:enum" /> | "Unknown" |
+          <xref uid="excel!Excel.DateFilterCondition:enum" /> | "Unknown" |
           "Equals" | "Before" | "BeforeOrEqualTo" | "After" | "AfterOrEqualTo" |
           "Between" | "Tomorrow" | "Today" | "Yesterday" | "NextWeek" |
           "ThisWeek" | "LastWeek" | "NextMonth" | "ThisMonth" | "LastMonth" |
@@ -118,7 +118,7 @@ properties:
     syntax:
       content: 'lowerBound?: Excel.FilterDatetime;'
       return:
-        type: 'excel!Excel.<xref uid="FilterDatetime:interface" />'
+        type: '<xref uid="excel!Excel.FilterDatetime:interface" />'
   - name: upperBound
     uid: 'excel!Excel.PivotDateFilter#upperBound:member'
     package: excel!
@@ -136,7 +136,7 @@ properties:
     syntax:
       content: 'upperBound?: Excel.FilterDatetime;'
       return:
-        type: 'excel!Excel.<xref uid="FilterDatetime:interface" />'
+        type: '<xref uid="excel!Excel.FilterDatetime:interface" />'
   - name: wholeDays
     uid: 'excel!Excel.PivotDateFilter#wholeDays:member'
     package: excel!

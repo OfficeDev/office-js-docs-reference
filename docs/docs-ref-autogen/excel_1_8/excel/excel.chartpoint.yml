@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: dataLabel
     uid: 'excel!Excel.ChartPoint#dataLabel:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly dataLabel: Excel.ChartDataLabel;'
       return:
-        type: 'excel!Excel.<xref uid="ChartDataLabel:class" />'
+        type: '<xref uid="excel!Excel.ChartDataLabel:class" />'
   - name: format
     uid: 'excel!Excel.ChartPoint#format:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartPointFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartPointFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartPointFormat:class" />'
   - name: hasDataLabel
     uid: 'excel!Excel.ChartPoint#hasDataLabel:member'
     package: excel!
@@ -162,7 +162,7 @@ properties:
         "Circle" | "Plus" | "Picture";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMarkerStyle:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" |
           "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" |
           "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - name: value
@@ -202,10 +202,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ChartPointLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.ChartPointLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="ChartPoint:class" />'
+        type: '<xref uid="excel!Excel.ChartPoint:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartPoint#load:member(2)'
@@ -226,7 +226,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartPoint:class" />'
+        type: '<xref uid="excel!Excel.ChartPoint:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartPoint#load:member(3)'
@@ -257,7 +257,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartPoint:class" />'
+        type: '<xref uid="excel!Excel.ChartPoint:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartPoint#set:member(1)'
@@ -283,12 +283,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartPointUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartPointUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -307,7 +307,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartPoint:class" />'
+          type: '<xref uid="excel!Excel.ChartPoint:class" />'
       return:
         type: void
         description: ''
@@ -329,6 +329,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartPointData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartPointData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

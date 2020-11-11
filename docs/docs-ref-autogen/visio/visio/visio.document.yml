@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'readonly application: Visio.Application;'
       return:
-        type: 'visio!Visio.<xref uid="Application:class" />'
+        type: '<xref uid="visio!Visio.Application:class" />'
   - name: context
     uid: 'visio!Visio.Document#context:member'
     package: visio!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: onDataRefreshComplete
     uid: 'visio!Visio.Document#onDataRefreshComplete:member'
     package: visio!
@@ -68,9 +68,8 @@ properties:
         OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;visio!Visio.<xref uid="DataRefreshCompleteEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.DataRefreshCompleteEventArgs:interface" />&gt;
   - name: onDocumentLoadComplete
     uid: 'visio!Visio.Document#onDocumentLoadComplete:member'
     package: visio!
@@ -91,9 +90,8 @@ properties:
         OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;visio!Visio.<xref uid="DocumentLoadCompleteEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.DocumentLoadCompleteEventArgs:interface" />&gt;
   - name: onPageLoadComplete
     uid: 'visio!Visio.Document#onPageLoadComplete:member'
     package: visio!
@@ -114,9 +112,8 @@ properties:
         OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;visio!Visio.<xref uid="PageLoadCompleteEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.PageLoadCompleteEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'visio!Visio.Document#onSelectionChanged:member'
     package: visio!
@@ -137,9 +134,8 @@ properties:
         OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;visio!Visio.<xref uid="SelectionChangedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.SelectionChangedEventArgs:interface" />&gt;
   - name: onShapeMouseEnter
     uid: 'visio!Visio.Document#onShapeMouseEnter:member'
     package: visio!
@@ -161,9 +157,8 @@ properties:
         OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;visio!Visio.<xref uid="ShapeMouseEnterEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.ShapeMouseEnterEventArgs:interface" />&gt;
   - name: onShapeMouseLeave
     uid: 'visio!Visio.Document#onShapeMouseLeave:member'
     package: visio!
@@ -184,9 +179,8 @@ properties:
         OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;visio!Visio.<xref uid="ShapeMouseLeaveEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.ShapeMouseLeaveEventArgs:interface" />&gt;
   - name: pages
     uid: 'visio!Visio.Document#pages:member'
     package: visio!
@@ -204,7 +198,7 @@ properties:
     syntax:
       content: 'readonly pages: Visio.PageCollection;'
       return:
-        type: 'visio!Visio.<xref uid="PageCollection:class" />'
+        type: '<xref uid="visio!Visio.PageCollection:class" />'
         description: |-
 
 
@@ -241,7 +235,7 @@ properties:
     syntax:
       content: 'readonly view: Visio.DocumentView;'
       return:
-        type: 'visio!Visio.<xref uid="DocumentView:class" />'
+        type: '<xref uid="visio!Visio.DocumentView:class" />'
 methods:
   - name: getActivePage()
     uid: 'visio!Visio.Document#getActivePage:member(1)'
@@ -260,7 +254,7 @@ methods:
     syntax:
       content: 'getActivePage(): Visio.Page;'
       return:
-        type: 'visio!Visio.<xref uid="Page:class" />'
+        type: '<xref uid="visio!Visio.Page:class" />'
         description: |-
 
 
@@ -317,9 +311,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'visio!Visio.Interfaces.<xref uid="DocumentLoadOptions:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.DocumentLoadOptions:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="Document:class" />'
+        type: '<xref uid="visio!Visio.Document:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.Document#load:member(2)'
@@ -340,7 +334,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="Document:class" />'
+        type: '<xref uid="visio!Visio.Document:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.Document#load:member(3)'
@@ -365,7 +359,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="Document:class" />'
+        type: '<xref uid="visio!Visio.Document:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'visio!Visio.Document#set:member(1)'
@@ -391,12 +385,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'visio!Visio.Interfaces.<xref uid="DocumentUpdateData:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.DocumentUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -415,7 +409,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'visio!Visio.<xref uid="Document:class" />'
+          type: '<xref uid="visio!Visio.Document:class" />'
       return:
         type: void
         description: ''
@@ -512,6 +506,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.DocumentData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="DocumentData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

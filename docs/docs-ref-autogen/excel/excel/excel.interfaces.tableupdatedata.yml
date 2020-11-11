@@ -205,4 +205,4 @@ properties:
     syntax:
       content: 'tableStyle?: Excel.Interfaces.TableStyleUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableStyleUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableStyleUpdateData:interface" />'

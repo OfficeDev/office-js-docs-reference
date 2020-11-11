@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'grayDownArrow: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: grayDownInclineArrow
     uid: 'excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'grayDownInclineArrow: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: graySideArrow
     uid: 'excel!Excel.FiveArrowsGraySet#graySideArrow:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'graySideArrow: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: grayUpArrow
     uid: 'excel!Excel.FiveArrowsGraySet#grayUpArrow:member'
     package: excel!
@@ -59,7 +59,7 @@ properties:
     syntax:
       content: 'grayUpArrow: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: grayUpInclineArrow
     uid: 'excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member'
     package: excel!
@@ -71,4 +71,4 @@ properties:
     syntax:
       content: 'grayUpInclineArrow: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

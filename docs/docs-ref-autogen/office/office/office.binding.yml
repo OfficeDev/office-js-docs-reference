@@ -54,7 +54,7 @@ properties:
     syntax:
       content: 'document: Office.Document;'
       return:
-        type: 'office!Office.<xref uid="Document:interface" />'
+        type: '<xref uid="office!Office.Document:interface" />'
         description: >-
 
 
@@ -122,7 +122,7 @@ properties:
     syntax:
       content: 'type: Office.BindingType;'
       return:
-        type: 'office!Office.<xref uid="BindingType:enum" />'
+        type: '<xref uid="office!Office.BindingType:enum" />'
         description: >-
 
 
@@ -174,7 +174,7 @@ methods:
             The event type. For bindings, it can be
             `Office.EventType.BindingDataChanged` or
             `Office.EventType.BindingSelectionChanged`<!-- -->.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
@@ -187,7 +187,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -195,7 +195,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -289,7 +289,7 @@ methods:
             The event type. For bindings, it can be
             `Office.EventType.BindingDataChanged` or
             `Office.EventType.BindingSelectionChanged`<!-- -->.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
@@ -305,7 +305,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -369,7 +369,7 @@ methods:
       parameters:
         - id: options
           description: Provides options for how to get the data in a binding.
-          type: 'office!Office.<xref uid="GetBindingDataOptions:interface" />'
+          type: '<xref uid="office!Office.GetBindingDataOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -380,7 +380,7 @@ methods:
             the call is successful), the data is returned in the format
             described in the CoercionType enumeration topic.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;T&gt;) =&gt; void
       return:
         type: void
@@ -544,7 +544,7 @@ methods:
             the call is successful), the data is returned in the format
             described in the CoercionType enumeration topic.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;T&gt;) =&gt; void
       return:
         type: void
@@ -572,12 +572,12 @@ methods:
             The event type. For bindings, it can be
             `Office.EventType.BindingDataChanged` or
             `Office.EventType.BindingSelectionChanged`<!-- -->.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: options
           description: >-
             Provides options to determine which event handler or handlers are
             removed.
-          type: 'office!Office.<xref uid="RemoveHandlerOptions:interface" />'
+          type: '<xref uid="office!Office.RemoveHandlerOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -585,7 +585,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -625,7 +625,7 @@ methods:
             The event type. For bindings, it can be
             `Office.EventType.BindingDataChanged` or
             `Office.EventType.BindingSelectionChanged`<!-- -->.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -633,7 +633,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -812,10 +812,10 @@ methods:
 
 
             Office Open XML: Word only
-          type: 'office!Office.<xref uid="TableData:class" /> | any'
+          type: '<xref uid="office!Office.TableData:class" /> | any'
         - id: options
           description: Provides options for how to set the data in a binding.
-          type: 'office!Office.<xref uid="SetBindingDataOptions:interface" />'
+          type: '<xref uid="office!Office.SetBindingDataOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -823,7 +823,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -1129,7 +1129,7 @@ methods:
 
 
             Office Open XML: Word only
-          type: 'office!Office.<xref uid="TableData:class" /> | any'
+          type: '<xref uid="office!Office.TableData:class" /> | any'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -1137,7 +1137,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

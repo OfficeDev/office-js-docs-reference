@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartSeriesFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesFormatData:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.ChartSeriesData#name:member'
     package: excel!
@@ -66,4 +66,4 @@ properties:
     syntax:
       content: 'points?: Excel.Interfaces.ChartPointData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartPointData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointData:interface" />[]'

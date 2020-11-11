@@ -29,8 +29,9 @@ properties:
       content: 'columnHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RowColumnPivotHierarchyData:interface" />[]
+          <xref
+          uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface"
+          />[]
   - name: dataHierarchies
     uid: 'excel!Excel.Interfaces.PivotTableData#dataHierarchies:member'
     package: excel!
@@ -49,7 +50,7 @@ properties:
       content: 'dataHierarchies?: Excel.Interfaces.DataPivotHierarchyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="DataPivotHierarchyData:interface"
+          <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData:interface"
           />[]
   - name: enableDataValueEditing
     uid: 'excel!Excel.Interfaces.PivotTableData#enableDataValueEditing:member'
@@ -88,7 +89,7 @@ properties:
       content: 'filterHierarchies?: Excel.Interfaces.FilterPivotHierarchyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="FilterPivotHierarchyData:interface"
+          <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData:interface"
           />[]
   - name: hierarchies
     uid: 'excel!Excel.Interfaces.PivotTableData#hierarchies:member'
@@ -107,7 +108,7 @@ properties:
     syntax:
       content: 'hierarchies?: Excel.Interfaces.PivotHierarchyData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotHierarchyData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotHierarchyData:interface" />[]'
   - name: id
     uid: 'excel!Excel.Interfaces.PivotTableData#id:member'
     package: excel!
@@ -162,8 +163,9 @@ properties:
       content: 'rowHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RowColumnPivotHierarchyData:interface" />[]
+          <xref
+          uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface"
+          />[]
   - name: useCustomSortLists
     uid: 'excel!Excel.Interfaces.PivotTableData#useCustomSortLists:member'
     package: excel!

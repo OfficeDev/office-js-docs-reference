@@ -31,8 +31,10 @@ properties:
       content: 'setResult: (value: ResultType | Error) => void;'
       return:
         type: >-
-          (value: ResultType | custom-functions-runtime!CustomFunctions.<xref
-          uid="Error:class" />) =&gt; void
+          (value: ResultType | <xref
+          uid="custom-functions-runtime!CustomFunctions.Error:class" />) =&gt;
+          void
 extends: >-
-  custom-functions-runtime!CustomFunctions.<xref
-  uid="CancelableInvocation:interface" />
+  <xref
+  uid="custom-functions-runtime!CustomFunctions.CancelableInvocation:interface"
+  />

@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBorderLoadOptions:interface" />'
   - name: font
     uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member'
     package: excel!
@@ -66,4 +66,4 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontLoadOptions:interface" />'

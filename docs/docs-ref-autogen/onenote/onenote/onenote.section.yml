@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.Section#id:member'
     package: onenote!
@@ -136,7 +136,7 @@ properties:
     syntax:
       content: 'readonly notebook: OneNote.Notebook;'
       return:
-        type: 'onenote!OneNote.<xref uid="Notebook:class" />'
+        type: '<xref uid="onenote!OneNote.Notebook:class" />'
   - name: pages
     uid: 'onenote!OneNote.Section#pages:member'
     package: onenote!
@@ -154,7 +154,7 @@ properties:
     syntax:
       content: 'readonly pages: OneNote.PageCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="PageCollection:class" />'
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
   - name: parentSectionGroup
     uid: 'onenote!OneNote.Section#parentSectionGroup:member'
     package: onenote!
@@ -173,7 +173,7 @@ properties:
     syntax:
       content: 'readonly parentSectionGroup: OneNote.SectionGroup;'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroup:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
   - name: parentSectionGroupOrNull
     uid: 'onenote!OneNote.Section#parentSectionGroupOrNull:member'
     package: onenote!
@@ -192,7 +192,7 @@ properties:
     syntax:
       content: 'readonly parentSectionGroupOrNull: OneNote.SectionGroup;'
       return:
-        type: 'onenote!OneNote.<xref uid="SectionGroup:class" />'
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
   - name: webUrl
     uid: 'onenote!OneNote.Section#webUrl:member'
     package: onenote!
@@ -233,7 +233,7 @@ methods:
           description: The title of the new page.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="Page:class" />'
+        type: '<xref uid="onenote!OneNote.Page:class" />'
         description: |-
 
 
@@ -285,9 +285,9 @@ methods:
       parameters:
         - id: destinationNotebook
           description: The notebook to copy this section to.
-          type: 'onenote!OneNote.<xref uid="Notebook:class" />'
+          type: '<xref uid="onenote!OneNote.Notebook:class" />'
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -343,9 +343,9 @@ methods:
       parameters:
         - id: destinationSectionGroup
           description: The section group to copy this section to.
-          type: 'onenote!OneNote.<xref uid="SectionGroup:class" />'
+          type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -398,7 +398,7 @@ methods:
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -442,12 +442,12 @@ methods:
       parameters:
         - id: location
           description: The location of the new section relative to the current section.
-          type: 'onenote!OneNote.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: title
           description: The name of the new section.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
   - name: 'insertSectionAsSibling(locationString, title)'
     uid: 'onenote!OneNote.Section#insertSectionAsSibling:member(2)'
@@ -475,7 +475,7 @@ methods:
           description: The name of the new section.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -544,10 +544,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="SectionLoadOptions:interface"
+            <xref uid="onenote!OneNote.Interfaces.SectionLoadOptions:interface"
             />
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.Section#load:member(2)'
@@ -568,7 +568,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -668,7 +668,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.Section#toJSON:member(1)'
@@ -688,7 +688,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.SectionData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="SectionData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.Section#track:member(1)'
@@ -708,7 +708,7 @@ methods:
     syntax:
       content: 'track(): OneNote.Section;'
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.Section#untrack:member(1)'
@@ -727,6 +727,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.Section;'
       return:
-        type: 'onenote!OneNote.<xref uid="Section:class" />'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

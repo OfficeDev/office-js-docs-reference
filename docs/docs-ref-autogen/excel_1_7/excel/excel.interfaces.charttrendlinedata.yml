@@ -29,7 +29,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartTrendlineFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartTrendlineFormatData:interface"
           />
   - name: intercept
     uid: 'excel!Excel.Interfaces.ChartTrendlineData#intercept:member'
@@ -129,6 +129,6 @@ properties:
         "Logarithmic" | "MovingAverage" | "Polynomial" | "Power";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTrendlineType:enum" /> | "Linear" |
+          <xref uid="excel!Excel.ChartTrendlineType:enum" /> | "Linear" |
           "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
           "Power"

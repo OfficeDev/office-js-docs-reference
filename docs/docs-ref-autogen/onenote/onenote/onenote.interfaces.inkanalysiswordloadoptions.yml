@@ -81,8 +81,9 @@ properties:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisLineLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface"
+          />
   - name: strokePointers
     uid: >-
       onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#strokePointers:member

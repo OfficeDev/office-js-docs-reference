@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'charts?: Excel.Interfaces.ChartData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartData:interface" />[]'
   - name: id
     uid: 'excel!Excel.Interfaces.WorksheetData#id:member'
     package: excel!
@@ -84,7 +84,7 @@ properties:
     syntax:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NamedItemData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />[]'
   - name: pivotTables
     uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
     package: excel!
@@ -102,7 +102,7 @@ properties:
     syntax:
       content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotTableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />[]'
   - name: position
     uid: 'excel!Excel.Interfaces.WorksheetData#position:member'
     package: excel!
@@ -139,7 +139,7 @@ properties:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="WorksheetProtectionData:interface"
+          <xref uid="excel!Excel.Interfaces.WorksheetProtectionData:interface"
           />
   - name: standardHeight
     uid: 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
@@ -221,7 +221,7 @@ properties:
     syntax:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />[]'
   - name: visibility
     uid: 'excel!Excel.Interfaces.WorksheetData#visibility:member'
     package: excel!
@@ -242,5 +242,5 @@ properties:
         "VeryHidden";
       return:
         type: >-
-          excel!Excel.<xref uid="SheetVisibility:enum" /> | "Visible" | "Hidden"
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
           | "VeryHidden"

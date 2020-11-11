@@ -33,4 +33,4 @@ properties:
     syntax:
       content: 'workbook: Excel.Workbook;'
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'

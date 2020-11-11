@@ -36,7 +36,7 @@ properties:
         "UseDestinationTheme";
       return:
         type: >-
-          powerpoint!PowerPoint.<xref uid="InsertSlideFormatting:enum" /> |
+          <xref uid="powerpoint!PowerPoint.InsertSlideFormatting:enum" /> |
           "KeepSourceFormatting" | "UseDestinationTheme"
   - name: sourceSlideIds
     uid: 'powerpoint!PowerPoint.InsertSlideOptions#sourceSlideIds:member'

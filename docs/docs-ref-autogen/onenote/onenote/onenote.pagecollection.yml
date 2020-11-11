@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: count
     uid: 'onenote!OneNote.PageCollection#count:member'
     package: onenote!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: OneNote.Page[];'
       return:
-        type: 'onenote!OneNote.<xref uid="Page:class" />[]'
+        type: '<xref uid="onenote!OneNote.Page:class" />[]'
 methods:
   - name: getByTitle(title)
     uid: 'onenote!OneNote.PageCollection#getByTitle:member(1)'
@@ -81,7 +81,7 @@ methods:
           description: The title of the page.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="PageCollection:class" />'
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
         description: |-
 
 
@@ -149,7 +149,7 @@ methods:
             collection.
           type: number | string
       return:
-        type: 'onenote!OneNote.<xref uid="Page:class" />'
+        type: '<xref uid="onenote!OneNote.Page:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'onenote!OneNote.PageCollection#getItemAt:member(1)'
@@ -172,7 +172,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="Page:class" />'
+        type: '<xref uid="onenote!OneNote.Page:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.PageCollection#load:member(1)'
@@ -213,12 +213,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="PageCollectionLoadOptions:interface" /> &
-            onenote!OneNote.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface"
+            /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="PageCollection:class" />'
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.PageCollection#load:member(2)'
@@ -239,7 +239,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="PageCollection:class" />'
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
         description: |-
 
 
@@ -285,9 +285,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'onenote!OneNote.<xref uid="PageCollection:class" />'
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.PageCollection#toJSON:member(1)'
@@ -309,7 +309,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.PageCollectionData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="PageCollectionData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageCollectionData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.PageCollection#track:member(1)'
@@ -329,7 +329,7 @@ methods:
     syntax:
       content: 'track(): OneNote.PageCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="PageCollection:class" />'
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.PageCollection#untrack:member(1)'
@@ -348,6 +348,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.PageCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="PageCollection:class" />'
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

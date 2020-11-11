@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ImageLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.ImageLoadOptions:interface" />'
   - name: inkWords
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#inkWords:member'
     package: onenote!
@@ -84,8 +84,9 @@ properties:
       content: 'inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkWordCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface"
+          />
   - name: outline
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#outline:member'
     package: onenote!
@@ -104,7 +105,7 @@ properties:
     syntax:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="OutlineLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface" />'
   - name: paragraphs
     uid: >-
       onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#paragraphs:member
@@ -125,8 +126,9 @@ properties:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="ParagraphCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface"
+          />
   - name: parentParagraph
     uid: >-
       onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraph:member
@@ -147,7 +149,7 @@ properties:
       content: 'parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="ParagraphLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
           />
   - name: parentParagraphOrNull
     uid: >-
@@ -169,7 +171,7 @@ properties:
       content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="ParagraphLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
           />
   - name: parentTableCell
     uid: >-
@@ -192,7 +194,7 @@ properties:
       content: 'parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="TableCellLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface"
           />
   - name: parentTableCellOrNull
     uid: >-
@@ -214,7 +216,7 @@ properties:
       content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="TableCellLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface"
           />
   - name: richText
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#richText:member'
@@ -235,7 +237,7 @@ properties:
       content: 'richText?: OneNote.Interfaces.RichTextLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="RichTextLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.RichTextLoadOptions:interface"
           />
   - name: table
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#table:member'
@@ -255,7 +257,7 @@ properties:
     syntax:
       content: 'table?: OneNote.Interfaces.TableLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableLoadOptions:interface" />'
   - name: type
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#type:member'
     package: onenote!

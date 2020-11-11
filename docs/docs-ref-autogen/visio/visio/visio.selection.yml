@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: shapes
     uid: 'visio!Visio.Selection#shapes:member'
     package: visio!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
-        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
 methods:
   - name: load(propertyNames)
     uid: 'visio!Visio.Selection#load:member(1)'
@@ -67,7 +67,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="Selection:class" />'
+        type: '<xref uid="visio!Visio.Selection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.Selection#load:member(2)'
@@ -92,7 +92,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="Selection:class" />'
+        type: '<xref uid="visio!Visio.Selection:class" />'
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.Selection#toJSON:member(1)'
@@ -112,6 +112,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.SelectionData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="SelectionData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.SelectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

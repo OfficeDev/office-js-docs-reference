@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.CustomConditionalFormat#format:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeFormat:class" />'
         description: >-
 
 
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'readonly rule: Excel.ConditionalFormatRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalFormatRule:class" />'
+        type: '<xref uid="excel!Excel.ConditionalFormatRule:class" />'
         description: |-
 
 
@@ -131,10 +131,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CustomConditionalFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="CustomConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.CustomConditionalFormat#load:member(2)'
@@ -155,7 +156,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="CustomConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.CustomConditionalFormat#load:member(3)'
@@ -186,7 +187,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="CustomConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.CustomConditionalFormat#set:member(1)'
@@ -213,13 +214,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CustomConditionalFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -238,7 +240,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="CustomConditionalFormat:class" />'
+          type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
       return:
         type: void
         description: ''
@@ -262,7 +264,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.CustomConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CustomConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CustomConditionalFormatData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

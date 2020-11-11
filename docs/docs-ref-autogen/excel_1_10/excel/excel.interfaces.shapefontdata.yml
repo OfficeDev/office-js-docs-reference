@@ -132,7 +132,7 @@ properties:
         "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeFontUnderlineStyle:enum" /> | "None" |
+          <xref uid="excel!Excel.ShapeFontUnderlineStyle:enum" /> | "None" |
           "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" |
           "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" |
           "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" |

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.ShapeCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Shape[];'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />[]'
+        type: '<xref uid="excel!Excel.Shape:class" />[]'
 methods:
   - name: addGeometricShape(geometricShapeType)
     uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
@@ -66,9 +66,9 @@ methods:
           description: >-
             Represents the type of the geometric shape. See
             Excel.GeometricShapeType for details.
-          type: 'excel!Excel.<xref uid="GeometricShapeType:enum" />'
+          type: '<xref uid="excel!Excel.GeometricShapeType:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: >-
 
 
@@ -218,7 +218,7 @@ methods:
             "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar"
             | "ChartPlus"
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: addGroup(values)
     uid: 'excel!Excel.ShapeCollection#addGroup:member(1)'
@@ -240,9 +240,9 @@ methods:
       parameters:
         - id: values
           description: An array of shape ID or shape objects.
-          type: 'Array&lt;string | excel!Excel.<xref uid="Shape:class" />&gt;'
+          type: 'Array&lt;string | <xref uid="excel!Excel.Shape:class" />&gt;'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: >-
 
 
@@ -292,7 +292,7 @@ methods:
             format.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: >-
 
 
@@ -369,9 +369,9 @@ methods:
           type: number
         - id: connectorType
           description: Represents the connector type. See Excel.ConnectorType for details.
-          type: 'excel!Excel.<xref uid="ConnectorType:enum" />'
+          type: '<xref uid="excel!Excel.ConnectorType:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: >-
 
 
@@ -436,7 +436,7 @@ methods:
           description: Represents the connector type. See Excel.ConnectorType for details.
           type: '"Straight" | "Elbow" | "Curve"'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: addSvg(xml)
     uid: 'excel!Excel.ShapeCollection#addSvg:member(1)'
@@ -460,7 +460,7 @@ methods:
           description: An XML string that represents the SVG.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: addTextBox(text)
     uid: 'excel!Excel.ShapeCollection#addTextBox:member(1)'
@@ -484,7 +484,7 @@ methods:
           description: Represents the text that will be shown in the created text box.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: >-
 
 
@@ -525,7 +525,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
@@ -548,7 +548,7 @@ methods:
           description: Name or ID of the shape to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.ShapeCollection#getItemAt:member(1)'
@@ -571,7 +571,7 @@ methods:
           description: The zero-based index of the shape to be retrieved.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.ShapeCollection#load:member(1)'
@@ -591,12 +591,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ShapeCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            <xref
+            uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions:interface" />
+            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.ShapeCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ShapeCollection#load:member(2)'
@@ -617,7 +617,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.ShapeCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ShapeCollection#load:member(3)'
@@ -640,9 +640,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.ShapeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.ShapeCollection#toJSON:member(1)'
@@ -663,6 +663,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ShapeCollectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeCollectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

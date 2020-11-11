@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.InkWord#id:member'
     package: onenote!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
   - name: wordAlternates
     uid: 'onenote!OneNote.InkWord#wordAlternates:member'
     package: onenote!
@@ -140,10 +140,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="InkWordLoadOptions:interface"
+            <xref uid="onenote!OneNote.Interfaces.InkWordLoadOptions:interface"
             />
       return:
-        type: 'onenote!OneNote.<xref uid="InkWord:class" />'
+        type: '<xref uid="onenote!OneNote.InkWord:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.InkWord#load:member(2)'
@@ -164,7 +164,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="InkWord:class" />'
+        type: '<xref uid="onenote!OneNote.InkWord:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'onenote!OneNote.InkWord#load:member(3)'
@@ -189,7 +189,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="InkWord:class" />'
+        type: '<xref uid="onenote!OneNote.InkWord:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.InkWord#toJSON:member(1)'
@@ -209,7 +209,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.InkWordData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="InkWordData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkWordData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.InkWord#track:member(1)'
@@ -229,7 +229,7 @@ methods:
     syntax:
       content: 'track(): OneNote.InkWord;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkWord:class" />'
+        type: '<xref uid="onenote!OneNote.InkWord:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.InkWord#untrack:member(1)'
@@ -248,6 +248,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.InkWord;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkWord:class" />'
+        type: '<xref uid="onenote!OneNote.InkWord:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

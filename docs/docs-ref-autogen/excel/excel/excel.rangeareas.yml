@@ -94,7 +94,7 @@ properties:
     syntax:
       content: 'readonly areas: Excel.RangeCollection;'
       return:
-        type: 'excel!Excel.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeCollection:class" />'
   - name: cellCount
     uid: 'excel!Excel.RangeAreas#cellCount:member'
     package: excel!
@@ -133,7 +133,7 @@ properties:
     syntax:
       content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalFormatCollection:class" />'
+        type: '<xref uid="excel!Excel.ConditionalFormatCollection:class" />'
   - name: context
     uid: 'excel!Excel.RangeAreas#context:member'
     package: excel!
@@ -147,7 +147,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: dataValidation
     uid: 'excel!Excel.RangeAreas#dataValidation:member'
     package: excel!
@@ -165,7 +165,7 @@ properties:
     syntax:
       content: 'readonly dataValidation: Excel.DataValidation;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidation:class" />'
+        type: '<xref uid="excel!Excel.DataValidation:class" />'
   - name: format
     uid: 'excel!Excel.RangeAreas#format:member'
     package: excel!
@@ -184,7 +184,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.RangeFormat;'
       return:
-        type: 'excel!Excel.<xref uid="RangeFormat:class" />'
+        type: '<xref uid="excel!Excel.RangeFormat:class" />'
         description: >-
 
 
@@ -285,7 +285,7 @@ properties:
     syntax:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
 methods:
   - name: calculate()
     uid: 'excel!Excel.RangeAreas#calculate:member(1)'
@@ -328,7 +328,7 @@ methods:
           description: >-
             Optional. Determines the type of clear action. See
             Excel.ClearApplyTo for details. Default is "All".
-          type: 'excel!Excel.<xref uid="ClearApplyTo:enum" />'
+          type: '<xref uid="excel!Excel.ClearApplyTo:enum" />'
       return:
         type: void
         description: ''
@@ -435,11 +435,11 @@ methods:
             RangeAreas has multiple ranges, their form must able to be created
             by removing full rows or columns from a rectangular range.
           type: >-
-            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
-            uid="RangeAreas:class" /> | string
+            <xref uid="excel!Excel.Range:class" /> | <xref
+            uid="excel!Excel.RangeAreas:class" /> | string
         - id: copyType
           description: The type of cell data or formatting to copy over. Default is "All".
-          type: 'excel!Excel.<xref uid="RangeCopyType:enum" />'
+          type: '<xref uid="excel!Excel.RangeCopyType:enum" />'
         - id: skipBlanks
           description: >-
             True if to skip blank cells in the source range or RangeAreas.
@@ -482,8 +482,8 @@ methods:
             RangeAreas has multiple ranges, their form must able to be created
             by removing full rows or columns from a rectangular range.
           type: >-
-            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
-            uid="RangeAreas:class" /> | string
+            <xref uid="excel!Excel.Range:class" /> | <xref
+            uid="excel!Excel.RangeAreas:class" /> | string
         - id: copyTypeString
           description: The type of cell data or formatting to copy over. Default is "All".
           type: '"All" | "Formulas" | "Values" | "Formats"'
@@ -519,7 +519,7 @@ methods:
     syntax:
       content: 'getEntireColumn(): Excel.RangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: getEntireRow()
     uid: 'excel!Excel.RangeAreas#getEntireRow:member(1)'
@@ -540,7 +540,7 @@ methods:
     syntax:
       content: 'getEntireRow(): Excel.RangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: getIntersection(anotherRange)
     uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
@@ -568,10 +568,10 @@ methods:
             The range, RangeAreas object or range address that will be used to
             determine the intersection.
           type: >-
-            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
-            uid="RangeAreas:class" /> | string
+            <xref uid="excel!Excel.Range:class" /> | <xref
+            uid="excel!Excel.RangeAreas:class" /> | string
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: getIntersectionOrNullObject(anotherRange)
     uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
@@ -599,10 +599,10 @@ methods:
             The range, RangeAreas, or address that will be used to determine the
             intersection.
           type: >-
-            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
-            uid="RangeAreas:class" /> | string
+            <xref uid="excel!Excel.Range:class" /> | <xref
+            uid="excel!Excel.RangeAreas:class" /> | string
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
     uid: 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
@@ -639,7 +639,7 @@ methods:
             and negative values are offset to the left.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: 'getSpecialCells(cellType, cellValueType)'
     uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
@@ -664,7 +664,7 @@ methods:
       parameters:
         - id: cellType
           description: The type of cells to include.
-          type: 'excel!Excel.<xref uid="SpecialCellType:enum" />'
+          type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used
@@ -672,9 +672,9 @@ methods:
             values can be combined together to return more than one type. The
             default is to select all constants or formulas, no matter what the
             type.
-          type: 'excel!Excel.<xref uid="SpecialCellValueType:enum" />'
+          type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: 'getSpecialCells(cellTypeString, cellValueType)'
     uid: 'excel!Excel.RangeAreas#getSpecialCells:member(2)'
@@ -721,7 +721,7 @@ methods:
             "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText"
             | "Numbers" | "NumbersText" | "Text"
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
@@ -746,7 +746,7 @@ methods:
       parameters:
         - id: cellType
           description: The type of cells to include.
-          type: 'excel!Excel.<xref uid="SpecialCellType:enum" />'
+          type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used
@@ -754,9 +754,9 @@ methods:
             values can be combined together to return more than one type. The
             default is to select all constants or formulas, no matter what the
             type.
-          type: 'excel!Excel.<xref uid="SpecialCellValueType:enum" />'
+          type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(2)'
@@ -804,7 +804,7 @@ methods:
             "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText"
             | "Numbers" | "NumbersText" | "Text"
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: getTables(fullyContained)
     uid: 'excel!Excel.RangeAreas#getTables:member(1)'
@@ -830,7 +830,7 @@ methods:
             range bounds. Default is false.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="TableScopedCollection:class" />'
+        type: '<xref uid="excel!Excel.TableScopedCollection:class" />'
         description: ''
   - name: getUsedRangeAreas(valuesOnly)
     uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
@@ -857,7 +857,7 @@ methods:
             false.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: getUsedRangeAreasOrNullObject(valuesOnly)
     uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
@@ -882,7 +882,7 @@ methods:
           description: Whether to only consider cells with values as used cells.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.RangeAreas#load:member(1)'
@@ -902,10 +902,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="RangeAreasLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.RangeAreasLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.RangeAreas#load:member(2)'
@@ -926,7 +926,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.RangeAreas#load:member(3)'
@@ -957,7 +957,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.RangeAreas#set:member(1)'
@@ -983,12 +983,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="RangeAreasUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.RangeAreasUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1007,7 +1007,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+          type: '<xref uid="excel!Excel.RangeAreas:class" />'
       return:
         type: void
         description: ''
@@ -1048,7 +1048,7 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeAreasData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeAreasData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeAreasData:interface" />'
         description: ''
   - name: track()
     uid: 'excel!Excel.RangeAreas#track:member(1)'
@@ -1068,7 +1068,7 @@ methods:
     syntax:
       content: 'track(): Excel.RangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
   - name: untrack()
     uid: 'excel!Excel.RangeAreas#untrack:member(1)'
@@ -1087,6 +1087,6 @@ methods:
     syntax:
       content: 'untrack(): Excel.RangeAreas;'
       return:
-        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

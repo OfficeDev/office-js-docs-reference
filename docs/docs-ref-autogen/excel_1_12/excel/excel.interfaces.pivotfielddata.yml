@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.PivotItemData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotItemData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotItemData:interface" />[]'
   - name: name
     uid: 'excel!Excel.Interfaces.PivotFieldData#name:member'
     package: excel!
@@ -100,4 +100,4 @@ properties:
     syntax:
       content: 'subtotals?: Excel.Subtotals;'
       return:
-        type: 'excel!Excel.<xref uid="Subtotals:interface" />'
+        type: '<xref uid="excel!Excel.Subtotals:interface" />'

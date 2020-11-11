@@ -53,7 +53,7 @@ properties:
         "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
         type: >-
-          word!Word.<xref uid="BorderType:enum" /> | "Mixed" | "None" | "Single"
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single"
           | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
           "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall"
           | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" |

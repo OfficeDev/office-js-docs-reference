@@ -52,8 +52,8 @@ properties:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartCollectionLoadOptions:interface" />
   - name: id
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
     package: excel!
@@ -128,8 +128,9 @@ properties:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="WorksheetProtectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface"
+          />
   - name: standardHeight
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardHeight:member'
     package: excel!
@@ -211,8 +212,8 @@ properties:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
   - name: visibility
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
     package: excel!

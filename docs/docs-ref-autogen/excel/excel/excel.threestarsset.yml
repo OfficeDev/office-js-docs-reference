@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'goldStar: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: halfGoldStar
     uid: 'excel!Excel.ThreeStarsSet#halfGoldStar:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'halfGoldStar: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: silverStar
     uid: 'excel!Excel.ThreeStarsSet#silverStar:member'
     package: excel!
@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'silverStar: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

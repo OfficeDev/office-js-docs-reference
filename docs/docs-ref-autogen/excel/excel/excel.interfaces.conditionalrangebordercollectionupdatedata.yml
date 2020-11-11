@@ -30,8 +30,9 @@ properties:
       content: 'bottom?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface"
+          />
   - name: items
     uid: >-
       excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member
@@ -45,8 +46,8 @@ properties:
       content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderData:interface" />[]
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]
   - name: left
     uid: >-
       excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member
@@ -66,8 +67,9 @@ properties:
       content: 'left?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface"
+          />
   - name: right
     uid: >-
       excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member
@@ -87,8 +89,9 @@ properties:
       content: 'right?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface"
+          />
   - name: top
     uid: >-
       excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member
@@ -108,5 +111,6 @@ properties:
       content: 'top?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface"
+          />

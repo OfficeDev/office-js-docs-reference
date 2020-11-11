@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'cellFormat?: RangeFormatConfiguration[]'
       return:
-        type: 'office!Office.<xref uid="RangeFormatConfiguration:interface" />[]'
+        type: '<xref uid="office!Office.RangeFormatConfiguration:interface" />[]'
   - name: coercionType
     uid: 'office!Office.SetSelectedDataOptions#coercionType:member'
     package: office!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'coercionType?: Office.CoercionType | string'
       return:
-        type: 'office!Office.<xref uid="CoercionType:enum" /> | string'
+        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
   - name: imageHeight
     uid: 'office!Office.SetSelectedDataOptions#imageHeight:member'
     package: office!

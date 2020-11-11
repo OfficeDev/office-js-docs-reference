@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'criteria?: Excel.ConditionalColorScaleCriteria;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalColorScaleCriteria:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalColorScaleCriteria:interface" />'
   - name: threeColorScale
     uid: >-
       excel!Excel.Interfaces.ColorScaleConditionalFormatData#threeColorScale:member

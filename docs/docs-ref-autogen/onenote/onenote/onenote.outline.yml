@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.Outline#id:member'
     package: onenote!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'readonly pageContent: OneNote.PageContent;'
       return:
-        type: 'onenote!OneNote.<xref uid="PageContent:class" />'
+        type: '<xref uid="onenote!OneNote.PageContent:class" />'
   - name: paragraphs
     uid: 'onenote!OneNote.Outline#paragraphs:member'
     package: onenote!
@@ -83,7 +83,7 @@ properties:
     syntax:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
 methods:
   - name: appendHtml(html)
     uid: 'onenote!OneNote.Outline#appendHtml:member(1)'
@@ -183,7 +183,7 @@ methods:
             and image height will be respected.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="Image:class" />'
+        type: '<xref uid="onenote!OneNote.Image:class" />'
         description: ''
   - name: appendRichText(paragraphText)
     uid: 'onenote!OneNote.Outline#appendRichText:member(1)'
@@ -206,7 +206,7 @@ methods:
           description: HTML string to append.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: ''
   - name: 'appendTable(rowCount, columnCount, values)'
     uid: 'onenote!OneNote.Outline#appendTable:member(1)'
@@ -240,7 +240,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: |-
 
 
@@ -298,7 +298,7 @@ methods:
       content: 'isTitle(): OfficeExtension.ClientResult<boolean>;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
+          <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;boolean&gt;
         description: ''
   - name: load(option)
@@ -338,10 +338,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="OutlineLoadOptions:interface"
+            <xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface"
             />
       return:
-        type: 'onenote!OneNote.<xref uid="Outline:class" />'
+        type: '<xref uid="onenote!OneNote.Outline:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.Outline#load:member(2)'
@@ -362,7 +362,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="Outline:class" />'
+        type: '<xref uid="onenote!OneNote.Outline:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'onenote!OneNote.Outline#load:member(3)'
@@ -387,7 +387,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="Outline:class" />'
+        type: '<xref uid="onenote!OneNote.Outline:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.Outline#toJSON:member(1)'
@@ -407,7 +407,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.OutlineData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="OutlineData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.OutlineData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.Outline#track:member(1)'
@@ -427,7 +427,7 @@ methods:
     syntax:
       content: 'track(): OneNote.Outline;'
       return:
-        type: 'onenote!OneNote.<xref uid="Outline:class" />'
+        type: '<xref uid="onenote!OneNote.Outline:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.Outline#untrack:member(1)'
@@ -446,6 +446,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.Outline;'
       return:
-        type: 'onenote!OneNote.<xref uid="Outline:class" />'
+        type: '<xref uid="onenote!OneNote.Outline:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

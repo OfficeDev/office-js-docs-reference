@@ -20,4 +20,4 @@ properties:
     syntax:
       content: 'visibilityMode: Office.VisibilityMode;'
       return:
-        type: 'office!Office.<xref uid="VisibilityMode:enum" />'
+        type: '<xref uid="office!Office.VisibilityMode:enum" />'

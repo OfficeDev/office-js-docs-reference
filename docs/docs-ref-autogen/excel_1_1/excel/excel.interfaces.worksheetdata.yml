@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'charts?: Excel.Interfaces.ChartData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartData:interface" />[]'
   - name: id
     uid: 'excel!Excel.Interfaces.WorksheetData#id:member'
     package: excel!
@@ -102,7 +102,7 @@ properties:
     syntax:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />[]'
   - name: visibility
     uid: 'excel!Excel.Interfaces.WorksheetData#visibility:member'
     package: excel!
@@ -123,5 +123,5 @@ properties:
         "VeryHidden";
       return:
         type: >-
-          excel!Excel.<xref uid="SheetVisibility:enum" /> | "Visible" | "Hidden"
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
           | "VeryHidden"

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.SlicerItemCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.SlicerItem[];'
       return:
-        type: 'excel!Excel.<xref uid="SlicerItem:class" />[]'
+        type: '<xref uid="excel!Excel.SlicerItem:class" />[]'
 methods:
   - name: getCount()
     uid: 'excel!Excel.SlicerItemCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.SlicerItemCollection#getItem:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: The key or name of the slicer item.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="SlicerItem:class" />'
+        type: '<xref uid="excel!Excel.SlicerItem:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
@@ -105,7 +105,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="SlicerItem:class" />'
+        type: '<xref uid="excel!Excel.SlicerItem:class" />'
         description: ''
   - name: getItemOrNullObject(key)
     uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
@@ -129,7 +129,7 @@ methods:
           description: Key or name of the slicer to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="SlicerItem:class" />'
+        type: '<xref uid="excel!Excel.SlicerItem:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.SlicerItemCollection#load:member(1)'
@@ -149,12 +149,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="SlicerItemCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.SlicerItemCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="SlicerItemCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerItemCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.SlicerItemCollection#load:member(2)'
@@ -175,7 +175,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="SlicerItemCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerItemCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.SlicerItemCollection#load:member(3)'
@@ -198,9 +198,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="SlicerItemCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerItemCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.SlicerItemCollection#toJSON:member(1)'
@@ -223,7 +223,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.SlicerItemCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="SlicerItemCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.SlicerItemCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

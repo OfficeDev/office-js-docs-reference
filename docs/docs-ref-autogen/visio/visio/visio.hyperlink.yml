@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: description
     uid: 'visio!Visio.Hyperlink#description:member'
     package: visio!
@@ -165,9 +165,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'visio!Visio.Interfaces.<xref uid="HyperlinkLoadOptions:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.HyperlinkLoadOptions:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="Hyperlink:class" />'
+        type: '<xref uid="visio!Visio.Hyperlink:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.Hyperlink#load:member(2)'
@@ -188,7 +188,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="Hyperlink:class" />'
+        type: '<xref uid="visio!Visio.Hyperlink:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.Hyperlink#load:member(3)'
@@ -213,7 +213,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="Hyperlink:class" />'
+        type: '<xref uid="visio!Visio.Hyperlink:class" />'
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.Hyperlink#toJSON:member(1)'
@@ -233,6 +233,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.HyperlinkData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="HyperlinkData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.HyperlinkData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -80,7 +80,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.ShapeFillData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeFillData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeFillData:interface" />'
   - name: geometricShapeType
     uid: 'excel!Excel.Interfaces.ShapeData#geometricShapeType:member'
     package: excel!
@@ -151,7 +151,7 @@ properties:
         "ChartStar" | "ChartPlus";
       return:
         type: >-
-          excel!Excel.<xref uid="GeometricShapeType:enum" /> | "LineInverse" |
+          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" |
           "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
           "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
           "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
@@ -298,7 +298,7 @@ properties:
     syntax:
       content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeLineFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeLineFormatData:interface" />'
   - name: lockAspectRatio
     uid: 'excel!Excel.Interfaces.ShapeData#lockAspectRatio:member'
     package: excel!
@@ -353,7 +353,7 @@ properties:
       content: 'placement?: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";'
       return:
         type: >-
-          excel!Excel.<xref uid="Placement:enum" /> | "TwoCell" | "OneCell" |
+          <xref uid="excel!Excel.Placement:enum" /> | "TwoCell" | "OneCell" |
           "Absolute"
   - name: rotation
     uid: 'excel!Excel.Interfaces.ShapeData#rotation:member'
@@ -413,7 +413,7 @@ properties:
         "Group" | "Line";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeType:enum" /> | "Unsupported" | "Image" |
+          <xref uid="excel!Excel.ShapeType:enum" /> | "Unsupported" | "Image" |
           "GeometricShape" | "Group" | "Line"
   - name: visible
     uid: 'excel!Excel.Interfaces.ShapeData#visible:member'

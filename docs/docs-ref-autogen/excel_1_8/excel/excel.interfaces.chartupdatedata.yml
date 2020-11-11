@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'axes?: Excel.Interfaces.ChartAxesUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxesUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxesUpdateData:interface" />'
   - name: categoryLabelLevel
     uid: 'excel!Excel.Interfaces.ChartUpdateData#categoryLabelLevel:member'
     package: excel!
@@ -90,7 +90,7 @@ properties:
         "Sunburst" | "Funnel";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartType:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
           "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
           "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
           "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
@@ -132,7 +132,7 @@ properties:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartDataLabelsUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface"
           />
   - name: displayBlanksAs
     uid: 'excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member'
@@ -154,7 +154,7 @@ properties:
         "Interplotted";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartDisplayBlanksAs:enum" /> | "NotPlotted" |
+          <xref uid="excel!Excel.ChartDisplayBlanksAs:enum" /> | "NotPlotted" |
           "Zero" | "Interplotted"
   - name: format
     uid: 'excel!Excel.Interfaces.ChartUpdateData#format:member'
@@ -174,7 +174,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAreaFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartAreaFormatUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface"
           />
   - name: height
     uid: 'excel!Excel.Interfaces.ChartUpdateData#height:member'
@@ -230,7 +230,7 @@ properties:
     syntax:
       content: 'legend?: Excel.Interfaces.ChartLegendUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartLegendUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartLegendUpdateData:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.ChartUpdateData#name:member'
     package: excel!
@@ -267,7 +267,7 @@ properties:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartPlotAreaUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface"
           />
   - name: plotBy
     uid: 'excel!Excel.Interfaces.ChartUpdateData#plotBy:member'
@@ -286,7 +286,7 @@ properties:
     syntax:
       content: 'plotBy?: Excel.ChartPlotBy | "Rows" | "Columns";'
       return:
-        type: 'excel!Excel.<xref uid="ChartPlotBy:enum" /> | "Rows" | "Columns"'
+        type: '<xref uid="excel!Excel.ChartPlotBy:enum" /> | "Rows" | "Columns"'
   - name: plotVisibleOnly
     uid: 'excel!Excel.Interfaces.ChartUpdateData#plotVisibleOnly:member'
     package: excel!
@@ -400,7 +400,7 @@ properties:
     syntax:
       content: 'title?: Excel.Interfaces.ChartTitleUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleUpdateData:interface" />'
   - name: top
     uid: 'excel!Excel.Interfaces.ChartUpdateData#top:member'
     package: excel!

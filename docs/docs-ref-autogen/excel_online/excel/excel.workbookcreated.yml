@@ -30,7 +30,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
 methods:
   - name: load(propertyNames)
     uid: 'excel!Excel.WorkbookCreated#load:member(1)'
@@ -51,7 +51,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="WorkbookCreated:class" />'
+        type: '<xref uid="excel!Excel.WorkbookCreated:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.WorkbookCreated#load:member(2)'
@@ -82,7 +82,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="WorkbookCreated:class" />'
+        type: '<xref uid="excel!Excel.WorkbookCreated:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.WorkbookCreated#toJSON:member(1)'
@@ -103,6 +103,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorkbookCreatedData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorkbookCreatedData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookCreatedData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

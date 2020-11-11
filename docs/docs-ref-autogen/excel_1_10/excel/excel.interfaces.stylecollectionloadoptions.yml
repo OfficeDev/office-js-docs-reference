@@ -68,8 +68,9 @@ properties:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RangeBorderCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface"
+          />
   - name: builtIn
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#builtIn:member'
     package: excel!
@@ -106,7 +107,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFillLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFillLoadOptions:interface" />'
   - name: font
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#font:member'
     package: excel!
@@ -125,7 +126,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFontLoadOptions:interface" />'
   - name: formulaHidden
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#formulaHidden:member'
     package: excel!

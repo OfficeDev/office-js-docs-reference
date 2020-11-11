@@ -47,7 +47,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartTrendlineFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartTrendlineFormatData:interface"
           />
   - name: forwardPeriod
     uid: 'excel!Excel.Interfaces.ChartTrendlineData#forwardPeriod:member'
@@ -105,7 +105,7 @@ properties:
       content: 'label?: Excel.Interfaces.ChartTrendlineLabelData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartTrendlineLabelData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartTrendlineLabelData:interface"
           />
   - name: movingAveragePeriod
     uid: 'excel!Excel.Interfaces.ChartTrendlineData#movingAveragePeriod:member'
@@ -221,6 +221,6 @@ properties:
         "Logarithmic" | "MovingAverage" | "Polynomial" | "Power";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTrendlineType:enum" /> | "Linear" |
+          <xref uid="excel!Excel.ChartTrendlineType:enum" /> | "Linear" |
           "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
           "Power"

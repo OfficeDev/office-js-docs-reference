@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxesLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions:interface" />'
   - name: categoryLabelLevel
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#categoryLabelLevel:member'
     package: excel!
@@ -106,8 +106,8 @@ properties:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartDataLabelsLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />
   - name: displayBlanksAs
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#displayBlanksAs:member'
     package: excel!
@@ -144,8 +144,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartAreaFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface" />
   - name: height
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#height:member'
     package: excel!
@@ -218,7 +218,7 @@ properties:
     syntax:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartLegendLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartLegendLoadOptions:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#name:member'
     package: excel!
@@ -255,8 +255,8 @@ properties:
       content: 'pivotOptions?: Excel.Interfaces.ChartPivotOptionsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPivotOptionsLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface" />
   - name: plotArea
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotArea:member'
     package: excel!
@@ -275,7 +275,7 @@ properties:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartPlotAreaLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface"
           />
   - name: plotBy
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotBy:member'
@@ -332,8 +332,9 @@ properties:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartSeriesCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface"
+          />
   - name: seriesNameLevel
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#seriesNameLevel:member'
     package: excel!
@@ -428,7 +429,7 @@ properties:
     syntax:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleLoadOptions:interface" />'
   - name: top
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#top:member'
     package: excel!
@@ -483,4 +484,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'borders?: Excel.CellPropertiesBorderLoadOptions;'
       return:
-        type: 'excel!Excel.<xref uid="CellPropertiesBorderLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.CellPropertiesBorderLoadOptions:interface" />'
   - name: fill
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#fill:member'
     package: excel!
@@ -68,7 +68,7 @@ properties:
     syntax:
       content: 'fill?: Excel.CellPropertiesFillLoadOptions;'
       return:
-        type: 'excel!Excel.<xref uid="CellPropertiesFillLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.CellPropertiesFillLoadOptions:interface" />'
   - name: font
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#font:member'
     package: excel!
@@ -86,7 +86,7 @@ properties:
     syntax:
       content: 'font?: Excel.CellPropertiesFontLoadOptions;'
       return:
-        type: 'excel!Excel.<xref uid="CellPropertiesFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.CellPropertiesFontLoadOptions:interface" />'
   - name: horizontalAlignment
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#horizontalAlignment:member'
     package: excel!

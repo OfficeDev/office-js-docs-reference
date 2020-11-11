@@ -136,7 +136,7 @@ properties:
     syntax:
       content: 'customProperties?: Word.Interfaces.CustomPropertyData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="CustomPropertyData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.CustomPropertyData:interface" />[]'
   - name: format
     uid: 'word!Word.Interfaces.DocumentPropertiesData#format:member'
     package: word!

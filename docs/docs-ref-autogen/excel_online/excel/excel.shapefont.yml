@@ -68,7 +68,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: italic
     uid: 'excel!Excel.ShapeFont#italic:member'
     package: excel!
@@ -151,7 +151,7 @@ properties:
         "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeFontUnderlineStyle:enum" /> | "None" |
+          <xref uid="excel!Excel.ShapeFontUnderlineStyle:enum" /> | "None" |
           "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" |
           "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" |
           "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" |
@@ -172,9 +172,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="ShapeFontLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ShapeFontLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ShapeFont:class" />'
+        type: '<xref uid="excel!Excel.ShapeFont:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ShapeFont#load:member(2)'
@@ -195,7 +195,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ShapeFont:class" />'
+        type: '<xref uid="excel!Excel.ShapeFont:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ShapeFont#load:member(3)'
@@ -226,7 +226,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ShapeFont:class" />'
+        type: '<xref uid="excel!Excel.ShapeFont:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ShapeFont#set:member(1)'
@@ -252,12 +252,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ShapeFontUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ShapeFontUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -276,7 +276,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ShapeFont:class" />'
+          type: '<xref uid="excel!Excel.ShapeFont:class" />'
       return:
         type: void
         description: ''
@@ -298,6 +298,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ShapeFontData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeFontData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeFontData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

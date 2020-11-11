@@ -66,8 +66,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartTrendlineFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface"
+          />
   - name: forwardPeriod
     uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#forwardPeriod:member'
     package: excel!
@@ -124,8 +125,9 @@ properties:
       content: 'label?: Excel.Interfaces.ChartTrendlineLabelLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartTrendlineLabelLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface"
+          />
   - name: movingAveragePeriod
     uid: >-
       excel!Excel.Interfaces.ChartTrendlineLoadOptions#movingAveragePeriod:member

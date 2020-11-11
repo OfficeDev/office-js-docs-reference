@@ -104,7 +104,7 @@ properties:
         "BinCount";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartBinType:enum" /> | "Category" | "Auto" |
+          <xref uid="excel!Excel.ChartBinType:enum" /> | "Category" | "Auto" |
           "BinWidth" | "BinCount"
   - name: underflowValue
     uid: 'excel!Excel.Interfaces.ChartBinOptionsData#underflowValue:member'

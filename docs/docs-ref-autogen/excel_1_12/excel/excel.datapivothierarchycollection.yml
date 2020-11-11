@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.DataPivotHierarchyCollection#items:member'
     package: excel!
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.DataPivotHierarchy[];'
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />[]'
+        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />[]'
 methods:
   - name: add(pivotHierarchy)
     uid: 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
@@ -62,9 +62,9 @@ methods:
       parameters:
         - id: pivotHierarchy
           description: ''
-          type: 'excel!Excel.<xref uid="PivotHierarchy:class" />'
+          type: '<xref uid="excel!Excel.PivotHierarchy:class" />'
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         description: ''
   - name: getCount()
     uid: 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
@@ -83,7 +83,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(name)
     uid: 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
@@ -106,7 +106,7 @@ methods:
           description: Name of the DataPivotHierarchy to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         description: ''
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
@@ -130,7 +130,7 @@ methods:
           description: Name of the DataPivotHierarchy to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
@@ -151,12 +151,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="DataPivotHierarchyCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchyCollection:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchyCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(2)'
@@ -179,7 +179,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchyCollection:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchyCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(3)'
@@ -202,9 +202,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchyCollection:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchyCollection:class" />'
         description: ''
   - name: remove(DataPivotHierarchy)
     uid: 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
@@ -225,7 +225,7 @@ methods:
       parameters:
         - id: DataPivotHierarchy
           description: ''
-          type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+          type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
       return:
         type: void
         description: ''
@@ -250,7 +250,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.DataPivotHierarchyCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DataPivotHierarchyCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DataPivotHierarchyCollectionData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

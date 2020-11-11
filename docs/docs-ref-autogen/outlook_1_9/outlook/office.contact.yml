@@ -145,7 +145,7 @@ properties:
     syntax:
       content: 'phoneNumbers: PhoneNumber[];'
       return:
-        type: 'outlook!Office.<xref uid="PhoneNumber:interface" />[]'
+        type: '<xref uid="outlook!Office.PhoneNumber:interface" />[]'
   - name: urls
     uid: 'outlook!Office.Contact#urls:member'
     package: outlook!

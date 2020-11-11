@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'cells?: OneNote.Interfaces.TableCellData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableCellData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableCellData:interface" />[]'
   - name: id
     uid: 'onenote!OneNote.Interfaces.TableRowData#id:member'
     package: onenote!

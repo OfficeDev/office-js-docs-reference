@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyUpdateData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
   - name: properties
     uid: 'word!Word.Interfaces.DocumentUpdateData#properties:member'
     package: word!
@@ -48,5 +48,5 @@ properties:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
         type: >-
-          word!Word.Interfaces.<xref
-          uid="DocumentPropertiesUpdateData:interface" />
+          <xref
+          uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />

@@ -37,7 +37,7 @@ properties:
                 };
       return:
         type: >-
-          excel!Excel.<xref uid="CellPropertiesFormatLoadOptions:interface" /> &
+          <xref uid="excel!Excel.CellPropertiesFormatLoadOptions:interface" /> &
           {
                       rowHeight?: boolean;
                   }
@@ -77,4 +77,4 @@ properties:
       content: 'rowIndex?: boolean;'
       return:
         type: boolean
-extends: 'excel!Excel.<xref uid="CellPropertiesLoadOptions:interface" />'
+extends: '<xref uid="excel!Excel.CellPropertiesLoadOptions:interface" />'

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="RequestContext:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
   - name: items
     uid: 'powerpoint!PowerPoint.SlideCollection#items:member'
     package: powerpoint!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: PowerPoint.Slide[];'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Slide:class" />[]'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />[]'
 methods:
   - name: getCount()
     uid: 'powerpoint!PowerPoint.SlideCollection#getCount:member(1)'
@@ -60,7 +60,7 @@ methods:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
         type: >-
-          powerpoint!OfficeExtension.<xref uid="ClientResult:class"
+          <xref uid="powerpoint!OfficeExtension.ClientResult:class"
           />&lt;number&gt;
         description: The number of slides in the collection.
   - name: getItem(key)
@@ -85,7 +85,7 @@ methods:
           description: The ID of the slide.
           type: string
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Slide:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: >-
           The slide with the unique ID. If such a slide does not exist, an
           exception is thrown.
@@ -112,7 +112,7 @@ methods:
           description: The index of the slide in the collection.
           type: number
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Slide:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: >-
           The slide at the given index. An exception is thrown if index is out
           of range.
@@ -138,7 +138,7 @@ methods:
           description: The ID of the slide.
           type: string
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Slide:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: >-
           The slide with the unique ID. If such a slide does not exist, an
           object whose `isNullObject` property is set to `true` is returned.
@@ -161,12 +161,13 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            powerpoint!PowerPoint.Interfaces.<xref
-            uid="SlideCollectionLoadOptions:interface" /> &
-            powerpoint!PowerPoint.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface"
+            /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
+            />
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="SlideCollection:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'powerpoint!PowerPoint.SlideCollection#load:member(2)'
@@ -187,7 +188,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="SlideCollection:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'powerpoint!PowerPoint.SlideCollection#load:member(3)'
@@ -210,9 +211,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'powerpoint!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="powerpoint!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="SlideCollection:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'powerpoint!PowerPoint.SlideCollection#toJSON:member(1)'
@@ -235,7 +236,8 @@ methods:
       content: 'toJSON(): PowerPoint.Interfaces.SlideCollectionData;'
       return:
         type: >-
-          powerpoint!PowerPoint.Interfaces.<xref
-          uid="SlideCollectionData:interface" />
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface"
+          />
         description: ''
-extends: 'powerpoint!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'

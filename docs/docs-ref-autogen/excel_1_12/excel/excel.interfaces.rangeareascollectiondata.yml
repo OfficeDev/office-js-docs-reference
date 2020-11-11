@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.RangeAreasData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeAreasData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.RangeAreasData:interface" />[]'

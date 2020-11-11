@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: foregroundColor
     uid: 'excel!Excel.ShapeFill#foregroundColor:member'
     package: excel!
@@ -89,7 +89,7 @@ properties:
         "Pattern" | "PictureAndTexture" | "Mixed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeFillType:enum" /> | "NoFill" | "Solid" |
+          <xref uid="excel!Excel.ShapeFillType:enum" /> | "NoFill" | "Solid" |
           "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"
 methods:
   - name: clear()
@@ -126,9 +126,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="ShapeFillLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ShapeFillLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ShapeFill:class" />'
+        type: '<xref uid="excel!Excel.ShapeFill:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ShapeFill#load:member(2)'
@@ -149,7 +149,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ShapeFill:class" />'
+        type: '<xref uid="excel!Excel.ShapeFill:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ShapeFill#load:member(3)'
@@ -180,7 +180,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ShapeFill:class" />'
+        type: '<xref uid="excel!Excel.ShapeFill:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ShapeFill#set:member(1)'
@@ -206,12 +206,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ShapeFillUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ShapeFillUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -230,7 +230,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ShapeFill:class" />'
+          type: '<xref uid="excel!Excel.ShapeFill:class" />'
       return:
         type: void
         description: ''
@@ -279,6 +279,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ShapeFillData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeFillData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeFillData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

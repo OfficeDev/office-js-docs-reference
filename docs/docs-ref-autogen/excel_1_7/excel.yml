@@ -691,7 +691,7 @@ functions:
             processes, the RequestContext is required to get access to the Excel
             object model from the add-in.
           type: >-
-            (context: excel!Excel.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
@@ -717,7 +717,7 @@ functions:
             A previously-created API object. The batch will use the same
             RequestContext as the passed-in object, which means that any changes
             applied to the object will be picked up by "context.sync()".
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise
@@ -727,7 +727,7 @@ functions:
             processes, the RequestContext is required to get access to the Excel
             object model from the add-in.
           type: >-
-            (context: excel!Excel.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
@@ -753,7 +753,7 @@ functions:
             context. The batch will use this shared RequestContext, which means
             that any changes applied to these objects will be picked up by
             "context.sync()".
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />[]'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise
@@ -763,7 +763,7 @@ functions:
             processes, the RequestContext is required to get access to the Excel
             object model from the add-in.
           type: >-
-            (context: excel!Excel.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
@@ -789,7 +789,7 @@ functions:
             The additional options for this Excel.run which specify previous
             objects, whether to delay the request for cell edit, session info,
             etc.
-          type: 'excel!Excel.<xref uid="RunOptions:interface" />'
+          type: '<xref uid="excel!Excel.RunOptions:interface" />'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise
@@ -799,7 +799,7 @@ functions:
             processes, the RequestContext is required to get access to the Excel
             object model from the add-in.
           type: >-
-            (context: excel!Excel.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
@@ -825,7 +825,7 @@ functions:
             A previously-created object. The batch will use the same
             RequestContext as the passed-in object, which means that any changes
             applied to the object will be picked up by "context.sync()".
-          type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise
@@ -835,7 +835,7 @@ functions:
             processes, the RequestContext is required to get access to the Excel
             object model from the add-in.
           type: >-
-            (context: excel!Excel.<xref uid="RequestContext:class" />) =&gt;
+            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;

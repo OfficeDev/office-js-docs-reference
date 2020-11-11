@@ -159,7 +159,7 @@ properties:
     syntax:
       content: 'slicerItems?: Excel.Interfaces.SlicerItemData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerItemData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerItemData:interface" />[]'
   - name: slicerStyle
     uid: 'excel!Excel.Interfaces.SlicerData#slicerStyle:member'
     package: excel!
@@ -177,7 +177,7 @@ properties:
     syntax:
       content: 'slicerStyle?: Excel.Interfaces.SlicerStyleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerStyleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerStyleData:interface" />'
   - name: sortBy
     uid: 'excel!Excel.Interfaces.SlicerData#sortBy:member'
     package: excel!
@@ -199,7 +199,7 @@ properties:
         "Descending";
       return:
         type: >-
-          excel!Excel.<xref uid="SlicerSortType:enum" /> | "DataSourceOrder" |
+          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
           "Ascending" | "Descending"
   - name: style
     uid: 'excel!Excel.Interfaces.SlicerData#style:member'
@@ -279,4 +279,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'

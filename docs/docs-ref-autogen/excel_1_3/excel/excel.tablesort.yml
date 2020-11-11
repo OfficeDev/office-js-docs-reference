@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: fields
     uid: 'excel!Excel.TableSort#fields:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly fields: Excel.SortField[];'
       return:
-        type: 'excel!Excel.<xref uid="SortField:interface" />[]'
+        type: '<xref uid="excel!Excel.SortField:interface" />[]'
   - name: matchCase
     uid: 'excel!Excel.TableSort#matchCase:member'
     package: excel!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'readonly method: Excel.SortMethod | "PinYin" | "StrokeCount";'
       return:
-        type: 'excel!Excel.<xref uid="SortMethod:enum" /> | "PinYin" | "StrokeCount"'
+        type: '<xref uid="excel!Excel.SortMethod:enum" /> | "PinYin" | "StrokeCount"'
 methods:
   - name: 'apply(fields, matchCase, method)'
     uid: 'excel!Excel.TableSort#apply:member(1)'
@@ -105,13 +105,13 @@ methods:
       parameters:
         - id: fields
           description: The list of conditions to sort on.
-          type: 'excel!Excel.<xref uid="SortField:interface" />[]'
+          type: '<xref uid="excel!Excel.SortField:interface" />[]'
         - id: matchCase
           description: Optional. Whether to have the casing impact string ordering.
           type: boolean
         - id: method
           description: Optional. The ordering method used for Chinese characters.
-          type: 'excel!Excel.<xref uid="SortMethod:enum" />'
+          type: '<xref uid="excel!Excel.SortMethod:enum" />'
       return:
         type: void
         description: |-
@@ -158,7 +158,7 @@ methods:
       parameters:
         - id: fields
           description: The list of conditions to sort on.
-          type: 'excel!Excel.<xref uid="SortField:interface" />[]'
+          type: '<xref uid="excel!Excel.SortField:interface" />[]'
         - id: matchCase
           description: Optional. Whether to have the casing impact string ordering.
           type: boolean
@@ -203,9 +203,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="TableSortLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.TableSortLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="TableSort:class" />'
+        type: '<xref uid="excel!Excel.TableSort:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.TableSort#load:member(2)'
@@ -226,7 +226,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="TableSort:class" />'
+        type: '<xref uid="excel!Excel.TableSort:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.TableSort#load:member(3)'
@@ -257,7 +257,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="TableSort:class" />'
+        type: '<xref uid="excel!Excel.TableSort:class" />'
         description: ''
   - name: reapply()
     uid: 'excel!Excel.TableSort#reapply:member(1)'
@@ -296,6 +296,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableSortData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableSortData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableSortData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

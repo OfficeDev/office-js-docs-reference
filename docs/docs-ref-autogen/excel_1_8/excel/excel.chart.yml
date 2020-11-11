@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'readonly axes: Excel.ChartAxes;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxes:class" />'
+        type: '<xref uid="excel!Excel.ChartAxes:class" />'
   - name: categoryLabelLevel
     uid: 'excel!Excel.Chart#categoryLabelLevel:member'
     package: excel!
@@ -97,7 +97,7 @@ properties:
         "Sunburst" | "Funnel";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartType:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
           "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
           "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
           "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
@@ -134,7 +134,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: dataLabels
     uid: 'excel!Excel.Chart#dataLabels:member'
     package: excel!
@@ -152,7 +152,7 @@ properties:
     syntax:
       content: 'readonly dataLabels: Excel.ChartDataLabels;'
       return:
-        type: 'excel!Excel.<xref uid="ChartDataLabels:class" />'
+        type: '<xref uid="excel!Excel.ChartDataLabels:class" />'
   - name: displayBlanksAs
     uid: 'excel!Excel.Chart#displayBlanksAs:member'
     package: excel!
@@ -173,7 +173,7 @@ properties:
         "Interplotted";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartDisplayBlanksAs:enum" /> | "NotPlotted" |
+          <xref uid="excel!Excel.ChartDisplayBlanksAs:enum" /> | "NotPlotted" |
           "Zero" | "Interplotted"
   - name: format
     uid: 'excel!Excel.Chart#format:member'
@@ -192,7 +192,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartAreaFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAreaFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartAreaFormat:class" />'
   - name: height
     uid: 'excel!Excel.Chart#height:member'
     package: excel!
@@ -265,7 +265,7 @@ properties:
     syntax:
       content: 'readonly legend: Excel.ChartLegend;'
       return:
-        type: 'excel!Excel.<xref uid="ChartLegend:class" />'
+        type: '<xref uid="excel!Excel.ChartLegend:class" />'
         description: |-
 
 
@@ -355,8 +355,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="ChartActivatedEventArgs:interface" />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
         description: |-
 
 
@@ -394,9 +394,8 @@ properties:
         OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlers:class"
-          />&lt;excel!Excel.<xref uid="ChartDeactivatedEventArgs:interface"
-          />&gt;
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
         description: |-
 
 
@@ -431,7 +430,7 @@ properties:
     syntax:
       content: 'readonly plotArea: Excel.ChartPlotArea;'
       return:
-        type: 'excel!Excel.<xref uid="ChartPlotArea:class" />'
+        type: '<xref uid="excel!Excel.ChartPlotArea:class" />'
   - name: plotBy
     uid: 'excel!Excel.Chart#plotBy:member'
     package: excel!
@@ -449,7 +448,7 @@ properties:
     syntax:
       content: 'plotBy: Excel.ChartPlotBy | "Rows" | "Columns";'
       return:
-        type: 'excel!Excel.<xref uid="ChartPlotBy:enum" /> | "Rows" | "Columns"'
+        type: '<xref uid="excel!Excel.ChartPlotBy:enum" /> | "Rows" | "Columns"'
   - name: plotVisibleOnly
     uid: 'excel!Excel.Chart#plotVisibleOnly:member'
     package: excel!
@@ -486,7 +485,7 @@ properties:
     syntax:
       content: 'readonly series: Excel.ChartSeriesCollection;'
       return:
-        type: 'excel!Excel.<xref uid="ChartSeriesCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartSeriesCollection:class" />'
   - name: seriesNameLevel
     uid: 'excel!Excel.Chart#seriesNameLevel:member'
     package: excel!
@@ -581,7 +580,7 @@ properties:
     syntax:
       content: 'readonly title: Excel.ChartTitle;'
       return:
-        type: 'excel!Excel.<xref uid="ChartTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartTitle:class" />'
   - name: top
     uid: 'excel!Excel.Chart#top:member'
     package: excel!
@@ -636,7 +635,7 @@ properties:
     syntax:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
 methods:
   - name: delete()
     uid: 'excel!Excel.Chart#delete:member(1)'
@@ -704,9 +703,9 @@ methods:
           description: >-
             (Optional) The method used to scale the chart to the specified to
             the specified dimensions (if both height and width are set).
-          type: 'excel!Excel.<xref uid="ImageFittingMode:enum" />'
+          type: '<xref uid="excel!Excel.ImageFittingMode:enum" />'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -757,7 +756,7 @@ methods:
             the specified dimensions (if both height and width are set).
           type: '"Fit" | "FitAndCenter" | "Fill"'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Chart#load:member(1)'
@@ -774,9 +773,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Chart#load:member(2)'
@@ -797,7 +796,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: |-
 
 
@@ -847,7 +846,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Chart:class" />'
+        type: '<xref uid="excel!Excel.Chart:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Chart#set:member(1)'
@@ -873,12 +872,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -897,7 +896,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Chart:class" />'
+          type: '<xref uid="excel!Excel.Chart:class" />'
       return:
         type: void
         description: ''
@@ -920,13 +919,13 @@ methods:
       parameters:
         - id: sourceData
           description: The range object corresponding to the source data.
-          type: 'excel!Excel.<xref uid="Range:class" />'
+          type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the
             chart. Can be one of the following: Auto (default), Rows, and
             Columns. See Excel.ChartSeriesBy for details.
-          type: 'excel!Excel.<xref uid="ChartSeriesBy:enum" />'
+          type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
       return:
         type: void
         description: |-
@@ -969,7 +968,7 @@ methods:
       parameters:
         - id: sourceData
           description: The range object corresponding to the source data.
-          type: 'excel!Excel.<xref uid="Range:class" />'
+          type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesByString
           description: >-
             Specifies the way columns or rows are used as data series on the
@@ -1001,12 +1000,12 @@ methods:
             The start cell. This is where the chart will be moved to. The start
             cell is the top-left or top-right cell, depending on the user's
             right-to-left display settings.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: endCell
           description: >-
             (Optional) The end cell. If specified, the chart's width and height
             will be set to fully cover up this cell/range.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void
         description: |-
@@ -1050,6 +1049,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

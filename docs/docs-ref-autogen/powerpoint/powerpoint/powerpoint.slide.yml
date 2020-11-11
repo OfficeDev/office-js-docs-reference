@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="RequestContext:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
   - name: id
     uid: 'powerpoint!PowerPoint.Slide#id:member'
     package: powerpoint!
@@ -86,10 +86,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            powerpoint!PowerPoint.Interfaces.<xref
-            uid="SlideLoadOptions:interface" />
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface" />
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Slide:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'powerpoint!PowerPoint.Slide#load:member(2)'
@@ -110,7 +110,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Slide:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'powerpoint!PowerPoint.Slide#load:member(3)'
@@ -141,7 +141,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Slide:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: ''
   - name: toJSON()
     uid: 'powerpoint!PowerPoint.Slide#toJSON:member(1)'
@@ -161,6 +161,6 @@ methods:
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideData;'
       return:
-        type: 'powerpoint!PowerPoint.Interfaces.<xref uid="SlideData:interface" />'
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideData:interface" />'
         description: ''
-extends: 'powerpoint!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'

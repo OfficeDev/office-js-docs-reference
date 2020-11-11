@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ImageLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.ImageLoadOptions:interface" />'
   - name: ink
     uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member'
     package: onenote!
@@ -84,8 +84,8 @@ properties:
       content: 'ink?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="FloatingInkLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
   - name: left
     uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#left:member'
     package: onenote!
@@ -123,7 +123,7 @@ properties:
     syntax:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="OutlineLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface" />'
   - name: parentPage
     uid: >-
       onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member
@@ -143,7 +143,7 @@ properties:
     syntax:
       content: 'parentPage?: OneNote.Interfaces.PageLoadOptions;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="PageLoadOptions:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageLoadOptions:interface" />'
   - name: top
     uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#top:member'
     package: onenote!

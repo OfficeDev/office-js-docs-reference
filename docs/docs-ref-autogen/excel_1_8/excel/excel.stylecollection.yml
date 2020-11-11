@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.StyleCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Style[];'
       return:
-        type: 'excel!Excel.<xref uid="Style:class" />[]'
+        type: '<xref uid="excel!Excel.Style:class" />[]'
 methods:
   - name: add(name)
     uid: 'excel!Excel.StyleCollection#add:member(1)'
@@ -118,7 +118,7 @@ methods:
           description: Name of the style to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Style:class" />'
+        type: '<xref uid="excel!Excel.Style:class" />'
         description: >-
 
 
@@ -170,12 +170,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="StyleCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            <xref
+            uid="excel!Excel.Interfaces.StyleCollectionLoadOptions:interface" />
+            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="StyleCollection:class" />'
+        type: '<xref uid="excel!Excel.StyleCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.StyleCollection#load:member(2)'
@@ -196,7 +196,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="StyleCollection:class" />'
+        type: '<xref uid="excel!Excel.StyleCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.StyleCollection#load:member(3)'
@@ -219,9 +219,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="StyleCollection:class" />'
+        type: '<xref uid="excel!Excel.StyleCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.StyleCollection#toJSON:member(1)'
@@ -242,6 +242,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.StyleCollectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="StyleCollectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.StyleCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

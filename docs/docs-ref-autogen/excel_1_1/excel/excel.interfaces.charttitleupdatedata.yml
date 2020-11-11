@@ -30,8 +30,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTitleFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartTitleFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface" />
   - name: overlay
     uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#overlay:member'
     package: excel!

@@ -29,5 +29,6 @@ properties:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphUpdateData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisParagraphUpdateData:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface"
+          />

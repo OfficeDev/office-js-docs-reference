@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'officeTheme: Office.OfficeTheme;'
       return:
-        type: 'office!Office.<xref uid="OfficeTheme:interface" />'
+        type: '<xref uid="office!Office.OfficeTheme:interface" />'
   - name: type
     uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
     package: outlook!

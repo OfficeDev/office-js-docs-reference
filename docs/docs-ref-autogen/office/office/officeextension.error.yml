@@ -61,7 +61,7 @@ properties:
     syntax:
       content: 'debugInfo: DebugInfo;'
       return:
-        type: 'office!OfficeExtension.<xref uid="DebugInfo:interface" />'
+        type: '<xref uid="office!OfficeExtension.DebugInfo:interface" />'
   - name: innerError
     uid: 'office!OfficeExtension.Error#innerError:member'
     package: office!
@@ -73,7 +73,7 @@ properties:
     syntax:
       content: 'innerError: Error;'
       return:
-        type: 'office!OfficeExtension.<xref uid="Error:class" />'
+        type: '<xref uid="office!OfficeExtension.Error:class" />'
   - name: message
     uid: 'office!OfficeExtension.Error#message:member'
     package: office!

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: criteria
     uid: 'excel!Excel.IconSetConditionalFormat#criteria:member'
     package: excel!
@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'criteria: Excel.ConditionalIconCriterion[];'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalIconCriterion:interface" />[]'
+        type: '<xref uid="excel!Excel.ConditionalIconCriterion:interface" />[]'
         description: >-
 
 
@@ -162,7 +162,7 @@ properties:
         "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
       return:
         type: >-
-          excel!Excel.<xref uid="IconSet:enum" /> | "Invalid" | "ThreeArrows" |
+          <xref uid="excel!Excel.IconSet:enum" /> | "Invalid" | "ThreeArrows" |
           "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
           "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" |
           "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" |
@@ -239,10 +239,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="IconSetConditionalFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="IconSetConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.IconSetConditionalFormat#load:member(2)'
@@ -263,7 +264,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="IconSetConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.IconSetConditionalFormat#load:member(3)'
@@ -294,7 +295,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="IconSetConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.IconSetConditionalFormat#set:member(1)'
@@ -321,13 +322,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="IconSetConditionalFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -346,7 +348,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="IconSetConditionalFormat:class" />'
+          type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
       return:
         type: void
         description: ''
@@ -370,7 +372,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.IconSetConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IconSetConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IconSetConditionalFormatData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

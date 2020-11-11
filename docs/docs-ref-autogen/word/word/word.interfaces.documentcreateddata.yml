@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyData:interface" />'
   - name: contentControls
     uid: 'word!Word.Interfaces.DocumentCreatedData#contentControls:member'
     package: word!
@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ContentControlData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
   - name: customXmlParts
     uid: 'word!Word.Interfaces.DocumentCreatedData#customXmlParts:member'
     package: word!
@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'customXmlParts?: Word.Interfaces.CustomXmlPartData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="CustomXmlPartData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.CustomXmlPartData:interface" />[]'
   - name: properties
     uid: 'word!Word.Interfaces.DocumentCreatedData#properties:member'
     package: word!
@@ -85,7 +85,7 @@ properties:
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="DocumentPropertiesData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesData:interface" />'
   - name: saved
     uid: 'word!Word.Interfaces.DocumentCreatedData#saved:member'
     package: word!
@@ -123,7 +123,7 @@ properties:
     syntax:
       content: 'sections?: Word.Interfaces.SectionData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SectionData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />[]'
   - name: settings
     uid: 'word!Word.Interfaces.DocumentCreatedData#settings:member'
     package: word!
@@ -141,4 +141,4 @@ properties:
     syntax:
       content: 'settings?: Word.Interfaces.SettingData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SettingData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.SettingData:interface" />[]'

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.ChartAxisTitle#format:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartAxisTitleFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxisTitleFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartAxisTitleFormat:class" />'
   - name: text
     uid: 'excel!Excel.ChartAxisTitle#text:member'
     package: excel!
@@ -102,10 +102,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartAxisTitleLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartAxisTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartAxisTitle#load:member(2)'
@@ -126,7 +126,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxisTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
         description: |-
 
 
@@ -176,7 +176,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartAxisTitle:class" />'
+        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartAxisTitle#set:member(1)'
@@ -203,13 +203,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartAxisTitleUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -228,7 +228,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartAxisTitle:class" />'
+          type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
       return:
         type: void
         description: ''
@@ -251,6 +251,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartAxisTitleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisTitleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisTitleData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

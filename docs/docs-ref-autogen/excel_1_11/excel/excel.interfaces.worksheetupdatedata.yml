@@ -66,7 +66,7 @@ properties:
     syntax:
       content: 'pageLayout?: Excel.Interfaces.PageLayoutUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PageLayoutUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PageLayoutUpdateData:interface" />'
   - name: position
     uid: 'excel!Excel.Interfaces.WorksheetUpdateData#position:member'
     package: excel!
@@ -185,5 +185,5 @@ properties:
         "VeryHidden";
       return:
         type: >-
-          excel!Excel.<xref uid="SheetVisibility:enum" /> | "Visible" | "Hidden"
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
           | "VeryHidden"

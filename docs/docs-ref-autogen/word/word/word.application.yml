@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
 methods:
   - name: createDocument(base64File)
     uid: 'word!Word.Application#createDocument:member(1)'
@@ -51,7 +51,7 @@ methods:
           description: Optional. The base64 encoded .docx file. The default value is null.
           type: string
       return:
-        type: 'word!Word.<xref uid="DocumentCreated:class" />'
+        type: '<xref uid="word!Word.DocumentCreated:class" />'
         description: ''
   - name: newObject(context)
     uid: 'word!Word.Application.newObject:member(1)'
@@ -68,9 +68,9 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
       return:
-        type: 'word!Word.<xref uid="Application:class" />'
+        type: '<xref uid="word!Word.Application:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.Application#toJSON:member(1)'
@@ -98,4 +98,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

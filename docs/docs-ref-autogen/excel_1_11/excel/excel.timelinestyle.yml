@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: name
     uid: 'excel!Excel.TimelineStyle#name:member'
     package: excel!
@@ -104,7 +104,7 @@ methods:
     syntax:
       content: 'duplicate(): Excel.TimelineStyle;'
       return:
-        type: 'excel!Excel.<xref uid="TimelineStyle:class" />'
+        type: '<xref uid="excel!Excel.TimelineStyle:class" />'
         description: >-
           The new TimelineStyle object that has been duplicated from this
           TimelineStyle.
@@ -126,10 +126,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="TimelineStyleLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.TimelineStyleLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="TimelineStyle:class" />'
+        type: '<xref uid="excel!Excel.TimelineStyle:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.TimelineStyle#load:member(2)'
@@ -150,7 +150,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="TimelineStyle:class" />'
+        type: '<xref uid="excel!Excel.TimelineStyle:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.TimelineStyle#load:member(3)'
@@ -181,7 +181,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="TimelineStyle:class" />'
+        type: '<xref uid="excel!Excel.TimelineStyle:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.TimelineStyle#set:member(1)'
@@ -208,13 +208,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="TimelineStyleUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.TimelineStyleUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -233,7 +233,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="TimelineStyle:class" />'
+          type: '<xref uid="excel!Excel.TimelineStyle:class" />'
       return:
         type: void
         description: ''
@@ -256,6 +256,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.TimelineStyleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TimelineStyleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TimelineStyleData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
   - name: parentBody
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentBody:member'
     package: word!
@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
   - name: parentBodyOrNullObject
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member'
     package: word!
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'parentBodyOrNullObject?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
   - name: parentContentControl
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentContentControl:member'
     package: word!
@@ -107,7 +107,7 @@ properties:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentContentControlOrNullObject
     uid: >-
@@ -131,7 +131,7 @@ properties:
         Word.Interfaces.ContentControlLoadOptions;
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentSection
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentSection:member'
@@ -151,7 +151,7 @@ properties:
     syntax:
       content: 'parentSection?: Word.Interfaces.SectionLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SectionLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.SectionLoadOptions:interface" />'
   - name: parentSectionOrNullObject
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member'
     package: word!
@@ -170,7 +170,7 @@ properties:
     syntax:
       content: 'parentSectionOrNullObject?: Word.Interfaces.SectionLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SectionLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.SectionLoadOptions:interface" />'
   - name: style
     uid: 'word!Word.Interfaces.BodyLoadOptions#style:member'
     package: word!

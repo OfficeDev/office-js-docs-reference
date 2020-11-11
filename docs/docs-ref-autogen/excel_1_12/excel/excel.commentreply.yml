@@ -111,7 +111,7 @@ properties:
     syntax:
       content: 'readonly contentType: Excel.ContentType | "Plain" | "Mention";'
       return:
-        type: 'excel!Excel.<xref uid="ContentType:enum" /> | "Plain" | "Mention"'
+        type: '<xref uid="excel!Excel.ContentType:enum" /> | "Plain" | "Mention"'
   - name: context
     uid: 'excel!Excel.CommentReply#context:member'
     package: excel!
@@ -125,7 +125,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: creationDate
     uid: 'excel!Excel.CommentReply#creationDate:member'
     package: excel!
@@ -179,7 +179,7 @@ properties:
     syntax:
       content: 'readonly mentions: Excel.CommentMention[];'
       return:
-        type: 'excel!Excel.<xref uid="CommentMention:interface" />[]'
+        type: '<xref uid="excel!Excel.CommentMention:interface" />[]'
   - name: resolved
     uid: 'excel!Excel.CommentReply#resolved:member'
     package: excel!
@@ -275,7 +275,7 @@ methods:
     syntax:
       content: 'getLocation(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getParentComment()
     uid: 'excel!Excel.CommentReply#getParentComment:member(1)'
@@ -294,7 +294,7 @@ methods:
     syntax:
       content: 'getParentComment(): Excel.Comment;'
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.CommentReply#load:member(1)'
@@ -314,10 +314,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="CommentReplyLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.CommentReplyLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="CommentReply:class" />'
+        type: '<xref uid="excel!Excel.CommentReply:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.CommentReply#load:member(2)'
@@ -338,7 +338,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="CommentReply:class" />'
+        type: '<xref uid="excel!Excel.CommentReply:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.CommentReply#load:member(3)'
@@ -369,7 +369,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="CommentReply:class" />'
+        type: '<xref uid="excel!Excel.CommentReply:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.CommentReply#set:member(1)'
@@ -396,13 +396,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="CommentReplyUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.CommentReplyUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -421,7 +421,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="CommentReply:class" />'
+          type: '<xref uid="excel!Excel.CommentReply:class" />'
       return:
         type: void
         description: ''
@@ -444,7 +444,7 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.CommentReplyData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CommentReplyData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.CommentReplyData:interface" />'
         description: ''
   - name: updateMentions(contentWithMentions)
     uid: 'excel!Excel.CommentReply#updateMentions:member(1)'
@@ -469,8 +469,8 @@ methods:
             The content for the comment. This contains a specially formatted
             string and a list of mentions that will be parsed into the string
             when displayed by Excel.
-          type: 'excel!Excel.<xref uid="CommentRichContent:interface" />'
+          type: '<xref uid="excel!Excel.CommentRichContent:interface" />'
       return:
         type: void
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

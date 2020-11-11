@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: endStyleCap
     uid: 'excel!Excel.ChartErrorBars#endStyleCap:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartErrorBarsFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartErrorBarsFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartErrorBarsFormat:class" />'
   - name: include
     uid: 'excel!Excel.ChartErrorBars#include:member'
     package: excel!
@@ -85,7 +85,7 @@ properties:
         "PlusValues";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartErrorBarsInclude:enum" /> | "Both" |
+          <xref uid="excel!Excel.ChartErrorBarsInclude:enum" /> | "Both" |
           "MinusValues" | "PlusValues"
   - name: type
     uid: 'excel!Excel.ChartErrorBars#type:member'
@@ -107,7 +107,7 @@ properties:
         "StError" | "Custom";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartErrorBarsType:enum" /> | "FixedValue" |
+          <xref uid="excel!Excel.ChartErrorBarsType:enum" /> | "FixedValue" |
           "Percent" | "StDev" | "StError" | "Custom"
   - name: visible
     uid: 'excel!Excel.ChartErrorBars#visible:member'
@@ -146,10 +146,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartErrorBarsLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartErrorBars:class" />'
+        type: '<xref uid="excel!Excel.ChartErrorBars:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartErrorBars#load:member(2)'
@@ -170,7 +170,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartErrorBars:class" />'
+        type: '<xref uid="excel!Excel.ChartErrorBars:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartErrorBars#load:member(3)'
@@ -201,7 +201,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartErrorBars:class" />'
+        type: '<xref uid="excel!Excel.ChartErrorBars:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartErrorBars#set:member(1)'
@@ -228,13 +228,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartErrorBarsUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -253,7 +253,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartErrorBars:class" />'
+          type: '<xref uid="excel!Excel.ChartErrorBars:class" />'
       return:
         type: void
         description: ''
@@ -276,6 +276,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartErrorBarsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartErrorBarsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartErrorBarsData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

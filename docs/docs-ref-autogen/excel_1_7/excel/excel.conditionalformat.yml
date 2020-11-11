@@ -38,7 +38,7 @@ properties:
     syntax:
       content: 'readonly cellValue: Excel.CellValueConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="CellValueConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
         description: >-
 
 
@@ -81,7 +81,7 @@ properties:
     syntax:
       content: 'readonly cellValueOrNullObject: Excel.CellValueConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="CellValueConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
   - name: colorScale
     uid: 'excel!Excel.ConditionalFormat#colorScale:member'
     package: excel!
@@ -100,7 +100,7 @@ properties:
     syntax:
       content: 'readonly colorScale: Excel.ColorScaleConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ColorScaleConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.ColorScaleConditionalFormat:class" />'
         description: >-
 
 
@@ -146,7 +146,7 @@ properties:
     syntax:
       content: 'readonly colorScaleOrNullObject: Excel.ColorScaleConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ColorScaleConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.ColorScaleConditionalFormat:class" />'
   - name: context
     uid: 'excel!Excel.ConditionalFormat#context:member'
     package: excel!
@@ -160,7 +160,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: custom
     uid: 'excel!Excel.ConditionalFormat#custom:member'
     package: excel!
@@ -179,7 +179,7 @@ properties:
     syntax:
       content: 'readonly custom: Excel.CustomConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="CustomConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
         description: >-
 
 
@@ -220,7 +220,7 @@ properties:
     syntax:
       content: 'readonly customOrNullObject: Excel.CustomConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="CustomConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
   - name: dataBar
     uid: 'excel!Excel.ConditionalFormat#dataBar:member'
     package: excel!
@@ -239,7 +239,7 @@ properties:
     syntax:
       content: 'readonly dataBar: Excel.DataBarConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="DataBarConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
         description: >-
 
 
@@ -280,7 +280,7 @@ properties:
     syntax:
       content: 'readonly dataBarOrNullObject: Excel.DataBarConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="DataBarConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
   - name: iconSet
     uid: 'excel!Excel.ConditionalFormat#iconSet:member'
     package: excel!
@@ -299,7 +299,7 @@ properties:
     syntax:
       content: 'readonly iconSet: Excel.IconSetConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="IconSetConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
         description: >-
 
 
@@ -369,7 +369,7 @@ properties:
     syntax:
       content: 'readonly iconSetOrNullObject: Excel.IconSetConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="IconSetConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
   - name: id
     uid: 'excel!Excel.ConditionalFormat#id:member'
     package: excel!
@@ -407,7 +407,7 @@ properties:
     syntax:
       content: 'readonly preset: Excel.PresetCriteriaConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="PresetCriteriaConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
         description: >-
 
 
@@ -449,7 +449,7 @@ properties:
     syntax:
       content: 'readonly presetOrNullObject: Excel.PresetCriteriaConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="PresetCriteriaConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
   - name: priority
     uid: 'excel!Excel.ConditionalFormat#priority:member'
     package: excel!
@@ -514,7 +514,7 @@ properties:
     syntax:
       content: 'readonly textComparison: Excel.TextConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="TextConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.TextConditionalFormat:class" />'
         description: >-
 
 
@@ -557,7 +557,7 @@ properties:
     syntax:
       content: 'readonly textComparisonOrNullObject: Excel.TextConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="TextConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.TextConditionalFormat:class" />'
   - name: topBottom
     uid: 'excel!Excel.ConditionalFormat#topBottom:member'
     package: excel!
@@ -577,7 +577,7 @@ properties:
     syntax:
       content: 'readonly topBottom: Excel.TopBottomConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="TopBottomConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.TopBottomConditionalFormat:class" />'
   - name: topBottomOrNullObject
     uid: 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
     package: excel!
@@ -597,7 +597,7 @@ properties:
     syntax:
       content: 'readonly topBottomOrNullObject: Excel.TopBottomConditionalFormat;'
       return:
-        type: 'excel!Excel.<xref uid="TopBottomConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.TopBottomConditionalFormat:class" />'
   - name: type
     uid: 'excel!Excel.ConditionalFormat#type:member'
     package: excel!
@@ -619,7 +619,7 @@ properties:
         "ContainsText" | "CellValue";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalFormatType:enum" /> | "Custom" |
+          <xref uid="excel!Excel.ConditionalFormatType:enum" /> | "Custom" |
           "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria"
           | "ContainsText" | "CellValue"
         description: >-
@@ -698,7 +698,7 @@ methods:
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -755,7 +755,7 @@ methods:
     syntax:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.ConditionalFormat#load:member(1)'
@@ -775,10 +775,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="ConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ConditionalFormat#load:member(2)'
@@ -799,7 +800,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ConditionalFormat#load:member(3)'
@@ -830,7 +831,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ConditionalFormat#set:member(1)'
@@ -857,13 +858,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -882,7 +884,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ConditionalFormat:class" />'
+          type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
       return:
         type: void
         description: ''
@@ -905,6 +907,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ConditionalFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

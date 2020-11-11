@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'view?: Visio.Interfaces.ShapeViewUpdateData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeViewUpdateData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeViewUpdateData:interface" />'

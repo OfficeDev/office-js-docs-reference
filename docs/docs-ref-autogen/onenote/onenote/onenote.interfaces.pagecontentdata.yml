@@ -45,7 +45,7 @@ properties:
     syntax:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ImageData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.ImageData:interface" />'
   - name: ink
     uid: 'onenote!OneNote.Interfaces.PageContentData#ink:member'
     package: onenote!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'ink?: OneNote.Interfaces.FloatingInkData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="FloatingInkData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkData:interface" />'
   - name: left
     uid: 'onenote!OneNote.Interfaces.PageContentData#left:member'
     package: onenote!
@@ -101,7 +101,7 @@ properties:
     syntax:
       content: 'outline?: OneNote.Interfaces.OutlineData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="OutlineData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.OutlineData:interface" />'
   - name: top
     uid: 'onenote!OneNote.Interfaces.PageContentData#top:member'
     package: onenote!
@@ -138,5 +138,5 @@ properties:
       content: 'type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
       return:
         type: >-
-          onenote!OneNote.<xref uid="PageContentType:enum" /> | "Outline" |
+          <xref uid="onenote!OneNote.PageContentType:enum" /> | "Outline" |
           "Image" | "Ink" | "Other"

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: enableMultipleFilterItems
     uid: 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly fields: Excel.PivotFieldCollection;'
       return:
-        type: 'excel!Excel.<xref uid="PivotFieldCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotFieldCollection:class" />'
   - name: id
     uid: 'excel!Excel.FilterPivotHierarchy#id:member'
     package: excel!
@@ -138,10 +138,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="FilterPivotHierarchyLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.FilterPivotHierarchy#load:member(2)'
@@ -162,7 +163,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.FilterPivotHierarchy#load:member(3)'
@@ -193,7 +194,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.FilterPivotHierarchy#set:member(1)'
@@ -220,13 +221,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="FilterPivotHierarchyUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -245,7 +247,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+          type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
       return:
         type: void
         description: ''
@@ -288,7 +290,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.FilterPivotHierarchyData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="FilterPivotHierarchyData:interface"
+          <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: numberDecimalSeparator
     uid: 'excel!Excel.NumberFormatInfo#numberDecimalSeparator:member'
     package: excel!
@@ -168,10 +168,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="NumberFormatInfoLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="NumberFormatInfo:class" />'
+        type: '<xref uid="excel!Excel.NumberFormatInfo:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.NumberFormatInfo#load:member(2)'
@@ -192,7 +193,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="NumberFormatInfo:class" />'
+        type: '<xref uid="excel!Excel.NumberFormatInfo:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.NumberFormatInfo#load:member(3)'
@@ -223,7 +224,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="NumberFormatInfo:class" />'
+        type: '<xref uid="excel!Excel.NumberFormatInfo:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.NumberFormatInfo#toJSON:member(1)'
@@ -244,6 +245,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.NumberFormatInfoData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NumberFormatInfoData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.NumberFormatInfoData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -39,7 +39,7 @@ properties:
         "AutomaticExceptTables" | "Manual";
       return:
         type: >-
-          excel!Excel.<xref uid="CalculationMode:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.CalculationMode:enum" /> | "Automatic" |
           "AutomaticExceptTables" | "Manual"
   - name: context
     uid: 'excel!Excel.Application#context:member'
@@ -54,7 +54,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
 methods:
   - name: calculate(calculationType)
     uid: 'excel!Excel.Application#calculate:member(1)'
@@ -77,7 +77,7 @@ methods:
           description: >-
             Specifies the calculation type to use. See Excel.CalculationType for
             details.
-          type: 'excel!Excel.<xref uid="CalculationType:enum" />'
+          type: '<xref uid="excel!Excel.CalculationType:enum" />'
       return:
         type: void
         description: ''
@@ -141,10 +141,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ApplicationLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.ApplicationLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="Application:class" />'
+        type: '<xref uid="excel!Excel.Application:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Application#load:member(2)'
@@ -165,7 +165,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Application:class" />'
+        type: '<xref uid="excel!Excel.Application:class" />'
         description: |-
 
 
@@ -214,7 +214,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Application:class" />'
+        type: '<xref uid="excel!Excel.Application:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Application#set:member(1)'
@@ -241,13 +241,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ApplicationUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.ApplicationUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -266,7 +266,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Application:class" />'
+          type: '<xref uid="excel!Excel.Application:class" />'
       return:
         type: void
         description: ''
@@ -309,6 +309,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ApplicationData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ApplicationData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ApplicationData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

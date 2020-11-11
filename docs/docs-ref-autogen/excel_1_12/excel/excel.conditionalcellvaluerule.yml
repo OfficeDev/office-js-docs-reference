@@ -95,7 +95,7 @@ properties:
         "GreaterThanOrEqual" | "LessThanOrEqual";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalCellValueOperator:enum" /> |
+          <xref uid="excel!Excel.ConditionalCellValueOperator:enum" /> |
           "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
           "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
         description: >-

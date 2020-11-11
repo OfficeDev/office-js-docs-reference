@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#format:member'
     package: excel!
@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeFormat:class" />'
   - name: rule
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#rule:member'
     package: excel!
@@ -66,7 +66,7 @@ properties:
     syntax:
       content: 'rule: Excel.ConditionalPresetCriteriaRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalPresetCriteriaRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalPresetCriteriaRule:interface" />'
         description: >-
 
 
@@ -127,10 +127,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="PresetCriteriaConditionalFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="PresetCriteriaConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(2)'
@@ -153,7 +154,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PresetCriteriaConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(3)'
@@ -184,7 +185,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="PresetCriteriaConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#set:member(1)'
@@ -211,13 +212,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="PresetCriteriaConditionalFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -236,7 +238,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="PresetCriteriaConditionalFormat:class" />'
+          type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
       return:
         type: void
         description: ''
@@ -261,7 +263,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="PresetCriteriaConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

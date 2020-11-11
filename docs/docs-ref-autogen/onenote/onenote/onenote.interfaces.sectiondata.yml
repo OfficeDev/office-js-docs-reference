@@ -116,7 +116,7 @@ properties:
     syntax:
       content: 'pages?: OneNote.Interfaces.PageData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="PageData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageData:interface" />[]'
   - name: webUrl
     uid: 'onenote!OneNote.Interfaces.SectionData#webUrl:member'
     package: onenote!

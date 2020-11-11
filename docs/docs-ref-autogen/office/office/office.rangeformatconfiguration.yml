@@ -24,8 +24,8 @@ properties:
       content: 'cells: Office.Table | RangeCoordinates'
       return:
         type: >-
-          office!Office.<xref uid="Table:enum" /> | office!Office.<xref
-          uid="RangeCoordinates:interface" />
+          <xref uid="office!Office.Table:enum" /> | <xref
+          uid="office!Office.RangeCoordinates:interface" />
   - name: format
     uid: 'office!Office.RangeFormatConfiguration#format:member'
     package: office!

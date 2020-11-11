@@ -26,7 +26,7 @@ constructors:
       parameters:
         - id: url
           description: ''
-          type: 'string | office!OfficeExtension.<xref uid="EmbeddedSession:class" />'
+          type: 'string | <xref uid="office!OfficeExtension.EmbeddedSession:class" />'
 properties:
   - name: document
     uid: 'visio!Visio.RequestContext#document:member'
@@ -39,5 +39,5 @@ properties:
     syntax:
       content: 'readonly document: Document;'
       return:
-        type: 'visio!Visio.<xref uid="Document:class" />'
-extends: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+        type: '<xref uid="visio!Visio.Document:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'

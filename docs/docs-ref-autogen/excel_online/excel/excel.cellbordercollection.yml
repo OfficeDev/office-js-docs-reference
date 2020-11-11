@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'bottom?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'
   - name: diagonalDown
     uid: 'excel!Excel.CellBorderCollection#diagonalDown:member'
     package: excel!
@@ -53,7 +53,7 @@ properties:
     syntax:
       content: 'diagonalDown?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'
   - name: diagonalUp
     uid: 'excel!Excel.CellBorderCollection#diagonalUp:member'
     package: excel!
@@ -71,7 +71,7 @@ properties:
     syntax:
       content: 'diagonalUp?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'
   - name: horizontal
     uid: 'excel!Excel.CellBorderCollection#horizontal:member'
     package: excel!
@@ -89,7 +89,7 @@ properties:
     syntax:
       content: 'horizontal?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'
   - name: left
     uid: 'excel!Excel.CellBorderCollection#left:member'
     package: excel!
@@ -107,7 +107,7 @@ properties:
     syntax:
       content: 'left?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'
   - name: right
     uid: 'excel!Excel.CellBorderCollection#right:member'
     package: excel!
@@ -125,7 +125,7 @@ properties:
     syntax:
       content: 'right?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'
   - name: top
     uid: 'excel!Excel.CellBorderCollection#top:member'
     package: excel!
@@ -143,7 +143,7 @@ properties:
     syntax:
       content: 'top?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'
   - name: vertical
     uid: 'excel!Excel.CellBorderCollection#vertical:member'
     package: excel!
@@ -161,4 +161,4 @@ properties:
     syntax:
       content: 'vertical?: Excel.CellBorder;'
       return:
-        type: 'excel!Excel.<xref uid="CellBorder:interface" />'
+        type: '<xref uid="excel!Excel.CellBorder:interface" />'

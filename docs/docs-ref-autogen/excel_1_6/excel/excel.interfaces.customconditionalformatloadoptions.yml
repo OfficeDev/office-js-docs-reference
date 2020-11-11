@@ -49,8 +49,9 @@ properties:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface"
+          />
   - name: rule
     uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#rule:member'
     package: excel!
@@ -69,5 +70,6 @@ properties:
       content: 'rule?: Excel.Interfaces.ConditionalFormatRuleLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalFormatRuleLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface"
+          />

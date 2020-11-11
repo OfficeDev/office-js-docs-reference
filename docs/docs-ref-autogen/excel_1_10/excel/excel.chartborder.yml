@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: lineStyle
     uid: 'excel!Excel.ChartBorder#lineStyle:member'
     package: excel!
@@ -69,7 +69,7 @@ properties:
         "Automatic" | "RoundDot";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartLineStyle:enum" /> | "None" | "Continuous"
+          <xref uid="excel!Excel.ChartLineStyle:enum" /> | "None" | "Continuous"
           | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
           "Grey75" | "Automatic" | "RoundDot"
   - name: weight
@@ -128,10 +128,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ChartBorderLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.ChartBorderLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        type: '<xref uid="excel!Excel.ChartBorder:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartBorder#load:member(2)'
@@ -152,7 +152,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        type: '<xref uid="excel!Excel.ChartBorder:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartBorder#load:member(3)'
@@ -183,7 +183,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        type: '<xref uid="excel!Excel.ChartBorder:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartBorder#set:member(1)'
@@ -210,13 +210,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ChartBorderUpdateData:interface"
+            <xref uid="excel!Excel.Interfaces.ChartBorderUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -235,7 +235,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+          type: '<xref uid="excel!Excel.ChartBorder:class" />'
       return:
         type: void
         description: ''
@@ -257,6 +257,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartBorderData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBorderData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

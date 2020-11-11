@@ -55,7 +55,7 @@ properties:
         "LinearGradient" | "RectangularGradient";
       return:
         type: >-
-          excel!Excel.<xref uid="FillPattern:enum" /> | "None" | "Solid" |
+          <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" |
           "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
           "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical"
           | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8"

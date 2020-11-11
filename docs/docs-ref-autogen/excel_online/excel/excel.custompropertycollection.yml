@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.CustomPropertyCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.CustomProperty[];'
       return:
-        type: 'excel!Excel.<xref uid="CustomProperty:class" />[]'
+        type: '<xref uid="excel!Excel.CustomProperty:class" />[]'
 methods:
   - name: 'add(key, value)'
     uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
@@ -73,7 +73,7 @@ methods:
             automatically trimmed to 255 characters on other platforms).
           type: any
       return:
-        type: 'excel!Excel.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="excel!Excel.CustomProperty:class" />'
         description: >-
 
 
@@ -136,7 +136,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
@@ -160,7 +160,7 @@ methods:
           description: The key that identifies the custom property object.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="excel!Excel.CustomProperty:class" />'
         description: ''
   - name: getItemOrNullObject(key)
     uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
@@ -184,7 +184,7 @@ methods:
           description: Required. The key that identifies the custom property object.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="excel!Excel.CustomProperty:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'
@@ -204,12 +204,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CustomPropertyCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.CustomPropertyCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="CustomPropertyCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.CustomPropertyCollection#load:member(2)'
@@ -230,7 +230,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="CustomPropertyCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.CustomPropertyCollection#load:member(3)'
@@ -253,9 +253,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="CustomPropertyCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.CustomPropertyCollection#toJSON:member(1)'
@@ -278,7 +278,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.CustomPropertyCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CustomPropertyCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CustomPropertyCollectionData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

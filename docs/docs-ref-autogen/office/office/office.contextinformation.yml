@@ -20,7 +20,7 @@ properties:
     syntax:
       content: 'host: Office.HostType;'
       return:
-        type: 'office!Office.<xref uid="HostType:enum" />'
+        type: '<xref uid="office!Office.HostType:enum" />'
         description: |-
 
 
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'platform: Office.PlatformType;'
       return:
-        type: 'office!Office.<xref uid="PlatformType:enum" />'
+        type: '<xref uid="office!Office.PlatformType:enum" />'
         description: |-
 
 

@@ -44,4 +44,4 @@ properties:
     syntax:
       content: 'page?: OneNote.Interfaces.PageData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="PageData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageData:interface" />'

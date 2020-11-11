@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisLoadOptions:interface" />'
   - name: seriesAxis
     uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member'
     package: excel!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisLoadOptions:interface" />'
   - name: valueAxis
     uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#valueAxis:member'
     package: excel!
@@ -83,4 +83,4 @@ properties:
     syntax:
       content: 'valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisLoadOptions:interface" />'

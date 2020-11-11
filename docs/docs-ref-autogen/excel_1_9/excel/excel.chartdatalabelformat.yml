@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'readonly border: Excel.ChartBorder;'
       return:
-        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        type: '<xref uid="excel!Excel.ChartBorder:class" />'
   - name: context
     uid: 'excel!Excel.ChartDataLabelFormat#context:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: fill
     uid: 'excel!Excel.ChartDataLabelFormat#fill:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly fill: Excel.ChartFill;'
       return:
-        type: 'excel!Excel.<xref uid="ChartFill:class" />'
+        type: '<xref uid="excel!Excel.ChartFill:class" />'
   - name: font
     uid: 'excel!Excel.ChartDataLabelFormat#font:member'
     package: excel!
@@ -83,7 +83,7 @@ properties:
     syntax:
       content: 'readonly font: Excel.ChartFont;'
       return:
-        type: 'excel!Excel.<xref uid="ChartFont:class" />'
+        type: '<xref uid="excel!Excel.ChartFont:class" />'
 methods:
   - name: load(options)
     uid: 'excel!Excel.ChartDataLabelFormat#load:member(1)'
@@ -103,10 +103,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartDataLabelFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="ChartDataLabelFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartDataLabelFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartDataLabelFormat#load:member(2)'
@@ -127,7 +128,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartDataLabelFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartDataLabelFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartDataLabelFormat#load:member(3)'
@@ -158,7 +159,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartDataLabelFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartDataLabelFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartDataLabelFormat#set:member(1)'
@@ -185,13 +186,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartDataLabelFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -210,7 +212,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartDataLabelFormat:class" />'
+          type: '<xref uid="excel!Excel.ChartDataLabelFormat:class" />'
       return:
         type: void
         description: ''
@@ -234,7 +236,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ChartDataLabelFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartDataLabelFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

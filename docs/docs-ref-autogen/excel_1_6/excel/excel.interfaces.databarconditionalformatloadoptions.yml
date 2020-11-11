@@ -132,8 +132,9 @@ properties:
         Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalDataBarNegativeFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface"
+          />
   - name: positiveFormat
     uid: >-
       excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#positiveFormat:member
@@ -156,8 +157,9 @@ properties:
         Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalDataBarPositiveFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface"
+          />
   - name: showDataBarOnly
     uid: >-
       excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#showDataBarOnly:member

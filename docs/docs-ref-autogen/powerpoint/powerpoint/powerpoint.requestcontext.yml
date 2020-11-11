@@ -39,7 +39,7 @@ properties:
     syntax:
       content: 'readonly application: Application;'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Application:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Application:class" />'
   - name: presentation
     uid: 'powerpoint!PowerPoint.RequestContext#presentation:member'
     package: powerpoint!
@@ -51,5 +51,5 @@ properties:
     syntax:
       content: 'readonly presentation: Presentation;'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Presentation:class" />'
-extends: 'powerpoint!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Presentation:class" />'
+extends: '<xref uid="powerpoint!OfficeExtension.ClientRequestContext:class" />'

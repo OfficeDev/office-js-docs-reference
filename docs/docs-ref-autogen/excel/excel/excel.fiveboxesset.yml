@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'fourFilledBoxes: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: noFilledBoxes
     uid: 'excel!Excel.FiveBoxesSet#noFilledBoxes:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'noFilledBoxes: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: oneFilledBox
     uid: 'excel!Excel.FiveBoxesSet#oneFilledBox:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'oneFilledBox: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: threeFilledBoxes
     uid: 'excel!Excel.FiveBoxesSet#threeFilledBoxes:member'
     package: excel!
@@ -59,7 +59,7 @@ properties:
     syntax:
       content: 'threeFilledBoxes: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: twoFilledBoxes
     uid: 'excel!Excel.FiveBoxesSet#twoFilledBoxes:member'
     package: excel!
@@ -71,4 +71,4 @@ properties:
     syntax:
       content: 'twoFilledBoxes: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

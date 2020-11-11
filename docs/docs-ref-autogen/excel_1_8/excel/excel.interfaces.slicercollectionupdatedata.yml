@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.SlicerData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerData:interface" />[]'

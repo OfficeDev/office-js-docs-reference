@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.Image#format:member'
     package: excel!
@@ -50,7 +50,7 @@ properties:
         "GIF" | "PNG" | "SVG";
       return:
         type: >-
-          excel!Excel.<xref uid="PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
+          <xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
           "JPEG" | "GIF" | "PNG" | "SVG"
         description: >-
 
@@ -109,7 +109,7 @@ properties:
     syntax:
       content: 'readonly shape: Excel.Shape;'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
 methods:
   - name: load(options)
     uid: 'excel!Excel.Image#load:member(1)'
@@ -126,9 +126,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="ImageLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ImageLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Image:class" />'
+        type: '<xref uid="excel!Excel.Image:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Image#load:member(2)'
@@ -149,7 +149,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Image:class" />'
+        type: '<xref uid="excel!Excel.Image:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.Image#load:member(3)'
@@ -180,7 +180,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Image:class" />'
+        type: '<xref uid="excel!Excel.Image:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.Image#toJSON:member(1)'
@@ -200,6 +200,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ImageData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ImageData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ImageData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

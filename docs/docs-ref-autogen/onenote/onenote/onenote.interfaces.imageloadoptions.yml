@@ -139,8 +139,8 @@ properties:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="PageContentLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.PageContentLoadOptions:interface" />
   - name: paragraph
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#paragraph:member'
     package: onenote!
@@ -160,7 +160,7 @@ properties:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="ParagraphLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
           />
   - name: width
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#width:member'

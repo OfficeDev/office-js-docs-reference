@@ -44,4 +44,4 @@ properties:
     syntax:
       content: 'inkStrokes?: OneNote.Interfaces.InkStrokeData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="InkStrokeData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkStrokeData:interface" />[]'

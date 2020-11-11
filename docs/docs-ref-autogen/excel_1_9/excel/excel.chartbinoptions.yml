@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: count
     uid: 'excel!Excel.ChartBinOptions#count:member'
     package: excel!
@@ -122,7 +122,7 @@ properties:
         "BinCount";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartBinType:enum" /> | "Category" | "Auto" |
+          <xref uid="excel!Excel.ChartBinType:enum" /> | "Category" | "Auto" |
           "BinWidth" | "BinCount"
   - name: underflowValue
     uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
@@ -179,10 +179,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartBinOptionsLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartBinOptions:class" />'
+        type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartBinOptions#load:member(2)'
@@ -203,7 +203,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartBinOptions:class" />'
+        type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartBinOptions#load:member(3)'
@@ -234,7 +234,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartBinOptions:class" />'
+        type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartBinOptions#set:member(1)'
@@ -261,13 +261,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartBinOptionsUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -286,7 +286,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartBinOptions:class" />'
+          type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
       return:
         type: void
         description: ''
@@ -309,6 +309,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartBinOptionsData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBinOptionsData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBinOptionsData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

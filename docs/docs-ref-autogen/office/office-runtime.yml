@@ -34,10 +34,11 @@ functions:
         - id: options
           description: Optional parameter. Must be of type DisplayWebDialogOptions.
           type: >-
-            office-runtime!OfficeRuntime.<xref
-            uid="DisplayWebDialogOptions:interface" />
+            <xref
+            uid="office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface"
+            />
       return:
         type: >-
-          Promise&lt;office-runtime!OfficeRuntime.<xref uid="Dialog:interface"
+          Promise&lt;<xref uid="office-runtime!OfficeRuntime.Dialog:interface"
           />&gt;
         description: ''

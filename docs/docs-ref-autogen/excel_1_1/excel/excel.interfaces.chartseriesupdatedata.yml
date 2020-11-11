@@ -30,8 +30,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartSeriesFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface" />
   - name: name
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
     package: excel!

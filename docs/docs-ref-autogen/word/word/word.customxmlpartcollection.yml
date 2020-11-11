@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: items
     uid: 'word!Word.CustomXmlPartCollection#items:member'
     package: word!
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'readonly items: Word.CustomXmlPart[];'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />[]'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />[]'
 methods:
   - name: add(xml)
     uid: 'word!Word.CustomXmlPartCollection#add:member(1)'
@@ -64,7 +64,7 @@ methods:
           description: Required. XML content. Must be a valid XML fragment.
           type: string
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: getByNamespace(namespaceUri)
     uid: 'word!Word.CustomXmlPartCollection#getByNamespace:member(1)'
@@ -90,7 +90,7 @@ methods:
           description: Required. The namespace URI.
           type: string
       return:
-        type: 'word!Word.<xref uid="CustomXmlPartScopedCollection:class" />'
+        type: '<xref uid="word!Word.CustomXmlPartScopedCollection:class" />'
         description: ''
   - name: getCount()
     uid: 'word!Word.CustomXmlPartCollection#getCount:member(1)'
@@ -109,7 +109,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(id)
     uid: 'word!Word.CustomXmlPartCollection#getItem:member(1)'
@@ -132,7 +132,7 @@ methods:
           description: ID or index of the custom XML part to be retrieved.
           type: string
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: getItemOrNullObject(id)
     uid: 'word!Word.CustomXmlPartCollection#getItemOrNullObject:member(1)'
@@ -156,7 +156,7 @@ methods:
           description: Required. ID of the object to be retrieved.
           type: string
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.CustomXmlPartCollection#load:member(1)'
@@ -176,11 +176,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="CustomXmlPartCollectionLoadOptions:interface" /> &
-            word!Word.Interfaces.<xref uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface"
+            /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'word!Word.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.CustomXmlPartCollection#load:member(2)'
@@ -201,7 +202,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.CustomXmlPartCollection#load:member(3)'
@@ -224,9 +225,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.CustomXmlPartCollection#toJSON:member(1)'
@@ -249,7 +250,7 @@ methods:
       content: 'toJSON(): Word.Interfaces.CustomXmlPartCollectionData;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="CustomXmlPartCollectionData:interface"
+          <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData:interface"
           />
         description: ''
   - name: track()
@@ -270,7 +271,7 @@ methods:
     syntax:
       content: 'track(): Word.CustomXmlPartCollection;'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.CustomXmlPartCollection#untrack:member(1)'
@@ -289,6 +290,6 @@ methods:
     syntax:
       content: 'untrack(): Word.CustomXmlPartCollection;'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.PivotTableCollection#items:member'
     package: excel!
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.PivotTable[];'
       return:
-        type: 'excel!Excel.<xref uid="PivotTable:class" />[]'
+        type: '<xref uid="excel!Excel.PivotTable:class" />[]'
 methods:
   - name: 'add(name, source, destination)'
     uid: 'excel!Excel.PivotTableCollection#add:member(1)'
@@ -71,16 +71,16 @@ methods:
             The source data for the new PivotTable, this can either be a range
             (or string address including the worksheet name) or a table.
           type: >-
-            excel!Excel.<xref uid="Range:class" /> | string | excel!Excel.<xref
-            uid="Table:class" />
+            <xref uid="excel!Excel.Range:class" /> | string | <xref
+            uid="excel!Excel.Table:class" />
         - id: destination
           description: >-
             The cell in the upper-left corner of the PivotTable report's
             destination range (the range on the worksheet where the resulting
             report will be placed).
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
-        type: 'excel!Excel.<xref uid="PivotTable:class" />'
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: >-
           Returns the newly inserted PivotTable.
 
@@ -119,7 +119,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(name)
     uid: 'excel!Excel.PivotTableCollection#getItem:member(1)'
@@ -142,7 +142,7 @@ methods:
           description: Name of the PivotTable to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="PivotTable:class" />'
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: ''
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
@@ -166,7 +166,7 @@ methods:
           description: Name of the PivotTable to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="PivotTable:class" />'
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.PivotTableCollection#load:member(1)'
@@ -186,12 +186,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="PivotTableCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="PivotTableCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PivotTableCollection#load:member(2)'
@@ -212,7 +212,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PivotTableCollection#load:member(3)'
@@ -235,9 +235,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="PivotTableCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotTableCollection:class" />'
         description: ''
   - name: refreshAll()
     uid: 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
@@ -279,7 +279,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.PivotTableCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="PivotTableCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.PivotTableCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

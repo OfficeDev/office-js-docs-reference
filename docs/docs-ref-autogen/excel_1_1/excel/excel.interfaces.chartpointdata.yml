@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartPointFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartPointFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointFormatData:interface" />'
   - name: value
     uid: 'excel!Excel.Interfaces.ChartPointData#value:member'
     package: excel!

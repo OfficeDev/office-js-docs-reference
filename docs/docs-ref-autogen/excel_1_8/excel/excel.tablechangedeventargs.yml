@@ -56,7 +56,7 @@ properties:
         "CellInserted" | "CellDeleted";
       return:
         type: >-
-          excel!Excel.<xref uid="DataChangeType:enum" /> | "Unknown" |
+          <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" |
           "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
           "ColumnDeleted" | "CellInserted" | "CellDeleted"
   - name: source
@@ -76,7 +76,7 @@ properties:
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: 'excel!Excel.<xref uid="EventSource:enum" /> | "Local" | "Remote"'
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
   - name: tableId
     uid: 'excel!Excel.TableChangedEventArgs#tableId:member'
     package: excel!
@@ -204,9 +204,9 @@ methods:
       parameters:
         - id: ctx
           description: ''
-          type: 'excel!Excel.<xref uid="RequestContext:class" />'
+          type: '<xref uid="excel!Excel.RequestContext:class" />'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRangeOrNullObject(ctx)
     uid: 'excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member(1)'
@@ -228,7 +228,7 @@ methods:
       parameters:
         - id: ctx
           description: ''
-          type: 'excel!Excel.<xref uid="RequestContext:class" />'
+          type: '<xref uid="excel!Excel.RequestContext:class" />'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''

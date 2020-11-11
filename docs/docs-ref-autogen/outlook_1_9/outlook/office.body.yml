@@ -117,8 +117,8 @@ methods:
             appended. The string in the `data` parameter will be converted to
             this format.
           type: >-
-            office!Office.<xref uid="AsyncContextOptions:interface" /> &
-            outlook!Office.<xref uid="CoercionTypeOptions:interface" />
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -126,7 +126,7 @@ methods:
             `Office.AsyncResult`<!-- -->. Any errors encountered will be
             provided in the `asyncResult.error` property.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -199,13 +199,13 @@ methods:
       parameters:
         - id: coercionType
           description: The format for the returned body.
-          type: 'office!Office.<xref uid="CoercionType:enum" /> | string'
+          type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties: `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -213,7 +213,7 @@ methods:
             Office.AsyncResult. The body is provided in the requested format in
             the `asyncResult.value` property.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -266,7 +266,7 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -274,8 +274,8 @@ methods:
             `Office.AsyncResult`<!-- -->. The content type is returned as one of
             the `CoercionType` values in the `asyncResult.value` property.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="CoercionType:enum" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="office!Office.CoercionType:enum" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -362,8 +362,8 @@ methods:
             `coercionType`<!-- -->: The desired format for the body. The string
             in the `data` parameter will be converted to this format.
           type: >-
-            office!Office.<xref uid="AsyncContextOptions:interface" /> &
-            outlook!Office.<xref uid="CoercionTypeOptions:interface" />
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -371,7 +371,7 @@ methods:
             `Office.AsyncResult`<!-- -->. Any errors encountered will be
             provided in the `asyncResult.error` property.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -475,8 +475,8 @@ methods:
             `coercionType`<!-- -->: The desired format for the body. The string
             in the `data` parameter will be converted to this format.
           type: >-
-            office!Office.<xref uid="AsyncContextOptions:interface" /> &
-            outlook!Office.<xref uid="CoercionTypeOptions:interface" />
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -484,7 +484,7 @@ methods:
             Office.AsyncResult. Any errors encountered will be provided in the
             `asyncResult.error` property.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -571,8 +571,8 @@ methods:
             `coercionType`<!-- -->: The desired format for the body. The string
             in the `data` parameter will be converted to this format.
           type: >-
-            office!Office.<xref uid="AsyncContextOptions:interface" /> &
-            outlook!Office.<xref uid="CoercionTypeOptions:interface" />
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -580,7 +580,7 @@ methods:
             `Office.AsyncResult`<!-- -->. Any errors encountered will be
             provided in the `asyncResult.error` property.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

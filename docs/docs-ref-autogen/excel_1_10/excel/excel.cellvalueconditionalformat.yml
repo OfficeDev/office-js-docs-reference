@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.CellValueConditionalFormat#format:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeFormat:class" />'
         description: >-
 
 
@@ -88,7 +88,7 @@ properties:
     syntax:
       content: 'rule: Excel.ConditionalCellValueRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalCellValueRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalCellValueRule:interface" />'
         description: >-
 
 
@@ -131,10 +131,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CellValueConditionalFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="CellValueConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.CellValueConditionalFormat#load:member(2)'
@@ -157,7 +158,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="CellValueConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.CellValueConditionalFormat#load:member(3)'
@@ -188,7 +189,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="CellValueConditionalFormat:class" />'
+        type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.CellValueConditionalFormat#set:member(1)'
@@ -215,13 +216,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CellValueConditionalFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -240,7 +242,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="CellValueConditionalFormat:class" />'
+          type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
       return:
         type: void
         description: ''
@@ -264,7 +266,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.CellValueConditionalFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CellValueConditionalFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CellValueConditionalFormatData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

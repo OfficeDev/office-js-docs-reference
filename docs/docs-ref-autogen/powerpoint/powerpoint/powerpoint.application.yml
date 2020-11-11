@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="RequestContext:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
 methods:
   - name: newObject(context)
     uid: 'powerpoint!PowerPoint.Application.newObject:member(1)'
@@ -42,9 +42,9 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: 'powerpoint!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+          type: '<xref uid="powerpoint!OfficeExtension.ClientRequestContext:class" />'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Application:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Application:class" />'
         description: ''
   - name: toJSON()
     uid: 'powerpoint!PowerPoint.Application#toJSON:member(1)'
@@ -73,4 +73,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: 'powerpoint!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'

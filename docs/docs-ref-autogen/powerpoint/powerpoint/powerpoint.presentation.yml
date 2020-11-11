@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="RequestContext:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
   - name: slides
     uid: 'powerpoint!PowerPoint.Presentation#slides:member'
     package: powerpoint!
@@ -43,7 +43,7 @@ properties:
     syntax:
       content: 'readonly slides: PowerPoint.SlideCollection;'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="SlideCollection:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
   - name: title
     uid: 'powerpoint!PowerPoint.Presentation#title:member'
     package: powerpoint!
@@ -84,7 +84,7 @@ methods:
           description: >-
             The options that define which slides will be inserted, where the new
             slides will go, and which presentation's formatting will be used.
-          type: 'powerpoint!PowerPoint.<xref uid="InsertSlideOptions:interface" />'
+          type: '<xref uid="powerpoint!PowerPoint.InsertSlideOptions:interface" />'
       return:
         type: void
         description: ''
@@ -106,10 +106,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            powerpoint!PowerPoint.Interfaces.<xref
-            uid="PresentationLoadOptions:interface" />
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface"
+            />
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Presentation:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Presentation:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'powerpoint!PowerPoint.Presentation#load:member(2)'
@@ -130,7 +131,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Presentation:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Presentation:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'powerpoint!PowerPoint.Presentation#load:member(3)'
@@ -161,7 +162,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'powerpoint!PowerPoint.<xref uid="Presentation:class" />'
+        type: '<xref uid="powerpoint!PowerPoint.Presentation:class" />'
         description: ''
   - name: toJSON()
     uid: 'powerpoint!PowerPoint.Presentation#toJSON:member(1)'
@@ -183,7 +184,7 @@ methods:
       content: 'toJSON(): PowerPoint.Interfaces.PresentationData;'
       return:
         type: >-
-          powerpoint!PowerPoint.Interfaces.<xref
-          uid="PresentationData:interface" />
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.PresentationData:interface" />
         description: ''
-extends: 'powerpoint!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'

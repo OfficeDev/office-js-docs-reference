@@ -27,7 +27,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: inlinePictures
     uid: 'word!Word.Interfaces.RangeData#inlinePictures:member'
     package: word!
@@ -45,7 +45,7 @@ properties:
     syntax:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="InlinePictureData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
   - name: style
     uid: 'word!Word.Interfaces.RangeData#style:member'
     package: word!

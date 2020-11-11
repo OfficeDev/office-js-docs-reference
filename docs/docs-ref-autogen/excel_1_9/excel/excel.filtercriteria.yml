@@ -108,7 +108,7 @@ properties:
         "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";
       return:
         type: >-
-          excel!Excel.<xref uid="DynamicFilterCriteria:enum" /> | "Unknown" |
+          <xref uid="excel!Excel.DynamicFilterCriteria:enum" /> | "Unknown" |
           "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
           "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
           "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
@@ -143,7 +143,7 @@ properties:
         "Icon" | "Custom";
       return:
         type: >-
-          excel!Excel.<xref uid="FilterOn:enum" /> | "BottomItems" |
+          <xref uid="excel!Excel.FilterOn:enum" /> | "BottomItems" |
           "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
           "TopItems" | "TopPercent" | "Icon" | "Custom"
   - name: icon
@@ -163,7 +163,7 @@ properties:
     syntax:
       content: 'icon?: Excel.Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: operator
     uid: 'excel!Excel.FilterCriteria#operator:member'
     package: excel!
@@ -182,7 +182,7 @@ properties:
     syntax:
       content: 'operator?: Excel.FilterOperator | "And" | "Or";'
       return:
-        type: 'excel!Excel.<xref uid="FilterOperator:enum" /> | "And" | "Or"'
+        type: '<xref uid="excel!Excel.FilterOperator:enum" /> | "And" | "Or"'
   - name: subField
     uid: 'excel!Excel.FilterCriteria#subField:member'
     package: excel!
@@ -219,5 +219,5 @@ properties:
       content: 'values?: Array<string | FilterDatetime>;'
       return:
         type: >-
-          Array&lt;string | excel!Excel.<xref uid="FilterDatetime:interface"
+          Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface"
           />&gt;

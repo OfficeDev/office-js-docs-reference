@@ -23,5 +23,6 @@ properties:
       content: 'items?: OneNote.Interfaces.InkAnalysisParagraphData[];'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisParagraphData:interface" />[]
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface"
+          />[]

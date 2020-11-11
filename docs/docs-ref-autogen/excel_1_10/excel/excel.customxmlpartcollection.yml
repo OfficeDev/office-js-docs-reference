@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.CustomXmlPartCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.CustomXmlPart[];'
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPart:class" />[]'
+        type: '<xref uid="excel!Excel.CustomXmlPart:class" />[]'
 methods:
   - name: add(xml)
     uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
@@ -63,7 +63,7 @@ methods:
           description: XML content. Must be a valid XML fragment.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
         description: >-
 
 
@@ -122,7 +122,7 @@ methods:
             "http://schemas.contoso.com/review/1.0".
           type: string
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPartScopedCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPartScopedCollection:class" />'
         description: >-
 
 
@@ -180,7 +180,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(id)
     uid: 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
@@ -203,7 +203,7 @@ methods:
           description: ID of the object to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
         description: >-
 
 
@@ -258,7 +258,7 @@ methods:
           description: ID of the object to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.CustomXmlPartCollection#load:member(1)'
@@ -278,12 +278,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CustomXmlPartCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.CustomXmlPartCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPartCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.CustomXmlPartCollection#load:member(2)'
@@ -304,7 +304,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPartCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.CustomXmlPartCollection#load:member(3)'
@@ -327,9 +327,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPartCollection:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPartCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.CustomXmlPartCollection#toJSON:member(1)'
@@ -352,7 +352,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="CustomXmlPartCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.CustomXmlPartCollectionData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

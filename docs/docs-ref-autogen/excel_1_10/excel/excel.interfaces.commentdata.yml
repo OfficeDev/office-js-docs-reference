@@ -119,4 +119,4 @@ properties:
     syntax:
       content: 'replies?: Excel.Interfaces.CommentReplyData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CommentReplyData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.CommentReplyData:interface" />[]'

@@ -29,8 +29,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartPlotAreaFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPlotAreaFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface"
+          />
   - name: height
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#height:member'
     package: excel!
@@ -157,7 +158,7 @@ properties:
       content: 'position?: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartPlotAreaPosition:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartPlotAreaPosition:enum" /> | "Automatic" |
           "Custom"
   - name: top
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#top:member'

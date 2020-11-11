@@ -23,5 +23,5 @@ properties:
       content: 'items?: Excel.Interfaces.DataPivotHierarchyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="DataPivotHierarchyData:interface"
+          <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData:interface"
           />[]

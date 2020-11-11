@@ -37,7 +37,7 @@ properties:
         "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeAutoSize:enum" /> | "AutoSizeNone" |
+          <xref uid="excel!Excel.ShapeAutoSize:enum" /> | "AutoSizeNone" |
           "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - name: bottomMargin
     uid: 'excel!Excel.TextFrame#bottomMargin:member'
@@ -70,7 +70,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: hasText
     uid: 'excel!Excel.TextFrame#hasText:member'
     package: excel!
@@ -111,7 +111,7 @@ properties:
         "ThaiDistributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextHorizontalAlignment:enum" /> | "Left"
+          <xref uid="excel!Excel.ShapeTextHorizontalAlignment:enum" /> | "Left"
           | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
           "ThaiDistributed"
   - name: horizontalOverflow
@@ -135,7 +135,7 @@ properties:
         "Clip";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextHorizontalOverflow:enum" /> |
+          <xref uid="excel!Excel.ShapeTextHorizontalOverflow:enum" /> |
           "Overflow" | "Clip"
   - name: leftMargin
     uid: 'excel!Excel.TextFrame#leftMargin:member'
@@ -177,7 +177,7 @@ properties:
         "MongolianVertical" | "WordArtVerticalRTL";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextOrientation:enum" /> | "Horizontal" |
+          <xref uid="excel!Excel.ShapeTextOrientation:enum" /> | "Horizontal" |
           "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
           "MongolianVertical" | "WordArtVerticalRTL"
   - name: readingOrder
@@ -201,7 +201,7 @@ properties:
         "RightToLeft";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextReadingOrder:enum" /> | "LeftToRight"
+          <xref uid="excel!Excel.ShapeTextReadingOrder:enum" /> | "LeftToRight"
           | "RightToLeft"
   - name: rightMargin
     uid: 'excel!Excel.TextFrame#rightMargin:member'
@@ -240,7 +240,7 @@ properties:
     syntax:
       content: 'readonly textRange: Excel.TextRange;'
       return:
-        type: 'excel!Excel.<xref uid="TextRange:class" />'
+        type: '<xref uid="excel!Excel.TextRange:class" />'
   - name: topMargin
     uid: 'excel!Excel.TextFrame#topMargin:member'
     package: excel!
@@ -280,7 +280,7 @@ properties:
         "Bottom" | "Justified" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextVerticalAlignment:enum" /> | "Top" |
+          <xref uid="excel!Excel.ShapeTextVerticalAlignment:enum" /> | "Top" |
           "Middle" | "Bottom" | "Justified" | "Distributed"
   - name: verticalOverflow
     uid: 'excel!Excel.TextFrame#verticalOverflow:member'
@@ -303,7 +303,7 @@ properties:
         "Ellipsis" | "Clip";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextVerticalOverflow:enum" /> | "Overflow"
+          <xref uid="excel!Excel.ShapeTextVerticalOverflow:enum" /> | "Overflow"
           | "Ellipsis" | "Clip"
 methods:
   - name: deleteText()
@@ -358,9 +358,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="TextFrameLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.TextFrameLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="TextFrame:class" />'
+        type: '<xref uid="excel!Excel.TextFrame:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.TextFrame#load:member(2)'
@@ -381,7 +381,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="TextFrame:class" />'
+        type: '<xref uid="excel!Excel.TextFrame:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.TextFrame#load:member(3)'
@@ -412,7 +412,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="TextFrame:class" />'
+        type: '<xref uid="excel!Excel.TextFrame:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.TextFrame#set:member(1)'
@@ -438,12 +438,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="TextFrameUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.TextFrameUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -462,7 +462,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="TextFrame:class" />'
+          type: '<xref uid="excel!Excel.TextFrame:class" />'
       return:
         type: void
         description: ''
@@ -484,6 +484,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.TextFrameData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TextFrameData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TextFrameData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

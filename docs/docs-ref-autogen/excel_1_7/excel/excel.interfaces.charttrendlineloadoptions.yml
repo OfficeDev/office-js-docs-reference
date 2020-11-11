@@ -48,8 +48,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartTrendlineFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface"
+          />
   - name: intercept
     uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#intercept:member'
     package: excel!

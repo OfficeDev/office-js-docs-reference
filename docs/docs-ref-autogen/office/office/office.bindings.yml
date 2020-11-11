@@ -22,7 +22,7 @@ properties:
     syntax:
       content: 'document: Document;'
       return:
-        type: 'office!Office.<xref uid="Document:interface" />'
+        type: '<xref uid="office!Office.Document:interface" />'
 methods:
   - name: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
     uid: 'office!Office.Bindings#addFromNamedItemAsync:member(1)'
@@ -174,11 +174,11 @@ methods:
             The [Office.BindingType](xref:office!Office.BindingType:enum) for
             the data. The method returns null if the selected object cannot be
             coerced into the specified type.
-          type: 'office!Office.<xref uid="BindingType:enum" />'
+          type: '<xref uid="office!Office.BindingType:enum" />'
         - id: options
           description: Provides options for configuring the binding that is created.
           type: >-
-            office!Office.<xref uid="AddBindingFromNamedItemOptions:interface"
+            <xref uid="office!Office.AddBindingFromNamedItemOptions:interface"
             />
         - id: callback
           description: >-
@@ -188,8 +188,8 @@ methods:
             -->. The `value` property of the result is the Binding object that
             represents the specified named item.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -254,7 +254,7 @@ methods:
             The [Office.BindingType](xref:office!Office.BindingType:enum) for
             the data. The method returns null if the selected object cannot be
             coerced into the specified type.
-          type: 'office!Office.<xref uid="BindingType:enum" />'
+          type: '<xref uid="office!Office.BindingType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -263,8 +263,8 @@ methods:
             -->. The `value` property of the result is the Binding object that
             represents the specified named item.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -319,12 +319,12 @@ methods:
             Specifies the type of the binding object to create. Required.
             Returns null if the selected object cannot be coerced into the
             specified type.
-          type: 'office!Office.<xref uid="BindingType:enum" />'
+          type: '<xref uid="office!Office.BindingType:enum" />'
         - id: options
           description: >-
             Provides options for configuring the prompt and identifying the
             binding that is created.
-          type: 'office!Office.<xref uid="AddBindingFromPromptOptions:interface" />'
+          type: '<xref uid="office!Office.AddBindingFromPromptOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -333,8 +333,8 @@ methods:
             -->. The `value` property of the result is the Binding object that
             represents the selection specified by the user.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -365,7 +365,7 @@ methods:
             Specifies the type of the binding object to create. Required.
             Returns null if the selected object cannot be coerced into the
             specified type.
-          type: 'office!Office.<xref uid="BindingType:enum" />'
+          type: '<xref uid="office!Office.BindingType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -374,8 +374,8 @@ methods:
             -->. The `value` property of the result is the Binding object that
             represents the selection specified by the user.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -446,11 +446,11 @@ methods:
             Specifies the type of the binding object to create. Required.
             Returns null if the selected object cannot be coerced into the
             specified type.
-          type: 'office!Office.<xref uid="BindingType:enum" />'
+          type: '<xref uid="office!Office.BindingType:enum" />'
         - id: options
           description: Provides options for identifying the binding that is created.
           type: >-
-            office!Office.<xref uid="AddBindingFromSelectionOptions:interface"
+            <xref uid="office!Office.AddBindingFromSelectionOptions:interface"
             />
         - id: callback
           description: >-
@@ -460,8 +460,8 @@ methods:
             -->. The `value` property of the result is the Binding object that
             represents the selection specified by the user.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -509,7 +509,7 @@ methods:
             Specifies the type of the binding object to create. Required.
             Returns null if the selected object cannot be coerced into the
             specified type.
-          type: 'office!Office.<xref uid="BindingType:enum" />'
+          type: '<xref uid="office!Office.BindingType:enum" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -518,8 +518,8 @@ methods:
             -->. The `value` property of the result is the Binding object that
             represents the selection specified by the user.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -553,7 +553,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only
@@ -562,9 +562,8 @@ methods:
             -->. The `value` property of the result is an array that contains
             each binding created for the referenced Bindings object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />[]&gt;) =&gt;
-            void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -624,9 +623,8 @@ methods:
             -->. The `value` property of the result is an array that contains
             each binding created for the referenced Bindings object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />[]&gt;) =&gt;
-            void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -666,7 +664,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -675,8 +673,8 @@ methods:
             -->. The `value` property of the result is the Binding object
             specified by the id in the call.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -740,8 +738,8 @@ methods:
             -->. The `value` property of the result is the Binding object
             specified by the id in the call.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Binding:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Binding:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -783,7 +781,7 @@ methods:
           description: >-
             Provides an option for preserving context data of any type,
             unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns,
@@ -791,7 +789,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -856,7 +854,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

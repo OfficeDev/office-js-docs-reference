@@ -47,7 +47,7 @@ properties:
         "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved";
       return:
         type: >-
-          onenote!OneNote.<xref uid="NoteTagStatus:enum" /> | "Unknown" |
+          <xref uid="onenote!OneNote.NoteTagStatus:enum" /> | "Unknown" |
           "Normal" | "Completed" | "Disabled" | "OutlookTask" |
           "TaskNotSyncedYet" | "TaskRemoved"
   - name: type
@@ -71,6 +71,6 @@ properties:
         | "Critical" | "ToDoPriority1" | "ToDoPriority2";
       return:
         type: >-
-          onenote!OneNote.<xref uid="NoteTagType:enum" /> | "Unknown" | "ToDo" |
+          <xref uid="onenote!OneNote.NoteTagType:enum" /> | "Unknown" | "ToDo" |
           "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
           "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"

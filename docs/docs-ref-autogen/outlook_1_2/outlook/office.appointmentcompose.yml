@@ -78,7 +78,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: 'outlook!Office.<xref uid="Body:interface" />'
+        type: '<xref uid="outlook!Office.Body:interface" />'
   - name: end
     uid: 'outlook!Office.AppointmentCompose#end:member'
     package: outlook!
@@ -183,7 +183,7 @@ properties:
     syntax:
       content: 'end: Time;'
       return:
-        type: 'outlook!Office.<xref uid="Time:interface" />'
+        type: '<xref uid="outlook!Office.Time:interface" />'
   - name: itemType
     uid: 'outlook!Office.AppointmentCompose#itemType:member'
     package: outlook!
@@ -222,7 +222,7 @@ properties:
     syntax:
       content: 'itemType: MailboxEnums.ItemType | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="ItemType:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.ItemType:enum" /> | string'
   - name: location
     uid: 'outlook!Office.AppointmentCompose#location:member'
     package: outlook!
@@ -297,7 +297,7 @@ properties:
     syntax:
       content: 'location: Location;'
       return:
-        type: 'outlook!Office.<xref uid="Location:interface" />'
+        type: '<xref uid="outlook!Office.Location:interface" />'
   - name: optionalAttendees
     uid: 'outlook!Office.AppointmentCompose#optionalAttendees:member'
     package: outlook!
@@ -395,7 +395,7 @@ properties:
     syntax:
       content: 'optionalAttendees: Recipients;'
       return:
-        type: 'outlook!Office.<xref uid="Recipients:interface" />'
+        type: '<xref uid="outlook!Office.Recipients:interface" />'
   - name: requiredAttendees
     uid: 'outlook!Office.AppointmentCompose#requiredAttendees:member'
     package: outlook!
@@ -494,7 +494,7 @@ properties:
     syntax:
       content: 'requiredAttendees: Recipients;'
       return:
-        type: 'outlook!Office.<xref uid="Recipients:interface" />'
+        type: '<xref uid="outlook!Office.Recipients:interface" />'
   - name: start
     uid: 'outlook!Office.AppointmentCompose#start:member'
     package: outlook!
@@ -568,7 +568,7 @@ properties:
     syntax:
       content: 'start: Time;'
       return:
-        type: 'outlook!Office.<xref uid="Time:interface" />'
+        type: '<xref uid="outlook!Office.Time:interface" />'
   - name: subject
     uid: 'outlook!Office.AppointmentCompose#subject:member'
     package: outlook!
@@ -633,7 +633,7 @@ properties:
     syntax:
       content: 'subject: Subject;'
       return:
-        type: 'outlook!Office.<xref uid="Subject:interface" />'
+        type: '<xref uid="outlook!Office.Subject:interface" />'
 methods:
   - name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)'
@@ -750,7 +750,7 @@ methods:
             shown inline in the message body, and should not be displayed in the
             attachment list.
           type: >-
-            office!Office.<xref uid="AsyncContextOptions:interface" /> & {
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & {
             isInline: boolean }
         - id: callback
           description: >-
@@ -761,7 +761,7 @@ methods:
             the attachment fails, the `asyncResult` object will contain an
             `Error` object that provides a description of the error.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -881,7 +881,7 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -891,7 +891,7 @@ methods:
             attachment fails, the `asyncResult` object will contain an `Error`
             object that provides a description of the error.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -965,20 +965,20 @@ methods:
             returns the plain text as a string, removing any HTML tags present.
             If `HTML`<!-- -->, the method returns the selected text, whether it
             is plaintext or HTML.
-          type: 'office!Office.<xref uid="CoercionType:enum" /> | string'
+          type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: options
           description: >-
             An object literal that contains one or more of the following
             properties. `asyncContext`<!-- -->: Developers can provide any
             object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback`
             parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;any&gt;) =&gt; void
       return:
         type: void
@@ -1053,14 +1053,14 @@ methods:
             returns the plain text as a string, removing any HTML tags present.
             If `HTML`<!-- -->, the method returns the selected text, whether it
             is plaintext or HTML.
-          type: 'office!Office.<xref uid="CoercionType:enum" /> | string'
+          type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback`
             parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
       return:
         type: void
@@ -1184,8 +1184,8 @@ methods:
             parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="CustomProperties:interface" />&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;)
             =&gt; void
         - id: userContext
           description: >-
@@ -1287,7 +1287,7 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -1296,7 +1296,7 @@ methods:
             `asyncResult.error` property will contain an error code with the
             reason for the failure.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -1396,17 +1396,17 @@ methods:
             the result depends on the field: if the field is HTML then HTML is
             used; if the field is text, then plain text is used.
           type: >-
-            office!Office.<xref uid="AsyncContextOptions:interface" /> &
-            outlook!Office.<xref uid="CoercionTypeOptions:interface" />
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-extends: 'outlook!Office.<xref uid="Appointment:interface" />'
+extends: '<xref uid="outlook!Office.Appointment:interface" />'

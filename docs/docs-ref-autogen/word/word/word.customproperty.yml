@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: key
     uid: 'word!Word.CustomProperty#key:member'
     package: word!
@@ -68,7 +68,7 @@ properties:
         | "Boolean";
       return:
         type: >-
-          word!Word.<xref uid="DocumentPropertyType:enum" /> | "String" |
+          <xref uid="word!Word.DocumentPropertyType:enum" /> | "String" |
           "Number" | "Date" | "Boolean"
   - name: value
     uid: 'word!Word.CustomProperty#value:member'
@@ -130,10 +130,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref uid="CustomPropertyLoadOptions:interface"
+            <xref uid="word!Word.Interfaces.CustomPropertyLoadOptions:interface"
             />
       return:
-        type: 'word!Word.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="word!Word.CustomProperty:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.CustomProperty#load:member(2)'
@@ -154,7 +154,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="word!Word.CustomProperty:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.CustomProperty#load:member(3)'
@@ -185,7 +185,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="word!Word.CustomProperty:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.CustomProperty#set:member(1)'
@@ -212,13 +212,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            word!Word.Interfaces.<xref uid="CustomPropertyUpdateData:interface"
+            <xref uid="word!Word.Interfaces.CustomPropertyUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -237,7 +237,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="CustomProperty:class" />'
+          type: '<xref uid="word!Word.CustomProperty:class" />'
       return:
         type: void
         description: ''
@@ -260,7 +260,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.CustomPropertyData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="CustomPropertyData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.CustomPropertyData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.CustomProperty#track:member(1)'
@@ -280,7 +280,7 @@ methods:
     syntax:
       content: 'track(): Word.CustomProperty;'
       return:
-        type: 'word!Word.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="word!Word.CustomProperty:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.CustomProperty#untrack:member(1)'
@@ -299,6 +299,6 @@ methods:
     syntax:
       content: 'untrack(): Word.CustomProperty;'
       return:
-        type: 'word!Word.<xref uid="CustomProperty:class" />'
+        type: '<xref uid="word!Word.CustomProperty:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.Table#id:member'
     package: onenote!
@@ -101,7 +101,7 @@ properties:
     syntax:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
   - name: rowCount
     uid: 'onenote!OneNote.Table#rowCount:member'
     package: onenote!
@@ -137,7 +137,7 @@ properties:
     syntax:
       content: 'readonly rows: OneNote.TableRowCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="onenote!OneNote.TableRowCollection:class" />'
 methods:
   - name: appendColumn(values)
     uid: 'onenote!OneNote.Table#appendColumn:member(1)'
@@ -223,7 +223,7 @@ methods:
             Must not have more values than columns in the table.
           type: 'string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: |-
 
 
@@ -302,7 +302,7 @@ methods:
           description: The index of the cell in the row.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: |-
 
 
@@ -428,7 +428,7 @@ methods:
             Must not have more values than columns in the table.
           type: 'string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: |-
 
 
@@ -500,9 +500,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'onenote!OneNote.Interfaces.<xref uid="TableLoadOptions:interface" />'
+          type: '<xref uid="onenote!OneNote.Interfaces.TableLoadOptions:interface" />'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.Table#load:member(2)'
@@ -523,7 +523,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: |-
 
 
@@ -626,7 +626,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'onenote!OneNote.Table#set:member(1)'
@@ -652,12 +652,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'onenote!OneNote.Interfaces.<xref uid="TableUpdateData:interface" />'
+          type: '<xref uid="onenote!OneNote.Interfaces.TableUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -676,7 +676,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'onenote!OneNote.<xref uid="Table:class" />'
+          type: '<xref uid="onenote!OneNote.Table:class" />'
       return:
         type: void
         description: ''
@@ -722,7 +722,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.TableData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.Table#track:member(1)'
@@ -742,7 +742,7 @@ methods:
     syntax:
       content: 'track(): OneNote.Table;'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.Table#untrack:member(1)'
@@ -761,6 +761,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.Table;'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

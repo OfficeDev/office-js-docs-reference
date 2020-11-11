@@ -69,4 +69,4 @@ properties:
       content: 'columnIndex?: number;'
       return:
         type: number
-extends: 'excel!Excel.<xref uid="SettableColumnProperties:interface" />'
+extends: '<xref uid="excel!Excel.SettableColumnProperties:interface" />'

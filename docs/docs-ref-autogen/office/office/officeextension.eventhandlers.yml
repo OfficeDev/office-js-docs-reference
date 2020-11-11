@@ -24,16 +24,16 @@ constructors:
       parameters:
         - id: context
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
         - id: parentObject
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
         - id: name
           description: ''
           type: string
         - id: eventInfo
           description: ''
-          type: 'office!OfficeExtension.<xref uid="EventInfo:interface" />&lt;T&gt;'
+          type: '<xref uid="office!OfficeExtension.EventInfo:interface" />&lt;T&gt;'
 methods:
   - name: add(handler)
     uid: 'office!OfficeExtension.EventHandlers#add:member(1)'
@@ -51,7 +51,7 @@ methods:
           type: '(args: T) =&gt; Promise&lt;any&gt;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="EventHandlerResult:class"
+          <xref uid="office!OfficeExtension.EventHandlerResult:class"
           />&lt;T&gt;
         description: ''
   - name: remove(handler)

@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'greenCheck: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: redCross
     uid: 'excel!Excel.ThreeSymbols2Set#redCross:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'redCross: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: yellowExclamation
     uid: 'excel!Excel.ThreeSymbols2Set#yellowExclamation:member'
     package: excel!
@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'yellowExclamation: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

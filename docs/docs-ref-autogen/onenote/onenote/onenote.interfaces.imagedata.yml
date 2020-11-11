@@ -99,7 +99,7 @@ properties:
     syntax:
       content: 'ocrData?: OneNote.ImageOcrData;'
       return:
-        type: 'onenote!OneNote.<xref uid="ImageOcrData:interface" />'
+        type: '<xref uid="onenote!OneNote.ImageOcrData:interface" />'
   - name: width
     uid: 'onenote!OneNote.Interfaces.ImageData#width:member'
     package: onenote!

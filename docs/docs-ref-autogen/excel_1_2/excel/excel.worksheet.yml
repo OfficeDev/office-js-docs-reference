@@ -36,7 +36,7 @@ properties:
     syntax:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
-        type: 'excel!Excel.<xref uid="ChartCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartCollection:class" />'
   - name: context
     uid: 'excel!Excel.Worksheet#context:member'
     package: excel!
@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: id
     uid: 'excel!Excel.Worksheet#id:member'
     package: excel!
@@ -143,7 +143,7 @@ properties:
     syntax:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetProtection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
         description: |-
 
 
@@ -198,7 +198,7 @@ properties:
     syntax:
       content: 'readonly tables: Excel.TableCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
   - name: visibility
     uid: 'excel!Excel.Worksheet#visibility:member'
     package: excel!
@@ -217,7 +217,7 @@ properties:
       content: 'visibility: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
         type: >-
-          excel!Excel.<xref uid="SheetVisibility:enum" /> | "Visible" | "Hidden"
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
           | "VeryHidden"
 methods:
   - name: activate()
@@ -321,7 +321,7 @@ methods:
           description: the column number of the cell to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -368,7 +368,7 @@ methods:
             is returned.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -435,7 +435,7 @@ methods:
             (ignoring formatting). \[Api set: ExcelApi 1.2\]
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -472,9 +472,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Worksheet#load:member(2)'
@@ -495,7 +495,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: |-
 
 
@@ -546,7 +546,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Worksheet#set:member(1)'
@@ -572,12 +572,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="WorksheetUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -596,7 +596,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Worksheet:class" />'
+          type: '<xref uid="excel!Excel.Worksheet:class" />'
       return:
         type: void
         description: ''
@@ -618,6 +618,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

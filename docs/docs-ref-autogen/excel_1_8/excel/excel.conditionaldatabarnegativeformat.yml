@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: fillColor
     uid: 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
     package: excel!
@@ -128,10 +128,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalDataBarNegativeFormatLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarNegativeFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarNegativeFormat:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(2)'
@@ -154,7 +155,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarNegativeFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarNegativeFormat:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(3)'
@@ -185,7 +186,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarNegativeFormat:class" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarNegativeFormat:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ConditionalDataBarNegativeFormat#set:member(1)'
@@ -212,13 +213,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalDataBarNegativeFormatUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -237,7 +239,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ConditionalDataBarNegativeFormat:class" />'
+          type: '<xref uid="excel!Excel.ConditionalDataBarNegativeFormat:class" />'
       return:
         type: void
         description: ''
@@ -262,7 +264,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ConditionalDataBarNegativeFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalDataBarNegativeFormatData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

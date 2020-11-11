@@ -46,8 +46,8 @@ properties:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="FloatingInkLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
   - name: id
     uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#id:member'
     package: onenote!

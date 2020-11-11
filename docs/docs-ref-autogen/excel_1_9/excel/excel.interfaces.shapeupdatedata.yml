@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.ShapeFillUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeFillUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeFillUpdateData:interface" />'
   - name: geometricShapeType
     uid: 'excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member'
     package: excel!
@@ -135,7 +135,7 @@ properties:
         "ChartStar" | "ChartPlus";
       return:
         type: >-
-          excel!Excel.<xref uid="GeometricShapeType:enum" /> | "LineInverse" |
+          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" |
           "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
           "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
           "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
@@ -244,7 +244,7 @@ properties:
       content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ShapeLineFormatUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface"
           />
   - name: lockAspectRatio
     uid: 'excel!Excel.Interfaces.ShapeUpdateData#lockAspectRatio:member'

@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyData:interface" />'
   - name: contentControls
     uid: 'word!Word.Interfaces.DocumentData#contentControls:member'
     package: word!
@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ContentControlData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
   - name: properties
     uid: 'word!Word.Interfaces.DocumentData#properties:member'
     package: word!
@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="DocumentPropertiesData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesData:interface" />'
   - name: saved
     uid: 'word!Word.Interfaces.DocumentData#saved:member'
     package: word!
@@ -105,4 +105,4 @@ properties:
     syntax:
       content: 'sections?: Word.Interfaces.SectionData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SectionData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />[]'

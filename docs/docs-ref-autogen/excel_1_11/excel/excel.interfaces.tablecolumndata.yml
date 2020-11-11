@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'filter?: Excel.Interfaces.FilterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="FilterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.FilterData:interface" />'
   - name: id
     uid: 'excel!Excel.Interfaces.TableColumnData#id:member'
     package: excel!

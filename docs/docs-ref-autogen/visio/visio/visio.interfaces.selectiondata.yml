@@ -26,4 +26,4 @@ properties:
     syntax:
       content: 'shapes?: Visio.Interfaces.ShapeData[];'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeData:interface" />[]'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeData:interface" />[]'

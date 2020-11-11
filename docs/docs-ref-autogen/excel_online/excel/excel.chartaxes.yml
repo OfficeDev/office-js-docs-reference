@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'readonly categoryAxis: Excel.ChartAxis;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
   - name: context
     uid: 'excel!Excel.ChartAxes#context:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: seriesAxis
     uid: 'excel!Excel.ChartAxes#seriesAxis:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly seriesAxis: Excel.ChartAxis;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
   - name: valueAxis
     uid: 'excel!Excel.ChartAxes#valueAxis:member'
     package: excel!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'readonly valueAxis: Excel.ChartAxis;'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
         description: |-
 
 
@@ -128,14 +128,14 @@ methods:
       parameters:
         - id: type
           description: Specifies the axis type. See Excel.ChartAxisType for details.
-          type: 'excel!Excel.<xref uid="ChartAxisType:enum" />'
+          type: '<xref uid="excel!Excel.ChartAxisType:enum" />'
         - id: group
           description: >-
             Optional. Specifies the axis group. See Excel.ChartAxisGroup for
             details.
-          type: 'excel!Excel.<xref uid="ChartAxisGroup:enum" />'
+          type: '<xref uid="excel!Excel.ChartAxisGroup:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
         description: ''
   - name: 'getItem(typeString, group)'
     uid: 'excel!Excel.ChartAxes#getItem:member(2)'
@@ -165,7 +165,7 @@ methods:
             details.
           type: '"Primary" | "Secondary"'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        type: '<xref uid="excel!Excel.ChartAxis:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartAxes#load:member(1)'
@@ -182,9 +182,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartAxesLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxes:class" />'
+        type: '<xref uid="excel!Excel.ChartAxes:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartAxes#load:member(2)'
@@ -205,7 +205,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartAxes:class" />'
+        type: '<xref uid="excel!Excel.ChartAxes:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartAxes#load:member(3)'
@@ -236,7 +236,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartAxes:class" />'
+        type: '<xref uid="excel!Excel.ChartAxes:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartAxes#set:member(1)'
@@ -262,12 +262,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="ChartAxesUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.ChartAxesUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -286,7 +286,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartAxes:class" />'
+          type: '<xref uid="excel!Excel.ChartAxes:class" />'
       return:
         type: void
         description: ''
@@ -308,6 +308,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartAxesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxesData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -34,4 +34,4 @@ properties:
     syntax:
       content: 'binding: Excel.Binding;'
       return:
-        type: 'excel!Excel.<xref uid="Binding:class" />'
+        type: '<xref uid="excel!Excel.Binding:class" />'

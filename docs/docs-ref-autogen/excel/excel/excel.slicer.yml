@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: height
     uid: 'excel!Excel.Slicer#height:member'
     package: excel!
@@ -177,7 +177,7 @@ properties:
     syntax:
       content: 'readonly slicerItems: Excel.SlicerItemCollection;'
       return:
-        type: 'excel!Excel.<xref uid="SlicerItemCollection:class" />'
+        type: '<xref uid="excel!Excel.SlicerItemCollection:class" />'
   - name: slicerStyle
     uid: 'excel!Excel.Slicer#slicerStyle:member'
     package: excel!
@@ -195,7 +195,7 @@ properties:
     syntax:
       content: 'readonly slicerStyle: Excel.SlicerStyle;'
       return:
-        type: 'excel!Excel.<xref uid="SlicerStyle:class" />'
+        type: '<xref uid="excel!Excel.SlicerStyle:class" />'
   - name: sortBy
     uid: 'excel!Excel.Slicer#sortBy:member'
     package: excel!
@@ -217,7 +217,7 @@ properties:
         "Descending";
       return:
         type: >-
-          excel!Excel.<xref uid="SlicerSortType:enum" /> | "DataSourceOrder" |
+          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
           "Ascending" | "Descending"
   - name: style
     uid: 'excel!Excel.Slicer#style:member'
@@ -315,7 +315,7 @@ properties:
     syntax:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
 methods:
   - name: clearFilters()
     uid: 'excel!Excel.Slicer#clearFilters:member(1)'
@@ -407,7 +407,7 @@ methods:
       content: 'getSelectedItems(): OfficeExtension.ClientResult<string[]>;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
+          <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: ''
   - name: load(options)
@@ -425,9 +425,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="SlicerLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.SlicerLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Slicer#load:member(2)'
@@ -448,7 +448,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.Slicer#load:member(3)'
@@ -479,7 +479,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        type: '<xref uid="excel!Excel.Slicer:class" />'
         description: ''
   - name: selectItems(items)
     uid: 'excel!Excel.Slicer#selectItems:member(1)'
@@ -546,12 +546,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="SlicerUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.SlicerUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -570,7 +570,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Slicer:class" />'
+          type: '<xref uid="excel!Excel.Slicer:class" />'
       return:
         type: void
         description: ''
@@ -597,8 +597,8 @@ methods:
             thrown if a string is provided that does not match the name of any
             style.
           type: >-
-            string | excel!Excel.<xref uid="SlicerStyle:class" /> |
-            excel!Excel.<xref uid="BuiltInSlicerStyle:enum" />
+            string | <xref uid="excel!Excel.SlicerStyle:class" /> | <xref
+            uid="excel!Excel.BuiltInSlicerStyle:enum" />
       return:
         type: void
         description: ''
@@ -620,6 +620,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.SlicerData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -32,7 +32,7 @@ properties:
         "Long";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadLength:enum" /> | "Short" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" |
           "Long"
   - name: beginArrowheadStyle
     uid: 'excel!Excel.Interfaces.LineUpdateData#beginArrowheadStyle:member'
@@ -55,7 +55,7 @@ properties:
         "Stealth" | "Diamond" | "Oval" | "Open";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadStyle:enum" /> | "None" | "Triangle" |
+          <xref uid="excel!Excel.ArrowheadStyle:enum" /> | "None" | "Triangle" |
           "Stealth" | "Diamond" | "Oval" | "Open"
   - name: beginArrowheadWidth
     uid: 'excel!Excel.Interfaces.LineUpdateData#beginArrowheadWidth:member'
@@ -78,7 +78,7 @@ properties:
         "Wide";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
           "Wide"
   - name: connectorType
     uid: 'excel!Excel.Interfaces.LineUpdateData#connectorType:member'
@@ -98,7 +98,7 @@ properties:
       content: 'connectorType?: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";'
       return:
         type: >-
-          excel!Excel.<xref uid="ConnectorType:enum" /> | "Straight" | "Elbow" |
+          <xref uid="excel!Excel.ConnectorType:enum" /> | "Straight" | "Elbow" |
           "Curve"
   - name: endArrowheadLength
     uid: 'excel!Excel.Interfaces.LineUpdateData#endArrowheadLength:member'
@@ -120,7 +120,7 @@ properties:
         "Long";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadLength:enum" /> | "Short" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" |
           "Long"
   - name: endArrowheadStyle
     uid: 'excel!Excel.Interfaces.LineUpdateData#endArrowheadStyle:member'
@@ -142,7 +142,7 @@ properties:
         "Stealth" | "Diamond" | "Oval" | "Open";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadStyle:enum" /> | "None" | "Triangle" |
+          <xref uid="excel!Excel.ArrowheadStyle:enum" /> | "None" | "Triangle" |
           "Stealth" | "Diamond" | "Oval" | "Open"
   - name: endArrowheadWidth
     uid: 'excel!Excel.Interfaces.LineUpdateData#endArrowheadWidth:member'
@@ -162,5 +162,5 @@ properties:
       content: 'endArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
           "Wide"

@@ -48,8 +48,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPlotAreaFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface"
+          />
   - name: height
     uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#height:member'
     package: excel!

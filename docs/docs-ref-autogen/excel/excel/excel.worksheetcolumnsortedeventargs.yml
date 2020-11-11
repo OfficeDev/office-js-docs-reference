@@ -52,7 +52,7 @@ properties:
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: 'excel!Excel.<xref uid="EventSource:enum" /> | "Local" | "Remote"'
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
   - name: type
     uid: 'excel!Excel.WorksheetColumnSortedEventArgs#type:member'
     package: excel!

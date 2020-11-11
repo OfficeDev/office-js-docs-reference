@@ -118,7 +118,7 @@ properties:
     syntax:
       content: 'custom?: Excel.Interfaces.CustomPropertyData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CustomPropertyData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.CustomPropertyData:interface" />[]'
   - name: keywords
     uid: 'excel!Excel.Interfaces.DocumentPropertiesData#keywords:member'
     package: excel!

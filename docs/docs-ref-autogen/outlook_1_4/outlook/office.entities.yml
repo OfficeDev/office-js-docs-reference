@@ -93,7 +93,7 @@ properties:
     syntax:
       content: 'contacts: Contact[];'
       return:
-        type: 'outlook!Office.<xref uid="Contact:interface" />[]'
+        type: '<xref uid="outlook!Office.Contact:interface" />[]'
         description: >-
 
 
@@ -145,7 +145,7 @@ properties:
     syntax:
       content: 'meetingSuggestions: MeetingSuggestion[];'
       return:
-        type: 'outlook!Office.<xref uid="MeetingSuggestion:interface" />[]'
+        type: '<xref uid="outlook!Office.MeetingSuggestion:interface" />[]'
         description: >-
 
 
@@ -171,7 +171,7 @@ properties:
     syntax:
       content: 'phoneNumbers: PhoneNumber[];'
       return:
-        type: 'outlook!Office.<xref uid="PhoneNumber:interface" />[]'
+        type: '<xref uid="outlook!Office.PhoneNumber:interface" />[]'
         description: >-
 
 

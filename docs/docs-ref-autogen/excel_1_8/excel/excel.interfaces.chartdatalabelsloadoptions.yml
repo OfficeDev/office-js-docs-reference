@@ -68,8 +68,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartDataLabelFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface"
+          />
   - name: horizontalAlignment
     uid: >-
       excel!Excel.Interfaces.ChartDataLabelsLoadOptions#horizontalAlignment:member

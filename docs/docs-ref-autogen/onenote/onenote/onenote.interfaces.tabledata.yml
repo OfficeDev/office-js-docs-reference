@@ -99,4 +99,4 @@ properties:
     syntax:
       content: 'rows?: OneNote.Interfaces.TableRowData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableRowData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableRowData:interface" />[]'

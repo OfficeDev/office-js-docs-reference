@@ -49,8 +49,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPointFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface" />
   - name: value
     uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#value:member'
     package: excel!

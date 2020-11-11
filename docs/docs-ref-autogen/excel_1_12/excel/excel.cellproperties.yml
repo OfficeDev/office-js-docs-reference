@@ -69,4 +69,4 @@ properties:
       content: 'hidden?: boolean;'
       return:
         type: boolean
-extends: 'excel!Excel.<xref uid="SettableCellProperties:interface" />'
+extends: '<xref uid="excel!Excel.SettableCellProperties:interface" />'

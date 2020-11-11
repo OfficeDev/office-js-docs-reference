@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
-        type: 'visio!Visio.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
   - name: context
     uid: 'visio!Visio.Shape#context:member'
     package: visio!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: hyperlinks
     uid: 'visio!Visio.Shape#hyperlinks:member'
     package: visio!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly hyperlinks: Visio.HyperlinkCollection;'
       return:
-        type: 'visio!Visio.<xref uid="HyperlinkCollection:class" />'
+        type: '<xref uid="visio!Visio.HyperlinkCollection:class" />'
   - name: id
     uid: 'visio!Visio.Shape#id:member'
     package: visio!
@@ -137,7 +137,7 @@ properties:
     syntax:
       content: 'readonly shapeDataItems: Visio.ShapeDataItemCollection;'
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItemCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItemCollection:class" />'
   - name: subShapes
     uid: 'visio!Visio.Shape#subShapes:member'
     package: visio!
@@ -155,7 +155,7 @@ properties:
     syntax:
       content: 'readonly subShapes: Visio.ShapeCollection;'
       return:
-        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
   - name: text
     uid: 'visio!Visio.Shape#text:member'
     package: visio!
@@ -191,7 +191,7 @@ properties:
     syntax:
       content: 'readonly view: Visio.ShapeView;'
       return:
-        type: 'visio!Visio.<xref uid="ShapeView:class" />'
+        type: '<xref uid="visio!Visio.ShapeView:class" />'
 methods:
   - name: getBounds()
     uid: 'visio!Visio.Shape#getBounds:member(1)'
@@ -211,8 +211,8 @@ methods:
       content: 'getBounds(): OfficeExtension.ClientResult<Visio.BoundingBox>;'
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
-          />&lt;visio!Visio.<xref uid="BoundingBox:interface" />&gt;
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
+          uid="visio!Visio.BoundingBox:interface" />&gt;
         description: ''
   - name: load(option)
     uid: 'visio!Visio.Shape#load:member(1)'
@@ -250,9 +250,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'visio!Visio.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.ShapeLoadOptions:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="Shape:class" />'
+        type: '<xref uid="visio!Visio.Shape:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.Shape#load:member(2)'
@@ -273,7 +273,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="Shape:class" />'
+        type: '<xref uid="visio!Visio.Shape:class" />'
         description: |-
 
 
@@ -334,7 +334,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="Shape:class" />'
+        type: '<xref uid="visio!Visio.Shape:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'visio!Visio.Shape#set:member(1)'
@@ -360,12 +360,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'visio!Visio.Interfaces.<xref uid="ShapeUpdateData:interface" />'
+          type: '<xref uid="visio!Visio.Interfaces.ShapeUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -384,7 +384,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'visio!Visio.<xref uid="Shape:class" />'
+          type: '<xref uid="visio!Visio.Shape:class" />'
       return:
         type: void
         description: ''
@@ -406,6 +406,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.ShapeData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

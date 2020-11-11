@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartTitleFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleFormatData:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ChartTitleData#height:member'
     package: excel!
@@ -69,7 +69,7 @@ properties:
         "Left" | "Right" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextHorizontalAlignment:enum" /> |
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> |
           "Center" | "Left" | "Right" | "Justify" | "Distributed"
   - name: left
     uid: 'excel!Excel.Interfaces.ChartTitleData#left:member'
@@ -129,7 +129,7 @@ properties:
         "Left" | "Right";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTitlePosition:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartTitlePosition:enum" /> | "Automatic" |
           "Top" | "Bottom" | "Left" | "Right"
   - name: showShadow
     uid: 'excel!Excel.Interfaces.ChartTitleData#showShadow:member'
@@ -228,7 +228,7 @@ properties:
         "Bottom" | "Top" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextVerticalAlignment:enum" /> | "Center"
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center"
           | "Bottom" | "Top" | "Justify" | "Distributed"
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartTitleData#visible:member'

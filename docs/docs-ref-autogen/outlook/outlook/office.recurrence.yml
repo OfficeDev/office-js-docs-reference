@@ -68,7 +68,7 @@ properties:
     syntax:
       content: 'recurrenceProperties?: RecurrenceProperties;'
       return:
-        type: 'outlook!Office.<xref uid="RecurrenceProperties:interface" />'
+        type: '<xref uid="outlook!Office.RecurrenceProperties:interface" />'
   - name: recurrenceTimeZone
     uid: 'outlook!Office.Recurrence#recurrenceTimeZone:member'
     package: outlook!
@@ -94,7 +94,7 @@ properties:
     syntax:
       content: 'recurrenceTimeZone?: RecurrenceTimeZone;'
       return:
-        type: 'outlook!Office.<xref uid="RecurrenceTimeZone:interface" />'
+        type: '<xref uid="outlook!Office.RecurrenceTimeZone:interface" />'
   - name: recurrenceType
     uid: 'outlook!Office.Recurrence#recurrenceType:member'
     package: outlook!
@@ -121,7 +121,7 @@ properties:
       content: 'recurrenceType: MailboxEnums.RecurrenceType | string;'
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref uid="RecurrenceType:enum" /> |
+          <xref uid="outlook!Office.MailboxEnums.RecurrenceType:enum" /> |
           string
   - name: seriesTime
     uid: 'outlook!Office.Recurrence#seriesTime:member'
@@ -152,7 +152,7 @@ properties:
     syntax:
       content: 'seriesTime: SeriesTime;'
       return:
-        type: 'outlook!Office.<xref uid="SeriesTime:interface" />'
+        type: '<xref uid="outlook!Office.SeriesTime:interface" />'
 methods:
   - name: 'getAsync(options, callback)'
     uid: 'outlook!Office.Recurrence#getAsync:member(1)'
@@ -214,7 +214,7 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -222,8 +222,8 @@ methods:
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The
             `value` property of the result is a `Recurrence` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="Recurrence:interface" />&gt;) =&gt;
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.Recurrence:interface" />&gt;) =&gt;
             void
       return:
         type: void
@@ -330,20 +330,20 @@ methods:
       parameters:
         - id: recurrencePattern
           description: A recurrence object.
-          type: 'outlook!Office.<xref uid="Recurrence:interface" />'
+          type: '<xref uid="outlook!Office.Recurrence:interface" />'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

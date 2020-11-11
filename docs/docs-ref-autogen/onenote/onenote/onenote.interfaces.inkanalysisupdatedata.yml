@@ -28,4 +28,4 @@ properties:
     syntax:
       content: 'page?: OneNote.Interfaces.PageUpdateData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="PageUpdateData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageUpdateData:interface" />'

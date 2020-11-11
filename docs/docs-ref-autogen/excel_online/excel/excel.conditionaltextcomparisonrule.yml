@@ -35,7 +35,7 @@ properties:
         "NotContains" | "BeginsWith" | "EndsWith";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalTextOperator:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ConditionalTextOperator:enum" /> | "Invalid" |
           "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
   - name: text
     uid: 'excel!Excel.ConditionalTextComparisonRule#text:member'

@@ -35,5 +35,5 @@ properties:
         "AutomaticExceptTables" | "Manual";
       return:
         type: >-
-          excel!Excel.<xref uid="CalculationMode:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.CalculationMode:enum" /> | "Automatic" |
           "AutomaticExceptTables" | "Manual"

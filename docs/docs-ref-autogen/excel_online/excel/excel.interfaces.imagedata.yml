@@ -29,7 +29,7 @@ properties:
         "PNG" | "SVG";
       return:
         type: >-
-          excel!Excel.<xref uid="PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
+          <xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
           "JPEG" | "GIF" | "PNG" | "SVG"
   - name: id
     uid: 'excel!Excel.Interfaces.ImageData#id:member'

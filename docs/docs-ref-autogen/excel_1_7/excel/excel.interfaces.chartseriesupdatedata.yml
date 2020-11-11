@@ -53,7 +53,7 @@ properties:
         "Sunburst" | "Funnel";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartType:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
           "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
           "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
           "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
@@ -134,8 +134,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartSeriesFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface" />
   - name: gapWidth
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#gapWidth:member'
     package: excel!
@@ -250,7 +250,7 @@ properties:
         "Circle" | "Plus" | "Picture";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMarkerStyle:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" |
           "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" |
           "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - name: name

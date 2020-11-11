@@ -29,8 +29,9 @@ properties:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RangeBorderCollectionUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface"
+          />
   - name: fill
     uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#fill:member'
     package: excel!
@@ -48,7 +49,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.RangeFillUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFillUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFillUpdateData:interface" />'
   - name: font
     uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#font:member'
     package: excel!
@@ -66,7 +67,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.RangeFontUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFontUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFontUpdateData:interface" />'
   - name: horizontalAlignment
     uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member'
     package: excel!
@@ -89,7 +90,7 @@ properties:
         "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="HorizontalAlignment:enum" /> | "General" |
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
           "Left" | "Center" | "Right" | "Fill" | "Justify" |
           "CenterAcrossSelection" | "Distributed"
   - name: verticalAlignment
@@ -113,7 +114,7 @@ properties:
         "Bottom" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="VerticalAlignment:enum" /> | "Top" | "Center" |
+          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
           "Bottom" | "Justify" | "Distributed"
   - name: wrapText
     uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#wrapText:member'

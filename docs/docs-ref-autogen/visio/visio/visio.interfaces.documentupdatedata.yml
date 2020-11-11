@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'application?: Visio.Interfaces.ApplicationUpdateData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ApplicationUpdateData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ApplicationUpdateData:interface" />'
   - name: view
     uid: 'visio!Visio.Interfaces.DocumentUpdateData#view:member'
     package: visio!
@@ -46,4 +46,4 @@ properties:
     syntax:
       content: 'view?: Visio.Interfaces.DocumentViewUpdateData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="DocumentViewUpdateData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.DocumentViewUpdateData:interface" />'

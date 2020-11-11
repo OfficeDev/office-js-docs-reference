@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: formulaHidden
     uid: 'excel!Excel.FormatProtection#formulaHidden:member'
     package: excel!
@@ -87,10 +87,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="FormatProtectionLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.FormatProtectionLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="FormatProtection:class" />'
+        type: '<xref uid="excel!Excel.FormatProtection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.FormatProtection#load:member(2)'
@@ -111,7 +112,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="FormatProtection:class" />'
+        type: '<xref uid="excel!Excel.FormatProtection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.FormatProtection#load:member(3)'
@@ -142,7 +143,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="FormatProtection:class" />'
+        type: '<xref uid="excel!Excel.FormatProtection:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.FormatProtection#set:member(1)'
@@ -169,13 +170,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="FormatProtectionUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.FormatProtectionUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -194,7 +195,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="FormatProtection:class" />'
+          type: '<xref uid="excel!Excel.FormatProtection:class" />'
       return:
         type: void
         description: ''
@@ -217,6 +218,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.FormatProtectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="FormatProtectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.FormatProtectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

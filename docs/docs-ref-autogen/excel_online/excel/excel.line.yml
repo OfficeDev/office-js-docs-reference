@@ -37,7 +37,7 @@ properties:
         "Long";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadLength:enum" /> | "Short" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" |
           "Long"
   - name: beginArrowheadStyle
     uid: 'excel!Excel.Line#beginArrowheadStyle:member'
@@ -60,7 +60,7 @@ properties:
         "Stealth" | "Diamond" | "Oval" | "Open";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadStyle:enum" /> | "None" | "Triangle" |
+          <xref uid="excel!Excel.ArrowheadStyle:enum" /> | "None" | "Triangle" |
           "Stealth" | "Diamond" | "Oval" | "Open"
   - name: beginArrowheadWidth
     uid: 'excel!Excel.Line#beginArrowheadWidth:member'
@@ -83,7 +83,7 @@ properties:
         "Wide";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
           "Wide"
   - name: beginConnectedShape
     uid: 'excel!Excel.Line#beginConnectedShape:member'
@@ -103,7 +103,7 @@ properties:
     syntax:
       content: 'readonly beginConnectedShape: Excel.Shape;'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
   - name: beginConnectedSite
     uid: 'excel!Excel.Line#beginConnectedSite:member'
     package: excel!
@@ -142,7 +142,7 @@ properties:
       content: 'connectorType: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";'
       return:
         type: >-
-          excel!Excel.<xref uid="ConnectorType:enum" /> | "Straight" | "Elbow" |
+          <xref uid="excel!Excel.ConnectorType:enum" /> | "Straight" | "Elbow" |
           "Curve"
   - name: context
     uid: 'excel!Excel.Line#context:member'
@@ -157,7 +157,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: endArrowheadLength
     uid: 'excel!Excel.Line#endArrowheadLength:member'
     package: excel!
@@ -176,7 +176,7 @@ properties:
       content: 'endArrowheadLength: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadLength:enum" /> | "Short" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" |
           "Long"
   - name: endArrowheadStyle
     uid: 'excel!Excel.Line#endArrowheadStyle:member'
@@ -198,7 +198,7 @@ properties:
         "Stealth" | "Diamond" | "Oval" | "Open";
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadStyle:enum" /> | "None" | "Triangle" |
+          <xref uid="excel!Excel.ArrowheadStyle:enum" /> | "None" | "Triangle" |
           "Stealth" | "Diamond" | "Oval" | "Open"
   - name: endArrowheadWidth
     uid: 'excel!Excel.Line#endArrowheadWidth:member'
@@ -218,7 +218,7 @@ properties:
       content: 'endArrowheadWidth: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
       return:
         type: >-
-          excel!Excel.<xref uid="ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
+          <xref uid="excel!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
           "Wide"
   - name: endConnectedShape
     uid: 'excel!Excel.Line#endConnectedShape:member'
@@ -237,7 +237,7 @@ properties:
     syntax:
       content: 'readonly endConnectedShape: Excel.Shape;'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
   - name: endConnectedSite
     uid: 'excel!Excel.Line#endConnectedSite:member'
     package: excel!
@@ -329,7 +329,7 @@ properties:
     syntax:
       content: 'readonly shape: Excel.Shape;'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
 methods:
   - name: 'connectBeginShape(shape, connectionSite)'
     uid: 'excel!Excel.Line#connectBeginShape:member(1)'
@@ -350,7 +350,7 @@ methods:
       parameters:
         - id: shape
           description: The shape to connect.
-          type: 'excel!Excel.<xref uid="Shape:class" />'
+          type: '<xref uid="excel!Excel.Shape:class" />'
         - id: connectionSite
           description: >-
             The connection site on the shape to which the beginning of the
@@ -398,7 +398,7 @@ methods:
       parameters:
         - id: shape
           description: The shape to connect.
-          type: 'excel!Excel.<xref uid="Shape:class" />'
+          type: '<xref uid="excel!Excel.Shape:class" />'
         - id: connectionSite
           description: >-
             The connection site on the shape to which the end of the connector
@@ -518,9 +518,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="LineLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.LineLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Line:class" />'
+        type: '<xref uid="excel!Excel.Line:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Line#load:member(2)'
@@ -541,7 +541,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Line:class" />'
+        type: '<xref uid="excel!Excel.Line:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.Line#load:member(3)'
@@ -572,7 +572,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Line:class" />'
+        type: '<xref uid="excel!Excel.Line:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Line#set:member(1)'
@@ -598,12 +598,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="LineUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.LineUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -622,7 +622,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Line:class" />'
+          type: '<xref uid="excel!Excel.Line:class" />'
       return:
         type: void
         description: ''
@@ -644,6 +644,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.LineData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="LineData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.LineData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

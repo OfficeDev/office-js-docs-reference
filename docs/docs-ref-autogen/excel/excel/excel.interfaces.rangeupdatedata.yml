@@ -47,7 +47,7 @@ properties:
       content: 'dataValidation?: Excel.Interfaces.DataValidationUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="DataValidationUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.DataValidationUpdateData:interface"
           />
   - name: format
     uid: 'excel!Excel.Interfaces.RangeUpdateData#format:member'
@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFormatUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface" />'
   - name: formulas
     uid: 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
     package: excel!
@@ -141,7 +141,7 @@ properties:
     syntax:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
-        type: 'excel!Excel.<xref uid="RangeHyperlink:interface" />'
+        type: '<xref uid="excel!Excel.RangeHyperlink:interface" />'
   - name: numberFormat
     uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
     package: excel!

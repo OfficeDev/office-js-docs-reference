@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: items
     uid: 'word!Word.SectionCollection#items:member'
     package: word!
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'readonly items: Word.Section[];'
       return:
-        type: 'word!Word.<xref uid="Section:class" />[]'
+        type: '<xref uid="word!Word.Section:class" />[]'
 methods:
   - name: getFirst()
     uid: 'word!Word.SectionCollection#getFirst:member(1)'
@@ -61,7 +61,7 @@ methods:
     syntax:
       content: 'getFirst(): Word.Section;'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: getFirstOrNullObject()
     uid: 'word!Word.SectionCollection#getFirstOrNullObject:member(1)'
@@ -81,7 +81,7 @@ methods:
     syntax:
       content: 'getFirstOrNullObject(): Word.Section;'
       return:
-        type: 'word!Word.<xref uid="Section:class" />'
+        type: '<xref uid="word!Word.Section:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.SectionCollection#load:member(1)'
@@ -101,11 +101,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="SectionCollectionLoadOptions:interface" /> &
-            word!Word.Interfaces.<xref uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="word!Word.Interfaces.SectionCollectionLoadOptions:interface" />
+            & <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface"
+            />
       return:
-        type: 'word!Word.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="word!Word.SectionCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.SectionCollection#load:member(2)'
@@ -126,7 +127,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="word!Word.SectionCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.SectionCollection#load:member(3)'
@@ -149,9 +150,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'word!Word.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="word!Word.SectionCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'word!Word.SectionCollection#toJSON:member(1)'
@@ -173,7 +174,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.SectionCollectionData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SectionCollectionData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.SectionCollectionData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.SectionCollection#track:member(1)'
@@ -193,7 +194,7 @@ methods:
     syntax:
       content: 'track(): Word.SectionCollection;'
       return:
-        type: 'word!Word.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="word!Word.SectionCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.SectionCollection#untrack:member(1)'
@@ -212,6 +213,6 @@ methods:
     syntax:
       content: 'untrack(): Word.SectionCollection;'
       return:
-        type: 'word!Word.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="word!Word.SectionCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

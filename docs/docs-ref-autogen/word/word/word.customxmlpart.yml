@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: id
     uid: 'word!Word.CustomXmlPart#id:member'
     package: word!
@@ -164,7 +164,7 @@ methods:
     syntax:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertAttribute(xpath, namespaceMappings, name, value)'
     uid: 'word!Word.CustomXmlPart#insertAttribute:member(1)'
@@ -263,10 +263,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref uid="CustomXmlPartLoadOptions:interface"
+            <xref uid="word!Word.Interfaces.CustomXmlPartLoadOptions:interface"
             />
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.CustomXmlPart#load:member(2)'
@@ -287,7 +287,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.CustomXmlPart#load:member(3)'
@@ -318,7 +318,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: 'query(xpath, namespaceMappings)'
     uid: 'word!Word.CustomXmlPart#query:member(1)'
@@ -349,7 +349,7 @@ methods:
           type: any
       return:
         type: >-
-          office!OfficeExtension.<xref uid="ClientResult:class"
+          <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: >-
           An array where each item represents an entry matched by the XPath
@@ -396,7 +396,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.CustomXmlPartData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="CustomXmlPartData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.CustomXmlPartData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.CustomXmlPart#track:member(1)'
@@ -416,7 +416,7 @@ methods:
     syntax:
       content: 'track(): Word.CustomXmlPart;'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.CustomXmlPart#untrack:member(1)'
@@ -435,7 +435,7 @@ methods:
     syntax:
       content: 'untrack(): Word.CustomXmlPart;'
       return:
-        type: 'word!Word.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="word!Word.CustomXmlPart:class" />'
         description: ''
   - name: 'updateAttribute(xpath, namespaceMappings, name, value)'
     uid: 'word!Word.CustomXmlPart#updateAttribute:member(1)'
@@ -505,4 +505,4 @@ methods:
       return:
         type: void
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

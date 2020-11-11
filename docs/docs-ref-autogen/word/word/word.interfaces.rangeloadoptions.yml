@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
   - name: hyperlink
     uid: 'word!Word.Interfaces.RangeLoadOptions#hyperlink:member'
     package: word!
@@ -105,7 +105,7 @@ properties:
     syntax:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
   - name: parentContentControl
     uid: 'word!Word.Interfaces.RangeLoadOptions#parentContentControl:member'
     package: word!
@@ -125,7 +125,7 @@ properties:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentContentControlOrNullObject
     uid: >-
@@ -149,7 +149,7 @@ properties:
         Word.Interfaces.ContentControlLoadOptions;
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: parentTable
     uid: 'word!Word.Interfaces.RangeLoadOptions#parentTable:member'
@@ -169,7 +169,7 @@ properties:
     syntax:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: parentTableCell
     uid: 'word!Word.Interfaces.RangeLoadOptions#parentTableCell:member'
     package: word!
@@ -188,7 +188,7 @@ properties:
     syntax:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableCellOrNullObject
     uid: 'word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member'
     package: word!
@@ -207,7 +207,7 @@ properties:
     syntax:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableCellLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableOrNullObject
     uid: 'word!Word.Interfaces.RangeLoadOptions#parentTableOrNullObject:member'
     package: word!
@@ -226,7 +226,7 @@ properties:
     syntax:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: style
     uid: 'word!Word.Interfaces.RangeLoadOptions#style:member'
     package: word!

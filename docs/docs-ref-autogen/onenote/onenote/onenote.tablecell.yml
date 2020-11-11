@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.TableCell#id:member'
     package: onenote!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
   - name: parentRow
     uid: 'onenote!OneNote.TableCell#parentRow:member'
     package: onenote!
@@ -100,7 +100,7 @@ properties:
     syntax:
       content: 'readonly parentRow: OneNote.TableRow;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
   - name: rowIndex
     uid: 'onenote!OneNote.TableCell#rowIndex:member'
     package: onenote!
@@ -232,7 +232,7 @@ methods:
             and image height will be respected.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="Image:class" />'
+        type: '<xref uid="onenote!OneNote.Image:class" />'
         description: ''
   - name: appendRichText(paragraphText)
     uid: 'onenote!OneNote.TableCell#appendRichText:member(1)'
@@ -255,7 +255,7 @@ methods:
           description: HTML string to append.
           type: string
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: |-
 
 
@@ -324,7 +324,7 @@ methods:
             specified in the array.
           type: 'string[][]'
       return:
-        type: 'onenote!OneNote.<xref uid="Table:class" />'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
   - name: clear()
     uid: 'onenote!OneNote.TableCell#clear:member(1)'
@@ -384,10 +384,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="TableCellLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.TableCell#load:member(2)'
@@ -408,7 +408,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: |-
 
 
@@ -519,7 +519,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'onenote!OneNote.TableCell#set:member(1)'
@@ -546,13 +546,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="TableCellUpdateData:interface"
+            <xref uid="onenote!OneNote.Interfaces.TableCellUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -571,7 +571,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+          type: '<xref uid="onenote!OneNote.TableCell:class" />'
       return:
         type: void
         description: ''
@@ -593,7 +593,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.TableCellData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableCellData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableCellData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.TableCell#track:member(1)'
@@ -613,7 +613,7 @@ methods:
     syntax:
       content: 'track(): OneNote.TableCell;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.TableCell#untrack:member(1)'
@@ -632,6 +632,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.TableCell;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -33,7 +33,7 @@ properties:
     syntax:
       content: 'dateFilter?: Excel.PivotDateFilter;'
       return:
-        type: 'excel!Excel.<xref uid="PivotDateFilter:interface" />'
+        type: '<xref uid="excel!Excel.PivotDateFilter:interface" />'
         description: >-
 
 
@@ -91,7 +91,7 @@ properties:
     syntax:
       content: 'labelFilter?: Excel.PivotLabelFilter;'
       return:
-        type: 'excel!Excel.<xref uid="PivotLabelFilter:interface" />'
+        type: '<xref uid="excel!Excel.PivotLabelFilter:interface" />'
         description: >-
 
 
@@ -143,7 +143,7 @@ properties:
     syntax:
       content: 'manualFilter?: Excel.PivotManualFilter;'
       return:
-        type: 'excel!Excel.<xref uid="PivotManualFilter:interface" />'
+        type: '<xref uid="excel!Excel.PivotManualFilter:interface" />'
         description: >-
 
 
@@ -195,7 +195,7 @@ properties:
     syntax:
       content: 'valueFilter?: Excel.PivotValueFilter;'
       return:
-        type: 'excel!Excel.<xref uid="PivotValueFilter:interface" />'
+        type: '<xref uid="excel!Excel.PivotValueFilter:interface" />'
         description: >-
 
 

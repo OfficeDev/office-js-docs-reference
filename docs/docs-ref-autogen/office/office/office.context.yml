@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'auth: Auth;'
       return:
-        type: 'office!Office.<xref uid="Auth:interface" />'
+        type: '<xref uid="office!Office.Auth:interface" />'
   - name: commerceAllowed
     uid: 'office!Office.Context#commerceAllowed:member'
     package: office!
@@ -132,7 +132,7 @@ properties:
     syntax:
       content: 'diagnostics: ContextInformation;'
       return:
-        type: 'office!Office.<xref uid="ContextInformation:interface" />'
+        type: '<xref uid="office!Office.ContextInformation:interface" />'
         description: |-
 
 
@@ -235,7 +235,7 @@ properties:
     syntax:
       content: 'document: Office.Document;'
       return:
-        type: 'office!Office.<xref uid="Document:interface" />'
+        type: '<xref uid="office!Office.Document:interface" />'
         description: |-
 
 
@@ -266,7 +266,7 @@ properties:
     syntax:
       content: 'host: HostType;'
       return:
-        type: 'office!Office.<xref uid="HostType:enum" />'
+        type: '<xref uid="office!Office.HostType:enum" />'
   - name: license
     uid: 'office!Office.Context#license:member'
     package: office!
@@ -326,7 +326,7 @@ properties:
     syntax:
       content: 'mailbox: Office.Mailbox;'
       return:
-        type: 'outlook!Office.<xref uid="Mailbox:interface" />'
+        type: '<xref uid="outlook!Office.Mailbox:interface" />'
   - name: officeTheme
     uid: 'office!Office.Context#officeTheme:member'
     package: office!
@@ -338,7 +338,7 @@ properties:
     syntax:
       content: 'officeTheme: OfficeTheme;'
       return:
-        type: 'office!Office.<xref uid="OfficeTheme:interface" />'
+        type: '<xref uid="office!Office.OfficeTheme:interface" />'
         description: |-
 
 
@@ -367,7 +367,7 @@ properties:
     syntax:
       content: 'platform: PlatformType;'
       return:
-        type: 'office!Office.<xref uid="PlatformType:enum" />'
+        type: '<xref uid="office!Office.PlatformType:enum" />'
   - name: requirements
     uid: 'office!Office.Context#requirements:member'
     package: office!
@@ -381,7 +381,7 @@ properties:
     syntax:
       content: 'requirements: RequirementSetSupport;'
       return:
-        type: 'office!Office.<xref uid="RequirementSetSupport:interface" />'
+        type: '<xref uid="office!Office.RequirementSetSupport:interface" />'
   - name: roamingSettings
     uid: 'office!Office.Context#roamingSettings:member'
     package: office!
@@ -429,7 +429,7 @@ properties:
     syntax:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
-        type: 'outlook!Office.<xref uid="RoamingSettings:interface" />'
+        type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
   - name: touchEnabled
     uid: 'office!Office.Context#touchEnabled:member'
     package: office!
@@ -467,4 +467,4 @@ properties:
     syntax:
       content: 'ui: UI;'
       return:
-        type: 'office!Office.<xref uid="UI:interface" />'
+        type: '<xref uid="office!Office.UI:interface" />'

@@ -26,7 +26,7 @@ constructors:
       parameters:
         - id: url
           description: ''
-          type: 'string | excel!Excel.<xref uid="Session:interface" />'
+          type: 'string | <xref uid="excel!Excel.Session:interface" />'
 properties:
   - name: application
     uid: 'excel!Excel.RequestContext#application:member'
@@ -39,7 +39,7 @@ properties:
     syntax:
       content: 'readonly application: Application;'
       return:
-        type: 'excel!Excel.<xref uid="Application:class" />'
+        type: '<xref uid="excel!Excel.Application:class" />'
   - name: runtime
     uid: 'excel!Excel.RequestContext#runtime:member'
     package: excel!
@@ -54,7 +54,7 @@ properties:
     syntax:
       content: 'readonly runtime: Runtime;'
       return:
-        type: 'excel!Excel.<xref uid="Runtime:class" />'
+        type: '<xref uid="excel!Excel.Runtime:class" />'
   - name: workbook
     uid: 'excel!Excel.RequestContext#workbook:member'
     package: excel!
@@ -66,5 +66,5 @@ properties:
     syntax:
       content: 'readonly workbook: Workbook;'
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
-extends: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'

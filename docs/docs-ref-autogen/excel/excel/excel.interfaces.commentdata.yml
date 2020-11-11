@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'contentType?: Excel.ContentType | "Plain" | "Mention";'
       return:
-        type: 'excel!Excel.<xref uid="ContentType:enum" /> | "Plain" | "Mention"'
+        type: '<xref uid="excel!Excel.ContentType:enum" /> | "Plain" | "Mention"'
   - name: creationDate
     uid: 'excel!Excel.Interfaces.CommentData#creationDate:member'
     package: excel!
@@ -137,7 +137,7 @@ properties:
     syntax:
       content: 'mentions?: Excel.CommentMention[];'
       return:
-        type: 'excel!Excel.<xref uid="CommentMention:interface" />[]'
+        type: '<xref uid="excel!Excel.CommentMention:interface" />[]'
   - name: replies
     uid: 'excel!Excel.Interfaces.CommentData#replies:member'
     package: excel!
@@ -155,7 +155,7 @@ properties:
     syntax:
       content: 'replies?: Excel.Interfaces.CommentReplyData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CommentReplyData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.CommentReplyData:interface" />[]'
   - name: resolved
     uid: 'excel!Excel.Interfaces.CommentData#resolved:member'
     package: excel!

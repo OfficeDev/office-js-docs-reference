@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: id
     uid: 'excel!Excel.ShapeGroup#id:member'
     package: excel!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'readonly shape: Excel.Shape;'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
   - name: shapes
     uid: 'excel!Excel.ShapeGroup#shapes:member'
     package: excel!
@@ -83,7 +83,7 @@ properties:
     syntax:
       content: 'readonly shapes: Excel.GroupShapeCollection;'
       return:
-        type: 'excel!Excel.<xref uid="GroupShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.GroupShapeCollection:class" />'
 methods:
   - name: load(options)
     uid: 'excel!Excel.ShapeGroup#load:member(1)'
@@ -103,10 +103,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="ShapeGroupLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.ShapeGroupLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="ShapeGroup:class" />'
+        type: '<xref uid="excel!Excel.ShapeGroup:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ShapeGroup#load:member(2)'
@@ -127,7 +127,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ShapeGroup:class" />'
+        type: '<xref uid="excel!Excel.ShapeGroup:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ShapeGroup#load:member(3)'
@@ -158,7 +158,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ShapeGroup:class" />'
+        type: '<xref uid="excel!Excel.ShapeGroup:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.ShapeGroup#toJSON:member(1)'
@@ -178,7 +178,7 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ShapeGroupData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeGroupData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeGroupData:interface" />'
         description: ''
   - name: ungroup()
     uid: 'excel!Excel.ShapeGroup#ungroup:member(1)'
@@ -220,4 +220,4 @@ methods:
           });
 
           ```
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

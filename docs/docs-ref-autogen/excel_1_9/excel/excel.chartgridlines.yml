@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: format
     uid: 'excel!Excel.ChartGridlines#format:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly format: Excel.ChartGridlinesFormat;'
       return:
-        type: 'excel!Excel.<xref uid="ChartGridlinesFormat:class" />'
+        type: '<xref uid="excel!Excel.ChartGridlinesFormat:class" />'
   - name: visible
     uid: 'excel!Excel.ChartGridlines#visible:member'
     package: excel!
@@ -84,10 +84,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartGridlinesLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+        type: '<xref uid="excel!Excel.ChartGridlines:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartGridlines#load:member(2)'
@@ -108,7 +108,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+        type: '<xref uid="excel!Excel.ChartGridlines:class" />'
         description: |-
 
 
@@ -158,7 +158,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+        type: '<xref uid="excel!Excel.ChartGridlines:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartGridlines#set:member(1)'
@@ -185,13 +185,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartGridlinesUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ChartGridlinesUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -210,7 +210,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+          type: '<xref uid="excel!Excel.ChartGridlines:class" />'
       return:
         type: void
         description: ''
@@ -233,6 +233,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartGridlinesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartGridlinesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

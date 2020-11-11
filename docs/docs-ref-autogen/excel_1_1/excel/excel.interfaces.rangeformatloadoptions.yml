@@ -49,8 +49,9 @@ properties:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RangeBorderCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface"
+          />
   - name: fill
     uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member'
     package: excel!
@@ -68,7 +69,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFillLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFillLoadOptions:interface" />'
   - name: font
     uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#font:member'
     package: excel!
@@ -86,7 +87,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFontLoadOptions:interface" />'
   - name: horizontalAlignment
     uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#horizontalAlignment:member'
     package: excel!

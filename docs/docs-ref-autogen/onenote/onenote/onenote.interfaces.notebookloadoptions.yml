@@ -136,8 +136,9 @@ properties:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionGroupCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface"
+          />
   - name: sections
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#sections:member'
     package: onenote!
@@ -156,5 +157,6 @@ properties:
       content: 'sections?: OneNote.Interfaces.SectionCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface"
+          />

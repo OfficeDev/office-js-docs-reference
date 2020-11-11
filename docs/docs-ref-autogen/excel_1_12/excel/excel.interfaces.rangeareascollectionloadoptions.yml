@@ -129,7 +129,7 @@ properties:
       content: 'dataValidation?: Excel.Interfaces.DataValidationLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="DataValidationLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.DataValidationLoadOptions:interface"
           />
   - name: format
     uid: 'excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#format:member'
@@ -150,7 +150,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFormatLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface" />'
   - name: isEntireColumn
     uid: >-
       excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#isEntireColumn:member
@@ -230,4 +230,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

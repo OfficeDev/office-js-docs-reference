@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'areas?: Excel.Interfaces.RangeAreasData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeAreasData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.RangeAreasData:interface" />[]'
   - name: ranges
     uid: 'excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member'
     package: excel!
@@ -67,4 +67,4 @@ properties:
     syntax:
       content: 'ranges?: Excel.Interfaces.RangeData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.RangeData:interface" />[]'

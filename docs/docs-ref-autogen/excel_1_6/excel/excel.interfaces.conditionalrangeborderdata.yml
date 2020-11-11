@@ -51,7 +51,7 @@ properties:
         | "EdgeLeft" | "EdgeRight";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalRangeBorderIndex:enum" /> |
+          <xref uid="excel!Excel.ConditionalRangeBorderIndex:enum" /> |
           "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
   - name: style
     uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData#style:member'
@@ -74,5 +74,5 @@ properties:
         "Dash" | "DashDot" | "DashDotDot" | "Dot";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalRangeBorderLineStyle:enum" /> |
+          <xref uid="excel!Excel.ConditionalRangeBorderLineStyle:enum" /> |
           "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"

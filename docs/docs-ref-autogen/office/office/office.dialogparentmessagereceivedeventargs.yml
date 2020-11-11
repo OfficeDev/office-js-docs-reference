@@ -43,4 +43,4 @@ properties:
     syntax:
       content: 'type: EventType;'
       return:
-        type: 'office!Office.<xref uid="EventType:enum" />'
+        type: '<xref uid="office!Office.EventType:enum" />'

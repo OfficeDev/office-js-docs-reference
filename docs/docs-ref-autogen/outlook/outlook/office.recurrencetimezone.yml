@@ -78,7 +78,7 @@ properties:
       content: 'name: MailboxEnums.RecurrenceTimeZone | string;'
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref uid="RecurrenceTimeZone:enum" /> |
+          <xref uid="outlook!Office.MailboxEnums.RecurrenceTimeZone:enum" /> |
           string
   - name: offset
     uid: 'outlook!Office.RecurrenceTimeZone#offset:member'

@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'body: Body | string;'
       return:
-        type: 'outlook!Office.<xref uid="Body:interface" /> | string'
+        type: '<xref uid="outlook!Office.Body:interface" /> | string'
   - name: end
     uid: 'outlook!Office.AppointmentForm#end:member'
     package: outlook!
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'end: Time | Date;'
       return:
-        type: 'outlook!Office.<xref uid="Time:interface" /> | Date'
+        type: '<xref uid="outlook!Office.Time:interface" /> | Date'
   - name: location
     uid: 'outlook!Office.AppointmentForm#location:member'
     package: outlook!
@@ -122,7 +122,7 @@ properties:
     syntax:
       content: 'location: Location | string;'
       return:
-        type: 'outlook!Office.<xref uid="Location:interface" /> | string'
+        type: '<xref uid="outlook!Office.Location:interface" /> | string'
   - name: optionalAttendees
     uid: 'outlook!Office.AppointmentForm#optionalAttendees:member'
     package: outlook!
@@ -173,8 +173,8 @@ properties:
       content: 'optionalAttendees: Recipients[] | EmailAddressDetails[];'
       return:
         type: >-
-          outlook!Office.<xref uid="Recipients:interface" />[] |
-          outlook!Office.<xref uid="EmailAddressDetails:interface" />[]
+          <xref uid="outlook!Office.Recipients:interface" />[] | <xref
+          uid="outlook!Office.EmailAddressDetails:interface" />[]
   - name: requiredAttendees
     uid: 'outlook!Office.AppointmentForm#requiredAttendees:member'
     package: outlook!
@@ -225,8 +225,8 @@ properties:
       content: 'requiredAttendees: Recipients[] | EmailAddressDetails[];'
       return:
         type: >-
-          outlook!Office.<xref uid="Recipients:interface" />[] |
-          outlook!Office.<xref uid="EmailAddressDetails:interface" />[]
+          <xref uid="outlook!Office.Recipients:interface" />[] | <xref
+          uid="outlook!Office.EmailAddressDetails:interface" />[]
   - name: resources
     uid: 'outlook!Office.AppointmentForm#resources:member'
     package: outlook!
@@ -291,7 +291,7 @@ properties:
     syntax:
       content: 'start: Time | Date;'
       return:
-        type: 'outlook!Office.<xref uid="Time:interface" /> | Date'
+        type: '<xref uid="outlook!Office.Time:interface" /> | Date'
   - name: subject
     uid: 'outlook!Office.AppointmentForm#subject:member'
     package: outlook!
@@ -331,4 +331,4 @@ properties:
     syntax:
       content: 'subject: Subject | string;'
       return:
-        type: 'outlook!Office.<xref uid="Subject:interface" /> | string'
+        type: '<xref uid="outlook!Office.Subject:interface" /> | string'

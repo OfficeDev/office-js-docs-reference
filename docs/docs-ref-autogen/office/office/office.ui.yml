@@ -41,20 +41,21 @@ methods:
           description: >-
             Specifies the type of event to add. This must be
             `Office.EventType.DialogParentMessageReceived`<!-- -->.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
             [Office.DialogParentMessageReceivedEventArgs](xref:office!Office.DialogParentMessageReceivedEventArgs:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref
-            uid="DialogParentMessageReceivedEventArgs:interface" />) =&gt; void
+            (result: <xref
+            uid="office!Office.DialogParentMessageReceivedEventArgs:interface"
+            />) =&gt; void
         - id: options
           description: >-
             Optional. Provides an option for preserving context data of any
             type, unchanged, for use in a callback.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. A function that is invoked when the handler registration
@@ -62,7 +63,7 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
+            (result: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -232,14 +233,14 @@ methods:
             Optional. Accepts an
             [Office.DialogOptions](xref:office!Office.DialogOptions:interface)
             object to define dialog display.
-          type: 'office!Office.<xref uid="DialogOptions:interface" />'
+          type: '<xref uid="office!Office.DialogOptions:interface" />'
         - id: callback
           description: >-
             Optional. Accepts a callback method to handle the dialog creation
             attempt. If successful, the AsyncResult.value is a Dialog object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Dialog:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Dialog:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -367,8 +368,8 @@ methods:
             Optional. Accepts a callback method to handle the dialog creation
             attempt. If successful, the AsyncResult.value is a Dialog object.
           type: >-
-            (result: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;office!Office.<xref uid="Dialog:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Dialog:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''

@@ -50,8 +50,9 @@ properties:
       content: 'datetimeFormat?: Excel.Interfaces.DatetimeFormatInfoLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DatetimeFormatInfoLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface"
+          />
   - name: name
     uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
     package: excel!
@@ -90,5 +91,5 @@ properties:
       content: 'numberFormat?: Excel.Interfaces.NumberFormatInfoLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="NumberFormatInfoLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface" />

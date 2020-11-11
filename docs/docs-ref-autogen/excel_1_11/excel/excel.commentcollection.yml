@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.CommentCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Comment[];'
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />[]'
+        type: '<xref uid="excel!Excel.Comment:class" />[]'
 methods:
   - name: 'add(cellAddress, content, contentType)'
     uid: 'excel!Excel.CommentCollection#add:member(1)'
@@ -69,7 +69,7 @@ methods:
             or a string. If it's a string, it must contain the full address,
             including the sheet name. An `InvalidArgument` error is thrown if
             the provided range is larger than one cell.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
           description: >-
             The comment's content. This can be either a string or
@@ -77,16 +77,16 @@ methods:
             CommentRichContent objects allow for other comment features, such as
             mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
             CommentRichContent object\]
-          type: 'excel!Excel.<xref uid="CommentRichContent:interface" /> | string'
+          type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The
             default value is enum `ContentType.Plain`<!-- -->. \[Api set:
             ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
             ContentType.Mention\]
-          type: 'excel!Excel.<xref uid="ContentType:enum" />'
+          type: '<xref uid="excel!Excel.ContentType:enum" />'
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
         description: >-
 
 
@@ -134,7 +134,7 @@ methods:
             or a string. If it's a string, it must contain the full address,
             including the sheet name. An `InvalidArgument` error is thrown if
             the provided range is larger than one cell.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
           description: >-
             The comment's content. This can be either a string or
@@ -142,7 +142,7 @@ methods:
             CommentRichContent objects allow for other comment features, such as
             mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
             CommentRichContent object\]
-          type: 'excel!Excel.<xref uid="CommentRichContent:interface" /> | string'
+          type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentTypeString
           description: >-
             Optional. The type of content contained within the comment. The
@@ -151,7 +151,7 @@ methods:
             ContentType.Mention\]
           type: '"Plain" | "Mention"'
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
         description: ''
   - name: getCount()
     uid: 'excel!Excel.CommentCollection#getCount:member(1)'
@@ -170,7 +170,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(commentId)
     uid: 'excel!Excel.CommentCollection#getItem:member(1)'
@@ -193,7 +193,7 @@ methods:
           description: The identifier for the comment.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.CommentCollection#getItemAt:member(1)'
@@ -216,7 +216,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
         description: ''
   - name: getItemByCell(cellAddress)
     uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
@@ -241,9 +241,9 @@ methods:
             string. If it's a string, it must contain the full address,
             including the sheet name. An `InvalidArgument` error is thrown if
             the provided range is larger than one cell.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
         description: ''
   - name: getItemByReplyId(replyId)
     uid: 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
@@ -266,7 +266,7 @@ methods:
           description: The identifier of comment reply.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Comment:class" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.CommentCollection#load:member(1)'
@@ -286,12 +286,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CommentCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.CommentCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="excel!Excel.CommentCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.CommentCollection#load:member(2)'
@@ -312,7 +312,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="excel!Excel.CommentCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.CommentCollection#load:member(3)'
@@ -335,9 +335,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="CommentCollection:class" />'
+        type: '<xref uid="excel!Excel.CommentCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.CommentCollection#toJSON:member(1)'
@@ -359,6 +359,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.CommentCollectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CommentCollectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.CommentCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

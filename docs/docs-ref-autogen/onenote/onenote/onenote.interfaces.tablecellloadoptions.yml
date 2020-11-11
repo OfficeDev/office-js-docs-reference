@@ -81,8 +81,9 @@ properties:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="ParagraphCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface"
+          />
   - name: parentRow
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#parentRow:member'
     package: onenote!
@@ -101,7 +102,7 @@ properties:
       content: 'parentRow?: OneNote.Interfaces.TableRowLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="TableRowLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions:interface"
           />
   - name: rowIndex
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#rowIndex:member'

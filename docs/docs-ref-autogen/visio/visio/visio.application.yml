@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: showBorders
     uid: 'visio!Visio.Application#showBorders:member'
     package: visio!
@@ -123,10 +123,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            visio!Visio.Interfaces.<xref uid="ApplicationLoadOptions:interface"
+            <xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface"
             />
       return:
-        type: 'visio!Visio.<xref uid="Application:class" />'
+        type: '<xref uid="visio!Visio.Application:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.Application#load:member(2)'
@@ -147,7 +147,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="Application:class" />'
+        type: '<xref uid="visio!Visio.Application:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.Application#load:member(3)'
@@ -172,7 +172,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="Application:class" />'
+        type: '<xref uid="visio!Visio.Application:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'visio!Visio.Application#set:member(1)'
@@ -199,13 +199,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            visio!Visio.Interfaces.<xref uid="ApplicationUpdateData:interface"
+            <xref uid="visio!Visio.Interfaces.ApplicationUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -224,7 +224,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'visio!Visio.<xref uid="Application:class" />'
+          type: '<xref uid="visio!Visio.Application:class" />'
       return:
         type: void
         description: ''
@@ -247,7 +247,7 @@ methods:
       parameters:
         - id: id
           description: The type of the Toolbar
-          type: 'visio!Visio.<xref uid="ToolBarType:enum" />'
+          type: '<xref uid="visio!Visio.ToolBarType:enum" />'
         - id: show
           description: Whether the toolbar is visibile or not.
           type: boolean
@@ -300,6 +300,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.ApplicationData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ApplicationData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ApplicationData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

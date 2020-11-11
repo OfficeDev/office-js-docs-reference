@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: criteria
     uid: 'excel!Excel.AutoFilter#criteria:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'readonly criteria: Excel.FilterCriteria[];'
       return:
-        type: 'excel!Excel.<xref uid="FilterCriteria:interface" />[]'
+        type: '<xref uid="excel!Excel.FilterCriteria:interface" />[]'
   - name: enabled
     uid: 'excel!Excel.AutoFilter#enabled:member'
     package: excel!
@@ -107,13 +107,13 @@ methods:
       parameters:
         - id: range
           description: The range over which the AutoFilter will apply on.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: columnIndex
           description: The zero-based column index to which the AutoFilter is applied.
           type: number
         - id: criteria
           description: The filter criteria.
-          type: 'excel!Excel.<xref uid="FilterCriteria:interface" />'
+          type: '<xref uid="excel!Excel.FilterCriteria:interface" />'
       return:
         type: void
         description: >-
@@ -174,7 +174,7 @@ methods:
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getRangeOrNullObject()
     uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
@@ -195,7 +195,7 @@ methods:
     syntax:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.AutoFilter#load:member(1)'
@@ -215,10 +215,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="AutoFilterLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="AutoFilter:class" />'
+        type: '<xref uid="excel!Excel.AutoFilter:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.AutoFilter#load:member(2)'
@@ -239,7 +239,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="AutoFilter:class" />'
+        type: '<xref uid="excel!Excel.AutoFilter:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.AutoFilter#load:member(3)'
@@ -270,7 +270,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="AutoFilter:class" />'
+        type: '<xref uid="excel!Excel.AutoFilter:class" />'
         description: ''
   - name: reapply()
     uid: 'excel!Excel.AutoFilter#reapply:member(1)'
@@ -328,6 +328,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.AutoFilterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="AutoFilterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.AutoFilterData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

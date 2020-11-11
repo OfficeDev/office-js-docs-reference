@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'filterType?: Office.FilterType | string'
       return:
-        type: 'office!Office.<xref uid="FilterType:enum" /> | string'
+        type: '<xref uid="office!Office.FilterType:enum" /> | string'
   - name: valueFormat
     uid: 'office!Office.GetSelectedDataOptions#valueFormat:member'
     package: office!
@@ -55,4 +55,4 @@ properties:
     syntax:
       content: 'valueFormat?: Office.ValueFormat | string'
       return:
-        type: 'office!Office.<xref uid="ValueFormat:enum" /> | string'
+        type: '<xref uid="office!Office.ValueFormat:enum" /> | string'

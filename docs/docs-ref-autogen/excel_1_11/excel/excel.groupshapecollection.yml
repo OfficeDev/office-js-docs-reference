@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.GroupShapeCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Shape[];'
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />[]'
+        type: '<xref uid="excel!Excel.Shape:class" />[]'
 methods:
   - name: getCount()
     uid: 'excel!Excel.GroupShapeCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.GroupShapeCollection#getItem:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: The Name or ID of the shape to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.GroupShapeCollection#getItemAt:member(1)'
@@ -105,7 +105,7 @@ methods:
           description: The zero-based index value of the object to be retrieved.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Shape:class" />'
+        type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.GroupShapeCollection#load:member(1)'
@@ -125,12 +125,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="GroupShapeCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="GroupShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.GroupShapeCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.GroupShapeCollection#load:member(2)'
@@ -151,7 +151,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="GroupShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.GroupShapeCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.GroupShapeCollection#load:member(3)'
@@ -174,9 +174,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="GroupShapeCollection:class" />'
+        type: '<xref uid="excel!Excel.GroupShapeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.GroupShapeCollection#toJSON:member(1)'
@@ -199,7 +199,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.GroupShapeCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="GroupShapeCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.GroupShapeCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

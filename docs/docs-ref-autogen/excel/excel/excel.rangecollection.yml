@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.RangeCollection#items:member'
     package: excel!
@@ -37,7 +37,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Range[];'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />[]'
+        type: '<xref uid="excel!Excel.Range:class" />[]'
 methods:
   - name: getCount()
     uid: 'excel!Excel.RangeCollection#getCount:member(1)'
@@ -56,7 +56,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.RangeCollection#getItemAt:member(1)'
@@ -79,7 +79,7 @@ methods:
           description: Index value of the range object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.RangeCollection#load:member(1)'
@@ -99,12 +99,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="RangeCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            <xref
+            uid="excel!Excel.Interfaces.RangeCollectionLoadOptions:interface" />
+            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.RangeCollection#load:member(2)'
@@ -125,7 +125,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.RangeCollection#load:member(3)'
@@ -148,9 +148,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="RangeCollection:class" />'
+        type: '<xref uid="excel!Excel.RangeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.RangeCollection#toJSON:member(1)'
@@ -171,6 +171,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeCollectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeCollectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

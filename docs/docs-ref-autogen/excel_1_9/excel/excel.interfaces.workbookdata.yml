@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'bindings?: Excel.Interfaces.BindingData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="BindingData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.BindingData:interface" />[]'
   - name: calculationEngineVersion
     uid: 'excel!Excel.Interfaces.WorkbookData#calculationEngineVersion:member'
     package: excel!
@@ -102,7 +102,7 @@ properties:
     syntax:
       content: 'customXmlParts?: Excel.Interfaces.CustomXmlPartData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CustomXmlPartData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />[]'
   - name: isDirty
     uid: 'excel!Excel.Interfaces.WorkbookData#isDirty:member'
     package: excel!
@@ -159,7 +159,7 @@ properties:
     syntax:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NamedItemData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />[]'
   - name: pivotTables
     uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
     package: excel!
@@ -177,7 +177,7 @@ properties:
     syntax:
       content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotTableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />[]'
   - name: previouslySaved
     uid: 'excel!Excel.Interfaces.WorkbookData#previouslySaved:member'
     package: excel!
@@ -213,7 +213,7 @@ properties:
     syntax:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="DocumentPropertiesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.DocumentPropertiesData:interface" />'
   - name: protection
     uid: 'excel!Excel.Interfaces.WorkbookData#protection:member'
     package: excel!
@@ -231,7 +231,7 @@ properties:
     syntax:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorkbookProtectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookProtectionData:interface" />'
   - name: readOnly
     uid: 'excel!Excel.Interfaces.WorkbookData#readOnly:member'
     package: excel!
@@ -267,7 +267,7 @@ properties:
     syntax:
       content: 'settings?: Excel.Interfaces.SettingData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SettingData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.SettingData:interface" />[]'
   - name: styles
     uid: 'excel!Excel.Interfaces.WorkbookData#styles:member'
     package: excel!
@@ -285,7 +285,7 @@ properties:
     syntax:
       content: 'styles?: Excel.Interfaces.StyleData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="StyleData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.StyleData:interface" />[]'
   - name: tables
     uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     package: excel!
@@ -303,7 +303,7 @@ properties:
     syntax:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />[]'
   - name: usePrecisionAsDisplayed
     uid: 'excel!Excel.Interfaces.WorkbookData#usePrecisionAsDisplayed:member'
     package: excel!
@@ -341,4 +341,4 @@ properties:
     syntax:
       content: 'worksheets?: Excel.Interfaces.WorksheetData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />[]'

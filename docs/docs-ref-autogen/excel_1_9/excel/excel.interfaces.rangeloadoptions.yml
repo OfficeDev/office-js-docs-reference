@@ -165,7 +165,7 @@ properties:
       content: 'dataValidation?: Excel.Interfaces.DataValidationLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="DataValidationLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.DataValidationLoadOptions:interface"
           />
   - name: format
     uid: 'excel!Excel.Interfaces.RangeLoadOptions#format:member'
@@ -185,7 +185,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFormatLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface" />'
   - name: formulas
     uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulas:member'
     package: excel!
@@ -522,4 +522,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

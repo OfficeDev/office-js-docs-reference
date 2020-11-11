@@ -35,4 +35,4 @@ properties:
       content: 'onCanceled: () => void;'
       return:
         type: () =&gt; void
-extends: 'custom-functions-runtime!CustomFunctions.<xref uid="Invocation:interface" />'
+extends: '<xref uid="custom-functions-runtime!CustomFunctions.Invocation:interface" />'

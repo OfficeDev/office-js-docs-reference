@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: field
     uid: 'excel!Excel.DataPivotHierarchy#field:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly field: Excel.PivotField;'
       return:
-        type: 'excel!Excel.<xref uid="PivotField:class" />'
+        type: '<xref uid="excel!Excel.PivotField:class" />'
   - name: id
     uid: 'excel!Excel.DataPivotHierarchy#id:member'
     package: excel!
@@ -158,7 +158,7 @@ properties:
     syntax:
       content: 'showAs: Excel.ShowAsRule;'
       return:
-        type: 'excel!Excel.<xref uid="ShowAsRule:interface" />'
+        type: '<xref uid="excel!Excel.ShowAsRule:interface" />'
         description: >-
 
 
@@ -214,7 +214,7 @@ properties:
         "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
       return:
         type: >-
-          excel!Excel.<xref uid="AggregationFunction:enum" /> | "Unknown" |
+          <xref uid="excel!Excel.AggregationFunction:enum" /> | "Unknown" |
           "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product"
           | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" |
           "Variance" | "VarianceP"
@@ -237,10 +237,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="DataPivotHierarchyLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.DataPivotHierarchyLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.DataPivotHierarchy#load:member(2)'
@@ -261,7 +262,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.DataPivotHierarchy#load:member(3)'
@@ -292,7 +293,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.DataPivotHierarchy#set:member(1)'
@@ -319,13 +320,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="DataPivotHierarchyUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -344,7 +346,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="DataPivotHierarchy:class" />'
+          type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
       return:
         type: void
         description: ''
@@ -386,6 +388,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.DataPivotHierarchyData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="DataPivotHierarchyData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.DataPivotHierarchyData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

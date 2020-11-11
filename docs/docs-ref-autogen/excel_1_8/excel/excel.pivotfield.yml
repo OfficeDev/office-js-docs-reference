@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: id
     uid: 'excel!Excel.PivotField#id:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.PivotItemCollection;'
       return:
-        type: 'excel!Excel.<xref uid="PivotItemCollection:class" />'
+        type: '<xref uid="excel!Excel.PivotItemCollection:class" />'
   - name: name
     uid: 'excel!Excel.PivotField#name:member'
     package: excel!
@@ -118,7 +118,7 @@ properties:
     syntax:
       content: 'subtotals: Excel.Subtotals;'
       return:
-        type: 'excel!Excel.<xref uid="Subtotals:interface" />'
+        type: '<xref uid="excel!Excel.Subtotals:interface" />'
 methods:
   - name: load(options)
     uid: 'excel!Excel.PivotField#load:member(1)'
@@ -138,10 +138,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="PivotFieldLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.PivotFieldLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="PivotField:class" />'
+        type: '<xref uid="excel!Excel.PivotField:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PivotField#load:member(2)'
@@ -162,7 +162,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PivotField:class" />'
+        type: '<xref uid="excel!Excel.PivotField:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PivotField#load:member(3)'
@@ -193,7 +193,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="PivotField:class" />'
+        type: '<xref uid="excel!Excel.PivotField:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.PivotField#set:member(1)'
@@ -219,12 +219,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="PivotFieldUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.PivotFieldUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -243,7 +243,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="PivotField:class" />'
+          type: '<xref uid="excel!Excel.PivotField:class" />'
       return:
         type: void
         description: ''
@@ -268,7 +268,7 @@ methods:
       parameters:
         - id: sortBy
           description: Specifies if the sorting is done in ascending or descending order.
-          type: 'excel!Excel.<xref uid="SortBy:enum" />'
+          type: '<xref uid="excel!Excel.SortBy:enum" />'
       return:
         type: void
         description: ''
@@ -290,6 +290,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotFieldData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotFieldData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PivotFieldData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

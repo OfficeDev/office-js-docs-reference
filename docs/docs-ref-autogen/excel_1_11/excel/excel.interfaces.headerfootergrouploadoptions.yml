@@ -47,7 +47,7 @@ properties:
       content: 'defaultForAllPages?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="HeaderFooterLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
           />
   - name: evenPages
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member'
@@ -68,7 +68,7 @@ properties:
       content: 'evenPages?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="HeaderFooterLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
           />
   - name: firstPage
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member'
@@ -89,7 +89,7 @@ properties:
       content: 'firstPage?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="HeaderFooterLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
           />
   - name: oddPages
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member'
@@ -110,7 +110,7 @@ properties:
       content: 'oddPages?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="HeaderFooterLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
           />
   - name: state
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#state:member'

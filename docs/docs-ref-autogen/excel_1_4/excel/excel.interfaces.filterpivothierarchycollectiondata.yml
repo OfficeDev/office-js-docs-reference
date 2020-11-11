@@ -23,5 +23,5 @@ properties:
       content: 'items?: Excel.Interfaces.FilterPivotHierarchyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="FilterPivotHierarchyData:interface"
+          <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData:interface"
           />[]

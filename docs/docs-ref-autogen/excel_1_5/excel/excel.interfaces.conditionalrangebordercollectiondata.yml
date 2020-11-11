@@ -23,5 +23,5 @@ properties:
       content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderData:interface" />[]
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]

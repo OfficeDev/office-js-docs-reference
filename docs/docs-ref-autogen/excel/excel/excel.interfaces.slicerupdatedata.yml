@@ -123,7 +123,7 @@ properties:
     syntax:
       content: 'slicerStyle?: Excel.Interfaces.SlicerStyleUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerStyleUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerStyleUpdateData:interface" />'
   - name: sortBy
     uid: 'excel!Excel.Interfaces.SlicerUpdateData#sortBy:member'
     package: excel!
@@ -145,7 +145,7 @@ properties:
         "Descending";
       return:
         type: >-
-          excel!Excel.<xref uid="SlicerSortType:enum" /> | "DataSourceOrder" |
+          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
           "Ascending" | "Descending"
   - name: style
     uid: 'excel!Excel.Interfaces.SlicerUpdateData#style:member'
@@ -225,4 +225,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'

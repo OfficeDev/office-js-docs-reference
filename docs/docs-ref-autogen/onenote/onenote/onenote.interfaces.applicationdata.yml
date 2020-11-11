@@ -28,4 +28,4 @@ properties:
     syntax:
       content: 'notebooks?: OneNote.Interfaces.NotebookData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="NotebookData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.NotebookData:interface" />[]'

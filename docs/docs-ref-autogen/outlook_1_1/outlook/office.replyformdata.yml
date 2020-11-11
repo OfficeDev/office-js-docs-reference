@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'attachments?: ReplyFormAttachment[];'
       return:
-        type: 'outlook!Office.<xref uid="ReplyFormAttachment:interface" />[]'
+        type: '<xref uid="outlook!Office.ReplyFormAttachment:interface" />[]'
   - name: callback
     uid: 'outlook!Office.ReplyFormData#callback:member'
     package: outlook!
@@ -41,7 +41,7 @@ properties:
       content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
       return:
         type: >-
-          (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+          (asyncResult: <xref uid="office!Office.AsyncResult:interface"
           />&lt;any&gt;) =&gt; void
   - name: htmlBody
     uid: 'outlook!Office.ReplyFormData#htmlBody:member'
@@ -71,4 +71,4 @@ properties:
     syntax:
       content: 'options?: Office.AsyncContextOptions;'
       return:
-        type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+        type: '<xref uid="office!Office.AsyncContextOptions:interface" />'

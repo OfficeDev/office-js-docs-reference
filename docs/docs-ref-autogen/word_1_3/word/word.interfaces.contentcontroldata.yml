@@ -32,7 +32,7 @@ properties:
         "Hidden";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlAppearance:enum" /> | "BoundingBox"
+          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
           | "Tags" | "Hidden"
   - name: cannotDelete
     uid: 'word!Word.Interfaces.ContentControlData#cannotDelete:member'
@@ -109,7 +109,7 @@ properties:
     syntax:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ContentControlData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.ContentControlData#font:member'
     package: word!
@@ -128,7 +128,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
   - name: id
     uid: 'word!Word.Interfaces.ContentControlData#id:member'
     package: word!
@@ -165,7 +165,7 @@ properties:
     syntax:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="InlinePictureData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
   - name: lists
     uid: 'word!Word.Interfaces.ContentControlData#lists:member'
     package: word!
@@ -183,7 +183,7 @@ properties:
     syntax:
       content: 'lists?: Word.Interfaces.ListData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ListData:interface" />[]'
   - name: paragraphs
     uid: 'word!Word.Interfaces.ContentControlData#paragraphs:member'
     package: word!
@@ -201,7 +201,7 @@ properties:
     syntax:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ParagraphData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'
   - name: placeholderText
     uid: 'word!Word.Interfaces.ContentControlData#placeholderText:member'
     package: word!
@@ -331,7 +331,7 @@ properties:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type: >-
-          word!Word.<xref uid="Style:enum" /> | "Other" | "Normal" | "Heading1"
+          <xref uid="word!Word.Style:enum" /> | "Other" | "Normal" | "Heading1"
           | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
           "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
           "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" |
@@ -408,7 +408,7 @@ properties:
         "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlType:enum" /> | "Unknown" |
+          <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
           "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
@@ -431,7 +431,7 @@ properties:
     syntax:
       content: 'tables?: Word.Interfaces.TableData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="TableData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.TableData:interface" />[]'
   - name: tag
     uid: 'word!Word.Interfaces.ContentControlData#tag:member'
     package: word!
@@ -510,7 +510,7 @@ properties:
         "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
       return:
         type: >-
-          word!Word.<xref uid="ContentControlType:enum" /> | "Unknown" |
+          <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
           "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"

@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'formula1: string | Date | Range;'
       return:
-        type: 'string | Date | excel!Excel.<xref uid="Range:class" />'
+        type: 'string | Date | <xref uid="excel!Excel.Range:class" />'
   - name: formula2
     uid: 'excel!Excel.DateTimeDataValidation#formula2:member'
     package: excel!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'formula2?: string | Date | Range;'
       return:
-        type: 'string | Date | excel!Excel.<xref uid="Range:class" />'
+        type: 'string | Date | <xref uid="excel!Excel.Range:class" />'
   - name: operator
     uid: 'excel!Excel.DateTimeDataValidation#operator:member'
     package: excel!
@@ -86,6 +86,6 @@ properties:
         "GreaterThanOrEqualTo" | "LessThanOrEqualTo";
       return:
         type: >-
-          excel!Excel.<xref uid="DataValidationOperator:enum" /> | "Between" |
+          <xref uid="excel!Excel.DataValidationOperator:enum" /> | "Between" |
           "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
           "GreaterThanOrEqualTo" | "LessThanOrEqualTo"

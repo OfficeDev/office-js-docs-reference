@@ -65,8 +65,8 @@ properties:
       content: 'inkAnalysis?: OneNote.Interfaces.InkAnalysisLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />
   - name: lines
     uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#lines:member'
     package: onenote!
@@ -85,5 +85,6 @@ properties:
       content: 'lines?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="InkAnalysisLineCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface"
+          />

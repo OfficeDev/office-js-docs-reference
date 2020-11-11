@@ -65,7 +65,7 @@ properties:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="InkAnalysisLineData:interface"
+          <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData:interface"
           />
   - name: strokePointers
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers:member'
@@ -85,7 +85,7 @@ properties:
     syntax:
       content: 'strokePointers?: OneNote.InkStrokePointer[];'
       return:
-        type: 'onenote!OneNote.<xref uid="InkStrokePointer:interface" />[]'
+        type: '<xref uid="onenote!OneNote.InkStrokePointer:interface" />[]'
   - name: wordAlternates
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#wordAlternates:member'
     package: onenote!

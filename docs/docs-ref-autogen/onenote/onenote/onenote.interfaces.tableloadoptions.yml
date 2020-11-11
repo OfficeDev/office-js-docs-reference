@@ -100,7 +100,7 @@ properties:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="ParagraphLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
           />
   - name: rowCount
     uid: 'onenote!OneNote.Interfaces.TableLoadOptions#rowCount:member'
@@ -138,5 +138,6 @@ properties:
       content: 'rows?: OneNote.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="TableRowCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface"
+          />

@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
 methods:
   - name: clear()
     uid: 'excel!Excel.ConditionalRangeFill#clear:member(1)'
@@ -86,10 +86,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalRangeFillLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalRangeFillLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeFill:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeFill:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ConditionalRangeFill#load:member(2)'
@@ -110,7 +111,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeFill:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeFill:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ConditionalRangeFill#load:member(3)'
@@ -141,7 +142,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeFill:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeFill:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ConditionalRangeFill#set:member(1)'
@@ -168,13 +169,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalRangeFillUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalRangeFillUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -193,7 +195,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ConditionalRangeFill:class" />'
+          type: '<xref uid="excel!Excel.ConditionalRangeFill:class" />'
       return:
         type: void
         description: ''
@@ -217,7 +219,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFillData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ConditionalRangeFillData:interface"
+          <xref uid="excel!Excel.Interfaces.ConditionalRangeFillData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

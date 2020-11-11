@@ -67,8 +67,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartTrendlineLabelFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface"
+          />
   - name: formula
     uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#formula:member'
     package: excel!

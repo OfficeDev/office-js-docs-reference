@@ -35,4 +35,4 @@ properties:
     syntax:
       content: 'selectedItems?: (string | PivotItem)[];'
       return:
-        type: '(string | excel!Excel.<xref uid="PivotItem:class" />)[]'
+        type: '(string | <xref uid="excel!Excel.PivotItem:class" />)[]'

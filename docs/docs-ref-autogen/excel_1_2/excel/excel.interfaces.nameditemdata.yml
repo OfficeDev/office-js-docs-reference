@@ -51,7 +51,7 @@ properties:
         | "Range" | "Error" | "Array";
       return:
         type: >-
-          excel!Excel.<xref uid="NamedItemType:enum" /> | "String" | "Integer" |
+          <xref uid="excel!Excel.NamedItemType:enum" /> | "String" | "Integer" |
           "Double" | "Boolean" | "Range" | "Error" | "Array"
   - name: value
     uid: 'excel!Excel.Interfaces.NamedItemData#value:member'

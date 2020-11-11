@@ -32,7 +32,7 @@ properties:
     syntax:
       content: 'maximum: Excel.ConditionalColorScaleCriterion;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalColorScaleCriterion:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'
   - name: midpoint
     uid: 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
     package: excel!
@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalColorScaleCriterion:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'
   - name: minimum
     uid: 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
     package: excel!
@@ -68,4 +68,4 @@ properties:
     syntax:
       content: 'minimum: Excel.ConditionalColorScaleCriterion;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalColorScaleCriterion:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'

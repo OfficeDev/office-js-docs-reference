@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'borders?: Excel.Interfaces.RangeBorderData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeBorderData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.RangeBorderData:interface" />[]'
   - name: columnWidth
     uid: 'excel!Excel.Interfaces.RangeFormatData#columnWidth:member'
     package: excel!
@@ -84,7 +84,7 @@ properties:
     syntax:
       content: 'fill?: Excel.Interfaces.RangeFillData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFillData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFillData:interface" />'
   - name: font
     uid: 'excel!Excel.Interfaces.RangeFormatData#font:member'
     package: excel!
@@ -102,7 +102,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.RangeFontData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFontData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFontData:interface" />'
   - name: horizontalAlignment
     uid: 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member'
     package: excel!
@@ -125,7 +125,7 @@ properties:
         "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="HorizontalAlignment:enum" /> | "General" |
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
           "Left" | "Center" | "Right" | "Fill" | "Justify" |
           "CenterAcrossSelection" | "Distributed"
   - name: indentLevel
@@ -163,7 +163,7 @@ properties:
     syntax:
       content: 'protection?: Excel.Interfaces.FormatProtectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="FormatProtectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.FormatProtectionData:interface" />'
   - name: readingOrder
     uid: 'excel!Excel.Interfaces.RangeFormatData#readingOrder:member'
     package: excel!
@@ -184,7 +184,7 @@ properties:
         "RightToLeft";
       return:
         type: >-
-          excel!Excel.<xref uid="ReadingOrder:enum" /> | "Context" |
+          <xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" |
           "LeftToRight" | "RightToLeft"
   - name: rowHeight
     uid: 'excel!Excel.Interfaces.RangeFormatData#rowHeight:member'
@@ -310,7 +310,7 @@ properties:
         "Bottom" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="VerticalAlignment:enum" /> | "Top" | "Center" |
+          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
           "Bottom" | "Justify" | "Distributed"
   - name: wrapText
     uid: 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'

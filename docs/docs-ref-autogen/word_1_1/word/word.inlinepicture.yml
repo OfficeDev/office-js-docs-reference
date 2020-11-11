@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: height
     uid: 'word!Word.InlinePicture#height:member'
     package: word!
@@ -140,7 +140,7 @@ properties:
     syntax:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: width
     uid: 'word!Word.InlinePicture#width:member'
     package: word!
@@ -177,7 +177,7 @@ methods:
     syntax:
       content: 'getBase64ImageSrc(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: >-
 
 
@@ -220,7 +220,7 @@ methods:
     syntax:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.InlinePicture#load:member(1)'
@@ -240,10 +240,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref uid="InlinePictureLoadOptions:interface"
+            <xref uid="word!Word.Interfaces.InlinePictureLoadOptions:interface"
             />
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.InlinePicture#load:member(2)'
@@ -264,7 +264,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.InlinePicture#load:member(3)'
@@ -295,7 +295,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.InlinePicture#set:member(1)'
@@ -322,13 +322,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            word!Word.Interfaces.<xref uid="InlinePictureUpdateData:interface"
+            <xref uid="word!Word.Interfaces.InlinePictureUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -347,7 +347,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="InlinePicture:class" />'
+          type: '<xref uid="word!Word.InlinePicture:class" />'
       return:
         type: void
         description: ''
@@ -370,7 +370,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.InlinePictureData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="InlinePictureData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.InlinePicture#track:member(1)'
@@ -390,7 +390,7 @@ methods:
     syntax:
       content: 'track(): Word.InlinePicture;'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.InlinePicture#untrack:member(1)'
@@ -409,6 +409,6 @@ methods:
     syntax:
       content: 'untrack(): Word.InlinePicture;'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

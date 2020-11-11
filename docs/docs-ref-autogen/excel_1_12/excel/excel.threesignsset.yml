@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'greenCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: redDiamond
     uid: 'excel!Excel.ThreeSignsSet#redDiamond:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'redDiamond: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: yellowTriangle
     uid: 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
     package: excel!
@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'yellowTriangle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

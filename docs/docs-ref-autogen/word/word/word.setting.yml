@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: key
     uid: 'word!Word.Setting#key:member'
     package: word!
@@ -141,9 +141,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="SettingLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.SettingLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="Setting:class" />'
+        type: '<xref uid="word!Word.Setting:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.Setting#load:member(2)'
@@ -164,7 +164,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="Setting:class" />'
+        type: '<xref uid="word!Word.Setting:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.Setting#load:member(3)'
@@ -195,7 +195,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="Setting:class" />'
+        type: '<xref uid="word!Word.Setting:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.Setting#set:member(1)'
@@ -221,12 +221,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="SettingUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.SettingUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -245,7 +245,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="Setting:class" />'
+          type: '<xref uid="word!Word.Setting:class" />'
       return:
         type: void
         description: ''
@@ -267,7 +267,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.SettingData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SettingData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.SettingData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.Setting#track:member(1)'
@@ -287,7 +287,7 @@ methods:
     syntax:
       content: 'track(): Word.Setting;'
       return:
-        type: 'word!Word.<xref uid="Setting:class" />'
+        type: '<xref uid="word!Word.Setting:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.Setting#untrack:member(1)'
@@ -306,6 +306,6 @@ methods:
     syntax:
       content: 'untrack(): Word.Setting;'
       return:
-        type: 'word!Word.<xref uid="Setting:class" />'
+        type: '<xref uid="word!Word.Setting:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

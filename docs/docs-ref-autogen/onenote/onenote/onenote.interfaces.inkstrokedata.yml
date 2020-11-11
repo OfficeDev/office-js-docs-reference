@@ -26,7 +26,7 @@ properties:
     syntax:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="FloatingInkData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkData:interface" />'
   - name: id
     uid: 'onenote!OneNote.Interfaces.InkStrokeData#id:member'
     package: onenote!

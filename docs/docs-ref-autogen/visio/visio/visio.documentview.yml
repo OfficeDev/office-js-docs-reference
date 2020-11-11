@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: disableHyperlinks
     uid: 'visio!Visio.DocumentView#disableHyperlinks:member'
     package: visio!
@@ -176,10 +176,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            visio!Visio.Interfaces.<xref uid="DocumentViewLoadOptions:interface"
+            <xref uid="visio!Visio.Interfaces.DocumentViewLoadOptions:interface"
             />
       return:
-        type: 'visio!Visio.<xref uid="DocumentView:class" />'
+        type: '<xref uid="visio!Visio.DocumentView:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.DocumentView#load:member(2)'
@@ -200,7 +200,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="DocumentView:class" />'
+        type: '<xref uid="visio!Visio.DocumentView:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.DocumentView#load:member(3)'
@@ -225,7 +225,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="DocumentView:class" />'
+        type: '<xref uid="visio!Visio.DocumentView:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'visio!Visio.DocumentView#set:member(1)'
@@ -252,13 +252,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            visio!Visio.Interfaces.<xref uid="DocumentViewUpdateData:interface"
+            <xref uid="visio!Visio.Interfaces.DocumentViewUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -277,7 +277,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'visio!Visio.<xref uid="DocumentView:class" />'
+          type: '<xref uid="visio!Visio.DocumentView:class" />'
       return:
         type: void
         description: ''
@@ -300,6 +300,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.DocumentViewData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="DocumentViewData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.DocumentViewData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

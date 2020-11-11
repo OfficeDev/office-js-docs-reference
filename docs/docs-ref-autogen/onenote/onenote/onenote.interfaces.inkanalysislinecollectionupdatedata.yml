@@ -24,5 +24,5 @@ properties:
       content: 'items?: OneNote.Interfaces.InkAnalysisLineData[];'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="InkAnalysisLineData:interface"
+          <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData:interface"
           />[]

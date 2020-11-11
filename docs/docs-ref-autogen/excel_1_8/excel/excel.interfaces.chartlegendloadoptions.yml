@@ -49,8 +49,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartLegendFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartLegendFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface" />
   - name: height
     uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#height:member'
     package: excel!

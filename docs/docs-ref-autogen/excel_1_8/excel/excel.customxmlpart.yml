@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: id
     uid: 'excel!Excel.CustomXmlPart#id:member'
     package: excel!
@@ -173,7 +173,7 @@ methods:
     syntax:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: >-
 
 
@@ -224,10 +224,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="CustomXmlPartLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.CustomXmlPart#load:member(2)'
@@ -248,7 +248,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.CustomXmlPart#load:member(3)'
@@ -279,7 +279,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="CustomXmlPart:class" />'
+        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
         description: ''
   - name: setXml(xml)
     uid: 'excel!Excel.CustomXmlPart#setXml:member(1)'
@@ -354,6 +354,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CustomXmlPartData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

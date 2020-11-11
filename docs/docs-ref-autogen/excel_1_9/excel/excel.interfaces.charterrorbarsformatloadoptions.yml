@@ -48,5 +48,5 @@ properties:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartLineFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />

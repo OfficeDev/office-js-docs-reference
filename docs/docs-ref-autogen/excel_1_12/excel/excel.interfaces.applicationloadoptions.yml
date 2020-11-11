@@ -110,7 +110,7 @@ properties:
     syntax:
       content: 'cultureInfo?: Excel.Interfaces.CultureInfoLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CultureInfoLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.CultureInfoLoadOptions:interface" />'
   - name: decimalSeparator
     uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
     package: excel!
@@ -150,8 +150,9 @@ properties:
       content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="IterativeCalculationLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface"
+          />
   - name: thousandsSeparator
     uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
     package: excel!

@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'inkAnalysis?: OneNote.Interfaces.InkAnalysisData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="InkAnalysisData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisData:interface" />'
   - name: lines
     uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines:member'
     package: onenote!
@@ -65,5 +65,5 @@ properties:
       content: 'lines?: OneNote.Interfaces.InkAnalysisLineData[];'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="InkAnalysisLineData:interface"
+          <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData:interface"
           />[]

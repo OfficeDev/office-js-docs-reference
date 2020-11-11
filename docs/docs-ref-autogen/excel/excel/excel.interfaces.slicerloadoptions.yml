@@ -178,7 +178,7 @@ properties:
     syntax:
       content: 'slicerStyle?: Excel.Interfaces.SlicerStyleLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SlicerStyleLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerStyleLoadOptions:interface" />'
   - name: sortBy
     uid: 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
     package: excel!
@@ -276,4 +276,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

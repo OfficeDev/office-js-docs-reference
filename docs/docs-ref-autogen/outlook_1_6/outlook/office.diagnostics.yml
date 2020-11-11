@@ -124,5 +124,5 @@ properties:
         "ThreeColumns";
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref uid="OWAView:enum" /> | "OneColumn"
+          <xref uid="outlook!Office.MailboxEnums.OWAView:enum" /> | "OneColumn"
           | "TwoColumns" | "ThreeColumns"

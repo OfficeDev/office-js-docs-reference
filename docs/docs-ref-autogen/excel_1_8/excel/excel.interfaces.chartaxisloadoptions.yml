@@ -202,8 +202,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAxisFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartAxisFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface" />
   - name: height
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#height:member'
     package: excel!
@@ -297,7 +297,7 @@ properties:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartGridlinesLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface"
           />
   - name: majorTickMark
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorTickMark:member'
@@ -415,7 +415,7 @@ properties:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartGridlinesLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface"
           />
   - name: minorTickMark
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorTickMark:member'
@@ -719,7 +719,7 @@ properties:
       content: 'title?: Excel.Interfaces.ChartAxisTitleLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartAxisTitleLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface"
           />
   - name: top
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#top:member'

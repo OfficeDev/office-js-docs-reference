@@ -30,7 +30,7 @@ properties:
       content: 'alignment?: Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTickLabelAlignment:enum" /> | "Center" |
+          <xref uid="excel!Excel.ChartTickLabelAlignment:enum" /> | "Center" |
           "Left" | "Right"
   - name: axisGroup
     uid: 'excel!Excel.Interfaces.ChartAxisData#axisGroup:member'
@@ -51,7 +51,7 @@ properties:
       content: 'axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisGroup:enum" /> | "Primary" |
+          <xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" |
           "Secondary"
   - name: baseTimeUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#baseTimeUnit:member'
@@ -71,7 +71,7 @@ properties:
       content: 'baseTimeUnit?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTimeUnit:enum" /> | "Days" | "Months"
+          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
           | "Years"
   - name: categoryType
     uid: 'excel!Excel.Interfaces.ChartAxisData#categoryType:member'
@@ -93,7 +93,7 @@ properties:
         "DateAxis";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisCategoryType:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartAxisCategoryType:enum" /> | "Automatic" |
           "TextAxis" | "DateAxis"
   - name: customDisplayUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#customDisplayUnit:member'
@@ -136,7 +136,7 @@ properties:
         "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisDisplayUnit:enum" /> | "None" |
+          <xref uid="excel!Excel.ChartAxisDisplayUnit:enum" /> | "None" |
           "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
           "Millions" | "TenMillions" | "HundredMillions" | "Billions" |
           "Trillions" | "Custom"
@@ -158,7 +158,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisFormatData:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ChartAxisData#height:member'
     package: excel!
@@ -270,7 +270,7 @@ properties:
     syntax:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartGridlinesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesData:interface" />'
   - name: majorTickMark
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorTickMark:member'
     package: excel!
@@ -292,7 +292,7 @@ properties:
         "Outside";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTickMark:enum" /> | "None" | "Cross" |
+          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
           "Inside" | "Outside"
   - name: majorTimeUnitScale
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorTimeUnitScale:member'
@@ -315,7 +315,7 @@ properties:
         "Years";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTimeUnit:enum" /> | "Days" | "Months"
+          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
           | "Years"
   - name: majorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorUnit:member'
@@ -394,7 +394,7 @@ properties:
     syntax:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartGridlinesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesData:interface" />'
   - name: minorTickMark
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorTickMark:member'
     package: excel!
@@ -416,7 +416,7 @@ properties:
         "Outside";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTickMark:enum" /> | "None" | "Cross" |
+          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
           "Inside" | "Outside"
   - name: minorTimeUnitScale
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorTimeUnitScale:member'
@@ -439,7 +439,7 @@ properties:
         "Years";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTimeUnit:enum" /> | "Days" | "Months"
+          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
           | "Years"
   - name: minorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorUnit:member'
@@ -538,7 +538,7 @@ properties:
         | "Custom";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisPosition:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartAxisPosition:enum" /> | "Automatic" |
           "Maximum" | "Minimum" | "Custom"
   - name: positionAt
     uid: 'excel!Excel.Interfaces.ChartAxisData#positionAt:member'
@@ -596,7 +596,7 @@ properties:
       content: 'scaleType?: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";'
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisScaleType:enum" /> | "Linear" |
+          <xref uid="excel!Excel.ChartAxisScaleType:enum" /> | "Linear" |
           "Logarithmic"
   - name: showDisplayUnitLabel
     uid: 'excel!Excel.Interfaces.ChartAxisData#showDisplayUnitLabel:member'
@@ -657,7 +657,7 @@ properties:
         "High" | "Low" | "None";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisTickLabelPosition:enum" /> |
+          <xref uid="excel!Excel.ChartAxisTickLabelPosition:enum" /> |
           "NextToAxis" | "High" | "Low" | "None"
   - name: tickLabelSpacing
     uid: 'excel!Excel.Interfaces.ChartAxisData#tickLabelSpacing:member'
@@ -714,7 +714,7 @@ properties:
     syntax:
       content: 'title?: Excel.Interfaces.ChartAxisTitleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisTitleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisTitleData:interface" />'
   - name: top
     uid: 'excel!Excel.Interfaces.ChartAxisData#top:member'
     package: excel!
@@ -754,7 +754,7 @@ properties:
         "Series";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartAxisType:enum" /> | "Invalid" | "Category"
+          <xref uid="excel!Excel.ChartAxisType:enum" /> | "Invalid" | "Category"
           | "Value" | "Series"
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartAxisData#visible:member'

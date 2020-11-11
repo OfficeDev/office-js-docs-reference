@@ -22,7 +22,7 @@ properties:
     syntax:
       content: 'binding: Binding;'
       return:
-        type: 'office!Office.<xref uid="Binding:interface" />'
+        type: '<xref uid="office!Office.Binding:interface" />'
   - name: columnCount
     uid: 'office!Office.BindingSelectionChangedEventArgs#columnCount:member'
     package: office!
@@ -287,4 +287,4 @@ properties:
     syntax:
       content: 'type: EventType;'
       return:
-        type: 'office!Office.<xref uid="EventType:enum" />'
+        type: '<xref uid="office!Office.EventType:enum" />'

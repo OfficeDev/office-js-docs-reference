@@ -48,5 +48,6 @@ properties:
       content: 'notebooks?: OneNote.Interfaces.NotebookCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="NotebookCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface"
+          />

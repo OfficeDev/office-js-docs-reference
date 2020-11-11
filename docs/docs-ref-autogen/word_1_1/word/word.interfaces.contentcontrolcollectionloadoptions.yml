@@ -133,7 +133,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
   - name: id
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#id:member'
     package: word!
@@ -174,7 +174,7 @@ properties:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: placeholderText
     uid: >-

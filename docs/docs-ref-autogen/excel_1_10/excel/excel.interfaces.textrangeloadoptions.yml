@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ShapeFontLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeFontLoadOptions:interface" />'
   - name: text
     uid: 'excel!Excel.Interfaces.TextRangeLoadOptions#text:member'
     package: excel!

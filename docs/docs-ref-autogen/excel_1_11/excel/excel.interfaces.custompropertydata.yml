@@ -51,7 +51,7 @@ properties:
         "String" | "Float";
       return:
         type: >-
-          excel!Excel.<xref uid="DocumentPropertyType:enum" /> | "Number" |
+          <xref uid="excel!Excel.DocumentPropertyType:enum" /> | "Number" |
           "Boolean" | "Date" | "String" | "Float"
   - name: value
     uid: 'excel!Excel.Interfaces.CustomPropertyData#value:member'

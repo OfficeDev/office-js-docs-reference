@@ -52,7 +52,7 @@ properties:
         "CellMidPoint";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalDataBarAxisFormat:enum" /> |
+          <xref uid="excel!Excel.ConditionalDataBarAxisFormat:enum" /> |
           "Automatic" | "None" | "CellMidPoint"
   - name: barDirection
     uid: >-
@@ -75,7 +75,7 @@ properties:
         "LeftToRight" | "RightToLeft";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalDataBarDirection:enum" /> |
+          <xref uid="excel!Excel.ConditionalDataBarDirection:enum" /> |
           "Context" | "LeftToRight" | "RightToLeft"
   - name: lowerBoundRule
     uid: >-
@@ -98,7 +98,7 @@ properties:
     syntax:
       content: 'lowerBoundRule?: Excel.ConditionalDataBarRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarRule:interface" />'
   - name: negativeFormat
     uid: >-
       excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#negativeFormat:member
@@ -120,8 +120,9 @@ properties:
         Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalDataBarNegativeFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface"
+          />
   - name: positiveFormat
     uid: >-
       excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#positiveFormat:member
@@ -144,8 +145,9 @@ properties:
         Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData;
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalDataBarPositiveFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface"
+          />
   - name: showDataBarOnly
     uid: >-
       excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#showDataBarOnly:member
@@ -186,4 +188,4 @@ properties:
     syntax:
       content: 'upperBoundRule?: Excel.ConditionalDataBarRule;'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalDataBarRule:interface" />'
+        type: '<xref uid="excel!Excel.ConditionalDataBarRule:interface" />'

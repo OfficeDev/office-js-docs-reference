@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: id
     uid: 'word!Word.List#id:member'
     package: word!
@@ -86,7 +86,7 @@ properties:
     syntax:
       content: 'readonly levelTypes: Word.ListLevelType[];'
       return:
-        type: 'word!Word.<xref uid="ListLevelType:enum" />[]'
+        type: '<xref uid="word!Word.ListLevelType:enum" />[]'
   - name: paragraphs
     uid: 'word!Word.List#paragraphs:member'
     package: word!
@@ -104,7 +104,7 @@ properties:
     syntax:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
 methods:
   - name: getLevelParagraphs(level)
     uid: 'word!Word.List#getLevelParagraphs:member(1)'
@@ -127,7 +127,7 @@ methods:
           description: Required. The level in the list.
           type: number
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
   - name: getLevelString(level)
     uid: 'word!Word.List#getLevelString:member(1)'
@@ -150,7 +150,7 @@ methods:
           description: Required. The level in the list.
           type: number
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertParagraph(paragraphText, insertLocation)'
     uid: 'word!Word.List#insertParagraph:member(1)'
@@ -176,9 +176,9 @@ methods:
           type: string
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: 'insertParagraph(paragraphText, insertLocationString)'
     uid: 'word!Word.List#insertParagraph:member(2)'
@@ -206,7 +206,7 @@ methods:
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.List#load:member(1)'
@@ -223,9 +223,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="ListLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.ListLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.List#load:member(2)'
@@ -246,7 +246,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.List#load:member(3)'
@@ -277,7 +277,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: 'setLevelAlignment(level, alignment)'
     uid: 'word!Word.List#setLevelAlignment:member(1)'
@@ -304,7 +304,7 @@ methods:
           description: >-
             Required. The level alignment that can be 'Left', 'Centered', or
             'Right'.
-          type: 'word!Word.<xref uid="Alignment:enum" />'
+          type: '<xref uid="word!Word.Alignment:enum" />'
       return:
         type: void
         description: ''
@@ -364,7 +364,7 @@ methods:
           type: number
         - id: listBullet
           description: Required. The bullet.
-          type: 'word!Word.<xref uid="ListBullet:enum" />'
+          type: '<xref uid="word!Word.ListBullet:enum" />'
         - id: charCode
           description: >-
             Optional. The bullet character's code value. Used only if the bullet
@@ -479,7 +479,7 @@ methods:
           type: number
         - id: listNumbering
           description: Required. The ordinal format.
-          type: 'word!Word.<xref uid="ListNumbering:enum" />'
+          type: '<xref uid="word!Word.ListNumbering:enum" />'
         - id: formatString
           description: >-
             Optional. The numbering string format defined as an array of strings
@@ -575,7 +575,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.ListData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ListData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.List#track:member(1)'
@@ -595,7 +595,7 @@ methods:
     syntax:
       content: 'track(): Word.List;'
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.List#untrack:member(1)'
@@ -614,6 +614,6 @@ methods:
     syntax:
       content: 'untrack(): Word.List;'
       return:
-        type: 'word!Word.<xref uid="List:class" />'
+        type: '<xref uid="word!Word.List:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

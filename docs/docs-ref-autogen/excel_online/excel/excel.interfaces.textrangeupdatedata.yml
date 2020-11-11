@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ShapeFontUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeFontUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeFontUpdateData:interface" />'
   - name: text
     uid: 'excel!Excel.Interfaces.TextRangeUpdateData#text:member'
     package: excel!

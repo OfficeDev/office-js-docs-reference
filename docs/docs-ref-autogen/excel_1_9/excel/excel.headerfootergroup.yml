@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: defaultForAllPages
     uid: 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
     package: excel!
@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'readonly defaultForAllPages: Excel.HeaderFooter;'
       return:
-        type: 'excel!Excel.<xref uid="HeaderFooter:class" />'
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
   - name: evenPages
     uid: 'excel!Excel.HeaderFooterGroup#evenPages:member'
     package: excel!
@@ -63,7 +63,7 @@ properties:
     syntax:
       content: 'readonly evenPages: Excel.HeaderFooter;'
       return:
-        type: 'excel!Excel.<xref uid="HeaderFooter:class" />'
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
   - name: firstPage
     uid: 'excel!Excel.HeaderFooterGroup#firstPage:member'
     package: excel!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'readonly firstPage: Excel.HeaderFooter;'
       return:
-        type: 'excel!Excel.<xref uid="HeaderFooter:class" />'
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
   - name: oddPages
     uid: 'excel!Excel.HeaderFooterGroup#oddPages:member'
     package: excel!
@@ -101,7 +101,7 @@ properties:
     syntax:
       content: 'readonly oddPages: Excel.HeaderFooter;'
       return:
-        type: 'excel!Excel.<xref uid="HeaderFooter:class" />'
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
   - name: state
     uid: 'excel!Excel.HeaderFooterGroup#state:member'
     package: excel!
@@ -123,7 +123,7 @@ properties:
         "OddAndEven" | "FirstOddAndEven";
       return:
         type: >-
-          excel!Excel.<xref uid="HeaderFooterState:enum" /> | "Default" |
+          <xref uid="excel!Excel.HeaderFooterState:enum" /> | "Default" |
           "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
   - name: useSheetMargins
     uid: 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
@@ -182,10 +182,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="HeaderFooterGroupLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="HeaderFooterGroup:class" />'
+        type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.HeaderFooterGroup#load:member(2)'
@@ -206,7 +207,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="HeaderFooterGroup:class" />'
+        type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.HeaderFooterGroup#load:member(3)'
@@ -237,7 +238,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="HeaderFooterGroup:class" />'
+        type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.HeaderFooterGroup#set:member(1)'
@@ -264,13 +265,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="HeaderFooterGroupUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -289,7 +291,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="HeaderFooterGroup:class" />'
+          type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
       return:
         type: void
         description: ''
@@ -312,6 +314,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.HeaderFooterGroupData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="HeaderFooterGroupData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterGroupData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

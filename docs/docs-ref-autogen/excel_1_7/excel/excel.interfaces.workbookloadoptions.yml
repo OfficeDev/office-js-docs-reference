@@ -51,7 +51,7 @@ properties:
     syntax:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ApplicationLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ApplicationLoadOptions:interface" />'
   - name: bindings
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
     package: excel!
@@ -70,8 +70,8 @@ properties:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="BindingCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.BindingCollectionLoadOptions:interface" />
   - name: name
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     package: excel!
@@ -108,8 +108,9 @@ properties:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="DocumentPropertiesLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface"
+          />
   - name: protection
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
     package: excel!
@@ -128,8 +129,9 @@ properties:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="WorkbookProtectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface"
+          />
   - name: tables
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
     package: excel!
@@ -148,5 +150,5 @@ properties:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />

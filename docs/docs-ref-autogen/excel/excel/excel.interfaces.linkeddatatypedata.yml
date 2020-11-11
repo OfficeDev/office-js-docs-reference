@@ -108,7 +108,7 @@ properties:
         "OnLoad" | "Periodic";
       return:
         type: >-
-          excel!Excel.<xref uid="LinkedDataTypeRefreshMode:enum" /> | "Unknown"
+          <xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" /> | "Unknown"
           | "Manual" | "OnLoad" | "Periodic"
   - name: serviceId
     uid: 'excel!Excel.Interfaces.LinkedDataTypeData#serviceId:member'
@@ -147,4 +147,4 @@ properties:
     syntax:
       content: 'supportedRefreshModes?: Excel.LinkedDataTypeRefreshMode[];'
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataTypeRefreshMode:enum" />[]'
+        type: '<xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" />[]'

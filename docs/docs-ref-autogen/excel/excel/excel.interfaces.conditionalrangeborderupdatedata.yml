@@ -51,5 +51,5 @@ properties:
         "Dash" | "DashDot" | "DashDotDot" | "Dot";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalRangeBorderLineStyle:enum" /> |
+          <xref uid="excel!Excel.ConditionalRangeBorderLineStyle:enum" /> |
           "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"

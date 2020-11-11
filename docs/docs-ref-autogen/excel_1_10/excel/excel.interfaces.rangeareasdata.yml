@@ -86,7 +86,7 @@ properties:
     syntax:
       content: 'areas?: Excel.Interfaces.RangeData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.RangeData:interface" />[]'
   - name: cellCount
     uid: 'excel!Excel.Interfaces.RangeAreasData#cellCount:member'
     package: excel!
@@ -126,7 +126,7 @@ properties:
       content: 'conditionalFormats?: Excel.Interfaces.ConditionalFormatData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ConditionalFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface"
           />[]
   - name: dataValidation
     uid: 'excel!Excel.Interfaces.RangeAreasData#dataValidation:member'
@@ -145,7 +145,7 @@ properties:
     syntax:
       content: 'dataValidation?: Excel.Interfaces.DataValidationData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="DataValidationData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.DataValidationData:interface" />'
   - name: format
     uid: 'excel!Excel.Interfaces.RangeAreasData#format:member'
     package: excel!
@@ -164,7 +164,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatData:interface" />'
   - name: isEntireColumn
     uid: 'excel!Excel.Interfaces.RangeAreasData#isEntireColumn:member'
     package: excel!

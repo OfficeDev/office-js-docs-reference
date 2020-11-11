@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'application?: Visio.Interfaces.ApplicationLoadOptions;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ApplicationLoadOptions:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface" />'
   - name: view
     uid: 'visio!Visio.Interfaces.DocumentLoadOptions#view:member'
     package: visio!
@@ -63,5 +63,5 @@ properties:
       content: 'view?: Visio.Interfaces.DocumentViewLoadOptions;'
       return:
         type: >-
-          visio!Visio.Interfaces.<xref uid="DocumentViewLoadOptions:interface"
+          <xref uid="visio!Visio.Interfaces.DocumentViewLoadOptions:interface"
           />

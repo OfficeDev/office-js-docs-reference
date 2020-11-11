@@ -29,8 +29,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartAxisTitleFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface"
+          />
   - name: text
     uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#text:member'
     package: excel!

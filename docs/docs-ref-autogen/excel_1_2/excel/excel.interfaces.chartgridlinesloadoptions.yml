@@ -48,8 +48,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartGridlinesFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface"
+          />
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#visible:member'
     package: excel!

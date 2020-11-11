@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'bindings?: Excel.Interfaces.BindingData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="BindingData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.BindingData:interface" />[]'
   - name: customXmlParts
     uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'customXmlParts?: Excel.Interfaces.CustomXmlPartData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="CustomXmlPartData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />[]'
   - name: names
     uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
     package: excel!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="NamedItemData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />[]'
   - name: pivotTables
     uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
     package: excel!
@@ -83,7 +83,7 @@ properties:
     syntax:
       content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotTableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />[]'
   - name: settings
     uid: 'excel!Excel.Interfaces.WorkbookData#settings:member'
     package: excel!
@@ -101,7 +101,7 @@ properties:
     syntax:
       content: 'settings?: Excel.Interfaces.SettingData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="SettingData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.SettingData:interface" />[]'
   - name: tables
     uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     package: excel!
@@ -119,7 +119,7 @@ properties:
     syntax:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />[]'
   - name: worksheets
     uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
     package: excel!
@@ -137,4 +137,4 @@ properties:
     syntax:
       content: 'worksheets?: Excel.Interfaces.WorksheetData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />[]'

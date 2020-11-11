@@ -54,7 +54,7 @@ properties:
         "AutomaticExceptTables" | "Manual";
       return:
         type: >-
-          excel!Excel.<xref uid="CalculationMode:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.CalculationMode:enum" /> | "Automatic" |
           "AutomaticExceptTables" | "Manual"
   - name: calculationState
     uid: 'excel!Excel.Interfaces.ApplicationData#calculationState:member'
@@ -77,7 +77,7 @@ properties:
         "Pending";
       return:
         type: >-
-          excel!Excel.<xref uid="CalculationState:enum" /> | "Done" |
+          <xref uid="excel!Excel.CalculationState:enum" /> | "Done" |
           "Calculating" | "Pending"
   - name: iterativeCalculation
     uid: 'excel!Excel.Interfaces.ApplicationData#iterativeCalculation:member'
@@ -99,5 +99,5 @@ properties:
       content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="IterativeCalculationData:interface"
+          <xref uid="excel!Excel.Interfaces.IterativeCalculationData:interface"
           />

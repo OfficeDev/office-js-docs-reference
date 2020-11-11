@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
 methods:
   - name: freezeAt(frozenRange)
     uid: 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
@@ -49,7 +49,7 @@ methods:
           description: >-
             A range that represents the cells to be frozen, or null to remove
             all frozen panes.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void
         description: >-
@@ -180,7 +180,7 @@ methods:
     syntax:
       content: 'getLocation(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
   - name: getLocationOrNullObject()
     uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
@@ -201,7 +201,7 @@ methods:
     syntax:
       content: 'getLocationOrNullObject(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
 
 
@@ -292,4 +292,4 @@ methods:
           });
 
           ```
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

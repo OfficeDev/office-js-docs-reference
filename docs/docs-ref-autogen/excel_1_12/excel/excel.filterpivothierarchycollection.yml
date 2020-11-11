@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.FilterPivotHierarchyCollection#items:member'
     package: excel!
@@ -41,7 +41,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.FilterPivotHierarchy[];'
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />[]'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />[]'
 methods:
   - name: add(pivotHierarchy)
     uid: 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
@@ -64,9 +64,9 @@ methods:
       parameters:
         - id: pivotHierarchy
           description: ''
-          type: 'excel!Excel.<xref uid="PivotHierarchy:class" />'
+          type: '<xref uid="excel!Excel.PivotHierarchy:class" />'
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
         description: ''
   - name: getCount()
     uid: 'excel!Excel.FilterPivotHierarchyCollection#getCount:member(1)'
@@ -85,7 +85,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(name)
     uid: 'excel!Excel.FilterPivotHierarchyCollection#getItem:member(1)'
@@ -108,7 +108,7 @@ methods:
           description: Name of the FilterPivotHierarchy to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
         description: ''
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.FilterPivotHierarchyCollection#getItemOrNullObject:member(1)'
@@ -132,7 +132,7 @@ methods:
           description: Name of the FilterPivotHierarchy to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.FilterPivotHierarchyCollection#load:member(1)'
@@ -154,12 +154,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="FilterPivotHierarchyCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchyCollection:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchyCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.FilterPivotHierarchyCollection#load:member(2)'
@@ -182,7 +182,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchyCollection:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchyCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.FilterPivotHierarchyCollection#load:member(3)'
@@ -205,9 +205,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="FilterPivotHierarchyCollection:class" />'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchyCollection:class" />'
         description: ''
   - name: remove(filterPivotHierarchy)
     uid: 'excel!Excel.FilterPivotHierarchyCollection#remove:member(1)'
@@ -228,7 +228,7 @@ methods:
       parameters:
         - id: filterPivotHierarchy
           description: ''
-          type: 'excel!Excel.<xref uid="FilterPivotHierarchy:class" />'
+          type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
       return:
         type: void
         description: ''
@@ -253,7 +253,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.FilterPivotHierarchyCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="FilterPivotHierarchyCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

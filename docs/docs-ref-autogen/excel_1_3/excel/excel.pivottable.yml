@@ -31,7 +31,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: name
     uid: 'excel!Excel.PivotTable#name:member'
     package: excel!
@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
-        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
 methods:
   - name: load(options)
     uid: 'excel!Excel.PivotTable#load:member(1)'
@@ -87,10 +87,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref uid="PivotTableLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="PivotTable:class" />'
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PivotTable#load:member(2)'
@@ -111,7 +111,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PivotTable:class" />'
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PivotTable#load:member(3)'
@@ -142,7 +142,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="PivotTable:class" />'
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: ''
   - name: refresh()
     uid: 'excel!Excel.PivotTable#refresh:member(1)'
@@ -187,12 +187,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="PivotTableUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.PivotTableUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -211,7 +211,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="PivotTable:class" />'
+          type: '<xref uid="excel!Excel.PivotTable:class" />'
       return:
         type: void
         description: ''
@@ -233,6 +233,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotTableData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="PivotTableData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

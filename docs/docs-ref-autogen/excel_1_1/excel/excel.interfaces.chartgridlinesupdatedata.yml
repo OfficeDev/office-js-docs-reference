@@ -29,8 +29,9 @@ properties:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartGridlinesFormatUpdateData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface"
+          />
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData#visible:member'
     package: excel!

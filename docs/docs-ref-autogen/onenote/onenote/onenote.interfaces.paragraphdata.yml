@@ -45,7 +45,7 @@ properties:
     syntax:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ImageData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.ImageData:interface" />'
   - name: inkWords
     uid: 'onenote!OneNote.Interfaces.ParagraphData#inkWords:member'
     package: onenote!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'inkWords?: OneNote.Interfaces.InkWordData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="InkWordData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkWordData:interface" />[]'
   - name: paragraphs
     uid: 'onenote!OneNote.Interfaces.ParagraphData#paragraphs:member'
     package: onenote!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="ParagraphData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphData:interface" />[]'
   - name: richText
     uid: 'onenote!OneNote.Interfaces.ParagraphData#richText:member'
     package: onenote!
@@ -101,7 +101,7 @@ properties:
     syntax:
       content: 'richText?: OneNote.Interfaces.RichTextData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="RichTextData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.RichTextData:interface" />'
   - name: table
     uid: 'onenote!OneNote.Interfaces.ParagraphData#table:member'
     package: onenote!
@@ -120,7 +120,7 @@ properties:
     syntax:
       content: 'table?: OneNote.Interfaces.TableData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="TableData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableData:interface" />'
   - name: type
     uid: 'onenote!OneNote.Interfaces.ParagraphData#type:member'
     package: onenote!
@@ -141,5 +141,5 @@ properties:
         "Other";
       return:
         type: >-
-          onenote!OneNote.<xref uid="ParagraphType:enum" /> | "RichText" |
+          <xref uid="onenote!OneNote.ParagraphType:enum" /> | "RichText" |
           "Image" | "Table" | "Ink" | "Other"

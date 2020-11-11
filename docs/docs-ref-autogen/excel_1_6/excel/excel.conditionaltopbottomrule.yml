@@ -54,6 +54,6 @@ properties:
         "TopPercent" | "BottomItems" | "BottomPercent";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalTopBottomCriterionType:enum" /> |
+          <xref uid="excel!Excel.ConditionalTopBottomCriterionType:enum" /> |
           "Invalid" | "TopItems" | "TopPercent" | "BottomItems" |
           "BottomPercent"

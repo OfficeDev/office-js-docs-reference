@@ -29,7 +29,7 @@ properties:
       content: 'dataValidation?: Excel.Interfaces.DataValidationUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="DataValidationUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.DataValidationUpdateData:interface"
           />
   - name: format
     uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#format:member'
@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeFormatUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface" />'
   - name: style
     uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#style:member'
     package: excel!

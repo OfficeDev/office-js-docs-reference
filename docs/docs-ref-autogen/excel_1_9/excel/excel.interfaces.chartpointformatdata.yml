@@ -29,4 +29,4 @@ properties:
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartBorderData:interface" />'

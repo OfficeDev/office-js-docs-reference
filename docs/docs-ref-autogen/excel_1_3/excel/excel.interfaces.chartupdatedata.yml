@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'axes?: Excel.Interfaces.ChartAxesUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxesUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxesUpdateData:interface" />'
   - name: dataLabels
     uid: 'excel!Excel.Interfaces.ChartUpdateData#dataLabels:member'
     package: excel!
@@ -47,7 +47,7 @@ properties:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartDataLabelsUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface"
           />
   - name: format
     uid: 'excel!Excel.Interfaces.ChartUpdateData#format:member'
@@ -67,7 +67,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartAreaFormatUpdateData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartAreaFormatUpdateData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface"
           />
   - name: height
     uid: 'excel!Excel.Interfaces.ChartUpdateData#height:member'
@@ -123,7 +123,7 @@ properties:
     syntax:
       content: 'legend?: Excel.Interfaces.ChartLegendUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartLegendUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartLegendUpdateData:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.ChartUpdateData#name:member'
     package: excel!
@@ -160,7 +160,7 @@ properties:
     syntax:
       content: 'title?: Excel.Interfaces.ChartTitleUpdateData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartTitleUpdateData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartTitleUpdateData:interface" />'
   - name: top
     uid: 'excel!Excel.Interfaces.ChartUpdateData#top:member'
     package: excel!

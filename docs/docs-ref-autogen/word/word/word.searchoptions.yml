@@ -34,7 +34,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: ignorePunct
     uid: 'word!Word.SearchOptions#ignorePunct:member'
     package: word!
@@ -194,10 +194,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref uid="SearchOptionsLoadOptions:interface"
+            <xref uid="word!Word.Interfaces.SearchOptionsLoadOptions:interface"
             />
       return:
-        type: 'word!Word.<xref uid="SearchOptions:class" />'
+        type: '<xref uid="word!Word.SearchOptions:class" />'
         description: |-
 
 
@@ -363,7 +363,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="SearchOptions:class" />'
+        type: '<xref uid="word!Word.SearchOptions:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.SearchOptions#load:member(3)'
@@ -394,7 +394,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="SearchOptions:class" />'
+        type: '<xref uid="word!Word.SearchOptions:class" />'
         description: ''
   - name: newObject(context)
     uid: 'word!Word.SearchOptions.newObject:member(1)'
@@ -411,9 +411,9 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
       return:
-        type: 'word!Word.<xref uid="SearchOptions:class" />'
+        type: '<xref uid="word!Word.SearchOptions:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.SearchOptions#set:member(1)'
@@ -440,13 +440,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            word!Word.Interfaces.<xref uid="SearchOptionsUpdateData:interface"
+            <xref uid="word!Word.Interfaces.SearchOptionsUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -465,7 +465,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="SearchOptions:class" />'
+          type: '<xref uid="word!Word.SearchOptions:class" />'
       return:
         type: void
         description: ''
@@ -488,6 +488,6 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.SearchOptionsData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="SearchOptionsData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.SearchOptionsData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

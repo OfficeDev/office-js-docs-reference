@@ -135,7 +135,7 @@ properties:
       content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="NotebookLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.NotebookLoadOptions:interface"
           />
   - name: pages
     uid: 'onenote!OneNote.Interfaces.SectionLoadOptions#pages:member'
@@ -155,8 +155,9 @@ properties:
       content: 'pages?: OneNote.Interfaces.PageCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="PageCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface"
+          />
   - name: parentSectionGroup
     uid: 'onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroup:member'
     package: onenote!
@@ -176,8 +177,8 @@ properties:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionGroupLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface" />
   - name: parentSectionGroupOrNull
     uid: >-
       onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroupOrNull:member
@@ -198,8 +199,8 @@ properties:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionGroupLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface" />
   - name: webUrl
     uid: 'onenote!OneNote.Interfaces.SectionLoadOptions#webUrl:member'
     package: onenote!

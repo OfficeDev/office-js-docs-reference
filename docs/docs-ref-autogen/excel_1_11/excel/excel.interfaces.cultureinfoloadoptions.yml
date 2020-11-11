@@ -69,5 +69,5 @@ properties:
       content: 'numberFormat?: Excel.Interfaces.NumberFormatInfoLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="NumberFormatInfoLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface" />

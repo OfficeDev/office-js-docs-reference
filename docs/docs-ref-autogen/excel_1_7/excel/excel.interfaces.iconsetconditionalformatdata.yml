@@ -31,7 +31,7 @@ properties:
     syntax:
       content: 'criteria?: Excel.ConditionalIconCriterion[];'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalIconCriterion:interface" />[]'
+        type: '<xref uid="excel!Excel.ConditionalIconCriterion:interface" />[]'
   - name: reverseIconOrder
     uid: >-
       excel!Excel.Interfaces.IconSetConditionalFormatData#reverseIconOrder:member
@@ -94,7 +94,7 @@ properties:
         "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
       return:
         type: >-
-          excel!Excel.<xref uid="IconSet:enum" /> | "Invalid" | "ThreeArrows" |
+          <xref uid="excel!Excel.IconSet:enum" /> | "Invalid" | "ThreeArrows" |
           "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
           "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" |
           "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" |

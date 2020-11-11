@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: criteria
     uid: 'excel!Excel.Filter#criteria:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly criteria: Excel.FilterCriteria;'
       return:
-        type: 'excel!Excel.<xref uid="FilterCriteria:interface" />'
+        type: '<xref uid="excel!Excel.FilterCriteria:interface" />'
 methods:
   - name: apply(criteria)
     uid: 'excel!Excel.Filter#apply:member(1)'
@@ -67,7 +67,7 @@ methods:
       parameters:
         - id: criteria
           description: The criteria to apply.
-          type: 'excel!Excel.<xref uid="FilterCriteria:interface" />'
+          type: '<xref uid="excel!Excel.FilterCriteria:interface" />'
       return:
         type: void
         description: ''
@@ -171,7 +171,7 @@ methods:
           description: >-
             Optional. The operator that describes how the two criteria are
             joined.
-          type: 'excel!Excel.<xref uid="FilterOperator:enum" />'
+          type: '<xref uid="excel!Excel.FilterOperator:enum" />'
       return:
         type: void
         description: ''
@@ -227,7 +227,7 @@ methods:
       parameters:
         - id: criteria
           description: The dynamic criteria to apply.
-          type: 'excel!Excel.<xref uid="DynamicFilterCriteria:enum" />'
+          type: '<xref uid="excel!Excel.DynamicFilterCriteria:enum" />'
       return:
         type: void
         description: ''
@@ -321,7 +321,7 @@ methods:
       parameters:
         - id: icon
           description: The icons of the cells to show.
-          type: 'excel!Excel.<xref uid="Icon:interface" />'
+          type: '<xref uid="excel!Excel.Icon:interface" />'
       return:
         type: void
         description: ''
@@ -394,7 +394,7 @@ methods:
             The list of values to show. This must be an array of strings or an
             array of Excel.FilterDateTime objects.
           type: >-
-            Array&lt;string | excel!Excel.<xref uid="FilterDatetime:interface"
+            Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface"
             />&gt;
       return:
         type: void
@@ -433,9 +433,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="FilterLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.FilterLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Filter:class" />'
+        type: '<xref uid="excel!Excel.Filter:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Filter#load:member(2)'
@@ -456,7 +456,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Filter:class" />'
+        type: '<xref uid="excel!Excel.Filter:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.Filter#load:member(3)'
@@ -487,7 +487,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Filter:class" />'
+        type: '<xref uid="excel!Excel.Filter:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.Filter#toJSON:member(1)'
@@ -507,6 +507,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.FilterData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="FilterData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.FilterData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

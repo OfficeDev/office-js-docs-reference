@@ -33,7 +33,7 @@ properties:
         "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeAutoSize:enum" /> | "AutoSizeNone" |
+          <xref uid="excel!Excel.ShapeAutoSize:enum" /> | "AutoSizeNone" |
           "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - name: bottomMargin
     uid: 'excel!Excel.Interfaces.TextFrameData#bottomMargin:member'
@@ -93,7 +93,7 @@ properties:
         "ThaiDistributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextHorizontalAlignment:enum" /> | "Left"
+          <xref uid="excel!Excel.ShapeTextHorizontalAlignment:enum" /> | "Left"
           | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
           "ThaiDistributed"
   - name: horizontalOverflow
@@ -117,7 +117,7 @@ properties:
         "Clip";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextHorizontalOverflow:enum" /> |
+          <xref uid="excel!Excel.ShapeTextHorizontalOverflow:enum" /> |
           "Overflow" | "Clip"
   - name: leftMargin
     uid: 'excel!Excel.Interfaces.TextFrameData#leftMargin:member'
@@ -159,7 +159,7 @@ properties:
         "MongolianVertical" | "WordArtVerticalRTL";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextOrientation:enum" /> | "Horizontal" |
+          <xref uid="excel!Excel.ShapeTextOrientation:enum" /> | "Horizontal" |
           "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
           "MongolianVertical" | "WordArtVerticalRTL"
   - name: readingOrder
@@ -183,7 +183,7 @@ properties:
         "RightToLeft";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextReadingOrder:enum" /> | "LeftToRight"
+          <xref uid="excel!Excel.ShapeTextReadingOrder:enum" /> | "LeftToRight"
           | "RightToLeft"
   - name: rightMargin
     uid: 'excel!Excel.Interfaces.TextFrameData#rightMargin:member'
@@ -242,7 +242,7 @@ properties:
         | "Bottom" | "Justified" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextVerticalAlignment:enum" /> | "Top" |
+          <xref uid="excel!Excel.ShapeTextVerticalAlignment:enum" /> | "Top" |
           "Middle" | "Bottom" | "Justified" | "Distributed"
   - name: verticalOverflow
     uid: 'excel!Excel.Interfaces.TextFrameData#verticalOverflow:member'
@@ -265,5 +265,5 @@ properties:
         "Ellipsis" | "Clip";
       return:
         type: >-
-          excel!Excel.<xref uid="ShapeTextVerticalOverflow:enum" /> | "Overflow"
+          <xref uid="excel!Excel.ShapeTextVerticalOverflow:enum" /> | "Overflow"
           | "Ellipsis" | "Clip"

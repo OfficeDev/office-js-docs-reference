@@ -48,7 +48,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartDataLabelFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatData:interface"
           />
   - name: formula
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#formula:member'
@@ -110,7 +110,7 @@ properties:
         "Left" | "Right" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextHorizontalAlignment:enum" /> |
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> |
           "Center" | "Left" | "Right" | "Justify" | "Distributed"
   - name: left
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#left:member'
@@ -190,7 +190,7 @@ properties:
         "Bottom" | "BestFit" | "Callout";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartDataLabelPosition:enum" /> | "Invalid" |
+          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" |
           "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
           | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - name: separator
@@ -398,7 +398,7 @@ properties:
         "Bottom" | "Top" | "Justify" | "Distributed";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartTextVerticalAlignment:enum" /> | "Center"
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center"
           | "Bottom" | "Top" | "Justify" | "Distributed"
   - name: width
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#width:member'

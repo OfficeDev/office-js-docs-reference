@@ -31,5 +31,5 @@ properties:
       return:
         type: boolean
 extends: >-
-  office!OfficeExtension.<xref uid="RunOptions:interface"
-  />&lt;excel!Excel.<xref uid="Session:interface" />&gt; 
+  <xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref
+  uid="excel!Excel.Session:interface" />&gt; 

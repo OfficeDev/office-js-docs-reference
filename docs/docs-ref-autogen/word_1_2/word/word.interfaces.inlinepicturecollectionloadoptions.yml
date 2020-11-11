@@ -148,7 +148,7 @@ properties:
     syntax:
       content: 'paragraph?: Word.Interfaces.ParagraphLoadOptions;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ParagraphLoadOptions:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ParagraphLoadOptions:interface" />'
   - name: parentContentControl
     uid: >-
       word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member
@@ -169,7 +169,7 @@ properties:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type: >-
-          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
           />
   - name: width
     uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'

@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="FontUpdateData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
   - name: style
     uid: 'word!Word.Interfaces.RangeUpdateData#style:member'
     package: word!

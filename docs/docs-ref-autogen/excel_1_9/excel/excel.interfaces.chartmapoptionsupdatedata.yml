@@ -31,7 +31,7 @@ properties:
         "ShowAll";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMapLabelStrategy:enum" /> | "None" |
+          <xref uid="excel!Excel.ChartMapLabelStrategy:enum" /> | "None" |
           "BestFit" | "ShowAll"
   - name: level
     uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#level:member'
@@ -53,7 +53,7 @@ properties:
         "County" | "State" | "Country" | "Continent" | "World";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMapAreaLevel:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartMapAreaLevel:enum" /> | "Automatic" |
           "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
           "World"
   - name: projectionType
@@ -76,5 +76,5 @@ properties:
         | "Miller" | "Robinson" | "Albers";
       return:
         type: >-
-          excel!Excel.<xref uid="ChartMapProjectionType:enum" /> | "Automatic" |
+          <xref uid="excel!Excel.ChartMapProjectionType:enum" /> | "Automatic" |
           "Mercator" | "Miller" | "Robinson" | "Albers"

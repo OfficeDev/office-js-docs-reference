@@ -30,7 +30,7 @@ properties:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisUpdateData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="InkAnalysisUpdateData:interface"
+          <xref uid="onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface"
           />
   - name: pageLevel
     uid: 'onenote!OneNote.Interfaces.PageUpdateData#pageLevel:member'

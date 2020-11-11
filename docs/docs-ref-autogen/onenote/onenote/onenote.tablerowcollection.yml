@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: count
     uid: 'onenote!OneNote.TableRowCollection#count:member'
     package: onenote!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: OneNote.TableRow[];'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />[]'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />[]'
 methods:
   - name: getItem(index)
     uid: 'onenote!OneNote.TableRowCollection#getItem:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: A number that identifies the index location of a table row object.
           type: number | string
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'onenote!OneNote.TableRowCollection#getItemAt:member(1)'
@@ -105,7 +105,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="TableRow:class" />'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.TableRowCollection#load:member(1)'
@@ -146,12 +146,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="TableRowCollectionLoadOptions:interface" /> &
-            onenote!OneNote.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface"
+            /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="onenote!OneNote.TableRowCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.TableRowCollection#load:member(2)'
@@ -172,7 +172,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="onenote!OneNote.TableRowCollection:class" />'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.TableRowCollection#load:member(3)'
@@ -187,9 +187,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="onenote!OneNote.TableRowCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.TableRowCollection#toJSON:member(1)'
@@ -212,8 +212,8 @@ methods:
       content: 'toJSON(): OneNote.Interfaces.TableRowCollectionData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="TableRowCollectionData:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.TableRowCollectionData:interface" />
         description: ''
   - name: track()
     uid: 'onenote!OneNote.TableRowCollection#track:member(1)'
@@ -233,7 +233,7 @@ methods:
     syntax:
       content: 'track(): OneNote.TableRowCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="onenote!OneNote.TableRowCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.TableRowCollection#untrack:member(1)'
@@ -252,6 +252,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.TableRowCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="onenote!OneNote.TableRowCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

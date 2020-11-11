@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'errorAlert?: Excel.DataValidationErrorAlert;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidationErrorAlert:interface" />'
+        type: '<xref uid="excel!Excel.DataValidationErrorAlert:interface" />'
   - name: ignoreBlanks
     uid: 'excel!Excel.Interfaces.DataValidationData#ignoreBlanks:member'
     package: excel!
@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'prompt?: Excel.DataValidationPrompt;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidationPrompt:interface" />'
+        type: '<xref uid="excel!Excel.DataValidationPrompt:interface" />'
   - name: rule
     uid: 'excel!Excel.Interfaces.DataValidationData#rule:member'
     package: excel!
@@ -84,7 +84,7 @@ properties:
     syntax:
       content: 'rule?: Excel.DataValidationRule;'
       return:
-        type: 'excel!Excel.<xref uid="DataValidationRule:interface" />'
+        type: '<xref uid="excel!Excel.DataValidationRule:interface" />'
   - name: type
     uid: 'excel!Excel.Interfaces.DataValidationData#type:member'
     package: excel!
@@ -106,7 +106,7 @@ properties:
         "MixedCriteria";
       return:
         type: >-
-          excel!Excel.<xref uid="DataValidationType:enum" /> | "None" |
+          <xref uid="excel!Excel.DataValidationType:enum" /> | "None" |
           "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" |
           "Custom" | "Inconsistent" | "MixedCriteria"
   - name: valid

@@ -90,7 +90,7 @@ properties:
     syntax:
       content: 'dayOfWeek?: MailboxEnums.Days | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="Days:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.Days:enum" /> | string'
   - name: days
     uid: 'outlook!Office.RecurrenceProperties#days:member'
     package: outlook!
@@ -104,7 +104,7 @@ properties:
     syntax:
       content: 'days?: MailboxEnums.Days[] | string[];'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="Days:enum" />[] | string[]'
+        type: '<xref uid="outlook!Office.MailboxEnums.Days:enum" />[] | string[]'
   - name: firstDayOfWeek
     uid: 'outlook!Office.RecurrenceProperties#firstDayOfWeek:member'
     package: outlook!
@@ -119,7 +119,7 @@ properties:
     syntax:
       content: 'firstDayOfWeek?: MailboxEnums.Days | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="Days:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.Days:enum" /> | string'
   - name: interval
     uid: 'outlook!Office.RecurrenceProperties#interval:member'
     package: outlook!
@@ -143,7 +143,7 @@ properties:
     syntax:
       content: 'month?: MailboxEnums.Month | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="Month:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.Month:enum" /> | string'
   - name: weekNumber
     uid: 'outlook!Office.RecurrenceProperties#weekNumber:member'
     package: outlook!
@@ -157,4 +157,4 @@ properties:
     syntax:
       content: 'weekNumber?: MailboxEnums.WeekNumber | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="WeekNumber:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.WeekNumber:enum" /> | string'

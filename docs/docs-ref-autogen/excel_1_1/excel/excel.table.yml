@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'readonly columns: Excel.TableColumnCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TableColumnCollection:class" />'
+        type: '<xref uid="excel!Excel.TableColumnCollection:class" />'
   - name: context
     uid: 'excel!Excel.Table#context:member'
     package: excel!
@@ -49,7 +49,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: id
     uid: 'excel!Excel.Table#id:member'
     package: excel!
@@ -111,7 +111,7 @@ properties:
     syntax:
       content: 'readonly rows: Excel.TableRowCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TableRowCollection:class" />'
+        type: '<xref uid="excel!Excel.TableRowCollection:class" />'
   - name: showHeaders
     uid: 'excel!Excel.Table#showHeaders:member'
     package: excel!
@@ -250,7 +250,7 @@ methods:
     syntax:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -289,7 +289,7 @@ methods:
     syntax:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -328,7 +328,7 @@ methods:
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -367,7 +367,7 @@ methods:
     syntax:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -404,9 +404,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="TableLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.TableLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Table#load:member(2)'
@@ -427,7 +427,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: |-
 
 
@@ -494,7 +494,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Table#set:member(1)'
@@ -520,12 +520,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="TableUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.TableUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -544,7 +544,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Table:class" />'
+          type: '<xref uid="excel!Excel.Table:class" />'
       return:
         type: void
         description: ''
@@ -566,6 +566,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

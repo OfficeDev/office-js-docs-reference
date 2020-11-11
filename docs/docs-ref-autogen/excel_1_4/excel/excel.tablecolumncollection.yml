@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: count
     uid: 'excel!Excel.TableColumnCollection#count:member'
     package: excel!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.TableColumn[];'
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />[]'
+        type: '<xref uid="excel!Excel.TableColumn:class" />[]'
 methods:
   - name: 'add(index, values, name)'
     uid: 'excel!Excel.TableColumnCollection#add:member(1)'
@@ -100,7 +100,7 @@ methods:
             name will be used.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: |-
 
 
@@ -139,7 +139,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.TableColumnCollection#getItem:member(1)'
@@ -162,7 +162,7 @@ methods:
           description: Column Name or ID.
           type: number | string
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: |-
 
 
@@ -203,7 +203,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: |-
 
 
@@ -245,7 +245,7 @@ methods:
           description: Column Name or ID.
           type: number | string
       return:
-        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.TableColumnCollection#load:member(1)'
@@ -265,12 +265,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="TableColumnCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="TableColumnCollection:class" />'
+        type: '<xref uid="excel!Excel.TableColumnCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.TableColumnCollection#load:member(2)'
@@ -291,7 +291,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="TableColumnCollection:class" />'
+        type: '<xref uid="excel!Excel.TableColumnCollection:class" />'
         description: |-
 
 
@@ -335,9 +335,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="TableColumnCollection:class" />'
+        type: '<xref uid="excel!Excel.TableColumnCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.TableColumnCollection#toJSON:member(1)'
@@ -360,7 +360,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.TableColumnCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="TableColumnCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.TableColumnCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

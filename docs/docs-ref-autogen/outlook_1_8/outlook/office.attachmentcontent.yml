@@ -68,7 +68,7 @@ properties:
       content: 'format: MailboxEnums.AttachmentContentFormat | string;'
       return:
         type: >-
-          outlook!Office.MailboxEnums.<xref uid="AttachmentContentFormat:enum"
+          <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum"
           /> | string
         description: |-
 

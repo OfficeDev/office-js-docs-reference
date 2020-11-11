@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.ChartLegendEntryData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartLegendEntryData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartLegendEntryData:interface" />[]'

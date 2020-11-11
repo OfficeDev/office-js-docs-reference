@@ -22,4 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.StyleData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="StyleData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.StyleData:interface" />[]'

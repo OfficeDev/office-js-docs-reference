@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: count
     uid: 'excel!Excel.TableCollection#count:member'
     package: excel!
@@ -59,7 +59,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.Table[];'
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />[]'
+        type: '<xref uid="excel!Excel.Table:class" />[]'
 methods:
   - name: 'add(address, hasHeaders)'
     uid: 'excel!Excel.TableCollection#add:member(1)'
@@ -89,7 +89,7 @@ methods:
             1.1 / 1.3. Prior to ExcelApi 1.3, this parameter must be a string.
             Starting with Excel Api 1.3, this parameter may be a Range object or
             a string.\]
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: hasHeaders
           description: >-
             Boolean value that indicates whether the data being imported has
@@ -98,7 +98,7 @@ methods:
             header shifting the data down by one row.
           type: boolean
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: |-
 
 
@@ -139,7 +139,7 @@ methods:
           description: Name or ID of the table to be retrieved.
           type: string
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: |-
 
 
@@ -181,7 +181,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="Table:class" />'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: |-
 
 
@@ -219,12 +219,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="TableCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            <xref
+            uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
+            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
             />
       return:
-        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.TableCollection#load:member(2)'
@@ -245,7 +245,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
         description: |-
 
 
@@ -305,9 +305,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.TableCollection#toJSON:member(1)'
@@ -328,6 +328,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableCollectionData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableCollectionData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

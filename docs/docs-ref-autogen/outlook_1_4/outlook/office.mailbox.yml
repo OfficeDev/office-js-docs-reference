@@ -84,7 +84,7 @@ properties:
     syntax:
       content: 'diagnostics: Diagnostics;'
       return:
-        type: 'outlook!Office.<xref uid="Diagnostics:interface" />'
+        type: '<xref uid="outlook!Office.Diagnostics:interface" />'
   - name: ewsUrl
     uid: 'outlook!Office.Mailbox#ewsUrl:member'
     package: outlook!
@@ -180,15 +180,15 @@ properties:
         MessageRead & Appointment & AppointmentCompose & AppointmentRead;
       return:
         type: >-
-          outlook!Office.<xref uid="Item:interface" /> & outlook!Office.<xref
-          uid="ItemCompose:interface" /> & outlook!Office.<xref
-          uid="ItemRead:interface" /> & outlook!Office.<xref
-          uid="Message:interface" /> & outlook!Office.<xref
-          uid="MessageCompose:interface" /> & outlook!Office.<xref
-          uid="MessageRead:interface" /> & outlook!Office.<xref
-          uid="Appointment:interface" /> & outlook!Office.<xref
-          uid="AppointmentCompose:interface" /> & outlook!Office.<xref
-          uid="AppointmentRead:interface" />
+          <xref uid="outlook!Office.Item:interface" /> & <xref
+          uid="outlook!Office.ItemCompose:interface" /> & <xref
+          uid="outlook!Office.ItemRead:interface" /> & <xref
+          uid="outlook!Office.Message:interface" /> & <xref
+          uid="outlook!Office.MessageCompose:interface" /> & <xref
+          uid="outlook!Office.MessageRead:interface" /> & <xref
+          uid="outlook!Office.Appointment:interface" /> & <xref
+          uid="outlook!Office.AppointmentCompose:interface" /> & <xref
+          uid="outlook!Office.AppointmentRead:interface" />
   - name: userProfile
     uid: 'outlook!Office.Mailbox#userProfile:member'
     package: outlook!
@@ -206,7 +206,7 @@ properties:
     syntax:
       content: 'userProfile: UserProfile;'
       return:
-        type: 'outlook!Office.<xref uid="UserProfile:interface" />'
+        type: '<xref uid="outlook!Office.UserProfile:interface" />'
 methods:
   - name: 'convertToEwsId(itemId, restVersion)'
     uid: 'outlook!Office.Mailbox#convertToEwsId:member(1)'
@@ -282,7 +282,7 @@ methods:
           description: >-
             A value indicating the version of the Outlook REST API used to
             retrieve the item ID.
-          type: 'outlook!Office.MailboxEnums.<xref uid="RestVersion:enum" /> | string'
+          type: '<xref uid="outlook!Office.MailboxEnums.RestVersion:enum" /> | string'
       return:
         type: string
         description: ''
@@ -326,7 +326,7 @@ methods:
           description: A `Date` object.
           type: Date
       return:
-        type: 'outlook!Office.<xref uid="LocalClientTime:interface" />'
+        type: '<xref uid="outlook!Office.LocalClientTime:interface" />'
         description: ''
   - name: 'convertToRestId(itemId, restVersion)'
     uid: 'outlook!Office.Mailbox#convertToRestId:member(1)'
@@ -427,7 +427,7 @@ methods:
           description: >-
             A value indicating the version of the Outlook REST API that the
             converted ID will be used with.
-          type: 'outlook!Office.MailboxEnums.<xref uid="RestVersion:enum" /> | string'
+          type: '<xref uid="outlook!Office.MailboxEnums.RestVersion:enum" /> | string'
       return:
         type: string
         description: ''
@@ -489,7 +489,7 @@ methods:
       parameters:
         - id: input
           description: The local time value to convert.
-          type: 'outlook!Office.<xref uid="LocalClientTime:interface" />'
+          type: '<xref uid="outlook!Office.LocalClientTime:interface" />'
       return:
         type: Date
         description: A Date object with the time expressed in UTC.
@@ -701,7 +701,7 @@ methods:
           description: >-
             An `AppointmentForm` describing the new appointment. All properties
             are optional.
-          type: 'outlook!Office.<xref uid="AppointmentForm:interface" />'
+          type: '<xref uid="outlook!Office.AppointmentForm:interface" />'
       return:
         type: void
         description: ''
@@ -819,7 +819,7 @@ methods:
             `asyncResult.error` and `asyncResult.diagnostics` properties may
             provide additional information.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
@@ -900,7 +900,7 @@ methods:
             `asyncResult.error` and `asyncResult.diagnostics` properties may
             provide additional information.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
@@ -1118,7 +1118,7 @@ methods:
             the XML of the EWS request provided as a string. If the result
             exceeds 1 MB in size, an error message is returned instead.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: level
     uid: 'word!Word.ListItem#level:member'
     package: word!
@@ -108,7 +108,7 @@ methods:
             The default is false that specifies to get the lowest ancestor.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: getAncestorOrNullObject(parentOnly)
     uid: 'word!Word.ListItem#getAncestorOrNullObject:member(1)'
@@ -134,7 +134,7 @@ methods:
             The default is false that specifies to get the lowest ancestor.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: getDescendants(directChildrenOnly)
     uid: 'word!Word.ListItem#getDescendants:member(1)'
@@ -160,7 +160,7 @@ methods:
             items.
           type: boolean
       return:
-        type: 'word!Word.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.ListItem#load:member(1)'
@@ -177,9 +177,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'word!Word.Interfaces.<xref uid="ListItemLoadOptions:interface" />'
+          type: '<xref uid="word!Word.Interfaces.ListItemLoadOptions:interface" />'
       return:
-        type: 'word!Word.<xref uid="ListItem:class" />'
+        type: '<xref uid="word!Word.ListItem:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.ListItem#load:member(2)'
@@ -200,7 +200,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="ListItem:class" />'
+        type: '<xref uid="word!Word.ListItem:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.ListItem#load:member(3)'
@@ -231,7 +231,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="ListItem:class" />'
+        type: '<xref uid="word!Word.ListItem:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.ListItem#set:member(1)'
@@ -257,12 +257,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'word!Word.Interfaces.<xref uid="ListItemUpdateData:interface" />'
+          type: '<xref uid="word!Word.Interfaces.ListItemUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -281,7 +281,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="ListItem:class" />'
+          type: '<xref uid="word!Word.ListItem:class" />'
       return:
         type: void
         description: ''
@@ -303,7 +303,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.ListItemData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ListItemData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.ListItemData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.ListItem#track:member(1)'
@@ -323,7 +323,7 @@ methods:
     syntax:
       content: 'track(): Word.ListItem;'
       return:
-        type: 'word!Word.<xref uid="ListItem:class" />'
+        type: '<xref uid="word!Word.ListItem:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.ListItem#untrack:member(1)'
@@ -342,6 +342,6 @@ methods:
     syntax:
       content: 'untrack(): Word.ListItem;'
       return:
-        type: 'word!Word.<xref uid="ListItem:class" />'
+        type: '<xref uid="word!Word.ListItem:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

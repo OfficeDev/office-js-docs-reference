@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: count
     uid: 'onenote!OneNote.ParagraphCollection#count:member'
     package: onenote!
@@ -58,7 +58,7 @@ properties:
     syntax:
       content: 'readonly items: OneNote.Paragraph[];'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />[]'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />[]'
 methods:
   - name: getItem(index)
     uid: 'onenote!OneNote.ParagraphCollection#getItem:member(1)'
@@ -84,7 +84,7 @@ methods:
             Paragraph object in the collection.
           type: number | string
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'onenote!OneNote.ParagraphCollection#getItemAt:member(1)'
@@ -107,7 +107,7 @@ methods:
           description: Index value of the object to be retrieved. Zero-indexed.
           type: number
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: |-
 
 
@@ -184,12 +184,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="ParagraphCollectionLoadOptions:interface" /> &
-            onenote!OneNote.Interfaces.<xref
-            uid="CollectionLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface"
+            /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.ParagraphCollection#load:member(2)'
@@ -210,7 +210,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
         description: |-
 
 
@@ -318,9 +318,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.ParagraphCollection#toJSON:member(1)'
@@ -343,8 +343,8 @@ methods:
       content: 'toJSON(): OneNote.Interfaces.ParagraphCollectionData;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="ParagraphCollectionData:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.ParagraphCollectionData:interface" />
         description: ''
   - name: track()
     uid: 'onenote!OneNote.ParagraphCollection#track:member(1)'
@@ -364,7 +364,7 @@ methods:
     syntax:
       content: 'track(): OneNote.ParagraphCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.ParagraphCollection#untrack:member(1)'
@@ -383,6 +383,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.ParagraphCollection;'
       return:
-        type: 'onenote!OneNote.<xref uid="ParagraphCollection:class" />'
+        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

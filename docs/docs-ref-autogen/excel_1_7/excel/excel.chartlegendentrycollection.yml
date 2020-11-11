@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.ChartLegendEntryCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.ChartLegendEntry[];'
       return:
-        type: 'excel!Excel.<xref uid="ChartLegendEntry:class" />[]'
+        type: '<xref uid="excel!Excel.ChartLegendEntry:class" />[]'
 methods:
   - name: getCount()
     uid: 'excel!Excel.ChartLegendEntryCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.ChartLegendEntryCollection#getItemAt:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: Index of the legendEntry to be retrieved.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="ChartLegendEntry:class" />'
+        type: '<xref uid="excel!Excel.ChartLegendEntry:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartLegendEntryCollection#load:member(1)'
@@ -103,12 +103,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ChartLegendEntryCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="ChartLegendEntryCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartLegendEntryCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ChartLegendEntryCollection#load:member(2)'
@@ -131,7 +131,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ChartLegendEntryCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartLegendEntryCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartLegendEntryCollection#load:member(3)'
@@ -154,9 +154,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="ChartLegendEntryCollection:class" />'
+        type: '<xref uid="excel!Excel.ChartLegendEntryCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'excel!Excel.ChartLegendEntryCollection#toJSON:member(1)'
@@ -179,7 +179,8 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ChartLegendEntryCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartLegendEntryCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface"
+          />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

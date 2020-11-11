@@ -29,7 +29,7 @@ properties:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartGridlinesFormatData:interface"
+          <xref uid="excel!Excel.Interfaces.ChartGridlinesFormatData:interface"
           />
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartGridlinesData#visible:member'

@@ -23,5 +23,6 @@ properties:
       content: 'items?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="RowColumnPivotHierarchyData:interface" />[]
+          <xref
+          uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface"
+          />[]

@@ -174,7 +174,7 @@ properties:
     syntax:
       content: 'rows?: Excel.Interfaces.RangeViewData[];'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="RangeViewData:interface" />[]'
+        type: '<xref uid="excel!Excel.Interfaces.RangeViewData:interface" />[]'
   - name: text
     uid: 'excel!Excel.Interfaces.RangeViewData#text:member'
     package: excel!
@@ -232,4 +232,4 @@ properties:
     syntax:
       content: 'valueTypes?: Excel.RangeValueType[][];'
       return:
-        type: 'excel!Excel.<xref uid="RangeValueType:enum" />[][]'
+        type: '<xref uid="excel!Excel.RangeValueType:enum" />[][]'

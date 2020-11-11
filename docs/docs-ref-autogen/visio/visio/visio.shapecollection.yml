@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: items
     uid: 'visio!Visio.ShapeCollection#items:member'
     package: visio!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Visio.Shape[];'
       return:
-        type: 'visio!Visio.<xref uid="Shape:class" />[]'
+        type: '<xref uid="visio!Visio.Shape:class" />[]'
 methods:
   - name: getCount()
     uid: 'visio!Visio.ShapeCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: |-
 
 
@@ -100,7 +100,7 @@ methods:
           description: Key is the Name or Index of the shape to be retrieved.
           type: number | string
       return:
-        type: 'visio!Visio.<xref uid="Shape:class" />'
+        type: '<xref uid="visio!Visio.Shape:class" />'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.ShapeCollection#load:member(1)'
@@ -141,12 +141,12 @@ methods:
         - id: option
           description: ''
           type: >-
-            visio!Visio.Interfaces.<xref
-            uid="ShapeCollectionLoadOptions:interface" /> &
-            visio!Visio.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            <xref
+            uid="visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface" />
+            & <xref uid="visio!Visio.Interfaces.CollectionLoadOptions:interface"
             />
       return:
-        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.ShapeCollection#load:member(2)'
@@ -167,7 +167,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
         description: ''
   - name: load(option)
     uid: 'visio!Visio.ShapeCollection#load:member(3)'
@@ -182,9 +182,9 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.ShapeCollection#toJSON:member(1)'
@@ -205,6 +205,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.ShapeCollectionData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeCollectionData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeCollectionData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

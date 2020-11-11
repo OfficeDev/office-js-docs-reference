@@ -36,7 +36,7 @@ properties:
     syntax:
       content: 'readonly application: Excel.Application;'
       return:
-        type: 'excel!Excel.<xref uid="Application:class" />'
+        type: '<xref uid="excel!Excel.Application:class" />'
   - name: bindings
     uid: 'excel!Excel.Workbook#bindings:member'
     package: excel!
@@ -54,7 +54,7 @@ properties:
     syntax:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
-        type: 'excel!Excel.<xref uid="BindingCollection:class" />'
+        type: '<xref uid="excel!Excel.BindingCollection:class" />'
   - name: context
     uid: 'excel!Excel.Workbook#context:member'
     package: excel!
@@ -68,7 +68,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: names
     uid: 'excel!Excel.Workbook#names:member'
     package: excel!
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
-        type: 'excel!Excel.<xref uid="NamedItemCollection:class" />'
+        type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
   - name: tables
     uid: 'excel!Excel.Workbook#tables:member'
     package: excel!
@@ -105,7 +105,7 @@ properties:
     syntax:
       content: 'readonly tables: Excel.TableCollection;'
       return:
-        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
   - name: worksheets
     uid: 'excel!Excel.Workbook#worksheets:member'
     package: excel!
@@ -123,7 +123,7 @@ properties:
     syntax:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetCollection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
 methods:
   - name: getSelectedRange()
     uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
@@ -143,7 +143,7 @@ methods:
     syntax:
       content: 'getSelectedRange(): Excel.Range;'
       return:
-        type: 'excel!Excel.<xref uid="Range:class" />'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -178,9 +178,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: 'excel!Excel.Interfaces.<xref uid="WorkbookLoadOptions:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorkbookLoadOptions:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.Workbook#load:member(2)'
@@ -201,7 +201,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.Workbook#load:member(3)'
@@ -232,7 +232,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Workbook#set:member(1)'
@@ -258,12 +258,12 @@ methods:
             A JavaScript object with properties that are structured
             isomorphically to the properties of the object on which the method
             is called.
-          type: 'excel!Excel.Interfaces.<xref uid="WorkbookUpdateData:interface" />'
+          type: '<xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />'
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -282,7 +282,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="Workbook:class" />'
+          type: '<xref uid="excel!Excel.Workbook:class" />'
       return:
         type: void
         description: ''
@@ -304,6 +304,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorkbookData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

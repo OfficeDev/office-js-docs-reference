@@ -23,7 +23,7 @@ properties:
     syntax:
       content: 'greenCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: redCircleWithBorder
     uid: 'excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member'
     package: excel!
@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'redCircleWithBorder: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'
   - name: yellowCircle
     uid: 'excel!Excel.ThreeTrafficLights1Set#yellowCircle:member'
     package: excel!
@@ -47,4 +47,4 @@ properties:
     syntax:
       content: 'yellowCircle: Icon;'
       return:
-        type: 'excel!Excel.<xref uid="Icon:interface" />'
+        type: '<xref uid="excel!Excel.Icon:interface" />'

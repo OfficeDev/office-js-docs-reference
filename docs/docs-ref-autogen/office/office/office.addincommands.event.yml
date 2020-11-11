@@ -120,7 +120,7 @@ properties:
     syntax:
       content: 'source:Source;'
       return:
-        type: 'office!Office.AddinCommands.<xref uid="Source:interface" />'
+        type: '<xref uid="office!Office.AddinCommands.Source:interface" />'
 methods:
   - name: completed(options)
     uid: 'office!Office.AddinCommands.Event#completed:member(1)'
@@ -214,8 +214,8 @@ methods:
             Optional. An object that specifies behavior options for when the
             event is completed.
           type: >-
-            office!Office.AddinCommands.<xref
-            uid="EventCompletedOptions:interface" />
+            <xref
+            uid="office!Office.AddinCommands.EventCompletedOptions:interface" />
       return:
         type: void
         description: ''

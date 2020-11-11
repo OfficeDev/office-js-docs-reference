@@ -26,7 +26,7 @@ properties:
     syntax:
       content: 'comments?: Visio.Interfaces.CommentData[];'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="CommentData:interface" />[]'
+        type: '<xref uid="visio!Visio.Interfaces.CommentData:interface" />[]'
   - name: hyperlinks
     uid: 'visio!Visio.Interfaces.ShapeData#hyperlinks:member'
     package: visio!
@@ -44,7 +44,7 @@ properties:
     syntax:
       content: 'hyperlinks?: Visio.Interfaces.HyperlinkData[];'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="HyperlinkData:interface" />[]'
+        type: '<xref uid="visio!Visio.Interfaces.HyperlinkData:interface" />[]'
   - name: id
     uid: 'visio!Visio.Interfaces.ShapeData#id:member'
     package: visio!
@@ -117,7 +117,7 @@ properties:
     syntax:
       content: 'shapeDataItems?: Visio.Interfaces.ShapeDataItemData[];'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeDataItemData:interface" />[]'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeDataItemData:interface" />[]'
   - name: subShapes
     uid: 'visio!Visio.Interfaces.ShapeData#subShapes:member'
     package: visio!
@@ -135,7 +135,7 @@ properties:
     syntax:
       content: 'subShapes?: Visio.Interfaces.ShapeData[];'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeData:interface" />[]'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeData:interface" />[]'
   - name: text
     uid: 'visio!Visio.Interfaces.ShapeData#text:member'
     package: visio!
@@ -171,4 +171,4 @@ properties:
     syntax:
       content: 'view?: Visio.Interfaces.ShapeViewData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeViewData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeViewData:interface" />'

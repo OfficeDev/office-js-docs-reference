@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.LinkedDataTypeCollection#items:member'
     package: excel!
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.LinkedDataType[];'
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataType:class" />[]'
+        type: '<xref uid="excel!Excel.LinkedDataType:class" />[]'
 methods:
   - name: getCount()
     uid: 'excel!Excel.LinkedDataTypeCollection#getCount:member(1)'
@@ -59,7 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.LinkedDataTypeCollection#getItem:member(1)'
@@ -82,7 +82,7 @@ methods:
           description: The id of the linked data type.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataType:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataType:class" />'
         description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.LinkedDataTypeCollection#getItemAt:member(1)'
@@ -105,7 +105,7 @@ methods:
           description: The index of the linked data type object in the collection.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataType:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataType:class" />'
         description: The linked data type at the given index.
   - name: getItemOrNullObject(key)
     uid: 'excel!Excel.LinkedDataTypeCollection#getItemOrNullObject:member(1)'
@@ -132,7 +132,7 @@ methods:
           description: The service id of the linked data type.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataType:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataType:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.LinkedDataTypeCollection#load:member(1)'
@@ -152,12 +152,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="LinkedDataTypeCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataTypeCollection:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataTypeCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.LinkedDataTypeCollection#load:member(2)'
@@ -178,7 +178,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataTypeCollection:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataTypeCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.LinkedDataTypeCollection#load:member(3)'
@@ -201,9 +201,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="LinkedDataTypeCollection:class" />'
+        type: '<xref uid="excel!Excel.LinkedDataTypeCollection:class" />'
         description: ''
   - name: requestRefreshAll()
     uid: 'excel!Excel.LinkedDataTypeCollection#requestRefreshAll:member(1)'
@@ -247,7 +247,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.LinkedDataTypeCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="LinkedDataTypeCollectionData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.LinkedDataTypeCollectionData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

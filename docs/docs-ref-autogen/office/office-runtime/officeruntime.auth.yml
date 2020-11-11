@@ -37,7 +37,7 @@ methods:
           description: >-
             Optional. Accepts an `AuthOptions` object to define sign-on
             behaviors.
-          type: 'office-runtime!OfficeRuntime.<xref uid="AuthOptions:interface" />'
+          type: '<xref uid="office-runtime!OfficeRuntime.AuthOptions:interface" />'
       return:
         type: Promise&lt;string&gt;
         description: Promise to the access token.

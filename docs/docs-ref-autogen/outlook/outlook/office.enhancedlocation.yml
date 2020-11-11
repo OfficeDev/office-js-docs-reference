@@ -91,13 +91,13 @@ methods:
       parameters:
         - id: locationIdentifiers
           description: The locations to be added to the current list of locations.
-          type: 'outlook!Office.<xref uid="LocationIdentifier:interface" />[]'
+          type: '<xref uid="outlook!Office.LocationIdentifier:interface" />[]'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -106,7 +106,7 @@ methods:
             Check the `status` property of `asyncResult` to determine if the
             call succeeded.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -172,15 +172,15 @@ methods:
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
             `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="LocationDetails:interface" />[]&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.LocationDetails:interface" />[]&gt;)
             =&gt; void
       return:
         type: void
@@ -251,13 +251,13 @@ methods:
       parameters:
         - id: locationIdentifiers
           description: The locations to be removed from the current list of locations.
-          type: 'outlook!Office.<xref uid="LocationIdentifier:interface" />[]'
+          type: '<xref uid="outlook!Office.LocationIdentifier:interface" />[]'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -266,7 +266,7 @@ methods:
             Check the `status` property of `asyncResult` to determine if the
             call succeeded.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: options
     uid: 'excel!Excel.WorksheetProtection#options:member'
     package: excel!
@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'readonly options: Excel.WorksheetProtectionOptions;'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetProtectionOptions:interface" />'
+        type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
   - name: protected
     uid: 'excel!Excel.WorksheetProtection#protected:member'
     package: excel!
@@ -84,10 +84,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="WorksheetProtectionLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="WorksheetProtection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.WorksheetProtection#load:member(2)'
@@ -108,7 +109,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="WorksheetProtection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.WorksheetProtection#load:member(3)'
@@ -139,7 +140,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="WorksheetProtection:class" />'
+        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
         description: ''
   - name: 'protect(options, password)'
     uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
@@ -162,7 +163,7 @@ methods:
       parameters:
         - id: options
           description: Optional. Sheet protection options.
-          type: 'excel!Excel.<xref uid="WorksheetProtectionOptions:interface" />'
+          type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
         - id: password
           description: Optional. Sheet protection password.
           type: string
@@ -233,7 +234,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.WorksheetProtectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="WorksheetProtectionData:interface"
+          <xref uid="excel!Excel.Interfaces.WorksheetProtectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

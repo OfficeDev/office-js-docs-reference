@@ -50,7 +50,7 @@ properties:
     syntax:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="AutoFilterLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface" />'
   - name: columns
     uid: 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
     package: excel!
@@ -69,8 +69,9 @@ properties:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableColumnCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
+          />
   - name: highlightFirstColumn
     uid: 'excel!Excel.Interfaces.TableLoadOptions#highlightFirstColumn:member'
     package: excel!
@@ -187,8 +188,9 @@ properties:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="TableRowCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface"
+          />
   - name: showBandedColumns
     uid: 'excel!Excel.Interfaces.TableLoadOptions#showBandedColumns:member'
     package: excel!
@@ -301,7 +303,7 @@ properties:
     syntax:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableSortLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableSortLoadOptions:interface" />'
   - name: style
     uid: 'excel!Excel.Interfaces.TableLoadOptions#style:member'
     package: excel!
@@ -341,7 +343,7 @@ properties:
     syntax:
       content: 'tableStyle?: Excel.Interfaces.TableStyleLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="TableStyleLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.TableStyleLoadOptions:interface" />'
   - name: worksheet
     uid: 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
     package: excel!
@@ -359,4 +361,4 @@ properties:
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

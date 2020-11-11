@@ -68,8 +68,8 @@ properties:
       content: 'binOptions?: Excel.Interfaces.ChartBinOptionsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartBinOptionsLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface" />
   - name: boxwhiskerOptions
     uid: >-
       excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#boxwhiskerOptions:member
@@ -90,8 +90,9 @@ properties:
       content: 'boxwhiskerOptions?: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartBoxwhiskerOptionsLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions:interface"
+          />
   - name: bubbleScale
     uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#bubbleScale:member'
     package: excel!
@@ -150,8 +151,8 @@ properties:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartDataLabelsLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />
   - name: doughnutHoleSize
     uid: >-
       excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#doughnutHoleSize:member
@@ -253,8 +254,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartSeriesFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface" />
   - name: gapWidth
     uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gapWidth:member'
     package: excel!
@@ -553,8 +554,8 @@ properties:
       content: 'mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartMapOptionsLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface" />
   - name: markerBackgroundColor
     uid: >-
       excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerBackgroundColor:member
@@ -730,8 +731,9 @@ properties:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPointsCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface"
+          />
   - name: secondPlotSize
     uid: >-
       excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#secondPlotSize:member
@@ -907,7 +909,7 @@ properties:
       content: 'xErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartErrorBarsLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface"
           />
   - name: yErrorBars
     uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member'
@@ -928,5 +930,5 @@ properties:
       content: 'yErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="ChartErrorBarsLoadOptions:interface"
+          <xref uid="excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface"
           />

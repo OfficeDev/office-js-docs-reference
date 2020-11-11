@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
     uid: 'excel!Excel.PageBreakCollection#items:member'
     package: excel!
@@ -37,7 +37,7 @@ properties:
     syntax:
       content: 'readonly items: Excel.PageBreak[];'
       return:
-        type: 'excel!Excel.<xref uid="PageBreak:class" />[]'
+        type: '<xref uid="excel!Excel.PageBreak:class" />[]'
 methods:
   - name: add(pageBreakRange)
     uid: 'excel!Excel.PageBreakCollection#add:member(1)'
@@ -58,9 +58,9 @@ methods:
       parameters:
         - id: pageBreakRange
           description: The range immediately after the page break to be added.
-          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
-        type: 'excel!Excel.<xref uid="PageBreak:class" />'
+        type: '<xref uid="excel!Excel.PageBreak:class" />'
         description: >-
 
 
@@ -96,7 +96,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(index)
     uid: 'excel!Excel.PageBreakCollection#getItem:member(1)'
@@ -119,7 +119,7 @@ methods:
           description: Index of the page break.
           type: number
       return:
-        type: 'excel!Excel.<xref uid="PageBreak:class" />'
+        type: '<xref uid="excel!Excel.PageBreak:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.PageBreakCollection#load:member(1)'
@@ -139,12 +139,12 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="PageBreakCollectionLoadOptions:interface" /> &
-            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
-            />
+            <xref
+            uid="excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: 'excel!Excel.<xref uid="PageBreakCollection:class" />'
+        type: '<xref uid="excel!Excel.PageBreakCollection:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.PageBreakCollection#load:member(2)'
@@ -165,7 +165,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="PageBreakCollection:class" />'
+        type: '<xref uid="excel!Excel.PageBreakCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.PageBreakCollection#load:member(3)'
@@ -188,9 +188,9 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: 'excel!Excel.<xref uid="PageBreakCollection:class" />'
+        type: '<xref uid="excel!Excel.PageBreakCollection:class" />'
         description: ''
   - name: removePageBreaks()
     uid: 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
@@ -232,7 +232,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.PageBreakCollectionData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref uid="PageBreakCollectionData:interface"
+          <xref uid="excel!Excel.Interfaces.PageBreakCollectionData:interface"
           />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

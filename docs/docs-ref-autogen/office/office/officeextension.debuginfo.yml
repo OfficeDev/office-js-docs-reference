@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'innerError?: DebugInfo | string;'
       return:
-        type: 'office!OfficeExtension.<xref uid="DebugInfo:interface" /> | string'
+        type: '<xref uid="office!OfficeExtension.DebugInfo:interface" /> | string'
   - name: message
     uid: 'office!OfficeExtension.DebugInfo#message:member'
     package: office!

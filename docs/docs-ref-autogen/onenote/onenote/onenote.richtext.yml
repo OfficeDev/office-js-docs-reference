@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.RichText#id:member'
     package: onenote!
@@ -82,7 +82,7 @@ properties:
     syntax:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
-        type: 'onenote!OneNote.<xref uid="Paragraph:class" />'
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
   - name: text
     uid: 'onenote!OneNote.RichText#text:member'
     package: onenote!
@@ -119,7 +119,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: The html of the rich text
   - name: load(option)
     uid: 'onenote!OneNote.RichText#load:member(1)'
@@ -158,10 +158,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref uid="RichTextLoadOptions:interface"
+            <xref uid="onenote!OneNote.Interfaces.RichTextLoadOptions:interface"
             />
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.RichText#load:member(2)'
@@ -182,7 +182,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: |-
 
 
@@ -270,7 +270,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: ''
   - name: toJSON()
     uid: 'onenote!OneNote.RichText#toJSON:member(1)'
@@ -290,7 +290,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.RichTextData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="RichTextData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.RichTextData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.RichText#track:member(1)'
@@ -310,7 +310,7 @@ methods:
     syntax:
       content: 'track(): OneNote.RichText;'
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.RichText#untrack:member(1)'
@@ -329,6 +329,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.RichText;'
       return:
-        type: 'onenote!OneNote.<xref uid="RichText:class" />'
+        type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

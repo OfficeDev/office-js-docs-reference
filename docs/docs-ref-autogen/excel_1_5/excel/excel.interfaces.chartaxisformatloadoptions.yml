@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartFontLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontLoadOptions:interface" />'
   - name: line
     uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member'
     package: excel!
@@ -67,5 +67,5 @@ properties:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartLineFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />

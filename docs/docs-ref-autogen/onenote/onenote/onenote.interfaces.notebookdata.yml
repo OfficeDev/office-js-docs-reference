@@ -117,7 +117,7 @@ properties:
     syntax:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="SectionGroupData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionGroupData:interface" />[]'
   - name: sections
     uid: 'onenote!OneNote.Interfaces.NotebookData#sections:member'
     package: onenote!
@@ -135,4 +135,4 @@ properties:
     syntax:
       content: 'sections?: OneNote.Interfaces.SectionData[];'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="SectionData:interface" />[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionData:interface" />[]'

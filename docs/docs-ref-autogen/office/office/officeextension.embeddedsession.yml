@@ -25,7 +25,7 @@ constructors:
           type: string
         - id: options
           description: ''
-          type: 'office!OfficeExtension.<xref uid="EmbeddedOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.EmbeddedOptions:interface" />'
 methods:
   - name: init()
     uid: 'office!OfficeExtension.EmbeddedSession#init:member(1)'

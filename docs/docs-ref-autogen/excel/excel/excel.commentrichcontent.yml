@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'mentions?: Excel.CommentMention[];'
       return:
-        type: 'excel!Excel.<xref uid="CommentMention:interface" />[]'
+        type: '<xref uid="excel!Excel.CommentMention:interface" />[]'
         description: >-
 
 

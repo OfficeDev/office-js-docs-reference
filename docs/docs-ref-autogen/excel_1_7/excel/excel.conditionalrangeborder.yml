@@ -47,7 +47,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: sideIndex
     uid: 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
     package: excel!
@@ -69,7 +69,7 @@ properties:
         "EdgeBottom" | "EdgeLeft" | "EdgeRight";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalRangeBorderIndex:enum" /> |
+          <xref uid="excel!Excel.ConditionalRangeBorderIndex:enum" /> |
           "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
   - name: style
     uid: 'excel!Excel.ConditionalRangeBorder#style:member'
@@ -92,7 +92,7 @@ properties:
         "Dash" | "DashDot" | "DashDotDot" | "Dot";
       return:
         type: >-
-          excel!Excel.<xref uid="ConditionalRangeBorderLineStyle:enum" /> |
+          <xref uid="excel!Excel.ConditionalRangeBorderLineStyle:enum" /> |
           "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
 methods:
   - name: load(options)
@@ -113,10 +113,11 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalRangeBorderLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions:interface"
+            />
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'excel!Excel.ConditionalRangeBorder#load:member(2)'
@@ -137,7 +138,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ConditionalRangeBorder#load:member(3)'
@@ -168,7 +169,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ConditionalRangeBorder#set:member(1)'
@@ -195,13 +196,14 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            excel!Excel.Interfaces.<xref
-            uid="ConditionalRangeBorderUpdateData:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface"
+            />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -220,7 +222,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'excel!Excel.<xref uid="ConditionalRangeBorder:class" />'
+          type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
       return:
         type: void
         description: ''
@@ -244,7 +246,7 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderData;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ConditionalRangeBorderData:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

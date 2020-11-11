@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: height
     uid: 'word!Word.InlinePicture#height:member'
     package: word!
@@ -124,7 +124,7 @@ properties:
         "Emf" | "Pict" | "Pdf" | "Svg";
       return:
         type: >-
-          word!Word.<xref uid="ImageFormat:enum" /> | "Unsupported" |
+          <xref uid="word!Word.ImageFormat:enum" /> | "Unsupported" |
           "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" |
           "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
   - name: lockAspectRatio
@@ -163,7 +163,7 @@ properties:
     syntax:
       content: 'readonly paragraph: Word.Paragraph;'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
   - name: parentContentControl
     uid: 'word!Word.InlinePicture#parentContentControl:member'
     package: word!
@@ -182,7 +182,7 @@ properties:
     syntax:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: parentContentControlOrNullObject
     uid: 'word!Word.InlinePicture#parentContentControlOrNullObject:member'
     package: word!
@@ -201,7 +201,7 @@ properties:
     syntax:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
   - name: parentTable
     uid: 'word!Word.InlinePicture#parentTable:member'
     package: word!
@@ -220,7 +220,7 @@ properties:
     syntax:
       content: 'readonly parentTable: Word.Table;'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
   - name: parentTableCell
     uid: 'word!Word.InlinePicture#parentTableCell:member'
     package: word!
@@ -239,7 +239,7 @@ properties:
     syntax:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
   - name: parentTableCellOrNullObject
     uid: 'word!Word.InlinePicture#parentTableCellOrNullObject:member'
     package: word!
@@ -258,7 +258,7 @@ properties:
     syntax:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
-        type: 'word!Word.<xref uid="TableCell:class" />'
+        type: '<xref uid="word!Word.TableCell:class" />'
   - name: parentTableOrNullObject
     uid: 'word!Word.InlinePicture#parentTableOrNullObject:member'
     package: word!
@@ -277,7 +277,7 @@ properties:
     syntax:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
-        type: 'word!Word.<xref uid="Table:class" />'
+        type: '<xref uid="word!Word.Table:class" />'
   - name: width
     uid: 'word!Word.InlinePicture#width:member'
     package: word!
@@ -333,7 +333,7 @@ methods:
     syntax:
       content: 'getBase64ImageSrc(): OfficeExtension.ClientResult<string>;'
       return:
-        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: >-
 
 
@@ -377,7 +377,7 @@ methods:
     syntax:
       content: 'getNext(): Word.InlinePicture;'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: >-
 
 
@@ -436,7 +436,7 @@ methods:
     syntax:
       content: 'getNextOrNullObject(): Word.InlinePicture;'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: >-
 
 
@@ -497,9 +497,9 @@ methods:
       parameters:
         - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Start'', or ''End''.'
-          type: 'word!Word.<xref uid="RangeLocation:enum" />'
+          type: '<xref uid="word!Word.RangeLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: getRange(rangeLocationString)
     uid: 'word!Word.InlinePicture#getRange:member(2)'
@@ -525,7 +525,7 @@ methods:
           description: 'Optional. The range location can be ''Whole'', ''Start'', or ''End''.'
           type: '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertBreak(breakType, insertLocation)'
     uid: 'word!Word.InlinePicture#insertBreak:member(1)'
@@ -548,10 +548,10 @@ methods:
       parameters:
         - id: breakType
           description: Required. The break type to add.
-          type: 'word!Word.<xref uid="BreakType:enum" />'
+          type: '<xref uid="word!Word.BreakType:enum" />'
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: void
         description: ''
@@ -603,7 +603,7 @@ methods:
     syntax:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
-        type: 'word!Word.<xref uid="ContentControl:class" />'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
   - name: 'insertFileFromBase64(base64File, insertLocation)'
     uid: 'word!Word.InlinePicture#insertFileFromBase64:member(1)'
@@ -629,9 +629,9 @@ methods:
           type: string
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertFileFromBase64(base64File, insertLocationString)'
     uid: 'word!Word.InlinePicture#insertFileFromBase64:member(2)'
@@ -659,7 +659,7 @@ methods:
           description: Required. The value can be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertHtml(html, insertLocation)'
     uid: 'word!Word.InlinePicture#insertHtml:member(1)'
@@ -685,9 +685,9 @@ methods:
           type: string
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertHtml(html, insertLocationString)'
     uid: 'word!Word.InlinePicture#insertHtml:member(2)'
@@ -715,7 +715,7 @@ methods:
           description: Required. The value can be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     uid: 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(1)'
@@ -741,9 +741,9 @@ methods:
           type: string
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Before'', or ''After''.'
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
     uid: 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)'
@@ -772,7 +772,7 @@ methods:
           description: 'Required. The value can be ''Replace'', ''Before'', or ''After''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: 'insertOoxml(ooxml, insertLocation)'
     uid: 'word!Word.InlinePicture#insertOoxml:member(1)'
@@ -798,9 +798,9 @@ methods:
           type: string
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertOoxml(ooxml, insertLocationString)'
     uid: 'word!Word.InlinePicture#insertOoxml:member(2)'
@@ -828,7 +828,7 @@ methods:
           description: Required. The value can be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertParagraph(paragraphText, insertLocation)'
     uid: 'word!Word.InlinePicture#insertParagraph:member(1)'
@@ -854,9 +854,9 @@ methods:
           type: string
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: 'insertParagraph(paragraphText, insertLocationString)'
     uid: 'word!Word.InlinePicture#insertParagraph:member(2)'
@@ -884,7 +884,7 @@ methods:
           description: Required. The value can be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Paragraph:class" />'
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: 'insertText(text, insertLocation)'
     uid: 'word!Word.InlinePicture#insertText:member(1)'
@@ -910,9 +910,9 @@ methods:
           type: string
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
-          type: 'word!Word.<xref uid="InsertLocation:enum" />'
+          type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: 'insertText(text, insertLocationString)'
     uid: 'word!Word.InlinePicture#insertText:member(2)'
@@ -940,7 +940,7 @@ methods:
           description: Required. The value can be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
-        type: 'word!Word.<xref uid="Range:class" />'
+        type: '<xref uid="word!Word.Range:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.InlinePicture#load:member(1)'
@@ -960,10 +960,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref uid="InlinePictureLoadOptions:interface"
+            <xref uid="word!Word.Interfaces.InlinePictureLoadOptions:interface"
             />
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.InlinePicture#load:member(2)'
@@ -984,7 +984,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.InlinePicture#load:member(3)'
@@ -1015,7 +1015,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: select(selectionMode)
     uid: 'word!Word.InlinePicture#select:member(1)'
@@ -1038,7 +1038,7 @@ methods:
           description: >-
             Optional. The selection mode can be 'Select', 'Start', or 'End'.
             'Select' is the default.
-          type: 'word!Word.<xref uid="SelectionMode:enum" />'
+          type: '<xref uid="word!Word.SelectionMode:enum" />'
       return:
         type: void
         description: ''
@@ -1092,13 +1092,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            word!Word.Interfaces.<xref uid="InlinePictureUpdateData:interface"
+            <xref uid="word!Word.Interfaces.InlinePictureUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1117,7 +1117,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="InlinePicture:class" />'
+          type: '<xref uid="word!Word.InlinePicture:class" />'
       return:
         type: void
         description: ''
@@ -1140,7 +1140,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.InlinePictureData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="InlinePictureData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.InlinePicture#track:member(1)'
@@ -1160,7 +1160,7 @@ methods:
     syntax:
       content: 'track(): Word.InlinePicture;'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.InlinePicture#untrack:member(1)'
@@ -1179,6 +1179,6 @@ methods:
     syntax:
       content: 'untrack(): Word.InlinePicture;'
       return:
-        type: 'word!Word.<xref uid="InlinePicture:class" />'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

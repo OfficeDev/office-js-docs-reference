@@ -100,7 +100,7 @@ properties:
       content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref uid="NotebookLoadOptions:interface"
+          <xref uid="onenote!OneNote.Interfaces.NotebookLoadOptions:interface"
           />
   - name: parentSectionGroup
     uid: >-
@@ -122,8 +122,8 @@ properties:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionGroupLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface" />
   - name: parentSectionGroupOrNull
     uid: >-
       onenote!OneNote.Interfaces.SectionGroupLoadOptions#parentSectionGroupOrNull:member
@@ -144,8 +144,8 @@ properties:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionGroupLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface" />
   - name: sectionGroups
     uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions#sectionGroups:member'
     package: onenote!
@@ -164,8 +164,9 @@ properties:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionGroupCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface"
+          />
   - name: sections
     uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions#sections:member'
     package: onenote!
@@ -184,5 +185,6 @@ properties:
       content: 'sections?: OneNote.Interfaces.SectionCollectionLoadOptions;'
       return:
         type: >-
-          onenote!OneNote.Interfaces.<xref
-          uid="SectionCollectionLoadOptions:interface" />
+          <xref
+          uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface"
+          />

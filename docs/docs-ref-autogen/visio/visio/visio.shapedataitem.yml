@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+        type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: format
     uid: 'visio!Visio.ShapeDataItem#format:member'
     package: visio!
@@ -166,10 +166,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            visio!Visio.Interfaces.<xref
-            uid="ShapeDataItemLoadOptions:interface" />
+            <xref
+            uid="visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface" />
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItem:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'visio!Visio.ShapeDataItem#load:member(2)'
@@ -190,7 +190,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItem:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.ShapeDataItem#load:member(3)'
@@ -215,7 +215,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />'
+        type: '<xref uid="visio!Visio.ShapeDataItem:class" />'
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.ShapeDataItem#toJSON:member(1)'
@@ -236,6 +236,6 @@ methods:
     syntax:
       content: 'toJSON(): Visio.Interfaces.ShapeDataItemData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="ShapeDataItemData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeDataItemData:interface" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

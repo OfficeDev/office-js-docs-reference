@@ -28,4 +28,4 @@ properties:
     syntax:
       content: 'highlight?: Visio.Highlight;'
       return:
-        type: 'visio!Visio.<xref uid="Highlight:interface" />'
+        type: '<xref uid="visio!Visio.Highlight:interface" />'

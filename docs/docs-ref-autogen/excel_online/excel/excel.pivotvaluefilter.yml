@@ -60,7 +60,7 @@ properties:
         "LessThanOrEqualTo" | "Between" | "TopN" | "BottomN";
       return:
         type: >-
-          excel!Excel.<xref uid="ValueFilterCondition:enum" /> | "Unknown" |
+          <xref uid="excel!Excel.ValueFilterCondition:enum" /> | "Unknown" |
           "Equals" | "GreaterThan" | "GreaterThanOrEqualTo" | "LessThan" |
           "LessThanOrEqualTo" | "Between" | "TopN" | "BottomN"
   - name: exclusive
@@ -121,7 +121,7 @@ properties:
         "Sum";
       return:
         type: >-
-          excel!Excel.<xref uid="TopBottomSelectionType:enum" /> | "Items" |
+          <xref uid="excel!Excel.TopBottomSelectionType:enum" /> | "Items" |
           "Percent" | "Sum"
   - name: threshold
     uid: 'excel!Excel.PivotValueFilter#threshold:member'

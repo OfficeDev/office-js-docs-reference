@@ -49,8 +49,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartTitleFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartTitleFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface" />
   - name: overlay
     uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member'
     package: excel!

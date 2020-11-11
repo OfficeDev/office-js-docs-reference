@@ -65,7 +65,7 @@ properties:
     syntax:
       content: 'levelTypes?: Word.ListLevelType[];'
       return:
-        type: 'word!Word.<xref uid="ListLevelType:enum" />[]'
+        type: '<xref uid="word!Word.ListLevelType:enum" />[]'
   - name: paragraphs
     uid: 'word!Word.Interfaces.ListData#paragraphs:member'
     package: word!
@@ -83,4 +83,4 @@ properties:
     syntax:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
-        type: 'word!Word.Interfaces.<xref uid="ParagraphData:interface" />[]'
+        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'

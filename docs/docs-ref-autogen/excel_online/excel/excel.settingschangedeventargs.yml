@@ -33,4 +33,4 @@ properties:
     syntax:
       content: 'settings: Excel.SettingCollection;'
       return:
-        type: 'excel!Excel.<xref uid="SettingCollection:class" />'
+        type: '<xref uid="excel!Excel.SettingCollection:class" />'

@@ -69,4 +69,4 @@ properties:
               document.getElementById('message').innerText += message; 
           }
           ```
-extends: 'office!Office.<xref uid="Binding:interface" />'
+extends: '<xref uid="office!Office.Binding:interface" />'

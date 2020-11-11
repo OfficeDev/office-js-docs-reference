@@ -83,8 +83,8 @@ properties:
       content: 'onMessage?: (message: string, dialog?: Dialog) => void;'
       return:
         type: >-
-          (message: string, dialog?: office-runtime!OfficeRuntime.<xref
-          uid="Dialog:interface" />) =&gt; void
+          (message: string, dialog?: <xref
+          uid="office-runtime!OfficeRuntime.Dialog:interface" />) =&gt; void
   - name: onRuntimeError
     uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member'
     package: office-runtime!
@@ -102,8 +102,8 @@ properties:
       content: 'onRuntimeError?: (error: Error, dialog?: Dialog) => void;'
       return:
         type: >-
-          (error: Error, dialog?: office-runtime!OfficeRuntime.<xref
-          uid="Dialog:interface" />) =&gt; void
+          (error: Error, dialog?: <xref
+          uid="office-runtime!OfficeRuntime.Dialog:interface" />) =&gt; void
   - name: width
     uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member'
     package: office-runtime!

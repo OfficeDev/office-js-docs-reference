@@ -106,7 +106,7 @@ properties:
     syntax:
       content: 'beginConnectedShape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
   - name: beginConnectedSite
     uid: 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedSite:member'
     package: excel!
@@ -216,7 +216,7 @@ properties:
     syntax:
       content: 'endConnectedShape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
   - name: endConnectedSite
     uid: 'excel!Excel.Interfaces.LineLoadOptions#endConnectedSite:member'
     package: excel!
@@ -308,4 +308,4 @@ properties:
     syntax:
       content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'

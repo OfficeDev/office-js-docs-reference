@@ -96,7 +96,7 @@ properties:
     syntax:
       content: 'attachments: AttachmentDetails[];'
       return:
-        type: 'outlook!Office.<xref uid="AttachmentDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.AttachmentDetails:interface" />[]'
   - name: body
     uid: 'outlook!Office.MessageRead#body:member'
     package: outlook!
@@ -148,7 +148,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: 'outlook!Office.<xref uid="Body:interface" />'
+        type: '<xref uid="outlook!Office.Body:interface" />'
   - name: cc
     uid: 'outlook!Office.MessageRead#cc:member'
     package: outlook!
@@ -207,7 +207,7 @@ properties:
     syntax:
       content: 'cc: EmailAddressDetails[];'
       return:
-        type: 'outlook!Office.<xref uid="EmailAddressDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />[]'
   - name: conversationId
     uid: 'outlook!Office.MessageRead#conversationId:member'
     package: outlook!
@@ -421,7 +421,7 @@ properties:
     syntax:
       content: 'from: EmailAddressDetails;'
       return:
-        type: 'outlook!Office.<xref uid="EmailAddressDetails:interface" />'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />'
   - name: internetMessageId
     uid: 'outlook!Office.MessageRead#internetMessageId:member'
     package: outlook!
@@ -628,7 +628,7 @@ properties:
     syntax:
       content: 'itemType: MailboxEnums.ItemType | string;'
       return:
-        type: 'outlook!Office.MailboxEnums.<xref uid="ItemType:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.ItemType:enum" /> | string'
   - name: location
     uid: 'outlook!Office.MessageRead#location:member'
     package: outlook!
@@ -833,7 +833,7 @@ properties:
     syntax:
       content: 'notificationMessages: NotificationMessages;'
       return:
-        type: 'outlook!Office.<xref uid="NotificationMessages:interface" />'
+        type: '<xref uid="outlook!Office.NotificationMessages:interface" />'
   - name: sender
     uid: 'outlook!Office.MessageRead#sender:member'
     package: outlook!
@@ -880,7 +880,7 @@ properties:
     syntax:
       content: 'sender: EmailAddressDetails;'
       return:
-        type: 'outlook!Office.<xref uid="EmailAddressDetails:interface" />'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />'
   - name: start
     uid: 'outlook!Office.MessageRead#start:member'
     package: outlook!
@@ -1022,7 +1022,7 @@ properties:
     syntax:
       content: 'to: EmailAddressDetails[];'
       return:
-        type: 'outlook!Office.<xref uid="EmailAddressDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />[]'
 methods:
   - name: displayReplyAllForm(formData)
     uid: 'outlook!Office.MessageRead#displayReplyAllForm:member(1)'
@@ -1170,7 +1170,7 @@ methods:
             the reply form. The string is limited to 32 KB OR a
             [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
             that contains body or attachment data and a callback function.
-          type: 'string | outlook!Office.<xref uid="ReplyFormData:interface" />'
+          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
       return:
         type: void
         description: ''
@@ -1337,7 +1337,7 @@ methods:
             the reply form. The string is limited to 32 KB OR a
             [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
             that contains body or attachment data and a callback function.
-          type: 'string | outlook!Office.<xref uid="ReplyFormData:interface" />'
+          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
       return:
         type: void
         description: ''
@@ -1426,7 +1426,7 @@ methods:
     syntax:
       content: 'getEntities(): Entities;'
       return:
-        type: 'outlook!Office.<xref uid="Entities:interface" />'
+        type: '<xref uid="outlook!Office.Entities:interface" />'
         description: ''
   - name: getEntitiesByType(entityType)
     uid: 'outlook!Office.MessageRead#getEntitiesByType:member(1)'
@@ -1488,13 +1488,13 @@ methods:
             <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td>
             </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr>
             </table>
-          type: 'outlook!Office.MailboxEnums.<xref uid="EntityType:enum" /> | string'
+          type: '<xref uid="outlook!Office.MailboxEnums.EntityType:enum" /> | string'
       return:
         type: >-
-          (string | outlook!Office.<xref uid="Contact:interface" /> |
-          outlook!Office.<xref uid="MeetingSuggestion:interface" /> |
-          outlook!Office.<xref uid="PhoneNumber:interface" /> |
-          outlook!Office.<xref uid="TaskSuggestion:interface" />)[]
+          (string | <xref uid="outlook!Office.Contact:interface" /> | <xref
+          uid="outlook!Office.MeetingSuggestion:interface" /> | <xref
+          uid="outlook!Office.PhoneNumber:interface" /> | <xref
+          uid="outlook!Office.TaskSuggestion:interface" />)[]
         description: >-
           If the value passed in `entityType` is not a valid member of the
           `EntityType` enumeration, the method returns `null`<!-- -->. If no
@@ -1556,10 +1556,10 @@ methods:
           type: string
       return:
         type: >-
-          (string | outlook!Office.<xref uid="Contact:interface" /> |
-          outlook!Office.<xref uid="MeetingSuggestion:interface" /> |
-          outlook!Office.<xref uid="PhoneNumber:interface" /> |
-          outlook!Office.<xref uid="TaskSuggestion:interface" />)[]
+          (string | <xref uid="outlook!Office.Contact:interface" /> | <xref
+          uid="outlook!Office.MeetingSuggestion:interface" /> | <xref
+          uid="outlook!Office.PhoneNumber:interface" /> | <xref
+          uid="outlook!Office.TaskSuggestion:interface" />)[]
         description: >-
           If there is no `ItemHasKnownEntity` element in the manifest with a
           `FilterName` element value that matches the `name` parameter, the
@@ -1901,8 +1901,8 @@ methods:
             parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="CustomProperties:interface" />&gt;)
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;)
             =&gt; void
         - id: userContext
           description: >-
@@ -1913,4 +1913,4 @@ methods:
       return:
         type: void
         description: ''
-extends: 'outlook!Office.<xref uid="Message:interface" />'
+extends: '<xref uid="outlook!Office.Message:interface" />'

@@ -35,7 +35,7 @@ properties:
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type: 'word!Word.<xref uid="Body:class" />'
+        type: '<xref uid="word!Word.Body:class" />'
   - name: contentControls
     uid: 'word!Word.DocumentCreated#contentControls:member'
     package: word!
@@ -55,7 +55,7 @@ properties:
     syntax:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
-        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
   - name: context
     uid: 'word!Word.DocumentCreated#context:member'
     package: word!
@@ -69,7 +69,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'word!Word.<xref uid="RequestContext:class" />'
+        type: '<xref uid="word!Word.RequestContext:class" />'
   - name: properties
     uid: 'word!Word.DocumentCreated#properties:member'
     package: word!
@@ -87,7 +87,7 @@ properties:
     syntax:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
-        type: 'word!Word.<xref uid="DocumentProperties:class" />'
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
   - name: saved
     uid: 'word!Word.DocumentCreated#saved:member'
     package: word!
@@ -125,7 +125,7 @@ properties:
     syntax:
       content: 'readonly sections: Word.SectionCollection;'
       return:
-        type: 'word!Word.<xref uid="SectionCollection:class" />'
+        type: '<xref uid="word!Word.SectionCollection:class" />'
 methods:
   - name: load(options)
     uid: 'word!Word.DocumentCreated#load:member(1)'
@@ -145,10 +145,10 @@ methods:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            word!Word.Interfaces.<xref
-            uid="DocumentCreatedLoadOptions:interface" />
+            <xref
+            uid="word!Word.Interfaces.DocumentCreatedLoadOptions:interface" />
       return:
-        type: 'word!Word.<xref uid="DocumentCreated:class" />'
+        type: '<xref uid="word!Word.DocumentCreated:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'word!Word.DocumentCreated#load:member(2)'
@@ -169,7 +169,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'word!Word.<xref uid="DocumentCreated:class" />'
+        type: '<xref uid="word!Word.DocumentCreated:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
     uid: 'word!Word.DocumentCreated#load:member(3)'
@@ -200,7 +200,7 @@ methods:
                         expand?: string;
                     }
       return:
-        type: 'word!Word.<xref uid="DocumentCreated:class" />'
+        type: '<xref uid="word!Word.DocumentCreated:class" />'
         description: ''
   - name: open()
     uid: 'word!Word.DocumentCreated#open:member(1)'
@@ -266,13 +266,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            word!Word.Interfaces.<xref uid="DocumentCreatedUpdateData:interface"
+            <xref uid="word!Word.Interfaces.DocumentCreatedUpdateData:interface"
             />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -291,7 +291,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'word!Word.<xref uid="DocumentCreated:class" />'
+          type: '<xref uid="word!Word.DocumentCreated:class" />'
       return:
         type: void
         description: ''
@@ -314,7 +314,7 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.DocumentCreatedData;'
       return:
-        type: 'word!Word.Interfaces.<xref uid="DocumentCreatedData:interface" />'
+        type: '<xref uid="word!Word.Interfaces.DocumentCreatedData:interface" />'
         description: ''
   - name: track()
     uid: 'word!Word.DocumentCreated#track:member(1)'
@@ -334,7 +334,7 @@ methods:
     syntax:
       content: 'track(): Word.DocumentCreated;'
       return:
-        type: 'word!Word.<xref uid="DocumentCreated:class" />'
+        type: '<xref uid="word!Word.DocumentCreated:class" />'
         description: ''
   - name: untrack()
     uid: 'word!Word.DocumentCreated#untrack:member(1)'
@@ -353,6 +353,6 @@ methods:
     syntax:
       content: 'untrack(): Word.DocumentCreated;'
       return:
-        type: 'word!Word.<xref uid="DocumentCreated:class" />'
+        type: '<xref uid="word!Word.DocumentCreated:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

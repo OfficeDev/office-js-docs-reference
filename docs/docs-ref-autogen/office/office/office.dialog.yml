@@ -37,7 +37,7 @@ methods:
       parameters:
         - id: eventType
           description: Must be either DialogMessageReceived or DialogEventReceived.
-          type: 'office!Office.<xref uid="EventType:enum" />'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
             A function which accepts either an object with a `message` property,

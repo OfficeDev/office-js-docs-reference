@@ -28,4 +28,4 @@ properties:
     syntax:
       content: 'line?: Excel.Interfaces.ChartLineFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartLineFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartLineFormatData:interface" />'

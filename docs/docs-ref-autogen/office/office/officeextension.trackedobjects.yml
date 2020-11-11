@@ -37,7 +37,7 @@ methods:
       parameters:
         - id: object
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
       return:
         type: void
         description: ''
@@ -60,7 +60,7 @@ methods:
       parameters:
         - id: objects
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />[]'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
       return:
         type: void
         description: ''
@@ -89,7 +89,7 @@ methods:
       parameters:
         - id: object
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
       return:
         type: void
         description: ''
@@ -111,7 +111,7 @@ methods:
       parameters:
         - id: objects
           description: ''
-          type: 'office!OfficeExtension.<xref uid="ClientObject:class" />[]'
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
       return:
         type: void
         description: ''

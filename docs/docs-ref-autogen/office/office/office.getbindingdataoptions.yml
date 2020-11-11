@@ -38,7 +38,7 @@ properties:
     syntax:
       content: 'coercionType?: Office.CoercionType | string'
       return:
-        type: 'office!Office.<xref uid="CoercionType:enum" /> | string'
+        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
   - name: columnCount
     uid: 'office!Office.GetBindingDataOptions#columnCount:member'
     package: office!
@@ -67,7 +67,7 @@ properties:
     syntax:
       content: 'filterType?: Office.FilterType | string'
       return:
-        type: 'office!Office.<xref uid="FilterType:enum" /> | string'
+        type: '<xref uid="office!Office.FilterType:enum" /> | string'
   - name: rowCount
     uid: 'office!Office.GetBindingDataOptions#rowCount:member'
     package: office!
@@ -144,4 +144,4 @@ properties:
     syntax:
       content: 'valueFormat?: Office.ValueFormat | string'
       return:
-        type: 'office!Office.<xref uid="ValueFormat:enum" /> | string'
+        type: '<xref uid="office!Office.ValueFormat:enum" /> | string'

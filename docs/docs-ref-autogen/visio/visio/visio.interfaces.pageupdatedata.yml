@@ -28,4 +28,4 @@ properties:
     syntax:
       content: 'view?: Visio.Interfaces.PageViewUpdateData;'
       return:
-        type: 'visio!Visio.Interfaces.<xref uid="PageViewUpdateData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.PageViewUpdateData:interface" />'

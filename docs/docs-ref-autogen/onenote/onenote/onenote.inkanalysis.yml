@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
   - name: id
     uid: 'onenote!OneNote.InkAnalysis#id:member'
     package: onenote!
@@ -64,7 +64,7 @@ properties:
     syntax:
       content: 'readonly page: OneNote.Page;'
       return:
-        type: 'onenote!OneNote.<xref uid="Page:class" />'
+        type: '<xref uid="onenote!OneNote.Page:class" />'
 methods:
   - name: load(option)
     uid: 'onenote!OneNote.InkAnalysis#load:member(1)'
@@ -105,10 +105,10 @@ methods:
         - id: option
           description: ''
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="InkAnalysisLoadOptions:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysis:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysis:class" />'
         description: ''
   - name: load(propertyNames)
     uid: 'onenote!OneNote.InkAnalysis#load:member(2)'
@@ -129,7 +129,7 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysis:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysis:class" />'
         description: |-
 
 
@@ -180,7 +180,7 @@ methods:
             to load.
           type: '{ select?: string; expand?: string; }'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysis:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysis:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'onenote!OneNote.InkAnalysis#set:member(1)'
@@ -207,13 +207,13 @@ methods:
             isomorphically to the properties of the object on which the method
             is called.
           type: >-
-            onenote!OneNote.Interfaces.<xref
-            uid="InkAnalysisUpdateData:interface" />
+            <xref
+            uid="onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface" />
         - id: options
           description: >-
             Provides an option to suppress errors if the properties object tries
             to set any read-only properties.
-          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -232,7 +232,7 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: 'onenote!OneNote.<xref uid="InkAnalysis:class" />'
+          type: '<xref uid="onenote!OneNote.InkAnalysis:class" />'
       return:
         type: void
         description: ''
@@ -255,7 +255,7 @@ methods:
     syntax:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisData;'
       return:
-        type: 'onenote!OneNote.Interfaces.<xref uid="InkAnalysisData:interface" />'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.InkAnalysis#track:member(1)'
@@ -275,7 +275,7 @@ methods:
     syntax:
       content: 'track(): OneNote.InkAnalysis;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysis:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysis:class" />'
         description: ''
   - name: untrack()
     uid: 'onenote!OneNote.InkAnalysis#untrack:member(1)'
@@ -294,6 +294,6 @@ methods:
     syntax:
       content: 'untrack(): OneNote.InkAnalysis;'
       return:
-        type: 'onenote!OneNote.<xref uid="InkAnalysis:class" />'
+        type: '<xref uid="onenote!OneNote.InkAnalysis:class" />'
         description: ''
-extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -105,8 +105,8 @@ properties:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartSeriesFormatLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface" />
   - name: gapWidth
     uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#gapWidth:member'
     package: excel!
@@ -273,8 +273,9 @@ properties:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type: >-
-          excel!Excel.Interfaces.<xref
-          uid="ChartPointsCollectionLoadOptions:interface" />
+          <xref
+          uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface"
+          />
   - name: showShadow
     uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#showShadow:member'
     package: excel!

@@ -29,7 +29,7 @@ properties:
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisFormatData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisFormatData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisFormatData:interface" />'
   - name: majorGridlines
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorGridlines:member'
     package: excel!
@@ -48,7 +48,7 @@ properties:
     syntax:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartGridlinesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesData:interface" />'
   - name: majorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorUnit:member'
     package: excel!
@@ -126,7 +126,7 @@ properties:
     syntax:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartGridlinesData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesData:interface" />'
   - name: minorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorUnit:member'
     package: excel!
@@ -164,4 +164,4 @@ properties:
     syntax:
       content: 'title?: Excel.Interfaces.ChartAxisTitleData;'
       return:
-        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisTitleData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisTitleData:interface" />'

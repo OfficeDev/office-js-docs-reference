@@ -121,14 +121,14 @@ methods:
         - id: recipients
           description: The recipients to add to the recipients list.
           type: >-
-            (string | outlook!Office.<xref uid="EmailUser:interface" /> |
-            outlook!Office.<xref uid="EmailAddressDetails:interface" />)[]
+            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />)[]
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the
             following properties. `asyncContext`<!-- -->: Developers can provide
             any object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the
@@ -136,7 +136,7 @@ methods:
             `Office.AsyncResult`<!-- -->. If adding the recipients fails, the
             `asyncResult.error` property will contain an error code.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -185,7 +185,7 @@ methods:
             An object literal that contains one or more of the following
             properties. `asyncContext`<!-- -->: Developers can provide any
             object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback`
@@ -193,8 +193,8 @@ methods:
             `Office.AsyncResult`<!-- -->. The `value` property of the result is
             an array of `EmailAddressDetails` objects.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="EmailAddressDetails:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.EmailAddressDetails:interface"
             />[]&gt;) =&gt; void
       return:
         type: void
@@ -358,8 +358,8 @@ methods:
             `Office.AsyncResult`<!-- -->. The `value` property of the result is
             an array of `EmailAddressDetails` objects.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
-            />&lt;outlook!Office.<xref uid="EmailAddressDetails:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.EmailAddressDetails:interface"
             />[]&gt;) =&gt; void
       return:
         type: void
@@ -427,14 +427,14 @@ methods:
         - id: recipients
           description: The recipients to add to the recipients list.
           type: >-
-            (string | outlook!Office.<xref uid="EmailUser:interface" /> |
-            outlook!Office.<xref uid="EmailAddressDetails:interface" />)[]
+            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />)[]
         - id: options
           description: >-
             An object literal that contains one or more of the following
             properties. `asyncContext`<!-- -->: Developers can provide any
             object they wish to access in the callback method.
-          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback`
@@ -443,7 +443,7 @@ methods:
             `asyncResult.error` property will contain a code that indicates any
             error that occurred while adding the data.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void
@@ -647,8 +647,8 @@ methods:
         - id: recipients
           description: The recipients to add to the recipients list.
           type: >-
-            (string | outlook!Office.<xref uid="EmailUser:interface" /> |
-            outlook!Office.<xref uid="EmailAddressDetails:interface" />)[]
+            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />)[]
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback`
@@ -657,7 +657,7 @@ methods:
             `asyncResult.error` property will contain a code that indicates any
             error that occurred while adding the data.
           type: >-
-            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;void&gt;) =&gt; void
       return:
         type: void

@@ -69,4 +69,4 @@ properties:
       content: 'rowIndex?: number;'
       return:
         type: number
-extends: 'excel!Excel.<xref uid="SettableRowProperties:interface" />'
+extends: '<xref uid="excel!Excel.SettableRowProperties:interface" />'
