@@ -1,70 +1,174 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Application:class'
-    summary: |-
-      Represents the Excel application that manages the workbook.
+### YamlMime:TSType
+name: Excel.Application
+uid: 'excel!Excel.Application:class'
+package: excel!
+fullName: Excel.Application
+summary: >-
+  Represents the Excel application that manages the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Application
-    fullName: Excel.Application
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: calculationEngineVersion
+    uid: 'excel!Excel.Application#calculationEngineVersion:member'
     package: excel!
-    children:
-      - 'excel!Excel.Application#calculate:member(1)'
-      - 'excel!Excel.Application#calculate:member(2)'
-      - 'excel!Excel.Application#calculationEngineVersion:member'
-      - 'excel!Excel.Application#calculationMode:member'
-      - 'excel!Excel.Application#calculationState:member'
-      - 'excel!Excel.Application#context:member'
-      - 'excel!Excel.Application#iterativeCalculation:member'
-      - 'excel!Excel.Application#load:member(1)'
-      - 'excel!Excel.Application#load:member(2)'
-      - 'excel!Excel.Application#load:member(3)'
-      - 'excel!Excel.Application#set:member(1)'
-      - 'excel!Excel.Application#set:member(2)'
-      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
-      - 'excel!Excel.Application#toJSON:member(1)'
-  - uid: 'excel!Excel.Application#calculate:member(1)'
-    summary: |-
+    fullName: calculationEngineVersion
+    summary: >-
+      Returns the Excel calculation engine version used for the last full
+      recalculation.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type: number
+  - name: calculationMode
+    uid: 'excel!Excel.Application#calculationMode:member'
+    package: excel!
+    fullName: calculationMode
+    summary: >-
+      Returns the calculation mode used in the workbook, as defined by the
+      constants in Excel.CalculationMode. Possible values are: `Automatic`<!--
+      -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->,
+      where Excel controls recalculation but ignores changes in tables;
+      `Manual`<!-- -->, where calculation is done when the user requests it.
+
+
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for
+      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        calculationMode: Excel.CalculationMode | "Automatic" |
+        "AutomaticExceptTables" | "Manual";
+      return:
+        type: >-
+          excel!Excel.<xref uid="CalculationMode:enum" /> | "Automatic" |
+          "AutomaticExceptTables" | "Manual"
+  - name: calculationState
+    uid: 'excel!Excel.Application#calculationState:member'
+    package: excel!
+    fullName: calculationState
+    summary: >-
+      Returns the calculation state of the application. See
+      Excel.CalculationState for details.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly calculationState: Excel.CalculationState | "Done" |
+        "Calculating" | "Pending";
+      return:
+        type: >-
+          excel!Excel.<xref uid="CalculationState:enum" /> | "Done" |
+          "Calculating" | "Pending"
+  - name: context
+    uid: 'excel!Excel.Application#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: iterativeCalculation
+    uid: 'excel!Excel.Application#iterativeCalculation:member'
+    package: excel!
+    fullName: iterativeCalculation
+    summary: >-
+      Returns the Iterative Calculation settings. In Excel on Windows and Mac,
+      the settings will apply to the Excel Application. In Excel on the web and
+      other platforms, the settings will apply to the active workbook.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly iterativeCalculation: Excel.IterativeCalculation;'
+      return:
+        type: 'excel!Excel.<xref uid="IterativeCalculation:class" />'
+methods:
+  - name: calculate(calculationType)
+    uid: 'excel!Excel.Application#calculate:member(1)'
+    package: excel!
+    fullName: calculate(calculationType)
+    summary: >-
       Recalculate all currently opened workbooks in Excel.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculate(calculationType)
-    fullName: calculate(calculationType)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'calculate(calculationType: Excel.CalculationType): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: calculationType
-          description: Specifies the calculation type to use. See Excel.CalculationType for details.
-          type:
-            - 'excel!Excel.CalculationType:enum'
-  - uid: 'excel!Excel.Application#calculate:member(2)'
-    summary: |-
+          description: >-
+            Specifies the calculation type to use. See Excel.CalculationType for
+            details.
+          type: 'excel!Excel.<xref uid="CalculationType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: calculate(calculationTypeString)
+    uid: 'excel!Excel.Application#calculate:member(2)'
+    package: excel!
+    fullName: calculate(calculationTypeString)
+    summary: >-
       Recalculate all currently opened workbooks in Excel.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculate(calculationTypeString)
-    fullName: calculate(calculationTypeString)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;'
+      content: >-
+        calculate(calculationTypeString: "Recalculate" | "Full" |
+        "FullRebuild"): void;
+      parameters:
+        - id: calculationTypeString
+          description: >-
+            Specifies the calculation type to use. See Excel.CalculationType for
+            details.
+          type: '"Recalculate" | "Full" | "FullRebuild"'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -81,126 +185,49 @@ items:
               }
           });
           ```
-      parameters:
-        - id: calculationTypeString
-          description: Specifies the calculation type to use. See Excel.CalculationType for details.
-          type:
-            - '"Recalculate" | "Full" | "FullRebuild"'
-  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
-    summary: |-
-      Returns the Excel calculation engine version used for the last full recalculation.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculationEngineVersion
-    fullName: calculationEngineVersion
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly calculationEngineVersion: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Application#calculationMode:member'
-    summary: >-
-      Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
-      values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel
-      controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when the user
-      requests it.
-
-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculationMode
-    fullName: calculationMode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'calculationMode: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";'
-      return:
-        type:
-          - 'excel!Excel.Application#calculationMode~0:complex'
-  - uid: 'excel!Excel.Application#calculationState:member'
-    summary: |-
-      Returns the calculation state of the application. See Excel.CalculationState for details.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculationState
-    fullName: calculationState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly calculationState: Excel.CalculationState | "Done" | "Calculating" | "Pending";'
-      return:
-        type:
-          - 'excel!Excel.Application#calculationState~0:complex'
-  - uid: 'excel!Excel.Application#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.Application#iterativeCalculation:member'
-    summary: >-
-      Returns the Iterative Calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
-      Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: iterativeCalculation
-    fullName: iterativeCalculation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly iterativeCalculation: Excel.IterativeCalculation;'
-      return:
-        type:
-          - 'excel!Excel.IterativeCalculation:class'
-  - uid: 'excel!Excel.Application#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.Application#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;'
-      return:
-        type:
-          - 'excel!Excel.Application:class'
-        description: ''
+      content: >-
+        load(options?: Excel.Interfaces.ApplicationLoadOptions):
+        Excel.Application;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-  - uid: 'excel!Excel.Application#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref uid="ApplicationLoadOptions:interface"
+            />
+      return:
+        type: 'excel!Excel.<xref uid="Application:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Application#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Application;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.Application:class'
+        type: 'excel!Excel.<xref uid="Application:class" />'
         description: |-
 
 
@@ -220,127 +247,134 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Application#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Application#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.Application;
-      return:
-        type:
-          - 'excel!Excel.Application:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.Application#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'excel!Excel.<xref uid="Application:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.Application#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.Application): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.ApplicationUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            excel!Excel.Interfaces.<xref uid="ApplicationUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.Application#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.Application#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.Application): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.Application:class'
-  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-    summary: >-
-      Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
-      re-calc the workbook, to ensure that any dependencies are propagated.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: suspendApiCalculationUntilNextSync()
+          type: 'excel!Excel.<xref uid="Application:class" />'
+      return:
+        type: void
+        description: ''
+  - name: suspendApiCalculationUntilNextSync()
+    uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+    package: excel!
     fullName: suspendApiCalculationUntilNextSync()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Suspends calculation until the next "context.sync()" is called. Once set,
+      it is the developer's responsibility to re-calc the workbook, to ensure
+      that any dependencies are propagated.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'suspendApiCalculationUntilNextSync(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+  - name: suspendScreenUpdatingUntilNextSync()
+    uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+    package: excel!
+    fullName: suspendScreenUpdatingUntilNextSync()
     summary: >-
       Suspends screen updating until the next `context.sync()` is called.
 
 
-      *Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause
-      the Excel window to flicker.
+      *Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such
+      as in a loop). Repeated calls will cause the Excel window to flicker.
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: suspendScreenUpdatingUntilNextSync()
-    fullName: suspendScreenUpdatingUntilNextSync()
-    langs:
-      - typeScript
-    type: method
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'suspendScreenUpdatingUntilNextSync(): void;'
       return:
-        type:
-          - void
+        type: void
         description: >-
 
 
@@ -382,58 +416,24 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.Application#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+  - name: toJSON()
+    uid: 'excel!Excel.Application#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.Application
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ApplicationData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ApplicationData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="ApplicationData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.CalculationType:enum'
-    name: Excel.CalculationType
-  - uid: 'excel!Excel.Application#calculationMode~0:complex'
-    name: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
-    fullName: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
-    spec.typeScript:
-      - uid: 'excel!Excel.CalculationMode:enum'
-        name: Excel.CalculationMode
-        fullName: Excel.CalculationMode
-      - name: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
-        fullName: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
-  - uid: 'excel!Excel.Application#calculationState~0:complex'
-    name: Excel.CalculationState | "Done" | "Calculating" | "Pending"
-    fullName: Excel.CalculationState | "Done" | "Calculating" | "Pending"
-    spec.typeScript:
-      - uid: 'excel!Excel.CalculationState:enum'
-        name: Excel.CalculationState
-        fullName: Excel.CalculationState
-      - name: ' | "Done" | "Calculating" | "Pending"'
-        fullName: ' | "Done" | "Calculating" | "Pending"'
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.IterativeCalculation:class'
-    name: Excel.IterativeCalculation
-  - uid: 'excel!Excel.Application:class'
-    name: Excel.Application
-  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-    name: Excel.Interfaces.ApplicationLoadOptions
-  - uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
-    name: Interfaces.ApplicationUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.ApplicationData:interface'
-    name: Excel.Interfaces.ApplicationData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

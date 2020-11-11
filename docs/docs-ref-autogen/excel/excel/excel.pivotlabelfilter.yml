@@ -1,136 +1,142 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotLabelFilter:interface'
-    summary: >-
-      Configurable template for a label filter to apply to a PivotField. The `condition` defines what criteria need to
-      be set in order for the filter to operate.
+### YamlMime:TSType
+name: Excel.PivotLabelFilter
+uid: 'excel!Excel.PivotLabelFilter:interface'
+package: excel!
+fullName: Excel.PivotLabelFilter
+summary: >-
+  Configurable template for a label filter to apply to a PivotField. The
+  `condition` defines what criteria need to be set in order for the filter to
+  operate.
 
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotLabelFilter
-    fullName: Excel.PivotLabelFilter
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: comparator
+    uid: 'excel!Excel.PivotLabelFilter#comparator:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotLabelFilter#comparator:member'
-      - 'excel!Excel.PivotLabelFilter#condition:member'
-      - 'excel!Excel.PivotLabelFilter#exclusive:member'
-      - 'excel!Excel.PivotLabelFilter#lowerBound:member'
-      - 'excel!Excel.PivotLabelFilter#substring:member'
-      - 'excel!Excel.PivotLabelFilter#upperBound:member'
-  - uid: 'excel!Excel.PivotLabelFilter#comparator:member'
-    summary: >-
-      The comparator is the static value to which other values are compared. The type of comparison is defined by the
-      condition. Note: A numeric string is treated as a number when being compared against other numeric strings.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: comparator
     fullName: comparator
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The comparator is the static value to which other values are compared. The
+      type of comparison is defined by the condition. Note: A numeric string is
+      treated as a number when being compared against other numeric strings.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'comparator?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotLabelFilter#condition:member'
-    summary: |-
-      Specifies the condition for the filter, which defines the necessary filtering criteria.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: condition
+        type: string
+  - name: condition
+    uid: 'excel!Excel.PivotLabelFilter#condition:member'
+    package: excel!
     fullName: condition
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the condition for the filter, which defines the necessary
+      filtering criteria.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        condition: Excel.LabelFilterCondition | "Unknown" | "Equals" | "BeginsWith" | "EndsWith" | "Contains" |
-        "GreaterThan" | "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between";
+        condition: Excel.LabelFilterCondition | "Unknown" | "Equals" |
+        "BeginsWith" | "EndsWith" | "Contains" | "GreaterThan" |
+        "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between";
       return:
-        type:
-          - 'excel!Excel.PivotLabelFilter#condition~0:complex'
-  - uid: 'excel!Excel.PivotLabelFilter#exclusive:member'
-    summary: >-
-      If true, filter *excludes* items that meet criteria. The default is false (filter to include items that meet
-      criteria).
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: exclusive
+        type: >-
+          excel!Excel.<xref uid="LabelFilterCondition:enum" /> | "Unknown" |
+          "Equals" | "BeginsWith" | "EndsWith" | "Contains" | "GreaterThan" |
+          "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between"
+  - name: exclusive
+    uid: 'excel!Excel.PivotLabelFilter#exclusive:member'
+    package: excel!
     fullName: exclusive
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, filter *excludes* items that meet criteria. The default is false
+      (filter to include items that meet criteria).
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'exclusive?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotLabelFilter#lowerBound:member'
-    summary: >-
-      The lower-bound of the range for the Between filter condition. Note: A numeric string is treated as a number when
-      being compared against other numeric strings.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: lowerBound
+        type: boolean
+  - name: lowerBound
+    uid: 'excel!Excel.PivotLabelFilter#lowerBound:member'
+    package: excel!
     fullName: lowerBound
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The lower-bound of the range for the Between filter condition. Note: A
+      numeric string is treated as a number when being compared against other
+      numeric strings.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lowerBound?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotLabelFilter#substring:member'
-    summary: |-
-      The substring used for `BeginsWith`<!-- -->, `EndsWith`<!-- -->, and `Contains` filter conditions.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: substring
+        type: string
+  - name: substring
+    uid: 'excel!Excel.PivotLabelFilter#substring:member'
+    package: excel!
     fullName: substring
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The substring used for `BeginsWith`<!-- -->, `EndsWith`<!-- -->, and
+      `Contains` filter conditions.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'substring?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotLabelFilter#upperBound:member'
-    summary: >-
-      The upper-bound of the range for the Between filter condition. Note: A numeric string is treated as a number when
-      being compared against other numeric strings.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: upperBound
+        type: string
+  - name: upperBound
+    uid: 'excel!Excel.PivotLabelFilter#upperBound:member'
+    package: excel!
     fullName: upperBound
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The upper-bound of the range for the Between filter condition. Note: A
+      numeric string is treated as a number when being compared against other
+      numeric strings.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'upperBound?: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.PivotLabelFilter#condition~0:complex'
-    name: >-
-      Excel.LabelFilterCondition | "Unknown" | "Equals" | "BeginsWith" | "EndsWith" | "Contains" | "GreaterThan" |
-      "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between"
-    fullName: >-
-      Excel.LabelFilterCondition | "Unknown" | "Equals" | "BeginsWith" | "EndsWith" | "Contains" | "GreaterThan" |
-      "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between"
-    spec.typeScript:
-      - uid: 'excel!Excel.LabelFilterCondition:enum'
-        name: Excel.LabelFilterCondition
-        fullName: Excel.LabelFilterCondition
-      - name: ' | "Unknown" | "Equals" | "BeginsWith" | "EndsWith" | "Contains" | "GreaterThan" | "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between"'
-        fullName: ' | "Unknown" | "Equals" | "BeginsWith" | "EndsWith" | "Contains" | "GreaterThan" | "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between"'
+        type: string

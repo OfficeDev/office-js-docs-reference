@@ -1,43 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeCopyType:enum'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.RangeCopyType
-    fullName: Excel.RangeCopyType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.RangeCopyType
+uid: 'excel!Excel.RangeCopyType:enum'
+package: excel!
+fullName: Excel.RangeCopyType
+summary: >-
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: 'excel!Excel.RangeCopyType.all:member'
     package: excel!
-    children:
-      - 'excel!Excel.RangeCopyType.all:member'
-      - 'excel!Excel.RangeCopyType.formats:member'
-      - 'excel!Excel.RangeCopyType.formulas:member'
-      - 'excel!Excel.RangeCopyType.values:member'
-  - uid: 'excel!Excel.RangeCopyType.all:member'
-    name: all
-    fullName: all
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"All"'
-  - uid: 'excel!Excel.RangeCopyType.formats:member'
-    name: formats
-    fullName: formats
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Formats"'
-  - uid: 'excel!Excel.RangeCopyType.formulas:member'
-    name: formulas
-    fullName: formulas
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Formulas"'
-  - uid: 'excel!Excel.RangeCopyType.values:member'
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Values"'
+    summary: ''
+  - name: formats
+    uid: 'excel!Excel.RangeCopyType.formats:member'
+    package: excel!
+    summary: ''
+  - name: formulas
+    uid: 'excel!Excel.RangeCopyType.formulas:member'
+    package: excel!
+    summary: ''
+  - name: values
+    uid: 'excel!Excel.RangeCopyType.values:member'
+    package: excel!
+    summary: ''

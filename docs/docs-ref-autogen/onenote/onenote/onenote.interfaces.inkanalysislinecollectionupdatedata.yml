@@ -1,35 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the InkAnalysisLineCollection object, for use in
-      "inkAnalysisLineCollection.set(<!-- -->{ ... }<!-- -->)".
-    name: OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
-    fullName: OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
+uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
+summary: >-
+  An interface for updating data on the InkAnalysisLineCollection object, for
+  use in "inkAnalysisLineCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: >-
+      onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData#items:member
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisLineData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData#items~0:complex'
-    name: 'OneNote.Interfaces.InkAnalysisLineData[]'
-    fullName: 'OneNote.Interfaces.InkAnalysisLineData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
-        name: OneNote.Interfaces.InkAnalysisLineData
-        fullName: OneNote.Interfaces.InkAnalysisLineData
-      - name: '[]'
-        fullName: '[]'
+        type: >-
+          onenote!OneNote.Interfaces.<xref uid="InkAnalysisLineData:interface"
+          />[]

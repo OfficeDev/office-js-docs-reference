@@ -1,242 +1,242 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
-    summary: |-
-      Encapsulates the format properties for the chart trendline label.
+### YamlMime:TSType
+name: Excel.ChartTrendlineLabelFormat
+uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
+package: excel!
+fullName: Excel.ChartTrendlineLabelFormat
+summary: >-
+  Encapsulates the format properties for the chart trendline label.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartTrendlineLabelFormat
-    fullName: Excel.ChartTrendlineLabelFormat
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: border
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#border:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartTrendlineLabelFormat#border:member'
-      - 'excel!Excel.ChartTrendlineLabelFormat#context:member'
-      - 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
-      - 'excel!Excel.ChartTrendlineLabelFormat#font:member'
-      - 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
-      - 'excel!Excel.ChartTrendlineLabelFormat#load:member(2)'
-      - 'excel!Excel.ChartTrendlineLabelFormat#load:member(3)'
-      - 'excel!Excel.ChartTrendlineLabelFormat#set:member(1)'
-      - 'excel!Excel.ChartTrendlineLabelFormat#set:member(2)'
-      - 'excel!Excel.ChartTrendlineLabelFormat#toJSON:member(1)'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#border:member'
-    summary: |-
+    fullName: border
+    summary: >-
       Specifies the border format, which includes color, linestyle, and weight.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly border: Excel.ChartBorder;'
       return:
-        type:
-          - 'excel!Excel.ChartBorder:class'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+  - name: context
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: fill
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
+    package: excel!
+    fullName: fill
+    summary: >-
       Specifies the fill format of the current chart trendline label.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly fill: Excel.ChartFill;'
       return:
-        type:
-          - 'excel!Excel.ChartFill:class'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#font:member'
-    summary: |-
-      Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: font
+        type: 'excel!Excel.<xref uid="ChartFill:class" />'
+  - name: font
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#font:member'
+    package: excel!
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the font attributes (font name, font size, color, etc.) for a
+      chart trendline label.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly font: Excel.ChartFont;'
       return:
-        type:
-          - 'excel!Excel.ChartFont:class'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+        type: 'excel!Excel.<xref uid="ChartFont:class" />'
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions): Excel.ChartTrendlineLabelFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineLabelFormat:class'
-        description: ''
+      content: >-
+        load(options?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions):
+        Excel.ChartTrendlineLabelFormat;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineLabelFormat;'
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="ChartTrendlineLabelFormatLoadOptions:interface" />
       return:
-        type:
-          - 'excel!Excel.ChartTrendlineLabelFormat:class'
+        type: 'excel!Excel.<xref uid="ChartTrendlineLabelFormat:class" />'
         description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNames?: string | string[]):
+        Excel.ChartTrendlineLabelFormat;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="ChartTrendlineLabelFormat:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartTrendlineLabelFormat;
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineLabelFormat:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'excel!Excel.<xref uid="ChartTrendlineLabelFormat:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartTrendlineLabelFormat): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartTrendlineLabelFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.ChartTrendlineLabelFormatUpdateData,
+        options?: OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="ChartTrendlineLabelFormatUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.ChartTrendlineLabelFormat): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.ChartTrendlineLabelFormat:class'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ChartTrendlineLabelFormat object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelFormatData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original object.
-    name: toJSON()
+          type: 'excel!Excel.<xref uid="ChartTrendlineLabelFormat:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartTrendlineLabelFormat#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      Excel.ChartTrendlineLabelFormat object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `Excel.Interfaces.ChartTrendlineLabelFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineLabelFormatData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ChartTrendlineLabelFormatData:interface" />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.ChartBorder:class'
-    name: Excel.ChartBorder
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ChartFill:class'
-    name: Excel.ChartFill
-  - uid: 'excel!Excel.ChartFont:class'
-    name: Excel.ChartFont
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
-    name: Excel.ChartTrendlineLabelFormat
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface'
-    name: Interfaces.ChartTrendlineLabelFormatUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

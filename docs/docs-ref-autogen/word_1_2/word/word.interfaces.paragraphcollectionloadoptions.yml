@@ -1,271 +1,305 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
-    summary: |-
-      Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphCollectionLoadOptions
+uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ParagraphCollectionLoadOptions
+summary: >-
+  Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class)
+  objects.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.ParagraphCollectionLoadOptions
-    fullName: Word.Interfaces.ParagraphCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: WordApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member'
-      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#text:member'
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered',
-      'right', or 'justified'.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: alignment
+        type: boolean
+  - name: alignment
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member'
+    package: word!
     fullName: alignment
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the alignment for a
+      paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'alignment?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a
-      positive value to set a first-line indent, and use a negative value to set a hanging indent.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: firstLineIndent
+        type: boolean
+  - name: firstLineIndent
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member'
+    package: word!
     fullName: firstLineIndent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the value, in points, for a
+      first line or hanging indent. Use a positive value to set a first-line
+      indent, and use a negative value to set a hanging indent.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'firstLineIndent?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size,
-      color, and other properties.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: font
+        type: boolean
+  - name: font
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member'
+    package: word!
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the text format of the paragraph.
+      Use this to get and set font name, size, color, and other properties.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.FontLoadOptions:interface'
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: leftIndent
+        type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+  - name: leftIndent
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
+    package: word!
     fullName: leftIndent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the left indent value, in
+      points, for the paragraph.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'leftIndent?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the
-      Word UI, this value is divided by 12.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: lineSpacing
+        type: boolean
+  - name: lineSpacing
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member'
+    package: word!
     fullName: lineSpacing
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the line spacing, in points,
+      for the specified paragraph. In the Word UI, this value is divided by 12.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineSpacing?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: lineUnitAfter
+        type: boolean
+  - name: lineUnitAfter
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
+    package: word!
     fullName: lineUnitAfter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the amount of spacing, in
+      grid lines, after the paragraph.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineUnitAfter?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: lineUnitBefore
+        type: boolean
+  - name: lineUnitBefore
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
+    package: word!
     fullName: lineUnitBefore
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the amount of spacing, in
+      grid lines, before the paragraph.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineUnitBefore?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: outlineLevel
+        type: boolean
+  - name: outlineLevel
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
+    package: word!
     fullName: outlineLevel
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the outline level for the
+      paragraph.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'outlineLevel?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there
-      isn't a parent content control.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControl
+        type: boolean
+  - name: parentContentControl
+    uid: >-
+      word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member
+    package: word!
     fullName: parentContentControl
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains
+      the paragraph. Throws an error if there isn't a parent content control.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: rightIndent
+        type: >-
+          word!Word.Interfaces.<xref uid="ContentControlLoadOptions:interface"
+          />
+  - name: rightIndent
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
+    package: word!
     fullName: rightIndent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the right indent value, in
+      points, for the paragraph.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rightIndent?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: spaceAfter
+        type: boolean
+  - name: spaceAfter
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
+    package: word!
     fullName: spaceAfter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the spacing, in points,
+      after the paragraph.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'spaceAfter?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: spaceBefore
+        type: boolean
+  - name: spaceBefore
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
+    package: word!
     fullName: spaceBefore
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the spacing, in points,
+      before the paragraph.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'spaceBefore?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member'
+        type: boolean
+  - name: style
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member'
+    package: word!
+    fullName: style
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom
-      styles and localized style names. To use the built-in styles that are portable between locales, see the
+      For EACH ITEM in the collection: Gets or sets the style name for the
+      paragraph. Use this property for custom styles and localized style names.
+      To use the built-in styles that are portable between locales, see the
       "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#text:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: text
+        type: boolean
+  - name: text
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#text:member'
+    package: word!
     fullName: text
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the text of the paragraph.
+      Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: Word.Interfaces.FontLoadOptions
-  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+        type: boolean

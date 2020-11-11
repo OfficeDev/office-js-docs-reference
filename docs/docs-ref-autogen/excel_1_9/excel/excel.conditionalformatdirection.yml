@@ -1,30 +1,24 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalFormatDirection:enum'
-    summary: |-
-      Represents the direction for a selection.
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatDirection
+uid: 'excel!Excel.ConditionalFormatDirection:enum'
+package: excel!
+fullName: Excel.ConditionalFormatDirection
+summary: >-
+  Represents the direction for a selection.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalFormatDirection
-    fullName: Excel.ConditionalFormatDirection
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'excel!Excel.ConditionalFormatDirection.bottom:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalFormatDirection.bottom:member'
-      - 'excel!Excel.ConditionalFormatDirection.top:member'
-  - uid: 'excel!Excel.ConditionalFormatDirection.bottom:member'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bottom"'
-  - uid: 'excel!Excel.ConditionalFormatDirection.top:member'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Top"'
+    summary: ''
+  - name: top
+    uid: 'excel!Excel.ConditionalFormatDirection.top:member'
+    package: excel!
+    summary: ''

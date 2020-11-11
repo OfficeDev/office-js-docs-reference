@@ -1,50 +1,52 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
-    summary: 'An interface for updating data on the Document object, for use in `document.set({ ... })`<!-- -->.'
-    name: Word.Interfaces.DocumentUpdateData
-    fullName: Word.Interfaces.DocumentUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.DocumentUpdateData
+uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.DocumentUpdateData
+summary: >-
+  An interface for updating data on the Document object, for use in
+  `document.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'word!Word.Interfaces.DocumentUpdateData#body:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.DocumentUpdateData#body:member'
-      - 'word!Word.Interfaces.DocumentUpdateData#properties:member'
-  - uid: 'word!Word.Interfaces.DocumentUpdateData#body:member'
-    summary: >-
-      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc..
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: body
     fullName: body
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the body object of the document. The body is the text that excludes
+      headers, footers, footnotes, textboxes, etc..
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
-        type:
-          - 'word!Word.Interfaces.BodyUpdateData:interface'
-  - uid: 'word!Word.Interfaces.DocumentUpdateData#properties:member'
-    summary: |-
+        type: 'word!Word.Interfaces.<xref uid="BodyUpdateData:interface" />'
+  - name: properties
+    uid: 'word!Word.Interfaces.DocumentUpdateData#properties:member'
+    package: word!
+    fullName: properties
+    summary: >-
       Gets the properties of the document.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: properties
-    fullName: properties
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
-        type:
-          - 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
-references:
-  - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    name: Word.Interfaces.BodyUpdateData
-  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: Word.Interfaces.DocumentPropertiesUpdateData
+        type: >-
+          word!Word.Interfaces.<xref
+          uid="DocumentPropertiesUpdateData:interface" />

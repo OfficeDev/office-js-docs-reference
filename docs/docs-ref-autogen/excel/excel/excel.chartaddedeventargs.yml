@@ -1,88 +1,89 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAddedEventArgs:interface'
-    summary: |-
-      Provides information about the chart that raised the Added event.
+### YamlMime:TSType
+name: Excel.ChartAddedEventArgs
+uid: 'excel!Excel.ChartAddedEventArgs:interface'
+package: excel!
+fullName: Excel.ChartAddedEventArgs
+summary: >-
+  Provides information about the chart that raised the Added event.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartAddedEventArgs
-    fullName: Excel.ChartAddedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: chartId
+    uid: 'excel!Excel.ChartAddedEventArgs#chartId:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartAddedEventArgs#chartId:member'
-      - 'excel!Excel.ChartAddedEventArgs#source:member'
-      - 'excel!Excel.ChartAddedEventArgs#type:member'
-      - 'excel!Excel.ChartAddedEventArgs#worksheetId:member'
-  - uid: 'excel!Excel.ChartAddedEventArgs#chartId:member'
-    summary: |-
+    fullName: chartId
+    summary: >-
       Gets the id of the chart that is added to the worksheet.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: chartId
-    fullName: chartId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'chartId: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartAddedEventArgs#source:member'
-    summary: |-
+        type: string
+  - name: source
+    uid: 'excel!Excel.ChartAddedEventArgs#source:member'
+    package: excel!
+    fullName: source
+    summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: source
-    fullName: source
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type:
-          - 'excel!Excel.ChartAddedEventArgs#source~0:complex'
-  - uid: 'excel!Excel.ChartAddedEventArgs#type:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'excel!Excel.ChartAddedEventArgs#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: "ChartAdded";'
       return:
-        type:
-          - '"ChartAdded"'
-  - uid: 'excel!Excel.ChartAddedEventArgs#worksheetId:member'
-    summary: |-
+        type: '"ChartAdded"'
+  - name: worksheetId
+    uid: 'excel!Excel.ChartAddedEventArgs#worksheetId:member'
+    package: excel!
+    fullName: worksheetId
+    summary: >-
       Gets the id of the worksheet in which the chart is added.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheetId
-    fullName: worksheetId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheetId: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.ChartAddedEventArgs#source~0:complex'
-    name: Excel.EventSource | "Local" | "Remote"
-    fullName: Excel.EventSource | "Local" | "Remote"
-    spec.typeScript:
-      - uid: 'excel!Excel.EventSource:enum'
-        name: Excel.EventSource
-        fullName: Excel.EventSource
-      - name: ' | "Local" | "Remote"'
-        fullName: ' | "Local" | "Remote"'
+        type: string

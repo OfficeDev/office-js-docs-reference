@@ -1,59 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.PlatformType:enum'
-    summary: Specifies the OS or other platform on which the Office host application is running.
-    name: Office.PlatformType
-    fullName: Office.PlatformType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.PlatformType
+uid: 'office!Office.PlatformType:enum'
+package: office!
+fullName: Office.PlatformType
+summary: >-
+  Specifies the OS or other platform on which the Office host application is
+  running.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Android
+    uid: 'office!Office.PlatformType.Android:member'
     package: office!
-    children:
-      - 'office!Office.PlatformType.Android:member'
-      - 'office!Office.PlatformType.iOS:member'
-      - 'office!Office.PlatformType.Mac:member'
-      - 'office!Office.PlatformType.OfficeOnline:member'
-      - 'office!Office.PlatformType.PC:member'
-      - 'office!Office.PlatformType.Universal:member'
-  - uid: 'office!Office.PlatformType.Android:member'
     summary: The platform is an Android device.
-    name: Android
-    fullName: Android
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.PlatformType.iOS:member'
+  - name: iOS
+    uid: 'office!Office.PlatformType.iOS:member'
+    package: office!
     summary: The platform an iOS device.
-    name: iOS
-    fullName: iOS
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.PlatformType.Mac:member'
+  - name: Mac
+    uid: 'office!Office.PlatformType.Mac:member'
+    package: office!
     summary: The platform is Mac.
-    name: Mac
-    fullName: Mac
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.PlatformType.OfficeOnline:member'
+  - name: OfficeOnline
+    uid: 'office!Office.PlatformType.OfficeOnline:member'
+    package: office!
     summary: The platform is Office on the web (in a browser).
-    name: OfficeOnline
-    fullName: OfficeOnline
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.PlatformType.PC:member'
+  - name: PC
+    uid: 'office!Office.PlatformType.PC:member'
+    package: office!
     summary: The platform is PC (Windows).
-    name: PC
-    fullName: PC
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.PlatformType.Universal:member'
+  - name: Universal
+    uid: 'office!Office.PlatformType.Universal:member'
+    package: office!
     summary: The platform is WinRT.
-    name: Universal
-    fullName: Universal
-    langs:
-      - typeScript
-    type: field

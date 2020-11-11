@@ -1,74 +1,74 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FiveBoxesSet:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.FiveBoxesSet
-    fullName: Excel.FiveBoxesSet
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.FiveBoxesSet
+uid: 'excel!Excel.FiveBoxesSet:interface'
+package: excel!
+fullName: Excel.FiveBoxesSet
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fourFilledBoxes
+    uid: 'excel!Excel.FiveBoxesSet#fourFilledBoxes:member'
     package: excel!
-    children:
-      - 'excel!Excel.FiveBoxesSet#fourFilledBoxes:member'
-      - 'excel!Excel.FiveBoxesSet#noFilledBoxes:member'
-      - 'excel!Excel.FiveBoxesSet#oneFilledBox:member'
-      - 'excel!Excel.FiveBoxesSet#threeFilledBoxes:member'
-      - 'excel!Excel.FiveBoxesSet#twoFilledBoxes:member'
-  - uid: 'excel!Excel.FiveBoxesSet#fourFilledBoxes:member'
-    name: fourFilledBoxes
     fullName: fourFilledBoxes
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fourFilledBoxes: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveBoxesSet#noFilledBoxes:member'
-    name: noFilledBoxes
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: noFilledBoxes
+    uid: 'excel!Excel.FiveBoxesSet#noFilledBoxes:member'
+    package: excel!
     fullName: noFilledBoxes
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'noFilledBoxes: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveBoxesSet#oneFilledBox:member'
-    name: oneFilledBox
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: oneFilledBox
+    uid: 'excel!Excel.FiveBoxesSet#oneFilledBox:member'
+    package: excel!
     fullName: oneFilledBox
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'oneFilledBox: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveBoxesSet#threeFilledBoxes:member'
-    name: threeFilledBoxes
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: threeFilledBoxes
+    uid: 'excel!Excel.FiveBoxesSet#threeFilledBoxes:member'
+    package: excel!
     fullName: threeFilledBoxes
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'threeFilledBoxes: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveBoxesSet#twoFilledBoxes:member'
-    name: twoFilledBoxes
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: twoFilledBoxes
+    uid: 'excel!Excel.FiveBoxesSet#twoFilledBoxes:member'
+    package: excel!
     fullName: twoFilledBoxes
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'twoFilledBoxes: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-references:
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
+        type: 'excel!Excel.<xref uid="Icon:interface" />'

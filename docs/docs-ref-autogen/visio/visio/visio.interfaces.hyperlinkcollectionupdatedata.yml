@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set(<!-- -->{
-      ... }<!-- -->)".
-    name: Visio.Interfaces.HyperlinkCollectionUpdateData
-    fullName: Visio.Interfaces.HyperlinkCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Visio.Interfaces.HyperlinkCollectionUpdateData
+uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+package: visio!
+fullName: Visio.Interfaces.HyperlinkCollectionUpdateData
+summary: >-
+  An interface for updating data on the HyperlinkCollection object, for use in
+  "hyperlinkCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member'
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Visio.Interfaces.HyperlinkData[];'
       return:
-        type:
-          - 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items~0:complex'
-    name: 'Visio.Interfaces.HyperlinkData[]'
-    fullName: 'Visio.Interfaces.HyperlinkData[]'
-    spec.typeScript:
-      - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
-        name: Visio.Interfaces.HyperlinkData
-        fullName: Visio.Interfaces.HyperlinkData
-      - name: '[]'
-        fullName: '[]'
+        type: 'visio!Visio.Interfaces.<xref uid="HyperlinkData:interface" />[]'

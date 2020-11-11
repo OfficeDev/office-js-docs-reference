@@ -1,64 +1,128 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableColumn:class'
-    summary: |-
-      Represents a column in a table.
+### YamlMime:TSType
+name: Excel.TableColumn
+uid: 'excel!Excel.TableColumn:class'
+package: excel!
+fullName: Excel.TableColumn
+summary: >-
+  Represents a column in a table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.TableColumn
-    fullName: Excel.TableColumn
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.TableColumn#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.TableColumn#context:member'
-      - 'excel!Excel.TableColumn#delete:member(1)'
-      - 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
-      - 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
-      - 'excel!Excel.TableColumn#getRange:member(1)'
-      - 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
-      - 'excel!Excel.TableColumn#id:member'
-      - 'excel!Excel.TableColumn#index:member'
-      - 'excel!Excel.TableColumn#load:member(1)'
-      - 'excel!Excel.TableColumn#load:member(2)'
-      - 'excel!Excel.TableColumn#load:member(3)'
-      - 'excel!Excel.TableColumn#name:member'
-      - 'excel!Excel.TableColumn#set:member(1)'
-      - 'excel!Excel.TableColumn#set:member(2)'
-      - 'excel!Excel.TableColumn#toJSON:member(1)'
-      - 'excel!Excel.TableColumn#values:member'
-  - uid: 'excel!Excel.TableColumn#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.TableColumn#delete:member(1)'
-    summary: |-
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: id
+    uid: 'excel!Excel.TableColumn#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
+      Returns a unique key that identifies the column within the table.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: number;'
+      return:
+        type: number
+  - name: index
+    uid: 'excel!Excel.TableColumn#index:member'
+    package: excel!
+    fullName: index
+    summary: >-
+      Returns the index number of the column within the columns collection of
+      the table. Zero-indexed.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type: number
+  - name: name
+    uid: 'excel!Excel.TableColumn#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
+      Specifies the name of the table column.
+
+
+      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: values
+    uid: 'excel!Excel.TableColumn#values:member'
+    package: excel!
+    fullName: values
+    summary: >-
+      Represents the raw values of the specified range. The data returned could
+      be of type string, number, or a boolean. Cells that contain an error will
+      return the error string.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type: 'any[][]'
+methods:
+  - name: delete()
+    uid: 'excel!Excel.TableColumn#delete:member(1)'
+    package: excel!
+    fullName: delete()
+    summary: >-
       Deletes the column from the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -77,21 +141,24 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
-    summary: |-
+  - name: getDataBodyRange()
+    uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+    package: excel!
+    fullName: getDataBodyRange()
+    summary: >-
       Gets the range object associated with the data body of the column.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getDataBodyRange()
-    fullName: getDataBodyRange()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: 'excel!Excel.<xref uid="Range:class" />'
         description: |-
 
 
@@ -112,21 +179,24 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
-    summary: |-
+  - name: getHeaderRowRange()
+    uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+    package: excel!
+    fullName: getHeaderRowRange()
+    summary: >-
       Gets the range object associated with the header row of the column.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getHeaderRowRange()
-    fullName: getHeaderRowRange()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: 'excel!Excel.<xref uid="Range:class" />'
         description: |-
 
 
@@ -148,21 +218,24 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.TableColumn#getRange:member(1)'
-    summary: |-
+  - name: getRange()
+    uid: 'excel!Excel.TableColumn#getRange:member(1)'
+    package: excel!
+    fullName: getRange()
+    summary: >-
       Gets the range object associated with the entire column.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: 'excel!Excel.<xref uid="Range:class" />'
         description: |-
 
 
@@ -184,21 +257,24 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
-    summary: |-
+  - name: getTotalRowRange()
+    uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+    package: excel!
+    fullName: getTotalRowRange()
+    summary: >-
       Gets the range object associated with the totals row of the column.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getTotalRowRange()
-    fullName: getTotalRowRange()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: 'excel!Excel.<xref uid="Range:class" />'
         description: |-
 
 
@@ -220,70 +296,49 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.TableColumn#id:member'
-    summary: |-
-      Returns a unique key that identifies the column within the table.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableColumn#index:member'
-    summary: |-
-      Returns the index number of the column within the columns collection of the table. Zero-indexed.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: index
-    fullName: index
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly index: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableColumn#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.TableColumn#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;'
-      return:
-        type:
-          - 'excel!Excel.TableColumn:class'
-        description: ''
+      content: >-
+        load(options?: Excel.Interfaces.TableColumnLoadOptions):
+        Excel.TableColumn;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.TableColumnLoadOptions:interface'
-  - uid: 'excel!Excel.TableColumn#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref uid="TableColumnLoadOptions:interface"
+            />
+      return:
+        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.TableColumn#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.TableColumn;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.TableColumn:class'
+        type: 'excel!Excel.<xref uid="TableColumn:class" />'
         description: |-
 
 
@@ -304,155 +359,109 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableColumn#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.TableColumn#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.TableColumn;
-      return:
-        type:
-          - 'excel!Excel.TableColumn:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.TableColumn#name:member'
-    summary: >-
-      Specifies the name of the table column.
-
-
-      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.TableColumn#set:member(1)'
+        type: 'excel!Excel.<xref uid="TableColumn:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.TableColumn#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.TableColumn): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.TableColumnUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.TableColumnUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.TableColumnUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            excel!Excel.Interfaces.<xref uid="TableColumnUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.TableColumn#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.TableColumn#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.TableColumn): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.TableColumn:class'
-  - uid: 'excel!Excel.TableColumn#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.TableColumnData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+          type: 'excel!Excel.<xref uid="TableColumn:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.TableColumn#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.TableColumn
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.TableColumnData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableColumnData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableColumnData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="TableColumnData:interface" />'
         description: ''
-  - uid: 'excel!Excel.TableColumn#values:member'
-    summary: >-
-      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'values: any[][];'
-      return:
-        type:
-          - 'any[][]'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
-  - uid: 'excel!Excel.TableColumn:class'
-    name: Excel.TableColumn
-  - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions:interface'
-    name: Excel.Interfaces.TableColumnLoadOptions
-  - uid: 'excel!Excel.Interfaces.TableColumnUpdateData:interface'
-    name: Interfaces.TableColumnUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.TableColumnData:interface'
-    name: Excel.Interfaces.TableColumnData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

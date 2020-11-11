@@ -1,186 +1,163 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeViewCollection:class'
-    summary: |-
-      Represents a collection of RangeView objects.
+### YamlMime:TSType
+name: Excel.RangeViewCollection
+uid: 'excel!Excel.RangeViewCollection:class'
+package: excel!
+fullName: Excel.RangeViewCollection
+summary: >-
+  Represents a collection of RangeView objects.
 
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RangeViewCollection
-    fullName: Excel.RangeViewCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.RangeViewCollection#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.RangeViewCollection#context:member'
-      - 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
-      - 'excel!Excel.RangeViewCollection#items:member'
-      - 'excel!Excel.RangeViewCollection#load:member(1)'
-      - 'excel!Excel.RangeViewCollection#load:member(2)'
-      - 'excel!Excel.RangeViewCollection#load:member(3)'
-      - 'excel!Excel.RangeViewCollection#toJSON:member(1)'
-  - uid: 'excel!Excel.RangeViewCollection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
-    summary: |-
-      Gets a RangeView Row via its index. Zero-Indexed.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Excel.RangeView;'
-      return:
-        type:
-          - 'excel!Excel.RangeView:class'
-        description: ''
-      parameters:
-        - id: index
-          description: Index of the visible row.
-          type:
-            - number
-  - uid: 'excel!Excel.RangeViewCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: items
+    uid: 'excel!Excel.RangeViewCollection#items:member'
+    package: excel!
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly items: Excel.RangeView[];'
       return:
-        type:
-          - 'excel!Excel.RangeViewCollection#items~0:complex'
-  - uid: 'excel!Excel.RangeViewCollection#load:member(1)'
+        type: 'excel!Excel.<xref uid="RangeView:class" />[]'
+methods:
+  - name: getItemAt(index)
+    uid: 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+      Gets a RangeView Row via its index. Zero-Indexed.
+
+
+      \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Excel.RangeView;'
+      parameters:
+        - id: index
+          description: Index of the visible row.
+          type: number
+      return:
+        type: 'excel!Excel.<xref uid="RangeView:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.RangeViewCollection#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.RangeViewCollection;
-      return:
-        type:
-          - 'excel!Excel.RangeViewCollection:class'
-        description: ''
+        load(options?: Excel.Interfaces.RangeViewCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.RangeViewCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.RangeViewCollection#load~0:complex'
-  - uid: 'excel!Excel.RangeViewCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="RangeViewCollectionLoadOptions:interface" /> &
+            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            />
+      return:
+        type: 'excel!Excel.<xref uid="RangeViewCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.RangeViewCollection#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.RangeViewCollection;'
-      return:
-        type:
-          - 'excel!Excel.RangeViewCollection:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RangeViewCollection#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeViewCollection;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.RangeViewCollection:class'
+        type: 'excel!Excel.<xref uid="RangeViewCollection:class" />'
         description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.RangeViewCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.RangeViewCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'excel!Excel.RangeViewCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.RangeViewCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+      return:
+        type: 'excel!Excel.<xref uid="RangeViewCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.RangeViewCollection#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `Excel.RangeViewCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.RangeViewCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeViewCollectionData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeViewCollectionData:interface'
+        type: >-
+          excel!Excel.Interfaces.<xref uid="RangeViewCollectionData:interface"
+          />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.RangeView:class'
-    name: Excel.RangeView
-  - uid: 'excel!Excel.RangeViewCollection#items~0:complex'
-    name: 'Excel.RangeView[]'
-    fullName: 'Excel.RangeView[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.RangeView:class'
-        name: Excel.RangeView
-        fullName: Excel.RangeView
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.RangeViewCollection:class'
-    name: Excel.RangeViewCollection
-  - uid: 'excel!Excel.RangeViewCollection#load~0:complex'
-    name: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    fullName: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions:interface'
-        name: Excel.Interfaces.RangeViewCollectionLoadOptions
-        fullName: Excel.Interfaces.RangeViewCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
-        name: Excel.Interfaces.CollectionLoadOptions
-        fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'excel!Excel.Interfaces.RangeViewCollectionData:interface'
-    name: Excel.Interfaces.RangeViewCollectionData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

@@ -1,49 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.RecipientsChangedEventArgs:interface'
-    summary: |-
-      Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised.
+### YamlMime:TSType
+name: Office.RecipientsChangedEventArgs
+uid: 'outlook!Office.RecipientsChangedEventArgs:interface'
+package: outlook!
+fullName: Office.RecipientsChangedEventArgs
+summary: >-
+  Provides change status of recipients fields when the
+  `Office.EventType.RecipientsChanged` event is raised.
 
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: Office.RecipientsChangedEventArgs
-    fullName: Office.RecipientsChangedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: Mailbox
+  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: changedRecipientFields
+    uid: 'outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member'
     package: outlook!
-    children:
-      - 'outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member'
-      - 'outlook!Office.RecipientsChangedEventArgs#type:member'
-  - uid: 'outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member'
-    summary: |-
+    fullName: changedRecipientFields
+    summary: >-
       Gets an object that indicates change state of recipients fields.
 
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: changedRecipientFields
-    fullName: changedRecipientFields
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'changedRecipientFields: RecipientsChangedFields;'
       return:
-        type:
-          - 'outlook!Office.RecipientsChangedFields:interface'
-  - uid: 'outlook!Office.RecipientsChangedEventArgs#type:member'
-    summary: |-
+        type: 'outlook!Office.<xref uid="RecipientsChangedFields:interface" />'
+  - name: type
+    uid: 'outlook!Office.RecipientsChangedEventArgs#type:member'
+    package: outlook!
+    fullName: type
+    summary: >-
       Gets the type of the event. See `Office.EventType` for details.
 
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: "olkRecipientsChanged";'
       return:
-        type:
-          - '"olkRecipientsChanged"'
-references:
-  - uid: 'outlook!Office.RecipientsChangedFields:interface'
-    name: RecipientsChangedFields
+        type: '"olkRecipientsChanged"'

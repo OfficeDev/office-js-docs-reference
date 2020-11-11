@@ -1,254 +1,261 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotTableStyle:class'
-    summary: |-
-      Represents a PivotTable Style, which defines style elements by PivotTable region.
+### YamlMime:TSType
+name: Excel.PivotTableStyle
+uid: 'excel!Excel.PivotTableStyle:class'
+package: excel!
+fullName: Excel.PivotTableStyle
+summary: >-
+  Represents a PivotTable Style, which defines style elements by PivotTable
+  region.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotTableStyle
-    fullName: Excel.PivotTableStyle
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.PivotTableStyle#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotTableStyle#context:member'
-      - 'excel!Excel.PivotTableStyle#delete:member(1)'
-      - 'excel!Excel.PivotTableStyle#duplicate:member(1)'
-      - 'excel!Excel.PivotTableStyle#load:member(1)'
-      - 'excel!Excel.PivotTableStyle#load:member(2)'
-      - 'excel!Excel.PivotTableStyle#load:member(3)'
-      - 'excel!Excel.PivotTableStyle#name:member'
-      - 'excel!Excel.PivotTableStyle#readOnly:member'
-      - 'excel!Excel.PivotTableStyle#set:member(1)'
-      - 'excel!Excel.PivotTableStyle#set:member(2)'
-      - 'excel!Excel.PivotTableStyle#toJSON:member(1)'
-  - uid: 'excel!Excel.PivotTableStyle#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.PivotTableStyle#delete:member(1)'
-    summary: |-
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: name
+    uid: 'excel!Excel.PivotTableStyle#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
+      Gets the name of the PivotTableStyle.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: readOnly
+    uid: 'excel!Excel.PivotTableStyle#readOnly:member'
+    package: excel!
+    fullName: readOnly
+    summary: >-
+      Specifies if this PivotTableStyle object is read-only.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: delete()
+    uid: 'excel!Excel.PivotTableStyle#delete:member(1)'
+    package: excel!
+    fullName: delete()
+    summary: >-
       Deletes the PivotTableStyle.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.PivotTableStyle#duplicate:member(1)'
-    summary: |-
-      Creates a duplicate of this PivotTableStyle with copies of all the style elements.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: duplicate()
+  - name: duplicate()
+    uid: 'excel!Excel.PivotTableStyle#duplicate:member(1)'
+    package: excel!
     fullName: duplicate()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Creates a duplicate of this PivotTableStyle with copies of all the style
+      elements.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'duplicate(): Excel.PivotTableStyle;'
       return:
-        type:
-          - 'excel!Excel.PivotTableStyle:class'
-        description: The new PivotTableStyle object that has been duplicated from this PivotTableStyle.
-  - uid: 'excel!Excel.PivotTableStyle#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        description: >-
+          The new PivotTableStyle object that has been duplicated from this
+          PivotTableStyle.
+  - name: load(options)
+    uid: 'excel!Excel.PivotTableStyle#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.PivotTableStyleLoadOptions): Excel.PivotTableStyle;'
-      return:
-        type:
-          - 'excel!Excel.PivotTableStyle:class'
-        description: ''
+      content: >-
+        load(options?: Excel.Interfaces.PivotTableStyleLoadOptions):
+        Excel.PivotTableStyle;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.PivotTableStyleLoadOptions:interface'
-  - uid: 'excel!Excel.PivotTableStyle#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="PivotTableStyleLoadOptions:interface" />
+      return:
+        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.PivotTableStyle#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotTableStyle;'
-      return:
-        type:
-          - 'excel!Excel.PivotTableStyle:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PivotTableStyle#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.PivotTableStyle#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.PivotTableStyle;
-      return:
-        type:
-          - 'excel!Excel.PivotTableStyle:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.PivotTableStyle#name:member'
-    summary: |-
-      Gets the name of the PivotTableStyle.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotTableStyle#readOnly:member'
-    summary: |-
-      Specifies if this PivotTableStyle object is read-only.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: readOnly
-    fullName: readOnly
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly readOnly: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotTableStyle#set:member(1)'
+        type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.PivotTableStyle#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.PivotTableStyle): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.PivotTableStyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.PivotTableStyleUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="PivotTableStyleUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.PivotTableStyle#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.PivotTableStyle#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.PivotTableStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.PivotTableStyle:class'
-  - uid: 'excel!Excel.PivotTableStyle#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.PivotTableStyle object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.PivotTableStyleData`<!-- -->) that contains shallow copies of
-      any loaded child properties from the original object.
-    name: toJSON()
+          type: 'excel!Excel.<xref uid="PivotTableStyle:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.PivotTableStyle#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.PivotTableStyle
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.PivotTableStyleData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotTableStyleData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="PivotTableStyleData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.PivotTableStyle:class'
-    name: Excel.PivotTableStyle
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleLoadOptions:interface'
-    name: Excel.Interfaces.PivotTableStyleLoadOptions
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
-    name: Interfaces.PivotTableStyleUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
-    name: Excel.Interfaces.PivotTableStyleData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

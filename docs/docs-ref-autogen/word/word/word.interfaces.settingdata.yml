@@ -1,49 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.SettingData:interface'
-    summary: An interface describing the data returned by calling `setting.toJSON()`<!-- -->.
-    name: Word.Interfaces.SettingData
-    fullName: Word.Interfaces.SettingData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.SettingData
+uid: 'word!Word.Interfaces.SettingData:interface'
+package: word!
+fullName: Word.Interfaces.SettingData
+summary: >-
+  An interface describing the data returned by calling `setting.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: key
+    uid: 'word!Word.Interfaces.SettingData#key:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.SettingData#key:member'
-      - 'word!Word.Interfaces.SettingData#value:member'
-  - uid: 'word!Word.Interfaces.SettingData#key:member'
+    fullName: key
     summary: >-
       Gets the key of the setting. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'key?: string;'
       return:
-        type:
-          - string
-  - uid: 'word!Word.Interfaces.SettingData#value:member'
+        type: string
+  - name: value
+    uid: 'word!Word.Interfaces.SettingData#value:member'
+    package: word!
+    fullName: value
     summary: >-
       Gets or sets the value of the setting.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'value?: any;'
       return:
-        type:
-          - any
+        type: any

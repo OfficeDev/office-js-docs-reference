@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
-    summary: An interface describing the data returned by calling `contentControlCollection.toJSON()`<!-- -->.
-    name: Word.Interfaces.ContentControlCollectionData
-    fullName: Word.Interfaces.ContentControlCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.ContentControlCollectionData
+uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.ContentControlCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `contentControlCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.ContentControlCollectionData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.ContentControlCollectionData#items:member'
-  - uid: 'word!Word.Interfaces.ContentControlCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.ContentControlData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.ContentControlCollectionData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.ContentControlCollectionData#items~0:complex'
-    name: 'Word.Interfaces.ContentControlData[]'
-    fullName: 'Word.Interfaces.ContentControlData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.ContentControlData:interface'
-        name: Word.Interfaces.ContentControlData
-        fullName: Word.Interfaces.ContentControlData
-      - name: '[]'
-        fullName: '[]'
+        type: 'word!Word.Interfaces.<xref uid="ContentControlData:interface" />[]'

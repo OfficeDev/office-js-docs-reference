@@ -1,32 +1,32 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ChartDataLabelFormat object, for use in `chartDataLabelFormat.set({ ...
-      })`<!-- -->.
-    name: Excel.Interfaces.ChartDataLabelFormatUpdateData
-    fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartDataLabelFormatUpdateData
+uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
+summary: >-
+  An interface for updating data on the ChartDataLabelFormat object, for use in
+  `chartDataLabelFormat.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: font
+    uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member'
-  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member'
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart data label.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: font
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the font attributes (font name, font size, color, etc.) for a
+      chart data label.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: Excel.Interfaces.ChartFontUpdateData
+        type: 'excel!Excel.Interfaces.<xref uid="ChartFontUpdateData:interface" />'

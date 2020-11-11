@@ -1,73 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.DocumentData:interface'
-    summary: An interface describing the data returned by calling "document.toJSON()".
-    name: Visio.Interfaces.DocumentData
-    fullName: Visio.Interfaces.DocumentData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Visio.Interfaces.DocumentData
+uid: 'visio!Visio.Interfaces.DocumentData:interface'
+package: visio!
+fullName: Visio.Interfaces.DocumentData
+summary: An interface describing the data returned by calling "document.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: application
+    uid: 'visio!Visio.Interfaces.DocumentData#application:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.DocumentData#application:member'
-      - 'visio!Visio.Interfaces.DocumentData#pages:member'
-      - 'visio!Visio.Interfaces.DocumentData#view:member'
-  - uid: 'visio!Visio.Interfaces.DocumentData#application:member'
-    summary: |-
-      Represents a Visio application instance that contains this document. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: application
     fullName: application
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents a Visio application instance that contains this document.
+      Read-only.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'application?: Visio.Interfaces.ApplicationData;'
       return:
-        type:
-          - 'visio!Visio.Interfaces.ApplicationData:interface'
-  - uid: 'visio!Visio.Interfaces.DocumentData#pages:member'
-    summary: |-
+        type: 'visio!Visio.Interfaces.<xref uid="ApplicationData:interface" />'
+  - name: pages
+    uid: 'visio!Visio.Interfaces.DocumentData#pages:member'
+    package: visio!
+    fullName: pages
+    summary: >-
       Represents a collection of pages associated with the document. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: pages
-    fullName: pages
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'pages?: Visio.Interfaces.PageData[];'
       return:
-        type:
-          - 'visio!Visio.Interfaces.DocumentData#pages~0:complex'
-  - uid: 'visio!Visio.Interfaces.DocumentData#view:member'
-    summary: |-
+        type: 'visio!Visio.Interfaces.<xref uid="PageData:interface" />[]'
+  - name: view
+    uid: 'visio!Visio.Interfaces.DocumentData#view:member'
+    package: visio!
+    fullName: view
+    summary: >-
       Returns the DocumentView object. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: view
-    fullName: view
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'view?: Visio.Interfaces.DocumentViewData;'
       return:
-        type:
-          - 'visio!Visio.Interfaces.DocumentViewData:interface'
-references:
-  - uid: 'visio!Visio.Interfaces.ApplicationData:interface'
-    name: Visio.Interfaces.ApplicationData
-  - uid: 'visio!Visio.Interfaces.DocumentData#pages~0:complex'
-    name: 'Visio.Interfaces.PageData[]'
-    fullName: 'Visio.Interfaces.PageData[]'
-    spec.typeScript:
-      - uid: 'visio!Visio.Interfaces.PageData:interface'
-        name: Visio.Interfaces.PageData
-        fullName: Visio.Interfaces.PageData
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
-    name: Visio.Interfaces.DocumentViewData
+        type: 'visio!Visio.Interfaces.<xref uid="DocumentViewData:interface" />'

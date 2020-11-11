@@ -1,66 +1,69 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
-    summary: |-
-      Encapsulates the format properties for the chart data labels.
+### YamlMime:TSType
+name: Excel.Interfaces.ChartDataLabelFormatLoadOptions
+uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartDataLabelFormatLoadOptions
+summary: >-
+  Encapsulates the format properties for the chart data labels.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions
-    fullName: Excel.Interfaces.ChartDataLabelFormatLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#border:member'
-      - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member'
-  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#border:member'
-    summary: |-
+        type: boolean
+  - name: border
+    uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#border:member'
+    package: excel!
+    fullName: border
+    summary: >-
       Represents the border format, which includes color, linestyle, and weight.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member'
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart data label.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: font
+        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderLoadOptions:interface" />'
+  - name: font
+    uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member'
+    package: excel!
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the font attributes (font name, font size, color, etc.) for a
+      chart data label.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
-  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
+        type: 'excel!Excel.Interfaces.<xref uid="ChartFontLoadOptions:interface" />'

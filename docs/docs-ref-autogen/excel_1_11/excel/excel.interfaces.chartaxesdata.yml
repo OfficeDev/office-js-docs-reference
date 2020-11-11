@@ -1,62 +1,67 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
-    summary: An interface describing the data returned by calling `chartAxes.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartAxesData
-    fullName: Excel.Interfaces.ChartAxesData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartAxesData
+uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartAxesData
+summary: >-
+  An interface describing the data returned by calling `chartAxes.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: categoryAxis
+    uid: 'excel!Excel.Interfaces.ChartAxesData#categoryAxis:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartAxesData#categoryAxis:member'
-      - 'excel!Excel.Interfaces.ChartAxesData#seriesAxis:member'
-      - 'excel!Excel.Interfaces.ChartAxesData#valueAxis:member'
-  - uid: 'excel!Excel.Interfaces.ChartAxesData#categoryAxis:member'
-    summary: |-
+    fullName: categoryAxis
+    summary: >-
       Represents the category axis in a chart.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: categoryAxis
-    fullName: categoryAxis
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'categoryAxis?: Excel.Interfaces.ChartAxisData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxesData#seriesAxis:member'
-    summary: |-
+        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisData:interface" />'
+  - name: seriesAxis
+    uid: 'excel!Excel.Interfaces.ChartAxesData#seriesAxis:member'
+    package: excel!
+    fullName: seriesAxis
+    summary: >-
       Represents the series axis of a 3-dimensional chart.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: seriesAxis
-    fullName: seriesAxis
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'seriesAxis?: Excel.Interfaces.ChartAxisData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxesData#valueAxis:member'
-    summary: |-
+        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisData:interface" />'
+  - name: valueAxis
+    uid: 'excel!Excel.Interfaces.ChartAxesData#valueAxis:member'
+    package: excel!
+    fullName: valueAxis
+    summary: >-
       Represents the value axis in an axis.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: valueAxis
-    fullName: valueAxis
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'valueAxis?: Excel.Interfaces.ChartAxisData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
-    name: Excel.Interfaces.ChartAxisData
+        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisData:interface" />'

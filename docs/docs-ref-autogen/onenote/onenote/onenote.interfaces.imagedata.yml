@@ -1,110 +1,120 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
-    summary: An interface describing the data returned by calling "image.toJSON()".
-    name: OneNote.Interfaces.ImageData
-    fullName: OneNote.Interfaces.ImageData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.ImageData
+uid: 'onenote!OneNote.Interfaces.ImageData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.ImageData
+summary: An interface describing the data returned by calling "image.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: 'onenote!OneNote.Interfaces.ImageData#description:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.ImageData#description:member'
-      - 'onenote!OneNote.Interfaces.ImageData#height:member'
-      - 'onenote!OneNote.Interfaces.ImageData#hyperlink:member'
-      - 'onenote!OneNote.Interfaces.ImageData#id:member'
-      - 'onenote!OneNote.Interfaces.ImageData#ocrData:member'
-      - 'onenote!OneNote.Interfaces.ImageData#width:member'
-  - uid: 'onenote!OneNote.Interfaces.ImageData#description:member'
-    summary: |-
+    fullName: description
+    summary: >-
       Gets or sets the description of the Image.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: description
-    fullName: description
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'description?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.ImageData#height:member'
-    summary: |-
+        type: string
+  - name: height
+    uid: 'onenote!OneNote.Interfaces.ImageData#height:member'
+    package: onenote!
+    fullName: height
+    summary: >-
       Gets or sets the height of the Image layout.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'height?: number;'
       return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.Interfaces.ImageData#hyperlink:member'
-    summary: |-
+        type: number
+  - name: hyperlink
+    uid: 'onenote!OneNote.Interfaces.ImageData#hyperlink:member'
+    package: onenote!
+    fullName: hyperlink
+    summary: >-
       Gets or sets the hyperlink of the Image.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: hyperlink
-    fullName: hyperlink
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'hyperlink?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.ImageData#id:member'
-    summary: |-
+        type: string
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.ImageData#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the Image object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.ImageData#ocrData:member'
-    summary: |-
-      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: ocrData
+        type: string
+  - name: ocrData
+    uid: 'onenote!OneNote.Interfaces.ImageData#ocrData:member'
+    package: onenote!
     fullName: ocrData
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the data obtained by OCR (Optical Character Recognition) of this
+      Image, such as OCR text and language.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ocrData?: OneNote.ImageOcrData;'
       return:
-        type:
-          - 'onenote!OneNote.ImageOcrData:interface'
-  - uid: 'onenote!OneNote.Interfaces.ImageData#width:member'
-    summary: |-
+        type: 'onenote!OneNote.<xref uid="ImageOcrData:interface" />'
+  - name: width
+    uid: 'onenote!OneNote.Interfaces.ImageData#width:member'
+    package: onenote!
+    fullName: width
+    summary: >-
       Gets or sets the width of the Image layout.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: number;'
       return:
-        type:
-          - number
-references:
-  - uid: 'onenote!OneNote.ImageOcrData:interface'
-    name: OneNote.ImageOcrData
+        type: number

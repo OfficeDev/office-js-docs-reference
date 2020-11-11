@@ -1,84 +1,74 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Comment:class'
-    summary: |-
-      Represents a comment in the workbook.
+### YamlMime:TSType
+name: Excel.Comment
+uid: 'excel!Excel.Comment:class'
+package: excel!
+fullName: Excel.Comment
+summary: >-
+  Represents a comment in the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Comment
-    fullName: Excel.Comment
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: authorEmail
+    uid: 'excel!Excel.Comment#authorEmail:member'
     package: excel!
-    children:
-      - 'excel!Excel.Comment#authorEmail:member'
-      - 'excel!Excel.Comment#authorName:member'
-      - 'excel!Excel.Comment#content:member'
-      - 'excel!Excel.Comment#contentType:member'
-      - 'excel!Excel.Comment#context:member'
-      - 'excel!Excel.Comment#creationDate:member'
-      - 'excel!Excel.Comment#delete:member(1)'
-      - 'excel!Excel.Comment#getLocation:member(1)'
-      - 'excel!Excel.Comment#id:member'
-      - 'excel!Excel.Comment#load:member(1)'
-      - 'excel!Excel.Comment#load:member(2)'
-      - 'excel!Excel.Comment#load:member(3)'
-      - 'excel!Excel.Comment#mentions:member'
-      - 'excel!Excel.Comment#replies:member'
-      - 'excel!Excel.Comment#resolved:member'
-      - 'excel!Excel.Comment#richContent:member'
-      - 'excel!Excel.Comment#set:member(1)'
-      - 'excel!Excel.Comment#set:member(2)'
-      - 'excel!Excel.Comment#toJSON:member(1)'
-      - 'excel!Excel.Comment#updateMentions:member(1)'
-  - uid: 'excel!Excel.Comment#authorEmail:member'
-    summary: |-
+    fullName: authorEmail
+    summary: >-
       Gets the email of the comment's author.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: authorEmail
-    fullName: authorEmail
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly authorEmail: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Comment#authorName:member'
-    summary: |-
+        type: string
+  - name: authorName
+    uid: 'excel!Excel.Comment#authorName:member'
+    package: excel!
+    fullName: authorName
+    summary: >-
       Gets the name of the comment's author.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: authorName
-    fullName: authorName
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly authorName: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Comment#content:member'
-    summary: |-
+        type: string
+  - name: content
+    uid: 'excel!Excel.Comment#content:member'
+    package: excel!
+    fullName: content
+    summary: >-
       The comment's content. The string is plain text.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: content
-    fullName: content
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'content: string;'
       return:
-        type:
-          - string
+        type: string
         description: >-
 
 
@@ -98,67 +88,187 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.Comment#contentType:member'
-    summary: |-
+  - name: contentType
+    uid: 'excel!Excel.Comment#contentType:member'
+    package: excel!
+    fullName: contentType
+    summary: >-
       Gets the content type of the comment.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: contentType
-    fullName: contentType
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly contentType: Excel.ContentType | "Plain" | "Mention";'
       return:
-        type:
-          - 'excel!Excel.Comment#contentType~0:complex'
-  - uid: 'excel!Excel.Comment#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: 'excel!Excel.<xref uid="ContentType:enum" /> | "Plain" | "Mention"'
+  - name: context
+    uid: 'excel!Excel.Comment#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.Comment#creationDate:member'
-    summary: >-
-      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
-      does not have a creation date.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: creationDate
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: creationDate
+    uid: 'excel!Excel.Comment#creationDate:member'
+    package: excel!
     fullName: creationDate
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the creation time of the comment. Returns null if the comment was
+      converted from a note, since the comment does not have a creation date.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly creationDate: Date;'
       return:
-        type:
-          - '!Date:interface'
-  - uid: 'excel!Excel.Comment#delete:member(1)'
-    summary: |-
+        type: Date
+  - name: id
+    uid: 'excel!Excel.Comment#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
+      Specifies the comment identifier.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: mentions
+    uid: 'excel!Excel.Comment#mentions:member'
+    package: excel!
+    fullName: mentions
+    summary: >-
+      Gets the entities (e.g., people) that are mentioned in comments.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly mentions: Excel.CommentMention[];'
+      return:
+        type: 'excel!Excel.<xref uid="CommentMention:interface" />[]'
+  - name: replies
+    uid: 'excel!Excel.Comment#replies:member'
+    package: excel!
+    fullName: replies
+    summary: >-
+      Represents a collection of reply objects associated with the comment.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly replies: Excel.CommentReplyCollection;'
+      return:
+        type: 'excel!Excel.<xref uid="CommentReplyCollection:class" />'
+  - name: resolved
+    uid: 'excel!Excel.Comment#resolved:member'
+    package: excel!
+    fullName: resolved
+    summary: >-
+      The comment thread status. A value of "true" means the comment thread is
+      resolved.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resolved: boolean;'
+      return:
+        type: boolean
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-resolution.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Comments");
+              sheet.comments.getItemAt(0).resolved = true;
+              await context.sync();
+          });
+
+          ```
+  - name: richContent
+    uid: 'excel!Excel.Comment#richContent:member'
+    package: excel!
+    fullName: richContent
+    summary: >-
+      Gets the rich comment content (e.g., mentions in comments). This string is
+      not meant to be displayed to end-users. Your add-in should only use this
+      to parse rich comment content.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly richContent: string;'
+      return:
+        type: string
+methods:
+  - name: delete()
+    uid: 'excel!Excel.Comment#delete:member(1)'
+    package: excel!
+    fullName: delete()
+    summary: >-
       Deletes the comment and all the connected replies.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
-        type:
-          - void
+        type: void
         description: >-
 
 
@@ -176,71 +286,64 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.Comment#getLocation:member(1)'
-    summary: |-
+  - name: getLocation()
+    uid: 'excel!Excel.Comment#getLocation:member(1)'
+    package: excel!
+    fullName: getLocation()
+    summary: >-
       Gets the cell where this comment is located.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getLocation()
-    fullName: getLocation()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getLocation(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: 'excel!Excel.<xref uid="Range:class" />'
         description: ''
-  - uid: 'excel!Excel.Comment#id:member'
-    summary: |-
-      Specifies the comment identifier.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Comment#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.Comment#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.CommentLoadOptions): Excel.Comment;'
-      return:
-        type:
-          - 'excel!Excel.Comment:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.CommentLoadOptions:interface'
-  - uid: 'excel!Excel.Comment#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: 'excel!Excel.Interfaces.<xref uid="CommentLoadOptions:interface" />'
+      return:
+        type: 'excel!Excel.<xref uid="Comment:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Comment#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Comment;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.Comment:class'
+        type: 'excel!Excel.<xref uid="Comment:class" />'
         description: >-
 
 
@@ -262,248 +365,134 @@ items:
           });
 
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Comment#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Comment#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.Comment;
-      return:
-        type:
-          - 'excel!Excel.Comment:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.Comment#mentions:member'
-    summary: |-
-      Gets the entities (e.g., people) that are mentioned in comments.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: mentions
-    fullName: mentions
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly mentions: Excel.CommentMention[];'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - 'excel!Excel.Comment#mentions~0:complex'
-  - uid: 'excel!Excel.Comment#replies:member'
-    summary: |-
-      Represents a collection of reply objects associated with the comment.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: replies
-    fullName: replies
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly replies: Excel.CommentReplyCollection;'
-      return:
-        type:
-          - 'excel!Excel.CommentReplyCollection:class'
-  - uid: 'excel!Excel.Comment#resolved:member'
-    summary: |-
-      The comment thread status. A value of "true" means the comment thread is resolved.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: resolved
-    fullName: resolved
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'resolved: boolean;'
-      return:
-        type:
-          - boolean
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-resolution.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Comments");
-              sheet.comments.getItemAt(0).resolved = true;
-              await context.sync();
-          });
-
-          ```
-  - uid: 'excel!Excel.Comment#richContent:member'
+        type: 'excel!Excel.<xref uid="Comment:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.Comment#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users.
-      Your add-in should only use this to parse rich comment content.
-
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: richContent
-    fullName: richContent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly richContent: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Comment#set:member(1)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.Comment): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.CommentUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.CommentUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'excel!Excel.Interfaces.<xref uid="CommentUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.Comment#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.Comment#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.Comment): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.Comment:class'
-  - uid: 'excel!Excel.Comment#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Comment object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.CommentData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+          type: 'excel!Excel.<xref uid="Comment:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Comment#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.Comment object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.CommentData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.CommentData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CommentData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="CommentData:interface" />'
         description: ''
-  - uid: 'excel!Excel.Comment#updateMentions:member(1)'
-    summary: |-
-      Updates the comment content with a specially formatted string and a list of mentions.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: updateMentions(contentWithMentions)
+  - name: updateMentions(contentWithMentions)
+    uid: 'excel!Excel.Comment#updateMentions:member(1)'
+    package: excel!
     fullName: updateMentions(contentWithMentions)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Updates the comment content with a specially formatted string and a list
+      of mentions.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'updateMentions(contentWithMentions: Excel.CommentRichContent): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: contentWithMentions
           description: >-
-            The content for the comment. This contains a specially formatted string and a list of mentions that will be
-            parsed into the string when displayed by Excel.
-          type:
-            - 'excel!Excel.CommentRichContent:interface'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.Comment#contentType~0:complex'
-    name: Excel.ContentType | "Plain" | "Mention"
-    fullName: Excel.ContentType | "Plain" | "Mention"
-    spec.typeScript:
-      - uid: 'excel!Excel.ContentType:enum'
-        name: Excel.ContentType
-        fullName: Excel.ContentType
-      - name: ' | "Plain" | "Mention"'
-        fullName: ' | "Plain" | "Mention"'
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: '!Date:interface'
-    name: Date
-  - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
-  - uid: 'excel!Excel.Comment:class'
-    name: Excel.Comment
-  - uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
-    name: Excel.Interfaces.CommentLoadOptions
-  - uid: 'excel!Excel.Comment#mentions~0:complex'
-    name: 'Excel.CommentMention[]'
-    fullName: 'Excel.CommentMention[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.CommentMention:interface'
-        name: Excel.CommentMention
-        fullName: Excel.CommentMention
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.CommentReplyCollection:class'
-    name: Excel.CommentReplyCollection
-  - uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
-    name: Interfaces.CommentUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.CommentData:interface'
-    name: Excel.Interfaces.CommentData
-  - uid: 'excel!Excel.CommentRichContent:interface'
-    name: Excel.CommentRichContent
+            The content for the comment. This contains a specially formatted
+            string and a list of mentions that will be parsed into the string
+            when displayed by Excel.
+          type: 'excel!Excel.<xref uid="CommentRichContent:interface" />'
+      return:
+        type: void
+        description: ''
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

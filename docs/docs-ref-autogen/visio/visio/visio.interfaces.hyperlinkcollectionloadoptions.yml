@@ -1,92 +1,105 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
-    summary: |-
-      Represents the Hyperlink Collection.
+### YamlMime:TSType
+name: Visio.Interfaces.HyperlinkCollectionLoadOptions
+uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+package: visio!
+fullName: Visio.Interfaces.HyperlinkCollectionLoadOptions
+summary: >-
+  Represents the Hyperlink Collection.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Interfaces.HyperlinkCollectionLoadOptions
-    fullName: Visio.Interfaces.HyperlinkCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#$all:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#$all:member'
-      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#address:member'
-      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#description:member'
-      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#extraInfo:member'
-      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#subAddress:member'
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#address:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the address of the Hyperlink object. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: address
+        type: boolean
+  - name: address
+    uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#address:member'
+    package: visio!
     fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'address?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#description:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the description of a hyperlink. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: description
-    fullName: description
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'description?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#extraInfo:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink's URL.
+      For EACH ITEM in the collection: Gets the address of the Hyperlink object.
       Read-only.
 
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: extraInfo
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type: boolean
+  - name: description
+    uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#description:member'
+    package: visio!
+    fullName: description
+    summary: >-
+      For EACH ITEM in the collection: Gets the description of a hyperlink.
+      Read-only.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: boolean;'
+      return:
+        type: boolean
+  - name: extraInfo
+    uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#extraInfo:member'
+    package: visio!
     fullName: extraInfo
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the extra URL request information
+      used to resolve the hyperlink's URL. Read-only.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'extraInfo?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#subAddress:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: subAddress
+        type: boolean
+  - name: subAddress
+    uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#subAddress:member'
+    package: visio!
     fullName: subAddress
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the sub-address of the Hyperlink
+      object. Read-only.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'subAddress?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

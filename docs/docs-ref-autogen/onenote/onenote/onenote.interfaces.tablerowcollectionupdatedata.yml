@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set(<!-- -->{ ...
-      }<!-- -->)".
-    name: OneNote.Interfaces.TableRowCollectionUpdateData
-    fullName: OneNote.Interfaces.TableRowCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.TableRowCollectionUpdateData
+uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.TableRowCollectionUpdateData
+summary: >-
+  An interface for updating data on the TableRowCollection object, for use in
+  "tableRowCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.TableRowData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData#items~0:complex'
-    name: 'OneNote.Interfaces.TableRowData[]'
-    fullName: 'OneNote.Interfaces.TableRowData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
-        name: OneNote.Interfaces.TableRowData
-        fullName: OneNote.Interfaces.TableRowData
-      - name: '[]'
-        fullName: '[]'
+        type: 'onenote!OneNote.Interfaces.<xref uid="TableRowData:interface" />[]'

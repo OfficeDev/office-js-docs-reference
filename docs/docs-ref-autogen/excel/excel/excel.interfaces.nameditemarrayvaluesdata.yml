@@ -1,53 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
-    summary: An interface describing the data returned by calling `namedItemArrayValues.toJSON()`<!-- -->.
-    name: Excel.Interfaces.NamedItemArrayValuesData
-    fullName: Excel.Interfaces.NamedItemArrayValuesData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.NamedItemArrayValuesData
+uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
+package: excel!
+fullName: Excel.Interfaces.NamedItemArrayValuesData
+summary: >-
+  An interface describing the data returned by calling
+  `namedItemArrayValues.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: types
+    uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#types:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.NamedItemArrayValuesData#types:member'
-      - 'excel!Excel.Interfaces.NamedItemArrayValuesData#values:member'
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#types:member'
-    summary: |-
+    fullName: types
+    summary: >-
       Represents the types for each item in the named item array
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: types
-    fullName: types
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'types?: Excel.RangeValueType[][];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.NamedItemArrayValuesData#types~0:complex'
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#values:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="RangeValueType:enum" />[][]'
+  - name: values
+    uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#values:member'
+    package: excel!
+    fullName: values
+    summary: >-
       Represents the values of each item in the named item array.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'values?: any[][];'
       return:
-        type:
-          - 'any[][]'
-references:
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#types~0:complex'
-    name: 'Excel.RangeValueType[][]'
-    fullName: 'Excel.RangeValueType[][]'
-    spec.typeScript:
-      - uid: 'excel!Excel.RangeValueType:enum'
-        name: Excel.RangeValueType
-        fullName: Excel.RangeValueType
-      - name: '[][]'
-        fullName: '[][]'
+        type: 'any[][]'

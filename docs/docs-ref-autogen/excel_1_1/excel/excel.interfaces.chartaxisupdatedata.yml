@@ -1,154 +1,175 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
-    summary: 'An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartAxisUpdateData
-    fullName: Excel.Interfaces.ChartAxisUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartAxisUpdateData
+uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartAxisUpdateData
+summary: >-
+  An interface for updating data on the ChartAxis object, for use in
+  `chartAxis.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#format:member'
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member'
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#majorUnit:member'
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#maximum:member'
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minimum:member'
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member'
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minorUnit:member'
-      - 'excel!Excel.Interfaces.ChartAxisUpdateData#title:member'
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#format:member'
-    summary: |-
-      Represents the formatting of a chart object, which includes line and font formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formatting of a chart object, which includes line and font
+      formatting.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member'
-    summary: |-
-      Returns a Gridlines object that represents the major gridlines for the specified axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: majorGridlines
+        type: >-
+          excel!Excel.Interfaces.<xref uid="ChartAxisFormatUpdateData:interface"
+          />
+  - name: majorGridlines
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member'
+    package: excel!
     fullName: majorGridlines
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a Gridlines object that represents the major gridlines for the
+      specified axis.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorUnit:member'
-    summary: >-
-      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
-      returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: majorUnit
+        type: >-
+          excel!Excel.Interfaces.<xref uid="ChartGridlinesUpdateData:interface"
+          />
+  - name: majorUnit
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorUnit:member'
+    package: excel!
     fullName: majorUnit
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a
+      numeric value or an empty string. The returned value is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'majorUnit?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#maximum:member'
-    summary: >-
-      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: maximum
+        type: any
+  - name: maximum
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#maximum:member'
+    package: excel!
     fullName: maximum
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric
+      value or an empty string (for automatic axis values). The returned value
+      is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'maximum?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minimum:member'
-    summary: >-
-      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minimum
+        type: any
+  - name: minimum
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minimum:member'
+    package: excel!
     fullName: minimum
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric
+      value or an empty string (for automatic axis values). The returned value
+      is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minimum?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member'
-    summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minorGridlines
+        type: any
+  - name: minorGridlines
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member'
+    package: excel!
     fullName: minorGridlines
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a Gridlines object that represents the minor gridlines for the
+      specified axis.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorUnit:member'
-    summary: >-
-      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
-      automatic axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minorUnit
+        type: >-
+          excel!Excel.Interfaces.<xref uid="ChartGridlinesUpdateData:interface"
+          />
+  - name: minorUnit
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorUnit:member'
+    package: excel!
     fullName: minorUnit
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a
+      numeric value or an empty string (for automatic axis values). The returned
+      value is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minorUnit?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#title:member'
-    summary: |-
+        type: any
+  - name: title
+    uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#title:member'
+    package: excel!
+    fullName: title
+    summary: >-
       Represents the axis title.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartAxisFormatUpdateData
-  - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
-    name: Excel.Interfaces.ChartGridlinesUpdateData
-  - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
-    name: Excel.Interfaces.ChartAxisTitleUpdateData
+        type: >-
+          excel!Excel.Interfaces.<xref uid="ChartAxisTitleUpdateData:interface"
+          />

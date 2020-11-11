@@ -1,12 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ChartTrendlineLabel object, for use in `chartTrendlineLabel.set({ ...
-      })`<!-- -->.
-    name: Excel.Interfaces.ChartTrendlineLabelUpdateData
-    fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.ChartTrendlineLabelUpdateData
+uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
+summary: >-
+  An interface for updating data on the ChartTrendlineLabel object, for use in
+  `chartTrendlineLabel.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

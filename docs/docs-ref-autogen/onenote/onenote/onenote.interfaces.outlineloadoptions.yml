@@ -1,81 +1,88 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
-    summary: |-
-      Represents a container for Paragraph objects.
+### YamlMime:TSType
+name: OneNote.Interfaces.OutlineLoadOptions
+uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+package: onenote!
+fullName: OneNote.Interfaces.OutlineLoadOptions
+summary: >-
+  Represents a container for Paragraph objects.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.OutlineLoadOptions
-    fullName: OneNote.Interfaces.OutlineLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#$all:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#$all:member'
-      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#id:member'
-      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member'
-      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member'
-  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#id:member'
-    summary: |-
+        type: boolean
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the Outline object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member'
-    summary: >-
-      Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
-      page.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: pageContent
+        type: boolean
+  - name: pageContent
+    uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member'
+    package: onenote!
     fullName: pageContent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the PageContent object that contains the Outline. This object defines
+      the position of the Outline on the page.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member'
-    summary: |-
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="PageContentLoadOptions:interface" />
+  - name: paragraphs
+    uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member'
+    package: onenote!
+    fullName: paragraphs
+    summary: >-
       Gets the collection of Paragraph objects in the Outline.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraphs
-    fullName: paragraphs
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
-references:
-  - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
-    name: OneNote.Interfaces.PageContentLoadOptions
-  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.ParagraphCollectionLoadOptions
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="ParagraphCollectionLoadOptions:interface" />

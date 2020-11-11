@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
-    summary: An interface describing the data returned by calling "hyperlinkCollection.toJSON()".
-    name: Visio.Interfaces.HyperlinkCollectionData
-    fullName: Visio.Interfaces.HyperlinkCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Visio.Interfaces.HyperlinkCollectionData
+uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
+package: visio!
+fullName: Visio.Interfaces.HyperlinkCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  "hyperlinkCollection.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'visio!Visio.Interfaces.HyperlinkCollectionData#items:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.HyperlinkCollectionData#items:member'
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Visio.Interfaces.HyperlinkData[];'
       return:
-        type:
-          - 'visio!Visio.Interfaces.HyperlinkCollectionData#items~0:complex'
-references:
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData#items~0:complex'
-    name: 'Visio.Interfaces.HyperlinkData[]'
-    fullName: 'Visio.Interfaces.HyperlinkData[]'
-    spec.typeScript:
-      - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
-        name: Visio.Interfaces.HyperlinkData
-        fullName: Visio.Interfaces.HyperlinkData
-      - name: '[]'
-        fullName: '[]'
+        type: 'visio!Visio.Interfaces.<xref uid="HyperlinkData:interface" />[]'

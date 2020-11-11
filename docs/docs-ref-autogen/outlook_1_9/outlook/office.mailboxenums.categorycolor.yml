@@ -1,231 +1,127 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor:enum'
-    summary: >-
-      Specifies the category color.
+### YamlMime:TSEnum
+name: Office.MailboxEnums.CategoryColor
+uid: 'outlook!Office.MailboxEnums.CategoryColor:enum'
+package: outlook!
+fullName: Office.MailboxEnums.CategoryColor
+summary: >-
+  Specifies the category color.
 
 
-      **Note**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each
-      preset are for the Outlook desktop client.
+  **Note**: The actual color depends on how the Outlook client renders it. In
+  this case, the colors noted on each preset are for the Outlook desktop client.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.MailboxEnums.CategoryColor
-    fullName: Office.MailboxEnums.CategoryColor
-    langs:
-      - typeScript
-    type: enum
+  \[ [API set: Mailbox
+  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: None
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.None:member'
     package: outlook!
-    children:
-      - 'outlook!Office.MailboxEnums.CategoryColor.None:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset0:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset1:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset10:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset11:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset12:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset13:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset14:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset15:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset16:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset17:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset18:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset19:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset2:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset20:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset21:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset22:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset23:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset24:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset3:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset4:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset5:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset6:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset7:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset8:member'
-      - 'outlook!Office.MailboxEnums.CategoryColor.Preset9:member'
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.None:member'
     summary: Default color or no color mapped.
-    name: None
-    fullName: None
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset0:member'
+  - name: Preset0
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset0:member'
+    package: outlook!
     summary: Red
-    name: Preset0
-    fullName: Preset0
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset1:member'
+  - name: Preset1
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset1:member'
+    package: outlook!
     summary: Orange
-    name: Preset1
-    fullName: Preset1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset10:member'
+  - name: Preset10
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset10:member'
+    package: outlook!
     summary: Steel
-    name: Preset10
-    fullName: Preset10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset11:member'
+  - name: Preset11
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset11:member'
+    package: outlook!
     summary: DarkSteel
-    name: Preset11
-    fullName: Preset11
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset12:member'
+  - name: Preset12
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset12:member'
+    package: outlook!
     summary: Gray
-    name: Preset12
-    fullName: Preset12
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset13:member'
+  - name: Preset13
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset13:member'
+    package: outlook!
     summary: DarkGray
-    name: Preset13
-    fullName: Preset13
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset14:member'
+  - name: Preset14
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset14:member'
+    package: outlook!
     summary: Black
-    name: Preset14
-    fullName: Preset14
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset15:member'
+  - name: Preset15
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset15:member'
+    package: outlook!
     summary: DarkRed
-    name: Preset15
-    fullName: Preset15
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset16:member'
+  - name: Preset16
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset16:member'
+    package: outlook!
     summary: DarkOrange
-    name: Preset16
-    fullName: Preset16
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset17:member'
+  - name: Preset17
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset17:member'
+    package: outlook!
     summary: DarkBrown
-    name: Preset17
-    fullName: Preset17
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset18:member'
+  - name: Preset18
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset18:member'
+    package: outlook!
     summary: DarkYellow
-    name: Preset18
-    fullName: Preset18
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset19:member'
+  - name: Preset19
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset19:member'
+    package: outlook!
     summary: DarkGreen
-    name: Preset19
-    fullName: Preset19
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset2:member'
+  - name: Preset2
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset2:member'
+    package: outlook!
     summary: Brown
-    name: Preset2
-    fullName: Preset2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset20:member'
+  - name: Preset20
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset20:member'
+    package: outlook!
     summary: DarkTeal
-    name: Preset20
-    fullName: Preset20
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset21:member'
+  - name: Preset21
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset21:member'
+    package: outlook!
     summary: DarkOlive
-    name: Preset21
-    fullName: Preset21
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset22:member'
+  - name: Preset22
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset22:member'
+    package: outlook!
     summary: DarkBlue
-    name: Preset22
-    fullName: Preset22
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset23:member'
+  - name: Preset23
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset23:member'
+    package: outlook!
     summary: DarkPurple
-    name: Preset23
-    fullName: Preset23
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset24:member'
+  - name: Preset24
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset24:member'
+    package: outlook!
     summary: DarkCranberry
-    name: Preset24
-    fullName: Preset24
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset3:member'
+  - name: Preset3
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset3:member'
+    package: outlook!
     summary: Yellow
-    name: Preset3
-    fullName: Preset3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset4:member'
+  - name: Preset4
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset4:member'
+    package: outlook!
     summary: Green
-    name: Preset4
-    fullName: Preset4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset5:member'
+  - name: Preset5
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset5:member'
+    package: outlook!
     summary: Teal
-    name: Preset5
-    fullName: Preset5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset6:member'
+  - name: Preset6
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset6:member'
+    package: outlook!
     summary: Olive
-    name: Preset6
-    fullName: Preset6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset7:member'
+  - name: Preset7
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset7:member'
+    package: outlook!
     summary: Blue
-    name: Preset7
-    fullName: Preset7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset8:member'
+  - name: Preset8
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset8:member'
+    package: outlook!
     summary: Purple
-    name: Preset8
-    fullName: Preset8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset9:member'
+  - name: Preset9
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset9:member'
+    package: outlook!
     summary: Cranberry
-    name: Preset9
-    fullName: Preset9
-    langs:
-      - typeScript
-    type: field

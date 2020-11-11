@@ -1,55 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetFreezePanes:class'
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.WorksheetFreezePanes
-    fullName: Excel.WorksheetFreezePanes
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+### YamlMime:TSType
+name: Excel.WorksheetFreezePanes
+uid: 'excel!Excel.WorksheetFreezePanes:class'
+package: excel!
+fullName: Excel.WorksheetFreezePanes
+summary: >-
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.WorksheetFreezePanes#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.WorksheetFreezePanes#context:member'
-      - 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#toJSON:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
-  - uid: 'excel!Excel.WorksheetFreezePanes#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
-    summary: >-
-      Sets the frozen cells in the active worksheet view. The range provided corresponds to cells that will be frozen in
-      the top- and left-most pane.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: freezeAt(frozenRange)
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+methods:
+  - name: freezeAt(frozenRange)
+    uid: 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
+    package: excel!
     fullName: freezeAt(frozenRange)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets the frozen cells in the active worksheet view. The range provided
+      corresponds to cells that will be frozen in the top- and left-most pane.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'freezeAt(frozenRange: Range | string): void;'
+      parameters:
+        - id: frozenRange
+          description: >-
+            A range that represents the cells to be frozen, or null to remove
+            all frozen panes.
+          type: 'excel!Excel.<xref uid="Range:class" /> | string'
       return:
-        type:
-          - void
+        type: void
         description: >-
 
 
@@ -71,26 +73,30 @@ items:
           });
 
           ```
-      parameters:
-        - id: frozenRange
-          description: 'A range that represents the cells to be frozen, or null to remove all frozen panes.'
-          type:
-            - 'excel!Excel.WorksheetFreezePanes#freezeAt~0:complex'
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
-    summary: |-
+  - name: freezeColumns(count)
+    uid: 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
+    package: excel!
+    fullName: freezeColumns(count)
+    summary: >-
       Freeze the first column or columns of the worksheet in place.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: freezeColumns(count)
-    fullName: freezeColumns(count)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'freezeColumns(count?: number): void;'
+      parameters:
+        - id: count
+          description: >-
+            Optional number of columns to freeze, or zero to unfreeze all
+            columns
+          type: number
       return:
-        type:
-          - void
+        type: void
         description: >-
 
 
@@ -112,26 +118,28 @@ items:
           });
 
           ```
-      parameters:
-        - id: count
-          description: 'Optional number of columns to freeze, or zero to unfreeze all columns'
-          type:
-            - number
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
-    summary: |-
+  - name: freezeRows(count)
+    uid: 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
+    package: excel!
+    fullName: freezeRows(count)
+    summary: >-
       Freeze the top row or rows of the worksheet in place.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: freezeRows(count)
-    fullName: freezeRows(count)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'freezeRows(count?: number): void;'
+      parameters:
+        - id: count
+          description: 'Optional number of rows to freeze, or zero to unfreeze all rows'
+          type: number
       return:
-        type:
-          - void
+        type: void
         description: >-
 
 
@@ -153,46 +161,47 @@ items:
           });
 
           ```
-      parameters:
-        - id: count
-          description: 'Optional number of rows to freeze, or zero to unfreeze all rows'
-          type:
-            - number
-  - uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
-    summary: >-
-      Gets a range that describes the frozen cells in the active worksheet view. The frozen range is corresponds to
-      cells that are frozen in the top- and left-most pane.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getLocation()
+  - name: getLocation()
+    uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
+    package: excel!
     fullName: getLocation()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets a range that describes the frozen cells in the active worksheet view.
+      The frozen range is corresponds to cells that are frozen in the top- and
+      left-most pane.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getLocation(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: 'excel!Excel.<xref uid="Range:class" />'
         description: ''
-  - uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
-    summary: >-
-      Gets a range that describes the frozen cells in the active worksheet view. The frozen range is corresponds to
-      cells that are frozen in the top- and left-most pane. If there is no frozen pane, returns a null object.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getLocationOrNullObject()
+  - name: getLocationOrNullObject()
+    uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
+    package: excel!
     fullName: getLocationOrNullObject()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets a range that describes the frozen cells in the active worksheet view.
+      The frozen range is corresponds to cells that are frozen in the top- and
+      left-most pane. If there is no frozen pane, returns a null object.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getLocationOrNullObject(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: 'excel!Excel.<xref uid="Range:class" />'
         description: >-
 
 
@@ -219,45 +228,51 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.WorksheetFreezePanes#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.WorksheetFreezePanes object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetFreezePanesData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
-    name: toJSON()
+  - name: toJSON()
+    uid: 'excel!Excel.WorksheetFreezePanes#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      Excel.WorksheetFreezePanes object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.WorksheetFreezePanesData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         toJSON(): {
                     [key: string]: string;
                 };
       return:
-        type:
-          - |-
-            {
-                        [key: string]: string;
-                    }
+        type: |-
+          {
+                      [key: string]: string;
+                  }
         description: ''
-  - uid: 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
-    summary: |-
+  - name: unfreeze()
+    uid: 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
+    package: excel!
+    fullName: unfreeze()
+    summary: >-
       Removes all frozen panes in the worksheet.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: unfreeze()
-    fullName: unfreeze()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'unfreeze(): void;'
       return:
-        type:
-          - void
+        type: void
         description: >-
 
 
@@ -277,19 +292,4 @@ items:
           });
 
           ```
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeAt~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

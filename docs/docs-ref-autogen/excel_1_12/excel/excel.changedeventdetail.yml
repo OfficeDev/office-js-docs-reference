@@ -1,105 +1,102 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChangedEventDetail:interface'
-    summary: |-
-      Provide information about the detail of WorksheetChangedEvent/TableChangedEvent
+### YamlMime:TSType
+name: Excel.ChangedEventDetail
+uid: 'excel!Excel.ChangedEventDetail:interface'
+package: excel!
+fullName: Excel.ChangedEventDetail
+summary: >-
+  Provide information about the detail of
+  WorksheetChangedEvent/TableChangedEvent
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChangedEventDetail
-    fullName: Excel.ChangedEventDetail
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: valueAfter
+    uid: 'excel!Excel.ChangedEventDetail#valueAfter:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChangedEventDetail#valueAfter:member'
-      - 'excel!Excel.ChangedEventDetail#valueBefore:member'
-      - 'excel!Excel.ChangedEventDetail#valueTypeAfter:member'
-      - 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
-  - uid: 'excel!Excel.ChangedEventDetail#valueAfter:member'
-    summary: >-
-      Represents the value after changed. The data returned could be of type string, number, or a boolean. Cells that
-      contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: valueAfter
     fullName: valueAfter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the value after changed. The data returned could be of type
+      string, number, or a boolean. Cells that contain an error will return the
+      error string.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'valueAfter: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.ChangedEventDetail#valueBefore:member'
-    summary: >-
-      Represents the value before changed. The data returned could be of type string, number, or a boolean. Cells that
-      contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: valueBefore
+        type: any
+  - name: valueBefore
+    uid: 'excel!Excel.ChangedEventDetail#valueBefore:member'
+    package: excel!
     fullName: valueBefore
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the value before changed. The data returned could be of type
+      string, number, or a boolean. Cells that contain an error will return the
+      error string.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'valueBefore: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.ChangedEventDetail#valueTypeAfter:member'
-    summary: |-
+        type: any
+  - name: valueTypeAfter
+    uid: 'excel!Excel.ChangedEventDetail#valueTypeAfter:member'
+    package: excel!
+    fullName: valueTypeAfter
+    summary: >-
       Represents the type of value after changed
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: valueTypeAfter
-    fullName: valueTypeAfter
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        valueTypeAfter: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
-        "Error" | "RichValue";
+        valueTypeAfter: Excel.RangeValueType | "Unknown" | "Empty" | "String" |
+        "Integer" | "Double" | "Boolean" | "Error" | "RichValue";
       return:
-        type:
-          - 'excel!Excel.ChangedEventDetail#valueTypeAfter~0:complex'
-  - uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
-    summary: |-
+        type: >-
+          excel!Excel.<xref uid="RangeValueType:enum" /> | "Unknown" | "Empty" |
+          "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
+  - name: valueTypeBefore
+    uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
+    package: excel!
+    fullName: valueTypeBefore
+    summary: >-
       Represents the type of value before changed
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: valueTypeBefore
-    fullName: valueTypeBefore
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        valueTypeBefore: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
-        "Error" | "RichValue";
+        valueTypeBefore: Excel.RangeValueType | "Unknown" | "Empty" | "String" |
+        "Integer" | "Double" | "Boolean" | "Error" | "RichValue";
       return:
-        type:
-          - 'excel!Excel.ChangedEventDetail#valueTypeBefore~0:complex'
-references:
-  - uid: 'excel!Excel.ChangedEventDetail#valueTypeAfter~0:complex'
-    name: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
-    fullName: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
-    spec.typeScript:
-      - uid: 'excel!Excel.RangeValueType:enum'
-        name: Excel.RangeValueType
-        fullName: Excel.RangeValueType
-      - name: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'
-        fullName: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'
-  - uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore~0:complex'
-    name: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
-    fullName: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
-    spec.typeScript:
-      - uid: 'excel!Excel.RangeValueType:enum'
-        name: Excel.RangeValueType
-        fullName: Excel.RangeValueType
-      - name: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'
-        fullName: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'
+        type: >-
+          excel!Excel.<xref uid="RangeValueType:enum" /> | "Unknown" | "Empty" |
+          "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"

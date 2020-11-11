@@ -1,131 +1,148 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
-    summary: >-
-      Represents the data validation applied to the current range. To learn more about the data validation object model,
-      read [Add data validation to Excel
-      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
+### YamlMime:TSType
+name: Excel.Interfaces.DataValidationLoadOptions
+uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.DataValidationLoadOptions
+summary: >-
+  Represents the data validation applied to the current range. To learn more
+  about the data validation object model, read [Add data validation to Excel
+  ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.DataValidationLoadOptions
-    fullName: Excel.Interfaces.DataValidationLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.DataValidationLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.DataValidationLoadOptions#errorAlert:member'
-      - 'excel!Excel.Interfaces.DataValidationLoadOptions#ignoreBlanks:member'
-      - 'excel!Excel.Interfaces.DataValidationLoadOptions#prompt:member'
-      - 'excel!Excel.Interfaces.DataValidationLoadOptions#rule:member'
-      - 'excel!Excel.Interfaces.DataValidationLoadOptions#type:member'
-      - 'excel!Excel.Interfaces.DataValidationLoadOptions#valid:member'
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#errorAlert:member'
-    summary: |-
+        type: boolean
+  - name: errorAlert
+    uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#errorAlert:member'
+    package: excel!
+    fullName: errorAlert
+    summary: >-
       Error alert when user enters invalid data.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: errorAlert
-    fullName: errorAlert
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'errorAlert?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#ignoreBlanks:member'
-    summary: |-
-      Specifies if data validation will be performed on blank cells, it defaults to true.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ignoreBlanks
+        type: boolean
+  - name: ignoreBlanks
+    uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#ignoreBlanks:member'
+    package: excel!
     fullName: ignoreBlanks
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if data validation will be performed on blank cells, it defaults
+      to true.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ignoreBlanks?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#prompt:member'
-    summary: |-
+        type: boolean
+  - name: prompt
+    uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#prompt:member'
+    package: excel!
+    fullName: prompt
+    summary: >-
       Prompt when users select a cell.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: prompt
-    fullName: prompt
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'prompt?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#rule:member'
-    summary: |-
-      Data validation rule that contains different type of data validation criteria.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rule
+        type: boolean
+  - name: rule
+    uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#rule:member'
+    package: excel!
     fullName: rule
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Data validation rule that contains different type of data validation
+      criteria.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rule?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#type:member'
-    summary: |-
+        type: boolean
+  - name: type
+    uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Type of the data validation, see Excel.DataValidationType for details.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#valid:member'
-    summary: >-
-      Represents if all cell values are valid according to the data validation rules. Returns true if all cell values
-      are valid, or false if all cell values are invalid. Returns null if there are both valid and invalid cell values
-      within the range.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: valid
+        type: boolean
+  - name: valid
+    uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#valid:member'
+    package: excel!
     fullName: valid
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents if all cell values are valid according to the data validation
+      rules. Returns true if all cell values are valid, or false if all cell
+      values are invalid. Returns null if there are both valid and invalid cell
+      values within the range.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'valid?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

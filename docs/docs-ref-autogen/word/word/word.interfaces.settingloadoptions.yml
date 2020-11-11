@@ -1,71 +1,68 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.SettingLoadOptions:interface'
-    summary: >-
-      Represents a setting of the add-in.
+### YamlMime:TSType
+name: Word.Interfaces.SettingLoadOptions
+uid: 'word!Word.Interfaces.SettingLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.SettingLoadOptions
+summary: >-
+  Represents a setting of the add-in.
 
 
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: Word.Interfaces.SettingLoadOptions
-    fullName: Word.Interfaces.SettingLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.SettingLoadOptions#$all:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.SettingLoadOptions#$all:member'
-      - 'word!Word.Interfaces.SettingLoadOptions#key:member'
-      - 'word!Word.Interfaces.SettingLoadOptions#value:member'
-  - uid: 'word!Word.Interfaces.SettingLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.SettingLoadOptions#key:member'
+        type: boolean
+  - name: key
+    uid: 'word!Word.Interfaces.SettingLoadOptions#key:member'
+    package: word!
+    fullName: key
     summary: >-
       Gets the key of the setting. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'key?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.SettingLoadOptions#value:member'
+        type: boolean
+  - name: value
+    uid: 'word!Word.Interfaces.SettingLoadOptions#value:member'
+    package: word!
+    fullName: value
     summary: >-
       Gets or sets the value of the setting.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'value?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

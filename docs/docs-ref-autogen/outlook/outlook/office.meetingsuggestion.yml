@@ -1,143 +1,130 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.MeetingSuggestion:interface'
-    summary: >-
-      Represents a suggested meeting found in an item. Read mode only.
+### YamlMime:TSType
+name: Office.MeetingSuggestion
+uid: 'outlook!Office.MeetingSuggestion:interface'
+package: outlook!
+fullName: Office.MeetingSuggestion
+summary: >-
+  Represents a suggested meeting found in an item. Read mode only.
 
 
-      The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the
-      `Entities` object that is returned when the `getEntities` or `getEntitiesByType` method is called on the active
-      item.
+  The list of meetings suggested in an email message is returned in the
+  `meetingSuggestions` property of the `Entities` object that is returned when
+  the `getEntities` or `getEntitiesByType` method is called on the active item.
 
 
-      The start and end values are string representations of a `Date` object that contains the date and time at which
-      the suggested meeting is to begin and end. The values are in the default time zone specified for the current user.
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+  The start and end values are string representations of a `Date` object that
+  contains the date and time at which the suggested meeting is to begin and end.
+  The values are in the default time zone specified for the current user.
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Read
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
 
 
-      #### Examples
+  #### Examples
 
 
-      ```javascript
+  ```javascript
 
-      var item = Office.context.mailbox.item;
+  var item = Office.context.mailbox.item;
 
-      // Get an array of strings that represent meeting suggestions in the current item's body.
+  // Get an array of strings that represent meeting suggestions in the current
+  item's body.
 
-      var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+  var meetingSuggestions =
+  item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
 
-      console.log("There are " + meetingSuggestions.length + " meeting suggestions.")
+  console.log("There are " + meetingSuggestions.length + " meeting
+  suggestions.")
 
-      meetingSuggestions.forEach(function (meetingSuggestion) {
-          console.log("Subject: " + JSON.stringify(meetingSuggestion.subject));
-          console.log("Attendees: " + JSON.stringify(meetingSuggestion.attendees));
-          console.log("Location: " + JSON.stringify(meetingSuggestion.location));
-          console.log("Start: " + JSON.stringify(meetingSuggestion.start));
-          console.log("End: " + JSON.stringify(meetingSuggestion.end));
-          console.log("Meeting: " + JSON.stringify(meetingSuggestion.meetingString));
-      });
+  meetingSuggestions.forEach(function (meetingSuggestion) {
+      console.log("Subject: " + JSON.stringify(meetingSuggestion.subject));
+      console.log("Attendees: " + JSON.stringify(meetingSuggestion.attendees));
+      console.log("Location: " + JSON.stringify(meetingSuggestion.location));
+      console.log("Start: " + JSON.stringify(meetingSuggestion.start));
+      console.log("End: " + JSON.stringify(meetingSuggestion.end));
+      console.log("Meeting: " + JSON.stringify(meetingSuggestion.meetingString));
+  });
 
-      ```
-    name: Office.MeetingSuggestion
-    fullName: Office.MeetingSuggestion
-    langs:
-      - typeScript
-    type: interface
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attendees
+    uid: 'outlook!Office.MeetingSuggestion#attendees:member'
     package: outlook!
-    children:
-      - 'outlook!Office.MeetingSuggestion#attendees:member'
-      - 'outlook!Office.MeetingSuggestion#end:member'
-      - 'outlook!Office.MeetingSuggestion#location:member'
-      - 'outlook!Office.MeetingSuggestion#meetingString:member'
-      - 'outlook!Office.MeetingSuggestion#start:member'
-      - 'outlook!Office.MeetingSuggestion#subject:member'
-  - uid: 'outlook!Office.MeetingSuggestion#attendees:member'
-    summary: Gets the attendees for a suggested meeting.
-    name: attendees
     fullName: attendees
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the attendees for a suggested meeting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'attendees: EmailUser[];'
       return:
-        type:
-          - 'outlook!Office.MeetingSuggestion#attendees~0:complex'
-  - uid: 'outlook!Office.MeetingSuggestion#end:member'
-    summary: Gets the date and time that a suggested meeting is to end.
-    name: end
+        type: 'outlook!Office.<xref uid="EmailUser:interface" />[]'
+  - name: end
+    uid: 'outlook!Office.MeetingSuggestion#end:member'
+    package: outlook!
     fullName: end
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the date and time that a suggested meeting is to end.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'end: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.MeetingSuggestion#location:member'
-    summary: Gets the location of a suggested meeting.
-    name: location
+        type: string
+  - name: location
+    uid: 'outlook!Office.MeetingSuggestion#location:member'
+    package: outlook!
     fullName: location
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the location of a suggested meeting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'location: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.MeetingSuggestion#meetingString:member'
-    summary: Gets a string that was identified as a meeting suggestion.
-    name: meetingString
+        type: string
+  - name: meetingString
+    uid: 'outlook!Office.MeetingSuggestion#meetingString:member'
+    package: outlook!
     fullName: meetingString
-    langs:
-      - typeScript
-    type: property
+    summary: Gets a string that was identified as a meeting suggestion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'meetingString: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.MeetingSuggestion#start:member'
-    summary: Gets the date and time that a suggested meeting is to begin.
-    name: start
+        type: string
+  - name: start
+    uid: 'outlook!Office.MeetingSuggestion#start:member'
+    package: outlook!
     fullName: start
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the date and time that a suggested meeting is to begin.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'start: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.MeetingSuggestion#subject:member'
-    summary: Gets the subject of a suggested meeting.
-    name: subject
+        type: string
+  - name: subject
+    uid: 'outlook!Office.MeetingSuggestion#subject:member'
+    package: outlook!
     fullName: subject
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the subject of a suggested meeting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'subject: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'outlook!Office.MeetingSuggestion#attendees~0:complex'
-    name: 'EmailUser[]'
-    fullName: 'Office.EmailUser[]'
-    spec.typeScript:
-      - uid: 'outlook!Office.EmailUser:interface'
-        name: EmailUser
-        fullName: Office.EmailUser
-      - name: '[]'
-        fullName: '[]'
+        type: string

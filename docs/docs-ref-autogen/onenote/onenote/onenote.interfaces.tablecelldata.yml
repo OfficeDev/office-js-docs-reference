@@ -1,101 +1,101 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
-    summary: An interface describing the data returned by calling "tableCell.toJSON()".
-    name: OneNote.Interfaces.TableCellData
-    fullName: OneNote.Interfaces.TableCellData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.TableCellData
+uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.TableCellData
+summary: An interface describing the data returned by calling "tableCell.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellIndex
+    uid: 'onenote!OneNote.Interfaces.TableCellData#cellIndex:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.TableCellData#cellIndex:member'
-      - 'onenote!OneNote.Interfaces.TableCellData#id:member'
-      - 'onenote!OneNote.Interfaces.TableCellData#paragraphs:member'
-      - 'onenote!OneNote.Interfaces.TableCellData#rowIndex:member'
-      - 'onenote!OneNote.Interfaces.TableCellData#shadingColor:member'
-  - uid: 'onenote!OneNote.Interfaces.TableCellData#cellIndex:member'
-    summary: |-
+    fullName: cellIndex
+    summary: >-
       Gets the index of the cell in its row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: cellIndex
-    fullName: cellIndex
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellIndex?: number;'
       return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.Interfaces.TableCellData#id:member'
-    summary: |-
+        type: number
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.TableCellData#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the cell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.TableCellData#paragraphs:member'
-    summary: |-
+        type: string
+  - name: paragraphs
+    uid: 'onenote!OneNote.Interfaces.TableCellData#paragraphs:member'
+    package: onenote!
+    fullName: paragraphs
+    summary: >-
       Gets the collection of Paragraph objects in the TableCell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraphs
-    fullName: paragraphs
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableCellData#paragraphs~0:complex'
-  - uid: 'onenote!OneNote.Interfaces.TableCellData#rowIndex:member'
-    summary: |-
+        type: 'onenote!OneNote.Interfaces.<xref uid="ParagraphData:interface" />[]'
+  - name: rowIndex
+    uid: 'onenote!OneNote.Interfaces.TableCellData#rowIndex:member'
+    package: onenote!
+    fullName: rowIndex
+    summary: >-
       Gets the index of the cell's row in the table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: rowIndex
-    fullName: rowIndex
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowIndex?: number;'
       return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.Interfaces.TableCellData#shadingColor:member'
-    summary: |-
+        type: number
+  - name: shadingColor
+    uid: 'onenote!OneNote.Interfaces.TableCellData#shadingColor:member'
+    package: onenote!
+    fullName: shadingColor
+    summary: >-
       Gets and sets the shading color of the cell
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: shadingColor
-    fullName: shadingColor
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shadingColor?: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'onenote!OneNote.Interfaces.TableCellData#paragraphs~0:complex'
-    name: 'OneNote.Interfaces.ParagraphData[]'
-    fullName: 'OneNote.Interfaces.ParagraphData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
-        name: OneNote.Interfaces.ParagraphData
-        fullName: OneNote.Interfaces.ParagraphData
-      - name: '[]'
-        fullName: '[]'
+        type: string

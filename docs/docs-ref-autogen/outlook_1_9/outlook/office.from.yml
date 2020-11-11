@@ -1,49 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.From:interface'
-    summary: |-
-      Provides a method to get the from value of a message in an Outlook add-in.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+### YamlMime:TSType
+name: Office.From
+uid: 'outlook!Office.From:interface'
+package: outlook!
+fullName: Office.From
+summary: >-
+  Provides a method to get the from value of a message in an Outlook add-in.
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    name: Office.From
-    fullName: Office.From
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: Mailbox
+  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.From#getAsync:member(1)'
     package: outlook!
-    children:
-      - 'outlook!Office.From#getAsync:member(1)'
-  - uid: 'outlook!Office.From#getAsync:member(1)'
+    fullName: 'getAsync(options, callback)'
     summary: >-
       Gets the from value of a message.
 
 
-      The `getAsync` method starts an asynchronous call to the Exchange server to get the from value of a message.
+      The `getAsync` method starts an asynchronous call to the Exchange server
+      to get the from value of a message.
 
 
       The from value of the item is provided as an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the `asyncResult.value` property.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
+      in the `asyncResult.value` property.
 
 
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -64,49 +72,30 @@ items:
       });
 
       ```
-    name: 'getAsync(options, callback)'
-    fullName: 'getAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
         getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<EmailAddressDetails>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties. `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `value` property of the
-            result is the item's from value, as an `EmailAddressDetails` object.
-          type:
-            - 'outlook!Office.From#getAsync~0:complex'
-references:
-  - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
-  - uid: 'outlook!Office.From#getAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.EmailAddressDetails>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.EmailAddressDetails:interface'
-        name: EmailAddressDetails
-        fullName: Office.EmailAddressDetails
-      - name: '>) => void'
-        fullName: '>) => void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The
+            `value` property of the result is the item's from value, as an
+            `EmailAddressDetails` object.
+          type: >-
+            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            />&lt;outlook!Office.<xref uid="EmailAddressDetails:interface"
+            />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''

@@ -1,48 +1,51 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
-    summary: 'An interface for updating data on the ChartTitleFormat object, for use in `chartTitleFormat.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartTitleFormatUpdateData
-    fullName: Excel.Interfaces.ChartTitleFormatUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartTitleFormatUpdateData
+uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartTitleFormatUpdateData
+summary: >-
+  An interface for updating data on the ChartTitleFormat object, for use in
+  `chartTitleFormat.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: border
+    uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member'
-      - 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member'
-  - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member'
-    summary: |-
-      Represents the border format of chart title, which includes color, linestyle, and weight.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: border
     fullName: border
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the border format of chart title, which includes color,
+      linestyle, and weight.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member'
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for an object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: font
+        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderUpdateData:interface" />'
+  - name: font
+    uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member'
+    package: excel!
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the font attributes (font name, font size, color, etc.) for an
+      object.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: Excel.Interfaces.ChartBorderUpdateData
-  - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: Excel.Interfaces.ChartFontUpdateData
+        type: 'excel!Excel.Interfaces.<xref uid="ChartFontUpdateData:interface" />'

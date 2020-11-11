@@ -1,109 +1,120 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
-    summary: |-
-      Represents the Shape class.
+### YamlMime:TSType
+name: Visio.Interfaces.ShapeLoadOptions
+uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+package: visio!
+fullName: Visio.Interfaces.ShapeLoadOptions
+summary: >-
+  Represents the Shape class.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Interfaces.ShapeLoadOptions
-    fullName: Visio.Interfaces.ShapeLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#$all:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.ShapeLoadOptions#$all:member'
-      - 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
-      - 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
-      - 'visio!Visio.Interfaces.ShapeLoadOptions#select:member'
-      - 'visio!Visio.Interfaces.ShapeLoadOptions#text:member'
-      - 'visio!Visio.Interfaces.ShapeLoadOptions#view:member'
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
-    summary: |-
+        type: boolean
+  - name: id
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
+    package: visio!
+    fullName: id
+    summary: >-
       Shape's identifier. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
-    summary: |-
+        type: boolean
+  - name: name
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
+    package: visio!
+    fullName: name
+    summary: >-
       Shape's name. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#select:member'
-    summary: |-
-      Returns true, if shape is selected. User can set true to select the shape explicitly.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: select
+        type: boolean
+  - name: select
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#select:member'
+    package: visio!
     fullName: select
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns true, if shape is selected. User can set true to select the shape
+      explicitly.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'select?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#text:member'
-    summary: |-
+        type: boolean
+  - name: text
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#text:member'
+    package: visio!
+    fullName: text
+    summary: >-
       Shape's text. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#view:member'
-    summary: |-
+        type: boolean
+  - name: view
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#view:member'
+    package: visio!
+    fullName: view
+    summary: >-
       Returns the view of the shape.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: view
-    fullName: view
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'view?: Visio.Interfaces.ShapeViewLoadOptions;'
       return:
-        type:
-          - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
-references:
-  - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
-    name: Visio.Interfaces.ShapeViewLoadOptions
+        type: 'visio!Visio.Interfaces.<xref uid="ShapeViewLoadOptions:interface" />'

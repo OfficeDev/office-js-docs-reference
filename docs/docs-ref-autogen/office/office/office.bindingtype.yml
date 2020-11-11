@@ -1,37 +1,27 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.BindingType:enum'
-    summary: Specifies the type of the binding object that should be returned.
-    name: Office.BindingType
-    fullName: Office.BindingType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.BindingType
+uid: 'office!Office.BindingType:enum'
+package: office!
+fullName: Office.BindingType
+summary: Specifies the type of the binding object that should be returned.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Matrix
+    uid: 'office!Office.BindingType.Matrix:member'
     package: office!
-    children:
-      - 'office!Office.BindingType.Matrix:member'
-      - 'office!Office.BindingType.Table:member'
-      - 'office!Office.BindingType.Text:member'
-  - uid: 'office!Office.BindingType.Matrix:member'
     summary: >-
-      Tabular data without a header row. Data is returned as an array of arrays, for example in this form:
-      \[\[row1column1, row1column2\],\[row2column1, row2column2\]\]
-    name: Matrix
-    fullName: Matrix
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.BindingType.Table:member'
-    summary: 'Tabular data with a header row. Data is returned as a [TableData](xref:office!Office.TableData:class) object.'
-    name: Table
-    fullName: Table
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.BindingType.Text:member'
+      Tabular data without a header row. Data is returned as an array of arrays,
+      for example in this form: \[\[row1column1, row1column2\],\[row2column1,
+      row2column2\]\]
+  - name: Table
+    uid: 'office!Office.BindingType.Table:member'
+    package: office!
+    summary: >-
+      Tabular data with a header row. Data is returned as a
+      [TableData](xref:office!Office.TableData:class) object.
+  - name: Text
+    uid: 'office!Office.BindingType.Text:member'
+    package: office!
     summary: Plain text. Data is returned as a run of characters.
-    name: Text
-    fullName: Text
-    langs:
-      - typeScript
-    type: field

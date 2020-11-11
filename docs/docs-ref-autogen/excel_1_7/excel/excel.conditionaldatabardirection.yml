@@ -1,38 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalDataBarDirection:enum'
-    summary: |-
-      Represents the Data Bar direction within a cell.
+### YamlMime:TSEnum
+name: Excel.ConditionalDataBarDirection
+uid: 'excel!Excel.ConditionalDataBarDirection:enum'
+package: excel!
+fullName: Excel.ConditionalDataBarDirection
+summary: >-
+  Represents the Data Bar direction within a cell.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalDataBarDirection
-    fullName: Excel.ConditionalDataBarDirection
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: context
+    uid: 'excel!Excel.ConditionalDataBarDirection.context:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalDataBarDirection.context:member'
-      - 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
-      - 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
-  - uid: 'excel!Excel.ConditionalDataBarDirection.context:member'
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Context"'
-  - uid: 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LeftToRight"'
-  - uid: 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RightToLeft"'
+    summary: ''
+  - name: leftToRight
+    uid: 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
+    package: excel!
+    summary: ''
+  - name: rightToLeft
+    uid: 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
+    package: excel!
+    summary: ''

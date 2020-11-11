@@ -1,274 +1,257 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.TableCellCollection:class'
-    summary: |-
-      Contains a collection of TableCell objects.
+### YamlMime:TSType
+name: OneNote.TableCellCollection
+uid: 'onenote!OneNote.TableCellCollection:class'
+package: onenote!
+fullName: OneNote.TableCellCollection
+summary: >-
+  Contains a collection of TableCell objects.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.TableCellCollection
-    fullName: OneNote.TableCellCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'onenote!OneNote.TableCellCollection#context:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.TableCellCollection#context:member'
-      - 'onenote!OneNote.TableCellCollection#count:member'
-      - 'onenote!OneNote.TableCellCollection#getItem:member(1)'
-      - 'onenote!OneNote.TableCellCollection#getItemAt:member(1)'
-      - 'onenote!OneNote.TableCellCollection#items:member'
-      - 'onenote!OneNote.TableCellCollection#load:member(1)'
-      - 'onenote!OneNote.TableCellCollection#load:member(2)'
-      - 'onenote!OneNote.TableCellCollection#load:member(3)'
-      - 'onenote!OneNote.TableCellCollection#toJSON:member(1)'
-      - 'onenote!OneNote.TableCellCollection#track:member(1)'
-      - 'onenote!OneNote.TableCellCollection#untrack:member(1)'
-  - uid: 'onenote!OneNote.TableCellCollection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'onenote!OneNote.RequestContext:class'
-  - uid: 'onenote!OneNote.TableCellCollection#count:member'
-    summary: |-
+        type: 'onenote!OneNote.<xref uid="RequestContext:class" />'
+  - name: count
+    uid: 'onenote!OneNote.TableCellCollection#count:member'
+    package: onenote!
+    fullName: count
+    summary: >-
       Returns the number of tablecells in this collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly count: number;'
       return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.TableCellCollection#getItem:member(1)'
-    summary: |-
-      Gets a table cell object by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: getItem(index)
-    fullName: getItem(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(index: number | string): OneNote.TableCell;'
-      return:
-        type:
-          - 'onenote!OneNote.TableCell:class'
-        description: ''
-      parameters:
-        - id: index
-          description: A number that identifies the index location of a table cell object.
-          type:
-            - number | string
-  - uid: 'onenote!OneNote.TableCellCollection#getItemAt:member(1)'
-    summary: |-
-      Gets a tablecell at its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): OneNote.TableCell;'
-      return:
-        type:
-          - 'onenote!OneNote.TableCell:class'
-        description: ''
-      parameters:
-        - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
-          type:
-            - number
-  - uid: 'onenote!OneNote.TableCellCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
+        type: number
+  - name: items
+    uid: 'onenote!OneNote.TableCellCollection#items:member'
+    package: onenote!
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly items: OneNote.TableCell[];'
       return:
-        type:
-          - 'onenote!OneNote.TableCellCollection#items~0:complex'
-  - uid: 'onenote!OneNote.TableCellCollection#load:member(1)'
+        type: 'onenote!OneNote.<xref uid="TableCell:class" />[]'
+methods:
+  - name: getItem(index)
+    uid: 'onenote!OneNote.TableCellCollection#getItem:member(1)'
+    package: onenote!
+    fullName: getItem(index)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
+      Gets a table cell object by ID or by its index in the collection.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(index: number | string): OneNote.TableCell;'
+      parameters:
+        - id: index
+          description: A number that identifies the index location of a table cell object.
+          type: number | string
+      return:
+        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        description: ''
+  - name: getItemAt(index)
+    uid: 'onenote!OneNote.TableCellCollection#getItemAt:member(1)'
+    package: onenote!
+    fullName: getItemAt(index)
+    summary: >-
+      Gets a tablecell at its position in the collection.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): OneNote.TableCell;'
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: 'onenote!OneNote.<xref uid="TableCell:class" />'
+        description: ''
+  - name: load(option)
+    uid: 'onenote!OneNote.TableCellCollection#load:member(1)'
+    package: onenote!
+    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call "context.sync()" before reading the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.TableCellCollection` - Where option is a comma-delimited string or an
-      array of strings that specify the properties to load.
+      `load(option?: string | string[]): OneNote.TableCellCollection` - Where
+      option is a comma-delimited string or an array of strings that specify the
+      properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }):
+      OneNote.TableCellCollection` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a
+      comma-delimited string that specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCellCollection` -
-      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip specifies the number of items that are
-      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
-      the specified number of items.
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+      `load(option?: { select?: string; expand?: string; top?: number; skip?:
+      number }): OneNote.TableCellCollection` - Only available on collection
+      types. It is similar to the preceding signature. Option.top specifies the
+      maximum number of collection items that can be included in the result.
+      Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will
+      start after skipping the specified number of items.
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        load(option?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
-        OneNote.TableCellCollection;
-      return:
-        type:
-          - 'onenote!OneNote.TableCellCollection:class'
-        description: ''
+        load(option?: OneNote.Interfaces.TableCellCollectionLoadOptions &
+        OneNote.Interfaces.CollectionLoadOptions): OneNote.TableCellCollection;
       parameters:
         - id: option
           description: ''
-          type:
-            - 'onenote!OneNote.TableCellCollection#load~0:complex'
-  - uid: 'onenote!OneNote.TableCellCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            onenote!OneNote.Interfaces.<xref
+            uid="TableCellCollectionLoadOptions:interface" /> &
+            onenote!OneNote.Interfaces.<xref
+            uid="CollectionLoadOptions:interface" />
+      return:
+        type: 'onenote!OneNote.<xref uid="TableCellCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'onenote!OneNote.TableCellCollection#load:member(2)'
+    package: onenote!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): OneNote.TableCellCollection;'
-      return:
-        type:
-          - 'onenote!OneNote.TableCellCollection:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'onenote!OneNote.TableCellCollection#load:member(3)'
-    name: load(option)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'onenote!OneNote.<xref uid="TableCellCollection:class" />'
+        description: ''
+  - name: load(option)
+    uid: 'onenote!OneNote.TableCellCollection#load:member(3)'
+    package: onenote!
     fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(option?: OfficeExtension.LoadOption): OneNote.TableCellCollection;'
-      return:
-        type:
-          - 'onenote!OneNote.TableCellCollection:class'
-        description: ''
       parameters:
         - id: option
           description: ''
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'onenote!OneNote.TableCellCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `OneNote.TableCellCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+      return:
+        type: 'onenote!OneNote.<xref uid="TableCellCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'onenote!OneNote.TableCellCollection#toJSON:member(1)'
+    package: onenote!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `OneNote.TableCellCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `OneNote.Interfaces.TableCellCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): OneNote.Interfaces.TableCellCollectionData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="TableCellCollectionData:interface" />
         description: ''
-  - uid: 'onenote!OneNote.TableCellCollection#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
-    name: track()
+  - name: track()
+    uid: 'onenote!OneNote.TableCellCollection#track:member(1)'
+    package: onenote!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      context.trackedObjects.add(thisObject). If you are using this object
+      across ".sync" calls and outside the sequential execution of a ".run"
+      batch, and get an "InvalidObjectPath" error when setting a property or
+      invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): OneNote.TableCellCollection;'
       return:
-        type:
-          - 'onenote!OneNote.TableCellCollection:class'
+        type: 'onenote!OneNote.<xref uid="TableCellCollection:class" />'
         description: ''
-  - uid: 'onenote!OneNote.TableCellCollection#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'onenote!OneNote.TableCellCollection#untrack:member(1)'
+    package: onenote!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects
+      slows down the host application, so please remember to free any objects
+      you add, once you're done using them. You will need to call
+      "context.sync()" before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): OneNote.TableCellCollection;'
       return:
-        type:
-          - 'onenote!OneNote.TableCellCollection:class'
+        type: 'onenote!OneNote.<xref uid="TableCellCollection:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'onenote!OneNote.RequestContext:class'
-    name: RequestContext
-  - uid: 'onenote!OneNote.TableCell:class'
-    name: OneNote.TableCell
-  - uid: 'onenote!OneNote.TableCellCollection#items~0:complex'
-    name: 'OneNote.TableCell[]'
-    fullName: 'OneNote.TableCell[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.TableCell:class'
-        name: OneNote.TableCell
-        fullName: OneNote.TableCell
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'onenote!OneNote.TableCellCollection:class'
-    name: OneNote.TableCellCollection
-  - uid: 'onenote!OneNote.TableCellCollection#load~0:complex'
-    name: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-    fullName: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
-        name: OneNote.Interfaces.TableCellCollectionLoadOptions
-        fullName: OneNote.Interfaces.TableCellCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
-        name: OneNote.Interfaces.CollectionLoadOptions
-        fullName: OneNote.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
-    name: OneNote.Interfaces.TableCellCollectionData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

@@ -1,125 +1,134 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
-    summary: 'An interface for updating data on the ChartTrendline object, for use in `chartTrendline.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartTrendlineUpdateData
-    fullName: Excel.Interfaces.ChartTrendlineUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartTrendlineUpdateData
+uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartTrendlineUpdateData
+summary: >-
+  An interface for updating data on the ChartTrendline object, for use in
+  `chartTrendline.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#format:member'
-      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#intercept:member'
-      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#movingAveragePeriod:member'
-      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#name:member'
-      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#polynomialOrder:member'
-      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member'
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#format:member'
-    summary: |-
+    fullName: format
+    summary: >-
       Represents the formatting of a chart trendline.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#intercept:member'
-    summary: >-
-      Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
-      values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: intercept
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ChartTrendlineFormatUpdateData:interface" />
+  - name: intercept
+    uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#intercept:member'
+    package: excel!
     fullName: intercept
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the intercept value of the trendline. Can be set to a numeric
+      value or an empty string (for automatic values). The returned value is
+      always a number.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'intercept?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#movingAveragePeriod:member'
-    summary: |-
-      Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: movingAveragePeriod
+        type: any
+  - name: movingAveragePeriod
+    uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#movingAveragePeriod:member'
+    package: excel!
     fullName: movingAveragePeriod
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the period of a chart trendline. Only applicable for trendline
+      with MovingAverage type.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'movingAveragePeriod?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#name:member'
-    summary: >-
-      Represents the name of the trendline. Can be set to a string value, or can be set to null value represents
-      automatic values. The returned value is always a string
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
+        type: number
+  - name: name
+    uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#name:member'
+    package: excel!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the name of the trendline. Can be set to a string value, or can
+      be set to null value represents automatic values. The returned value is
+      always a string
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#polynomialOrder:member'
-    summary: |-
-      Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: polynomialOrder
+        type: string
+  - name: polynomialOrder
+    uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#polynomialOrder:member'
+    package: excel!
     fullName: polynomialOrder
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the order of a chart trendline. Only applicable for trendline
+      with Polynomial type.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'polynomialOrder?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member'
-    summary: |-
+        type: number
+  - name: type
+    uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Represents the type of a chart trendline.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        type?: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
-        "Power";
+        type?: Excel.ChartTrendlineType | "Linear" | "Exponential" |
+        "Logarithmic" | "MovingAverage" | "Polynomial" | "Power";
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartTrendlineFormatUpdateData
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type~0:complex'
-    name: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
-    fullName: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartTrendlineType:enum'
-        name: Excel.ChartTrendlineType
-        fullName: Excel.ChartTrendlineType
-      - name: ' | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
-        fullName: ' | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
+        type: >-
+          excel!Excel.<xref uid="ChartTrendlineType:enum" /> | "Linear" |
+          "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
+          "Power"

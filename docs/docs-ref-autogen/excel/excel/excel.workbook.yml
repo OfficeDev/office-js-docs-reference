@@ -1,658 +1,342 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Workbook:class'
-    summary: >-
-      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
-      To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
-      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+### YamlMime:TSType
+name: Excel.Workbook
+uid: 'excel!Excel.Workbook:class'
+package: excel!
+fullName: Excel.Workbook
+summary: >-
+  Workbook is the top level object which contains related workbook objects such
+  as worksheets, tables, ranges, etc. To learn more about the workbook object
+  model, read [Work with workbooks using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Workbook
-    fullName: Excel.Workbook
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: application
+    uid: 'excel!Excel.Workbook#application:member'
     package: excel!
-    children:
-      - 'excel!Excel.Workbook#application:member'
-      - 'excel!Excel.Workbook#autoSave:member'
-      - 'excel!Excel.Workbook#bindings:member'
-      - 'excel!Excel.Workbook#calculationEngineVersion:member'
-      - 'excel!Excel.Workbook#chartDataPointTrack:member'
-      - 'excel!Excel.Workbook#close:member(1)'
-      - 'excel!Excel.Workbook#close:member(2)'
-      - 'excel!Excel.Workbook#comments:member'
-      - 'excel!Excel.Workbook#context:member'
-      - 'excel!Excel.Workbook#customXmlParts:member'
-      - 'excel!Excel.Workbook#dataConnections:member'
-      - 'excel!Excel.Workbook#functions:member'
-      - 'excel!Excel.Workbook#getActiveCell:member(1)'
-      - 'excel!Excel.Workbook#getActiveChart:member(1)'
-      - 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
-      - 'excel!Excel.Workbook#getActiveSlicer:member(1)'
-      - 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
-      - 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
-      - 'excel!Excel.Workbook#getSelectedRange:member(1)'
-      - 'excel!Excel.Workbook#getSelectedRanges:member(1)'
-      - 'excel!Excel.Workbook#isDirty:member'
-      - 'excel!Excel.Workbook#linkedDataTypes:member'
-      - 'excel!Excel.Workbook#load:member(1)'
-      - 'excel!Excel.Workbook#load:member(2)'
-      - 'excel!Excel.Workbook#load:member(3)'
-      - 'excel!Excel.Workbook#name:member'
-      - 'excel!Excel.Workbook#names:member'
-      - 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
-      - 'excel!Excel.Workbook#onSelectionChanged:member'
-      - 'excel!Excel.Workbook#pivotTables:member'
-      - 'excel!Excel.Workbook#pivotTableStyles:member'
-      - 'excel!Excel.Workbook#previouslySaved:member'
-      - 'excel!Excel.Workbook#properties:member'
-      - 'excel!Excel.Workbook#protection:member'
-      - 'excel!Excel.Workbook#readOnly:member'
-      - 'excel!Excel.Workbook#save:member(1)'
-      - 'excel!Excel.Workbook#save:member(2)'
-      - 'excel!Excel.Workbook#set:member(1)'
-      - 'excel!Excel.Workbook#set:member(2)'
-      - 'excel!Excel.Workbook#settings:member'
-      - 'excel!Excel.Workbook#showPivotFieldList:member'
-      - 'excel!Excel.Workbook#slicers:member'
-      - 'excel!Excel.Workbook#slicerStyles:member'
-      - 'excel!Excel.Workbook#styles:member'
-      - 'excel!Excel.Workbook#tables:member'
-      - 'excel!Excel.Workbook#tableStyles:member'
-      - 'excel!Excel.Workbook#timelineStyles:member'
-      - 'excel!Excel.Workbook#toJSON:member(1)'
-      - 'excel!Excel.Workbook#use1904DateSystem:member'
-      - 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
-      - 'excel!Excel.Workbook#worksheets:member'
-  - uid: 'excel!Excel.Workbook#application:member'
-    summary: |-
+    fullName: application
+    summary: >-
       Represents the Excel application instance that contains this workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: application
-    fullName: application
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly application: Excel.Application;'
       return:
-        type:
-          - 'excel!Excel.Application:class'
-  - uid: 'excel!Excel.Workbook#autoSave:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="Application:class" />'
+  - name: autoSave
+    uid: 'excel!Excel.Workbook#autoSave:member'
+    package: excel!
+    fullName: autoSave
+    summary: >-
       Specifies if the workbook is in autosave mode.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: autoSave
-    fullName: autoSave
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly autoSave: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#bindings:member'
-    summary: |-
+        type: boolean
+  - name: bindings
+    uid: 'excel!Excel.Workbook#bindings:member'
+    package: excel!
+    fullName: bindings
+    summary: >-
       Represents a collection of bindings that are part of the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: bindings
-    fullName: bindings
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
-        type:
-          - 'excel!Excel.BindingCollection:class'
-  - uid: 'excel!Excel.Workbook#calculationEngineVersion:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="BindingCollection:class" />'
+  - name: calculationEngineVersion
+    uid: 'excel!Excel.Workbook#calculationEngineVersion:member'
+    package: excel!
+    fullName: calculationEngineVersion
+    summary: >-
       Returns a number about the version of Excel Calculation Engine.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculationEngineVersion
-    fullName: calculationEngineVersion
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly calculationEngineVersion: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Workbook#chartDataPointTrack:member'
-    summary: >-
-      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
-      charts track the index of the data points.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: chartDataPointTrack
+        type: number
+  - name: chartDataPointTrack
+    uid: 'excel!Excel.Workbook#chartDataPointTrack:member'
+    package: excel!
     fullName: chartDataPointTrack
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to
+      which they are attached. False if the charts track the index of the data
+      points.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'chartDataPointTrack: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#close:member(1)'
-    summary: |-
-      Close current workbook.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: close(closeBehavior)
-    fullName: close(closeBehavior)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'close(closeBehavior?: Excel.CloseBehavior): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
-
-          await Excel.run(async (context) => {
-              context.workbook.close(Excel.CloseBehavior.save);
-          });
-
-          ```
-      parameters:
-        - id: closeBehavior
-          description: workbook close behavior.
-          type:
-            - 'excel!Excel.CloseBehavior:enum'
-  - uid: 'excel!Excel.Workbook#close:member(2)'
-    summary: |-
-      Close current workbook.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: close(closeBehaviorString)
-    fullName: close(closeBehaviorString)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: closeBehaviorString
-          description: workbook close behavior.
-          type:
-            - '"Save" | "SkipSave"'
-  - uid: 'excel!Excel.Workbook#comments:member'
-    summary: |-
+        type: boolean
+  - name: comments
+    uid: 'excel!Excel.Workbook#comments:member'
+    package: excel!
+    fullName: comments
+    summary: >-
       Represents a collection of Comments associated with the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: comments
-    fullName: comments
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly comments: Excel.CommentCollection;'
       return:
-        type:
-          - 'excel!Excel.CommentCollection:class'
-  - uid: 'excel!Excel.Workbook#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: 'excel!Excel.<xref uid="CommentCollection:class" />'
+  - name: context
+    uid: 'excel!Excel.Workbook#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.Workbook#customXmlParts:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: customXmlParts
+    uid: 'excel!Excel.Workbook#customXmlParts:member'
+    package: excel!
+    fullName: customXmlParts
+    summary: >-
       Represents the collection of custom XML parts contained by this workbook.
 
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: customXmlParts
-    fullName: customXmlParts
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
       return:
-        type:
-          - 'excel!Excel.CustomXmlPartCollection:class'
-  - uid: 'excel!Excel.Workbook#dataConnections:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="CustomXmlPartCollection:class" />'
+  - name: dataConnections
+    uid: 'excel!Excel.Workbook#dataConnections:member'
+    package: excel!
+    fullName: dataConnections
+    summary: >-
       Represents all data connections in the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: dataConnections
-    fullName: dataConnections
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
-        type:
-          - 'excel!Excel.DataConnectionCollection:class'
-  - uid: 'excel!Excel.Workbook#functions:member'
-    summary: |-
-      Represents a collection of worksheet functions that can be used for computation.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: functions
+        type: 'excel!Excel.<xref uid="DataConnectionCollection:class" />'
+  - name: functions
+    uid: 'excel!Excel.Workbook#functions:member'
+    package: excel!
     fullName: functions
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents a collection of worksheet functions that can be used for
+      computation.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly functions: Excel.Functions;'
       return:
-        type:
-          - 'excel!Excel.Functions:class'
-  - uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
-    summary: |-
-      Gets the currently active cell from the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getActiveCell()
-    fullName: getActiveCell()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveCell(): Excel.Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:class'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-get-active-cell.yaml
-
-          await Excel.run(async (context) => {
-
-              let myWorkbook = context.workbook;
-              let activeCell = myWorkbook.getActiveCell();
-              activeCell.load("address");
-
-              await context.sync();
-              
-              console.log("The active cell is " + activeCell.address);
-          });
-
-          ```
-  - uid: 'excel!Excel.Workbook#getActiveChart:member(1)'
-    summary: >-
-      Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is
-      thrown.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getActiveChart()
-    fullName: getActiveChart()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveChart(): Excel.Chart;'
-      return:
-        type:
-          - 'excel!Excel.Chart:class'
-        description: ''
-  - uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
-    summary: |-
-      Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getActiveChartOrNullObject()
-    fullName: getActiveChartOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveChartOrNullObject(): Excel.Chart;'
-      return:
-        type:
-          - 'excel!Excel.Chart:class'
-        description: ''
-  - uid: 'excel!Excel.Workbook#getActiveSlicer:member(1)'
-    summary: >-
-      Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is
-      thrown.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getActiveSlicer()
-    fullName: getActiveSlicer()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveSlicer(): Excel.Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:class'
-        description: ''
-  - uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
-    summary: |-
-      Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getActiveSlicerOrNullObject()
-    fullName: getActiveSlicerOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveSlicerOrNullObject(): Excel.Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:class'
-        description: ''
-  - uid: 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
-    summary: >-
-      True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
-      between when the workbook status changes and when the changes are reflected on the result of the method.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getIsActiveCollabSession()
-    fullName: getIsActiveCollabSession()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
-      return:
-        type:
-          - 'excel!Excel.Workbook#getIsActiveCollabSession~0:complex'
-        description: ''
-  - uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
-    summary: >-
-      Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
-      will throw an error.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getSelectedRange()
-    fullName: getSelectedRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedRange(): Excel.Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:class'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var selectedRange = ctx.workbook.getSelectedRange();
-              selectedRange.load('address');
-              return ctx.sync().then(function() {
-                      console.log(selectedRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: 'excel!Excel.Workbook#getSelectedRanges:member(1)'
-    summary: >-
-      Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
-      RangeAreas object that represents all the selected ranges.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getSelectedRanges()
-    fullName: getSelectedRanges()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedRanges(): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
-
-          await Excel.run(async (context) => {
-
-              const selectedRanges = context.workbook.getSelectedRanges();
-              selectedRanges.format.fill.color = "lightblue";
-
-              await context.sync();
-          })
-
-          ```
-  - uid: 'excel!Excel.Workbook#isDirty:member'
-    summary: >-
-      Specifies if changes have been made since the workbook was last saved. You can set this property to true if you
-      want to close a modified workbook without either saving it or being prompted to save it.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isDirty
+        type: 'excel!Excel.<xref uid="Functions:class" />'
+  - name: isDirty
+    uid: 'excel!Excel.Workbook#isDirty:member'
+    package: excel!
     fullName: isDirty
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if changes have been made since the workbook was last saved. You
+      can set this property to true if you want to close a modified workbook
+      without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isDirty: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#linkedDataTypes:member'
+        type: boolean
+  - name: linkedDataTypes
+    uid: 'excel!Excel.Workbook#linkedDataTypes:member'
+    package: excel!
+    fullName: linkedDataTypes
     summary: >-
       Returns a collection of linked data types that are part of the workbook.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: linkedDataTypes
-    fullName: linkedDataTypes
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'readonly linkedDataTypes: Excel.LinkedDataTypeCollection;'
       return:
-        type:
-          - 'excel!Excel.LinkedDataTypeCollection:class'
-  - uid: 'excel!Excel.Workbook#load:member(1)'
+        type: 'excel!Excel.<xref uid="LinkedDataTypeCollection:class" />'
+  - name: name
+    uid: 'excel!Excel.Workbook#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(options?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
-      return:
-        type:
-          - 'excel!Excel.Workbook:class'
-        description: ''
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-  - uid: 'excel!Excel.Workbook#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
-      return:
-        type:
-          - 'excel!Excel.Workbook:class'
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Workbook#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.Workbook;
-      return:
-        type:
-          - 'excel!Excel.Workbook:class'
-        description: ''
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.Workbook#name:member'
-    summary: |-
       Gets the workbook name.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly name: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Workbook#names:member'
-    summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants).
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: names
+        type: string
+  - name: names
+    uid: 'excel!Excel.Workbook#names:member'
+    package: excel!
     fullName: names
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents a collection of workbook scoped named items (named ranges and
+      constants).
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
-        type:
-          - 'excel!Excel.NamedItemCollection:class'
-  - uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="NamedItemCollection:class" />'
+  - name: onAutoSaveSettingChanged
+    uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
+    package: excel!
+    fullName: onAutoSaveSettingChanged
+    summary: >-
       Occurs when the autoSave setting is changed on the workbook.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onAutoSaveSettingChanged
-    fullName: onAutoSaveSettingChanged
-    langs:
-      - typeScript
-    type: event
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
+      content: >-
+        readonly onAutoSaveSettingChanged:
+        OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;
       return:
-        type:
-          - 'excel!Excel.Workbook#onAutoSaveSettingChanged~0:complex'
-  - uid: 'excel!Excel.Workbook#onSelectionChanged:member'
-    summary: |-
+        type: >-
+          office!OfficeExtension.<xref uid="EventHandlers:class"
+          />&lt;excel!Excel.<xref
+          uid="WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
+  - name: onSelectionChanged
+    uid: 'excel!Excel.Workbook#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: >-
       Occurs when the selection in the document is changed.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onSelectionChanged
-    fullName: onSelectionChanged
-    langs:
-      - typeScript
-    type: event
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
       return:
-        type:
-          - 'excel!Excel.Workbook#onSelectionChanged~0:complex'
-  - uid: 'excel!Excel.Workbook#pivotTables:member'
-    summary: |-
+        type: >-
+          office!OfficeExtension.<xref uid="EventHandlers:class"
+          />&lt;excel!Excel.<xref uid="SelectionChangedEventArgs:interface"
+          />&gt;
+  - name: pivotTables
+    uid: 'excel!Excel.Workbook#pivotTables:member'
+    package: excel!
+    fullName: pivotTables
+    summary: >-
       Represents a collection of PivotTables associated with the workbook.
 
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: pivotTables
-    fullName: pivotTables
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
-        type:
-          - 'excel!Excel.PivotTableCollection:class'
+        type: 'excel!Excel.<xref uid="PivotTableCollection:class" />'
         description: >-
 
 
@@ -678,51 +362,60 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.Workbook#pivotTableStyles:member'
-    summary: |-
+  - name: pivotTableStyles
+    uid: 'excel!Excel.Workbook#pivotTableStyles:member'
+    package: excel!
+    fullName: pivotTableStyles
+    summary: >-
       Represents a collection of PivotTableStyles associated with the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: pivotTableStyles
-    fullName: pivotTableStyles
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly pivotTableStyles: Excel.PivotTableStyleCollection;'
       return:
-        type:
-          - 'excel!Excel.PivotTableStyleCollection:class'
-  - uid: 'excel!Excel.Workbook#previouslySaved:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="PivotTableStyleCollection:class" />'
+  - name: previouslySaved
+    uid: 'excel!Excel.Workbook#previouslySaved:member'
+    package: excel!
+    fullName: previouslySaved
+    summary: >-
       Specifies if the workbook has ever been saved locally or online.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: previouslySaved
-    fullName: previouslySaved
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly previouslySaved: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#properties:member'
-    summary: |-
+        type: boolean
+  - name: properties
+    uid: 'excel!Excel.Workbook#properties:member'
+    package: excel!
+    fullName: properties
+    summary: >-
       Gets the workbook properties.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: properties
-    fullName: properties
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly properties: Excel.DocumentProperties;'
       return:
-        type:
-          - 'excel!Excel.DocumentProperties:class'
+        type: 'excel!Excel.<xref uid="DocumentProperties:class" />'
         description: >-
 
 
@@ -760,219 +453,133 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.Workbook#protection:member'
-    summary: |-
+  - name: protection
+    uid: 'excel!Excel.Workbook#protection:member'
+    package: excel!
+    fullName: protection
+    summary: >-
       Returns the protection object for a workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: protection
-    fullName: protection
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly protection: Excel.WorkbookProtection;'
       return:
-        type:
-          - 'excel!Excel.WorkbookProtection:class'
-  - uid: 'excel!Excel.Workbook#readOnly:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="WorkbookProtection:class" />'
+  - name: readOnly
+    uid: 'excel!Excel.Workbook#readOnly:member'
+    package: excel!
+    fullName: readOnly
+    summary: >-
       True if the workbook is open in Read-only mode.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: readOnly
-    fullName: readOnly
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly readOnly: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#save:member(1)'
-    summary: |-
-      Save current workbook.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: save(saveBehavior)
-    fullName: save(saveBehavior)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'save(saveBehavior?: Excel.SaveBehavior): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
-
-          await Excel.run(async (context) => {
-              context.workbook.save(Excel.SaveBehavior.save);
-          });
-
-          ```
-      parameters:
-        - id: saveBehavior
-          description: workbook save behavior.
-          type:
-            - 'excel!Excel.SaveBehavior:enum'
-  - uid: 'excel!Excel.Workbook#save:member(2)'
-    summary: |-
-      Save current workbook.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: save(saveBehaviorString)
-    fullName: save(saveBehaviorString)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: saveBehaviorString
-          description: workbook save behavior.
-          type:
-            - '"Save" | "Prompt"'
-  - uid: 'excel!Excel.Workbook#set:member(1)'
+        type: boolean
+  - name: settings
+    uid: 'excel!Excel.Workbook#settings:member'
+    package: excel!
+    fullName: settings
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Workbook): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.Workbook#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
-    fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Excel.Workbook): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - 'excel!Excel.Workbook:class'
-  - uid: 'excel!Excel.Workbook#settings:member'
-    summary: |-
       Represents a collection of Settings associated with the workbook.
 
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: settings
-    fullName: settings
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly settings: Excel.SettingCollection;'
       return:
-        type:
-          - 'excel!Excel.SettingCollection:class'
-  - uid: 'excel!Excel.Workbook#showPivotFieldList:member'
+        type: 'excel!Excel.<xref uid="SettingCollection:class" />'
+  - name: showPivotFieldList
+    uid: 'excel!Excel.Workbook#showPivotFieldList:member'
+    package: excel!
+    fullName: showPivotFieldList
     summary: >-
-      Specifies whether the PivotTable's field list pane is shown at the workbook level.
+      Specifies whether the PivotTable's field list pane is shown at the
+      workbook level.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: showPivotFieldList
-    fullName: showPivotFieldList
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'showPivotFieldList: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#slicers:member'
-    summary: |-
+        type: boolean
+  - name: slicers
+    uid: 'excel!Excel.Workbook#slicers:member'
+    package: excel!
+    fullName: slicers
+    summary: >-
       Represents a collection of Slicers associated with the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: slicers
-    fullName: slicers
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly slicers: Excel.SlicerCollection;'
       return:
-        type:
-          - 'excel!Excel.SlicerCollection:class'
-  - uid: 'excel!Excel.Workbook#slicerStyles:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="SlicerCollection:class" />'
+  - name: slicerStyles
+    uid: 'excel!Excel.Workbook#slicerStyles:member'
+    package: excel!
+    fullName: slicerStyles
+    summary: >-
       Represents a collection of SlicerStyles associated with the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: slicerStyles
-    fullName: slicerStyles
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly slicerStyles: Excel.SlicerStyleCollection;'
       return:
-        type:
-          - 'excel!Excel.SlicerStyleCollection:class'
-  - uid: 'excel!Excel.Workbook#styles:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="SlicerStyleCollection:class" />'
+  - name: styles
+    uid: 'excel!Excel.Workbook#styles:member'
+    package: excel!
+    fullName: styles
+    summary: >-
       Represents a collection of styles associated with the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: styles
-    fullName: styles
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly styles: Excel.StyleCollection;'
       return:
-        type:
-          - 'excel!Excel.StyleCollection:class'
+        type: 'excel!Excel.<xref uid="StyleCollection:class" />'
         description: >-
 
 
@@ -1006,220 +613,602 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.Workbook#tables:member'
-    summary: |-
+  - name: tables
+    uid: 'excel!Excel.Workbook#tables:member'
+    package: excel!
+    fullName: tables
+    summary: >-
       Represents a collection of tables associated with the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tables
-    fullName: tables
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly tables: Excel.TableCollection;'
       return:
-        type:
-          - 'excel!Excel.TableCollection:class'
-  - uid: 'excel!Excel.Workbook#tableStyles:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+  - name: tableStyles
+    uid: 'excel!Excel.Workbook#tableStyles:member'
+    package: excel!
+    fullName: tableStyles
+    summary: >-
       Represents a collection of TableStyles associated with the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tableStyles
-    fullName: tableStyles
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly tableStyles: Excel.TableStyleCollection;'
       return:
-        type:
-          - 'excel!Excel.TableStyleCollection:class'
-  - uid: 'excel!Excel.Workbook#timelineStyles:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="TableStyleCollection:class" />'
+  - name: timelineStyles
+    uid: 'excel!Excel.Workbook#timelineStyles:member'
+    package: excel!
+    fullName: timelineStyles
+    summary: >-
       Represents a collection of TimelineStyles associated with the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: timelineStyles
-    fullName: timelineStyles
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly timelineStyles: Excel.TimelineStyleCollection;'
       return:
-        type:
-          - 'excel!Excel.TimelineStyleCollection:class'
-  - uid: 'excel!Excel.Workbook#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
-    fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toJSON(): Excel.Interfaces.WorkbookData;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.WorkbookData:interface'
-        description: ''
-  - uid: 'excel!Excel.Workbook#use1904DateSystem:member'
+        type: 'excel!Excel.<xref uid="TimelineStyleCollection:class" />'
+  - name: use1904DateSystem
+    uid: 'excel!Excel.Workbook#use1904DateSystem:member'
+    package: excel!
+    fullName: use1904DateSystem
     summary: >-
       True if the workbook uses the 1904 date system.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: use1904DateSystem
-    fullName: use1904DateSystem
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'use1904DateSystem: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
-    summary: >-
-      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
-      Data will permanently lose accuracy when switching this property from false to true.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: usePrecisionAsDisplayed
+        type: boolean
+  - name: usePrecisionAsDisplayed
+    uid: 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
+    package: excel!
     fullName: usePrecisionAsDisplayed
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      True if calculations in this workbook will be done using only the
+      precision of the numbers as they're displayed. Data will permanently lose
+      accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'usePrecisionAsDisplayed: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Workbook#worksheets:member'
-    summary: |-
+        type: boolean
+  - name: worksheets
+    uid: 'excel!Excel.Workbook#worksheets:member'
+    package: excel!
+    fullName: worksheets
+    summary: >-
       Represents a collection of worksheets associated with the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheets
-    fullName: worksheets
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
-        type:
-          - 'excel!Excel.WorksheetCollection:class'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.Application:class'
-    name: Excel.Application
-  - uid: 'excel!Excel.BindingCollection:class'
-    name: Excel.BindingCollection
-  - uid: 'excel!Excel.CloseBehavior:enum'
-    name: Excel.CloseBehavior
-  - uid: 'excel!Excel.CommentCollection:class'
-    name: Excel.CommentCollection
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.CustomXmlPartCollection:class'
-    name: Excel.CustomXmlPartCollection
-  - uid: 'excel!Excel.DataConnectionCollection:class'
-    name: Excel.DataConnectionCollection
-  - uid: 'excel!Excel.Functions:class'
-    name: Excel.Functions
-  - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
-  - uid: 'excel!Excel.Chart:class'
-    name: Excel.Chart
-  - uid: 'excel!Excel.Slicer:class'
-    name: Excel.Slicer
-  - uid: 'excel!Excel.Workbook#getIsActiveCollabSession~0:complex'
-    name: OfficeExtension.ClientResult<boolean>
-    fullName: OfficeExtension.ClientResult<boolean>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <boolean>
-        fullName: <boolean>
-  - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
-  - uid: 'excel!Excel.LinkedDataTypeCollection:class'
-    name: Excel.LinkedDataTypeCollection
-  - uid: 'excel!Excel.Workbook:class'
-    name: Excel.Workbook
-  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-    name: Excel.Interfaces.WorkbookLoadOptions
-  - uid: 'excel!Excel.NamedItemCollection:class'
-    name: Excel.NamedItemCollection
-  - uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
-        name: Excel.WorkbookAutoSaveSettingChangedEventArgs
-        fullName: Excel.WorkbookAutoSaveSettingChangedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.Workbook#onSelectionChanged~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.SelectionChangedEventArgs:interface'
-        name: Excel.SelectionChangedEventArgs
-        fullName: Excel.SelectionChangedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.PivotTableCollection:class'
-    name: Excel.PivotTableCollection
-  - uid: 'excel!Excel.PivotTableStyleCollection:class'
-    name: Excel.PivotTableStyleCollection
-  - uid: 'excel!Excel.DocumentProperties:class'
-    name: Excel.DocumentProperties
-  - uid: 'excel!Excel.WorkbookProtection:class'
-    name: Excel.WorkbookProtection
-  - uid: 'excel!Excel.SaveBehavior:enum'
-    name: Excel.SaveBehavior
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
-    name: Interfaces.WorkbookUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.SettingCollection:class'
-    name: Excel.SettingCollection
-  - uid: 'excel!Excel.SlicerCollection:class'
-    name: Excel.SlicerCollection
-  - uid: 'excel!Excel.SlicerStyleCollection:class'
-    name: Excel.SlicerStyleCollection
-  - uid: 'excel!Excel.StyleCollection:class'
-    name: Excel.StyleCollection
-  - uid: 'excel!Excel.TableCollection:class'
-    name: Excel.TableCollection
-  - uid: 'excel!Excel.TableStyleCollection:class'
-    name: Excel.TableStyleCollection
-  - uid: 'excel!Excel.TimelineStyleCollection:class'
-    name: Excel.TimelineStyleCollection
-  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
-    name: Excel.Interfaces.WorkbookData
-  - uid: 'excel!Excel.WorksheetCollection:class'
-    name: Excel.WorksheetCollection
+        type: 'excel!Excel.<xref uid="WorksheetCollection:class" />'
+methods:
+  - name: close(closeBehavior)
+    uid: 'excel!Excel.Workbook#close:member(1)'
+    package: excel!
+    fullName: close(closeBehavior)
+    summary: >-
+      Close current workbook.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'close(closeBehavior?: Excel.CloseBehavior): void;'
+      parameters:
+        - id: closeBehavior
+          description: workbook close behavior.
+          type: 'excel!Excel.<xref uid="CloseBehavior:enum" />'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
+
+          await Excel.run(async (context) => {
+              context.workbook.close(Excel.CloseBehavior.save);
+          });
+
+          ```
+  - name: close(closeBehaviorString)
+    uid: 'excel!Excel.Workbook#close:member(2)'
+    package: excel!
+    fullName: close(closeBehaviorString)
+    summary: >-
+      Close current workbook.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
+      parameters:
+        - id: closeBehaviorString
+          description: workbook close behavior.
+          type: '"Save" | "SkipSave"'
+      return:
+        type: void
+        description: ''
+  - name: getActiveCell()
+    uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
+    package: excel!
+    fullName: getActiveCell()
+    summary: >-
+      Gets the currently active cell from the workbook.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveCell(): Excel.Range;'
+      return:
+        type: 'excel!Excel.<xref uid="Range:class" />'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-get-active-cell.yaml
+
+          await Excel.run(async (context) => {
+
+              let myWorkbook = context.workbook;
+              let activeCell = myWorkbook.getActiveCell();
+              activeCell.load("address");
+
+              await context.sync();
+              
+              console.log("The active cell is " + activeCell.address);
+          });
+
+          ```
+  - name: getActiveChart()
+    uid: 'excel!Excel.Workbook#getActiveChart:member(1)'
+    package: excel!
+    fullName: getActiveChart()
+    summary: >-
+      Gets the currently active chart in the workbook. If there is no active
+      chart, an `ItemNotFound` exception is thrown.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveChart(): Excel.Chart;'
+      return:
+        type: 'excel!Excel.<xref uid="Chart:class" />'
+        description: ''
+  - name: getActiveChartOrNullObject()
+    uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
+    package: excel!
+    fullName: getActiveChartOrNullObject()
+    summary: >-
+      Gets the currently active chart in the workbook. If there is no active
+      chart, a null object is returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveChartOrNullObject(): Excel.Chart;'
+      return:
+        type: 'excel!Excel.<xref uid="Chart:class" />'
+        description: ''
+  - name: getActiveSlicer()
+    uid: 'excel!Excel.Workbook#getActiveSlicer:member(1)'
+    package: excel!
+    fullName: getActiveSlicer()
+    summary: >-
+      Gets the currently active slicer in the workbook. If there is no active
+      slicer, an `ItemNotFound` exception is thrown.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveSlicer(): Excel.Slicer;'
+      return:
+        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        description: ''
+  - name: getActiveSlicerOrNullObject()
+    uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
+    package: excel!
+    fullName: getActiveSlicerOrNullObject()
+    summary: >-
+      Gets the currently active slicer in the workbook. If there is no active
+      slicer, a null object is returned.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveSlicerOrNullObject(): Excel.Slicer;'
+      return:
+        type: 'excel!Excel.<xref uid="Slicer:class" />'
+        description: ''
+  - name: getIsActiveCollabSession()
+    uid: 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
+    package: excel!
+    fullName: getIsActiveCollabSession()
+    summary: >-
+      True if the workbook is being edited by multiple users (co-authoring).
+      Please be aware there might be some delay between when the workbook status
+      changes and when the changes are reflected on the result of the method.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type: >-
+          office!OfficeExtension.<xref uid="ClientResult:class"
+          />&lt;boolean&gt;
+        description: ''
+  - name: getSelectedRange()
+    uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
+    package: excel!
+    fullName: getSelectedRange()
+    summary: >-
+      Gets the currently selected single range from the workbook. If there are
+      multiple ranges selected, this method will throw an error.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedRange(): Excel.Range;'
+      return:
+        type: 'excel!Excel.<xref uid="Range:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var selectedRange = ctx.workbook.getSelectedRange();
+              selectedRange.load('address');
+              return ctx.sync().then(function() {
+                      console.log(selectedRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - name: getSelectedRanges()
+    uid: 'excel!Excel.Workbook#getSelectedRanges:member(1)'
+    package: excel!
+    fullName: getSelectedRanges()
+    summary: >-
+      Gets the currently selected one or more ranges from the workbook. Unlike
+      getSelectedRange(), this method returns a RangeAreas object that
+      represents all the selected ranges.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedRanges(): Excel.RangeAreas;'
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
+          await Excel.run(async (context) => {
+
+              const selectedRanges = context.workbook.getSelectedRanges();
+              selectedRanges.format.fill.color = "lightblue";
+
+              await context.sync();
+          })
+
+          ```
+  - name: load(options)
+    uid: 'excel!Excel.Workbook#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: 'excel!Excel.Interfaces.<xref uid="WorkbookLoadOptions:interface" />'
+      return:
+        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Workbook#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Workbook#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Workbook;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'excel!Excel.<xref uid="Workbook:class" />'
+        description: ''
+  - name: save(saveBehavior)
+    uid: 'excel!Excel.Workbook#save:member(1)'
+    package: excel!
+    fullName: save(saveBehavior)
+    summary: >-
+      Save current workbook.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'save(saveBehavior?: Excel.SaveBehavior): void;'
+      parameters:
+        - id: saveBehavior
+          description: workbook save behavior.
+          type: 'excel!Excel.<xref uid="SaveBehavior:enum" />'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
+
+          await Excel.run(async (context) => {
+              context.workbook.save(Excel.SaveBehavior.save);
+          });
+
+          ```
+  - name: save(saveBehaviorString)
+    uid: 'excel!Excel.Workbook#save:member(2)'
+    package: excel!
+    fullName: save(saveBehaviorString)
+    summary: >-
+      Save current workbook.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
+      parameters:
+        - id: saveBehaviorString
+          description: workbook save behavior.
+          type: '"Save" | "Prompt"'
+      return:
+        type: void
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.Workbook#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Workbook): void`
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.WorkbookUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'excel!Excel.Interfaces.<xref uid="WorkbookUpdateData:interface" />'
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.Workbook#set:member(2)'
+    package: excel!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.Workbook): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: 'excel!Excel.<xref uid="Workbook:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Workbook#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.Workbook object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.WorkbookData;'
+      return:
+        type: 'excel!Excel.Interfaces.<xref uid="WorkbookData:interface" />'
+        description: ''
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the NamedItemCollection object, for use in `namedItemCollection.set({ ...
-      })`<!-- -->.
-    name: Excel.Interfaces.NamedItemCollectionUpdateData
-    fullName: Excel.Interfaces.NamedItemCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.NamedItemCollectionUpdateData
+uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.NamedItemCollectionUpdateData
+summary: >-
+  An interface for updating data on the NamedItemCollection object, for use in
+  `namedItemCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.NamedItemCollectionUpdateData#items:member'
-  - uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.NamedItemData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.NamedItemCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData#items~0:complex'
-    name: 'Excel.Interfaces.NamedItemData[]'
-    fullName: 'Excel.Interfaces.NamedItemData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
-        name: Excel.Interfaces.NamedItemData
-        fullName: Excel.Interfaces.NamedItemData
-      - name: '[]'
-        fullName: '[]'
+        type: 'excel!Excel.Interfaces.<xref uid="NamedItemData:interface" />[]'

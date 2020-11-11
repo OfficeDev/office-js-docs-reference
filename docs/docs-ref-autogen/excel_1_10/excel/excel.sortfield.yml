@@ -1,149 +1,151 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SortField:interface'
-    summary: |-
-      Represents a condition in a sorting operation.
+### YamlMime:TSType
+name: Excel.SortField
+uid: 'excel!Excel.SortField:interface'
+package: excel!
+fullName: Excel.SortField
+summary: >-
+  Represents a condition in a sorting operation.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SortField
-    fullName: Excel.SortField
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ascending
+    uid: 'excel!Excel.SortField#ascending:member'
     package: excel!
-    children:
-      - 'excel!Excel.SortField#ascending:member'
-      - 'excel!Excel.SortField#color:member'
-      - 'excel!Excel.SortField#dataOption:member'
-      - 'excel!Excel.SortField#icon:member'
-      - 'excel!Excel.SortField#key:member'
-      - 'excel!Excel.SortField#sortOn:member'
-      - 'excel!Excel.SortField#subField:member'
-  - uid: 'excel!Excel.SortField#ascending:member'
-    summary: |-
+    fullName: ascending
+    summary: >-
       Specifies if the sorting is done in an ascending fashion.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ascending?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SortField#color:member'
-    summary: |-
-      Specifies the color that is the target of the condition if the sorting is on font or cell color.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
+        type: boolean
+  - name: color
+    uid: 'excel!Excel.SortField#color:member'
+    package: excel!
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the color that is the target of the condition if the sorting is
+      on font or cell color.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.SortField#dataOption:member'
-    summary: |-
+        type: string
+  - name: dataOption
+    uid: 'excel!Excel.SortField#dataOption:member'
+    package: excel!
+    fullName: dataOption
+    summary: >-
       Represents additional sorting options for this field.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: dataOption
-    fullName: dataOption
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dataOption?: Excel.SortDataOption | "Normal" | "TextAsNumber";'
       return:
-        type:
-          - 'excel!Excel.SortField#dataOption~0:complex'
-  - uid: 'excel!Excel.SortField#icon:member'
-    summary: |-
-      Specifies the icon that is the target of the condition if the sorting is on the cell's icon.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: icon
+        type: >-
+          excel!Excel.<xref uid="SortDataOption:enum" /> | "Normal" |
+          "TextAsNumber"
+  - name: icon
+    uid: 'excel!Excel.SortField#icon:member'
+    package: excel!
     fullName: icon
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the icon that is the target of the condition if the sorting is
+      on the cell's icon.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'icon?: Excel.Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.SortField#key:member'
-    summary: >-
-      Specifies the column (or row, depending on the sort orientation) that the condition is on. Represented as an
-      offset from the first column (or row).
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: key
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: key
+    uid: 'excel!Excel.SortField#key:member'
+    package: excel!
     fullName: key
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the column (or row, depending on the sort orientation) that the
+      condition is on. Represented as an offset from the first column (or row).
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'key: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.SortField#sortOn:member'
-    summary: |-
+        type: number
+  - name: sortOn
+    uid: 'excel!Excel.SortField#sortOn:member'
+    package: excel!
+    fullName: sortOn
+    summary: >-
       Specifies the type of sorting of this condition.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: sortOn
-    fullName: sortOn
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sortOn?: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon";'
       return:
-        type:
-          - 'excel!Excel.SortField#sortOn~0:complex'
-  - uid: 'excel!Excel.SortField#subField:member'
-    summary: |-
-      Specifies the subfield that is the target property name of a rich value to sort on.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: subField
+        type: >-
+          excel!Excel.<xref uid="SortOn:enum" /> | "Value" | "CellColor" |
+          "FontColor" | "Icon"
+  - name: subField
+    uid: 'excel!Excel.SortField#subField:member'
+    package: excel!
     fullName: subField
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the subfield that is the target property name of a rich value to
+      sort on.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'subField?: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.SortField#dataOption~0:complex'
-    name: Excel.SortDataOption | "Normal" | "TextAsNumber"
-    fullName: Excel.SortDataOption | "Normal" | "TextAsNumber"
-    spec.typeScript:
-      - uid: 'excel!Excel.SortDataOption:enum'
-        name: Excel.SortDataOption
-        fullName: Excel.SortDataOption
-      - name: ' | "Normal" | "TextAsNumber"'
-        fullName: ' | "Normal" | "TextAsNumber"'
-  - uid: 'excel!Excel.Icon:interface'
-    name: Excel.Icon
-  - uid: 'excel!Excel.SortField#sortOn~0:complex'
-    name: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
-    fullName: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
-    spec.typeScript:
-      - uid: 'excel!Excel.SortOn:enum'
-        name: Excel.SortOn
-        fullName: Excel.SortOn
-      - name: ' | "Value" | "CellColor" | "FontColor" | "Icon"'
-        fullName: ' | "Value" | "CellColor" | "FontColor" | "Icon"'
+        type: string

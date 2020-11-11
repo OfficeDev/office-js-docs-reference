@@ -1,47 +1,162 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeFill:class'
-    summary: |-
-      Represents the background of a range object.
+### YamlMime:TSType
+name: Excel.RangeFill
+uid: 'excel!Excel.RangeFill:class'
+package: excel!
+fullName: Excel.RangeFill
+summary: >-
+  Represents the background of a range object.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RangeFill
-    fullName: Excel.RangeFill
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: color
+    uid: 'excel!Excel.RangeFill#color:member'
     package: excel!
-    children:
-      - 'excel!Excel.RangeFill#clear:member(1)'
-      - 'excel!Excel.RangeFill#color:member'
-      - 'excel!Excel.RangeFill#context:member'
-      - 'excel!Excel.RangeFill#load:member(1)'
-      - 'excel!Excel.RangeFill#load:member(2)'
-      - 'excel!Excel.RangeFill#load:member(3)'
-      - 'excel!Excel.RangeFill#pattern:member'
-      - 'excel!Excel.RangeFill#patternColor:member'
-      - 'excel!Excel.RangeFill#patternTintAndShade:member'
-      - 'excel!Excel.RangeFill#set:member(1)'
-      - 'excel!Excel.RangeFill#set:member(2)'
-      - 'excel!Excel.RangeFill#tintAndShade:member'
-      - 'excel!Excel.RangeFill#toJSON:member(1)'
-  - uid: 'excel!Excel.RangeFill#clear:member(1)'
-    summary: |-
+    fullName: color
+    summary: >-
+      HTML color code representing the color of the background, of the form
+      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'excel!Excel.RangeFill#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: pattern
+    uid: 'excel!Excel.RangeFill#pattern:member'
+    package: excel!
+    fullName: pattern
+    summary: >-
+      The pattern of a range. See Excel.FillPattern for details. LinearGradient
+      and RectangularGradient are not supported. A null value indicates that the
+      entire range doesn't have uniform pattern setting.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" |
+        "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" |
+        "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" |
+        "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" |
+        "LinearGradient" | "RectangularGradient";
+      return:
+        type: >-
+          excel!Excel.<xref uid="FillPattern:enum" /> | "None" | "Solid" |
+          "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
+          "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical"
+          | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8"
+          | "LinearGradient" | "RectangularGradient"
+  - name: patternColor
+    uid: 'excel!Excel.RangeFill#patternColor:member'
+    package: excel!
+    fullName: patternColor
+    summary: >-
+      The HTML color code representing the color of the range pattern, of the
+      form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'patternColor: string;'
+      return:
+        type: string
+  - name: patternTintAndShade
+    uid: 'excel!Excel.RangeFill#patternTintAndShade:member'
+    package: excel!
+    fullName: patternTintAndShade
+    summary: >-
+      Specifies a double that lightens or darkens a pattern color for Range
+      Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the
+      original color. If the pattern tintAndShades are not uniform, null will be
+      returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'patternTintAndShade: number;'
+      return:
+        type: number
+  - name: tintAndShade
+    uid: 'excel!Excel.RangeFill#tintAndShade:member'
+    package: excel!
+    fullName: tintAndShade
+    summary: >-
+      Specifies a double that lightens or darkens a color for Range Fill, the
+      value is between -1 (darkest) and 1 (brightest), with 0 for the original
+      color. If the tintAndShades are not uniform, null will be returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type: number
+methods:
+  - name: clear()
+    uid: 'excel!Excel.RangeFill#clear:member(1)'
+    package: excel!
+    fullName: clear()
+    summary: >-
       Resets the range background.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -63,71 +178,45 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.RangeFill#color:member'
-    summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML
-      color (e.g., "orange")
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeFill#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.RangeFill#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.RangeFill#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;'
-      return:
-        type:
-          - 'excel!Excel.RangeFill:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
-  - uid: 'excel!Excel.RangeFill#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: 'excel!Excel.Interfaces.<xref uid="RangeFillLoadOptions:interface" />'
+      return:
+        type: 'excel!Excel.<xref uid="RangeFill:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.RangeFill#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFill;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.RangeFill:class'
+        type: 'excel!Excel.<xref uid="RangeFill:class" />'
         description: |-
 
 
@@ -166,205 +255,107 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RangeFill#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.RangeFill#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.RangeFill;
-      return:
-        type:
-          - 'excel!Excel.RangeFill:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.RangeFill#pattern:member'
-    summary: >-
-      The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not
-      supported. A null value indicates that the entire range doesn't have uniform pattern setting.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: >-
-        pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
-        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
-        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - 'excel!Excel.RangeFill#pattern~0:complex'
-  - uid: 'excel!Excel.RangeFill#patternColor:member'
+        type: 'excel!Excel.<xref uid="RangeFill:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.RangeFill#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      The HTML color code representing the color of the range pattern, of the form \#RRGGBB (e.g., "FFA500") or as a
-      named HTML color (e.g., "orange").
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: patternColor
-    fullName: patternColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeFill#patternTintAndShade:member'
-    summary: >-
-      Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null will be returned.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: patternTintAndShade
-    fullName: patternTintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternTintAndShade: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeFill#set:member(1)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.RangeFill): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.RangeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.RangeFillUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'excel!Excel.Interfaces.<xref uid="RangeFillUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.RangeFill#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.RangeFill#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.RangeFill): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.RangeFill:class'
-  - uid: 'excel!Excel.RangeFill#tintAndShade:member'
-    summary: >-
-      Specifies a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
-      (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade: number;'
+          type: 'excel!Excel.<xref uid="RangeFill:class" />'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeFill#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.RangeFillData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.RangeFill#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.RangeFill object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.RangeFillData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeFillData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeFillData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="RangeFillData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.RangeFill:class'
-    name: Excel.RangeFill
-  - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
-    name: Excel.Interfaces.RangeFillLoadOptions
-  - uid: 'excel!Excel.RangeFill#pattern~0:complex'
-    name: >-
-      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
-      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
-      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-    fullName: >-
-      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
-      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
-      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-    spec.typeScript:
-      - uid: 'excel!Excel.FillPattern:enum'
-        name: Excel.FillPattern
-        fullName: Excel.FillPattern
-      - name: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
-        fullName: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
-    name: Interfaces.RangeFillUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
-    name: Excel.Interfaces.RangeFillData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

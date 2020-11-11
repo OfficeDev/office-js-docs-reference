@@ -1,45 +1,64 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartFill:class'
-    summary: |-
-      Represents the fill formatting for a chart element.
+### YamlMime:TSType
+name: Excel.ChartFill
+uid: 'excel!Excel.ChartFill:class'
+package: excel!
+fullName: Excel.ChartFill
+summary: >-
+  Represents the fill formatting for a chart element.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartFill
-    fullName: Excel.ChartFill
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartFill#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartFill#clear:member(1)'
-      - 'excel!Excel.ChartFill#context:member'
-      - 'excel!Excel.ChartFill#setSolidColor:member(1)'
-      - 'excel!Excel.ChartFill#toJSON:member(1)'
-  - uid: 'excel!Excel.ChartFill#clear:member(1)'
-    summary: |-
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+methods:
+  - name: clear()
+    uid: 'excel!Excel.ChartFill#clear:member(1)'
+    package: excel!
+    fullName: clear()
+    summary: >-
       Clear the fill color of a chart element.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
-        type:
-          - void
-        description: |-
+        type: void
+        description: >-
 
 
           #### Examples
 
+
           ```javascript
-          // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
+
+          // Clear the line format of the major Gridlines on value axis of the
+          Chart named "Chart1"
+
           Excel.run(function (ctx) { 
               var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
               gridlines.format.line.clear();
@@ -52,36 +71,33 @@ items:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
+
           ```
-  - uid: 'excel!Excel.ChartFill#context:member'
+  - name: setSolidColor(color)
+    uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
+    package: excel!
+    fullName: setSolidColor(color)
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
-    summary: |-
       Sets the fill formatting of a chart element to a uniform color.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: setSolidColor(color)
-    fullName: setSolidColor(color)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: >-
+            HTML color code representing the color of the background, of the
+            form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
+            "orange").
+          type: string
       return:
-        type:
-          - void
+        type: void
         description: >-
 
 
@@ -106,39 +122,30 @@ items:
           });
 
           ```
-      parameters:
-        - id: color
-          description: >-
-            HTML color code representing the color of the background, of the form \#RRGGBB (e.g., "FFA500") or as a
-            named HTML color (e.g., "orange").
-          type:
-            - string
-  - uid: 'excel!Excel.ChartFill#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ChartFillData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+  - name: toJSON()
+    uid: 'excel!Excel.ChartFill#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.ChartFill object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.ChartFillData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         toJSON(): {
                     [key: string]: string;
                 };
       return:
-        type:
-          - |-
-            {
-                        [key: string]: string;
-                    }
+        type: |-
+          {
+                      [key: string]: string;
+                  }
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

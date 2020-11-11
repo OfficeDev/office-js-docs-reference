@@ -1,229 +1,216 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.NamedSheetView:class'
-    summary: >-
-      Represents a named sheet view of a worksheet. A sheet view stores the sort and filter rules for a particular
-      worksheet. Every sheet view (even a temporary sheet view) has a unique, worksheet-scoped name that is used to
-      access the view.
+### YamlMime:TSType
+name: Excel.NamedSheetView
+uid: 'excel!Excel.NamedSheetView:class'
+package: excel!
+fullName: Excel.NamedSheetView
+summary: >-
+  Represents a named sheet view of a worksheet. A sheet view stores the sort and
+  filter rules for a particular worksheet. Every sheet view (even a temporary
+  sheet view) has a unique, worksheet-scoped name that is used to access the
+  view.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: Excel.NamedSheetView
-    fullName: Excel.NamedSheetView
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.NamedSheetView#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.NamedSheetView#activate:member(1)'
-      - 'excel!Excel.NamedSheetView#context:member'
-      - 'excel!Excel.NamedSheetView#delete:member(1)'
-      - 'excel!Excel.NamedSheetView#duplicate:member(1)'
-      - 'excel!Excel.NamedSheetView#load:member(1)'
-      - 'excel!Excel.NamedSheetView#load:member(2)'
-      - 'excel!Excel.NamedSheetView#load:member(3)'
-      - 'excel!Excel.NamedSheetView#name:member'
-      - 'excel!Excel.NamedSheetView#toJSON:member(1)'
-  - uid: 'excel!Excel.NamedSheetView#activate:member(1)'
-    summary: >-
-      Activates this sheet view. This is equivalent to using "Switch To" in the Excel UI.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: activate()
-    fullName: activate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'activate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.NamedSheetView#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    isPreview: true
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.NamedSheetView#delete:member(1)'
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: name
+    uid: 'excel!Excel.NamedSheetView#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
+      Gets or sets the name of the sheet view. The temporary sheet view name is
+      the empty string (""). Naming the view by using the name property causes
+      the sheet view to be saved.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+methods:
+  - name: activate()
+    uid: 'excel!Excel.NamedSheetView#activate:member(1)'
+    package: excel!
+    fullName: activate()
+    summary: >-
+      Activates this sheet view. This is equivalent to using "Switch To" in the
+      Excel UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete()
+    uid: 'excel!Excel.NamedSheetView#delete:member(1)'
+    package: excel!
+    fullName: delete()
     summary: >-
       Removes the sheet view from the worksheet.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.NamedSheetView#duplicate:member(1)'
+  - name: duplicate(name)
+    uid: 'excel!Excel.NamedSheetView#duplicate:member(1)'
+    package: excel!
+    fullName: duplicate(name)
     summary: >-
       Creates a copy of this sheet view.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: duplicate(name)
-    fullName: duplicate(name)
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
       content: 'duplicate(name?: string): Excel.NamedSheetView;'
-      return:
-        type:
-          - 'excel!Excel.NamedSheetView:class'
-        description: 'The new, duplicated sheet view.'
       parameters:
         - id: name
-          description: 'The name of the duplicated sheet view. If no name is provided, one will be generated.'
-          type:
-            - string
-  - uid: 'excel!Excel.NamedSheetView#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(options?: Excel.Interfaces.NamedSheetViewLoadOptions): Excel.NamedSheetView;'
+          description: >-
+            The name of the duplicated sheet view. If no name is provided, one
+            will be generated.
+          type: string
       return:
-        type:
-          - 'excel!Excel.NamedSheetView:class'
-        description: ''
+        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        description: 'The new, duplicated sheet view.'
+  - name: load(options)
+    uid: 'excel!Excel.NamedSheetView#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.NamedSheetViewLoadOptions):
+        Excel.NamedSheetView;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.NamedSheetViewLoadOptions:interface'
-  - uid: 'excel!Excel.NamedSheetView#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="NamedSheetViewLoadOptions:interface" />
+      return:
+        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.NamedSheetView#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.NamedSheetView;'
-      return:
-        type:
-          - 'excel!Excel.NamedSheetView:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.NamedSheetView#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.NamedSheetView#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.NamedSheetView;
-      return:
-        type:
-          - 'excel!Excel.NamedSheetView:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.NamedSheetView#name:member'
-    summary: >-
-      Gets or sets the name of the sheet view. The temporary sheet view name is the empty string (""). Naming the view
-      by using the name property causes the sheet view to be saved.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.NamedSheetView#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.NamedSheetView object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.NamedSheetViewData`<!-- -->) that contains shallow copies of
-      any loaded child properties from the original object.
-    isPreview: true
-    name: toJSON()
+        type: 'excel!Excel.<xref uid="NamedSheetView:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.NamedSheetView#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.NamedSheetView
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.NamedSheetViewData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.NamedSheetViewData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.NamedSheetViewData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="NamedSheetViewData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.NamedSheetView:class'
-    name: Excel.NamedSheetView
-  - uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions:interface'
-    name: Excel.Interfaces.NamedSheetViewLoadOptions
-  - uid: 'excel!Excel.Interfaces.NamedSheetViewData:interface'
-    name: Excel.Interfaces.NamedSheetViewData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

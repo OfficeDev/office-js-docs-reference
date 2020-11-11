@@ -1,50 +1,34 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
-    summary: Specifies an attachment's type.
-    remarks: >-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.MailboxEnums.AttachmentType
-    fullName: Office.MailboxEnums.AttachmentType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.MailboxEnums.AttachmentType
+uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.AttachmentType
+summary: Specifies an attachment's type.
+remarks: >-
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Cloud
+    uid: 'outlook!Office.MailboxEnums.AttachmentType.Cloud:member'
     package: outlook!
-    children:
-      - 'outlook!Office.MailboxEnums.AttachmentType.Cloud:member'
-      - 'outlook!Office.MailboxEnums.AttachmentType.File:member'
-      - 'outlook!Office.MailboxEnums.AttachmentType.Item:member'
-  - uid: 'outlook!Office.MailboxEnums.AttachmentType.Cloud:member'
     summary: >-
       The attachment is stored in a cloud location, such as OneDrive.
 
 
       **Important**: In Read mode, the `id` property of the attachment's
-      [details](xref:outlook!Office.AttachmentDetails:interface) object contains a URL to the file. From requirement set
-      1.8, the `url` property included in the attachment's
-      [details](xref:outlook!Office.AttachmentDetailsCompose:interface) object contains a URL to the file in Compose
-      mode.
-    name: Cloud
-    fullName: Cloud
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"cloud"'
-  - uid: 'outlook!Office.MailboxEnums.AttachmentType.File:member'
+      [details](xref:outlook!Office.AttachmentDetails:interface) object contains
+      a URL to the file. From requirement set 1.8, the `url` property included
+      in the attachment's
+      [details](xref:outlook!Office.AttachmentDetailsCompose:interface) object
+      contains a URL to the file in Compose mode.
+  - name: File
+    uid: 'outlook!Office.MailboxEnums.AttachmentType.File:member'
+    package: outlook!
     summary: The attachment is a file.
-    name: File
-    fullName: File
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"file"'
-  - uid: 'outlook!Office.MailboxEnums.AttachmentType.Item:member'
+  - name: Item
+    uid: 'outlook!Office.MailboxEnums.AttachmentType.Item:member'
+    package: outlook!
     summary: The attachment is an Exchange item.
-    name: Item
-    fullName: Item
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"item"'

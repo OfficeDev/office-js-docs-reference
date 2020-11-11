@@ -1,35 +1,26 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the CustomXmlPartScopedCollection object, for use in
-      `customXmlPartScopedCollection.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
-    fullName: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
+uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
+summary: >-
+  An interface for updating data on the CustomXmlPartScopedCollection object,
+  for use in `customXmlPartScopedCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: >-
+      excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.CustomXmlPartData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items~0:complex'
-    name: 'Excel.Interfaces.CustomXmlPartData[]'
-    fullName: 'Excel.Interfaces.CustomXmlPartData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
-        name: Excel.Interfaces.CustomXmlPartData
-        fullName: Excel.Interfaces.CustomXmlPartData
-      - name: '[]'
-        fullName: '[]'
+        type: 'excel!Excel.Interfaces.<xref uid="CustomXmlPartData:interface" />[]'

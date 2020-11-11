@@ -1,194 +1,215 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
-    summary: >-
-      Represents an Excel table. To learn more about the table object model, read [Work with tables using the Excel
-      JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
+### YamlMime:TSType
+name: Excel.Interfaces.TableLoadOptions
+uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.TableLoadOptions
+summary: >-
+  Represents an Excel table. To learn more about the table object model, read
+  [Work with tables using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TableLoadOptions
-    fullName: Excel.Interfaces.TableLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#id:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#name:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#sort:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#style:member'
-      - 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
-    summary: |-
+        type: boolean
+  - name: columns
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
+    package: excel!
+    fullName: columns
+    summary: >-
       Represents a collection of all the columns in the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: columns
-    fullName: columns
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#id:member'
-    summary: >-
-      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
-      same even when the table is renamed.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="TableColumnCollectionLoadOptions:interface" />
+  - name: id
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#id:member'
+    package: excel!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a value that uniquely identifies the table in a given workbook.
+      The value of the identifier remains the same even when the table is
+      renamed.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#name:member'
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#name:member'
+    package: excel!
+    fullName: name
     summary: >-
       Name of the table.
 
 
-      The set name of the table must follow the guidelines specified in the [Rename an Excel
-      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
+      The set name of the table must follow the guidelines specified in the
+      [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)
+      article.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
-    summary: |-
+        type: boolean
+  - name: rows
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
+    package: excel!
+    fullName: rows
+    summary: >-
       Represents a collection of all the rows in the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rows
-    fullName: rows
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
-    summary: |-
-      Specifies if the header row is visible. This value can be set to show or remove the header row.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showHeaders
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="TableRowCollectionLoadOptions:interface" />
+  - name: showHeaders
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
+    package: excel!
     fullName: showHeaders
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the header row is visible. This value can be set to show or
+      remove the header row.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showHeaders?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
-    summary: |-
-      Specifies if the total row is visible. This value can be set to show or remove the total row.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showTotals
+        type: boolean
+  - name: showTotals
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
+    package: excel!
     fullName: showTotals
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the total row is visible. This value can be set to show or
+      remove the total row.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showTotals?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#sort:member'
-    summary: |-
+        type: boolean
+  - name: sort
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#sort:member'
+    package: excel!
+    fullName: sort
+    summary: >-
       Represents the sorting for the table.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: sort
-    fullName: sort
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#style:member'
-    summary: >-
-      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
-      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
-      "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: style
+        type: 'excel!Excel.Interfaces.<xref uid="TableSortLoadOptions:interface" />'
+  - name: style
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#style:member'
+    package: excel!
     fullName: style
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Constant value that represents the Table style. Possible values are:
+      "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1"
+      through "TableStyleMedium28", "TableStyleDark1" through
+      "TableStyleDark11". A custom user-defined style present in the workbook
+      can also be specified.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
-    summary: |-
+        type: boolean
+  - name: worksheet
+    uid: 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
+    package: excel!
+    fullName: worksheet
+    summary: >-
       The worksheet containing the current table.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableColumnCollectionLoadOptions
-  - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableRowCollectionLoadOptions
-  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-    name: Excel.Interfaces.TableSortLoadOptions
-  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+        type: 'excel!Excel.Interfaces.<xref uid="WorksheetLoadOptions:interface" />'

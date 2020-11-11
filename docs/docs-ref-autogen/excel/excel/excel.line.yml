@@ -1,663 +1,649 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Line:class'
-    summary: |-
-      Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`<!-- -->.
+### YamlMime:TSType
+name: Excel.Line
+uid: 'excel!Excel.Line:class'
+package: excel!
+fullName: Excel.Line
+summary: >-
+  Represents a line inside a worksheet. To get the corresponding Shape object,
+  use `Line.shape`<!-- -->.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Line
-    fullName: Excel.Line
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: beginArrowheadLength
+    uid: 'excel!Excel.Line#beginArrowheadLength:member'
     package: excel!
-    children:
-      - 'excel!Excel.Line#beginArrowheadLength:member'
-      - 'excel!Excel.Line#beginArrowheadStyle:member'
-      - 'excel!Excel.Line#beginArrowheadWidth:member'
-      - 'excel!Excel.Line#beginConnectedShape:member'
-      - 'excel!Excel.Line#beginConnectedSite:member'
-      - 'excel!Excel.Line#connectBeginShape:member(1)'
-      - 'excel!Excel.Line#connectEndShape:member(1)'
-      - 'excel!Excel.Line#connectorType:member'
-      - 'excel!Excel.Line#context:member'
-      - 'excel!Excel.Line#disconnectBeginShape:member(1)'
-      - 'excel!Excel.Line#disconnectEndShape:member(1)'
-      - 'excel!Excel.Line#endArrowheadLength:member'
-      - 'excel!Excel.Line#endArrowheadStyle:member'
-      - 'excel!Excel.Line#endArrowheadWidth:member'
-      - 'excel!Excel.Line#endConnectedShape:member'
-      - 'excel!Excel.Line#endConnectedSite:member'
-      - 'excel!Excel.Line#id:member'
-      - 'excel!Excel.Line#isBeginConnected:member'
-      - 'excel!Excel.Line#isEndConnected:member'
-      - 'excel!Excel.Line#load:member(1)'
-      - 'excel!Excel.Line#load:member(2)'
-      - 'excel!Excel.Line#load:member(3)'
-      - 'excel!Excel.Line#set:member(1)'
-      - 'excel!Excel.Line#set:member(2)'
-      - 'excel!Excel.Line#shape:member'
-      - 'excel!Excel.Line#toJSON:member(1)'
-  - uid: 'excel!Excel.Line#beginArrowheadLength:member'
-    summary: |-
-      Represents the length of the arrowhead at the beginning of the specified line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: beginArrowheadLength
     fullName: beginArrowheadLength
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'beginArrowheadLength: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
-      return:
-        type:
-          - 'excel!Excel.Line#beginArrowheadLength~0:complex'
-  - uid: 'excel!Excel.Line#beginArrowheadStyle:member'
-    summary: |-
-      Represents the style of the arrowhead at the beginning of the specified line.
+    summary: >-
+      Represents the length of the arrowhead at the beginning of the specified
+      line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: beginArrowheadStyle
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        beginArrowheadLength: Excel.ArrowheadLength | "Short" | "Medium" |
+        "Long";
+      return:
+        type: >-
+          excel!Excel.<xref uid="ArrowheadLength:enum" /> | "Short" | "Medium" |
+          "Long"
+  - name: beginArrowheadStyle
+    uid: 'excel!Excel.Line#beginArrowheadStyle:member'
+    package: excel!
     fullName: beginArrowheadStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'beginArrowheadStyle: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
-      return:
-        type:
-          - 'excel!Excel.Line#beginArrowheadStyle~0:complex'
-  - uid: 'excel!Excel.Line#beginArrowheadWidth:member'
-    summary: |-
-      Represents the width of the arrowhead at the beginning of the specified line.
+    summary: >-
+      Represents the style of the arrowhead at the beginning of the specified
+      line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: beginArrowheadWidth
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        beginArrowheadStyle: Excel.ArrowheadStyle | "None" | "Triangle" |
+        "Stealth" | "Diamond" | "Oval" | "Open";
+      return:
+        type: >-
+          excel!Excel.<xref uid="ArrowheadStyle:enum" /> | "None" | "Triangle" |
+          "Stealth" | "Diamond" | "Oval" | "Open"
+  - name: beginArrowheadWidth
+    uid: 'excel!Excel.Line#beginArrowheadWidth:member'
+    package: excel!
     fullName: beginArrowheadWidth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'beginArrowheadWidth: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
-      return:
-        type:
-          - 'excel!Excel.Line#beginArrowheadWidth~0:complex'
-  - uid: 'excel!Excel.Line#beginConnectedShape:member'
-    summary: |-
-      Represents the shape to which the beginning of the specified line is attached.
+    summary: >-
+      Represents the width of the arrowhead at the beginning of the specified
+      line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: beginConnectedShape
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        beginArrowheadWidth: Excel.ArrowheadWidth | "Narrow" | "Medium" |
+        "Wide";
+      return:
+        type: >-
+          excel!Excel.<xref uid="ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
+          "Wide"
+  - name: beginConnectedShape
+    uid: 'excel!Excel.Line#beginConnectedShape:member'
+    package: excel!
     fullName: beginConnectedShape
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the shape to which the beginning of the specified line is
+      attached.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly beginConnectedShape: Excel.Shape;'
       return:
-        type:
-          - 'excel!Excel.Shape:class'
-  - uid: 'excel!Excel.Line#beginConnectedSite:member'
-    summary: >-
-      Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning
-      of the line is not attached to any shape.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: beginConnectedSite
+        type: 'excel!Excel.<xref uid="Shape:class" />'
+  - name: beginConnectedSite
+    uid: 'excel!Excel.Line#beginConnectedSite:member'
+    package: excel!
     fullName: beginConnectedSite
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the connection site to which the beginning of a connector is
+      connected. Returns null when the beginning of the line is not attached to
+      any shape.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly beginConnectedSite: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Line#connectBeginShape:member(1)'
-    summary: |-
-      Attaches the beginning of the specified connector to a specified shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'connectBeginShape(shape, connectionSite)'
-    fullName: 'connectBeginShape(shape, connectionSite)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'connectBeginShape(shape: Excel.Shape, connectionSite: number): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
-
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.getItem("StraightLine").line;
-              line.connectBeginShape(shapes.getItem("Left"), 2);
-              line.connectEndShape(shapes.getItem("Right"), 0);
-              await context.sync();
-          });
-
-          ```
-      parameters:
-        - id: shape
-          description: The shape to connect.
-          type:
-            - 'excel!Excel.Shape:class'
-        - id: connectionSite
-          description: >-
-            The connection site on the shape to which the beginning of the connector is attached. Must be an integer
-            between 0 (inclusive) and the connection-site count of the specified shape (exclusive).
-          type:
-            - number
-  - uid: 'excel!Excel.Line#connectEndShape:member(1)'
-    summary: |-
-      Attaches the end of the specified connector to a specified shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'connectEndShape(shape, connectionSite)'
-    fullName: 'connectEndShape(shape, connectionSite)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'connectEndShape(shape: Excel.Shape, connectionSite: number): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
-
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.getItem("StraightLine").line;
-              line.connectBeginShape(shapes.getItem("Left"), 2);
-              line.connectEndShape(shapes.getItem("Right"), 0);
-              await context.sync();
-          });
-
-          ```
-      parameters:
-        - id: shape
-          description: The shape to connect.
-          type:
-            - 'excel!Excel.Shape:class'
-        - id: connectionSite
-          description: >-
-            The connection site on the shape to which the end of the connector is attached. Must be an integer between 0
-            (inclusive) and the connection-site count of the specified shape (exclusive).
-          type:
-            - number
-  - uid: 'excel!Excel.Line#connectorType:member'
-    summary: |-
+        type: number
+  - name: connectorType
+    uid: 'excel!Excel.Line#connectorType:member'
+    package: excel!
+    fullName: connectorType
+    summary: >-
       Represents the connector type for the line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: connectorType
-    fullName: connectorType
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'connectorType: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";'
       return:
-        type:
-          - 'excel!Excel.Line#connectorType~0:complex'
-  - uid: 'excel!Excel.Line#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: >-
+          excel!Excel.<xref uid="ConnectorType:enum" /> | "Straight" | "Elbow" |
+          "Curve"
+  - name: context
+    uid: 'excel!Excel.Line#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.Line#disconnectBeginShape:member(1)'
-    summary: |-
-      Detaches the beginning of the specified connector from a shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: disconnectBeginShape()
-    fullName: disconnectBeginShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'disconnectBeginShape(): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
-
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.getItem("StraightLine").line;
-              line.disconnectBeginShape();
-              line.disconnectEndShape();
-              await context.sync();
-          });
-
-          ```
-  - uid: 'excel!Excel.Line#disconnectEndShape:member(1)'
-    summary: |-
-      Detaches the end of the specified connector from a shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: disconnectEndShape()
-    fullName: disconnectEndShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'disconnectEndShape(): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
-
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.getItem("StraightLine").line;
-              line.disconnectBeginShape();
-              line.disconnectEndShape();
-              await context.sync();
-          });
-
-          ```
-  - uid: 'excel!Excel.Line#endArrowheadLength:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: endArrowheadLength
+    uid: 'excel!Excel.Line#endArrowheadLength:member'
+    package: excel!
+    fullName: endArrowheadLength
+    summary: >-
       Represents the length of the arrowhead at the end of the specified line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: endArrowheadLength
-    fullName: endArrowheadLength
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'endArrowheadLength: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
       return:
-        type:
-          - 'excel!Excel.Line#endArrowheadLength~0:complex'
-  - uid: 'excel!Excel.Line#endArrowheadStyle:member'
-    summary: |-
+        type: >-
+          excel!Excel.<xref uid="ArrowheadLength:enum" /> | "Short" | "Medium" |
+          "Long"
+  - name: endArrowheadStyle
+    uid: 'excel!Excel.Line#endArrowheadStyle:member'
+    package: excel!
+    fullName: endArrowheadStyle
+    summary: >-
       Represents the style of the arrowhead at the end of the specified line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: endArrowheadStyle
-    fullName: endArrowheadStyle
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'endArrowheadStyle: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      content: >-
+        endArrowheadStyle: Excel.ArrowheadStyle | "None" | "Triangle" |
+        "Stealth" | "Diamond" | "Oval" | "Open";
       return:
-        type:
-          - 'excel!Excel.Line#endArrowheadStyle~0:complex'
-  - uid: 'excel!Excel.Line#endArrowheadWidth:member'
-    summary: |-
+        type: >-
+          excel!Excel.<xref uid="ArrowheadStyle:enum" /> | "None" | "Triangle" |
+          "Stealth" | "Diamond" | "Oval" | "Open"
+  - name: endArrowheadWidth
+    uid: 'excel!Excel.Line#endArrowheadWidth:member'
+    package: excel!
+    fullName: endArrowheadWidth
+    summary: >-
       Represents the width of the arrowhead at the end of the specified line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: endArrowheadWidth
-    fullName: endArrowheadWidth
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'endArrowheadWidth: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
       return:
-        type:
-          - 'excel!Excel.Line#endArrowheadWidth~0:complex'
-  - uid: 'excel!Excel.Line#endConnectedShape:member'
-    summary: |-
+        type: >-
+          excel!Excel.<xref uid="ArrowheadWidth:enum" /> | "Narrow" | "Medium" |
+          "Wide"
+  - name: endConnectedShape
+    uid: 'excel!Excel.Line#endConnectedShape:member'
+    package: excel!
+    fullName: endConnectedShape
+    summary: >-
       Represents the shape to which the end of the specified line is attached.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: endConnectedShape
-    fullName: endConnectedShape
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly endConnectedShape: Excel.Shape;'
       return:
-        type:
-          - 'excel!Excel.Shape:class'
-  - uid: 'excel!Excel.Line#endConnectedSite:member'
-    summary: >-
-      Represents the connection site to which the end of a connector is connected. Returns null when the end of the line
-      is not attached to any shape.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: endConnectedSite
+        type: 'excel!Excel.<xref uid="Shape:class" />'
+  - name: endConnectedSite
+    uid: 'excel!Excel.Line#endConnectedSite:member'
+    package: excel!
     fullName: endConnectedSite
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the connection site to which the end of a connector is
+      connected. Returns null when the end of the line is not attached to any
+      shape.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly endConnectedSite: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Line#id:member'
-    summary: |-
+        type: number
+  - name: id
+    uid: 'excel!Excel.Line#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Specifies the shape identifier.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly id: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Line#isBeginConnected:member'
-    summary: |-
+        type: string
+  - name: isBeginConnected
+    uid: 'excel!Excel.Line#isBeginConnected:member'
+    package: excel!
+    fullName: isBeginConnected
+    summary: >-
       Specifies if the beginning of the specified line is connected to a shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isBeginConnected
-    fullName: isBeginConnected
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly isBeginConnected: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Line#isEndConnected:member'
-    summary: |-
+        type: boolean
+  - name: isEndConnected
+    uid: 'excel!Excel.Line#isEndConnected:member'
+    package: excel!
+    fullName: isEndConnected
+    summary: >-
       Specifies if the end of the specified line is connected to a shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isEndConnected
-    fullName: isEndConnected
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly isEndConnected: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Line#load:member(1)'
+        type: boolean
+  - name: shape
+    uid: 'excel!Excel.Line#shape:member'
+    package: excel!
+    fullName: shape
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+      Returns the Shape object associated with the line.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly shape: Excel.Shape;'
+      return:
+        type: 'excel!Excel.<xref uid="Shape:class" />'
+methods:
+  - name: 'connectBeginShape(shape, connectionSite)'
+    uid: 'excel!Excel.Line#connectBeginShape:member(1)'
+    package: excel!
+    fullName: 'connectBeginShape(shape, connectionSite)'
+    summary: >-
+      Attaches the beginning of the specified connector to a specified shape.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectBeginShape(shape: Excel.Shape, connectionSite: number): void;'
+      parameters:
+        - id: shape
+          description: The shape to connect.
+          type: 'excel!Excel.<xref uid="Shape:class" />'
+        - id: connectionSite
+          description: >-
+            The connection site on the shape to which the beginning of the
+            connector is attached. Must be an integer between 0 (inclusive) and
+            the connection-site count of the specified shape (exclusive).
+          type: number
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          });
+
+          ```
+  - name: 'connectEndShape(shape, connectionSite)'
+    uid: 'excel!Excel.Line#connectEndShape:member(1)'
+    package: excel!
+    fullName: 'connectEndShape(shape, connectionSite)'
+    summary: >-
+      Attaches the end of the specified connector to a specified shape.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectEndShape(shape: Excel.Shape, connectionSite: number): void;'
+      parameters:
+        - id: shape
+          description: The shape to connect.
+          type: 'excel!Excel.<xref uid="Shape:class" />'
+        - id: connectionSite
+          description: >-
+            The connection site on the shape to which the end of the connector
+            is attached. Must be an integer between 0 (inclusive) and the
+            connection-site count of the specified shape (exclusive).
+          type: number
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          });
+
+          ```
+  - name: disconnectBeginShape()
+    uid: 'excel!Excel.Line#disconnectBeginShape:member(1)'
+    package: excel!
+    fullName: disconnectBeginShape()
+    summary: >-
+      Detaches the beginning of the specified connector from a shape.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disconnectBeginShape(): void;'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          });
+
+          ```
+  - name: disconnectEndShape()
+    uid: 'excel!Excel.Line#disconnectEndShape:member(1)'
+    package: excel!
+    fullName: disconnectEndShape()
+    summary: >-
+      Detaches the end of the specified connector from a shape.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disconnectEndShape(): void;'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          });
+
+          ```
+  - name: load(options)
+    uid: 'excel!Excel.Line#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.LineLoadOptions): Excel.Line;'
-      return:
-        type:
-          - 'excel!Excel.Line:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.LineLoadOptions:interface'
-  - uid: 'excel!Excel.Line#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: 'excel!Excel.Interfaces.<xref uid="LineLoadOptions:interface" />'
+      return:
+        type: 'excel!Excel.<xref uid="Line:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Line#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Line;'
-      return:
-        type:
-          - 'excel!Excel.Line:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Line#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="Line:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Line#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.Line;
-      return:
-        type:
-          - 'excel!Excel.Line:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.Line#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'excel!Excel.<xref uid="Line:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.Line#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.Line): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.LineUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.LineUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.LineUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'excel!Excel.Interfaces.<xref uid="LineUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.Line#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.Line#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.Line): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.Line:class'
-  - uid: 'excel!Excel.Line#shape:member'
-    summary: |-
-      Returns the Shape object associated with the line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: shape
-    fullName: shape
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly shape: Excel.Shape;'
+          type: 'excel!Excel.<xref uid="Line:class" />'
       return:
-        type:
-          - 'excel!Excel.Shape:class'
-  - uid: 'excel!Excel.Line#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Line object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.LineData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Line#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.Line object is an
+      API object, the `toJSON` method returns a plain JavaScript object (typed
+      as `Excel.Interfaces.LineData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.LineData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.LineData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="LineData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.Line#beginArrowheadLength~0:complex'
-    name: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadLength:enum'
-        name: Excel.ArrowheadLength
-        fullName: Excel.ArrowheadLength
-      - name: ' | "Short" | "Medium" | "Long"'
-        fullName: ' | "Short" | "Medium" | "Long"'
-  - uid: 'excel!Excel.Line#beginArrowheadStyle~0:complex'
-    name: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
-    fullName: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadStyle:enum'
-        name: Excel.ArrowheadStyle
-        fullName: Excel.ArrowheadStyle
-      - name: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
-        fullName: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
-  - uid: 'excel!Excel.Line#beginArrowheadWidth~0:complex'
-    name: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadWidth:enum'
-        name: Excel.ArrowheadWidth
-        fullName: Excel.ArrowheadWidth
-      - name: ' | "Narrow" | "Medium" | "Wide"'
-        fullName: ' | "Narrow" | "Medium" | "Wide"'
-  - uid: 'excel!Excel.Shape:class'
-    name: Excel.Shape
-  - uid: 'excel!Excel.Line#connectorType~0:complex'
-    name: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
-    fullName: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
-    spec.typeScript:
-      - uid: 'excel!Excel.ConnectorType:enum'
-        name: Excel.ConnectorType
-        fullName: Excel.ConnectorType
-      - name: ' | "Straight" | "Elbow" | "Curve"'
-        fullName: ' | "Straight" | "Elbow" | "Curve"'
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.Line#endArrowheadLength~0:complex'
-    name: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadLength:enum'
-        name: Excel.ArrowheadLength
-        fullName: Excel.ArrowheadLength
-      - name: ' | "Short" | "Medium" | "Long"'
-        fullName: ' | "Short" | "Medium" | "Long"'
-  - uid: 'excel!Excel.Line#endArrowheadStyle~0:complex'
-    name: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
-    fullName: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadStyle:enum'
-        name: Excel.ArrowheadStyle
-        fullName: Excel.ArrowheadStyle
-      - name: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
-        fullName: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
-  - uid: 'excel!Excel.Line#endArrowheadWidth~0:complex'
-    name: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadWidth:enum'
-        name: Excel.ArrowheadWidth
-        fullName: Excel.ArrowheadWidth
-      - name: ' | "Narrow" | "Medium" | "Wide"'
-        fullName: ' | "Narrow" | "Medium" | "Wide"'
-  - uid: 'excel!Excel.Line:class'
-    name: Excel.Line
-  - uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
-    name: Excel.Interfaces.LineLoadOptions
-  - uid: 'excel!Excel.Interfaces.LineUpdateData:interface'
-    name: Interfaces.LineUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.LineData:interface'
-    name: Excel.Interfaces.LineData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

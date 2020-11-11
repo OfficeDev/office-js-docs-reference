@@ -1,61 +1,68 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
-    summary: |-
-      Represents the protection of a sheet object.
+### YamlMime:TSType
+name: Excel.Interfaces.WorksheetProtectionLoadOptions
+uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
+summary: >-
+  Represents the protection of a sheet object.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.WorksheetProtectionLoadOptions
-    fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#options:member'
-      - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#protected:member'
-  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#options:member'
-    summary: |-
+        type: boolean
+  - name: options
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#options:member'
+    package: excel!
+    fullName: options
+    summary: >-
       Specifies the protection options for the worksheet.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: options
-    fullName: options
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'options?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#protected:member'
-    summary: |-
+        type: boolean
+  - name: protected
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#protected:member'
+    package: excel!
+    fullName: protected
+    summary: >-
       Specifies if the worksheet is protected.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: protected
-    fullName: protected
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'protected?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

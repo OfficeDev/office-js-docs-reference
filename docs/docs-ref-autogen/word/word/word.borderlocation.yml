@@ -1,83 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.BorderLocation:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.BorderLocation
-    fullName: Word.BorderLocation
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.BorderLocation
+uid: 'word!Word.BorderLocation:enum'
+package: word!
+fullName: Word.BorderLocation
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: 'word!Word.BorderLocation.all:member'
     package: word!
-    children:
-      - 'word!Word.BorderLocation.all:member'
-      - 'word!Word.BorderLocation.bottom:member'
-      - 'word!Word.BorderLocation.inside:member'
-      - 'word!Word.BorderLocation.insideHorizontal:member'
-      - 'word!Word.BorderLocation.insideVertical:member'
-      - 'word!Word.BorderLocation.left:member'
-      - 'word!Word.BorderLocation.outside:member'
-      - 'word!Word.BorderLocation.right:member'
-      - 'word!Word.BorderLocation.top:member'
-  - uid: 'word!Word.BorderLocation.all:member'
-    name: all
-    fullName: all
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"All"'
-  - uid: 'word!Word.BorderLocation.bottom:member'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bottom"'
-  - uid: 'word!Word.BorderLocation.inside:member'
-    name: inside
-    fullName: inside
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Inside"'
-  - uid: 'word!Word.BorderLocation.insideHorizontal:member'
-    name: insideHorizontal
-    fullName: insideHorizontal
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InsideHorizontal"'
-  - uid: 'word!Word.BorderLocation.insideVertical:member'
-    name: insideVertical
-    fullName: insideVertical
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InsideVertical"'
-  - uid: 'word!Word.BorderLocation.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Left"'
-  - uid: 'word!Word.BorderLocation.outside:member'
-    name: outside
-    fullName: outside
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Outside"'
-  - uid: 'word!Word.BorderLocation.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Right"'
-  - uid: 'word!Word.BorderLocation.top:member'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Top"'
+    summary: ''
+  - name: bottom
+    uid: 'word!Word.BorderLocation.bottom:member'
+    package: word!
+    summary: ''
+  - name: inside
+    uid: 'word!Word.BorderLocation.inside:member'
+    package: word!
+    summary: ''
+  - name: insideHorizontal
+    uid: 'word!Word.BorderLocation.insideHorizontal:member'
+    package: word!
+    summary: ''
+  - name: insideVertical
+    uid: 'word!Word.BorderLocation.insideVertical:member'
+    package: word!
+    summary: ''
+  - name: left
+    uid: 'word!Word.BorderLocation.left:member'
+    package: word!
+    summary: ''
+  - name: outside
+    uid: 'word!Word.BorderLocation.outside:member'
+    package: word!
+    summary: ''
+  - name: right
+    uid: 'word!Word.BorderLocation.right:member'
+    package: word!
+    summary: ''
+  - name: top
+    uid: 'word!Word.BorderLocation.top:member'
+    package: word!
+    summary: ''

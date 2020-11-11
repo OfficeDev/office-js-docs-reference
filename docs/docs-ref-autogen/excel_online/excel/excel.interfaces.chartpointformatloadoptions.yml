@@ -1,48 +1,51 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
-    summary: |-
-      Represents formatting object for chart points.
+### YamlMime:TSType
+name: Excel.Interfaces.ChartPointFormatLoadOptions
+uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartPointFormatLoadOptions
+summary: >-
+  Represents formatting object for chart points.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartPointFormatLoadOptions
-    fullName: Excel.Interfaces.ChartPointFormatLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member'
-  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member'
-    summary: |-
-      Represents the border format of a chart data point, which includes color, style, and weight information.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: border
+        type: boolean
+  - name: border
+    uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member'
+    package: excel!
     fullName: border
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the border format of a chart data point, which includes color,
+      style, and weight information.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
+        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderLoadOptions:interface" />'

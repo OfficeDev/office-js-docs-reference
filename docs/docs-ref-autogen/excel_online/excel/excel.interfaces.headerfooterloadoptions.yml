@@ -1,134 +1,149 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.Interfaces.HeaderFooterLoadOptions
-    fullName: Excel.Interfaces.HeaderFooterLoadOptions
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.HeaderFooterLoadOptions
+uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.HeaderFooterLoadOptions
+summary: >-
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooter:member'
-      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeader:member'
-      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooter:member'
-      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeader:member'
-      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooter:member'
-      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeader:member'
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooter:member'
-    summary: >-
-      The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes
-      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: centerFooter
+        type: boolean
+  - name: centerFooter
+    uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooter:member'
+    package: excel!
     fullName: centerFooter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The center footer of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'centerFooter?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeader:member'
-    summary: >-
-      The center header of the worksheet. To apply font formatting or insert a variable value, use format codes
-      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: centerHeader
+        type: boolean
+  - name: centerHeader
+    uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeader:member'
+    package: excel!
     fullName: centerHeader
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The center header of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'centerHeader?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooter:member'
-    summary: >-
-      The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: leftFooter
+        type: boolean
+  - name: leftFooter
+    uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooter:member'
+    package: excel!
     fullName: leftFooter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The left footer of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'leftFooter?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeader:member'
-    summary: >-
-      The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: leftHeader
+        type: boolean
+  - name: leftHeader
+    uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeader:member'
+    package: excel!
     fullName: leftHeader
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The left header of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'leftHeader?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooter:member'
-    summary: >-
-      The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rightFooter
+        type: boolean
+  - name: rightFooter
+    uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooter:member'
+    package: excel!
     fullName: rightFooter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The right footer of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rightFooter?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeader:member'
-    summary: >-
-      The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rightHeader
+        type: boolean
+  - name: rightHeader
+    uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeader:member'
+    package: excel!
     fullName: rightHeader
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The right header of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rightHeader?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

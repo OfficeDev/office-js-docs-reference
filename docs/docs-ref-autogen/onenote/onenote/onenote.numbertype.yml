@@ -1,507 +1,261 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.NumberType:enum'
-    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    name: OneNote.NumberType
-    fullName: OneNote.NumberType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: OneNote.NumberType
+uid: 'onenote!OneNote.NumberType:enum'
+package: onenote!
+fullName: OneNote.NumberType
+summary: >-
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: aiueo
+    uid: 'onenote!OneNote.NumberType.aiueo:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.NumberType.aiueo:member'
-      - 'onenote!OneNote.NumberType.arabic:member'
-      - 'onenote!OneNote.NumberType.arabic1:member'
-      - 'onenote!OneNote.NumberType.arabic2:member'
-      - 'onenote!OneNote.NumberType.arabicLZ:member'
-      - 'onenote!OneNote.NumberType.bullet:member'
-      - 'onenote!OneNote.NumberType.cardtext:member'
-      - 'onenote!OneNote.NumberType.chiManSty:member'
-      - 'onenote!OneNote.NumberType.chnDbNum1:member'
-      - 'onenote!OneNote.NumberType.chnDbNum2:member'
-      - 'onenote!OneNote.NumberType.chnDbNum3:member'
-      - 'onenote!OneNote.NumberType.chnDbNum4:member'
-      - 'onenote!OneNote.NumberType.chosung:member'
-      - 'onenote!OneNote.NumberType.circlenum:member'
-      - 'onenote!OneNote.NumberType.custom:member'
-      - 'onenote!OneNote.NumberType.daiueo:member'
-      - 'onenote!OneNote.NumberType.darabic:member'
-      - 'onenote!OneNote.NumberType.dbChar:member'
-      - 'onenote!OneNote.NumberType.dbNum1:member'
-      - 'onenote!OneNote.NumberType.dbNum2:member'
-      - 'onenote!OneNote.NumberType.dbNum3:member'
-      - 'onenote!OneNote.NumberType.dbNum4:member'
-      - 'onenote!OneNote.NumberType.diroha:member'
-      - 'onenote!OneNote.NumberType.ganada:member'
-      - 'onenote!OneNote.NumberType.gb1:member'
-      - 'onenote!OneNote.NumberType.gb2:member'
-      - 'onenote!OneNote.NumberType.gb3:member'
-      - 'onenote!OneNote.NumberType.gb4:member'
-      - 'onenote!OneNote.NumberType.hebrew1:member'
-      - 'onenote!OneNote.NumberType.hebrew2:member'
-      - 'onenote!OneNote.NumberType.hex:member'
-      - 'onenote!OneNote.NumberType.hindi1:member'
-      - 'onenote!OneNote.NumberType.hindi2:member'
-      - 'onenote!OneNote.NumberType.hindi3:member'
-      - 'onenote!OneNote.NumberType.iroha:member'
-      - 'onenote!OneNote.NumberType.korDbNum1:member'
-      - 'onenote!OneNote.NumberType.korDbNum2:member'
-      - 'onenote!OneNote.NumberType.korDbNum3:member'
-      - 'onenote!OneNote.NumberType.korDbNum4:member'
-      - 'onenote!OneNote.NumberType.lcgreek:member'
-      - 'onenote!OneNote.NumberType.lcletter:member'
-      - 'onenote!OneNote.NumberType.lcroman:member'
-      - 'onenote!OneNote.NumberType.lcrus:member'
-      - 'onenote!OneNote.NumberType.lim:member'
-      - 'onenote!OneNote.NumberType.none:member'
-      - 'onenote!OneNote.NumberType.numInDash:member'
-      - 'onenote!OneNote.NumberType.ordinal:member'
-      - 'onenote!OneNote.NumberType.ordtext:member'
-      - 'onenote!OneNote.NumberType.sbChar:member'
-      - 'onenote!OneNote.NumberType.thai1:member'
-      - 'onenote!OneNote.NumberType.thai2:member'
-      - 'onenote!OneNote.NumberType.tpeDbNum1:member'
-      - 'onenote!OneNote.NumberType.tpeDbNum2:member'
-      - 'onenote!OneNote.NumberType.tpeDbNum3:member'
-      - 'onenote!OneNote.NumberType.tpeDbNum4:member'
-      - 'onenote!OneNote.NumberType.ucgreek:member'
-      - 'onenote!OneNote.NumberType.ucletter:member'
-      - 'onenote!OneNote.NumberType.ucroman:member'
-      - 'onenote!OneNote.NumberType.ucrus:member'
-      - 'onenote!OneNote.NumberType.zodiac1:member'
-      - 'onenote!OneNote.NumberType.zodiac2:member'
-      - 'onenote!OneNote.NumberType.zodiac3:member'
-  - uid: 'onenote!OneNote.NumberType.aiueo:member'
-    name: aiueo
-    fullName: aiueo
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Aiueo"'
-  - uid: 'onenote!OneNote.NumberType.arabic:member'
-    name: arabic
-    fullName: arabic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Arabic"'
-  - uid: 'onenote!OneNote.NumberType.arabic1:member'
-    name: arabic1
-    fullName: arabic1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Arabic1"'
-  - uid: 'onenote!OneNote.NumberType.arabic2:member'
-    name: arabic2
-    fullName: arabic2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Arabic2"'
-  - uid: 'onenote!OneNote.NumberType.arabicLZ:member'
-    name: arabicLZ
-    fullName: arabicLZ
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ArabicLZ"'
-  - uid: 'onenote!OneNote.NumberType.bullet:member'
-    name: bullet
-    fullName: bullet
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bullet"'
-  - uid: 'onenote!OneNote.NumberType.cardtext:member'
-    name: cardtext
-    fullName: cardtext
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Cardtext"'
-  - uid: 'onenote!OneNote.NumberType.chiManSty:member'
-    name: chiManSty
-    fullName: chiManSty
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChiManSty"'
-  - uid: 'onenote!OneNote.NumberType.chnDbNum1:member'
-    name: chnDbNum1
-    fullName: chnDbNum1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChnDbNum1"'
-  - uid: 'onenote!OneNote.NumberType.chnDbNum2:member'
-    name: chnDbNum2
-    fullName: chnDbNum2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChnDbNum2"'
-  - uid: 'onenote!OneNote.NumberType.chnDbNum3:member'
-    name: chnDbNum3
-    fullName: chnDbNum3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChnDbNum3"'
-  - uid: 'onenote!OneNote.NumberType.chnDbNum4:member'
-    name: chnDbNum4
-    fullName: chnDbNum4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChnDbNum4"'
-  - uid: 'onenote!OneNote.NumberType.chosung:member'
-    name: chosung
-    fullName: chosung
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Chosung"'
-  - uid: 'onenote!OneNote.NumberType.circlenum:member'
-    name: circlenum
-    fullName: circlenum
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Circlenum"'
-  - uid: 'onenote!OneNote.NumberType.custom:member'
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Custom"'
-  - uid: 'onenote!OneNote.NumberType.daiueo:member'
-    name: daiueo
-    fullName: daiueo
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DAiueo"'
-  - uid: 'onenote!OneNote.NumberType.darabic:member'
-    name: darabic
-    fullName: darabic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DArabic"'
-  - uid: 'onenote!OneNote.NumberType.dbChar:member'
-    name: dbChar
-    fullName: dbChar
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DbChar"'
-  - uid: 'onenote!OneNote.NumberType.dbNum1:member'
-    name: dbNum1
-    fullName: dbNum1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DbNum1"'
-  - uid: 'onenote!OneNote.NumberType.dbNum2:member'
-    name: dbNum2
-    fullName: dbNum2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DbNum2"'
-  - uid: 'onenote!OneNote.NumberType.dbNum3:member'
-    name: dbNum3
-    fullName: dbNum3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DbNum3"'
-  - uid: 'onenote!OneNote.NumberType.dbNum4:member'
-    name: dbNum4
-    fullName: dbNum4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DbNum4"'
-  - uid: 'onenote!OneNote.NumberType.diroha:member'
-    name: diroha
-    fullName: diroha
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DIroha"'
-  - uid: 'onenote!OneNote.NumberType.ganada:member'
-    name: ganada
-    fullName: ganada
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ganada"'
-  - uid: 'onenote!OneNote.NumberType.gb1:member'
-    name: gb1
-    fullName: gb1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GB1"'
-  - uid: 'onenote!OneNote.NumberType.gb2:member'
-    name: gb2
-    fullName: gb2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GB2"'
-  - uid: 'onenote!OneNote.NumberType.gb3:member'
-    name: gb3
-    fullName: gb3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GB3"'
-  - uid: 'onenote!OneNote.NumberType.gb4:member'
-    name: gb4
-    fullName: gb4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GB4"'
-  - uid: 'onenote!OneNote.NumberType.hebrew1:member'
-    name: hebrew1
-    fullName: hebrew1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hebrew1"'
-  - uid: 'onenote!OneNote.NumberType.hebrew2:member'
-    name: hebrew2
-    fullName: hebrew2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hebrew2"'
-  - uid: 'onenote!OneNote.NumberType.hex:member'
-    name: hex
-    fullName: hex
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hex"'
-  - uid: 'onenote!OneNote.NumberType.hindi1:member'
-    name: hindi1
-    fullName: hindi1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hindi1"'
-  - uid: 'onenote!OneNote.NumberType.hindi2:member'
-    name: hindi2
-    fullName: hindi2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hindi2"'
-  - uid: 'onenote!OneNote.NumberType.hindi3:member'
-    name: hindi3
-    fullName: hindi3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hindi3"'
-  - uid: 'onenote!OneNote.NumberType.iroha:member'
-    name: iroha
-    fullName: iroha
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Iroha"'
-  - uid: 'onenote!OneNote.NumberType.korDbNum1:member'
-    name: korDbNum1
-    fullName: korDbNum1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"KorDbNum1"'
-  - uid: 'onenote!OneNote.NumberType.korDbNum2:member'
-    name: korDbNum2
-    fullName: korDbNum2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"KorDbNum2"'
-  - uid: 'onenote!OneNote.NumberType.korDbNum3:member'
-    name: korDbNum3
-    fullName: korDbNum3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"KorDbNum3"'
-  - uid: 'onenote!OneNote.NumberType.korDbNum4:member'
-    name: korDbNum4
-    fullName: korDbNum4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"KorDbNum4"'
-  - uid: 'onenote!OneNote.NumberType.lcgreek:member'
-    name: lcgreek
-    fullName: lcgreek
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LCGreek"'
-  - uid: 'onenote!OneNote.NumberType.lcletter:member'
-    name: lcletter
-    fullName: lcletter
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LCLetter"'
-  - uid: 'onenote!OneNote.NumberType.lcroman:member'
-    name: lcroman
-    fullName: lcroman
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LCRoman"'
-  - uid: 'onenote!OneNote.NumberType.lcrus:member'
-    name: lcrus
-    fullName: lcrus
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LCRus"'
-  - uid: 'onenote!OneNote.NumberType.lim:member'
-    name: lim
-    fullName: lim
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Lim"'
-  - uid: 'onenote!OneNote.NumberType.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'onenote!OneNote.NumberType.numInDash:member'
-    name: numInDash
-    fullName: numInDash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NumInDash"'
-  - uid: 'onenote!OneNote.NumberType.ordinal:member'
-    name: ordinal
-    fullName: ordinal
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ordinal"'
-  - uid: 'onenote!OneNote.NumberType.ordtext:member'
-    name: ordtext
-    fullName: ordtext
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ordtext"'
-  - uid: 'onenote!OneNote.NumberType.sbChar:member'
-    name: sbChar
-    fullName: sbChar
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SbChar"'
-  - uid: 'onenote!OneNote.NumberType.thai1:member'
-    name: thai1
-    fullName: thai1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Thai1"'
-  - uid: 'onenote!OneNote.NumberType.thai2:member'
-    name: thai2
-    fullName: thai2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Thai2"'
-  - uid: 'onenote!OneNote.NumberType.tpeDbNum1:member'
-    name: tpeDbNum1
-    fullName: tpeDbNum1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TpeDbNum1"'
-  - uid: 'onenote!OneNote.NumberType.tpeDbNum2:member'
-    name: tpeDbNum2
-    fullName: tpeDbNum2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TpeDbNum2"'
-  - uid: 'onenote!OneNote.NumberType.tpeDbNum3:member'
-    name: tpeDbNum3
-    fullName: tpeDbNum3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TpeDbNum3"'
-  - uid: 'onenote!OneNote.NumberType.tpeDbNum4:member'
-    name: tpeDbNum4
-    fullName: tpeDbNum4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TpeDbNum4"'
-  - uid: 'onenote!OneNote.NumberType.ucgreek:member'
-    name: ucgreek
-    fullName: ucgreek
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UCGreek"'
-  - uid: 'onenote!OneNote.NumberType.ucletter:member'
-    name: ucletter
-    fullName: ucletter
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UCLetter"'
-  - uid: 'onenote!OneNote.NumberType.ucroman:member'
-    name: ucroman
-    fullName: ucroman
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UCRoman"'
-  - uid: 'onenote!OneNote.NumberType.ucrus:member'
-    name: ucrus
-    fullName: ucrus
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UCRus"'
-  - uid: 'onenote!OneNote.NumberType.zodiac1:member'
-    name: zodiac1
-    fullName: zodiac1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Zodiac1"'
-  - uid: 'onenote!OneNote.NumberType.zodiac2:member'
-    name: zodiac2
-    fullName: zodiac2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Zodiac2"'
-  - uid: 'onenote!OneNote.NumberType.zodiac3:member'
-    name: zodiac3
-    fullName: zodiac3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Zodiac3"'
+    summary: ''
+  - name: arabic
+    uid: 'onenote!OneNote.NumberType.arabic:member'
+    package: onenote!
+    summary: ''
+  - name: arabic1
+    uid: 'onenote!OneNote.NumberType.arabic1:member'
+    package: onenote!
+    summary: ''
+  - name: arabic2
+    uid: 'onenote!OneNote.NumberType.arabic2:member'
+    package: onenote!
+    summary: ''
+  - name: arabicLZ
+    uid: 'onenote!OneNote.NumberType.arabicLZ:member'
+    package: onenote!
+    summary: ''
+  - name: bullet
+    uid: 'onenote!OneNote.NumberType.bullet:member'
+    package: onenote!
+    summary: ''
+  - name: cardtext
+    uid: 'onenote!OneNote.NumberType.cardtext:member'
+    package: onenote!
+    summary: ''
+  - name: chiManSty
+    uid: 'onenote!OneNote.NumberType.chiManSty:member'
+    package: onenote!
+    summary: ''
+  - name: chnDbNum1
+    uid: 'onenote!OneNote.NumberType.chnDbNum1:member'
+    package: onenote!
+    summary: ''
+  - name: chnDbNum2
+    uid: 'onenote!OneNote.NumberType.chnDbNum2:member'
+    package: onenote!
+    summary: ''
+  - name: chnDbNum3
+    uid: 'onenote!OneNote.NumberType.chnDbNum3:member'
+    package: onenote!
+    summary: ''
+  - name: chnDbNum4
+    uid: 'onenote!OneNote.NumberType.chnDbNum4:member'
+    package: onenote!
+    summary: ''
+  - name: chosung
+    uid: 'onenote!OneNote.NumberType.chosung:member'
+    package: onenote!
+    summary: ''
+  - name: circlenum
+    uid: 'onenote!OneNote.NumberType.circlenum:member'
+    package: onenote!
+    summary: ''
+  - name: custom
+    uid: 'onenote!OneNote.NumberType.custom:member'
+    package: onenote!
+    summary: ''
+  - name: daiueo
+    uid: 'onenote!OneNote.NumberType.daiueo:member'
+    package: onenote!
+    summary: ''
+  - name: darabic
+    uid: 'onenote!OneNote.NumberType.darabic:member'
+    package: onenote!
+    summary: ''
+  - name: dbChar
+    uid: 'onenote!OneNote.NumberType.dbChar:member'
+    package: onenote!
+    summary: ''
+  - name: dbNum1
+    uid: 'onenote!OneNote.NumberType.dbNum1:member'
+    package: onenote!
+    summary: ''
+  - name: dbNum2
+    uid: 'onenote!OneNote.NumberType.dbNum2:member'
+    package: onenote!
+    summary: ''
+  - name: dbNum3
+    uid: 'onenote!OneNote.NumberType.dbNum3:member'
+    package: onenote!
+    summary: ''
+  - name: dbNum4
+    uid: 'onenote!OneNote.NumberType.dbNum4:member'
+    package: onenote!
+    summary: ''
+  - name: diroha
+    uid: 'onenote!OneNote.NumberType.diroha:member'
+    package: onenote!
+    summary: ''
+  - name: ganada
+    uid: 'onenote!OneNote.NumberType.ganada:member'
+    package: onenote!
+    summary: ''
+  - name: gb1
+    uid: 'onenote!OneNote.NumberType.gb1:member'
+    package: onenote!
+    summary: ''
+  - name: gb2
+    uid: 'onenote!OneNote.NumberType.gb2:member'
+    package: onenote!
+    summary: ''
+  - name: gb3
+    uid: 'onenote!OneNote.NumberType.gb3:member'
+    package: onenote!
+    summary: ''
+  - name: gb4
+    uid: 'onenote!OneNote.NumberType.gb4:member'
+    package: onenote!
+    summary: ''
+  - name: hebrew1
+    uid: 'onenote!OneNote.NumberType.hebrew1:member'
+    package: onenote!
+    summary: ''
+  - name: hebrew2
+    uid: 'onenote!OneNote.NumberType.hebrew2:member'
+    package: onenote!
+    summary: ''
+  - name: hex
+    uid: 'onenote!OneNote.NumberType.hex:member'
+    package: onenote!
+    summary: ''
+  - name: hindi1
+    uid: 'onenote!OneNote.NumberType.hindi1:member'
+    package: onenote!
+    summary: ''
+  - name: hindi2
+    uid: 'onenote!OneNote.NumberType.hindi2:member'
+    package: onenote!
+    summary: ''
+  - name: hindi3
+    uid: 'onenote!OneNote.NumberType.hindi3:member'
+    package: onenote!
+    summary: ''
+  - name: iroha
+    uid: 'onenote!OneNote.NumberType.iroha:member'
+    package: onenote!
+    summary: ''
+  - name: korDbNum1
+    uid: 'onenote!OneNote.NumberType.korDbNum1:member'
+    package: onenote!
+    summary: ''
+  - name: korDbNum2
+    uid: 'onenote!OneNote.NumberType.korDbNum2:member'
+    package: onenote!
+    summary: ''
+  - name: korDbNum3
+    uid: 'onenote!OneNote.NumberType.korDbNum3:member'
+    package: onenote!
+    summary: ''
+  - name: korDbNum4
+    uid: 'onenote!OneNote.NumberType.korDbNum4:member'
+    package: onenote!
+    summary: ''
+  - name: lcgreek
+    uid: 'onenote!OneNote.NumberType.lcgreek:member'
+    package: onenote!
+    summary: ''
+  - name: lcletter
+    uid: 'onenote!OneNote.NumberType.lcletter:member'
+    package: onenote!
+    summary: ''
+  - name: lcroman
+    uid: 'onenote!OneNote.NumberType.lcroman:member'
+    package: onenote!
+    summary: ''
+  - name: lcrus
+    uid: 'onenote!OneNote.NumberType.lcrus:member'
+    package: onenote!
+    summary: ''
+  - name: lim
+    uid: 'onenote!OneNote.NumberType.lim:member'
+    package: onenote!
+    summary: ''
+  - name: none
+    uid: 'onenote!OneNote.NumberType.none:member'
+    package: onenote!
+    summary: ''
+  - name: numInDash
+    uid: 'onenote!OneNote.NumberType.numInDash:member'
+    package: onenote!
+    summary: ''
+  - name: ordinal
+    uid: 'onenote!OneNote.NumberType.ordinal:member'
+    package: onenote!
+    summary: ''
+  - name: ordtext
+    uid: 'onenote!OneNote.NumberType.ordtext:member'
+    package: onenote!
+    summary: ''
+  - name: sbChar
+    uid: 'onenote!OneNote.NumberType.sbChar:member'
+    package: onenote!
+    summary: ''
+  - name: thai1
+    uid: 'onenote!OneNote.NumberType.thai1:member'
+    package: onenote!
+    summary: ''
+  - name: thai2
+    uid: 'onenote!OneNote.NumberType.thai2:member'
+    package: onenote!
+    summary: ''
+  - name: tpeDbNum1
+    uid: 'onenote!OneNote.NumberType.tpeDbNum1:member'
+    package: onenote!
+    summary: ''
+  - name: tpeDbNum2
+    uid: 'onenote!OneNote.NumberType.tpeDbNum2:member'
+    package: onenote!
+    summary: ''
+  - name: tpeDbNum3
+    uid: 'onenote!OneNote.NumberType.tpeDbNum3:member'
+    package: onenote!
+    summary: ''
+  - name: tpeDbNum4
+    uid: 'onenote!OneNote.NumberType.tpeDbNum4:member'
+    package: onenote!
+    summary: ''
+  - name: ucgreek
+    uid: 'onenote!OneNote.NumberType.ucgreek:member'
+    package: onenote!
+    summary: ''
+  - name: ucletter
+    uid: 'onenote!OneNote.NumberType.ucletter:member'
+    package: onenote!
+    summary: ''
+  - name: ucroman
+    uid: 'onenote!OneNote.NumberType.ucroman:member'
+    package: onenote!
+    summary: ''
+  - name: ucrus
+    uid: 'onenote!OneNote.NumberType.ucrus:member'
+    package: onenote!
+    summary: ''
+  - name: zodiac1
+    uid: 'onenote!OneNote.NumberType.zodiac1:member'
+    package: onenote!
+    summary: ''
+  - name: zodiac2
+    uid: 'onenote!OneNote.NumberType.zodiac2:member'
+    package: onenote!
+    summary: ''
+  - name: zodiac3
+    uid: 'onenote!OneNote.NumberType.zodiac3:member'
+    package: onenote!
+    summary: ''

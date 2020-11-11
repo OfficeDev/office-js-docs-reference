@@ -1,142 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
-    summary: An interface describing the data returned by calling "notebook.toJSON()".
-    name: OneNote.Interfaces.NotebookData
-    fullName: OneNote.Interfaces.NotebookData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.NotebookData
+uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.NotebookData
+summary: An interface describing the data returned by calling "notebook.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: baseUrl
+    uid: 'onenote!OneNote.Interfaces.NotebookData#baseUrl:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.NotebookData#baseUrl:member'
-      - 'onenote!OneNote.Interfaces.NotebookData#clientUrl:member'
-      - 'onenote!OneNote.Interfaces.NotebookData#id:member'
-      - 'onenote!OneNote.Interfaces.NotebookData#isVirtual:member'
-      - 'onenote!OneNote.Interfaces.NotebookData#name:member'
-      - 'onenote!OneNote.Interfaces.NotebookData#sectionGroups:member'
-      - 'onenote!OneNote.Interfaces.NotebookData#sections:member'
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#baseUrl:member'
-    summary: |-
+    fullName: baseUrl
+    summary: >-
       The url of the site that this notebook is located. Read only
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: baseUrl
-    fullName: baseUrl
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'baseUrl?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#clientUrl:member'
-    summary: |-
+        type: string
+  - name: clientUrl
+    uid: 'onenote!OneNote.Interfaces.NotebookData#clientUrl:member'
+    package: onenote!
+    fullName: clientUrl
+    summary: >-
       The client url of the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: clientUrl
-    fullName: clientUrl
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clientUrl?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#id:member'
-    summary: |-
+        type: string
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.NotebookData#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the notebook. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#isVirtual:member'
-    summary: |-
-      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
-
-      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: isVirtual
+        type: string
+  - name: isVirtual
+    uid: 'onenote!OneNote.Interfaces.NotebookData#isVirtual:member'
+    package: onenote!
     fullName: isVirtual
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      True if the Notebook is not created by the user (i.e. 'Misplaced
+      Sections'). Read only
+
+
+      \[ [API set: OneNoteApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isVirtual?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#name:member'
-    summary: |-
+        type: boolean
+  - name: name
+    uid: 'onenote!OneNote.Interfaces.NotebookData#name:member'
+    package: onenote!
+    fullName: name
+    summary: >-
       Gets the name of the notebook. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#sectionGroups:member'
-    summary: |-
+        type: string
+  - name: sectionGroups
+    uid: 'onenote!OneNote.Interfaces.NotebookData#sectionGroups:member'
+    package: onenote!
+    fullName: sectionGroups
+    summary: >-
       The section groups in the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: sectionGroups
-    fullName: sectionGroups
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.NotebookData#sectionGroups~0:complex'
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#sections:member'
-    summary: |-
+        type: 'onenote!OneNote.Interfaces.<xref uid="SectionGroupData:interface" />[]'
+  - name: sections
+    uid: 'onenote!OneNote.Interfaces.NotebookData#sections:member'
+    package: onenote!
+    fullName: sections
+    summary: >-
       The the sections of the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: sections
-    fullName: sections
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sections?: OneNote.Interfaces.SectionData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.NotebookData#sections~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#sectionGroups~0:complex'
-    name: 'OneNote.Interfaces.SectionGroupData[]'
-    fullName: 'OneNote.Interfaces.SectionGroupData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
-        name: OneNote.Interfaces.SectionGroupData
-        fullName: OneNote.Interfaces.SectionGroupData
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'onenote!OneNote.Interfaces.NotebookData#sections~0:complex'
-    name: 'OneNote.Interfaces.SectionData[]'
-    fullName: 'OneNote.Interfaces.SectionData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
-        name: OneNote.Interfaces.SectionData
-        fullName: OneNote.Interfaces.SectionData
-      - name: '[]'
-        fullName: '[]'
+        type: 'onenote!OneNote.Interfaces.<xref uid="SectionData:interface" />[]'

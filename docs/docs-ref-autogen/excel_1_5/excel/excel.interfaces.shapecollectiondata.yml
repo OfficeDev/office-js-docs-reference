@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ShapeCollectionData:interface'
-    summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ShapeCollectionData
-    fullName: Excel.Interfaces.ShapeCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ShapeCollectionData
+uid: 'excel!Excel.Interfaces.ShapeCollectionData:interface'
+package: excel!
+fullName: Excel.Interfaces.ShapeCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `shapeCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.ShapeCollectionData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ShapeCollectionData#items:member'
-  - uid: 'excel!Excel.Interfaces.ShapeCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.ShapeData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ShapeCollectionData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.ShapeCollectionData#items~0:complex'
-    name: 'Excel.Interfaces.ShapeData[]'
-    fullName: 'Excel.Interfaces.ShapeData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.ShapeData:interface'
-        name: Excel.Interfaces.ShapeData
-        fullName: Excel.Interfaces.ShapeData
-      - name: '[]'
-        fullName: '[]'
+        type: 'excel!Excel.Interfaces.<xref uid="ShapeData:interface" />[]'

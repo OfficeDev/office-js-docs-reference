@@ -1,71 +1,69 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions:interface'
-    summary: >-
-      Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
+### YamlMime:TSType
+name: Word.Interfaces.SettingCollectionLoadOptions
+uid: 'word!Word.Interfaces.SettingCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.SettingCollectionLoadOptions
+summary: >-
+  Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
+  objects.
 
 
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: Word.Interfaces.SettingCollectionLoadOptions
-    fullName: Word.Interfaces.SettingCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#$all:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.SettingCollectionLoadOptions#$all:member'
-      - 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
-      - 'word!Word.Interfaces.SettingCollectionLoadOptions#value:member'
-  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
+        type: boolean
+  - name: key
+    uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
+    package: word!
+    fullName: key
     summary: >-
       For EACH ITEM in the collection: Gets the key of the setting. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'key?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#value:member'
+        type: boolean
+  - name: value
+    uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#value:member'
+    package: word!
+    fullName: value
     summary: >-
       For EACH ITEM in the collection: Gets or sets the value of the setting.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'value?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

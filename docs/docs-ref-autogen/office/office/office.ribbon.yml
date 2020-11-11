@@ -1,47 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.Ribbon:interface'
-    summary: An interface that contains all the functionality provided to manage the state of the OFfice ribbon.
-    name: Office.Ribbon
-    fullName: Office.Ribbon
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.Ribbon
+uid: 'office!Office.Ribbon:interface'
+package: office!
+fullName: Office.Ribbon
+summary: >-
+  An interface that contains all the functionality provided to manage the state
+  of the OFfice ribbon.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: requestUpdate(input)
+    uid: 'office!Office.Ribbon#requestUpdate:member(1)'
     package: office!
-    children:
-      - 'office!Office.Ribbon#requestUpdate:member(1)'
-  - uid: 'office!Office.Ribbon#requestUpdate:member(1)'
-    summary: >-
-      Sends a request to Office to update the ribbon. Note that this API is only to request an update. The actual UI
-      update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or
-      refresh) cannot be determined by the completion of this API.
-    name: requestUpdate(input)
     fullName: requestUpdate(input)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sends a request to Office to update the ribbon. Note that this API is only
+      to request an update. The actual UI update to the ribbon is controlled by
+      the Office application and hence the exact timing of the ribbon update (or
+      refresh) cannot be determined by the completion of this API.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'requestUpdate(input: RibbonUpdaterData): Promise<void>;'
-      return:
-        type:
-          - 'office!Office.Ribbon#requestUpdate~0:complex'
-        description: ''
       parameters:
         - id: input
           description: >-
-            Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter
-            are made.
-          type:
-            - 'office!Office.RibbonUpdaterData:interface'
-references:
-  - uid: 'office!Office.Ribbon#requestUpdate~0:complex'
-    name: Promise<void>
-    fullName: Promise<void>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <void>
-        fullName: <void>
-  - uid: 'office!Office.RibbonUpdaterData:interface'
-    name: RibbonUpdaterData
+            Represents the updates to be made to the ribbon. Note that only the
+            changes specified in the input parameter are made.
+          type: 'office!Office.<xref uid="RibbonUpdaterData:interface" />'
+      return:
+        type: Promise&lt;void&gt;
+        description: ''

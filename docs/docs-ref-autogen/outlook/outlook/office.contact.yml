@@ -1,166 +1,162 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.Contact:interface'
-    summary: >-
-      Represents the details about a contact (similar to what's on a physical contact or business card) extracted from
-      the item's body. Read mode only.
+### YamlMime:TSType
+name: Office.Contact
+uid: 'outlook!Office.Contact:interface'
+package: outlook!
+fullName: Office.Contact
+summary: >-
+  Represents the details about a contact (similar to what's on a physical
+  contact or business card) extracted from the item's body. Read mode only.
 
 
-      The list of contacts extracted from the body of an email message or appointment is returned in the `contacts`
-      property of the [Entities](xref:outlook!Office.Entities:interface) object returned by the `getEntities` or
-      `getEntitiesByType` method of the current item.
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+  The list of contacts extracted from the body of an email message or
+  appointment is returned in the `contacts` property of the
+  [Entities](xref:outlook!Office.Entities:interface) object returned by the
+  `getEntities` or `getEntitiesByType` method of the current item.
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `Restricted`
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Read
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
 
 
-      #### Examples
+  #### Examples
 
 
-      ```javascript
+  ```javascript
 
-      var item = Office.context.mailbox.item;
+  var item = Office.context.mailbox.item;
 
-      // Get an array of strings that represent contacts in the current item's body.
+  // Get an array of strings that represent contacts in the current item's body.
 
-      var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+  var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
 
-      console.log("There are " + contacts.length + " contacts.")
+  console.log("There are " + contacts.length + " contacts.")
 
-      contacts.forEach(function (contact) {
-          console.log("Person name: " + JSON.stringify(contact.personName));
-          console.log("Business name: " + JSON.stringify(contact.businessName));
-          console.log("Addresses: " + JSON.stringify(contact.addresses));
-          console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
-          console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
-          console.log("Urls: " + JSON.stringify(contact.urls));
-      });
-
-
-      /* Example email that includes contact details of sender, John Smith:
-
-      Hi there,
-
-      I have received the package.
+  contacts.forEach(function (contact) {
+      console.log("Person name: " + JSON.stringify(contact.personName));
+      console.log("Business name: " + JSON.stringify(contact.businessName));
+      console.log("Addresses: " + JSON.stringify(contact.addresses));
+      console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
+      console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
+      console.log("Urls: " + JSON.stringify(contact.urls));
+  });
 
 
-      Thanks.
+  /* Example email that includes contact details of sender, John Smith:
 
-      John Smith
+  Hi there,
 
-      Account Manager
+  I have received the package.
 
-      Contoso Corporation
 
-      1 Contoso Way, Redmond, WA 98052
+  Thanks.
 
-      john.smith@contoso.com
+  John Smith
 
-      111-111-1111
+  Account Manager
 
-      https://contoso.com/john.smith
+  Contoso Corporation
 
-      */
+  1 Contoso Way, Redmond, WA 98052
 
-      ```
-    name: Office.Contact
-    fullName: Office.Contact
-    langs:
-      - typeScript
-    type: interface
+  john.smith@contoso.com
+
+  111-111-1111
+
+  https://contoso.com/john.smith
+
+  */
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: addresses
+    uid: 'outlook!Office.Contact#addresses:member'
     package: outlook!
-    children:
-      - 'outlook!Office.Contact#addresses:member'
-      - 'outlook!Office.Contact#businessName:member'
-      - 'outlook!Office.Contact#emailAddresses:member'
-      - 'outlook!Office.Contact#personName:member'
-      - 'outlook!Office.Contact#phoneNumbers:member'
-      - 'outlook!Office.Contact#urls:member'
-  - uid: 'outlook!Office.Contact#addresses:member'
-    summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
-    name: addresses
     fullName: addresses
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An array of strings containing the mailing and street addresses associated
+      with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'addresses: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: 'outlook!Office.Contact#businessName:member'
-    summary: A string containing the name of the business associated with the contact. Nullable.
-    name: businessName
+        type: 'string[]'
+  - name: businessName
+    uid: 'outlook!Office.Contact#businessName:member'
+    package: outlook!
     fullName: businessName
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A string containing the name of the business associated with the contact.
+      Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'businessName: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.Contact#emailAddresses:member'
-    summary: An array of strings containing the SMTP email addresses associated with the contact. Nullable.
-    name: emailAddresses
+        type: string
+  - name: emailAddresses
+    uid: 'outlook!Office.Contact#emailAddresses:member'
+    package: outlook!
     fullName: emailAddresses
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An array of strings containing the SMTP email addresses associated with
+      the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'emailAddresses: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: 'outlook!Office.Contact#personName:member'
-    summary: A string containing the name of the person associated with the contact. Nullable.
-    name: personName
+        type: 'string[]'
+  - name: personName
+    uid: 'outlook!Office.Contact#personName:member'
+    package: outlook!
     fullName: personName
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A string containing the name of the person associated with the contact.
+      Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'personName: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.Contact#phoneNumbers:member'
-    summary: An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
-    name: phoneNumbers
+        type: string
+  - name: phoneNumbers
+    uid: 'outlook!Office.Contact#phoneNumbers:member'
+    package: outlook!
     fullName: phoneNumbers
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An array containing a `PhoneNumber` object for each phone number
+      associated with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'phoneNumbers: PhoneNumber[];'
       return:
-        type:
-          - 'outlook!Office.Contact#phoneNumbers~0:complex'
-  - uid: 'outlook!Office.Contact#urls:member'
-    summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
-    name: urls
+        type: 'outlook!Office.<xref uid="PhoneNumber:interface" />[]'
+  - name: urls
+    uid: 'outlook!Office.Contact#urls:member'
+    package: outlook!
     fullName: urls
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An array of strings containing the Internet URLs associated with the
+      contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'urls: string[];'
       return:
-        type:
-          - 'string[]'
-references:
-  - uid: 'outlook!Office.Contact#phoneNumbers~0:complex'
-    name: 'PhoneNumber[]'
-    fullName: 'Office.PhoneNumber[]'
-    spec.typeScript:
-      - uid: 'outlook!Office.PhoneNumber:interface'
-        name: PhoneNumber
-        fullName: Office.PhoneNumber
-      - name: '[]'
-        fullName: '[]'
+        type: 'string[]'

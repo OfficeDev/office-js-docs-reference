@@ -1,172 +1,178 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
-    summary: An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.DataBarConditionalFormatData
-    fullName: Excel.Interfaces.DataBarConditionalFormatData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.DataBarConditionalFormatData
+uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
+package: excel!
+fullName: Excel.Interfaces.DataBarConditionalFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `dataBarConditionalFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: axisColor
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisColor:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisColor:member'
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat:member'
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection:member'
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#lowerBoundRule:member'
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#negativeFormat:member'
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#positiveFormat:member'
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#showDataBarOnly:member'
-      - 'excel!Excel.Interfaces.DataBarConditionalFormatData#upperBoundRule:member'
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisColor:member'
-    summary: >-
-      HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML
-      color (e.g., "orange"). "" (empty string) if no axis is present or set.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: axisColor
     fullName: axisColor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      HTML color code representing the color of the Axis line, of the form
+      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). ""
+      (empty string) if no axis is present or set.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'axisColor?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat:member'
-    summary: |-
+        type: string
+  - name: axisFormat
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat:member'
+    package: excel!
+    fullName: axisFormat
+    summary: >-
       Representation of how the axis is determined for an Excel data bar.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: axisFormat
-    fullName: axisFormat
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'axisFormat?: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint";'
+      content: >-
+        axisFormat?: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" |
+        "CellMidPoint";
       return:
-        type:
-          - 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat~0:complex'
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection:member'
-    summary: |-
+        type: >-
+          excel!Excel.<xref uid="ConditionalDataBarAxisFormat:enum" /> |
+          "Automatic" | "None" | "CellMidPoint"
+  - name: barDirection
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection:member'
+    package: excel!
+    fullName: barDirection
+    summary: >-
       Specifies the direction that the data bar graphic should be based on.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: barDirection
-    fullName: barDirection
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'barDirection?: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";'
+      content: >-
+        barDirection?: Excel.ConditionalDataBarDirection | "Context" |
+        "LeftToRight" | "RightToLeft";
       return:
-        type:
-          - 'excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection~0:complex'
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#lowerBoundRule:member'
+        type: >-
+          excel!Excel.<xref uid="ConditionalDataBarDirection:enum" /> |
+          "Context" | "LeftToRight" | "RightToLeft"
+  - name: lowerBoundRule
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#lowerBoundRule:member'
+    package: excel!
+    fullName: lowerBoundRule
     summary: >-
-      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. The
-      `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of
+      The rule for what consistutes the lower bound (and how to calculate it, if
+      applicable) for a data bar. The `ConditionalDataBarRule` object must be
+      set as a JSON object (use `x.lowerBoundRule = {...}` instead of
       `x.lowerBoundRule.formula = ...`<!-- -->).
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: lowerBoundRule
-    fullName: lowerBoundRule
-    langs:
-      - typeScript
-    type: property
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lowerBoundRule?: Excel.ConditionalDataBarRule;'
       return:
-        type:
-          - 'excel!Excel.ConditionalDataBarRule:interface'
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#negativeFormat:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="ConditionalDataBarRule:interface" />'
+  - name: negativeFormat
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#negativeFormat:member'
+    package: excel!
+    fullName: negativeFormat
+    summary: >-
       Representation of all values to the left of the axis in an Excel data bar.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: negativeFormat
-    fullName: negativeFormat
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#positiveFormat:member'
-    summary: |-
-      Representation of all values to the right of the axis in an Excel data bar.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: positiveFormat
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ConditionalDataBarNegativeFormatData:interface" />
+  - name: positiveFormat
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#positiveFormat:member'
+    package: excel!
     fullName: positiveFormat
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Representation of all values to the right of the axis in an Excel data
+      bar.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#showDataBarOnly:member'
-    summary: |-
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ConditionalDataBarPositiveFormatData:interface" />
+  - name: showDataBarOnly
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#showDataBarOnly:member'
+    package: excel!
+    fullName: showDataBarOnly
+    summary: >-
       If true, hides the values from the cells where the data bar is applied.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showDataBarOnly
-    fullName: showDataBarOnly
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showDataBarOnly?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#upperBoundRule:member'
+        type: boolean
+  - name: upperBoundRule
+    uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#upperBoundRule:member'
+    package: excel!
+    fullName: upperBoundRule
     summary: >-
-      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. The
-      `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of
+      The rule for what constitutes the upper bound (and how to calculate it, if
+      applicable) for a data bar. The `ConditionalDataBarRule` object must be
+      set as a JSON object (use `x.upperBoundRule = {...}` instead of
       `x.upperBoundRule.formula = ...`<!-- -->).
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: upperBoundRule
-    fullName: upperBoundRule
-    langs:
-      - typeScript
-    type: property
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'upperBoundRule?: Excel.ConditionalDataBarRule;'
       return:
-        type:
-          - 'excel!Excel.ConditionalDataBarRule:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat~0:complex'
-    name: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
-    fullName: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
-    spec.typeScript:
-      - uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
-        name: Excel.ConditionalDataBarAxisFormat
-        fullName: Excel.ConditionalDataBarAxisFormat
-      - name: ' | "Automatic" | "None" | "CellMidPoint"'
-        fullName: ' | "Automatic" | "None" | "CellMidPoint"'
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection~0:complex'
-    name: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
-    fullName: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
-    spec.typeScript:
-      - uid: 'excel!Excel.ConditionalDataBarDirection:enum'
-        name: Excel.ConditionalDataBarDirection
-        fullName: Excel.ConditionalDataBarDirection
-      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
-        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
-  - uid: 'excel!Excel.ConditionalDataBarRule:interface'
-    name: Excel.ConditionalDataBarRule
-  - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
-    name: Excel.Interfaces.ConditionalDataBarNegativeFormatData
-  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
-    name: Excel.Interfaces.ConditionalDataBarPositiveFormatData
+        type: 'excel!Excel.<xref uid="ConditionalDataBarRule:interface" />'

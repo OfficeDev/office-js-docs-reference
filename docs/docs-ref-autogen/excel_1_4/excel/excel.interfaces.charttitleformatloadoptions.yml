@@ -1,48 +1,51 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
-    summary: |-
-      Provides access to the office art formatting for chart title.
+### YamlMime:TSType
+name: Excel.Interfaces.ChartTitleFormatLoadOptions
+uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartTitleFormatLoadOptions
+summary: >-
+  Provides access to the office art formatting for chart title.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartTitleFormatLoadOptions
-    fullName: Excel.Interfaces.ChartTitleFormatLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member'
-  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member'
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for an object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: font
+        type: boolean
+  - name: font
+    uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member'
+    package: excel!
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the font attributes (font name, font size, color, etc.) for an
+      object.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
+        type: 'excel!Excel.Interfaces.<xref uid="ChartFontLoadOptions:interface" />'

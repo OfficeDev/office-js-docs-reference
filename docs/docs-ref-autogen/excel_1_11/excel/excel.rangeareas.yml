@@ -1,382 +1,190 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeAreas:class'
-    summary: >-
-      RangeAreas represents a collection of one or more rectangular ranges in the same worksheet. To learn how to use
-      discontinguous ranges, read [Work with multiple ranges simultaneously in Excel
-      add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
+### YamlMime:TSType
+name: Excel.RangeAreas
+uid: 'excel!Excel.RangeAreas:class'
+package: excel!
+fullName: Excel.RangeAreas
+summary: >-
+  RangeAreas represents a collection of one or more rectangular ranges in the
+  same worksheet. To learn how to use discontinguous ranges, read [Work with
+  multiple ranges simultaneously in Excel
+  add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RangeAreas
-    fullName: Excel.RangeAreas
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: address
+    uid: 'excel!Excel.RangeAreas#address:member'
     package: excel!
-    children:
-      - 'excel!Excel.RangeAreas#address:member'
-      - 'excel!Excel.RangeAreas#addressLocal:member'
-      - 'excel!Excel.RangeAreas#areaCount:member'
-      - 'excel!Excel.RangeAreas#areas:member'
-      - 'excel!Excel.RangeAreas#calculate:member(1)'
-      - 'excel!Excel.RangeAreas#cellCount:member'
-      - 'excel!Excel.RangeAreas#clear:member(1)'
-      - 'excel!Excel.RangeAreas#clear:member(2)'
-      - 'excel!Excel.RangeAreas#conditionalFormats:member'
-      - 'excel!Excel.RangeAreas#context:member'
-      - 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
-      - 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
-      - 'excel!Excel.RangeAreas#copyFrom:member(1)'
-      - 'excel!Excel.RangeAreas#copyFrom:member(2)'
-      - 'excel!Excel.RangeAreas#dataValidation:member'
-      - 'excel!Excel.RangeAreas#format:member'
-      - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
-      - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
-      - 'excel!Excel.RangeAreas#getIntersection:member(1)'
-      - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
-      - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
-      - 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
-      - 'excel!Excel.RangeAreas#getSpecialCells:member(2)'
-      - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
-      - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(2)'
-      - 'excel!Excel.RangeAreas#getTables:member(1)'
-      - 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
-      - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
-      - 'excel!Excel.RangeAreas#isEntireColumn:member'
-      - 'excel!Excel.RangeAreas#isEntireRow:member'
-      - 'excel!Excel.RangeAreas#load:member(1)'
-      - 'excel!Excel.RangeAreas#load:member(2)'
-      - 'excel!Excel.RangeAreas#load:member(3)'
-      - 'excel!Excel.RangeAreas#set:member(1)'
-      - 'excel!Excel.RangeAreas#set:member(2)'
-      - 'excel!Excel.RangeAreas#setDirty:member(1)'
-      - 'excel!Excel.RangeAreas#style:member'
-      - 'excel!Excel.RangeAreas#toJSON:member(1)'
-      - 'excel!Excel.RangeAreas#track:member(1)'
-      - 'excel!Excel.RangeAreas#untrack:member(1)'
-      - 'excel!Excel.RangeAreas#worksheet:member'
-  - uid: 'excel!Excel.RangeAreas#address:member'
-    summary: >-
-      Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular
-      block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: address
     fullName: address
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the RangeAreas reference in A1-style. Address value will contain
+      the worksheet name for each rectangular block of cells (e.g.,
+      "Sheet1!A1:B4, Sheet1!D1:D4").
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly address: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeAreas#addressLocal:member'
-    summary: |-
+        type: string
+  - name: addressLocal
+    uid: 'excel!Excel.RangeAreas#addressLocal:member'
+    package: excel!
+    fullName: addressLocal
+    summary: >-
       Returns the RangeAreas reference in the user locale.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: addressLocal
-    fullName: addressLocal
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly addressLocal: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeAreas#areaCount:member'
-    summary: |-
-      Returns the number of rectangular ranges that comprise this RangeAreas object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: areaCount
+        type: string
+  - name: areaCount
+    uid: 'excel!Excel.RangeAreas#areaCount:member'
+    package: excel!
     fullName: areaCount
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the number of rectangular ranges that comprise this RangeAreas
+      object.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly areaCount: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeAreas#areas:member'
-    summary: |-
-      Returns a collection of rectangular ranges that comprise this RangeAreas object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: areas
+        type: number
+  - name: areas
+    uid: 'excel!Excel.RangeAreas#areas:member'
+    package: excel!
     fullName: areas
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a collection of rectangular ranges that comprise this RangeAreas
+      object.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly areas: Excel.RangeCollection;'
       return:
-        type:
-          - 'excel!Excel.RangeCollection:class'
-  - uid: 'excel!Excel.RangeAreas#calculate:member(1)'
-    summary: |-
-      Calculates all cells in the RangeAreas.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculate()
-    fullName: calculate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#cellCount:member'
-    summary: >-
-      Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual
-      rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: cellCount
+        type: 'excel!Excel.<xref uid="RangeCollection:class" />'
+  - name: cellCount
+    uid: 'excel!Excel.RangeAreas#cellCount:member'
+    package: excel!
     fullName: cellCount
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the number of cells in the RangeAreas object, summing up the cell
+      counts of all of the individual rectangular ranges. Returns -1 if the cell
+      count exceeds 2^31-1 (2,147,483,647).
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly cellCount: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeAreas#clear:member(1)'
-    summary: |-
-      Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear(applyTo)
-    fullName: clear(applyTo)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: applyTo
-          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details. Default is "All".
-          type:
-            - 'excel!Excel.ClearApplyTo:enum'
-  - uid: 'excel!Excel.RangeAreas#clear:member(2)'
-    summary: |-
-      Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear(applyToString)
-    fullName: clear(applyToString)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: applyToString
-          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details. Default is "All".
-          type:
-            - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
-  - uid: 'excel!Excel.RangeAreas#conditionalFormats:member'
-    summary: |-
-      Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: conditionalFormats
+        type: number
+  - name: conditionalFormats
+    uid: 'excel!Excel.RangeAreas#conditionalFormats:member'
+    package: excel!
     fullName: conditionalFormats
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a collection of ConditionalFormats that intersect with any cells
+      in this RangeAreas object.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
       return:
-        type:
-          - 'excel!Excel.ConditionalFormatCollection:class'
-  - uid: 'excel!Excel.RangeAreas#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: 'excel!Excel.<xref uid="ConditionalFormatCollection:class" />'
+  - name: context
+    uid: 'excel!Excel.RangeAreas#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
-    summary: |-
-      Converts all cells in the RangeAreas with datatypes into text.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: convertDataTypeToText()
-    fullName: convertDataTypeToText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
-    summary: |-
-      Converts all cells in the RangeAreas into linked datatype.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertToLinkedDataType(serviceID: number, languageCulture: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: The Service ID which will be used to query the data.
-          type:
-            - number
-        - id: languageCulture
-          description: Language Culture to query the service for.
-          type:
-            - string
-  - uid: 'excel!Excel.RangeAreas#copyFrom:member(1)'
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: dataValidation
+    uid: 'excel!Excel.RangeAreas#dataValidation:member'
+    package: excel!
+    fullName: dataValidation
     summary: >-
-      Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas. The destination
-      rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded
-      automatically if it is smaller than the source.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean,
-        transpose?: boolean): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceRange
-          description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
-            able to be created by removing full rows or columns from a rectangular range.
-          type:
-            - 'excel!Excel.RangeAreas#copyFrom~0:complex'
-        - id: copyType
-          description: The type of cell data or formatting to copy over. Default is "All".
-          type:
-            - 'excel!Excel.RangeCopyType:enum'
-        - id: skipBlanks
-          description: True if to skip blank cells in the source range or RangeAreas. Default is false.
-          type:
-            - boolean
-        - id: transpose
-          description: True if to transpose the cells in the destination RangeAreas. Default is false.
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#copyFrom:member(2)'
-    summary: >-
-      Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas. The destination
-      rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded
-      automatically if it is smaller than the source.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
-        skipBlanks?: boolean, transpose?: boolean): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceRange
-          description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
-            able to be created by removing full rows or columns from a rectangular range.
-          type:
-            - 'excel!Excel.RangeAreas#copyFrom~1:complex'
-        - id: copyTypeString
-          description: The type of cell data or formatting to copy over. Default is "All".
-          type:
-            - '"All" | "Formulas" | "Values" | "Formats"'
-        - id: skipBlanks
-          description: True if to skip blank cells in the source range or RangeAreas. Default is false.
-          type:
-            - boolean
-        - id: transpose
-          description: True if to transpose the cells in the destination RangeAreas. Default is false.
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#dataValidation:member'
-    summary: |-
       Returns a dataValidation object for all ranges in the RangeAreas.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: dataValidation
-    fullName: dataValidation
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly dataValidation: Excel.DataValidation;'
       return:
-        type:
-          - 'excel!Excel.DataValidation:class'
-  - uid: 'excel!Excel.RangeAreas#format:member'
-    summary: >-
-      Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
-      ranges in the RangeAreas object.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
+        type: 'excel!Excel.<xref uid="DataValidation:class" />'
+  - name: format
+    uid: 'excel!Excel.RangeAreas#format:member'
+    package: excel!
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a RangeFormat object, encapsulating the the font, fill, borders,
+      alignment, and other properties for all ranges in the RangeAreas object.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly format: Excel.RangeFormat;'
       return:
-        type:
-          - 'excel!Excel.RangeFormat:class'
+        type: 'excel!Excel.<xref uid="RangeFormat:class" />'
         description: >-
 
 
@@ -401,666 +209,884 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
-    summary: >-
-      Returns a RangeAreas object that represents the entire columns of the RangeAreas (for example, if the current
-      RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getEntireColumn()
-    fullName: getEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireColumn(): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#getEntireRow:member(1)'
-    summary: >-
-      Returns a RangeAreas object that represents the entire rows of the RangeAreas (for example, if the current
-      RangeAreas represents cells "B4:E11", it returns a RangeAreas that represents rows "4:11").
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getEntireRow()
-    fullName: getEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireRow(): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-  - uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
-    summary: >-
-      Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no
-      intersection is found, an ItemNotFound error will be thrown.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getIntersection(anotherRange)
-    fullName: getIntersection(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersection(anotherRange: Range | RangeAreas | string): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 'The range, RangeAreas object or range address that will be used to determine the intersection.'
-          type:
-            - 'excel!Excel.RangeAreas#getIntersection~0:complex'
-  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
-    summary: >-
-      Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no
-      intersection is found, a null object is returned.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getIntersectionOrNullObject(anotherRange)
-    fullName: getIntersectionOrNullObject(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersectionOrNullObject(anotherRange: Range | RangeAreas | string): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 'The range, RangeAreas, or address that will be used to determine the intersection.'
-          type:
-            - 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
-  - uid: 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
-    summary: >-
-      Returns an RangeAreas object that is shifted by the specific row and column offset. The dimension of the returned
-      RangeAreas will match the original object. If the resulting RangeAreas is forced outside the bounds of the
-      worksheet grid, an error will be thrown.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOffsetRangeAreas(rowOffset: number, columnOffset: number): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: rowOffset
-          description: >-
-            The number of rows (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values are
-            offset downward, and negative values are offset upward.
-          type:
-            - number
-        - id: columnOffset
-          description: >-
-            The number of columns (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values
-            are offset to the right, and negative values are offset to the left.
-          type:
-            - number
-  - uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
-    summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error
-      if no special cells are found that match the criteria.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCells(cellType, cellValueType)'
-    fullName: 'getSpecialCells(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpecialCells(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: cellType
-          description: The type of cells to include.
-          type:
-            - 'excel!Excel.SpecialCellType:enum'
-        - id: cellValueType
-          description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
-          type:
-            - 'excel!Excel.SpecialCellValueType:enum'
-  - uid: 'excel!Excel.RangeAreas#getSpecialCells:member(2)'
-    summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error
-      if no special cells are found that match the criteria.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCells(cellTypeString, cellValueType)'
-    fullName: 'getSpecialCells(cellTypeString, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
-        "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" |
-        "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
-        "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: cellTypeString
-          description: The type of cells to include.
-          type:
-            - >-
-              "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
-              "SameDataValidation" | "Visible"
-        - id: cellValueType
-          description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
-          type:
-            - >-
-              "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
-              "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
-              "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
-  - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
-    summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null
-      object if no special cells are found that match the criteria.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
-    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType):
-        Excel.RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: cellType
-          description: The type of cells to include.
-          type:
-            - 'excel!Excel.SpecialCellType:enum'
-        - id: cellValueType
-          description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
-          type:
-            - 'excel!Excel.SpecialCellValueType:enum'
-  - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(2)'
-    summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null
-      object if no special cells are found that match the criteria.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
-    fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
-        "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
-        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
-        "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
-        "NumbersText" | "Text"): Excel.RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: cellTypeString
-          description: The type of cells to include.
-          type:
-            - >-
-              "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
-              "SameDataValidation" | "Visible"
-        - id: cellValueType
-          description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
-          type:
-            - >-
-              "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
-              "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
-              "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
-  - uid: 'excel!Excel.RangeAreas#getTables:member(1)'
-    summary: |-
-      Returns a scoped collection of tables that overlap with any range in this RangeAreas object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getTables(fullyContained)
-    fullName: getTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(fullyContained?: boolean): Excel.TableScopedCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableScopedCollection:class'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: 'If true, returns only tables that are fully contained within the range bounds. Default is false.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
-    summary: >-
-      Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas
-      object. If there are no used cells within the RangeAreas, the ItemNotFound error will be thrown.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getUsedRangeAreas(valuesOnly)
-    fullName: getUsedRangeAreas(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeAreas(valuesOnly?: boolean): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: Whether to only consider cells with values as used cells. Default is false.
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
-    summary: >-
-      Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas
-      object. If there are no used cells within the RangeAreas, a null object will be returned.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getUsedRangeAreasOrNullObject(valuesOnly)
-    fullName: getUsedRangeAreasOrNullObject(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeAreasOrNullObject(valuesOnly?: boolean): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: Whether to only consider cells with values as used cells.
-          type:
-            - boolean
-  - uid: 'excel!Excel.RangeAreas#isEntireColumn:member'
-    summary: |-
-      Specifies if all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z").
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isEntireColumn
+  - name: isEntireColumn
+    uid: 'excel!Excel.RangeAreas#isEntireColumn:member'
+    package: excel!
     fullName: isEntireColumn
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if all the ranges on this RangeAreas object represent entire
+      columns (e.g., "A:C, Q:Z").
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly isEntireColumn: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.RangeAreas#isEntireRow:member'
-    summary: |-
-      Specifies if all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7").
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isEntireRow
+        type: boolean
+  - name: isEntireRow
+    uid: 'excel!Excel.RangeAreas#isEntireRow:member'
+    package: excel!
     fullName: isEntireRow
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if all the ranges on this RangeAreas object represent entire
+      rows (e.g., "1:3, 5:7").
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly isEntireRow: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.RangeAreas#load:member(1)'
+        type: boolean
+  - name: style
+    uid: 'excel!Excel.RangeAreas#style:member'
+    package: excel!
+    fullName: style
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Represents the style for all ranges in this RangeAreas object. If the
+      styles of the cells are inconsistent, null will be returned. For custom
+      styles, the style name will be returned. For built-in styles, a string
+      representing a value in the BuiltInStyle enum will be returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.RangeAreasLoadOptions): Excel.RangeAreas;'
+      content: 'style: string;'
       return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
+        type: string
+  - name: worksheet
+    uid: 'excel!Excel.RangeAreas#worksheet:member'
+    package: excel!
+    fullName: worksheet
+    summary: >-
+      Returns the worksheet for the current RangeAreas.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type: 'excel!Excel.<xref uid="Worksheet:class" />'
+methods:
+  - name: calculate()
+    uid: 'excel!Excel.RangeAreas#calculate:member(1)'
+    package: excel!
+    fullName: calculate()
+    summary: >-
+      Calculates all cells in the RangeAreas.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculate(): void;'
+      return:
+        type: void
         description: ''
+  - name: clear(applyTo)
+    uid: 'excel!Excel.RangeAreas#clear:member(1)'
+    package: excel!
+    fullName: clear(applyTo)
+    summary: >-
+      Clears values, format, fill, border, etc on each of the areas that
+      comprise this RangeAreas object.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
+      parameters:
+        - id: applyTo
+          description: >-
+            Optional. Determines the type of clear action. See
+            Excel.ClearApplyTo for details. Default is "All".
+          type: 'excel!Excel.<xref uid="ClearApplyTo:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: clear(applyToString)
+    uid: 'excel!Excel.RangeAreas#clear:member(2)'
+    package: excel!
+    fullName: clear(applyToString)
+    summary: >-
+      Clears values, format, fill, border, etc on each of the areas that
+      comprise this RangeAreas object.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" |
+        "RemoveHyperlinks"): void;
+      parameters:
+        - id: applyToString
+          description: >-
+            Optional. Determines the type of clear action. See
+            Excel.ClearApplyTo for details. Default is "All".
+          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
+      return:
+        type: void
+        description: ''
+  - name: convertDataTypeToText()
+    uid: 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
+    package: excel!
+    fullName: convertDataTypeToText()
+    summary: >-
+      Converts all cells in the RangeAreas with datatypes into text.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'convertDataTypeToText(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'convertToLinkedDataType(serviceID, languageCulture)'
+    uid: 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
+    package: excel!
+    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
+    summary: >-
+      Converts all cells in the RangeAreas into linked datatype.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        convertToLinkedDataType(serviceID: number, languageCulture: string):
+        void;
+      parameters:
+        - id: serviceID
+          description: The Service ID which will be used to query the data.
+          type: number
+        - id: languageCulture
+          description: Language Culture to query the service for.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    uid: 'excel!Excel.RangeAreas#copyFrom:member(1)'
+    package: excel!
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    summary: >-
+      Copies cell data or formatting from the source range or RangeAreas to the
+      current RangeAreas. The destination rangeAreas can be a different size
+      than the source range or RangeAreas. The destination will be expanded
+      automatically if it is smaller than the source.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        copyFrom(sourceRange: Range | RangeAreas | string, copyType?:
+        Excel.RangeCopyType, skipBlanks?: boolean, transpose?: boolean): void;
+      parameters:
+        - id: sourceRange
+          description: >-
+            The source range or RangeAreas to copy from. When the source
+            RangeAreas has multiple ranges, their form must able to be created
+            by removing full rows or columns from a rectangular range.
+          type: >-
+            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
+            uid="RangeAreas:class" /> | string
+        - id: copyType
+          description: The type of cell data or formatting to copy over. Default is "All".
+          type: 'excel!Excel.<xref uid="RangeCopyType:enum" />'
+        - id: skipBlanks
+          description: >-
+            True if to skip blank cells in the source range or RangeAreas.
+            Default is false.
+          type: boolean
+        - id: transpose
+          description: >-
+            True if to transpose the cells in the destination RangeAreas.
+            Default is false.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
+    uid: 'excel!Excel.RangeAreas#copyFrom:member(2)'
+    package: excel!
+    fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
+    summary: >-
+      Copies cell data or formatting from the source range or RangeAreas to the
+      current RangeAreas. The destination rangeAreas can be a different size
+      than the source range or RangeAreas. The destination will be expanded
+      automatically if it is smaller than the source.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?:
+        "All" | "Formulas" | "Values" | "Formats", skipBlanks?: boolean,
+        transpose?: boolean): void;
+      parameters:
+        - id: sourceRange
+          description: >-
+            The source range or RangeAreas to copy from. When the source
+            RangeAreas has multiple ranges, their form must able to be created
+            by removing full rows or columns from a rectangular range.
+          type: >-
+            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
+            uid="RangeAreas:class" /> | string
+        - id: copyTypeString
+          description: The type of cell data or formatting to copy over. Default is "All".
+          type: '"All" | "Formulas" | "Values" | "Formats"'
+        - id: skipBlanks
+          description: >-
+            True if to skip blank cells in the source range or RangeAreas.
+            Default is false.
+          type: boolean
+        - id: transpose
+          description: >-
+            True if to transpose the cells in the destination RangeAreas.
+            Default is false.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: getEntireColumn()
+    uid: 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
+    package: excel!
+    fullName: getEntireColumn()
+    summary: >-
+      Returns a RangeAreas object that represents the entire columns of the
+      RangeAreas (for example, if the current RangeAreas represents cells
+      "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEntireColumn(): Excel.RangeAreas;'
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: getEntireRow()
+    uid: 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+    package: excel!
+    fullName: getEntireRow()
+    summary: >-
+      Returns a RangeAreas object that represents the entire rows of the
+      RangeAreas (for example, if the current RangeAreas represents cells
+      "B4:E11", it returns a RangeAreas that represents rows "4:11").
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEntireRow(): Excel.RangeAreas;'
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: getIntersection(anotherRange)
+    uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
+    package: excel!
+    fullName: getIntersection(anotherRange)
+    summary: >-
+      Returns the RangeAreas object that represents the intersection of the
+      given ranges or RangeAreas. If no intersection is found, an ItemNotFound
+      error will be thrown.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getIntersection(anotherRange: Range | RangeAreas | string):
+        Excel.RangeAreas;
+      parameters:
+        - id: anotherRange
+          description: >-
+            The range, RangeAreas object or range address that will be used to
+            determine the intersection.
+          type: >-
+            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
+            uid="RangeAreas:class" /> | string
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: getIntersectionOrNullObject(anotherRange)
+    uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
+    package: excel!
+    fullName: getIntersectionOrNullObject(anotherRange)
+    summary: >-
+      Returns the RangeAreas object that represents the intersection of the
+      given ranges or RangeAreas. If no intersection is found, a null object is
+      returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getIntersectionOrNullObject(anotherRange: Range | RangeAreas | string):
+        Excel.RangeAreas;
+      parameters:
+        - id: anotherRange
+          description: >-
+            The range, RangeAreas, or address that will be used to determine the
+            intersection.
+          type: >-
+            excel!Excel.<xref uid="Range:class" /> | excel!Excel.<xref
+            uid="RangeAreas:class" /> | string
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    uid: 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+    package: excel!
+    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    summary: >-
+      Returns an RangeAreas object that is shifted by the specific row and
+      column offset. The dimension of the returned RangeAreas will match the
+      original object. If the resulting RangeAreas is forced outside the bounds
+      of the worksheet grid, an error will be thrown.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getOffsetRangeAreas(rowOffset: number, columnOffset: number):
+        Excel.RangeAreas;
+      parameters:
+        - id: rowOffset
+          description: >-
+            The number of rows (positive, negative, or 0) by which the
+            RangeAreas is to be offset. Positive values are offset downward, and
+            negative values are offset upward.
+          type: number
+        - id: columnOffset
+          description: >-
+            The number of columns (positive, negative, or 0) by which the
+            RangeAreas is to be offset. Positive values are offset to the right,
+            and negative values are offset to the left.
+          type: number
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: 'getSpecialCells(cellType, cellValueType)'
+    uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
+    package: excel!
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    summary: >-
+      Returns a RangeAreas object that represents all the cells that match the
+      specified type and value. Throws an error if no special cells are found
+      that match the criteria.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSpecialCells(cellType: Excel.SpecialCellType, cellValueType?:
+        Excel.SpecialCellValueType): Excel.RangeAreas;
+      parameters:
+        - id: cellType
+          description: The type of cells to include.
+          type: 'excel!Excel.<xref uid="SpecialCellType:enum" />'
+        - id: cellValueType
+          description: >-
+            If cellType is either Constants or Formulas, this argument is used
+            to determine which types of cells to include in the result. These
+            values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the
+            type.
+          type: 'excel!Excel.<xref uid="SpecialCellValueType:enum" />'
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: 'getSpecialCells(cellTypeString, cellValueType)'
+    uid: 'excel!Excel.RangeAreas#getSpecialCells:member(2)'
+    package: excel!
+    fullName: 'getSpecialCells(cellTypeString, cellValueType)'
+    summary: >-
+      Returns a RangeAreas object that represents all the cells that match the
+      specified type and value. Throws an error if no special cells are found
+      that match the criteria.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations"
+        | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+        "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
+        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber"
+        | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
+        "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
+        "NumbersText" | "Text"): Excel.RangeAreas;
+      parameters:
+        - id: cellTypeString
+          description: The type of cells to include.
+          type: >-
+            "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+            "Formulas" | "SameConditionalFormat" | "SameDataValidation" |
+            "Visible"
+        - id: cellValueType
+          description: >-
+            If cellType is either Constants or Formulas, this argument is used
+            to determine which types of cells to include in the result. These
+            values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the
+            type.
+          type: >-
+            "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText"
+            | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" |
+            "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText"
+            | "Numbers" | "NumbersText" | "Text"
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+    package: excel!
+    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    summary: >-
+      Returns a RangeAreas object that represents all the cells that match the
+      specified type and value. Returns a null object if no special cells are
+      found that match the criteria.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType,
+        cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;
+      parameters:
+        - id: cellType
+          description: The type of cells to include.
+          type: 'excel!Excel.<xref uid="SpecialCellType:enum" />'
+        - id: cellValueType
+          description: >-
+            If cellType is either Constants or Formulas, this argument is used
+            to determine which types of cells to include in the result. These
+            values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the
+            type.
+          type: 'excel!Excel.<xref uid="SpecialCellValueType:enum" />'
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
+    uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(2)'
+    package: excel!
+    fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
+    summary: >-
+      Returns a RangeAreas object that represents all the cells that match the
+      specified type and value. Returns a null object if no special cells are
+      found that match the criteria.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" |
+        "DataValidations" | "Blanks" | "Constants" | "Formulas" |
+        "SameConditionalFormat" | "SameDataValidation" | "Visible",
+        cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" |
+        "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
+        "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
+        "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"):
+        Excel.RangeAreas;
+      parameters:
+        - id: cellTypeString
+          description: The type of cells to include.
+          type: >-
+            "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+            "Formulas" | "SameConditionalFormat" | "SameDataValidation" |
+            "Visible"
+        - id: cellValueType
+          description: >-
+            If cellType is either Constants or Formulas, this argument is used
+            to determine which types of cells to include in the result. These
+            values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the
+            type.
+          type: >-
+            "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText"
+            | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" |
+            "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText"
+            | "Numbers" | "NumbersText" | "Text"
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: getTables(fullyContained)
+    uid: 'excel!Excel.RangeAreas#getTables:member(1)'
+    package: excel!
+    fullName: getTables(fullyContained)
+    summary: >-
+      Returns a scoped collection of tables that overlap with any range in this
+      RangeAreas object.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Excel.TableScopedCollection;'
+      parameters:
+        - id: fullyContained
+          description: >-
+            If true, returns only tables that are fully contained within the
+            range bounds. Default is false.
+          type: boolean
+      return:
+        type: 'excel!Excel.<xref uid="TableScopedCollection:class" />'
+        description: ''
+  - name: getUsedRangeAreas(valuesOnly)
+    uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
+    package: excel!
+    fullName: getUsedRangeAreas(valuesOnly)
+    summary: >-
+      Returns the used RangeAreas that comprises all the used areas of
+      individual rectangular ranges in the RangeAreas object. If there are no
+      used cells within the RangeAreas, the ItemNotFound error will be thrown.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUsedRangeAreas(valuesOnly?: boolean): Excel.RangeAreas;'
+      parameters:
+        - id: valuesOnly
+          description: >-
+            Whether to only consider cells with values as used cells. Default is
+            false.
+          type: boolean
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: getUsedRangeAreasOrNullObject(valuesOnly)
+    uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
+    package: excel!
+    fullName: getUsedRangeAreasOrNullObject(valuesOnly)
+    summary: >-
+      Returns the used RangeAreas that comprises all the used areas of
+      individual rectangular ranges in the RangeAreas object. If there are no
+      used cells within the RangeAreas, a null object will be returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUsedRangeAreasOrNullObject(valuesOnly?: boolean): Excel.RangeAreas;'
+      parameters:
+        - id: valuesOnly
+          description: Whether to only consider cells with values as used cells.
+          type: boolean
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.RangeAreas#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.RangeAreasLoadOptions):
+        Excel.RangeAreas;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
-  - uid: 'excel!Excel.RangeAreas#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref uid="RangeAreasLoadOptions:interface"
+            />
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.RangeAreas#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RangeAreas#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.RangeAreas#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.RangeAreas#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.RangeAreas#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.RangeAreas): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.RangeAreasUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.RangeAreasUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'excel!Excel.Interfaces.<xref uid="RangeAreasUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.RangeAreas#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.RangeAreas#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.RangeAreas): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.RangeAreas:class'
-  - uid: 'excel!Excel.RangeAreas#setDirty:member(1)'
-    summary: |-
+          type: 'excel!Excel.<xref uid="RangeAreas:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setDirty()
+    uid: 'excel!Excel.RangeAreas#setDirty:member(1)'
+    package: excel!
+    fullName: setDirty()
+    summary: >-
       Sets the RangeAreas to be recalculated when the next recalculation occurs.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: setDirty()
-    fullName: setDirty()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setDirty(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.RangeAreas#style:member'
-    summary: >-
-      Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
-      will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
-      value in the BuiltInStyle enum will be returned.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeAreas#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.RangeAreas object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.RangeAreasData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+  - name: toJSON()
+    uid: 'excel!Excel.RangeAreas#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.RangeAreas object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.RangeAreasData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeAreasData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeAreasData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="RangeAreasData:interface" />'
         description: ''
-  - uid: 'excel!Excel.RangeAreas#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
-    name: track()
+  - name: track()
+    uid: 'excel!Excel.RangeAreas#track:member(1)'
+    package: excel!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
+      object across `.sync` calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): Excel.RangeAreas;'
       return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
         description: ''
-  - uid: 'excel!Excel.RangeAreas#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'excel!Excel.RangeAreas#untrack:member(1)'
+    package: excel!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
+      objects slows down the host application, so please remember to free any
+      objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): Excel.RangeAreas;'
       return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
+        type: 'excel!Excel.<xref uid="RangeAreas:class" />'
         description: ''
-  - uid: 'excel!Excel.RangeAreas#worksheet:member'
-    summary: |-
-      Returns the worksheet for the current RangeAreas.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Excel.Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:class'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RangeCollection:class'
-    name: Excel.RangeCollection
-  - uid: 'excel!Excel.ClearApplyTo:enum'
-    name: Excel.ClearApplyTo
-  - uid: 'excel!Excel.ConditionalFormatCollection:class'
-    name: Excel.ConditionalFormatCollection
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.RangeAreas#copyFrom~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:class'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.RangeCopyType:enum'
-    name: Excel.RangeCopyType
-  - uid: 'excel!Excel.RangeAreas#copyFrom~1:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:class'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.DataValidation:class'
-    name: Excel.DataValidation
-  - uid: 'excel!Excel.RangeFormat:class'
-    name: Excel.RangeFormat
-  - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
-  - uid: 'excel!Excel.RangeAreas#getIntersection~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:class'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:class'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.SpecialCellType:enum'
-    name: Excel.SpecialCellType
-  - uid: 'excel!Excel.SpecialCellValueType:enum'
-    name: Excel.SpecialCellValueType
-  - uid: 'excel!Excel.TableScopedCollection:class'
-    name: Excel.TableScopedCollection
-  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
-    name: Excel.Interfaces.RangeAreasLoadOptions
-  - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
-    name: Interfaces.RangeAreasUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
-    name: Excel.Interfaces.RangeAreasData
-  - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

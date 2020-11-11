@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.TableCollectionUpdateData:interface'
-    summary: 'An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`<!-- -->.'
-    name: Word.Interfaces.TableCollectionUpdateData
-    fullName: Word.Interfaces.TableCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.TableCollectionUpdateData
+uid: 'word!Word.Interfaces.TableCollectionUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.TableCollectionUpdateData
+summary: >-
+  An interface for updating data on the TableCollection object, for use in
+  `tableCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.TableCollectionUpdateData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.TableCollectionUpdateData#items:member'
-  - uid: 'word!Word.Interfaces.TableCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.TableData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.TableCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.TableCollectionUpdateData#items~0:complex'
-    name: 'Word.Interfaces.TableData[]'
-    fullName: 'Word.Interfaces.TableData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.TableData:interface'
-        name: Word.Interfaces.TableData
-        fullName: Word.Interfaces.TableData
-      - name: '[]'
-        fullName: '[]'
+        type: 'word!Word.Interfaces.<xref uid="TableData:interface" />[]'

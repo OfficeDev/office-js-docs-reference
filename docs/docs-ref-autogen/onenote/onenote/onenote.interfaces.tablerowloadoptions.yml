@@ -1,111 +1,121 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
-    summary: |-
-      Represents a row in a table.
+### YamlMime:TSType
+name: OneNote.Interfaces.TableRowLoadOptions
+uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
+package: onenote!
+fullName: OneNote.Interfaces.TableRowLoadOptions
+summary: >-
+  Represents a row in a table.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.TableRowLoadOptions
-    fullName: OneNote.Interfaces.TableRowLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#$all:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#$all:member'
-      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#cellCount:member'
-      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member'
-      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#id:member'
-      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member'
-      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#rowIndex:member'
-  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cellCount:member'
-    summary: |-
+        type: boolean
+  - name: cellCount
+    uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cellCount:member'
+    package: onenote!
+    fullName: cellCount
+    summary: >-
       Gets the number of cells in the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: cellCount
-    fullName: cellCount
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellCount?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member'
-    summary: |-
+        type: boolean
+  - name: cells
+    uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member'
+    package: onenote!
+    fullName: cells
+    summary: >-
       Gets the cells in the row.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: cells
-    fullName: cells
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#id:member'
-    summary: |-
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="TableCellCollectionLoadOptions:interface" />
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member'
-    summary: |-
+        type: boolean
+  - name: parentTable
+    uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member'
+    package: onenote!
+    fullName: parentTable
+    summary: >-
       Gets the parent table.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentTable
-    fullName: parentTable
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'parentTable?: OneNote.Interfaces.TableLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#rowIndex:member'
-    summary: |-
+        type: 'onenote!OneNote.Interfaces.<xref uid="TableLoadOptions:interface" />'
+  - name: rowIndex
+    uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#rowIndex:member'
+    package: onenote!
+    fullName: rowIndex
+    summary: >-
       Gets the index of the row in its parent table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: rowIndex
-    fullName: rowIndex
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowIndex?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.TableCellCollectionLoadOptions
-  - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-    name: OneNote.Interfaces.TableLoadOptions
+        type: boolean

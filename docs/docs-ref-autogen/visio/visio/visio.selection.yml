@@ -1,121 +1,117 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Selection:class'
-    summary: |-
-      Represents the Selection in the page.
+### YamlMime:TSType
+name: Visio.Selection
+uid: 'visio!Visio.Selection:class'
+package: visio!
+fullName: Visio.Selection
+summary: >-
+  Represents the Selection in the page.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Selection
-    fullName: Visio.Selection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'visio!Visio.Selection#context:member'
     package: visio!
-    children:
-      - 'visio!Visio.Selection#context:member'
-      - 'visio!Visio.Selection#load:member(1)'
-      - 'visio!Visio.Selection#load:member(2)'
-      - 'visio!Visio.Selection#shapes:member'
-      - 'visio!Visio.Selection#toJSON:member(1)'
-  - uid: 'visio!Visio.Selection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'visio!Visio.RequestContext:class'
-  - uid: 'visio!Visio.Selection#load:member(1)'
+        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+  - name: shapes
+    uid: 'visio!Visio.Selection#shapes:member'
+    package: visio!
+    fullName: shapes
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Visio.Selection;'
-      return:
-        type:
-          - 'visio!Visio.Selection:class'
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'visio!Visio.Selection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Selection;'
-      return:
-        type:
-          - 'visio!Visio.Selection:class'
-        description: ''
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - '{ select?: string; expand?: string; }'
-  - uid: 'visio!Visio.Selection#shapes:member'
-    summary: |-
       Gets the Shapes of the Selection. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: shapes
-    fullName: shapes
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
-        type:
-          - 'visio!Visio.ShapeCollection:class'
-  - uid: 'visio!Visio.Selection#toJSON:member(1)'
+        type: 'visio!Visio.<xref uid="ShapeCollection:class" />'
+methods:
+  - name: load(propertyNames)
+    uid: 'visio!Visio.Selection#load:member(1)'
+    package: visio!
+    fullName: load(propertyNames)
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Visio.Selection object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Visio.Interfaces.SelectionData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.Selection;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'visio!Visio.<xref uid="Selection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'visio!Visio.Selection#load:member(2)'
+    package: visio!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
+        Visio.Selection;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that
+            specifies the properties to load, and propertyNamesAndPaths.expand
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '{ select?: string; expand?: string; }'
+      return:
+        type: 'visio!Visio.<xref uid="Selection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'visio!Visio.Selection#toJSON:member(1)'
+    package: visio!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Visio.Selection object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Visio.Interfaces.SelectionData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Visio.Interfaces.SelectionData;'
       return:
-        type:
-          - 'visio!Visio.Interfaces.SelectionData:interface'
+        type: 'visio!Visio.Interfaces.<xref uid="SelectionData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'visio!Visio.RequestContext:class'
-    name: RequestContext
-  - uid: 'visio!Visio.Selection:class'
-    name: Visio.Selection
-  - uid: 'visio!Visio.ShapeCollection:class'
-    name: Visio.ShapeCollection
-  - uid: 'visio!Visio.Interfaces.SelectionData:interface'
-    name: Visio.Interfaces.SelectionData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

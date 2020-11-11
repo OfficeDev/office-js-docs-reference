@@ -1,255 +1,259 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartPivotOptions:class'
-    summary: |-
-      Encapsulates the options for the pivot chart.
+### YamlMime:TSType
+name: Excel.ChartPivotOptions
+uid: 'excel!Excel.ChartPivotOptions:class'
+package: excel!
+fullName: Excel.ChartPivotOptions
+summary: >-
+  Encapsulates the options for the pivot chart.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartPivotOptions
-    fullName: Excel.ChartPivotOptions
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartPivotOptions#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartPivotOptions#context:member'
-      - 'excel!Excel.ChartPivotOptions#load:member(1)'
-      - 'excel!Excel.ChartPivotOptions#load:member(2)'
-      - 'excel!Excel.ChartPivotOptions#load:member(3)'
-      - 'excel!Excel.ChartPivotOptions#set:member(1)'
-      - 'excel!Excel.ChartPivotOptions#set:member(2)'
-      - 'excel!Excel.ChartPivotOptions#showAxisFieldButtons:member'
-      - 'excel!Excel.ChartPivotOptions#showLegendFieldButtons:member'
-      - 'excel!Excel.ChartPivotOptions#showReportFilterFieldButtons:member'
-      - 'excel!Excel.ChartPivotOptions#showValueFieldButtons:member'
-      - 'excel!Excel.ChartPivotOptions#toJSON:member(1)'
-  - uid: 'excel!Excel.ChartPivotOptions#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartPivotOptions#load:member(1)'
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: showAxisFieldButtons
+    uid: 'excel!Excel.ChartPivotOptions#showAxisFieldButtons:member'
+    package: excel!
+    fullName: showAxisFieldButtons
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Specifies whether to display the axis field buttons on a PivotChart. The
+      ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons"
+      command on the "Field Buttons" drop-down list of the "Analyze" tab, which
+      is available when a PivotChart is selected.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ChartPivotOptionsLoadOptions): Excel.ChartPivotOptions;'
+      content: 'showAxisFieldButtons: boolean;'
       return:
-        type:
-          - 'excel!Excel.ChartPivotOptions:class'
-        description: ''
+        type: boolean
+  - name: showLegendFieldButtons
+    uid: 'excel!Excel.ChartPivotOptions#showLegendFieldButtons:member'
+    package: excel!
+    fullName: showLegendFieldButtons
+    summary: >-
+      Specifies whether to display the legend field buttons on a PivotChart.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showLegendFieldButtons: boolean;'
+      return:
+        type: boolean
+  - name: showReportFilterFieldButtons
+    uid: 'excel!Excel.ChartPivotOptions#showReportFilterFieldButtons:member'
+    package: excel!
+    fullName: showReportFilterFieldButtons
+    summary: >-
+      Specifies whether to display the report filter field buttons on a
+      PivotChart.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showReportFilterFieldButtons: boolean;'
+      return:
+        type: boolean
+  - name: showValueFieldButtons
+    uid: 'excel!Excel.ChartPivotOptions#showValueFieldButtons:member'
+    package: excel!
+    fullName: showValueFieldButtons
+    summary: >-
+      Specifies whether to display the show value field buttons on a PivotChart.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showValueFieldButtons: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.ChartPivotOptions#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.ChartPivotOptionsLoadOptions):
+        Excel.ChartPivotOptions;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
-  - uid: 'excel!Excel.ChartPivotOptions#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="ChartPivotOptionsLoadOptions:interface" />
+      return:
+        type: 'excel!Excel.<xref uid="ChartPivotOptions:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartPivotOptions#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartPivotOptions;'
-      return:
-        type:
-          - 'excel!Excel.ChartPivotOptions:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartPivotOptions#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="ChartPivotOptions:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartPivotOptions#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartPivotOptions;
-      return:
-        type:
-          - 'excel!Excel.ChartPivotOptions:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.ChartPivotOptions#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'excel!Excel.<xref uid="ChartPivotOptions:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartPivotOptions#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartPivotOptions): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartPivotOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.ChartPivotOptionsUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="ChartPivotOptionsUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.ChartPivotOptions#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartPivotOptions#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.ChartPivotOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.ChartPivotOptions:class'
-  - uid: 'excel!Excel.ChartPivotOptions#showAxisFieldButtons:member'
-    summary: >-
-      Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds
-      to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is
-      available when a PivotChart is selected.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showAxisFieldButtons
-    fullName: showAxisFieldButtons
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showAxisFieldButtons: boolean;'
+          type: 'excel!Excel.<xref uid="ChartPivotOptions:class" />'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartPivotOptions#showLegendFieldButtons:member'
-    summary: |-
-      Specifies whether to display the legend field buttons on a PivotChart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showLegendFieldButtons
-    fullName: showLegendFieldButtons
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showLegendFieldButtons: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartPivotOptions#showReportFilterFieldButtons:member'
-    summary: |-
-      Specifies whether to display the report filter field buttons on a PivotChart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showReportFilterFieldButtons
-    fullName: showReportFilterFieldButtons
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showReportFilterFieldButtons: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartPivotOptions#showValueFieldButtons:member'
-    summary: |-
-      Specifies whether to display the show value field buttons on a PivotChart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showValueFieldButtons
-    fullName: showValueFieldButtons
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showValueFieldButtons: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartPivotOptions#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ChartPivotOptions object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.ChartPivotOptionsData`<!-- -->) that contains shallow copies
-      of any loaded child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartPivotOptions#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.ChartPivotOptions
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.ChartPivotOptionsData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartPivotOptionsData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartPivotOptionsData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="ChartPivotOptionsData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ChartPivotOptions:class'
-    name: Excel.ChartPivotOptions
-  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
-    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
-  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
-    name: Interfaces.ChartPivotOptionsUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsData:interface'
-    name: Excel.Interfaces.ChartPivotOptionsData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

@@ -1,110 +1,101 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
-    summary: An interface describing the data returned by calling "sectionGroup.toJSON()".
-    name: OneNote.Interfaces.SectionGroupData
-    fullName: OneNote.Interfaces.SectionGroupData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.SectionGroupData
+uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.SectionGroupData
+summary: An interface describing the data returned by calling "sectionGroup.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientUrl
+    uid: 'onenote!OneNote.Interfaces.SectionGroupData#clientUrl:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.SectionGroupData#clientUrl:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupData#id:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupData#name:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupData#sectionGroups:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupData#sections:member'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData#clientUrl:member'
-    summary: |-
+    fullName: clientUrl
+    summary: >-
       The client url of the section group. Read only
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: clientUrl
-    fullName: clientUrl
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clientUrl?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData#id:member'
-    summary: |-
+        type: string
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.SectionGroupData#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the section group. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData#name:member'
-    summary: |-
+        type: string
+  - name: name
+    uid: 'onenote!OneNote.Interfaces.SectionGroupData#name:member'
+    package: onenote!
+    fullName: name
+    summary: >-
       Gets the name of the section group. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData#sectionGroups:member'
-    summary: |-
+        type: string
+  - name: sectionGroups
+    uid: 'onenote!OneNote.Interfaces.SectionGroupData#sectionGroups:member'
+    package: onenote!
+    fullName: sectionGroups
+    summary: >-
       The collection of section groups in the section group. Read only
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: sectionGroups
-    fullName: sectionGroups
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.SectionGroupData#sectionGroups~0:complex'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData#sections:member'
-    summary: |-
+        type: 'onenote!OneNote.Interfaces.<xref uid="SectionGroupData:interface" />[]'
+  - name: sections
+    uid: 'onenote!OneNote.Interfaces.SectionGroupData#sections:member'
+    package: onenote!
+    fullName: sections
+    summary: >-
       The collection of sections in the section group. Read only
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: sections
-    fullName: sections
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sections?: OneNote.Interfaces.SectionData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.SectionGroupData#sections~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData#sectionGroups~0:complex'
-    name: 'OneNote.Interfaces.SectionGroupData[]'
-    fullName: 'OneNote.Interfaces.SectionGroupData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
-        name: OneNote.Interfaces.SectionGroupData
-        fullName: OneNote.Interfaces.SectionGroupData
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupData#sections~0:complex'
-    name: 'OneNote.Interfaces.SectionData[]'
-    fullName: 'OneNote.Interfaces.SectionData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
-        name: OneNote.Interfaces.SectionData
-        fullName: OneNote.Interfaces.SectionData
-      - name: '[]'
-        fullName: '[]'
+        type: 'onenote!OneNote.Interfaces.<xref uid="SectionData:interface" />[]'

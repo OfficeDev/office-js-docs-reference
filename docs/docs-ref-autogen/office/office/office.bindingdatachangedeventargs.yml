@@ -1,46 +1,39 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.BindingDataChangedEventArgs:interface'
-    summary: Provides information about the binding that raised the DataChanged event.
-    name: Office.BindingDataChangedEventArgs
-    fullName: Office.BindingDataChangedEventArgs
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.BindingDataChangedEventArgs
+uid: 'office!Office.BindingDataChangedEventArgs:interface'
+package: office!
+fullName: Office.BindingDataChangedEventArgs
+summary: Provides information about the binding that raised the DataChanged event.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: binding
+    uid: 'office!Office.BindingDataChangedEventArgs#binding:member'
     package: office!
-    children:
-      - 'office!Office.BindingDataChangedEventArgs#binding:member'
-      - 'office!Office.BindingDataChangedEventArgs#type:member'
-  - uid: 'office!Office.BindingDataChangedEventArgs#binding:member'
-    summary: >-
-      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that represents the binding that raised the
-      DataChanged event.
-    name: binding
     fullName: binding
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that
+      represents the binding that raised the DataChanged event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'binding: Binding;'
       return:
-        type:
-          - 'office!Office.Binding:interface'
-  - uid: 'office!Office.BindingDataChangedEventArgs#type:member'
-    summary: >-
-      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
-      that was raised.
-    name: type
+        type: 'office!Office.<xref uid="Binding:interface" />'
+  - name: type
+    uid: 'office!Office.BindingDataChangedEventArgs#type:member'
+    package: office!
     fullName: type
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration
+      value that identifies the kind of event that was raised.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: EventType;'
       return:
-        type:
-          - 'office!Office.EventType:enum'
-references:
-  - uid: 'office!Office.Binding:interface'
-    name: Binding
-  - uid: 'office!Office.EventType:enum'
-    name: EventType
+        type: 'office!Office.<xref uid="EventType:enum" />'

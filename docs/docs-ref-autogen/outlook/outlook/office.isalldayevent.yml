@@ -1,85 +1,93 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.IsAllDayEvent:interface'
-    summary: |-
-      Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+### YamlMime:TSType
+name: Office.IsAllDayEvent
+uid: 'outlook!Office.IsAllDayEvent:interface'
+package: outlook!
+fullName: Office.IsAllDayEvent
+summary: >-
+  Provides methods to get and set the all-day event status of a meeting in an
+  Outlook add-in.
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    isPreview: true
-    name: Office.IsAllDayEvent
-    fullName: Office.IsAllDayEvent
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: Mailbox
+  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+isPreview: true
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.IsAllDayEvent#getAsync:member(1)'
     package: outlook!
-    children:
-      - 'outlook!Office.IsAllDayEvent#getAsync:member(1)'
-      - 'outlook!Office.IsAllDayEvent#getAsync:member(2)'
-      - 'outlook!Office.IsAllDayEvent#setAsync:member(1)'
-  - uid: 'outlook!Office.IsAllDayEvent#getAsync:member(1)'
-    summary: |-
+    fullName: 'getAsync(options, callback)'
+    summary: >-
       Gets the boolean value indicating whether the event is all day or not.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+      \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
     isPreview: true
-    name: 'getAsync(options, callback)'
-    fullName: 'getAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<boolean>) =>
-        void): void;
-      return:
-        type:
-          - void
-        description: ''
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<boolean>) => void): void;
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            An object literal that contains one or more of the following
+            properties. `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback method.
+          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
-          type:
-            - 'outlook!Office.IsAllDayEvent#getAsync~0:complex'
-  - uid: 'outlook!Office.IsAllDayEvent#getAsync:member(2)'
-    summary: |-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            />&lt;boolean&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.IsAllDayEvent#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
+    summary: >-
       Gets the boolean value indicating whether the event is all day or not.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+      \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -100,42 +108,48 @@ items:
 
       ```
     isPreview: true
-    name: getAsync(callback)
-    fullName: getAsync(callback)
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<boolean>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        getAsync(callback: (asyncResult: Office.AsyncResult<boolean>) => void):
+        void;
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
-          type:
-            - 'outlook!Office.IsAllDayEvent#getAsync~1:complex'
-  - uid: 'outlook!Office.IsAllDayEvent#setAsync:member(1)'
-    summary: |-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            />&lt;boolean&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(isAllDayEvent, options, callback)'
+    uid: 'outlook!Office.IsAllDayEvent#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(isAllDayEvent, options, callback)'
+    summary: >-
       Sets the all-day event status of an appointment.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+      \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
-      If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the
-      Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.
+      If an appointment is marked as an all-day event: - Start and end time will
+      be marked as 12:00 AM (just like in the Outlook UI). Start time will
+      return 12:00 AM and end time will be 12:00 AM the next day.
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -146,7 +160,8 @@ items:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
-      Office.context.mailbox.item.isAllDayEvent.setAsync(true, function(asyncResult) {
+      Office.context.mailbox.item.isAllDayEvent.setAsync(true,
+      function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
           console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
         } else {
@@ -156,69 +171,29 @@ items:
 
       ```
     isPreview: true
-    name: 'setAsync(isAllDayEvent, options, callback)'
-    fullName: 'setAsync(isAllDayEvent, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
       content: >-
-        setAsync(isAllDayEvent: boolean, options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        setAsync(isAllDayEvent: boolean, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: isAllDayEvent
           description: boolean value to set the all day event status.
-          type:
-            - boolean
+          type: boolean
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties. `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: 'office!Office.<xref uid="AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.IsAllDayEvent#setAsync~0:complex'
-references:
-  - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
-  - uid: 'outlook!Office.IsAllDayEvent#getAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<boolean>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<boolean>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <boolean>) => void
-        fullName: <boolean>) => void
-  - uid: 'outlook!Office.IsAllDayEvent#getAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<boolean>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<boolean>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <boolean>) => void
-        fullName: <boolean>) => void
-  - uid: 'outlook!Office.IsAllDayEvent#setAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: office!Office.<xref uid="AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
+      return:
+        type: void
+        description: ''

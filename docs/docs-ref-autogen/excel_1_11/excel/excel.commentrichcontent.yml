@@ -1,36 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CommentRichContent:interface'
-    summary: >-
-      Represents the content contained within a comment or comment reply. Rich content incudes the text string and any
-      other objects contained within the comment body, such as mentions.
+### YamlMime:TSType
+name: Excel.CommentRichContent
+uid: 'excel!Excel.CommentRichContent:interface'
+package: excel!
+fullName: Excel.CommentRichContent
+summary: >-
+  Represents the content contained within a comment or comment reply. Rich
+  content incudes the text string and any other objects contained within the
+  comment body, such as mentions.
 
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CommentRichContent
-    fullName: Excel.CommentRichContent
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: mentions
+    uid: 'excel!Excel.CommentRichContent#mentions:member'
     package: excel!
-    children:
-      - 'excel!Excel.CommentRichContent#mentions:member'
-      - 'excel!Excel.CommentRichContent#richContent:member'
-  - uid: 'excel!Excel.CommentRichContent#mentions:member'
-    summary: |-
-      An array containing all the entities (e.g., people) mentioned within the comment.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: mentions
     fullName: mentions
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An array containing all the entities (e.g., people) mentioned within the
+      comment.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'mentions?: Excel.CommentMention[];'
       return:
-        type:
-          - 'excel!Excel.CommentRichContent#mentions~0:complex'
+        type: 'excel!Excel.<xref uid="CommentMention:interface" />[]'
         description: >-
 
 
@@ -63,30 +68,23 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.CommentRichContent#richContent:member'
-    summary: >-
-      Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an
-      id attribute of 0, and the second mentioned entity has an id attribute of 1).
-
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: richContent
+  - name: richContent
+    uid: 'excel!Excel.CommentRichContent#richContent:member'
+    package: excel!
     fullName: richContent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the rich content of the comment (e.g., comment content with
+      mentions, the first mentioned entity has an id attribute of 0, and the
+      second mentioned entity has an id attribute of 1).
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'richContent: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.CommentRichContent#mentions~0:complex'
-    name: 'Excel.CommentMention[]'
-    fullName: 'Excel.CommentMention[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.CommentMention:interface'
-        name: Excel.CommentMention
-        fullName: Excel.CommentMention
-      - name: '[]'
-        fullName: '[]'
+        type: string

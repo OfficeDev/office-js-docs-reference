@@ -1,54 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
-    summary: |-
-      Represents the horizontal alignment for the specified object.
+### YamlMime:TSEnum
+name: Excel.ChartTextHorizontalAlignment
+uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+package: excel!
+fullName: Excel.ChartTextHorizontalAlignment
+summary: >-
+  Represents the horizontal alignment for the specified object.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartTextHorizontalAlignment
-    fullName: Excel.ChartTextHorizontalAlignment
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: center
+    uid: 'excel!Excel.ChartTextHorizontalAlignment.center:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartTextHorizontalAlignment.center:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.distributed:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.justify:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.left:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.right:member'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.center:member'
-    name: center
-    fullName: center
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Center"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.distributed:member'
-    name: distributed
-    fullName: distributed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Distributed"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.justify:member'
-    name: justify
-    fullName: justify
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Justify"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Left"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Right"'
+    summary: ''
+  - name: distributed
+    uid: 'excel!Excel.ChartTextHorizontalAlignment.distributed:member'
+    package: excel!
+    summary: ''
+  - name: justify
+    uid: 'excel!Excel.ChartTextHorizontalAlignment.justify:member'
+    package: excel!
+    summary: ''
+  - name: left
+    uid: 'excel!Excel.ChartTextHorizontalAlignment.left:member'
+    package: excel!
+    summary: ''
+  - name: right
+    uid: 'excel!Excel.ChartTextHorizontalAlignment.right:member'
+    package: excel!
+    summary: ''

@@ -1,236 +1,241 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.IterativeCalculation:class'
-    summary: |-
-      Represents the Iterative Calculation settings.
+### YamlMime:TSType
+name: Excel.IterativeCalculation
+uid: 'excel!Excel.IterativeCalculation:class'
+package: excel!
+fullName: Excel.IterativeCalculation
+summary: >-
+  Represents the Iterative Calculation settings.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.IterativeCalculation
-    fullName: Excel.IterativeCalculation
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.IterativeCalculation#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.IterativeCalculation#context:member'
-      - 'excel!Excel.IterativeCalculation#enabled:member'
-      - 'excel!Excel.IterativeCalculation#load:member(1)'
-      - 'excel!Excel.IterativeCalculation#load:member(2)'
-      - 'excel!Excel.IterativeCalculation#load:member(3)'
-      - 'excel!Excel.IterativeCalculation#maxChange:member'
-      - 'excel!Excel.IterativeCalculation#maxIteration:member'
-      - 'excel!Excel.IterativeCalculation#set:member(1)'
-      - 'excel!Excel.IterativeCalculation#set:member(2)'
-      - 'excel!Excel.IterativeCalculation#toJSON:member(1)'
-  - uid: 'excel!Excel.IterativeCalculation#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.IterativeCalculation#enabled:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: enabled
+    uid: 'excel!Excel.IterativeCalculation#enabled:member'
+    package: excel!
+    fullName: enabled
+    summary: >-
       True if Excel will use iteration to resolve circular references.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: enabled
-    fullName: enabled
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'enabled: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.IterativeCalculation#load:member(1)'
+        type: boolean
+  - name: maxChange
+    uid: 'excel!Excel.IterativeCalculation#maxChange:member'
+    package: excel!
+    fullName: maxChange
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Specifies the maximum amount of change between each iteration as Excel
+      resolves circular references.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.IterativeCalculationLoadOptions): Excel.IterativeCalculation;'
+      content: 'maxChange: number;'
       return:
-        type:
-          - 'excel!Excel.IterativeCalculation:class'
-        description: ''
+        type: number
+  - name: maxIteration
+    uid: 'excel!Excel.IterativeCalculation#maxIteration:member'
+    package: excel!
+    fullName: maxIteration
+    summary: >-
+      Specifies the maximum number of iterations that Excel can use to resolve a
+      circular reference.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxIteration: number;'
+      return:
+        type: number
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.IterativeCalculation#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.IterativeCalculationLoadOptions):
+        Excel.IterativeCalculation;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
-  - uid: 'excel!Excel.IterativeCalculation#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="IterativeCalculationLoadOptions:interface" />
+      return:
+        type: 'excel!Excel.<xref uid="IterativeCalculation:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.IterativeCalculation#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.IterativeCalculation;'
-      return:
-        type:
-          - 'excel!Excel.IterativeCalculation:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.IterativeCalculation#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="IterativeCalculation:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.IterativeCalculation#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.IterativeCalculation;
-      return:
-        type:
-          - 'excel!Excel.IterativeCalculation:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.IterativeCalculation#maxChange:member'
-    summary: |-
-      Specifies the maximum amount of change between each iteration as Excel resolves circular references.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: maxChange
-    fullName: maxChange
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'maxChange: number;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.IterativeCalculation#maxIteration:member'
-    summary: |-
-      Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: maxIteration
-    fullName: maxIteration
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'maxIteration: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.IterativeCalculation#set:member(1)'
+        type: 'excel!Excel.<xref uid="IterativeCalculation:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.IterativeCalculation#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.IterativeCalculation): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.IterativeCalculationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.IterativeCalculationUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="IterativeCalculationUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.IterativeCalculation#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.IterativeCalculation#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.IterativeCalculation): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.IterativeCalculation:class'
-  - uid: 'excel!Excel.IterativeCalculation#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.IterativeCalculation object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.IterativeCalculationData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
-    name: toJSON()
+          type: 'excel!Excel.<xref uid="IterativeCalculation:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.IterativeCalculation#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      Excel.IterativeCalculation object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.IterativeCalculationData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.IterativeCalculationData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.IterativeCalculationData:interface'
+        type: >-
+          excel!Excel.Interfaces.<xref uid="IterativeCalculationData:interface"
+          />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.IterativeCalculation:class'
-    name: Excel.IterativeCalculation
-  - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
-    name: Excel.Interfaces.IterativeCalculationLoadOptions
-  - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
-    name: Interfaces.IterativeCalculationUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.IterativeCalculationData:interface'
-    name: Excel.Interfaces.IterativeCalculationData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

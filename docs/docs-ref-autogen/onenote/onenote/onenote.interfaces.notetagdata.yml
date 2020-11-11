@@ -1,90 +1,76 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.NoteTagData:interface'
-    summary: An interface describing the data returned by calling "noteTag.toJSON()".
-    name: OneNote.Interfaces.NoteTagData
-    fullName: OneNote.Interfaces.NoteTagData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.NoteTagData
+uid: 'onenote!OneNote.Interfaces.NoteTagData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.NoteTagData
+summary: An interface describing the data returned by calling "noteTag.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.NoteTagData#id:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.NoteTagData#id:member'
-      - 'onenote!OneNote.Interfaces.NoteTagData#status:member'
-      - 'onenote!OneNote.Interfaces.NoteTagData#type:member'
-  - uid: 'onenote!OneNote.Interfaces.NoteTagData#id:member'
-    summary: |-
+    fullName: id
+    summary: >-
       Gets the Id of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.NoteTagData#status:member'
-    summary: |-
+        type: string
+  - name: status
+    uid: 'onenote!OneNote.Interfaces.NoteTagData#status:member'
+    package: onenote!
+    fullName: status
+    summary: >-
       Gets the status of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: status
-    fullName: status
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        status?: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" |
-        "TaskNotSyncedYet" | "TaskRemoved";
+        status?: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" |
+        "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved";
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.NoteTagData#status~0:complex'
-  - uid: 'onenote!OneNote.Interfaces.NoteTagData#type:member'
-    summary: |-
+        type: >-
+          onenote!OneNote.<xref uid="NoteTagStatus:enum" /> | "Unknown" |
+          "Normal" | "Completed" | "Disabled" | "OutlookTask" |
+          "TaskNotSyncedYet" | "TaskRemoved"
+  - name: type
+    uid: 'onenote!OneNote.Interfaces.NoteTagData#type:member'
+    package: onenote!
+    fullName: type
+    summary: >-
       Gets the type of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        type?: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" |
-        "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
+        type?: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" |
+        "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea"
+        | "Critical" | "ToDoPriority1" | "ToDoPriority2";
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.NoteTagData#type~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.NoteTagData#status~0:complex'
-    name: >-
-      OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
-      "TaskRemoved"
-    fullName: >-
-      OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
-      "TaskRemoved"
-    spec.typeScript:
-      - uid: 'onenote!OneNote.NoteTagStatus:enum'
-        name: OneNote.NoteTagStatus
-        fullName: OneNote.NoteTagStatus
-      - name: ' | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
-        fullName: ' | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
-  - uid: 'onenote!OneNote.Interfaces.NoteTagData#type~0:complex'
-    name: >-
-      OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
-      "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
-    fullName: >-
-      OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
-      "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
-    spec.typeScript:
-      - uid: 'onenote!OneNote.NoteTagType:enum'
-        name: OneNote.NoteTagType
-        fullName: OneNote.NoteTagType
-      - name: ' | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"'
-        fullName: ' | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"'
+        type: >-
+          onenote!OneNote.<xref uid="NoteTagType:enum" /> | "Unknown" | "ToDo" |
+          "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
+          "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"

@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set(<!-- -->{
-      ... }<!-- -->)".
-    name: OneNote.Interfaces.ParagraphCollectionUpdateData
-    fullName: OneNote.Interfaces.ParagraphCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.ParagraphCollectionUpdateData
+uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.ParagraphCollectionUpdateData
+summary: >-
+  An interface for updating data on the ParagraphCollection object, for use in
+  "paragraphCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.ParagraphData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items~0:complex'
-    name: 'OneNote.Interfaces.ParagraphData[]'
-    fullName: 'OneNote.Interfaces.ParagraphData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
-        name: OneNote.Interfaces.ParagraphData
-        fullName: OneNote.Interfaces.ParagraphData
-      - name: '[]'
-        fullName: '[]'
+        type: 'onenote!OneNote.Interfaces.<xref uid="ParagraphData:interface" />[]'

@@ -1,48 +1,94 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.PageView:class'
-    summary: |-
-      Represents the PageView class.
+### YamlMime:TSType
+name: Visio.PageView
+uid: 'visio!Visio.PageView:class'
+package: visio!
+fullName: Visio.PageView
+summary: >-
+  Represents the PageView class.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.PageView
-    fullName: Visio.PageView
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'visio!Visio.PageView#context:member'
     package: visio!
-    children:
-      - 'visio!Visio.PageView#centerViewportOnShape:member(1)'
-      - 'visio!Visio.PageView#context:member'
-      - 'visio!Visio.PageView#fitToWindow:member(1)'
-      - 'visio!Visio.PageView#getPosition:member(1)'
-      - 'visio!Visio.PageView#getSelection:member(1)'
-      - 'visio!Visio.PageView#isShapeInViewport:member(1)'
-      - 'visio!Visio.PageView#load:member(1)'
-      - 'visio!Visio.PageView#load:member(2)'
-      - 'visio!Visio.PageView#load:member(3)'
-      - 'visio!Visio.PageView#set:member(1)'
-      - 'visio!Visio.PageView#set:member(2)'
-      - 'visio!Visio.PageView#setPosition:member(1)'
-      - 'visio!Visio.PageView#toJSON:member(1)'
-      - 'visio!Visio.PageView#zoom:member'
-  - uid: 'visio!Visio.PageView#centerViewportOnShape:member(1)'
-    summary: |-
-      Pans the Visio drawing to place the specified shape in the center of the view.
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+  - name: zoom
+    uid: 'visio!Visio.PageView#zoom:member'
+    package: visio!
+    fullName: zoom
+    summary: >-
+      Get and set Page's Zoom level. The value can be between 10 and 400 and
+      denotes the percentage of zoom.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: centerViewportOnShape(ShapeId)
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'zoom: number;'
+      return:
+        type: number
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              activePage.view.zoom = 300;
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+methods:
+  - name: centerViewportOnShape(ShapeId)
+    uid: 'visio!Visio.PageView#centerViewportOnShape:member(1)'
+    package: visio!
     fullName: centerViewportOnShape(ShapeId)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Pans the Visio drawing to place the specified shape in the center of the
+      view.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'centerViewportOnShape(ShapeId: number): void;'
+      parameters:
+        - id: ShapeId
+          description: ShapeId to be seen in the center.
+          type: number
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -61,334 +107,274 @@ items:
               }
           });
           ```
-      parameters:
-        - id: ShapeId
-          description: ShapeId to be seen in the center.
-          type:
-            - number
-  - uid: 'visio!Visio.PageView#context:member'
+  - name: fitToWindow()
+    uid: 'visio!Visio.PageView#fitToWindow:member(1)'
+    package: visio!
+    fullName: fitToWindow()
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'visio!Visio.RequestContext:class'
-  - uid: 'visio!Visio.PageView#fitToWindow:member(1)'
-    summary: |-
       Fit Page to current window.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: fitToWindow()
-    fullName: fitToWindow()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fitToWindow(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'visio!Visio.PageView#getPosition:member(1)'
-    summary: |-
-      Returns the position object that specifies the position of the page in the view.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: getPosition()
+  - name: getPosition()
+    uid: 'visio!Visio.PageView#getPosition:member(1)'
+    package: visio!
     fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Returns the position object that specifies the position of the page in the
+      view.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getPosition(): OfficeExtension.ClientResult<Visio.Position>;'
       return:
-        type:
-          - 'visio!Visio.PageView#getPosition~0:complex'
+        type: >-
+          office!OfficeExtension.<xref uid="ClientResult:class"
+          />&lt;visio!Visio.<xref uid="Position:interface" />&gt;
         description: ''
-  - uid: 'visio!Visio.PageView#getSelection:member(1)'
-    summary: |-
+  - name: getSelection()
+    uid: 'visio!Visio.PageView#getSelection:member(1)'
+    package: visio!
+    fullName: getSelection()
+    summary: >-
       Represents the Selection in the page.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: getSelection()
-    fullName: getSelection()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getSelection(): Visio.Selection;'
       return:
-        type:
-          - 'visio!Visio.Selection:class'
+        type: 'visio!Visio.<xref uid="Selection:class" />'
         description: ''
-  - uid: 'visio!Visio.PageView#isShapeInViewport:member(1)'
-    summary: |-
+  - name: isShapeInViewport(Shape)
+    uid: 'visio!Visio.PageView#isShapeInViewport:member(1)'
+    package: visio!
+    fullName: isShapeInViewport(Shape)
+    summary: >-
       To check if the shape is in view of the page or not.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: isShapeInViewport(Shape)
-    fullName: isShapeInViewport(Shape)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'isShapeInViewport(Shape: Visio.Shape): OfficeExtension.ClientResult<boolean>;'
-      return:
-        type:
-          - 'visio!Visio.PageView#isShapeInViewport~0:complex'
-        description: ''
+      content: >-
+        isShapeInViewport(Shape: Visio.Shape):
+        OfficeExtension.ClientResult<boolean>;
       parameters:
         - id: Shape
           description: Shape to be checked.
-          type:
-            - 'visio!Visio.Shape:class'
-  - uid: 'visio!Visio.PageView#load:member(1)'
+          type: 'visio!Visio.<xref uid="Shape:class" />'
+      return:
+        type: >-
+          office!OfficeExtension.<xref uid="ClientResult:class"
+          />&lt;boolean&gt;
+        description: ''
+  - name: load(option)
+    uid: 'visio!Visio.PageView#load:member(1)'
+    package: visio!
+    fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call "context.sync()" before reading the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
+      `load(option?: string | string[]): Visio.PageView` - Where option is a
+      comma-delimited string or an array of strings that specify the properties
+      to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): Visio.PageView` -
+      Where option.select is a comma-delimited string that specifies the
+      properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+      `load(option?: { select?: string; expand?: string; top?: number; skip?:
+      number }): Visio.PageView` - Only available on collection types. It is
+      similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in
+      the result. If option.top is specified, the result set will start after
+      skipping the specified number of items.
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;'
-      return:
-        type:
-          - 'visio!Visio.PageView:class'
-        description: ''
       parameters:
         - id: option
           description: ''
-          type:
-            - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-  - uid: 'visio!Visio.PageView#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: 'visio!Visio.Interfaces.<xref uid="PageViewLoadOptions:interface" />'
+      return:
+        type: 'visio!Visio.<xref uid="PageView:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'visio!Visio.PageView#load:member(2)'
+    package: visio!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Visio.PageView;'
-      return:
-        type:
-          - 'visio!Visio.PageView:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'visio!Visio.PageView#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.PageView;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'visio!Visio.PageView:class'
+        type: 'visio!Visio.<xref uid="PageView:class" />'
         description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'visio!Visio.PageView#load:member(3)'
+    package: visio!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
+        Visio.PageView;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - '{ select?: string; expand?: string; }'
-  - uid: 'visio!Visio.PageView#set:member(1)'
+            Where propertyNamesAndPaths.select is a comma-delimited string that
+            specifies the properties to load, and propertyNamesAndPaths.expand
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '{ select?: string; expand?: string; }'
+      return:
+        type: 'visio!Visio.<xref uid="PageView:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'visio!Visio.PageView#set:member(1)'
+    package: visio!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Visio.PageView): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.PageViewUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.PageViewUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'visio!Visio.Interfaces.<xref uid="PageViewUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'visio!Visio.PageView#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'visio!Visio.PageView#set:member(2)'
+    package: visio!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Visio.PageView): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'visio!Visio.PageView:class'
-  - uid: 'visio!Visio.PageView#setPosition:member(1)'
-    summary: |-
+          type: 'visio!Visio.<xref uid="PageView:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setPosition(Position)
+    uid: 'visio!Visio.PageView#setPosition:member(1)'
+    package: visio!
+    fullName: setPosition(Position)
+    summary: >-
       Sets the position of the page in the view.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: setPosition(Position)
-    fullName: setPosition(Position)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setPosition(Position: Visio.Position): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: Position
-          description: Position object that specifies the new position of the page in the view.
-          type:
-            - 'visio!Visio.Position:interface'
-  - uid: 'visio!Visio.PageView#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Visio.PageView object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Visio.Interfaces.PageViewData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+          description: >-
+            Position object that specifies the new position of the page in the
+            view.
+          type: 'visio!Visio.<xref uid="Position:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'visio!Visio.PageView#toJSON:member(1)'
+    package: visio!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Visio.PageView object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Visio.Interfaces.PageViewData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Visio.Interfaces.PageViewData;'
       return:
-        type:
-          - 'visio!Visio.Interfaces.PageViewData:interface'
+        type: 'visio!Visio.Interfaces.<xref uid="PageViewData:interface" />'
         description: ''
-  - uid: 'visio!Visio.PageView#zoom:member'
-    summary: |-
-      Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: zoom
-    fullName: zoom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'zoom: number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              activePage.view.zoom = 300;
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'visio!Visio.RequestContext:class'
-    name: RequestContext
-  - uid: 'visio!Visio.PageView#getPosition~0:complex'
-    name: OfficeExtension.ClientResult<Visio.Position>
-    fullName: OfficeExtension.ClientResult<Visio.Position>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <
-        fullName: <
-      - uid: 'visio!Visio.Position:interface'
-        name: Visio.Position
-        fullName: Visio.Position
-      - name: '>'
-        fullName: '>'
-  - uid: 'visio!Visio.Selection:class'
-    name: Visio.Selection
-  - uid: 'visio!Visio.PageView#isShapeInViewport~0:complex'
-    name: OfficeExtension.ClientResult<boolean>
-    fullName: OfficeExtension.ClientResult<boolean>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <boolean>
-        fullName: <boolean>
-  - uid: 'visio!Visio.Shape:class'
-    name: Visio.Shape
-  - uid: 'visio!Visio.PageView:class'
-    name: Visio.PageView
-  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-    name: Visio.Interfaces.PageViewLoadOptions
-  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
-    name: Interfaces.PageViewUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'visio!Visio.Position:interface'
-    name: Visio.Position
-  - uid: 'visio!Visio.Interfaces.PageViewData:interface'
-    name: Visio.Interfaces.PageViewData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

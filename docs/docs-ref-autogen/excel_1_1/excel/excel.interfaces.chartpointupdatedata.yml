@@ -1,30 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
-    summary: 'An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartPointUpdateData
-    fullName: Excel.Interfaces.ChartPointUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartPointUpdateData
+uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartPointUpdateData
+summary: >-
+  An interface for updating data on the ChartPoint object, for use in
+  `chartPoint.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartPointUpdateData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartPointUpdateData#format:member'
-  - uid: 'excel!Excel.Interfaces.ChartPointUpdateData#format:member'
-    summary: |-
+    fullName: format
+    summary: >-
       Encapsulates the format properties chart point.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartPointFormatUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartPointFormatUpdateData
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ChartPointFormatUpdateData:interface" />

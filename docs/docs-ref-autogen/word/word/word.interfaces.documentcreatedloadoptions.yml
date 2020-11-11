@@ -1,92 +1,93 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions:interface'
-    summary: >-
-      The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object
-      is a special Document object.
+### YamlMime:TSType
+name: Word.Interfaces.DocumentCreatedLoadOptions
+uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.DocumentCreatedLoadOptions
+summary: >-
+  The DocumentCreated object is the top level object created by
+  Application.CreateDocument. A DocumentCreated object is a special Document
+  object.
 
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.DocumentCreatedLoadOptions
-    fullName: Word.Interfaces.DocumentCreatedLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: WordApi
+  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#$all:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#$all:member'
-      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#body:member'
-      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member'
-      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#saved:member'
-  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#body:member'
-    summary: >-
-      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc..
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    name: body
+        type: boolean
+  - name: body
+    uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#body:member'
+    package: word!
     fullName: body
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the body object of the document. The body is the text that excludes
+      headers, footers, footnotes, textboxes, etc..
+
+
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.BodyLoadOptions:interface'
-  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member'
+        type: 'word!Word.Interfaces.<xref uid="BodyLoadOptions:interface" />'
+  - name: properties
+    uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member'
+    package: word!
+    fullName: properties
     summary: >-
       Gets the properties of the document.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    name: properties
-    fullName: properties
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
-  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#saved:member'
-    summary: >-
-      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    name: saved
+        type: >-
+          word!Word.Interfaces.<xref
+          uid="DocumentPropertiesLoadOptions:interface" />
+  - name: saved
+    uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#saved:member'
+    package: word!
     fullName: saved
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Indicates whether the changes in the document have been saved. A value of
+      true indicates that the document hasn't changed since it was saved.
+      Read-only.
+
+
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'saved?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
-  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
-    name: Word.Interfaces.DocumentPropertiesLoadOptions
+        type: boolean

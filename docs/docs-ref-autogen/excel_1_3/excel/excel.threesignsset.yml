@@ -1,50 +1,50 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ThreeSignsSet:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ThreeSignsSet
-    fullName: Excel.ThreeSignsSet
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.ThreeSignsSet
+uid: 'excel!Excel.ThreeSignsSet:interface'
+package: excel!
+fullName: Excel.ThreeSignsSet
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenCircle
+    uid: 'excel!Excel.ThreeSignsSet#greenCircle:member'
     package: excel!
-    children:
-      - 'excel!Excel.ThreeSignsSet#greenCircle:member'
-      - 'excel!Excel.ThreeSignsSet#redDiamond:member'
-      - 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
-  - uid: 'excel!Excel.ThreeSignsSet#greenCircle:member'
-    name: greenCircle
     fullName: greenCircle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'greenCircle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.ThreeSignsSet#redDiamond:member'
-    name: redDiamond
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: redDiamond
+    uid: 'excel!Excel.ThreeSignsSet#redDiamond:member'
+    package: excel!
     fullName: redDiamond
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'redDiamond: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
-    name: yellowTriangle
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: yellowTriangle
+    uid: 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
+    package: excel!
     fullName: yellowTriangle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'yellowTriangle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-references:
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
+        type: 'excel!Excel.<xref uid="Icon:interface" />'

@@ -1,68 +1,43 @@
-### YamlMime:UniversalReference
-items:
-  - uid: office-runtime!
-    name: office-runtime
-    fullName: office-runtime
-    langs:
-      - typeScript
-    type: package
-    children:
-      - 'office-runtime!OfficeRuntime.ApiInformation:interface'
-      - 'office-runtime!OfficeRuntime.Auth:interface'
-      - 'office-runtime!OfficeRuntime.AuthOptions:interface'
-      - 'office-runtime!OfficeRuntime.Dialog:interface'
-      - 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
-      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
-      - 'office-runtime!OfficeRuntime.Storage:interface'
-  - uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
-    summary: |-
+### YamlMime:TSPackage
+uid: office-runtime!
+name: office-runtime
+type: package
+summary: ''
+interfaces:
+  - 'office-runtime!OfficeRuntime.ApiInformation:interface'
+  - 'office-runtime!OfficeRuntime.Auth:interface'
+  - 'office-runtime!OfficeRuntime.AuthOptions:interface'
+  - 'office-runtime!OfficeRuntime.Dialog:interface'
+  - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+  - 'office-runtime!OfficeRuntime.Storage:interface'
+functions:
+  - name: 'OfficeRuntime.displayWebDialog(url, options)'
+    uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
+    package: office-runtime
+    summary: >-
       Method that enables a pop up web dialog box.
 
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: 'OfficeRuntime.displayWebDialog(url, options)'
-    fullName: 'OfficeRuntime.displayWebDialog(url, options)'
-    langs:
-      - typeScript
-    type: function
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'export function displayWebDialog(url: string, options?: DisplayWebDialogOptions): Promise<Dialog>;'
-      return:
-        type:
-          - 'office-runtime!OfficeRuntime.displayWebDialog~0:complex'
-        description: ''
+      content: >-
+        export function displayWebDialog(url: string, options?:
+        DisplayWebDialogOptions): Promise<Dialog>;
       parameters:
         - id: url
           description: Must be a string.
-          type:
-            - string
+          type: string
         - id: options
           description: Optional parameter. Must be of type DisplayWebDialogOptions.
-          type:
-            - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
-references:
-  - uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
-    name: OfficeRuntime.ApiInformation
-  - uid: 'office-runtime!OfficeRuntime.Auth:interface'
-    name: OfficeRuntime.Auth
-  - uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
-    name: OfficeRuntime.AuthOptions
-  - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
-    name: OfficeRuntime.Dialog
-  - uid: 'office-runtime!OfficeRuntime.displayWebDialog~0:complex'
-    name: Promise<Dialog>
-    fullName: Promise<OfficeRuntime.Dialog>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <
-        fullName: <
-      - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
-        name: Dialog
-        fullName: OfficeRuntime.Dialog
-      - name: '>'
-        fullName: '>'
-  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
-    name: DisplayWebDialogOptions
-  - uid: 'office-runtime!OfficeRuntime.Storage:interface'
-    name: OfficeRuntime.Storage
+          type: >-
+            office-runtime!OfficeRuntime.<xref
+            uid="DisplayWebDialogOptions:interface" />
+      return:
+        type: >-
+          Promise&lt;office-runtime!OfficeRuntime.<xref uid="Dialog:interface"
+          />&gt;
+        description: ''

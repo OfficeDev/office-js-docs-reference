@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
-    summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ConditionalRangeFontUnderlineStyle
-    fullName: Excel.ConditionalRangeFontUnderlineStyle
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ConditionalRangeFontUnderlineStyle
+uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+package: excel!
+fullName: Excel.ConditionalRangeFontUnderlineStyle
+summary: >-
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: double
+    uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.double:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalRangeFontUnderlineStyle.double:member'
-      - 'excel!Excel.ConditionalRangeFontUnderlineStyle.none:member'
-      - 'excel!Excel.ConditionalRangeFontUnderlineStyle.single:member'
-  - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.double:member'
-    name: double
-    fullName: double
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Double"'
-  - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.single:member'
-    name: single
-    fullName: single
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Single"'
+    summary: ''
+  - name: none
+    uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.none:member'
+    package: excel!
+    summary: ''
+  - name: single
+    uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.single:member'
+    package: excel!
+    summary: ''

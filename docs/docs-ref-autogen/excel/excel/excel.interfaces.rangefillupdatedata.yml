@@ -1,120 +1,122 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
-    summary: 'An interface for updating data on the RangeFill object, for use in `rangeFill.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.RangeFillUpdateData
-    fullName: Excel.Interfaces.RangeFillUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.RangeFillUpdateData
+uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.RangeFillUpdateData
+summary: >-
+  An interface for updating data on the RangeFill object, for use in
+  `rangeFill.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'excel!Excel.Interfaces.RangeFillUpdateData#color:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.RangeFillUpdateData#color:member'
-      - 'excel!Excel.Interfaces.RangeFillUpdateData#pattern:member'
-      - 'excel!Excel.Interfaces.RangeFillUpdateData#patternColor:member'
-      - 'excel!Excel.Interfaces.RangeFillUpdateData#patternTintAndShade:member'
-      - 'excel!Excel.Interfaces.RangeFillUpdateData#tintAndShade:member'
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#color:member'
-    summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML
-      color (e.g., "orange")
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      HTML color code representing the color of the background, of the form
+      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#pattern:member'
-    summary: >-
-      The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not
-      supported. A null value indicates that the entire range doesn't have uniform pattern setting.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: pattern
+        type: string
+  - name: pattern
+    uid: 'excel!Excel.Interfaces.RangeFillUpdateData#pattern:member'
+    package: excel!
     fullName: pattern
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The pattern of a range. See Excel.FillPattern for details. LinearGradient
+      and RectangularGradient are not supported. A null value indicates that the
+      entire range doesn't have uniform pattern setting.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
-        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
-        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" |
+        "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" |
+        "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" |
+        "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" |
+        "LinearGradient" | "RectangularGradient";
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeFillUpdateData#pattern~0:complex'
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternColor:member'
-    summary: >-
-      The HTML color code representing the color of the range pattern, of the form \#RRGGBB (e.g., "FFA500") or as a
-      named HTML color (e.g., "orange").
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: patternColor
+        type: >-
+          excel!Excel.<xref uid="FillPattern:enum" /> | "None" | "Solid" |
+          "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
+          "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical"
+          | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8"
+          | "LinearGradient" | "RectangularGradient"
+  - name: patternColor
+    uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternColor:member'
+    package: excel!
     fullName: patternColor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The HTML color code representing the color of the range pattern, of the
+      form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'patternColor?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternTintAndShade:member'
-    summary: >-
-      Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null will be returned.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: patternTintAndShade
+        type: string
+  - name: patternTintAndShade
+    uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternTintAndShade:member'
+    package: excel!
     fullName: patternTintAndShade
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies a double that lightens or darkens a pattern color for Range
+      Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the
+      original color. If the pattern tintAndShades are not uniform, null will be
+      returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'patternTintAndShade?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#tintAndShade:member'
-    summary: >-
-      Specifies a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
-      (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tintAndShade
+        type: number
+  - name: tintAndShade
+    uid: 'excel!Excel.Interfaces.RangeFillUpdateData#tintAndShade:member'
+    package: excel!
     fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies a double that lightens or darkens a color for Range Fill, the
+      value is between -1 (darkest) and 1 (brightest), with 0 for the original
+      color. If the tintAndShades are not uniform, null will be returned.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tintAndShade?: number;'
       return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#pattern~0:complex'
-    name: >-
-      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
-      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
-      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-    fullName: >-
-      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
-      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
-      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-    spec.typeScript:
-      - uid: 'excel!Excel.FillPattern:enum'
-        name: Excel.FillPattern
-        fullName: Excel.FillPattern
-      - name: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
-        fullName: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
+        type: number

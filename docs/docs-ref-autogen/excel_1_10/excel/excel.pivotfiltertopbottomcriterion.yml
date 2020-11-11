@@ -1,70 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
-    summary: |-
-      Represents the criteria for the top/bottom values filter.
+### YamlMime:TSEnum
+name: Excel.PivotFilterTopBottomCriterion
+uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
+package: excel!
+fullName: Excel.PivotFilterTopBottomCriterion
+summary: >-
+  Represents the criteria for the top/bottom values filter.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotFilterTopBottomCriterion
-    fullName: Excel.PivotFilterTopBottomCriterion
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottomItems
+    uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomItems:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotFilterTopBottomCriterion.bottomItems:member'
-      - 'excel!Excel.PivotFilterTopBottomCriterion.bottomPercent:member'
-      - 'excel!Excel.PivotFilterTopBottomCriterion.bottomSum:member'
-      - 'excel!Excel.PivotFilterTopBottomCriterion.invalid:member'
-      - 'excel!Excel.PivotFilterTopBottomCriterion.topItems:member'
-      - 'excel!Excel.PivotFilterTopBottomCriterion.topPercent:member'
-      - 'excel!Excel.PivotFilterTopBottomCriterion.topSum:member'
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomItems:member'
-    name: bottomItems
-    fullName: bottomItems
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BottomItems"'
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomPercent:member'
-    name: bottomPercent
-    fullName: bottomPercent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BottomPercent"'
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomSum:member'
-    name: bottomSum
-    fullName: bottomSum
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BottomSum"'
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion.invalid:member'
-    name: invalid
-    fullName: invalid
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Invalid"'
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion.topItems:member'
-    name: topItems
-    fullName: topItems
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TopItems"'
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion.topPercent:member'
-    name: topPercent
-    fullName: topPercent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TopPercent"'
-  - uid: 'excel!Excel.PivotFilterTopBottomCriterion.topSum:member'
-    name: topSum
-    fullName: topSum
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TopSum"'
+    summary: ''
+  - name: bottomPercent
+    uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomPercent:member'
+    package: excel!
+    summary: ''
+  - name: bottomSum
+    uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomSum:member'
+    package: excel!
+    summary: ''
+  - name: invalid
+    uid: 'excel!Excel.PivotFilterTopBottomCriterion.invalid:member'
+    package: excel!
+    summary: ''
+  - name: topItems
+    uid: 'excel!Excel.PivotFilterTopBottomCriterion.topItems:member'
+    package: excel!
+    summary: ''
+  - name: topPercent
+    uid: 'excel!Excel.PivotFilterTopBottomCriterion.topPercent:member'
+    package: excel!
+    summary: ''
+  - name: topSum
+    uid: 'excel!Excel.PivotFilterTopBottomCriterion.topSum:member'
+    package: excel!
+    summary: ''

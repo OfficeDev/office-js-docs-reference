@@ -1,56 +1,39 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Font:class'
-    summary: |-
-      Represents a font.
+### YamlMime:TSType
+name: Word.Font
+uid: 'word!Word.Font:class'
+package: word!
+fullName: Word.Font
+summary: >-
+  Represents a font.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Font
-    fullName: Word.Font
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: WordApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: bold
+    uid: 'word!Word.Font#bold:member'
     package: word!
-    children:
-      - 'word!Word.Font#bold:member'
-      - 'word!Word.Font#color:member'
-      - 'word!Word.Font#context:member'
-      - 'word!Word.Font#doubleStrikeThrough:member'
-      - 'word!Word.Font#highlightColor:member'
-      - 'word!Word.Font#italic:member'
-      - 'word!Word.Font#load:member(1)'
-      - 'word!Word.Font#load:member(2)'
-      - 'word!Word.Font#load:member(3)'
-      - 'word!Word.Font#name:member'
-      - 'word!Word.Font#set:member(1)'
-      - 'word!Word.Font#set:member(2)'
-      - 'word!Word.Font#size:member'
-      - 'word!Word.Font#strikeThrough:member'
-      - 'word!Word.Font#subscript:member'
-      - 'word!Word.Font#superscript:member'
-      - 'word!Word.Font#toJSON:member(1)'
-      - 'word!Word.Font#track:member(1)'
-      - 'word!Word.Font#underline:member'
-      - 'word!Word.Font#untrack:member(1)'
-  - uid: 'word!Word.Font#bold:member'
-    summary: >-
-      Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
-      false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: bold
     fullName: bold
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether the font is bold. True if the
+      font is formatted as bold, otherwise, false.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'bold: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
         description: |-
 
 
@@ -80,23 +63,25 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Font#color:member'
-    summary: >-
-      Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
-      name.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: color
+  - name: color
+    uid: 'word!Word.Font#color:member'
+    package: word!
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets the color for the specified font. You can provide the value
+      in the '\#RRGGBB' format or the color name.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color: string;'
       return:
-        type:
-          - string
+        type: string
         description: |-
 
 
@@ -126,58 +111,67 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Font#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+  - name: context
+    uid: 'word!Word.Font#context:member'
+    package: word!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'word!Word.RequestContext:class'
-  - uid: 'word!Word.Font#doubleStrikeThrough:member'
-    summary: >-
-      Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
-      double strikethrough text, otherwise, false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: doubleStrikeThrough
+        type: 'word!Word.<xref uid="RequestContext:class" />'
+  - name: doubleStrikeThrough
+    uid: 'word!Word.Font#doubleStrikeThrough:member'
+    package: word!
     fullName: doubleStrikeThrough
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether the font has a double
+      strikethrough. True if the font is formatted as double strikethrough text,
+      otherwise, false.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'doubleStrikeThrough: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Font#highlightColor:member'
-    summary: >-
-      Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
-      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
-      string for mixed highlight colors, or null for no highlight color. *Note**: Only the default highlight colors are
-      available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red",
-      "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs
-      in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: highlightColor
+        type: boolean
+  - name: highlightColor
+    uid: 'word!Word.Font#highlightColor:member'
+    package: word!
     fullName: highlightColor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets the highlight color. To set it, use a value either in the
+      '\#RRGGBB' format or the color name. To remove highlight color, set it to
+      null. The returned highlight color can be in the '\#RRGGBB' format, an
+      empty string for mixed highlight colors, or null for no highlight color.
+      *Note**: Only the default highlight colors are available in Office for
+      Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue",
+      "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray",
+      "LightGray", and "Black". When the add-in runs in Office for Windows
+      Desktop, any other color is converted to the closest color when applied to
+      the font.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'highlightColor: string;'
       return:
-        type:
-          - string
+        type: string
         description: |-
 
 
@@ -207,108 +201,43 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Font#italic:member'
-    summary: >-
-      Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
-      false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: italic
+  - name: italic
+    uid: 'word!Word.Font#italic:member'
+    package: word!
     fullName: italic
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether the font is italicized. True
+      if the font is italicized, otherwise, false.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'italic: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Font#load:member(1)'
+        type: boolean
+  - name: name
+    uid: 'word!Word.Font#name:member'
+    package: word!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(options?: Word.Interfaces.FontLoadOptions): Word.Font;'
-      return:
-        type:
-          - 'word!Word.Font:class'
-        description: ''
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'word!Word.Interfaces.FontLoadOptions:interface'
-  - uid: 'word!Word.Font#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Word.Font;'
-      return:
-        type:
-          - 'word!Word.Font:class'
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'word!Word.Font#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Word.Font;
-      return:
-        type:
-          - 'word!Word.Font:class'
-        description: ''
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'word!Word.Font#name:member'
-    summary: |-
       Gets or sets a value that represents the name of the font.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
-        type:
-          - string
+        type: string
         description: |-
 
 
@@ -338,69 +267,24 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Font#set:member(1)'
+  - name: size
+    uid: 'word!Word.Font#size:member'
+    package: word!
+    fullName: size
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Word.Font): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'word!Word.Interfaces.FontUpdateData:interface'
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'word!Word.Font#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
-    fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Word.Font): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - 'word!Word.Font:class'
-  - uid: 'word!Word.Font#size:member'
-    summary: |-
       Gets or sets a value that represents the font size in points.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: size
-    fullName: size
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'size: number;'
       return:
-        type:
-          - number
+        type: number
         description: |-
 
 
@@ -430,23 +314,25 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Font#strikeThrough:member'
-    summary: >-
-      Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
-      strikethrough text, otherwise, false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: strikeThrough
+  - name: strikeThrough
+    uid: 'word!Word.Font#strikeThrough:member'
+    package: word!
     fullName: strikeThrough
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether the font has a strikethrough.
+      True if the font is formatted as strikethrough text, otherwise, false.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'strikeThrough: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean
         description: |-
 
 
@@ -476,94 +362,74 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Font#subscript:member'
-    summary: >-
-      Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
-      otherwise, false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: subscript
+  - name: subscript
+    uid: 'word!Word.Font#subscript:member'
+    package: word!
     fullName: subscript
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether the font is a subscript. True
+      if the font is formatted as subscript, otherwise, false.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'subscript: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Font#superscript:member'
-    summary: >-
-      Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
-      superscript, otherwise, false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: superscript
+        type: boolean
+  - name: superscript
+    uid: 'word!Word.Font#superscript:member'
+    package: word!
     fullName: superscript
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether the font is a superscript.
+      True if the font is formatted as superscript, otherwise, false.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'superscript: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Font#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Font object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
-    name: toJSON()
-    fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toJSON(): Word.Interfaces.FontData;'
-      return:
-        type:
-          - 'word!Word.Interfaces.FontData:interface'
-        description: ''
-  - uid: 'word!Word.Font#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
-    name: track()
-    fullName: track()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'track(): Word.Font;'
-      return:
-        type:
-          - 'word!Word.Font:class'
-        description: ''
-  - uid: 'word!Word.Font#underline:member'
-    summary: |-
-      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: underline
+        type: boolean
+  - name: underline
+    uid: 'word!Word.Font#underline:member'
+    package: word!
     fullName: underline
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates the font's underline type. 'None' if
+      the font is not underlined.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick"
-        | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine"
-        | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
+        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
+        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
+        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
-        type:
-          - 'word!Word.Font#underline~0:complex'
+        type: >-
+          word!Word.<xref uid="UnderlineType:enum" /> | "Mixed" | "None" |
+          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
+          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
+          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
+          | "WaveHeavy" | "WaveDouble"
         description: |-
 
 
@@ -593,50 +459,187 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Font#untrack:member(1)'
+methods:
+  - name: load(options)
+    uid: 'word!Word.Font#load:member(1)'
+    package: word!
+    fullName: load(options)
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
-    name: untrack()
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.FontLoadOptions): Word.Font;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: 'word!Word.Interfaces.<xref uid="FontLoadOptions:interface" />'
+      return:
+        type: 'word!Word.<xref uid="Font:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.Font#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Font;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'word!Word.<xref uid="Font:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.Font#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Font;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'word!Word.<xref uid="Font:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.Font#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.Font): void`
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.FontUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'word!Word.Interfaces.<xref uid="FontUpdateData:interface" />'
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.Font#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Font): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: 'word!Word.<xref uid="Font:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.Font#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Word.Font object is an
+      API object, the `toJSON` method returns a plain JavaScript object (typed
+      as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.FontData;'
+      return:
+        type: 'word!Word.Interfaces.<xref uid="FontData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.Font#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
+      object across `.sync` calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Font;'
+      return:
+        type: 'word!Word.<xref uid="Font:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.Font#untrack:member(1)'
+    package: word!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
+      objects slows down the host application, so please remember to free any
+      objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): Word.Font;'
       return:
-        type:
-          - 'word!Word.Font:class'
+        type: 'word!Word.<xref uid="Font:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'word!Word.RequestContext:class'
-    name: RequestContext
-  - uid: 'word!Word.Font:class'
-    name: Word.Font
-  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: Word.Interfaces.FontLoadOptions
-  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Interfaces.FontUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
-  - uid: 'word!Word.Font#underline~0:complex'
-    name: >-
-      Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" |
-      "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
-      "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"
-    fullName: >-
-      Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" |
-      "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
-      "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"
-    spec.typeScript:
-      - uid: 'word!Word.UnderlineType:enum'
-        name: Word.UnderlineType
-        fullName: Word.UnderlineType
-      - name: ' | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"'
-        fullName: ' | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"'
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

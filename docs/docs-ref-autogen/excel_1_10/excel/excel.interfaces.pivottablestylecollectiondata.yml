@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
-    summary: An interface describing the data returned by calling `pivotTableStyleCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.PivotTableStyleCollectionData
-    fullName: Excel.Interfaces.PivotTableStyleCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.PivotTableStyleCollectionData
+uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
+package: excel!
+fullName: Excel.Interfaces.PivotTableStyleCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `pivotTableStyleCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member'
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.PivotTableStyleData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PivotTableStyleCollectionData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData#items~0:complex'
-    name: 'Excel.Interfaces.PivotTableStyleData[]'
-    fullName: 'Excel.Interfaces.PivotTableStyleData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
-        name: Excel.Interfaces.PivotTableStyleData
-        fullName: Excel.Interfaces.PivotTableStyleData
-      - name: '[]'
-        fullName: '[]'
+        type: 'excel!Excel.Interfaces.<xref uid="PivotTableStyleData:interface" />[]'

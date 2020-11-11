@@ -1,33 +1,27 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
-    summary: An interface describing the data returned by calling "inkAnalysisWordCollection.toJSON()".
-    name: OneNote.Interfaces.InkAnalysisWordCollectionData
-    fullName: OneNote.Interfaces.InkAnalysisWordCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisWordCollectionData
+uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkAnalysisWordCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  "inkAnalysisWordCollection.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData#items~0:complex'
-    name: 'OneNote.Interfaces.InkAnalysisWordData[]'
-    fullName: 'OneNote.Interfaces.InkAnalysisWordData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
-        name: OneNote.Interfaces.InkAnalysisWordData
-        fullName: OneNote.Interfaces.InkAnalysisWordData
-      - name: '[]'
-        fullName: '[]'
+        type: >-
+          onenote!OneNote.Interfaces.<xref uid="InkAnalysisWordData:interface"
+          />[]

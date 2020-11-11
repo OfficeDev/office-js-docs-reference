@@ -1,30 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
-    summary: 'An interface for updating data on the InkAnalysis object, for use in "inkAnalysis.set(<!-- -->{ ... }<!-- -->)".'
-    name: OneNote.Interfaces.InkAnalysisUpdateData
-    fullName: OneNote.Interfaces.InkAnalysisUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisUpdateData
+uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkAnalysisUpdateData
+summary: >-
+  An interface for updating data on the InkAnalysis object, for use in
+  "inkAnalysis.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: page
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member'
-    summary: |-
+    fullName: page
+    summary: >-
       Gets the parent page object.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: page
-    fullName: page
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'page?: OneNote.Interfaces.PageUpdateData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.PageUpdateData:interface'
-references:
-  - uid: 'onenote!OneNote.Interfaces.PageUpdateData:interface'
-    name: OneNote.Interfaces.PageUpdateData
+        type: 'onenote!OneNote.Interfaces.<xref uid="PageUpdateData:interface" />'

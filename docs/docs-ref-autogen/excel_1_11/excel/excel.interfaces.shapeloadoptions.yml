@@ -1,464 +1,506 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-    summary: >-
-      Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes,
-      etc. To learn more about the shape object model, read [Work with shapes using the Excel JavaScript
-      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.
+### YamlMime:TSType
+name: Excel.Interfaces.ShapeLoadOptions
+uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ShapeLoadOptions
+summary: >-
+  Represents a generic shape object in the worksheet. A shape could be a
+  geometric shape, a line, a group of shapes, etc. To learn more about the shape
+  object model, read [Work with shapes using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ShapeLoadOptions
-    fullName: Excel.Interfaces.ShapeLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#altTextDescription:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#altTextTitle:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#connectionSiteCount:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#fill:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShapeType:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#group:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#height:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#id:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#image:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#left:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#level:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#line:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#lineFormat:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#lockAspectRatio:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#name:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#placement:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#rotation:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#top:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#type:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#visible:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#width:member'
-      - 'excel!Excel.Interfaces.ShapeLoadOptions#zOrderPosition:member'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#altTextDescription:member'
-    summary: |-
+        type: boolean
+  - name: altTextDescription
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#altTextDescription:member'
+    package: excel!
+    fullName: altTextDescription
+    summary: >-
       Specifies the alternative description text for a Shape object.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: altTextDescription
-    fullName: altTextDescription
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'altTextDescription?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#altTextTitle:member'
-    summary: |-
+        type: boolean
+  - name: altTextTitle
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#altTextTitle:member'
+    package: excel!
+    fullName: altTextTitle
+    summary: >-
       Specifies the alternative title text for a Shape object.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: altTextTitle
-    fullName: altTextTitle
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'altTextTitle?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#connectionSiteCount:member'
-    summary: |-
+        type: boolean
+  - name: connectionSiteCount
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#connectionSiteCount:member'
+    package: excel!
+    fullName: connectionSiteCount
+    summary: >-
       Returns the number of connection sites on this shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: connectionSiteCount
-    fullName: connectionSiteCount
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'connectionSiteCount?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#fill:member'
-    summary: |-
+        type: boolean
+  - name: fill
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#fill:member'
+    package: excel!
+    fullName: fill
+    summary: >-
       Returns the fill formatting of this shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fill?: Excel.Interfaces.ShapeFillLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member'
-    summary: >-
-      Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not
-      "GeometricShape".
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: geometricShape
+        type: 'excel!Excel.Interfaces.<xref uid="ShapeFillLoadOptions:interface" />'
+  - name: geometricShape
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member'
+    package: excel!
     fullName: geometricShape
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the geometric shape associated with the shape. An error will be
+      thrown if the shape type is not "GeometricShape".
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShapeType:member'
-    summary: >-
-      Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null
-      if the shape type is not "GeometricShape".
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: geometricShapeType
+        type: >-
+          excel!Excel.Interfaces.<xref uid="GeometricShapeLoadOptions:interface"
+          />
+  - name: geometricShapeType
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShapeType:member'
+    package: excel!
     fullName: geometricShapeType
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the geometric shape type of this geometric shape. See
+      Excel.GeometricShapeType for details. Returns null if the shape type is
+      not "GeometricShape".
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'geometricShapeType?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#group:member'
-    summary: |-
-      Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: group
+        type: boolean
+  - name: group
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#group:member'
+    package: excel!
     fullName: group
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the shape group associated with the shape. An error will be thrown
+      if the shape type is not "GroupShape".
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'group?: Excel.Interfaces.ShapeGroupLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#height:member'
-    summary: >-
-      Specifies the height, in points, of the shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: height
+        type: 'excel!Excel.Interfaces.<xref uid="ShapeGroupLoadOptions:interface" />'
+  - name: height
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#height:member'
+    package: excel!
     fullName: height
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the height, in points, of the shape. Throws an invalid argument
+      exception when set with a negative value or zero as input.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'height?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#id:member'
-    summary: |-
+        type: boolean
+  - name: id
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Specifies the shape identifier.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#image:member'
-    summary: |-
-      Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: image
+        type: boolean
+  - name: image
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#image:member'
+    package: excel!
     fullName: image
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the image associated with the shape. An error will be thrown if
+      the shape type is not "Image".
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'image?: Excel.Interfaces.ImageLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ImageLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#left:member'
-    summary: >-
-      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: left
+        type: 'excel!Excel.Interfaces.<xref uid="ImageLoadOptions:interface" />'
+  - name: left
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#left:member'
+    package: excel!
     fullName: left
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The distance, in points, from the left side of the shape to the left side
+      of the worksheet. Throws an invalid argument exception when set with a
+      negative value as input.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'left?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#level:member'
-    summary: >-
-      Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any
-      groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
-      sub-group of the top level.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: level
+        type: boolean
+  - name: level
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#level:member'
+    package: excel!
     fullName: level
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the level of the specified shape. For example, a level of 0
+      means that the shape is not part of any groups, a level of 1 means the
+      shape is part of a top-level group, and a level of 2 means the shape is
+      part of a sub-group of the top level.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'level?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#line:member'
-    summary: |-
-      Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: line
+        type: boolean
+  - name: line
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#line:member'
+    package: excel!
     fullName: line
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the line associated with the shape. An error will be thrown if the
+      shape type is not "Line".
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'line?: Excel.Interfaces.LineLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.LineLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lineFormat:member'
-    summary: |-
+        type: 'excel!Excel.Interfaces.<xref uid="LineLoadOptions:interface" />'
+  - name: lineFormat
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lineFormat:member'
+    package: excel!
+    fullName: lineFormat
+    summary: >-
       Returns the line formatting of this shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: lineFormat
-    fullName: lineFormat
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lockAspectRatio:member'
-    summary: |-
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ShapeLineFormatLoadOptions:interface" />
+  - name: lockAspectRatio
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lockAspectRatio:member'
+    package: excel!
+    fullName: lockAspectRatio
+    summary: >-
       Specifies if the aspect ratio of this shape is locked.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: lockAspectRatio
-    fullName: lockAspectRatio
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lockAspectRatio?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#name:member'
-    summary: |-
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
       Specifies the name of the shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member'
-    summary: |-
+        type: boolean
+  - name: parentGroup
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member'
+    package: excel!
+    fullName: parentGroup
+    summary: >-
       Specifies the parent group of this shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: parentGroup
-    fullName: parentGroup
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'parentGroup?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#placement:member'
-    summary: |-
+        type: 'excel!Excel.Interfaces.<xref uid="ShapeLoadOptions:interface" />'
+  - name: placement
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#placement:member'
+    package: excel!
+    fullName: placement
+    summary: >-
       Represents how the object is attached to the cells below it.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: placement
-    fullName: placement
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'placement?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#rotation:member'
-    summary: |-
+        type: boolean
+  - name: rotation
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#rotation:member'
+    package: excel!
+    fullName: rotation
+    summary: >-
       Specifies the rotation, in degrees, of the shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rotation
-    fullName: rotation
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rotation?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member'
-    summary: |-
+        type: boolean
+  - name: textFrame
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member'
+    package: excel!
+    fullName: textFrame
+    summary: >-
       Returns the text frame object of this shape. Read only.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: textFrame
-    fullName: textFrame
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'textFrame?: Excel.Interfaces.TextFrameLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TextFrameLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#top:member'
-    summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: top
+        type: 'excel!Excel.Interfaces.<xref uid="TextFrameLoadOptions:interface" />'
+  - name: top
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#top:member'
+    package: excel!
     fullName: top
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The distance, in points, from the top edge of the shape to the top edge of
+      the worksheet. Throws an invalid argument exception when set with a
+      negative value as input.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'top?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#type:member'
-    summary: |-
+        type: boolean
+  - name: type
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Returns the type of this shape. See Excel.ShapeType for details.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#visible:member'
-    summary: |-
+        type: boolean
+  - name: visible
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#visible:member'
+    package: excel!
+    fullName: visible
+    summary: >-
       Specifies if the shape is visible.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#width:member'
-    summary: >-
-      Specifies the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: width
+        type: boolean
+  - name: width
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#width:member'
+    package: excel!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the width, in points, of the shape. Throws an invalid argument
+      exception when set with a negative value or zero as input.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions#zOrderPosition:member'
-    summary: |-
-      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: zOrderPosition
+        type: boolean
+  - name: zOrderPosition
+    uid: 'excel!Excel.Interfaces.ShapeLoadOptions#zOrderPosition:member'
+    package: excel!
     fullName: zOrderPosition
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the position of the specified shape in the z-order, with 0
+      representing the bottom of the order stack.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'zOrderPosition?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
-    name: Excel.Interfaces.ShapeFillLoadOptions
-  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
-    name: Excel.Interfaces.GeometricShapeLoadOptions
-  - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
-    name: Excel.Interfaces.ShapeGroupLoadOptions
-  - uid: 'excel!Excel.Interfaces.ImageLoadOptions:interface'
-    name: Excel.Interfaces.ImageLoadOptions
-  - uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
-    name: Excel.Interfaces.LineLoadOptions
-  - uid: 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ShapeLineFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-    name: Excel.Interfaces.ShapeLoadOptions
-  - uid: 'excel!Excel.Interfaces.TextFrameLoadOptions:interface'
-    name: Excel.Interfaces.TextFrameLoadOptions
+        type: boolean

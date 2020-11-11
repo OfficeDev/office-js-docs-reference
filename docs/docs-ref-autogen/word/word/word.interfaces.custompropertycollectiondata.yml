@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
-    summary: An interface describing the data returned by calling `customPropertyCollection.toJSON()`<!-- -->.
-    name: Word.Interfaces.CustomPropertyCollectionData
-    fullName: Word.Interfaces.CustomPropertyCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.CustomPropertyCollectionData
+uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.CustomPropertyCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `customPropertyCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.CustomPropertyCollectionData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.CustomPropertyCollectionData#items:member'
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.CustomPropertyData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.CustomPropertyCollectionData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData#items~0:complex'
-    name: 'Word.Interfaces.CustomPropertyData[]'
-    fullName: 'Word.Interfaces.CustomPropertyData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.CustomPropertyData:interface'
-        name: Word.Interfaces.CustomPropertyData
-        fullName: Word.Interfaces.CustomPropertyData
-      - name: '[]'
-        fullName: '[]'
+        type: 'word!Word.Interfaces.<xref uid="CustomPropertyData:interface" />[]'

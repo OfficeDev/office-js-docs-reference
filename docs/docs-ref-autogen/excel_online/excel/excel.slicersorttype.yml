@@ -1,41 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SlicerSortType:enum'
-    summary: |-
-      Specifies the slicer sort behavior for Slicer.sortBy API.
+### YamlMime:TSEnum
+name: Excel.SlicerSortType
+uid: 'excel!Excel.SlicerSortType:enum'
+package: excel!
+fullName: Excel.SlicerSortType
+summary: >-
+  Specifies the slicer sort behavior for Slicer.sortBy API.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SlicerSortType
-    fullName: Excel.SlicerSortType
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ascending
+    uid: 'excel!Excel.SlicerSortType.ascending:member'
     package: excel!
-    children:
-      - 'excel!Excel.SlicerSortType.ascending:member'
-      - 'excel!Excel.SlicerSortType.dataSourceOrder:member'
-      - 'excel!Excel.SlicerSortType.descending:member'
-  - uid: 'excel!Excel.SlicerSortType.ascending:member'
     summary: Sort slicer items in ascending order by item captions.
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ascending"'
-  - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
+  - name: dataSourceOrder
+    uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
+    package: excel!
     summary: Sort slicer items in the order provided by the data source.
-    name: dataSourceOrder
-    fullName: dataSourceOrder
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DataSourceOrder"'
-  - uid: 'excel!Excel.SlicerSortType.descending:member'
+  - name: descending
+    uid: 'excel!Excel.SlicerSortType.descending:member'
+    package: excel!
     summary: Sort slicer items in descending order by item captions.
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Descending"'

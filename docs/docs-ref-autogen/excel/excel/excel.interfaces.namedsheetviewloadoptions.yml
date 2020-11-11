@@ -1,55 +1,55 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions:interface'
-    summary: >-
-      Represents a named sheet view of a worksheet. A sheet view stores the sort and filter rules for a particular
-      worksheet. Every sheet view (even a temporary sheet view) has a unique, worksheet-scoped name that is used to
-      access the view.
+### YamlMime:TSType
+name: Excel.Interfaces.NamedSheetViewLoadOptions
+uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.NamedSheetViewLoadOptions
+summary: >-
+  Represents a named sheet view of a worksheet. A sheet view stores the sort and
+  filter rules for a particular worksheet. Every sheet view (even a temporary
+  sheet view) has a unique, worksheet-scoped name that is used to access the
+  view.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: Excel.Interfaces.NamedSheetViewLoadOptions
-    fullName: Excel.Interfaces.NamedSheetViewLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.NamedSheetViewLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.NamedSheetViewLoadOptions#name:member'
-  - uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions#name:member'
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Gets or sets the name of the sheet view. The temporary sheet view name is the empty string (""). Naming the view
-      by using the name property causes the sheet view to be saved.
+      Gets or sets the name of the sheet view. The temporary sheet view name is
+      the empty string (""). Naming the view by using the name property causes
+      the sheet view to be saved.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

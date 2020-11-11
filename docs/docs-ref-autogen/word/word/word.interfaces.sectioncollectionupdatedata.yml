@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.SectionCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`<!--
-      -->.
-    name: Word.Interfaces.SectionCollectionUpdateData
-    fullName: Word.Interfaces.SectionCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.SectionCollectionUpdateData
+uid: 'word!Word.Interfaces.SectionCollectionUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.SectionCollectionUpdateData
+summary: >-
+  An interface for updating data on the SectionCollection object, for use in
+  `sectionCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.SectionCollectionUpdateData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.SectionCollectionUpdateData#items:member'
-  - uid: 'word!Word.Interfaces.SectionCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.SectionData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.SectionCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.SectionCollectionUpdateData#items~0:complex'
-    name: 'Word.Interfaces.SectionData[]'
-    fullName: 'Word.Interfaces.SectionData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.SectionData:interface'
-        name: Word.Interfaces.SectionData
-        fullName: Word.Interfaces.SectionData
-      - name: '[]'
-        fullName: '[]'
+        type: 'word!Word.Interfaces.<xref uid="SectionData:interface" />[]'

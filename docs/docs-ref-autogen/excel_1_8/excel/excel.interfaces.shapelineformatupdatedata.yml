@@ -1,10 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
-    summary: 'An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ShapeLineFormatUpdateData
-    fullName: Excel.Interfaces.ShapeLineFormatUpdateData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.ShapeLineFormatUpdateData
+uid: 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ShapeLineFormatUpdateData
+summary: >-
+  An interface for updating data on the ShapeLineFormat object, for use in
+  `shapeLineFormat.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

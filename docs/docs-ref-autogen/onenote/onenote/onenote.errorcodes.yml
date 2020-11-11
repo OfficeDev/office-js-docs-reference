@@ -1,18 +1,14 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.ErrorCodes:enum'
-    name: OneNote.ErrorCodes
-    fullName: OneNote.ErrorCodes
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: OneNote.ErrorCodes
+uid: 'onenote!OneNote.ErrorCodes:enum'
+package: onenote!
+fullName: OneNote.ErrorCodes
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: generalException
+    uid: 'onenote!OneNote.ErrorCodes.generalException:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.ErrorCodes.generalException:member'
-  - uid: 'onenote!OneNote.ErrorCodes.generalException:member'
-    name: generalException
-    fullName: generalException
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GeneralException"'
+    summary: ''

@@ -1,118 +1,127 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
-    summary: |-
-      Represents a collection of all the columns that are part of the table.
+### YamlMime:TSType
+name: Excel.Interfaces.TableColumnCollectionLoadOptions
+uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
+summary: >-
+  Represents a collection of all the columns that are part of the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TableColumnCollectionLoadOptions
-    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#filter:member'
-      - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#id:member'
-      - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#index:member'
-      - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#name:member'
-      - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#values:member'
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#filter:member'
-    summary: |-
-      For EACH ITEM in the collection: Retrieve the filter applied to the column.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: filter
+        type: boolean
+  - name: filter
+    uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#filter:member'
+    package: excel!
     fullName: filter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Retrieve the filter applied to the
+      column.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'filter?: Excel.Interfaces.FilterLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.FilterLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#id:member'
-    summary: |-
-      For EACH ITEM in the collection: Returns a unique key that identifies the column within the table.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
+        type: 'excel!Excel.Interfaces.<xref uid="FilterLoadOptions:interface" />'
+  - name: id
+    uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#id:member'
+    package: excel!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns a unique key that identifies the
+      column within the table.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#index:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the
-      table. Zero-indexed.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: index
+        type: boolean
+  - name: index
+    uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#index:member'
+    package: excel!
     fullName: index
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the index number of the column
+      within the columns collection of the table. Zero-indexed.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'index?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#name:member'
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#name:member'
+    package: excel!
+    fullName: name
     summary: >-
       For EACH ITEM in the collection: Specifies the name of the table column.
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#values:member'
-    summary: >-
-      For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of
-      type string, number, or a boolean. Cells that contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
+        type: boolean
+  - name: values
+    uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#values:member'
+    package: excel!
     fullName: values
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Represents the raw values of the
+      specified range. The data returned could be of type string, number, or a
+      boolean. Cells that contain an error will return the error string.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'values?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.FilterLoadOptions:interface'
-    name: Excel.Interfaces.FilterLoadOptions
+        type: boolean

@@ -1,32 +1,32 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.SectionData:interface'
-    summary: An interface describing the data returned by calling `section.toJSON()`<!-- -->.
-    name: Word.Interfaces.SectionData
-    fullName: Word.Interfaces.SectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.SectionData
+uid: 'word!Word.Interfaces.SectionData:interface'
+package: word!
+fullName: Word.Interfaces.SectionData
+summary: >-
+  An interface describing the data returned by calling `section.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'word!Word.Interfaces.SectionData#body:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.SectionData#body:member'
-  - uid: 'word!Word.Interfaces.SectionData#body:member'
-    summary: >-
-      Gets the body object of the section. This does not include the header/footer and other section metadata.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: body
     fullName: body
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the body object of the section. This does not include the
+      header/footer and other section metadata. Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
-        type:
-          - 'word!Word.Interfaces.BodyData:interface'
-references:
-  - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: Word.Interfaces.BodyData
+        type: 'word!Word.Interfaces.<xref uid="BodyData:interface" />'

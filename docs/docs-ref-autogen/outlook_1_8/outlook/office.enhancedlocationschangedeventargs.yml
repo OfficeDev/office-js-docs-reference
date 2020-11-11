@@ -1,56 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
-    summary: |-
-      Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.
+### YamlMime:TSType
+name: Office.EnhancedLocationsChangedEventArgs
+uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
+package: outlook!
+fullName: Office.EnhancedLocationsChangedEventArgs
+summary: >-
+  Provides the current enhanced locations when the
+  `Office.EventType.EnhancedLocationsChanged` event is raised.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: Office.EnhancedLocationsChangedEventArgs
-    fullName: Office.EnhancedLocationsChangedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: Mailbox
+  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: enhancedLocations
+    uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member'
     package: outlook!
-    children:
-      - 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member'
-      - 'outlook!Office.EnhancedLocationsChangedEventArgs#type:member'
-  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member'
-    summary: |-
+    fullName: enhancedLocations
+    summary: >-
       Gets the set of enhanced locations.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: enhancedLocations
-    fullName: enhancedLocations
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'enhancedLocations: LocationDetails[];'
       return:
-        type:
-          - 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations~0:complex'
-  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#type:member'
-    summary: |-
+        type: 'outlook!Office.<xref uid="LocationDetails:interface" />[]'
+  - name: type
+    uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#type:member'
+    package: outlook!
+    fullName: type
+    summary: >-
       Gets the type of the event. See `Office.EventType` for details.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: "olkEnhancedLocationsChanged";'
       return:
-        type:
-          - '"olkEnhancedLocationsChanged"'
-references:
-  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations~0:complex'
-    name: 'LocationDetails[]'
-    fullName: 'Office.LocationDetails[]'
-    spec.typeScript:
-      - uid: 'outlook!Office.LocationDetails:interface'
-        name: LocationDetails
-        fullName: Office.LocationDetails
-      - name: '[]'
-        fullName: '[]'
+        type: '"olkEnhancedLocationsChanged"'

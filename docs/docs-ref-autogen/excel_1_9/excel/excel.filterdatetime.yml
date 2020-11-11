@@ -1,58 +1,59 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterDatetime:interface'
-    summary: |-
-      Represents how to filter a date when filtering on values.
+### YamlMime:TSType
+name: Excel.FilterDatetime
+uid: 'excel!Excel.FilterDatetime:interface'
+package: excel!
+fullName: Excel.FilterDatetime
+summary: >-
+  Represents how to filter a date when filtering on values.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.FilterDatetime
-    fullName: Excel.FilterDatetime
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: date
+    uid: 'excel!Excel.FilterDatetime#date:member'
     package: excel!
-    children:
-      - 'excel!Excel.FilterDatetime#date:member'
-      - 'excel!Excel.FilterDatetime#specificity:member'
-  - uid: 'excel!Excel.FilterDatetime#date:member'
-    summary: |-
+    fullName: date
+    summary: >-
       The date in ISO8601 format used to filter data.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'date: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterDatetime#specificity:member'
-    summary: >-
-      How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set
-      to "month", the filter operation will keep all rows with a date in the month of april 2009.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: specificity
+        type: string
+  - name: specificity
+    uid: 'excel!Excel.FilterDatetime#specificity:member'
+    package: excel!
     fullName: specificity
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      How specific the date should be used to keep data. For example, if the
+      date is 2005-04-02 and the specifity is set to "month", the filter
+      operation will keep all rows with a date in the month of april 2009.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'specificity: Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second";'
+      content: >-
+        specificity: Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day"
+        | "Hour" | "Minute" | "Second";
       return:
-        type:
-          - 'excel!Excel.FilterDatetime#specificity~0:complex'
-references:
-  - uid: 'excel!Excel.FilterDatetime#specificity~0:complex'
-    name: Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second"
-    fullName: Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second"
-    spec.typeScript:
-      - uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
-        name: Excel.FilterDatetimeSpecificity
-        fullName: Excel.FilterDatetimeSpecificity
-      - name: ' | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second"'
-        fullName: ' | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second"'
+        type: >-
+          excel!Excel.<xref uid="FilterDatetimeSpecificity:enum" /> | "Year" |
+          "Month" | "Day" | "Hour" | "Minute" | "Second"

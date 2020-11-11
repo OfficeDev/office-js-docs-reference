@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ChartPointsCollection object, for use in `chartPointsCollection.set({ ...
-      })`<!-- -->.
-    name: Excel.Interfaces.ChartPointsCollectionUpdateData
-    fullName: Excel.Interfaces.ChartPointsCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartPointsCollectionUpdateData
+uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartPointsCollectionUpdateData
+summary: >-
+  An interface for updating data on the ChartPointsCollection object, for use in
+  `chartPointsCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member'
-  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.ChartPointData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items~0:complex'
-    name: 'Excel.Interfaces.ChartPointData[]'
-    fullName: 'Excel.Interfaces.ChartPointData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.ChartPointData:interface'
-        name: Excel.Interfaces.ChartPointData
-        fullName: Excel.Interfaces.ChartPointData
-      - name: '[]'
-        fullName: '[]'
+        type: 'excel!Excel.Interfaces.<xref uid="ChartPointData:interface" />[]'

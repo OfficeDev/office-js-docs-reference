@@ -1,405 +1,494 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions:interface'
-    summary: |-
-      Represents a collection of all the conditional formats that are overlap the range.
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalFormatCollectionLoadOptions
+uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ConditionalFormatCollectionLoadOptions
+summary: >-
+  Represents a collection of all the conditional formats that are overlap the
+  range.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ConditionalFormatCollectionLoadOptions
-    fullName: Excel.Interfaces.ConditionalFormatCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValue:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#custom:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#customOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#id:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#priority:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#stopIfTrue:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member'
-      - 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#type:member'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValue:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional
-      format is a CellValue type. For example to format all cells between 5 and 10.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: cellValue
+        type: boolean
+  - name: cellValue
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValue:member
+    package: excel!
     fullName: cellValue
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the cell value conditional format
+      properties if the current conditional format is a CellValue type. For
+      example to format all cells between 5 and 10.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional
-      format is a CellValue type. For example to format all cells between 5 and 10.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: cellValueOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="CellValueConditionalFormatLoadOptions:interface" />
+  - name: cellValueOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member
+    package: excel!
     fullName: cellValueOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member'
     summary: >-
-      For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional
-      format is an ColorScale type.
+      For EACH ITEM in the collection: Returns the cell value conditional format
+      properties if the current conditional format is a CellValue type. For
+      example to format all cells between 5 and 10.
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: colorScale
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        cellValueOrNullObject?:
+        Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="CellValueConditionalFormatLoadOptions:interface" />
+  - name: colorScale
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member
+    package: excel!
     fullName: colorScale
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the ColorScale conditional format
+      properties if the current conditional format is an ColorScale type.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional
-      format is an ColorScale type.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: colorScaleOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ColorScaleConditionalFormatLoadOptions:interface" />
+  - name: colorScaleOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member
+    package: excel!
     fullName: colorScaleOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#custom:member'
     summary: >-
-      For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional
-      format is a custom type.
+      For EACH ITEM in the collection: Returns the ColorScale conditional format
+      properties if the current conditional format is an ColorScale type.
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: custom
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        colorScaleOrNullObject?:
+        Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ColorScaleConditionalFormatLoadOptions:interface" />
+  - name: custom
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#custom:member
+    package: excel!
     fullName: custom
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the custom conditional format
+      properties if the current conditional format is a custom type.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#customOrNullObject:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional
-      format is a custom type.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: customOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="CustomConditionalFormatLoadOptions:interface" />
+  - name: customOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#customOrNullObject:member
+    package: excel!
     fullName: customOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member'
-    summary: |-
-      For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
+    summary: >-
+      For EACH ITEM in the collection: Returns the custom conditional format
+      properties if the current conditional format is a custom type.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: dataBar
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        customOrNullObject?:
+        Excel.Interfaces.CustomConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="CustomConditionalFormatLoadOptions:interface" />
+  - name: dataBar
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member
+    package: excel!
     fullName: dataBar
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the data bar properties if the
+      current conditional format is a data bar.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member'
-    summary: |-
-      For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: dataBarOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="DataBarConditionalFormatLoadOptions:interface" />
+  - name: dataBarOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member
+    package: excel!
     fullName: dataBarOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member'
     summary: >-
-      For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional
-      format is an IconSet type.
+      For EACH ITEM in the collection: Returns the data bar properties if the
+      current conditional format is a data bar.
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: iconSet
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        dataBarOrNullObject?:
+        Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="DataBarConditionalFormatLoadOptions:interface" />
+  - name: iconSet
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member
+    package: excel!
     fullName: iconSet
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the IconSet conditional format
+      properties if the current conditional format is an IconSet type.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional
-      format is an IconSet type.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: iconSetOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="IconSetConditionalFormatLoadOptions:interface" />
+  - name: iconSetOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member
+    package: excel!
     fullName: iconSetOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#id:member'
     summary: >-
-      For EACH ITEM in the collection: The Priority of the Conditional Format within the current
-      ConditionalFormatCollection.
+      For EACH ITEM in the collection: Returns the IconSet conditional format
+      properties if the current conditional format is an IconSet type.
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        iconSetOrNullObject?:
+        Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="IconSetConditionalFormatLoadOptions:interface" />
+  - name: id
+    uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#id:member'
+    package: excel!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: The Priority of the Conditional Format
+      within the current ConditionalFormatCollection.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the preset criteria conditional format. See
-      Excel.PresetCriteriaConditionalFormat for more details.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: preset
+        type: boolean
+  - name: preset
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member
+    package: excel!
     fullName: preset
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the preset criteria conditional
+      format. See Excel.PresetCriteriaConditionalFormat for more details.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the preset criteria conditional format. See
-      Excel.PresetCriteriaConditionalFormat for more details.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: presetOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="PresetCriteriaConditionalFormatLoadOptions:interface" />
+  - name: presetOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member
+    package: excel!
     fullName: presetOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#priority:member'
     summary: >-
-      For EACH ITEM in the collection: The priority (or index) within the conditional format collection that this
-      conditional format currently exists in. Changing this also changes other conditional formats' priorities, to allow
-      for a contiguous priority order. Use a negative priority to begin from the back. Priorities greater than than
-      bounds will get and set to the maximum (or minimum if negative) priority. Also note that if you change the
-      priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further
-      changes to it.
+      For EACH ITEM in the collection: Returns the preset criteria conditional
+      format. See Excel.PresetCriteriaConditionalFormat for more details.
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: priority
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        presetOrNullObject?:
+        Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="PresetCriteriaConditionalFormatLoadOptions:interface" />
+  - name: priority
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#priority:member
+    package: excel!
     fullName: priority
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: The priority (or index) within the
+      conditional format collection that this conditional format currently
+      exists in. Changing this also changes other conditional formats'
+      priorities, to allow for a contiguous priority order. Use a negative
+      priority to begin from the back. Priorities greater than than bounds will
+      get and set to the maximum (or minimum if negative) priority. Also note
+      that if you change the priority, you have to re-fetch a new copy of the
+      object at that new priority location if you want to make further changes
+      to it.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'priority?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#stopIfTrue:member'
-    summary: >-
-      For EACH ITEM in the collection: If the conditions of this conditional format are met, no lower-priority formats
-      shall take effect on that cell. Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue
-      for these
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: stopIfTrue
+        type: boolean
+  - name: stopIfTrue
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#stopIfTrue:member
+    package: excel!
     fullName: stopIfTrue
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: If the conditions of this conditional
+      format are met, no lower-priority formats shall take effect on that cell.
+      Null on databars, icon sets, and colorscales as there's no concept of
+      StopIfTrue for these
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'stopIfTrue?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the specific text conditional format properties if the current
-      conditional format is a text type. For example to format cells matching the word "Text".
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: textComparison
+        type: boolean
+  - name: textComparison
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member
+    package: excel!
     fullName: textComparison
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the specific text conditional
+      format properties if the current conditional format is a text type. For
+      example to format cells matching the word "Text".
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the specific text conditional format properties if the current
-      conditional format is a text type. For example to format cells matching the word "Text".
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: textComparisonOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="TextConditionalFormatLoadOptions:interface" />
+  - name: textComparisonOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member
+    package: excel!
     fullName: textComparisonOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member'
     summary: >-
-      For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional
-      format is an TopBottom type. For example to format the top 10% or bottom 10 items.
+      For EACH ITEM in the collection: Returns the specific text conditional
+      format properties if the current conditional format is a text type. For
+      example to format cells matching the word "Text".
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: topBottom
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        textComparisonOrNullObject?:
+        Excel.Interfaces.TextConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="TextConditionalFormatLoadOptions:interface" />
+  - name: topBottom
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member
+    package: excel!
     fullName: topBottom
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns the Top/Bottom conditional format
+      properties if the current conditional format is an TopBottom type. For
+      example to format the top 10% or bottom 10 items.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional
-      format is an TopBottom type. For example to format the top 10% or bottom 10 items.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: topBottomOrNullObject
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="TopBottomConditionalFormatLoadOptions:interface" />
+  - name: topBottomOrNullObject
+    uid: >-
+      excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member
+    package: excel!
     fullName: topBottomOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#type:member'
-    summary: |-
-      For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time.
+    summary: >-
+      For EACH ITEM in the collection: Returns the Top/Bottom conditional format
+      properties if the current conditional format is an TopBottom type. For
+      example to format the top 10% or bottom 10 items.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        topBottomOrNullObject?:
+        Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+      return:
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="TopBottomConditionalFormatLoadOptions:interface" />
+  - name: type
+    uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#type:member'
+    package: excel!
     fullName: type
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: A type of conditional format. Only one
+      can be set at a time.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.CellValueConditionalFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.CustomConditionalFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.DataBarConditionalFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.TextConditionalFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
+        type: boolean

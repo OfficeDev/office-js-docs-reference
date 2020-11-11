@@ -1,78 +1,67 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TableSortData:interface'
-    summary: An interface describing the data returned by calling `tableSort.toJSON()`<!-- -->.
-    name: Excel.Interfaces.TableSortData
-    fullName: Excel.Interfaces.TableSortData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.TableSortData
+uid: 'excel!Excel.Interfaces.TableSortData:interface'
+package: excel!
+fullName: Excel.Interfaces.TableSortData
+summary: >-
+  An interface describing the data returned by calling `tableSort.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fields
+    uid: 'excel!Excel.Interfaces.TableSortData#fields:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TableSortData#fields:member'
-      - 'excel!Excel.Interfaces.TableSortData#matchCase:member'
-      - 'excel!Excel.Interfaces.TableSortData#method:member'
-  - uid: 'excel!Excel.Interfaces.TableSortData#fields:member'
-    summary: |-
+    fullName: fields
+    summary: >-
       Specifies the current conditions used to last sort the table.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fields?: Excel.SortField[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableSortData#fields~0:complex'
-  - uid: 'excel!Excel.Interfaces.TableSortData#matchCase:member'
-    summary: |-
+        type: 'excel!Excel.<xref uid="SortField:interface" />[]'
+  - name: matchCase
+    uid: 'excel!Excel.Interfaces.TableSortData#matchCase:member'
+    package: excel!
+    fullName: matchCase
+    summary: >-
       Specifies if the casing impacts the last sort of the table.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'matchCase?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableSortData#method:member'
-    summary: |-
+        type: boolean
+  - name: method
+    uid: 'excel!Excel.Interfaces.TableSortData#method:member'
+    package: excel!
+    fullName: method
+    summary: >-
       Represents Chinese character ordering method last used to sort the table.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: method
-    fullName: method
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'method?: Excel.SortMethod | "PinYin" | "StrokeCount";'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableSortData#method~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.TableSortData#fields~0:complex'
-    name: 'Excel.SortField[]'
-    fullName: 'Excel.SortField[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.SortField:interface'
-        name: Excel.SortField
-        fullName: Excel.SortField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.Interfaces.TableSortData#method~0:complex'
-    name: Excel.SortMethod | "PinYin" | "StrokeCount"
-    fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
-    spec.typeScript:
-      - uid: 'excel!Excel.SortMethod:enum'
-        name: Excel.SortMethod
-        fullName: Excel.SortMethod
-      - name: ' | "PinYin" | "StrokeCount"'
-        fullName: ' | "PinYin" | "StrokeCount"'
+        type: 'excel!Excel.<xref uid="SortMethod:enum" /> | "PinYin" | "StrokeCount"'

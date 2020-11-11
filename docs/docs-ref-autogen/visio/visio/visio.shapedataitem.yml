@@ -1,109 +1,137 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.ShapeDataItem:class'
-    summary: |-
-      Represents the ShapeDataItem.
+### YamlMime:TSType
+name: Visio.ShapeDataItem
+uid: 'visio!Visio.ShapeDataItem:class'
+package: visio!
+fullName: Visio.ShapeDataItem
+summary: >-
+  Represents the ShapeDataItem.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.ShapeDataItem
-    fullName: Visio.ShapeDataItem
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'visio!Visio.ShapeDataItem#context:member'
     package: visio!
-    children:
-      - 'visio!Visio.ShapeDataItem#context:member'
-      - 'visio!Visio.ShapeDataItem#format:member'
-      - 'visio!Visio.ShapeDataItem#formattedValue:member'
-      - 'visio!Visio.ShapeDataItem#label:member'
-      - 'visio!Visio.ShapeDataItem#load:member(1)'
-      - 'visio!Visio.ShapeDataItem#load:member(2)'
-      - 'visio!Visio.ShapeDataItem#load:member(3)'
-      - 'visio!Visio.ShapeDataItem#toJSON:member(1)'
-      - 'visio!Visio.ShapeDataItem#value:member'
-  - uid: 'visio!Visio.ShapeDataItem#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'visio!Visio.RequestContext:class'
-  - uid: 'visio!Visio.ShapeDataItem#format:member'
-    summary: |-
+        type: 'visio!Visio.<xref uid="RequestContext:class" />'
+  - name: format
+    uid: 'visio!Visio.ShapeDataItem#format:member'
+    package: visio!
+    fullName: format
+    summary: >-
       A string that specifies the format of the shape data item. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly format: string;'
       return:
-        type:
-          - string
-  - uid: 'visio!Visio.ShapeDataItem#formattedValue:member'
-    summary: |-
-      A string that specifies the formatted value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: formattedValue
+        type: string
+  - name: formattedValue
+    uid: 'visio!Visio.ShapeDataItem#formattedValue:member'
+    package: visio!
     fullName: formattedValue
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A string that specifies the formatted value of the shape data item.
+      Read-only.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly formattedValue: string;'
       return:
-        type:
-          - string
-  - uid: 'visio!Visio.ShapeDataItem#label:member'
-    summary: |-
+        type: string
+  - name: label
+    uid: 'visio!Visio.ShapeDataItem#label:member'
+    package: visio!
+    fullName: label
+    summary: >-
       A string that specifies the label of the shape data item. Read-only.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: label
-    fullName: label
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly label: string;'
       return:
-        type:
-          - string
-  - uid: 'visio!Visio.ShapeDataItem#load:member(1)'
+        type: string
+  - name: value
+    uid: 'visio!Visio.ShapeDataItem#value:member'
+    package: visio!
+    fullName: value
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
+      A string that specifies the value of the shape data item. Read-only.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly value: string;'
+      return:
+        type: string
+methods:
+  - name: load(option)
+    uid: 'visio!Visio.ShapeDataItem#load:member(1)'
+    package: visio!
+    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call "context.sync()" before reading the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.ShapeDataItem` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
+      `load(option?: string | string[]): Visio.ShapeDataItem` - Where option is
+      a comma-delimited string or an array of strings that specify the
+      properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }):
+      Visio.ShapeDataItem` - Where option.select is a comma-delimited string
+      that specifies the properties to load, and options.expand is a
+      comma-delimited string that specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItem` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?:
+      number }): Visio.ShapeDataItem` - Only available on collection types. It
+      is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in
+      the result. If option.top is specified, the result set will start after
+      skipping the specified number of items.
 
 
       #### Examples
@@ -128,105 +156,86 @@ items:
       });
 
       ```
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;'
-      return:
-        type:
-          - 'visio!Visio.ShapeDataItem:class'
-        description: ''
+      content: >-
+        load(option?: Visio.Interfaces.ShapeDataItemLoadOptions):
+        Visio.ShapeDataItem;
       parameters:
         - id: option
           description: ''
-          type:
-            - 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
-  - uid: 'visio!Visio.ShapeDataItem#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            visio!Visio.Interfaces.<xref
+            uid="ShapeDataItemLoadOptions:interface" />
+      return:
+        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'visio!Visio.ShapeDataItem#load:member(2)'
+    package: visio!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Visio.ShapeDataItem;'
-      return:
-        type:
-          - 'visio!Visio.ShapeDataItem:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'visio!Visio.ShapeDataItem#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.ShapeDataItem;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'visio!Visio.ShapeDataItem:class'
+        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />'
         description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'visio!Visio.ShapeDataItem#load:member(3)'
+    package: visio!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
+        Visio.ShapeDataItem;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - '{ select?: string; expand?: string; }'
-  - uid: 'visio!Visio.ShapeDataItem#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Visio.ShapeDataItem object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Visio.Interfaces.ShapeDataItemData`<!-- -->) that contains shallow copies of
-      any loaded child properties from the original object.
-    name: toJSON()
+            Where propertyNamesAndPaths.select is a comma-delimited string that
+            specifies the properties to load, and propertyNamesAndPaths.expand
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '{ select?: string; expand?: string; }'
+      return:
+        type: 'visio!Visio.<xref uid="ShapeDataItem:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'visio!Visio.ShapeDataItem#toJSON:member(1)'
+    package: visio!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Visio.ShapeDataItem
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Visio.Interfaces.ShapeDataItemData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Visio.Interfaces.ShapeDataItemData;'
       return:
-        type:
-          - 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+        type: 'visio!Visio.Interfaces.<xref uid="ShapeDataItemData:interface" />'
         description: ''
-  - uid: 'visio!Visio.ShapeDataItem#value:member'
-    summary: |-
-      A string that specifies the value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly value: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'visio!Visio.RequestContext:class'
-    name: RequestContext
-  - uid: 'visio!Visio.ShapeDataItem:class'
-    name: Visio.ShapeDataItem
-  - uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
-    name: Visio.Interfaces.ShapeDataItemLoadOptions
-  - uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
-    name: Visio.Interfaces.ShapeDataItemData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

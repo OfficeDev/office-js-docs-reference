@@ -1,75 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SettableRowProperties:interface'
-    summary: |-
-      Represents the input parameter of setRowProperties.
+### YamlMime:TSType
+name: Excel.SettableRowProperties
+uid: 'excel!Excel.SettableRowProperties:interface'
+package: excel!
+fullName: Excel.SettableRowProperties
+summary: >-
+  Represents the input parameter of setRowProperties.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SettableRowProperties
-    fullName: Excel.SettableRowProperties
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'excel!Excel.SettableCellProperties:interface'
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.SettableRowProperties#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.SettableRowProperties#format:member'
-      - 'excel!Excel.SettableRowProperties#rowHidden:member'
-  - uid: 'excel!Excel.SettableRowProperties#format:member'
-    summary: |-
+    fullName: format
+    summary: >-
       Represents the `format` property.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         format?: Excel.CellPropertiesFormat & {
                     rowHeight?: number;
                 };
       return:
-        type:
-          - 'excel!Excel.SettableRowProperties#format~0:complex'
-  - uid: 'excel!Excel.SettableRowProperties#rowHidden:member'
-    summary: |-
+        type: |-
+          excel!Excel.<xref uid="CellPropertiesFormat:interface" /> & {
+                      rowHeight?: number;
+                  }
+  - name: rowHidden
+    uid: 'excel!Excel.SettableRowProperties#rowHidden:member'
+    package: excel!
+    fullName: rowHidden
+    summary: >-
       Represents the `rowHidden` property.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rowHidden
-    fullName: rowHidden
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowHidden?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.SettableCellProperties:interface'
-    name: SettableCellProperties
-  - uid: 'excel!Excel.SettableRowProperties#format~0:complex'
-    name: |-
-      Excel.CellPropertiesFormat & {
-                  rowHeight?: number;
-              }
-    fullName: |-
-      Excel.CellPropertiesFormat & {
-                  rowHeight?: number;
-              }
-    spec.typeScript:
-      - uid: 'excel!Excel.CellPropertiesFormat:interface'
-        name: Excel.CellPropertiesFormat
-        fullName: Excel.CellPropertiesFormat
-      - name: |2-
-           & {
-                      rowHeight?: number;
-                  }
-        fullName: |2-
-           & {
-                      rowHeight?: number;
-                  }
+        type: boolean
+extends: 'excel!Excel.<xref uid="SettableCellProperties:interface" />'

@@ -1,121 +1,122 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CommentData:interface'
-    summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CommentData
-    fullName: Excel.Interfaces.CommentData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.CommentData
+uid: 'excel!Excel.Interfaces.CommentData:interface'
+package: excel!
+fullName: Excel.Interfaces.CommentData
+summary: >-
+  An interface describing the data returned by calling `comment.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: authorEmail
+    uid: 'excel!Excel.Interfaces.CommentData#authorEmail:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CommentData#authorEmail:member'
-      - 'excel!Excel.Interfaces.CommentData#authorName:member'
-      - 'excel!Excel.Interfaces.CommentData#content:member'
-      - 'excel!Excel.Interfaces.CommentData#creationDate:member'
-      - 'excel!Excel.Interfaces.CommentData#id:member'
-      - 'excel!Excel.Interfaces.CommentData#replies:member'
-  - uid: 'excel!Excel.Interfaces.CommentData#authorEmail:member'
-    summary: |-
+    fullName: authorEmail
+    summary: >-
       Gets the email of the comment's author.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: authorEmail
-    fullName: authorEmail
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'authorEmail?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentData#authorName:member'
-    summary: |-
+        type: string
+  - name: authorName
+    uid: 'excel!Excel.Interfaces.CommentData#authorName:member'
+    package: excel!
+    fullName: authorName
+    summary: >-
       Gets the name of the comment's author.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: authorName
-    fullName: authorName
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'authorName?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentData#content:member'
-    summary: |-
+        type: string
+  - name: content
+    uid: 'excel!Excel.Interfaces.CommentData#content:member'
+    package: excel!
+    fullName: content
+    summary: >-
       The comment's content. The string is plain text.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: content
-    fullName: content
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'content?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentData#creationDate:member'
-    summary: >-
-      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
-      does not have a creation date.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: creationDate
+        type: string
+  - name: creationDate
+    uid: 'excel!Excel.Interfaces.CommentData#creationDate:member'
+    package: excel!
     fullName: creationDate
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the creation time of the comment. Returns null if the comment was
+      converted from a note, since the comment does not have a creation date.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'creationDate?: Date;'
       return:
-        type:
-          - '!Date:interface'
-  - uid: 'excel!Excel.Interfaces.CommentData#id:member'
-    summary: |-
+        type: Date
+  - name: id
+    uid: 'excel!Excel.Interfaces.CommentData#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Specifies the comment identifier.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentData#replies:member'
-    summary: |-
+        type: string
+  - name: replies
+    uid: 'excel!Excel.Interfaces.CommentData#replies:member'
+    package: excel!
+    fullName: replies
+    summary: >-
       Represents a collection of reply objects associated with the comment.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: replies
-    fullName: replies
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'replies?: Excel.Interfaces.CommentReplyData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CommentData#replies~0:complex'
-references:
-  - uid: '!Date:interface'
-    name: Date
-  - uid: 'excel!Excel.Interfaces.CommentData#replies~0:complex'
-    name: 'Excel.Interfaces.CommentReplyData[]'
-    fullName: 'Excel.Interfaces.CommentReplyData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
-        name: Excel.Interfaces.CommentReplyData
-        fullName: Excel.Interfaces.CommentReplyData
-      - name: '[]'
-        fullName: '[]'
+        type: 'excel!Excel.Interfaces.<xref uid="CommentReplyData:interface" />[]'

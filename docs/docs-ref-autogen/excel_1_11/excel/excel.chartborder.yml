@@ -1,268 +1,262 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartBorder:class'
-    summary: |-
-      Represents the border formatting of a chart element.
+### YamlMime:TSType
+name: Excel.ChartBorder
+uid: 'excel!Excel.ChartBorder:class'
+package: excel!
+fullName: Excel.ChartBorder
+summary: >-
+  Represents the border formatting of a chart element.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartBorder
-    fullName: Excel.ChartBorder
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: color
+    uid: 'excel!Excel.ChartBorder#color:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartBorder#clear:member(1)'
-      - 'excel!Excel.ChartBorder#color:member'
-      - 'excel!Excel.ChartBorder#context:member'
-      - 'excel!Excel.ChartBorder#lineStyle:member'
-      - 'excel!Excel.ChartBorder#load:member(1)'
-      - 'excel!Excel.ChartBorder#load:member(2)'
-      - 'excel!Excel.ChartBorder#load:member(3)'
-      - 'excel!Excel.ChartBorder#set:member(1)'
-      - 'excel!Excel.ChartBorder#set:member(2)'
-      - 'excel!Excel.ChartBorder#toJSON:member(1)'
-      - 'excel!Excel.ChartBorder#weight:member'
-  - uid: 'excel!Excel.ChartBorder#clear:member(1)'
-    summary: |-
-      Clear the border format of a chart element.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.ChartBorder#color:member'
-    summary: |-
+    fullName: color
+    summary: >-
       HTML color code representing the color of borders in the chart.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartBorder#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: string
+  - name: context
+    uid: 'excel!Excel.ChartBorder#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartBorder#lineStyle:member'
-    summary: |-
-      Represents the line style of the border. See Excel.ChartLineStyle for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: lineStyle
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: lineStyle
+    uid: 'excel!Excel.ChartBorder#lineStyle:member'
+    package: excel!
     fullName: lineStyle
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the line style of the border. See Excel.ChartLineStyle for
+      details.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        lineStyle: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
-        "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+        lineStyle: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" |
+        "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" |
+        "Automatic" | "RoundDot";
       return:
-        type:
-          - 'excel!Excel.ChartBorder#lineStyle~0:complex'
-  - uid: 'excel!Excel.ChartBorder#load:member(1)'
+        type: >-
+          excel!Excel.<xref uid="ChartLineStyle:enum" /> | "None" | "Continuous"
+          | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
+          "Grey75" | "Automatic" | "RoundDot"
+  - name: weight
+    uid: 'excel!Excel.ChartBorder#weight:member'
+    package: excel!
+    fullName: weight
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Represents weight of the border, in points.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;'
+      content: 'weight: number;'
       return:
-        type:
-          - 'excel!Excel.ChartBorder:class'
+        type: number
+methods:
+  - name: clear()
+    uid: 'excel!Excel.ChartBorder#clear:member(1)'
+    package: excel!
+    fullName: clear()
+    summary: >-
+      Clear the border format of a chart element.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
         description: ''
+  - name: load(options)
+    uid: 'excel!Excel.ChartBorder#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.ChartBorderLoadOptions):
+        Excel.ChartBorder;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-  - uid: 'excel!Excel.ChartBorder#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref uid="ChartBorderLoadOptions:interface"
+            />
+      return:
+        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartBorder#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartBorder;'
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartBorder#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartBorder#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartBorder;
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.ChartBorder#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartBorder#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartBorder): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.ChartBorderUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            excel!Excel.Interfaces.<xref uid="ChartBorderUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.ChartBorder#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartBorder#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.ChartBorder): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.ChartBorder:class'
-  - uid: 'excel!Excel.ChartBorder#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ChartBorder object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ChartBorderData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+          type: 'excel!Excel.<xref uid="ChartBorder:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartBorder#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.ChartBorder
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.ChartBorderData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartBorderData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartBorderData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="ChartBorderData:interface" />'
         description: ''
-  - uid: 'excel!Excel.ChartBorder#weight:member'
-    summary: |-
-      Represents weight of the border, in points.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ChartBorder#lineStyle~0:complex'
-    name: >-
-      Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
-      "Grey75" | "Automatic" | "RoundDot"
-    fullName: >-
-      Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
-      "Grey75" | "Automatic" | "RoundDot"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartLineStyle:enum'
-        name: Excel.ChartLineStyle
-        fullName: Excel.ChartLineStyle
-      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
-        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
-  - uid: 'excel!Excel.ChartBorder:class'
-    name: Excel.ChartBorder
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
-  - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: Interfaces.ChartBorderUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
-    name: Excel.Interfaces.ChartBorderData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

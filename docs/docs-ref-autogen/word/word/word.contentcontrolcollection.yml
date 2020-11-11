@@ -1,70 +1,75 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.ContentControlCollection:class'
-    summary: >-
-      Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
-      bounded and potentially labeled regions in a document that serve as containers for specific types of content.
-      Individual content controls may contain contents such as images, tables, or paragraphs of formatted text.
-      Currently, only rich text content controls are supported.
+### YamlMime:TSType
+name: Word.ContentControlCollection
+uid: 'word!Word.ContentControlCollection:class'
+package: word!
+fullName: Word.ContentControlCollection
+summary: >-
+  Contains a collection of
+  [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content
+  controls are bounded and potentially labeled regions in a document that serve
+  as containers for specific types of content. Individual content controls may
+  contain contents such as images, tables, or paragraphs of formatted text.
+  Currently, only rich text content controls are supported.
 
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.ContentControlCollection
-    fullName: Word.ContentControlCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: WordApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.ContentControlCollection#context:member'
     package: word!
-    children:
-      - 'word!Word.ContentControlCollection#context:member'
-      - 'word!Word.ContentControlCollection#getById:member(1)'
-      - 'word!Word.ContentControlCollection#getByIdOrNullObject:member(1)'
-      - 'word!Word.ContentControlCollection#getByTag:member(1)'
-      - 'word!Word.ContentControlCollection#getByTitle:member(1)'
-      - 'word!Word.ContentControlCollection#getByTypes:member(1)'
-      - 'word!Word.ContentControlCollection#getFirst:member(1)'
-      - 'word!Word.ContentControlCollection#getFirstOrNullObject:member(1)'
-      - 'word!Word.ContentControlCollection#getItem:member(1)'
-      - 'word!Word.ContentControlCollection#items:member'
-      - 'word!Word.ContentControlCollection#load:member(1)'
-      - 'word!Word.ContentControlCollection#load:member(2)'
-      - 'word!Word.ContentControlCollection#load:member(3)'
-      - 'word!Word.ContentControlCollection#toJSON:member(1)'
-      - 'word!Word.ContentControlCollection#track:member(1)'
-      - 'word!Word.ContentControlCollection#untrack:member(1)'
-  - uid: 'word!Word.ContentControlCollection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'word!Word.RequestContext:class'
-  - uid: 'word!Word.ContentControlCollection#getById:member(1)'
-    summary: >-
-      Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in
-      this collection.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getById(id)
+        type: 'word!Word.<xref uid="RequestContext:class" />'
+  - name: items
+    uid: 'word!Word.ContentControlCollection#items:member'
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.ContentControl[];'
+      return:
+        type: 'word!Word.<xref uid="ContentControl:class" />[]'
+methods:
+  - name: getById(id)
+    uid: 'word!Word.ContentControlCollection#getById:member(1)'
+    package: word!
     fullName: getById(id)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets a content control by its identifier. Throws an error if there isn't a
+      content control with the identifier in this collection.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getById(id: number): Word.ContentControl;'
+      parameters:
+        - id: id
+          description: Required. A content control identifier.
+          type: number
       return:
-        type:
-          - 'word!Word.ContentControl:class'
+        type: 'word!Word.<xref uid="ContentControl:class" />'
         description: |-
 
 
@@ -93,28 +98,29 @@ items:
               }
           });
           ```
+  - name: getByIdOrNullObject(id)
+    uid: 'word!Word.ContentControlCollection#getByIdOrNullObject:member(1)'
+    package: word!
+    fullName: getByIdOrNullObject(id)
+    summary: >-
+      Gets a content control by its identifier. Returns a null object if there
+      isn't a content control with the identifier in this collection.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getByIdOrNullObject(id: number): Word.ContentControl;'
       parameters:
         - id: id
           description: Required. A content control identifier.
-          type:
-            - number
-  - uid: 'word!Word.ContentControlCollection#getByIdOrNullObject:member(1)'
-    summary: >-
-      Gets a content control by its identifier. Returns a null object if there isn't a content control with the
-      identifier in this collection.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getByIdOrNullObject(id)
-    fullName: getByIdOrNullObject(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getByIdOrNullObject(id: number): Word.ContentControl;'
+          type: number
       return:
-        type:
-          - 'word!Word.ContentControl:class'
+        type: 'word!Word.<xref uid="ContentControl:class" />'
         description: |-
 
 
@@ -147,26 +153,28 @@ items:
               }
           });
           ```
-      parameters:
-        - id: id
-          description: Required. A content control identifier.
-          type:
-            - number
-  - uid: 'word!Word.ContentControlCollection#getByTag:member(1)'
-    summary: |-
+  - name: getByTag(tag)
+    uid: 'word!Word.ContentControlCollection#getByTag:member(1)'
+    package: word!
+    fullName: getByTag(tag)
+    summary: >-
       Gets the content controls that have the specified tag.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getByTag(tag)
-    fullName: getByTag(tag)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getByTag(tag: string): Word.ContentControlCollection;'
+      parameters:
+        - id: tag
+          description: Required. A tag set on a content control.
+          type: string
       return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
         description: >-
 
 
@@ -192,33 +200,38 @@ items:
           });
 
           ```
-      parameters:
-        - id: tag
-          description: Required. A tag set on a content control.
-          type:
-            - string
-  - uid: 'word!Word.ContentControlCollection#getByTitle:member(1)'
-    summary: |-
+  - name: getByTitle(title)
+    uid: 'word!Word.ContentControlCollection#getByTitle:member(1)'
+    package: word!
+    fullName: getByTitle(title)
+    summary: >-
       Gets the content controls that have the specified title.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getByTitle(title)
-    fullName: getByTitle(title)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getByTitle(title: string): Word.ContentControlCollection;'
+      parameters:
+        - id: title
+          description: Required. The title of a content control.
+          type: string
       return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
-        description: |-
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        description: >-
 
 
           #### Examples
 
+
           ```javascript
+
           // Run a batch operation against the Word object model.
+
           Word.run(function (context) {
 
               // Create a proxy object for the content controls collection that contains a specific title.
@@ -241,6 +254,7 @@ items:
 
               });
           })
+
           .catch(function (error) {
               console.log('Error: ' + JSON.stringify(error));
               if (error instanceof OfficeExtension.Error) {
@@ -248,50 +262,57 @@ items:
               }
           });
 
-          // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
+
+          // The Word-Add-in-DocumentAssembly sample has another example of
+          using the getByTitle method.
+
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+
           ```
-      parameters:
-        - id: title
-          description: Required. The title of a content control.
-          type:
-            - string
-  - uid: 'word!Word.ContentControlCollection#getByTypes:member(1)'
-    summary: |-
+  - name: getByTypes(types)
+    uid: 'word!Word.ContentControlCollection#getByTypes:member(1)'
+    package: word!
+    fullName: getByTypes(types)
+    summary: >-
       Gets the content controls that have the specified types and/or subtypes.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getByTypes(types)
-    fullName: getByTypes(types)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;'
-      return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
-        description: ''
+      content: >-
+        getByTypes(types: Word.ContentControlType[]):
+        Word.ContentControlCollection;
       parameters:
         - id: types
           description: Required. An array of content control types and/or subtypes.
-          type:
-            - 'word!Word.ContentControlCollection#getByTypes~0:complex'
-  - uid: 'word!Word.ContentControlCollection#getFirst:member(1)'
-    summary: |-
-      Gets the first content control in this collection. Throws an error if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getFirst()
+          type: 'word!Word.<xref uid="ContentControlType:enum" />[]'
+      return:
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        description: ''
+  - name: getFirst()
+    uid: 'word!Word.ContentControlCollection#getFirst:member(1)'
+    package: word!
     fullName: getFirst()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets the first content control in this collection. Throws an error if this
+      collection is empty.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getFirst(): Word.ContentControl;'
       return:
-        type:
-          - 'word!Word.ContentControl:class'
+        type: 'word!Word.<xref uid="ContentControl:class" />'
         description: |-
 
 
@@ -324,78 +345,82 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.ContentControlCollection#getFirstOrNullObject:member(1)'
-    summary: |-
-      Gets the first content control in this collection. Returns a null object if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getFirstOrNullObject()
+  - name: getFirstOrNullObject()
+    uid: 'word!Word.ContentControlCollection#getFirstOrNullObject:member(1)'
+    package: word!
     fullName: getFirstOrNullObject()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets the first content control in this collection. Returns a null object
+      if this collection is empty.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getFirstOrNullObject(): Word.ContentControl;'
       return:
-        type:
-          - 'word!Word.ContentControl:class'
+        type: 'word!Word.<xref uid="ContentControl:class" />'
         description: ''
-  - uid: 'word!Word.ContentControlCollection#getItem:member(1)'
-    summary: |-
+  - name: getItem(index)
+    uid: 'word!Word.ContentControlCollection#getItem:member(1)'
+    package: word!
+    fullName: getItem(index)
+    summary: >-
       Gets a content control by its index in the collection.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getItem(index)
-    fullName: getItem(index)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItem(index: number): Word.ContentControl;'
-      return:
-        type:
-          - 'word!Word.ContentControl:class'
-        description: ''
       parameters:
         - id: index
           description: The index.
-          type:
-            - number
-  - uid: 'word!Word.ContentControlCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly items: Word.ContentControl[];'
+          type: number
       return:
-        type:
-          - 'word!Word.ContentControlCollection#items~0:complex'
-  - uid: 'word!Word.ContentControlCollection#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+        type: 'word!Word.<xref uid="ContentControl:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.ContentControlCollection#load:member(1)'
+    package: word!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        load(options?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.ContentControlCollection;
+        load(options?: Word.Interfaces.ContentControlCollectionLoadOptions &
+        Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            word!Word.Interfaces.<xref
+            uid="ContentControlCollectionLoadOptions:interface" /> &
+            word!Word.Interfaces.<xref uid="CollectionLoadOptions:interface" />
       return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
-        description: |-
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        description: >-
 
 
           #### Examples
 
+
           ```javascript
+
           // Run a batch operation against the Word object model.
+
           Word.run(function (context) {
 
               // Create a proxy object for the content controls collection.
@@ -452,6 +477,7 @@ items:
                   }
               });
           })
+
           .catch(function (error) {
               console.log('Error: ' + JSON.stringify(error));
               if (error instanceof OfficeExtension.Error) {
@@ -459,150 +485,122 @@ items:
               }
           });
 
+
           // The Silly stories add-in sample shows how the load method is used
-          // to load the content control collection with the tag and title properties.
+
+          // to load the content control collection with the tag and title
+          properties.
+
           // https://aka.ms/sillystorywordaddin
+
           ```
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'word!Word.ContentControlCollection#load~0:complex'
-  - uid: 'word!Word.ContentControlCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+  - name: load(propertyNames)
+    uid: 'word!Word.ContentControlCollection#load:member(2)'
+    package: word!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.ContentControlCollection;'
-      return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'word!Word.ContentControlCollection#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ContentControlCollection;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
         description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.ContentControlCollection#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Word.ContentControlCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'word!Word.ContentControlCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`<!-- -->) that contains
-      an "items" array with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
+      return:
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.ContentControlCollection#toJSON:member(1)'
+    package: word!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `Word.ContentControlCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `Word.Interfaces.ContentControlCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.ContentControlCollectionData;'
       return:
-        type:
-          - 'word!Word.Interfaces.ContentControlCollectionData:interface'
+        type: >-
+          word!Word.Interfaces.<xref
+          uid="ContentControlCollectionData:interface" />
         description: ''
-  - uid: 'word!Word.ContentControlCollection#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
-    name: track()
+  - name: track()
+    uid: 'word!Word.ContentControlCollection#track:member(1)'
+    package: word!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
+      object across `.sync` calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): Word.ContentControlCollection;'
       return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
         description: ''
-  - uid: 'word!Word.ContentControlCollection#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'word!Word.ContentControlCollection#untrack:member(1)'
+    package: word!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
+      objects slows down the host application, so please remember to free any
+      objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): Word.ContentControlCollection;'
       return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
+        type: 'word!Word.<xref uid="ContentControlCollection:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'word!Word.RequestContext:class'
-    name: RequestContext
-  - uid: 'word!Word.ContentControl:class'
-    name: Word.ContentControl
-  - uid: 'word!Word.ContentControlCollection:class'
-    name: Word.ContentControlCollection
-  - uid: 'word!Word.ContentControlCollection#getByTypes~0:complex'
-    name: 'Word.ContentControlType[]'
-    fullName: 'Word.ContentControlType[]'
-    spec.typeScript:
-      - uid: 'word!Word.ContentControlType:enum'
-        name: Word.ContentControlType
-        fullName: Word.ContentControlType
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'word!Word.ContentControlCollection#items~0:complex'
-    name: 'Word.ContentControl[]'
-    fullName: 'Word.ContentControl[]'
-    spec.typeScript:
-      - uid: 'word!Word.ContentControl:class'
-        name: Word.ContentControl
-        fullName: Word.ContentControl
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'word!Word.ContentControlCollection#load~0:complex'
-    name: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-    fullName: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
-        name: Word.Interfaces.ContentControlCollectionLoadOptions
-        fullName: Word.Interfaces.ContentControlCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
-        name: Word.Interfaces.CollectionLoadOptions
-        fullName: Word.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
-    name: Word.Interfaces.ContentControlCollectionData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

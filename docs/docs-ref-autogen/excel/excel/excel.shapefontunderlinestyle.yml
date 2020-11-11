@@ -1,150 +1,84 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle:enum'
-    summary: |-
-      The type of underline applied to a font.
+### YamlMime:TSEnum
+name: Excel.ShapeFontUnderlineStyle
+uid: 'excel!Excel.ShapeFontUnderlineStyle:enum'
+package: excel!
+fullName: Excel.ShapeFontUnderlineStyle
+summary: >-
+  The type of underline applied to a font.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeFontUnderlineStyle
-    fullName: Excel.ShapeFontUnderlineStyle
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dash
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dash:member'
     package: excel!
-    children:
-      - 'excel!Excel.ShapeFontUnderlineStyle.dash:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dashHeavy:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dashLong:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dashLongHeavy:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dotDash:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dotDashHeavy:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dotDotDash:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dotDotDashHeavy:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dotted:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.dottedHeavy:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.double:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.heavy:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.none:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.single:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.wavy:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.wavyDouble:member'
-      - 'excel!Excel.ShapeFontUnderlineStyle.wavyHeavy:member'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dash:member'
-    name: dash
-    fullName: dash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dash"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dashHeavy:member'
-    name: dashHeavy
-    fullName: dashHeavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashHeavy"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dashLong:member'
-    name: dashLong
-    fullName: dashLong
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashLong"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dashLongHeavy:member'
-    name: dashLongHeavy
-    fullName: dashLongHeavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashLongHeavy"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDash:member'
-    name: dotDash
-    fullName: dotDash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DotDash"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDashHeavy:member'
-    name: dotDashHeavy
-    fullName: dotDashHeavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DotDashHeavy"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDotDash:member'
-    name: dotDotDash
-    fullName: dotDotDash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DotDotDash"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDotDashHeavy:member'
-    name: dotDotDashHeavy
-    fullName: dotDotDashHeavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DotDotDashHeavy"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dotted:member'
-    name: dotted
-    fullName: dotted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dotted"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.dottedHeavy:member'
-    name: dottedHeavy
-    fullName: dottedHeavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DottedHeavy"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.double:member'
-    name: double
-    fullName: double
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Double"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.heavy:member'
-    name: heavy
-    fullName: heavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heavy"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.single:member'
-    name: single
-    fullName: single
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Single"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.wavy:member'
-    name: wavy
-    fullName: wavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Wavy"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.wavyDouble:member'
-    name: wavyDouble
-    fullName: wavyDouble
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WavyDouble"'
-  - uid: 'excel!Excel.ShapeFontUnderlineStyle.wavyHeavy:member'
-    name: wavyHeavy
-    fullName: wavyHeavy
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WavyHeavy"'
+    summary: ''
+  - name: dashHeavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dashHeavy:member'
+    package: excel!
+    summary: ''
+  - name: dashLong
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dashLong:member'
+    package: excel!
+    summary: ''
+  - name: dashLongHeavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dashLongHeavy:member'
+    package: excel!
+    summary: ''
+  - name: dotDash
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDash:member'
+    package: excel!
+    summary: ''
+  - name: dotDashHeavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDashHeavy:member'
+    package: excel!
+    summary: ''
+  - name: dotDotDash
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDotDash:member'
+    package: excel!
+    summary: ''
+  - name: dotDotDashHeavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dotDotDashHeavy:member'
+    package: excel!
+    summary: ''
+  - name: dotted
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dotted:member'
+    package: excel!
+    summary: ''
+  - name: dottedHeavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.dottedHeavy:member'
+    package: excel!
+    summary: ''
+  - name: double
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.double:member'
+    package: excel!
+    summary: ''
+  - name: heavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.heavy:member'
+    package: excel!
+    summary: ''
+  - name: none
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.none:member'
+    package: excel!
+    summary: ''
+  - name: single
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.single:member'
+    package: excel!
+    summary: ''
+  - name: wavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.wavy:member'
+    package: excel!
+    summary: ''
+  - name: wavyDouble
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.wavyDouble:member'
+    package: excel!
+    summary: ''
+  - name: wavyHeavy
+    uid: 'excel!Excel.ShapeFontUnderlineStyle.wavyHeavy:member'
+    package: excel!
+    summary: ''

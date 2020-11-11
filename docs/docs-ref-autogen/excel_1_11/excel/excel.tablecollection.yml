@@ -1,54 +1,190 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableCollection:class'
-    summary: >-
-      Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
-      reached.
+### YamlMime:TSType
+name: Excel.TableCollection
+uid: 'excel!Excel.TableCollection:class'
+package: excel!
+fullName: Excel.TableCollection
+summary: >-
+  Represents a collection of all the tables that are part of the workbook or
+  worksheet, depending on how it was reached.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.TableCollection
-    fullName: Excel.TableCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.TableCollection#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.TableCollection#add:member(1)'
-      - 'excel!Excel.TableCollection#context:member'
-      - 'excel!Excel.TableCollection#count:member'
-      - 'excel!Excel.TableCollection#getCount:member(1)'
-      - 'excel!Excel.TableCollection#getItem:member(1)'
-      - 'excel!Excel.TableCollection#getItemAt:member(1)'
-      - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.TableCollection#items:member'
-      - 'excel!Excel.TableCollection#load:member(1)'
-      - 'excel!Excel.TableCollection#load:member(2)'
-      - 'excel!Excel.TableCollection#load:member(3)'
-      - 'excel!Excel.TableCollection#onAdded:member'
-      - 'excel!Excel.TableCollection#onChanged:member'
-      - 'excel!Excel.TableCollection#onDeleted:member'
-      - 'excel!Excel.TableCollection#toJSON:member(1)'
-  - uid: 'excel!Excel.TableCollection#add:member(1)'
+    fullName: context
     summary: >-
-      Create a new table. The range object or source address determines the worksheet under which the table will be
-      added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
-      table), an error will be thrown.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: count
+    uid: 'excel!Excel.TableCollection#count:member'
+    package: excel!
+    fullName: count
+    summary: >-
+      Returns the number of tables in the workbook.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'add(address, hasHeaders)'
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type: number
+  - name: items
+    uid: 'excel!Excel.TableCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.Table[];'
+      return:
+        type: 'excel!Excel.<xref uid="Table:class" />[]'
+  - name: onAdded
+    uid: 'excel!Excel.TableCollection#onAdded:member'
+    package: excel!
+    fullName: onAdded
+    summary: >-
+      Occurs when new table is added in a workbook.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onAdded:
+        OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;
+      return:
+        type: >-
+          office!OfficeExtension.<xref uid="EventHandlers:class"
+          />&lt;excel!Excel.<xref uid="TableAddedEventArgs:interface" />&gt;
+  - name: onChanged
+    uid: 'excel!Excel.TableCollection#onChanged:member'
+    package: excel!
+    fullName: onChanged
+    summary: >-
+      Occurs when data changes on any table in a workbook, or a worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onChanged:
+        OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;
+      return:
+        type: >-
+          office!OfficeExtension.<xref uid="EventHandlers:class"
+          />&lt;excel!Excel.<xref uid="TableChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
+          await Excel.run(async (context) => {
+              let tables = context.workbook.tables;
+              tables.onChanged.add(onChange);
+
+              await context.sync();
+              console.log("A handler has been registered for the table collection onChanged event");
+          });
+
+          ```
+  - name: onDeleted
+    uid: 'excel!Excel.TableCollection#onDeleted:member'
+    package: excel!
+    fullName: onDeleted
+    summary: >-
+      Occurs when the specified table is deleted in a workbook.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeleted:
+        OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;
+      return:
+        type: >-
+          office!OfficeExtension.<xref uid="EventHandlers:class"
+          />&lt;excel!Excel.<xref uid="TableDeletedEventArgs:interface" />&gt;
+methods:
+  - name: 'add(address, hasHeaders)'
+    uid: 'excel!Excel.TableCollection#add:member(1)'
+    package: excel!
     fullName: 'add(address, hasHeaders)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Create a new table. The range object or source address determines the
+      worksheet under which the table will be added. If the table cannot be
+      added (e.g., because the address is invalid, or the table would overlap
+      with another table), an error will be thrown.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'add(address: Range | string, hasHeaders: boolean): Excel.Table;'
+      parameters:
+        - id: address
+          description: >-
+            A Range object, or a string address or name of the range
+            representing the data source. If the address does not contain a
+            sheet name, the currently-active sheet is used. \[Api set: ExcelApi
+            1.1 / 1.3. Prior to ExcelApi 1.3, this parameter must be a string.
+            Starting with Excel Api 1.3, this parameter may be a Range object or
+            a string.\]
+          type: 'excel!Excel.<xref uid="Range:class" /> | string'
+        - id: hasHeaders
+          description: >-
+            Boolean value that indicates whether the data being imported has
+            column labels. If the source does not contain headers (i.e,. when
+            this property set to false), Excel will automatically generate
+            header shifting the data down by one row.
+          type: boolean
       return:
-        type:
-          - 'excel!Excel.Table:class'
+        type: 'excel!Excel.<xref uid="Table:class" />'
         description: |-
 
 
@@ -68,82 +204,47 @@ items:
               }
           });
           ```
-      parameters:
-        - id: address
-          description: >-
-            A Range object, or a string address or name of the range representing the data source. If the address does
-            not contain a sheet name, the currently-active sheet is used. \[Api set: ExcelApi 1.1 / 1.3. Prior to
-            ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range
-            object or a string.\]
-          type:
-            - 'excel!Excel.TableCollection#add~0:complex'
-        - id: hasHeaders
-          description: >-
-            Boolean value that indicates whether the data being imported has column labels. If the source does not
-            contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting
-            the data down by one row.
-          type:
-            - boolean
-  - uid: 'excel!Excel.TableCollection#context:member'
+  - name: getCount()
+    uid: 'excel!Excel.TableCollection#getCount:member(1)'
+    package: excel!
+    fullName: getCount()
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.TableCollection#count:member'
-    summary: |-
-      Returns the number of tables in the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableCollection#getCount:member(1)'
-    summary: |-
       Gets the number of tables in the collection.
 
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type:
-          - 'excel!Excel.TableCollection#getCount~0:complex'
+        type: 'office!OfficeExtension.<xref uid="ClientResult:class" />&lt;number&gt;'
         description: ''
-  - uid: 'excel!Excel.TableCollection#getItem:member(1)'
-    summary: |-
+  - name: getItem(key)
+    uid: 'excel!Excel.TableCollection#getItem:member(1)'
+    package: excel!
+    fullName: getItem(key)
+    summary: >-
       Gets a table by Name or ID.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItem(key: string): Excel.Table;'
+      parameters:
+        - id: key
+          description: Name or ID of the table to be retrieved.
+          type: string
       return:
-        type:
-          - 'excel!Excel.Table:class'
+        type: 'excel!Excel.<xref uid="Table:class" />'
         description: |-
 
 
@@ -164,26 +265,28 @@ items:
               }
           });
           ```
-      parameters:
-        - id: key
-          description: Name or ID of the table to be retrieved.
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
-    summary: |-
+  - name: getItemAt(index)
+    uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
+    summary: >-
       Gets a table based on its position in the collection.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItemAt(index: number): Excel.Table;'
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type: number
       return:
-        type:
-          - 'excel!Excel.Table:class'
+        type: 'excel!Excel.<xref uid="Table:class" />'
         description: |-
 
 
@@ -203,80 +306,75 @@ items:
               }
           });
           ```
-      parameters:
-        - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
-          type:
-            - number
-  - uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-    summary: |-
-      Gets a table by Name or ID. If the table does not exist, will return a null object.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItemOrNullObject(key)
+  - name: getItemOrNullObject(key)
+    uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
+    package: excel!
     fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets a table by Name or ID. If the table does not exist, will return a
+      null object.
+
+
+      \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItemOrNullObject(key: string): Excel.Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:class'
-        description: ''
       parameters:
         - id: key
           description: Name or ID of the table to be retrieved.
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly items: Excel.Table[];'
+          type: string
       return:
-        type:
-          - 'excel!Excel.TableCollection#items~0:complex'
-  - uid: 'excel!Excel.TableCollection#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+        type: 'excel!Excel.<xref uid="Table:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.TableCollection#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.TableCollection;
-      return:
-        type:
-          - 'excel!Excel.TableCollection:class'
-        description: ''
+        load(options?: Excel.Interfaces.TableCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.TableCollection#load~0:complex'
-  - uid: 'excel!Excel.TableCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            excel!Excel.Interfaces.<xref
+            uid="TableCollectionLoadOptions:interface" /> &
+            excel!Excel.Interfaces.<xref uid="CollectionLoadOptions:interface"
+            />
+      return:
+        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.TableCollection#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.TableCollection;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.TableCollection:class'
+        type: 'excel!Excel.<xref uid="TableCollection:class" />'
         description: |-
 
 
@@ -315,207 +413,50 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableCollection#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.TableCollection#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection:class'
-        description: ''
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.TableCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'excel!Excel.TableCollection#onAdded:member'
-    summary: |-
-      Occurs when new table is added in a workbook.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onAdded
-    fullName: onAdded
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: 'office!OfficeExtension.<xref uid="LoadOption:interface" />'
       return:
-        type:
-          - 'excel!Excel.TableCollection#onAdded~0:complex'
-  - uid: 'excel!Excel.TableCollection#onChanged:member'
-    summary: |-
-      Occurs when data changes on any table in a workbook, or a worksheet.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onChanged
-    fullName: onChanged
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection#onChanged~0:complex'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
-
-          await Excel.run(async (context) => {
-              let tables = context.workbook.tables;
-              tables.onChanged.add(onChange);
-
-              await context.sync();
-              console.log("A handler has been registered for the table collection onChanged event");
-          });
-
-          ```
-  - uid: 'excel!Excel.TableCollection#onDeleted:member'
-    summary: |-
-      Occurs when the specified table is deleted in a workbook.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onDeleted
-    fullName: onDeleted
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection#onDeleted~0:complex'
-  - uid: 'excel!Excel.TableCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`<!-- -->) that contains an "items" array
-      with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+        type: 'excel!Excel.<xref uid="TableCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.TableCollection#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original `Excel.TableCollection`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.TableCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties
+      from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableCollectionData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableCollectionData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="TableCollectionData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.Table:class'
-    name: Excel.Table
-  - uid: 'excel!Excel.TableCollection#add~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.TableCollection#getCount~0:complex'
-    name: OfficeExtension.ClientResult<number>
-    fullName: OfficeExtension.ClientResult<number>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.TableCollection#items~0:complex'
-    name: 'Excel.Table[]'
-    fullName: 'Excel.Table[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Table:class'
-        name: Excel.Table
-        fullName: Excel.Table
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.TableCollection:class'
-    name: Excel.TableCollection
-  - uid: 'excel!Excel.TableCollection#load~0:complex'
-    name: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    fullName: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-        name: Excel.Interfaces.TableCollectionLoadOptions
-        fullName: Excel.Interfaces.TableCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
-        name: Excel.Interfaces.CollectionLoadOptions
-        fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'excel!Excel.TableCollection#onAdded~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.TableAddedEventArgs:interface'
-        name: Excel.TableAddedEventArgs
-        fullName: Excel.TableAddedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.TableCollection#onChanged~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.TableChangedEventArgs:interface'
-        name: Excel.TableChangedEventArgs
-        fullName: Excel.TableChangedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.TableCollection#onDeleted~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.TableDeletedEventArgs:interface'
-        name: Excel.TableDeletedEventArgs
-        fullName: Excel.TableDeletedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.Interfaces.TableCollectionData:interface'
-    name: Excel.Interfaces.TableCollectionData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

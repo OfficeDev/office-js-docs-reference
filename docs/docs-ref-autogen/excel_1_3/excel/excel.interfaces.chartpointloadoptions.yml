@@ -1,64 +1,70 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions:interface'
-    summary: |-
-      Represents a point of a series in a chart.
+### YamlMime:TSType
+name: Excel.Interfaces.ChartPointLoadOptions
+uid: 'excel!Excel.Interfaces.ChartPointLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartPointLoadOptions
+summary: >-
+  Represents a point of a series in a chart.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartPointLoadOptions
-    fullName: Excel.Interfaces.ChartPointLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartPointLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ChartPointLoadOptions#format:member'
-      - 'excel!Excel.Interfaces.ChartPointLoadOptions#value:member'
-  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#format:member'
-    summary: |-
+        type: boolean
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#format:member'
+    package: excel!
+    fullName: format
+    summary: >-
       Encapsulates the format properties chart point.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#value:member'
-    summary: |-
+        type: >-
+          excel!Excel.Interfaces.<xref
+          uid="ChartPointFormatLoadOptions:interface" />
+  - name: value
+    uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#value:member'
+    package: excel!
+    fullName: value
+    summary: >-
       Returns the value of a chart point.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointFormatLoadOptions
+        type: boolean

@@ -1,43 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SortOn:enum'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.SortOn
-    fullName: Excel.SortOn
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.SortOn
+uid: 'excel!Excel.SortOn:enum'
+package: excel!
+fullName: Excel.SortOn
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: cellColor
+    uid: 'excel!Excel.SortOn.cellColor:member'
     package: excel!
-    children:
-      - 'excel!Excel.SortOn.cellColor:member'
-      - 'excel!Excel.SortOn.fontColor:member'
-      - 'excel!Excel.SortOn.icon:member'
-      - 'excel!Excel.SortOn.value:member'
-  - uid: 'excel!Excel.SortOn.cellColor:member'
-    name: cellColor
-    fullName: cellColor
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CellColor"'
-  - uid: 'excel!Excel.SortOn.fontColor:member'
-    name: fontColor
-    fullName: fontColor
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FontColor"'
-  - uid: 'excel!Excel.SortOn.icon:member'
-    name: icon
-    fullName: icon
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Icon"'
-  - uid: 'excel!Excel.SortOn.value:member'
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Value"'
+    summary: ''
+  - name: fontColor
+    uid: 'excel!Excel.SortOn.fontColor:member'
+    package: excel!
+    summary: ''
+  - name: icon
+    uid: 'excel!Excel.SortOn.icon:member'
+    package: excel!
+    summary: ''
+  - name: value
+    uid: 'excel!Excel.SortOn.value:member'
+    package: excel!
+    summary: ''

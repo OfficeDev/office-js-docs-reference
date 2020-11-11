@@ -1,127 +1,114 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!OfficeExtension.DebugInfo:interface'
-    summary: Provides information about an error.
-    name: OfficeExtension.DebugInfo
-    fullName: OfficeExtension.DebugInfo
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OfficeExtension.DebugInfo
+uid: 'office!OfficeExtension.DebugInfo:interface'
+package: office!
+fullName: OfficeExtension.DebugInfo
+summary: Provides information about an error.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: 'office!OfficeExtension.DebugInfo#code:member'
     package: office!
-    children:
-      - 'office!OfficeExtension.DebugInfo#code:member'
-      - 'office!OfficeExtension.DebugInfo#errorLocation:member'
-      - 'office!OfficeExtension.DebugInfo#fullStatements:member'
-      - 'office!OfficeExtension.DebugInfo#innerError:member'
-      - 'office!OfficeExtension.DebugInfo#message:member'
-      - 'office!OfficeExtension.DebugInfo#statements:member'
-      - 'office!OfficeExtension.DebugInfo#surroundingStatements:member'
-  - uid: 'office!OfficeExtension.DebugInfo#code:member'
-    summary: 'Error code string, such as "InvalidArgument".'
-    name: code
     fullName: code
-    langs:
-      - typeScript
-    type: property
+    summary: 'Error code string, such as "InvalidArgument".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'code: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.DebugInfo#errorLocation:member'
-    summary: 'The object type and property or method name (or similar information), if available.'
-    name: errorLocation
+        type: string
+  - name: errorLocation
+    uid: 'office!OfficeExtension.DebugInfo#errorLocation:member'
+    package: office!
     fullName: errorLocation
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The object type and property or method name (or similar information), if
+      available.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'errorLocation?: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.DebugInfo#fullStatements:member'
-    summary: >-
-      All statements in the batch request (including any potentially-sensitive information that was specified in the
-      request), if available.
-
-
-      These statements may not match the code exactly as written, but will be a close approximation.
-    name: fullStatements
+        type: string
+  - name: fullStatements
+    uid: 'office!OfficeExtension.DebugInfo#fullStatements:member'
+    package: office!
     fullName: fullStatements
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      All statements in the batch request (including any potentially-sensitive
+      information that was specified in the request), if available.
+
+
+      These statements may not match the code exactly as written, but will be a
+      close approximation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fullStatements?: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: 'office!OfficeExtension.DebugInfo#innerError:member'
-    summary: 'Inner error, if applicable.'
-    name: innerError
+        type: 'string[]'
+  - name: innerError
+    uid: 'office!OfficeExtension.DebugInfo#innerError:member'
+    package: office!
     fullName: innerError
-    langs:
-      - typeScript
-    type: property
+    summary: 'Inner error, if applicable.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'innerError?: DebugInfo | string;'
       return:
-        type:
-          - 'office!OfficeExtension.DebugInfo#innerError~0:complex'
-  - uid: 'office!OfficeExtension.DebugInfo#message:member'
-    summary: The error message passed through from the host Office application.
-    name: message
+        type: 'office!OfficeExtension.<xref uid="DebugInfo:interface" /> | string'
+  - name: message
+    uid: 'office!OfficeExtension.DebugInfo#message:member'
+    package: office!
     fullName: message
-    langs:
-      - typeScript
-    type: property
+    summary: The error message passed through from the host Office application.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'message: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.DebugInfo#statements:member'
+        type: string
+  - name: statements
+    uid: 'office!OfficeExtension.DebugInfo#statements:member'
+    package: office!
+    fullName: statements
     summary: >-
       The statement that caused the error, if available.
 
 
-      This statement will never contain any potentially-sensitive data and may not match the code exactly as written,
-      but will be a close approximation.
-    name: statements
-    fullName: statements
-    langs:
-      - typeScript
-    type: property
+      This statement will never contain any potentially-sensitive data and may
+      not match the code exactly as written, but will be a close approximation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'statements?: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.DebugInfo#surroundingStatements:member'
-    summary: >-
-      The statements that closely precede and follow the statement that caused the error, if available.
-
-
-      These statements will never contain any potentially-sensitive data and may not match the code exactly as written,
-      but will be a close approximation.
-    name: surroundingStatements
+        type: string
+  - name: surroundingStatements
+    uid: 'office!OfficeExtension.DebugInfo#surroundingStatements:member'
+    package: office!
     fullName: surroundingStatements
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The statements that closely precede and follow the statement that caused
+      the error, if available.
+
+
+      These statements will never contain any potentially-sensitive data and may
+      not match the code exactly as written, but will be a close approximation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'surroundingStatements?: string[];'
       return:
-        type:
-          - 'string[]'
-references:
-  - uid: 'office!OfficeExtension.DebugInfo#innerError~0:complex'
-    name: DebugInfo | string
-    fullName: OfficeExtension.DebugInfo | string
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.DebugInfo:interface'
-        name: DebugInfo
-        fullName: OfficeExtension.DebugInfo
-      - name: ' | string'
-        fullName: ' | string'
+        type: 'string[]'

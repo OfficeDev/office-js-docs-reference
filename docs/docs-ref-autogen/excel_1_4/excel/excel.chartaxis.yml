@@ -1,97 +1,228 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxis:class'
-    summary: |-
-      Represents a single axis in a chart.
+### YamlMime:TSType
+name: Excel.ChartAxis
+uid: 'excel!Excel.ChartAxis:class'
+package: excel!
+fullName: Excel.ChartAxis
+summary: >-
+  Represents a single axis in a chart.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartAxis
-    fullName: Excel.ChartAxis
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartAxis#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartAxis#context:member'
-      - 'excel!Excel.ChartAxis#format:member'
-      - 'excel!Excel.ChartAxis#load:member(1)'
-      - 'excel!Excel.ChartAxis#load:member(2)'
-      - 'excel!Excel.ChartAxis#load:member(3)'
-      - 'excel!Excel.ChartAxis#majorGridlines:member'
-      - 'excel!Excel.ChartAxis#majorUnit:member'
-      - 'excel!Excel.ChartAxis#maximum:member'
-      - 'excel!Excel.ChartAxis#minimum:member'
-      - 'excel!Excel.ChartAxis#minorGridlines:member'
-      - 'excel!Excel.ChartAxis#minorUnit:member'
-      - 'excel!Excel.ChartAxis#set:member(1)'
-      - 'excel!Excel.ChartAxis#set:member(2)'
-      - 'excel!Excel.ChartAxis#title:member'
-      - 'excel!Excel.ChartAxis#toJSON:member(1)'
-  - uid: 'excel!Excel.ChartAxis#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartAxis#format:member'
-    summary: |-
-      Represents the formatting of a chart object, which includes line and font formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
+        type: 'excel!Excel.<xref uid="RequestContext:class" />'
+  - name: format
+    uid: 'excel!Excel.ChartAxis#format:member'
+    package: excel!
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formatting of a chart object, which includes line and font
+      formatting.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly format: Excel.ChartAxisFormat;'
       return:
-        type:
-          - 'excel!Excel.ChartAxisFormat:class'
-  - uid: 'excel!Excel.ChartAxis#load:member(1)'
+        type: 'excel!Excel.<xref uid="ChartAxisFormat:class" />'
+  - name: majorGridlines
+    uid: 'excel!Excel.ChartAxis#majorGridlines:member'
+    package: excel!
+    fullName: majorGridlines
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+      Returns a Gridlines object that represents the major gridlines for the
+      specified axis.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly majorGridlines: Excel.ChartGridlines;'
+      return:
+        type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+  - name: majorUnit
+    uid: 'excel!Excel.ChartAxis#majorUnit:member'
+    package: excel!
+    fullName: majorUnit
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a
+      numeric value or an empty string. The returned value is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorUnit: any;'
+      return:
+        type: any
+  - name: maximum
+    uid: 'excel!Excel.ChartAxis#maximum:member'
+    package: excel!
+    fullName: maximum
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric
+      value or an empty string (for automatic axis values). The returned value
+      is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maximum: any;'
+      return:
+        type: any
+  - name: minimum
+    uid: 'excel!Excel.ChartAxis#minimum:member'
+    package: excel!
+    fullName: minimum
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric
+      value or an empty string (for automatic axis values). The returned value
+      is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minimum: any;'
+      return:
+        type: any
+  - name: minorGridlines
+    uid: 'excel!Excel.ChartAxis#minorGridlines:member'
+    package: excel!
+    fullName: minorGridlines
+    summary: >-
+      Returns a Gridlines object that represents the minor gridlines for the
+      specified axis.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly minorGridlines: Excel.ChartGridlines;'
+      return:
+        type: 'excel!Excel.<xref uid="ChartGridlines:class" />'
+  - name: minorUnit
+    uid: 'excel!Excel.ChartAxis#minorUnit:member'
+    package: excel!
+    fullName: minorUnit
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a
+      numeric value or an empty string (for automatic axis values). The returned
+      value is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorUnit: any;'
+      return:
+        type: any
+  - name: title
+    uid: 'excel!Excel.ChartAxis#title:member'
+    package: excel!
+    fullName: title
+    summary: >-
+      Represents the axis title.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly title: Excel.ChartAxisTitle;'
+      return:
+        type: 'excel!Excel.<xref uid="ChartAxisTitle:class" />'
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.ChartAxis#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
-      return:
-        type:
-          - 'excel!Excel.ChartAxis:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
-  - uid: 'excel!Excel.ChartAxis#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: 'excel!Excel.Interfaces.<xref uid="ChartAxisLoadOptions:interface" />'
+      return:
+        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartAxis#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxis;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.ChartAxis:class'
+        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
         description: |-
 
 
@@ -113,238 +244,107 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartAxis#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartAxis#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartAxis;
-      return:
-        type:
-          - 'excel!Excel.ChartAxis:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.ChartAxis#majorGridlines:member'
-    summary: |-
-      Returns a Gridlines object that represents the major gridlines for the specified axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: majorGridlines
-    fullName: majorGridlines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly majorGridlines: Excel.ChartGridlines;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - 'excel!Excel.ChartGridlines:class'
-  - uid: 'excel!Excel.ChartAxis#majorUnit:member'
+        type: 'excel!Excel.<xref uid="ChartAxis:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartAxis#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
-      returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: majorUnit
-    fullName: majorUnit
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'majorUnit: any;'
-      return:
-        type:
-          - any
-  - uid: 'excel!Excel.ChartAxis#maximum:member'
-    summary: >-
-      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: maximum
-    fullName: maximum
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'maximum: any;'
-      return:
-        type:
-          - any
-  - uid: 'excel!Excel.ChartAxis#minimum:member'
-    summary: >-
-      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minimum
-    fullName: minimum
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'minimum: any;'
-      return:
-        type:
-          - any
-  - uid: 'excel!Excel.ChartAxis#minorGridlines:member'
-    summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minorGridlines
-    fullName: minorGridlines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly minorGridlines: Excel.ChartGridlines;'
-      return:
-        type:
-          - 'excel!Excel.ChartGridlines:class'
-  - uid: 'excel!Excel.ChartAxis#minorUnit:member'
-    summary: >-
-      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
-      automatic axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minorUnit
-    fullName: minorUnit
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'minorUnit: any;'
-      return:
-        type:
-          - any
-  - uid: 'excel!Excel.ChartAxis#set:member(1)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartAxis): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartAxisUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.ChartAxisUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: 'excel!Excel.Interfaces.<xref uid="ChartAxisUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.ChartAxis#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: 'office!OfficeExtension.<xref uid="UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartAxis#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.ChartAxis): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.ChartAxis:class'
-  - uid: 'excel!Excel.ChartAxis#title:member'
-    summary: |-
-      Represents the axis title.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly title: Excel.ChartAxisTitle;'
+          type: 'excel!Excel.<xref uid="ChartAxis:class" />'
       return:
-        type:
-          - 'excel!Excel.ChartAxisTitle:class'
-  - uid: 'excel!Excel.ChartAxis#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ChartAxisData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartAxis#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.ChartAxis object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.ChartAxisData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisData:interface'
+        type: 'excel!Excel.Interfaces.<xref uid="ChartAxisData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ChartAxisFormat:class'
-    name: Excel.ChartAxisFormat
-  - uid: 'excel!Excel.ChartAxis:class'
-    name: Excel.ChartAxis
-  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxisLoadOptions
-  - uid: 'excel!Excel.ChartGridlines:class'
-    name: Excel.ChartGridlines
-  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
-    name: Interfaces.ChartAxisUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.ChartAxisTitle:class'
-    name: Excel.ChartAxisTitle
-  - uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
-    name: Excel.Interfaces.ChartAxisData
+extends: 'office!OfficeExtension.<xref uid="ClientObject:class" />'

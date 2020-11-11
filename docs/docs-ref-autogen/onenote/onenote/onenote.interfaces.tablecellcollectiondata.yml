@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
-    summary: An interface describing the data returned by calling "tableCellCollection.toJSON()".
-    name: OneNote.Interfaces.TableCellCollectionData
-    fullName: OneNote.Interfaces.TableCellCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.TableCellCollectionData
+uid: 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.TableCellCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  "tableCellCollection.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.TableCellCollectionData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.TableCellCollectionData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.TableCellData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableCellCollectionData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionData#items~0:complex'
-    name: 'OneNote.Interfaces.TableCellData[]'
-    fullName: 'OneNote.Interfaces.TableCellData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
-        name: OneNote.Interfaces.TableCellData
-        fullName: OneNote.Interfaces.TableCellData
-      - name: '[]'
-        fullName: '[]'
+        type: 'onenote!OneNote.Interfaces.<xref uid="TableCellData:interface" />[]'

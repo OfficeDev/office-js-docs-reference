@@ -1,167 +1,199 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
-    summary: |-
-      Represents a collection of section groups.
+### YamlMime:TSType
+name: OneNote.Interfaces.SectionGroupCollectionLoadOptions
+uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
+package: onenote!
+fullName: OneNote.Interfaces.SectionGroupCollectionLoadOptions
+summary: >-
+  Represents a collection of section groups.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.SectionGroupCollectionLoadOptions
-    fullName: OneNote.Interfaces.SectionGroupCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#$all:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#$all:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#clientUrl:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#id:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#name:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#notebook:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroup:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroupOrNull:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sectionGroups:member'
-      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sections:member'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#clientUrl:member'
-    summary: |-
-      For EACH ITEM in the collection: The client url of the section group. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: clientUrl
+        type: boolean
+  - name: clientUrl
+    uid: >-
+      onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#clientUrl:member
+    package: onenote!
     fullName: clientUrl
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: The client url of the section group. Read
+      only
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clientUrl?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#id:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the ID of the section group. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
+        type: boolean
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#id:member'
+    package: onenote!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the ID of the section group.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#name:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the name of the section group. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: name
+        type: boolean
+  - name: name
+    uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#name:member'
+    package: onenote!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the name of the section group.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#notebook:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the notebook that contains the section group.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: notebook
+        type: boolean
+  - name: notebook
+    uid: >-
+      onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#notebook:member
+    package: onenote!
     fullName: notebook
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the notebook that contains the
+      section group.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroup:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets the section group that contains the section group. Throws ItemNotFound if
-      the section group is a direct child of the notebook.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentSectionGroup
+        type: >-
+          onenote!OneNote.Interfaces.<xref uid="NotebookLoadOptions:interface"
+          />
+  - name: parentSectionGroup
+    uid: >-
+      onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroup:member
+    package: onenote!
     fullName: parentSectionGroup
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the section group that contains the
+      section group. Throws ItemNotFound if the section group is a direct child
+      of the notebook.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroupOrNull:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets the section group that contains the section group. Returns null if the
-      section group is a direct child of the notebook.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentSectionGroupOrNull
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="SectionGroupLoadOptions:interface" />
+  - name: parentSectionGroupOrNull
+    uid: >-
+      onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroupOrNull:member
+    package: onenote!
     fullName: parentSectionGroupOrNull
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the section group that contains the
+      section group. Returns null if the section group is a direct child of the
+      notebook.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sectionGroups:member'
-    summary: |-
-      For EACH ITEM in the collection: The collection of section groups in the section group. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: sectionGroups
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="SectionGroupLoadOptions:interface" />
+  - name: sectionGroups
+    uid: >-
+      onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sectionGroups:member
+    package: onenote!
     fullName: sectionGroups
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: The collection of section groups in the
+      section group. Read only
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sections:member'
-    summary: |-
-      For EACH ITEM in the collection: The collection of sections in the section group. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: sections
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="SectionGroupCollectionLoadOptions:interface" />
+  - name: sections
+    uid: >-
+      onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sections:member
+    package: onenote!
     fullName: sections
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: The collection of sections in the section
+      group. Read only
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sections?: OneNote.Interfaces.SectionCollectionLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
-references:
-  - uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
-    name: OneNote.Interfaces.NotebookLoadOptions
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
-    name: OneNote.Interfaces.SectionGroupLoadOptions
-  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionGroupCollectionLoadOptions
-  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionCollectionLoadOptions
+        type: >-
+          onenote!OneNote.Interfaces.<xref
+          uid="SectionCollectionLoadOptions:interface" />

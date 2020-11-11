@@ -1,26 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.AsyncContextOptions:interface'
-    summary: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-    name: Office.AsyncContextOptions
-    fullName: Office.AsyncContextOptions
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.AsyncContextOptions
+uid: 'office!Office.AsyncContextOptions:interface'
+package: office!
+fullName: Office.AsyncContextOptions
+summary: >-
+  Provides an option for preserving context data of any type, unchanged, for use
+  in a callback.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: asyncContext
+    uid: 'office!Office.AsyncContextOptions#asyncContext:member'
     package: office!
-    children:
-      - 'office!Office.AsyncContextOptions#asyncContext:member'
-  - uid: 'office!Office.AsyncContextOptions#asyncContext:member'
-    summary: >-
-      A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult`
-      object that is passed to a callback.
-    name: asyncContext
     fullName: asyncContext
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the
+      `asyncContext` property of the `AsyncResult` object that is passed to a
+      callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'asyncContext?: any'
       return:
-        type:
-          - any
+        type: any

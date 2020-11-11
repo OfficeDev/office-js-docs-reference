@@ -1,41 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.OverlayVerticalAlignment:enum'
-    summary: |-
-      Represents the Vertical Alignment of the Overlay relative to the shape.
+### YamlMime:TSEnum
+name: Visio.OverlayVerticalAlignment
+uid: 'visio!Visio.OverlayVerticalAlignment:enum'
+package: visio!
+fullName: Visio.OverlayVerticalAlignment
+summary: >-
+  Represents the Vertical Alignment of the Overlay relative to the shape.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.OverlayVerticalAlignment
-    fullName: Visio.OverlayVerticalAlignment
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'visio!Visio.OverlayVerticalAlignment.bottom:member'
     package: visio!
-    children:
-      - 'visio!Visio.OverlayVerticalAlignment.bottom:member'
-      - 'visio!Visio.OverlayVerticalAlignment.middle:member'
-      - 'visio!Visio.OverlayVerticalAlignment.top:member'
-  - uid: 'visio!Visio.OverlayVerticalAlignment.bottom:member'
     summary: bottom
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bottom"'
-  - uid: 'visio!Visio.OverlayVerticalAlignment.middle:member'
+  - name: middle
+    uid: 'visio!Visio.OverlayVerticalAlignment.middle:member'
+    package: visio!
     summary: middle
-    name: middle
-    fullName: middle
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Middle"'
-  - uid: 'visio!Visio.OverlayVerticalAlignment.top:member'
+  - name: top
+    uid: 'visio!Visio.OverlayVerticalAlignment.top:member'
+    package: visio!
     summary: top
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Top"'

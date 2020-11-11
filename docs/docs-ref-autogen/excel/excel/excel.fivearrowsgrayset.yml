@@ -1,74 +1,74 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FiveArrowsGraySet:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.FiveArrowsGraySet
-    fullName: Excel.FiveArrowsGraySet
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.FiveArrowsGraySet
+uid: 'excel!Excel.FiveArrowsGraySet:interface'
+package: excel!
+fullName: Excel.FiveArrowsGraySet
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: grayDownArrow
+    uid: 'excel!Excel.FiveArrowsGraySet#grayDownArrow:member'
     package: excel!
-    children:
-      - 'excel!Excel.FiveArrowsGraySet#grayDownArrow:member'
-      - 'excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member'
-      - 'excel!Excel.FiveArrowsGraySet#graySideArrow:member'
-      - 'excel!Excel.FiveArrowsGraySet#grayUpArrow:member'
-      - 'excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member'
-  - uid: 'excel!Excel.FiveArrowsGraySet#grayDownArrow:member'
-    name: grayDownArrow
     fullName: grayDownArrow
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'grayDownArrow: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member'
-    name: grayDownInclineArrow
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: grayDownInclineArrow
+    uid: 'excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member'
+    package: excel!
     fullName: grayDownInclineArrow
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'grayDownInclineArrow: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveArrowsGraySet#graySideArrow:member'
-    name: graySideArrow
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: graySideArrow
+    uid: 'excel!Excel.FiveArrowsGraySet#graySideArrow:member'
+    package: excel!
     fullName: graySideArrow
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'graySideArrow: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveArrowsGraySet#grayUpArrow:member'
-    name: grayUpArrow
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: grayUpArrow
+    uid: 'excel!Excel.FiveArrowsGraySet#grayUpArrow:member'
+    package: excel!
     fullName: grayUpArrow
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'grayUpArrow: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member'
-    name: grayUpInclineArrow
+        type: 'excel!Excel.<xref uid="Icon:interface" />'
+  - name: grayUpInclineArrow
+    uid: 'excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member'
+    package: excel!
     fullName: grayUpInclineArrow
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'grayUpInclineArrow: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-references:
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
+        type: 'excel!Excel.<xref uid="Icon:interface" />'

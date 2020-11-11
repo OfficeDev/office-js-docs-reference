@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
-    summary: An interface describing the data returned by calling "pageCollection.toJSON()".
-    name: OneNote.Interfaces.PageCollectionData
-    fullName: OneNote.Interfaces.PageCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.PageCollectionData
+uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.PageCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  "pageCollection.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.PageCollectionData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.PageCollectionData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.PageCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.PageData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.PageCollectionData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.PageCollectionData#items~0:complex'
-    name: 'OneNote.Interfaces.PageData[]'
-    fullName: 'OneNote.Interfaces.PageData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.PageData:interface'
-        name: OneNote.Interfaces.PageData
-        fullName: OneNote.Interfaces.PageData
-      - name: '[]'
-        fullName: '[]'
+        type: 'onenote!OneNote.Interfaces.<xref uid="PageData:interface" />[]'

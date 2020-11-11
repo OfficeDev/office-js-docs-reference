@@ -1,46 +1,53 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CommentDetail:interface'
-    summary: |-
-      A structure for the comment Id and Ids of its related replies.
+### YamlMime:TSType
+name: Excel.CommentDetail
+uid: 'excel!Excel.CommentDetail:interface'
+package: excel!
+fullName: Excel.CommentDetail
+summary: >-
+  A structure for the comment Id and Ids of its related replies.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CommentDetail
-    fullName: Excel.CommentDetail
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: commentId
+    uid: 'excel!Excel.CommentDetail#commentId:member'
     package: excel!
-    children:
-      - 'excel!Excel.CommentDetail#commentId:member'
-      - 'excel!Excel.CommentDetail#replyIds:member'
-  - uid: 'excel!Excel.CommentDetail#commentId:member'
-    summary: |-
+    fullName: commentId
+    summary: >-
       Represents the id of comment.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: commentId
-    fullName: commentId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'commentId: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.CommentDetail#replyIds:member'
-    summary: |-
+        type: string
+  - name: replyIds
+    uid: 'excel!Excel.CommentDetail#replyIds:member'
+    package: excel!
+    fullName: replyIds
+    summary: >-
       Represents the ids of the related replies belong to comment.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: replyIds
-    fullName: replyIds
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'replyIds: string[];'
       return:
-        type:
-          - 'string[]'
+        type: 'string[]'

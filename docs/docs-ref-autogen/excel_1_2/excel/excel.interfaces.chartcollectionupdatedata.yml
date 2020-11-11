@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData:interface'
-    summary: 'An interface for updating data on the ChartCollection object, for use in `chartCollection.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartCollectionUpdateData
-    fullName: Excel.Interfaces.ChartCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartCollectionUpdateData
+uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartCollectionUpdateData
+summary: >-
+  An interface for updating data on the ChartCollection object, for use in
+  `chartCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartCollectionUpdateData#items:member'
-  - uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.ChartData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData#items~0:complex'
-    name: 'Excel.Interfaces.ChartData[]'
-    fullName: 'Excel.Interfaces.ChartData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.ChartData:interface'
-        name: Excel.Interfaces.ChartData
-        fullName: Excel.Interfaces.ChartData
-      - name: '[]'
-        fullName: '[]'
+        type: 'excel!Excel.Interfaces.<xref uid="ChartData:interface" />[]'
