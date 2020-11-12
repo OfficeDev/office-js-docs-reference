@@ -13,7 +13,7 @@ interfaces:
 functions:
   - name: 'OfficeRuntime.displayWebDialog(url, options)'
     uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
-    package: office-runtime
+    package: office-runtime!
     summary: >-
       Method that enables a pop up web dialog box.
 

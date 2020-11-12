@@ -149,7 +149,7 @@ interfaces:
 functions:
   - name: OneNote.run(batch)
     uid: 'onenote!OneNote.run:function(1)'
-    package: onenote
+    package: onenote!
     summary: >-
       Executes a batch script that performs actions on the OneNote object model,
       using a new request context. When the promise is resolved, any tracked
@@ -179,7 +179,7 @@ functions:
         description: ''
   - name: 'OneNote.run(object, batch)'
     uid: 'onenote!OneNote.run:function(2)'
-    package: onenote
+    package: onenote!
     summary: >-
       Executes a batch script that performs actions on the OneNote object model,
       using the request context of a previously-created API object.
@@ -211,7 +211,7 @@ functions:
         description: ''
   - name: 'OneNote.run(objects, batch)'
     uid: 'onenote!OneNote.run:function(3)'
-    package: onenote
+    package: onenote!
     summary: >-
       Executes a batch script that performs actions on the OneNote object model,
       using the request context of previously-created API objects.

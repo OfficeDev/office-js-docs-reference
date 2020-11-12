@@ -119,7 +119,7 @@ interfaces:
 functions:
   - name: 'Word.run(objects, batch)'
     uid: 'word!Word.run:function(1)'
-    package: word
+    package: word!
     summary: >-
       Executes a batch script that performs actions on the Word object model,
       using the RequestContext of previously created API objects.
@@ -155,7 +155,7 @@ functions:
         description: ''
   - name: 'Word.run(object, batch)'
     uid: 'word!Word.run:function(2)'
-    package: word
+    package: word!
     summary: >-
       Executes a batch script that performs actions on the Word object model,
       using the RequestContext of a previously created API object. When the
@@ -191,7 +191,7 @@ functions:
         description: ''
   - name: Word.run(batch)
     uid: 'word!Word.run:function(3)'
-    package: word
+    package: word!
     summary: >-
       Executes a batch script that performs actions on the Word object model,
       using a new RequestContext. When the promise is resolved, any tracked

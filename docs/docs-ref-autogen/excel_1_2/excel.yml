@@ -484,7 +484,7 @@ enums:
 functions:
   - name: 'Excel.getDataCommonPostprocess(response, callArgs)'
     uid: 'excel!Excel.getDataCommonPostprocess:function(1)'
-    package: excel
+    package: excel!
     summary: ''
     remarks: ''
     isPreview: false
@@ -505,7 +505,7 @@ functions:
         description: ''
   - name: Excel.postprocessBindingDescriptor(response)
     uid: 'excel!Excel.postprocessBindingDescriptor:function(1)'
-    package: excel
+    package: excel!
     summary: ''
     remarks: ''
     isPreview: false
@@ -521,7 +521,7 @@ functions:
         description: ''
   - name: Excel.run(batch)
     uid: 'excel!Excel.run:function(1)'
-    package: excel
+    package: excel!
     summary: >-
       Executes a batch script that performs actions on the Excel object model,
       using a new RequestContext. When the promise is resolved, any tracked
@@ -551,7 +551,7 @@ functions:
         description: ''
   - name: 'Excel.run(object, batch)'
     uid: 'excel!Excel.run:function(2)'
-    package: excel
+    package: excel!
     summary: >-
       Executes a batch script that performs actions on the Excel object model,
       using the RequestContext of a previously-created API object. When the
@@ -587,7 +587,7 @@ functions:
         description: ''
   - name: 'Excel.run(objects, batch)'
     uid: 'excel!Excel.run:function(3)'
-    package: excel
+    package: excel!
     summary: >-
       Executes a batch script that performs actions on the Excel object model,
       using the RequestContext of previously-created API objects.
@@ -623,7 +623,7 @@ functions:
         description: ''
   - name: 'Excel.run(options, batch)'
     uid: 'excel!Excel.run:function(4)'
-    package: excel
+    package: excel!
     summary: >-
       Executes a batch script that performs actions on the Excel object model,
       using the RequestContext of a previously-created API object. When the
@@ -659,7 +659,7 @@ functions:
         description: ''
   - name: 'Excel.run(context, batch)'
     uid: 'excel!Excel.run:function(5)'
-    package: excel
+    package: excel!
     summary: >-
       Executes a batch script that performs actions on the Excel object model,
       using the RequestContext of a previously-created object. When the promise

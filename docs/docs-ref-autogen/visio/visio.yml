@@ -86,7 +86,7 @@ enums:
 functions:
   - name: Visio.run(batch)
     uid: 'visio!Visio.run:function(1)'
-    package: visio
+    package: visio!
     summary: >-
       Executes a batch script that performs actions on the Visio object model,
       using a new request context. When the promise is resolved, any tracked
@@ -116,7 +116,7 @@ functions:
         description: ''
   - name: 'Visio.run(object, batch)'
     uid: 'visio!Visio.run:function(2)'
-    package: visio
+    package: visio!
     summary: >-
       Executes a batch script that performs actions on the Visio object model,
       using the request context of a previously-created API object.
@@ -151,7 +151,7 @@ functions:
         description: ''
   - name: 'Visio.run(objects, batch)'
     uid: 'visio!Visio.run:function(3)'
-    package: visio
+    package: visio!
     summary: >-
       Executes a batch script that performs actions on the Visio object model,
       using the request context of previously-created API objects.
@@ -185,7 +185,7 @@ functions:
         description: ''
   - name: 'Visio.run(contextObject, batch)'
     uid: 'visio!Visio.run:function(4)'
-    package: visio
+    package: visio!
     summary: >-
       Executes a batch script that performs actions on the Visio object model,
       using the RequestContext of a previously-created object. When the promise

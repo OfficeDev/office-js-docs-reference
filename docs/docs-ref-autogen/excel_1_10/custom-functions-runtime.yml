@@ -14,7 +14,7 @@ enums:
 functions:
   - name: 'CustomFunctions.associate(id, functionObject)'
     uid: 'custom-functions-runtime!CustomFunctions.associate:function(1)'
-    package: custom-functions-runtime
+    package: custom-functions-runtime!
     summary: >-
       Associates the JavaScript function to the name given by the "id" property
       in the metadata JSON file.
@@ -35,7 +35,7 @@ functions:
         description: ''
   - name: CustomFunctions.associate(mappings)
     uid: 'custom-functions-runtime!CustomFunctions.associate:function(2)'
-    package: custom-functions-runtime
+    package: custom-functions-runtime!
     summary: >-
       Associates the JavaScript functions to the names given by the "id"
       properties in the metadata JSON file.

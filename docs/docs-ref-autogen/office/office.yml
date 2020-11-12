@@ -108,7 +108,7 @@ classes:
 functions:
   - name: Office.initialize(reason)
     uid: 'office!Office.initialize:function(1)'
-    package: office
+    package: office!
     summary: >-
       Occurs when the runtime environment is loaded and the add-in is ready to
       start interacting with the application and hosted document.
@@ -208,7 +208,7 @@ functions:
         description: ''
   - name: 'Office.isSetSupported(name, minVersion)'
     uid: 'office!Office.isSetSupported:function(1)'
-    package: office
+    package: office!
     summary: >-
       Checks if the specified requirement set is supported by the host Office
       application.
@@ -231,7 +231,7 @@ functions:
         description: ''
   - name: Office.onReady(callback)
     uid: 'office!Office.onReady:function(1)'
-    package: office
+    package: office!
     summary: >-
       Ensures that the Office JavaScript APIs are ready to be called by the
       add-in. If the framework hasn't initialized yet, the callback or promise
@@ -267,7 +267,7 @@ functions:
           initialization is completed.
   - name: 'Office.select(expression, callback)'
     uid: 'office!Office.select:function(1)'
-    package: office
+    package: office!
     summary: >-
       Returns a promise of an object described in the expression. Callback is
       invoked only if method fails.
@@ -340,7 +340,7 @@ functions:
         description: ''
   - name: Office.useShortNamespace(useShortNamespace)
     uid: 'office!Office.useShortNamespace:function(1)'
-    package: office
+    package: office!
     summary: >-
       Toggles on and off the `Office` alias for the full
       `Microsoft.Office.WebExtension` namespace.

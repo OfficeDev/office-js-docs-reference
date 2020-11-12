@@ -25,7 +25,7 @@ interfaces:
 functions:
   - name: PowerPoint.createPresentation(base64File)
     uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
-    package: powerpoint
+    package: powerpoint!
     summary: >-
       Creates and opens a new presentation. Optionally, the presentation can be
       pre-populated with a base64-encoded .pptx file.
@@ -75,7 +75,7 @@ functions:
           ```
   - name: PowerPoint.run(batch)
     uid: 'powerpoint!PowerPoint.run:function(1)'
-    package: powerpoint
+    package: powerpoint!
     summary: >-
       Executes a batch script that performs actions on the PowerPoint object
       model, using a new RequestContext. When the promise is resolved, any
@@ -106,7 +106,7 @@ functions:
         description: ''
   - name: 'PowerPoint.run(object, batch)'
     uid: 'powerpoint!PowerPoint.run:function(2)'
-    package: powerpoint
+    package: powerpoint!
     summary: >-
       Executes a batch script that performs actions on the PowerPoint object
       model, using the RequestContext of a previously-created API object. When
@@ -144,7 +144,7 @@ functions:
         description: ''
   - name: 'PowerPoint.run(objects, batch)'
     uid: 'powerpoint!PowerPoint.run:function(3)'
-    package: powerpoint
+    package: powerpoint!
     summary: >-
       Executes a batch script that performs actions on the PowerPoint object
       model, using the RequestContext of previously-created API objects.
