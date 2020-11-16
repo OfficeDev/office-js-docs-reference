@@ -1,81 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions:interface'
-    summary: |-
-      Represents a custom property.
+### YamlMime:TSType
+name: Excel.Interfaces.CustomPropertyLoadOptions
+uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.CustomPropertyLoadOptions
+summary: >-
+  Represents a custom property.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.CustomPropertyLoadOptions
-    fullName: Excel.Interfaces.CustomPropertyLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#key:member'
-      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#type:member'
-      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#value:member'
-  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#key:member'
-    summary: >-
-      The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are
-      automatically trimmed to 255 characters on other platforms).
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: key
+        type: boolean
+  - name: key
+    uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#key:member'
+    package: excel!
     fullName: key
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The key of the custom property. The key is limited to 255 characters
+      outside of Excel on the web (larger keys are automatically trimmed to 255
+      characters on other platforms).
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'key?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#type:member'
-    summary: |-
+        type: boolean
+  - name: type
+    uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       The type of the value used for the custom property.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#value:member'
-    summary: >-
-      The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger
-      values are automatically trimmed to 255 characters on other platforms).
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: value
+        type: boolean
+  - name: value
+    uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#value:member'
+    package: excel!
     fullName: value
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The value of the custom property. The value is limited to 255 characters
+      outside of Excel on the web (larger values are automatically trimmed to
+      255 characters on other platforms).
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

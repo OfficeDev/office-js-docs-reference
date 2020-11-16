@@ -1,10 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
-    summary: 'An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartErrorBarsUpdateData
-    fullName: Excel.Interfaces.ChartErrorBarsUpdateData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.ChartErrorBarsUpdateData
+uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartErrorBarsUpdateData
+summary: >-
+  An interface for updating data on the ChartErrorBars object, for use in
+  `chartErrorBars.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

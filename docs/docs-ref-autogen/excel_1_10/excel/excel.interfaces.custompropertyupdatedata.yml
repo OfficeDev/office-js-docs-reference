@@ -1,29 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
-    summary: 'An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.CustomPropertyUpdateData
-    fullName: Excel.Interfaces.CustomPropertyUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.CustomPropertyUpdateData
+uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.CustomPropertyUpdateData
+summary: >-
+  An interface for updating data on the CustomProperty object, for use in
+  `customProperty.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: value
+    uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData#value:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CustomPropertyUpdateData#value:member'
-  - uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData#value:member'
-    summary: >-
-      The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger
-      values are automatically trimmed to 255 characters on other platforms).
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: value
     fullName: value
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The value of the custom property. The value is limited to 255 characters
+      outside of Excel on the web (larger values are automatically trimmed to
+      255 characters on other platforms).
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: any;'
       return:
-        type:
-          - any
+        type: any

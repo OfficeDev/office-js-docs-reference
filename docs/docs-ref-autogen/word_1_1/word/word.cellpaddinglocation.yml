@@ -1,43 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.CellPaddingLocation:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.CellPaddingLocation
-    fullName: Word.CellPaddingLocation
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.CellPaddingLocation
+uid: 'word!Word.CellPaddingLocation:enum'
+package: word!
+fullName: Word.CellPaddingLocation
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'word!Word.CellPaddingLocation.bottom:member'
     package: word!
-    children:
-      - 'word!Word.CellPaddingLocation.bottom:member'
-      - 'word!Word.CellPaddingLocation.left:member'
-      - 'word!Word.CellPaddingLocation.right:member'
-      - 'word!Word.CellPaddingLocation.top:member'
-  - uid: 'word!Word.CellPaddingLocation.bottom:member'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bottom"'
-  - uid: 'word!Word.CellPaddingLocation.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Left"'
-  - uid: 'word!Word.CellPaddingLocation.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Right"'
-  - uid: 'word!Word.CellPaddingLocation.top:member'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Top"'
+    summary: ''
+  - name: left
+    uid: 'word!Word.CellPaddingLocation.left:member'
+    package: word!
+    summary: ''
+  - name: right
+    uid: 'word!Word.CellPaddingLocation.right:member'
+    package: word!
+    summary: ''
+  - name: top
+    uid: 'word!Word.CellPaddingLocation.top:member'
+    package: word!
+    summary: ''

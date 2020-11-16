@@ -1,96 +1,149 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Workbook:class'
-    summary: >-
-      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
-      To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
-      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+### YamlMime:TSType
+name: Excel.Workbook
+uid: 'excel!Excel.Workbook:class'
+package: excel!
+fullName: Excel.Workbook
+summary: >-
+  Workbook is the top level object which contains related workbook objects such
+  as worksheets, tables, ranges, etc. To learn more about the workbook object
+  model, read [Work with workbooks using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Workbook
-    fullName: Excel.Workbook
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: application
+    uid: 'excel!Excel.Workbook#application:member'
     package: excel!
-    children:
-      - 'excel!Excel.Workbook#application:member'
-      - 'excel!Excel.Workbook#bindings:member'
-      - 'excel!Excel.Workbook#context:member'
-      - 'excel!Excel.Workbook#getSelectedRange:member(1)'
-      - 'excel!Excel.Workbook#load:member(1)'
-      - 'excel!Excel.Workbook#load:member(2)'
-      - 'excel!Excel.Workbook#load:member(3)'
-      - 'excel!Excel.Workbook#names:member'
-      - 'excel!Excel.Workbook#set:member(1)'
-      - 'excel!Excel.Workbook#set:member(2)'
-      - 'excel!Excel.Workbook#tables:member'
-      - 'excel!Excel.Workbook#toJSON:member(1)'
-      - 'excel!Excel.Workbook#worksheets:member'
-  - uid: 'excel!Excel.Workbook#application:member'
-    summary: |-
+    fullName: application
+    summary: >-
       Represents the Excel application instance that contains this workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: application
-    fullName: application
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly application: Excel.Application;'
       return:
-        type:
-          - 'excel!Excel.Application:class'
-  - uid: 'excel!Excel.Workbook#bindings:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.Application:class" />'
+  - name: bindings
+    uid: 'excel!Excel.Workbook#bindings:member'
+    package: excel!
+    fullName: bindings
+    summary: >-
       Represents a collection of bindings that are part of the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: bindings
-    fullName: bindings
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
-        type:
-          - 'excel!Excel.BindingCollection:class'
-  - uid: 'excel!Excel.Workbook#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: '<xref uid="excel!Excel.BindingCollection:class" />'
+  - name: context
+    uid: 'excel!Excel.Workbook#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: names
+    uid: 'excel!Excel.Workbook#names:member'
+    package: excel!
+    fullName: names
     summary: >-
-      Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
-      will throw an error.
+      Represents a collection of workbook scoped named items (named ranges and
+      constants).
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getSelectedRange()
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly names: Excel.NamedItemCollection;'
+      return:
+        type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
+  - name: tables
+    uid: 'excel!Excel.Workbook#tables:member'
+    package: excel!
+    fullName: tables
+    summary: >-
+      Represents a collection of tables associated with the workbook.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly tables: Excel.TableCollection;'
+      return:
+        type: '<xref uid="excel!Excel.TableCollection:class" />'
+  - name: worksheets
+    uid: 'excel!Excel.Workbook#worksheets:member'
+    package: excel!
+    fullName: worksheets
+    summary: >-
+      Represents a collection of worksheets associated with the workbook.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly worksheets: Excel.WorksheetCollection;'
+      return:
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
+methods:
+  - name: getSelectedRange()
+    uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
+    package: excel!
     fullName: getSelectedRange()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets the currently selected single range from the workbook. If there are
+      multiple ranges selected, this method will throw an error.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getSelectedRange(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -110,211 +163,147 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.Workbook#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.Workbook#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
-      return:
-        type:
-          - 'excel!Excel.Workbook:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-  - uid: 'excel!Excel.Workbook#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: '<xref uid="excel!Excel.Interfaces.WorkbookLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.Workbook:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Workbook#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
-      return:
-        type:
-          - 'excel!Excel.Workbook:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Workbook#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.Workbook:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Workbook#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.Workbook;
-      return:
-        type:
-          - 'excel!Excel.Workbook:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.Workbook#names:member'
-    summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants).
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: names
-    fullName: names
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly names: Excel.NamedItemCollection;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - 'excel!Excel.NamedItemCollection:class'
-  - uid: 'excel!Excel.Workbook#set:member(1)'
+        type: '<xref uid="excel!Excel.Workbook:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.Workbook#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.Workbook): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.WorkbookUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.Workbook#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.Workbook#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.Workbook): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.Workbook:class'
-  - uid: 'excel!Excel.Workbook#tables:member'
-    summary: |-
-      Represents a collection of tables associated with the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tables
-    fullName: tables
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly tables: Excel.TableCollection;'
+          type: '<xref uid="excel!Excel.Workbook:class" />'
       return:
-        type:
-          - 'excel!Excel.TableCollection:class'
-  - uid: 'excel!Excel.Workbook#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Workbook#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.Workbook object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.WorkbookData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookData:interface" />'
         description: ''
-  - uid: 'excel!Excel.Workbook#worksheets:member'
-    summary: |-
-      Represents a collection of worksheets associated with the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheets
-    fullName: worksheets
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheets: Excel.WorksheetCollection;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection:class'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.Application:class'
-    name: Excel.Application
-  - uid: 'excel!Excel.BindingCollection:class'
-    name: Excel.BindingCollection
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
-  - uid: 'excel!Excel.Workbook:class'
-    name: Excel.Workbook
-  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-    name: Excel.Interfaces.WorkbookLoadOptions
-  - uid: 'excel!Excel.NamedItemCollection:class'
-    name: Excel.NamedItemCollection
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
-    name: Interfaces.WorkbookUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.TableCollection:class'
-    name: Excel.TableCollection
-  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
-    name: Excel.Interfaces.WorkbookData
-  - uid: 'excel!Excel.WorksheetCollection:class'
-    name: Excel.WorksheetCollection
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

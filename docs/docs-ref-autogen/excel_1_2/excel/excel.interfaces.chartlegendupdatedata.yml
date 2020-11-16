@@ -1,87 +1,94 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
-    summary: 'An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartLegendUpdateData
-    fullName: Excel.Interfaces.ChartLegendUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLegendUpdateData
+uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartLegendUpdateData
+summary: >-
+  An interface for updating data on the ChartLegend object, for use in
+  `chartLegend.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
-      - 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
-      - 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
-      - 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
-  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
-    summary: |-
-      Represents the formatting of a chart legend, which includes fill and font formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formatting of a chart legend, which includes fill and font
+      formatting.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartLegendFormatUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
-    summary: |-
-      Specifies if the chart legend should overlap with the main body of the chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: overlay
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface" />
+  - name: overlay
+    uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
+    package: excel!
     fullName: overlay
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the chart legend should overlap with the main body of the
+      chart.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'overlay?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
-    summary: |-
-      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: position
+        type: boolean
+  - name: position
+    uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
+    package: excel!
     fullName: position
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the position of the legend on the chart. See
+      Excel.ChartLegendPosition for details.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
+      content: >-
+        position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" |
+        "Left" | "Right" | "Corner" | "Custom";
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartLegendUpdateData#position~0:complex'
-  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
-    summary: |-
+        type: >-
+          <xref uid="excel!Excel.ChartLegendPosition:enum" /> | "Invalid" |
+          "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+  - name: visible
+    uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
+    package: excel!
+    fullName: visible
+    summary: >-
       Specifies if the ChartLegend is visible.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartLegendFormatUpdateData
-  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position~0:complex'
-    name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
-    fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartLegendPosition:enum'
-        name: Excel.ChartLegendPosition
-        fullName: Excel.ChartLegendPosition
-      - name: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
-        fullName: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
+        type: boolean

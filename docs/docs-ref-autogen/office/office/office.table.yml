@@ -1,37 +1,26 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.Table:enum'
-    summary: >-
-      Specifies enumerated values for the `cells` property in the cellFormat parameter of [table formatting
-      methods](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
-    name: Office.Table
-    fullName: Office.Table
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.Table
+uid: 'office!Office.Table:enum'
+package: office!
+fullName: Office.Table
+summary: >-
+  Specifies enumerated values for the `cells` property in the cellFormat
+  parameter of [table formatting
+  methods](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: All
+    uid: 'office!Office.Table.All:member'
     package: office!
-    children:
-      - 'office!Office.Table.All:member'
-      - 'office!Office.Table.Data:member'
-      - 'office!Office.Table.Headers:member'
-  - uid: 'office!Office.Table.All:member'
     summary: 'The entire table, including column headers, data, and totals (if any).'
-    name: All
-    fullName: All
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.Table.Data:member'
+  - name: Data
+    uid: 'office!Office.Table.Data:member'
+    package: office!
     summary: Only the data (no headers and totals).
-    name: Data
-    fullName: Data
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.Table.Headers:member'
+  - name: Headers
+    uid: 'office!Office.Table.Headers:member'
+    package: office!
     summary: Only the header row.
-    name: Headers
-    fullName: Headers
-    langs:
-      - typeScript
-    type: field

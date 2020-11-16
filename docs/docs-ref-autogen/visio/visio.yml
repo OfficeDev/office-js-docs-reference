@@ -1,510 +1,239 @@
-### YamlMime:UniversalReference
-items:
-  - uid: visio!
-    name: visio
-    fullName: visio
-    langs:
-      - typeScript
-    type: package
-    children:
-      - 'visio!Visio.Application:class'
-      - 'visio!Visio.BoundingBox:interface'
-      - 'visio!Visio.Comment:class'
-      - 'visio!Visio.CommentCollection:class'
-      - 'visio!Visio.DataRefreshCompleteEventArgs:interface'
-      - 'visio!Visio.Document:class'
-      - 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
-      - 'visio!Visio.DocumentView:class'
-      - 'visio!Visio.ErrorCodes:enum'
-      - 'visio!Visio.Highlight:interface'
-      - 'visio!Visio.Hyperlink:class'
-      - 'visio!Visio.HyperlinkCollection:class'
-      - 'visio!Visio.Interfaces.ApplicationData:interface'
-      - 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
-      - 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
-      - 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
-      - 'visio!Visio.Interfaces.CommentCollectionData:interface'
-      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
-      - 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
-      - 'visio!Visio.Interfaces.CommentData:interface'
-      - 'visio!Visio.Interfaces.CommentLoadOptions:interface'
-      - 'visio!Visio.Interfaces.CommentUpdateData:interface'
-      - 'visio!Visio.Interfaces.DocumentData:interface'
-      - 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
-      - 'visio!Visio.Interfaces.DocumentUpdateData:interface'
-      - 'visio!Visio.Interfaces.DocumentViewData:interface'
-      - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
-      - 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
-      - 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
-      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
-      - 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
-      - 'visio!Visio.Interfaces.HyperlinkData:interface'
-      - 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
-      - 'visio!Visio.Interfaces.PageCollectionData:interface'
-      - 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
-      - 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
-      - 'visio!Visio.Interfaces.PageData:interface'
-      - 'visio!Visio.Interfaces.PageLoadOptions:interface'
-      - 'visio!Visio.Interfaces.PageUpdateData:interface'
-      - 'visio!Visio.Interfaces.PageViewData:interface'
-      - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-      - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
-      - 'visio!Visio.Interfaces.SelectionData:interface'
-      - 'visio!Visio.Interfaces.ShapeCollectionData:interface'
-      - 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
-      - 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
-      - 'visio!Visio.Interfaces.ShapeData:interface'
-      - 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
-      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
-      - 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
-      - 'visio!Visio.Interfaces.ShapeDataItemData:interface'
-      - 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
-      - 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
-      - 'visio!Visio.Interfaces.ShapeUpdateData:interface'
-      - 'visio!Visio.Interfaces.ShapeViewData:interface'
-      - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
-      - 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
-      - 'visio!Visio.OverlayHorizontalAlignment:enum'
-      - 'visio!Visio.OverlayType:enum'
-      - 'visio!Visio.OverlayVerticalAlignment:enum'
-      - 'visio!Visio.Page:class'
-      - 'visio!Visio.PageCollection:class'
-      - 'visio!Visio.PageLoadCompleteEventArgs:interface'
-      - 'visio!Visio.PageRenderCompleteEventArgs:interface'
-      - 'visio!Visio.PageView:class'
-      - 'visio!Visio.Position:interface'
-      - 'visio!Visio.RequestContext:class'
-      - 'visio!Visio.run:function(1)'
-      - 'visio!Visio.run:function(2)'
-      - 'visio!Visio.run:function(3)'
-      - 'visio!Visio.run:function(4)'
-      - 'visio!Visio.Selection:class'
-      - 'visio!Visio.SelectionChangedEventArgs:interface'
-      - 'visio!Visio.Shape:class'
-      - 'visio!Visio.ShapeCollection:class'
-      - 'visio!Visio.ShapeDataItem:class'
-      - 'visio!Visio.ShapeDataItemCollection:class'
-      - 'visio!Visio.ShapeMouseEnterEventArgs:interface'
-      - 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
-      - 'visio!Visio.ShapeView:class'
-      - 'visio!Visio.ToolBarType:enum'
-  - uid: 'visio!Visio.run:function(1)'
+### YamlMime:TSPackage
+uid: visio!
+name: visio
+type: package
+summary: ''
+classes:
+  - 'visio!Visio.Application:class'
+  - 'visio!Visio.Comment:class'
+  - 'visio!Visio.CommentCollection:class'
+  - 'visio!Visio.Document:class'
+  - 'visio!Visio.DocumentView:class'
+  - 'visio!Visio.Hyperlink:class'
+  - 'visio!Visio.HyperlinkCollection:class'
+  - 'visio!Visio.Page:class'
+  - 'visio!Visio.PageCollection:class'
+  - 'visio!Visio.PageView:class'
+  - 'visio!Visio.RequestContext:class'
+  - 'visio!Visio.Selection:class'
+  - 'visio!Visio.Shape:class'
+  - 'visio!Visio.ShapeCollection:class'
+  - 'visio!Visio.ShapeDataItem:class'
+  - 'visio!Visio.ShapeDataItemCollection:class'
+  - 'visio!Visio.ShapeView:class'
+interfaces:
+  - 'visio!Visio.BoundingBox:interface'
+  - 'visio!Visio.DataRefreshCompleteEventArgs:interface'
+  - 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
+  - 'visio!Visio.Highlight:interface'
+  - 'visio!Visio.Interfaces.ApplicationData:interface'
+  - 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+  - 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+  - 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
+  - 'visio!Visio.Interfaces.CommentCollectionData:interface'
+  - 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+  - 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
+  - 'visio!Visio.Interfaces.CommentData:interface'
+  - 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+  - 'visio!Visio.Interfaces.CommentUpdateData:interface'
+  - 'visio!Visio.Interfaces.DocumentData:interface'
+  - 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
+  - 'visio!Visio.Interfaces.DocumentUpdateData:interface'
+  - 'visio!Visio.Interfaces.DocumentViewData:interface'
+  - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+  - 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+  - 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
+  - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+  - 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+  - 'visio!Visio.Interfaces.HyperlinkData:interface'
+  - 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
+  - 'visio!Visio.Interfaces.PageCollectionData:interface'
+  - 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+  - 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
+  - 'visio!Visio.Interfaces.PageData:interface'
+  - 'visio!Visio.Interfaces.PageLoadOptions:interface'
+  - 'visio!Visio.Interfaces.PageUpdateData:interface'
+  - 'visio!Visio.Interfaces.PageViewData:interface'
+  - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+  - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+  - 'visio!Visio.Interfaces.SelectionData:interface'
+  - 'visio!Visio.Interfaces.ShapeCollectionData:interface'
+  - 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
+  - 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
+  - 'visio!Visio.Interfaces.ShapeData:interface'
+  - 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
+  - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
+  - 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
+  - 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+  - 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
+  - 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+  - 'visio!Visio.Interfaces.ShapeUpdateData:interface'
+  - 'visio!Visio.Interfaces.ShapeViewData:interface'
+  - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
+  - 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+  - 'visio!Visio.PageLoadCompleteEventArgs:interface'
+  - 'visio!Visio.PageRenderCompleteEventArgs:interface'
+  - 'visio!Visio.Position:interface'
+  - 'visio!Visio.SelectionChangedEventArgs:interface'
+  - 'visio!Visio.ShapeMouseEnterEventArgs:interface'
+  - 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
+enums:
+  - 'visio!Visio.ErrorCodes:enum'
+  - 'visio!Visio.OverlayHorizontalAlignment:enum'
+  - 'visio!Visio.OverlayType:enum'
+  - 'visio!Visio.OverlayVerticalAlignment:enum'
+  - 'visio!Visio.ToolBarType:enum'
+functions:
+  - name: Visio.run(batch)
+    uid: 'visio!Visio.run:function(1)'
+    package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model, using a new request context. When the
-      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-    name: Visio.run(batch)
-    fullName: Visio.run(batch)
-    langs:
-      - typeScript
-    type: function
+      Executes a batch script that performs actions on the Visio object model,
+      using a new request context. When the promise is resolved, any tracked
+      objects that were automatically allocated during execution will be
+      released.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'export function run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;'
-      return:
-        type:
-          - 'visio!Visio.run~0:complex'
-        description: ''
+      content: >-
+        export function run<T>(batch: (context: Visio.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: batch
           description: >-
-            A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office
-            add-in and the Visio application run in two different processes, the request context is required to get
-            access to the Visio object model from the add-in.
-          type:
-            - 'visio!Visio.run~1:complex'
-      typeParameters:
-        - id: T
-  - uid: 'visio!Visio.run:function(2)'
+            A function that takes in an Visio.RequestContext and returns a
+            promise (typically, just the result of "context.sync()"). The
+            context parameter facilitates requests to the Visio application.
+            Since the Office add-in and the Visio application run in two
+            different processes, the request context is required to get access
+            to the Visio object model from the add-in.
+          type: >-
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
+            Promise&lt;T&gt;
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Visio.run(object, batch)'
+    uid: 'visio!Visio.run:function(2)'
+    package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model, using the request context of a
-      previously-created API object.
-    name: 'Visio.run(object, batch)'
-    fullName: 'Visio.run(object, batch)'
-    langs:
-      - typeScript
-    type: function
+      Executes a batch script that performs actions on the Visio object model,
+      using the request context of a previously-created API object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
-        Visio.RequestContext) => Promise<T>): Promise<T>;
-      return:
-        type:
-          - 'visio!Visio.run~2:complex'
-        description: ''
+        export function run<T>(object: OfficeExtension.ClientObject |
+        OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext)
+        => Promise<T>): Promise<T>;
       parameters:
         - id: object
           description: >-
-            A previously-created API object. The batch will use the same request context as the passed-in object, which
-            means that any changes applied to the object will be picked up by "context.sync()".
-          type:
-            - 'visio!Visio.run~3:complex'
+            A previously-created API object. The batch will use the same request
+            context as the passed-in object, which means that any changes
+            applied to the object will be picked up by "context.sync()".
+          type: >-
+            <xref uid="office!OfficeExtension.ClientObject:class" /> | <xref
+            uid="office!OfficeExtension.EmbeddedSession:class" />
         - id: batch
           description: >-
-            A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
-            during execution will be released.
-          type:
-            - 'visio!Visio.run~4:complex'
-      typeParameters:
-        - id: T
-  - uid: 'visio!Visio.run:function(3)'
+            A function that takes in an Visio.RequestContext and returns a
+            promise (typically, just the result of "context.sync()"). When the
+            promise is resolved, any tracked objects that were automatically
+            allocated during execution will be released.
+          type: >-
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
+            Promise&lt;T&gt;
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Visio.run(objects, batch)'
+    uid: 'visio!Visio.run:function(3)'
+    package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model, using the request context of
-      previously-created API objects.
-    name: 'Visio.run(objects, batch)'
-    fullName: 'Visio.run(objects, batch)'
-    langs:
-      - typeScript
-    type: function
+      Executes a batch script that performs actions on the Visio object model,
+      using the request context of previously-created API objects.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) =>
-        Promise<T>): Promise<T>;
-      return:
-        type:
-          - 'visio!Visio.run~5:complex'
-        description: ''
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch:
+        (context: Visio.RequestContext) => Promise<T>): Promise<T>;
       parameters:
         - id: objects
           description: >-
-            An array of previously-created API objects. The array will be validated to make sure that all of the objects
-            share the same context. The batch will use this shared request context, which means that any changes applied
-            to these objects will be picked up by "context.sync()".
-          type:
-            - 'visio!Visio.run~6:complex'
+            An array of previously-created API objects. The array will be
+            validated to make sure that all of the objects share the same
+            context. The batch will use this shared request context, which means
+            that any changes applied to these objects will be picked up by
+            "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
-            A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
-            during execution will be released.
-          type:
-            - 'visio!Visio.run~7:complex'
-      typeParameters:
-        - id: T
-  - uid: 'visio!Visio.run:function(4)'
+            A function that takes in a Visio.RequestContext and returns a
+            promise (typically, just the result of "context.sync()"). When the
+            promise is resolved, any tracked objects that were automatically
+            allocated during execution will be released.
+          type: >-
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
+            Promise&lt;T&gt;
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Visio.run(contextObject, batch)'
+    uid: 'visio!Visio.run:function(4)'
+    package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model, using the RequestContext of a
-      previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
-      during execution will be released.
+      Executes a batch script that performs actions on the Visio object model,
+      using the RequestContext of a previously-created object. When the promise
+      is resolved, any tracked objects that were automatically allocated during
+      execution will be released.
     remarks: >-
-      In addition to this signature, the method also has the following signatures:
+      In addition to this signature, the method also has the following
+      signatures:
 
 
-      `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
-
-
-      `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
-      Visio.RequestContext) => Promise<T>): Promise<T>;`
-
-
-      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
+      `run<T>(batch: (context: Visio.RequestContext) => Promise<T>):
       Promise<T>;`
-    name: 'Visio.run(contextObject, batch)'
-    fullName: 'Visio.run(contextObject, batch)'
-    langs:
-      - typeScript
-    type: function
+
+
+      `run<T>(object: OfficeExtension.ClientObject |
+      OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) =>
+      Promise<T>): Promise<T>;`
+
+
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context:
+      Visio.RequestContext) => Promise<T>): Promise<T>;`
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context:
+        export function run<T>(contextObject:
+        OfficeExtension.ClientRequestContext, batch: (context:
         Visio.RequestContext) => Promise<T>): Promise<T>;
-      return:
-        type:
-          - 'visio!Visio.run~8:complex'
-        description: ''
       parameters:
         - id: contextObject
           description: >-
-            A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of
-            having a new context created). This means that the batch will be able to pick up changes made to existing
-            API objects, if those objects were derived from this same context.
-          type:
-            - 'office!OfficeExtension.ClientRequestContext:class'
+            A previously-created Visio.RequestContext. This context will get
+            re-used by the batch function (instead of having a new context
+            created). This means that the batch will be able to pick up changes
+            made to existing API objects, if those objects were derived from
+            this same context.
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office
-            add-in and the Visio application run in two different processes, the RequestContext is required to get
-            access to the Visio object model from the add-in.
-          type:
-            - 'visio!Visio.run~9:complex'
-      typeParameters:
-        - id: T
-references:
-  - uid: 'visio!Visio.Application:class'
-    name: Visio.Application
-  - uid: 'visio!Visio.BoundingBox:interface'
-    name: Visio.BoundingBox
-  - uid: 'visio!Visio.Comment:class'
-    name: Visio.Comment
-  - uid: 'visio!Visio.CommentCollection:class'
-    name: Visio.CommentCollection
-  - uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
-    name: Visio.DataRefreshCompleteEventArgs
-  - uid: 'visio!Visio.Document:class'
-    name: Visio.Document
-  - uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
-    name: Visio.DocumentLoadCompleteEventArgs
-  - uid: 'visio!Visio.DocumentView:class'
-    name: Visio.DocumentView
-  - uid: 'visio!Visio.ErrorCodes:enum'
-    name: Visio.ErrorCodes
-  - uid: 'visio!Visio.Highlight:interface'
-    name: Visio.Highlight
-  - uid: 'visio!Visio.Hyperlink:class'
-    name: Visio.Hyperlink
-  - uid: 'visio!Visio.HyperlinkCollection:class'
-    name: Visio.HyperlinkCollection
-  - uid: 'visio!Visio.Interfaces.ApplicationData:interface'
-    name: Visio.Interfaces.ApplicationData
-  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
-    name: Visio.Interfaces.ApplicationLoadOptions
-  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
-    name: Visio.Interfaces.ApplicationUpdateData
-  - uid: 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
-    name: Visio.Interfaces.CollectionLoadOptions
-  - uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
-    name: Visio.Interfaces.CommentCollectionData
-  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
-    name: Visio.Interfaces.CommentCollectionLoadOptions
-  - uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
-    name: Visio.Interfaces.CommentCollectionUpdateData
-  - uid: 'visio!Visio.Interfaces.CommentData:interface'
-    name: Visio.Interfaces.CommentData
-  - uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
-    name: Visio.Interfaces.CommentLoadOptions
-  - uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
-    name: Visio.Interfaces.CommentUpdateData
-  - uid: 'visio!Visio.Interfaces.DocumentData:interface'
-    name: Visio.Interfaces.DocumentData
-  - uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
-    name: Visio.Interfaces.DocumentLoadOptions
-  - uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
-    name: Visio.Interfaces.DocumentUpdateData
-  - uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
-    name: Visio.Interfaces.DocumentViewData
-  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
-    name: Visio.Interfaces.DocumentViewLoadOptions
-  - uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
-    name: Visio.Interfaces.DocumentViewUpdateData
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
-    name: Visio.Interfaces.HyperlinkCollectionData
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
-    name: Visio.Interfaces.HyperlinkCollectionLoadOptions
-  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
-    name: Visio.Interfaces.HyperlinkCollectionUpdateData
-  - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
-    name: Visio.Interfaces.HyperlinkData
-  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
-    name: Visio.Interfaces.HyperlinkLoadOptions
-  - uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
-    name: Visio.Interfaces.PageCollectionData
-  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
-    name: Visio.Interfaces.PageCollectionLoadOptions
-  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
-    name: Visio.Interfaces.PageCollectionUpdateData
-  - uid: 'visio!Visio.Interfaces.PageData:interface'
-    name: Visio.Interfaces.PageData
-  - uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
-    name: Visio.Interfaces.PageLoadOptions
-  - uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
-    name: Visio.Interfaces.PageUpdateData
-  - uid: 'visio!Visio.Interfaces.PageViewData:interface'
-    name: Visio.Interfaces.PageViewData
-  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-    name: Visio.Interfaces.PageViewLoadOptions
-  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
-    name: Visio.Interfaces.PageViewUpdateData
-  - uid: 'visio!Visio.Interfaces.SelectionData:interface'
-    name: Visio.Interfaces.SelectionData
-  - uid: 'visio!Visio.Interfaces.ShapeCollectionData:interface'
-    name: Visio.Interfaces.ShapeCollectionData
-  - uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
-    name: Visio.Interfaces.ShapeCollectionLoadOptions
-  - uid: 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
-    name: Visio.Interfaces.ShapeCollectionUpdateData
-  - uid: 'visio!Visio.Interfaces.ShapeData:interface'
-    name: Visio.Interfaces.ShapeData
-  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
-    name: Visio.Interfaces.ShapeDataItemCollectionData
-  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
-    name: Visio.Interfaces.ShapeDataItemCollectionLoadOptions
-  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
-    name: Visio.Interfaces.ShapeDataItemCollectionUpdateData
-  - uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
-    name: Visio.Interfaces.ShapeDataItemData
-  - uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
-    name: Visio.Interfaces.ShapeDataItemLoadOptions
-  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
-    name: Visio.Interfaces.ShapeLoadOptions
-  - uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
-    name: Visio.Interfaces.ShapeUpdateData
-  - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
-    name: Visio.Interfaces.ShapeViewData
-  - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
-    name: Visio.Interfaces.ShapeViewLoadOptions
-  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
-    name: Visio.Interfaces.ShapeViewUpdateData
-  - uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
-    name: Visio.OverlayHorizontalAlignment
-  - uid: 'visio!Visio.OverlayType:enum'
-    name: Visio.OverlayType
-  - uid: 'visio!Visio.OverlayVerticalAlignment:enum'
-    name: Visio.OverlayVerticalAlignment
-  - uid: 'visio!Visio.Page:class'
-    name: Visio.Page
-  - uid: 'visio!Visio.PageCollection:class'
-    name: Visio.PageCollection
-  - uid: 'visio!Visio.PageLoadCompleteEventArgs:interface'
-    name: Visio.PageLoadCompleteEventArgs
-  - uid: 'visio!Visio.PageRenderCompleteEventArgs:interface'
-    name: Visio.PageRenderCompleteEventArgs
-  - uid: 'visio!Visio.PageView:class'
-    name: Visio.PageView
-  - uid: 'visio!Visio.Position:interface'
-    name: Visio.Position
-  - uid: 'visio!Visio.RequestContext:class'
-    name: Visio.RequestContext
-  - uid: 'visio!Visio.run~0:complex'
-    name: Promise<T>
-    fullName: Promise<T>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'visio!Visio.run~1:complex'
-    name: '(context: Visio.RequestContext) => Promise<T>'
-    fullName: '(context: Visio.RequestContext) => Promise<T>'
-    spec.typeScript:
-      - name: '(context: '
-        fullName: '(context: '
-      - uid: 'visio!Visio.RequestContext:class'
-        name: Visio.RequestContext
-        fullName: Visio.RequestContext
-      - name: ') => '
-        fullName: ') => '
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'visio!Visio.run~2:complex'
-    name: Promise<T>
-    fullName: Promise<T>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'visio!Visio.run~3:complex'
-    name: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession
-    fullName: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientObject:class'
-        name: OfficeExtension.ClientObject
-        fullName: OfficeExtension.ClientObject
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'office!OfficeExtension.EmbeddedSession:class'
-        name: OfficeExtension.EmbeddedSession
-        fullName: OfficeExtension.EmbeddedSession
-  - uid: 'visio!Visio.run~4:complex'
-    name: '(context: Visio.RequestContext) => Promise<T>'
-    fullName: '(context: Visio.RequestContext) => Promise<T>'
-    spec.typeScript:
-      - name: '(context: '
-        fullName: '(context: '
-      - uid: 'visio!Visio.RequestContext:class'
-        name: Visio.RequestContext
-        fullName: Visio.RequestContext
-      - name: ') => '
-        fullName: ') => '
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'visio!Visio.run~5:complex'
-    name: Promise<T>
-    fullName: Promise<T>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'visio!Visio.run~6:complex'
-    name: 'OfficeExtension.ClientObject[]'
-    fullName: 'OfficeExtension.ClientObject[]'
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientObject:class'
-        name: OfficeExtension.ClientObject
-        fullName: OfficeExtension.ClientObject
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'visio!Visio.run~7:complex'
-    name: '(context: Visio.RequestContext) => Promise<T>'
-    fullName: '(context: Visio.RequestContext) => Promise<T>'
-    spec.typeScript:
-      - name: '(context: '
-        fullName: '(context: '
-      - uid: 'visio!Visio.RequestContext:class'
-        name: Visio.RequestContext
-        fullName: Visio.RequestContext
-      - name: ') => '
-        fullName: ') => '
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'visio!Visio.run~8:complex'
-    name: Promise<T>
-    fullName: Promise<T>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'office!OfficeExtension.ClientRequestContext:class'
-    name: OfficeExtension.ClientRequestContext
-  - uid: 'visio!Visio.run~9:complex'
-    name: '(context: Visio.RequestContext) => Promise<T>'
-    fullName: '(context: Visio.RequestContext) => Promise<T>'
-    spec.typeScript:
-      - name: '(context: '
-        fullName: '(context: '
-      - uid: 'visio!Visio.RequestContext:class'
-        name: Visio.RequestContext
-        fullName: Visio.RequestContext
-      - name: ') => '
-        fullName: ') => '
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'visio!Visio.Selection:class'
-    name: Visio.Selection
-  - uid: 'visio!Visio.SelectionChangedEventArgs:interface'
-    name: Visio.SelectionChangedEventArgs
-  - uid: 'visio!Visio.Shape:class'
-    name: Visio.Shape
-  - uid: 'visio!Visio.ShapeCollection:class'
-    name: Visio.ShapeCollection
-  - uid: 'visio!Visio.ShapeDataItem:class'
-    name: Visio.ShapeDataItem
-  - uid: 'visio!Visio.ShapeDataItemCollection:class'
-    name: Visio.ShapeDataItemCollection
-  - uid: 'visio!Visio.ShapeMouseEnterEventArgs:interface'
-    name: Visio.ShapeMouseEnterEventArgs
-  - uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
-    name: Visio.ShapeMouseLeaveEventArgs
-  - uid: 'visio!Visio.ShapeView:class'
-    name: Visio.ShapeView
-  - uid: 'visio!Visio.ToolBarType:enum'
-    name: Visio.ToolBarType
+            A function that takes in a RequestContext and returns a promise
+            (typically, just the result of "context.sync()"). The context
+            parameter facilitates requests to the Visio application. Since the
+            Office add-in and the Visio application run in two different
+            processes, the RequestContext is required to get access to the Visio
+            object model from the add-in.
+          type: >-
+            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
+            Promise&lt;T&gt;
+      return:
+        type: Promise&lt;T&gt;
+        description: ''

@@ -1,625 +1,354 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.BuiltInTableStyle:enum'
-    summary: >-
-      Represents a built-in table style.
+### YamlMime:TSEnum
+name: Excel.BuiltInTableStyle
+uid: 'excel!Excel.BuiltInTableStyle:enum'
+package: excel!
+fullName: Excel.BuiltInTableStyle
+summary: >-
+  Represents a built-in table style.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: Excel.BuiltInTableStyle
-    fullName: Excel.BuiltInTableStyle
-    langs:
-      - typeScript
-    type: enum
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: dark1
+    uid: 'excel!Excel.BuiltInTableStyle.dark1:member'
     package: excel!
-    children:
-      - 'excel!Excel.BuiltInTableStyle.dark1:member'
-      - 'excel!Excel.BuiltInTableStyle.dark10:member'
-      - 'excel!Excel.BuiltInTableStyle.dark11:member'
-      - 'excel!Excel.BuiltInTableStyle.dark2:member'
-      - 'excel!Excel.BuiltInTableStyle.dark3:member'
-      - 'excel!Excel.BuiltInTableStyle.dark4:member'
-      - 'excel!Excel.BuiltInTableStyle.dark5:member'
-      - 'excel!Excel.BuiltInTableStyle.dark6:member'
-      - 'excel!Excel.BuiltInTableStyle.dark7:member'
-      - 'excel!Excel.BuiltInTableStyle.dark8:member'
-      - 'excel!Excel.BuiltInTableStyle.dark9:member'
-      - 'excel!Excel.BuiltInTableStyle.light1:member'
-      - 'excel!Excel.BuiltInTableStyle.light10:member'
-      - 'excel!Excel.BuiltInTableStyle.light11:member'
-      - 'excel!Excel.BuiltInTableStyle.light12:member'
-      - 'excel!Excel.BuiltInTableStyle.light13:member'
-      - 'excel!Excel.BuiltInTableStyle.light14:member'
-      - 'excel!Excel.BuiltInTableStyle.light15:member'
-      - 'excel!Excel.BuiltInTableStyle.light16:member'
-      - 'excel!Excel.BuiltInTableStyle.light17:member'
-      - 'excel!Excel.BuiltInTableStyle.light18:member'
-      - 'excel!Excel.BuiltInTableStyle.light19:member'
-      - 'excel!Excel.BuiltInTableStyle.light2:member'
-      - 'excel!Excel.BuiltInTableStyle.light20:member'
-      - 'excel!Excel.BuiltInTableStyle.light21:member'
-      - 'excel!Excel.BuiltInTableStyle.light3:member'
-      - 'excel!Excel.BuiltInTableStyle.light4:member'
-      - 'excel!Excel.BuiltInTableStyle.light5:member'
-      - 'excel!Excel.BuiltInTableStyle.light6:member'
-      - 'excel!Excel.BuiltInTableStyle.light7:member'
-      - 'excel!Excel.BuiltInTableStyle.light8:member'
-      - 'excel!Excel.BuiltInTableStyle.light9:member'
-      - 'excel!Excel.BuiltInTableStyle.medium1:member'
-      - 'excel!Excel.BuiltInTableStyle.medium10:member'
-      - 'excel!Excel.BuiltInTableStyle.medium11:member'
-      - 'excel!Excel.BuiltInTableStyle.medium12:member'
-      - 'excel!Excel.BuiltInTableStyle.medium13:member'
-      - 'excel!Excel.BuiltInTableStyle.medium14:member'
-      - 'excel!Excel.BuiltInTableStyle.medium15:member'
-      - 'excel!Excel.BuiltInTableStyle.medium16:member'
-      - 'excel!Excel.BuiltInTableStyle.medium17:member'
-      - 'excel!Excel.BuiltInTableStyle.medium18:member'
-      - 'excel!Excel.BuiltInTableStyle.medium19:member'
-      - 'excel!Excel.BuiltInTableStyle.medium2:member'
-      - 'excel!Excel.BuiltInTableStyle.medium20:member'
-      - 'excel!Excel.BuiltInTableStyle.medium21:member'
-      - 'excel!Excel.BuiltInTableStyle.medium22:member'
-      - 'excel!Excel.BuiltInTableStyle.medium23:member'
-      - 'excel!Excel.BuiltInTableStyle.medium24:member'
-      - 'excel!Excel.BuiltInTableStyle.medium25:member'
-      - 'excel!Excel.BuiltInTableStyle.medium26:member'
-      - 'excel!Excel.BuiltInTableStyle.medium27:member'
-      - 'excel!Excel.BuiltInTableStyle.medium28:member'
-      - 'excel!Excel.BuiltInTableStyle.medium3:member'
-      - 'excel!Excel.BuiltInTableStyle.medium4:member'
-      - 'excel!Excel.BuiltInTableStyle.medium5:member'
-      - 'excel!Excel.BuiltInTableStyle.medium6:member'
-      - 'excel!Excel.BuiltInTableStyle.medium7:member'
-      - 'excel!Excel.BuiltInTableStyle.medium8:member'
-      - 'excel!Excel.BuiltInTableStyle.medium9:member'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark1:member'
-    summary: '"Dark 1" (black in the default "Office" theme) with filled header, striped rows, and dark.'
-    isPreview: true
-    name: dark1
-    fullName: dark1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark1"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark10:member'
+    summary: >-
+      "Dark 1" (black in the default "Office" theme) with filled header, striped
+      rows, and dark.
+  - name: dark10
+    uid: 'excel!Excel.BuiltInTableStyle.dark10:member'
+    package: excel!
     summary: 'Yellow with filled header, striped rows, light'
-    isPreview: true
-    name: dark10
-    fullName: dark10
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark10"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark11:member'
+  - name: dark11
+    uid: 'excel!Excel.BuiltInTableStyle.dark11:member'
+    package: excel!
     summary: 'Green with filled header, striped rows, light'
-    isPreview: true
-    name: dark11
-    fullName: dark11
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark11"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark2:member'
-    summary: '"Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and dark.'
-    isPreview: true
-    name: dark2
-    fullName: dark2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark2"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark3:member'
-    summary: '"Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and dark.'
-    isPreview: true
-    name: dark3
-    fullName: dark3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark3"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark4:member'
-    summary: '"Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and dark.'
-    isPreview: true
-    name: dark4
-    fullName: dark4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark4"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark5:member'
-    summary: '"Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and dark.'
-    isPreview: true
-    name: dark5
-    fullName: dark5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark5"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark6:member'
-    summary: '"Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and dark.'
-    isPreview: true
-    name: dark6
-    fullName: dark6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark6"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark7:member'
-    summary: '"Accent 6" (green in the default "Office" theme) with filled header, striped rows, and dark.'
-    isPreview: true
-    name: dark7
-    fullName: dark7
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark7"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark8:member'
+  - name: dark2
+    uid: 'excel!Excel.BuiltInTableStyle.dark2:member'
+    package: excel!
+    summary: >-
+      "Accent 1" (blue in the default "Office" theme) with filled header,
+      striped rows, and dark.
+  - name: dark3
+    uid: 'excel!Excel.BuiltInTableStyle.dark3:member'
+    package: excel!
+    summary: >-
+      "Accent 2" (orange in the default "Office" theme) with filled header,
+      striped rows, and dark.
+  - name: dark4
+    uid: 'excel!Excel.BuiltInTableStyle.dark4:member'
+    package: excel!
+    summary: >-
+      "Accent 3" (gray in the default "Office" theme) with filled header,
+      striped rows, and dark.
+  - name: dark5
+    uid: 'excel!Excel.BuiltInTableStyle.dark5:member'
+    package: excel!
+    summary: >-
+      "Accent 4" (yellow in the default "Office" theme) with filled header,
+      striped rows, and dark.
+  - name: dark6
+    uid: 'excel!Excel.BuiltInTableStyle.dark6:member'
+    package: excel!
+    summary: >-
+      "Accent 5" (light blue in the default "Office" theme) with filled header,
+      striped rows, and dark.
+  - name: dark7
+    uid: 'excel!Excel.BuiltInTableStyle.dark7:member'
+    package: excel!
+    summary: >-
+      "Accent 6" (green in the default "Office" theme) with filled header,
+      striped rows, and dark.
+  - name: dark8
+    uid: 'excel!Excel.BuiltInTableStyle.dark8:member'
+    package: excel!
     summary: 'Black with filled header, striped rows, light'
-    isPreview: true
-    name: dark8
-    fullName: dark8
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark8"'
-  - uid: 'excel!Excel.BuiltInTableStyle.dark9:member'
+  - name: dark9
+    uid: 'excel!Excel.BuiltInTableStyle.dark9:member'
+    package: excel!
     summary: 'Orange with filled header, striped rows, light'
-    isPreview: true
-    name: dark9
-    fullName: dark9
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dark9"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light1:member'
-    summary: '"Dark 1" (black in the default "Office" theme) with header borders and bottom border.'
-    isPreview: true
-    name: light1
-    fullName: light1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light1"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light10:member'
-    summary: '"Accent 2" (orange in the default "Office" theme) with filled header, outside border, and row borders.'
-    isPreview: true
-    name: light10
-    fullName: light10
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light10"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light11:member'
-    summary: '"Accent 3" (gray in the default "Office" theme) with filled header, outside border, and row borders.'
-    isPreview: true
-    name: light11
-    fullName: light11
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light11"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light12:member'
-    summary: '"Accent 4" (yellow in the default "Office" theme) with filled header, outside border, and row borders.'
-    isPreview: true
-    name: light12
-    fullName: light12
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light12"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light13:member'
-    summary: '"Accent 5" (light blue in the default "Office" theme) with filled header, outside border, and row borders.'
-    isPreview: true
-    name: light13
-    fullName: light13
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light13"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light14:member'
-    summary: '"Accent 6" (green in the default "Office" theme) with filled header, outside border, and row borders.'
-    isPreview: true
-    name: light14
-    fullName: light14
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light14"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light15:member'
+  - name: light1
+    uid: 'excel!Excel.BuiltInTableStyle.light1:member'
+    package: excel!
+    summary: >-
+      "Dark 1" (black in the default "Office" theme) with header borders and
+      bottom border.
+  - name: light10
+    uid: 'excel!Excel.BuiltInTableStyle.light10:member'
+    package: excel!
+    summary: >-
+      "Accent 2" (orange in the default "Office" theme) with filled header,
+      outside border, and row borders.
+  - name: light11
+    uid: 'excel!Excel.BuiltInTableStyle.light11:member'
+    package: excel!
+    summary: >-
+      "Accent 3" (gray in the default "Office" theme) with filled header,
+      outside border, and row borders.
+  - name: light12
+    uid: 'excel!Excel.BuiltInTableStyle.light12:member'
+    package: excel!
+    summary: >-
+      "Accent 4" (yellow in the default "Office" theme) with filled header,
+      outside border, and row borders.
+  - name: light13
+    uid: 'excel!Excel.BuiltInTableStyle.light13:member'
+    package: excel!
+    summary: >-
+      "Accent 5" (light blue in the default "Office" theme) with filled header,
+      outside border, and row borders.
+  - name: light14
+    uid: 'excel!Excel.BuiltInTableStyle.light14:member'
+    package: excel!
+    summary: >-
+      "Accent 6" (green in the default "Office" theme) with filled header,
+      outside border, and row borders.
+  - name: light15
+    uid: 'excel!Excel.BuiltInTableStyle.light15:member'
+    package: excel!
     summary: '"Dark 1" (black in the default "Office" theme) with cell borders.'
-    isPreview: true
-    name: light15
-    fullName: light15
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light15"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light16:member'
+  - name: light16
+    uid: 'excel!Excel.BuiltInTableStyle.light16:member'
+    package: excel!
     summary: '"Accent 1" (blue in the default "Office" theme) with cell borders.'
-    isPreview: true
-    name: light16
-    fullName: light16
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light16"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light17:member'
+  - name: light17
+    uid: 'excel!Excel.BuiltInTableStyle.light17:member'
+    package: excel!
     summary: '"Accent 2" (orange in the default "Office" theme) with cell borders.'
-    isPreview: true
-    name: light17
-    fullName: light17
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light17"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light18:member'
+  - name: light18
+    uid: 'excel!Excel.BuiltInTableStyle.light18:member'
+    package: excel!
     summary: '"Accent 3" (gray in the default "Office" theme) with cell borders.'
-    isPreview: true
-    name: light18
-    fullName: light18
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light18"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light19:member'
+  - name: light19
+    uid: 'excel!Excel.BuiltInTableStyle.light19:member'
+    package: excel!
     summary: '"Accent 4" (yellow in the default "Office" theme) with cell borders.'
-    isPreview: true
-    name: light19
-    fullName: light19
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light19"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light2:member'
-    summary: '"Accent 1" (blue in the default "Office" theme) with header borders and bottom border.'
-    isPreview: true
-    name: light2
-    fullName: light2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light2"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light20:member'
+  - name: light2
+    uid: 'excel!Excel.BuiltInTableStyle.light2:member'
+    package: excel!
+    summary: >-
+      "Accent 1" (blue in the default "Office" theme) with header borders and
+      bottom border.
+  - name: light20
+    uid: 'excel!Excel.BuiltInTableStyle.light20:member'
+    package: excel!
     summary: '"Accent 5" (light blue in the default "Office" theme) with cell borders.'
-    isPreview: true
-    name: light20
-    fullName: light20
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light20"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light21:member'
+  - name: light21
+    uid: 'excel!Excel.BuiltInTableStyle.light21:member'
+    package: excel!
     summary: '"Accent 6" (green in the default "Office" theme) with cell borders.'
-    isPreview: true
-    name: light21
-    fullName: light21
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light21"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light3:member'
-    summary: '"Accent 2" (orange in the default "Office" theme) with header borders and bottom border.'
-    isPreview: true
-    name: light3
-    fullName: light3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light3"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light4:member'
-    summary: '"Accent 3" (gray in the default "Office" theme) with header borders and bottom border.'
-    isPreview: true
-    name: light4
-    fullName: light4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light4"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light5:member'
-    summary: '"Accent 4" (yellow in the default "Office" theme) with header borders and bottom border.'
-    isPreview: true
-    name: light5
-    fullName: light5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light5"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light6:member'
-    summary: '"Accent 5" (light blue in the default "Office" theme) with header borders and bottom border.'
-    isPreview: true
-    name: light6
-    fullName: light6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light6"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light7:member'
-    summary: '"Accent 6" (green in the default "Office" theme) with header borders and bottom border.'
-    isPreview: true
-    name: light7
-    fullName: light7
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light7"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light8:member'
-    summary: '"Dark 1" (black in the default "Office" theme) with filled header, outside border, and row borders.'
-    isPreview: true
-    name: light8
-    fullName: light8
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light8"'
-  - uid: 'excel!Excel.BuiltInTableStyle.light9:member'
-    summary: '"Accent 1" (blue in the default "Office" theme) with filled header, outside border, and row borders.'
-    isPreview: true
-    name: light9
-    fullName: light9
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Light9"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium1:member'
-    summary: '"Dark 1" (black in the default "Office" theme) with filled header, striped rows, outside border, and row borders.'
-    isPreview: true
-    name: medium1
-    fullName: medium1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium1"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium10:member'
-    summary: '"Accent 2" (orange in the default "Office" theme) with filled header, and striped rows.'
-    isPreview: true
-    name: medium10
-    fullName: medium10
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium10"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium11:member'
-    summary: '"Accent 3" (gray in the default "Office" theme) with filled header, and striped rows.'
-    isPreview: true
-    name: medium11
-    fullName: medium11
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium11"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium12:member'
-    summary: '"Accent 4" (yellow in the default "Office" theme) with filled header, and striped rows.'
-    isPreview: true
-    name: medium12
-    fullName: medium12
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium12"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium13:member'
-    summary: '"Accent 5" (light blue in the default "Office" theme) with filled header, and striped rows.'
-    isPreview: true
-    name: medium13
-    fullName: medium13
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium13"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium14:member'
-    summary: '"Accent 6" (green in the default "Office" theme) with filled header, and striped rows.'
-    isPreview: true
-    name: medium14
-    fullName: medium14
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium14"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium15:member'
-    summary: '"Dark 1" (black in the default "Office" theme) with filled header, striped rows, and cell borders.'
-    isPreview: true
-    name: medium15
-    fullName: medium15
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium15"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium16:member'
-    summary: '"Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and cell borders.'
-    isPreview: true
-    name: medium16
-    fullName: medium16
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium16"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium17:member'
-    summary: '"Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and cell borders.'
-    isPreview: true
-    name: medium17
-    fullName: medium17
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium17"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium18:member'
-    summary: '"Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and cell borders.'
-    isPreview: true
-    name: medium18
-    fullName: medium18
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium18"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium19:member'
-    summary: '"Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and cell borders.'
-    isPreview: true
-    name: medium19
-    fullName: medium19
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium19"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium2:member'
-    summary: '"Accent 1" (blue in the default "Office" theme) with filled header, striped rows, outside border, and row borders.'
-    isPreview: true
-    name: medium2
-    fullName: medium2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium2"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium20:member'
-    summary: '"Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and cell borders.'
-    isPreview: true
-    name: medium20
-    fullName: medium20
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium20"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium21:member'
-    summary: '"Accent 6" (green in the default "Office" theme) with filled header, striped rows, and cell borders.'
-    isPreview: true
-    name: medium21
-    fullName: medium21
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium21"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium22:member'
-    summary: '"Dark 1" (black in the default "Office" theme) with striped rows, and cell borders.'
-    isPreview: true
-    name: medium22
-    fullName: medium22
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium22"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium23:member'
-    summary: '"Accent 1" (blue in the default "Office" theme) with striped rows, and cell borders.'
-    isPreview: true
-    name: medium23
-    fullName: medium23
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium23"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium24:member'
-    summary: '"Accent 2" (orange in the default "Office" theme) with striped rows, and cell borders.'
-    isPreview: true
-    name: medium24
-    fullName: medium24
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium24"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium25:member'
-    summary: '"Accent 3" (gray in the default "Office" theme) with striped rows, and cell borders.'
-    isPreview: true
-    name: medium25
-    fullName: medium25
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium25"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium26:member'
-    summary: '"Accent 4" (yellow in the default "Office" theme) with striped rows, and cell borders.'
-    isPreview: true
-    name: medium26
-    fullName: medium26
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium26"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium27:member'
-    summary: '"Accent 5" (light blue in the default "Office" theme) with striped rows, and cell borders.'
-    isPreview: true
-    name: medium27
-    fullName: medium27
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium27"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium28:member'
-    summary: '"Accent 6" (green in the default "Office" theme) with striped rows, and cell borders.'
-    isPreview: true
-    name: medium28
-    fullName: medium28
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium28"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium3:member'
+  - name: light3
+    uid: 'excel!Excel.BuiltInTableStyle.light3:member'
+    package: excel!
     summary: >-
-      "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, outside border, and row
-      borders.
-    isPreview: true
-    name: medium3
-    fullName: medium3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium3"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium4:member'
-    summary: '"Accent 3" (gray in the default "Office" theme) with filled header, striped rows, outside border, and row borders.'
-    isPreview: true
-    name: medium4
-    fullName: medium4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium4"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium5:member'
+      "Accent 2" (orange in the default "Office" theme) with header borders and
+      bottom border.
+  - name: light4
+    uid: 'excel!Excel.BuiltInTableStyle.light4:member'
+    package: excel!
     summary: >-
-      "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, outside border, and row
-      borders.
-    isPreview: true
-    name: medium5
-    fullName: medium5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium5"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium6:member'
+      "Accent 3" (gray in the default "Office" theme) with header borders and
+      bottom border.
+  - name: light5
+    uid: 'excel!Excel.BuiltInTableStyle.light5:member'
+    package: excel!
     summary: >-
-      "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, outside border, and row
-      borders.
-    isPreview: true
-    name: medium6
-    fullName: medium6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium6"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium7:member'
+      "Accent 4" (yellow in the default "Office" theme) with header borders and
+      bottom border.
+  - name: light6
+    uid: 'excel!Excel.BuiltInTableStyle.light6:member'
+    package: excel!
     summary: >-
-      "Accent 6" (green in the default "Office" theme) with filled header, striped rows, outside border, and row
+      "Accent 5" (light blue in the default "Office" theme) with header borders
+      and bottom border.
+  - name: light7
+    uid: 'excel!Excel.BuiltInTableStyle.light7:member'
+    package: excel!
+    summary: >-
+      "Accent 6" (green in the default "Office" theme) with header borders and
+      bottom border.
+  - name: light8
+    uid: 'excel!Excel.BuiltInTableStyle.light8:member'
+    package: excel!
+    summary: >-
+      "Dark 1" (black in the default "Office" theme) with filled header, outside
+      border, and row borders.
+  - name: light9
+    uid: 'excel!Excel.BuiltInTableStyle.light9:member'
+    package: excel!
+    summary: >-
+      "Accent 1" (blue in the default "Office" theme) with filled header,
+      outside border, and row borders.
+  - name: medium1
+    uid: 'excel!Excel.BuiltInTableStyle.medium1:member'
+    package: excel!
+    summary: >-
+      "Dark 1" (black in the default "Office" theme) with filled header, striped
+      rows, outside border, and row borders.
+  - name: medium10
+    uid: 'excel!Excel.BuiltInTableStyle.medium10:member'
+    package: excel!
+    summary: >-
+      "Accent 2" (orange in the default "Office" theme) with filled header, and
+      striped rows.
+  - name: medium11
+    uid: 'excel!Excel.BuiltInTableStyle.medium11:member'
+    package: excel!
+    summary: >-
+      "Accent 3" (gray in the default "Office" theme) with filled header, and
+      striped rows.
+  - name: medium12
+    uid: 'excel!Excel.BuiltInTableStyle.medium12:member'
+    package: excel!
+    summary: >-
+      "Accent 4" (yellow in the default "Office" theme) with filled header, and
+      striped rows.
+  - name: medium13
+    uid: 'excel!Excel.BuiltInTableStyle.medium13:member'
+    package: excel!
+    summary: >-
+      "Accent 5" (light blue in the default "Office" theme) with filled header,
+      and striped rows.
+  - name: medium14
+    uid: 'excel!Excel.BuiltInTableStyle.medium14:member'
+    package: excel!
+    summary: >-
+      "Accent 6" (green in the default "Office" theme) with filled header, and
+      striped rows.
+  - name: medium15
+    uid: 'excel!Excel.BuiltInTableStyle.medium15:member'
+    package: excel!
+    summary: >-
+      "Dark 1" (black in the default "Office" theme) with filled header, striped
+      rows, and cell borders.
+  - name: medium16
+    uid: 'excel!Excel.BuiltInTableStyle.medium16:member'
+    package: excel!
+    summary: >-
+      "Accent 1" (blue in the default "Office" theme) with filled header,
+      striped rows, and cell borders.
+  - name: medium17
+    uid: 'excel!Excel.BuiltInTableStyle.medium17:member'
+    package: excel!
+    summary: >-
+      "Accent 2" (orange in the default "Office" theme) with filled header,
+      striped rows, and cell borders.
+  - name: medium18
+    uid: 'excel!Excel.BuiltInTableStyle.medium18:member'
+    package: excel!
+    summary: >-
+      "Accent 3" (gray in the default "Office" theme) with filled header,
+      striped rows, and cell borders.
+  - name: medium19
+    uid: 'excel!Excel.BuiltInTableStyle.medium19:member'
+    package: excel!
+    summary: >-
+      "Accent 4" (yellow in the default "Office" theme) with filled header,
+      striped rows, and cell borders.
+  - name: medium2
+    uid: 'excel!Excel.BuiltInTableStyle.medium2:member'
+    package: excel!
+    summary: >-
+      "Accent 1" (blue in the default "Office" theme) with filled header,
+      striped rows, outside border, and row borders.
+  - name: medium20
+    uid: 'excel!Excel.BuiltInTableStyle.medium20:member'
+    package: excel!
+    summary: >-
+      "Accent 5" (light blue in the default "Office" theme) with filled header,
+      striped rows, and cell borders.
+  - name: medium21
+    uid: 'excel!Excel.BuiltInTableStyle.medium21:member'
+    package: excel!
+    summary: >-
+      "Accent 6" (green in the default "Office" theme) with filled header,
+      striped rows, and cell borders.
+  - name: medium22
+    uid: 'excel!Excel.BuiltInTableStyle.medium22:member'
+    package: excel!
+    summary: >-
+      "Dark 1" (black in the default "Office" theme) with striped rows, and cell
       borders.
-    isPreview: true
-    name: medium7
-    fullName: medium7
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium7"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium8:member'
-    summary: '"Dark 1" (black in the default "Office" theme) with filled header, and striped rows.'
-    isPreview: true
-    name: medium8
-    fullName: medium8
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium8"'
-  - uid: 'excel!Excel.BuiltInTableStyle.medium9:member'
-    summary: '"Accent 1" (blue in the default "Office" theme) with filled header, and striped rows.'
-    isPreview: true
-    name: medium9
-    fullName: medium9
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium9"'
+  - name: medium23
+    uid: 'excel!Excel.BuiltInTableStyle.medium23:member'
+    package: excel!
+    summary: >-
+      "Accent 1" (blue in the default "Office" theme) with striped rows, and
+      cell borders.
+  - name: medium24
+    uid: 'excel!Excel.BuiltInTableStyle.medium24:member'
+    package: excel!
+    summary: >-
+      "Accent 2" (orange in the default "Office" theme) with striped rows, and
+      cell borders.
+  - name: medium25
+    uid: 'excel!Excel.BuiltInTableStyle.medium25:member'
+    package: excel!
+    summary: >-
+      "Accent 3" (gray in the default "Office" theme) with striped rows, and
+      cell borders.
+  - name: medium26
+    uid: 'excel!Excel.BuiltInTableStyle.medium26:member'
+    package: excel!
+    summary: >-
+      "Accent 4" (yellow in the default "Office" theme) with striped rows, and
+      cell borders.
+  - name: medium27
+    uid: 'excel!Excel.BuiltInTableStyle.medium27:member'
+    package: excel!
+    summary: >-
+      "Accent 5" (light blue in the default "Office" theme) with striped rows,
+      and cell borders.
+  - name: medium28
+    uid: 'excel!Excel.BuiltInTableStyle.medium28:member'
+    package: excel!
+    summary: >-
+      "Accent 6" (green in the default "Office" theme) with striped rows, and
+      cell borders.
+  - name: medium3
+    uid: 'excel!Excel.BuiltInTableStyle.medium3:member'
+    package: excel!
+    summary: >-
+      "Accent 2" (orange in the default "Office" theme) with filled header,
+      striped rows, outside border, and row borders.
+  - name: medium4
+    uid: 'excel!Excel.BuiltInTableStyle.medium4:member'
+    package: excel!
+    summary: >-
+      "Accent 3" (gray in the default "Office" theme) with filled header,
+      striped rows, outside border, and row borders.
+  - name: medium5
+    uid: 'excel!Excel.BuiltInTableStyle.medium5:member'
+    package: excel!
+    summary: >-
+      "Accent 4" (yellow in the default "Office" theme) with filled header,
+      striped rows, outside border, and row borders.
+  - name: medium6
+    uid: 'excel!Excel.BuiltInTableStyle.medium6:member'
+    package: excel!
+    summary: >-
+      "Accent 5" (light blue in the default "Office" theme) with filled header,
+      striped rows, outside border, and row borders.
+  - name: medium7
+    uid: 'excel!Excel.BuiltInTableStyle.medium7:member'
+    package: excel!
+    summary: >-
+      "Accent 6" (green in the default "Office" theme) with filled header,
+      striped rows, outside border, and row borders.
+  - name: medium8
+    uid: 'excel!Excel.BuiltInTableStyle.medium8:member'
+    package: excel!
+    summary: >-
+      "Dark 1" (black in the default "Office" theme) with filled header, and
+      striped rows.
+  - name: medium9
+    uid: 'excel!Excel.BuiltInTableStyle.medium9:member'
+    package: excel!
+    summary: >-
+      "Accent 1" (blue in the default "Office" theme) with filled header, and
+      striped rows.

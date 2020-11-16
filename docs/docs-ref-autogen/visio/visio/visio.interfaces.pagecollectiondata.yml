@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
-    summary: An interface describing the data returned by calling "pageCollection.toJSON()".
-    name: Visio.Interfaces.PageCollectionData
-    fullName: Visio.Interfaces.PageCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Visio.Interfaces.PageCollectionData
+uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
+package: visio!
+fullName: Visio.Interfaces.PageCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  "pageCollection.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'visio!Visio.Interfaces.PageCollectionData#items:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.PageCollectionData#items:member'
-  - uid: 'visio!Visio.Interfaces.PageCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Visio.Interfaces.PageData[];'
       return:
-        type:
-          - 'visio!Visio.Interfaces.PageCollectionData#items~0:complex'
-references:
-  - uid: 'visio!Visio.Interfaces.PageCollectionData#items~0:complex'
-    name: 'Visio.Interfaces.PageData[]'
-    fullName: 'Visio.Interfaces.PageData[]'
-    spec.typeScript:
-      - uid: 'visio!Visio.Interfaces.PageData:interface'
-        name: Visio.Interfaces.PageData
-        fullName: Visio.Interfaces.PageData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />[]'

@@ -1,50 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Position:interface'
-    summary: |-
-      Represents the Position of the object in the view.
+### YamlMime:TSType
+name: Visio.Position
+uid: 'visio!Visio.Position:interface'
+package: visio!
+fullName: Visio.Position
+summary: >-
+  Represents the Position of the object in the view.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Position
-    fullName: Visio.Position
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: x
+    uid: 'visio!Visio.Position#x:member'
     package: visio!
-    children:
-      - 'visio!Visio.Position#x:member'
-      - 'visio!Visio.Position#y:member'
-  - uid: 'visio!Visio.Position#x:member'
-    summary: >-
-      An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from
-      the viewport's center to the left boundary of the page.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: x
     fullName: x
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An integer that specifies the x-coordinate of the object, which is the
+      signed value of the distance in pixels from the viewport's center to the
+      left boundary of the page.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'x: number;'
       return:
-        type:
-          - number
-  - uid: 'visio!Visio.Position#y:member'
-    summary: >-
-      An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from
-      the viewport's center to the top boundary of the page.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: 'y'
+        type: number
+  - name: 'y'
+    uid: 'visio!Visio.Position#y:member'
+    package: visio!
     fullName: 'y'
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An integer that specifies the y-coordinate of the object, which is the
+      signed value of the distance in pixels from the viewport's center to the
+      top boundary of the page.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'y: number;'
       return:
-        type:
-          - number
+        type: number

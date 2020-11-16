@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
-    summary: An interface describing the data returned by calling `slicerCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.SlicerCollectionData
-    fullName: Excel.Interfaces.SlicerCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.SlicerCollectionData
+uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
+package: excel!
+fullName: Excel.Interfaces.SlicerCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `slicerCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.SlicerCollectionData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.SlicerCollectionData#items:member'
-  - uid: 'excel!Excel.Interfaces.SlicerCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.SlicerData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.SlicerCollectionData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.SlicerCollectionData#items~0:complex'
-    name: 'Excel.Interfaces.SlicerData[]'
-    fullName: 'Excel.Interfaces.SlicerData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.SlicerData:interface'
-        name: Excel.Interfaces.SlicerData
-        fullName: Excel.Interfaces.SlicerData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="excel!Excel.Interfaces.SlicerData:interface" />[]'

@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartDisplayBlanksAs:enum'
-    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartDisplayBlanksAs
-    fullName: Excel.ChartDisplayBlanksAs
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ChartDisplayBlanksAs
+uid: 'excel!Excel.ChartDisplayBlanksAs:enum'
+package: excel!
+fullName: Excel.ChartDisplayBlanksAs
+summary: >-
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: interplotted
+    uid: 'excel!Excel.ChartDisplayBlanksAs.interplotted:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartDisplayBlanksAs.interplotted:member'
-      - 'excel!Excel.ChartDisplayBlanksAs.notPlotted:member'
-      - 'excel!Excel.ChartDisplayBlanksAs.zero:member'
-  - uid: 'excel!Excel.ChartDisplayBlanksAs.interplotted:member'
-    name: interplotted
-    fullName: interplotted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Interplotted"'
-  - uid: 'excel!Excel.ChartDisplayBlanksAs.notPlotted:member'
-    name: notPlotted
-    fullName: notPlotted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NotPlotted"'
-  - uid: 'excel!Excel.ChartDisplayBlanksAs.zero:member'
-    name: zero
-    fullName: zero
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Zero"'
+    summary: ''
+  - name: notPlotted
+    uid: 'excel!Excel.ChartDisplayBlanksAs.notPlotted:member'
+    package: excel!
+    summary: ''
+  - name: zero
+    uid: 'excel!Excel.ChartDisplayBlanksAs.zero:member'
+    package: excel!
+    summary: ''

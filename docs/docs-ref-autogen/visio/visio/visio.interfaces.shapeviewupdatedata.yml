@@ -1,30 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
-    summary: 'An interface for updating data on the ShapeView object, for use in "shapeView.set(<!-- -->{ ... }<!-- -->)".'
-    name: Visio.Interfaces.ShapeViewUpdateData
-    fullName: Visio.Interfaces.ShapeViewUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Visio.Interfaces.ShapeViewUpdateData
+uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+package: visio!
+fullName: Visio.Interfaces.ShapeViewUpdateData
+summary: >-
+  An interface for updating data on the ShapeView object, for use in
+  "shapeView.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: highlight
+    uid: 'visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member'
-  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member'
-    summary: |-
+    fullName: highlight
+    summary: >-
       Represents the highlight around the shape.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: highlight
-    fullName: highlight
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'highlight?: Visio.Highlight;'
       return:
-        type:
-          - 'visio!Visio.Highlight:interface'
-references:
-  - uid: 'visio!Visio.Highlight:interface'
-    name: Visio.Highlight
+        type: '<xref uid="visio!Visio.Highlight:interface" />'

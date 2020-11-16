@@ -1,113 +1,111 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
-    summary: |-
-      Provides information about the worksheet's row hidden change event.
+### YamlMime:TSType
+name: Excel.WorksheetRowHiddenChangedEventArgs
+uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
+package: excel!
+fullName: Excel.WorksheetRowHiddenChangedEventArgs
+summary: >-
+  Provides information about the worksheet's row hidden change event.
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetRowHiddenChangedEventArgs
-    fullName: Excel.WorksheetRowHiddenChangedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#address:member'
     package: excel!
-    children:
-      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#address:member'
-      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member'
-      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member'
-      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#type:member'
-      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#worksheetId:member'
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#address:member'
-    summary: |-
-      Gets the range address that represents the changed area of a specific worksheet.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: address
     fullName: address
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the range address that represents the changed area of a specific
+      worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'address: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member'
-    summary: |-
-      Gets the type of change that represents how the event was triggered. See `Excel.RowHiddenChangeType` for details.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: changeType
+        type: string
+  - name: changeType
+    uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member'
+    package: excel!
     fullName: changeType
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the type of change that represents how the event was triggered. See
+      `Excel.RowHiddenChangeType` for details.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'changeType: Excel.RowHiddenChangeType | "Unhidden" | "Hidden";'
       return:
-        type:
-          - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType~0:complex'
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member'
-    summary: |-
+        type: >-
+          <xref uid="excel!Excel.RowHiddenChangeType:enum" /> | "Unhidden" |
+          "Hidden"
+  - name: source
+    uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member'
+    package: excel!
+    fullName: source
+    summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: source
-    fullName: source
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type:
-          - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source~0:complex'
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#type:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: "WorksheetRowHiddenChanged";'
       return:
-        type:
-          - '"WorksheetRowHiddenChanged"'
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#worksheetId:member'
-    summary: |-
+        type: '"WorksheetRowHiddenChanged"'
+  - name: worksheetId
+    uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#worksheetId:member'
+    package: excel!
+    fullName: worksheetId
+    summary: >-
       Gets the id of the worksheet in which the data changed.
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheetId
-    fullName: worksheetId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheetId: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType~0:complex'
-    name: Excel.RowHiddenChangeType | "Unhidden" | "Hidden"
-    fullName: Excel.RowHiddenChangeType | "Unhidden" | "Hidden"
-    spec.typeScript:
-      - uid: 'excel!Excel.RowHiddenChangeType:enum'
-        name: Excel.RowHiddenChangeType
-        fullName: Excel.RowHiddenChangeType
-      - name: ' | "Unhidden" | "Hidden"'
-        fullName: ' | "Unhidden" | "Hidden"'
-  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source~0:complex'
-    name: Excel.EventSource | "Local" | "Remote"
-    fullName: Excel.EventSource | "Local" | "Remote"
-    spec.typeScript:
-      - uid: 'excel!Excel.EventSource:enum'
-        name: Excel.EventSource
-        fullName: Excel.EventSource
-      - name: ' | "Local" | "Remote"'
-        fullName: ' | "Local" | "Remote"'
+        type: string

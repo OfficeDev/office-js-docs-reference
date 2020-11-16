@@ -1,44 +1,71 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTrendlineCollection:class'
-    summary: |-
-      Represents a collection of Chart Trendlines.
+### YamlMime:TSType
+name: Excel.ChartTrendlineCollection
+uid: 'excel!Excel.ChartTrendlineCollection:class'
+package: excel!
+fullName: Excel.ChartTrendlineCollection
+summary: >-
+  Represents a collection of Chart Trendlines.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartTrendlineCollection
-    fullName: Excel.ChartTrendlineCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartTrendlineCollection#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartTrendlineCollection#add:member(1)'
-      - 'excel!Excel.ChartTrendlineCollection#add:member(2)'
-      - 'excel!Excel.ChartTrendlineCollection#context:member'
-      - 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
-      - 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
-      - 'excel!Excel.ChartTrendlineCollection#items:member'
-      - 'excel!Excel.ChartTrendlineCollection#load:member(1)'
-      - 'excel!Excel.ChartTrendlineCollection#load:member(2)'
-      - 'excel!Excel.ChartTrendlineCollection#load:member(3)'
-      - 'excel!Excel.ChartTrendlineCollection#toJSON:member(1)'
-  - uid: 'excel!Excel.ChartTrendlineCollection#add:member(1)'
-    summary: |-
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: items
+    uid: 'excel!Excel.ChartTrendlineCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.ChartTrendline[];'
+      return:
+        type: '<xref uid="excel!Excel.ChartTrendline:class" />[]'
+methods:
+  - name: add(type)
+    uid: 'excel!Excel.ChartTrendlineCollection#add:member(1)'
+    package: excel!
+    fullName: add(type)
+    summary: >-
       Adds a new trendline to trendline collection.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: add(type)
-    fullName: add(type)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;'
+      parameters:
+        - id: type
+          description: >-
+            Specifies the trendline type. The default value is "Linear". See
+            Excel.ChartTrendline for details.
+          type: '<xref uid="excel!Excel.ChartTrendlineType:enum" />'
       return:
-        type:
-          - 'excel!Excel.ChartTrendline:class'
+        type: '<xref uid="excel!Excel.ChartTrendline:class" />'
         description: >-
 
 
@@ -62,221 +89,171 @@ items:
           });
 
           ```
-      parameters:
-        - id: type
-          description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
-          type:
-            - 'excel!Excel.ChartTrendlineType:enum'
-  - uid: 'excel!Excel.ChartTrendlineCollection#add:member(2)'
-    summary: |-
+  - name: add(typeString)
+    uid: 'excel!Excel.ChartTrendlineCollection#add:member(2)'
+    package: excel!
+    fullName: add(typeString)
+    summary: >-
       Adds a new trendline to trendline collection.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: add(typeString)
-    fullName: add(typeString)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        add(typeString?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"):
-        Excel.ChartTrendline;
-      return:
-        type:
-          - 'excel!Excel.ChartTrendline:class'
-        description: ''
+        add(typeString?: "Linear" | "Exponential" | "Logarithmic" |
+        "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
       parameters:
         - id: typeString
-          description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
-          type:
-            - '"Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
-  - uid: 'excel!Excel.ChartTrendlineCollection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
+          description: >-
+            Specifies the trendline type. The default value is "Linear". See
+            Excel.ChartTrendline for details.
+          type: >-
+            "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" |
+            "Polynomial" | "Power"
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
-    summary: |-
+        type: '<xref uid="excel!Excel.ChartTrendline:class" />'
+        description: ''
+  - name: getCount()
+    uid: 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
+    package: excel!
+    fullName: getCount()
+    summary: >-
       Returns the number of trendlines in the collection.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type:
-          - 'excel!Excel.ChartTrendlineCollection#getCount~0:complex'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
-  - uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
-    summary: |-
-      Get trendline object by index, which is the insertion order in items array.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItem(index)
+  - name: getItem(index)
+    uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
+    package: excel!
     fullName: getItem(index)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Get trendline object by index, which is the insertion order in items
+      array.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItem(index: number): Excel.ChartTrendline;'
-      return:
-        type:
-          - 'excel!Excel.ChartTrendline:class'
-        description: ''
       parameters:
         - id: index
           description: Represents the insertion order in items array.
-          type:
-            - number
-  - uid: 'excel!Excel.ChartTrendlineCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly items: Excel.ChartTrendline[];'
+          type: number
       return:
-        type:
-          - 'excel!Excel.ChartTrendlineCollection#items~0:complex'
-  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+        type: '<xref uid="excel!Excel.ChartTrendline:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.ChartTrendlineCollection#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.ChartTrendlineCollection;
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineCollection:class'
-        description: ''
+        load(options?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.ChartTrendlineCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.ChartTrendlineCollection#load~0:complex'
-  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartTrendlineCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.ChartTrendlineCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartTrendlineCollection#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineCollection;'
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineCollection:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.ChartTrendlineCollection:class'
+        type: '<xref uid="excel!Excel.ChartTrendlineCollection:class" />'
         description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartTrendlineCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.ChartTrendlineCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'excel!Excel.ChartTrendlineCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.ChartTrendlineCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineCollectionData`<!-- -->) that contains
-      an "items" array with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.ChartTrendlineCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartTrendlineCollection#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `Excel.ChartTrendlineCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `Excel.Interfaces.ChartTrendlineCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineCollectionData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartTrendlineCollectionData:interface'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartTrendlineCollectionData:interface" />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.ChartTrendline:class'
-    name: Excel.ChartTrendline
-  - uid: 'excel!Excel.ChartTrendlineType:enum'
-    name: Excel.ChartTrendlineType
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ChartTrendlineCollection#getCount~0:complex'
-    name: OfficeExtension.ClientResult<number>
-    fullName: OfficeExtension.ClientResult<number>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.ChartTrendlineCollection#items~0:complex'
-    name: 'Excel.ChartTrendline[]'
-    fullName: 'Excel.ChartTrendline[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartTrendline:class'
-        name: Excel.ChartTrendline
-        fullName: Excel.ChartTrendline
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.ChartTrendlineCollection:class'
-    name: Excel.ChartTrendlineCollection
-  - uid: 'excel!Excel.ChartTrendlineCollection#load~0:complex'
-    name: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    fullName: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionLoadOptions:interface'
-        name: Excel.Interfaces.ChartTrendlineCollectionLoadOptions
-        fullName: Excel.Interfaces.ChartTrendlineCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
-        name: Excel.Interfaces.CollectionLoadOptions
-        fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionData:interface'
-    name: Excel.Interfaces.ChartTrendlineCollectionData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

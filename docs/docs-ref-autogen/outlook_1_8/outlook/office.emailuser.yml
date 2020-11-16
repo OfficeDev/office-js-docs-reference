@@ -1,46 +1,43 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.EmailUser:interface'
-    summary: Represents an email account on an Exchange Server.
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+### YamlMime:TSType
+name: Office.EmailUser
+uid: 'outlook!Office.EmailUser:interface'
+package: outlook!
+fullName: Office.EmailUser
+summary: Represents an email account on an Exchange Server.
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Read
-    name: Office.EmailUser
-    fullName: Office.EmailUser
-    langs:
-      - typeScript
-    type: interface
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: 'outlook!Office.EmailUser#displayName:member'
     package: outlook!
-    children:
-      - 'outlook!Office.EmailUser#displayName:member'
-      - 'outlook!Office.EmailUser#emailAddress:member'
-  - uid: 'outlook!Office.EmailUser#displayName:member'
-    summary: Gets the display name associated with an email address.
-    name: displayName
     fullName: displayName
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the display name associated with an email address.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'displayName: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.EmailUser#emailAddress:member'
-    summary: Gets the SMTP email address.
-    name: emailAddress
+        type: string
+  - name: emailAddress
+    uid: 'outlook!Office.EmailUser#emailAddress:member'
+    package: outlook!
     fullName: emailAddress
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the SMTP email address.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'emailAddress: string;'
       return:
-        type:
-          - string
+        type: string

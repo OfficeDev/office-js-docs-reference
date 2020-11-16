@@ -1,32 +1,34 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
-    summary: >-
-      An interface for updating data on the InkAnalysisLine object, for use in "inkAnalysisLine.set(<!-- -->{ ... }<!--
-      -->)".
-    name: OneNote.Interfaces.InkAnalysisLineUpdateData
-    fullName: OneNote.Interfaces.InkAnalysisLineUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisLineUpdateData
+uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkAnalysisLineUpdateData
+summary: >-
+  An interface for updating data on the InkAnalysisLine object, for use in
+  "inkAnalysisLine.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: paragraph
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member'
-    summary: |-
+    fullName: paragraph
+    summary: >-
       Reference to the parent InkAnalysisParagraph.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraph
-    fullName: paragraph
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphUpdateData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
-references:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
-    name: OneNote.Interfaces.InkAnalysisParagraphUpdateData
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface"
+          />

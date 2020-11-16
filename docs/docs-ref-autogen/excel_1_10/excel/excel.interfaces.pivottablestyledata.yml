@@ -1,43 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
-    summary: An interface describing the data returned by calling `pivotTableStyle.toJSON()`<!-- -->.
-    name: Excel.Interfaces.PivotTableStyleData
-    fullName: Excel.Interfaces.PivotTableStyleData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.PivotTableStyleData
+uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+package: excel!
+fullName: Excel.Interfaces.PivotTableStyleData
+summary: >-
+  An interface describing the data returned by calling
+  `pivotTableStyle.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: 'excel!Excel.Interfaces.PivotTableStyleData#name:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.PivotTableStyleData#name:member'
-      - 'excel!Excel.Interfaces.PivotTableStyleData#readOnly:member'
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleData#name:member'
-    summary: |-
+    fullName: name
+    summary: >-
       Gets the name of the PivotTableStyle.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.PivotTableStyleData#readOnly:member'
-    summary: |-
+        type: string
+  - name: readOnly
+    uid: 'excel!Excel.Interfaces.PivotTableStyleData#readOnly:member'
+    package: excel!
+    fullName: readOnly
+    summary: >-
       Specifies if this PivotTableStyle object is read-only.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: readOnly
-    fullName: readOnly
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readOnly?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

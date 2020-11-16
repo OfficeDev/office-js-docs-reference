@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the PivotTableScopedCollection object, for use in
-      `pivotTableScopedCollection.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.PivotTableScopedCollectionUpdateData
-    fullName: Excel.Interfaces.PivotTableScopedCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.PivotTableScopedCollectionUpdateData
+uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.PivotTableScopedCollectionUpdateData
+summary: >-
+  An interface for updating data on the PivotTableScopedCollection object, for
+  use in `pivotTableScopedCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member'
-  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.PivotTableData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items~0:complex'
-    name: 'Excel.Interfaces.PivotTableData[]'
-    fullName: 'Excel.Interfaces.PivotTableData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
-        name: Excel.Interfaces.PivotTableData
-        fullName: Excel.Interfaces.PivotTableData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />[]'

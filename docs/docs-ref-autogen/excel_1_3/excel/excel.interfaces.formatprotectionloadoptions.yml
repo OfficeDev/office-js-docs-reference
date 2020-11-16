@@ -1,65 +1,71 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
-    summary: |-
-      Represents the format protection of a range object.
+### YamlMime:TSType
+name: Excel.Interfaces.FormatProtectionLoadOptions
+uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.FormatProtectionLoadOptions
+summary: >-
+  Represents the format protection of a range object.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.FormatProtectionLoadOptions
-    fullName: Excel.Interfaces.FormatProtectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.FormatProtectionLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.FormatProtectionLoadOptions#formulaHidden:member'
-      - 'excel!Excel.Interfaces.FormatProtectionLoadOptions#locked:member'
-  - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#formulaHidden:member'
-    summary: >-
-      Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range
-      doesn't have uniform formula hidden setting.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formulaHidden
+        type: boolean
+  - name: formulaHidden
+    uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#formulaHidden:member'
+    package: excel!
     fullName: formulaHidden
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if Excel hides the formula for the cells in the range. A null
+      value indicates that the entire range doesn't have uniform formula hidden
+      setting.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formulaHidden?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#locked:member'
-    summary: >-
-      Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
-      uniform lock setting.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: locked
+        type: boolean
+  - name: locked
+    uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#locked:member'
+    package: excel!
     fullName: locked
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if Excel locks the cells in the object. A null value indicates
+      that the entire range doesn't have uniform lock setting.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'locked?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

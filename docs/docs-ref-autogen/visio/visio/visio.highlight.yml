@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Highlight:interface'
-    summary: |-
-      Represents the highlight data added to the shape.
+### YamlMime:TSType
+name: Visio.Highlight
+uid: 'visio!Visio.Highlight:interface'
+package: visio!
+fullName: Visio.Highlight
+summary: >-
+  Represents the highlight data added to the shape.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Highlight
-    fullName: Visio.Highlight
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'visio!Visio.Highlight#color:member'
     package: visio!
-    children:
-      - 'visio!Visio.Highlight#color:member'
-      - 'visio!Visio.Highlight#width:member'
-  - uid: 'visio!Visio.Highlight#color:member'
-    summary: >-
-      A string that specifies the color of the highlight. It must have the form "\#RRGGBB", where each letter represents
-      a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value
-      between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255).
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: color
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A string that specifies the color of the highlight. It must have the form
+      "\#RRGGBB", where each letter represents a hexadecimal digit between 0 and
+      F, and where RR is the red value between 0 and 0xFF (255), GG the green
+      value between 0 and 0xFF (255), and BB is the blue value between 0 and
+      0xFF (255).
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color: string;'
       return:
-        type:
-          - string
+        type: string
         description: |-
 
 
@@ -51,18 +56,22 @@ items:
               }
           });
           ```
-  - uid: 'visio!Visio.Highlight#width:member'
-    summary: |-
-      A positive integer that specifies the width of the highlight's stroke in pixels.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: width
+  - name: width
+    uid: 'visio!Visio.Highlight#width:member'
+    package: visio!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A positive integer that specifies the width of the highlight's stroke in
+      pixels.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width: number;'
       return:
-        type:
-          - number
+        type: number

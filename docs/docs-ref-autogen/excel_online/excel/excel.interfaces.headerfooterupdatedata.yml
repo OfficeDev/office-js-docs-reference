@@ -1,119 +1,133 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
-    summary: 'An interface for updating data on the HeaderFooter object, for use in `headerFooter.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.HeaderFooterUpdateData
-    fullName: Excel.Interfaces.HeaderFooterUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.HeaderFooterUpdateData
+uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.HeaderFooterUpdateData
+summary: >-
+  An interface for updating data on the HeaderFooter object, for use in
+  `headerFooter.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: centerFooter
+    uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooter:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooter:member'
-      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeader:member'
-      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooter:member'
-      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeader:member'
-      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooter:member'
-      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeader:member'
-  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooter:member'
-    summary: >-
-      The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes
-      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: centerFooter
     fullName: centerFooter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The center footer of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'centerFooter?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeader:member'
-    summary: >-
-      The center header of the worksheet. To apply font formatting or insert a variable value, use format codes
-      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: centerHeader
+        type: string
+  - name: centerHeader
+    uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeader:member'
+    package: excel!
     fullName: centerHeader
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The center header of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'centerHeader?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooter:member'
-    summary: >-
-      The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: leftFooter
+        type: string
+  - name: leftFooter
+    uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooter:member'
+    package: excel!
     fullName: leftFooter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The left footer of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'leftFooter?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeader:member'
-    summary: >-
-      The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: leftHeader
+        type: string
+  - name: leftHeader
+    uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeader:member'
+    package: excel!
     fullName: leftHeader
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The left header of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'leftHeader?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooter:member'
-    summary: >-
-      The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rightFooter
+        type: string
+  - name: rightFooter
+    uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooter:member'
+    package: excel!
     fullName: rightFooter
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The right footer of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rightFooter?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeader:member'
-    summary: >-
-      The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rightHeader
+        type: string
+  - name: rightHeader
+    uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeader:member'
+    package: excel!
     fullName: rightHeader
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The right header of the worksheet. To apply font formatting or insert a
+      variable value, use format codes specified here:
+      https://msdn.microsoft.com/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rightHeader?: string;'
       return:
-        type:
-          - string
+        type: string

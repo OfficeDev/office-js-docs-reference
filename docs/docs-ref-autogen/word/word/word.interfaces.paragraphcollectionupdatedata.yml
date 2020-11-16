@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ...
-      })`<!-- -->.
-    name: Word.Interfaces.ParagraphCollectionUpdateData
-    fullName: Word.Interfaces.ParagraphCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphCollectionUpdateData
+uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.ParagraphCollectionUpdateData
+summary: >-
+  An interface for updating data on the ParagraphCollection object, for use in
+  `paragraphCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.ParagraphCollectionUpdateData#items:member'
-  - uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.ParagraphData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.ParagraphCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData#items~0:complex'
-    name: 'Word.Interfaces.ParagraphData[]'
-    fullName: 'Word.Interfaces.ParagraphData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.ParagraphData:interface'
-        name: Word.Interfaces.ParagraphData
-        fullName: Word.Interfaces.ParagraphData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'

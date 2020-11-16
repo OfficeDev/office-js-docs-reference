@@ -1,38 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DataValidationAlertStyle:enum'
-    summary: |-
-      Represents Data validation error alert style. The default is "Stop".
+### YamlMime:TSEnum
+name: Excel.DataValidationAlertStyle
+uid: 'excel!Excel.DataValidationAlertStyle:enum'
+package: excel!
+fullName: Excel.DataValidationAlertStyle
+summary: >-
+  Represents Data validation error alert style. The default is "Stop".
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DataValidationAlertStyle
-    fullName: Excel.DataValidationAlertStyle
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: information
+    uid: 'excel!Excel.DataValidationAlertStyle.information:member'
     package: excel!
-    children:
-      - 'excel!Excel.DataValidationAlertStyle.information:member'
-      - 'excel!Excel.DataValidationAlertStyle.stop:member'
-      - 'excel!Excel.DataValidationAlertStyle.warning:member'
-  - uid: 'excel!Excel.DataValidationAlertStyle.information:member'
-    name: information
-    fullName: information
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Information"'
-  - uid: 'excel!Excel.DataValidationAlertStyle.stop:member'
-    name: stop
-    fullName: stop
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Stop"'
-  - uid: 'excel!Excel.DataValidationAlertStyle.warning:member'
-    name: warning
-    fullName: warning
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Warning"'
+    summary: ''
+  - name: stop
+    uid: 'excel!Excel.DataValidationAlertStyle.stop:member'
+    package: excel!
+    summary: ''
+  - name: warning
+    uid: 'excel!Excel.DataValidationAlertStyle.warning:member'
+    package: excel!
+    summary: ''

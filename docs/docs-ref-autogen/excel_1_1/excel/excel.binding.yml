@@ -1,58 +1,92 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Binding:class'
-    summary: |-
-      Represents an Office.js binding that is defined in the workbook.
+### YamlMime:TSType
+name: Excel.Binding
+uid: 'excel!Excel.Binding:class'
+package: excel!
+fullName: Excel.Binding
+summary: >-
+  Represents an Office.js binding that is defined in the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Binding
-    fullName: Excel.Binding
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.Binding#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.Binding#context:member'
-      - 'excel!Excel.Binding#getRange:member(1)'
-      - 'excel!Excel.Binding#getTable:member(1)'
-      - 'excel!Excel.Binding#getText:member(1)'
-      - 'excel!Excel.Binding#id:member'
-      - 'excel!Excel.Binding#load:member(1)'
-      - 'excel!Excel.Binding#load:member(2)'
-      - 'excel!Excel.Binding#load:member(3)'
-      - 'excel!Excel.Binding#toJSON:member(1)'
-      - 'excel!Excel.Binding#type:member'
-  - uid: 'excel!Excel.Binding#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.Binding#getRange:member(1)'
-    summary: |-
-      Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: id
+    uid: 'excel!Excel.Binding#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
+      Represents binding identifier.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getRange()
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'excel!Excel.Binding#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
+      Returns the type of the binding. See Excel.BindingType for details.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Excel.BindingType | "Range" | "Table" | "Text";'
+      return:
+        type: >-
+          <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" |
+          "Text"
+methods:
+  - name: getRange()
+    uid: 'excel!Excel.Binding#getRange:member(1)'
+    package: excel!
     fullName: getRange()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Returns the range represented by the binding. Will throw an error if
+      binding is not of the correct type.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type:
-          - 'excel!Excel.Range:class'
+        type: '<xref uid="excel!Excel.Range:class" />'
         description: |-
 
 
@@ -73,21 +107,25 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.Binding#getTable:member(1)'
-    summary: |-
-      Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getTable()
+  - name: getTable()
+    uid: 'excel!Excel.Binding#getTable:member(1)'
+    package: excel!
     fullName: getTable()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Returns the table represented by the binding. Will throw an error if
+      binding is not of the correct type.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getTable(): Excel.Table;'
       return:
-        type:
-          - 'excel!Excel.Table:class'
+        type: '<xref uid="excel!Excel.Table:class" />'
         description: |-
 
 
@@ -108,21 +146,25 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.Binding#getText:member(1)'
-    summary: |-
-      Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getText()
+  - name: getText()
+    uid: 'excel!Excel.Binding#getText:member(1)'
+    package: excel!
     fullName: getText()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Returns the text represented by the binding. Will throw an error if
+      binding is not of the correct type.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getText(): OfficeExtension.ClientResult<string>;'
       return:
-        type:
-          - 'excel!Excel.Binding#getText~0:complex'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -143,55 +185,45 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.Binding#id:member'
-    summary: |-
-      Represents binding identifier.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Binding#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.Binding#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
-      return:
-        type:
-          - 'excel!Excel.Binding:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.BindingLoadOptions:interface'
-  - uid: 'excel!Excel.Binding#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: '<xref uid="excel!Excel.Interfaces.BindingLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.Binding:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Binding#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Binding;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.Binding:class'
+        type: '<xref uid="excel!Excel.Binding:class" />'
         description: |-
 
 
@@ -211,104 +243,55 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Binding#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Binding#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.Binding;
-      return:
-        type:
-          - 'excel!Excel.Binding:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.Binding#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.Binding:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Binding#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.Binding object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.BindingData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.BindingData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.BindingData:interface" />'
         description: ''
-  - uid: 'excel!Excel.Binding#type:member'
-    summary: |-
-      Returns the type of the binding. See Excel.BindingType for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly type: Excel.BindingType | "Range" | "Table" | "Text";'
-      return:
-        type:
-          - 'excel!Excel.Binding#type~0:complex'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
-  - uid: 'excel!Excel.Table:class'
-    name: Excel.Table
-  - uid: 'excel!Excel.Binding#getText~0:complex'
-    name: OfficeExtension.ClientResult<string>
-    fullName: OfficeExtension.ClientResult<string>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <string>
-        fullName: <string>
-  - uid: 'excel!Excel.Binding:class'
-    name: Excel.Binding
-  - uid: 'excel!Excel.Interfaces.BindingLoadOptions:interface'
-    name: Excel.Interfaces.BindingLoadOptions
-  - uid: 'excel!Excel.Interfaces.BindingData:interface'
-    name: Excel.Interfaces.BindingData
-  - uid: 'excel!Excel.Binding#type~0:complex'
-    name: Excel.BindingType | "Range" | "Table" | "Text"
-    fullName: Excel.BindingType | "Range" | "Table" | "Text"
-    spec.typeScript:
-      - uid: 'excel!Excel.BindingType:enum'
-        name: Excel.BindingType
-        fullName: Excel.BindingType
-      - name: ' | "Range" | "Table" | "Text"'
-        fullName: ' | "Range" | "Table" | "Text"'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -1,234 +1,207 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotFieldCollection:class'
-    summary: |-
-      Represents a collection of all the PivotFields that are part of a PivotTable's hierarchy.
+### YamlMime:TSType
+name: Excel.PivotFieldCollection
+uid: 'excel!Excel.PivotFieldCollection:class'
+package: excel!
+fullName: Excel.PivotFieldCollection
+summary: >-
+  Represents a collection of all the PivotFields that are part of a PivotTable's
+  hierarchy.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotFieldCollection
-    fullName: Excel.PivotFieldCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.PivotFieldCollection#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotFieldCollection#context:member'
-      - 'excel!Excel.PivotFieldCollection#getCount:member(1)'
-      - 'excel!Excel.PivotFieldCollection#getItem:member(1)'
-      - 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.PivotFieldCollection#items:member'
-      - 'excel!Excel.PivotFieldCollection#load:member(1)'
-      - 'excel!Excel.PivotFieldCollection#load:member(2)'
-      - 'excel!Excel.PivotFieldCollection#load:member(3)'
-      - 'excel!Excel.PivotFieldCollection#toJSON:member(1)'
-  - uid: 'excel!Excel.PivotFieldCollection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.PivotFieldCollection#getCount:member(1)'
-    summary: |-
-      Gets the number of pivot fields in the collection.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): OfficeExtension.ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.PivotFieldCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.PivotFieldCollection#getItem:member(1)'
-    summary: |-
-      Gets a PivotField by its name or id.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItem(name)
-    fullName: getItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(name: string): Excel.PivotField;'
-      return:
-        type:
-          - 'excel!Excel.PivotField:class'
-        description: ''
-      parameters:
-        - id: name
-          description: Name of the PivotField to be retrieved.
-          type:
-            - string
-  - uid: 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'
-    summary: |-
-      Gets a PivotField by name. If the PivotField does not exist, will return a null object.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(name: string): Excel.PivotField;'
-      return:
-        type:
-          - 'excel!Excel.PivotField:class'
-        description: ''
-      parameters:
-        - id: name
-          description: Name of the PivotField to be retrieved.
-          type:
-            - string
-  - uid: 'excel!Excel.PivotFieldCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: items
+    uid: 'excel!Excel.PivotFieldCollection#items:member'
+    package: excel!
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly items: Excel.PivotField[];'
       return:
-        type:
-          - 'excel!Excel.PivotFieldCollection#items~0:complex'
-  - uid: 'excel!Excel.PivotFieldCollection#load:member(1)'
+        type: '<xref uid="excel!Excel.PivotField:class" />[]'
+methods:
+  - name: getCount()
+    uid: 'excel!Excel.PivotFieldCollection#getCount:member(1)'
+    package: excel!
+    fullName: getCount()
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+      Gets the number of pivot fields in the collection.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: ''
+  - name: getItem(name)
+    uid: 'excel!Excel.PivotFieldCollection#getItem:member(1)'
+    package: excel!
+    fullName: getItem(name)
+    summary: >-
+      Gets a PivotField by its name or id.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(name: string): Excel.PivotField;'
+      parameters:
+        - id: name
+          description: Name of the PivotField to be retrieved.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.PivotField:class" />'
+        description: ''
+  - name: getItemOrNullObject(name)
+    uid: 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(name)
+    summary: >-
+      Gets a PivotField by name. If the PivotField does not exist, will return a
+      null object.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.PivotField;'
+      parameters:
+        - id: name
+          description: Name of the PivotField to be retrieved.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.PivotField:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.PivotFieldCollection#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.PivotFieldCollection;
-      return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:class'
-        description: ''
+        load(options?: Excel.Interfaces.PivotFieldCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.PivotFieldCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.PivotFieldCollection#load~0:complex'
-  - uid: 'excel!Excel.PivotFieldCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.PivotFieldCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.PivotFieldCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.PivotFieldCollection#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotFieldCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PivotFieldCollection#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotFieldCollection;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:class'
+        type: '<xref uid="excel!Excel.PivotFieldCollection:class" />'
         description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.PivotFieldCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.PivotFieldCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'excel!Excel.PivotFieldCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.PivotFieldCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.PivotFieldCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.PivotFieldCollection#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `Excel.PivotFieldCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.PivotFieldCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotFieldCollectionData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PivotFieldCollectionData:interface'
+        type: >-
+          <xref uid="excel!Excel.Interfaces.PivotFieldCollectionData:interface"
+          />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.PivotFieldCollection#getCount~0:complex'
-    name: OfficeExtension.ClientResult<number>
-    fullName: OfficeExtension.ClientResult<number>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.PivotField:class'
-    name: Excel.PivotField
-  - uid: 'excel!Excel.PivotFieldCollection#items~0:complex'
-    name: 'Excel.PivotField[]'
-    fullName: 'Excel.PivotField[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.PivotField:class'
-        name: Excel.PivotField
-        fullName: Excel.PivotField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.PivotFieldCollection:class'
-    name: Excel.PivotFieldCollection
-  - uid: 'excel!Excel.PivotFieldCollection#load~0:complex'
-    name: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    fullName: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.PivotFieldCollectionLoadOptions:interface'
-        name: Excel.Interfaces.PivotFieldCollectionLoadOptions
-        fullName: Excel.Interfaces.PivotFieldCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
-        name: Excel.Interfaces.CollectionLoadOptions
-        fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'excel!Excel.Interfaces.PivotFieldCollectionData:interface'
-    name: Excel.Interfaces.PivotFieldCollectionData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

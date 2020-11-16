@@ -1,65 +1,71 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-    summary: |-
-      Represents the criteria of the color scale.
+### YamlMime:TSType
+name: Excel.ConditionalColorScaleCriteria
+uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+package: excel!
+fullName: Excel.ConditionalColorScaleCriteria
+summary: >-
+  Represents the criteria of the color scale.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalColorScaleCriteria
-    fullName: Excel.ConditionalColorScaleCriteria
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: maximum
+    uid: 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
-      - 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
-      - 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
-  - uid: 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
-    summary: |-
+    fullName: maximum
+    summary: >-
       The maximum point Color Scale Criterion.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: maximum
-    fullName: maximum
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'maximum: Excel.ConditionalColorScaleCriterion;'
       return:
-        type:
-          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
-  - uid: 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'
+  - name: midpoint
+    uid: 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
+    package: excel!
+    fullName: midpoint
+    summary: >-
       The midpoint Color Scale Criterion if the color scale is a 3-color scale.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: midpoint
-    fullName: midpoint
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
       return:
-        type:
-          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
-  - uid: 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'
+  - name: minimum
+    uid: 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
+    package: excel!
+    fullName: minimum
+    summary: >-
       The minimum point Color Scale Criterion.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minimum
-    fullName: minimum
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minimum: Excel.ConditionalColorScaleCriterion;'
       return:
-        type:
-          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
-references:
-  - uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
-    name: Excel.ConditionalColorScaleCriterion
+        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'

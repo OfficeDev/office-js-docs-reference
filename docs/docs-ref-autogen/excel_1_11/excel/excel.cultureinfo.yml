@@ -1,172 +1,167 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CultureInfo:class'
-    summary: >-
-      Provides information based on current system culture settings. This includes the culture names, number formatting,
-      and other culturally dependent settings.
+### YamlMime:TSType
+name: Excel.CultureInfo
+uid: 'excel!Excel.CultureInfo:class'
+package: excel!
+fullName: Excel.CultureInfo
+summary: >-
+  Provides information based on current system culture settings. This includes
+  the culture names, number formatting, and other culturally dependent settings.
 
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CultureInfo
-    fullName: Excel.CultureInfo
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi
+  1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.CultureInfo#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.CultureInfo#context:member'
-      - 'excel!Excel.CultureInfo#load:member(1)'
-      - 'excel!Excel.CultureInfo#load:member(2)'
-      - 'excel!Excel.CultureInfo#load:member(3)'
-      - 'excel!Excel.CultureInfo#name:member'
-      - 'excel!Excel.CultureInfo#numberFormat:member'
-      - 'excel!Excel.CultureInfo#toJSON:member(1)'
-  - uid: 'excel!Excel.CultureInfo#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.CultureInfo#load:member(1)'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: name
+    uid: 'excel!Excel.CultureInfo#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Gets the culture name in the format languagecode2-country/regioncode2
+      (e.g., "zh-cn" or "en-us"). This is based on current system settings.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.CultureInfoLoadOptions): Excel.CultureInfo;'
+      content: 'readonly name: string;'
       return:
-        type:
-          - 'excel!Excel.CultureInfo:class'
-        description: ''
+        type: string
+  - name: numberFormat
+    uid: 'excel!Excel.CultureInfo#numberFormat:member'
+    package: excel!
+    fullName: numberFormat
+    summary: >-
+      Defines the culturally appropriate format of displaying numbers. This is
+      based on current system culture settings.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly numberFormat: Excel.NumberFormatInfo;'
+      return:
+        type: '<xref uid="excel!Excel.NumberFormatInfo:class" />'
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.CultureInfo#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.CultureInfoLoadOptions):
+        Excel.CultureInfo;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
-  - uid: 'excel!Excel.CultureInfo#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref uid="excel!Excel.Interfaces.CultureInfoLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.CultureInfo:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.CultureInfo#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.CultureInfo;'
-      return:
-        type:
-          - 'excel!Excel.CultureInfo:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.CultureInfo#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.CultureInfo:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.CultureInfo#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.CultureInfo;
-      return:
-        type:
-          - 'excel!Excel.CultureInfo:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.CultureInfo#name:member'
-    summary: >-
-      Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on
-      current system settings.
-
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.CultureInfo#numberFormat:member'
-    summary: |-
-      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly numberFormat: Excel.NumberFormatInfo;'
-      return:
-        type:
-          - 'excel!Excel.NumberFormatInfo:class'
-  - uid: 'excel!Excel.CultureInfo#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.CultureInfo object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.CultureInfoData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+        type: '<xref uid="excel!Excel.CultureInfo:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.CultureInfo#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.CultureInfo
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.CultureInfoData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.CultureInfoData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CultureInfoData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.CultureInfoData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.CultureInfo:class'
-    name: Excel.CultureInfo
-  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
-    name: Excel.Interfaces.CultureInfoLoadOptions
-  - uid: 'excel!Excel.NumberFormatInfo:class'
-    name: Excel.NumberFormatInfo
-  - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
-    name: Excel.Interfaces.CultureInfoData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

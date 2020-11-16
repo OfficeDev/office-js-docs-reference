@@ -1,99 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartLineStyle:enum'
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartLineStyle
-    fullName: Excel.ChartLineStyle
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ChartLineStyle
+uid: 'excel!Excel.ChartLineStyle:enum'
+package: excel!
+fullName: Excel.ChartLineStyle
+summary: >-
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'excel!Excel.ChartLineStyle.automatic:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartLineStyle.automatic:member'
-      - 'excel!Excel.ChartLineStyle.continuous:member'
-      - 'excel!Excel.ChartLineStyle.dash:member'
-      - 'excel!Excel.ChartLineStyle.dashDot:member'
-      - 'excel!Excel.ChartLineStyle.dashDotDot:member'
-      - 'excel!Excel.ChartLineStyle.dot:member'
-      - 'excel!Excel.ChartLineStyle.grey25:member'
-      - 'excel!Excel.ChartLineStyle.grey50:member'
-      - 'excel!Excel.ChartLineStyle.grey75:member'
-      - 'excel!Excel.ChartLineStyle.none:member'
-      - 'excel!Excel.ChartLineStyle.roundDot:member'
-  - uid: 'excel!Excel.ChartLineStyle.automatic:member'
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.ChartLineStyle.continuous:member'
-    name: continuous
-    fullName: continuous
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Continuous"'
-  - uid: 'excel!Excel.ChartLineStyle.dash:member'
-    name: dash
-    fullName: dash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dash"'
-  - uid: 'excel!Excel.ChartLineStyle.dashDot:member'
-    name: dashDot
-    fullName: dashDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashDot"'
-  - uid: 'excel!Excel.ChartLineStyle.dashDotDot:member'
-    name: dashDotDot
-    fullName: dashDotDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashDotDot"'
-  - uid: 'excel!Excel.ChartLineStyle.dot:member'
-    name: dot
-    fullName: dot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dot"'
-  - uid: 'excel!Excel.ChartLineStyle.grey25:member'
-    name: grey25
-    fullName: grey25
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Grey25"'
-  - uid: 'excel!Excel.ChartLineStyle.grey50:member'
-    name: grey50
-    fullName: grey50
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Grey50"'
-  - uid: 'excel!Excel.ChartLineStyle.grey75:member'
-    name: grey75
-    fullName: grey75
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Grey75"'
-  - uid: 'excel!Excel.ChartLineStyle.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'excel!Excel.ChartLineStyle.roundDot:member'
-    name: roundDot
-    fullName: roundDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RoundDot"'
+    summary: ''
+  - name: continuous
+    uid: 'excel!Excel.ChartLineStyle.continuous:member'
+    package: excel!
+    summary: ''
+  - name: dash
+    uid: 'excel!Excel.ChartLineStyle.dash:member'
+    package: excel!
+    summary: ''
+  - name: dashDot
+    uid: 'excel!Excel.ChartLineStyle.dashDot:member'
+    package: excel!
+    summary: ''
+  - name: dashDotDot
+    uid: 'excel!Excel.ChartLineStyle.dashDotDot:member'
+    package: excel!
+    summary: ''
+  - name: dot
+    uid: 'excel!Excel.ChartLineStyle.dot:member'
+    package: excel!
+    summary: ''
+  - name: grey25
+    uid: 'excel!Excel.ChartLineStyle.grey25:member'
+    package: excel!
+    summary: ''
+  - name: grey50
+    uid: 'excel!Excel.ChartLineStyle.grey50:member'
+    package: excel!
+    summary: ''
+  - name: grey75
+    uid: 'excel!Excel.ChartLineStyle.grey75:member'
+    package: excel!
+    summary: ''
+  - name: none
+    uid: 'excel!Excel.ChartLineStyle.none:member'
+    package: excel!
+    summary: ''
+  - name: roundDot
+    uid: 'excel!Excel.ChartLineStyle.roundDot:member'
+    package: excel!
+    summary: ''

@@ -1,72 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
-    summary: |-
-      This bit mask represents a delegate's permissions on a shared folder.
+### YamlMime:TSEnum
+name: Office.MailboxEnums.DelegatePermissions
+uid: 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
+package: outlook!
+fullName: Office.MailboxEnums.DelegatePermissions
+summary: >-
+  This bit mask represents a delegate's permissions on a shared folder.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.MailboxEnums.DelegatePermissions
-    fullName: Office.MailboxEnums.DelegatePermissions
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: Mailbox
+  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: DeleteAll
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteAll:member'
     package: outlook!
-    children:
-      - 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteAll:member'
-      - 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteOwn:member'
-      - 'outlook!Office.MailboxEnums.DelegatePermissions.EditAll:member'
-      - 'outlook!Office.MailboxEnums.DelegatePermissions.EditOwn:member'
-      - 'outlook!Office.MailboxEnums.DelegatePermissions.Read:member'
-      - 'outlook!Office.MailboxEnums.DelegatePermissions.Write:member'
-  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteAll:member'
     summary: Delegate has permission to delete any items.
-    name: DeleteAll
-    fullName: DeleteAll
-    langs:
-      - typeScript
-    type: field
-    numericValue: '8'
-  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteOwn:member'
+    numericValue: 8
+  - name: DeleteOwn
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteOwn:member'
+    package: outlook!
     summary: Delegate has permission to delete only the items they created.
-    name: DeleteOwn
-    fullName: DeleteOwn
-    langs:
-      - typeScript
-    type: field
-    numericValue: '4'
-  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditAll:member'
+    numericValue: 4
+  - name: EditAll
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditAll:member'
+    package: outlook!
     summary: Delegate has permission to edit any items.
-    name: EditAll
-    fullName: EditAll
-    langs:
-      - typeScript
-    type: field
-    numericValue: '32'
-  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditOwn:member'
+    numericValue: 32
+  - name: EditOwn
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditOwn:member'
+    package: outlook!
     summary: Delegate has permission to edit only they items they created.
-    name: EditOwn
-    fullName: EditOwn
-    langs:
-      - typeScript
-    type: field
-    numericValue: '16'
-  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Read:member'
+    numericValue: 16
+  - name: Read
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Read:member'
+    package: outlook!
     summary: Delegate has permission to read items.
-    name: Read
-    fullName: Read
-    langs:
-      - typeScript
-    type: field
-    numericValue: '1'
-  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Write:member'
+    numericValue: 1
+  - name: Write
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Write:member'
+    package: outlook!
     summary: Delegate has permission to create and write items.
-    name: Write
-    fullName: Write
-    langs:
-      - typeScript
-    type: field
-    numericValue: '2'
+    numericValue: 2

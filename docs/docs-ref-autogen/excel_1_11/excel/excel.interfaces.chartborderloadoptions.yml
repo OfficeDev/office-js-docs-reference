@@ -1,77 +1,87 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    summary: |-
-      Represents the border formatting of a chart element.
+### YamlMime:TSType
+name: Excel.Interfaces.ChartBorderLoadOptions
+uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartBorderLoadOptions
+summary: >-
+  Represents the border formatting of a chart element.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartBorderLoadOptions
-    fullName: Excel.Interfaces.ChartBorderLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartBorderLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ChartBorderLoadOptions#color:member'
-      - 'excel!Excel.Interfaces.ChartBorderLoadOptions#lineStyle:member'
-      - 'excel!Excel.Interfaces.ChartBorderLoadOptions#weight:member'
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#color:member'
-    summary: |-
+        type: boolean
+  - name: color
+    uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#color:member'
+    package: excel!
+    fullName: color
+    summary: >-
       HTML color code representing the color of borders in the chart.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#lineStyle:member'
-    summary: |-
-      Represents the line style of the border. See Excel.ChartLineStyle for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: lineStyle
+        type: boolean
+  - name: lineStyle
+    uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#lineStyle:member'
+    package: excel!
     fullName: lineStyle
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the line style of the border. See Excel.ChartLineStyle for
+      details.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineStyle?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#weight:member'
-    summary: |-
+        type: boolean
+  - name: weight
+    uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#weight:member'
+    package: excel!
+    fullName: weight
+    summary: >-
       Represents weight of the border, in points.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'weight?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

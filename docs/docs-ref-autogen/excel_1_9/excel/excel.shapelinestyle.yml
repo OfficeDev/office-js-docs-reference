@@ -1,63 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeLineStyle:enum'
-    summary: |-
-      The style for a line.
+### YamlMime:TSEnum
+name: Excel.ShapeLineStyle
+uid: 'excel!Excel.ShapeLineStyle:enum'
+package: excel!
+fullName: Excel.ShapeLineStyle
+summary: >-
+  The style for a line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeLineStyle
-    fullName: Excel.ShapeLineStyle
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: single
+    uid: 'excel!Excel.ShapeLineStyle.single:member'
     package: excel!
-    children:
-      - 'excel!Excel.ShapeLineStyle.single:member'
-      - 'excel!Excel.ShapeLineStyle.thickBetweenThin:member'
-      - 'excel!Excel.ShapeLineStyle.thickThin:member'
-      - 'excel!Excel.ShapeLineStyle.thinThick:member'
-      - 'excel!Excel.ShapeLineStyle.thinThin:member'
-  - uid: 'excel!Excel.ShapeLineStyle.single:member'
     summary: Single line.
-    name: single
-    fullName: single
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Single"'
-  - uid: 'excel!Excel.ShapeLineStyle.thickBetweenThin:member'
+  - name: thickBetweenThin
+    uid: 'excel!Excel.ShapeLineStyle.thickBetweenThin:member'
+    package: excel!
     summary: Thick line with a thin line on each side.
-    name: thickBetweenThin
-    fullName: thickBetweenThin
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThickBetweenThin"'
-  - uid: 'excel!Excel.ShapeLineStyle.thickThin:member'
+  - name: thickThin
+    uid: 'excel!Excel.ShapeLineStyle.thickThin:member'
+    package: excel!
     summary: >-
-      Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the
-      thick line is to the left of the thin line.
-    name: thickThin
-    fullName: thickThin
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThickThin"'
-  - uid: 'excel!Excel.ShapeLineStyle.thinThick:member'
+      Thick line next to thin line. For horizontal lines, the thick line is
+      above the thin line. For vertical lines, the thick line is to the left of
+      the thin line.
+  - name: thinThick
+    uid: 'excel!Excel.ShapeLineStyle.thinThick:member'
+    package: excel!
     summary: >-
-      Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the
-      thick line is to the right of the thin line.
-    name: thinThick
-    fullName: thinThick
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThick"'
-  - uid: 'excel!Excel.ShapeLineStyle.thinThin:member'
+      Thick line next to thin line. For horizontal lines, the thick line is
+      below the thin line. For vertical lines, the thick line is to the right of
+      the thin line.
+  - name: thinThin
+    uid: 'excel!Excel.ShapeLineStyle.thinThin:member'
+    package: excel!
     summary: Two thin lines.
-    name: thinThin
-    fullName: thinThin
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThin"'

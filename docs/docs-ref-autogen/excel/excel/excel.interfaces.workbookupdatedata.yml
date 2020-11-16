@@ -1,122 +1,130 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
-    summary: 'An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.WorkbookUpdateData
-    fullName: Excel.Interfaces.WorkbookUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.WorkbookUpdateData
+uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.WorkbookUpdateData
+summary: >-
+  An interface for updating data on the Workbook object, for use in
+  `workbook.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: chartDataPointTrack
+    uid: 'excel!Excel.Interfaces.WorkbookUpdateData#chartDataPointTrack:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.WorkbookUpdateData#chartDataPointTrack:member'
-      - 'excel!Excel.Interfaces.WorkbookUpdateData#isDirty:member'
-      - 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
-      - 'excel!Excel.Interfaces.WorkbookUpdateData#showPivotFieldList:member'
-      - 'excel!Excel.Interfaces.WorkbookUpdateData#use1904DateSystem:member'
-      - 'excel!Excel.Interfaces.WorkbookUpdateData#usePrecisionAsDisplayed:member'
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#chartDataPointTrack:member'
-    summary: >-
-      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
-      charts track the index of the data points.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: chartDataPointTrack
     fullName: chartDataPointTrack
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to
+      which they are attached. False if the charts track the index of the data
+      points.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'chartDataPointTrack?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#isDirty:member'
-    summary: >-
-      Specifies if changes have been made since the workbook was last saved. You can set this property to true if you
-      want to close a modified workbook without either saving it or being prompted to save it.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isDirty
+        type: boolean
+  - name: isDirty
+    uid: 'excel!Excel.Interfaces.WorkbookUpdateData#isDirty:member'
+    package: excel!
     fullName: isDirty
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if changes have been made since the workbook was last saved. You
+      can set this property to true if you want to close a modified workbook
+      without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isDirty?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
-    summary: |-
+        type: boolean
+  - name: properties
+    uid: 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
+    package: excel!
+    fullName: properties
+    summary: >-
       Gets the workbook properties.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: properties
-    fullName: properties
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#showPivotFieldList:member'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface" />
+  - name: showPivotFieldList
+    uid: 'excel!Excel.Interfaces.WorkbookUpdateData#showPivotFieldList:member'
+    package: excel!
+    fullName: showPivotFieldList
     summary: >-
-      Specifies whether the PivotTable's field list pane is shown at the workbook level.
+      Specifies whether the PivotTable's field list pane is shown at the
+      workbook level.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: showPivotFieldList
-    fullName: showPivotFieldList
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'showPivotFieldList?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#use1904DateSystem:member'
+        type: boolean
+  - name: use1904DateSystem
+    uid: 'excel!Excel.Interfaces.WorkbookUpdateData#use1904DateSystem:member'
+    package: excel!
+    fullName: use1904DateSystem
     summary: >-
       True if the workbook uses the 1904 date system.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: use1904DateSystem
-    fullName: use1904DateSystem
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'use1904DateSystem?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#usePrecisionAsDisplayed:member'
-    summary: >-
-      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
-      Data will permanently lose accuracy when switching this property from false to true.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: usePrecisionAsDisplayed
+        type: boolean
+  - name: usePrecisionAsDisplayed
+    uid: 'excel!Excel.Interfaces.WorkbookUpdateData#usePrecisionAsDisplayed:member'
+    package: excel!
     fullName: usePrecisionAsDisplayed
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      True if calculations in this workbook will be done using only the
+      precision of the numbers as they're displayed. Data will permanently lose
+      accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'usePrecisionAsDisplayed?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: Excel.Interfaces.DocumentPropertiesUpdateData
+        type: boolean

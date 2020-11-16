@@ -1,50 +1,40 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'
-    summary: >-
-      Provides information about the invocation of a streaming custom function. A streaming custom function can provide
-      results which can change over time.
+### YamlMime:TSType
+name: CustomFunctions.StreamingInvocation
+uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'
+package: custom-functions-runtime!
+fullName: CustomFunctions.StreamingInvocation
+summary: >-
+  Provides information about the invocation of a streaming custom function. A
+  streaming custom function can provide results which can change over time.
 
 
-      Call `setResult()` one or more times to provide the result instead of returning a result from the function.
-    name: CustomFunctions.StreamingInvocation
-    fullName: CustomFunctions.StreamingInvocation
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
-    syntax:
-      typeParameters:
-        - id: ResultType
+  Call `setResult()` one or more times to provide the result instead of
+  returning a result from the function.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: setResult
+    uid: >-
+      custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member
     package: custom-functions-runtime!
-    children:
-      - 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
-  - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
-    summary: >-
-      Set the result for the custom function. May be called more than once. \[ [API set: CustomFunctionsRuntime
-      1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
-    name: setResult
     fullName: setResult
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Set the result for the custom function. May be called more than once. \[
+      [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setResult: (value: ResultType | Error) => void;'
       return:
-        type:
-          - 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult~0:complex'
-references:
-  - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
-    name: CancelableInvocation
-  - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult~0:complex'
-    name: '(value: ResultType | Error) => void'
-    fullName: '(value: ResultType | CustomFunctions.Error) => void'
-    spec.typeScript:
-      - name: '(value: ResultType | '
-        fullName: '(value: ResultType | '
-      - uid: 'custom-functions-runtime!CustomFunctions.Error:class'
-        name: Error
-        fullName: CustomFunctions.Error
-      - name: ) => void
-        fullName: ) => void
+        type: >-
+          (value: ResultType | <xref
+          uid="custom-functions-runtime!CustomFunctions.Error:class" />) =&gt;
+          void
+extends: >-
+  <xref
+  uid="custom-functions-runtime!CustomFunctions.CancelableInvocation:interface"
+  />

@@ -1,144 +1,80 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.ProjectViewTypes:enum'
-    summary: >-
-      Specifies the types of views that the [Document](xref:office!Office.Document:interface)<!--
-      -->.getSelectedViewAsync method can recognize.
-    remarks: >-
-      The [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedViewAsync method returns the
-      ProjectViewTypes constant value and name that corresponds to the active view.
-    name: Office.ProjectViewTypes
-    fullName: Office.ProjectViewTypes
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.ProjectViewTypes
+uid: 'office!Office.ProjectViewTypes:enum'
+package: office!
+fullName: Office.ProjectViewTypes
+summary: >-
+  Specifies the types of views that the
+  [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedViewAsync
+  method can recognize.
+remarks: >-
+  The [Document](xref:office!Office.Document:interface)<!--
+  -->.getSelectedViewAsync method returns the ProjectViewTypes constant value
+  and name that corresponds to the active view.
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Calendar
+    uid: 'office!Office.ProjectViewTypes.Calendar:member'
     package: office!
-    children:
-      - 'office!Office.ProjectViewTypes.Calendar:member'
-      - 'office!Office.ProjectViewTypes.Gantt:member'
-      - 'office!Office.ProjectViewTypes.NetworkDiagram:member'
-      - 'office!Office.ProjectViewTypes.ResourceForm:member'
-      - 'office!Office.ProjectViewTypes.ResourceGraph:member'
-      - 'office!Office.ProjectViewTypes.ResourceNames:member'
-      - 'office!Office.ProjectViewTypes.ResourceSheet:member'
-      - 'office!Office.ProjectViewTypes.ResourceUsage:member'
-      - 'office!Office.ProjectViewTypes.TaskDetails:member'
-      - 'office!Office.ProjectViewTypes.TaskDiagram:member'
-      - 'office!Office.ProjectViewTypes.TaskForm:member'
-      - 'office!Office.ProjectViewTypes.TaskNameForm:member'
-      - 'office!Office.ProjectViewTypes.TaskSheet:member'
-      - 'office!Office.ProjectViewTypes.TaskUsage:member'
-      - 'office!Office.ProjectViewTypes.TeamPlanner:member'
-      - 'office!Office.ProjectViewTypes.Timeline:member'
-  - uid: 'office!Office.ProjectViewTypes.Calendar:member'
     summary: The Calendar view.
-    name: Calendar
-    fullName: Calendar
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.Gantt:member'
+  - name: Gantt
+    uid: 'office!Office.ProjectViewTypes.Gantt:member'
+    package: office!
     summary: The Gantt chart view.
-    name: Gantt
-    fullName: Gantt
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.NetworkDiagram:member'
+  - name: NetworkDiagram
+    uid: 'office!Office.ProjectViewTypes.NetworkDiagram:member'
+    package: office!
     summary: The Network Diagram view.
-    name: NetworkDiagram
-    fullName: NetworkDiagram
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.ResourceForm:member'
+  - name: ResourceForm
+    uid: 'office!Office.ProjectViewTypes.ResourceForm:member'
+    package: office!
     summary: The Resource Form view.
-    name: ResourceForm
-    fullName: ResourceForm
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.ResourceGraph:member'
+  - name: ResourceGraph
+    uid: 'office!Office.ProjectViewTypes.ResourceGraph:member'
+    package: office!
     summary: The Resource Graph view.
-    name: ResourceGraph
-    fullName: ResourceGraph
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.ResourceNames:member'
+  - name: ResourceNames
+    uid: 'office!Office.ProjectViewTypes.ResourceNames:member'
+    package: office!
     summary: The Resource Names view.
-    name: ResourceNames
-    fullName: ResourceNames
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.ResourceSheet:member'
+  - name: ResourceSheet
+    uid: 'office!Office.ProjectViewTypes.ResourceSheet:member'
+    package: office!
     summary: The Resource Sheet view.
-    name: ResourceSheet
-    fullName: ResourceSheet
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.ResourceUsage:member'
+  - name: ResourceUsage
+    uid: 'office!Office.ProjectViewTypes.ResourceUsage:member'
+    package: office!
     summary: The Resource Usage view.
-    name: ResourceUsage
-    fullName: ResourceUsage
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.TaskDetails:member'
+  - name: TaskDetails
+    uid: 'office!Office.ProjectViewTypes.TaskDetails:member'
+    package: office!
     summary: The Task Details view.
-    name: TaskDetails
-    fullName: TaskDetails
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.TaskDiagram:member'
+  - name: TaskDiagram
+    uid: 'office!Office.ProjectViewTypes.TaskDiagram:member'
+    package: office!
     summary: The Task Diagram view.
-    name: TaskDiagram
-    fullName: TaskDiagram
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.TaskForm:member'
+  - name: TaskForm
+    uid: 'office!Office.ProjectViewTypes.TaskForm:member'
+    package: office!
     summary: The Task form view.
-    name: TaskForm
-    fullName: TaskForm
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.TaskNameForm:member'
+  - name: TaskNameForm
+    uid: 'office!Office.ProjectViewTypes.TaskNameForm:member'
+    package: office!
     summary: The Task Name Form view.
-    name: TaskNameForm
-    fullName: TaskNameForm
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.TaskSheet:member'
+  - name: TaskSheet
+    uid: 'office!Office.ProjectViewTypes.TaskSheet:member'
+    package: office!
     summary: The Task Sheet view.
-    name: TaskSheet
-    fullName: TaskSheet
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.TaskUsage:member'
+  - name: TaskUsage
+    uid: 'office!Office.ProjectViewTypes.TaskUsage:member'
+    package: office!
     summary: The Task Usage view.
-    name: TaskUsage
-    fullName: TaskUsage
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.TeamPlanner:member'
+  - name: TeamPlanner
+    uid: 'office!Office.ProjectViewTypes.TeamPlanner:member'
+    package: office!
     summary: The Team Planner view.
-    name: TeamPlanner
-    fullName: TeamPlanner
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectViewTypes.Timeline:member'
+  - name: Timeline
+    uid: 'office!Office.ProjectViewTypes.Timeline:member'
+    package: office!
     summary: The Timeline view.
-    name: Timeline
-    fullName: Timeline
-    langs:
-      - typeScript
-    type: field

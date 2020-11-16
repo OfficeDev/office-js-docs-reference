@@ -1,71 +1,71 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
-    summary: An interface describing the data returned by calling "inkAnalysisLine.toJSON()".
-    name: OneNote.Interfaces.InkAnalysisLineData
-    fullName: OneNote.Interfaces.InkAnalysisLineData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisLineData
+uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkAnalysisLineData
+summary: >-
+  An interface describing the data returned by calling
+  "inkAnalysisLine.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#id:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkAnalysisLineData#id:member'
-      - 'onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member'
-      - 'onenote!OneNote.Interfaces.InkAnalysisLineData#words:member'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#id:member'
-    summary: |-
+    fullName: id
+    summary: >-
       Gets the ID of the InkAnalysisLine object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member'
-    summary: |-
+        type: string
+  - name: paragraph
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member'
+    package: onenote!
+    fullName: paragraph
+    summary: >-
       Reference to the parent InkAnalysisParagraph. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraph
-    fullName: paragraph
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#words:member'
-    summary: |-
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface" />
+  - name: words
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#words:member'
+    package: onenote!
+    fullName: words
+    summary: >-
       Gets the ink analysis words in this ink analysis line. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: words
-    fullName: words
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'words?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisLineData#words~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
-    name: OneNote.Interfaces.InkAnalysisParagraphData
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#words~0:complex'
-    name: 'OneNote.Interfaces.InkAnalysisWordData[]'
-    fullName: 'OneNote.Interfaces.InkAnalysisWordData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
-        name: OneNote.Interfaces.InkAnalysisWordData
-        fullName: OneNote.Interfaces.InkAnalysisWordData
-      - name: '[]'
-        fullName: '[]'
+        type: >-
+          <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface"
+          />[]

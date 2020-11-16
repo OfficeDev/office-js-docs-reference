@@ -1,46 +1,53 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.InkStrokePointer:interface'
-    summary: |-
-      Weak reference to an ink stroke object and its content parent.
+### YamlMime:TSType
+name: OneNote.InkStrokePointer
+uid: 'onenote!OneNote.InkStrokePointer:interface'
+package: onenote!
+fullName: OneNote.InkStrokePointer
+summary: >-
+  Weak reference to an ink stroke object and its content parent.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.InkStrokePointer
-    fullName: OneNote.InkStrokePointer
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contentId
+    uid: 'onenote!OneNote.InkStrokePointer#contentId:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.InkStrokePointer#contentId:member'
-      - 'onenote!OneNote.InkStrokePointer#inkStrokeId:member'
-  - uid: 'onenote!OneNote.InkStrokePointer#contentId:member'
-    summary: |-
+    fullName: contentId
+    summary: >-
       Represents the id of the page content object corresponding to this stroke
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: contentId
-    fullName: contentId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'contentId: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.InkStrokePointer#inkStrokeId:member'
-    summary: |-
+        type: string
+  - name: inkStrokeId
+    uid: 'onenote!OneNote.InkStrokePointer#inkStrokeId:member'
+    package: onenote!
+    fullName: inkStrokeId
+    summary: >-
       Represents the id of the ink stroke
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: inkStrokeId
-    fullName: inkStrokeId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'inkStrokeId: string;'
       return:
-        type:
-          - string
+        type: string

@@ -1,1207 +1,605 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Style:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.Style
-    fullName: Word.Style
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.Style
+uid: 'word!Word.Style:enum'
+package: word!
+fullName: Word.Style
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bibliography
+    uid: 'word!Word.Style.bibliography:member'
     package: word!
-    children:
-      - 'word!Word.Style.bibliography:member'
-      - 'word!Word.Style.bookTitle:member'
-      - 'word!Word.Style.caption:member'
-      - 'word!Word.Style.emphasis:member'
-      - 'word!Word.Style.endnoteReference:member'
-      - 'word!Word.Style.endnoteText:member'
-      - 'word!Word.Style.footer:member'
-      - 'word!Word.Style.footnoteReference:member'
-      - 'word!Word.Style.footnoteText:member'
-      - 'word!Word.Style.gridTable1Light:member'
-      - 'word!Word.Style.gridTable1Light_Accent1:member'
-      - 'word!Word.Style.gridTable1Light_Accent2:member'
-      - 'word!Word.Style.gridTable1Light_Accent3:member'
-      - 'word!Word.Style.gridTable1Light_Accent4:member'
-      - 'word!Word.Style.gridTable1Light_Accent5:member'
-      - 'word!Word.Style.gridTable1Light_Accent6:member'
-      - 'word!Word.Style.gridTable2:member'
-      - 'word!Word.Style.gridTable2_Accent1:member'
-      - 'word!Word.Style.gridTable2_Accent2:member'
-      - 'word!Word.Style.gridTable2_Accent3:member'
-      - 'word!Word.Style.gridTable2_Accent4:member'
-      - 'word!Word.Style.gridTable2_Accent5:member'
-      - 'word!Word.Style.gridTable2_Accent6:member'
-      - 'word!Word.Style.gridTable3:member'
-      - 'word!Word.Style.gridTable3_Accent1:member'
-      - 'word!Word.Style.gridTable3_Accent2:member'
-      - 'word!Word.Style.gridTable3_Accent3:member'
-      - 'word!Word.Style.gridTable3_Accent4:member'
-      - 'word!Word.Style.gridTable3_Accent5:member'
-      - 'word!Word.Style.gridTable3_Accent6:member'
-      - 'word!Word.Style.gridTable4:member'
-      - 'word!Word.Style.gridTable4_Accent1:member'
-      - 'word!Word.Style.gridTable4_Accent2:member'
-      - 'word!Word.Style.gridTable4_Accent3:member'
-      - 'word!Word.Style.gridTable4_Accent4:member'
-      - 'word!Word.Style.gridTable4_Accent5:member'
-      - 'word!Word.Style.gridTable4_Accent6:member'
-      - 'word!Word.Style.gridTable5Dark:member'
-      - 'word!Word.Style.gridTable5Dark_Accent1:member'
-      - 'word!Word.Style.gridTable5Dark_Accent2:member'
-      - 'word!Word.Style.gridTable5Dark_Accent3:member'
-      - 'word!Word.Style.gridTable5Dark_Accent4:member'
-      - 'word!Word.Style.gridTable5Dark_Accent5:member'
-      - 'word!Word.Style.gridTable5Dark_Accent6:member'
-      - 'word!Word.Style.gridTable6Colorful:member'
-      - 'word!Word.Style.gridTable6Colorful_Accent1:member'
-      - 'word!Word.Style.gridTable6Colorful_Accent2:member'
-      - 'word!Word.Style.gridTable6Colorful_Accent3:member'
-      - 'word!Word.Style.gridTable6Colorful_Accent4:member'
-      - 'word!Word.Style.gridTable6Colorful_Accent5:member'
-      - 'word!Word.Style.gridTable6Colorful_Accent6:member'
-      - 'word!Word.Style.gridTable7Colorful:member'
-      - 'word!Word.Style.gridTable7Colorful_Accent1:member'
-      - 'word!Word.Style.gridTable7Colorful_Accent2:member'
-      - 'word!Word.Style.gridTable7Colorful_Accent3:member'
-      - 'word!Word.Style.gridTable7Colorful_Accent4:member'
-      - 'word!Word.Style.gridTable7Colorful_Accent5:member'
-      - 'word!Word.Style.gridTable7Colorful_Accent6:member'
-      - 'word!Word.Style.header:member'
-      - 'word!Word.Style.heading1:member'
-      - 'word!Word.Style.heading2:member'
-      - 'word!Word.Style.heading3:member'
-      - 'word!Word.Style.heading4:member'
-      - 'word!Word.Style.heading5:member'
-      - 'word!Word.Style.heading6:member'
-      - 'word!Word.Style.heading7:member'
-      - 'word!Word.Style.heading8:member'
-      - 'word!Word.Style.heading9:member'
-      - 'word!Word.Style.hyperlink:member'
-      - 'word!Word.Style.intenseEmphasis:member'
-      - 'word!Word.Style.intenseQuote:member'
-      - 'word!Word.Style.intenseReference:member'
-      - 'word!Word.Style.listParagraph:member'
-      - 'word!Word.Style.listTable1Light:member'
-      - 'word!Word.Style.listTable1Light_Accent1:member'
-      - 'word!Word.Style.listTable1Light_Accent2:member'
-      - 'word!Word.Style.listTable1Light_Accent3:member'
-      - 'word!Word.Style.listTable1Light_Accent4:member'
-      - 'word!Word.Style.listTable1Light_Accent5:member'
-      - 'word!Word.Style.listTable1Light_Accent6:member'
-      - 'word!Word.Style.listTable2:member'
-      - 'word!Word.Style.listTable2_Accent1:member'
-      - 'word!Word.Style.listTable2_Accent2:member'
-      - 'word!Word.Style.listTable2_Accent3:member'
-      - 'word!Word.Style.listTable2_Accent4:member'
-      - 'word!Word.Style.listTable2_Accent5:member'
-      - 'word!Word.Style.listTable2_Accent6:member'
-      - 'word!Word.Style.listTable3:member'
-      - 'word!Word.Style.listTable3_Accent1:member'
-      - 'word!Word.Style.listTable3_Accent2:member'
-      - 'word!Word.Style.listTable3_Accent3:member'
-      - 'word!Word.Style.listTable3_Accent4:member'
-      - 'word!Word.Style.listTable3_Accent5:member'
-      - 'word!Word.Style.listTable3_Accent6:member'
-      - 'word!Word.Style.listTable4:member'
-      - 'word!Word.Style.listTable4_Accent1:member'
-      - 'word!Word.Style.listTable4_Accent2:member'
-      - 'word!Word.Style.listTable4_Accent3:member'
-      - 'word!Word.Style.listTable4_Accent4:member'
-      - 'word!Word.Style.listTable4_Accent5:member'
-      - 'word!Word.Style.listTable4_Accent6:member'
-      - 'word!Word.Style.listTable5Dark:member'
-      - 'word!Word.Style.listTable5Dark_Accent1:member'
-      - 'word!Word.Style.listTable5Dark_Accent2:member'
-      - 'word!Word.Style.listTable5Dark_Accent3:member'
-      - 'word!Word.Style.listTable5Dark_Accent4:member'
-      - 'word!Word.Style.listTable5Dark_Accent5:member'
-      - 'word!Word.Style.listTable5Dark_Accent6:member'
-      - 'word!Word.Style.listTable6Colorful:member'
-      - 'word!Word.Style.listTable6Colorful_Accent1:member'
-      - 'word!Word.Style.listTable6Colorful_Accent2:member'
-      - 'word!Word.Style.listTable6Colorful_Accent3:member'
-      - 'word!Word.Style.listTable6Colorful_Accent4:member'
-      - 'word!Word.Style.listTable6Colorful_Accent5:member'
-      - 'word!Word.Style.listTable6Colorful_Accent6:member'
-      - 'word!Word.Style.listTable7Colorful:member'
-      - 'word!Word.Style.listTable7Colorful_Accent1:member'
-      - 'word!Word.Style.listTable7Colorful_Accent2:member'
-      - 'word!Word.Style.listTable7Colorful_Accent3:member'
-      - 'word!Word.Style.listTable7Colorful_Accent4:member'
-      - 'word!Word.Style.listTable7Colorful_Accent5:member'
-      - 'word!Word.Style.listTable7Colorful_Accent6:member'
-      - 'word!Word.Style.normal:member'
-      - 'word!Word.Style.noSpacing:member'
-      - 'word!Word.Style.other:member'
-      - 'word!Word.Style.plainTable1:member'
-      - 'word!Word.Style.plainTable2:member'
-      - 'word!Word.Style.plainTable3:member'
-      - 'word!Word.Style.plainTable4:member'
-      - 'word!Word.Style.plainTable5:member'
-      - 'word!Word.Style.quote:member'
-      - 'word!Word.Style.strong:member'
-      - 'word!Word.Style.subtitle:member'
-      - 'word!Word.Style.subtleEmphasis:member'
-      - 'word!Word.Style.subtleReference:member'
-      - 'word!Word.Style.tableGrid:member'
-      - 'word!Word.Style.tableGridLight:member'
-      - 'word!Word.Style.title:member'
-      - 'word!Word.Style.toc1:member'
-      - 'word!Word.Style.toc2:member'
-      - 'word!Word.Style.toc3:member'
-      - 'word!Word.Style.toc4:member'
-      - 'word!Word.Style.toc5:member'
-      - 'word!Word.Style.toc6:member'
-      - 'word!Word.Style.toc7:member'
-      - 'word!Word.Style.toc8:member'
-      - 'word!Word.Style.toc9:member'
-      - 'word!Word.Style.tocHeading:member'
-  - uid: 'word!Word.Style.bibliography:member'
-    name: bibliography
-    fullName: bibliography
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bibliography"'
-  - uid: 'word!Word.Style.bookTitle:member'
-    name: bookTitle
-    fullName: bookTitle
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BookTitle"'
-  - uid: 'word!Word.Style.caption:member'
-    name: caption
-    fullName: caption
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Caption"'
-  - uid: 'word!Word.Style.emphasis:member'
-    name: emphasis
-    fullName: emphasis
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Emphasis"'
-  - uid: 'word!Word.Style.endnoteReference:member'
-    name: endnoteReference
-    fullName: endnoteReference
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"EndnoteReference"'
-  - uid: 'word!Word.Style.endnoteText:member'
-    name: endnoteText
-    fullName: endnoteText
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"EndnoteText"'
-  - uid: 'word!Word.Style.footer:member'
-    name: footer
-    fullName: footer
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Footer"'
-  - uid: 'word!Word.Style.footnoteReference:member'
-    name: footnoteReference
-    fullName: footnoteReference
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FootnoteReference"'
-  - uid: 'word!Word.Style.footnoteText:member'
-    name: footnoteText
-    fullName: footnoteText
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FootnoteText"'
-  - uid: 'word!Word.Style.gridTable1Light:member'
-    name: gridTable1Light
-    fullName: gridTable1Light
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable1Light"'
-  - uid: 'word!Word.Style.gridTable1Light_Accent1:member'
-    name: gridTable1Light_Accent1
-    fullName: gridTable1Light_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable1Light_Accent1"'
-  - uid: 'word!Word.Style.gridTable1Light_Accent2:member'
-    name: gridTable1Light_Accent2
-    fullName: gridTable1Light_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable1Light_Accent2"'
-  - uid: 'word!Word.Style.gridTable1Light_Accent3:member'
-    name: gridTable1Light_Accent3
-    fullName: gridTable1Light_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable1Light_Accent3"'
-  - uid: 'word!Word.Style.gridTable1Light_Accent4:member'
-    name: gridTable1Light_Accent4
-    fullName: gridTable1Light_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable1Light_Accent4"'
-  - uid: 'word!Word.Style.gridTable1Light_Accent5:member'
-    name: gridTable1Light_Accent5
-    fullName: gridTable1Light_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable1Light_Accent5"'
-  - uid: 'word!Word.Style.gridTable1Light_Accent6:member'
-    name: gridTable1Light_Accent6
-    fullName: gridTable1Light_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable1Light_Accent6"'
-  - uid: 'word!Word.Style.gridTable2:member'
-    name: gridTable2
-    fullName: gridTable2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable2"'
-  - uid: 'word!Word.Style.gridTable2_Accent1:member'
-    name: gridTable2_Accent1
-    fullName: gridTable2_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable2_Accent1"'
-  - uid: 'word!Word.Style.gridTable2_Accent2:member'
-    name: gridTable2_Accent2
-    fullName: gridTable2_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable2_Accent2"'
-  - uid: 'word!Word.Style.gridTable2_Accent3:member'
-    name: gridTable2_Accent3
-    fullName: gridTable2_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable2_Accent3"'
-  - uid: 'word!Word.Style.gridTable2_Accent4:member'
-    name: gridTable2_Accent4
-    fullName: gridTable2_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable2_Accent4"'
-  - uid: 'word!Word.Style.gridTable2_Accent5:member'
-    name: gridTable2_Accent5
-    fullName: gridTable2_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable2_Accent5"'
-  - uid: 'word!Word.Style.gridTable2_Accent6:member'
-    name: gridTable2_Accent6
-    fullName: gridTable2_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable2_Accent6"'
-  - uid: 'word!Word.Style.gridTable3:member'
-    name: gridTable3
-    fullName: gridTable3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable3"'
-  - uid: 'word!Word.Style.gridTable3_Accent1:member'
-    name: gridTable3_Accent1
-    fullName: gridTable3_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable3_Accent1"'
-  - uid: 'word!Word.Style.gridTable3_Accent2:member'
-    name: gridTable3_Accent2
-    fullName: gridTable3_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable3_Accent2"'
-  - uid: 'word!Word.Style.gridTable3_Accent3:member'
-    name: gridTable3_Accent3
-    fullName: gridTable3_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable3_Accent3"'
-  - uid: 'word!Word.Style.gridTable3_Accent4:member'
-    name: gridTable3_Accent4
-    fullName: gridTable3_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable3_Accent4"'
-  - uid: 'word!Word.Style.gridTable3_Accent5:member'
-    name: gridTable3_Accent5
-    fullName: gridTable3_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable3_Accent5"'
-  - uid: 'word!Word.Style.gridTable3_Accent6:member'
-    name: gridTable3_Accent6
-    fullName: gridTable3_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable3_Accent6"'
-  - uid: 'word!Word.Style.gridTable4:member'
-    name: gridTable4
-    fullName: gridTable4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable4"'
-  - uid: 'word!Word.Style.gridTable4_Accent1:member'
-    name: gridTable4_Accent1
-    fullName: gridTable4_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable4_Accent1"'
-  - uid: 'word!Word.Style.gridTable4_Accent2:member'
-    name: gridTable4_Accent2
-    fullName: gridTable4_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable4_Accent2"'
-  - uid: 'word!Word.Style.gridTable4_Accent3:member'
-    name: gridTable4_Accent3
-    fullName: gridTable4_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable4_Accent3"'
-  - uid: 'word!Word.Style.gridTable4_Accent4:member'
-    name: gridTable4_Accent4
-    fullName: gridTable4_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable4_Accent4"'
-  - uid: 'word!Word.Style.gridTable4_Accent5:member'
-    name: gridTable4_Accent5
-    fullName: gridTable4_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable4_Accent5"'
-  - uid: 'word!Word.Style.gridTable4_Accent6:member'
-    name: gridTable4_Accent6
-    fullName: gridTable4_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable4_Accent6"'
-  - uid: 'word!Word.Style.gridTable5Dark:member'
-    name: gridTable5Dark
-    fullName: gridTable5Dark
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable5Dark"'
-  - uid: 'word!Word.Style.gridTable5Dark_Accent1:member'
-    name: gridTable5Dark_Accent1
-    fullName: gridTable5Dark_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable5Dark_Accent1"'
-  - uid: 'word!Word.Style.gridTable5Dark_Accent2:member'
-    name: gridTable5Dark_Accent2
-    fullName: gridTable5Dark_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable5Dark_Accent2"'
-  - uid: 'word!Word.Style.gridTable5Dark_Accent3:member'
-    name: gridTable5Dark_Accent3
-    fullName: gridTable5Dark_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable5Dark_Accent3"'
-  - uid: 'word!Word.Style.gridTable5Dark_Accent4:member'
-    name: gridTable5Dark_Accent4
-    fullName: gridTable5Dark_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable5Dark_Accent4"'
-  - uid: 'word!Word.Style.gridTable5Dark_Accent5:member'
-    name: gridTable5Dark_Accent5
-    fullName: gridTable5Dark_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable5Dark_Accent5"'
-  - uid: 'word!Word.Style.gridTable5Dark_Accent6:member'
-    name: gridTable5Dark_Accent6
-    fullName: gridTable5Dark_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable5Dark_Accent6"'
-  - uid: 'word!Word.Style.gridTable6Colorful:member'
-    name: gridTable6Colorful
-    fullName: gridTable6Colorful
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable6Colorful"'
-  - uid: 'word!Word.Style.gridTable6Colorful_Accent1:member'
-    name: gridTable6Colorful_Accent1
-    fullName: gridTable6Colorful_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable6Colorful_Accent1"'
-  - uid: 'word!Word.Style.gridTable6Colorful_Accent2:member'
-    name: gridTable6Colorful_Accent2
-    fullName: gridTable6Colorful_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable6Colorful_Accent2"'
-  - uid: 'word!Word.Style.gridTable6Colorful_Accent3:member'
-    name: gridTable6Colorful_Accent3
-    fullName: gridTable6Colorful_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable6Colorful_Accent3"'
-  - uid: 'word!Word.Style.gridTable6Colorful_Accent4:member'
-    name: gridTable6Colorful_Accent4
-    fullName: gridTable6Colorful_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable6Colorful_Accent4"'
-  - uid: 'word!Word.Style.gridTable6Colorful_Accent5:member'
-    name: gridTable6Colorful_Accent5
-    fullName: gridTable6Colorful_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable6Colorful_Accent5"'
-  - uid: 'word!Word.Style.gridTable6Colorful_Accent6:member'
-    name: gridTable6Colorful_Accent6
-    fullName: gridTable6Colorful_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable6Colorful_Accent6"'
-  - uid: 'word!Word.Style.gridTable7Colorful:member'
-    name: gridTable7Colorful
-    fullName: gridTable7Colorful
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable7Colorful"'
-  - uid: 'word!Word.Style.gridTable7Colorful_Accent1:member'
-    name: gridTable7Colorful_Accent1
-    fullName: gridTable7Colorful_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable7Colorful_Accent1"'
-  - uid: 'word!Word.Style.gridTable7Colorful_Accent2:member'
-    name: gridTable7Colorful_Accent2
-    fullName: gridTable7Colorful_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable7Colorful_Accent2"'
-  - uid: 'word!Word.Style.gridTable7Colorful_Accent3:member'
-    name: gridTable7Colorful_Accent3
-    fullName: gridTable7Colorful_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable7Colorful_Accent3"'
-  - uid: 'word!Word.Style.gridTable7Colorful_Accent4:member'
-    name: gridTable7Colorful_Accent4
-    fullName: gridTable7Colorful_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable7Colorful_Accent4"'
-  - uid: 'word!Word.Style.gridTable7Colorful_Accent5:member'
-    name: gridTable7Colorful_Accent5
-    fullName: gridTable7Colorful_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable7Colorful_Accent5"'
-  - uid: 'word!Word.Style.gridTable7Colorful_Accent6:member'
-    name: gridTable7Colorful_Accent6
-    fullName: gridTable7Colorful_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GridTable7Colorful_Accent6"'
-  - uid: 'word!Word.Style.header:member'
-    name: header
-    fullName: header
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Header"'
-  - uid: 'word!Word.Style.heading1:member'
-    name: heading1
-    fullName: heading1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading1"'
-  - uid: 'word!Word.Style.heading2:member'
-    name: heading2
-    fullName: heading2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading2"'
-  - uid: 'word!Word.Style.heading3:member'
-    name: heading3
-    fullName: heading3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading3"'
-  - uid: 'word!Word.Style.heading4:member'
-    name: heading4
-    fullName: heading4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading4"'
-  - uid: 'word!Word.Style.heading5:member'
-    name: heading5
-    fullName: heading5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading5"'
-  - uid: 'word!Word.Style.heading6:member'
-    name: heading6
-    fullName: heading6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading6"'
-  - uid: 'word!Word.Style.heading7:member'
-    name: heading7
-    fullName: heading7
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading7"'
-  - uid: 'word!Word.Style.heading8:member'
-    name: heading8
-    fullName: heading8
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading8"'
-  - uid: 'word!Word.Style.heading9:member'
-    name: heading9
-    fullName: heading9
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Heading9"'
-  - uid: 'word!Word.Style.hyperlink:member'
-    name: hyperlink
-    fullName: hyperlink
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hyperlink"'
-  - uid: 'word!Word.Style.intenseEmphasis:member'
-    name: intenseEmphasis
-    fullName: intenseEmphasis
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"IntenseEmphasis"'
-  - uid: 'word!Word.Style.intenseQuote:member'
-    name: intenseQuote
-    fullName: intenseQuote
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"IntenseQuote"'
-  - uid: 'word!Word.Style.intenseReference:member'
-    name: intenseReference
-    fullName: intenseReference
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"IntenseReference"'
-  - uid: 'word!Word.Style.listParagraph:member'
-    name: listParagraph
-    fullName: listParagraph
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListParagraph"'
-  - uid: 'word!Word.Style.listTable1Light:member'
-    name: listTable1Light
-    fullName: listTable1Light
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable1Light"'
-  - uid: 'word!Word.Style.listTable1Light_Accent1:member'
-    name: listTable1Light_Accent1
-    fullName: listTable1Light_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable1Light_Accent1"'
-  - uid: 'word!Word.Style.listTable1Light_Accent2:member'
-    name: listTable1Light_Accent2
-    fullName: listTable1Light_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable1Light_Accent2"'
-  - uid: 'word!Word.Style.listTable1Light_Accent3:member'
-    name: listTable1Light_Accent3
-    fullName: listTable1Light_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable1Light_Accent3"'
-  - uid: 'word!Word.Style.listTable1Light_Accent4:member'
-    name: listTable1Light_Accent4
-    fullName: listTable1Light_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable1Light_Accent4"'
-  - uid: 'word!Word.Style.listTable1Light_Accent5:member'
-    name: listTable1Light_Accent5
-    fullName: listTable1Light_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable1Light_Accent5"'
-  - uid: 'word!Word.Style.listTable1Light_Accent6:member'
-    name: listTable1Light_Accent6
-    fullName: listTable1Light_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable1Light_Accent6"'
-  - uid: 'word!Word.Style.listTable2:member'
-    name: listTable2
-    fullName: listTable2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable2"'
-  - uid: 'word!Word.Style.listTable2_Accent1:member'
-    name: listTable2_Accent1
-    fullName: listTable2_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable2_Accent1"'
-  - uid: 'word!Word.Style.listTable2_Accent2:member'
-    name: listTable2_Accent2
-    fullName: listTable2_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable2_Accent2"'
-  - uid: 'word!Word.Style.listTable2_Accent3:member'
-    name: listTable2_Accent3
-    fullName: listTable2_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable2_Accent3"'
-  - uid: 'word!Word.Style.listTable2_Accent4:member'
-    name: listTable2_Accent4
-    fullName: listTable2_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable2_Accent4"'
-  - uid: 'word!Word.Style.listTable2_Accent5:member'
-    name: listTable2_Accent5
-    fullName: listTable2_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable2_Accent5"'
-  - uid: 'word!Word.Style.listTable2_Accent6:member'
-    name: listTable2_Accent6
-    fullName: listTable2_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable2_Accent6"'
-  - uid: 'word!Word.Style.listTable3:member'
-    name: listTable3
-    fullName: listTable3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable3"'
-  - uid: 'word!Word.Style.listTable3_Accent1:member'
-    name: listTable3_Accent1
-    fullName: listTable3_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable3_Accent1"'
-  - uid: 'word!Word.Style.listTable3_Accent2:member'
-    name: listTable3_Accent2
-    fullName: listTable3_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable3_Accent2"'
-  - uid: 'word!Word.Style.listTable3_Accent3:member'
-    name: listTable3_Accent3
-    fullName: listTable3_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable3_Accent3"'
-  - uid: 'word!Word.Style.listTable3_Accent4:member'
-    name: listTable3_Accent4
-    fullName: listTable3_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable3_Accent4"'
-  - uid: 'word!Word.Style.listTable3_Accent5:member'
-    name: listTable3_Accent5
-    fullName: listTable3_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable3_Accent5"'
-  - uid: 'word!Word.Style.listTable3_Accent6:member'
-    name: listTable3_Accent6
-    fullName: listTable3_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable3_Accent6"'
-  - uid: 'word!Word.Style.listTable4:member'
-    name: listTable4
-    fullName: listTable4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable4"'
-  - uid: 'word!Word.Style.listTable4_Accent1:member'
-    name: listTable4_Accent1
-    fullName: listTable4_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable4_Accent1"'
-  - uid: 'word!Word.Style.listTable4_Accent2:member'
-    name: listTable4_Accent2
-    fullName: listTable4_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable4_Accent2"'
-  - uid: 'word!Word.Style.listTable4_Accent3:member'
-    name: listTable4_Accent3
-    fullName: listTable4_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable4_Accent3"'
-  - uid: 'word!Word.Style.listTable4_Accent4:member'
-    name: listTable4_Accent4
-    fullName: listTable4_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable4_Accent4"'
-  - uid: 'word!Word.Style.listTable4_Accent5:member'
-    name: listTable4_Accent5
-    fullName: listTable4_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable4_Accent5"'
-  - uid: 'word!Word.Style.listTable4_Accent6:member'
-    name: listTable4_Accent6
-    fullName: listTable4_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable4_Accent6"'
-  - uid: 'word!Word.Style.listTable5Dark:member'
-    name: listTable5Dark
-    fullName: listTable5Dark
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable5Dark"'
-  - uid: 'word!Word.Style.listTable5Dark_Accent1:member'
-    name: listTable5Dark_Accent1
-    fullName: listTable5Dark_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable5Dark_Accent1"'
-  - uid: 'word!Word.Style.listTable5Dark_Accent2:member'
-    name: listTable5Dark_Accent2
-    fullName: listTable5Dark_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable5Dark_Accent2"'
-  - uid: 'word!Word.Style.listTable5Dark_Accent3:member'
-    name: listTable5Dark_Accent3
-    fullName: listTable5Dark_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable5Dark_Accent3"'
-  - uid: 'word!Word.Style.listTable5Dark_Accent4:member'
-    name: listTable5Dark_Accent4
-    fullName: listTable5Dark_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable5Dark_Accent4"'
-  - uid: 'word!Word.Style.listTable5Dark_Accent5:member'
-    name: listTable5Dark_Accent5
-    fullName: listTable5Dark_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable5Dark_Accent5"'
-  - uid: 'word!Word.Style.listTable5Dark_Accent6:member'
-    name: listTable5Dark_Accent6
-    fullName: listTable5Dark_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable5Dark_Accent6"'
-  - uid: 'word!Word.Style.listTable6Colorful:member'
-    name: listTable6Colorful
-    fullName: listTable6Colorful
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable6Colorful"'
-  - uid: 'word!Word.Style.listTable6Colorful_Accent1:member'
-    name: listTable6Colorful_Accent1
-    fullName: listTable6Colorful_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable6Colorful_Accent1"'
-  - uid: 'word!Word.Style.listTable6Colorful_Accent2:member'
-    name: listTable6Colorful_Accent2
-    fullName: listTable6Colorful_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable6Colorful_Accent2"'
-  - uid: 'word!Word.Style.listTable6Colorful_Accent3:member'
-    name: listTable6Colorful_Accent3
-    fullName: listTable6Colorful_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable6Colorful_Accent3"'
-  - uid: 'word!Word.Style.listTable6Colorful_Accent4:member'
-    name: listTable6Colorful_Accent4
-    fullName: listTable6Colorful_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable6Colorful_Accent4"'
-  - uid: 'word!Word.Style.listTable6Colorful_Accent5:member'
-    name: listTable6Colorful_Accent5
-    fullName: listTable6Colorful_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable6Colorful_Accent5"'
-  - uid: 'word!Word.Style.listTable6Colorful_Accent6:member'
-    name: listTable6Colorful_Accent6
-    fullName: listTable6Colorful_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable6Colorful_Accent6"'
-  - uid: 'word!Word.Style.listTable7Colorful:member'
-    name: listTable7Colorful
-    fullName: listTable7Colorful
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable7Colorful"'
-  - uid: 'word!Word.Style.listTable7Colorful_Accent1:member'
-    name: listTable7Colorful_Accent1
-    fullName: listTable7Colorful_Accent1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable7Colorful_Accent1"'
-  - uid: 'word!Word.Style.listTable7Colorful_Accent2:member'
-    name: listTable7Colorful_Accent2
-    fullName: listTable7Colorful_Accent2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable7Colorful_Accent2"'
-  - uid: 'word!Word.Style.listTable7Colorful_Accent3:member'
-    name: listTable7Colorful_Accent3
-    fullName: listTable7Colorful_Accent3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable7Colorful_Accent3"'
-  - uid: 'word!Word.Style.listTable7Colorful_Accent4:member'
-    name: listTable7Colorful_Accent4
-    fullName: listTable7Colorful_Accent4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable7Colorful_Accent4"'
-  - uid: 'word!Word.Style.listTable7Colorful_Accent5:member'
-    name: listTable7Colorful_Accent5
-    fullName: listTable7Colorful_Accent5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable7Colorful_Accent5"'
-  - uid: 'word!Word.Style.listTable7Colorful_Accent6:member'
-    name: listTable7Colorful_Accent6
-    fullName: listTable7Colorful_Accent6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ListTable7Colorful_Accent6"'
-  - uid: 'word!Word.Style.normal:member'
+    summary: ''
+  - name: bookTitle
+    uid: 'word!Word.Style.bookTitle:member'
+    package: word!
+    summary: ''
+  - name: caption
+    uid: 'word!Word.Style.caption:member'
+    package: word!
+    summary: ''
+  - name: emphasis
+    uid: 'word!Word.Style.emphasis:member'
+    package: word!
+    summary: ''
+  - name: endnoteReference
+    uid: 'word!Word.Style.endnoteReference:member'
+    package: word!
+    summary: ''
+  - name: endnoteText
+    uid: 'word!Word.Style.endnoteText:member'
+    package: word!
+    summary: ''
+  - name: footer
+    uid: 'word!Word.Style.footer:member'
+    package: word!
+    summary: ''
+  - name: footnoteReference
+    uid: 'word!Word.Style.footnoteReference:member'
+    package: word!
+    summary: ''
+  - name: footnoteText
+    uid: 'word!Word.Style.footnoteText:member'
+    package: word!
+    summary: ''
+  - name: gridTable1Light
+    uid: 'word!Word.Style.gridTable1Light:member'
+    package: word!
+    summary: ''
+  - name: gridTable1Light_Accent1
+    uid: 'word!Word.Style.gridTable1Light_Accent1:member'
+    package: word!
+    summary: ''
+  - name: gridTable1Light_Accent2
+    uid: 'word!Word.Style.gridTable1Light_Accent2:member'
+    package: word!
+    summary: ''
+  - name: gridTable1Light_Accent3
+    uid: 'word!Word.Style.gridTable1Light_Accent3:member'
+    package: word!
+    summary: ''
+  - name: gridTable1Light_Accent4
+    uid: 'word!Word.Style.gridTable1Light_Accent4:member'
+    package: word!
+    summary: ''
+  - name: gridTable1Light_Accent5
+    uid: 'word!Word.Style.gridTable1Light_Accent5:member'
+    package: word!
+    summary: ''
+  - name: gridTable1Light_Accent6
+    uid: 'word!Word.Style.gridTable1Light_Accent6:member'
+    package: word!
+    summary: ''
+  - name: gridTable2
+    uid: 'word!Word.Style.gridTable2:member'
+    package: word!
+    summary: ''
+  - name: gridTable2_Accent1
+    uid: 'word!Word.Style.gridTable2_Accent1:member'
+    package: word!
+    summary: ''
+  - name: gridTable2_Accent2
+    uid: 'word!Word.Style.gridTable2_Accent2:member'
+    package: word!
+    summary: ''
+  - name: gridTable2_Accent3
+    uid: 'word!Word.Style.gridTable2_Accent3:member'
+    package: word!
+    summary: ''
+  - name: gridTable2_Accent4
+    uid: 'word!Word.Style.gridTable2_Accent4:member'
+    package: word!
+    summary: ''
+  - name: gridTable2_Accent5
+    uid: 'word!Word.Style.gridTable2_Accent5:member'
+    package: word!
+    summary: ''
+  - name: gridTable2_Accent6
+    uid: 'word!Word.Style.gridTable2_Accent6:member'
+    package: word!
+    summary: ''
+  - name: gridTable3
+    uid: 'word!Word.Style.gridTable3:member'
+    package: word!
+    summary: ''
+  - name: gridTable3_Accent1
+    uid: 'word!Word.Style.gridTable3_Accent1:member'
+    package: word!
+    summary: ''
+  - name: gridTable3_Accent2
+    uid: 'word!Word.Style.gridTable3_Accent2:member'
+    package: word!
+    summary: ''
+  - name: gridTable3_Accent3
+    uid: 'word!Word.Style.gridTable3_Accent3:member'
+    package: word!
+    summary: ''
+  - name: gridTable3_Accent4
+    uid: 'word!Word.Style.gridTable3_Accent4:member'
+    package: word!
+    summary: ''
+  - name: gridTable3_Accent5
+    uid: 'word!Word.Style.gridTable3_Accent5:member'
+    package: word!
+    summary: ''
+  - name: gridTable3_Accent6
+    uid: 'word!Word.Style.gridTable3_Accent6:member'
+    package: word!
+    summary: ''
+  - name: gridTable4
+    uid: 'word!Word.Style.gridTable4:member'
+    package: word!
+    summary: ''
+  - name: gridTable4_Accent1
+    uid: 'word!Word.Style.gridTable4_Accent1:member'
+    package: word!
+    summary: ''
+  - name: gridTable4_Accent2
+    uid: 'word!Word.Style.gridTable4_Accent2:member'
+    package: word!
+    summary: ''
+  - name: gridTable4_Accent3
+    uid: 'word!Word.Style.gridTable4_Accent3:member'
+    package: word!
+    summary: ''
+  - name: gridTable4_Accent4
+    uid: 'word!Word.Style.gridTable4_Accent4:member'
+    package: word!
+    summary: ''
+  - name: gridTable4_Accent5
+    uid: 'word!Word.Style.gridTable4_Accent5:member'
+    package: word!
+    summary: ''
+  - name: gridTable4_Accent6
+    uid: 'word!Word.Style.gridTable4_Accent6:member'
+    package: word!
+    summary: ''
+  - name: gridTable5Dark
+    uid: 'word!Word.Style.gridTable5Dark:member'
+    package: word!
+    summary: ''
+  - name: gridTable5Dark_Accent1
+    uid: 'word!Word.Style.gridTable5Dark_Accent1:member'
+    package: word!
+    summary: ''
+  - name: gridTable5Dark_Accent2
+    uid: 'word!Word.Style.gridTable5Dark_Accent2:member'
+    package: word!
+    summary: ''
+  - name: gridTable5Dark_Accent3
+    uid: 'word!Word.Style.gridTable5Dark_Accent3:member'
+    package: word!
+    summary: ''
+  - name: gridTable5Dark_Accent4
+    uid: 'word!Word.Style.gridTable5Dark_Accent4:member'
+    package: word!
+    summary: ''
+  - name: gridTable5Dark_Accent5
+    uid: 'word!Word.Style.gridTable5Dark_Accent5:member'
+    package: word!
+    summary: ''
+  - name: gridTable5Dark_Accent6
+    uid: 'word!Word.Style.gridTable5Dark_Accent6:member'
+    package: word!
+    summary: ''
+  - name: gridTable6Colorful
+    uid: 'word!Word.Style.gridTable6Colorful:member'
+    package: word!
+    summary: ''
+  - name: gridTable6Colorful_Accent1
+    uid: 'word!Word.Style.gridTable6Colorful_Accent1:member'
+    package: word!
+    summary: ''
+  - name: gridTable6Colorful_Accent2
+    uid: 'word!Word.Style.gridTable6Colorful_Accent2:member'
+    package: word!
+    summary: ''
+  - name: gridTable6Colorful_Accent3
+    uid: 'word!Word.Style.gridTable6Colorful_Accent3:member'
+    package: word!
+    summary: ''
+  - name: gridTable6Colorful_Accent4
+    uid: 'word!Word.Style.gridTable6Colorful_Accent4:member'
+    package: word!
+    summary: ''
+  - name: gridTable6Colorful_Accent5
+    uid: 'word!Word.Style.gridTable6Colorful_Accent5:member'
+    package: word!
+    summary: ''
+  - name: gridTable6Colorful_Accent6
+    uid: 'word!Word.Style.gridTable6Colorful_Accent6:member'
+    package: word!
+    summary: ''
+  - name: gridTable7Colorful
+    uid: 'word!Word.Style.gridTable7Colorful:member'
+    package: word!
+    summary: ''
+  - name: gridTable7Colorful_Accent1
+    uid: 'word!Word.Style.gridTable7Colorful_Accent1:member'
+    package: word!
+    summary: ''
+  - name: gridTable7Colorful_Accent2
+    uid: 'word!Word.Style.gridTable7Colorful_Accent2:member'
+    package: word!
+    summary: ''
+  - name: gridTable7Colorful_Accent3
+    uid: 'word!Word.Style.gridTable7Colorful_Accent3:member'
+    package: word!
+    summary: ''
+  - name: gridTable7Colorful_Accent4
+    uid: 'word!Word.Style.gridTable7Colorful_Accent4:member'
+    package: word!
+    summary: ''
+  - name: gridTable7Colorful_Accent5
+    uid: 'word!Word.Style.gridTable7Colorful_Accent5:member'
+    package: word!
+    summary: ''
+  - name: gridTable7Colorful_Accent6
+    uid: 'word!Word.Style.gridTable7Colorful_Accent6:member'
+    package: word!
+    summary: ''
+  - name: header
+    uid: 'word!Word.Style.header:member'
+    package: word!
+    summary: ''
+  - name: heading1
+    uid: 'word!Word.Style.heading1:member'
+    package: word!
+    summary: ''
+  - name: heading2
+    uid: 'word!Word.Style.heading2:member'
+    package: word!
+    summary: ''
+  - name: heading3
+    uid: 'word!Word.Style.heading3:member'
+    package: word!
+    summary: ''
+  - name: heading4
+    uid: 'word!Word.Style.heading4:member'
+    package: word!
+    summary: ''
+  - name: heading5
+    uid: 'word!Word.Style.heading5:member'
+    package: word!
+    summary: ''
+  - name: heading6
+    uid: 'word!Word.Style.heading6:member'
+    package: word!
+    summary: ''
+  - name: heading7
+    uid: 'word!Word.Style.heading7:member'
+    package: word!
+    summary: ''
+  - name: heading8
+    uid: 'word!Word.Style.heading8:member'
+    package: word!
+    summary: ''
+  - name: heading9
+    uid: 'word!Word.Style.heading9:member'
+    package: word!
+    summary: ''
+  - name: hyperlink
+    uid: 'word!Word.Style.hyperlink:member'
+    package: word!
+    summary: ''
+  - name: intenseEmphasis
+    uid: 'word!Word.Style.intenseEmphasis:member'
+    package: word!
+    summary: ''
+  - name: intenseQuote
+    uid: 'word!Word.Style.intenseQuote:member'
+    package: word!
+    summary: ''
+  - name: intenseReference
+    uid: 'word!Word.Style.intenseReference:member'
+    package: word!
+    summary: ''
+  - name: listParagraph
+    uid: 'word!Word.Style.listParagraph:member'
+    package: word!
+    summary: ''
+  - name: listTable1Light
+    uid: 'word!Word.Style.listTable1Light:member'
+    package: word!
+    summary: ''
+  - name: listTable1Light_Accent1
+    uid: 'word!Word.Style.listTable1Light_Accent1:member'
+    package: word!
+    summary: ''
+  - name: listTable1Light_Accent2
+    uid: 'word!Word.Style.listTable1Light_Accent2:member'
+    package: word!
+    summary: ''
+  - name: listTable1Light_Accent3
+    uid: 'word!Word.Style.listTable1Light_Accent3:member'
+    package: word!
+    summary: ''
+  - name: listTable1Light_Accent4
+    uid: 'word!Word.Style.listTable1Light_Accent4:member'
+    package: word!
+    summary: ''
+  - name: listTable1Light_Accent5
+    uid: 'word!Word.Style.listTable1Light_Accent5:member'
+    package: word!
+    summary: ''
+  - name: listTable1Light_Accent6
+    uid: 'word!Word.Style.listTable1Light_Accent6:member'
+    package: word!
+    summary: ''
+  - name: listTable2
+    uid: 'word!Word.Style.listTable2:member'
+    package: word!
+    summary: ''
+  - name: listTable2_Accent1
+    uid: 'word!Word.Style.listTable2_Accent1:member'
+    package: word!
+    summary: ''
+  - name: listTable2_Accent2
+    uid: 'word!Word.Style.listTable2_Accent2:member'
+    package: word!
+    summary: ''
+  - name: listTable2_Accent3
+    uid: 'word!Word.Style.listTable2_Accent3:member'
+    package: word!
+    summary: ''
+  - name: listTable2_Accent4
+    uid: 'word!Word.Style.listTable2_Accent4:member'
+    package: word!
+    summary: ''
+  - name: listTable2_Accent5
+    uid: 'word!Word.Style.listTable2_Accent5:member'
+    package: word!
+    summary: ''
+  - name: listTable2_Accent6
+    uid: 'word!Word.Style.listTable2_Accent6:member'
+    package: word!
+    summary: ''
+  - name: listTable3
+    uid: 'word!Word.Style.listTable3:member'
+    package: word!
+    summary: ''
+  - name: listTable3_Accent1
+    uid: 'word!Word.Style.listTable3_Accent1:member'
+    package: word!
+    summary: ''
+  - name: listTable3_Accent2
+    uid: 'word!Word.Style.listTable3_Accent2:member'
+    package: word!
+    summary: ''
+  - name: listTable3_Accent3
+    uid: 'word!Word.Style.listTable3_Accent3:member'
+    package: word!
+    summary: ''
+  - name: listTable3_Accent4
+    uid: 'word!Word.Style.listTable3_Accent4:member'
+    package: word!
+    summary: ''
+  - name: listTable3_Accent5
+    uid: 'word!Word.Style.listTable3_Accent5:member'
+    package: word!
+    summary: ''
+  - name: listTable3_Accent6
+    uid: 'word!Word.Style.listTable3_Accent6:member'
+    package: word!
+    summary: ''
+  - name: listTable4
+    uid: 'word!Word.Style.listTable4:member'
+    package: word!
+    summary: ''
+  - name: listTable4_Accent1
+    uid: 'word!Word.Style.listTable4_Accent1:member'
+    package: word!
+    summary: ''
+  - name: listTable4_Accent2
+    uid: 'word!Word.Style.listTable4_Accent2:member'
+    package: word!
+    summary: ''
+  - name: listTable4_Accent3
+    uid: 'word!Word.Style.listTable4_Accent3:member'
+    package: word!
+    summary: ''
+  - name: listTable4_Accent4
+    uid: 'word!Word.Style.listTable4_Accent4:member'
+    package: word!
+    summary: ''
+  - name: listTable4_Accent5
+    uid: 'word!Word.Style.listTable4_Accent5:member'
+    package: word!
+    summary: ''
+  - name: listTable4_Accent6
+    uid: 'word!Word.Style.listTable4_Accent6:member'
+    package: word!
+    summary: ''
+  - name: listTable5Dark
+    uid: 'word!Word.Style.listTable5Dark:member'
+    package: word!
+    summary: ''
+  - name: listTable5Dark_Accent1
+    uid: 'word!Word.Style.listTable5Dark_Accent1:member'
+    package: word!
+    summary: ''
+  - name: listTable5Dark_Accent2
+    uid: 'word!Word.Style.listTable5Dark_Accent2:member'
+    package: word!
+    summary: ''
+  - name: listTable5Dark_Accent3
+    uid: 'word!Word.Style.listTable5Dark_Accent3:member'
+    package: word!
+    summary: ''
+  - name: listTable5Dark_Accent4
+    uid: 'word!Word.Style.listTable5Dark_Accent4:member'
+    package: word!
+    summary: ''
+  - name: listTable5Dark_Accent5
+    uid: 'word!Word.Style.listTable5Dark_Accent5:member'
+    package: word!
+    summary: ''
+  - name: listTable5Dark_Accent6
+    uid: 'word!Word.Style.listTable5Dark_Accent6:member'
+    package: word!
+    summary: ''
+  - name: listTable6Colorful
+    uid: 'word!Word.Style.listTable6Colorful:member'
+    package: word!
+    summary: ''
+  - name: listTable6Colorful_Accent1
+    uid: 'word!Word.Style.listTable6Colorful_Accent1:member'
+    package: word!
+    summary: ''
+  - name: listTable6Colorful_Accent2
+    uid: 'word!Word.Style.listTable6Colorful_Accent2:member'
+    package: word!
+    summary: ''
+  - name: listTable6Colorful_Accent3
+    uid: 'word!Word.Style.listTable6Colorful_Accent3:member'
+    package: word!
+    summary: ''
+  - name: listTable6Colorful_Accent4
+    uid: 'word!Word.Style.listTable6Colorful_Accent4:member'
+    package: word!
+    summary: ''
+  - name: listTable6Colorful_Accent5
+    uid: 'word!Word.Style.listTable6Colorful_Accent5:member'
+    package: word!
+    summary: ''
+  - name: listTable6Colorful_Accent6
+    uid: 'word!Word.Style.listTable6Colorful_Accent6:member'
+    package: word!
+    summary: ''
+  - name: listTable7Colorful
+    uid: 'word!Word.Style.listTable7Colorful:member'
+    package: word!
+    summary: ''
+  - name: listTable7Colorful_Accent1
+    uid: 'word!Word.Style.listTable7Colorful_Accent1:member'
+    package: word!
+    summary: ''
+  - name: listTable7Colorful_Accent2
+    uid: 'word!Word.Style.listTable7Colorful_Accent2:member'
+    package: word!
+    summary: ''
+  - name: listTable7Colorful_Accent3
+    uid: 'word!Word.Style.listTable7Colorful_Accent3:member'
+    package: word!
+    summary: ''
+  - name: listTable7Colorful_Accent4
+    uid: 'word!Word.Style.listTable7Colorful_Accent4:member'
+    package: word!
+    summary: ''
+  - name: listTable7Colorful_Accent5
+    uid: 'word!Word.Style.listTable7Colorful_Accent5:member'
+    package: word!
+    summary: ''
+  - name: listTable7Colorful_Accent6
+    uid: 'word!Word.Style.listTable7Colorful_Accent6:member'
+    package: word!
+    summary: ''
+  - name: normal
+    uid: 'word!Word.Style.normal:member'
+    package: word!
     summary: Reset character and paragraph style to default.
-    name: normal
-    fullName: normal
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Normal"'
-  - uid: 'word!Word.Style.noSpacing:member'
-    name: noSpacing
-    fullName: noSpacing
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NoSpacing"'
-  - uid: 'word!Word.Style.other:member'
+  - name: noSpacing
+    uid: 'word!Word.Style.noSpacing:member'
+    package: word!
+    summary: ''
+  - name: other
+    uid: 'word!Word.Style.other:member'
+    package: word!
     summary: Mixed styles or other style not in this list.
-    name: other
-    fullName: other
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Other"'
-  - uid: 'word!Word.Style.plainTable1:member'
-    name: plainTable1
-    fullName: plainTable1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainTable1"'
-  - uid: 'word!Word.Style.plainTable2:member'
-    name: plainTable2
-    fullName: plainTable2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainTable2"'
-  - uid: 'word!Word.Style.plainTable3:member'
-    name: plainTable3
-    fullName: plainTable3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainTable3"'
-  - uid: 'word!Word.Style.plainTable4:member'
-    name: plainTable4
-    fullName: plainTable4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainTable4"'
-  - uid: 'word!Word.Style.plainTable5:member'
-    name: plainTable5
-    fullName: plainTable5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainTable5"'
-  - uid: 'word!Word.Style.quote:member'
-    name: quote
-    fullName: quote
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Quote"'
-  - uid: 'word!Word.Style.strong:member'
-    name: strong
-    fullName: strong
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Strong"'
-  - uid: 'word!Word.Style.subtitle:member'
-    name: subtitle
-    fullName: subtitle
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Subtitle"'
-  - uid: 'word!Word.Style.subtleEmphasis:member'
-    name: subtleEmphasis
-    fullName: subtleEmphasis
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SubtleEmphasis"'
-  - uid: 'word!Word.Style.subtleReference:member'
-    name: subtleReference
-    fullName: subtleReference
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SubtleReference"'
-  - uid: 'word!Word.Style.tableGrid:member'
-    name: tableGrid
-    fullName: tableGrid
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableGrid"'
-  - uid: 'word!Word.Style.tableGridLight:member'
-    name: tableGridLight
-    fullName: tableGridLight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableGridLight"'
-  - uid: 'word!Word.Style.title:member'
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Title"'
-  - uid: 'word!Word.Style.toc1:member'
+  - name: plainTable1
+    uid: 'word!Word.Style.plainTable1:member'
+    package: word!
+    summary: ''
+  - name: plainTable2
+    uid: 'word!Word.Style.plainTable2:member'
+    package: word!
+    summary: ''
+  - name: plainTable3
+    uid: 'word!Word.Style.plainTable3:member'
+    package: word!
+    summary: ''
+  - name: plainTable4
+    uid: 'word!Word.Style.plainTable4:member'
+    package: word!
+    summary: ''
+  - name: plainTable5
+    uid: 'word!Word.Style.plainTable5:member'
+    package: word!
+    summary: ''
+  - name: quote
+    uid: 'word!Word.Style.quote:member'
+    package: word!
+    summary: ''
+  - name: strong
+    uid: 'word!Word.Style.strong:member'
+    package: word!
+    summary: ''
+  - name: subtitle
+    uid: 'word!Word.Style.subtitle:member'
+    package: word!
+    summary: ''
+  - name: subtleEmphasis
+    uid: 'word!Word.Style.subtleEmphasis:member'
+    package: word!
+    summary: ''
+  - name: subtleReference
+    uid: 'word!Word.Style.subtleReference:member'
+    package: word!
+    summary: ''
+  - name: tableGrid
+    uid: 'word!Word.Style.tableGrid:member'
+    package: word!
+    summary: ''
+  - name: tableGridLight
+    uid: 'word!Word.Style.tableGridLight:member'
+    package: word!
+    summary: ''
+  - name: title
+    uid: 'word!Word.Style.title:member'
+    package: word!
+    summary: ''
+  - name: toc1
+    uid: 'word!Word.Style.toc1:member'
+    package: word!
     summary: Table-of-content level 1.
-    name: toc1
-    fullName: toc1
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc1"'
-  - uid: 'word!Word.Style.toc2:member'
+  - name: toc2
+    uid: 'word!Word.Style.toc2:member'
+    package: word!
     summary: Table-of-content level 2.
-    name: toc2
-    fullName: toc2
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc2"'
-  - uid: 'word!Word.Style.toc3:member'
+  - name: toc3
+    uid: 'word!Word.Style.toc3:member'
+    package: word!
     summary: Table-of-content level 3.
-    name: toc3
-    fullName: toc3
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc3"'
-  - uid: 'word!Word.Style.toc4:member'
+  - name: toc4
+    uid: 'word!Word.Style.toc4:member'
+    package: word!
     summary: Table-of-content level 4.
-    name: toc4
-    fullName: toc4
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc4"'
-  - uid: 'word!Word.Style.toc5:member'
+  - name: toc5
+    uid: 'word!Word.Style.toc5:member'
+    package: word!
     summary: Table-of-content level 5.
-    name: toc5
-    fullName: toc5
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc5"'
-  - uid: 'word!Word.Style.toc6:member'
+  - name: toc6
+    uid: 'word!Word.Style.toc6:member'
+    package: word!
     summary: Table-of-content level 6.
-    name: toc6
-    fullName: toc6
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc6"'
-  - uid: 'word!Word.Style.toc7:member'
+  - name: toc7
+    uid: 'word!Word.Style.toc7:member'
+    package: word!
     summary: Table-of-content level 7.
-    name: toc7
-    fullName: toc7
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc7"'
-  - uid: 'word!Word.Style.toc8:member'
+  - name: toc8
+    uid: 'word!Word.Style.toc8:member'
+    package: word!
     summary: Table-of-content level 8.
-    name: toc8
-    fullName: toc8
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc8"'
-  - uid: 'word!Word.Style.toc9:member'
+  - name: toc9
+    uid: 'word!Word.Style.toc9:member'
+    package: word!
     summary: Table-of-content level 9.
-    name: toc9
-    fullName: toc9
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Toc9"'
-  - uid: 'word!Word.Style.tocHeading:member'
+  - name: tocHeading
+    uid: 'word!Word.Style.tocHeading:member'
+    package: word!
     summary: Table-of-content heading.
-    name: tocHeading
-    fullName: tocHeading
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TocHeading"'

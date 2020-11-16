@@ -1,39 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.GetFileOptions:interface'
-    summary: Provides options for setting the size of slices that the document will be divided into.
-    name: Office.GetFileOptions
-    fullName: Office.GetFileOptions
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.GetFileOptions
+uid: 'office!Office.GetFileOptions:interface'
+package: office!
+fullName: Office.GetFileOptions
+summary: >-
+  Provides options for setting the size of slices that the document will be
+  divided into.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: asyncContext
+    uid: 'office!Office.GetFileOptions#asyncContext:member'
     package: office!
-    children:
-      - 'office!Office.GetFileOptions#asyncContext:member'
-      - 'office!Office.GetFileOptions#sliceSize:member'
-  - uid: 'office!Office.GetFileOptions#asyncContext:member'
-    summary: >-
-      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
-      object that is passed to a callback.
-    name: asyncContext
     fullName: asyncContext
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the
+      asyncContext property of the AsyncResult object that is passed to a
+      callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'asyncContext?: any'
       return:
-        type:
-          - any
-  - uid: 'office!Office.GetFileOptions#sliceSize:member'
-    summary: The the size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
-    name: sliceSize
+        type: any
+  - name: sliceSize
+    uid: 'office!Office.GetFileOptions#sliceSize:member'
+    package: office!
     fullName: sliceSize
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The the size of the slices in bytes. The maximum (and the default) is
+      4194304 (4MB).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sliceSize?: number'
       return:
-        type:
-          - number
+        type: number

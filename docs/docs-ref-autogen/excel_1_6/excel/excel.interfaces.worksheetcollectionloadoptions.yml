@@ -1,152 +1,171 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
-    summary: |-
-      Represents a collection of worksheet objects that are part of the workbook.
+### YamlMime:TSType
+name: Excel.Interfaces.WorksheetCollectionLoadOptions
+uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
+summary: >-
+  Represents a collection of worksheet objects that are part of the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.WorksheetCollectionLoadOptions
-    fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member'
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#id:member'
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#name:member'
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#position:member'
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member'
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member'
-      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#visibility:member'
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member'
-    summary: |-
-      For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: charts
+        type: boolean
+  - name: charts
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member'
+    package: excel!
     fullName: charts
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns a collection of charts that are
+      part of the worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#id:member'
-    summary: >-
-      For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The
-      value of the identifier remains the same even when the worksheet is renamed or moved.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartCollectionLoadOptions:interface" />
+  - name: id
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#id:member'
+    package: excel!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns a value that uniquely identifies
+      the worksheet in a given workbook. The value of the identifier remains the
+      same even when the worksheet is renamed or moved.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#name:member'
-    summary: |-
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
       For EACH ITEM in the collection: The display name of the worksheet.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#position:member'
-    summary: |-
-      For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: position
+        type: boolean
+  - name: position
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#position:member'
+    package: excel!
     fullName: position
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: The zero-based position of the worksheet
+      within the workbook.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'position?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member'
-    summary: |-
-      For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: protection
+        type: boolean
+  - name: protection
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member'
+    package: excel!
     fullName: protection
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Returns sheet protection object for a
+      worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member'
-    summary: |-
-      For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tables
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface"
+          />
+  - name: tables
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member'
+    package: excel!
     fullName: tables
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Collection of tables that are part of the
+      worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#visibility:member'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
+  - name: visibility
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#visibility:member'
+    package: excel!
+    fullName: visibility
     summary: >-
       For EACH ITEM in the collection: The Visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visibility
-    fullName: visibility
-    langs:
-      - typeScript
-    type: property
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visibility?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
-    name: Excel.Interfaces.ChartCollectionLoadOptions
-  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetProtectionLoadOptions
-  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableCollectionLoadOptions
+        type: boolean

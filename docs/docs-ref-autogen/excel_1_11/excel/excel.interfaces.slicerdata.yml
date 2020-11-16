@@ -1,237 +1,246 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.SlicerData:interface'
-    summary: An interface describing the data returned by calling `slicer.toJSON()`<!-- -->.
-    name: Excel.Interfaces.SlicerData
-    fullName: Excel.Interfaces.SlicerData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.SlicerData
+uid: 'excel!Excel.Interfaces.SlicerData:interface'
+package: excel!
+fullName: Excel.Interfaces.SlicerData
+summary: >-
+  An interface describing the data returned by calling `slicer.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: caption
+    uid: 'excel!Excel.Interfaces.SlicerData#caption:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.SlicerData#caption:member'
-      - 'excel!Excel.Interfaces.SlicerData#height:member'
-      - 'excel!Excel.Interfaces.SlicerData#id:member'
-      - 'excel!Excel.Interfaces.SlicerData#isFilterCleared:member'
-      - 'excel!Excel.Interfaces.SlicerData#left:member'
-      - 'excel!Excel.Interfaces.SlicerData#name:member'
-      - 'excel!Excel.Interfaces.SlicerData#slicerItems:member'
-      - 'excel!Excel.Interfaces.SlicerData#sortBy:member'
-      - 'excel!Excel.Interfaces.SlicerData#style:member'
-      - 'excel!Excel.Interfaces.SlicerData#top:member'
-      - 'excel!Excel.Interfaces.SlicerData#width:member'
-      - 'excel!Excel.Interfaces.SlicerData#worksheet:member'
-  - uid: 'excel!Excel.Interfaces.SlicerData#caption:member'
-    summary: |-
+    fullName: caption
+    summary: >-
       Represents the caption of slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: caption
-    fullName: caption
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'caption?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.SlicerData#height:member'
-    summary: >-
-      Represents the height, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: height
+        type: string
+  - name: height
+    uid: 'excel!Excel.Interfaces.SlicerData#height:member'
+    package: excel!
     fullName: height
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the height, in points, of the slicer. Throws an "The argument
+      is invalid or missing or has an incorrect format." exception when set with
+      negative value or zero as input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'height?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.SlicerData#id:member'
-    summary: |-
+        type: number
+  - name: id
+    uid: 'excel!Excel.Interfaces.SlicerData#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Represents the unique id of slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.SlicerData#isFilterCleared:member'
-    summary: |-
+        type: string
+  - name: isFilterCleared
+    uid: 'excel!Excel.Interfaces.SlicerData#isFilterCleared:member'
+    package: excel!
+    fullName: isFilterCleared
+    summary: >-
       True if all filters currently applied on the slicer are cleared.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isFilterCleared
-    fullName: isFilterCleared
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isFilterCleared?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.SlicerData#left:member'
-    summary: >-
-      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: left
+        type: boolean
+  - name: left
+    uid: 'excel!Excel.Interfaces.SlicerData#left:member'
+    package: excel!
     fullName: left
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the distance, in points, from the left side of the slicer to
+      the left of the worksheet. Throws an "The argument is invalid or missing
+      or has an incorrect format." exception when set with negative value as
+      input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'left?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.SlicerData#name:member'
-    summary: |-
+        type: number
+  - name: name
+    uid: 'excel!Excel.Interfaces.SlicerData#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
       Represents the name of slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.SlicerData#slicerItems:member'
-    summary: |-
+        type: string
+  - name: slicerItems
+    uid: 'excel!Excel.Interfaces.SlicerData#slicerItems:member'
+    package: excel!
+    fullName: slicerItems
+    summary: >-
       Represents the collection of SlicerItems that are part of the slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: slicerItems
-    fullName: slicerItems
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'slicerItems?: Excel.Interfaces.SlicerItemData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.SlicerData#slicerItems~0:complex'
-  - uid: 'excel!Excel.Interfaces.SlicerData#sortBy:member'
-    summary: >-
-      Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
-      "Descending".
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: sortBy
+        type: '<xref uid="excel!Excel.Interfaces.SlicerItemData:interface" />[]'
+  - name: sortBy
+    uid: 'excel!Excel.Interfaces.SlicerData#sortBy:member'
+    package: excel!
     fullName: sortBy
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.SlicerData#sortBy~0:complex'
-  - uid: 'excel!Excel.Interfaces.SlicerData#style:member'
     summary: >-
-      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
-      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      Represents the sort order of the items in the slicer. Possible values are:
+      "DataSourceOrder", "Ascending", "Descending".
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" |
+        "Descending";
+      return:
+        type: >-
+          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
+          "Ascending" | "Descending"
+  - name: style
+    uid: 'excel!Excel.Interfaces.SlicerData#style:member'
+    package: excel!
+    fullName: style
+    summary: >-
+      Constant value that represents the Slicer style. Possible values are:
+      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
+      through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.SlicerData#top:member'
-    summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: top
+        type: string
+  - name: top
+    uid: 'excel!Excel.Interfaces.SlicerData#top:member'
+    package: excel!
     fullName: top
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the distance, in points, from the top edge of the slicer to the
+      top of the worksheet. Throws an "The argument is invalid or missing or has
+      an incorrect format." exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'top?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.SlicerData#width:member'
-    summary: >-
-      Represents the width, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: width
+        type: number
+  - name: width
+    uid: 'excel!Excel.Interfaces.SlicerData#width:member'
+    package: excel!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the width, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with
+      negative value or zero as input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.SlicerData#worksheet:member'
-    summary: |-
+        type: number
+  - name: worksheet
+    uid: 'excel!Excel.Interfaces.SlicerData#worksheet:member'
+    package: excel!
+    fullName: worksheet
+    summary: >-
       Represents the worksheet containing the slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.WorksheetData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.SlicerData#slicerItems~0:complex'
-    name: 'Excel.Interfaces.SlicerItemData[]'
-    fullName: 'Excel.Interfaces.SlicerItemData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
-        name: Excel.Interfaces.SlicerItemData
-        fullName: Excel.Interfaces.SlicerItemData
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.Interfaces.SlicerData#sortBy~0:complex'
-    name: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-    fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-    spec.typeScript:
-      - uid: 'excel!Excel.SlicerSortType:enum'
-        name: Excel.SlicerSortType
-        fullName: Excel.SlicerSortType
-      - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
-        fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
-  - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
-    name: Excel.Interfaces.WorksheetData
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'

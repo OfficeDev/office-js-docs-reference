@@ -1,154 +1,84 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.ContentControlType:enum'
-    summary: |-
-      Specifies supported content control types and subtypes.
+### YamlMime:TSEnum
+name: Word.ContentControlType
+uid: 'word!Word.ContentControlType:enum'
+package: word!
+fullName: Word.ContentControlType
+summary: >-
+  Specifies supported content control types and subtypes.
 
-      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.ContentControlType
-    fullName: Word.ContentControlType
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: buildingBlockGallery
+    uid: 'word!Word.ContentControlType.buildingBlockGallery:member'
     package: word!
-    children:
-      - 'word!Word.ContentControlType.buildingBlockGallery:member'
-      - 'word!Word.ContentControlType.checkBox:member'
-      - 'word!Word.ContentControlType.comboBox:member'
-      - 'word!Word.ContentControlType.datePicker:member'
-      - 'word!Word.ContentControlType.dropDownList:member'
-      - 'word!Word.ContentControlType.picture:member'
-      - 'word!Word.ContentControlType.plainText:member'
-      - 'word!Word.ContentControlType.plainTextInline:member'
-      - 'word!Word.ContentControlType.plainTextParagraph:member'
-      - 'word!Word.ContentControlType.repeatingSection:member'
-      - 'word!Word.ContentControlType.richText:member'
-      - 'word!Word.ContentControlType.richTextInline:member'
-      - 'word!Word.ContentControlType.richTextParagraphs:member'
-      - 'word!Word.ContentControlType.richTextTable:member'
-      - 'word!Word.ContentControlType.richTextTableCell:member'
-      - 'word!Word.ContentControlType.richTextTableRow:member'
-      - 'word!Word.ContentControlType.unknown:member'
-  - uid: 'word!Word.ContentControlType.buildingBlockGallery:member'
-    name: buildingBlockGallery
-    fullName: buildingBlockGallery
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BuildingBlockGallery"'
-  - uid: 'word!Word.ContentControlType.checkBox:member'
-    name: checkBox
-    fullName: checkBox
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CheckBox"'
-  - uid: 'word!Word.ContentControlType.comboBox:member'
-    name: comboBox
-    fullName: comboBox
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ComboBox"'
-  - uid: 'word!Word.ContentControlType.datePicker:member'
-    name: datePicker
-    fullName: datePicker
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DatePicker"'
-  - uid: 'word!Word.ContentControlType.dropDownList:member'
-    name: dropDownList
-    fullName: dropDownList
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DropDownList"'
-  - uid: 'word!Word.ContentControlType.picture:member'
-    name: picture
-    fullName: picture
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Picture"'
-  - uid: 'word!Word.ContentControlType.plainText:member'
-    name: plainText
-    fullName: plainText
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainText"'
-  - uid: 'word!Word.ContentControlType.plainTextInline:member'
-    name: plainTextInline
-    fullName: plainTextInline
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainTextInline"'
-  - uid: 'word!Word.ContentControlType.plainTextParagraph:member'
-    name: plainTextParagraph
-    fullName: plainTextParagraph
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlainTextParagraph"'
-  - uid: 'word!Word.ContentControlType.repeatingSection:member'
-    name: repeatingSection
-    fullName: repeatingSection
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RepeatingSection"'
-  - uid: 'word!Word.ContentControlType.richText:member'
+    summary: ''
+  - name: checkBox
+    uid: 'word!Word.ContentControlType.checkBox:member'
+    package: word!
+    summary: ''
+  - name: comboBox
+    uid: 'word!Word.ContentControlType.comboBox:member'
+    package: word!
+    summary: ''
+  - name: datePicker
+    uid: 'word!Word.ContentControlType.datePicker:member'
+    package: word!
+    summary: ''
+  - name: dropDownList
+    uid: 'word!Word.ContentControlType.dropDownList:member'
+    package: word!
+    summary: ''
+  - name: picture
+    uid: 'word!Word.ContentControlType.picture:member'
+    package: word!
+    summary: ''
+  - name: plainText
+    uid: 'word!Word.ContentControlType.plainText:member'
+    package: word!
+    summary: ''
+  - name: plainTextInline
+    uid: 'word!Word.ContentControlType.plainTextInline:member'
+    package: word!
+    summary: ''
+  - name: plainTextParagraph
+    uid: 'word!Word.ContentControlType.plainTextParagraph:member'
+    package: word!
+    summary: ''
+  - name: repeatingSection
+    uid: 'word!Word.ContentControlType.repeatingSection:member'
+    package: word!
+    summary: ''
+  - name: richText
+    uid: 'word!Word.ContentControlType.richText:member'
+    package: word!
     summary: Identifies a rich text content control.
-    name: richText
-    fullName: richText
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RichText"'
-  - uid: 'word!Word.ContentControlType.richTextInline:member'
-    name: richTextInline
-    fullName: richTextInline
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RichTextInline"'
-  - uid: 'word!Word.ContentControlType.richTextParagraphs:member'
-    name: richTextParagraphs
-    fullName: richTextParagraphs
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RichTextParagraphs"'
-  - uid: 'word!Word.ContentControlType.richTextTable:member'
+  - name: richTextInline
+    uid: 'word!Word.ContentControlType.richTextInline:member'
+    package: word!
+    summary: ''
+  - name: richTextParagraphs
+    uid: 'word!Word.ContentControlType.richTextParagraphs:member'
+    package: word!
+    summary: ''
+  - name: richTextTable
+    uid: 'word!Word.ContentControlType.richTextTable:member'
+    package: word!
     summary: Contains a whole table.
-    name: richTextTable
-    fullName: richTextTable
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RichTextTable"'
-  - uid: 'word!Word.ContentControlType.richTextTableCell:member'
+  - name: richTextTableCell
+    uid: 'word!Word.ContentControlType.richTextTableCell:member'
+    package: word!
     summary: Contains a whole cell.
-    name: richTextTableCell
-    fullName: richTextTableCell
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RichTextTableCell"'
-  - uid: 'word!Word.ContentControlType.richTextTableRow:member'
+  - name: richTextTableRow
+    uid: 'word!Word.ContentControlType.richTextTableRow:member'
+    package: word!
     summary: Contains a whole row.
-    name: richTextTableRow
-    fullName: richTextTableRow
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RichTextTableRow"'
-  - uid: 'word!Word.ContentControlType.unknown:member'
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Unknown"'
+  - name: unknown
+    uid: 'word!Word.ContentControlType.unknown:member'
+    package: word!
+    summary: ''

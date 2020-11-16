@@ -1,220 +1,239 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions:interface'
-    summary: |-
-      Contains the collection of the document's TableCell objects.
+### YamlMime:TSType
+name: Word.Interfaces.TableCellCollectionLoadOptions
+uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.TableCellCollectionLoadOptions
+summary: >-
+  Contains the collection of the document's TableCell objects.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.TableCellCollectionLoadOptions
-    fullName: Word.Interfaces.TableCellCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: WordApi
+  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#$all:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#$all:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#body:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#columnWidth:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#horizontalAlignment:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentTable:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#value:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#verticalAlignment:member'
-      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#width:member'
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#body:member'
-    summary: |-
+        type: boolean
+  - name: body
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#body:member'
+    package: word!
+    fullName: body
+    summary: >-
       For EACH ITEM in the collection: Gets the body object of the cell.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: body
-    fullName: body
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.BodyLoadOptions:interface'
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: cellIndex
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: cellIndex
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
+    package: word!
     fullName: cellIndex
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the index of the cell in its row.
+      Read-only.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellIndex?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#columnWidth:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to
-      uniform tables.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: columnWidth
+        type: boolean
+  - name: columnWidth
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#columnWidth:member'
+    package: word!
     fullName: columnWidth
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the width of the cell's
+      column in points. This is applicable to uniform tables.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columnWidth?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#horizontalAlignment:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left',
-      'Centered', 'Right', or 'Justified'.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: horizontalAlignment
+        type: boolean
+  - name: horizontalAlignment
+    uid: >-
+      word!Word.Interfaces.TableCellCollectionLoadOptions#horizontalAlignment:member
+    package: word!
     fullName: horizontalAlignment
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the horizontal alignment of
+      the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'horizontalAlignment?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
-    summary: |-
+        type: boolean
+  - name: parentRow
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
+    package: word!
+    fullName: parentRow
+    summary: >-
       For EACH ITEM in the collection: Gets the parent row of the cell.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentRow
-    fullName: parentRow
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'parentRow?: Word.Interfaces.TableRowLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.TableRowLoadOptions:interface'
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentTable:member'
-    summary: |-
+        type: '<xref uid="word!Word.Interfaces.TableRowLoadOptions:interface" />'
+  - name: parentTable
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentTable:member'
+    package: word!
+    fullName: parentTable
+    summary: >-
       For EACH ITEM in the collection: Gets the parent table of the cell.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentTable
-    fullName: parentTable
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.TableLoadOptions:interface'
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: rowIndex
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
+  - name: rowIndex
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
+    package: word!
     fullName: rowIndex
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the index of the cell's row in the
+      table. Read-only.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowIndex?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB"
-      format or by using the color name.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: shadingColor
+        type: boolean
+  - name: shadingColor
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
+    package: word!
     fullName: shadingColor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the shading color of the
+      cell. Color is specified in "\#RRGGBB" format or by using the color name.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shadingColor?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#value:member'
-    summary: |-
+        type: boolean
+  - name: value
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#value:member'
+    package: word!
+    fullName: value
+    summary: >-
       For EACH ITEM in the collection: Gets and sets the text of the cell.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#verticalAlignment:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top',
-      'Center', or 'Bottom'.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: verticalAlignment
+        type: boolean
+  - name: verticalAlignment
+    uid: >-
+      word!Word.Interfaces.TableCellCollectionLoadOptions#verticalAlignment:member
+    package: word!
     fullName: verticalAlignment
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the vertical alignment of
+      the cell. The value can be 'Top', 'Center', or 'Bottom'.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'verticalAlignment?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#width:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the width of the cell in points. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: width
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#width:member'
+    package: word!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the width of the cell in points.
+      Read-only.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
-  - uid: 'word!Word.Interfaces.TableRowLoadOptions:interface'
-    name: Word.Interfaces.TableRowLoadOptions
-  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: Word.Interfaces.TableLoadOptions
+        type: boolean

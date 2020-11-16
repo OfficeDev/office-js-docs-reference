@@ -1,58 +1,169 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Table:class'
-    summary: |-
-      Represents a table in a OneNote page.
+### YamlMime:TSType
+name: OneNote.Table
+uid: 'onenote!OneNote.Table:class'
+package: onenote!
+fullName: OneNote.Table
+summary: >-
+  Represents a table in a OneNote page.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Table
-    fullName: OneNote.Table
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: borderVisible
+    uid: 'onenote!OneNote.Table#borderVisible:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Table#appendColumn:member(1)'
-      - 'onenote!OneNote.Table#appendRow:member(1)'
-      - 'onenote!OneNote.Table#borderVisible:member'
-      - 'onenote!OneNote.Table#clear:member(1)'
-      - 'onenote!OneNote.Table#columnCount:member'
-      - 'onenote!OneNote.Table#context:member'
-      - 'onenote!OneNote.Table#getCell:member(1)'
-      - 'onenote!OneNote.Table#id:member'
-      - 'onenote!OneNote.Table#insertColumn:member(1)'
-      - 'onenote!OneNote.Table#insertRow:member(1)'
-      - 'onenote!OneNote.Table#load:member(1)'
-      - 'onenote!OneNote.Table#load:member(2)'
-      - 'onenote!OneNote.Table#load:member(3)'
-      - 'onenote!OneNote.Table#paragraph:member'
-      - 'onenote!OneNote.Table#rowCount:member'
-      - 'onenote!OneNote.Table#rows:member'
-      - 'onenote!OneNote.Table#set:member(1)'
-      - 'onenote!OneNote.Table#set:member(2)'
-      - 'onenote!OneNote.Table#setShadingColor:member(1)'
-      - 'onenote!OneNote.Table#toJSON:member(1)'
-      - 'onenote!OneNote.Table#track:member(1)'
-      - 'onenote!OneNote.Table#untrack:member(1)'
-  - uid: 'onenote!OneNote.Table#appendColumn:member(1)'
+    fullName: borderVisible
     summary: >-
-      Adds a column to the end of the table. Values, if specified, are set in the new column. Otherwise the column is
-      empty.
+      Gets or sets whether the borders are visible or not. True if they are
+      visible, false if they are hidden.
 
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: appendColumn(values)
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borderVisible: boolean;'
+      return:
+        type: boolean
+  - name: columnCount
+    uid: 'onenote!OneNote.Table#columnCount:member'
+    package: onenote!
+    fullName: columnCount
+    summary: >-
+      Gets the number of columns in the table.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly columnCount: number;'
+      return:
+        type: number
+  - name: context
+    uid: 'onenote!OneNote.Table#context:member'
+    package: onenote!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
+  - name: id
+    uid: 'onenote!OneNote.Table#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
+      Gets the ID of the table. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: paragraph
+    uid: 'onenote!OneNote.Table#paragraph:member'
+    package: onenote!
+    fullName: paragraph
+    summary: >-
+      Gets the Paragraph object that contains the Table object. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly paragraph: OneNote.Paragraph;'
+      return:
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
+  - name: rowCount
+    uid: 'onenote!OneNote.Table#rowCount:member'
+    package: onenote!
+    fullName: rowCount
+    summary: >-
+      Gets the number of rows in the table.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly rowCount: number;'
+      return:
+        type: number
+  - name: rows
+    uid: 'onenote!OneNote.Table#rows:member'
+    package: onenote!
+    fullName: rows
+    summary: >-
+      Gets all of the table rows. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly rows: OneNote.TableRowCollection;'
+      return:
+        type: '<xref uid="onenote!OneNote.TableRowCollection:class" />'
+methods:
+  - name: appendColumn(values)
+    uid: 'onenote!OneNote.Table#appendColumn:member(1)'
+    package: onenote!
     fullName: appendColumn(values)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Adds a column to the end of the table. Values, if specified, are set in
+      the new column. Otherwise the column is empty.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'appendColumn(values?: string[]): void;'
+      parameters:
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new column, specified as an
+            array. Must not have more values than rows in the table.
+          type: 'string[]'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -88,28 +199,31 @@ items:
               }
           });
           ```
+  - name: appendRow(values)
+    uid: 'onenote!OneNote.Table#appendRow:member(1)'
+    package: onenote!
+    fullName: appendRow(values)
+    summary: >-
+      Adds a row to the end of the table. Values, if specified, are set in the
+      new row. Otherwise the row is empty.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appendRow(values?: string[]): OneNote.TableRow;'
       parameters:
         - id: values
           description: >-
-            Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
-            the table.
-          type:
-            - 'string[]'
-  - uid: 'onenote!OneNote.Table#appendRow:member(1)'
-    summary: |-
-      Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: appendRow(values)
-    fullName: appendRow(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'appendRow(values?: string[]): OneNote.TableRow;'
+            Optional. Strings to insert in the new row, specified as an array.
+            Must not have more values than columns in the table.
+          type: 'string[]'
       return:
-        type:
-          - 'onenote!OneNote.TableRow:class'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: |-
 
 
@@ -145,88 +259,50 @@ items:
               }
           });
           ```
-      parameters:
-        - id: values
-          description: >-
-            Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
-            the table.
-          type:
-            - 'string[]'
-  - uid: 'onenote!OneNote.Table#borderVisible:member'
-    summary: |-
-      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: borderVisible
-    fullName: borderVisible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'borderVisible: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Table#clear:member(1)'
-    summary: |-
+  - name: clear()
+    uid: 'onenote!OneNote.Table#clear:member(1)'
+    package: onenote!
+    fullName: clear()
+    summary: >-
       Clears the contents of the table.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'onenote!OneNote.Table#columnCount:member'
-    summary: |-
-      Gets the number of columns in the table.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: columnCount
-    fullName: columnCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly columnCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.Table#context:member'
+  - name: 'getCell(rowIndex, cellIndex)'
+    uid: 'onenote!OneNote.Table#getCell:member(1)'
+    package: onenote!
+    fullName: 'getCell(rowIndex, cellIndex)'
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'onenote!OneNote.RequestContext:class'
-  - uid: 'onenote!OneNote.Table#getCell:member(1)'
-    summary: |-
       Gets the table cell at a specified row and column.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'getCell(rowIndex, cellIndex)'
-    fullName: 'getCell(rowIndex, cellIndex)'
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getCell(rowIndex: number, cellIndex: number): OneNote.TableCell;'
+      parameters:
+        - id: rowIndex
+          description: The index of the row.
+          type: number
+        - id: cellIndex
+          description: The index of the cell in the row.
+          type: number
       return:
-        type:
-          - 'onenote!OneNote.TableCell:class'
+        type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: |-
 
 
@@ -262,47 +338,34 @@ items:
               }
           });
           ```
-      parameters:
-        - id: rowIndex
-          description: The index of the row.
-          type:
-            - number
-        - id: cellIndex
-          description: The index of the cell in the row.
-          type:
-            - number
-  - uid: 'onenote!OneNote.Table#id:member'
-    summary: |-
-      Gets the ID of the table. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Table#insertColumn:member(1)'
-    summary: >-
-      Inserts a column at the given index in the table. Values, if specified, are set in the new column. Otherwise the
-      column is empty.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertColumn(index, values)'
+  - name: 'insertColumn(index, values)'
+    uid: 'onenote!OneNote.Table#insertColumn:member(1)'
+    package: onenote!
     fullName: 'insertColumn(index, values)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Inserts a column at the given index in the table. Values, if specified,
+      are set in the new column. Otherwise the column is empty.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'insertColumn(index: number, values?: string[]): void;'
+      parameters:
+        - id: index
+          description: Index where the column will be inserted in the table.
+          type: number
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new column, specified as an
+            array. Must not have more values than rows in the table.
+          type: 'string[]'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -338,34 +401,34 @@ items:
               }
           });
           ```
-      parameters:
-        - id: index
-          description: Index where the column will be inserted in the table.
-          type:
-            - number
-        - id: values
-          description: >-
-            Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
-            the table.
-          type:
-            - 'string[]'
-  - uid: 'onenote!OneNote.Table#insertRow:member(1)'
-    summary: >-
-      Inserts a row at the given index in the table. Values, if specified, are set in the new row. Otherwise the row is
-      empty.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertRow(index, values)'
+  - name: 'insertRow(index, values)'
+    uid: 'onenote!OneNote.Table#insertRow:member(1)'
+    package: onenote!
     fullName: 'insertRow(index, values)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Inserts a row at the given index in the table. Values, if specified, are
+      set in the new row. Otherwise the row is empty.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'insertRow(index: number, values?: string[]): OneNote.TableRow;'
+      parameters:
+        - id: index
+          description: Index where the row will be inserted in the table.
+          type: number
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new row, specified as an array.
+            Must not have more values than columns in the table.
+          type: 'string[]'
       return:
-        type:
-          - 'onenote!OneNote.TableRow:class'
+        type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: |-
 
 
@@ -401,69 +464,66 @@ items:
               }
           });
           ```
-      parameters:
-        - id: index
-          description: Index where the row will be inserted in the table.
-          type:
-            - number
-        - id: values
-          description: >-
-            Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
-            the table.
-          type:
-            - 'string[]'
-  - uid: 'onenote!OneNote.Table#load:member(1)'
+  - name: load(option)
+    uid: 'onenote!OneNote.Table#load:member(1)'
+    package: onenote!
+    fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call "context.sync()" before reading the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
+      `load(option?: string | string[]): OneNote.Table` - Where option is a
+      comma-delimited string or an array of strings that specify the properties
+      to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): OneNote.Table` -
+      Where option.select is a comma-delimited string that specifies the
+      properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Table` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+      `load(option?: { select?: string; expand?: string; top?: number; skip?:
+      number }): OneNote.Table` - Only available on collection types. It is
+      similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in
+      the result. If option.top is specified, the result set will start after
+      skipping the specified number of items.
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;'
-      return:
-        type:
-          - 'onenote!OneNote.Table:class'
-        description: ''
       parameters:
         - id: option
           description: ''
-          type:
-            - 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-  - uid: 'onenote!OneNote.Table#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: '<xref uid="onenote!OneNote.Interfaces.TableLoadOptions:interface" />'
+      return:
+        type: '<xref uid="onenote!OneNote.Table:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'onenote!OneNote.Table#load:member(2)'
+    package: onenote!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): OneNote.Table;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'onenote!OneNote.Table:class'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: |-
 
 
@@ -543,220 +603,164 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'onenote!OneNote.Table#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'onenote!OneNote.Table#load:member(3)'
+    package: onenote!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Table;'
-      return:
-        type:
-          - 'onenote!OneNote.Table:class'
-        description: ''
+      content: >-
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
+        OneNote.Table;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - '{ select?: string; expand?: string; }'
-  - uid: 'onenote!OneNote.Table#paragraph:member'
-    summary: |-
-      Gets the Paragraph object that contains the Table object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraph
-    fullName: paragraph
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly paragraph: OneNote.Paragraph;'
+            Where propertyNamesAndPaths.select is a comma-delimited string that
+            specifies the properties to load, and propertyNamesAndPaths.expand
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '{ select?: string; expand?: string; }'
       return:
-        type:
-          - 'onenote!OneNote.Paragraph:class'
-  - uid: 'onenote!OneNote.Table#rowCount:member'
-    summary: |-
-      Gets the number of rows in the table.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: rowCount
-    fullName: rowCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rowCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.Table#rows:member'
-    summary: |-
-      Gets all of the table rows. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: rows
-    fullName: rows
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rows: OneNote.TableRowCollection;'
-      return:
-        type:
-          - 'onenote!OneNote.TableRowCollection:class'
-  - uid: 'onenote!OneNote.Table#set:member(1)'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'onenote!OneNote.Table#set:member(1)'
+    package: onenote!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: OneNote.Table): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.TableUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'onenote!OneNote.Interfaces.TableUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="onenote!OneNote.Interfaces.TableUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'onenote!OneNote.Table#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'onenote!OneNote.Table#set:member(2)'
+    package: onenote!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: OneNote.Table): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'onenote!OneNote.Table:class'
-  - uid: 'onenote!OneNote.Table#setShadingColor:member(1)'
-    summary: |-
-      Sets the shading color of all cells in the table. The color code to set the cells to.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: setShadingColor(colorCode)
+          type: '<xref uid="onenote!OneNote.Table:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setShadingColor(colorCode)
+    uid: 'onenote!OneNote.Table#setShadingColor:member(1)'
+    package: onenote!
     fullName: setShadingColor(colorCode)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets the shading color of all cells in the table. The color code to set
+      the cells to.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setShadingColor(colorCode: string): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: colorCode
           description: ''
-          type:
-            - string
-  - uid: 'onenote!OneNote.Table#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original OneNote.Table object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `OneNote.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'onenote!OneNote.Table#toJSON:member(1)'
+    package: onenote!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original OneNote.Table object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `OneNote.Interfaces.TableData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): OneNote.Interfaces.TableData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableData:interface'
+        type: '<xref uid="onenote!OneNote.Interfaces.TableData:interface" />'
         description: ''
-  - uid: 'onenote!OneNote.Table#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
-    name: track()
+  - name: track()
+    uid: 'onenote!OneNote.Table#track:member(1)'
+    package: onenote!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      context.trackedObjects.add(thisObject). If you are using this object
+      across ".sync" calls and outside the sequential execution of a ".run"
+      batch, and get an "InvalidObjectPath" error when setting a property or
+      invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): OneNote.Table;'
       return:
-        type:
-          - 'onenote!OneNote.Table:class'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
-  - uid: 'onenote!OneNote.Table#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'onenote!OneNote.Table#untrack:member(1)'
+    package: onenote!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects
+      slows down the host application, so please remember to free any objects
+      you add, once you're done using them. You will need to call
+      "context.sync()" before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): OneNote.Table;'
       return:
-        type:
-          - 'onenote!OneNote.Table:class'
+        type: '<xref uid="onenote!OneNote.Table:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'onenote!OneNote.TableRow:class'
-    name: OneNote.TableRow
-  - uid: 'onenote!OneNote.RequestContext:class'
-    name: RequestContext
-  - uid: 'onenote!OneNote.TableCell:class'
-    name: OneNote.TableCell
-  - uid: 'onenote!OneNote.Table:class'
-    name: OneNote.Table
-  - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-    name: OneNote.Interfaces.TableLoadOptions
-  - uid: 'onenote!OneNote.Paragraph:class'
-    name: OneNote.Paragraph
-  - uid: 'onenote!OneNote.TableRowCollection:class'
-    name: OneNote.TableRowCollection
-  - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
-    name: Interfaces.TableUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'onenote!OneNote.Interfaces.TableData:interface'
-    name: OneNote.Interfaces.TableData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

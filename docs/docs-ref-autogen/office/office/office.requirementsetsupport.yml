@@ -1,61 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.RequirementSetSupport:interface'
-    summary: Provides information about which Requirement Sets are supported in the current environment.
-    name: Office.RequirementSetSupport
-    fullName: Office.RequirementSetSupport
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.RequirementSetSupport
+uid: 'office!Office.RequirementSetSupport:interface'
+package: office!
+fullName: Office.RequirementSetSupport
+summary: >-
+  Provides information about which Requirement Sets are supported in the current
+  environment.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'isSetSupported(name, minVersion)'
+    uid: 'office!Office.RequirementSetSupport#isSetSupported:member(1)'
     package: office!
-    children:
-      - 'office!Office.RequirementSetSupport#isSetSupported:member(1)'
-      - 'office!Office.RequirementSetSupport#isSetSupported:member(2)'
-  - uid: 'office!Office.RequirementSetSupport#isSetSupported:member(1)'
-    summary: Check if the specified requirement set is supported by the host Office application.
-    name: 'isSetSupported(name, minVersion)'
     fullName: 'isSetSupported(name, minVersion)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Check if the specified requirement set is supported by the host Office
+      application.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isSetSupported(name: string, minVersion?: string): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
       parameters:
         - id: name
           description: 'The requirement set name (e.g., "ExcelApi").'
-          type:
-            - string
+          type: string
         - id: minVersion
           description: 'The minimum required version (e.g., "1.4").'
-          type:
-            - string
-  - uid: 'office!Office.RequirementSetSupport#isSetSupported:member(2)'
-    summary: Check if the specified requirement set is supported by the host Office application.
-    deprecated:
-      content: Use the string overload of `isSetSupported` instead.
-    name: 'isSetSupported(name, minVersionNumber)'
+          type: string
+      return:
+        type: boolean
+        description: ''
+  - name: 'isSetSupported(name, minVersionNumber)'
+    uid: 'office!Office.RequirementSetSupport#isSetSupported:member(2)'
+    package: office!
     fullName: 'isSetSupported(name, minVersionNumber)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Check if the specified requirement set is supported by the host Office
+      application.
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: Use the string overload of `isSetSupported` instead.
     syntax:
       content: 'isSetSupported(name: string, minVersionNumber?: number): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
       parameters:
         - id: name
           description: 'The requirement set name (e.g., "ExcelApi").'
-          type:
-            - string
+          type: string
         - id: minVersionNumber
           description: >-
-            The minimum required version (e.g., 1.4). **Warning**: This overload of `isSetSupported` (where
-            `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.
-          type:
-            - number
+            The minimum required version (e.g., 1.4). **Warning**: This overload
+            of `isSetSupported` (where `minVersionNumber` is a number) is
+            deprecated. Use the string overload of `isSetSupported` instead.
+          type: number
+      return:
+        type: boolean
+        description: ''

@@ -1,59 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.ListNumbering:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.ListNumbering
-    fullName: Word.ListNumbering
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.ListNumbering
+uid: 'word!Word.ListNumbering:enum'
+package: word!
+fullName: Word.ListNumbering
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: arabic
+    uid: 'word!Word.ListNumbering.arabic:member'
     package: word!
-    children:
-      - 'word!Word.ListNumbering.arabic:member'
-      - 'word!Word.ListNumbering.lowerLetter:member'
-      - 'word!Word.ListNumbering.lowerRoman:member'
-      - 'word!Word.ListNumbering.none:member'
-      - 'word!Word.ListNumbering.upperLetter:member'
-      - 'word!Word.ListNumbering.upperRoman:member'
-  - uid: 'word!Word.ListNumbering.arabic:member'
-    name: arabic
-    fullName: arabic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Arabic"'
-  - uid: 'word!Word.ListNumbering.lowerLetter:member'
-    name: lowerLetter
-    fullName: lowerLetter
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LowerLetter"'
-  - uid: 'word!Word.ListNumbering.lowerRoman:member'
-    name: lowerRoman
-    fullName: lowerRoman
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LowerRoman"'
-  - uid: 'word!Word.ListNumbering.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'word!Word.ListNumbering.upperLetter:member'
-    name: upperLetter
-    fullName: upperLetter
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UpperLetter"'
-  - uid: 'word!Word.ListNumbering.upperRoman:member'
-    name: upperRoman
-    fullName: upperRoman
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UpperRoman"'
+    summary: ''
+  - name: lowerLetter
+    uid: 'word!Word.ListNumbering.lowerLetter:member'
+    package: word!
+    summary: ''
+  - name: lowerRoman
+    uid: 'word!Word.ListNumbering.lowerRoman:member'
+    package: word!
+    summary: ''
+  - name: none
+    uid: 'word!Word.ListNumbering.none:member'
+    package: word!
+    summary: ''
+  - name: upperLetter
+    uid: 'word!Word.ListNumbering.upperLetter:member'
+    package: word!
+    summary: ''
+  - name: upperRoman
+    uid: 'word!Word.ListNumbering.upperRoman:member'
+    package: word!
+    summary: ''

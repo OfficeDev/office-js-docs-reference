@@ -1,96 +1,110 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
-    summary: |-
-      Represents an IconSet criteria for conditional formatting.
+### YamlMime:TSType
+name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
+uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
+summary: >-
+  Represents an IconSet criteria for conditional formatting.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#criteria:member'
-      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#reverseIconOrder:member'
-      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#showIconOnly:member'
-      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#style:member'
-  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#criteria:member'
-    summary: >-
-      An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
-      the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
-      set.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: criteria
+        type: boolean
+  - name: criteria
+    uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#criteria:member'
+    package: excel!
     fullName: criteria
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      An array of Criteria and IconSets for the rules and potential custom icons
+      for conditional icons. Note that for the first criterion only the custom
+      icon can be modified, while type, formula, and operator will be ignored
+      when set.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'criteria?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#reverseIconOrder:member'
-    summary: |-
-      If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: reverseIconOrder
+        type: boolean
+  - name: reverseIconOrder
+    uid: >-
+      excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#reverseIconOrder:member
+    package: excel!
     fullName: reverseIconOrder
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true, reverses the icon orders for the IconSet. Note that this cannot
+      be set if custom icons are used.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'reverseIconOrder?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#showIconOnly:member'
-    summary: |-
+        type: boolean
+  - name: showIconOnly
+    uid: >-
+      excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#showIconOnly:member
+    package: excel!
+    fullName: showIconOnly
+    summary: >-
       If true, hides the values and only shows icons.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showIconOnly
-    fullName: showIconOnly
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showIconOnly?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#style:member'
-    summary: |-
+        type: boolean
+  - name: style
+    uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#style:member'
+    package: excel!
+    fullName: style
+    summary: >-
       If set, displays the IconSet option for the conditional format.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

@@ -1,10 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.RangeViewUpdateData:interface'
-    summary: 'An interface for updating data on the RangeView object, for use in `rangeView.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.RangeViewUpdateData
-    fullName: Excel.Interfaces.RangeViewUpdateData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.RangeViewUpdateData
+uid: 'excel!Excel.Interfaces.RangeViewUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.RangeViewUpdateData
+summary: >-
+  An interface for updating data on the RangeView object, for use in
+  `rangeView.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

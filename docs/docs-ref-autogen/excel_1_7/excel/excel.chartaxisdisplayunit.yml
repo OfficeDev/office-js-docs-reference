@@ -1,110 +1,59 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisDisplayUnit:enum'
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartAxisDisplayUnit
-    fullName: Excel.ChartAxisDisplayUnit
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ChartAxisDisplayUnit
+uid: 'excel!Excel.ChartAxisDisplayUnit:enum'
+package: excel!
+fullName: Excel.ChartAxisDisplayUnit
+summary: >-
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: billions
+    uid: 'excel!Excel.ChartAxisDisplayUnit.billions:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartAxisDisplayUnit.billions:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.custom:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.hundredMillions:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.hundreds:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.hundredThousands:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.millions:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.none:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.tenMillions:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.tenThousands:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.thousands:member'
-      - 'excel!Excel.ChartAxisDisplayUnit.trillions:member'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.billions:member'
     summary: This will set the axis in units of billions.
-    name: billions
-    fullName: billions
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Billions"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.custom:member'
+  - name: custom
+    uid: 'excel!Excel.ChartAxisDisplayUnit.custom:member'
+    package: excel!
     summary: This will set the axis in units of custom value.
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Custom"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredMillions:member'
+  - name: hundredMillions
+    uid: 'excel!Excel.ChartAxisDisplayUnit.hundredMillions:member'
+    package: excel!
     summary: This will set the axis in units of hundreds of millions.
-    name: hundredMillions
-    fullName: hundredMillions
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"HundredMillions"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.hundreds:member'
+  - name: hundreds
+    uid: 'excel!Excel.ChartAxisDisplayUnit.hundreds:member'
+    package: excel!
     summary: This will set the axis in units of hundreds.
-    name: hundreds
-    fullName: hundreds
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hundreds"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredThousands:member'
+  - name: hundredThousands
+    uid: 'excel!Excel.ChartAxisDisplayUnit.hundredThousands:member'
+    package: excel!
     summary: This will set the axis in units of hundreds of thousands.
-    name: hundredThousands
-    fullName: hundredThousands
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"HundredThousands"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.millions:member'
+  - name: millions
+    uid: 'excel!Excel.ChartAxisDisplayUnit.millions:member'
+    package: excel!
     summary: This will set the axis in units of millions.
-    name: millions
-    fullName: millions
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Millions"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.none:member'
-    summary: 'Default option. This will reset display unit to the axis, and set unit label invisible.'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.tenMillions:member'
+  - name: none
+    uid: 'excel!Excel.ChartAxisDisplayUnit.none:member'
+    package: excel!
+    summary: >-
+      Default option. This will reset display unit to the axis, and set unit
+      label invisible.
+  - name: tenMillions
+    uid: 'excel!Excel.ChartAxisDisplayUnit.tenMillions:member'
+    package: excel!
     summary: This will set the axis in units of tens of millions.
-    name: tenMillions
-    fullName: tenMillions
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TenMillions"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.tenThousands:member'
+  - name: tenThousands
+    uid: 'excel!Excel.ChartAxisDisplayUnit.tenThousands:member'
+    package: excel!
     summary: This will set the axis in units of tens of thousands.
-    name: tenThousands
-    fullName: tenThousands
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TenThousands"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.thousands:member'
+  - name: thousands
+    uid: 'excel!Excel.ChartAxisDisplayUnit.thousands:member'
+    package: excel!
     summary: This will set the axis in units of thousands.
-    name: thousands
-    fullName: thousands
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Thousands"'
-  - uid: 'excel!Excel.ChartAxisDisplayUnit.trillions:member'
+  - name: trillions
+    uid: 'excel!Excel.ChartAxisDisplayUnit.trillions:member'
+    package: excel!
     summary: This will set the axis in units of trillions.
-    name: trillions
-    fullName: trillions
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Trillions"'

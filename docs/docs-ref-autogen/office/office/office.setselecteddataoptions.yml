@@ -1,159 +1,144 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.SetSelectedDataOptions:interface'
-    summary: Provides options for how to insert data to the selection.
-    name: Office.SetSelectedDataOptions
-    fullName: Office.SetSelectedDataOptions
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.SetSelectedDataOptions
+uid: 'office!Office.SetSelectedDataOptions:interface'
+package: office!
+fullName: Office.SetSelectedDataOptions
+summary: Provides options for how to insert data to the selection.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: asyncContext
+    uid: 'office!Office.SetSelectedDataOptions#asyncContext:member'
     package: office!
-    children:
-      - 'office!Office.SetSelectedDataOptions#asyncContext:member'
-      - 'office!Office.SetSelectedDataOptions#cellFormat:member'
-      - 'office!Office.SetSelectedDataOptions#coercionType:member'
-      - 'office!Office.SetSelectedDataOptions#imageHeight:member'
-      - 'office!Office.SetSelectedDataOptions#imageLeft:member'
-      - 'office!Office.SetSelectedDataOptions#imageTop:member'
-      - 'office!Office.SetSelectedDataOptions#imageWidth:member'
-      - 'office!Office.SetSelectedDataOptions#tableOptions:member'
-  - uid: 'office!Office.SetSelectedDataOptions#asyncContext:member'
-    summary: >-
-      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
-      object that is passed to a callback.
-    name: asyncContext
     fullName: asyncContext
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the
+      asyncContext property of the AsyncResult object that is passed to a
+      callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'asyncContext?: any'
       return:
-        type:
-          - any
-  - uid: 'office!Office.SetSelectedDataOptions#cellFormat:member'
-    summary: >-
-      Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects
-      that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to
-      that range.
-
-
-      Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
-      {borderColor: "white", fontStyle: "bold"}}]`
-    name: cellFormat
+        type: any
+  - name: cellFormat
+    uid: 'office!Office.SetSelectedDataOptions#cellFormat:member'
+    package: office!
     fullName: cellFormat
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Use only with binding type table and when a TableData object is passed for
+      the data parameter. An array of objects that specify a range of columns,
+      rows, or cells and specify, as key-value pairs, the cell formatting to
+      apply to that range.
+
+
+      Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}},
+      {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle:
+      "bold"}}]`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellFormat?: RangeFormatConfiguration[]'
       return:
-        type:
-          - 'office!Office.SetSelectedDataOptions#cellFormat~0:complex'
-  - uid: 'office!Office.SetSelectedDataOptions#coercionType:member'
-    summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
-    name: coercionType
+        type: '<xref uid="office!Office.RangeFormatConfiguration:interface" />[]'
+  - name: coercionType
+    uid: 'office!Office.SetSelectedDataOptions#coercionType:member'
+    package: office!
     fullName: coercionType
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Explicitly sets the shape of the data object. If not supplied is inferred
+      from the data type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'coercionType?: Office.CoercionType | string'
       return:
-        type:
-          - 'office!Office.SetSelectedDataOptions#coercionType~0:complex'
-  - uid: 'office!Office.SetSelectedDataOptions#imageHeight:member'
-    summary: >-
-      This option is applicable for inserting images. Indicates the image height. If this option is provided without the
-      imageWidth, the image will scale to match the value of the image height. If both image width and image height are
-      provided, the image will be resized accordingly. If neither the image height or width is provided, the default
-      image size and aspect ratio will be used. This value is in points.
-    name: imageHeight
+        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
+  - name: imageHeight
+    uid: 'office!Office.SetSelectedDataOptions#imageHeight:member'
+    package: office!
     fullName: imageHeight
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      This option is applicable for inserting images. Indicates the image
+      height. If this option is provided without the imageWidth, the image will
+      scale to match the value of the image height. If both image width and
+      image height are provided, the image will be resized accordingly. If
+      neither the image height or width is provided, the default image size and
+      aspect ratio will be used. This value is in points.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageHeight?: number'
       return:
-        type:
-          - number
-  - uid: 'office!Office.SetSelectedDataOptions#imageLeft:member'
-    summary: >-
-      This option is applicable for inserting images. Indicates the insert location in relation to the left side of the
-      slide for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word.
-      This value is in points.
-    name: imageLeft
+        type: number
+  - name: imageLeft
+    uid: 'office!Office.SetSelectedDataOptions#imageLeft:member'
+    package: office!
     fullName: imageLeft
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      This option is applicable for inserting images. Indicates the insert
+      location in relation to the left side of the slide for PowerPoint, and its
+      relation to the currently selected cell in Excel. This value is ignored
+      for Word. This value is in points.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageLeft?: number'
       return:
-        type:
-          - number
-  - uid: 'office!Office.SetSelectedDataOptions#imageTop:member'
-    summary: >-
-      This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide
-      for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word. This
-      value is in points.
-    name: imageTop
+        type: number
+  - name: imageTop
+    uid: 'office!Office.SetSelectedDataOptions#imageTop:member'
+    package: office!
     fullName: imageTop
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      This option is applicable for inserting images. Indicates the insert
+      location in relation to the top of the slide for PowerPoint, and its
+      relation to the currently selected cell in Excel. This value is ignored
+      for Word. This value is in points.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageTop?: number'
       return:
-        type:
-          - number
-  - uid: 'office!Office.SetSelectedDataOptions#imageWidth:member'
-    summary: >-
-      This option is applicable for inserting images. Indicates the image width. If this option is provided without the
-      imageHeight, the image will scale to match the value of the image width. If both image width and image height are
-      provided, the image will be resized accordingly. If neither the image height or width is provided, the default
-      image size and aspect ratio will be used. This value is in points.
-    name: imageWidth
+        type: number
+  - name: imageWidth
+    uid: 'office!Office.SetSelectedDataOptions#imageWidth:member'
+    package: office!
     fullName: imageWidth
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      This option is applicable for inserting images. Indicates the image width.
+      If this option is provided without the imageHeight, the image will scale
+      to match the value of the image width. If both image width and image
+      height are provided, the image will be resized accordingly. If neither the
+      image height or width is provided, the default image size and aspect ratio
+      will be used. This value is in points.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'imageWidth?: number'
       return:
-        type:
-          - number
-  - uid: 'office!Office.SetSelectedDataOptions#tableOptions:member'
-    summary: >-
-      For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
-      row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
-    name: tableOptions
+        type: number
+  - name: tableOptions
+    uid: 'office!Office.SetSelectedDataOptions#tableOptions:member'
+    package: office!
     fullName: tableOptions
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For an inserted table, a list of key-value pairs that specify table
+      formatting options, such as header row, total row, and banded rows.
+      Example: `{bandedRows: true,  filterButton: false}`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tableOptions?: object'
       return:
-        type:
-          - object
-references:
-  - uid: 'office!Office.SetSelectedDataOptions#cellFormat~0:complex'
-    name: 'RangeFormatConfiguration[]'
-    fullName: 'Office.RangeFormatConfiguration[]'
-    spec.typeScript:
-      - uid: 'office!Office.RangeFormatConfiguration:interface'
-        name: RangeFormatConfiguration
-        fullName: Office.RangeFormatConfiguration
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'office!Office.SetSelectedDataOptions#coercionType~0:complex'
-    name: Office.CoercionType | string
-    fullName: Office.CoercionType | string
-    spec.typeScript:
-      - uid: 'office!Office.CoercionType:enum'
-        name: Office.CoercionType
-        fullName: Office.CoercionType
-      - name: ' | string'
-        fullName: ' | string'
+        type: object

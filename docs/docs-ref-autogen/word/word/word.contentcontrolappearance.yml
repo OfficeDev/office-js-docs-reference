@@ -1,41 +1,30 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.ContentControlAppearance:enum'
-    summary: |-
-      Either bounding box, or tags, or hidden.
+### YamlMime:TSEnum
+name: Word.ContentControlAppearance
+uid: 'word!Word.ContentControlAppearance:enum'
+package: word!
+fullName: Word.ContentControlAppearance
+summary: >-
+  Either bounding box, or tags, or hidden.
 
-      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.ContentControlAppearance
-    fullName: Word.ContentControlAppearance
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: boundingBox
+    uid: 'word!Word.ContentControlAppearance.boundingBox:member'
     package: word!
-    children:
-      - 'word!Word.ContentControlAppearance.boundingBox:member'
-      - 'word!Word.ContentControlAppearance.hidden:member'
-      - 'word!Word.ContentControlAppearance.tags:member'
-  - uid: 'word!Word.ContentControlAppearance.boundingBox:member'
-    summary: Represents a content control shown as a shaded rectangle or bounding box (with optional title).
-    name: boundingBox
-    fullName: boundingBox
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BoundingBox"'
-  - uid: 'word!Word.ContentControlAppearance.hidden:member'
+    summary: >-
+      Represents a content control shown as a shaded rectangle or bounding box
+      (with optional title).
+  - name: hidden
+    uid: 'word!Word.ContentControlAppearance.hidden:member'
+    package: word!
     summary: Represents a content control that is not shown.
-    name: hidden
-    fullName: hidden
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hidden"'
-  - uid: 'word!Word.ContentControlAppearance.tags:member'
+  - name: tags
+    uid: 'word!Word.ContentControlAppearance.tags:member'
+    package: word!
     summary: Represents a content control shown as start and end markers.
-    name: tags
-    fullName: tags
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Tags"'

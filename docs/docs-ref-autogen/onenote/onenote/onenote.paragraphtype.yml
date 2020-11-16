@@ -1,51 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.ParagraphType:enum'
-    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    name: OneNote.ParagraphType
-    fullName: OneNote.ParagraphType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: OneNote.ParagraphType
+uid: 'onenote!OneNote.ParagraphType:enum'
+package: onenote!
+fullName: OneNote.ParagraphType
+summary: >-
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: image
+    uid: 'onenote!OneNote.ParagraphType.image:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.ParagraphType.image:member'
-      - 'onenote!OneNote.ParagraphType.ink:member'
-      - 'onenote!OneNote.ParagraphType.other:member'
-      - 'onenote!OneNote.ParagraphType.richText:member'
-      - 'onenote!OneNote.ParagraphType.table:member'
-  - uid: 'onenote!OneNote.ParagraphType.image:member'
-    name: image
-    fullName: image
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Image"'
-  - uid: 'onenote!OneNote.ParagraphType.ink:member'
-    name: ink
-    fullName: ink
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ink"'
-  - uid: 'onenote!OneNote.ParagraphType.other:member'
-    name: other
-    fullName: other
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Other"'
-  - uid: 'onenote!OneNote.ParagraphType.richText:member'
-    name: richText
-    fullName: richText
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RichText"'
-  - uid: 'onenote!OneNote.ParagraphType.table:member'
-    name: table
-    fullName: table
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Table"'
+    summary: ''
+  - name: ink
+    uid: 'onenote!OneNote.ParagraphType.ink:member'
+    package: onenote!
+    summary: ''
+  - name: other
+    uid: 'onenote!OneNote.ParagraphType.other:member'
+    package: onenote!
+    summary: ''
+  - name: richText
+    uid: 'onenote!OneNote.ParagraphType.richText:member'
+    package: onenote!
+    summary: ''
+  - name: table
+    uid: 'onenote!OneNote.ParagraphType.table:member'
+    package: onenote!
+    summary: ''

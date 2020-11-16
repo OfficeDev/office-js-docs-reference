@@ -1,48 +1,50 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
-    summary: An interface describing the data returned by calling `chartTrendlineLabelFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartTrendlineLabelFormatData
-    fullName: Excel.Interfaces.ChartTrendlineLabelFormatData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartTrendlineLabelFormatData
+uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartTrendlineLabelFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `chartTrendlineLabelFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: border
+    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData#border:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData#border:member'
-      - 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData#font:member'
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData#border:member'
-    summary: |-
+    fullName: border
+    summary: >-
       Specifies the border format, which includes color, linestyle, and weight.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartBorderData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData#font:member'
-    summary: |-
-      Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: font
+        type: '<xref uid="excel!Excel.Interfaces.ChartBorderData:interface" />'
+  - name: font
+    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData#font:member'
+    package: excel!
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the font attributes (font name, font size, color, etc.) for a
+      chart trendline label.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartFontData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
-    name: Excel.Interfaces.ChartBorderData
-  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    name: Excel.Interfaces.ChartFontData
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontData:interface" />'

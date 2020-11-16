@@ -1,101 +1,203 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.SearchOptions:class'
-    summary: >-
-      Specifies the options to be included in a search operation.
+### YamlMime:TSType
+name: Word.SearchOptions
+uid: 'word!Word.SearchOptions:class'
+package: word!
+fullName: Word.SearchOptions
+summary: >-
+  Specifies the options to be included in a search operation.
 
 
-      To learn more about how to use search options in the Word JavaScript APIs, read [Use search options to find text
-      in your Word add-in](https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
+  To learn more about how to use search options in the Word JavaScript APIs,
+  read [Use search options to find text in your Word
+  add-in](https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!--
+  -->.
 
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.SearchOptions
-    fullName: Word.SearchOptions
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: WordApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.SearchOptions#context:member'
     package: word!
-    children:
-      - 'word!Word.SearchOptions#context:member'
-      - 'word!Word.SearchOptions#ignorePunct:member'
-      - 'word!Word.SearchOptions#ignoreSpace:member'
-      - 'word!Word.SearchOptions#load:member(1)'
-      - 'word!Word.SearchOptions#load:member(2)'
-      - 'word!Word.SearchOptions#load:member(3)'
-      - 'word!Word.SearchOptions#matchCase:member'
-      - 'word!Word.SearchOptions#matchPrefix:member'
-      - 'word!Word.SearchOptions#matchSuffix:member'
-      - 'word!Word.SearchOptions#matchWholeWord:member'
-      - 'word!Word.SearchOptions#matchWildcards:member'
-      - 'word!Word.SearchOptions.newObject:member(1)'
-      - 'word!Word.SearchOptions#set:member(1)'
-      - 'word!Word.SearchOptions#set:member(2)'
-      - 'word!Word.SearchOptions#toJSON:member(1)'
-  - uid: 'word!Word.SearchOptions#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'word!Word.RequestContext:class'
-  - uid: 'word!Word.SearchOptions#ignorePunct:member'
-    summary: >-
-      Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
-      Ignore punctuation check box in the Find and Replace dialog box.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ignorePunct
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: ignorePunct
+    uid: 'word!Word.SearchOptions#ignorePunct:member'
+    package: word!
     fullName: ignorePunct
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all punctuation
+      characters between words. Corresponds to the Ignore punctuation check box
+      in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ignorePunct: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.SearchOptions#ignoreSpace:member'
-    summary: >-
-      Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
-      whitespace characters check box in the Find and Replace dialog box.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ignoreSpace
+        type: boolean
+  - name: ignoreSpace
+    uid: 'word!Word.SearchOptions#ignoreSpace:member'
+    package: word!
     fullName: ignoreSpace
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all whitespace
+      between words. Corresponds to the Ignore whitespace characters check box
+      in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'ignoreSpace: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.SearchOptions#load:member(1)'
+        type: boolean
+  - name: matchCase
+    uid: 'word!Word.SearchOptions#matchCase:member'
+    package: word!
+    fullName: matchCase
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Gets or sets a value that indicates whether to perform a case sensitive
+      search. Corresponds to the Match case check box in the Find and Replace
+      dialog box.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
+      content: 'matchCase: boolean;'
       return:
-        type:
-          - 'word!Word.SearchOptions:class'
+        type: boolean
+  - name: matchPrefix
+    uid: 'word!Word.SearchOptions#matchPrefix:member'
+    package: word!
+    fullName: matchPrefix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that begin with
+      the search string. Corresponds to the Match prefix check box in the Find
+      and Replace dialog box.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchPrefix: boolean;'
+      return:
+        type: boolean
+  - name: matchSuffix
+    uid: 'word!Word.SearchOptions#matchSuffix:member'
+    package: word!
+    fullName: matchSuffix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that end with
+      the search string. Corresponds to the Match suffix check box in the Find
+      and Replace dialog box.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchSuffix: boolean;'
+      return:
+        type: boolean
+  - name: matchWholeWord
+    uid: 'word!Word.SearchOptions#matchWholeWord:member'
+    package: word!
+    fullName: matchWholeWord
+    summary: >-
+      Gets or sets a value that indicates whether to find operation only entire
+      words, not text that is part of a larger word. Corresponds to the Find
+      whole words only check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchWholeWord: boolean;'
+      return:
+        type: boolean
+  - name: matchWildcards
+    uid: 'word!Word.SearchOptions#matchWildcards:member'
+    package: word!
+    fullName: matchWildcards
+    summary: >-
+      Gets or sets a value that indicates whether the search will be performed
+      using special search operators. Corresponds to the Use wildcards check box
+      in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchWildcards: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: load(options)
+    uid: 'word!Word.SearchOptions#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.SearchOptionsLoadOptions):
+        Word.SearchOptions;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.SearchOptionsLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="word!Word.SearchOptions:class" />'
         description: |-
 
 
@@ -242,244 +344,150 @@ items:
               }
           });
           ```
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
-  - uid: 'word!Word.SearchOptions#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+  - name: load(propertyNames)
+    uid: 'word!Word.SearchOptions#load:member(2)'
+    package: word!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.SearchOptions;'
-      return:
-        type:
-          - 'word!Word.SearchOptions:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'word!Word.SearchOptions#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.SearchOptions:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.SearchOptions#load:member(3)'
+    package: word!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.SearchOptions;
-      return:
-        type:
-          - 'word!Word.SearchOptions:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'word!Word.SearchOptions#matchCase:member'
-    summary: >-
-      Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
-      check box in the Find and Replace dialog box.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase: boolean;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.SearchOptions#matchPrefix:member'
-    summary: >-
-      Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
-      Match prefix check box in the Find and Replace dialog box.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: matchPrefix
-    fullName: matchPrefix
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchPrefix: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'word!Word.SearchOptions#matchSuffix:member'
-    summary: >-
-      Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
-      Match suffix check box in the Find and Replace dialog box.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: matchSuffix
-    fullName: matchSuffix
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchSuffix: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'word!Word.SearchOptions#matchWholeWord:member'
-    summary: >-
-      Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
-      word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: matchWholeWord
-    fullName: matchWholeWord
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchWholeWord: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'word!Word.SearchOptions#matchWildcards:member'
-    summary: >-
-      Gets or sets a value that indicates whether the search will be performed using special search operators.
-      Corresponds to the Use wildcards check box in the Find and Replace dialog box.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: matchWildcards
-    fullName: matchWildcards
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchWildcards: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'word!Word.SearchOptions.newObject:member(1)'
-    summary: Create a new instance of Word.SearchOptions object
-    name: newObject(context)
-    fullName: newObject(context)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;'
-      return:
-        type:
-          - 'word!Word.SearchOptions:class'
+        type: '<xref uid="word!Word.SearchOptions:class" />'
         description: ''
+  - name: newObject(context)
+    uid: 'word!Word.SearchOptions.newObject:member(1)'
+    package: word!
+    fullName: newObject(context)
+    summary: Create a new instance of Word.SearchOptions object
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static newObject(context: OfficeExtension.ClientRequestContext):
+        Word.SearchOptions;
       parameters:
         - id: context
           description: ''
-          type:
-            - 'office!OfficeExtension.ClientRequestContext:class'
-  - uid: 'word!Word.SearchOptions#set:member(1)'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+      return:
+        type: '<xref uid="word!Word.SearchOptions:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.SearchOptions#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Word.SearchOptions): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.SearchOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.SearchOptionsUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="word!Word.Interfaces.SearchOptionsUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'word!Word.SearchOptions#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.SearchOptions#set:member(2)'
+    package: word!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Word.SearchOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'word!Word.SearchOptions:class'
-  - uid: 'word!Word.SearchOptions#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`<!-- -->) that contains shallow copies of any
-      loaded child properties from the original object.
-    name: toJSON()
+          type: '<xref uid="word!Word.SearchOptions:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.SearchOptions#toJSON:member(1)'
+    package: word!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Word.SearchOptions
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.SearchOptionsData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.SearchOptionsData;'
       return:
-        type:
-          - 'word!Word.Interfaces.SearchOptionsData:interface'
+        type: '<xref uid="word!Word.Interfaces.SearchOptionsData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'word!Word.RequestContext:class'
-    name: RequestContext
-  - uid: 'word!Word.SearchOptions:class'
-    name: Word.SearchOptions
-  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
-    name: Word.Interfaces.SearchOptionsLoadOptions
-  - uid: 'office!OfficeExtension.ClientRequestContext:class'
-    name: OfficeExtension.ClientRequestContext
-  - uid: 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
-    name: Interfaces.SearchOptionsUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'word!Word.Interfaces.SearchOptionsData:interface'
-    name: Word.Interfaces.SearchOptionsData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

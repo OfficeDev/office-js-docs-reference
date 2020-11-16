@@ -1,50 +1,51 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.Control:interface'
-    summary: Represents an individual control or command and the state it should have.
-    name: Office.Control
-    fullName: Office.Control
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.Control
+uid: 'office!Office.Control:interface'
+package: office!
+fullName: Office.Control
+summary: Represents an individual control or command and the state it should have.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: enabled
+    uid: 'office!Office.Control#enabled:member'
     package: office!
-    children:
-      - 'office!Office.Control#enabled:member'
-      - 'office!Office.Control#id:member'
-      - 'office!Office.Control#visible:member'
-  - uid: 'office!Office.Control#enabled:member'
-    summary: Indicates whether the control should be enabled or disabled. The default is true.
-    name: enabled
     fullName: enabled
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Indicates whether the control should be enabled or disabled. The default
+      is true.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'enabled?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'office!Office.Control#id:member'
-    summary: Identifier of the control as specified in the manifest.
-    name: id
+        type: boolean
+  - name: id
+    uid: 'office!Office.Control#id:member'
+    package: office!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: Identifier of the control as specified in the manifest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id: string;'
       return:
-        type:
-          - string
-  - uid: 'office!Office.Control#visible:member'
-    summary: Indicates whether the control should be visible or hidden. The default is true.
-    name: visible
+        type: string
+  - name: visible
+    uid: 'office!Office.Control#visible:member'
+    package: office!
     fullName: visible
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Indicates whether the control should be visible or hidden. The default is
+      true.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

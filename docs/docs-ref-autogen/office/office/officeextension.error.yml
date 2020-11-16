@@ -1,153 +1,167 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!OfficeExtension.Error:class'
-    summary: >-
-      The error object returned by `context.sync()`<!-- -->, if a promise is rejected due to an error while processing
-      the request.
-    name: OfficeExtension.Error
-    fullName: OfficeExtension.Error
-    langs:
-      - typeScript
-    type: class
+### YamlMime:TSType
+name: OfficeExtension.Error
+uid: 'office!OfficeExtension.Error:class'
+package: office!
+fullName: OfficeExtension.Error
+summary: >-
+  The error object returned by `context.sync()`<!-- -->, if a promise is
+  rejected due to an error while processing the request.
+remarks: |-
+
+
+  #### Examples
+
+  ```javascript
+  // Run a batch operation against the Word object model.
+  Word.run(function (context) {
+
+      // Create a proxy object for the document body.
+      var body = context.document.body;
+
+      // Queue a command to insert text in to the beginning of the body.
+      // This will cause an OfficeExtension.Error.
+      body.insertText(0);
+
+      // Synchronize the document state by executing the queued-up commands,
+      // and return a promise to indicate task completion.
+      return context.sync();
+  })
+  .catch(function (error) {
+      if (error instanceof OfficeExtension.Error) {
+          console.log('Error code and message: ' + error.toString());
+      }
+  });
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: code
+    uid: 'office!OfficeExtension.Error#code:member'
     package: office!
-    remarks: |-
-
-
-      #### Examples
-
-      ```javascript
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a proxy object for the document body.
-          var body = context.document.body;
-
-          // Queue a command to insert text in to the beginning of the body.
-          // This will cause an OfficeExtension.Error.
-          body.insertText(0);
-
-          // Synchronize the document state by executing the queued-up commands,
-          // and return a promise to indicate task completion.
-          return context.sync();
-      })
-      .catch(function (error) {
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Error code and message: ' + error.toString());
-          }
-      });
-      ```
-    children:
-      - 'office!OfficeExtension.Error#code:member'
-      - 'office!OfficeExtension.Error#debugInfo:member'
-      - 'office!OfficeExtension.Error#innerError:member'
-      - 'office!OfficeExtension.Error#message:member'
-      - 'office!OfficeExtension.Error#name:member'
-      - 'office!OfficeExtension.Error#stack:member'
-      - 'office!OfficeExtension.Error#traceMessages:member'
-  - uid: 'office!OfficeExtension.Error#code:member'
-    summary: 'Error code string, such as "InvalidArgument".'
-    name: code
     fullName: code
-    langs:
-      - typeScript
-    type: property
+    summary: 'Error code string, such as "InvalidArgument".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'code: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.Error#debugInfo:member'
-    summary: 'Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`<!-- -->).'
-    name: debugInfo
+        type: string
+  - name: debugInfo
+    uid: 'office!OfficeExtension.Error#debugInfo:member'
+    package: office!
     fullName: debugInfo
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Debug info (useful for detailed logging of the error, i.e., via
+      `JSON.stringify(...)`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'debugInfo: DebugInfo;'
       return:
-        type:
-          - 'office!OfficeExtension.DebugInfo:interface'
-  - uid: 'office!OfficeExtension.Error#innerError:member'
-    summary: 'Inner error, if applicable.'
-    name: innerError
+        type: '<xref uid="office!OfficeExtension.DebugInfo:interface" />'
+  - name: innerError
+    uid: 'office!OfficeExtension.Error#innerError:member'
+    package: office!
     fullName: innerError
-    langs:
-      - typeScript
-    type: property
+    summary: 'Inner error, if applicable.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'innerError: Error;'
       return:
-        type:
-          - 'office!OfficeExtension.Error:class'
-  - uid: 'office!OfficeExtension.Error#message:member'
-    summary: The error message passed through from the host Office application.
-    name: message
+        type: '<xref uid="office!OfficeExtension.Error:class" />'
+  - name: message
+    uid: 'office!OfficeExtension.Error#message:member'
+    package: office!
     fullName: message
-    langs:
-      - typeScript
-    type: property
+    summary: The error message passed through from the host Office application.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'message: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.Error#name:member'
-    summary: 'Error name: "OfficeExtension.Error".'
-    name: name
+        type: string
+  - name: name
+    uid: 'office!OfficeExtension.Error#name:member'
+    package: office!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: 'Error name: "OfficeExtension.Error".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.Error#stack:member'
-    summary: 'Stack trace, if applicable.'
-    name: stack
+        type: string
+  - name: stack
+    uid: 'office!OfficeExtension.Error#stack:member'
+    package: office!
     fullName: stack
-    langs:
-      - typeScript
-    type: property
+    summary: 'Stack trace, if applicable.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'stack: string;'
       return:
-        type:
-          - string
-  - uid: 'office!OfficeExtension.Error#traceMessages:member'
-    summary: >-
-      Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`<!--
-      -->. If there was an error, this contains all trace messages that were executed before the error occurred. These
-      messages can help you monitor the program execution sequence and detect the case of the error.
-    name: traceMessages
+        type: string
+  - name: traceMessages
+    uid: 'office!OfficeExtension.Error#traceMessages:member'
+    package: office!
     fullName: traceMessages
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Trace messages (if any) that were added via a `context.trace()` invocation
+      before calling `context.sync()`<!-- -->. If there was an error, this
+      contains all trace messages that were executed before the error occurred.
+      These messages can help you monitor the program execution sequence and
+      detect the case of the error.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'traceMessages: string[];'
       return:
-        type:
-          - 'string[]'
-        description: |-
+        type: 'string[]'
+        description: >-
 
 
           #### Examples
 
+
           ```javascript
-          // The following example shows how you can instrument a batch of commands
+
+          // The following example shows how you can instrument a batch of
+          commands
+
           // to determine where an error occurred. The first batch successfully
-          // inserts the first two paragraphs into the document and cause no errors.
-          // The second batch successfully inserts the third and fourth paragraphs
-          // but fails in the call to insert the fifth paragraph. All other commands
-          // after the failed command in the batch are not executed, including the
+
+          // inserts the first two paragraphs into the document and cause no
+          errors.
+
+          // The second batch successfully inserts the third and fourth
+          paragraphs
+
+          // but fails in the call to insert the fifth paragraph. All other
+          commands
+
+          // after the failed command in the batch are not executed, including
+          the
+
           // command that adds the fifth trace message. In this case, the error
-          // occurred after the fourth paragraph was inserted, and before adding the
+
+          // occurred after the fourth paragraph was inserted, and before adding
+          the
+
           // fifth trace message.
 
+
           // Run a batch operation against the Word object model.
+
           Word.run(function (context) {
 
               // Create a proxy object for the document body.
@@ -181,16 +195,15 @@ items:
                   context.trace('5th paragraph successful');
               }).then(context.sync);
           })
+
           .catch(function (error) {
               if (error instanceof OfficeExtension.Error) {
                   console.log('Trace messages: ' + error.traceMessages);
               }
           });
 
-          // Output: "Trace messages: 3rd paragraph successful,4th paragraph successful"
+
+          // Output: "Trace messages: 3rd paragraph successful,4th paragraph
+          successful"
+
           ```
-references:
-  - uid: 'office!OfficeExtension.DebugInfo:interface'
-    name: DebugInfo
-  - uid: 'office!OfficeExtension.Error:class'
-    name: Error

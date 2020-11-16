@@ -1,203 +1,109 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.BorderType:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.BorderType
-    fullName: Word.BorderType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.BorderType
+uid: 'word!Word.BorderType:enum'
+package: word!
+fullName: Word.BorderType
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dashDotStroked
+    uid: 'word!Word.BorderType.dashDotStroked:member'
     package: word!
-    children:
-      - 'word!Word.BorderType.dashDotStroked:member'
-      - 'word!Word.BorderType.dashed:member'
-      - 'word!Word.BorderType.dashedSmall:member'
-      - 'word!Word.BorderType.dot2Dashed:member'
-      - 'word!Word.BorderType.dotDashed:member'
-      - 'word!Word.BorderType.dotted:member'
-      - 'word!Word.BorderType.double:member'
-      - 'word!Word.BorderType.doubleWave:member'
-      - 'word!Word.BorderType.mixed:member'
-      - 'word!Word.BorderType.none:member'
-      - 'word!Word.BorderType.single:member'
-      - 'word!Word.BorderType.thickThinLarge:member'
-      - 'word!Word.BorderType.thickThinMed:member'
-      - 'word!Word.BorderType.thickThinSmall:member'
-      - 'word!Word.BorderType.thinThickLarge:member'
-      - 'word!Word.BorderType.thinThickMed:member'
-      - 'word!Word.BorderType.thinThickSmall:member'
-      - 'word!Word.BorderType.thinThickThinLarge:member'
-      - 'word!Word.BorderType.thinThickThinMed:member'
-      - 'word!Word.BorderType.thinThickThinSmall:member'
-      - 'word!Word.BorderType.threeDEmboss:member'
-      - 'word!Word.BorderType.threeDEngrave:member'
-      - 'word!Word.BorderType.triple:member'
-      - 'word!Word.BorderType.wave:member'
-  - uid: 'word!Word.BorderType.dashDotStroked:member'
-    name: dashDotStroked
-    fullName: dashDotStroked
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashDotStroked"'
-  - uid: 'word!Word.BorderType.dashed:member'
-    name: dashed
-    fullName: dashed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dashed"'
-  - uid: 'word!Word.BorderType.dashedSmall:member'
-    name: dashedSmall
-    fullName: dashedSmall
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashedSmall"'
-  - uid: 'word!Word.BorderType.dot2Dashed:member'
-    name: dot2Dashed
-    fullName: dot2Dashed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dot2Dashed"'
-  - uid: 'word!Word.BorderType.dotDashed:member'
-    name: dotDashed
-    fullName: dotDashed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DotDashed"'
-  - uid: 'word!Word.BorderType.dotted:member'
-    name: dotted
-    fullName: dotted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dotted"'
-  - uid: 'word!Word.BorderType.double:member'
-    name: double
-    fullName: double
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Double"'
-  - uid: 'word!Word.BorderType.doubleWave:member'
-    name: doubleWave
-    fullName: doubleWave
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DoubleWave"'
-  - uid: 'word!Word.BorderType.mixed:member'
-    name: mixed
-    fullName: mixed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Mixed"'
-  - uid: 'word!Word.BorderType.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'word!Word.BorderType.single:member'
-    name: single
-    fullName: single
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Single"'
-  - uid: 'word!Word.BorderType.thickThinLarge:member'
-    name: thickThinLarge
-    fullName: thickThinLarge
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThickThinLarge"'
-  - uid: 'word!Word.BorderType.thickThinMed:member'
-    name: thickThinMed
-    fullName: thickThinMed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThickThinMed"'
-  - uid: 'word!Word.BorderType.thickThinSmall:member'
-    name: thickThinSmall
-    fullName: thickThinSmall
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThickThinSmall"'
-  - uid: 'word!Word.BorderType.thinThickLarge:member'
-    name: thinThickLarge
-    fullName: thinThickLarge
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThickLarge"'
-  - uid: 'word!Word.BorderType.thinThickMed:member'
-    name: thinThickMed
-    fullName: thinThickMed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThickMed"'
-  - uid: 'word!Word.BorderType.thinThickSmall:member'
-    name: thinThickSmall
-    fullName: thinThickSmall
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThickSmall"'
-  - uid: 'word!Word.BorderType.thinThickThinLarge:member'
-    name: thinThickThinLarge
-    fullName: thinThickThinLarge
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThickThinLarge"'
-  - uid: 'word!Word.BorderType.thinThickThinMed:member'
-    name: thinThickThinMed
-    fullName: thinThickThinMed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThickThinMed"'
-  - uid: 'word!Word.BorderType.thinThickThinSmall:member'
-    name: thinThickThinSmall
-    fullName: thinThickThinSmall
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThinThickThinSmall"'
-  - uid: 'word!Word.BorderType.threeDEmboss:member'
-    name: threeDEmboss
-    fullName: threeDEmboss
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThreeDEmboss"'
-  - uid: 'word!Word.BorderType.threeDEngrave:member'
-    name: threeDEngrave
-    fullName: threeDEngrave
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ThreeDEngrave"'
-  - uid: 'word!Word.BorderType.triple:member'
-    name: triple
-    fullName: triple
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Triple"'
-  - uid: 'word!Word.BorderType.wave:member'
-    name: wave
-    fullName: wave
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Wave"'
+    summary: ''
+  - name: dashed
+    uid: 'word!Word.BorderType.dashed:member'
+    package: word!
+    summary: ''
+  - name: dashedSmall
+    uid: 'word!Word.BorderType.dashedSmall:member'
+    package: word!
+    summary: ''
+  - name: dot2Dashed
+    uid: 'word!Word.BorderType.dot2Dashed:member'
+    package: word!
+    summary: ''
+  - name: dotDashed
+    uid: 'word!Word.BorderType.dotDashed:member'
+    package: word!
+    summary: ''
+  - name: dotted
+    uid: 'word!Word.BorderType.dotted:member'
+    package: word!
+    summary: ''
+  - name: double
+    uid: 'word!Word.BorderType.double:member'
+    package: word!
+    summary: ''
+  - name: doubleWave
+    uid: 'word!Word.BorderType.doubleWave:member'
+    package: word!
+    summary: ''
+  - name: mixed
+    uid: 'word!Word.BorderType.mixed:member'
+    package: word!
+    summary: ''
+  - name: none
+    uid: 'word!Word.BorderType.none:member'
+    package: word!
+    summary: ''
+  - name: single
+    uid: 'word!Word.BorderType.single:member'
+    package: word!
+    summary: ''
+  - name: thickThinLarge
+    uid: 'word!Word.BorderType.thickThinLarge:member'
+    package: word!
+    summary: ''
+  - name: thickThinMed
+    uid: 'word!Word.BorderType.thickThinMed:member'
+    package: word!
+    summary: ''
+  - name: thickThinSmall
+    uid: 'word!Word.BorderType.thickThinSmall:member'
+    package: word!
+    summary: ''
+  - name: thinThickLarge
+    uid: 'word!Word.BorderType.thinThickLarge:member'
+    package: word!
+    summary: ''
+  - name: thinThickMed
+    uid: 'word!Word.BorderType.thinThickMed:member'
+    package: word!
+    summary: ''
+  - name: thinThickSmall
+    uid: 'word!Word.BorderType.thinThickSmall:member'
+    package: word!
+    summary: ''
+  - name: thinThickThinLarge
+    uid: 'word!Word.BorderType.thinThickThinLarge:member'
+    package: word!
+    summary: ''
+  - name: thinThickThinMed
+    uid: 'word!Word.BorderType.thinThickThinMed:member'
+    package: word!
+    summary: ''
+  - name: thinThickThinSmall
+    uid: 'word!Word.BorderType.thinThickThinSmall:member'
+    package: word!
+    summary: ''
+  - name: threeDEmboss
+    uid: 'word!Word.BorderType.threeDEmboss:member'
+    package: word!
+    summary: ''
+  - name: threeDEngrave
+    uid: 'word!Word.BorderType.threeDEngrave:member'
+    package: word!
+    summary: ''
+  - name: triple
+    uid: 'word!Word.BorderType.triple:member'
+    package: word!
+    summary: ''
+  - name: wave
+    uid: 'word!Word.BorderType.wave:member'
+    package: word!
+    summary: ''

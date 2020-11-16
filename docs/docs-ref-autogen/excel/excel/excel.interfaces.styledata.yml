@@ -1,432 +1,450 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.StyleData:interface'
-    summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
-    name: Excel.Interfaces.StyleData
-    fullName: Excel.Interfaces.StyleData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.StyleData
+uid: 'excel!Excel.Interfaces.StyleData:interface'
+package: excel!
+fullName: Excel.Interfaces.StyleData
+summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: autoIndent
+    uid: 'excel!Excel.Interfaces.StyleData#autoIndent:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.StyleData#autoIndent:member'
-      - 'excel!Excel.Interfaces.StyleData#borders:member'
-      - 'excel!Excel.Interfaces.StyleData#builtIn:member'
-      - 'excel!Excel.Interfaces.StyleData#fill:member'
-      - 'excel!Excel.Interfaces.StyleData#font:member'
-      - 'excel!Excel.Interfaces.StyleData#formulaHidden:member'
-      - 'excel!Excel.Interfaces.StyleData#horizontalAlignment:member'
-      - 'excel!Excel.Interfaces.StyleData#includeAlignment:member'
-      - 'excel!Excel.Interfaces.StyleData#includeBorder:member'
-      - 'excel!Excel.Interfaces.StyleData#includeFont:member'
-      - 'excel!Excel.Interfaces.StyleData#includeNumber:member'
-      - 'excel!Excel.Interfaces.StyleData#includePatterns:member'
-      - 'excel!Excel.Interfaces.StyleData#includeProtection:member'
-      - 'excel!Excel.Interfaces.StyleData#indentLevel:member'
-      - 'excel!Excel.Interfaces.StyleData#locked:member'
-      - 'excel!Excel.Interfaces.StyleData#name:member'
-      - 'excel!Excel.Interfaces.StyleData#numberFormat:member'
-      - 'excel!Excel.Interfaces.StyleData#numberFormatLocal:member'
-      - 'excel!Excel.Interfaces.StyleData#readingOrder:member'
-      - 'excel!Excel.Interfaces.StyleData#shrinkToFit:member'
-      - 'excel!Excel.Interfaces.StyleData#textOrientation:member'
-      - 'excel!Excel.Interfaces.StyleData#verticalAlignment:member'
-      - 'excel!Excel.Interfaces.StyleData#wrapText:member'
-  - uid: 'excel!Excel.Interfaces.StyleData#autoIndent:member'
-    summary: |-
-      Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: autoIndent
     fullName: autoIndent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if text is automatically indented when the text alignment in a
+      cell is set to equal distribution.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'autoIndent?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#borders:member'
-    summary: |-
-      A Border collection of four Border objects that represent the style of the four borders.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: borders
+        type: boolean
+  - name: borders
+    uid: 'excel!Excel.Interfaces.StyleData#borders:member'
+    package: excel!
     fullName: borders
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A Border collection of four Border objects that represent the style of the
+      four borders.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'borders?: Excel.Interfaces.RangeBorderData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.StyleData#borders~0:complex'
-  - uid: 'excel!Excel.Interfaces.StyleData#builtIn:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.Interfaces.RangeBorderData:interface" />[]'
+  - name: builtIn
+    uid: 'excel!Excel.Interfaces.StyleData#builtIn:member'
+    package: excel!
+    fullName: builtIn
+    summary: >-
       Specifies if the style is a built-in style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: builtIn
-    fullName: builtIn
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'builtIn?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#fill:member'
-    summary: |-
+        type: boolean
+  - name: fill
+    uid: 'excel!Excel.Interfaces.StyleData#fill:member'
+    package: excel!
+    fullName: fill
+    summary: >-
       The Fill of the style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fill?: Excel.Interfaces.RangeFillData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeFillData:interface'
-  - uid: 'excel!Excel.Interfaces.StyleData#font:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.Interfaces.RangeFillData:interface" />'
+  - name: font
+    uid: 'excel!Excel.Interfaces.StyleData#font:member'
+    package: excel!
+    fullName: font
+    summary: >-
       A Font object that represents the font of the style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Excel.Interfaces.RangeFontData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeFontData:interface'
-  - uid: 'excel!Excel.Interfaces.StyleData#formulaHidden:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.Interfaces.RangeFontData:interface" />'
+  - name: formulaHidden
+    uid: 'excel!Excel.Interfaces.StyleData#formulaHidden:member'
+    package: excel!
+    fullName: formulaHidden
+    summary: >-
       Specifies if the formula will be hidden when the worksheet is protected.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formulaHidden
-    fullName: formulaHidden
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formulaHidden?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#horizontalAlignment:member'
-    summary: |-
-      Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: horizontalAlignment
+        type: boolean
+  - name: horizontalAlignment
+    uid: 'excel!Excel.Interfaces.StyleData#horizontalAlignment:member'
+    package: excel!
     fullName: horizontalAlignment
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the horizontal alignment for the style. See
+      Excel.HorizontalAlignment for details.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
-        "CenterAcrossSelection" | "Distributed";
+        horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" |
+        "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" |
+        "Distributed";
       return:
-        type:
-          - 'excel!Excel.Interfaces.StyleData#horizontalAlignment~0:complex'
-  - uid: 'excel!Excel.Interfaces.StyleData#includeAlignment:member'
-    summary: >-
-      Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
-      TextOrientation properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: includeAlignment
+        type: >-
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
+          "Left" | "Center" | "Right" | "Fill" | "Justify" |
+          "CenterAcrossSelection" | "Distributed"
+  - name: includeAlignment
+    uid: 'excel!Excel.Interfaces.StyleData#includeAlignment:member'
+    package: excel!
     fullName: includeAlignment
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the style includes the AutoIndent, HorizontalAlignment,
+      VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'includeAlignment?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#includeBorder:member'
-    summary: |-
-      Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: includeBorder
+        type: boolean
+  - name: includeBorder
+    uid: 'excel!Excel.Interfaces.StyleData#includeBorder:member'
+    package: excel!
     fullName: includeBorder
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the style includes the Color, ColorIndex, LineStyle, and
+      Weight border properties.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'includeBorder?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#includeFont:member'
-    summary: >-
-      Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
-      Strikethrough, Subscript, Superscript, and Underline font properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: includeFont
+        type: boolean
+  - name: includeFont
+    uid: 'excel!Excel.Interfaces.StyleData#includeFont:member'
+    package: excel!
     fullName: includeFont
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the style includes the Background, Bold, Color, ColorIndex,
+      FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and
+      Underline font properties.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'includeFont?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#includeNumber:member'
-    summary: |-
+        type: boolean
+  - name: includeNumber
+    uid: 'excel!Excel.Interfaces.StyleData#includeNumber:member'
+    package: excel!
+    fullName: includeNumber
+    summary: >-
       Specifies if the style includes the NumberFormat property.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: includeNumber
-    fullName: includeNumber
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'includeNumber?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#includePatterns:member'
-    summary: >-
-      Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
-      PatternColorIndex interior properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: includePatterns
+        type: boolean
+  - name: includePatterns
+    uid: 'excel!Excel.Interfaces.StyleData#includePatterns:member'
+    package: excel!
     fullName: includePatterns
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the style includes the Color, ColorIndex, InvertIfNegative,
+      Pattern, PatternColor, and PatternColorIndex interior properties.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'includePatterns?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#includeProtection:member'
-    summary: |-
-      Specifies if the style includes the FormulaHidden and Locked protection properties.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: includeProtection
+        type: boolean
+  - name: includeProtection
+    uid: 'excel!Excel.Interfaces.StyleData#includeProtection:member'
+    package: excel!
     fullName: includeProtection
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the style includes the FormulaHidden and Locked protection
+      properties.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'includeProtection?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#indentLevel:member'
-    summary: |-
+        type: boolean
+  - name: indentLevel
+    uid: 'excel!Excel.Interfaces.StyleData#indentLevel:member'
+    package: excel!
+    fullName: indentLevel
+    summary: >-
       An integer from 0 to 250 that indicates the indent level for the style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: indentLevel
-    fullName: indentLevel
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'indentLevel?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.StyleData#locked:member'
-    summary: |-
+        type: number
+  - name: locked
+    uid: 'excel!Excel.Interfaces.StyleData#locked:member'
+    package: excel!
+    fullName: locked
+    summary: >-
       Specifies if the object is locked when the worksheet is protected.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: locked
-    fullName: locked
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'locked?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#name:member'
-    summary: |-
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.StyleData#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
       The name of the style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.StyleData#numberFormat:member'
-    summary: |-
+        type: string
+  - name: numberFormat
+    uid: 'excel!Excel.Interfaces.StyleData#numberFormat:member'
+    package: excel!
+    fullName: numberFormat
+    summary: >-
       The format code of the number format for the style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'numberFormat?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.StyleData#numberFormatLocal:member'
-    summary: |-
+        type: string
+  - name: numberFormatLocal
+    uid: 'excel!Excel.Interfaces.StyleData#numberFormatLocal:member'
+    package: excel!
+    fullName: numberFormatLocal
+    summary: >-
       The localized format code of the number format for the style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: numberFormatLocal
-    fullName: numberFormatLocal
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'numberFormatLocal?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.StyleData#readingOrder:member'
-    summary: |-
+        type: string
+  - name: readingOrder
+    uid: 'excel!Excel.Interfaces.StyleData#readingOrder:member'
+    package: excel!
+    fullName: readingOrder
+    summary: >-
       The reading order for the style.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: readingOrder
-    fullName: readingOrder
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.StyleData#readingOrder~0:complex'
-  - uid: 'excel!Excel.Interfaces.StyleData#shrinkToFit:member'
-    summary: |-
-      Specifies if text automatically shrinks to fit in the available column width.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: shrinkToFit
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" |
+        "RightToLeft";
+      return:
+        type: >-
+          <xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" |
+          "LeftToRight" | "RightToLeft"
+  - name: shrinkToFit
+    uid: 'excel!Excel.Interfaces.StyleData#shrinkToFit:member'
+    package: excel!
     fullName: shrinkToFit
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if text automatically shrinks to fit in the available column
+      width.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shrinkToFit?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.StyleData#textOrientation:member'
-    summary: |-
+        type: boolean
+  - name: textOrientation
+    uid: 'excel!Excel.Interfaces.StyleData#textOrientation:member'
+    package: excel!
+    fullName: textOrientation
+    summary: >-
       The text orientation for the style.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: textOrientation
-    fullName: textOrientation
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'textOrientation?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.StyleData#verticalAlignment:member'
-    summary: |-
-      Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: verticalAlignment
+        type: number
+  - name: verticalAlignment
+    uid: 'excel!Excel.Interfaces.StyleData#verticalAlignment:member'
+    package: excel!
     fullName: verticalAlignment
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the vertical alignment for the style. See
+      Excel.VerticalAlignment for details.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
+      content: >-
+        verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" |
+        "Bottom" | "Justify" | "Distributed";
       return:
-        type:
-          - 'excel!Excel.Interfaces.StyleData#verticalAlignment~0:complex'
-  - uid: 'excel!Excel.Interfaces.StyleData#wrapText:member'
-    summary: |-
+        type: >-
+          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
+          "Bottom" | "Justify" | "Distributed"
+  - name: wrapText
+    uid: 'excel!Excel.Interfaces.StyleData#wrapText:member'
+    package: excel!
+    fullName: wrapText
+    summary: >-
       Specifies if Excel wraps the text in the object.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: wrapText
-    fullName: wrapText
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'wrapText?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.StyleData#borders~0:complex'
-    name: 'Excel.Interfaces.RangeBorderData[]'
-    fullName: 'Excel.Interfaces.RangeBorderData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
-        name: Excel.Interfaces.RangeBorderData
-        fullName: Excel.Interfaces.RangeBorderData
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
-    name: Excel.Interfaces.RangeFillData
-  - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
-    name: Excel.Interfaces.RangeFontData
-  - uid: 'excel!Excel.Interfaces.StyleData#horizontalAlignment~0:complex'
-    name: >-
-      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
-      | "Distributed"
-    fullName: >-
-      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
-      | "Distributed"
-    spec.typeScript:
-      - uid: 'excel!Excel.HorizontalAlignment:enum'
-        name: Excel.HorizontalAlignment
-        fullName: Excel.HorizontalAlignment
-      - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
-        fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
-  - uid: 'excel!Excel.Interfaces.StyleData#readingOrder~0:complex'
-    name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
-    fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
-    spec.typeScript:
-      - uid: 'excel!Excel.ReadingOrder:enum'
-        name: Excel.ReadingOrder
-        fullName: Excel.ReadingOrder
-      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
-        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
-  - uid: 'excel!Excel.Interfaces.StyleData#verticalAlignment~0:complex'
-    name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
-    fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
-    spec.typeScript:
-      - uid: 'excel!Excel.VerticalAlignment:enum'
-        name: Excel.VerticalAlignment
-        fullName: Excel.VerticalAlignment
-      - name: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
-        fullName: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
+        type: boolean

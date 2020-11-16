@@ -1,85 +1,83 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
-    summary: An interface describing the data returned by calling "tableRow.toJSON()".
-    name: OneNote.Interfaces.TableRowData
-    fullName: OneNote.Interfaces.TableRowData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.TableRowData
+uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.TableRowData
+summary: An interface describing the data returned by calling "tableRow.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellCount
+    uid: 'onenote!OneNote.Interfaces.TableRowData#cellCount:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.TableRowData#cellCount:member'
-      - 'onenote!OneNote.Interfaces.TableRowData#cells:member'
-      - 'onenote!OneNote.Interfaces.TableRowData#id:member'
-      - 'onenote!OneNote.Interfaces.TableRowData#rowIndex:member'
-  - uid: 'onenote!OneNote.Interfaces.TableRowData#cellCount:member'
-    summary: |-
+    fullName: cellCount
+    summary: >-
       Gets the number of cells in the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: cellCount
-    fullName: cellCount
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellCount?: number;'
       return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.Interfaces.TableRowData#cells:member'
-    summary: |-
+        type: number
+  - name: cells
+    uid: 'onenote!OneNote.Interfaces.TableRowData#cells:member'
+    package: onenote!
+    fullName: cells
+    summary: >-
       Gets the cells in the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: cells
-    fullName: cells
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cells?: OneNote.Interfaces.TableCellData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.TableRowData#cells~0:complex'
-  - uid: 'onenote!OneNote.Interfaces.TableRowData#id:member'
-    summary: |-
+        type: '<xref uid="onenote!OneNote.Interfaces.TableCellData:interface" />[]'
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.TableRowData#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Interfaces.TableRowData#rowIndex:member'
-    summary: |-
+        type: string
+  - name: rowIndex
+    uid: 'onenote!OneNote.Interfaces.TableRowData#rowIndex:member'
+    package: onenote!
+    fullName: rowIndex
+    summary: >-
       Gets the index of the row in its parent table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: rowIndex
-    fullName: rowIndex
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowIndex?: number;'
       return:
-        type:
-          - number
-references:
-  - uid: 'onenote!OneNote.Interfaces.TableRowData#cells~0:complex'
-    name: 'OneNote.Interfaces.TableCellData[]'
-    fullName: 'OneNote.Interfaces.TableCellData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
-        name: OneNote.Interfaces.TableCellData
-        fullName: OneNote.Interfaces.TableCellData
-      - name: '[]'
-        fullName: '[]'
+        type: number
