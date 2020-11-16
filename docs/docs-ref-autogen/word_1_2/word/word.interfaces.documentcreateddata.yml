@@ -1,127 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
-    summary: An interface describing the data returned by calling `documentCreated.toJSON()`<!-- -->.
-    name: Word.Interfaces.DocumentCreatedData
-    fullName: Word.Interfaces.DocumentCreatedData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.DocumentCreatedData
+uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
+package: word!
+fullName: Word.Interfaces.DocumentCreatedData
+summary: >-
+  An interface describing the data returned by calling
+  `documentCreated.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'word!Word.Interfaces.DocumentCreatedData#body:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.DocumentCreatedData#body:member'
-      - 'word!Word.Interfaces.DocumentCreatedData#contentControls:member'
-      - 'word!Word.Interfaces.DocumentCreatedData#properties:member'
-      - 'word!Word.Interfaces.DocumentCreatedData#saved:member'
-      - 'word!Word.Interfaces.DocumentCreatedData#sections:member'
-  - uid: 'word!Word.Interfaces.DocumentCreatedData#body:member'
-    summary: >-
-      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc.. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    name: body
     fullName: body
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the body object of the document. The body is the text that excludes
+      headers, footers, footnotes, textboxes, etc.. Read-only.
+
+
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
-        type:
-          - 'word!Word.Interfaces.BodyData:interface'
-  - uid: 'word!Word.Interfaces.DocumentCreatedData#contentControls:member'
-    summary: >-
-      Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    name: contentControls
+        type: '<xref uid="word!Word.Interfaces.BodyData:interface" />'
+  - name: contentControls
+    uid: 'word!Word.Interfaces.DocumentCreatedData#contentControls:member'
+    package: word!
     fullName: contentControls
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the collection of content control objects in the document. This
+      includes content controls in the body of the document, headers, footers,
+      textboxes, etc.. Read-only.
+
+
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.DocumentCreatedData#contentControls~0:complex'
-  - uid: 'word!Word.Interfaces.DocumentCreatedData#properties:member'
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+  - name: properties
+    uid: 'word!Word.Interfaces.DocumentCreatedData#properties:member'
+    package: word!
+    fullName: properties
     summary: >-
       Gets the properties of the document. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    name: properties
-    fullName: properties
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesData;'
       return:
-        type:
-          - 'word!Word.Interfaces.DocumentPropertiesData:interface'
-  - uid: 'word!Word.Interfaces.DocumentCreatedData#saved:member'
-    summary: >-
-      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    name: saved
+        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesData:interface" />'
+  - name: saved
+    uid: 'word!Word.Interfaces.DocumentCreatedData#saved:member'
+    package: word!
     fullName: saved
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Indicates whether the changes in the document have been saved. A value of
+      true indicates that the document hasn't changed since it was saved.
+      Read-only.
+
+
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'saved?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.DocumentCreatedData#sections:member'
+        type: boolean
+  - name: sections
+    uid: 'word!Word.Interfaces.DocumentCreatedData#sections:member'
+    package: word!
+    fullName: sections
     summary: >-
       Gets the collection of section objects in the document. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    name: sections
-    fullName: sections
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sections?: Word.Interfaces.SectionData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.DocumentCreatedData#sections~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: Word.Interfaces.BodyData
-  - uid: 'word!Word.Interfaces.DocumentCreatedData#contentControls~0:complex'
-    name: 'Word.Interfaces.ContentControlData[]'
-    fullName: 'Word.Interfaces.ContentControlData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.ContentControlData:interface'
-        name: Word.Interfaces.ContentControlData
-        fullName: Word.Interfaces.ContentControlData
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
-    name: Word.Interfaces.DocumentPropertiesData
-  - uid: 'word!Word.Interfaces.DocumentCreatedData#sections~0:complex'
-    name: 'Word.Interfaces.SectionData[]'
-    fullName: 'Word.Interfaces.SectionData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.SectionData:interface'
-        name: Word.Interfaces.SectionData
-        fullName: Word.Interfaces.SectionData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />[]'

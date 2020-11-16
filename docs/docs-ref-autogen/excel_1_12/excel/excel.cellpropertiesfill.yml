@@ -1,40 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CellPropertiesFill:interface'
-    summary: >-
-      Represents the `format.fill` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
-      `getColumnProperties` or the `format.fill` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!--
-      -->, and `setColumnProperties`<!-- -->.
+### YamlMime:TSType
+name: Excel.CellPropertiesFill
+uid: 'excel!Excel.CellPropertiesFill:interface'
+package: excel!
+fullName: Excel.CellPropertiesFill
+summary: >-
+  Represents the `format.fill` properties of `getCellProperties`<!-- -->,
+  `getRowProperties`<!-- -->, and `getColumnProperties` or the `format.fill`
+  input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!-- -->,
+  and `setColumnProperties`<!-- -->.
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CellPropertiesFill
-    fullName: Excel.CellPropertiesFill
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'excel!Excel.CellPropertiesFill#color:member'
     package: excel!
-    children:
-      - 'excel!Excel.CellPropertiesFill#color:member'
-      - 'excel!Excel.CellPropertiesFill#pattern:member'
-      - 'excel!Excel.CellPropertiesFill#patternColor:member'
-      - 'excel!Excel.CellPropertiesFill#patternTintAndShade:member'
-      - 'excel!Excel.CellPropertiesFill#tintAndShade:member'
-  - uid: 'excel!Excel.CellPropertiesFill#color:member'
-    summary: |-
+    fullName: color
+    summary: >-
       Represents the `format.fill.color` property.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: string;'
       return:
-        type:
-          - string
+        type: string
         description: >-
 
 
@@ -119,82 +120,85 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.CellPropertiesFill#pattern:member'
-    summary: |-
+  - name: pattern
+    uid: 'excel!Excel.CellPropertiesFill#pattern:member'
+    package: excel!
+    fullName: pattern
+    summary: >-
       Represents the `format.fill.pattern` property.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
-        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
-        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" |
+        "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" |
+        "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" |
+        "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" |
+        "LinearGradient" | "RectangularGradient";
       return:
-        type:
-          - 'excel!Excel.CellPropertiesFill#pattern~0:complex'
-  - uid: 'excel!Excel.CellPropertiesFill#patternColor:member'
-    summary: |-
+        type: >-
+          <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" |
+          "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
+          "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical"
+          | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8"
+          | "LinearGradient" | "RectangularGradient"
+  - name: patternColor
+    uid: 'excel!Excel.CellPropertiesFill#patternColor:member'
+    package: excel!
+    fullName: patternColor
+    summary: >-
       Represents the `format.fill.patternColor` property.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: patternColor
-    fullName: patternColor
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'patternColor?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.CellPropertiesFill#patternTintAndShade:member'
-    summary: |-
+        type: string
+  - name: patternTintAndShade
+    uid: 'excel!Excel.CellPropertiesFill#patternTintAndShade:member'
+    package: excel!
+    fullName: patternTintAndShade
+    summary: >-
       Represents the `format.fill.patternTintAndShade` property.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: patternTintAndShade
-    fullName: patternTintAndShade
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'patternTintAndShade?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.CellPropertiesFill#tintAndShade:member'
-    summary: |-
+        type: number
+  - name: tintAndShade
+    uid: 'excel!Excel.CellPropertiesFill#tintAndShade:member'
+    package: excel!
+    fullName: tintAndShade
+    summary: >-
       Represents the `format.fill.tintAndShade` property.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tintAndShade?: number;'
       return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.CellPropertiesFill#pattern~0:complex'
-    name: >-
-      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
-      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
-      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-    fullName: >-
-      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
-      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
-      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-    spec.typeScript:
-      - uid: 'excel!Excel.FillPattern:enum'
-        name: Excel.FillPattern
-        fullName: Excel.FillPattern
-      - name: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
-        fullName: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
+        type: number

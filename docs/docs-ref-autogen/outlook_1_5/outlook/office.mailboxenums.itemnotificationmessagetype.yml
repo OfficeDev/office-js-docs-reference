@@ -1,45 +1,34 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
-    summary: |-
-      Specifies the notification message type for an appointment or message.
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ItemNotificationMessageType
+uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ItemNotificationMessageType
+summary: >-
+  Specifies the notification message type for an appointment or message.
 
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.MailboxEnums.ItemNotificationMessageType
-    fullName: Office.MailboxEnums.ItemNotificationMessageType
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: Mailbox
+  1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ErrorMessage
+    uid: >-
+      outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member
     package: outlook!
-    children:
-      - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
-      - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
-      - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
-  - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
     summary: The notification message is an error message.
-    name: ErrorMessage
-    fullName: ErrorMessage
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"errorMessage"'
-  - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
+  - name: InformationalMessage
+    uid: >-
+      outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member
+    package: outlook!
     summary: The notification message is an informational message.
-    name: InformationalMessage
-    fullName: InformationalMessage
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"informationalMessage"'
-  - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
+  - name: ProgressIndicator
+    uid: >-
+      outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member
+    package: outlook!
     summary: The notification message is a progress indicator.
-    name: ProgressIndicator
-    fullName: ProgressIndicator
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"progressIndicator"'

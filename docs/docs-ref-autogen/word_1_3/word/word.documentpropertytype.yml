@@ -1,43 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.DocumentPropertyType:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.DocumentPropertyType
-    fullName: Word.DocumentPropertyType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.DocumentPropertyType
+uid: 'word!Word.DocumentPropertyType:enum'
+package: word!
+fullName: Word.DocumentPropertyType
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: boolean
+    uid: 'word!Word.DocumentPropertyType.boolean:member'
     package: word!
-    children:
-      - 'word!Word.DocumentPropertyType.boolean:member'
-      - 'word!Word.DocumentPropertyType.date:member'
-      - 'word!Word.DocumentPropertyType.number:member'
-      - 'word!Word.DocumentPropertyType.string:member'
-  - uid: 'word!Word.DocumentPropertyType.boolean:member'
-    name: boolean
-    fullName: boolean
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Boolean"'
-  - uid: 'word!Word.DocumentPropertyType.date:member'
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Date"'
-  - uid: 'word!Word.DocumentPropertyType.number:member'
-    name: number
-    fullName: number
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Number"'
-  - uid: 'word!Word.DocumentPropertyType.string:member'
-    name: string
-    fullName: string
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"String"'
+    summary: ''
+  - name: date
+    uid: 'word!Word.DocumentPropertyType.date:member'
+    package: word!
+    summary: ''
+  - name: number
+    uid: 'word!Word.DocumentPropertyType.number:member'
+    package: word!
+    summary: ''
+  - name: string
+    uid: 'word!Word.DocumentPropertyType.string:member'
+    package: word!
+    summary: ''

@@ -1,84 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.LinkedDataTypeAddedEventArgs:interface'
-    summary: >-
-      The argument that is passed to the event handler after a new linked data type is added to the workbook.
+### YamlMime:TSType
+name: Excel.LinkedDataTypeAddedEventArgs
+uid: 'excel!Excel.LinkedDataTypeAddedEventArgs:interface'
+package: excel!
+fullName: Excel.LinkedDataTypeAddedEventArgs
+summary: >-
+  The argument that is passed to the event handler after a new linked data type
+  is added to the workbook.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: Excel.LinkedDataTypeAddedEventArgs
-    fullName: Excel.LinkedDataTypeAddedEventArgs
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: serviceId
+    uid: 'excel!Excel.LinkedDataTypeAddedEventArgs#serviceId:member'
     package: excel!
-    children:
-      - 'excel!Excel.LinkedDataTypeAddedEventArgs#serviceId:member'
-      - 'excel!Excel.LinkedDataTypeAddedEventArgs#source:member'
-      - 'excel!Excel.LinkedDataTypeAddedEventArgs#type:member'
-  - uid: 'excel!Excel.LinkedDataTypeAddedEventArgs#serviceId:member'
+    fullName: serviceId
     summary: >-
       The unique id of the new linked data type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: serviceId
-    fullName: serviceId
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'serviceId: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.LinkedDataTypeAddedEventArgs#source:member'
+        type: number
+  - name: source
+    uid: 'excel!Excel.LinkedDataTypeAddedEventArgs#source:member'
+    package: excel!
+    fullName: source
     summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: source
-    fullName: source
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type:
-          - 'excel!Excel.LinkedDataTypeAddedEventArgs#source~0:complex'
-  - uid: 'excel!Excel.LinkedDataTypeAddedEventArgs#type:member'
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'excel!Excel.LinkedDataTypeAddedEventArgs#type:member'
+    package: excel!
+    fullName: type
     summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'type: "LinkedDataTypeLinkedDataTypeAdded";'
       return:
-        type:
-          - '"LinkedDataTypeLinkedDataTypeAdded"'
-references:
-  - uid: 'excel!Excel.LinkedDataTypeAddedEventArgs#source~0:complex'
-    name: Excel.EventSource | "Local" | "Remote"
-    fullName: Excel.EventSource | "Local" | "Remote"
-    spec.typeScript:
-      - uid: 'excel!Excel.EventSource:enum'
-        name: Excel.EventSource
-        fullName: Excel.EventSource
-      - name: ' | "Local" | "Remote"'
-        fullName: ' | "Local" | "Remote"'
+        type: '"LinkedDataTypeLinkedDataTypeAdded"'

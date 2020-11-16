@@ -1,34 +1,27 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.RibbonUpdaterData:interface'
-    summary: 'Specifies changes to the ribbon, such as the enabled or disabled status of a button.'
-    name: Office.RibbonUpdaterData
-    fullName: Office.RibbonUpdaterData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.RibbonUpdaterData
+uid: 'office!Office.RibbonUpdaterData:interface'
+package: office!
+fullName: Office.RibbonUpdaterData
+summary: >-
+  Specifies changes to the ribbon, such as the enabled or disabled status of a
+  button.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: tabs
+    uid: 'office!Office.RibbonUpdaterData#tabs:member'
     package: office!
-    children:
-      - 'office!Office.RibbonUpdaterData#tabs:member'
-  - uid: 'office!Office.RibbonUpdaterData#tabs:member'
-    summary: Collection of tabs whose state is set with the call of `requestUpdate`<!-- -->.
-    name: tabs
     fullName: tabs
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Collection of tabs whose state is set with the call of `requestUpdate`<!--
+      -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tabs: Tab[];'
       return:
-        type:
-          - 'office!Office.RibbonUpdaterData#tabs~0:complex'
-references:
-  - uid: 'office!Office.RibbonUpdaterData#tabs~0:complex'
-    name: 'Tab[]'
-    fullName: 'Office.Tab[]'
-    spec.typeScript:
-      - uid: 'office!Office.Tab:interface'
-        name: Tab
-        fullName: Office.Tab
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="office!Office.Tab:interface" />[]'

@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TableScopedCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the TableScopedCollection object, for use in `tableScopedCollection.set({ ...
-      })`<!-- -->.
-    name: Excel.Interfaces.TableScopedCollectionUpdateData
-    fullName: Excel.Interfaces.TableScopedCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.TableScopedCollectionUpdateData
+uid: 'excel!Excel.Interfaces.TableScopedCollectionUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.TableScopedCollectionUpdateData
+summary: >-
+  An interface for updating data on the TableScopedCollection object, for use in
+  `tableScopedCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member'
-  - uid: 'excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.TableData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableScopedCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.TableScopedCollectionUpdateData#items~0:complex'
-    name: 'Excel.Interfaces.TableData[]'
-    fullName: 'Excel.Interfaces.TableData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.TableData:interface'
-        name: Excel.Interfaces.TableData
-        fullName: Excel.Interfaces.TableData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />[]'

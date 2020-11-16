@@ -1,56 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.Categories:interface'
-    summary: >-
-      Represents the categories on an item.
+### YamlMime:TSType
+name: Office.Categories
+uid: 'outlook!Office.Categories:interface'
+package: outlook!
+fullName: Office.Categories
+summary: >-
+  Represents the categories on an item.
 
 
-      In Outlook, a user can tag messages and appointments by using a category to color-code them. The user defines
-      [categories in a master list](xref:outlook!Office.MasterCategories:interface) on their mailbox. They can then
-      apply one or more categories to an item.
+  In Outlook, a user can tag messages and appointments by using a category to
+  color-code them. The user defines [categories in a master
+  list](xref:outlook!Office.MasterCategories:interface) on their mailbox. They
+  can then apply one or more categories to an item.
 
 
-      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose
-      mode.
+  **Important**: In Outlook on the web, you can't use the API to manage
+  categories applied to a message in Compose mode.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+  \[ [API set: Mailbox
+  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.Categories
-    fullName: Office.Categories
-    langs:
-      - typeScript
-    type: interface
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'addAsync(categories, options, callback)'
+    uid: 'outlook!Office.Categories#addAsync:member(1)'
     package: outlook!
-    children:
-      - 'outlook!Office.Categories#addAsync:member(1)'
-      - 'outlook!Office.Categories#getAsync:member(1)'
-      - 'outlook!Office.Categories#getAsync:member(2)'
-      - 'outlook!Office.Categories#removeAsync:member(1)'
-  - uid: 'outlook!Office.Categories#addAsync:member(1)'
+    fullName: 'addAsync(categories, options, callback)'
     summary: >-
-      Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a
-      unique name but multiple categories can use the same color.
+      Adds categories to an item. Each category must be in the categories master
+      list on that mailbox and so must have a unique name but multiple
+      categories can use the same color.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       **Errors**:
@@ -94,101 +98,109 @@ items:
       });
 
       ```
-    name: 'addAsync(categories, options, callback)'
-    fullName: 'addAsync(categories, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        addAsync(categories: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        addAsync(categories: string[], options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: categories
           description: The categories to be added to the item.
-          type:
-            - 'string[]'
+          type: 'string[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties. `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->.
-          type:
-            - 'outlook!Office.Categories#addAsync~0:complex'
-  - uid: 'outlook!Office.Categories#getAsync:member(1)'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.Categories#getAsync:member(1)'
+    package: outlook!
+    fullName: 'getAsync(options, callback)'
     summary: >-
       Gets an item's categories.
 
 
-      **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the
-      Outlook version so make sure to handle both cases.
+      **Important**: If there are no categories on the item, `null` or an empty
+      array will be returned depending on the Outlook version so make sure to
+      handle both cases.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: 'getAsync(options, callback)'
-    fullName: 'getAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
         getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
         Office.AsyncResult<CategoryDetails[]>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            An object literal that contains one or more of the following
+            properties. `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. If getting categories fails, the `asyncResult.error` property will
-            contain an error code.
-          type:
-            - 'outlook!Office.Categories#getAsync~0:complex'
-  - uid: 'outlook!Office.Categories#getAsync:member(2)'
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. If getting categories fails, the
+            `asyncResult.error` property will contain an error code.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CategoryDetails:interface" />[]&gt;)
+            =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.Categories#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
     summary: >-
       Gets an item's categories.
 
 
-      **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the
-      Outlook version so make sure to handle both cases.
+      **Important**: If there are no categories on the item, `null` or an empty
+      array will be returned depending on the Outlook version so make sure to
+      handle both cases.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
@@ -214,39 +226,46 @@ items:
       });
 
       ```
-    name: getAsync(callback)
-    fullName: getAsync(callback)
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<CategoryDetails[]>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        getAsync(callback: (asyncResult: Office.AsyncResult<CategoryDetails[]>)
+        => void): void;
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. If getting categories fails, the `asyncResult.error` property will
-            contain an error code.
-          type:
-            - 'outlook!Office.Categories#getAsync~1:complex'
-  - uid: 'outlook!Office.Categories#removeAsync:member(1)'
-    summary: |-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. If getting categories fails, the
+            `asyncResult.error` property will contain an error code.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CategoryDetails:interface" />[]&gt;)
+            =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'removeAsync(categories, options, callback)'
+    uid: 'outlook!Office.Categories#removeAsync:member(1)'
+    package: outlook!
+    fullName: 'removeAsync(categories, options, callback)'
+    summary: >-
       Removes categories from an item.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
@@ -279,91 +298,31 @@ items:
       });
 
       ```
-    name: 'removeAsync(categories, options, callback)'
-    fullName: 'removeAsync(categories, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        removeAsync(categories: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        removeAsync(categories: string[], options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: categories
           description: The categories to be removed from the item.
-          type:
-            - 'string[]'
+          type: 'string[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties. `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. If removing categories fails, the `asyncResult.error`
-            property will contain an error code.
-          type:
-            - 'outlook!Office.Categories#removeAsync~0:complex'
-references:
-  - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
-  - uid: 'outlook!Office.Categories#addAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
-  - uid: 'outlook!Office.Categories#getAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.CategoryDetails[]>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.CategoryDetails:interface'
-        name: CategoryDetails
-        fullName: Office.CategoryDetails
-      - name: '[]>) => void'
-        fullName: '[]>) => void'
-  - uid: 'outlook!Office.Categories#getAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.CategoryDetails[]>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.CategoryDetails:interface'
-        name: CategoryDetails
-        fullName: Office.CategoryDetails
-      - name: '[]>) => void'
-        fullName: '[]>) => void'
-  - uid: 'outlook!Office.Categories#removeAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. If removing categories fails, the
+            `asyncResult.error` property will contain an error code.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
+      return:
+        type: void
+        description: ''

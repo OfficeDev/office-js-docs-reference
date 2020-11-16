@@ -1,158 +1,70 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RemoveDuplicatesResult:class'
-    summary: |-
-      Represents the results from the removeDuplicates method on range
+### YamlMime:TSType
+name: Excel.RemoveDuplicatesResult
+uid: 'excel!Excel.RemoveDuplicatesResult:class'
+package: excel!
+fullName: Excel.RemoveDuplicatesResult
+summary: >-
+  Represents the results from the removeDuplicates method on range
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RemoveDuplicatesResult
-    fullName: Excel.RemoveDuplicatesResult
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.RemoveDuplicatesResult#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.RemoveDuplicatesResult#context:member'
-      - 'excel!Excel.RemoveDuplicatesResult#load:member(1)'
-      - 'excel!Excel.RemoveDuplicatesResult#load:member(2)'
-      - 'excel!Excel.RemoveDuplicatesResult#load:member(3)'
-      - 'excel!Excel.RemoveDuplicatesResult#removed:member'
-      - 'excel!Excel.RemoveDuplicatesResult#toJSON:member(1)'
-      - 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#load:member(1)'
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: removed
+    uid: 'excel!Excel.RemoveDuplicatesResult#removed:member'
+    package: excel!
+    fullName: removed
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(options?: Excel.Interfaces.RemoveDuplicatesResultLoadOptions): Excel.RemoveDuplicatesResult;'
-      return:
-        type:
-          - 'excel!Excel.RemoveDuplicatesResult:class'
-        description: ''
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.RemoveDuplicatesResultLoadOptions:interface'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.RemoveDuplicatesResult;'
-      return:
-        type:
-          - 'excel!Excel.RemoveDuplicatesResult:class'
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.RemoveDuplicatesResult;
-      return:
-        type:
-          - 'excel!Excel.RemoveDuplicatesResult:class'
-        description: ''
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.RemoveDuplicatesResult#removed:member'
-    summary: |-
       Number of duplicated rows removed by the operation.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: removed
-    fullName: removed
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly removed: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.RemoveDuplicatesResult#toJSON:member(1)'
+        type: number
+  - name: uniqueRemaining
+    uid: 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
+    package: excel!
+    fullName: uniqueRemaining
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.RemoveDuplicatesResult object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.RemoveDuplicatesResultData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
-    name: toJSON()
-    fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toJSON(): Excel.Interfaces.RemoveDuplicatesResultData;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
-        description: ''
-  - uid: 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
-    summary: |-
       Number of remaining unique rows present in the resulting range.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: uniqueRemaining
-    fullName: uniqueRemaining
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly uniqueRemaining: number;'
       return:
-        type:
-          - number
+        type: number
         description: >-
 
 
@@ -177,14 +89,104 @@ items:
           });
 
           ```
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.RemoveDuplicatesResult:class'
-    name: Excel.RemoveDuplicatesResult
-  - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultLoadOptions:interface'
-    name: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
-  - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
-    name: Excel.Interfaces.RemoveDuplicatesResultData
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.RemoveDuplicatesResult#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.RemoveDuplicatesResultLoadOptions):
+        Excel.RemoveDuplicatesResult;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.RemoveDuplicatesResultLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.RemoveDuplicatesResult:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.RemoveDuplicatesResult#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RemoveDuplicatesResult;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.RemoveDuplicatesResult:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.RemoveDuplicatesResult#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.RemoveDuplicatesResult;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.RemoveDuplicatesResult:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.RemoveDuplicatesResult#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      Excel.RemoveDuplicatesResult object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.RemoveDuplicatesResultData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.RemoveDuplicatesResultData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.RemoveDuplicatesResultData:interface" />
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

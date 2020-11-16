@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.SectionCollectionData:interface'
-    summary: An interface describing the data returned by calling `sectionCollection.toJSON()`<!-- -->.
-    name: Word.Interfaces.SectionCollectionData
-    fullName: Word.Interfaces.SectionCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.SectionCollectionData
+uid: 'word!Word.Interfaces.SectionCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.SectionCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `sectionCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.SectionCollectionData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.SectionCollectionData#items:member'
-  - uid: 'word!Word.Interfaces.SectionCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.SectionData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.SectionCollectionData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.SectionCollectionData#items~0:complex'
-    name: 'Word.Interfaces.SectionData[]'
-    fullName: 'Word.Interfaces.SectionData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.SectionData:interface'
-        name: Word.Interfaces.SectionData
-        fullName: Word.Interfaces.SectionData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />[]'

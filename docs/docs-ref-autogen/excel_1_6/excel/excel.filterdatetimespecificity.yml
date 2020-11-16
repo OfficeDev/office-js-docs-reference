@@ -1,59 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.FilterDatetimeSpecificity
-    fullName: Excel.FilterDatetimeSpecificity
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.FilterDatetimeSpecificity
+uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
+package: excel!
+fullName: Excel.FilterDatetimeSpecificity
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: day
+    uid: 'excel!Excel.FilterDatetimeSpecificity.day:member'
     package: excel!
-    children:
-      - 'excel!Excel.FilterDatetimeSpecificity.day:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.hour:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.minute:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.month:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.second:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.year:member'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.day:member'
-    name: day
-    fullName: day
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Day"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.hour:member'
-    name: hour
-    fullName: hour
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hour"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.minute:member'
-    name: minute
-    fullName: minute
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Minute"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.month:member'
-    name: month
-    fullName: month
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Month"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.second:member'
-    name: second
-    fullName: second
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Second"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.year:member'
-    name: year
-    fullName: year
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Year"'
+    summary: ''
+  - name: hour
+    uid: 'excel!Excel.FilterDatetimeSpecificity.hour:member'
+    package: excel!
+    summary: ''
+  - name: minute
+    uid: 'excel!Excel.FilterDatetimeSpecificity.minute:member'
+    package: excel!
+    summary: ''
+  - name: month
+    uid: 'excel!Excel.FilterDatetimeSpecificity.month:member'
+    package: excel!
+    summary: ''
+  - name: second
+    uid: 'excel!Excel.FilterDatetimeSpecificity.second:member'
+    package: excel!
+    summary: ''
+  - name: year
+    uid: 'excel!Excel.FilterDatetimeSpecificity.year:member'
+    package: excel!
+    summary: ''

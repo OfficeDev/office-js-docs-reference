@@ -1,43 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PrintErrorType:enum'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.PrintErrorType
-    fullName: Excel.PrintErrorType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.PrintErrorType
+uid: 'excel!Excel.PrintErrorType:enum'
+package: excel!
+fullName: Excel.PrintErrorType
+summary: >-
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: asDisplayed
+    uid: 'excel!Excel.PrintErrorType.asDisplayed:member'
     package: excel!
-    children:
-      - 'excel!Excel.PrintErrorType.asDisplayed:member'
-      - 'excel!Excel.PrintErrorType.blank:member'
-      - 'excel!Excel.PrintErrorType.dash:member'
-      - 'excel!Excel.PrintErrorType.notAvailable:member'
-  - uid: 'excel!Excel.PrintErrorType.asDisplayed:member'
-    name: asDisplayed
-    fullName: asDisplayed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"AsDisplayed"'
-  - uid: 'excel!Excel.PrintErrorType.blank:member'
-    name: blank
-    fullName: blank
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Blank"'
-  - uid: 'excel!Excel.PrintErrorType.dash:member'
-    name: dash
-    fullName: dash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dash"'
-  - uid: 'excel!Excel.PrintErrorType.notAvailable:member'
-    name: notAvailable
-    fullName: notAvailable
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NotAvailable"'
+    summary: ''
+  - name: blank
+    uid: 'excel!Excel.PrintErrorType.blank:member'
+    package: excel!
+    summary: ''
+  - name: dash
+    uid: 'excel!Excel.PrintErrorType.dash:member'
+    package: excel!
+    summary: ''
+  - name: notAvailable
+    uid: 'excel!Excel.PrintErrorType.notAvailable:member'
+    package: excel!
+    summary: ''

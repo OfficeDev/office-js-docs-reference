@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the NotebookCollection object, for use in "notebookCollection.set(<!-- -->{ ...
-      }<!-- -->)".
-    name: OneNote.Interfaces.NotebookCollectionUpdateData
-    fullName: OneNote.Interfaces.NotebookCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.NotebookCollectionUpdateData
+uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.NotebookCollectionUpdateData
+summary: >-
+  An interface for updating data on the NotebookCollection object, for use in
+  "notebookCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.NotebookData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items~0:complex'
-    name: 'OneNote.Interfaces.NotebookData[]'
-    fullName: 'OneNote.Interfaces.NotebookData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
-        name: OneNote.Interfaces.NotebookData
-        fullName: OneNote.Interfaces.NotebookData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.NotebookData:interface" />[]'

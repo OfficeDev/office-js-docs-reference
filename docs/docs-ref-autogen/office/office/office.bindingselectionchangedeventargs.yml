@@ -1,56 +1,53 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
-    summary: Provides information about the binding that raised the SelectionChanged event.
-    name: Office.BindingSelectionChangedEventArgs
-    fullName: Office.BindingSelectionChangedEventArgs
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.BindingSelectionChangedEventArgs
+uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
+package: office!
+fullName: Office.BindingSelectionChangedEventArgs
+summary: Provides information about the binding that raised the SelectionChanged event.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: binding
+    uid: 'office!Office.BindingSelectionChangedEventArgs#binding:member'
     package: office!
-    children:
-      - 'office!Office.BindingSelectionChangedEventArgs#binding:member'
-      - 'office!Office.BindingSelectionChangedEventArgs#columnCount:member'
-      - 'office!Office.BindingSelectionChangedEventArgs#rowCount:member'
-      - 'office!Office.BindingSelectionChangedEventArgs#startColumn:member'
-      - 'office!Office.BindingSelectionChangedEventArgs#startRow:member'
-      - 'office!Office.BindingSelectionChangedEventArgs#type:member'
-  - uid: 'office!Office.BindingSelectionChangedEventArgs#binding:member'
-    summary: >-
-      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that represents the binding that raised the
-      SelectionChanged event.
-    name: binding
     fullName: binding
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that
+      represents the binding that raised the SelectionChanged event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'binding: Binding;'
       return:
-        type:
-          - 'office!Office.Binding:interface'
-  - uid: 'office!Office.BindingSelectionChangedEventArgs#columnCount:member'
-    summary: >-
-      Gets the number of columns selected. If a single cell is selected returns 1.
-
-
-      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
-      returned.
-
-
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
-      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
-      merged cells, because the structure of the table must be uniform for this property to work correctly.
-    name: columnCount
+        type: '<xref uid="office!Office.Binding:interface" />'
+  - name: columnCount
+    uid: 'office!Office.BindingSelectionChangedEventArgs#columnCount:member'
+    package: office!
     fullName: columnCount
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the number of columns selected. If a single cell is selected returns
+      1.
+
+
+      If the user makes a non-contiguous selection, the count for the last
+      contiguous selection within the binding is returned.
+
+
+      For Word, this property will work only for bindings of
+      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
+      binding is of type "matrix", null is returned. Also, the call will fail if
+      the table contains merged cells, because the structure of the table must
+      be uniform for this property to work correctly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columnCount: number;'
       return:
-        type:
-          - number
+        type: number
         description: >-
 
 
@@ -59,11 +56,11 @@ items:
 
           ```javascript
 
-          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
-          myTable.
+          // The following example adds an event handler for the
+          SelectionChanged event to the binding with an id of myTable.
 
-          // When the user changes the selection, the handler displays the coordinates of the first cell in the
-          selection,
+          // When the user changes the selection, the handler displays the
+          coordinates of the first cell in the selection,
 
           // and the number of row and columns selected.
 
@@ -89,28 +86,30 @@ items:
           }
 
           ```
-  - uid: 'office!Office.BindingSelectionChangedEventArgs#rowCount:member'
+  - name: rowCount
+    uid: 'office!Office.BindingSelectionChangedEventArgs#rowCount:member'
+    package: office!
+    fullName: rowCount
     summary: >-
       Gets the number of rows selected. If a single cell is selected returns 1.
 
 
-      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
-      returned.
+      If the user makes a non-contiguous selection, the count for the last
+      contiguous selection within the binding is returned.
 
 
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
-      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
-      merged cells, because the structure of the table must be uniform for this property to work correctly.
-    name: rowCount
-    fullName: rowCount
-    langs:
-      - typeScript
-    type: property
+      For Word, this property will work only for bindings of
+      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
+      binding is of type "matrix", null is returned. Also, the call will fail if
+      the table contains merged cells, because the structure of the table must
+      be uniform for this property to work correctly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowCount: number;'
       return:
-        type:
-          - number
+        type: number
         description: >-
 
 
@@ -119,11 +118,11 @@ items:
 
           ```javascript
 
-          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
-          myTable.
+          // The following example adds an event handler for the
+          SelectionChanged event to the binding with an id of myTable.
 
-          // When the user changes the selection, the handler displays the coordinates of the first cell in the
-          selection,
+          // When the user changes the selection, the handler displays the
+          coordinates of the first cell in the selection,
 
           // and the number of row and columns selected.
 
@@ -149,28 +148,31 @@ items:
           }
 
           ```
-  - uid: 'office!Office.BindingSelectionChangedEventArgs#startColumn:member'
-    summary: >-
-      The zero-based index of the first column of the selection counting from the leftmost column in the binding.
-
-
-      If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding
-      are returned.
-
-
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
-      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
-      merged cells, because the structure of the table must be uniform for this property to work correctly.
-    name: startColumn
+  - name: startColumn
+    uid: 'office!Office.BindingSelectionChangedEventArgs#startColumn:member'
+    package: office!
     fullName: startColumn
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The zero-based index of the first column of the selection counting from
+      the leftmost column in the binding.
+
+
+      If the user makes a non-contiguous selection, the coordinates for the last
+      contiguous selection within the binding are returned.
+
+
+      For Word, this property will work only for bindings of
+      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
+      binding is of type "matrix", null is returned. Also, the call will fail if
+      the table contains merged cells, because the structure of the table must
+      be uniform for this property to work correctly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'startColumn: number;'
       return:
-        type:
-          - number
+        type: number
         description: >-
 
 
@@ -179,11 +181,11 @@ items:
 
           ```javascript
 
-          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
-          myTable.
+          // The following example adds an event handler for the
+          SelectionChanged event to the binding with an id of myTable.
 
-          // When the user changes the selection, the handler displays the coordinates of the first cell in the
-          selection,
+          // When the user changes the selection, the handler displays the
+          coordinates of the first cell in the selection,
 
           // and the number of row and columns selected.
 
@@ -209,28 +211,31 @@ items:
           }
 
           ```
-  - uid: 'office!Office.BindingSelectionChangedEventArgs#startRow:member'
-    summary: >-
-      The zero-based index of the first row of the selection counting from the first row in the binding.
-
-
-      If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding
-      are returned.
-
-
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
-      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
-      merged cells, because the structure of the table must be uniform for this property to work correctly.
-    name: startRow
+  - name: startRow
+    uid: 'office!Office.BindingSelectionChangedEventArgs#startRow:member'
+    package: office!
     fullName: startRow
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The zero-based index of the first row of the selection counting from the
+      first row in the binding.
+
+
+      If the user makes a non-contiguous selection, the coordinates for the last
+      contiguous selection within the binding are returned.
+
+
+      For Word, this property will work only for bindings of
+      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
+      binding is of type "matrix", null is returned. Also, the call will fail if
+      the table contains merged cells, because the structure of the table must
+      be uniform for this property to work correctly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'startRow: number;'
       return:
-        type:
-          - number
+        type: number
         description: >-
 
 
@@ -239,11 +244,11 @@ items:
 
           ```javascript
 
-          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
-          myTable.
+          // The following example adds an event handler for the
+          SelectionChanged event to the binding with an id of myTable.
 
-          // When the user changes the selection, the handler displays the coordinates of the first cell in the
-          selection,
+          // When the user changes the selection, the handler displays the
+          coordinates of the first cell in the selection,
 
           // and the number of row and columns selected.
 
@@ -269,22 +274,17 @@ items:
           }
 
           ```
-  - uid: 'office!Office.BindingSelectionChangedEventArgs#type:member'
-    summary: >-
-      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
-      that was raised.
-    name: type
+  - name: type
+    uid: 'office!Office.BindingSelectionChangedEventArgs#type:member'
+    package: office!
     fullName: type
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration
+      value that identifies the kind of event that was raised.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: EventType;'
       return:
-        type:
-          - 'office!Office.EventType:enum'
-references:
-  - uid: 'office!Office.Binding:interface'
-    name: Binding
-  - uid: 'office!Office.EventType:enum'
-    name: EventType
+        type: '<xref uid="office!Office.EventType:enum" />'

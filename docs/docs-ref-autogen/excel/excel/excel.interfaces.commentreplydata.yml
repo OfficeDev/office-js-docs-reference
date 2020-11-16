@@ -1,178 +1,178 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
-    summary: An interface describing the data returned by calling `commentReply.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CommentReplyData
-    fullName: Excel.Interfaces.CommentReplyData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.CommentReplyData
+uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+package: excel!
+fullName: Excel.Interfaces.CommentReplyData
+summary: >-
+  An interface describing the data returned by calling
+  `commentReply.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: authorEmail
+    uid: 'excel!Excel.Interfaces.CommentReplyData#authorEmail:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CommentReplyData#authorEmail:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#authorName:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#content:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#contentType:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#id:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#mentions:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#resolved:member'
-      - 'excel!Excel.Interfaces.CommentReplyData#richContent:member'
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#authorEmail:member'
-    summary: |-
+    fullName: authorEmail
+    summary: >-
       Gets the email of the comment reply's author.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: authorEmail
-    fullName: authorEmail
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'authorEmail?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#authorName:member'
-    summary: |-
+        type: string
+  - name: authorName
+    uid: 'excel!Excel.Interfaces.CommentReplyData#authorName:member'
+    package: excel!
+    fullName: authorName
+    summary: >-
       Gets the name of the comment reply's author.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: authorName
-    fullName: authorName
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'authorName?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#content:member'
-    summary: |-
+        type: string
+  - name: content
+    uid: 'excel!Excel.Interfaces.CommentReplyData#content:member'
+    package: excel!
+    fullName: content
+    summary: >-
       The comment reply's content. The string is plain text.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: content
-    fullName: content
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'content?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#contentType:member'
-    summary: |-
+        type: string
+  - name: contentType
+    uid: 'excel!Excel.Interfaces.CommentReplyData#contentType:member'
+    package: excel!
+    fullName: contentType
+    summary: >-
       The content type of the reply.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: contentType
-    fullName: contentType
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'contentType?: Excel.ContentType | "Plain" | "Mention";'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CommentReplyData#contentType~0:complex'
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.ContentType:enum" /> | "Plain" | "Mention"'
+  - name: creationDate
+    uid: 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
+    package: excel!
+    fullName: creationDate
+    summary: >-
       Gets the creation time of the comment reply.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: creationDate
-    fullName: creationDate
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'creationDate?: Date;'
       return:
-        type:
-          - '!Date:interface'
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#id:member'
-    summary: |-
+        type: Date
+  - name: id
+    uid: 'excel!Excel.Interfaces.CommentReplyData#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Specifies the comment reply identifier.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#mentions:member'
-    summary: |-
+        type: string
+  - name: mentions
+    uid: 'excel!Excel.Interfaces.CommentReplyData#mentions:member'
+    package: excel!
+    fullName: mentions
+    summary: >-
       The entities (e.g., people) that are mentioned in comments.
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: mentions
-    fullName: mentions
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'mentions?: Excel.CommentMention[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CommentReplyData#mentions~0:complex'
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#resolved:member'
-    summary: |-
-      The comment reply status. A value of "true" means the reply is in the resolved state.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: resolved
+        type: '<xref uid="excel!Excel.CommentMention:interface" />[]'
+  - name: resolved
+    uid: 'excel!Excel.Interfaces.CommentReplyData#resolved:member'
+    package: excel!
     fullName: resolved
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The comment reply status. A value of "true" means the reply is in the
+      resolved state.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'resolved?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#richContent:member'
-    summary: >-
-      The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your
-      add-in should only use this to parse rich comment content.
-
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: richContent
+        type: boolean
+  - name: richContent
+    uid: 'excel!Excel.Interfaces.CommentReplyData#richContent:member'
+    package: excel!
     fullName: richContent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The rich comment content (e.g., mentions in comments). This string is not
+      meant to be displayed to end-users. Your add-in should only use this to
+      parse rich comment content.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'richContent?: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#contentType~0:complex'
-    name: Excel.ContentType | "Plain" | "Mention"
-    fullName: Excel.ContentType | "Plain" | "Mention"
-    spec.typeScript:
-      - uid: 'excel!Excel.ContentType:enum'
-        name: Excel.ContentType
-        fullName: Excel.ContentType
-      - name: ' | "Plain" | "Mention"'
-        fullName: ' | "Plain" | "Mention"'
-  - uid: '!Date:interface'
-    name: Date
-  - uid: 'excel!Excel.Interfaces.CommentReplyData#mentions~0:complex'
-    name: 'Excel.CommentMention[]'
-    fullName: 'Excel.CommentMention[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.CommentMention:interface'
-        name: Excel.CommentMention
-        fullName: Excel.CommentMention
-      - name: '[]'
-        fullName: '[]'
+        type: string

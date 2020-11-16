@@ -1,266 +1,277 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.ParagraphData:interface'
-    summary: An interface describing the data returned by calling `paragraph.toJSON()`<!-- -->.
-    name: Word.Interfaces.ParagraphData
-    fullName: Word.Interfaces.ParagraphData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphData
+uid: 'word!Word.Interfaces.ParagraphData:interface'
+package: word!
+fullName: Word.Interfaces.ParagraphData
+summary: >-
+  An interface describing the data returned by calling `paragraph.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignment
+    uid: 'word!Word.Interfaces.ParagraphData#alignment:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.ParagraphData#alignment:member'
-      - 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
-      - 'word!Word.Interfaces.ParagraphData#font:member'
-      - 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
-      - 'word!Word.Interfaces.ParagraphData#leftIndent:member'
-      - 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
-      - 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
-      - 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
-      - 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
-      - 'word!Word.Interfaces.ParagraphData#rightIndent:member'
-      - 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
-      - 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
-      - 'word!Word.Interfaces.ParagraphData#style:member'
-      - 'word!Word.Interfaces.ParagraphData#text:member'
-  - uid: 'word!Word.Interfaces.ParagraphData#alignment:member'
-    summary: |-
-      Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: alignment
     fullName: alignment
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
-      return:
-        type:
-          - 'word!Word.Interfaces.ParagraphData#alignment~0:complex'
-  - uid: 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
     summary: >-
-      Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
-      indent, and use a negative value to set a hanging indent.
+      Gets or sets the alignment for a paragraph. The value can be 'left',
+      'centered', 'right', or 'justified'.
 
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: firstLineIndent
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" |
+        "Right" | "Justified";
+      return:
+        type: >-
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          | "Centered" | "Right" | "Justified"
+  - name: firstLineIndent
+    uid: 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
+    package: word!
     fullName: firstLineIndent
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets the value, in points, for a first line or hanging indent. Use
+      a positive value to set a first-line indent, and use a negative value to
+      set a hanging indent.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'firstLineIndent?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#font:member'
-    summary: >-
-      Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: font
+        type: number
+  - name: font
+    uid: 'word!Word.Interfaces.ParagraphData#font:member'
+    package: word!
     fullName: font
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the text format of the paragraph. Use this to get and set font name,
+      size, color, and other properties. Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type:
-          - 'word!Word.Interfaces.FontData:interface'
-  - uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
-    summary: >-
-      Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: inlinePictures
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
+  - name: inlinePictures
+    uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
+    package: word!
     fullName: inlinePictures
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the collection of InlinePicture objects in the paragraph. The
+      collection does not include floating images. Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.ParagraphData#inlinePictures~0:complex'
-  - uid: 'word!Word.Interfaces.ParagraphData#leftIndent:member'
-    summary: |-
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
+  - name: leftIndent
+    uid: 'word!Word.Interfaces.ParagraphData#leftIndent:member'
+    package: word!
+    fullName: leftIndent
+    summary: >-
       Gets or sets the left indent value, in points, for the paragraph.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: leftIndent
-    fullName: leftIndent
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'leftIndent?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
-    summary: >-
-      Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
-      12.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: lineSpacing
+        type: number
+  - name: lineSpacing
+    uid: 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
+    package: word!
     fullName: lineSpacing
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets the line spacing, in points, for the specified paragraph. In
+      the Word UI, this value is divided by 12.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineSpacing?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
-    summary: |-
+        type: number
+  - name: lineUnitAfter
+    uid: 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
+    package: word!
+    fullName: lineUnitAfter
+    summary: >-
       Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: lineUnitAfter
-    fullName: lineUnitAfter
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineUnitAfter?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
-    summary: |-
+        type: number
+  - name: lineUnitBefore
+    uid: 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
+    package: word!
+    fullName: lineUnitBefore
+    summary: >-
       Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: lineUnitBefore
-    fullName: lineUnitBefore
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lineUnitBefore?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
-    summary: |-
+        type: number
+  - name: outlineLevel
+    uid: 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
+    package: word!
+    fullName: outlineLevel
+    summary: >-
       Gets or sets the outline level for the paragraph.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: outlineLevel
-    fullName: outlineLevel
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'outlineLevel?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#rightIndent:member'
-    summary: |-
+        type: number
+  - name: rightIndent
+    uid: 'word!Word.Interfaces.ParagraphData#rightIndent:member'
+    package: word!
+    fullName: rightIndent
+    summary: >-
       Gets or sets the right indent value, in points, for the paragraph.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: rightIndent
-    fullName: rightIndent
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rightIndent?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
-    summary: |-
+        type: number
+  - name: spaceAfter
+    uid: 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
+    package: word!
+    fullName: spaceAfter
+    summary: >-
       Gets or sets the spacing, in points, after the paragraph.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: spaceAfter
-    fullName: spaceAfter
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'spaceAfter?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
-    summary: |-
+        type: number
+  - name: spaceBefore
+    uid: 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
+    package: word!
+    fullName: spaceBefore
+    summary: >-
       Gets or sets the spacing, in points, before the paragraph.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: spaceBefore
-    fullName: spaceBefore
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'spaceBefore?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ParagraphData#style:member'
-    summary: >-
-      Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
-      use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: style
+        type: number
+  - name: style
+    uid: 'word!Word.Interfaces.ParagraphData#style:member'
+    package: word!
     fullName: style
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets the style name for the paragraph. Use this property for
+      custom styles and localized style names. To use the built-in styles that
+      are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style?: string;'
       return:
-        type:
-          - string
-  - uid: 'word!Word.Interfaces.ParagraphData#text:member'
-    summary: |-
+        type: string
+  - name: text
+    uid: 'word!Word.Interfaces.ParagraphData#text:member'
+    package: word!
+    fullName: text
+    summary: >-
       Gets the text of the paragraph. Read-only.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text?: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'word!Word.Interfaces.ParagraphData#alignment~0:complex'
-    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-    spec.typeScript:
-      - uid: 'word!Word.Alignment:enum'
-        name: Word.Alignment
-        fullName: Word.Alignment
-      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
-        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
-  - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
-  - uid: 'word!Word.Interfaces.ParagraphData#inlinePictures~0:complex'
-    name: 'Word.Interfaces.InlinePictureData[]'
-    fullName: 'Word.Interfaces.InlinePictureData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-        name: Word.Interfaces.InlinePictureData
-        fullName: Word.Interfaces.InlinePictureData
-      - name: '[]'
-        fullName: '[]'
+        type: string

@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.ListLevelType:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.ListLevelType
-    fullName: Word.ListLevelType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.ListLevelType
+uid: 'word!Word.ListLevelType:enum'
+package: word!
+fullName: Word.ListLevelType
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bullet
+    uid: 'word!Word.ListLevelType.bullet:member'
     package: word!
-    children:
-      - 'word!Word.ListLevelType.bullet:member'
-      - 'word!Word.ListLevelType.number:member'
-      - 'word!Word.ListLevelType.picture:member'
-  - uid: 'word!Word.ListLevelType.bullet:member'
-    name: bullet
-    fullName: bullet
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bullet"'
-  - uid: 'word!Word.ListLevelType.number:member'
-    name: number
-    fullName: number
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Number"'
-  - uid: 'word!Word.ListLevelType.picture:member'
-    name: picture
-    fullName: picture
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Picture"'
+    summary: ''
+  - name: number
+    uid: 'word!Word.ListLevelType.number:member'
+    package: word!
+    summary: ''
+  - name: picture
+    uid: 'word!Word.ListLevelType.picture:member'
+    package: word!
+    summary: ''

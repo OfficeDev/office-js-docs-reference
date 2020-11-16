@@ -1,74 +1,85 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
-    summary: |-
-      Represents the CommentCollection for a given Shape.
+### YamlMime:TSType
+name: Visio.Interfaces.CommentCollectionLoadOptions
+uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+package: visio!
+fullName: Visio.Interfaces.CommentCollectionLoadOptions
+summary: >-
+  Represents the CommentCollection for a given Shape.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Interfaces.CommentCollectionLoadOptions
-    fullName: Visio.Interfaces.CommentCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#$all:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#$all:member'
-      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#author:member'
-      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#date:member'
-      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#text:member'
-  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#author:member'
-    summary: |-
-      For EACH ITEM in the collection: A string that specifies the name of the author of the comment.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: author
+        type: boolean
+  - name: author
+    uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#author:member'
+    package: visio!
     fullName: author
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: A string that specifies the name of the
+      author of the comment.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'author?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#date:member'
-    summary: |-
-      For EACH ITEM in the collection: A string that specifies the date when the comment was created.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: date
+        type: boolean
+  - name: date
+    uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#date:member'
+    package: visio!
     fullName: date
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: A string that specifies the date when the
+      comment was created.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'date?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#text:member'
-    summary: |-
+        type: boolean
+  - name: text
+    uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#text:member'
+    package: visio!
+    fullName: text
+    summary: >-
       For EACH ITEM in the collection: A string that contains the comment text.
 
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

@@ -1,38 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
-    summary: |-
-      Represents the format options for a Data Bar Axis.
+### YamlMime:TSEnum
+name: Excel.ConditionalDataBarAxisFormat
+uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
+package: excel!
+fullName: Excel.ConditionalDataBarAxisFormat
+summary: >-
+  Represents the format options for a Data Bar Axis.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalDataBarAxisFormat
-    fullName: Excel.ConditionalDataBarAxisFormat
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
-      - 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
-      - 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
-    name: cellMidPoint
-    fullName: cellMidPoint
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CellMidPoint"'
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
+    summary: ''
+  - name: cellMidPoint
+    uid: 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
+    package: excel!
+    summary: ''
+  - name: none
+    uid: 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
+    package: excel!
+    summary: ''

@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionData:interface'
-    summary: An interface describing the data returned by calling `customXmlPartCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CustomXmlPartCollectionData
-    fullName: Excel.Interfaces.CustomXmlPartCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.CustomXmlPartCollectionData
+uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionData:interface'
+package: excel!
+fullName: Excel.Interfaces.CustomXmlPartCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlPartCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member'
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.CustomXmlPartData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CustomXmlPartCollectionData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionData#items~0:complex'
-    name: 'Excel.Interfaces.CustomXmlPartData[]'
-    fullName: 'Excel.Interfaces.CustomXmlPartData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
-        name: Excel.Interfaces.CustomXmlPartData
-        fullName: Excel.Interfaces.CustomXmlPartData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />[]'

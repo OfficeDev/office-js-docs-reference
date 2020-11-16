@@ -1,59 +1,35 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ClearApplyTo:enum'
-    summary: >-
-      \[ [API set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks &amp;
-      HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ClearApplyTo
-    fullName: Excel.ClearApplyTo
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ClearApplyTo
+uid: 'excel!Excel.ClearApplyTo:enum'
+package: excel!
+fullName: Excel.ClearApplyTo
+summary: >-
+  \[ [API set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks &amp;
+  HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: 'excel!Excel.ClearApplyTo.all:member'
     package: excel!
-    children:
-      - 'excel!Excel.ClearApplyTo.all:member'
-      - 'excel!Excel.ClearApplyTo.contents:member'
-      - 'excel!Excel.ClearApplyTo.formats:member'
-      - 'excel!Excel.ClearApplyTo.hyperlinks:member'
-      - 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
-  - uid: 'excel!Excel.ClearApplyTo.all:member'
-    name: all
-    fullName: all
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"All"'
-  - uid: 'excel!Excel.ClearApplyTo.contents:member'
+    summary: ''
+  - name: contents
+    uid: 'excel!Excel.ClearApplyTo.contents:member'
+    package: excel!
     summary: Clears the contents of the range.
-    name: contents
-    fullName: contents
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Contents"'
-  - uid: 'excel!Excel.ClearApplyTo.formats:member'
+  - name: formats
+    uid: 'excel!Excel.ClearApplyTo.formats:member'
+    package: excel!
     summary: Clears all formatting for the range.
-    name: formats
-    fullName: formats
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Formats"'
-  - uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
+  - name: hyperlinks
+    uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
+    package: excel!
     summary: 'Clears all hyperlinks, but leaves all content and formatting intact.'
-    name: hyperlinks
-    fullName: hyperlinks
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hyperlinks"'
-  - uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
+  - name: removeHyperlinks
+    uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
+    package: excel!
     summary: >-
-      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
-      intact.
-    name: removeHyperlinks
-    fullName: removeHyperlinks
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RemoveHyperlinks"'
+      Removes hyperlinks and formatting for the cell but leaves content,
+      conditional formats, and data validation intact.

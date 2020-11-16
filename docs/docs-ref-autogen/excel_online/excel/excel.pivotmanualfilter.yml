@@ -1,44 +1,38 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotManualFilter:interface'
-    summary: >-
-      Configurable template for a manual filter to apply to a PivotField. The `condition` defines what criteria need to
-      be set in order for the filter to operate.
+### YamlMime:TSType
+name: Excel.PivotManualFilter
+uid: 'excel!Excel.PivotManualFilter:interface'
+package: excel!
+fullName: Excel.PivotManualFilter
+summary: >-
+  Configurable template for a manual filter to apply to a PivotField. The
+  `condition` defines what criteria need to be set in order for the filter to
+  operate.
 
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotManualFilter
-    fullName: Excel.PivotManualFilter
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: selectedItems
+    uid: 'excel!Excel.PivotManualFilter#selectedItems:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotManualFilter#selectedItems:member'
-  - uid: 'excel!Excel.PivotManualFilter#selectedItems:member'
-    summary: |-
-      A list of selected items to manually filter. These must be existing and valid items from the chosen field.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: selectedItems
     fullName: selectedItems
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A list of selected items to manually filter. These must be existing and
+      valid items from the chosen field.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'selectedItems?: (string | PivotItem)[];'
       return:
-        type:
-          - 'excel!Excel.PivotManualFilter#selectedItems~0:complex'
-references:
-  - uid: 'excel!Excel.PivotManualFilter#selectedItems~0:complex'
-    name: '(string | PivotItem)[]'
-    fullName: '(string | Excel.PivotItem)[]'
-    spec.typeScript:
-      - name: '(string | '
-        fullName: '(string | '
-      - uid: 'excel!Excel.PivotItem:class'
-        name: PivotItem
-        fullName: Excel.PivotItem
-      - name: ')[]'
-        fullName: ')[]'
+        type: '(string | <xref uid="excel!Excel.PivotItem:class" />)[]'

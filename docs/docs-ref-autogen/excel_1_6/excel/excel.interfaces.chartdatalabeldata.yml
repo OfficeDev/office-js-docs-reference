@@ -1,10 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
-    summary: An interface describing the data returned by calling `chartDataLabel.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartDataLabelData
-    fullName: Excel.Interfaces.ChartDataLabelData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.ChartDataLabelData
+uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartDataLabelData
+summary: >-
+  An interface describing the data returned by calling
+  `chartDataLabel.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.FileContentFormat:enum'
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.FileContentFormat
-    fullName: Word.FileContentFormat
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Word.FileContentFormat
+uid: 'word!Word.FileContentFormat:enum'
+package: word!
+fullName: Word.FileContentFormat
+summary: >-
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: base64
+    uid: 'word!Word.FileContentFormat.base64:member'
     package: word!
-    children:
-      - 'word!Word.FileContentFormat.base64:member'
-      - 'word!Word.FileContentFormat.html:member'
-      - 'word!Word.FileContentFormat.ooxml:member'
-  - uid: 'word!Word.FileContentFormat.base64:member'
-    name: base64
-    fullName: base64
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Base64"'
-  - uid: 'word!Word.FileContentFormat.html:member'
-    name: html
-    fullName: html
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Html"'
-  - uid: 'word!Word.FileContentFormat.ooxml:member'
-    name: ooxml
-    fullName: ooxml
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ooxml"'
+    summary: ''
+  - name: html
+    uid: 'word!Word.FileContentFormat.html:member'
+    package: word!
+    summary: ''
+  - name: ooxml
+    uid: 'word!Word.FileContentFormat.ooxml:member'
+    package: word!
+    summary: ''

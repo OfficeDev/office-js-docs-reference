@@ -1,49 +1,56 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetSearchCriteria:interface'
-    summary: |-
-      Represents the worksheet search criteria to be used.
+### YamlMime:TSType
+name: Excel.WorksheetSearchCriteria
+uid: 'excel!Excel.WorksheetSearchCriteria:interface'
+package: excel!
+fullName: Excel.WorksheetSearchCriteria
+summary: >-
+  Represents the worksheet search criteria to be used.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetSearchCriteria
-    fullName: Excel.WorksheetSearchCriteria
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: completeMatch
+    uid: 'excel!Excel.WorksheetSearchCriteria#completeMatch:member'
     package: excel!
-    children:
-      - 'excel!Excel.WorksheetSearchCriteria#completeMatch:member'
-      - 'excel!Excel.WorksheetSearchCriteria#matchCase:member'
-  - uid: 'excel!Excel.WorksheetSearchCriteria#completeMatch:member'
-    summary: >-
-      Specifies if the match needs to be complete or partial. A complete match matches the entire contents of the cell.
-      A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar`
-      and `scatter`<!-- -->). Default is false (partial).
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: completeMatch
     fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the match needs to be complete or partial. A complete match
+      matches the entire contents of the cell. A partial match matches a
+      substring within the content of the cell (e.g., `cat` partially matches
+      `caterpillar` and `scatter`<!-- -->). Default is false (partial).
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'completeMatch?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.WorksheetSearchCriteria#matchCase:member'
-    summary: |-
+        type: boolean
+  - name: matchCase
+    uid: 'excel!Excel.WorksheetSearchCriteria#matchCase:member'
+    package: excel!
+    fullName: matchCase
+    summary: >-
       Specifies if the match is case sensitive. Default is false (insensitive).
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'matchCase?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

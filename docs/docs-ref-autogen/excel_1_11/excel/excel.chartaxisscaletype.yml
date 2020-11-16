@@ -1,27 +1,21 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisScaleType:enum'
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartAxisScaleType
-    fullName: Excel.ChartAxisScaleType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ChartAxisScaleType
+uid: 'excel!Excel.ChartAxisScaleType:enum'
+package: excel!
+fullName: Excel.ChartAxisScaleType
+summary: >-
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: linear
+    uid: 'excel!Excel.ChartAxisScaleType.linear:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartAxisScaleType.linear:member'
-      - 'excel!Excel.ChartAxisScaleType.logarithmic:member'
-  - uid: 'excel!Excel.ChartAxisScaleType.linear:member'
-    name: linear
-    fullName: linear
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Linear"'
-  - uid: 'excel!Excel.ChartAxisScaleType.logarithmic:member'
-    name: logarithmic
-    fullName: logarithmic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Logarithmic"'
+    summary: ''
+  - name: logarithmic
+    uid: 'excel!Excel.ChartAxisScaleType.logarithmic:member'
+    package: excel!
+    summary: ''

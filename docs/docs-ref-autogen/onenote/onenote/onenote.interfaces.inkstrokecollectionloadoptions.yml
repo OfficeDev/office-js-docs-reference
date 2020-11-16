@@ -1,61 +1,69 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
-    summary: |-
-      Represents a collection of InkStroke objects.
+### YamlMime:TSType
+name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
+uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions
+summary: >-
+  Represents a collection of InkStroke objects.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
-    fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#$all:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#$all:member'
-      - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member'
-      - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#id:member'
-  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member'
-    summary: |-
+        type: boolean
+  - name: floatingInk
+    uid: >-
+      onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member
+    package: onenote!
+    fullName: floatingInk
+    summary: >-
       For EACH ITEM in the collection: Gets the ID of the InkStroke object.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: floatingInk
-    fullName: floatingInk
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#id:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the ID of the InkStroke object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#id:member'
+    package: onenote!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the ID of the InkStroke object.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
-    name: OneNote.Interfaces.FloatingInkLoadOptions
+        type: boolean

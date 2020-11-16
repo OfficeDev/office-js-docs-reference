@@ -1,48 +1,50 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
-    summary: |-
-      Represents a single slide of a presentation.
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideLoadOptions
+summary: >-
+  Represents a single slide of a presentation.
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    isPreview: true
-    name: PowerPoint.Interfaces.SlideLoadOptions
-    fullName: PowerPoint.Interfaces.SlideLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#$all:member'
     package: powerpoint!
-    children:
-      - 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#$all:member'
-      - 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member'
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member'
-    summary: |-
+        type: boolean
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: >-
       Gets the unique ID of the slide.
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

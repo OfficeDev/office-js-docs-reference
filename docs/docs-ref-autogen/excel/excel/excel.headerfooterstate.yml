@@ -1,47 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.HeaderFooterState:enum'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.HeaderFooterState
-    fullName: Excel.HeaderFooterState
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.HeaderFooterState
+uid: 'excel!Excel.HeaderFooterState:enum'
+package: excel!
+fullName: Excel.HeaderFooterState
+summary: >-
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: default
+    uid: 'excel!Excel.HeaderFooterState.default:member'
     package: excel!
-    children:
-      - 'excel!Excel.HeaderFooterState.default:member'
-      - 'excel!Excel.HeaderFooterState.firstAndDefault:member'
-      - 'excel!Excel.HeaderFooterState.firstOddAndEven:member'
-      - 'excel!Excel.HeaderFooterState.oddAndEven:member'
-  - uid: 'excel!Excel.HeaderFooterState.default:member'
     summary: Only one general header/footer is used for all pages printed.
-    name: default
-    fullName: default
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Default"'
-  - uid: 'excel!Excel.HeaderFooterState.firstAndDefault:member'
-    summary: 'There is a separate first page header/footer, and a general header/footer used for all other pages.'
-    name: firstAndDefault
-    fullName: firstAndDefault
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FirstAndDefault"'
-  - uid: 'excel!Excel.HeaderFooterState.firstOddAndEven:member'
-    summary: 'There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.'
-    name: firstOddAndEven
-    fullName: firstOddAndEven
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FirstOddAndEven"'
-  - uid: 'excel!Excel.HeaderFooterState.oddAndEven:member'
+  - name: firstAndDefault
+    uid: 'excel!Excel.HeaderFooterState.firstAndDefault:member'
+    package: excel!
+    summary: >-
+      There is a separate first page header/footer, and a general header/footer
+      used for all other pages.
+  - name: firstOddAndEven
+    uid: 'excel!Excel.HeaderFooterState.firstOddAndEven:member'
+    package: excel!
+    summary: >-
+      There is a separate first page header/footer, then there is a separate
+      header/footer for odd and even pages.
+  - name: oddAndEven
+    uid: 'excel!Excel.HeaderFooterState.oddAndEven:member'
+    package: excel!
     summary: There is a different header/footer for odd and even pages.
-    name: oddAndEven
-    fullName: oddAndEven
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"OddAndEven"'

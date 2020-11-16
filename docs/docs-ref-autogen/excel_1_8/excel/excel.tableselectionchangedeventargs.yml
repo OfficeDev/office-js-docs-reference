@@ -1,37 +1,39 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableSelectionChangedEventArgs:interface'
-    summary: |-
-      Provides information about the table that raised the SelectionChanged event.
+### YamlMime:TSType
+name: Excel.TableSelectionChangedEventArgs
+uid: 'excel!Excel.TableSelectionChangedEventArgs:interface'
+package: excel!
+fullName: Excel.TableSelectionChangedEventArgs
+summary: >-
+  Provides information about the table that raised the SelectionChanged event.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.TableSelectionChangedEventArgs
-    fullName: Excel.TableSelectionChangedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'excel!Excel.TableSelectionChangedEventArgs#address:member'
     package: excel!
-    children:
-      - 'excel!Excel.TableSelectionChangedEventArgs#address:member'
-      - 'excel!Excel.TableSelectionChangedEventArgs#isInsideTable:member'
-      - 'excel!Excel.TableSelectionChangedEventArgs#tableId:member'
-      - 'excel!Excel.TableSelectionChangedEventArgs#type:member'
-      - 'excel!Excel.TableSelectionChangedEventArgs#worksheetId:member'
-  - uid: 'excel!Excel.TableSelectionChangedEventArgs#address:member'
-    summary: |-
-      Gets the range address that represents the selected area of the table on a specific worksheet.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: address
     fullName: address
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the range address that represents the selected area of the table on a
+      specific worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'address: string;'
       return:
-        type:
-          - string
+        type: string
         description: >-
 
 
@@ -50,63 +52,76 @@ items:
           }
 
           ```
-  - uid: 'excel!Excel.TableSelectionChangedEventArgs#isInsideTable:member'
-    summary: |-
-      Specifies if the selection is inside a table, address will be useless if IsInsideTable is false.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isInsideTable
+  - name: isInsideTable
+    uid: 'excel!Excel.TableSelectionChangedEventArgs#isInsideTable:member'
+    package: excel!
     fullName: isInsideTable
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the selection is inside a table, address will be useless if
+      IsInsideTable is false.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isInsideTable: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.TableSelectionChangedEventArgs#tableId:member'
-    summary: |-
+        type: boolean
+  - name: tableId
+    uid: 'excel!Excel.TableSelectionChangedEventArgs#tableId:member'
+    package: excel!
+    fullName: tableId
+    summary: >-
       Gets the id of the table in which the selection changed.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tableId
-    fullName: tableId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tableId: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.TableSelectionChangedEventArgs#type:member'
-    summary: |-
+        type: string
+  - name: type
+    uid: 'excel!Excel.TableSelectionChangedEventArgs#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: "TableSelectionChanged";'
       return:
-        type:
-          - '"TableSelectionChanged"'
-  - uid: 'excel!Excel.TableSelectionChangedEventArgs#worksheetId:member'
-    summary: |-
+        type: '"TableSelectionChanged"'
+  - name: worksheetId
+    uid: 'excel!Excel.TableSelectionChangedEventArgs#worksheetId:member'
+    package: excel!
+    fullName: worksheetId
+    summary: >-
       Gets the id of the worksheet in which the selection changed.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheetId
-    fullName: worksheetId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheetId: string;'
       return:
-        type:
-          - string
+        type: string

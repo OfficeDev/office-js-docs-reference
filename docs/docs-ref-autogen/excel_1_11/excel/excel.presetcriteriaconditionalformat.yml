@@ -1,146 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
-    summary: >-
-      Represents the the preset criteria conditional format such as above average, below average, unique values,
-      contains blank, nonblank, error, and noerror.
+### YamlMime:TSType
+name: Excel.PresetCriteriaConditionalFormat
+uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
+package: excel!
+fullName: Excel.PresetCriteriaConditionalFormat
+summary: >-
+  Represents the the preset criteria conditional format such as above average,
+  below average, unique values, contains blank, nonblank, error, and noerror.
 
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PresetCriteriaConditionalFormat
-    fullName: Excel.PresetCriteriaConditionalFormat
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.PresetCriteriaConditionalFormat#context:member'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#format:member'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#load:member(1)'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#load:member(2)'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#load:member(3)'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#rule:member'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#set:member(1)'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#set:member(2)'
-      - 'excel!Excel.PresetCriteriaConditionalFormat#toJSON:member(1)'
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#format:member'
-    summary: |-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: format
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#format:member'
+    package: excel!
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill,
+      borders, and other properties.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
-        type:
-          - 'excel!Excel.ConditionalRangeFormat:class'
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(1)'
+        type: '<xref uid="excel!Excel.ConditionalRangeFormat:class" />'
+  - name: rule
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#rule:member'
+    package: excel!
+    fullName: rule
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions):
-        Excel.PresetCriteriaConditionalFormat;
-      return:
-        type:
-          - 'excel!Excel.PresetCriteriaConditionalFormat:class'
-        description: ''
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.PresetCriteriaConditionalFormat;'
-      return:
-        type:
-          - 'excel!Excel.PresetCriteriaConditionalFormat:class'
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.PresetCriteriaConditionalFormat;
-      return:
-        type:
-          - 'excel!Excel.PresetCriteriaConditionalFormat:class'
-        description: ''
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#rule:member'
-    summary: |-
       The rule of the conditional format.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rule
-    fullName: rule
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rule: Excel.ConditionalPresetCriteriaRule;'
       return:
-        type:
-          - 'excel!Excel.ConditionalPresetCriteriaRule:interface'
+        type: '<xref uid="excel!Excel.ConditionalPresetCriteriaRule:interface" />'
         description: >-
 
 
@@ -181,90 +107,164 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#set:member(1)'
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(1)'
+    package: excel!
+    fullName: load(options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?:
+        Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions):
+        Excel.PresetCriteriaConditionalFormat;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNames?: string | string[]):
+        Excel.PresetCriteriaConditionalFormat;
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PresetCriteriaConditionalFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.PresetCriteriaConditionalFormat): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions):
-        void;
-      return:
-        type:
-          - void
-        description: ''
+        set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData,
+        options?: OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.PresetCriteriaConditionalFormat): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.PresetCriteriaConditionalFormat:class'
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.PresetCriteriaConditionalFormat object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`<!-- -->)
-      that contains shallow copies of any loaded child properties from the original object.
-    name: toJSON()
+          type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.PresetCriteriaConditionalFormat#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      Excel.PresetCriteriaConditionalFormat object is an API object, the
+      `toJSON` method returns a plain JavaScript object (typed as
+      `Excel.Interfaces.PresetCriteriaConditionalFormatData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface"
+          />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ConditionalRangeFormat:class'
-    name: Excel.ConditionalRangeFormat
-  - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
-    name: Excel.PresetCriteriaConditionalFormat
-  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
-  - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
-    name: Excel.ConditionalPresetCriteriaRule
-  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
-    name: Interfaces.PresetCriteriaConditionalFormatUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
-    name: Excel.Interfaces.PresetCriteriaConditionalFormatData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

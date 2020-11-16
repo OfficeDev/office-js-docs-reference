@@ -1,60 +1,382 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetCollection:class'
-    summary: |-
-      Represents a collection of worksheet objects that are part of the workbook.
+### YamlMime:TSType
+name: Excel.WorksheetCollection
+uid: 'excel!Excel.WorksheetCollection:class'
+package: excel!
+fullName: Excel.WorksheetCollection
+summary: >-
+  Represents a collection of worksheet objects that are part of the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetCollection
-    fullName: Excel.WorksheetCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.WorksheetCollection#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.WorksheetCollection#add:member(1)'
-      - 'excel!Excel.WorksheetCollection#context:member'
-      - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
-      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
-      - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
-      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
-      - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.WorksheetCollection#getLast:member(1)'
-      - 'excel!Excel.WorksheetCollection#items:member'
-      - 'excel!Excel.WorksheetCollection#load:member(1)'
-      - 'excel!Excel.WorksheetCollection#load:member(2)'
-      - 'excel!Excel.WorksheetCollection#load:member(3)'
-      - 'excel!Excel.WorksheetCollection#onActivated:member'
-      - 'excel!Excel.WorksheetCollection#onAdded:member'
-      - 'excel!Excel.WorksheetCollection#onCalculated:member'
-      - 'excel!Excel.WorksheetCollection#onChanged:member'
-      - 'excel!Excel.WorksheetCollection#onColumnSorted:member'
-      - 'excel!Excel.WorksheetCollection#onDeactivated:member'
-      - 'excel!Excel.WorksheetCollection#onDeleted:member'
-      - 'excel!Excel.WorksheetCollection#onFormatChanged:member'
-      - 'excel!Excel.WorksheetCollection#onRowSorted:member'
-      - 'excel!Excel.WorksheetCollection#onSelectionChanged:member'
-      - 'excel!Excel.WorksheetCollection#onSingleClicked:member'
-      - 'excel!Excel.WorksheetCollection#toJSON:member(1)'
-  - uid: 'excel!Excel.WorksheetCollection#add:member(1)'
+    fullName: context
     summary: >-
-      Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
-      to activate the newly added worksheet, call ".activate() on it.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: items
+    uid: 'excel!Excel.WorksheetCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.Worksheet[];'
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />[]'
+  - name: onActivated
+    uid: 'excel!Excel.WorksheetCollection#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: >-
+      Occurs when any worksheet in the workbook is activated.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: add(name)
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onActivated:
+        OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+          await Excel.run(async (context) => {
+              let sheets = context.workbook.worksheets;
+              sheets.onActivated.add(onActivate);
+
+              await context.sync();
+              console.log("A handler has been registered for the OnActivate event.");
+          });
+
+          ```
+  - name: onAdded
+    uid: 'excel!Excel.WorksheetCollection#onAdded:member'
+    package: excel!
+    fullName: onAdded
+    summary: >-
+      Occurs when a new worksheet is added to the workbook.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onAdded:
+        OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetAddedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+          await Excel.run(async (context) => {
+              let sheet = context.workbook.worksheets;
+              sheet.onAdded.add(onWorksheetAdd);
+
+              await context.sync();
+              console.log("A handler has been registered for the OnAdded event.");
+          });
+
+          ```
+  - name: onCalculated
+    uid: 'excel!Excel.WorksheetCollection#onCalculated:member'
+    package: excel!
+    fullName: onCalculated
+    summary: >-
+      Occurs when any worksheet in the workbook is calculated.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onCalculated:
+        OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
+  - name: onChanged
+    uid: 'excel!Excel.WorksheetCollection#onChanged:member'
+    package: excel!
+    fullName: onChanged
+    summary: >-
+      Occurs when any worksheet in the workbook is changed.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
+  - name: onColumnSorted
+    uid: 'excel!Excel.WorksheetCollection#onColumnSorted:member'
+    package: excel!
+    fullName: onColumnSorted
+    summary: >-
+      Occurs when one or more columns have been sorted. This happens as the
+      result of a left-to-right sort operation.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onColumnSorted:
+        OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetColumnSortedEventArgs:interface" />&gt;
+  - name: onDeactivated
+    uid: 'excel!Excel.WorksheetCollection#onDeactivated:member'
+    package: excel!
+    fullName: onDeactivated
+    summary: >-
+      Occurs when any worksheet in the workbook is deactivated.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeactivated:
+        OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+          await Excel.run(async (context) => {
+              let sheets = context.workbook.worksheets;
+              sheets.onDeactivated.add(onDeactivate);
+
+              await context.sync();
+              console.log("A handler has been registered for the OnDeactivate event.");
+          });
+
+          ```
+  - name: onDeleted
+    uid: 'excel!Excel.WorksheetCollection#onDeleted:member'
+    package: excel!
+    fullName: onDeleted
+    summary: >-
+      Occurs when a worksheet is deleted from the workbook.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeleted:
+        OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetDeletedEventArgs:interface" />&gt;
+  - name: onFormatChanged
+    uid: 'excel!Excel.WorksheetCollection#onFormatChanged:member'
+    package: excel!
+    fullName: onFormatChanged
+    summary: >-
+      Occurs when any worksheet in the workbook has format changed.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onFormatChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
+  - name: onRowSorted
+    uid: 'excel!Excel.WorksheetCollection#onRowSorted:member'
+    package: excel!
+    fullName: onRowSorted
+    summary: >-
+      Occurs when one or more rows have been sorted. This happens as the result
+      of a top-to-bottom sort operation.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onRowSorted:
+        OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetRowSortedEventArgs:interface" />&gt;
+  - name: onSelectionChanged
+    uid: 'excel!Excel.WorksheetCollection#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when the selection changes on any worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
+  - name: onSingleClicked
+    uid: 'excel!Excel.WorksheetCollection#onSingleClicked:member'
+    package: excel!
+    fullName: onSingleClicked
+    summary: >-
+      Occurs when left-clicked/tapped operation happens in the worksheet
+      collection. This event will not be fired when clicking in the following
+      cases: - The user drags the mouse for multi-selection. - The user selects
+      a cell in the mode when cell arguments are selected for formula
+      references.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSingleClicked:
+        OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetSingleClickedEventArgs:interface" />&gt;
+methods:
+  - name: add(name)
+    uid: 'excel!Excel.WorksheetCollection#add:member(1)'
+    package: excel!
     fullName: add(name)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Adds a new worksheet to the workbook. The worksheet will be added at the
+      end of existing worksheets. If you wish to activate the newly added
+      worksheet, call ".activate() on it.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'add(name?: string): Excel.Worksheet;'
+      parameters:
+        - id: name
+          description: >-
+            Optional. The name of the worksheet to be added. If specified, name
+            should be unqiue. If not specified, Excel determines the name of the
+            new worksheet.
+          type: string
       return:
-        type:
-          - 'excel!Excel.Worksheet:class'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: |-
 
 
@@ -75,42 +397,24 @@ items:
               }
           });
           ```
-      parameters:
-        - id: name
-          description: >-
-            Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified,
-            Excel determines the name of the new worksheet.
-          type:
-            - string
-  - uid: 'excel!Excel.WorksheetCollection#context:member'
+  - name: getActiveWorksheet()
+    uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+    package: excel!
+    fullName: getActiveWorksheet()
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
-    summary: |-
       Gets the currently active worksheet in the workbook.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getActiveWorksheet()
-    fullName: getActiveWorksheet()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getActiveWorksheet(): Excel.Worksheet;'
       return:
-        type:
-          - 'excel!Excel.Worksheet:class'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: |-
 
 
@@ -130,42 +434,55 @@ items:
               }
           });
           ```
-  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
-    summary: |-
+  - name: getCount(visibleOnly)
+    uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
+    package: excel!
+    fullName: getCount(visibleOnly)
+    summary: >-
       Gets the number of worksheets in the collection.
 
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getCount(visibleOnly)
-    fullName: getCount(visibleOnly)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getCount(visibleOnly?: boolean): OfficeExtension.ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#getCount~0:complex'
-        description: ''
       parameters:
         - id: visibleOnly
-          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
-    summary: |-
+          description: >-
+            Optional. If true, considers only visible worksheets, skipping over
+            any hidden ones.
+          type: boolean
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: ''
+  - name: getFirst(visibleOnly)
+    uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+    package: excel!
+    fullName: getFirst(visibleOnly)
+    summary: >-
       Gets the first worksheet in the collection.
 
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getFirst(visibleOnly)
-    fullName: getFirst(visibleOnly)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getFirst(visibleOnly?: boolean): Excel.Worksheet;'
+      parameters:
+        - id: visibleOnly
+          description: >-
+            Optional. If true, considers only visible worksheets, skipping over
+            any hidden ones.
+          type: boolean
       return:
-        type:
-          - 'excel!Excel.Worksheet:class'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: >-
 
 
@@ -203,68 +520,77 @@ items:
           });
 
           ```
-      parameters:
-        - id: visibleOnly
-          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
-    summary: |-
+  - name: getItem(key)
+    uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    package: excel!
+    fullName: getItem(key)
+    summary: >-
       Gets a worksheet object using its Name or ID.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItem(key: string): Excel.Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:class'
-        description: ''
       parameters:
         - id: key
           description: The Name or ID of the worksheet.
-          type:
-            - string
-  - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
-    summary: |-
-      Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItemOrNullObject(key)
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        description: ''
+  - name: getItemOrNullObject(key)
+    uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
+    package: excel!
     fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets a worksheet object using its Name or ID. If the worksheet does not
+      exist, will return a null object.
+
+
+      \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:class'
-        description: ''
       parameters:
         - id: key
           description: The Name or ID of the worksheet.
-          type:
-            - string
-  - uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
-    summary: |-
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        description: ''
+  - name: getLast(visibleOnly)
+    uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
+    package: excel!
+    fullName: getLast(visibleOnly)
+    summary: >-
       Gets the last worksheet in the collection.
 
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getLast(visibleOnly)
-    fullName: getLast(visibleOnly)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getLast(visibleOnly?: boolean): Excel.Worksheet;'
+      parameters:
+        - id: visibleOnly
+          description: >-
+            Optional. If true, considers only visible worksheets, skipping over
+            any hidden ones.
+          type: boolean
       return:
-        type:
-          - 'excel!Excel.Worksheet:class'
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
         description: >-
 
 
@@ -302,59 +628,51 @@ items:
           });
 
           ```
-      parameters:
-        - id: visibleOnly
-          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.WorksheetCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly items: Excel.Worksheet[];'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#items~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.WorksheetCollection#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.WorksheetCollection;
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection:class'
-        description: ''
+        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.WorksheetCollection#load~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.WorksheetCollection#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.WorksheetCollection:class'
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
         description: |-
 
 
@@ -378,473 +696,53 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.WorksheetCollection#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.WorksheetCollection#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection:class'
-        description: ''
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.WorksheetCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'excel!Excel.WorksheetCollection#onActivated:member'
-    summary: |-
-      Occurs when any worksheet in the workbook is activated.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onActivated
-    fullName: onActivated
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onActivated~0:complex'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-          await Excel.run(async (context) => {
-              let sheets = context.workbook.worksheets;
-              sheets.onActivated.add(onActivate);
-
-              await context.sync();
-              console.log("A handler has been registered for the OnActivate event.");
-          });
-
-          ```
-  - uid: 'excel!Excel.WorksheetCollection#onAdded:member'
-    summary: |-
-      Occurs when a new worksheet is added to the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onAdded
-    fullName: onAdded
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onAdded~0:complex'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets;
-              sheet.onAdded.add(onWorksheetAdd);
-
-              await context.sync();
-              console.log("A handler has been registered for the OnAdded event.");
-          });
-
-          ```
-  - uid: 'excel!Excel.WorksheetCollection#onCalculated:member'
-    summary: |-
-      Occurs when any worksheet in the workbook is calculated.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onCalculated
-    fullName: onCalculated
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onCalculated~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#onChanged:member'
-    summary: |-
-      Occurs when any worksheet in the workbook is changed.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onChanged
-    fullName: onChanged
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onChanged~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#onColumnSorted:member'
-    summary: |-
-      Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onColumnSorted
-    fullName: onColumnSorted
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onColumnSorted: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onColumnSorted~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#onDeactivated:member'
-    summary: |-
-      Occurs when any worksheet in the workbook is deactivated.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onDeactivated
-    fullName: onDeactivated
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onDeactivated~0:complex'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-          await Excel.run(async (context) => {
-              let sheets = context.workbook.worksheets;
-              sheets.onDeactivated.add(onDeactivate);
-
-              await context.sync();
-              console.log("A handler has been registered for the OnDeactivate event.");
-          });
-
-          ```
-  - uid: 'excel!Excel.WorksheetCollection#onDeleted:member'
-    summary: |-
-      Occurs when a worksheet is deleted from the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onDeleted
-    fullName: onDeleted
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onDeleted~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#onFormatChanged:member'
-    summary: |-
-      Occurs when any worksheet in the workbook has format changed.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onFormatChanged
-    fullName: onFormatChanged
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onFormatChanged~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#onRowSorted:member'
-    summary: |-
-      Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onRowSorted
-    fullName: onRowSorted
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onRowSorted~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#onSelectionChanged:member'
-    summary: |-
-      Occurs when the selection changes on any worksheet.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onSelectionChanged
-    fullName: onSelectionChanged
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onSelectionChanged~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#onSingleClicked:member'
-    summary: >-
-      Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when
-      clicking in the following cases: - The user drags the mouse for multi-selection. - The user selects a cell in the
-      mode when cell arguments are selected for formula references.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: onSingleClicked
-    fullName: onSingleClicked
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#onSingleClicked~0:complex'
-  - uid: 'excel!Excel.WorksheetCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.WorksheetCollection#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `Excel.WorksheetCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
+        type: >-
+          <xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface"
+          />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.WorksheetCollection#getCount~0:complex'
-    name: OfficeExtension.ClientResult<number>
-    fullName: OfficeExtension.ClientResult<number>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.WorksheetCollection#items~0:complex'
-    name: 'Excel.Worksheet[]'
-    fullName: 'Excel.Worksheet[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Worksheet:class'
-        name: Excel.Worksheet
-        fullName: Excel.Worksheet
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.WorksheetCollection:class'
-    name: Excel.WorksheetCollection
-  - uid: 'excel!Excel.WorksheetCollection#load~0:complex'
-    name: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    fullName: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
-        name: Excel.Interfaces.WorksheetCollectionLoadOptions
-        fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
-        name: Excel.Interfaces.CollectionLoadOptions
-        fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'excel!Excel.WorksheetCollection#onActivated~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetActivatedEventArgs:interface'
-        name: Excel.WorksheetActivatedEventArgs
-        fullName: Excel.WorksheetActivatedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onAdded~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetAddedEventArgs:interface'
-        name: Excel.WorksheetAddedEventArgs
-        fullName: Excel.WorksheetAddedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onCalculated~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetCalculatedEventArgs:interface'
-        name: Excel.WorksheetCalculatedEventArgs
-        fullName: Excel.WorksheetCalculatedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onChanged~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetChangedEventArgs:interface'
-        name: Excel.WorksheetChangedEventArgs
-        fullName: Excel.WorksheetChangedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onColumnSorted~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
-        name: Excel.WorksheetColumnSortedEventArgs
-        fullName: Excel.WorksheetColumnSortedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onDeactivated~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetDeactivatedEventArgs:interface'
-        name: Excel.WorksheetDeactivatedEventArgs
-        fullName: Excel.WorksheetDeactivatedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onDeleted~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetDeletedEventArgs:interface'
-        name: Excel.WorksheetDeletedEventArgs
-        fullName: Excel.WorksheetDeletedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onFormatChanged~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetFormatChangedEventArgs:interface'
-        name: Excel.WorksheetFormatChangedEventArgs
-        fullName: Excel.WorksheetFormatChangedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onRowSorted~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetRowSortedEventArgs:interface'
-        name: Excel.WorksheetRowSortedEventArgs
-        fullName: Excel.WorksheetRowSortedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onSelectionChanged~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetSelectionChangedEventArgs:interface'
-        name: Excel.WorksheetSelectionChangedEventArgs
-        fullName: Excel.WorksheetSelectionChangedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.WorksheetCollection#onSingleClicked~0:complex'
-    name: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
-    fullName: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.EventHandlers:class'
-        name: OfficeExtension.EventHandlers
-        fullName: OfficeExtension.EventHandlers
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
-        name: Excel.WorksheetSingleClickedEventArgs
-        fullName: Excel.WorksheetSingleClickedEventArgs
-      - name: '>'
-        fullName: '>'
-  - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
-    name: Excel.Interfaces.WorksheetCollectionData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

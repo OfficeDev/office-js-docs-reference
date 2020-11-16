@@ -1,63 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
-    summary: |-
-      Represents ColorScale criteria for conditional formatting.
+### YamlMime:TSType
+name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+summary: >-
+  Represents ColorScale criteria for conditional formatting.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#criteria:member'
-      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#threeColorScale:member'
-  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#criteria:member'
-    summary: |-
-      The criteria of the color scale. Midpoint is optional when using a two point color scale.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: criteria
+        type: boolean
+  - name: criteria
+    uid: >-
+      excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#criteria:member
+    package: excel!
     fullName: criteria
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The criteria of the color scale. Midpoint is optional when using a two
+      point color scale.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'criteria?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#threeColorScale:member'
-    summary: >-
-      If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
-      maximum).
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: threeColorScale
+        type: boolean
+  - name: threeColorScale
+    uid: >-
+      excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#threeColorScale:member
+    package: excel!
     fullName: threeColorScale
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      If true the color scale will have three points (minimum, midpoint,
+      maximum), otherwise it will have two (minimum, maximum).
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'threeColorScale?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

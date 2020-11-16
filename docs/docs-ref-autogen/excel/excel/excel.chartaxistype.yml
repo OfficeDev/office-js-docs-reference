@@ -1,46 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisType:enum'
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartAxisType
-    fullName: Excel.ChartAxisType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ChartAxisType
+uid: 'excel!Excel.ChartAxisType:enum'
+package: excel!
+fullName: Excel.ChartAxisType
+summary: >-
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: category
+    uid: 'excel!Excel.ChartAxisType.category:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartAxisType.category:member'
-      - 'excel!Excel.ChartAxisType.invalid:member'
-      - 'excel!Excel.ChartAxisType.series:member'
-      - 'excel!Excel.ChartAxisType.value:member'
-  - uid: 'excel!Excel.ChartAxisType.category:member'
     summary: Axis displays categories.
-    name: category
-    fullName: category
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Category"'
-  - uid: 'excel!Excel.ChartAxisType.invalid:member'
-    name: invalid
-    fullName: invalid
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Invalid"'
-  - uid: 'excel!Excel.ChartAxisType.series:member'
+  - name: invalid
+    uid: 'excel!Excel.ChartAxisType.invalid:member'
+    package: excel!
+    summary: ''
+  - name: series
+    uid: 'excel!Excel.ChartAxisType.series:member'
+    package: excel!
     summary: Axis displays data series.
-    name: series
-    fullName: series
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Series"'
-  - uid: 'excel!Excel.ChartAxisType.value:member'
+  - name: value
+    uid: 'excel!Excel.ChartAxisType.value:member'
+    package: excel!
     summary: Axis displays values.
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Value"'

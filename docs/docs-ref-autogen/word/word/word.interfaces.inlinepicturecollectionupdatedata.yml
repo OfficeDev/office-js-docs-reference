@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the InlinePictureCollection object, for use in `inlinePictureCollection.set({
-      ... })`<!-- -->.
-    name: Word.Interfaces.InlinePictureCollectionUpdateData
-    fullName: Word.Interfaces.InlinePictureCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.InlinePictureCollectionUpdateData
+uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.InlinePictureCollectionUpdateData
+summary: >-
+  An interface for updating data on the InlinePictureCollection object, for use
+  in `inlinePictureCollection.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member'
-  - uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.InlinePictureData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items~0:complex'
-    name: 'Word.Interfaces.InlinePictureData[]'
-    fullName: 'Word.Interfaces.InlinePictureData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-        name: Word.Interfaces.InlinePictureData
-        fullName: Word.Interfaces.InlinePictureData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'

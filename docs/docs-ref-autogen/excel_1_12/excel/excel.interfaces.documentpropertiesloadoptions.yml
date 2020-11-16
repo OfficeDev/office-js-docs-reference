@@ -1,205 +1,230 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
-    summary: |-
-      Represents workbook properties.
+### YamlMime:TSType
+name: Excel.Interfaces.DocumentPropertiesLoadOptions
+uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.DocumentPropertiesLoadOptions
+summary: >-
+  Represents workbook properties.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.DocumentPropertiesLoadOptions
-    fullName: Excel.Interfaces.DocumentPropertiesLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#author:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#category:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#comments:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#company:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#manager:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#subject:member'
-      - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#title:member'
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#author:member'
-    summary: |-
+        type: boolean
+  - name: author
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#author:member'
+    package: excel!
+    fullName: author
+    summary: >-
       The author of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: author
-    fullName: author
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'author?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#category:member'
-    summary: |-
+        type: boolean
+  - name: category
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#category:member'
+    package: excel!
+    fullName: category
+    summary: >-
       The category of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: category
-    fullName: category
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'category?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#comments:member'
-    summary: |-
+        type: boolean
+  - name: comments
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#comments:member'
+    package: excel!
+    fullName: comments
+    summary: >-
       The comments of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: comments
-    fullName: comments
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'comments?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#company:member'
-    summary: |-
+        type: boolean
+  - name: company
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#company:member'
+    package: excel!
+    fullName: company
+    summary: >-
       The company of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: company
-    fullName: company
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'company?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
-    summary: |-
+        type: boolean
+  - name: creationDate
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
+    package: excel!
+    fullName: creationDate
+    summary: >-
       Gets the creation date of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: creationDate
-    fullName: creationDate
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'creationDate?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
-    summary: |-
+        type: boolean
+  - name: keywords
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
+    package: excel!
+    fullName: keywords
+    summary: >-
       The keywords of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: keywords
-    fullName: keywords
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'keywords?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
-    summary: |-
+        type: boolean
+  - name: lastAuthor
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
+    package: excel!
+    fullName: lastAuthor
+    summary: >-
       Gets the last author of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: lastAuthor
-    fullName: lastAuthor
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'lastAuthor?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#manager:member'
-    summary: |-
+        type: boolean
+  - name: manager
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#manager:member'
+    package: excel!
+    fullName: manager
+    summary: >-
       The manager of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: manager
-    fullName: manager
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'manager?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
-    summary: |-
+        type: boolean
+  - name: revisionNumber
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
+    package: excel!
+    fullName: revisionNumber
+    summary: >-
       Gets the revision number of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: revisionNumber
-    fullName: revisionNumber
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'revisionNumber?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#subject:member'
-    summary: |-
+        type: boolean
+  - name: subject
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#subject:member'
+    package: excel!
+    fullName: subject
+    summary: >-
       The subject of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: subject
-    fullName: subject
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'subject?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#title:member'
-    summary: |-
+        type: boolean
+  - name: title
+    uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#title:member'
+    package: excel!
+    fullName: title
+    summary: >-
       The title of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'title?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

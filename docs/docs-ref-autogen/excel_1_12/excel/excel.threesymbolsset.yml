@@ -1,50 +1,50 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ThreeSymbolsSet:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ThreeSymbolsSet
-    fullName: Excel.ThreeSymbolsSet
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.ThreeSymbolsSet
+uid: 'excel!Excel.ThreeSymbolsSet:interface'
+package: excel!
+fullName: Excel.ThreeSymbolsSet
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenCheckSymbol
+    uid: 'excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member'
     package: excel!
-    children:
-      - 'excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member'
-      - 'excel!Excel.ThreeSymbolsSet#redCrossSymbol:member'
-      - 'excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member'
-  - uid: 'excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member'
-    name: greenCheckSymbol
     fullName: greenCheckSymbol
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'greenCheckSymbol: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.ThreeSymbolsSet#redCrossSymbol:member'
-    name: redCrossSymbol
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: redCrossSymbol
+    uid: 'excel!Excel.ThreeSymbolsSet#redCrossSymbol:member'
+    package: excel!
     fullName: redCrossSymbol
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'redCrossSymbol: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member'
-    name: yellowExclamationSymbol
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: yellowExclamationSymbol
+    uid: 'excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member'
+    package: excel!
     fullName: yellowExclamationSymbol
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'yellowExclamationSymbol: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-references:
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
+        type: '<xref uid="excel!Excel.Icon:interface" />'

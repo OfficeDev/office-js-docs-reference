@@ -1,35 +1,38 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
-    summary: |-
-      Represents a cell value conditional format rule.
+### YamlMime:TSType
+name: Excel.ConditionalCellValueRule
+uid: 'excel!Excel.ConditionalCellValueRule:interface'
+package: excel!
+fullName: Excel.ConditionalCellValueRule
+summary: >-
+  Represents a cell value conditional format rule.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalCellValueRule
-    fullName: Excel.ConditionalCellValueRule
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: formula1
+    uid: 'excel!Excel.ConditionalCellValueRule#formula1:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalCellValueRule#formula1:member'
-      - 'excel!Excel.ConditionalCellValueRule#formula2:member'
-      - 'excel!Excel.ConditionalCellValueRule#operator:member'
-  - uid: 'excel!Excel.ConditionalCellValueRule#formula1:member'
-    summary: |-
+    fullName: formula1
+    summary: >-
       The formula, if required, to evaluate the conditional format rule on.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formula1
-    fullName: formula1
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formula1: string;'
       return:
-        type:
-          - string
+        type: string
         description: >-
 
 
@@ -53,38 +56,48 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.ConditionalCellValueRule#formula2:member'
-    summary: |-
+  - name: formula2
+    uid: 'excel!Excel.ConditionalCellValueRule#formula2:member'
+    package: excel!
+    fullName: formula2
+    summary: >-
       The formula, if required, to evaluate the conditional format rule on.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formula2
-    fullName: formula2
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formula2?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.ConditionalCellValueRule#operator:member'
-    summary: |-
+        type: string
+  - name: operator
+    uid: 'excel!Excel.ConditionalCellValueRule#operator:member'
+    package: excel!
+    fullName: operator
+    summary: >-
       The operator of the cell value conditional format.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        operator: Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
-        "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual";
+        operator: Excel.ConditionalCellValueOperator | "Invalid" | "Between" |
+        "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
+        "GreaterThanOrEqual" | "LessThanOrEqual";
       return:
-        type:
-          - 'excel!Excel.ConditionalCellValueRule#operator~0:complex'
+        type: >-
+          <xref uid="excel!Excel.ConditionalCellValueOperator:enum" /> |
+          "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
+          "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
         description: >-
 
 
@@ -108,17 +121,3 @@ items:
           });
 
           ```
-references:
-  - uid: 'excel!Excel.ConditionalCellValueRule#operator~0:complex'
-    name: >-
-      Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
-      "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
-    fullName: >-
-      Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
-      "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
-    spec.typeScript:
-      - uid: 'excel!Excel.ConditionalCellValueOperator:enum'
-        name: Excel.ConditionalCellValueOperator
-        fullName: Excel.ConditionalCellValueOperator
-      - name: ' | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"'
-        fullName: ' | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"'

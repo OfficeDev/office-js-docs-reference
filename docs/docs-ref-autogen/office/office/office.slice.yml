@@ -1,55 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.Slice:interface'
-    summary: Represents a slice of a document file. The Slice object is accessed with the `File.getSliceAsync` method.
-    name: Office.Slice
-    fullName: Office.Slice
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.Slice
+uid: 'office!Office.Slice:interface'
+package: office!
+fullName: Office.Slice
+summary: >-
+  Represents a slice of a document file. The Slice object is accessed with the
+  `File.getSliceAsync` method.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: 'office!Office.Slice#data:member'
     package: office!
-    children:
-      - 'office!Office.Slice#data:member'
-      - 'office!Office.Slice#index:member'
-      - 'office!Office.Slice#size:member'
-  - uid: 'office!Office.Slice#data:member'
-    summary: >-
-      Gets the raw data of the file slice in `Office.FileType.Text` or `Office.FileType.Compressed` format as specified
-      by the `fileType` parameter of the call to the `Document.getFileAsync` method.
-    remarks: >-
-      Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if
-      required.
-    name: data
     fullName: data
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the raw data of the file slice in `Office.FileType.Text` or
+      `Office.FileType.Compressed` format as specified by the `fileType`
+      parameter of the call to the `Document.getFileAsync` method.
+    remarks: >-
+      Files in the "compressed" format will return a byte array that can be
+      transformed to a base64-encoded string if required.
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'data: any;'
       return:
-        type:
-          - any
-  - uid: 'office!Office.Slice#index:member'
-    summary: Gets the zero-based index of the file slice.
-    name: index
+        type: any
+  - name: index
+    uid: 'office!Office.Slice#index:member'
+    package: office!
     fullName: index
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the zero-based index of the file slice.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'index: number;'
       return:
-        type:
-          - number
-  - uid: 'office!Office.Slice#size:member'
-    summary: Gets the size of the slice in bytes.
-    name: size
+        type: number
+  - name: size
+    uid: 'office!Office.Slice#size:member'
+    package: office!
     fullName: size
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the size of the slice in bytes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'size: number;'
       return:
-        type:
-          - number
+        type: number

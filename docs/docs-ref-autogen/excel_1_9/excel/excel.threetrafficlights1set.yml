@@ -1,50 +1,50 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ThreeTrafficLights1Set
-    fullName: Excel.ThreeTrafficLights1Set
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.ThreeTrafficLights1Set
+uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
+package: excel!
+fullName: Excel.ThreeTrafficLights1Set
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenCircle
+    uid: 'excel!Excel.ThreeTrafficLights1Set#greenCircle:member'
     package: excel!
-    children:
-      - 'excel!Excel.ThreeTrafficLights1Set#greenCircle:member'
-      - 'excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member'
-      - 'excel!Excel.ThreeTrafficLights1Set#yellowCircle:member'
-  - uid: 'excel!Excel.ThreeTrafficLights1Set#greenCircle:member'
-    name: greenCircle
     fullName: greenCircle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'greenCircle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member'
-    name: redCircleWithBorder
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: redCircleWithBorder
+    uid: 'excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member'
+    package: excel!
     fullName: redCircleWithBorder
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'redCircleWithBorder: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.ThreeTrafficLights1Set#yellowCircle:member'
-    name: yellowCircle
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: yellowCircle
+    uid: 'excel!Excel.ThreeTrafficLights1Set#yellowCircle:member'
+    package: excel!
     fullName: yellowCircle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'yellowCircle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-references:
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
+        type: '<xref uid="excel!Excel.Icon:interface" />'

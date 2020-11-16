@@ -1,176 +1,202 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
-    summary: |-
-      Represents the legend in a chart.
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLegendLoadOptions
+uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartLegendLoadOptions
+summary: >-
+  Represents the legend in a chart.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartLegendLoadOptions
-    fullName: Excel.Interfaces.ChartLegendLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#format:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#height:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#left:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#overlay:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#position:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#showShadow:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#top:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#visible:member'
-      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#width:member'
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#format:member'
-    summary: |-
-      Represents the formatting of a chart legend, which includes fill and font formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
+        type: boolean
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#format:member'
+    package: excel!
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formatting of a chart legend, which includes fill and font
+      formatting.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartLegendFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#height:member'
-    summary: |-
-      Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: height
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface" />
+  - name: height
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#height:member'
+    package: excel!
     fullName: height
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the height, in points, of the legend on the chart. Null if
+      legend is not visible.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'height?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#left:member'
-    summary: |-
-      Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: left
+        type: boolean
+  - name: left
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#left:member'
+    package: excel!
     fullName: left
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the left, in points, of the legend on the chart. Null if legend
+      is not visible.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'left?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#overlay:member'
-    summary: |-
-      Specifies if the chart legend should overlap with the main body of the chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: overlay
+        type: boolean
+  - name: overlay
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#overlay:member'
+    package: excel!
     fullName: overlay
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the chart legend should overlap with the main body of the
+      chart.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'overlay?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#position:member'
-    summary: |-
-      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: position
+        type: boolean
+  - name: position
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#position:member'
+    package: excel!
     fullName: position
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the position of the legend on the chart. See
+      Excel.ChartLegendPosition for details.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'position?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#showShadow:member'
-    summary: |-
+        type: boolean
+  - name: showShadow
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#showShadow:member'
+    package: excel!
+    fullName: showShadow
+    summary: >-
       Specifies if the legend has a shadow on the chart.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showShadow
-    fullName: showShadow
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showShadow?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#top:member'
-    summary: |-
+        type: boolean
+  - name: top
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#top:member'
+    package: excel!
+    fullName: top
+    summary: >-
       Specifies the top of a chart legend.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'top?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#visible:member'
-    summary: |-
+        type: boolean
+  - name: visible
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#visible:member'
+    package: excel!
+    fullName: visible
+    summary: >-
       Specifies if the ChartLegend is visible.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#width:member'
-    summary: |-
-      Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: width
+        type: boolean
+  - name: width
+    uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#width:member'
+    package: excel!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the width, in points, of the legend on the chart. Null if legend
+      is not visible.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartLegendFormatLoadOptions
+        type: boolean

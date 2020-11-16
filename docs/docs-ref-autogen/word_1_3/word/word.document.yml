@@ -1,100 +1,171 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Document:class'
-    summary: >-
-      The Document object is the top level object. A Document object contains one or more sections, content controls,
-      and the body that contains the contents of the document.
+### YamlMime:TSType
+name: Word.Document
+uid: 'word!Word.Document:class'
+package: word!
+fullName: Word.Document
+summary: >-
+  The Document object is the top level object. A Document object contains one or
+  more sections, content controls, and the body that contains the contents of
+  the document.
 
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Document
-    fullName: Word.Document
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: WordApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: body
+    uid: 'word!Word.Document#body:member'
     package: word!
-    children:
-      - 'word!Word.Document#body:member'
-      - 'word!Word.Document#contentControls:member'
-      - 'word!Word.Document#context:member'
-      - 'word!Word.Document#getSelection:member(1)'
-      - 'word!Word.Document#load:member(1)'
-      - 'word!Word.Document#load:member(2)'
-      - 'word!Word.Document#load:member(3)'
-      - 'word!Word.Document#properties:member'
-      - 'word!Word.Document#save:member(1)'
-      - 'word!Word.Document#saved:member'
-      - 'word!Word.Document#sections:member'
-      - 'word!Word.Document#set:member(1)'
-      - 'word!Word.Document#set:member(2)'
-      - 'word!Word.Document#toJSON:member(1)'
-      - 'word!Word.Document#track:member(1)'
-      - 'word!Word.Document#untrack:member(1)'
-  - uid: 'word!Word.Document#body:member'
-    summary: >-
-      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc.. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: body
     fullName: body
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the body object of the document. The body is the text that excludes
+      headers, footers, footnotes, textboxes, etc.. Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type:
-          - 'word!Word.Body:class'
-  - uid: 'word!Word.Document#contentControls:member'
-    summary: >-
-      Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: contentControls
+        type: '<xref uid="word!Word.Body:class" />'
+  - name: contentControls
+    uid: 'word!Word.Document#contentControls:member'
+    package: word!
     fullName: contentControls
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the collection of content control objects in the document. This
+      includes content controls in the body of the document, headers, footers,
+      textboxes, etc.. Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
-        type:
-          - 'word!Word.ContentControlCollection:class'
-  - uid: 'word!Word.Document#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
+  - name: context
+    uid: 'word!Word.Document#context:member'
+    package: word!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'word!Word.RequestContext:class'
-  - uid: 'word!Word.Document#getSelection:member(1)'
-    summary: |-
-      Gets the current selection of the document. Multiple selections are not supported.
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: properties
+    uid: 'word!Word.Document#properties:member'
+    package: word!
+    fullName: properties
+    summary: >-
+      Gets the properties of the document. Read-only.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getSelection()
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly properties: Word.DocumentProperties;'
+      return:
+        type: '<xref uid="word!Word.DocumentProperties:class" />'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/get-built-in-properties.yaml
+
+          await Word.run(async (context) => {
+              let builtInProperties = context.document.properties;
+              builtInProperties.load("*"); // Let's get all!
+
+              await context.sync();
+              console.log(JSON.stringify(builtInProperties, null, 4));
+          });
+
+          ```
+  - name: saved
+    uid: 'word!Word.Document#saved:member'
+    package: word!
+    fullName: saved
+    summary: >-
+      Indicates whether the changes in the document have been saved. A value of
+      true indicates that the document hasn't changed since it was saved.
+      Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly saved: boolean;'
+      return:
+        type: boolean
+  - name: sections
+    uid: 'word!Word.Document#sections:member'
+    package: word!
+    fullName: sections
+    summary: >-
+      Gets the collection of section objects in the document. Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly sections: Word.SectionCollection;'
+      return:
+        type: '<xref uid="word!Word.SectionCollection:class" />'
+methods:
+  - name: getSelection()
+    uid: 'word!Word.Document#getSelection:member(1)'
+    package: word!
     fullName: getSelection()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Gets the current selection of the document. Multiple selections are not
+      supported.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getSelection(): Word.Range;'
       return:
-        type:
-          - 'word!Word.Range:class'
+        type: '<xref uid="word!Word.Range:class" />'
         description: |-
 
 
@@ -129,20 +200,24 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Document#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'word!Word.Document#load:member(1)'
+    package: word!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Word.Interfaces.DocumentLoadOptions): Word.Document;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.DocumentLoadOptions:interface" />'
       return:
-        type:
-          - 'word!Word.Document:class'
+        type: '<xref uid="word!Word.Document:class" />'
         description: |-
 
 
@@ -179,111 +254,77 @@ items:
               }
           });
           ```
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'word!Word.Interfaces.DocumentLoadOptions:interface'
-  - uid: 'word!Word.Document#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+  - name: load(propertyNames)
+    uid: 'word!Word.Document#load:member(2)'
+    package: word!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Document;'
-      return:
-        type:
-          - 'word!Word.Document:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'word!Word.Document#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.Document:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.Document#load:member(3)'
+    package: word!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.Document;
-      return:
-        type:
-          - 'word!Word.Document:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'word!Word.Document#properties:member'
-    summary: |-
-      Gets the properties of the document. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: properties
-    fullName: properties
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly properties: Word.DocumentProperties;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - 'word!Word.DocumentProperties:class'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/get-built-in-properties.yaml
-
-          await Word.run(async (context) => {
-              let builtInProperties = context.document.properties;
-              builtInProperties.load("*"); // Let's get all!
-
-              await context.sync();
-              console.log(JSON.stringify(builtInProperties, null, 4));
-          });
-
-          ```
-  - uid: 'word!Word.Document#save:member(1)'
-    summary: |-
-      Saves the document. This uses the Word default file naming convention if the document has not been saved before.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: save()
+        type: '<xref uid="word!Word.Document:class" />'
+        description: ''
+  - name: save()
+    uid: 'word!Word.Document#save:member(1)'
+    package: word!
     fullName: save()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Saves the document. This uses the Word default file naming convention if
+      the document has not been saved before.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'save(): void;'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -324,161 +365,115 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Document#saved:member'
+  - name: 'set(properties, options)'
+    uid: 'word!Word.Document#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
     summary: >-
-      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: saved
-    fullName: saved
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly saved: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'word!Word.Document#sections:member'
-    summary: |-
-      Gets the collection of section objects in the document. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: sections
-    fullName: sections
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly sections: Word.SectionCollection;'
-      return:
-        type:
-          - 'word!Word.SectionCollection:class'
-  - uid: 'word!Word.Document#set:member(1)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Word.Document): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.DocumentUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'word!Word.Interfaces.DocumentUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'word!Word.Document#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.Document#set:member(2)'
+    package: word!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Word.Document): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'word!Word.Document:class'
-  - uid: 'word!Word.Document#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+          type: '<xref uid="word!Word.Document:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.Document#toJSON:member(1)'
+    package: word!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Word.Document object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.DocumentData;'
       return:
-        type:
-          - 'word!Word.Interfaces.DocumentData:interface'
+        type: '<xref uid="word!Word.Interfaces.DocumentData:interface" />'
         description: ''
-  - uid: 'word!Word.Document#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
-    name: track()
+  - name: track()
+    uid: 'word!Word.Document#track:member(1)'
+    package: word!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
+      object across `.sync` calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): Word.Document;'
       return:
-        type:
-          - 'word!Word.Document:class'
+        type: '<xref uid="word!Word.Document:class" />'
         description: ''
-  - uid: 'word!Word.Document#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'word!Word.Document#untrack:member(1)'
+    package: word!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
+      objects slows down the host application, so please remember to free any
+      objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): Word.Document;'
       return:
-        type:
-          - 'word!Word.Document:class'
+        type: '<xref uid="word!Word.Document:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'word!Word.Body:class'
-    name: Word.Body
-  - uid: 'word!Word.ContentControlCollection:class'
-    name: Word.ContentControlCollection
-  - uid: 'word!Word.RequestContext:class'
-    name: RequestContext
-  - uid: 'word!Word.Range:class'
-    name: Word.Range
-  - uid: 'word!Word.Document:class'
-    name: Word.Document
-  - uid: 'word!Word.Interfaces.DocumentLoadOptions:interface'
-    name: Word.Interfaces.DocumentLoadOptions
-  - uid: 'word!Word.DocumentProperties:class'
-    name: Word.DocumentProperties
-  - uid: 'word!Word.SectionCollection:class'
-    name: Word.SectionCollection
-  - uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
-    name: Interfaces.DocumentUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'word!Word.Interfaces.DocumentData:interface'
-    name: Word.Interfaces.DocumentData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

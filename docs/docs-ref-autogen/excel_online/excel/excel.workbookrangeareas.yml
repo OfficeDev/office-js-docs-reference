@@ -1,65 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorkbookRangeAreas:class'
-    summary: |-
-      Represents a collection of one or more rectangular ranges in multiple worksheets.
+### YamlMime:TSType
+name: Excel.WorkbookRangeAreas
+uid: 'excel!Excel.WorkbookRangeAreas:class'
+package: excel!
+fullName: Excel.WorkbookRangeAreas
+summary: >-
+  Represents a collection of one or more rectangular ranges in multiple
+  worksheets.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorkbookRangeAreas
-    fullName: Excel.WorkbookRangeAreas
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: addresses
+    uid: 'excel!Excel.WorkbookRangeAreas#addresses:member'
     package: excel!
-    children:
-      - 'excel!Excel.WorkbookRangeAreas#addresses:member'
-      - 'excel!Excel.WorkbookRangeAreas#areas:member'
-      - 'excel!Excel.WorkbookRangeAreas#context:member'
-      - 'excel!Excel.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
-      - 'excel!Excel.WorkbookRangeAreas#getRangeAreasOrNullObjectBySheet:member(1)'
-      - 'excel!Excel.WorkbookRangeAreas#load:member(1)'
-      - 'excel!Excel.WorkbookRangeAreas#load:member(2)'
-      - 'excel!Excel.WorkbookRangeAreas#load:member(3)'
-      - 'excel!Excel.WorkbookRangeAreas#ranges:member'
-      - 'excel!Excel.WorkbookRangeAreas#toJSON:member(1)'
-      - 'excel!Excel.WorkbookRangeAreas#track:member(1)'
-      - 'excel!Excel.WorkbookRangeAreas#untrack:member(1)'
-  - uid: 'excel!Excel.WorkbookRangeAreas#addresses:member'
-    summary: >-
-      Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block
-      of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: addresses
     fullName: addresses
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns an array of address in A1-style. Address value will contain the
+      worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4,
+      Sheet1!D1:D4"). Read-only.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly addresses: string[];'
       return:
-        type:
-          - 'string[]'
-  - uid: 'excel!Excel.WorkbookRangeAreas#areas:member'
-    summary: >-
-      Returns the `RangeAreasCollection` object. Each `RangeAreas` object in the collection represents one or more
-      rectangle ranges in one worksheet.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: areas
+        type: 'string[]'
+  - name: areas
+    uid: 'excel!Excel.WorkbookRangeAreas#areas:member'
+    package: excel!
     fullName: areas
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the `RangeAreasCollection` object. Each `RangeAreas` object in the
+      collection represents one or more rectangle ranges in one worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly areas: Excel.RangeAreasCollection;'
       return:
-        type:
-          - 'excel!Excel.RangeAreasCollection:class'
+        type: '<xref uid="excel!Excel.RangeAreasCollection:class" />'
         description: >-
 
 
@@ -91,216 +86,221 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.WorkbookRangeAreas#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+  - name: context
+    uid: 'excel!Excel.WorkbookRangeAreas#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
-    summary: |-
-      Returns the `RangeAreas` object based on worksheet id or name in the collection.
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: ranges
+    uid: 'excel!Excel.WorkbookRangeAreas#ranges:member'
+    package: excel!
+    fullName: ranges
+    summary: >-
+      Returns ranges that comprise this object in a `RangeCollection` object.
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getRangeAreasBySheet(key)
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly ranges: Excel.RangeCollection;'
+      return:
+        type: '<xref uid="excel!Excel.RangeCollection:class" />'
+methods:
+  - name: getRangeAreasBySheet(key)
+    uid: 'excel!Excel.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
+    package: excel!
     fullName: getRangeAreasBySheet(key)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Returns the `RangeAreas` object based on worksheet id or name in the
+      collection.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getRangeAreasBySheet(key: string): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
       parameters:
         - id: key
           description: The name or id of the worksheet.
-          type:
-            - string
-  - uid: 'excel!Excel.WorkbookRangeAreas#getRangeAreasOrNullObjectBySheet:member(1)'
-    summary: >-
-      Returns the `RangeAreas` object based on worksheet name or id in the collection. If the worksheet does not exist,
-      will return a null object.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getRangeAreasOrNullObjectBySheet(key)
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
+        description: ''
+  - name: getRangeAreasOrNullObjectBySheet(key)
+    uid: 'excel!Excel.WorkbookRangeAreas#getRangeAreasOrNullObjectBySheet:member(1)'
+    package: excel!
     fullName: getRangeAreasOrNullObjectBySheet(key)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Returns the `RangeAreas` object based on worksheet name or id in the
+      collection. If the worksheet does not exist, will return a null object.
+
+
+      \[ [API set: ExcelApi
+      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getRangeAreasOrNullObjectBySheet(key: string): Excel.RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:class'
-        description: ''
       parameters:
         - id: key
           description: The name or id of the worksheet.
-          type:
-            - string
-  - uid: 'excel!Excel.WorkbookRangeAreas#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(options?: Excel.Interfaces.WorkbookRangeAreasLoadOptions): Excel.WorkbookRangeAreas;'
+          type: string
       return:
-        type:
-          - 'excel!Excel.WorkbookRangeAreas:class'
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
+  - name: load(options)
+    uid: 'excel!Excel.WorkbookRangeAreas#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.WorkbookRangeAreasLoadOptions):
+        Excel.WorkbookRangeAreas;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
-  - uid: 'excel!Excel.WorkbookRangeAreas#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.WorkbookRangeAreas#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.WorkbookRangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.WorkbookRangeAreas:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.WorkbookRangeAreas#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.WorkbookRangeAreas#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.WorkbookRangeAreas;
-      return:
-        type:
-          - 'excel!Excel.WorkbookRangeAreas:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.WorkbookRangeAreas#ranges:member'
-    summary: |-
-      Returns ranges that comprise this object in a `RangeCollection` object.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ranges
-    fullName: ranges
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly ranges: Excel.RangeCollection;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - 'excel!Excel.RangeCollection:class'
-  - uid: 'excel!Excel.WorkbookRangeAreas#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.WorkbookRangeAreas object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Excel.Interfaces.WorkbookRangeAreasData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    name: toJSON()
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.WorkbookRangeAreas#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      Excel.WorkbookRangeAreas object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.WorkbookRangeAreasData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorkbookRangeAreasData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.WorkbookRangeAreasData:interface" />'
         description: ''
-  - uid: 'excel!Excel.WorkbookRangeAreas#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
-    name: track()
+  - name: track()
+    uid: 'excel!Excel.WorkbookRangeAreas#track:member(1)'
+    package: excel!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
+      object across `.sync` calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): Excel.WorkbookRangeAreas;'
       return:
-        type:
-          - 'excel!Excel.WorkbookRangeAreas:class'
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
-  - uid: 'excel!Excel.WorkbookRangeAreas#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'excel!Excel.WorkbookRangeAreas#untrack:member(1)'
+    package: excel!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
+      objects slows down the host application, so please remember to free any
+      objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): Excel.WorkbookRangeAreas;'
       return:
-        type:
-          - 'excel!Excel.WorkbookRangeAreas:class'
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RangeAreasCollection:class'
-    name: Excel.RangeAreasCollection
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
-  - uid: 'excel!Excel.WorkbookRangeAreas:class'
-    name: Excel.WorkbookRangeAreas
-  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
-    name: Excel.Interfaces.WorkbookRangeAreasLoadOptions
-  - uid: 'excel!Excel.RangeCollection:class'
-    name: Excel.RangeCollection
-  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
-    name: Excel.Interfaces.WorkbookRangeAreasData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

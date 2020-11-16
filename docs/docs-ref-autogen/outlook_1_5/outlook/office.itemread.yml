@@ -1,31 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.ItemRead:interface'
-    summary: >-
-      The read mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
+### YamlMime:TSType
+name: Office.ItemRead
+uid: 'outlook!Office.ItemRead:interface'
+package: outlook!
+fullName: Office.ItemRead
+summary: >-
+  The read mode of
+  [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-      **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
-      treat this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the [Object
-      Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context.mailbox.item)
-      page for more information.
+  **Important**: This is an internal Outlook object, not directly exposed
+  through existing interfaces. You should treat this as a mode of
+  `Office.context.mailbox.item`<!-- -->. Refer to the [Object
+  Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context.mailbox.item)
+  page for more information.
 
 
-      Child interfaces:
+  Child interfaces:
 
 
-      - [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
+  - [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
 
-      - [MessageRead](xref:outlook!Office.MessageRead:interface)
-    name: Office.ItemRead
-    fullName: Office.ItemRead
-    langs:
-      - typeScript
-    type: interface
-    extends:
-      - 'outlook!Office.Item:interface'
-    package: outlook!
-references:
-  - uid: 'outlook!Office.Item:interface'
-    name: Item
+  - [MessageRead](xref:outlook!Office.MessageRead:interface)
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+extends: '<xref uid="outlook!Office.Item:interface" />'

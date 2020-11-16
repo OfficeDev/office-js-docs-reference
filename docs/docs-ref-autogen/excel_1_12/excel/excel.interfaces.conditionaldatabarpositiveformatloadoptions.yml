@@ -1,81 +1,94 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
-    summary: |-
-      Represents a conditional format DataBar Format for the positive side of the data bar.
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+summary: >-
+  Represents a conditional format DataBar Format for the positive side of the
+  data bar.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
-    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: >-
+      excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#$all:member
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#borderColor:member'
-      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#fillColor:member'
-      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#gradientFill:member'
-  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#borderColor:member'
-    summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
-      HTML color (e.g., "orange"). "" (empty string) if no border is present or set.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: borderColor
+        type: boolean
+  - name: borderColor
+    uid: >-
+      excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#borderColor:member
+    package: excel!
     fullName: borderColor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      HTML color code representing the color of the border line, of the form
+      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). ""
+      (empty string) if no border is present or set.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'borderColor?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#fillColor:member'
-    summary: >-
-      HTML color code representing the fill color, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
-      "orange").
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: fillColor
+        type: boolean
+  - name: fillColor
+    uid: >-
+      excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#fillColor:member
+    package: excel!
     fullName: fillColor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      HTML color code representing the fill color, of the form \#RRGGBB (e.g.,
+      "FFA500") or as a named HTML color (e.g., "orange").
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fillColor?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#gradientFill:member'
-    summary: |-
+        type: boolean
+  - name: gradientFill
+    uid: >-
+      excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#gradientFill:member
+    package: excel!
+    fullName: gradientFill
+    summary: >-
       Specifies if the DataBar has a gradient.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: gradientFill
-    fullName: gradientFill
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'gradientFill?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

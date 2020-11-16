@@ -1,82 +1,93 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions:interface'
-    summary: |-
-      Contains the collection of [Word.CustomProperty](xref:word!Word.CustomProperty:class) objects.
+### YamlMime:TSType
+name: Word.Interfaces.CustomPropertyCollectionLoadOptions
+uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.CustomPropertyCollectionLoadOptions
+summary: >-
+  Contains the collection of
+  [Word.CustomProperty](xref:word!Word.CustomProperty:class) objects.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.CustomPropertyCollectionLoadOptions
-    fullName: Word.Interfaces.CustomPropertyCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: WordApi
+  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#$all:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#$all:member'
-      - 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#key:member'
-      - 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#type:member'
-      - 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#value:member'
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#key:member'
-    summary: |-
-      For EACH ITEM in the collection: Gets the key of the custom property. Read only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: key
+        type: boolean
+  - name: key
+    uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#key:member'
+    package: word!
     fullName: key
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the key of the custom property. Read
+      only.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'key?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#type:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number,
-      Date, Boolean. Read only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: type
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#type:member'
+    package: word!
     fullName: type
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the value type of the custom
+      property. Possible values are: String, Number, Date, Boolean. Read only.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#value:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word for the
-      web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will
-      truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: value
+        type: boolean
+  - name: value
+    uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#value:member'
+    package: word!
     fullName: value
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the value of the custom
+      property. Note that even though Word for the web and the docx file format
+      allow these properties to be arbitrarily long, the desktop version of Word
+      will truncate string values to 255 16-bit chars (possibly creating invalid
+      unicode by breaking up a surrogate pair).
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

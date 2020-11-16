@@ -1,78 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.MailboxEnums.EntityType:enum'
-    summary: Specifies an entity's type.
-    remarks: >-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.MailboxEnums.EntityType
-    fullName: Office.MailboxEnums.EntityType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.MailboxEnums.EntityType
+uid: 'outlook!Office.MailboxEnums.EntityType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.EntityType
+summary: Specifies an entity's type.
+remarks: >-
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Address
+    uid: 'outlook!Office.MailboxEnums.EntityType.Address:member'
     package: outlook!
-    children:
-      - 'outlook!Office.MailboxEnums.EntityType.Address:member'
-      - 'outlook!Office.MailboxEnums.EntityType.Contact:member'
-      - 'outlook!Office.MailboxEnums.EntityType.EmailAddress:member'
-      - 'outlook!Office.MailboxEnums.EntityType.MeetingSuggestion:member'
-      - 'outlook!Office.MailboxEnums.EntityType.PhoneNumber:member'
-      - 'outlook!Office.MailboxEnums.EntityType.TaskSuggestion:member'
-      - 'outlook!Office.MailboxEnums.EntityType.Url:member'
-  - uid: 'outlook!Office.MailboxEnums.EntityType.Address:member'
     summary: Specifies that the entity is a postal address.
-    name: Address
-    fullName: Address
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"address"'
-  - uid: 'outlook!Office.MailboxEnums.EntityType.Contact:member'
+  - name: Contact
+    uid: 'outlook!Office.MailboxEnums.EntityType.Contact:member'
+    package: outlook!
     summary: Specifies that the entity is a contact.
-    name: Contact
-    fullName: Contact
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"contact"'
-  - uid: 'outlook!Office.MailboxEnums.EntityType.EmailAddress:member'
+  - name: EmailAddress
+    uid: 'outlook!Office.MailboxEnums.EntityType.EmailAddress:member'
+    package: outlook!
     summary: Specifies that the entity is an SMTP email address.
-    name: EmailAddress
-    fullName: EmailAddress
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"emailAddress"'
-  - uid: 'outlook!Office.MailboxEnums.EntityType.MeetingSuggestion:member'
+  - name: MeetingSuggestion
+    uid: 'outlook!Office.MailboxEnums.EntityType.MeetingSuggestion:member'
+    package: outlook!
     summary: Specifies that the entity is a meeting suggestion.
-    name: MeetingSuggestion
-    fullName: MeetingSuggestion
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"meetingSuggestion"'
-  - uid: 'outlook!Office.MailboxEnums.EntityType.PhoneNumber:member'
+  - name: PhoneNumber
+    uid: 'outlook!Office.MailboxEnums.EntityType.PhoneNumber:member'
+    package: outlook!
     summary: Specifies that the entity is a US phone number.
-    name: PhoneNumber
-    fullName: PhoneNumber
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"phoneNumber"'
-  - uid: 'outlook!Office.MailboxEnums.EntityType.TaskSuggestion:member'
+  - name: TaskSuggestion
+    uid: 'outlook!Office.MailboxEnums.EntityType.TaskSuggestion:member'
+    package: outlook!
     summary: Specifies that the entity is a task suggestion.
-    name: TaskSuggestion
-    fullName: TaskSuggestion
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"taskSuggestion"'
-  - uid: 'outlook!Office.MailboxEnums.EntityType.Url:member'
+  - name: Url
+    uid: 'outlook!Office.MailboxEnums.EntityType.Url:member'
+    package: outlook!
     summary: Specifies that the entity is an Internet URL.
-    name: Url
-    fullName: Url
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"url"'

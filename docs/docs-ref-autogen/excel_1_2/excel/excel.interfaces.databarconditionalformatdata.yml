@@ -1,10 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
-    summary: An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.DataBarConditionalFormatData
-    fullName: Excel.Interfaces.DataBarConditionalFormatData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.DataBarConditionalFormatData
+uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
+package: excel!
+fullName: Excel.Interfaces.DataBarConditionalFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `dataBarConditionalFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

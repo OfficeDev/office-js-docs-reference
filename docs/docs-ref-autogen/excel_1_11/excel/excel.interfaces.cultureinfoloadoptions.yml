@@ -1,68 +1,73 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
-    summary: >-
-      Provides information based on current system culture settings. This includes the culture names, number formatting,
-      and other culturally dependent settings.
+### YamlMime:TSType
+name: Excel.Interfaces.CultureInfoLoadOptions
+uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.CultureInfoLoadOptions
+summary: >-
+  Provides information based on current system culture settings. This includes
+  the culture names, number formatting, and other culturally dependent settings.
 
 
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.CultureInfoLoadOptions
-    fullName: Excel.Interfaces.CultureInfoLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
-      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member'
-  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
-    summary: >-
-      Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on
-      current system settings.
-
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
+    package: excel!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the culture name in the format languagecode2-country/regioncode2
+      (e.g., "zh-cn" or "en-us"). This is based on current system settings.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member'
-    summary: |-
-      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: numberFormat
+        type: boolean
+  - name: numberFormat
+    uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member'
+    package: excel!
     fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Defines the culturally appropriate format of displaying numbers. This is
+      based on current system culture settings.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'numberFormat?: Excel.Interfaces.NumberFormatInfoLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
-    name: Excel.Interfaces.NumberFormatInfoLoadOptions
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface" />

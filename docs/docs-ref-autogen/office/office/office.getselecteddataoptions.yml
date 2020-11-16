@@ -1,74 +1,58 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.GetSelectedDataOptions:interface'
-    summary: Provides options for customizing what data is returned and how it is formatted.
-    name: Office.GetSelectedDataOptions
-    fullName: Office.GetSelectedDataOptions
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.GetSelectedDataOptions
+uid: 'office!Office.GetSelectedDataOptions:interface'
+package: office!
+fullName: Office.GetSelectedDataOptions
+summary: >-
+  Provides options for customizing what data is returned and how it is
+  formatted.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: asyncContext
+    uid: 'office!Office.GetSelectedDataOptions#asyncContext:member'
     package: office!
-    children:
-      - 'office!Office.GetSelectedDataOptions#asyncContext:member'
-      - 'office!Office.GetSelectedDataOptions#filterType:member'
-      - 'office!Office.GetSelectedDataOptions#valueFormat:member'
-  - uid: 'office!Office.GetSelectedDataOptions#asyncContext:member'
-    summary: >-
-      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
-      object that is passed to a callback.
-    name: asyncContext
     fullName: asyncContext
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the
+      asyncContext property of the AsyncResult object that is passed to a
+      callback.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'asyncContext?: any'
       return:
-        type:
-          - any
-  - uid: 'office!Office.GetSelectedDataOptions#filterType:member'
-    summary: >-
-      Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data.
-      Use [Office.FilterType](xref:office!Office.FilterType:enum) or string equivalent. This parameter is ignored in
-      Word documents.
-    name: filterType
+        type: any
+  - name: filterType
+    uid: 'office!Office.GetSelectedDataOptions#filterType:member'
+    package: office!
     fullName: filterType
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specify whether to get only the visible (that is, filtered-in) data or all
+      the data. Useful when filtering data. Use
+      [Office.FilterType](xref:office!Office.FilterType:enum) or string
+      equivalent. This parameter is ignored in Word documents.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'filterType?: Office.FilterType | string'
       return:
-        type:
-          - 'office!Office.GetSelectedDataOptions#filterType~0:complex'
-  - uid: 'office!Office.GetSelectedDataOptions#valueFormat:member'
-    summary: Specify whether the data is formatted. Use Office.ValueFormat or string equivalent.
-    name: valueFormat
+        type: '<xref uid="office!Office.FilterType:enum" /> | string'
+  - name: valueFormat
+    uid: 'office!Office.GetSelectedDataOptions#valueFormat:member'
+    package: office!
     fullName: valueFormat
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specify whether the data is formatted. Use Office.ValueFormat or string
+      equivalent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'valueFormat?: Office.ValueFormat | string'
       return:
-        type:
-          - 'office!Office.GetSelectedDataOptions#valueFormat~0:complex'
-references:
-  - uid: 'office!Office.GetSelectedDataOptions#filterType~0:complex'
-    name: Office.FilterType | string
-    fullName: Office.FilterType | string
-    spec.typeScript:
-      - uid: 'office!Office.FilterType:enum'
-        name: Office.FilterType
-        fullName: Office.FilterType
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'office!Office.GetSelectedDataOptions#valueFormat~0:complex'
-    name: Office.ValueFormat | string
-    fullName: Office.ValueFormat | string
-    spec.typeScript:
-      - uid: 'office!Office.ValueFormat:enum'
-        name: Office.ValueFormat
-        fullName: Office.ValueFormat
-      - name: ' | string'
-        fullName: ' | string'
+        type: '<xref uid="office!Office.ValueFormat:enum" /> | string'

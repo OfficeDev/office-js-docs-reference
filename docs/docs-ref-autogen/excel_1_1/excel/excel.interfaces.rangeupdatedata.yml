@@ -1,98 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
-    summary: 'An interface for updating data on the Range object, for use in `range.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.RangeUpdateData
-    fullName: Excel.Interfaces.RangeUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.RangeUpdateData
+uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.RangeUpdateData
+summary: >-
+  An interface for updating data on the Range object, for use in `range.set({
+  ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.RangeUpdateData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.RangeUpdateData#format:member'
-      - 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
-      - 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
-      - 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
-      - 'excel!Excel.Interfaces.RangeUpdateData#values:member'
-  - uid: 'excel!Excel.Interfaces.RangeUpdateData#format:member'
-    summary: |-
-      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a format object, encapsulating the range's font, fill, borders,
+      alignment, and other properties.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
-  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface" />'
+  - name: formulas
+    uid: 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
+    package: excel!
+    fullName: formulas
+    summary: >-
       Represents the formula in A1-style notation.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formulas
-    fullName: formulas
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formulas?: any[][];'
       return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
-    summary: >-
-      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
-      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formulasLocal
+        type: 'any[][]'
+  - name: formulasLocal
+    uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
+    package: excel!
     fullName: formulasLocal
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formula in A1-style notation, in the user's language and
+      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
+      would become "=SUMME(A1; 1,5)" in German.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formulasLocal?: any[][];'
       return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
-    summary: |-
+        type: 'any[][]'
+  - name: numberFormat
+    uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
+    package: excel!
+    fullName: numberFormat
+    summary: >-
       Represents Excel's number format code for the given range.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'numberFormat?: any[][];'
       return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Interfaces.RangeUpdateData#values:member'
-    summary: >-
-      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
+        type: 'any[][]'
+  - name: values
+    uid: 'excel!Excel.Interfaces.RangeUpdateData#values:member'
+    package: excel!
     fullName: values
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the raw values of the specified range. The data returned could
+      be of type string, number, or a boolean. Cells that contain an error will
+      return the error string.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'values?: any[][];'
       return:
-        type:
-          - 'any[][]'
-references:
-  - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
-    name: Excel.Interfaces.RangeFormatUpdateData
+        type: 'any[][]'

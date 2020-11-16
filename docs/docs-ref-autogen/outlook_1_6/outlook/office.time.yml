@@ -1,95 +1,106 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.Time:interface'
-    summary: |-
-      The `Time` object is returned as the start or end property of an appointment in compose mode.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+### YamlMime:TSType
+name: Office.Time
+uid: 'outlook!Office.Time:interface'
+package: outlook!
+fullName: Office.Time
+summary: >-
+  The `Time` object is returned as the start or end property of an appointment
+  in compose mode.
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    name: Office.Time
-    fullName: Office.Time
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: Mailbox
+  1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.Time#getAsync:member(1)'
     package: outlook!
-    children:
-      - 'outlook!Office.Time#getAsync:member(1)'
-      - 'outlook!Office.Time#getAsync:member(2)'
-      - 'outlook!Office.Time#setAsync:member(1)'
-  - uid: 'outlook!Office.Time#getAsync:member(1)'
+    fullName: 'getAsync(options, callback)'
     summary: >-
       Gets the start or end time of an appointment.
 
 
-      The date and time is provided as a `Date` object in the `asyncResult.value` property. The value is in Coordinated
-      Universal Time (UTC). You can convert the UTC time to the local client time by using the
+      The date and time is provided as a `Date` object in the
+      `asyncResult.value` property. The value is in Coordinated Universal Time
+      (UTC). You can convert the UTC time to the local client time by using the
       `convertToLocalClientTime` method.
 
 
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    name: 'getAsync(options, callback)'
-    fullName: 'getAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<Date>) => void):
-        void;
-      return:
-        type:
-          - void
-        description: ''
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<Date>) => void): void;
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            An object literal that contains one or more of the following
+            properties. `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is a `Date` object.
-          type:
-            - 'outlook!Office.Time#getAsync~0:complex'
-  - uid: 'outlook!Office.Time#getAsync:member(2)'
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. The `value` property of the result is
+            a `Date` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;Date&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.Time#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
     summary: >-
       Gets the start or end time of an appointment.
 
 
-      The date and time is provided as a `Date` object in the `asyncResult.value` property. The value is in Coordinated
-      Universal Time (UTC). You can convert the UTC time to the local client time by using the
+      The date and time is provided as a `Date` object in the
+      `asyncResult.value` property. The value is in Coordinated Universal Time
+      (UTC). You can convert the UTC time to the local client time by using the
       `convertToLocalClientTime` method.
 
 
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -109,56 +120,66 @@ items:
       });
 
       ```
-    name: getAsync(callback)
-    fullName: getAsync(callback)
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<Date>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        getAsync(callback: (asyncResult: Office.AsyncResult<Date>) => void):
+        void;
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is a `Date` object.
-          type:
-            - 'outlook!Office.Time#getAsync~1:complex'
-  - uid: 'outlook!Office.Time#setAsync:member(1)'
+            When the method completes, the function passed in the callback
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. The `value` property of the result is
+            a `Date` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;Date&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(dateTime, options, callback)'
+    uid: 'outlook!Office.Time#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(dateTime, options, callback)'
     summary: >-
       Sets the start or end time of an appointment.
 
 
-      If the `setAsync` method is called on the start property, the `end` property will be adjusted to maintain the
-      duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the
-      duration of the appointment will be extended to the new end time.
+      If the `setAsync` method is called on the start property, the `end`
+      property will be adjusted to maintain the duration of the appointment as
+      previously set. If the `setAsync` method is called on the `end` property,
+      the duration of the appointment will be extended to the new end time.
 
 
-      The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.
+      The time must be in UTC; you can get the correct UTC time by using the
+      `convertToUtcClientTime` method.
 
 
-      **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.
+      **Important**: In the Windows client, you can't use this function to
+      update the start or end of a recurrence.
 
 
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Errors**:
 
 
-      - `InvalidEndTime`<!-- -->: The appointment end time is before the appointment start time.
+      - `InvalidEndTime`<!-- -->: The appointment end time is before the
+      appointment start time.
 
 
       #### Examples
@@ -173,7 +194,8 @@ items:
           asyncContext: {verb: "Set"}
       };
 
-      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
+      Office.context.mailbox.item.start.setAsync(startTime, options,
+      function(result) {
           if (result.error) {
               console.debug(result.error);
           } else {
@@ -226,82 +248,31 @@ items:
       });
 
       ```
-    name: 'setAsync(dateTime, options, callback)'
-    fullName: 'setAsync(dateTime, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        setAsync(dateTime: Date, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: dateTime
           description: A date-time object in Coordinated Universal Time (UTC).
-          type:
-            - '!Date:interface'
+          type: Date
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties. `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. If setting the date and time fails, the `asyncResult.error`
-            property will contain an error code.
-          type:
-            - 'outlook!Office.Time#setAsync~0:complex'
-references:
-  - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
-  - uid: 'outlook!Office.Time#getAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<Date>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Date>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: 'outlook!Office.Time#getAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<Date>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Date>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: '!Date:interface'
-    name: Date
-  - uid: 'outlook!Office.Time#setAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. If setting the date and time fails,
+            the `asyncResult.error` property will contain an error code.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
+      return:
+        type: void
+        description: ''

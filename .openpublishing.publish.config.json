@@ -46,7 +46,10 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "UniversalReference": "Content"
+        "TSType": "Content",
+        "TSPackage": "Content",
+        "TSEnum": "Content",
+        "TSTypeAlias": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",

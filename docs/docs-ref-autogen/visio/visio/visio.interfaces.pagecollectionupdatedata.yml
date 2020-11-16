@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the PageCollection object, for use in "pageCollection.set(<!-- -->{ ... }<!--
-      -->)".
-    name: Visio.Interfaces.PageCollectionUpdateData
-    fullName: Visio.Interfaces.PageCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Visio.Interfaces.PageCollectionUpdateData
+uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
+package: visio!
+fullName: Visio.Interfaces.PageCollectionUpdateData
+summary: >-
+  An interface for updating data on the PageCollection object, for use in
+  "pageCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'visio!Visio.Interfaces.PageCollectionUpdateData#items:member'
     package: visio!
-    children:
-      - 'visio!Visio.Interfaces.PageCollectionUpdateData#items:member'
-  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Visio.Interfaces.PageData[];'
       return:
-        type:
-          - 'visio!Visio.Interfaces.PageCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData#items~0:complex'
-    name: 'Visio.Interfaces.PageData[]'
-    fullName: 'Visio.Interfaces.PageData[]'
-    spec.typeScript:
-      - uid: 'visio!Visio.Interfaces.PageData:interface'
-        name: Visio.Interfaces.PageData
-        fullName: Visio.Interfaces.PageData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />[]'

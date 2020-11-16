@@ -1,55 +1,53 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetFilteredEventArgs:interface'
-    summary: >-
-      Provides information about the worksheet that raised the filter applied event.
+### YamlMime:TSType
+name: Excel.WorksheetFilteredEventArgs
+uid: 'excel!Excel.WorksheetFilteredEventArgs:interface'
+package: excel!
+fullName: Excel.WorksheetFilteredEventArgs
+summary: >-
+  Provides information about the worksheet that raised the filter applied event.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: Excel.WorksheetFilteredEventArgs
-    fullName: Excel.WorksheetFilteredEventArgs
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: 'excel!Excel.WorksheetFilteredEventArgs#type:member'
     package: excel!
-    children:
-      - 'excel!Excel.WorksheetFilteredEventArgs#type:member'
-      - 'excel!Excel.WorksheetFilteredEventArgs#worksheetId:member'
-  - uid: 'excel!Excel.WorksheetFilteredEventArgs#type:member'
+    fullName: type
     summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'type: "WorksheetFiltered";'
       return:
-        type:
-          - '"WorksheetFiltered"'
-  - uid: 'excel!Excel.WorksheetFilteredEventArgs#worksheetId:member'
+        type: '"WorksheetFiltered"'
+  - name: worksheetId
+    uid: 'excel!Excel.WorksheetFilteredEventArgs#worksheetId:member'
+    package: excel!
+    fullName: worksheetId
     summary: >-
       Gets the id of the worksheet in which the filter is applied.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: worksheetId
-    fullName: worksheetId
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'worksheetId: string;'
       return:
-        type:
-          - string
+        type: string

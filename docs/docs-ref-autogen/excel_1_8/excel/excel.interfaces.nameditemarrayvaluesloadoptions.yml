@@ -1,61 +1,68 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
-    summary: |-
-      Represents an object containing values and types of a named item.
+### YamlMime:TSType
+name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
+uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
+summary: >-
+  Represents an object containing values and types of a named item.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
-    fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#types:member'
-      - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#values:member'
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#types:member'
-    summary: |-
+        type: boolean
+  - name: types
+    uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#types:member'
+    package: excel!
+    fullName: types
+    summary: >-
       Represents the types for each item in the named item array
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: types
-    fullName: types
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'types?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#values:member'
-    summary: |-
+        type: boolean
+  - name: values
+    uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#values:member'
+    package: excel!
+    fullName: values
+    summary: >-
       Represents the values of each item in the named item array.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'values?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

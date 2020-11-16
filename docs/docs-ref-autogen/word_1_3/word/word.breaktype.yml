@@ -1,82 +1,50 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.BreakType:enum'
-    summary: |-
-      Specifies the form of a break.
+### YamlMime:TSEnum
+name: Word.BreakType
+uid: 'word!Word.BreakType:enum'
+package: word!
+fullName: Word.BreakType
+summary: >-
+  Specifies the form of a break.
 
-      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.BreakType
-    fullName: Word.BreakType
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: line
+    uid: 'word!Word.BreakType.line:member'
     package: word!
-    children:
-      - 'word!Word.BreakType.line:member'
-      - 'word!Word.BreakType.next:member'
-      - 'word!Word.BreakType.page:member'
-      - 'word!Word.BreakType.sectionContinuous:member'
-      - 'word!Word.BreakType.sectionEven:member'
-      - 'word!Word.BreakType.sectionNext:member'
-      - 'word!Word.BreakType.sectionOdd:member'
-  - uid: 'word!Word.BreakType.line:member'
     summary: Line break.
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Line"'
-  - uid: 'word!Word.BreakType.next:member'
-    deprecated:
-      content: Use sectionNext instead.
-    name: next
-    fullName: next
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Next"'
-  - uid: 'word!Word.BreakType.page:member'
+  - name: next
+    uid: 'word!Word.BreakType.next:member'
+    package: word!
+    summary: ''
+  - name: page
+    uid: 'word!Word.BreakType.page:member'
+    package: word!
     summary: Page break at the insertion point.
-    name: page
-    fullName: page
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Page"'
-  - uid: 'word!Word.BreakType.sectionContinuous:member'
+  - name: sectionContinuous
+    uid: 'word!Word.BreakType.sectionContinuous:member'
+    package: word!
     summary: New section without a corresponding page break.
-    name: sectionContinuous
-    fullName: sectionContinuous
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SectionContinuous"'
-  - uid: 'word!Word.BreakType.sectionEven:member'
+  - name: sectionEven
+    uid: 'word!Word.BreakType.sectionEven:member'
+    package: word!
     summary: >-
-      Section break with the next section beginning on the next even-numbered page. If the section break falls on an
-      even-numbered page, Word leaves the next odd-numbered page blank.
-    name: sectionEven
-    fullName: sectionEven
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SectionEven"'
-  - uid: 'word!Word.BreakType.sectionNext:member'
+      Section break with the next section beginning on the next even-numbered
+      page. If the section break falls on an even-numbered page, Word leaves the
+      next odd-numbered page blank.
+  - name: sectionNext
+    uid: 'word!Word.BreakType.sectionNext:member'
+    package: word!
     summary: Section break on next page.
-    name: sectionNext
-    fullName: sectionNext
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SectionNext"'
-  - uid: 'word!Word.BreakType.sectionOdd:member'
+  - name: sectionOdd
+    uid: 'word!Word.BreakType.sectionOdd:member'
+    package: word!
     summary: >-
-      Section break with the next section beginning on the next odd-numbered page. If the section break falls on an
-      odd-numbered page, Word leaves the next even-numbered page blank.
-    name: sectionOdd
-    fullName: sectionOdd
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SectionOdd"'
+      Section break with the next section beginning on the next odd-numbered
+      page. If the section break falls on an odd-numbered page, Word leaves the
+      next even-numbered page blank.

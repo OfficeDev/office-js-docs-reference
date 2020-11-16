@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.BindingType:enum'
-    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.BindingType
-    fullName: Excel.BindingType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.BindingType
+uid: 'excel!Excel.BindingType:enum'
+package: excel!
+fullName: Excel.BindingType
+summary: >-
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: range
+    uid: 'excel!Excel.BindingType.range:member'
     package: excel!
-    children:
-      - 'excel!Excel.BindingType.range:member'
-      - 'excel!Excel.BindingType.table:member'
-      - 'excel!Excel.BindingType.text:member'
-  - uid: 'excel!Excel.BindingType.range:member'
-    name: range
-    fullName: range
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Range"'
-  - uid: 'excel!Excel.BindingType.table:member'
-    name: table
-    fullName: table
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Table"'
-  - uid: 'excel!Excel.BindingType.text:member'
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Text"'
+    summary: ''
+  - name: table
+    uid: 'excel!Excel.BindingType.table:member'
+    package: excel!
+    summary: ''
+  - name: text
+    uid: 'excel!Excel.BindingType.text:member'
+    package: excel!
+    summary: ''

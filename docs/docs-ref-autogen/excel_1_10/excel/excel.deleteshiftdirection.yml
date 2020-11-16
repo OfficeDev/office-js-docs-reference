@@ -1,27 +1,21 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DeleteShiftDirection:enum'
-    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.DeleteShiftDirection
-    fullName: Excel.DeleteShiftDirection
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.DeleteShiftDirection
+uid: 'excel!Excel.DeleteShiftDirection:enum'
+package: excel!
+fullName: Excel.DeleteShiftDirection
+summary: >-
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: left
+    uid: 'excel!Excel.DeleteShiftDirection.left:member'
     package: excel!
-    children:
-      - 'excel!Excel.DeleteShiftDirection.left:member'
-      - 'excel!Excel.DeleteShiftDirection.up:member'
-  - uid: 'excel!Excel.DeleteShiftDirection.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Left"'
-  - uid: 'excel!Excel.DeleteShiftDirection.up:member'
-    name: up
-    fullName: up
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Up"'
+    summary: ''
+  - name: up
+    uid: 'excel!Excel.DeleteShiftDirection.up:member'
+    package: excel!
+    summary: ''

@@ -1,48 +1,52 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
-    summary: An interface describing the data returned by calling `topBottomConditionalFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.TopBottomConditionalFormatData
-    fullName: Excel.Interfaces.TopBottomConditionalFormatData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.TopBottomConditionalFormatData
+uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
+package: excel!
+fullName: Excel.Interfaces.TopBottomConditionalFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `topBottomConditionalFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member'
-      - 'excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member'
-  - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member'
-    summary: |-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill,
+      borders, and other properties.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-  - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member'
-    summary: |-
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeFormatData:interface" />
+  - name: rule
+    uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member'
+    package: excel!
+    fullName: rule
+    summary: >-
       The criteria of the Top/Bottom conditional format.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rule
-    fullName: rule
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rule?: Excel.ConditionalTopBottomRule;'
       return:
-        type:
-          - 'excel!Excel.ConditionalTopBottomRule:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatData
-  - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
-    name: Excel.ConditionalTopBottomRule
+        type: '<xref uid="excel!Excel.ConditionalTopBottomRule:interface" />'

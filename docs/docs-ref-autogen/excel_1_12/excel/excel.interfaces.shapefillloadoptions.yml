@@ -1,82 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
-    summary: |-
-      Represents the fill formatting of a shape object.
+### YamlMime:TSType
+name: Excel.Interfaces.ShapeFillLoadOptions
+uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ShapeFillLoadOptions
+summary: >-
+  Represents the fill formatting of a shape object.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ShapeFillLoadOptions
-    fullName: Excel.Interfaces.ShapeFillLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ShapeFillLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ShapeFillLoadOptions#foregroundColor:member'
-      - 'excel!Excel.Interfaces.ShapeFillLoadOptions#transparency:member'
-      - 'excel!Excel.Interfaces.ShapeFillLoadOptions#type:member'
-  - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#foregroundColor:member'
-    summary: >-
-      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g., "FFA500") or as a
-      named HTML color (e.g., "orange")
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: foregroundColor
+        type: boolean
+  - name: foregroundColor
+    uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#foregroundColor:member'
+    package: excel!
     fullName: foregroundColor
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the shape fill foreground color in HTML color format, of the
+      form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'foregroundColor?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#transparency:member'
-    summary: >-
-      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null
-      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
-      gradient fill type.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: transparency
+        type: boolean
+  - name: transparency
+    uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#transparency:member'
+    package: excel!
     fullName: transparency
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0
+      (opaque) through 1.0 (clear). Returns null if the shape type does not
+      support transparency or the shape fill has inconsistent transparency, such
+      as with a gradient fill type.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'transparency?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#type:member'
-    summary: |-
+        type: boolean
+  - name: type
+    uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Returns the fill type of the shape. See Excel.ShapeFillType for details.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

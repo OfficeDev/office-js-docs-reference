@@ -1,75 +1,85 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.InternetHeaders:interface'
-    summary: >-
-      The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves
-      Exchange and is converted to a MIME message. These headers are stored as x-headers in the MIME message.
+### YamlMime:TSType
+name: Office.InternetHeaders
+uid: 'outlook!Office.InternetHeaders:interface'
+package: outlook!
+fullName: Office.InternetHeaders
+summary: >-
+  The `InternetHeaders` object represents custom internet headers that are
+  preserved after the message item leaves Exchange and is converted to a MIME
+  message. These headers are stored as x-headers in the MIME message.
 
 
-      Internet headers are stored as key/value pairs on a per-item basis.
+  Internet headers are stored as key/value pairs on a per-item basis.
 
 
-      **Note**: This object is intended for you to set and get your custom headers on a message item.
+  **Note**: This object is intended for you to set and get your custom headers
+  on a message item.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **Recommended practices**
+  \[ [API set: Mailbox
+  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **Recommended practices**
 
 
-      Currently, internet headers are a finite resource on a user's mailbox. When the quota is exhausted, you can't
-      create any more internet headers on that mailbox, which can result in unexpected behavior from clients that rely
-      on this to function.
+  Currently, internet headers are a finite resource on a user's mailbox. When
+  the quota is exhausted, you can't create any more internet headers on that
+  mailbox, which can result in unexpected behavior from clients that rely on
+  this to function.
 
 
-      Apply the following guidelines when you create internet headers in your add-in.
+  Apply the following guidelines when you create internet headers in your
+  add-in.
 
 
-      - Create the minimum number of headers required.
+  - Create the minimum number of headers required.
 
 
-      - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable
-      manner (for example, based on user input, timestamp, etc.).
+  - Name headers so that you can reuse and update their values later. As such,
+  avoid naming headers in a variable manner (for example, based on user input,
+  timestamp, etc.).
 
 
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    name: Office.InternetHeaders
-    fullName: Office.InternetHeaders
-    langs:
-      - typeScript
-    type: interface
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(names, options, callback)'
+    uid: 'outlook!Office.InternetHeaders#getAsync:member(1)'
     package: outlook!
-    children:
-      - 'outlook!Office.InternetHeaders#getAsync:member(1)'
-      - 'outlook!Office.InternetHeaders#removeAsync:member(1)'
-      - 'outlook!Office.InternetHeaders#setAsync:member(1)'
-  - uid: 'outlook!Office.InternetHeaders#getAsync:member(1)'
+    fullName: 'getAsync(names, options, callback)'
     summary: >-
-      Given an array of internet header names, this method returns a dictionary containing those internet headers and
-      their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
-      results.
+      Given an array of internet header names, this method returns a dictionary
+      containing those internet headers and their values. If the add-in requests
+      an x-header that is not available, that x-header will not be returned in
+      the results.
 
 
-      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
+      **Note**: This method is intended to return the values of the custom
+      headers you set using the `setAsync` method.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -77,7 +87,8 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
+      Office.context.mailbox.item.internetHeaders.getAsync(["header1",
+      "header2"], callback);
 
 
       function callback(asyncResult) {
@@ -86,55 +97,60 @@ items:
       }
 
       ```
-    name: 'getAsync(names, options, callback)'
-    fullName: 'getAsync(names, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        getAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<InternetHeaders>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        getAsync(names: string[], options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<InternetHeaders>) => void):
+        void;
       parameters:
         - id: names
           description: The names of the internet headers to be returned.
-          type:
-            - 'string[]'
+          type: 'string[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties: `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties: `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.InternetHeaders#getAsync~0:complex'
-  - uid: 'outlook!Office.InternetHeaders#removeAsync:member(1)'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.InternetHeaders:interface" />&gt;)
+            =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'removeAsync(names, options, callback)'
+    uid: 'outlook!Office.InternetHeaders#removeAsync:member(1)'
+    package: outlook!
+    fullName: 'removeAsync(names, options, callback)'
     summary: >-
-      Given an array of internet header names, this method removes the specified headers from the internet header
-      collection.
+      Given an array of internet header names, this method removes the specified
+      headers from the internet header collection.
 
 
-      **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
+      **Note**: This method is intended to remove the custom headers you set
+      using the `setAsync` method.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -142,61 +158,68 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
+      Office.context.mailbox.item.internetHeaders.removeAsync(["header1",
+      "header2"]);
 
       ```
-    name: 'removeAsync(names, options, callback)'
-    fullName: 'removeAsync(names, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        removeAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<InternetHeaders>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        removeAsync(names: string[], options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<InternetHeaders>) => void):
+        void;
       parameters:
         - id: names
           description: The names of the internet headers to be removed.
-          type:
-            - 'string[]'
+          type: 'string[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties: `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties: `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.InternetHeaders#removeAsync~0:complex'
-  - uid: 'outlook!Office.InternetHeaders#setAsync:member(1)'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.InternetHeaders:interface" />&gt;)
+            =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(headers, options, callback)'
+    uid: 'outlook!Office.InternetHeaders#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(headers, options, callback)'
     summary: >-
       Sets the specified internet headers to the specified values.
 
 
-      The `setAsync` method creates a new header if the specified header doesn't already exist; otherwise, the existing
-      value is replaced with the new value.
+      The `setAsync` method creates a new header if the specified header doesn't
+      already exist; otherwise, the existing value is replaced with the new
+      value.
 
 
-      **Note**: This method is intended to set the values of your custom headers.
+      **Note**: This method is intended to set the values of your custom
+      headers.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -204,87 +227,38 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
+      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1",
+      "header2": "value2"});
 
       ```
-    name: 'setAsync(headers, options, callback)'
-    fullName: 'setAsync(headers, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        setAsync(headers: Object, options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        setAsync(headers: Object, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: headers
           description: >-
-            The names and corresponding values of the headers to be set. Should be a dictionary object with keys being
-            the names of the internet headers and values being the values of the internet headers.
-          type:
-            - '!Object:interface'
+            The names and corresponding values of the headers to be set. Should
+            be a dictionary object with keys being the names of the internet
+            headers and values being the values of the internet headers.
+          type: Object
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties. `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
-            property.
-          type:
-            - 'outlook!Office.InternetHeaders#setAsync~0:complex'
-references:
-  - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
-  - uid: 'outlook!Office.InternetHeaders#getAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<InternetHeaders>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.InternetHeaders>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.InternetHeaders:interface'
-        name: InternetHeaders
-        fullName: Office.InternetHeaders
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: 'outlook!Office.InternetHeaders#removeAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<InternetHeaders>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.InternetHeaders>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.InternetHeaders:interface'
-        name: InternetHeaders
-        fullName: Office.InternetHeaders
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: '!Object:interface'
-    name: Object
-  - uid: 'outlook!Office.InternetHeaders#setAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            Office.AsyncResult. Any errors encountered will be provided in the
+            `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
+      return:
+        type: void
+        description: ''

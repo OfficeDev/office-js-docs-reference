@@ -1,87 +1,92 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
-    summary: An interface describing the data returned by calling `namedItem.toJSON()`<!-- -->.
-    name: Excel.Interfaces.NamedItemData
-    fullName: Excel.Interfaces.NamedItemData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.NamedItemData
+uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+package: excel!
+fullName: Excel.Interfaces.NamedItemData
+summary: >-
+  An interface describing the data returned by calling `namedItem.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: 'excel!Excel.Interfaces.NamedItemData#name:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.NamedItemData#name:member'
-      - 'excel!Excel.Interfaces.NamedItemData#type:member'
-      - 'excel!Excel.Interfaces.NamedItemData#value:member'
-      - 'excel!Excel.Interfaces.NamedItemData#visible:member'
-  - uid: 'excel!Excel.Interfaces.NamedItemData#name:member'
-    summary: |-
+    fullName: name
+    summary: >-
       The name of the object.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.NamedItemData#type:member'
-    summary: >-
-      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
-
-
-      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
-      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
+        type: string
+  - name: type
+    uid: 'excel!Excel.Interfaces.NamedItemData#type:member'
+    package: excel!
     fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.NamedItemData#type~0:complex'
-  - uid: 'excel!Excel.Interfaces.NamedItemData#value:member'
-    summary: |-
-      Represents the value computed by the name's formula. For a named range, will return the range address.
+    summary: >-
+      Specifies the type of the value returned by the name's formula. See
+      Excel.NamedItemType for details.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: value
+
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
+      1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean"
+        | "Range" | "Error" | "Array";
+      return:
+        type: >-
+          <xref uid="excel!Excel.NamedItemType:enum" /> | "String" | "Integer" |
+          "Double" | "Boolean" | "Range" | "Error" | "Array"
+  - name: value
+    uid: 'excel!Excel.Interfaces.NamedItemData#value:member'
+    package: excel!
     fullName: value
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the value computed by the name's formula. For a named range,
+      will return the range address.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'value?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.NamedItemData#visible:member'
-    summary: |-
+        type: any
+  - name: visible
+    uid: 'excel!Excel.Interfaces.NamedItemData#visible:member'
+    package: excel!
+    fullName: visible
+    summary: >-
       Specifies if the object is visible.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Interfaces.NamedItemData#type~0:complex'
-    name: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
-    fullName: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
-    spec.typeScript:
-      - uid: 'excel!Excel.NamedItemType:enum'
-        name: Excel.NamedItemType
-        fullName: Excel.NamedItemType
-      - name: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
-        fullName: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
+        type: boolean

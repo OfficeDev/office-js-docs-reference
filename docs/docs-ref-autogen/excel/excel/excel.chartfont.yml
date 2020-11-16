@@ -1,316 +1,311 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartFont:class'
-    summary: |-
-      This object represents the font attributes (font name, font size, color, etc.) for a chart object.
+### YamlMime:TSType
+name: Excel.ChartFont
+uid: 'excel!Excel.ChartFont:class'
+package: excel!
+fullName: Excel.ChartFont
+summary: >-
+  This object represents the font attributes (font name, font size, color, etc.)
+  for a chart object.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartFont
-    fullName: Excel.ChartFont
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: |-
+
+
+  #### Examples
+
+  ```javascript
+  // Set chart title to be Calbri, size 10, bold and in red. 
+  Excel.run(function (ctx) { 
+      var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
+      title.format.font.name = "Calibri";
+      title.format.font.size = 12;
+      title.format.font.color = "#FF0000";
+      title.format.font.italic =  false;
+      title.format.font.bold = true;
+      title.format.font.underline = "None";
+      return ctx.sync();
+  }).catch(function(error) {
+      console.log("Error: " + error);
+      if (error instanceof OfficeExtension.Error) {
+          console.log("Debug info: " + JSON.stringify(error.debugInfo));
+      }
+  });
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: bold
+    uid: 'excel!Excel.ChartFont#bold:member'
     package: excel!
-    remarks: |-
-
-
-      #### Examples
-
-      ```javascript
-      // Set chart title to be Calbri, size 10, bold and in red. 
-      Excel.run(function (ctx) { 
-          var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
-          title.format.font.name = "Calibri";
-          title.format.font.size = 12;
-          title.format.font.color = "#FF0000";
-          title.format.font.italic =  false;
-          title.format.font.bold = true;
-          title.format.font.underline = "None";
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-    children:
-      - 'excel!Excel.ChartFont#bold:member'
-      - 'excel!Excel.ChartFont#color:member'
-      - 'excel!Excel.ChartFont#context:member'
-      - 'excel!Excel.ChartFont#italic:member'
-      - 'excel!Excel.ChartFont#load:member(1)'
-      - 'excel!Excel.ChartFont#load:member(2)'
-      - 'excel!Excel.ChartFont#load:member(3)'
-      - 'excel!Excel.ChartFont#name:member'
-      - 'excel!Excel.ChartFont#set:member(1)'
-      - 'excel!Excel.ChartFont#set:member(2)'
-      - 'excel!Excel.ChartFont#size:member'
-      - 'excel!Excel.ChartFont#toJSON:member(1)'
-      - 'excel!Excel.ChartFont#underline:member'
-  - uid: 'excel!Excel.ChartFont#bold:member'
-    summary: |-
+    fullName: bold
+    summary: >-
       Represents the bold status of font.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: bold
-    fullName: bold
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'bold: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartFont#color:member'
-    summary: |-
-      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
+        type: boolean
+  - name: color
+    uid: 'excel!Excel.ChartFont#color:member'
+    package: excel!
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      HTML color code representation of the text color (e.g., \#FF0000
+      represents Red).
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartFont#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: string
+  - name: context
+    uid: 'excel!Excel.ChartFont#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartFont#italic:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: italic
+    uid: 'excel!Excel.ChartFont#italic:member'
+    package: excel!
+    fullName: italic
+    summary: >-
       Represents the italic status of the font.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: italic
-    fullName: italic
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'italic: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartFont#load:member(1)'
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.ChartFont#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+      Font name (e.g., "Calibri")
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: size
+    uid: 'excel!Excel.ChartFont#size:member'
+    package: excel!
+    fullName: size
+    summary: >-
+      Size of the font (e.g., 11)
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size: number;'
+      return:
+        type: number
+  - name: underline
+    uid: 'excel!Excel.ChartFont#underline:member'
+    package: excel!
+    fullName: underline
+    summary: >-
+      Type of underline applied to the font. See Excel.ChartUnderlineStyle for
+      details.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underline: Excel.ChartUnderlineStyle | "None" | "Single";'
+      return:
+        type: >-
+          <xref uid="excel!Excel.ChartUnderlineStyle:enum" /> | "None" |
+          "Single"
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.ChartFont#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-  - uid: 'excel!Excel.ChartFont#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: '<xref uid="excel!Excel.Interfaces.ChartFontLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.ChartFont:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartFont#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartFont#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.ChartFont:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartFont#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartFont;
-      return:
-        type:
-          - 'excel!Excel.ChartFont:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.ChartFont#name:member'
-    summary: |-
-      Font name (e.g., "Calibri")
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartFont#set:member(1)'
+        type: '<xref uid="excel!Excel.ChartFont:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartFont#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartFont): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartFontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.ChartFontUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="excel!Excel.Interfaces.ChartFontUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.ChartFont#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartFont#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.ChartFont): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.ChartFont:class'
-  - uid: 'excel!Excel.ChartFont#size:member'
-    summary: |-
-      Size of the font (e.g., 11)
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: size
-    fullName: size
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'size: number;'
+          type: '<xref uid="excel!Excel.ChartFont:class" />'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartFont#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ChartFontData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartFont#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.ChartFont object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.ChartFontData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartFontData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartFontData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.ChartFontData:interface" />'
         description: ''
-  - uid: 'excel!Excel.ChartFont#underline:member'
-    summary: |-
-      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: underline
-    fullName: underline
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'underline: Excel.ChartUnderlineStyle | "None" | "Single";'
-      return:
-        type:
-          - 'excel!Excel.ChartFont#underline~0:complex'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ChartFont:class'
-    name: Excel.ChartFont
-  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
-  - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: Interfaces.ChartFontUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    name: Excel.Interfaces.ChartFontData
-  - uid: 'excel!Excel.ChartFont#underline~0:complex'
-    name: Excel.ChartUnderlineStyle | "None" | "Single"
-    fullName: Excel.ChartUnderlineStyle | "None" | "Single"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartUnderlineStyle:enum'
-        name: Excel.ChartUnderlineStyle
-        fullName: Excel.ChartUnderlineStyle
-      - name: ' | "None" | "Single"'
-        fullName: ' | "None" | "Single"'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

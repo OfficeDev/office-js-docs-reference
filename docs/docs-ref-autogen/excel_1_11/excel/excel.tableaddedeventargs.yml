@@ -1,88 +1,89 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableAddedEventArgs:interface'
-    summary: |-
-      Provides information about the table that raised the OnAdded event.
+### YamlMime:TSType
+name: Excel.TableAddedEventArgs
+uid: 'excel!Excel.TableAddedEventArgs:interface'
+package: excel!
+fullName: Excel.TableAddedEventArgs
+summary: >-
+  Provides information about the table that raised the OnAdded event.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.TableAddedEventArgs
-    fullName: Excel.TableAddedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: source
+    uid: 'excel!Excel.TableAddedEventArgs#source:member'
     package: excel!
-    children:
-      - 'excel!Excel.TableAddedEventArgs#source:member'
-      - 'excel!Excel.TableAddedEventArgs#tableId:member'
-      - 'excel!Excel.TableAddedEventArgs#type:member'
-      - 'excel!Excel.TableAddedEventArgs#worksheetId:member'
-  - uid: 'excel!Excel.TableAddedEventArgs#source:member'
-    summary: |-
+    fullName: source
+    summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: source
-    fullName: source
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type:
-          - 'excel!Excel.TableAddedEventArgs#source~0:complex'
-  - uid: 'excel!Excel.TableAddedEventArgs#tableId:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: tableId
+    uid: 'excel!Excel.TableAddedEventArgs#tableId:member'
+    package: excel!
+    fullName: tableId
+    summary: >-
       Gets the id of the table that is added.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: tableId
-    fullName: tableId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'tableId: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.TableAddedEventArgs#type:member'
-    summary: |-
+        type: string
+  - name: type
+    uid: 'excel!Excel.TableAddedEventArgs#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: "TableAdded";'
       return:
-        type:
-          - '"TableAdded"'
-  - uid: 'excel!Excel.TableAddedEventArgs#worksheetId:member'
-    summary: |-
+        type: '"TableAdded"'
+  - name: worksheetId
+    uid: 'excel!Excel.TableAddedEventArgs#worksheetId:member'
+    package: excel!
+    fullName: worksheetId
+    summary: >-
       Gets the id of the worksheet in which the table is added.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheetId
-    fullName: worksheetId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheetId: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.TableAddedEventArgs#source~0:complex'
-    name: Excel.EventSource | "Local" | "Remote"
-    fullName: Excel.EventSource | "Local" | "Remote"
-    spec.typeScript:
-      - uid: 'excel!Excel.EventSource:enum'
-        name: Excel.EventSource
-        fullName: Excel.EventSource
-      - name: ' | "Local" | "Remote"'
-        fullName: ' | "Local" | "Remote"'
+        type: string

@@ -1,109 +1,126 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
-    summary: |-
-      Represents ink analysis data for an identified word formed by ink strokes.
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisWordLoadOptions
+uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkAnalysisWordLoadOptions
+summary: >-
+  Represents ink analysis data for an identified word formed by ink strokes.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.InkAnalysisWordLoadOptions
-    fullName: OneNote.Interfaces.InkAnalysisWordLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#$all:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#$all:member'
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#id:member'
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#languageId:member'
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#line:member'
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#strokePointers:member'
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#wordAlternates:member'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#$all:member'
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#id:member'
-    summary: |-
+        type: boolean
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the InkAnalysisWord object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#languageId:member'
-    summary: |-
+        type: boolean
+  - name: languageId
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#languageId:member'
+    package: onenote!
+    fullName: languageId
+    summary: >-
       The id of the recognized language in this inkAnalysisWord. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: languageId
-    fullName: languageId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'languageId?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#line:member'
-    summary: |-
+        type: boolean
+  - name: line
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#line:member'
+    package: onenote!
+    fullName: line
+    summary: >-
       Reference to the parent InkAnalysisLine.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#strokePointers:member'
-    summary: |-
-      Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: strokePointers
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface"
+          />
+  - name: strokePointers
+    uid: >-
+      onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#strokePointers:member
+    package: onenote!
     fullName: strokePointers
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Weak references to the ink strokes that were recognized as part of this
+      ink analysis word. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'strokePointers?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#wordAlternates:member'
-    summary: |-
-      The words that were recognized in this ink word, in order of likelihood. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: wordAlternates
+        type: boolean
+  - name: wordAlternates
+    uid: >-
+      onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#wordAlternates:member
+    package: onenote!
     fullName: wordAlternates
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The words that were recognized in this ink word, in order of likelihood.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'wordAlternates?: boolean;'
       return:
-        type:
-          - boolean
-references:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisLineLoadOptions
+        type: boolean

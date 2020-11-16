@@ -1,123 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RefreshRequestCompletedEventArgs:interface'
-    summary: >-
-      The argument that is passed to the event handler upon completion of refresh request to an external service or
-      link.
+### YamlMime:TSType
+name: Excel.RefreshRequestCompletedEventArgs
+uid: 'excel!Excel.RefreshRequestCompletedEventArgs:interface'
+package: excel!
+fullName: Excel.RefreshRequestCompletedEventArgs
+summary: >-
+  The argument that is passed to the event handler upon completion of refresh
+  request to an external service or link.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: Excel.RefreshRequestCompletedEventArgs
-    fullName: Excel.RefreshRequestCompletedEventArgs
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: refreshed
+    uid: 'excel!Excel.RefreshRequestCompletedEventArgs#refreshed:member'
     package: excel!
-    children:
-      - 'excel!Excel.RefreshRequestCompletedEventArgs#refreshed:member'
-      - 'excel!Excel.RefreshRequestCompletedEventArgs#serviceId:member'
-      - 'excel!Excel.RefreshRequestCompletedEventArgs#source:member'
-      - 'excel!Excel.RefreshRequestCompletedEventArgs#type:member'
-      - 'excel!Excel.RefreshRequestCompletedEventArgs#warnings:member'
-  - uid: 'excel!Excel.RefreshRequestCompletedEventArgs#refreshed:member'
+    fullName: refreshed
     summary: >-
       Indicates if the request to refresh was successful.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: refreshed
-    fullName: refreshed
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'refreshed: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.RefreshRequestCompletedEventArgs#serviceId:member'
+        type: boolean
+  - name: serviceId
+    uid: 'excel!Excel.RefreshRequestCompletedEventArgs#serviceId:member'
+    package: excel!
+    fullName: serviceId
     summary: >-
       The unique id of the object whose refresh request was completed.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: serviceId
-    fullName: serviceId
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'serviceId: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.RefreshRequestCompletedEventArgs#source:member'
+        type: number
+  - name: source
+    uid: 'excel!Excel.RefreshRequestCompletedEventArgs#source:member'
+    package: excel!
+    fullName: source
     summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: source
-    fullName: source
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type:
-          - 'excel!Excel.RefreshRequestCompletedEventArgs#source~0:complex'
-  - uid: 'excel!Excel.RefreshRequestCompletedEventArgs#type:member'
+        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'excel!Excel.RefreshRequestCompletedEventArgs#type:member'
+    package: excel!
+    fullName: type
     summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'type: "LinkedDataTypeRefreshRequestCompleted";'
       return:
-        type:
-          - '"LinkedDataTypeRefreshRequestCompleted"'
-  - uid: 'excel!Excel.RefreshRequestCompletedEventArgs#warnings:member'
+        type: '"LinkedDataTypeRefreshRequestCompleted"'
+  - name: warnings
+    uid: 'excel!Excel.RefreshRequestCompletedEventArgs#warnings:member'
+    package: excel!
+    fullName: warnings
     summary: >-
       An array that contains any warnings generated from the refresh request.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: warnings
-    fullName: warnings
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'warnings?: string[];'
       return:
-        type:
-          - 'string[]'
-references:
-  - uid: 'excel!Excel.RefreshRequestCompletedEventArgs#source~0:complex'
-    name: Excel.EventSource | "Local" | "Remote"
-    fullName: Excel.EventSource | "Local" | "Remote"
-    spec.typeScript:
-      - uid: 'excel!Excel.EventSource:enum'
-        name: Excel.EventSource
-        fullName: Excel.EventSource
-      - name: ' | "Local" | "Remote"'
-        fullName: ' | "Local" | "Remote"'
+        type: 'string[]'

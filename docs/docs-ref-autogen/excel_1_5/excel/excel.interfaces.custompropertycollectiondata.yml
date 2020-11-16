@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData:interface'
-    summary: An interface describing the data returned by calling `customPropertyCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CustomPropertyCollectionData
-    fullName: Excel.Interfaces.CustomPropertyCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.CustomPropertyCollectionData
+uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData:interface'
+package: excel!
+fullName: Excel.Interfaces.CustomPropertyCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `customPropertyCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CustomPropertyCollectionData#items:member'
-  - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.CustomPropertyData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CustomPropertyCollectionData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData#items~0:complex'
-    name: 'Excel.Interfaces.CustomPropertyData[]'
-    fullName: 'Excel.Interfaces.CustomPropertyData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
-        name: Excel.Interfaces.CustomPropertyData
-        fullName: Excel.Interfaces.CustomPropertyData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="excel!Excel.Interfaces.CustomPropertyData:interface" />[]'

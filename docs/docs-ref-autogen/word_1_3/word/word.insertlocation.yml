@@ -1,59 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.InsertLocation:enum'
-    summary: |-
-      The insertion location types.
+### YamlMime:TSEnum
+name: Word.InsertLocation
+uid: 'word!Word.InsertLocation:enum'
+package: word!
+fullName: Word.InsertLocation
+summary: >-
+  The insertion location types.
 
-      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.InsertLocation
-    fullName: Word.InsertLocation
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set:
+  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: after
+    uid: 'word!Word.InsertLocation.after:member'
     package: word!
-    children:
-      - 'word!Word.InsertLocation.after:member'
-      - 'word!Word.InsertLocation.before:member'
-      - 'word!Word.InsertLocation.end:member'
-      - 'word!Word.InsertLocation.replace:member'
-      - 'word!Word.InsertLocation.start:member'
-  - uid: 'word!Word.InsertLocation.after:member'
     summary: Add content after the contents of the calling object.
-    name: after
-    fullName: after
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"After"'
-  - uid: 'word!Word.InsertLocation.before:member'
+  - name: before
+    uid: 'word!Word.InsertLocation.before:member'
+    package: word!
     summary: Add content before the contents of the calling object.
-    name: before
-    fullName: before
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Before"'
-  - uid: 'word!Word.InsertLocation.end:member'
+  - name: end
+    uid: 'word!Word.InsertLocation.end:member'
+    package: word!
     summary: Append content to the contents of the calling object.
-    name: end
-    fullName: end
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"End"'
-  - uid: 'word!Word.InsertLocation.replace:member'
+  - name: replace
+    uid: 'word!Word.InsertLocation.replace:member'
+    package: word!
     summary: Replace the contents of the current object.
-    name: replace
-    fullName: replace
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Replace"'
-  - uid: 'word!Word.InsertLocation.start:member'
+  - name: start
+    uid: 'word!Word.InsertLocation.start:member'
+    package: word!
     summary: Prepend content to the contents of the calling object.
-    name: start
-    fullName: start
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Start"'

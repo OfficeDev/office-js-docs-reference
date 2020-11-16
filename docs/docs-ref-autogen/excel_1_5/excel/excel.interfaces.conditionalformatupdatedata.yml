@@ -1,12 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ConditionalFormatUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ConditionalFormat object, for use in `conditionalFormat.set({ ... })`<!--
-      -->.
-    name: Excel.Interfaces.ConditionalFormatUpdateData
-    fullName: Excel.Interfaces.ConditionalFormatUpdateData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalFormatUpdateData
+uid: 'excel!Excel.Interfaces.ConditionalFormatUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.ConditionalFormatUpdateData
+summary: >-
+  An interface for updating data on the ConditionalFormat object, for use in
+  `conditionalFormat.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

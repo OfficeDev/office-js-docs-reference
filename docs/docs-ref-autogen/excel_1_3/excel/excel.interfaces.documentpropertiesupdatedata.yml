@@ -1,12 +1,12 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
-    summary: >-
-      An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!--
-      -->.
-    name: Excel.Interfaces.DocumentPropertiesUpdateData
-    fullName: Excel.Interfaces.DocumentPropertiesUpdateData
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
+### YamlMime:TSType
+name: Excel.Interfaces.DocumentPropertiesUpdateData
+uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+package: excel!
+fullName: Excel.Interfaces.DocumentPropertiesUpdateData
+summary: >-
+  An interface for updating data on the DocumentProperties object, for use in
+  `documentProperties.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

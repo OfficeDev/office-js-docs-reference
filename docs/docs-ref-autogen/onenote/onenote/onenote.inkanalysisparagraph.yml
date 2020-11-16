@@ -1,142 +1,155 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.InkAnalysisParagraph:class'
-    summary: |-
-      Represents ink analysis data for an identified paragraph formed by ink strokes.
+### YamlMime:TSType
+name: OneNote.InkAnalysisParagraph
+uid: 'onenote!OneNote.InkAnalysisParagraph:class'
+package: onenote!
+fullName: OneNote.InkAnalysisParagraph
+summary: >-
+  Represents ink analysis data for an identified paragraph formed by ink
+  strokes.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.InkAnalysisParagraph
-    fullName: OneNote.InkAnalysisParagraph
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'onenote!OneNote.InkAnalysisParagraph#context:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.InkAnalysisParagraph#context:member'
-      - 'onenote!OneNote.InkAnalysisParagraph#id:member'
-      - 'onenote!OneNote.InkAnalysisParagraph#inkAnalysis:member'
-      - 'onenote!OneNote.InkAnalysisParagraph#lines:member'
-      - 'onenote!OneNote.InkAnalysisParagraph#load:member(1)'
-      - 'onenote!OneNote.InkAnalysisParagraph#load:member(2)'
-      - 'onenote!OneNote.InkAnalysisParagraph#load:member(3)'
-      - 'onenote!OneNote.InkAnalysisParagraph#set:member(1)'
-      - 'onenote!OneNote.InkAnalysisParagraph#set:member(2)'
-      - 'onenote!OneNote.InkAnalysisParagraph#toJSON:member(1)'
-      - 'onenote!OneNote.InkAnalysisParagraph#track:member(1)'
-      - 'onenote!OneNote.InkAnalysisParagraph#untrack:member(1)'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'onenote!OneNote.RequestContext:class'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#id:member'
-    summary: |-
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
+  - name: id
+    uid: 'onenote!OneNote.InkAnalysisParagraph#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the InkAnalysisParagraph object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly id: string;'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#inkAnalysis:member'
-    summary: |-
+        type: string
+  - name: inkAnalysis
+    uid: 'onenote!OneNote.InkAnalysisParagraph#inkAnalysis:member'
+    package: onenote!
+    fullName: inkAnalysis
+    summary: >-
       Reference to the parent InkAnalysisPage. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: inkAnalysis
-    fullName: inkAnalysis
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly inkAnalysis: OneNote.InkAnalysis;'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysis:class'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#lines:member'
-    summary: |-
+        type: '<xref uid="onenote!OneNote.InkAnalysis:class" />'
+  - name: lines
+    uid: 'onenote!OneNote.InkAnalysisParagraph#lines:member'
+    package: onenote!
+    fullName: lines
+    summary: >-
       Gets the ink analysis lines in this ink analysis paragraph. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: lines
-    fullName: lines
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly lines: OneNote.InkAnalysisLineCollection;'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisLineCollection:class'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#load:member(1)'
+        type: '<xref uid="onenote!OneNote.InkAnalysisLineCollection:class" />'
+methods:
+  - name: load(option)
+    uid: 'onenote!OneNote.InkAnalysisParagraph#load:member(1)'
+    package: onenote!
+    fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call "context.sync()" before reading the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.InkAnalysisParagraph` - Where option is a comma-delimited string or an
-      array of strings that specify the properties to load.
+      `load(option?: string | string[]): OneNote.InkAnalysisParagraph` - Where
+      option is a comma-delimited string or an array of strings that specify the
+      properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }):
+      OneNote.InkAnalysisParagraph` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a
+      comma-delimited string that specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraph` -
-      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip specifies the number of items that are
-      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
-      the specified number of items.
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+      `load(option?: { select?: string; expand?: string; top?: number; skip?:
+      number }): OneNote.InkAnalysisParagraph` - Only available on collection
+      types. It is similar to the preceding signature. Option.top specifies the
+      maximum number of collection items that can be included in the result.
+      Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will
+      start after skipping the specified number of items.
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions): OneNote.InkAnalysisParagraph;'
-      return:
-        type:
-          - 'onenote!OneNote.InkAnalysisParagraph:class'
-        description: ''
+      content: >-
+        load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions):
+        OneNote.InkAnalysisParagraph;
       parameters:
         - id: option
           description: ''
-          type:
-            - 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="onenote!OneNote.InkAnalysisParagraph:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'onenote!OneNote.InkAnalysisParagraph#load:member(2)'
+    package: onenote!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): OneNote.InkAnalysisParagraph;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisParagraph:class'
+        type: '<xref uid="onenote!OneNote.InkAnalysisParagraph:class" />'
         description: |-
 
 
@@ -172,150 +185,146 @@ items:
               }
           }); 
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'onenote!OneNote.InkAnalysisParagraph#load:member(3)'
+    package: onenote!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph;'
-      return:
-        type:
-          - 'onenote!OneNote.InkAnalysisParagraph:class'
-        description: ''
+      content: >-
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
+        OneNote.InkAnalysisParagraph;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - '{ select?: string; expand?: string; }'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#set:member(1)'
+            Where propertyNamesAndPaths.select is a comma-delimited string that
+            specifies the properties to load, and propertyNamesAndPaths.expand
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '{ select?: string; expand?: string; }'
+      return:
+        type: '<xref uid="onenote!OneNote.InkAnalysisParagraph:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'onenote!OneNote.InkAnalysisParagraph#set:member(1)'
+    package: onenote!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: OneNote.InkAnalysisParagraph): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'onenote!OneNote.InkAnalysisParagraph#set:member(2)'
+    package: onenote!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: OneNote.InkAnalysisParagraph): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'onenote!OneNote.InkAnalysisParagraph:class'
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original OneNote.InkAnalysisParagraph object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
-    name: toJSON()
+          type: '<xref uid="onenote!OneNote.InkAnalysisParagraph:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'onenote!OneNote.InkAnalysisParagraph#toJSON:member(1)'
+    package: onenote!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      OneNote.InkAnalysisParagraph object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `OneNote.Interfaces.InkAnalysisParagraphData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisParagraphData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface" />
         description: ''
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
-    name: track()
+  - name: track()
+    uid: 'onenote!OneNote.InkAnalysisParagraph#track:member(1)'
+    package: onenote!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      context.trackedObjects.add(thisObject). If you are using this object
+      across ".sync" calls and outside the sequential execution of a ".run"
+      batch, and get an "InvalidObjectPath" error when setting a property or
+      invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): OneNote.InkAnalysisParagraph;'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisParagraph:class'
+        type: '<xref uid="onenote!OneNote.InkAnalysisParagraph:class" />'
         description: ''
-  - uid: 'onenote!OneNote.InkAnalysisParagraph#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'onenote!OneNote.InkAnalysisParagraph#untrack:member(1)'
+    package: onenote!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects
+      slows down the host application, so please remember to free any objects
+      you add, once you're done using them. You will need to call
+      "context.sync()" before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): OneNote.InkAnalysisParagraph;'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisParagraph:class'
+        type: '<xref uid="onenote!OneNote.InkAnalysisParagraph:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'onenote!OneNote.RequestContext:class'
-    name: RequestContext
-  - uid: 'onenote!OneNote.InkAnalysis:class'
-    name: OneNote.InkAnalysis
-  - uid: 'onenote!OneNote.InkAnalysisLineCollection:class'
-    name: OneNote.InkAnalysisLineCollection
-  - uid: 'onenote!OneNote.InkAnalysisParagraph:class'
-    name: OneNote.InkAnalysisParagraph
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
-    name: Interfaces.InkAnalysisParagraphUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
-    name: OneNote.Interfaces.InkAnalysisParagraphData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
