@@ -203,6 +203,12 @@ fields:
     summary: >-
       WorksheetFormatChanged represents the type of event registered on
       worksheet, and occurs when there is a format changed.
+  - name: worksheetFormulaChanged
+    uid: 'excel!Excel.EventType.worksheetFormulaChanged:member'
+    package: excel!
+    summary: >-
+      WorksheetFormulaChanged represents the type of event registered on
+      worksheet, and occurs when formula is changed.
   - name: worksheetRowHiddenChanged
     uid: 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
     package: excel!

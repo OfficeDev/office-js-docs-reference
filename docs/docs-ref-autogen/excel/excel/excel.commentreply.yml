@@ -220,6 +220,30 @@ properties:
       return:
         type: string
 methods:
+  - name: assignTask(email)
+    uid: 'excel!Excel.CommentReply#assignTask:member(1)'
+    package: excel!
+    fullName: assignTask(email)
+    summary: >-
+      Assigns the task attached to the comment to the given user as the sole
+      assignee. If there is no task, one will be created.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'assignTask(email: string): Excel.Task;'
+      parameters:
+        - id: email
+          description: The email address of the user to assign the task.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Task:class" />'
+        description: ''
   - name: delete()
     uid: 'excel!Excel.CommentReply#delete:member(1)'
     package: excel!
@@ -295,6 +319,46 @@ methods:
       content: 'getParentComment(): Excel.Comment;'
       return:
         type: '<xref uid="excel!Excel.Comment:class" />'
+        description: ''
+  - name: getTask()
+    uid: 'excel!Excel.CommentReply#getTask:member(1)'
+    package: excel!
+    fullName: getTask()
+    summary: >-
+      Gets the task associated with this comment. If there is no task for the
+      comment thread, an ItemNotFound exception is thrown.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getTask(): Excel.Task;'
+      return:
+        type: '<xref uid="excel!Excel.Task:class" />'
+        description: ''
+  - name: getTaskOrNullObject()
+    uid: 'excel!Excel.CommentReply#getTaskOrNullObject:member(1)'
+    package: excel!
+    fullName: getTaskOrNullObject()
+    summary: >-
+      Gets the task associated with this comment. If there is no task for the
+      comment thread, a null object is returned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getTaskOrNullObject(): Excel.Task;'
+      return:
+        type: '<xref uid="excel!Excel.Task:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.CommentReply#load:member(1)'

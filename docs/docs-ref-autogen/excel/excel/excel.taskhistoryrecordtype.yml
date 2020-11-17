@@ -1,0 +1,67 @@
+### YamlMime:TSEnum
+name: Excel.TaskHistoryRecordType
+uid: 'excel!Excel.TaskHistoryRecordType:enum'
+package: excel!
+fullName: Excel.TaskHistoryRecordType
+summary: >-
+  Represents the type of change recorded in the task history record.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: assign
+    uid: 'excel!Excel.TaskHistoryRecordType.assign:member'
+    package: excel!
+    summary: Represents a user being assigned to a task.
+  - name: create
+    uid: 'excel!Excel.TaskHistoryRecordType.create:member'
+    package: excel!
+    summary: Represents the creation of a new task.
+  - name: delete
+    uid: 'excel!Excel.TaskHistoryRecordType.delete:member'
+    package: excel!
+    summary: Represents the deletion of a task history record.
+  - name: priority
+    uid: 'excel!Excel.TaskHistoryRecordType.priority:member'
+    package: excel!
+    summary: Represents an update to a task's priority.
+  - name: progress
+    uid: 'excel!Excel.TaskHistoryRecordType.progress:member'
+    package: excel!
+    summary: Represents an update to a task's progress.
+  - name: schedule
+    uid: 'excel!Excel.TaskHistoryRecordType.schedule:member'
+    package: excel!
+    summary: Represents an update to a task's start date or due date.
+  - name: setTitle
+    uid: 'excel!Excel.TaskHistoryRecordType.setTitle:member'
+    package: excel!
+    summary: Represents a change in the title of a task.
+  - name: unassign
+    uid: 'excel!Excel.TaskHistoryRecordType.unassign:member'
+    package: excel!
+    summary: Represents a user being unassigned from a task.
+  - name: unassignAll
+    uid: 'excel!Excel.TaskHistoryRecordType.unassignAll:member'
+    package: excel!
+    summary: Represents all users being unassigned from a task.
+  - name: undelete
+    uid: 'excel!Excel.TaskHistoryRecordType.undelete:member'
+    package: excel!
+    summary: Represents the restoration of a history record after being deleted.
+  - name: undo
+    uid: 'excel!Excel.TaskHistoryRecordType.undo:member'
+    package: excel!
+    summary: Represents a previous task action being undone.
+  - name: unknown
+    uid: 'excel!Excel.TaskHistoryRecordType.unknown:member'
+    package: excel!
+    summary: >-
+      Represents unknown history type. This value will be returned when the
+      version of Excel running doesn't understand the type of the history record
+      that is in the loaded file.

@@ -1,0 +1,183 @@
+### YamlMime:TSType
+name: Excel.Interfaces.TaskCollectionLoadOptions
+uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.TaskCollectionLoadOptions
+summary: >-
+  Represents a collection of tasks.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#$all:member'
+    package: excel!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: assignees
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#assignees:member'
+    package: excel!
+    fullName: assignees
+    summary: >-
+      For EACH ITEM in the collection: Gets the users to which the task is
+      assigned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'assignees?: boolean;'
+      return:
+        type: boolean
+  - name: comment
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#comment:member'
+    package: excel!
+    fullName: comment
+    summary: >-
+      For EACH ITEM in the collection: Gets the comment associated with the
+      task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comment?: Excel.Interfaces.CommentLoadOptions;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.CommentLoadOptions:interface" />'
+  - name: dueDate
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#dueDate:member'
+    package: excel!
+    fullName: dueDate
+    summary: >-
+      For EACH ITEM in the collection: Gets the date and time the task is due.
+      All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dueDate?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
+      For EACH ITEM in the collection: Gets the id of the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: percentComplete
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#percentComplete:member'
+    package: excel!
+    fullName: percentComplete
+    summary: >-
+      For EACH ITEM in the collection: Gets the completion percentage of the
+      task. This is a value between 0 and 100, where 100 represents a completed
+      task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'percentComplete?: boolean;'
+      return:
+        type: boolean
+  - name: priority
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#priority:member'
+    package: excel!
+    fullName: priority
+    summary: >-
+      For EACH ITEM in the collection: Gets the priority of the task. This is a
+      value between 0 and 10, where 0 represents the highest priority.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'priority?: boolean;'
+      return:
+        type: boolean
+  - name: startDate
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#startDate:member'
+    package: excel!
+    fullName: startDate
+    summary: >-
+      For EACH ITEM in the collection: Gets the date and time the task should
+      start. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'startDate?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#title:member'
+    package: excel!
+    fullName: title
+    summary: >-
+      For EACH ITEM in the collection: Gets title of the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type: boolean

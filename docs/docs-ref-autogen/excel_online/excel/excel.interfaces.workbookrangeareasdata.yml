@@ -55,8 +55,7 @@ properties:
     package: excel!
     fullName: ranges
     summary: >-
-      Returns a collection of ranges that comprise this WorkbookRangeAreas
-      object.
+      Returns ranges that comprise this object in a RangeCollection object.
 
 
       \[ [API set: ExcelApi

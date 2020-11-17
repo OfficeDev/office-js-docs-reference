@@ -28,6 +28,10 @@ fields:
     uid: 'excel!Excel.ErrorCodes.generalException:member'
     package: excel!
     summary: ''
+  - name: inactiveWorkbook
+    uid: 'excel!Excel.ErrorCodes.inactiveWorkbook:member'
+    package: excel!
+    summary: ''
   - name: insertDeleteConflict
     uid: 'excel!Excel.ErrorCodes.insertDeleteConflict:member'
     package: excel!

@@ -124,7 +124,7 @@ methods:
     package: excel!
     fullName: getRangeAreasBySheet(key)
     summary: >-
-      Returns the `RangeAreas` object based on worksheet id or name in the
+      Returns the `RangeAreas` object based on worksheet ID or name in the
       collection.
 
 
@@ -148,7 +148,7 @@ methods:
     package: excel!
     fullName: getRangeAreasOrNullObjectBySheet(key)
     summary: >-
-      Returns the `RangeAreas` object based on worksheet name or id in the
+      Returns the `RangeAreas` object based on worksheet name or ID in the
       collection. If the worksheet does not exist, will return a null object.
 
 
