@@ -16,6 +16,7 @@
     "@types/lodash": "4.14.64",
     "@types/node": "7.0.5",
     "del": "2.2.2",
+    "office2sdp": "^1.0.1",
     "tslint": "6.1.0",
     "ts-node": "2.1.0",
     "typescript": "2.3.2"
