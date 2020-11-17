@@ -1,62 +1,71 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeDeactivatedEventArgs:interface'
-    summary: |-
-      Provides information about the shape that raised the Deactivated event.
+### YamlMime:TSType
+name: Excel.ShapeDeactivatedEventArgs
+uid: 'excel!Excel.ShapeDeactivatedEventArgs:interface'
+package: excel!
+fullName: Excel.ShapeDeactivatedEventArgs
+summary: >-
+  Provides information about the shape that raised the Deactivated event.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeDeactivatedEventArgs
-    fullName: Excel.ShapeDeactivatedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: shapeId
+    uid: 'excel!Excel.ShapeDeactivatedEventArgs#shapeId:member'
     package: excel!
-    children:
-      - 'excel!Excel.ShapeDeactivatedEventArgs#shapeId:member'
-      - 'excel!Excel.ShapeDeactivatedEventArgs#type:member'
-      - 'excel!Excel.ShapeDeactivatedEventArgs#worksheetId:member'
-  - uid: 'excel!Excel.ShapeDeactivatedEventArgs#shapeId:member'
-    summary: |-
+    fullName: shapeId
+    summary: >-
       Gets the id of the shape deactivated shape.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: shapeId
-    fullName: shapeId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'shapeId: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.ShapeDeactivatedEventArgs#type:member'
-    summary: |-
+        type: string
+  - name: type
+    uid: 'excel!Excel.ShapeDeactivatedEventArgs#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: "ShapeDeactivated";'
       return:
-        type:
-          - '"ShapeDeactivated"'
-  - uid: 'excel!Excel.ShapeDeactivatedEventArgs#worksheetId:member'
-    summary: |-
+        type: '"ShapeDeactivated"'
+  - name: worksheetId
+    uid: 'excel!Excel.ShapeDeactivatedEventArgs#worksheetId:member'
+    package: excel!
+    fullName: worksheetId
+    summary: >-
       Gets the id of the worksheet in which the shape is deactivated.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheetId
-    fullName: worksheetId
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheetId: string;'
       return:
-        type:
-          - string
+        type: string

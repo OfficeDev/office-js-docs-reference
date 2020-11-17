@@ -1,110 +1,64 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeLineDashStyle:enum'
-    summary: |-
-      The dash style for a line.
+### YamlMime:TSEnum
+name: Excel.ShapeLineDashStyle
+uid: 'excel!Excel.ShapeLineDashStyle:enum'
+package: excel!
+fullName: Excel.ShapeLineDashStyle
+summary: >-
+  The dash style for a line.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeLineDashStyle
-    fullName: Excel.ShapeLineDashStyle
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dash
+    uid: 'excel!Excel.ShapeLineDashStyle.dash:member'
     package: excel!
-    children:
-      - 'excel!Excel.ShapeLineDashStyle.dash:member'
-      - 'excel!Excel.ShapeLineDashStyle.dashDot:member'
-      - 'excel!Excel.ShapeLineDashStyle.dashDotDot:member'
-      - 'excel!Excel.ShapeLineDashStyle.longDash:member'
-      - 'excel!Excel.ShapeLineDashStyle.longDashDot:member'
-      - 'excel!Excel.ShapeLineDashStyle.longDashDotDot:member'
-      - 'excel!Excel.ShapeLineDashStyle.roundDot:member'
-      - 'excel!Excel.ShapeLineDashStyle.solid:member'
-      - 'excel!Excel.ShapeLineDashStyle.squareDot:member'
-      - 'excel!Excel.ShapeLineDashStyle.systemDash:member'
-      - 'excel!Excel.ShapeLineDashStyle.systemDashDot:member'
-      - 'excel!Excel.ShapeLineDashStyle.systemDot:member'
-  - uid: 'excel!Excel.ShapeLineDashStyle.dash:member'
-    name: dash
-    fullName: dash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Dash"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.dashDot:member'
-    name: dashDot
-    fullName: dashDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashDot"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.dashDotDot:member'
-    name: dashDotDot
-    fullName: dashDotDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DashDotDot"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.longDash:member'
-    name: longDash
-    fullName: longDash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LongDash"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.longDashDot:member'
-    name: longDashDot
-    fullName: longDashDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LongDashDot"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.longDashDotDot:member'
-    name: longDashDotDot
-    fullName: longDashDotDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LongDashDotDot"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.roundDot:member'
-    name: roundDot
-    fullName: roundDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RoundDot"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.solid:member'
-    name: solid
-    fullName: solid
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Solid"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.squareDot:member'
-    name: squareDot
-    fullName: squareDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SquareDot"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.systemDash:member'
-    name: systemDash
-    fullName: systemDash
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SystemDash"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.systemDashDot:member'
-    name: systemDashDot
-    fullName: systemDashDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SystemDashDot"'
-  - uid: 'excel!Excel.ShapeLineDashStyle.systemDot:member'
-    name: systemDot
-    fullName: systemDot
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SystemDot"'
+    summary: ''
+  - name: dashDot
+    uid: 'excel!Excel.ShapeLineDashStyle.dashDot:member'
+    package: excel!
+    summary: ''
+  - name: dashDotDot
+    uid: 'excel!Excel.ShapeLineDashStyle.dashDotDot:member'
+    package: excel!
+    summary: ''
+  - name: longDash
+    uid: 'excel!Excel.ShapeLineDashStyle.longDash:member'
+    package: excel!
+    summary: ''
+  - name: longDashDot
+    uid: 'excel!Excel.ShapeLineDashStyle.longDashDot:member'
+    package: excel!
+    summary: ''
+  - name: longDashDotDot
+    uid: 'excel!Excel.ShapeLineDashStyle.longDashDotDot:member'
+    package: excel!
+    summary: ''
+  - name: roundDot
+    uid: 'excel!Excel.ShapeLineDashStyle.roundDot:member'
+    package: excel!
+    summary: ''
+  - name: solid
+    uid: 'excel!Excel.ShapeLineDashStyle.solid:member'
+    package: excel!
+    summary: ''
+  - name: squareDot
+    uid: 'excel!Excel.ShapeLineDashStyle.squareDot:member'
+    package: excel!
+    summary: ''
+  - name: systemDash
+    uid: 'excel!Excel.ShapeLineDashStyle.systemDash:member'
+    package: excel!
+    summary: ''
+  - name: systemDashDot
+    uid: 'excel!Excel.ShapeLineDashStyle.systemDashDot:member'
+    package: excel!
+    summary: ''
+  - name: systemDot
+    uid: 'excel!Excel.ShapeLineDashStyle.systemDot:member'
+    package: excel!
+    summary: ''

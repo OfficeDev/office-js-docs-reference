@@ -1,62 +1,62 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FourRedToBlackSet:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.FourRedToBlackSet
-    fullName: Excel.FourRedToBlackSet
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.FourRedToBlackSet
+uid: 'excel!Excel.FourRedToBlackSet:interface'
+package: excel!
+fullName: Excel.FourRedToBlackSet
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blackCircle
+    uid: 'excel!Excel.FourRedToBlackSet#blackCircle:member'
     package: excel!
-    children:
-      - 'excel!Excel.FourRedToBlackSet#blackCircle:member'
-      - 'excel!Excel.FourRedToBlackSet#grayCircle:member'
-      - 'excel!Excel.FourRedToBlackSet#pinkCircle:member'
-      - 'excel!Excel.FourRedToBlackSet#redCircle:member'
-  - uid: 'excel!Excel.FourRedToBlackSet#blackCircle:member'
-    name: blackCircle
     fullName: blackCircle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'blackCircle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FourRedToBlackSet#grayCircle:member'
-    name: grayCircle
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: grayCircle
+    uid: 'excel!Excel.FourRedToBlackSet#grayCircle:member'
+    package: excel!
     fullName: grayCircle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'grayCircle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FourRedToBlackSet#pinkCircle:member'
-    name: pinkCircle
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: pinkCircle
+    uid: 'excel!Excel.FourRedToBlackSet#pinkCircle:member'
+    package: excel!
     fullName: pinkCircle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'pinkCircle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FourRedToBlackSet#redCircle:member'
-    name: redCircle
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: redCircle
+    uid: 'excel!Excel.FourRedToBlackSet#redCircle:member'
+    package: excel!
     fullName: redCircle
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'redCircle: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-references:
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
+        type: '<xref uid="excel!Excel.Icon:interface" />'

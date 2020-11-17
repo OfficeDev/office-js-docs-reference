@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
-    summary: An interface describing the data returned by calling `inlinePictureCollection.toJSON()`<!-- -->.
-    name: Word.Interfaces.InlinePictureCollectionData
-    fullName: Word.Interfaces.InlinePictureCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.InlinePictureCollectionData
+uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.InlinePictureCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `inlinePictureCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.InlinePictureCollectionData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.InlinePictureCollectionData#items:member'
-  - uid: 'word!Word.Interfaces.InlinePictureCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.InlinePictureData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.InlinePictureCollectionData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.InlinePictureCollectionData#items~0:complex'
-    name: 'Word.Interfaces.InlinePictureData[]'
-    fullName: 'Word.Interfaces.InlinePictureData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-        name: Word.Interfaces.InlinePictureData
-        fullName: Word.Interfaces.InlinePictureData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'

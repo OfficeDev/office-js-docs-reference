@@ -1,50 +1,52 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions:interface'
-    summary: |-
-      Contains the collection of the document's [Word.Section](xref:word!Word.Section:class) objects.
+### YamlMime:TSType
+name: Word.Interfaces.SectionCollectionLoadOptions
+uid: 'word!Word.Interfaces.SectionCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.SectionCollectionLoadOptions
+summary: >-
+  Contains the collection of the document's
+  [Word.Section](xref:word!Word.Section:class) objects.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.SectionCollectionLoadOptions
-    fullName: Word.Interfaces.SectionCollectionLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: WordApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.SectionCollectionLoadOptions#$all:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.SectionCollectionLoadOptions#$all:member'
-      - 'word!Word.Interfaces.SectionCollectionLoadOptions#body:member'
-  - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions#body:member'
-    summary: >-
-      For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and
-      other section metadata.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: body
+        type: boolean
+  - name: body
+    uid: 'word!Word.Interfaces.SectionCollectionLoadOptions#body:member'
+    package: word!
     fullName: body
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      For EACH ITEM in the collection: Gets the body object of the section. This
+      does not include the header/footer and other section metadata.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type:
-          - 'word!Word.Interfaces.BodyLoadOptions:interface'
-references:
-  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'

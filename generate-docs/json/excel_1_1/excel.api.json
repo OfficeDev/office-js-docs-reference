@@ -14883,6 +14883,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.inactiveWorkbook:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "inactiveWorkbook = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"InactiveWorkbook\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "inactiveWorkbook",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.insertDeleteConflict:member",
                   "docComment": "",
                   "excerptTokens": [
@@ -28283,7 +28304,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeData#formulas:member",
-                      "docComment": "/**\n * Represents the formula in A1-style notation.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28308,7 +28329,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeData#formulasLocal:member",
-                      "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29917,7 +29938,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions#formulas:member",
-                      "docComment": "/**\n * Represents the formula in A1-style notation.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29942,7 +29963,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member",
-                      "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30185,7 +30206,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeUpdateData#formulas:member",
-                      "docComment": "/**\n * Represents the formula in A1-style notation.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30210,7 +30231,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member",
-                      "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German. If a cell has no formula, its value is returned instead.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",

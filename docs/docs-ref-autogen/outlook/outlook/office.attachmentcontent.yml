@@ -1,41 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.AttachmentContent:interface'
-    summary: |-
-      Represents the content of an attachment on a message or appointment item.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+### YamlMime:TSType
+name: Office.AttachmentContent
+uid: 'outlook!Office.AttachmentContent:interface'
+package: outlook!
+fullName: Office.AttachmentContent
+summary: >-
+  Represents the content of an attachment on a message or appointment item.
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.AttachmentContent
-    fullName: Office.AttachmentContent
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: Mailbox
+  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: 'outlook!Office.AttachmentContent#content:member'
     package: outlook!
-    children:
-      - 'outlook!Office.AttachmentContent#content:member'
-      - 'outlook!Office.AttachmentContent#format:member'
-  - uid: 'outlook!Office.AttachmentContent#content:member'
-    summary: The content of an attachment as a string.
-    name: content
     fullName: content
-    langs:
-      - typeScript
-    type: property
+    summary: The content of an attachment as a string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'content: string;'
       return:
-        type:
-          - string
-  - uid: 'outlook!Office.AttachmentContent#format:member'
+        type: string
+  - name: format
+    uid: 'outlook!Office.AttachmentContent#format:member'
+    package: outlook!
+    fullName: format
     summary: >-
       The string format to use for an attachment's content.
 
@@ -43,27 +46,30 @@ items:
       For file attachments, the formatting is a base64-encoded string.
 
 
-      For item attachments that represent messages and were attached by drag-and-drop or "Attach Item", the formatting
-      is a string representing an .eml formatted file. **Important**: If a message item was attached by drag-and-drop in
-      Outlook on the web, then `getAttachmentContentAsync` throws an error.
+      For item attachments that represent messages and were attached by
+      drag-and-drop or "Attach Item", the formatting is a string representing an
+      .eml formatted file. **Important**: If a message item was attached by
+      drag-and-drop in Outlook on the web, then `getAttachmentContentAsync`
+      throws an error.
 
 
-      For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item", the
-      formatting is a string representing an .icalendar file. **Important**: If a calendar item was attached by
-      drag-and-drop in Outlook on the web, then `getAttachmentContentAsync` throws an error.
+      For item attachments that represent calendar items and were attached by
+      drag-and-drop or "Attach Item", the formatting is a string representing an
+      .icalendar file. **Important**: If a calendar item was attached by
+      drag-and-drop in Outlook on the web, then `getAttachmentContentAsync`
+      throws an error.
 
 
       For cloud attachments, the formatting is a URL string.
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format: MailboxEnums.AttachmentContentFormat | string;'
       return:
-        type:
-          - 'outlook!Office.AttachmentContent#format~0:complex'
+        type: >-
+          <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum"
+          /> | string
         description: |-
 
 
@@ -102,13 +108,3 @@ items:
               }
           }
           ```
-references:
-  - uid: 'outlook!Office.AttachmentContent#format~0:complex'
-    name: MailboxEnums.AttachmentContentFormat | string
-    fullName: Office.MailboxEnums.AttachmentContentFormat | string
-    spec.typeScript:
-      - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
-        name: MailboxEnums.AttachmentContentFormat
-        fullName: Office.MailboxEnums.AttachmentContentFormat
-      - name: ' | string'
-        fullName: ' | string'

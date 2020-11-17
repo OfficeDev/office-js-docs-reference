@@ -1,312 +1,319 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.HeaderFooterGroup:class'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.HeaderFooterGroup
-    fullName: Excel.HeaderFooterGroup
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+### YamlMime:TSType
+name: Excel.HeaderFooterGroup
+uid: 'excel!Excel.HeaderFooterGroup:class'
+package: excel!
+fullName: Excel.HeaderFooterGroup
+summary: >-
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.HeaderFooterGroup#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.HeaderFooterGroup#context:member'
-      - 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
-      - 'excel!Excel.HeaderFooterGroup#evenPages:member'
-      - 'excel!Excel.HeaderFooterGroup#firstPage:member'
-      - 'excel!Excel.HeaderFooterGroup#load:member(1)'
-      - 'excel!Excel.HeaderFooterGroup#load:member(2)'
-      - 'excel!Excel.HeaderFooterGroup#load:member(3)'
-      - 'excel!Excel.HeaderFooterGroup#oddPages:member'
-      - 'excel!Excel.HeaderFooterGroup#set:member(1)'
-      - 'excel!Excel.HeaderFooterGroup#set:member(2)'
-      - 'excel!Excel.HeaderFooterGroup#state:member'
-      - 'excel!Excel.HeaderFooterGroup#toJSON:member(1)'
-      - 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
-      - 'excel!Excel.HeaderFooterGroup#useSheetScale:member'
-  - uid: 'excel!Excel.HeaderFooterGroup#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
-    summary: |-
-      The general header/footer, used for all pages unless even/odd or first page is specified.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: defaultForAllPages
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: defaultForAllPages
+    uid: 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
+    package: excel!
     fullName: defaultForAllPages
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The general header/footer, used for all pages unless even/odd or first
+      page is specified.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly defaultForAllPages: Excel.HeaderFooter;'
       return:
-        type:
-          - 'excel!Excel.HeaderFooter:class'
-  - uid: 'excel!Excel.HeaderFooterGroup#evenPages:member'
-    summary: |-
-      The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: evenPages
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
+  - name: evenPages
+    uid: 'excel!Excel.HeaderFooterGroup#evenPages:member'
+    package: excel!
     fullName: evenPages
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The header/footer to use for even pages, odd header/footer needs to be
+      specified for odd pages.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly evenPages: Excel.HeaderFooter;'
       return:
-        type:
-          - 'excel!Excel.HeaderFooter:class'
-  - uid: 'excel!Excel.HeaderFooterGroup#firstPage:member'
-    summary: |-
-      The first page header/footer, for all other pages general or even/odd is used.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: firstPage
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
+  - name: firstPage
+    uid: 'excel!Excel.HeaderFooterGroup#firstPage:member'
+    package: excel!
     fullName: firstPage
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The first page header/footer, for all other pages general or even/odd is
+      used.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly firstPage: Excel.HeaderFooter;'
       return:
-        type:
-          - 'excel!Excel.HeaderFooter:class'
-  - uid: 'excel!Excel.HeaderFooterGroup#load:member(1)'
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
+  - name: oddPages
+    uid: 'excel!Excel.HeaderFooterGroup#oddPages:member'
+    package: excel!
+    fullName: oddPages
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      The header/footer to use for odd pages, even header/footer needs to be
+      specified for even pages.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.HeaderFooterGroupLoadOptions): Excel.HeaderFooterGroup;'
+      content: 'readonly oddPages: Excel.HeaderFooter;'
       return:
-        type:
-          - 'excel!Excel.HeaderFooterGroup:class'
-        description: ''
+        type: '<xref uid="excel!Excel.HeaderFooter:class" />'
+  - name: state
+    uid: 'excel!Excel.HeaderFooterGroup#state:member'
+    package: excel!
+    fullName: state
+    summary: >-
+      The state by which headers/footers are set. See Excel.HeaderFooterState
+      for details.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        state: Excel.HeaderFooterState | "Default" | "FirstAndDefault" |
+        "OddAndEven" | "FirstOddAndEven";
+      return:
+        type: >-
+          <xref uid="excel!Excel.HeaderFooterState:enum" /> | "Default" |
+          "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+  - name: useSheetMargins
+    uid: 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
+    package: excel!
+    fullName: useSheetMargins
+    summary: >-
+      Gets or sets a flag indicating if headers/footers are aligned with the
+      page margins set in the page layout options for the worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'useSheetMargins: boolean;'
+      return:
+        type: boolean
+  - name: useSheetScale
+    uid: 'excel!Excel.HeaderFooterGroup#useSheetScale:member'
+    package: excel!
+    fullName: useSheetScale
+    summary: >-
+      Gets or sets a flag indicating if headers/footers should be scaled by the
+      page percentage scale set in the page layout options for the worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'useSheetScale: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.HeaderFooterGroup#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.HeaderFooterGroupLoadOptions):
+        Excel.HeaderFooterGroup;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface'
-  - uid: 'excel!Excel.HeaderFooterGroup#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.HeaderFooterGroup#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.HeaderFooterGroup;'
-      return:
-        type:
-          - 'excel!Excel.HeaderFooterGroup:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.HeaderFooterGroup#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.HeaderFooterGroup#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.HeaderFooterGroup;
-      return:
-        type:
-          - 'excel!Excel.HeaderFooterGroup:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.HeaderFooterGroup#oddPages:member'
-    summary: |-
-      The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: oddPages
-    fullName: oddPages
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly oddPages: Excel.HeaderFooter;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - 'excel!Excel.HeaderFooter:class'
-  - uid: 'excel!Excel.HeaderFooterGroup#set:member(1)'
+        type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.HeaderFooterGroup#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.HeaderFooterGroup): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.HeaderFooterGroupUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.HeaderFooterGroupUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.HeaderFooterGroup#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.HeaderFooterGroup#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.HeaderFooterGroup): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.HeaderFooterGroup:class'
-  - uid: 'excel!Excel.HeaderFooterGroup#state:member'
-    summary: |-
-      The state by which headers/footers are set. See Excel.HeaderFooterState for details.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: state
-    fullName: state
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'state: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";'
+          type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
       return:
-        type:
-          - 'excel!Excel.HeaderFooterGroup#state~0:complex'
-  - uid: 'excel!Excel.HeaderFooterGroup#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.HeaderFooterGroup object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterGroupData`<!-- -->) that contains shallow copies
-      of any loaded child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.HeaderFooterGroup#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.HeaderFooterGroup
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.HeaderFooterGroupData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.HeaderFooterGroupData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterGroupData:interface" />'
         description: ''
-  - uid: 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
-    summary: >-
-      Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
-      for the worksheet.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: useSheetMargins
-    fullName: useSheetMargins
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'useSheetMargins: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.HeaderFooterGroup#useSheetScale:member'
-    summary: >-
-      Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
-      layout options for the worksheet.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: useSheetScale
-    fullName: useSheetScale
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'useSheetScale: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.HeaderFooter:class'
-    name: Excel.HeaderFooter
-  - uid: 'excel!Excel.HeaderFooterGroup:class'
-    name: Excel.HeaderFooterGroup
-  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface'
-    name: Excel.Interfaces.HeaderFooterGroupLoadOptions
-  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
-    name: Interfaces.HeaderFooterGroupUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.HeaderFooterGroup#state~0:complex'
-    name: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
-    fullName: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
-    spec.typeScript:
-      - uid: 'excel!Excel.HeaderFooterState:enum'
-        name: Excel.HeaderFooterState
-        fullName: Excel.HeaderFooterState
-      - name: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'
-        fullName: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'
-  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
-    name: Excel.Interfaces.HeaderFooterGroupData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

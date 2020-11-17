@@ -1,73 +1,75 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.Dialog:interface'
-    summary: >-
-      The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event
-      handlers and closing the dialog.
-    remarks: >-
-      **Requirement set**:
-      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
-    name: Office.Dialog
-    fullName: Office.Dialog
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.Dialog
+uid: 'office!Office.Dialog:interface'
+package: office!
+fullName: Office.Dialog
+summary: >-
+  The object that is returned when `UI.displayDialogAsync` is called. It exposes
+  methods for registering event handlers and closing the dialog.
+remarks: >-
+  **Requirement set**:
+  [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'addEventHandler(eventType, handler)'
+    uid: 'office!Office.Dialog#addEventHandler:member(1)'
     package: office!
-    children:
-      - 'office!Office.Dialog#addEventHandler:member(1)'
-      - 'office!Office.Dialog#close:member(1)'
-      - 'office!Office.Dialog#messageChild:member(1)'
-      - 'office!Office.Dialog#sendMessage:member(1)'
-  - uid: 'office!Office.Dialog#addEventHandler:member(1)'
-    summary: |-
+    fullName: 'addEventHandler(eventType, handler)'
+    summary: >-
       Registers an event handler. The two supported events are:
 
-      - DialogMessageReceived. Triggered when the dialog box sends a message to its parent.
 
-      - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
-    name: 'addEventHandler(eventType, handler)'
-    fullName: 'addEventHandler(eventType, handler)'
-    langs:
-      - typeScript
-    type: method
+      - DialogMessageReceived. Triggered when the dialog box sends a message to
+      its parent.
+
+
+      - DialogEventReceived. Triggered when the dialog box has been closed or
+      otherwise unloaded.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        addEventHandler(eventType: Office.EventType, handler: (args: {message: string | boolean} | {error: number}) =>
-        void): void;
-      return:
-        type:
-          - void
-        description: ''
+        addEventHandler(eventType: Office.EventType, handler: (args: {message:
+        string | boolean} | {error: number}) => void): void;
       parameters:
         - id: eventType
           description: Must be either DialogMessageReceived or DialogEventReceived.
-          type:
-            - 'office!Office.EventType:enum'
+          type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
-            A function which accepts either an object with a `message` property, if eventType is DialogMessageReceived,
-            or an object with an `error` property, if eventType is DialogEventReceived.
-          type:
-            - '(args: {message: string | boolean} | {error: number}) => void'
-  - uid: 'office!Office.Dialog#close:member(1)'
-    summary: Called from a parent page to close the corresponding dialog box.
-    name: close()
+            A function which accepts either an object with a `message` property,
+            if eventType is DialogMessageReceived, or an object with an `error`
+            property, if eventType is DialogEventReceived.
+          type: '(args: {message: string | boolean} | {error: number}) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: close()
+    uid: 'office!Office.Dialog#close:member(1)'
+    package: office!
     fullName: close()
-    langs:
-      - typeScript
-    type: method
+    summary: Called from a parent page to close the corresponding dialog box.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'close(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'office!Office.Dialog#messageChild:member(1)'
+  - name: messageChild(message)
+    uid: 'office!Office.Dialog#messageChild:member(1)'
+    package: office!
+    fullName: messageChild(message)
     summary: >-
-      Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened
-      from the page.
+      Delivers a message from the host page, such as a task pane or a UI-less
+      function file, to a dialog that was opened from the page.
     remarks: >-
-      **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
+      **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9),
+      PowerPoint, Word
 
 
       **Requirement sets**:
@@ -79,42 +81,34 @@ items:
 
       - [Mailbox
       1.9](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-    name: messageChild(message)
-    fullName: messageChild(message)
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'messageChild(message: string): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: message
           description: >-
-            Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string,
-            including JSON and XML, can be sent.
-          type:
-            - string
-  - uid: 'office!Office.Dialog#sendMessage:member(1)'
-    summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
-    name: sendMessage(name)
+            Accepts a message from the host page to deliver to the dialog.
+            Anything that can be serialized to a string, including JSON and XML,
+            can be sent.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: sendMessage(name)
+    uid: 'office!Office.Dialog#sendMessage:member(1)'
+    package: office!
     fullName: sendMessage(name)
-    langs:
-      - typeScript
-    type: method
+    summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sendMessage(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: name
           description: ''
-          type:
-            - string
-references:
-  - uid: 'office!Office.EventType:enum'
-    name: Office.EventType
+          type: string
+      return:
+        type: void
+        description: ''

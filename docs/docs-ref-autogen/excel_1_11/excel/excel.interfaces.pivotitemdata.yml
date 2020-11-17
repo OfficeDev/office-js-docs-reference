@@ -1,75 +1,86 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.PivotItemData:interface'
-    summary: An interface describing the data returned by calling `pivotItem.toJSON()`<!-- -->.
-    name: Excel.Interfaces.PivotItemData
-    fullName: Excel.Interfaces.PivotItemData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.PivotItemData
+uid: 'excel!Excel.Interfaces.PivotItemData:interface'
+package: excel!
+fullName: Excel.Interfaces.PivotItemData
+summary: >-
+  An interface describing the data returned by calling `pivotItem.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'excel!Excel.Interfaces.PivotItemData#id:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.PivotItemData#id:member'
-      - 'excel!Excel.Interfaces.PivotItemData#isExpanded:member'
-      - 'excel!Excel.Interfaces.PivotItemData#name:member'
-      - 'excel!Excel.Interfaces.PivotItemData#visible:member'
-  - uid: 'excel!Excel.Interfaces.PivotItemData#id:member'
-    summary: |-
+    fullName: id
+    summary: >-
       Id of the PivotItem.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.PivotItemData#isExpanded:member'
-    summary: |-
-      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isExpanded
+        type: string
+  - name: isExpanded
+    uid: 'excel!Excel.Interfaces.PivotItemData#isExpanded:member'
+    package: excel!
     fullName: isExpanded
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Determines whether the item is expanded to show child items or if it's
+      collapsed and child items are hidden.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'isExpanded?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.PivotItemData#name:member'
-    summary: |-
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.PivotItemData#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
       Name of the PivotItem.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.PivotItemData#visible:member'
-    summary: |-
+        type: string
+  - name: visible
+    uid: 'excel!Excel.Interfaces.PivotItemData#visible:member'
+    package: excel!
+    fullName: visible
+    summary: >-
       Specifies if the PivotItem is visible.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

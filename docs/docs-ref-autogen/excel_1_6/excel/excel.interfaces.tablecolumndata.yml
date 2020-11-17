@@ -1,98 +1,106 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TableColumnData:interface'
-    summary: An interface describing the data returned by calling `tableColumn.toJSON()`<!-- -->.
-    name: Excel.Interfaces.TableColumnData
-    fullName: Excel.Interfaces.TableColumnData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.TableColumnData
+uid: 'excel!Excel.Interfaces.TableColumnData:interface'
+package: excel!
+fullName: Excel.Interfaces.TableColumnData
+summary: >-
+  An interface describing the data returned by calling
+  `tableColumn.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: filter
+    uid: 'excel!Excel.Interfaces.TableColumnData#filter:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TableColumnData#filter:member'
-      - 'excel!Excel.Interfaces.TableColumnData#id:member'
-      - 'excel!Excel.Interfaces.TableColumnData#index:member'
-      - 'excel!Excel.Interfaces.TableColumnData#name:member'
-      - 'excel!Excel.Interfaces.TableColumnData#values:member'
-  - uid: 'excel!Excel.Interfaces.TableColumnData#filter:member'
-    summary: |-
+    fullName: filter
+    summary: >-
       Retrieve the filter applied to the column.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: filter
-    fullName: filter
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'filter?: Excel.Interfaces.FilterData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.FilterData:interface'
-  - uid: 'excel!Excel.Interfaces.TableColumnData#id:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.Interfaces.FilterData:interface" />'
+  - name: id
+    uid: 'excel!Excel.Interfaces.TableColumnData#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Returns a unique key that identifies the column within the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.TableColumnData#index:member'
-    summary: |-
-      Returns the index number of the column within the columns collection of the table. Zero-indexed.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: index
+        type: number
+  - name: index
+    uid: 'excel!Excel.Interfaces.TableColumnData#index:member'
+    package: excel!
     fullName: index
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the index number of the column within the columns collection of
+      the table. Zero-indexed.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'index?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.TableColumnData#name:member'
+        type: number
+  - name: name
+    uid: 'excel!Excel.Interfaces.TableColumnData#name:member'
+    package: excel!
+    fullName: name
     summary: >-
       Specifies the name of the table column.
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.TableColumnData#values:member'
-    summary: >-
-      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
+        type: string
+  - name: values
+    uid: 'excel!Excel.Interfaces.TableColumnData#values:member'
+    package: excel!
     fullName: values
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the raw values of the specified range. The data returned could
+      be of type string, number, or a boolean. Cells that contain an error will
+      return the error string.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'values?: any[][];'
       return:
-        type:
-          - 'any[][]'
-references:
-  - uid: 'excel!Excel.Interfaces.FilterData:interface'
-    name: Excel.Interfaces.FilterData
+        type: 'any[][]'

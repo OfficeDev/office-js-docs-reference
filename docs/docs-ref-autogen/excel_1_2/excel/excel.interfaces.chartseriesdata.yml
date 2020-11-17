@@ -1,71 +1,69 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
-    summary: An interface describing the data returned by calling `chartSeries.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartSeriesData
-    fullName: Excel.Interfaces.ChartSeriesData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartSeriesData
+uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartSeriesData
+summary: >-
+  An interface describing the data returned by calling
+  `chartSeries.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartSeriesData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartSeriesData#format:member'
-      - 'excel!Excel.Interfaces.ChartSeriesData#name:member'
-      - 'excel!Excel.Interfaces.ChartSeriesData#points:member'
-  - uid: 'excel!Excel.Interfaces.ChartSeriesData#format:member'
-    summary: |-
-      Represents the formatting of a chart series, which includes fill and line formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formatting of a chart series, which includes fill and line
+      formatting.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartSeriesData#name:member'
-    summary: |-
-      Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesFormatData:interface" />'
+  - name: name
+    uid: 'excel!Excel.Interfaces.ChartSeriesData#name:member'
+    package: excel!
     fullName: name
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the name of a series in a chart. The name's length should not be
+      greater than 255 characters.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.ChartSeriesData#points:member'
-    summary: |-
+        type: string
+  - name: points
+    uid: 'excel!Excel.Interfaces.ChartSeriesData#points:member'
+    package: excel!
+    fullName: points
+    summary: >-
       Returns a collection of all points in the series.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: points
-    fullName: points
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'points?: Excel.Interfaces.ChartPointData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
-    name: Excel.Interfaces.ChartSeriesFormatData
-  - uid: 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
-    name: 'Excel.Interfaces.ChartPointData[]'
-    fullName: 'Excel.Interfaces.ChartPointData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.ChartPointData:interface'
-        name: Excel.Interfaces.ChartPointData
-        fullName: Excel.Interfaces.ChartPointData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointData:interface" />[]'

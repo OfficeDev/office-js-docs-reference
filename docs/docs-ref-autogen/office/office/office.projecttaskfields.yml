@@ -1,2309 +1,1215 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.ProjectTaskFields:enum'
-    summary: >-
-      Specifies the task fields that are available as a parameter for the
-      [Document](xref:office!Office.Document:interface)<!-- -->.getTaskFieldAsync method.
-    remarks: >-
-      A ProjectTaskFields constant can be used as a parameter of the
-      [Document](xref:office!Office.Document:interface)<!-- -->.getTaskFieldAsync method.
+### YamlMime:TSEnum
+name: Office.ProjectTaskFields
+uid: 'office!Office.ProjectTaskFields:enum'
+package: office!
+fullName: Office.ProjectTaskFields
+summary: >-
+  Specifies the task fields that are available as a parameter for the
+  [Document](xref:office!Office.Document:interface)<!-- -->.getTaskFieldAsync
+  method.
+remarks: >-
+  A ProjectTaskFields constant can be used as a parameter of the
+  [Document](xref:office!Office.Document:interface)<!-- -->.getTaskFieldAsync
+  method.
 
 
-      For more information about working with fields in Project, see the [Available
-      fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
-      reference. In Project Help, search for Available fields.
-    name: Office.ProjectTaskFields
-    fullName: Office.ProjectTaskFields
-    langs:
-      - typeScript
-    type: enum
+  For more information about working with fields in Project, see the [Available
+  fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
+  reference. In Project Help, search for Available fields.
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Active
+    uid: 'office!Office.ProjectTaskFields.Active:member'
     package: office!
-    children:
-      - 'office!Office.ProjectTaskFields.Active:member'
-      - 'office!Office.ProjectTaskFields.ActualCost:member'
-      - 'office!Office.ProjectTaskFields.ActualDuration:member'
-      - 'office!Office.ProjectTaskFields.ActualFinish:member'
-      - 'office!Office.ProjectTaskFields.ActualOvertimeCost:member'
-      - 'office!Office.ProjectTaskFields.ActualOvertimeWork:member'
-      - 'office!Office.ProjectTaskFields.ActualStart:member'
-      - 'office!Office.ProjectTaskFields.ActualWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline10BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline10BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline10Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline10Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline10Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline10FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline10FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline10Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline10Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline1BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline1BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline1Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline1Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline1Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline1FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline1FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline1Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline1Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline2BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline2BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline2Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline2Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline2Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline2FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline2FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline2Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline2Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline3BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline3BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline3Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline3Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline3Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline3FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline3FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline3Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline3Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline4BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline4BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline4Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline4Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline4Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline4FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline4FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline4Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline4Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline5BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline5BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline5Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline5Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline5Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline5FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline5FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline5Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline5Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline6BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline6BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline6Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline6Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline6Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline6FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline6FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline6Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline6Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline7BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline7BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline7Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline7Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline7Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline7FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline7FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline7Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline7Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline8BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline8BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline8Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline8Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline8Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline8FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline8FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline8Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline8Work:member'
-      - 'office!Office.ProjectTaskFields.Baseline9BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline9BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.Baseline9Cost:member'
-      - 'office!Office.ProjectTaskFields.Baseline9Duration:member'
-      - 'office!Office.ProjectTaskFields.Baseline9Finish:member'
-      - 'office!Office.ProjectTaskFields.Baseline9FixedCost:member'
-      - 'office!Office.ProjectTaskFields.Baseline9FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Baseline9Start:member'
-      - 'office!Office.ProjectTaskFields.Baseline9Work:member'
-      - 'office!Office.ProjectTaskFields.BaselineBudgetCost:member'
-      - 'office!Office.ProjectTaskFields.BaselineBudgetWork:member'
-      - 'office!Office.ProjectTaskFields.BaselineCost:member'
-      - 'office!Office.ProjectTaskFields.BaselineDuration:member'
-      - 'office!Office.ProjectTaskFields.BaselineFinish:member'
-      - 'office!Office.ProjectTaskFields.BaselineFixedCost:member'
-      - 'office!Office.ProjectTaskFields.BaselineFixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.BaselineStart:member'
-      - 'office!Office.ProjectTaskFields.BaselineWork:member'
-      - 'office!Office.ProjectTaskFields.BudgetCost:member'
-      - 'office!Office.ProjectTaskFields.BudgetFixedCost:member'
-      - 'office!Office.ProjectTaskFields.BudgetFixedWork:member'
-      - 'office!Office.ProjectTaskFields.BudgetWork:member'
-      - 'office!Office.ProjectTaskFields.ConstraintDate:member'
-      - 'office!Office.ProjectTaskFields.ConstraintType:member'
-      - 'office!Office.ProjectTaskFields.Cost:member'
-      - 'office!Office.ProjectTaskFields.Cost1:member'
-      - 'office!Office.ProjectTaskFields.Cost10:member'
-      - 'office!Office.ProjectTaskFields.Cost2:member'
-      - 'office!Office.ProjectTaskFields.Cost3:member'
-      - 'office!Office.ProjectTaskFields.Cost4:member'
-      - 'office!Office.ProjectTaskFields.Cost5:member'
-      - 'office!Office.ProjectTaskFields.Cost6:member'
-      - 'office!Office.ProjectTaskFields.Cost7:member'
-      - 'office!Office.ProjectTaskFields.Cost8:member'
-      - 'office!Office.ProjectTaskFields.Cost9:member'
-      - 'office!Office.ProjectTaskFields.Critical:member'
-      - 'office!Office.ProjectTaskFields.Date1:member'
-      - 'office!Office.ProjectTaskFields.Date10:member'
-      - 'office!Office.ProjectTaskFields.Date2:member'
-      - 'office!Office.ProjectTaskFields.Date3:member'
-      - 'office!Office.ProjectTaskFields.Date4:member'
-      - 'office!Office.ProjectTaskFields.Date5:member'
-      - 'office!Office.ProjectTaskFields.Date6:member'
-      - 'office!Office.ProjectTaskFields.Date7:member'
-      - 'office!Office.ProjectTaskFields.Date8:member'
-      - 'office!Office.ProjectTaskFields.Date9:member'
-      - 'office!Office.ProjectTaskFields.Deadline:member'
-      - 'office!Office.ProjectTaskFields.Duration:member'
-      - 'office!Office.ProjectTaskFields.Duration1:member'
-      - 'office!Office.ProjectTaskFields.Duration10:member'
-      - 'office!Office.ProjectTaskFields.Duration2:member'
-      - 'office!Office.ProjectTaskFields.Duration3:member'
-      - 'office!Office.ProjectTaskFields.Duration4:member'
-      - 'office!Office.ProjectTaskFields.Duration5:member'
-      - 'office!Office.ProjectTaskFields.Duration6:member'
-      - 'office!Office.ProjectTaskFields.Duration7:member'
-      - 'office!Office.ProjectTaskFields.Duration8:member'
-      - 'office!Office.ProjectTaskFields.Duration9:member'
-      - 'office!Office.ProjectTaskFields.EarnedValueMethod:member'
-      - 'office!Office.ProjectTaskFields.Finish:member'
-      - 'office!Office.ProjectTaskFields.Finish1:member'
-      - 'office!Office.ProjectTaskFields.Finish10:member'
-      - 'office!Office.ProjectTaskFields.Finish2:member'
-      - 'office!Office.ProjectTaskFields.Finish3:member'
-      - 'office!Office.ProjectTaskFields.Finish4:member'
-      - 'office!Office.ProjectTaskFields.Finish5:member'
-      - 'office!Office.ProjectTaskFields.Finish6:member'
-      - 'office!Office.ProjectTaskFields.Finish7:member'
-      - 'office!Office.ProjectTaskFields.Finish8:member'
-      - 'office!Office.ProjectTaskFields.Finish9:member'
-      - 'office!Office.ProjectTaskFields.FinishSlack:member'
-      - 'office!Office.ProjectTaskFields.FixedCost:member'
-      - 'office!Office.ProjectTaskFields.FixedCostAccrual:member'
-      - 'office!Office.ProjectTaskFields.Flag1:member'
-      - 'office!Office.ProjectTaskFields.Flag10:member'
-      - 'office!Office.ProjectTaskFields.Flag11:member'
-      - 'office!Office.ProjectTaskFields.Flag12:member'
-      - 'office!Office.ProjectTaskFields.Flag13:member'
-      - 'office!Office.ProjectTaskFields.Flag14:member'
-      - 'office!Office.ProjectTaskFields.Flag15:member'
-      - 'office!Office.ProjectTaskFields.Flag16:member'
-      - 'office!Office.ProjectTaskFields.Flag17:member'
-      - 'office!Office.ProjectTaskFields.Flag18:member'
-      - 'office!Office.ProjectTaskFields.Flag19:member'
-      - 'office!Office.ProjectTaskFields.Flag2:member'
-      - 'office!Office.ProjectTaskFields.Flag20:member'
-      - 'office!Office.ProjectTaskFields.Flag3:member'
-      - 'office!Office.ProjectTaskFields.Flag4:member'
-      - 'office!Office.ProjectTaskFields.Flag5:member'
-      - 'office!Office.ProjectTaskFields.Flag6:member'
-      - 'office!Office.ProjectTaskFields.Flag7:member'
-      - 'office!Office.ProjectTaskFields.Flag8:member'
-      - 'office!Office.ProjectTaskFields.Flag9:member'
-      - 'office!Office.ProjectTaskFields.FreeSlack:member'
-      - 'office!Office.ProjectTaskFields.HasRollupSubTasks:member'
-      - 'office!Office.ProjectTaskFields.ID:member'
-      - 'office!Office.ProjectTaskFields.IsRollup:member'
-      - 'office!Office.ProjectTaskFields.Milestone:member'
-      - 'office!Office.ProjectTaskFields.Name:member'
-      - 'office!Office.ProjectTaskFields.Notes:member'
-      - 'office!Office.ProjectTaskFields.Number1:member'
-      - 'office!Office.ProjectTaskFields.Number10:member'
-      - 'office!Office.ProjectTaskFields.Number11:member'
-      - 'office!Office.ProjectTaskFields.Number12:member'
-      - 'office!Office.ProjectTaskFields.Number13:member'
-      - 'office!Office.ProjectTaskFields.Number14:member'
-      - 'office!Office.ProjectTaskFields.Number15:member'
-      - 'office!Office.ProjectTaskFields.Number16:member'
-      - 'office!Office.ProjectTaskFields.Number17:member'
-      - 'office!Office.ProjectTaskFields.Number18:member'
-      - 'office!Office.ProjectTaskFields.Number19:member'
-      - 'office!Office.ProjectTaskFields.Number2:member'
-      - 'office!Office.ProjectTaskFields.Number20:member'
-      - 'office!Office.ProjectTaskFields.Number3:member'
-      - 'office!Office.ProjectTaskFields.Number4:member'
-      - 'office!Office.ProjectTaskFields.Number5:member'
-      - 'office!Office.ProjectTaskFields.Number6:member'
-      - 'office!Office.ProjectTaskFields.Number7:member'
-      - 'office!Office.ProjectTaskFields.Number8:member'
-      - 'office!Office.ProjectTaskFields.Number9:member'
-      - 'office!Office.ProjectTaskFields.OutlineLevel:member'
-      - 'office!Office.ProjectTaskFields.Overallocated:member'
-      - 'office!Office.ProjectTaskFields.OvertimeCost:member'
-      - 'office!Office.ProjectTaskFields.OvertimeWork:member'
-      - 'office!Office.ProjectTaskFields.PercentComplete:member'
-      - 'office!Office.ProjectTaskFields.PercentWorkComplete:member'
-      - 'office!Office.ProjectTaskFields.Predecessors:member'
-      - 'office!Office.ProjectTaskFields.PreleveledFinish:member'
-      - 'office!Office.ProjectTaskFields.PreleveledStart:member'
-      - 'office!Office.ProjectTaskFields.Priority:member'
-      - 'office!Office.ProjectTaskFields.RegularWork:member'
-      - 'office!Office.ProjectTaskFields.RemainingCost:member'
-      - 'office!Office.ProjectTaskFields.RemainingDuration:member'
-      - 'office!Office.ProjectTaskFields.RemainingOvertimeCost:member'
-      - 'office!Office.ProjectTaskFields.RemainingWork:member'
-      - 'office!Office.ProjectTaskFields.ResourceNames:member'
-      - 'office!Office.ProjectTaskFields.ScheduledDuration:member'
-      - 'office!Office.ProjectTaskFields.ScheduledFinish:member'
-      - 'office!Office.ProjectTaskFields.ScheduledStart:member'
-      - 'office!Office.ProjectTaskFields.Start:member'
-      - 'office!Office.ProjectTaskFields.Start1:member'
-      - 'office!Office.ProjectTaskFields.Start10:member'
-      - 'office!Office.ProjectTaskFields.Start2:member'
-      - 'office!Office.ProjectTaskFields.Start3:member'
-      - 'office!Office.ProjectTaskFields.Start4:member'
-      - 'office!Office.ProjectTaskFields.Start5:member'
-      - 'office!Office.ProjectTaskFields.Start6:member'
-      - 'office!Office.ProjectTaskFields.Start7:member'
-      - 'office!Office.ProjectTaskFields.Start8:member'
-      - 'office!Office.ProjectTaskFields.Start9:member'
-      - 'office!Office.ProjectTaskFields.StartSlack:member'
-      - 'office!Office.ProjectTaskFields.Status:member'
-      - 'office!Office.ProjectTaskFields.StatusManager:member'
-      - 'office!Office.ProjectTaskFields.Successors:member'
-      - 'office!Office.ProjectTaskFields.Summary:member'
-      - 'office!Office.ProjectTaskFields.TaskCalendarGUID:member'
-      - 'office!Office.ProjectTaskFields.TaskGUID:member'
-      - 'office!Office.ProjectTaskFields.Text1:member'
-      - 'office!Office.ProjectTaskFields.Text10:member'
-      - 'office!Office.ProjectTaskFields.Text11:member'
-      - 'office!Office.ProjectTaskFields.Text12:member'
-      - 'office!Office.ProjectTaskFields.Text13:member'
-      - 'office!Office.ProjectTaskFields.Text14:member'
-      - 'office!Office.ProjectTaskFields.Text15:member'
-      - 'office!Office.ProjectTaskFields.Text16:member'
-      - 'office!Office.ProjectTaskFields.Text17:member'
-      - 'office!Office.ProjectTaskFields.Text18:member'
-      - 'office!Office.ProjectTaskFields.Text19:member'
-      - 'office!Office.ProjectTaskFields.Text2:member'
-      - 'office!Office.ProjectTaskFields.Text20:member'
-      - 'office!Office.ProjectTaskFields.Text21:member'
-      - 'office!Office.ProjectTaskFields.Text22:member'
-      - 'office!Office.ProjectTaskFields.Text23:member'
-      - 'office!Office.ProjectTaskFields.Text24:member'
-      - 'office!Office.ProjectTaskFields.Text25:member'
-      - 'office!Office.ProjectTaskFields.Text26:member'
-      - 'office!Office.ProjectTaskFields.Text27:member'
-      - 'office!Office.ProjectTaskFields.Text28:member'
-      - 'office!Office.ProjectTaskFields.Text29:member'
-      - 'office!Office.ProjectTaskFields.Text3:member'
-      - 'office!Office.ProjectTaskFields.Text30:member'
-      - 'office!Office.ProjectTaskFields.Text4:member'
-      - 'office!Office.ProjectTaskFields.Text5:member'
-      - 'office!Office.ProjectTaskFields.Text6:member'
-      - 'office!Office.ProjectTaskFields.Text7:member'
-      - 'office!Office.ProjectTaskFields.Text8:member'
-      - 'office!Office.ProjectTaskFields.Text9:member'
-      - 'office!Office.ProjectTaskFields.TotalSlack:member'
-      - 'office!Office.ProjectTaskFields.Type:member'
-      - 'office!Office.ProjectTaskFields.WBS:member'
-      - 'office!Office.ProjectTaskFields.WBSPREDECESSORS:member'
-      - 'office!Office.ProjectTaskFields.WBSSUCCESSORS:member'
-      - 'office!Office.ProjectTaskFields.Work:member'
-      - 'office!Office.ProjectTaskFields.WSSID:member'
-  - uid: 'office!Office.ProjectTaskFields.Active:member'
     summary: Indicates whether the task is active.
-    name: Active
-    fullName: Active
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ActualCost:member'
+  - name: ActualCost
+    uid: 'office!Office.ProjectTaskFields.ActualCost:member'
+    package: office!
     summary: The current actual cost for the task.
-    name: ActualCost
-    fullName: ActualCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ActualDuration:member'
+  - name: ActualDuration
+    uid: 'office!Office.ProjectTaskFields.ActualDuration:member'
+    package: office!
     summary: 'The actual duration of the task, in minutes.'
-    name: ActualDuration
-    fullName: ActualDuration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ActualFinish:member'
+  - name: ActualFinish
+    uid: 'office!Office.ProjectTaskFields.ActualFinish:member'
+    package: office!
     summary: The actual finish date of the task.
-    name: ActualFinish
-    fullName: ActualFinish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ActualOvertimeCost:member'
+  - name: ActualOvertimeCost
+    uid: 'office!Office.ProjectTaskFields.ActualOvertimeCost:member'
+    package: office!
     summary: The actual overtime cost for the task.
-    name: ActualOvertimeCost
-    fullName: ActualOvertimeCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ActualOvertimeWork:member'
+  - name: ActualOvertimeWork
+    uid: 'office!Office.ProjectTaskFields.ActualOvertimeWork:member'
+    package: office!
     summary: 'The actual overtime work for the task, in minutes.'
-    name: ActualOvertimeWork
-    fullName: ActualOvertimeWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ActualStart:member'
+  - name: ActualStart
+    uid: 'office!Office.ProjectTaskFields.ActualStart:member'
+    package: office!
     summary: The actual start date of the task.
-    name: ActualStart
-    fullName: ActualStart
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ActualWork:member'
+  - name: ActualWork
+    uid: 'office!Office.ProjectTaskFields.ActualWork:member'
+    package: office!
     summary: 'The actual work for the task, in minutes.'
-    name: ActualWork
-    fullName: ActualWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10BudgetCost:member'
+  - name: Baseline10BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline10BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline10BudgetCost
-    fullName: Baseline10BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10BudgetWork:member'
+  - name: Baseline10BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline10BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline10BudgetWork
-    fullName: Baseline10BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10Cost:member'
+  - name: Baseline10Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline10Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline10Cost
-    fullName: Baseline10Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10Duration:member'
+  - name: Baseline10Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline10Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline10Duration
-    fullName: Baseline10Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10Finish:member'
+  - name: Baseline10Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline10Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline10Finish
-    fullName: Baseline10Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10FixedCost:member'
+  - name: Baseline10FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline10FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline10FixedCost
-    fullName: Baseline10FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10FixedCostAccrual:member'
+  - name: Baseline10FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline10FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline10FixedCostAccrual
-    fullName: Baseline10FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline10Start
+    uid: 'office!Office.ProjectTaskFields.Baseline10Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline10Start
-    fullName: Baseline10Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline10Work:member'
+  - name: Baseline10Work
+    uid: 'office!Office.ProjectTaskFields.Baseline10Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline10Work
-    fullName: Baseline10Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1BudgetCost:member'
+  - name: Baseline1BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline1BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline1BudgetCost
-    fullName: Baseline1BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1BudgetWork:member'
+  - name: Baseline1BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline1BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline1BudgetWork
-    fullName: Baseline1BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1Cost:member'
+  - name: Baseline1Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline1Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline1Cost
-    fullName: Baseline1Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1Duration:member'
+  - name: Baseline1Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline1Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline1Duration
-    fullName: Baseline1Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1Finish:member'
+  - name: Baseline1Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline1Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline1Finish
-    fullName: Baseline1Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1FixedCost:member'
+  - name: Baseline1FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline1FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline1FixedCost
-    fullName: Baseline1FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1FixedCostAccrual:member'
+  - name: Baseline1FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline1FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline1FixedCostAccrual
-    fullName: Baseline1FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline1Start
+    uid: 'office!Office.ProjectTaskFields.Baseline1Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline1Start
-    fullName: Baseline1Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline1Work:member'
+  - name: Baseline1Work
+    uid: 'office!Office.ProjectTaskFields.Baseline1Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline1Work
-    fullName: Baseline1Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2BudgetCost:member'
+  - name: Baseline2BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline2BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline2BudgetCost
-    fullName: Baseline2BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2BudgetWork:member'
+  - name: Baseline2BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline2BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline2BudgetWork
-    fullName: Baseline2BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2Cost:member'
+  - name: Baseline2Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline2Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline2Cost
-    fullName: Baseline2Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2Duration:member'
+  - name: Baseline2Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline2Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline2Duration
-    fullName: Baseline2Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2Finish:member'
+  - name: Baseline2Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline2Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline2Finish
-    fullName: Baseline2Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2FixedCost:member'
+  - name: Baseline2FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline2FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline2FixedCost
-    fullName: Baseline2FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2FixedCostAccrual:member'
+  - name: Baseline2FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline2FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline2FixedCostAccrual
-    fullName: Baseline2FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline2Start
+    uid: 'office!Office.ProjectTaskFields.Baseline2Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline2Start
-    fullName: Baseline2Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline2Work:member'
+  - name: Baseline2Work
+    uid: 'office!Office.ProjectTaskFields.Baseline2Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline2Work
-    fullName: Baseline2Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3BudgetCost:member'
+  - name: Baseline3BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline3BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline3BudgetCost
-    fullName: Baseline3BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3BudgetWork:member'
+  - name: Baseline3BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline3BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline3BudgetWork
-    fullName: Baseline3BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3Cost:member'
+  - name: Baseline3Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline3Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline3Cost
-    fullName: Baseline3Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3Duration:member'
+  - name: Baseline3Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline3Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline3Duration
-    fullName: Baseline3Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3Finish:member'
+  - name: Baseline3Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline3Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline3Finish
-    fullName: Baseline3Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3FixedCost:member'
+  - name: Baseline3FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline3FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline3FixedCost
-    fullName: Baseline3FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3FixedCostAccrual:member'
+  - name: Baseline3FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline3FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline3FixedCostAccrual
-    fullName: Baseline3FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline3Start
+    uid: 'office!Office.ProjectTaskFields.Baseline3Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline3Start
-    fullName: Baseline3Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline3Work:member'
+  - name: Baseline3Work
+    uid: 'office!Office.ProjectTaskFields.Baseline3Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline3Work
-    fullName: Baseline3Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4BudgetCost:member'
+  - name: Baseline4BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline4BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline4BudgetCost
-    fullName: Baseline4BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4BudgetWork:member'
+  - name: Baseline4BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline4BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline4BudgetWork
-    fullName: Baseline4BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4Cost:member'
+  - name: Baseline4Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline4Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline4Cost
-    fullName: Baseline4Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4Duration:member'
+  - name: Baseline4Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline4Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline4Duration
-    fullName: Baseline4Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4Finish:member'
+  - name: Baseline4Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline4Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline4Finish
-    fullName: Baseline4Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4FixedCost:member'
+  - name: Baseline4FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline4FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline4FixedCost
-    fullName: Baseline4FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4FixedCostAccrual:member'
+  - name: Baseline4FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline4FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline4FixedCostAccrual
-    fullName: Baseline4FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline4Start
+    uid: 'office!Office.ProjectTaskFields.Baseline4Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline4Start
-    fullName: Baseline4Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline4Work:member'
+  - name: Baseline4Work
+    uid: 'office!Office.ProjectTaskFields.Baseline4Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline4Work
-    fullName: Baseline4Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5BudgetCost:member'
+  - name: Baseline5BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline5BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline5BudgetCost
-    fullName: Baseline5BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5BudgetWork:member'
+  - name: Baseline5BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline5BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline5BudgetWork
-    fullName: Baseline5BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5Cost:member'
+  - name: Baseline5Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline5Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline5Cost
-    fullName: Baseline5Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5Duration:member'
+  - name: Baseline5Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline5Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline5Duration
-    fullName: Baseline5Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5Finish:member'
+  - name: Baseline5Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline5Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline5Finish
-    fullName: Baseline5Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5FixedCost:member'
+  - name: Baseline5FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline5FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline5FixedCost
-    fullName: Baseline5FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5FixedCostAccrual:member'
+  - name: Baseline5FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline5FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline5FixedCostAccrual
-    fullName: Baseline5FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline5Start
+    uid: 'office!Office.ProjectTaskFields.Baseline5Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline5Start
-    fullName: Baseline5Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline5Work:member'
+  - name: Baseline5Work
+    uid: 'office!Office.ProjectTaskFields.Baseline5Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline5Work
-    fullName: Baseline5Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6BudgetCost:member'
+  - name: Baseline6BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline6BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline6BudgetCost
-    fullName: Baseline6BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6BudgetWork:member'
+  - name: Baseline6BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline6BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline6BudgetWork
-    fullName: Baseline6BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6Cost:member'
+  - name: Baseline6Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline6Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline6Cost
-    fullName: Baseline6Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6Duration:member'
+  - name: Baseline6Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline6Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline6Duration
-    fullName: Baseline6Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6Finish:member'
+  - name: Baseline6Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline6Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline6Finish
-    fullName: Baseline6Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6FixedCost:member'
+  - name: Baseline6FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline6FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline6FixedCost
-    fullName: Baseline6FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6FixedCostAccrual:member'
+  - name: Baseline6FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline6FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline6FixedCostAccrual
-    fullName: Baseline6FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline6Start
+    uid: 'office!Office.ProjectTaskFields.Baseline6Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline6Start
-    fullName: Baseline6Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline6Work:member'
+  - name: Baseline6Work
+    uid: 'office!Office.ProjectTaskFields.Baseline6Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline6Work
-    fullName: Baseline6Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7BudgetCost:member'
+  - name: Baseline7BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline7BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline7BudgetCost
-    fullName: Baseline7BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7BudgetWork:member'
+  - name: Baseline7BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline7BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline7BudgetWork
-    fullName: Baseline7BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7Cost:member'
+  - name: Baseline7Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline7Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline7Cost
-    fullName: Baseline7Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7Duration:member'
+  - name: Baseline7Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline7Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline7Duration
-    fullName: Baseline7Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7Finish:member'
+  - name: Baseline7Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline7Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline7Finish
-    fullName: Baseline7Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7FixedCost:member'
+  - name: Baseline7FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline7FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline7FixedCost
-    fullName: Baseline7FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7FixedCostAccrual:member'
+  - name: Baseline7FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline7FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline7FixedCostAccrual
-    fullName: Baseline7FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline7Start
+    uid: 'office!Office.ProjectTaskFields.Baseline7Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline7Start
-    fullName: Baseline7Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline7Work:member'
+  - name: Baseline7Work
+    uid: 'office!Office.ProjectTaskFields.Baseline7Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline7Work
-    fullName: Baseline7Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8BudgetCost:member'
+  - name: Baseline8BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline8BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline8BudgetCost
-    fullName: Baseline8BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8BudgetWork:member'
+  - name: Baseline8BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline8BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline8BudgetWork
-    fullName: Baseline8BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8Cost:member'
+  - name: Baseline8Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline8Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline8Cost
-    fullName: Baseline8Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8Duration:member'
+  - name: Baseline8Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline8Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline8Duration
-    fullName: Baseline8Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8Finish:member'
+  - name: Baseline8Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline8Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline8Finish
-    fullName: Baseline8Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8FixedCost:member'
+  - name: Baseline8FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline8FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline8FixedCost
-    fullName: Baseline8FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8FixedCostAccrual:member'
+  - name: Baseline8FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline8FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline8FixedCostAccrual
-    fullName: Baseline8FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline8Start
+    uid: 'office!Office.ProjectTaskFields.Baseline8Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline8Start
-    fullName: Baseline8Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline8Work:member'
+  - name: Baseline8Work
+    uid: 'office!Office.ProjectTaskFields.Baseline8Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline8Work
-    fullName: Baseline8Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9BudgetCost:member'
+  - name: Baseline9BudgetCost
+    uid: 'office!Office.ProjectTaskFields.Baseline9BudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: Baseline9BudgetCost
-    fullName: Baseline9BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9BudgetWork:member'
+  - name: Baseline9BudgetWork
+    uid: 'office!Office.ProjectTaskFields.Baseline9BudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: Baseline9BudgetWork
-    fullName: Baseline9BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9Cost:member'
+  - name: Baseline9Cost
+    uid: 'office!Office.ProjectTaskFields.Baseline9Cost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: Baseline9Cost
-    fullName: Baseline9Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9Duration:member'
+  - name: Baseline9Duration
+    uid: 'office!Office.ProjectTaskFields.Baseline9Duration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: Baseline9Duration
-    fullName: Baseline9Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9Finish:member'
+  - name: Baseline9Finish
+    uid: 'office!Office.ProjectTaskFields.Baseline9Finish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: Baseline9Finish
-    fullName: Baseline9Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9FixedCost:member'
+  - name: Baseline9FixedCost
+    uid: 'office!Office.ProjectTaskFields.Baseline9FixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: Baseline9FixedCost
-    fullName: Baseline9FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9FixedCostAccrual:member'
+  - name: Baseline9FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.Baseline9FixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: Baseline9FixedCostAccrual
-    fullName: Baseline9FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9Start:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Baseline9Start
+    uid: 'office!Office.ProjectTaskFields.Baseline9Start:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: Baseline9Start
-    fullName: Baseline9Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Baseline9Work:member'
+  - name: Baseline9Work
+    uid: 'office!Office.ProjectTaskFields.Baseline9Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: Baseline9Work
-    fullName: Baseline9Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineBudgetCost:member'
+  - name: BaselineBudgetCost
+    uid: 'office!Office.ProjectTaskFields.BaselineBudgetCost:member'
+    package: office!
     summary: The budget cost for the baseline task.
-    name: BaselineBudgetCost
-    fullName: BaselineBudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineBudgetWork:member'
+  - name: BaselineBudgetWork
+    uid: 'office!Office.ProjectTaskFields.BaselineBudgetWork:member'
+    package: office!
     summary: 'The budget work for the baseline task, in hours.'
-    name: BaselineBudgetWork
-    fullName: BaselineBudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineCost:member'
+  - name: BaselineCost
+    uid: 'office!Office.ProjectTaskFields.BaselineCost:member'
+    package: office!
     summary: The cost for the baseline task.
-    name: BaselineCost
-    fullName: BaselineCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineDuration:member'
+  - name: BaselineDuration
+    uid: 'office!Office.ProjectTaskFields.BaselineDuration:member'
+    package: office!
     summary: 'The duration for the baseline task, in minutes.'
-    name: BaselineDuration
-    fullName: BaselineDuration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineFinish:member'
+  - name: BaselineFinish
+    uid: 'office!Office.ProjectTaskFields.BaselineFinish:member'
+    package: office!
     summary: The finish date for the baseline task.
-    name: BaselineFinish
-    fullName: BaselineFinish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineFixedCost:member'
+  - name: BaselineFixedCost
+    uid: 'office!Office.ProjectTaskFields.BaselineFixedCost:member'
+    package: office!
     summary: The fixed cost of any non-resource expense for the baseline task.
-    name: BaselineFixedCost
-    fullName: BaselineFixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineFixedCostAccrual:member'
+  - name: BaselineFixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.BaselineFixedCostAccrual:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: BaselineFixedCostAccrual
-    fullName: BaselineFixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineStart:member'
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: BaselineStart
+    uid: 'office!Office.ProjectTaskFields.BaselineStart:member'
+    package: office!
     summary: The start date for the baseline task.
-    name: BaselineStart
-    fullName: BaselineStart
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BaselineWork:member'
+  - name: BaselineWork
+    uid: 'office!Office.ProjectTaskFields.BaselineWork:member'
+    package: office!
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
-    name: BaselineWork
-    fullName: BaselineWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BudgetCost:member'
+  - name: BudgetCost
+    uid: 'office!Office.ProjectTaskFields.BudgetCost:member'
+    package: office!
     summary: The budget cost for the task.
-    name: BudgetCost
-    fullName: BudgetCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BudgetFixedCost:member'
-    name: BudgetFixedCost
-    fullName: BudgetFixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BudgetFixedWork:member'
-    name: BudgetFixedWork
-    fullName: BudgetFixedWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.BudgetWork:member'
+  - name: BudgetFixedCost
+    uid: 'office!Office.ProjectTaskFields.BudgetFixedCost:member'
+    package: office!
+    summary: ''
+  - name: BudgetFixedWork
+    uid: 'office!Office.ProjectTaskFields.BudgetFixedWork:member'
+    package: office!
+    summary: ''
+  - name: BudgetWork
+    uid: 'office!Office.ProjectTaskFields.BudgetWork:member'
+    package: office!
     summary: 'The budget work for the task, in hours.'
-    name: BudgetWork
-    fullName: BudgetWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ConstraintDate:member'
+  - name: ConstraintDate
+    uid: 'office!Office.ProjectTaskFields.ConstraintDate:member'
+    package: office!
     summary: A constraint date for the task.
-    name: ConstraintDate
-    fullName: ConstraintDate
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ConstraintType:member'
+  - name: ConstraintType
+    uid: 'office!Office.ProjectTaskFields.ConstraintType:member'
+    package: office!
     summary: >-
-      A constraint type for the task: As Soon As Possible = 0, As Late As Possible = 1, Must Start On = 2, Must Finish
-      On = 3, Start No Earlier Than = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later Than = 7.
-    name: ConstraintType
-    fullName: ConstraintType
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost:member'
+      A constraint type for the task: As Soon As Possible = 0, As Late As
+      Possible = 1, Must Start On = 2, Must Finish On = 3, Start No Earlier Than
+      = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later
+      Than = 7.
+  - name: Cost
+    uid: 'office!Office.ProjectTaskFields.Cost:member'
+    package: office!
     summary: The total cost of the task.
-    name: Cost
-    fullName: Cost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost1:member'
+  - name: Cost1
+    uid: 'office!Office.ProjectTaskFields.Cost1:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost1
-    fullName: Cost1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost10:member'
+  - name: Cost10
+    uid: 'office!Office.ProjectTaskFields.Cost10:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost10
-    fullName: Cost10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost2:member'
+  - name: Cost2
+    uid: 'office!Office.ProjectTaskFields.Cost2:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost2
-    fullName: Cost2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost3:member'
+  - name: Cost3
+    uid: 'office!Office.ProjectTaskFields.Cost3:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost3
-    fullName: Cost3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost4:member'
+  - name: Cost4
+    uid: 'office!Office.ProjectTaskFields.Cost4:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost4
-    fullName: Cost4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost5:member'
+  - name: Cost5
+    uid: 'office!Office.ProjectTaskFields.Cost5:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost5
-    fullName: Cost5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost6:member'
+  - name: Cost6
+    uid: 'office!Office.ProjectTaskFields.Cost6:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost6
-    fullName: Cost6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost7:member'
+  - name: Cost7
+    uid: 'office!Office.ProjectTaskFields.Cost7:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost7
-    fullName: Cost7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost8:member'
+  - name: Cost8
+    uid: 'office!Office.ProjectTaskFields.Cost8:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost8
-    fullName: Cost8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Cost9:member'
+  - name: Cost9
+    uid: 'office!Office.ProjectTaskFields.Cost9:member'
+    package: office!
     summary: A cost field of the task.
-    name: Cost9
-    fullName: Cost9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Critical:member'
+  - name: Critical
+    uid: 'office!Office.ProjectTaskFields.Critical:member'
+    package: office!
     summary: Indicates whether the task is on the critical path.
-    name: Critical
-    fullName: Critical
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date1:member'
+  - name: Date1
+    uid: 'office!Office.ProjectTaskFields.Date1:member'
+    package: office!
     summary: A date field of the task.
-    name: Date1
-    fullName: Date1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date10:member'
+  - name: Date10
+    uid: 'office!Office.ProjectTaskFields.Date10:member'
+    package: office!
     summary: A date field of the task.
-    name: Date10
-    fullName: Date10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date2:member'
+  - name: Date2
+    uid: 'office!Office.ProjectTaskFields.Date2:member'
+    package: office!
     summary: A date field of the task.
-    name: Date2
-    fullName: Date2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date3:member'
+  - name: Date3
+    uid: 'office!Office.ProjectTaskFields.Date3:member'
+    package: office!
     summary: A date field of the task.
-    name: Date3
-    fullName: Date3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date4:member'
+  - name: Date4
+    uid: 'office!Office.ProjectTaskFields.Date4:member'
+    package: office!
     summary: A date field of the task.
-    name: Date4
-    fullName: Date4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date5:member'
+  - name: Date5
+    uid: 'office!Office.ProjectTaskFields.Date5:member'
+    package: office!
     summary: A date field of the task.
-    name: Date5
-    fullName: Date5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date6:member'
+  - name: Date6
+    uid: 'office!Office.ProjectTaskFields.Date6:member'
+    package: office!
     summary: A date field of the task.
-    name: Date6
-    fullName: Date6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date7:member'
+  - name: Date7
+    uid: 'office!Office.ProjectTaskFields.Date7:member'
+    package: office!
     summary: A date field of the task.
-    name: Date7
-    fullName: Date7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date8:member'
+  - name: Date8
+    uid: 'office!Office.ProjectTaskFields.Date8:member'
+    package: office!
     summary: A date field of the task.
-    name: Date8
-    fullName: Date8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Date9:member'
+  - name: Date9
+    uid: 'office!Office.ProjectTaskFields.Date9:member'
+    package: office!
     summary: A date field of the task.
-    name: Date9
-    fullName: Date9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Deadline:member'
+  - name: Deadline
+    uid: 'office!Office.ProjectTaskFields.Deadline:member'
+    package: office!
     summary: The deadline for a task.
-    name: Deadline
-    fullName: Deadline
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration:member'
+  - name: Duration
+    uid: 'office!Office.ProjectTaskFields.Duration:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration
-    fullName: Duration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration1:member'
+  - name: Duration1
+    uid: 'office!Office.ProjectTaskFields.Duration1:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration1
-    fullName: Duration1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration10:member'
+  - name: Duration10
+    uid: 'office!Office.ProjectTaskFields.Duration10:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration10
-    fullName: Duration10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration2:member'
+  - name: Duration2
+    uid: 'office!Office.ProjectTaskFields.Duration2:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration2
-    fullName: Duration2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration3:member'
+  - name: Duration3
+    uid: 'office!Office.ProjectTaskFields.Duration3:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration3
-    fullName: Duration3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration4:member'
+  - name: Duration4
+    uid: 'office!Office.ProjectTaskFields.Duration4:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration4
-    fullName: Duration4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration5:member'
+  - name: Duration5
+    uid: 'office!Office.ProjectTaskFields.Duration5:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration5
-    fullName: Duration5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration6:member'
+  - name: Duration6
+    uid: 'office!Office.ProjectTaskFields.Duration6:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration6
-    fullName: Duration6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration7:member'
+  - name: Duration7
+    uid: 'office!Office.ProjectTaskFields.Duration7:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration7
-    fullName: Duration7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration8:member'
+  - name: Duration8
+    uid: 'office!Office.ProjectTaskFields.Duration8:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration8
-    fullName: Duration8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Duration9:member'
+  - name: Duration9
+    uid: 'office!Office.ProjectTaskFields.Duration9:member'
+    package: office!
     summary: A duration field of the task.
-    name: Duration9
-    fullName: Duration9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.EarnedValueMethod:member'
+  - name: EarnedValueMethod
+    uid: 'office!Office.ProjectTaskFields.EarnedValueMethod:member'
+    package: office!
     summary: The method for calculating earned value for the task.
-    name: EarnedValueMethod
-    fullName: EarnedValueMethod
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish:member'
+  - name: Finish
+    uid: 'office!Office.ProjectTaskFields.Finish:member'
+    package: office!
     summary: The finish date of the task.
-    name: Finish
-    fullName: Finish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish1:member'
+  - name: Finish1
+    uid: 'office!Office.ProjectTaskFields.Finish1:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish1
-    fullName: Finish1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish10:member'
+  - name: Finish10
+    uid: 'office!Office.ProjectTaskFields.Finish10:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish10
-    fullName: Finish10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish2:member'
+  - name: Finish2
+    uid: 'office!Office.ProjectTaskFields.Finish2:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish2
-    fullName: Finish2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish3:member'
+  - name: Finish3
+    uid: 'office!Office.ProjectTaskFields.Finish3:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish3
-    fullName: Finish3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish4:member'
+  - name: Finish4
+    uid: 'office!Office.ProjectTaskFields.Finish4:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish4
-    fullName: Finish4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish5:member'
+  - name: Finish5
+    uid: 'office!Office.ProjectTaskFields.Finish5:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish5
-    fullName: Finish5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish6:member'
+  - name: Finish6
+    uid: 'office!Office.ProjectTaskFields.Finish6:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish6
-    fullName: Finish6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish7:member'
+  - name: Finish7
+    uid: 'office!Office.ProjectTaskFields.Finish7:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish7
-    fullName: Finish7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish8:member'
+  - name: Finish8
+    uid: 'office!Office.ProjectTaskFields.Finish8:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish8
-    fullName: Finish8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Finish9:member'
+  - name: Finish9
+    uid: 'office!Office.ProjectTaskFields.Finish9:member'
+    package: office!
     summary: A finish field for the task.
-    name: Finish9
-    fullName: Finish9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.FinishSlack:member'
-    summary: 'The duration between the Early Finish and Late Finish dates for the task, in minutes.'
-    name: FinishSlack
-    fullName: FinishSlack
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.FixedCost:member'
-    summary: The fixed cost for the task.
-    name: FixedCost
-    fullName: FixedCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.FixedCostAccrual:member'
+  - name: FinishSlack
+    uid: 'office!Office.ProjectTaskFields.FinishSlack:member'
+    package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
-      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-    name: FixedCostAccrual
-    fullName: FixedCostAccrual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag1:member'
+      The duration between the Early Finish and Late Finish dates for the task,
+      in minutes.
+  - name: FixedCost
+    uid: 'office!Office.ProjectTaskFields.FixedCost:member'
+    package: office!
+    summary: The fixed cost for the task.
+  - name: FixedCostAccrual
+    uid: 'office!Office.ProjectTaskFields.FixedCostAccrual:member'
+    package: office!
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs:
+      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
+      as the task progresses (prorated) = 3.
+  - name: Flag1
+    uid: 'office!Office.ProjectTaskFields.Flag1:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag1
-    fullName: Flag1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag10:member'
+  - name: Flag10
+    uid: 'office!Office.ProjectTaskFields.Flag10:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag10
-    fullName: Flag10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag11:member'
+  - name: Flag11
+    uid: 'office!Office.ProjectTaskFields.Flag11:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag11
-    fullName: Flag11
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag12:member'
+  - name: Flag12
+    uid: 'office!Office.ProjectTaskFields.Flag12:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag12
-    fullName: Flag12
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag13:member'
+  - name: Flag13
+    uid: 'office!Office.ProjectTaskFields.Flag13:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag13
-    fullName: Flag13
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag14:member'
+  - name: Flag14
+    uid: 'office!Office.ProjectTaskFields.Flag14:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag14
-    fullName: Flag14
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag15:member'
+  - name: Flag15
+    uid: 'office!Office.ProjectTaskFields.Flag15:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag15
-    fullName: Flag15
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag16:member'
+  - name: Flag16
+    uid: 'office!Office.ProjectTaskFields.Flag16:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag16
-    fullName: Flag16
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag17:member'
+  - name: Flag17
+    uid: 'office!Office.ProjectTaskFields.Flag17:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag17
-    fullName: Flag17
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag18:member'
+  - name: Flag18
+    uid: 'office!Office.ProjectTaskFields.Flag18:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag18
-    fullName: Flag18
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag19:member'
+  - name: Flag19
+    uid: 'office!Office.ProjectTaskFields.Flag19:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag19
-    fullName: Flag19
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag2:member'
+  - name: Flag2
+    uid: 'office!Office.ProjectTaskFields.Flag2:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag2
-    fullName: Flag2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag20:member'
+  - name: Flag20
+    uid: 'office!Office.ProjectTaskFields.Flag20:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag20
-    fullName: Flag20
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag3:member'
+  - name: Flag3
+    uid: 'office!Office.ProjectTaskFields.Flag3:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag3
-    fullName: Flag3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag4:member'
+  - name: Flag4
+    uid: 'office!Office.ProjectTaskFields.Flag4:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag4
-    fullName: Flag4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag5:member'
+  - name: Flag5
+    uid: 'office!Office.ProjectTaskFields.Flag5:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag5
-    fullName: Flag5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag6:member'
+  - name: Flag6
+    uid: 'office!Office.ProjectTaskFields.Flag6:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag6
-    fullName: Flag6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag7:member'
+  - name: Flag7
+    uid: 'office!Office.ProjectTaskFields.Flag7:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag7
-    fullName: Flag7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag8:member'
+  - name: Flag8
+    uid: 'office!Office.ProjectTaskFields.Flag8:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag8
-    fullName: Flag8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Flag9:member'
+  - name: Flag9
+    uid: 'office!Office.ProjectTaskFields.Flag9:member'
+    package: office!
     summary: A Boolean flag field for the task.
-    name: Flag9
-    fullName: Flag9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.FreeSlack:member'
-    summary: The amount of time that the task can be delayed without delaying its successor tasks.
-    name: FreeSlack
-    fullName: FreeSlack
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.HasRollupSubTasks:member'
+  - name: FreeSlack
+    uid: 'office!Office.ProjectTaskFields.FreeSlack:member'
+    package: office!
+    summary: >-
+      The amount of time that the task can be delayed without delaying its
+      successor tasks.
+  - name: HasRollupSubTasks
+    uid: 'office!Office.ProjectTaskFields.HasRollupSubTasks:member'
+    package: office!
     summary: Indicates whether the task has rollup subtasks.
-    name: HasRollupSubTasks
-    fullName: HasRollupSubTasks
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ID:member'
-    summary: 'The index of the selected task. After the project summary task, the index of the first task in a project is 1.'
-    name: ID
-    fullName: ID
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.IsRollup:member'
-    summary: Indicates whether subtask information is rolled up to the summary task bar.
-    name: IsRollup
-    fullName: IsRollup
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Milestone:member'
+  - name: ID
+    uid: 'office!Office.ProjectTaskFields.ID:member'
+    package: office!
+    summary: >-
+      The index of the selected task. After the project summary task, the index
+      of the first task in a project is 1.
+  - name: IsRollup
+    uid: 'office!Office.ProjectTaskFields.IsRollup:member'
+    package: office!
+    summary: >-
+      Indicates whether subtask information is rolled up to the summary task
+      bar.
+  - name: Milestone
+    uid: 'office!Office.ProjectTaskFields.Milestone:member'
+    package: office!
     summary: Indicates whether the task is a milestone.
-    name: Milestone
-    fullName: Milestone
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Name:member'
+  - name: Name
+    uid: 'office!Office.ProjectTaskFields.Name:member'
+    package: office!
     summary: The name of the task.
-    name: Name
-    fullName: Name
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Notes:member'
+  - name: Notes
+    uid: 'office!Office.ProjectTaskFields.Notes:member'
+    package: office!
     summary: The text value of the notes regarding the task.
-    name: Notes
-    fullName: Notes
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number1:member'
+  - name: Number1
+    uid: 'office!Office.ProjectTaskFields.Number1:member'
+    package: office!
     summary: A number field for the task.
-    name: Number1
-    fullName: Number1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number10:member'
+  - name: Number10
+    uid: 'office!Office.ProjectTaskFields.Number10:member'
+    package: office!
     summary: A number field for the task.
-    name: Number10
-    fullName: Number10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number11:member'
+  - name: Number11
+    uid: 'office!Office.ProjectTaskFields.Number11:member'
+    package: office!
     summary: A number field for the task.
-    name: Number11
-    fullName: Number11
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number12:member'
+  - name: Number12
+    uid: 'office!Office.ProjectTaskFields.Number12:member'
+    package: office!
     summary: A number field for the task.
-    name: Number12
-    fullName: Number12
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number13:member'
+  - name: Number13
+    uid: 'office!Office.ProjectTaskFields.Number13:member'
+    package: office!
     summary: A number field for the task.
-    name: Number13
-    fullName: Number13
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number14:member'
+  - name: Number14
+    uid: 'office!Office.ProjectTaskFields.Number14:member'
+    package: office!
     summary: A number field for the task.
-    name: Number14
-    fullName: Number14
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number15:member'
+  - name: Number15
+    uid: 'office!Office.ProjectTaskFields.Number15:member'
+    package: office!
     summary: A number field for the task.
-    name: Number15
-    fullName: Number15
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number16:member'
+  - name: Number16
+    uid: 'office!Office.ProjectTaskFields.Number16:member'
+    package: office!
     summary: A number field for the task.
-    name: Number16
-    fullName: Number16
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number17:member'
+  - name: Number17
+    uid: 'office!Office.ProjectTaskFields.Number17:member'
+    package: office!
     summary: A number field for the task.
-    name: Number17
-    fullName: Number17
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number18:member'
+  - name: Number18
+    uid: 'office!Office.ProjectTaskFields.Number18:member'
+    package: office!
     summary: A number field for the task.
-    name: Number18
-    fullName: Number18
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number19:member'
+  - name: Number19
+    uid: 'office!Office.ProjectTaskFields.Number19:member'
+    package: office!
     summary: A number field for the task.
-    name: Number19
-    fullName: Number19
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number2:member'
+  - name: Number2
+    uid: 'office!Office.ProjectTaskFields.Number2:member'
+    package: office!
     summary: A number field for the task.
-    name: Number2
-    fullName: Number2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number20:member'
+  - name: Number20
+    uid: 'office!Office.ProjectTaskFields.Number20:member'
+    package: office!
     summary: A number field for the task.
-    name: Number20
-    fullName: Number20
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number3:member'
+  - name: Number3
+    uid: 'office!Office.ProjectTaskFields.Number3:member'
+    package: office!
     summary: A number field for the task.
-    name: Number3
-    fullName: Number3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number4:member'
+  - name: Number4
+    uid: 'office!Office.ProjectTaskFields.Number4:member'
+    package: office!
     summary: A number field for the task.
-    name: Number4
-    fullName: Number4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number5:member'
+  - name: Number5
+    uid: 'office!Office.ProjectTaskFields.Number5:member'
+    package: office!
     summary: A number field for the task.
-    name: Number5
-    fullName: Number5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number6:member'
+  - name: Number6
+    uid: 'office!Office.ProjectTaskFields.Number6:member'
+    package: office!
     summary: A number field for the task.
-    name: Number6
-    fullName: Number6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number7:member'
+  - name: Number7
+    uid: 'office!Office.ProjectTaskFields.Number7:member'
+    package: office!
     summary: A number field for the task.
-    name: Number7
-    fullName: Number7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number8:member'
+  - name: Number8
+    uid: 'office!Office.ProjectTaskFields.Number8:member'
+    package: office!
     summary: A number field for the task.
-    name: Number8
-    fullName: Number8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Number9:member'
+  - name: Number9
+    uid: 'office!Office.ProjectTaskFields.Number9:member'
+    package: office!
     summary: A number field for the task.
-    name: Number9
-    fullName: Number9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.OutlineLevel:member'
+  - name: OutlineLevel
+    uid: 'office!Office.ProjectTaskFields.OutlineLevel:member'
+    package: office!
     summary: The level of the task in the outline hierarchy.
-    name: OutlineLevel
-    fullName: OutlineLevel
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Overallocated:member'
+  - name: Overallocated
+    uid: 'office!Office.ProjectTaskFields.Overallocated:member'
+    package: office!
     summary: Indicates whether any assignments for a task are overallocated.
-    name: Overallocated
-    fullName: Overallocated
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.OvertimeCost:member'
+  - name: OvertimeCost
+    uid: 'office!Office.ProjectTaskFields.OvertimeCost:member'
+    package: office!
     summary: The overtime cost for the task.
-    name: OvertimeCost
-    fullName: OvertimeCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.OvertimeWork:member'
+  - name: OvertimeWork
+    uid: 'office!Office.ProjectTaskFields.OvertimeWork:member'
+    package: office!
     summary: The overtime work for the task.
-    name: OvertimeWork
-    fullName: OvertimeWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.PercentComplete:member'
+  - name: PercentComplete
+    uid: 'office!Office.ProjectTaskFields.PercentComplete:member'
+    package: office!
     summary: The percent complete status of the task.
-    name: PercentComplete
-    fullName: PercentComplete
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.PercentWorkComplete:member'
+  - name: PercentWorkComplete
+    uid: 'office!Office.ProjectTaskFields.PercentWorkComplete:member'
+    package: office!
     summary: The percentage of work completed for the task.
-    name: PercentWorkComplete
-    fullName: PercentWorkComplete
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Predecessors:member'
+  - name: Predecessors
+    uid: 'office!Office.ProjectTaskFields.Predecessors:member'
+    package: office!
     summary: The IDs of the task's predecessors.
-    name: Predecessors
-    fullName: Predecessors
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.PreleveledFinish:member'
+  - name: PreleveledFinish
+    uid: 'office!Office.ProjectTaskFields.PreleveledFinish:member'
+    package: office!
     summary: The finish date of a task before leveling occurred.
-    name: PreleveledFinish
-    fullName: PreleveledFinish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.PreleveledStart:member'
+  - name: PreleveledStart
+    uid: 'office!Office.ProjectTaskFields.PreleveledStart:member'
+    package: office!
     summary: The start date of a task before leveling occurred.
-    name: PreleveledStart
-    fullName: PreleveledStart
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Priority:member'
-    summary: 'The priority of the task, with values from 0 (low) to 1000 (high). The default priority value is 500.'
-    name: Priority
-    fullName: Priority
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.RegularWork:member'
+  - name: Priority
+    uid: 'office!Office.ProjectTaskFields.Priority:member'
+    package: office!
+    summary: >-
+      The priority of the task, with values from 0 (low) to 1000 (high). The
+      default priority value is 500.
+  - name: RegularWork
+    uid: 'office!Office.ProjectTaskFields.RegularWork:member'
+    package: office!
     summary: The amount of regular work for the task.
-    name: RegularWork
-    fullName: RegularWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.RemainingCost:member'
+  - name: RemainingCost
+    uid: 'office!Office.ProjectTaskFields.RemainingCost:member'
+    package: office!
     summary: The remaining cost for the task.
-    name: RemainingCost
-    fullName: RemainingCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.RemainingDuration:member'
+  - name: RemainingDuration
+    uid: 'office!Office.ProjectTaskFields.RemainingDuration:member'
+    package: office!
     summary: 'The remaining duration for the task, in minutes.'
-    name: RemainingDuration
-    fullName: RemainingDuration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.RemainingOvertimeCost:member'
+  - name: RemainingOvertimeCost
+    uid: 'office!Office.ProjectTaskFields.RemainingOvertimeCost:member'
+    package: office!
     summary: The remaining overtime cost for the task.
-    name: RemainingOvertimeCost
-    fullName: RemainingOvertimeCost
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.RemainingWork:member'
+  - name: RemainingWork
+    uid: 'office!Office.ProjectTaskFields.RemainingWork:member'
+    package: office!
     summary: 'The remaining work for the task, in minutes.'
-    name: RemainingWork
-    fullName: RemainingWork
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ResourceNames:member'
+  - name: ResourceNames
+    uid: 'office!Office.ProjectTaskFields.ResourceNames:member'
+    package: office!
     summary: The names of the resources assigned to a task.
-    name: ResourceNames
-    fullName: ResourceNames
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ScheduledDuration:member'
+  - name: ScheduledDuration
+    uid: 'office!Office.ProjectTaskFields.ScheduledDuration:member'
+    package: office!
     summary: The scheduled (as opposed to actual) duration of the task.
-    name: ScheduledDuration
-    fullName: ScheduledDuration
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ScheduledFinish:member'
+  - name: ScheduledFinish
+    uid: 'office!Office.ProjectTaskFields.ScheduledFinish:member'
+    package: office!
     summary: The scheduled (as opposed to actual) finish date of the task.
-    name: ScheduledFinish
-    fullName: ScheduledFinish
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.ScheduledStart:member'
+  - name: ScheduledStart
+    uid: 'office!Office.ProjectTaskFields.ScheduledStart:member'
+    package: office!
     summary: The scheduled (as opposed to actual) start date of the task.
-    name: ScheduledStart
-    fullName: ScheduledStart
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start:member'
+  - name: Start
+    uid: 'office!Office.ProjectTaskFields.Start:member'
+    package: office!
     summary: The start date of the task.
-    name: Start
-    fullName: Start
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start1:member'
+  - name: Start1
+    uid: 'office!Office.ProjectTaskFields.Start1:member'
+    package: office!
     summary: A start field for the task.
-    name: Start1
-    fullName: Start1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start10:member'
+  - name: Start10
+    uid: 'office!Office.ProjectTaskFields.Start10:member'
+    package: office!
     summary: A start field for the task.
-    name: Start10
-    fullName: Start10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start2:member'
+  - name: Start2
+    uid: 'office!Office.ProjectTaskFields.Start2:member'
+    package: office!
     summary: A start field for the task.
-    name: Start2
-    fullName: Start2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start3:member'
+  - name: Start3
+    uid: 'office!Office.ProjectTaskFields.Start3:member'
+    package: office!
     summary: A start field for the task.
-    name: Start3
-    fullName: Start3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start4:member'
+  - name: Start4
+    uid: 'office!Office.ProjectTaskFields.Start4:member'
+    package: office!
     summary: A start field for the task.
-    name: Start4
-    fullName: Start4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start5:member'
+  - name: Start5
+    uid: 'office!Office.ProjectTaskFields.Start5:member'
+    package: office!
     summary: A start field for the task.
-    name: Start5
-    fullName: Start5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start6:member'
+  - name: Start6
+    uid: 'office!Office.ProjectTaskFields.Start6:member'
+    package: office!
     summary: A start field for the task.
-    name: Start6
-    fullName: Start6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start7:member'
+  - name: Start7
+    uid: 'office!Office.ProjectTaskFields.Start7:member'
+    package: office!
     summary: A start field for the task.
-    name: Start7
-    fullName: Start7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start8:member'
+  - name: Start8
+    uid: 'office!Office.ProjectTaskFields.Start8:member'
+    package: office!
     summary: A start field for the task.
-    name: Start8
-    fullName: Start8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Start9:member'
+  - name: Start9
+    uid: 'office!Office.ProjectTaskFields.Start9:member'
+    package: office!
     summary: A start field for the task.
-    name: Start9
-    fullName: Start9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.StartSlack:member'
+  - name: StartSlack
+    uid: 'office!Office.ProjectTaskFields.StartSlack:member'
+    package: office!
     summary: The duration between the Early Start and Late Start dates for the task.
-    name: StartSlack
-    fullName: StartSlack
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Status:member'
-    summary: 'The status of the task: Complete = 0, on schedule = 1, late = 2, future task = 3, status not available = 4.'
-    name: Status
-    fullName: Status
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.StatusManager:member'
-    summary: The enterprise resource responsible for accepting or rejecting assignment progress updates for the task.
-    name: StatusManager
-    fullName: StatusManager
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Successors:member'
+  - name: Status
+    uid: 'office!Office.ProjectTaskFields.Status:member'
+    package: office!
+    summary: >-
+      The status of the task: Complete = 0, on schedule = 1, late = 2, future
+      task = 3, status not available = 4.
+  - name: StatusManager
+    uid: 'office!Office.ProjectTaskFields.StatusManager:member'
+    package: office!
+    summary: >-
+      The enterprise resource responsible for accepting or rejecting assignment
+      progress updates for the task.
+  - name: Successors
+    uid: 'office!Office.ProjectTaskFields.Successors:member'
+    package: office!
     summary: The IDs of the task's successors.
-    name: Successors
-    fullName: Successors
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Summary:member'
+  - name: Summary
+    uid: 'office!Office.ProjectTaskFields.Summary:member'
+    package: office!
     summary: Indicates whether the task is a summary task.
-    name: Summary
-    fullName: Summary
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.TaskCalendarGUID:member'
+  - name: TaskCalendarGUID
+    uid: 'office!Office.ProjectTaskFields.TaskCalendarGUID:member'
+    package: office!
     summary: The GUID of the task calendar.
-    name: TaskCalendarGUID
-    fullName: TaskCalendarGUID
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.TaskGUID:member'
+  - name: TaskGUID
+    uid: 'office!Office.ProjectTaskFields.TaskGUID:member'
+    package: office!
     summary: The GUID of the task.
-    name: TaskGUID
-    fullName: TaskGUID
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text1:member'
+  - name: Text1
+    uid: 'office!Office.ProjectTaskFields.Text1:member'
+    package: office!
     summary: A text field for the task.
-    name: Text1
-    fullName: Text1
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text10:member'
+  - name: Text10
+    uid: 'office!Office.ProjectTaskFields.Text10:member'
+    package: office!
     summary: A text field for the task.
-    name: Text10
-    fullName: Text10
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text11:member'
+  - name: Text11
+    uid: 'office!Office.ProjectTaskFields.Text11:member'
+    package: office!
     summary: A text field for the task.
-    name: Text11
-    fullName: Text11
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text12:member'
+  - name: Text12
+    uid: 'office!Office.ProjectTaskFields.Text12:member'
+    package: office!
     summary: A text field for the task.
-    name: Text12
-    fullName: Text12
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text13:member'
+  - name: Text13
+    uid: 'office!Office.ProjectTaskFields.Text13:member'
+    package: office!
     summary: A text field for the task.
-    name: Text13
-    fullName: Text13
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text14:member'
+  - name: Text14
+    uid: 'office!Office.ProjectTaskFields.Text14:member'
+    package: office!
     summary: A text field for the task.
-    name: Text14
-    fullName: Text14
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text15:member'
+  - name: Text15
+    uid: 'office!Office.ProjectTaskFields.Text15:member'
+    package: office!
     summary: A text field for the task.
-    name: Text15
-    fullName: Text15
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text16:member'
+  - name: Text16
+    uid: 'office!Office.ProjectTaskFields.Text16:member'
+    package: office!
     summary: A text field for the task.
-    name: Text16
-    fullName: Text16
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text17:member'
+  - name: Text17
+    uid: 'office!Office.ProjectTaskFields.Text17:member'
+    package: office!
     summary: A text field for the task.
-    name: Text17
-    fullName: Text17
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text18:member'
+  - name: Text18
+    uid: 'office!Office.ProjectTaskFields.Text18:member'
+    package: office!
     summary: A text field for the task.
-    name: Text18
-    fullName: Text18
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text19:member'
+  - name: Text19
+    uid: 'office!Office.ProjectTaskFields.Text19:member'
+    package: office!
     summary: A text field for the task.
-    name: Text19
-    fullName: Text19
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text2:member'
+  - name: Text2
+    uid: 'office!Office.ProjectTaskFields.Text2:member'
+    package: office!
     summary: A text field for the task.
-    name: Text2
-    fullName: Text2
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text20:member'
+  - name: Text20
+    uid: 'office!Office.ProjectTaskFields.Text20:member'
+    package: office!
     summary: A text field for the task.
-    name: Text20
-    fullName: Text20
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text21:member'
+  - name: Text21
+    uid: 'office!Office.ProjectTaskFields.Text21:member'
+    package: office!
     summary: A text field for the task.
-    name: Text21
-    fullName: Text21
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text22:member'
+  - name: Text22
+    uid: 'office!Office.ProjectTaskFields.Text22:member'
+    package: office!
     summary: A text field for the task.
-    name: Text22
-    fullName: Text22
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text23:member'
+  - name: Text23
+    uid: 'office!Office.ProjectTaskFields.Text23:member'
+    package: office!
     summary: A text field for the task.
-    name: Text23
-    fullName: Text23
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text24:member'
+  - name: Text24
+    uid: 'office!Office.ProjectTaskFields.Text24:member'
+    package: office!
     summary: A text field for the task.
-    name: Text24
-    fullName: Text24
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text25:member'
+  - name: Text25
+    uid: 'office!Office.ProjectTaskFields.Text25:member'
+    package: office!
     summary: A text field for the task.
-    name: Text25
-    fullName: Text25
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text26:member'
+  - name: Text26
+    uid: 'office!Office.ProjectTaskFields.Text26:member'
+    package: office!
     summary: A text field for the task.
-    name: Text26
-    fullName: Text26
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text27:member'
+  - name: Text27
+    uid: 'office!Office.ProjectTaskFields.Text27:member'
+    package: office!
     summary: A text field for the task.
-    name: Text27
-    fullName: Text27
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text28:member'
+  - name: Text28
+    uid: 'office!Office.ProjectTaskFields.Text28:member'
+    package: office!
     summary: A text field for the task.
-    name: Text28
-    fullName: Text28
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text29:member'
+  - name: Text29
+    uid: 'office!Office.ProjectTaskFields.Text29:member'
+    package: office!
     summary: A text field for the task.
-    name: Text29
-    fullName: Text29
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text3:member'
+  - name: Text3
+    uid: 'office!Office.ProjectTaskFields.Text3:member'
+    package: office!
     summary: A text field for the task.
-    name: Text3
-    fullName: Text3
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text30:member'
+  - name: Text30
+    uid: 'office!Office.ProjectTaskFields.Text30:member'
+    package: office!
     summary: A text field for the task.
-    name: Text30
-    fullName: Text30
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text4:member'
+  - name: Text4
+    uid: 'office!Office.ProjectTaskFields.Text4:member'
+    package: office!
     summary: A text field for the task.
-    name: Text4
-    fullName: Text4
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text5:member'
+  - name: Text5
+    uid: 'office!Office.ProjectTaskFields.Text5:member'
+    package: office!
     summary: A text field for the task.
-    name: Text5
-    fullName: Text5
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text6:member'
+  - name: Text6
+    uid: 'office!Office.ProjectTaskFields.Text6:member'
+    package: office!
     summary: A text field for the task.
-    name: Text6
-    fullName: Text6
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text7:member'
+  - name: Text7
+    uid: 'office!Office.ProjectTaskFields.Text7:member'
+    package: office!
     summary: A text field for the task.
-    name: Text7
-    fullName: Text7
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text8:member'
+  - name: Text8
+    uid: 'office!Office.ProjectTaskFields.Text8:member'
+    package: office!
     summary: A text field for the task.
-    name: Text8
-    fullName: Text8
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Text9:member'
+  - name: Text9
+    uid: 'office!Office.ProjectTaskFields.Text9:member'
+    package: office!
     summary: A text field for the task.
-    name: Text9
-    fullName: Text9
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.TotalSlack:member'
+  - name: TotalSlack
+    uid: 'office!Office.ProjectTaskFields.TotalSlack:member'
+    package: office!
     summary: 'The total slack time for the task, in minutes.'
-    name: TotalSlack
-    fullName: TotalSlack
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Type:member'
-    summary: 'The way the task is calculated: Fixed units = 0, fixed duration = 1, fixed work = 2.'
-    name: Type
-    fullName: Type
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.WBS:member'
+  - name: Type
+    uid: 'office!Office.ProjectTaskFields.Type:member'
+    package: office!
+    summary: >-
+      The way the task is calculated: Fixed units = 0, fixed duration = 1, fixed
+      work = 2.
+  - name: WBS
+    uid: 'office!Office.ProjectTaskFields.WBS:member'
+    package: office!
     summary: The work breakdown structure code of the task.
-    name: WBS
-    fullName: WBS
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.WBSPREDECESSORS:member'
-    summary: 'The work breakdown structure codes of the task predecessors, separated by the list separator.'
-    name: WBSPREDECESSORS
-    fullName: WBSPREDECESSORS
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.WBSSUCCESSORS:member'
-    summary: 'The work breakdown structure codes of the task successors, separated by the list separator.'
-    name: WBSSUCCESSORS
-    fullName: WBSSUCCESSORS
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.Work:member'
+  - name: WBSPREDECESSORS
+    uid: 'office!Office.ProjectTaskFields.WBSPREDECESSORS:member'
+    package: office!
+    summary: >-
+      The work breakdown structure codes of the task predecessors, separated by
+      the list separator.
+  - name: WBSSUCCESSORS
+    uid: 'office!Office.ProjectTaskFields.WBSSUCCESSORS:member'
+    package: office!
+    summary: >-
+      The work breakdown structure codes of the task successors, separated by
+      the list separator.
+  - name: Work
+    uid: 'office!Office.ProjectTaskFields.Work:member'
+    package: office!
     summary: 'The total person-hours scheduled for the task, in minutes.'
-    name: Work
-    fullName: Work
-    langs:
-      - typeScript
-    type: field
-  - uid: 'office!Office.ProjectTaskFields.WSSID:member'
-    summary: 'The ID of the task in a SharePoint list, for a project that is synchronized with a SharePoint tasks list.'
-    name: WSSID
-    fullName: WSSID
-    langs:
-      - typeScript
-    type: field
+  - name: WSSID
+    uid: 'office!Office.ProjectTaskFields.WSSID:member'
+    package: office!
+    summary: >-
+      The ID of the task in a SharePoint list, for a project that is
+      synchronized with a SharePoint tasks list.

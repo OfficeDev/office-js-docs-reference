@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.ListCollectionData:interface'
-    summary: An interface describing the data returned by calling `listCollection.toJSON()`<!-- -->.
-    name: Word.Interfaces.ListCollectionData
-    fullName: Word.Interfaces.ListCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.ListCollectionData
+uid: 'word!Word.Interfaces.ListCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.ListCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `listCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.ListCollectionData#items:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.ListCollectionData#items:member'
-  - uid: 'word!Word.Interfaces.ListCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.ListData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.ListCollectionData#items~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.ListCollectionData#items~0:complex'
-    name: 'Word.Interfaces.ListData[]'
-    fullName: 'Word.Interfaces.ListData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.ListData:interface'
-        name: Word.Interfaces.ListData
-        fullName: Word.Interfaces.ListData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="word!Word.Interfaces.ListData:interface" />[]'

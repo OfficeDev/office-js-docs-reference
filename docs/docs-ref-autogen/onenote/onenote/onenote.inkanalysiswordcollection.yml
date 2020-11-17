@@ -1,274 +1,266 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection:class'
-    summary: |-
-      Represents a collection of InkAnalysisWord objects.
+### YamlMime:TSType
+name: OneNote.InkAnalysisWordCollection
+uid: 'onenote!OneNote.InkAnalysisWordCollection:class'
+package: onenote!
+fullName: OneNote.InkAnalysisWordCollection
+summary: >-
+  Represents a collection of InkAnalysisWord objects.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.InkAnalysisWordCollection
-    fullName: OneNote.InkAnalysisWordCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#context:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.InkAnalysisWordCollection#context:member'
-      - 'onenote!OneNote.InkAnalysisWordCollection#count:member'
-      - 'onenote!OneNote.InkAnalysisWordCollection#getItem:member(1)'
-      - 'onenote!OneNote.InkAnalysisWordCollection#getItemAt:member(1)'
-      - 'onenote!OneNote.InkAnalysisWordCollection#items:member'
-      - 'onenote!OneNote.InkAnalysisWordCollection#load:member(1)'
-      - 'onenote!OneNote.InkAnalysisWordCollection#load:member(2)'
-      - 'onenote!OneNote.InkAnalysisWordCollection#load:member(3)'
-      - 'onenote!OneNote.InkAnalysisWordCollection#toJSON:member(1)'
-      - 'onenote!OneNote.InkAnalysisWordCollection#track:member(1)'
-      - 'onenote!OneNote.InkAnalysisWordCollection#untrack:member(1)'
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'onenote!OneNote.RequestContext:class'
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#count:member'
-    summary: |-
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
+  - name: count
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#count:member'
+    package: onenote!
+    fullName: count
+    summary: >-
       Returns the number of InkAnalysisWords in the page. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly count: number;'
       return:
-        type:
-          - number
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#getItem:member(1)'
-    summary: |-
-      Gets a InkAnalysisWord object by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: getItem(index)
-    fullName: getItem(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(index: number | string): OneNote.InkAnalysisWord;'
-      return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWord:class'
-        description: ''
-      parameters:
-        - id: index
-          description: 'The ID of the InkAnalysisWord object, or the index location of the InkAnalysisWord object in the collection.'
-          type:
-            - number | string
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#getItemAt:member(1)'
-    summary: |-
-      Gets a InkAnalysisWord on its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): OneNote.InkAnalysisWord;'
-      return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWord:class'
-        description: ''
-      parameters:
-        - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
-          type:
-            - number
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    name: items
+        type: number
+  - name: items
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#items:member'
+    package: onenote!
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly items: OneNote.InkAnalysisWord[];'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWordCollection#items~0:complex'
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(1)'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWord:class" />[]'
+methods:
+  - name: getItem(index)
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#getItem:member(1)'
+    package: onenote!
+    fullName: getItem(index)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
+      Gets a InkAnalysisWord object by ID or by its index in the collection.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(index: number | string): OneNote.InkAnalysisWord;'
+      parameters:
+        - id: index
+          description: >-
+            The ID of the InkAnalysisWord object, or the index location of the
+            InkAnalysisWord object in the collection.
+          type: number | string
+      return:
+        type: '<xref uid="onenote!OneNote.InkAnalysisWord:class" />'
+        description: ''
+  - name: getItemAt(index)
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#getItemAt:member(1)'
+    package: onenote!
+    fullName: getItemAt(index)
+    summary: >-
+      Gets a InkAnalysisWord on its position in the collection.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): OneNote.InkAnalysisWord;'
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: '<xref uid="onenote!OneNote.InkAnalysisWord:class" />'
+        description: ''
+  - name: load(option)
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(1)'
+    package: onenote!
+    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call "context.sync()" before reading the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.InkAnalysisWordCollection` - Where option is a comma-delimited string
-      or an array of strings that specify the properties to load.
+      `load(option?: string | string[]): OneNote.InkAnalysisWordCollection` -
+      Where option is a comma-delimited string or an array of strings that
+      specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection` - Where option.select is
-      a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
-      that specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }):
+      OneNote.InkAnalysisWordCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and
+      options.expand is a comma-delimited string that specifies the navigation
+      properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
-      OneNote.InkAnalysisWordCollection` - Only available on collection types. It is similar to the preceding signature.
-      Option.top specifies the maximum number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
-      the result set will start after skipping the specified number of items.
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+      `load(option?: { select?: string; expand?: string; top?: number; skip?:
+      number }): OneNote.InkAnalysisWordCollection` - Only available on
+      collection types. It is similar to the preceding signature. Option.top
+      specifies the maximum number of collection items that can be included in
+      the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the
+      result set will start after skipping the specified number of items.
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
         load(option?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions &
-        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
-      return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWordCollection:class'
-        description: ''
+        OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.InkAnalysisWordCollection;
       parameters:
         - id: option
           description: ''
-          type:
-            - 'onenote!OneNote.InkAnalysisWordCollection#load~0:complex'
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): OneNote.InkAnalysisWordCollection;'
+          type: >-
+            <xref
+            uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface"
+            /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWordCollection:class'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
+  - name: load(propertyNames)
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(2)'
+    package: onenote!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNames?: string | string[]):
+        OneNote.InkAnalysisWordCollection;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(3)'
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisWordCollection;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWordCollection:class'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
+  - name: load(option)
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#load:member(3)'
+    package: onenote!
+    fullName: load(option)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(option?: OfficeExtension.LoadOption):
+        OneNote.InkAnalysisWordCollection;
       parameters:
         - id: option
           description: ''
-          type:
-            - 'office!OfficeExtension.LoadOption:interface'
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `OneNote.InkAnalysisWordCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordCollectionData`<!-- -->)
-      that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-    name: toJSON()
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#toJSON:member(1)'
+    package: onenote!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `OneNote.InkAnalysisWordCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `OneNote.Interfaces.InkAnalysisWordCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisWordCollectionData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface"
+          />
         description: ''
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
-    name: track()
+  - name: track()
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#track:member(1)'
+    package: onenote!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      context.trackedObjects.add(thisObject). If you are using this object
+      across ".sync" calls and outside the sequential execution of a ".run"
+      batch, and get an "InvalidObjectPath" error when setting a property or
+      invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): OneNote.InkAnalysisWordCollection;'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWordCollection:class'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'onenote!OneNote.InkAnalysisWordCollection#untrack:member(1)'
+    package: onenote!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects
+      slows down the host application, so please remember to free any objects
+      you add, once you're done using them. You will need to call
+      "context.sync()" before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): OneNote.InkAnalysisWordCollection;'
       return:
-        type:
-          - 'onenote!OneNote.InkAnalysisWordCollection:class'
+        type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'onenote!OneNote.RequestContext:class'
-    name: RequestContext
-  - uid: 'onenote!OneNote.InkAnalysisWord:class'
-    name: OneNote.InkAnalysisWord
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#items~0:complex'
-    name: 'OneNote.InkAnalysisWord[]'
-    fullName: 'OneNote.InkAnalysisWord[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.InkAnalysisWord:class'
-        name: OneNote.InkAnalysisWord
-        fullName: OneNote.InkAnalysisWord
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection:class'
-    name: OneNote.InkAnalysisWordCollection
-  - uid: 'onenote!OneNote.InkAnalysisWordCollection#load~0:complex'
-    name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-    fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
-        name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
-        fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
-        name: OneNote.Interfaces.CollectionLoadOptions
-        fullName: OneNote.Interfaces.CollectionLoadOptions
-  - uid: 'office!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
-    name: OneNote.Interfaces.InkAnalysisWordCollectionData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

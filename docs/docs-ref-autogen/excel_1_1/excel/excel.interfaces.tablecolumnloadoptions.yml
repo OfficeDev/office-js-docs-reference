@@ -1,97 +1,107 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions:interface'
-    summary: |-
-      Represents a column in a table.
+### YamlMime:TSType
+name: Excel.Interfaces.TableColumnLoadOptions
+uid: 'excel!Excel.Interfaces.TableColumnLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.TableColumnLoadOptions
+summary: >-
+  Represents a column in a table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TableColumnLoadOptions
-    fullName: Excel.Interfaces.TableColumnLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TableColumnLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.TableColumnLoadOptions#id:member'
-      - 'excel!Excel.Interfaces.TableColumnLoadOptions#index:member'
-      - 'excel!Excel.Interfaces.TableColumnLoadOptions#name:member'
-      - 'excel!Excel.Interfaces.TableColumnLoadOptions#values:member'
-  - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#id:member'
-    summary: |-
+        type: boolean
+  - name: id
+    uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Returns a unique key that identifies the column within the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#index:member'
-    summary: |-
-      Returns the index number of the column within the columns collection of the table. Zero-indexed.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: index
+        type: boolean
+  - name: index
+    uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#index:member'
+    package: excel!
     fullName: index
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns the index number of the column within the columns collection of
+      the table. Zero-indexed.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'index?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#name:member'
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#name:member'
+    package: excel!
+    fullName: name
     summary: >-
       Specifies the name of the table column.
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#values:member'
-    summary: >-
-      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
+        type: boolean
+  - name: values
+    uid: 'excel!Excel.Interfaces.TableColumnLoadOptions#values:member'
+    package: excel!
     fullName: values
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the raw values of the specified range. The data returned could
+      be of type string, number, or a boolean. Cells that contain an error will
+      return the error string.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'values?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

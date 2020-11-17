@@ -1,33 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface'
-    summary: An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CustomXmlPartScopedCollectionData
-    fullName: Excel.Interfaces.CustomXmlPartScopedCollectionData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.CustomXmlPartScopedCollectionData
+uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface'
+package: excel!
+fullName: Excel.Interfaces.CustomXmlPartScopedCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlPartScopedCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member'
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.CustomXmlPartData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items~0:complex'
-    name: 'Excel.Interfaces.CustomXmlPartData[]'
-    fullName: 'Excel.Interfaces.CustomXmlPartData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
-        name: Excel.Interfaces.CustomXmlPartData
-        fullName: Excel.Interfaces.CustomXmlPartData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />[]'

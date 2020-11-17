@@ -1,83 +1,81 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
-    summary: 'An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`<!-- -->.'
-    name: Word.Interfaces.TableBorderUpdateData
-    fullName: Word.Interfaces.TableBorderUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.TableBorderUpdateData
+uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.TableBorderUpdateData
+summary: >-
+  An interface for updating data on the TableBorder object, for use in
+  `tableBorder.set({ ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'word!Word.Interfaces.TableBorderUpdateData#color:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.TableBorderUpdateData#color:member'
-      - 'word!Word.Interfaces.TableBorderUpdateData#type:member'
-      - 'word!Word.Interfaces.TableBorderUpdateData#width:member'
-  - uid: 'word!Word.Interfaces.TableBorderUpdateData#color:member'
-    summary: |-
+    fullName: color
+    summary: >-
       Gets or sets the table border color.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: string;'
       return:
-        type:
-          - string
-  - uid: 'word!Word.Interfaces.TableBorderUpdateData#type:member'
-    summary: |-
+        type: string
+  - name: type
+    uid: 'word!Word.Interfaces.TableBorderUpdateData#type:member'
+    package: word!
+    fullName: type
+    summary: >-
       Gets or sets the type of the table border.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" |
-        "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
-        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
-        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
+        type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" |
+        "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" |
+        "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+        "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge"
+        | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
+        "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
-        type:
-          - 'word!Word.Interfaces.TableBorderUpdateData#type~0:complex'
-  - uid: 'word!Word.Interfaces.TableBorderUpdateData#width:member'
-    summary: >-
-      Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed
-      widths.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: width
+        type: >-
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single"
+          | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
+          "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall"
+          | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" |
+          "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+          "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
+  - name: width
+    uid: 'word!Word.Interfaces.TableBorderUpdateData#width:member'
+    package: word!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets the width, in points, of the table border. Not applicable to
+      table border types that have fixed widths.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: number;'
       return:
-        type:
-          - number
-references:
-  - uid: 'word!Word.Interfaces.TableBorderUpdateData#type~0:complex'
-    name: >-
-      Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
-      "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
-      "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
-      "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
-    fullName: >-
-      Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
-      "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
-      "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
-      "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
-    spec.typeScript:
-      - uid: 'word!Word.BorderType:enum'
-        name: Word.BorderType
-        fullName: Word.BorderType
-      - name: ' | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"'
-        fullName: ' | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"'
+        type: number

@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the InkWordCollection object, for use in "inkWordCollection.set(<!-- -->{ ...
-      }<!-- -->)".
-    name: OneNote.Interfaces.InkWordCollectionUpdateData
-    fullName: OneNote.Interfaces.InkWordCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkWordCollectionUpdateData
+uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkWordCollectionUpdateData
+summary: >-
+  An interface for updating data on the InkWordCollection object, for use in
+  "inkWordCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.InkWordData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items~0:complex'
-    name: 'OneNote.Interfaces.InkWordData[]'
-    fullName: 'OneNote.Interfaces.InkWordData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.InkWordData:interface'
-        name: OneNote.Interfaces.InkWordData
-        fullName: OneNote.Interfaces.InkWordData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.InkWordData:interface" />[]'

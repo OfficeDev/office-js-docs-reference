@@ -1,107 +1,121 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartLegendEntryData:interface'
-    summary: An interface describing the data returned by calling `chartLegendEntry.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartLegendEntryData
-    fullName: Excel.Interfaces.ChartLegendEntryData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLegendEntryData
+uid: 'excel!Excel.Interfaces.ChartLegendEntryData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartLegendEntryData
+summary: >-
+  An interface describing the data returned by calling
+  `chartLegendEntry.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: height
+    uid: 'excel!Excel.Interfaces.ChartLegendEntryData#height:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartLegendEntryData#height:member'
-      - 'excel!Excel.Interfaces.ChartLegendEntryData#index:member'
-      - 'excel!Excel.Interfaces.ChartLegendEntryData#left:member'
-      - 'excel!Excel.Interfaces.ChartLegendEntryData#top:member'
-      - 'excel!Excel.Interfaces.ChartLegendEntryData#visible:member'
-      - 'excel!Excel.Interfaces.ChartLegendEntryData#width:member'
-  - uid: 'excel!Excel.Interfaces.ChartLegendEntryData#height:member'
-    summary: |-
+    fullName: height
+    summary: >-
       Specifies the height of the legendEntry on the chart legend.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'height?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.ChartLegendEntryData#index:member'
-    summary: |-
+        type: number
+  - name: index
+    uid: 'excel!Excel.Interfaces.ChartLegendEntryData#index:member'
+    package: excel!
+    fullName: index
+    summary: >-
       Specifies the index of the legendEntry in the chart legend.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: index
-    fullName: index
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'index?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.ChartLegendEntryData#left:member'
-    summary: |-
+        type: number
+  - name: left
+    uid: 'excel!Excel.Interfaces.ChartLegendEntryData#left:member'
+    package: excel!
+    fullName: left
+    summary: >-
       Specifies the left of a chart legendEntry.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'left?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.ChartLegendEntryData#top:member'
-    summary: |-
+        type: number
+  - name: top
+    uid: 'excel!Excel.Interfaces.ChartLegendEntryData#top:member'
+    package: excel!
+    fullName: top
+    summary: >-
       Specifies the top of a chart legendEntry.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'top?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.ChartLegendEntryData#visible:member'
-    summary: |-
+        type: number
+  - name: visible
+    uid: 'excel!Excel.Interfaces.ChartLegendEntryData#visible:member'
+    package: excel!
+    fullName: visible
+    summary: >-
       Represents the visible of a chart legend entry.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartLegendEntryData#width:member'
-    summary: |-
+        type: boolean
+  - name: width
+    uid: 'excel!Excel.Interfaces.ChartLegendEntryData#width:member'
+    package: excel!
+    fullName: width
+    summary: >-
       Represents the width of the legendEntry on the chart Legend.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: number;'
       return:
-        type:
-          - number
+        type: number

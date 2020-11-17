@@ -1,96 +1,86 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Interfaces.ListData:interface'
-    summary: An interface describing the data returned by calling `list.toJSON()`<!-- -->.
-    name: Word.Interfaces.ListData
-    fullName: Word.Interfaces.ListData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Word.Interfaces.ListData
+uid: 'word!Word.Interfaces.ListData:interface'
+package: word!
+fullName: Word.Interfaces.ListData
+summary: An interface describing the data returned by calling `list.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'word!Word.Interfaces.ListData#id:member'
     package: word!
-    children:
-      - 'word!Word.Interfaces.ListData#id:member'
-      - 'word!Word.Interfaces.ListData#levelExistences:member'
-      - 'word!Word.Interfaces.ListData#levelTypes:member'
-      - 'word!Word.Interfaces.ListData#paragraphs:member'
-  - uid: 'word!Word.Interfaces.ListData#id:member'
-    summary: |-
+    fullName: id
+    summary: >-
       Gets the list's id.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: number;'
       return:
-        type:
-          - number
-  - uid: 'word!Word.Interfaces.ListData#levelExistences:member'
-    summary: >-
-      Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
-      is at least one list item at that level. Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: levelExistences
+        type: number
+  - name: levelExistences
+    uid: 'word!Word.Interfaces.ListData#levelExistences:member'
+    package: word!
     fullName: levelExistences
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Checks whether each of the 9 levels exists in the list. A true value
+      indicates the level exists, which means there is at least one list item at
+      that level. Read-only.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'levelExistences?: boolean[];'
       return:
-        type:
-          - 'boolean[]'
-  - uid: 'word!Word.Interfaces.ListData#levelTypes:member'
-    summary: |-
-      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: levelTypes
+        type: 'boolean[]'
+  - name: levelTypes
+    uid: 'word!Word.Interfaces.ListData#levelTypes:member'
+    package: word!
     fullName: levelTypes
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number',
+      or 'Picture'. Read-only.
+
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'levelTypes?: Word.ListLevelType[];'
       return:
-        type:
-          - 'word!Word.Interfaces.ListData#levelTypes~0:complex'
-  - uid: 'word!Word.Interfaces.ListData#paragraphs:member'
-    summary: |-
+        type: '<xref uid="word!Word.ListLevelType:enum" />[]'
+  - name: paragraphs
+    uid: 'word!Word.Interfaces.ListData#paragraphs:member'
+    package: word!
+    fullName: paragraphs
+    summary: >-
       Gets paragraphs in the list. Read-only.
 
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: paragraphs
-    fullName: paragraphs
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
-        type:
-          - 'word!Word.Interfaces.ListData#paragraphs~0:complex'
-references:
-  - uid: 'word!Word.Interfaces.ListData#levelTypes~0:complex'
-    name: 'Word.ListLevelType[]'
-    fullName: 'Word.ListLevelType[]'
-    spec.typeScript:
-      - uid: 'word!Word.ListLevelType:enum'
-        name: Word.ListLevelType
-        fullName: Word.ListLevelType
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'word!Word.Interfaces.ListData#paragraphs~0:complex'
-    name: 'Word.Interfaces.ParagraphData[]'
-    fullName: 'Word.Interfaces.ParagraphData[]'
-    spec.typeScript:
-      - uid: 'word!Word.Interfaces.ParagraphData:interface'
-        name: Word.Interfaces.ParagraphData
-        fullName: Word.Interfaces.ParagraphData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'

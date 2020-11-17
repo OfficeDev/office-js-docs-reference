@@ -1,54 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalTextOperator:enum'
-    summary: |-
-      Represents the operator of the text conditional format type.
+### YamlMime:TSEnum
+name: Excel.ConditionalTextOperator
+uid: 'excel!Excel.ConditionalTextOperator:enum'
+package: excel!
+fullName: Excel.ConditionalTextOperator
+summary: >-
+  Represents the operator of the text conditional format type.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalTextOperator
-    fullName: Excel.ConditionalTextOperator
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: beginsWith
+    uid: 'excel!Excel.ConditionalTextOperator.beginsWith:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalTextOperator.beginsWith:member'
-      - 'excel!Excel.ConditionalTextOperator.contains:member'
-      - 'excel!Excel.ConditionalTextOperator.endsWith:member'
-      - 'excel!Excel.ConditionalTextOperator.invalid:member'
-      - 'excel!Excel.ConditionalTextOperator.notContains:member'
-  - uid: 'excel!Excel.ConditionalTextOperator.beginsWith:member'
-    name: beginsWith
-    fullName: beginsWith
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BeginsWith"'
-  - uid: 'excel!Excel.ConditionalTextOperator.contains:member'
-    name: contains
-    fullName: contains
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Contains"'
-  - uid: 'excel!Excel.ConditionalTextOperator.endsWith:member'
-    name: endsWith
-    fullName: endsWith
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"EndsWith"'
-  - uid: 'excel!Excel.ConditionalTextOperator.invalid:member'
-    name: invalid
-    fullName: invalid
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Invalid"'
-  - uid: 'excel!Excel.ConditionalTextOperator.notContains:member'
-    name: notContains
-    fullName: notContains
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NotContains"'
+    summary: ''
+  - name: contains
+    uid: 'excel!Excel.ConditionalTextOperator.contains:member'
+    package: excel!
+    summary: ''
+  - name: endsWith
+    uid: 'excel!Excel.ConditionalTextOperator.endsWith:member'
+    package: excel!
+    summary: ''
+  - name: invalid
+    uid: 'excel!Excel.ConditionalTextOperator.invalid:member'
+    package: excel!
+    summary: ''
+  - name: notContains
+    uid: 'excel!Excel.ConditionalTextOperator.notContains:member'
+    package: excel!
+    summary: ''

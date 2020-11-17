@@ -1,273 +1,243 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'powerpoint!PowerPoint.SlideCollection:class'
-    summary: |-
-      Represents the collection of slides in the presentation.
+### YamlMime:TSType
+name: PowerPoint.SlideCollection
+uid: 'powerpoint!PowerPoint.SlideCollection:class'
+package: powerpoint!
+fullName: PowerPoint.SlideCollection
+summary: >-
+  Represents the collection of slides in the presentation.
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    isPreview: true
-    name: PowerPoint.SlideCollection
-    fullName: PowerPoint.SlideCollection
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'powerpoint!OfficeExtension.ClientObject:class'
+
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.SlideCollection#context:member'
     package: powerpoint!
-    children:
-      - 'powerpoint!PowerPoint.SlideCollection#context:member'
-      - 'powerpoint!PowerPoint.SlideCollection#getCount:member(1)'
-      - 'powerpoint!PowerPoint.SlideCollection#getItem:member(1)'
-      - 'powerpoint!PowerPoint.SlideCollection#getItemAt:member(1)'
-      - 'powerpoint!PowerPoint.SlideCollection#getItemOrNullObject:member(1)'
-      - 'powerpoint!PowerPoint.SlideCollection#items:member'
-      - 'powerpoint!PowerPoint.SlideCollection#load:member(1)'
-      - 'powerpoint!PowerPoint.SlideCollection#load:member(2)'
-      - 'powerpoint!PowerPoint.SlideCollection#load:member(3)'
-      - 'powerpoint!PowerPoint.SlideCollection#toJSON:member(1)'
-  - uid: 'powerpoint!PowerPoint.SlideCollection#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    isPreview: true
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'powerpoint!PowerPoint.RequestContext:class'
-  - uid: 'powerpoint!PowerPoint.SlideCollection#getCount:member(1)'
-    summary: |-
-      Gets the number of slides in the collection.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    isPreview: true
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): OfficeExtension.ClientResult<number>;'
-      return:
-        type:
-          - 'powerpoint!PowerPoint.SlideCollection#getCount~0:complex'
-        description: The number of slides in the collection.
-  - uid: 'powerpoint!PowerPoint.SlideCollection#getItem:member(1)'
-    summary: |-
-      Gets a slide using its unique ID. An exception is thrown if the slide does not exist.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    isPreview: true
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): PowerPoint.Slide;'
-      return:
-        type:
-          - 'powerpoint!PowerPoint.Slide:class'
-        description: 'The slide with the unique ID. If such a slide does not exist, an exception is thrown.'
-      parameters:
-        - id: key
-          description: The ID of the slide.
-          type:
-            - string
-  - uid: 'powerpoint!PowerPoint.SlideCollection#getItemAt:member(1)'
-    summary: >-
-      Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they are shown
-      in the presentation. An exception is thrown if index is out of range.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    isPreview: true
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): PowerPoint.Slide;'
-      return:
-        type:
-          - 'powerpoint!PowerPoint.Slide:class'
-        description: The slide at the given index. An exception is thrown if index is out of range.
-      parameters:
-        - id: index
-          description: The index of the slide in the collection.
-          type:
-            - number
-  - uid: 'powerpoint!PowerPoint.SlideCollection#getItemOrNullObject:member(1)'
-    summary: >-
-      Gets a slide using its unique ID. Returns an object whose `isNullObject` property is set to `true` if the slide
-      does not exist.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    isPreview: true
-    name: getItemOrNullObject(id)
-    fullName: getItemOrNullObject(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(id: string): PowerPoint.Slide;'
-      return:
-        type:
-          - 'powerpoint!PowerPoint.Slide:class'
-        description: >-
-          The slide with the unique ID. If such a slide does not exist, an object whose `isNullObject` property is set
-          to `true` is returned.
-      parameters:
-        - id: id
-          description: The ID of the slide.
-          type:
-            - string
-  - uid: 'powerpoint!PowerPoint.SlideCollection#items:member'
-    summary: Gets the loaded child items in this collection.
-    isPreview: true
-    name: items
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: items
+    uid: 'powerpoint!PowerPoint.SlideCollection#items:member'
+    package: powerpoint!
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'readonly items: PowerPoint.Slide[];'
       return:
-        type:
-          - 'powerpoint!PowerPoint.SlideCollection#items~0:complex'
-  - uid: 'powerpoint!PowerPoint.SlideCollection#load:member(1)'
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />[]'
+methods:
+  - name: getCount()
+    uid: 'powerpoint!PowerPoint.SlideCollection#getCount:member(1)'
+    package: powerpoint!
+    fullName: getCount()
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Gets the number of slides in the collection.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: load(options)
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: >-
+          <xref uid="powerpoint!OfficeExtension.ClientResult:class"
+          />&lt;number&gt;
+        description: The number of slides in the collection.
+  - name: getItem(key)
+    uid: 'powerpoint!PowerPoint.SlideCollection#getItem:member(1)'
+    package: powerpoint!
+    fullName: getItem(key)
+    summary: >-
+      Gets a slide using its unique ID. An exception is thrown if the slide does
+      not exist.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItem(key: string): PowerPoint.Slide;'
+      parameters:
+        - id: key
+          description: The ID of the slide.
+          type: string
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
+        description: >-
+          The slide with the unique ID. If such a slide does not exist, an
+          exception is thrown.
+  - name: getItemAt(index)
+    uid: 'powerpoint!PowerPoint.SlideCollection#getItemAt:member(1)'
+    package: powerpoint!
+    fullName: getItemAt(index)
+    summary: >-
+      Gets a slide using its zero-based index in the collection. Slides are
+      stored in the same order as they are shown in the presentation. An
+      exception is thrown if index is out of range.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): PowerPoint.Slide;'
+      parameters:
+        - id: index
+          description: The index of the slide in the collection.
+          type: number
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
+        description: >-
+          The slide at the given index. An exception is thrown if index is out
+          of range.
+  - name: getItemOrNullObject(id)
+    uid: 'powerpoint!PowerPoint.SlideCollection#getItemOrNullObject:member(1)'
+    package: powerpoint!
+    fullName: getItemOrNullObject(id)
+    summary: >-
+      Gets a slide using its unique ID. Returns an object whose `isNullObject`
+      property is set to `true` if the slide does not exist.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(id: string): PowerPoint.Slide;'
+      parameters:
+        - id: id
+          description: The ID of the slide.
+          type: string
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
+        description: >-
+          The slide with the unique ID. If such a slide does not exist, an
+          object whose `isNullObject` property is set to `true` is returned.
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.SlideCollection#load:member(1)'
+    package: powerpoint!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: >-
-        load(options?: PowerPoint.Interfaces.SlideCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions):
+        load(options?: PowerPoint.Interfaces.SlideCollectionLoadOptions &
+        PowerPoint.Interfaces.CollectionLoadOptions):
         PowerPoint.SlideCollection;
-      return:
-        type:
-          - 'powerpoint!PowerPoint.SlideCollection:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'powerpoint!PowerPoint.SlideCollection#load~0:complex'
-  - uid: 'powerpoint!PowerPoint.SlideCollection#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface"
+            /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.SlideCollection#load:member(2)'
+    package: powerpoint!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.SlideCollection;'
-      return:
-        type:
-          - 'powerpoint!PowerPoint.SlideCollection:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'powerpoint!PowerPoint.SlideCollection#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideCollection;'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'powerpoint!PowerPoint.SlideCollection:class'
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
         description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.SlideCollection#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        PowerPoint.SlideCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - 'powerpoint!OfficeExtension.LoadOption:interface'
-  - uid: 'powerpoint!PowerPoint.SlideCollection#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `PowerPoint.SlideCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
-    isPreview: true
-    name: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '<xref uid="powerpoint!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.SlideCollection#toJSON:member(1)'
+    package: powerpoint!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `PowerPoint.SlideCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.SlideCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideCollectionData;'
       return:
-        type:
-          - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface"
+          />
         description: ''
-references:
-  - uid: 'powerpoint!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'powerpoint!PowerPoint.RequestContext:class'
-    name: RequestContext
-  - uid: 'powerpoint!PowerPoint.SlideCollection#getCount~0:complex'
-    name: OfficeExtension.ClientResult<number>
-    fullName: OfficeExtension.ClientResult<number>
-    spec.typeScript:
-      - uid: 'powerpoint!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'powerpoint!PowerPoint.Slide:class'
-    name: PowerPoint.Slide
-  - uid: 'powerpoint!PowerPoint.SlideCollection#items~0:complex'
-    name: 'PowerPoint.Slide[]'
-    fullName: 'PowerPoint.Slide[]'
-    spec.typeScript:
-      - uid: 'powerpoint!PowerPoint.Slide:class'
-        name: PowerPoint.Slide
-        fullName: PowerPoint.Slide
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'powerpoint!PowerPoint.SlideCollection:class'
-    name: PowerPoint.SlideCollection
-  - uid: 'powerpoint!PowerPoint.SlideCollection#load~0:complex'
-    name: PowerPoint.Interfaces.SlideCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions
-    fullName: PowerPoint.Interfaces.SlideCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions
-    spec.typeScript:
-      - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
-        name: PowerPoint.Interfaces.SlideCollectionLoadOptions
-        fullName: PowerPoint.Interfaces.SlideCollectionLoadOptions
-      - name: ' & '
-        fullName: ' & '
-      - uid: 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
-        name: PowerPoint.Interfaces.CollectionLoadOptions
-        fullName: PowerPoint.Interfaces.CollectionLoadOptions
-  - uid: 'powerpoint!OfficeExtension.LoadOption:interface'
-    name: OfficeExtension.LoadOption
-  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
-    name: PowerPoint.Interfaces.SlideCollectionData
+extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'

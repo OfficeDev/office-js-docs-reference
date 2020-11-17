@@ -1,46 +1,119 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableSort:class'
-    summary: |-
-      Manages sorting operations on Table objects.
+### YamlMime:TSType
+name: Excel.TableSort
+uid: 'excel!Excel.TableSort:class'
+package: excel!
+fullName: Excel.TableSort
+summary: >-
+  Manages sorting operations on Table objects.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.TableSort
-    fullName: Excel.TableSort
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.TableSort#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.TableSort#apply:member(1)'
-      - 'excel!Excel.TableSort#apply:member(2)'
-      - 'excel!Excel.TableSort#clear:member(1)'
-      - 'excel!Excel.TableSort#context:member'
-      - 'excel!Excel.TableSort#fields:member'
-      - 'excel!Excel.TableSort#load:member(1)'
-      - 'excel!Excel.TableSort#load:member(2)'
-      - 'excel!Excel.TableSort#load:member(3)'
-      - 'excel!Excel.TableSort#matchCase:member'
-      - 'excel!Excel.TableSort#method:member'
-      - 'excel!Excel.TableSort#reapply:member(1)'
-      - 'excel!Excel.TableSort#toJSON:member(1)'
-  - uid: 'excel!Excel.TableSort#apply:member(1)'
-    summary: |-
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: fields
+    uid: 'excel!Excel.TableSort#fields:member'
+    package: excel!
+    fullName: fields
+    summary: >-
+      Specifies the current conditions used to last sort the table.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly fields: Excel.SortField[];'
+      return:
+        type: '<xref uid="excel!Excel.SortField:interface" />[]'
+  - name: matchCase
+    uid: 'excel!Excel.TableSort#matchCase:member'
+    package: excel!
+    fullName: matchCase
+    summary: >-
+      Specifies if the casing impacts the last sort of the table.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly matchCase: boolean;'
+      return:
+        type: boolean
+  - name: method
+    uid: 'excel!Excel.TableSort#method:member'
+    package: excel!
+    fullName: method
+    summary: >-
+      Represents Chinese character ordering method last used to sort the table.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly method: Excel.SortMethod | "PinYin" | "StrokeCount";'
+      return:
+        type: '<xref uid="excel!Excel.SortMethod:enum" /> | "PinYin" | "StrokeCount"'
+methods:
+  - name: 'apply(fields, matchCase, method)'
+    uid: 'excel!Excel.TableSort#apply:member(1)'
+    package: excel!
+    fullName: 'apply(fields, matchCase, method)'
+    summary: >-
       Perform a sort operation.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'apply(fields, matchCase, method)'
-    fullName: 'apply(fields, matchCase, method)'
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'apply(fields: Excel.SortField[], matchCase?: boolean, method?: Excel.SortMethod): void;'
+      content: >-
+        apply(fields: Excel.SortField[], matchCase?: boolean, method?:
+        Excel.SortMethod): void;
+      parameters:
+        - id: fields
+          description: The list of conditions to sort on.
+          type: '<xref uid="excel!Excel.SortField:interface" />[]'
+        - id: matchCase
+          description: Optional. Whether to have the casing impact string ordering.
+          type: boolean
+        - id: method
+          description: Optional. The ordering method used for Chinese characters.
+          type: '<xref uid="excel!Excel.SortMethod:enum" />'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -64,275 +137,165 @@ items:
               }
           });
           ```
-      parameters:
-        - id: fields
-          description: The list of conditions to sort on.
-          type:
-            - 'excel!Excel.TableSort#apply~0:complex'
-        - id: matchCase
-          description: Optional. Whether to have the casing impact string ordering.
-          type:
-            - boolean
-        - id: method
-          description: Optional. The ordering method used for Chinese characters.
-          type:
-            - 'excel!Excel.SortMethod:enum'
-  - uid: 'excel!Excel.TableSort#apply:member(2)'
-    summary: |-
+  - name: 'apply(fields, matchCase, methodString)'
+    uid: 'excel!Excel.TableSort#apply:member(2)'
+    package: excel!
+    fullName: 'apply(fields, matchCase, methodString)'
+    summary: >-
       Perform a sort operation.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'apply(fields, matchCase, methodString)'
-    fullName: 'apply(fields, matchCase, methodString)'
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'apply(fields: Excel.SortField[], matchCase?: boolean, methodString?: "PinYin" | "StrokeCount"): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        apply(fields: Excel.SortField[], matchCase?: boolean, methodString?:
+        "PinYin" | "StrokeCount"): void;
       parameters:
         - id: fields
           description: The list of conditions to sort on.
-          type:
-            - 'excel!Excel.TableSort#apply~1:complex'
+          type: '<xref uid="excel!Excel.SortField:interface" />[]'
         - id: matchCase
           description: Optional. Whether to have the casing impact string ordering.
-          type:
-            - boolean
+          type: boolean
         - id: methodString
           description: Optional. The ordering method used for Chinese characters.
-          type:
-            - '"PinYin" | "StrokeCount"'
-  - uid: 'excel!Excel.TableSort#clear:member(1)'
-    summary: >-
-      Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the
-      state of the header buttons.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear()
+          type: '"PinYin" | "StrokeCount"'
+      return:
+        type: void
+        description: ''
+  - name: clear()
+    uid: 'excel!Excel.TableSort#clear:member(1)'
+    package: excel!
     fullName: clear()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Clears the sorting that is currently on the table. While this doesn't
+      modify the table's ordering, it clears the state of the header buttons.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.TableSort#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.TableSort#fields:member'
-    summary: |-
-      Specifies the current conditions used to last sort the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fields: Excel.SortField[];'
-      return:
-        type:
-          - 'excel!Excel.TableSort#fields~0:complex'
-  - uid: 'excel!Excel.TableSort#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'excel!Excel.TableSort#load:member(1)'
+    package: excel!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(options?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;'
-      return:
-        type:
-          - 'excel!Excel.TableSort:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-  - uid: 'excel!Excel.TableSort#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: '<xref uid="excel!Excel.Interfaces.TableSortLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.TableSort:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.TableSort#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.TableSort;'
-      return:
-        type:
-          - 'excel!Excel.TableSort:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableSort#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.TableSort:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.TableSort#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.TableSort;
-      return:
-        type:
-          - 'excel!Excel.TableSort:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.TableSort#matchCase:member'
-    summary: |-
-      Specifies if the casing impacts the last sort of the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly matchCase: boolean;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.TableSort#method:member'
-    summary: |-
-      Represents Chinese character ordering method last used to sort the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: method
-    fullName: method
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly method: Excel.SortMethod | "PinYin" | "StrokeCount";'
-      return:
-        type:
-          - 'excel!Excel.TableSort#method~0:complex'
-  - uid: 'excel!Excel.TableSort#reapply:member(1)'
-    summary: |-
+        type: '<xref uid="excel!Excel.TableSort:class" />'
+        description: ''
+  - name: reapply()
+    uid: 'excel!Excel.TableSort#reapply:member(1)'
+    package: excel!
+    fullName: reapply()
+    summary: >-
       Reapplies the current sorting parameters to the table.
 
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: reapply()
-    fullName: reapply()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'reapply(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.TableSort#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.TableSortData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+  - name: toJSON()
+    uid: 'excel!Excel.TableSort#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.TableSort object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.TableSortData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableSortData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableSortData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.TableSortData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.TableSort#apply~0:complex'
-    name: 'Excel.SortField[]'
-    fullName: 'Excel.SortField[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.SortField:interface'
-        name: Excel.SortField
-        fullName: Excel.SortField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.SortMethod:enum'
-    name: Excel.SortMethod
-  - uid: 'excel!Excel.TableSort#apply~1:complex'
-    name: 'Excel.SortField[]'
-    fullName: 'Excel.SortField[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.SortField:interface'
-        name: Excel.SortField
-        fullName: Excel.SortField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.TableSort#fields~0:complex'
-    name: 'Excel.SortField[]'
-    fullName: 'Excel.SortField[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.SortField:interface'
-        name: Excel.SortField
-        fullName: Excel.SortField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.TableSort:class'
-    name: Excel.TableSort
-  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-    name: Excel.Interfaces.TableSortLoadOptions
-  - uid: 'excel!Excel.TableSort#method~0:complex'
-    name: Excel.SortMethod | "PinYin" | "StrokeCount"
-    fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
-    spec.typeScript:
-      - uid: 'excel!Excel.SortMethod:enum'
-        name: Excel.SortMethod
-        fullName: Excel.SortMethod
-      - name: ' | "PinYin" | "StrokeCount"'
-        fullName: ' | "PinYin" | "StrokeCount"'
-  - uid: 'excel!Excel.Interfaces.TableSortData:interface'
-    name: Excel.Interfaces.TableSortData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

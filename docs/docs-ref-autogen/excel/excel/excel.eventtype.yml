@@ -1,397 +1,235 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.EventType:enum'
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.EventType
-    fullName: Excel.EventType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.EventType
+uid: 'excel!Excel.EventType:enum'
+package: excel!
+fullName: Excel.EventType
+summary: >-
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: agaveVisualUpdate
+    uid: 'excel!Excel.EventType.agaveVisualUpdate:member'
     package: excel!
-    children:
-      - 'excel!Excel.EventType.agaveVisualUpdate:member'
-      - 'excel!Excel.EventType.chartActivated:member'
-      - 'excel!Excel.EventType.chartAdded:member'
-      - 'excel!Excel.EventType.chartDeactivated:member'
-      - 'excel!Excel.EventType.chartDeleted:member'
-      - 'excel!Excel.EventType.commentAdded:member'
-      - 'excel!Excel.EventType.commentChanged:member'
-      - 'excel!Excel.EventType.commentDeleted:member'
-      - 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
-      - 'excel!Excel.EventType.linkedDataTypeRefreshModeChanged:member'
-      - 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
-      - 'excel!Excel.EventType.recordingStateChangedEvent:member'
-      - 'excel!Excel.EventType.ribbonCommandExecuted:member'
-      - 'excel!Excel.EventType.shapeActivated:member'
-      - 'excel!Excel.EventType.shapeDeactivated:member'
-      - 'excel!Excel.EventType.tableAdded:member'
-      - 'excel!Excel.EventType.tableChanged:member'
-      - 'excel!Excel.EventType.tableDeleted:member'
-      - 'excel!Excel.EventType.tableFiltered:member'
-      - 'excel!Excel.EventType.tableSelectionChanged:member'
-      - 'excel!Excel.EventType.visualChange:member'
-      - 'excel!Excel.EventType.visualSelectionChanged:member'
-      - 'excel!Excel.EventType.wacoperationEvent:member'
-      - 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
-      - 'excel!Excel.EventType.worksheetActivated:member'
-      - 'excel!Excel.EventType.worksheetAdded:member'
-      - 'excel!Excel.EventType.worksheetCalculated:member'
-      - 'excel!Excel.EventType.worksheetChanged:member'
-      - 'excel!Excel.EventType.worksheetColumnSorted:member'
-      - 'excel!Excel.EventType.worksheetDeactivated:member'
-      - 'excel!Excel.EventType.worksheetDeleted:member'
-      - 'excel!Excel.EventType.worksheetFiltered:member'
-      - 'excel!Excel.EventType.worksheetFormatChanged:member'
-      - 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
-      - 'excel!Excel.EventType.worksheetRowSorted:member'
-      - 'excel!Excel.EventType.worksheetSelectionChanged:member'
-      - 'excel!Excel.EventType.worksheetSingleClicked:member'
-  - uid: 'excel!Excel.EventType.agaveVisualUpdate:member'
     summary: >-
-      AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data
-      view following a data change
-    name: agaveVisualUpdate
-    fullName: agaveVisualUpdate
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"AgaveVisualUpdate"'
-  - uid: 'excel!Excel.EventType.chartActivated:member'
+      AgaveVisualUpdate represents the type of an event that is associated with
+      an agave visual, and carries a new data view following a data change
+  - name: chartActivated
+    uid: 'excel!Excel.EventType.chartActivated:member'
+    package: excel!
     summary: >-
-      ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
-      activates.
-    name: chartActivated
-    fullName: chartActivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChartActivated"'
-  - uid: 'excel!Excel.EventType.chartAdded:member'
+      ChartActivated represents the type of event registered on Chart or
+      ChartCollection, and occurs when chart activates.
+  - name: chartAdded
+    uid: 'excel!Excel.EventType.chartAdded:member'
+    package: excel!
     summary: >-
-      ChartAdded represents the type of event registered on ChartCollection, and occurs when a new chart is added to the
-      worksheet.
-    name: chartAdded
-    fullName: chartAdded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChartAdded"'
-  - uid: 'excel!Excel.EventType.chartDeactivated:member'
+      ChartAdded represents the type of event registered on ChartCollection, and
+      occurs when a new chart is added to the worksheet.
+  - name: chartDeactivated
+    uid: 'excel!Excel.EventType.chartDeactivated:member'
+    package: excel!
     summary: >-
-      ChartDeactivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
-      deactivates.
-    name: chartDeactivated
-    fullName: chartDeactivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChartDeactivated"'
-  - uid: 'excel!Excel.EventType.chartDeleted:member'
+      ChartDeactivated represents the type of event registered on Chart or
+      ChartCollection, and occurs when chart deactivates.
+  - name: chartDeleted
+    uid: 'excel!Excel.EventType.chartDeleted:member'
+    package: excel!
     summary: >-
-      ChartDeleted represents the type of event registered on ChartCollection, and occurs when a chart is deleted from
-      the worksheet.
-    name: chartDeleted
-    fullName: chartDeleted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ChartDeleted"'
-  - uid: 'excel!Excel.EventType.commentAdded:member'
+      ChartDeleted represents the type of event registered on ChartCollection,
+      and occurs when a chart is deleted from the worksheet.
+  - name: commentAdded
+    uid: 'excel!Excel.EventType.commentAdded:member'
+    package: excel!
     summary: >-
-      CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are
-      added.
-    name: commentAdded
-    fullName: commentAdded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CommentAdded"'
-  - uid: 'excel!Excel.EventType.commentChanged:member'
+      CommentAdded represents the type of event that is registered on
+      commentCollection, and occurs when comments are added.
+  - name: commentChanged
+    uid: 'excel!Excel.EventType.commentChanged:member'
+    package: excel!
     summary: >-
-      CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are
+      CommentChanged represents the type of event that is registered on
+      commentCollection, and occurs when comments are changed.
+  - name: commentDeleted
+    uid: 'excel!Excel.EventType.commentDeleted:member'
+    package: excel!
+    summary: >-
+      CommentDeleted represents the type of event that is registered on
+      commentCollection, and occurs when comments are deleted.
+  - name: linkedDataTypeLinkedDataTypeAdded
+    uid: 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
+    package: excel!
+    summary: >-
+      LinkedDataTypeAdded represents the type of event registered on
+      LinkedDataType, and occurs when a new linked data type is added to the
+      workbook.
+  - name: linkedDataTypeRefreshModeChanged
+    uid: 'excel!Excel.EventType.linkedDataTypeRefreshModeChanged:member'
+    package: excel!
+    summary: >-
+      RefreshModeChanged represents the type of event registered on
+      LinkedDataType, and occurs when the linked data type refresh mode is
       changed.
-    name: commentChanged
-    fullName: commentChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CommentChanged"'
-  - uid: 'excel!Excel.EventType.commentDeleted:member'
+  - name: linkedDataTypeRefreshRequestCompleted
+    uid: 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
+    package: excel!
     summary: >-
-      CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are
-      deleted.
-    name: commentDeleted
-    fullName: commentDeleted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CommentDeleted"'
-  - uid: 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
+      RefreshRequestCompleted represents the type of event registered on
+      LinkedDataType, and occurs when a request to refresh a data source is
+      completed.
+  - name: ribbonCommandExecuted
+    uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
+    package: excel!
     summary: >-
-      LinkedDataTypeAdded represents the type of event registered on LinkedDataType, and occurs when a new linked data
-      type is added to the workbook.
-    name: linkedDataTypeLinkedDataTypeAdded
-    fullName: linkedDataTypeLinkedDataTypeAdded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LinkedDataTypeLinkedDataTypeAdded"'
-  - uid: 'excel!Excel.EventType.linkedDataTypeRefreshModeChanged:member'
+      RibbonCommandExecuted represents the type of event registered on ribbon,
+      and occurs when user click on ribbon
+  - name: shapeActivated
+    uid: 'excel!Excel.EventType.shapeActivated:member'
+    package: excel!
     summary: >-
-      RefreshModeChanged represents the type of event registered on LinkedDataType, and occurs when the linked data type
-      refresh mode is changed.
-    name: linkedDataTypeRefreshModeChanged
-    fullName: linkedDataTypeRefreshModeChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LinkedDataTypeRefreshModeChanged"'
-  - uid: 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
+      ShapeActivated represents the type of event that is registered on Shape,
+      and occurs when shape activates.
+  - name: shapeDeactivated
+    uid: 'excel!Excel.EventType.shapeDeactivated:member'
+    package: excel!
     summary: >-
-      RefreshRequestCompleted represents the type of event registered on LinkedDataType, and occurs when a request to
-      refresh a data source is completed.
-    name: linkedDataTypeRefreshRequestCompleted
-    fullName: linkedDataTypeRefreshRequestCompleted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LinkedDataTypeRefreshRequestCompleted"'
-  - uid: 'excel!Excel.EventType.recordingStateChangedEvent:member'
-    summary: RecordingStateChangedEvent represents the event fired when macro recording starts or stops.
-    name: recordingStateChangedEvent
-    fullName: recordingStateChangedEvent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RecordingStateChangedEvent"'
-  - uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
-    summary: 'RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon'
-    name: ribbonCommandExecuted
-    fullName: ribbonCommandExecuted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RibbonCommandExecuted"'
-  - uid: 'excel!Excel.EventType.shapeActivated:member'
-    summary: 'ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.'
-    name: shapeActivated
-    fullName: shapeActivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ShapeActivated"'
-  - uid: 'excel!Excel.EventType.shapeDeactivated:member'
-    summary: 'ShapeDeactivated represents the type of event that is registered on Shape, and occurs when shape deactivates.'
-    name: shapeDeactivated
-    fullName: shapeDeactivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ShapeDeactivated"'
-  - uid: 'excel!Excel.EventType.tableAdded:member'
-    summary: 'TableAdded represents the type of event registered on TableCollection, and occurs when a table is added.'
-    name: tableAdded
-    fullName: tableAdded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableAdded"'
-  - uid: 'excel!Excel.EventType.tableChanged:member'
-    summary: 'TableChanged represents the type of event registered on Table, and occurs when data changes.'
-    name: tableChanged
-    fullName: tableChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableChanged"'
-  - uid: 'excel!Excel.EventType.tableDeleted:member'
+      ShapeDeactivated represents the type of event that is registered on Shape,
+      and occurs when shape deactivates.
+  - name: tableAdded
+    uid: 'excel!Excel.EventType.tableAdded:member'
+    package: excel!
     summary: >-
-      TableDeleted represents the type of event that is registered on TableCollection, and occurs when a table is
-      deleted.
-    name: tableDeleted
-    fullName: tableDeleted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableDeleted"'
-  - uid: 'excel!Excel.EventType.tableFiltered:member'
+      TableAdded represents the type of event registered on TableCollection, and
+      occurs when a table is added.
+  - name: tableChanged
+    uid: 'excel!Excel.EventType.tableChanged:member'
+    package: excel!
     summary: >-
-      TableFiltered represents the type of event registered on table or TableCollection, and occurs when data of table
+      TableChanged represents the type of event registered on Table, and occurs
+      when data changes.
+  - name: tableDeleted
+    uid: 'excel!Excel.EventType.tableDeleted:member'
+    package: excel!
+    summary: >-
+      TableDeleted represents the type of event that is registered on
+      TableCollection, and occurs when a table is deleted.
+  - name: tableFiltered
+    uid: 'excel!Excel.EventType.tableFiltered:member'
+    package: excel!
+    summary: >-
+      TableFiltered represents the type of event registered on table or
+      TableCollection, and occurs when data of table is filtered.
+  - name: tableSelectionChanged
+    uid: 'excel!Excel.EventType.tableSelectionChanged:member'
+    package: excel!
+    summary: >-
+      TableSelectionChanged represents the type of event registered on Table,
+      and occurs when selection changes.
+  - name: visualChange
+    uid: 'excel!Excel.EventType.visualChange:member'
+    package: excel!
+    summary: >-
+      VisualChange represents the type of event registered on Visual, and occurs
+      when there is a visual change.
+  - name: visualSelectionChanged
+    uid: 'excel!Excel.EventType.visualSelectionChanged:member'
+    package: excel!
+    summary: >-
+      VisualSelectionChanged represents the type of event registered on
+      VisualCollection, and occurs when visual selection changes.
+  - name: workbookAutoSaveSettingChanged
+    uid: 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
+    package: excel!
+    summary: >-
+      WorkbookAutoSaveSettingChanged represents the type of event registered on
+      workbook, and occurs when there is an auto save setting change.
+  - name: worksheetActivated
+    uid: 'excel!Excel.EventType.worksheetActivated:member'
+    package: excel!
+    summary: >-
+      WorksheetActivated represents the type of event registered on Worksheet or
+      WorksheetCollection, and occurs when worksheet activates.
+  - name: worksheetAdded
+    uid: 'excel!Excel.EventType.worksheetAdded:member'
+    package: excel!
+    summary: >-
+      WorksheetAdded represents the type of event registered on
+      WorksheetCollection, and occurs when a new worksheet is added to the
+      workbook.
+  - name: worksheetCalculated
+    uid: 'excel!Excel.EventType.worksheetCalculated:member'
+    package: excel!
+    summary: >-
+      WorksheetCalculated represents the type of event registered on Worksheet
+      or WorksheetCollection, and occurs when a worksheet is calculated.
+  - name: worksheetChanged
+    uid: 'excel!Excel.EventType.worksheetChanged:member'
+    package: excel!
+    summary: >-
+      WorksheetChanged represents the type of event registered on Worksheet or
+      WorksheetCollection, and occurs when data changes.
+  - name: worksheetColumnSorted
+    uid: 'excel!Excel.EventType.worksheetColumnSorted:member'
+    package: excel!
+    summary: >-
+      WorksheetColumnSorted represents the type of event registered on
+      worksheet, and occurs when there is a sorting on columns happened.
+  - name: worksheetDeactivated
+    uid: 'excel!Excel.EventType.worksheetDeactivated:member'
+    package: excel!
+    summary: >-
+      WorksheetDeactivated represents the type of event registered on Worksheet
+      or WorksheetCollection, and occurs when worksheet deactivates.
+  - name: worksheetDeleted
+    uid: 'excel!Excel.EventType.worksheetDeleted:member'
+    package: excel!
+    summary: >-
+      WorksheetDeleted represents the type of event registered on
+      WorksheetCollection, and occurs when a worksheet is deleted from the
+      workbook.
+  - name: worksheetFiltered
+    uid: 'excel!Excel.EventType.worksheetFiltered:member'
+    package: excel!
+    summary: >-
+      WorksheetFiltered represents the type of event registered on worksheet or
+      WorksheetCollection, and occurs when data of autofilter in the worksheet
       is filtered.
-    name: tableFiltered
-    fullName: tableFiltered
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableFiltered"'
-  - uid: 'excel!Excel.EventType.tableSelectionChanged:member'
-    summary: 'TableSelectionChanged represents the type of event registered on Table, and occurs when selection changes.'
-    name: tableSelectionChanged
-    fullName: tableSelectionChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableSelectionChanged"'
-  - uid: 'excel!Excel.EventType.visualChange:member'
-    summary: 'VisualChange represents the type of event registered on Visual, and occurs when there is a visual change.'
-    name: visualChange
-    fullName: visualChange
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"VisualChange"'
-  - uid: 'excel!Excel.EventType.visualSelectionChanged:member'
+  - name: worksheetFormatChanged
+    uid: 'excel!Excel.EventType.worksheetFormatChanged:member'
+    package: excel!
     summary: >-
-      VisualSelectionChanged represents the type of event registered on VisualCollection, and occurs when visual
-      selection changes.
-    name: visualSelectionChanged
-    fullName: visualSelectionChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"VisualSelectionChanged"'
-  - uid: 'excel!Excel.EventType.wacoperationEvent:member'
-    name: wacoperationEvent
-    fullName: wacoperationEvent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WACOperationEvent"'
-  - uid: 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
+      WorksheetFormatChanged represents the type of event registered on
+      worksheet, and occurs when there is a format changed.
+  - name: worksheetFormulaChanged
+    uid: 'excel!Excel.EventType.worksheetFormulaChanged:member'
+    package: excel!
     summary: >-
-      WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an
-      auto save setting change.
-    name: workbookAutoSaveSettingChanged
-    fullName: workbookAutoSaveSettingChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorkbookAutoSaveSettingChanged"'
-  - uid: 'excel!Excel.EventType.worksheetActivated:member'
+      WorksheetFormulaChanged represents the type of event registered on a
+      worksheet, and occurs when a formula is changed.
+  - name: worksheetRowHiddenChanged
+    uid: 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
+    package: excel!
     summary: >-
-      WorksheetActivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
-      worksheet activates.
-    name: worksheetActivated
-    fullName: worksheetActivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetActivated"'
-  - uid: 'excel!Excel.EventType.worksheetAdded:member'
+      WorksheetRowHiddenChanged represents the type of event registered on
+      worksheet, and occurs when a row's hidden state is changed.
+  - name: worksheetRowSorted
+    uid: 'excel!Excel.EventType.worksheetRowSorted:member'
+    package: excel!
     summary: >-
-      WorksheetAdded represents the type of event registered on WorksheetCollection, and occurs when a new worksheet is
-      added to the workbook.
-    name: worksheetAdded
-    fullName: worksheetAdded
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetAdded"'
-  - uid: 'excel!Excel.EventType.worksheetCalculated:member'
+      WorksheetRowSorted represents the type of event registered on worksheet,
+      and occurs when there is a sorting on rows happened.
+  - name: worksheetSelectionChanged
+    uid: 'excel!Excel.EventType.worksheetSelectionChanged:member'
+    package: excel!
     summary: >-
-      WorksheetCalculated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when a
-      worksheet is calculated.
-    name: worksheetCalculated
-    fullName: worksheetCalculated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetCalculated"'
-  - uid: 'excel!Excel.EventType.worksheetChanged:member'
+      WorksheetSelectionChanged represents the type of event registered on
+      Worksheet, and occurs when selection changes.
+  - name: worksheetSingleClicked
+    uid: 'excel!Excel.EventType.worksheetSingleClicked:member'
+    package: excel!
     summary: >-
-      WorksheetChanged represents the type of event registered on Worksheet or WorksheetCollection, and occurs when data
-      changes.
-    name: worksheetChanged
-    fullName: worksheetChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetChanged"'
-  - uid: 'excel!Excel.EventType.worksheetColumnSorted:member'
-    summary: >-
-      WorksheetColumnSorted represents the type of event registered on worksheet, and occurs when there is a sorting on
-      columns happened.
-    name: worksheetColumnSorted
-    fullName: worksheetColumnSorted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetColumnSorted"'
-  - uid: 'excel!Excel.EventType.worksheetDeactivated:member'
-    summary: >-
-      WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
-      worksheet deactivates.
-    name: worksheetDeactivated
-    fullName: worksheetDeactivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetDeactivated"'
-  - uid: 'excel!Excel.EventType.worksheetDeleted:member'
-    summary: >-
-      WorksheetDeleted represents the type of event registered on WorksheetCollection, and occurs when a worksheet is
-      deleted from the workbook.
-    name: worksheetDeleted
-    fullName: worksheetDeleted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetDeleted"'
-  - uid: 'excel!Excel.EventType.worksheetFiltered:member'
-    summary: >-
-      WorksheetFiltered represents the type of event registered on worksheet or WorksheetCollection, and occurs when
-      data of autofilter in the worksheet is filtered.
-    name: worksheetFiltered
-    fullName: worksheetFiltered
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetFiltered"'
-  - uid: 'excel!Excel.EventType.worksheetFormatChanged:member'
-    summary: >-
-      WorksheetFormatChanged represents the type of event registered on worksheet, and occurs when there is a format
-      changed.
-    name: worksheetFormatChanged
-    fullName: worksheetFormatChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetFormatChanged"'
-  - uid: 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
-    summary: >-
-      WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden
-      state is changed.
-    name: worksheetRowHiddenChanged
-    fullName: worksheetRowHiddenChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetRowHiddenChanged"'
-  - uid: 'excel!Excel.EventType.worksheetRowSorted:member'
-    summary: >-
-      WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on
-      rows happened.
-    name: worksheetRowSorted
-    fullName: worksheetRowSorted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetRowSorted"'
-  - uid: 'excel!Excel.EventType.worksheetSelectionChanged:member'
-    summary: 'WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.'
-    name: worksheetSelectionChanged
-    fullName: worksheetSelectionChanged
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetSelectionChanged"'
-  - uid: 'excel!Excel.EventType.worksheetSingleClicked:member'
-    summary: >-
-      WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is
-      left-clicked/tapped.
-    name: worksheetSingleClicked
-    fullName: worksheetSingleClicked
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WorksheetSingleClicked"'
+      WorksheetSingleClicked represents the type of event registered on
+      worksheet, and occurs when cell is left-clicked/tapped.

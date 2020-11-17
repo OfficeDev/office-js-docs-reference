@@ -1,52 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.RangeFormatConfiguration:interface'
-    summary: Specifies a range and its formatting.
-    name: Office.RangeFormatConfiguration
-    fullName: Office.RangeFormatConfiguration
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.RangeFormatConfiguration
+uid: 'office!Office.RangeFormatConfiguration:interface'
+package: office!
+fullName: Office.RangeFormatConfiguration
+summary: Specifies a range and its formatting.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cells
+    uid: 'office!Office.RangeFormatConfiguration#cells:member'
     package: office!
-    children:
-      - 'office!Office.RangeFormatConfiguration#cells:member'
-      - 'office!Office.RangeFormatConfiguration#format:member'
-  - uid: 'office!Office.RangeFormatConfiguration#cells:member'
-    summary: >-
-      Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates:
-      `{row: 3, column: 4}` specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
-    name: cells
     fullName: cells
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the range. Example of using Office.Table enum: Office.Table.All.
+      Example of using RangeCoordinates: `{row: 3, column: 4}` specifies the
+      cell in the 3rd (zero-based) row in the 4th (zero-based) column.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cells: Office.Table | RangeCoordinates'
       return:
-        type:
-          - 'office!Office.RangeFormatConfiguration#cells~0:complex'
-  - uid: 'office!Office.RangeFormatConfiguration#format:member'
-    summary: 'Specifies the formatting as key-value pairs. Example: `{borderColor: "white", fontStyle: "bold"}`'
-    name: format
+        type: >-
+          <xref uid="office!Office.Table:enum" /> | <xref
+          uid="office!Office.RangeCoordinates:interface" />
+  - name: format
+    uid: 'office!Office.RangeFormatConfiguration#format:member'
+    package: office!
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the formatting as key-value pairs. Example: `{borderColor:
+      "white", fontStyle: "bold"}`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format: object'
       return:
-        type:
-          - object
-references:
-  - uid: 'office!Office.RangeFormatConfiguration#cells~0:complex'
-    name: Office.Table | RangeCoordinates
-    fullName: Office.Table | Office.RangeCoordinates
-    spec.typeScript:
-      - uid: 'office!Office.Table:enum'
-        name: Office.Table
-        fullName: Office.Table
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'office!Office.RangeCoordinates:interface'
-        name: RangeCoordinates
-        fullName: Office.RangeCoordinates
+        type: object

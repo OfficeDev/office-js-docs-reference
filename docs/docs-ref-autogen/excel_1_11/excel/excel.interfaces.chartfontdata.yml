@@ -1,117 +1,125 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    summary: An interface describing the data returned by calling `chartFont.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartFontData
-    fullName: Excel.Interfaces.ChartFontData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartFontData
+uid: 'excel!Excel.Interfaces.ChartFontData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartFontData
+summary: >-
+  An interface describing the data returned by calling `chartFont.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bold
+    uid: 'excel!Excel.Interfaces.ChartFontData#bold:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartFontData#bold:member'
-      - 'excel!Excel.Interfaces.ChartFontData#color:member'
-      - 'excel!Excel.Interfaces.ChartFontData#italic:member'
-      - 'excel!Excel.Interfaces.ChartFontData#name:member'
-      - 'excel!Excel.Interfaces.ChartFontData#size:member'
-      - 'excel!Excel.Interfaces.ChartFontData#underline:member'
-  - uid: 'excel!Excel.Interfaces.ChartFontData#bold:member'
-    summary: |-
+    fullName: bold
+    summary: >-
       Represents the bold status of font.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: bold
-    fullName: bold
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'bold?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartFontData#color:member'
-    summary: |-
-      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
+        type: boolean
+  - name: color
+    uid: 'excel!Excel.Interfaces.ChartFontData#color:member'
+    package: excel!
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      HTML color code representation of the text color (e.g., \#FF0000
+      represents Red).
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.ChartFontData#italic:member'
-    summary: |-
+        type: string
+  - name: italic
+    uid: 'excel!Excel.Interfaces.ChartFontData#italic:member'
+    package: excel!
+    fullName: italic
+    summary: >-
       Represents the italic status of the font.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: italic
-    fullName: italic
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'italic?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartFontData#name:member'
-    summary: |-
+        type: boolean
+  - name: name
+    uid: 'excel!Excel.Interfaces.ChartFontData#name:member'
+    package: excel!
+    fullName: name
+    summary: >-
       Font name (e.g., "Calibri")
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.ChartFontData#size:member'
-    summary: |-
+        type: string
+  - name: size
+    uid: 'excel!Excel.Interfaces.ChartFontData#size:member'
+    package: excel!
+    fullName: size
+    summary: >-
       Size of the font (e.g., 11)
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: size
-    fullName: size
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'size?: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Interfaces.ChartFontData#underline:member'
-    summary: |-
-      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: underline
+        type: number
+  - name: underline
+    uid: 'excel!Excel.Interfaces.ChartFontData#underline:member'
+    package: excel!
     fullName: underline
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Type of underline applied to the font. See Excel.ChartUnderlineStyle for
+      details.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'underline?: Excel.ChartUnderlineStyle | "None" | "Single";'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartFontData#underline~0:complex'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartFontData#underline~0:complex'
-    name: Excel.ChartUnderlineStyle | "None" | "Single"
-    fullName: Excel.ChartUnderlineStyle | "None" | "Single"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartUnderlineStyle:enum'
-        name: Excel.ChartUnderlineStyle
-        fullName: Excel.ChartUnderlineStyle
-      - name: ' | "None" | "Single"'
-        fullName: ' | "None" | "Single"'
+        type: >-
+          <xref uid="excel!Excel.ChartUnderlineStyle:enum" /> | "None" |
+          "Single"

@@ -1,152 +1,151 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.TableData:interface'
-    summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-    name: Excel.Interfaces.TableData
-    fullName: Excel.Interfaces.TableData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.TableData
+uid: 'excel!Excel.Interfaces.TableData:interface'
+package: excel!
+fullName: Excel.Interfaces.TableData
+summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: columns
+    uid: 'excel!Excel.Interfaces.TableData#columns:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.TableData#columns:member'
-      - 'excel!Excel.Interfaces.TableData#id:member'
-      - 'excel!Excel.Interfaces.TableData#name:member'
-      - 'excel!Excel.Interfaces.TableData#rows:member'
-      - 'excel!Excel.Interfaces.TableData#showHeaders:member'
-      - 'excel!Excel.Interfaces.TableData#showTotals:member'
-      - 'excel!Excel.Interfaces.TableData#style:member'
-  - uid: 'excel!Excel.Interfaces.TableData#columns:member'
-    summary: |-
+    fullName: columns
+    summary: >-
       Represents a collection of all the columns in the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: columns
-    fullName: columns
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columns?: Excel.Interfaces.TableColumnData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableData#columns~0:complex'
-  - uid: 'excel!Excel.Interfaces.TableData#id:member'
-    summary: >-
-      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
-      same even when the table is renamed.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
+        type: '<xref uid="excel!Excel.Interfaces.TableColumnData:interface" />[]'
+  - name: id
+    uid: 'excel!Excel.Interfaces.TableData#id:member'
+    package: excel!
     fullName: id
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a value that uniquely identifies the table in a given workbook.
+      The value of the identifier remains the same even when the table is
+      renamed.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.TableData#name:member'
+        type: string
+  - name: name
+    uid: 'excel!Excel.Interfaces.TableData#name:member'
+    package: excel!
+    fullName: name
     summary: >-
       Name of the table.
 
 
-      The set name of the table must follow the guidelines specified in the [Rename an Excel
-      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
+      The set name of the table must follow the guidelines specified in the
+      [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)
+      article.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name?: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Interfaces.TableData#rows:member'
-    summary: |-
+        type: string
+  - name: rows
+    uid: 'excel!Excel.Interfaces.TableData#rows:member'
+    package: excel!
+    fullName: rows
+    summary: >-
       Represents a collection of all the rows in the table.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rows
-    fullName: rows
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rows?: Excel.Interfaces.TableRowData[];'
       return:
-        type:
-          - 'excel!Excel.Interfaces.TableData#rows~0:complex'
-  - uid: 'excel!Excel.Interfaces.TableData#showHeaders:member'
-    summary: |-
-      Specifies if the header row is visible. This value can be set to show or remove the header row.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showHeaders
+        type: '<xref uid="excel!Excel.Interfaces.TableRowData:interface" />[]'
+  - name: showHeaders
+    uid: 'excel!Excel.Interfaces.TableData#showHeaders:member'
+    package: excel!
     fullName: showHeaders
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the header row is visible. This value can be set to show or
+      remove the header row.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showHeaders?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableData#showTotals:member'
-    summary: |-
-      Specifies if the total row is visible. This value can be set to show or remove the total row.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showTotals
+        type: boolean
+  - name: showTotals
+    uid: 'excel!Excel.Interfaces.TableData#showTotals:member'
+    package: excel!
     fullName: showTotals
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the total row is visible. This value can be set to show or
+      remove the total row.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'showTotals?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.TableData#style:member'
-    summary: >-
-      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
-      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
-      "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: style
+        type: boolean
+  - name: style
+    uid: 'excel!Excel.Interfaces.TableData#style:member'
+    package: excel!
     fullName: style
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Constant value that represents the Table style. Possible values are:
+      "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1"
+      through "TableStyleMedium28", "TableStyleDark1" through
+      "TableStyleDark11". A custom user-defined style present in the workbook
+      can also be specified.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style?: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.Interfaces.TableData#columns~0:complex'
-    name: 'Excel.Interfaces.TableColumnData[]'
-    fullName: 'Excel.Interfaces.TableColumnData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.TableColumnData:interface'
-        name: Excel.Interfaces.TableColumnData
-        fullName: Excel.Interfaces.TableColumnData
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.Interfaces.TableData#rows~0:complex'
-    name: 'Excel.Interfaces.TableRowData[]'
-    fullName: 'Excel.Interfaces.TableRowData[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.Interfaces.TableRowData:interface'
-        name: Excel.Interfaces.TableRowData
-        fullName: Excel.Interfaces.TableRowData
-      - name: '[]'
-        fullName: '[]'
+        type: string

@@ -1,136 +1,96 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.LabelFilterCondition:enum'
-    summary: >-
-      Enum representing all accepted conditions by which a label filter can be applied. Used to configure the type of
-      PivotFilter that is applied to the field. `PivotFilter.criteria.exclusive` can be set to true to invert many of
-      these conditions.
+### YamlMime:TSEnum
+name: Excel.LabelFilterCondition
+uid: 'excel!Excel.LabelFilterCondition:enum'
+package: excel!
+fullName: Excel.LabelFilterCondition
+summary: >-
+  Enum representing all accepted conditions by which a label filter can be
+  applied. Used to configure the type of PivotFilter that is applied to the
+  field. `PivotFilter.criteria.exclusive` can be set to true to invert many of
+  these conditions.
 
 
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.LabelFilterCondition
-    fullName: Excel.LabelFilterCondition
-    langs:
-      - typeScript
-    type: enum
+  \[ [API set: ExcelApi
+  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: beginsWith
+    uid: 'excel!Excel.LabelFilterCondition.beginsWith:member'
     package: excel!
-    children:
-      - 'excel!Excel.LabelFilterCondition.beginsWith:member'
-      - 'excel!Excel.LabelFilterCondition.between:member'
-      - 'excel!Excel.LabelFilterCondition.contains:member'
-      - 'excel!Excel.LabelFilterCondition.endsWith:member'
-      - 'excel!Excel.LabelFilterCondition.equals:member'
-      - 'excel!Excel.LabelFilterCondition.greaterThan:member'
-      - 'excel!Excel.LabelFilterCondition.greaterThanOrEqualTo:member'
-      - 'excel!Excel.LabelFilterCondition.lessThan:member'
-      - 'excel!Excel.LabelFilterCondition.lessThanOrEqualTo:member'
-      - 'excel!Excel.LabelFilterCondition.unknown:member'
-  - uid: 'excel!Excel.LabelFilterCondition.beginsWith:member'
-    summary: |-
+    summary: >-
       Label begins with substring criterion.
 
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
-    name: beginsWith
-    fullName: beginsWith
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BeginsWith"'
-  - uid: 'excel!Excel.LabelFilterCondition.between:member'
+
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
+      {`exclusive`<!-- -->}<!-- -->.
+  - name: between
+    uid: 'excel!Excel.LabelFilterCondition.between:member'
+    package: excel!
     summary: >-
       Between `lowerBound` and `upperBound` criteria.
 
 
-      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!--
-      -->}<!-- -->.
-    name: between
-    fullName: between
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Between"'
-  - uid: 'excel!Excel.LabelFilterCondition.contains:member'
-    summary: |-
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->.
+      Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+  - name: contains
+    uid: 'excel!Excel.LabelFilterCondition.contains:member'
+    package: excel!
+    summary: >-
       Label contains substring criterion.
 
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
-    name: contains
-    fullName: contains
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Contains"'
-  - uid: 'excel!Excel.LabelFilterCondition.endsWith:member'
-    summary: |-
+
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
+      {`exclusive`<!-- -->}<!-- -->.
+  - name: endsWith
+    uid: 'excel!Excel.LabelFilterCondition.endsWith:member'
+    package: excel!
+    summary: >-
       Label ends with substring criterion.
 
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
-    name: endsWith
-    fullName: endsWith
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"EndsWith"'
-  - uid: 'excel!Excel.LabelFilterCondition.equals:member'
-    summary: |-
+
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
+      {`exclusive`<!-- -->}<!-- -->.
+  - name: equals
+    uid: 'excel!Excel.LabelFilterCondition.equals:member'
+    package: excel!
+    summary: >-
       Equals comparator criterion.
 
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
-    name: equals
-    fullName: equals
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Equals"'
-  - uid: 'excel!Excel.LabelFilterCondition.greaterThan:member'
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
+      {`exclusive`<!-- -->}<!-- -->.
+  - name: greaterThan
+    uid: 'excel!Excel.LabelFilterCondition.greaterThan:member'
+    package: excel!
     summary: |-
       Greater than comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
-    name: greaterThan
-    fullName: greaterThan
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GreaterThan"'
-  - uid: 'excel!Excel.LabelFilterCondition.greaterThanOrEqualTo:member'
+  - name: greaterThanOrEqualTo
+    uid: 'excel!Excel.LabelFilterCondition.greaterThanOrEqualTo:member'
+    package: excel!
     summary: |-
       Greater than or equal to comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
-    name: greaterThanOrEqualTo
-    fullName: greaterThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GreaterThanOrEqualTo"'
-  - uid: 'excel!Excel.LabelFilterCondition.lessThan:member'
+  - name: lessThan
+    uid: 'excel!Excel.LabelFilterCondition.lessThan:member'
+    package: excel!
     summary: |-
       Less than comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
-    name: lessThan
-    fullName: lessThan
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LessThan"'
-  - uid: 'excel!Excel.LabelFilterCondition.lessThanOrEqualTo:member'
+  - name: lessThanOrEqualTo
+    uid: 'excel!Excel.LabelFilterCondition.lessThanOrEqualTo:member'
+    package: excel!
     summary: |-
       Less than or equal to comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
-    name: lessThanOrEqualTo
-    fullName: lessThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LessThanOrEqualTo"'
-  - uid: 'excel!Excel.LabelFilterCondition.unknown:member'
+  - name: unknown
+    uid: 'excel!Excel.LabelFilterCondition.unknown:member'
+    package: excel!
     summary: LabelFilterCondition is unknown or unsupported.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Unknown"'

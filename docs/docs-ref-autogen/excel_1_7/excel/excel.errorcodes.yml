@@ -1,178 +1,98 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ErrorCodes:enum'
-    name: Excel.ErrorCodes
-    fullName: Excel.ErrorCodes
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ErrorCodes
+uid: 'excel!Excel.ErrorCodes:enum'
+package: excel!
+fullName: Excel.ErrorCodes
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accessDenied
+    uid: 'excel!Excel.ErrorCodes.accessDenied:member'
     package: excel!
-    children:
-      - 'excel!Excel.ErrorCodes.accessDenied:member'
-      - 'excel!Excel.ErrorCodes.apiNotFound:member'
-      - 'excel!Excel.ErrorCodes.conflict:member'
-      - 'excel!Excel.ErrorCodes.filteredRangeConflict:member'
-      - 'excel!Excel.ErrorCodes.generalException:member'
-      - 'excel!Excel.ErrorCodes.insertDeleteConflict:member'
-      - 'excel!Excel.ErrorCodes.invalidArgument:member'
-      - 'excel!Excel.ErrorCodes.invalidBinding:member'
-      - 'excel!Excel.ErrorCodes.invalidOperation:member'
-      - 'excel!Excel.ErrorCodes.invalidOperationInCellEditMode:member'
-      - 'excel!Excel.ErrorCodes.invalidReference:member'
-      - 'excel!Excel.ErrorCodes.invalidSelection:member'
-      - 'excel!Excel.ErrorCodes.itemAlreadyExists:member'
-      - 'excel!Excel.ErrorCodes.itemNotFound:member'
-      - 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
-      - 'excel!Excel.ErrorCodes.notImplemented:member'
-      - 'excel!Excel.ErrorCodes.pivotTableRangeConflict:member'
-      - 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
-      - 'excel!Excel.ErrorCodes.requestAborted:member'
-      - 'excel!Excel.ErrorCodes.unsupportedOperation:member'
-      - 'excel!Excel.ErrorCodes.unsupportedSheet:member'
-  - uid: 'excel!Excel.ErrorCodes.accessDenied:member'
-    name: accessDenied
-    fullName: accessDenied
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"AccessDenied"'
-  - uid: 'excel!Excel.ErrorCodes.apiNotFound:member'
-    name: apiNotFound
-    fullName: apiNotFound
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ApiNotFound"'
-  - uid: 'excel!Excel.ErrorCodes.conflict:member'
-    name: conflict
-    fullName: conflict
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Conflict"'
-  - uid: 'excel!Excel.ErrorCodes.filteredRangeConflict:member'
-    name: filteredRangeConflict
-    fullName: filteredRangeConflict
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FilteredRangeConflict"'
-  - uid: 'excel!Excel.ErrorCodes.generalException:member'
-    name: generalException
-    fullName: generalException
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GeneralException"'
-  - uid: 'excel!Excel.ErrorCodes.insertDeleteConflict:member'
-    name: insertDeleteConflict
-    fullName: insertDeleteConflict
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InsertDeleteConflict"'
-  - uid: 'excel!Excel.ErrorCodes.invalidArgument:member'
-    name: invalidArgument
-    fullName: invalidArgument
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InvalidArgument"'
-  - uid: 'excel!Excel.ErrorCodes.invalidBinding:member'
-    name: invalidBinding
-    fullName: invalidBinding
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InvalidBinding"'
-  - uid: 'excel!Excel.ErrorCodes.invalidOperation:member'
-    name: invalidOperation
-    fullName: invalidOperation
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InvalidOperation"'
-  - uid: 'excel!Excel.ErrorCodes.invalidOperationInCellEditMode:member'
-    name: invalidOperationInCellEditMode
-    fullName: invalidOperationInCellEditMode
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InvalidOperationInCellEditMode"'
-  - uid: 'excel!Excel.ErrorCodes.invalidReference:member'
-    name: invalidReference
-    fullName: invalidReference
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InvalidReference"'
-  - uid: 'excel!Excel.ErrorCodes.invalidSelection:member'
-    name: invalidSelection
-    fullName: invalidSelection
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"InvalidSelection"'
-  - uid: 'excel!Excel.ErrorCodes.itemAlreadyExists:member'
-    name: itemAlreadyExists
-    fullName: itemAlreadyExists
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ItemAlreadyExists"'
-  - uid: 'excel!Excel.ErrorCodes.itemNotFound:member'
-    name: itemNotFound
-    fullName: itemNotFound
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ItemNotFound"'
-  - uid: 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
-    name: nonBlankCellOffSheet
-    fullName: nonBlankCellOffSheet
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NonBlankCellOffSheet"'
-  - uid: 'excel!Excel.ErrorCodes.notImplemented:member'
-    name: notImplemented
-    fullName: notImplemented
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NotImplemented"'
-  - uid: 'excel!Excel.ErrorCodes.pivotTableRangeConflict:member'
-    name: pivotTableRangeConflict
-    fullName: pivotTableRangeConflict
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PivotTableRangeConflict"'
-  - uid: 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
-    name: rangeExceedsLimit
-    fullName: rangeExceedsLimit
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RangeExceedsLimit"'
-  - uid: 'excel!Excel.ErrorCodes.requestAborted:member'
-    name: requestAborted
-    fullName: requestAborted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RequestAborted"'
-  - uid: 'excel!Excel.ErrorCodes.unsupportedOperation:member'
-    name: unsupportedOperation
-    fullName: unsupportedOperation
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UnsupportedOperation"'
-  - uid: 'excel!Excel.ErrorCodes.unsupportedSheet:member'
-    name: unsupportedSheet
-    fullName: unsupportedSheet
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UnsupportedSheet"'
+    summary: ''
+  - name: apiNotFound
+    uid: 'excel!Excel.ErrorCodes.apiNotFound:member'
+    package: excel!
+    summary: ''
+  - name: conflict
+    uid: 'excel!Excel.ErrorCodes.conflict:member'
+    package: excel!
+    summary: ''
+  - name: filteredRangeConflict
+    uid: 'excel!Excel.ErrorCodes.filteredRangeConflict:member'
+    package: excel!
+    summary: ''
+  - name: generalException
+    uid: 'excel!Excel.ErrorCodes.generalException:member'
+    package: excel!
+    summary: ''
+  - name: inactiveWorkbook
+    uid: 'excel!Excel.ErrorCodes.inactiveWorkbook:member'
+    package: excel!
+    summary: ''
+  - name: insertDeleteConflict
+    uid: 'excel!Excel.ErrorCodes.insertDeleteConflict:member'
+    package: excel!
+    summary: ''
+  - name: invalidArgument
+    uid: 'excel!Excel.ErrorCodes.invalidArgument:member'
+    package: excel!
+    summary: ''
+  - name: invalidBinding
+    uid: 'excel!Excel.ErrorCodes.invalidBinding:member'
+    package: excel!
+    summary: ''
+  - name: invalidOperation
+    uid: 'excel!Excel.ErrorCodes.invalidOperation:member'
+    package: excel!
+    summary: ''
+  - name: invalidOperationInCellEditMode
+    uid: 'excel!Excel.ErrorCodes.invalidOperationInCellEditMode:member'
+    package: excel!
+    summary: ''
+  - name: invalidReference
+    uid: 'excel!Excel.ErrorCodes.invalidReference:member'
+    package: excel!
+    summary: ''
+  - name: invalidSelection
+    uid: 'excel!Excel.ErrorCodes.invalidSelection:member'
+    package: excel!
+    summary: ''
+  - name: itemAlreadyExists
+    uid: 'excel!Excel.ErrorCodes.itemAlreadyExists:member'
+    package: excel!
+    summary: ''
+  - name: itemNotFound
+    uid: 'excel!Excel.ErrorCodes.itemNotFound:member'
+    package: excel!
+    summary: ''
+  - name: nonBlankCellOffSheet
+    uid: 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
+    package: excel!
+    summary: ''
+  - name: notImplemented
+    uid: 'excel!Excel.ErrorCodes.notImplemented:member'
+    package: excel!
+    summary: ''
+  - name: pivotTableRangeConflict
+    uid: 'excel!Excel.ErrorCodes.pivotTableRangeConflict:member'
+    package: excel!
+    summary: ''
+  - name: rangeExceedsLimit
+    uid: 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
+    package: excel!
+    summary: ''
+  - name: requestAborted
+    uid: 'excel!Excel.ErrorCodes.requestAborted:member'
+    package: excel!
+    summary: ''
+  - name: unsupportedOperation
+    uid: 'excel!Excel.ErrorCodes.unsupportedOperation:member'
+    package: excel!
+    summary: ''
+  - name: unsupportedSheet
+    uid: 'excel!Excel.ErrorCodes.unsupportedSheet:member'
+    package: excel!
+    summary: ''

@@ -1,82 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.Sensitivity:interface'
-    summary: |-
-      Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+### YamlMime:TSType
+name: Office.Sensitivity
+uid: 'outlook!Office.Sensitivity:interface'
+package: outlook!
+fullName: Office.Sensitivity
+summary: >-
+  Provides methods to get and set the appointment sensitivity of a meeting in an
+  Outlook add-in.
 
 
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    isPreview: true
-    name: Office.Sensitivity
-    fullName: Office.Sensitivity
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: Mailbox
+  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+  \]
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+isPreview: true
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.Sensitivity#getAsync:member(1)'
     package: outlook!
-    children:
-      - 'outlook!Office.Sensitivity#getAsync:member(1)'
-      - 'outlook!Office.Sensitivity#getAsync:member(2)'
-      - 'outlook!Office.Sensitivity#setAsync:member(1)'
-  - uid: 'outlook!Office.Sensitivity#getAsync:member(1)'
-    summary: |-
+    fullName: 'getAsync(options, callback)'
+    summary: >-
       Gets the value of the appointment sensitivity.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+      \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
     isPreview: true
-    name: 'getAsync(options, callback)'
-    fullName: 'getAsync(options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
       content: >-
         getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void):
+        void;
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            An object literal that contains one or more of the following
+            properties. `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
-          type:
-            - 'outlook!Office.Sensitivity#getAsync~0:complex'
-  - uid: 'outlook!Office.Sensitivity#getAsync:member(2)'
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref
+            uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum"
+            />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.Sensitivity#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
     summary: Gets the value of the appointment sensitivity.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -97,41 +105,49 @@ items:
 
       ```
     isPreview: true
-    name: getAsync(callback)
-    fullName: getAsync(callback)
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        getAsync(callback: (asyncResult:
+        Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void):
+        void;
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
 
 
             \[Api set: Mailbox Preview\]
-          type:
-            - 'outlook!Office.Sensitivity#getAsync~1:complex'
-  - uid: 'outlook!Office.Sensitivity#setAsync:member(1)'
-    summary: |-
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref
+            uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum"
+            />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(sensitivity, options, callback)'
+    uid: 'outlook!Office.Sensitivity#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(sensitivity, options, callback)'
+    summary: >-
       Sets the value of the appointment sensitivity.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+      \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
+      \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
@@ -155,88 +171,33 @@ items:
 
       ```
     isPreview: true
-    name: 'setAsync(sensitivity, options, callback)'
-    fullName: 'setAsync(sensitivity, options, callback)'
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
       content: >-
-        setAsync(sensitivity: MailboxEnums.AppointmentSensitivityType | string, options?: Office.AsyncContextOptions,
-        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
+        setAsync(sensitivity: MailboxEnums.AppointmentSensitivityType | string,
+        options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: sensitivity
           description: The sensitivity value as enum or string.
-          type:
-            - 'outlook!Office.Sensitivity#setAsync~0:complex'
+          type: >-
+            <xref
+            uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />
+            | string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
-          type:
-            - 'office!Office.AsyncContextOptions:interface'
+            Optional. An object literal that contains one or more of the
+            following properties. `asyncContext`<!-- -->: Developers can provide
+            any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.Sensitivity#setAsync~1:complex'
-references:
-  - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
-  - uid: 'outlook!Office.Sensitivity#getAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.MailboxEnums.AppointmentSensitivityType>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
-        name: MailboxEnums.AppointmentSensitivityType
-        fullName: Office.MailboxEnums.AppointmentSensitivityType
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: 'outlook!Office.Sensitivity#getAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.MailboxEnums.AppointmentSensitivityType>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <
-        fullName: <
-      - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
-        name: MailboxEnums.AppointmentSensitivityType
-        fullName: Office.MailboxEnums.AppointmentSensitivityType
-      - name: '>) => void'
-        fullName: '>) => void'
-  - uid: 'outlook!Office.Sensitivity#setAsync~0:complex'
-    name: MailboxEnums.AppointmentSensitivityType | string
-    fullName: Office.MailboxEnums.AppointmentSensitivityType | string
-    spec.typeScript:
-      - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
-        name: MailboxEnums.AppointmentSensitivityType
-        fullName: Office.MailboxEnums.AppointmentSensitivityType
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'outlook!Office.Sensitivity#setAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'office!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
+      return:
+        type: void
+        description: ''

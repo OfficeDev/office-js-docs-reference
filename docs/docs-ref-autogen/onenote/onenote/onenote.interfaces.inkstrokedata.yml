@@ -1,46 +1,47 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkStrokeData:interface'
-    summary: An interface describing the data returned by calling "inkStroke.toJSON()".
-    name: OneNote.Interfaces.InkStrokeData
-    fullName: OneNote.Interfaces.InkStrokeData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkStrokeData
+uid: 'onenote!OneNote.Interfaces.InkStrokeData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkStrokeData
+summary: An interface describing the data returned by calling "inkStroke.toJSON()".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: floatingInk
+    uid: 'onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member'
-      - 'onenote!OneNote.Interfaces.InkStrokeData#id:member'
-  - uid: 'onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member'
-    summary: |-
+    fullName: floatingInk
+    summary: >-
       Gets the ID of the InkStroke object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: floatingInk
-    fullName: floatingInk
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.FloatingInkData:interface'
-  - uid: 'onenote!OneNote.Interfaces.InkStrokeData#id:member'
-    summary: |-
+        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkData:interface" />'
+  - name: id
+    uid: 'onenote!OneNote.Interfaces.InkStrokeData#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
       Gets the ID of the InkStroke object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'id?: string;'
       return:
-        type:
-          - string
-references:
-  - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
-    name: OneNote.Interfaces.FloatingInkData
+        type: string

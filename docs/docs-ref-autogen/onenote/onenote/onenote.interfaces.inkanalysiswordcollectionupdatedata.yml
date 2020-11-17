@@ -1,35 +1,28 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the InkAnalysisWordCollection object, for use in
-      "inkAnalysisWordCollection.set(<!-- -->{ ... }<!-- -->)".
-    name: OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
-    fullName: OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
+uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
+summary: >-
+  An interface for updating data on the InkAnalysisWordCollection object, for
+  use in "inkAnalysisWordCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: >-
+      onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items~0:complex'
-    name: 'OneNote.Interfaces.InkAnalysisWordData[]'
-    fullName: 'OneNote.Interfaces.InkAnalysisWordData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
-        name: OneNote.Interfaces.InkAnalysisWordData
-        fullName: OneNote.Interfaces.InkAnalysisWordData
-      - name: '[]'
-        fullName: '[]'
+        type: >-
+          <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface"
+          />[]

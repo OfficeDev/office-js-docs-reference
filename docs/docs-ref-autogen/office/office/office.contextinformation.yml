@@ -1,29 +1,26 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.ContextInformation:interface'
-    summary: Provides information about the environment in which the add-in is running.
-    name: Office.ContextInformation
-    fullName: Office.ContextInformation
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Office.ContextInformation
+uid: 'office!Office.ContextInformation:interface'
+package: office!
+fullName: Office.ContextInformation
+summary: Provides information about the environment in which the add-in is running.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: host
+    uid: 'office!Office.ContextInformation#host:member'
     package: office!
-    children:
-      - 'office!Office.ContextInformation#host:member'
-      - 'office!Office.ContextInformation#platform:member'
-      - 'office!Office.ContextInformation#version:member'
-  - uid: 'office!Office.ContextInformation#host:member'
-    summary: Gets the Office application host in which the add-in is running.
-    name: host
     fullName: host
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the Office application host in which the add-in is running.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'host: Office.HostType;'
       return:
-        type:
-          - 'office!Office.HostType:enum'
+        type: '<xref uid="office!Office.HostType:enum" />'
         description: |-
 
 
@@ -33,18 +30,18 @@ items:
           var contextInfo = Office.context.diagnostics;
           console.log("Office application: " + contextInfo.host);
           ```
-  - uid: 'office!Office.ContextInformation#platform:member'
-    summary: Gets the platform on which the add-in is running.
-    name: platform
+  - name: platform
+    uid: 'office!Office.ContextInformation#platform:member'
+    package: office!
     fullName: platform
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the platform on which the add-in is running.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'platform: Office.PlatformType;'
       return:
-        type:
-          - 'office!Office.PlatformType:enum'
+        type: '<xref uid="office!Office.PlatformType:enum" />'
         description: |-
 
 
@@ -54,18 +51,18 @@ items:
           var contextInfo = Office.context.diagnostics;
           console.log("Platform: " + contextInfo.platform);
           ```
-  - uid: 'office!Office.ContextInformation#version:member'
-    summary: Gets the version of Office on which the add-in is running.
-    name: version
+  - name: version
+    uid: 'office!Office.ContextInformation#version:member'
+    package: office!
     fullName: version
-    langs:
-      - typeScript
-    type: property
+    summary: Gets the version of Office on which the add-in is running.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'version: string;'
       return:
-        type:
-          - string
+        type: string
         description: |-
 
 
@@ -75,8 +72,3 @@ items:
           var contextInfo = Office.context.diagnostics;
           console.log("Office version: " + contextInfo.version);
           ```
-references:
-  - uid: 'office!Office.HostType:enum'
-    name: Office.HostType
-  - uid: 'office!Office.PlatformType:enum'
-    name: Office.PlatformType

@@ -1,54 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTitlePosition:enum'
-    summary: |-
-      Represents the position of chart title.
+### YamlMime:TSEnum
+name: Excel.ChartTitlePosition
+uid: 'excel!Excel.ChartTitlePosition:enum'
+package: excel!
+fullName: Excel.ChartTitlePosition
+summary: >-
+  Represents the position of chart title.
 
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartTitlePosition
-    fullName: Excel.ChartTitlePosition
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'excel!Excel.ChartTitlePosition.automatic:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartTitlePosition.automatic:member'
-      - 'excel!Excel.ChartTitlePosition.bottom:member'
-      - 'excel!Excel.ChartTitlePosition.left:member'
-      - 'excel!Excel.ChartTitlePosition.right:member'
-      - 'excel!Excel.ChartTitlePosition.top:member'
-  - uid: 'excel!Excel.ChartTitlePosition.automatic:member'
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.ChartTitlePosition.bottom:member'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bottom"'
-  - uid: 'excel!Excel.ChartTitlePosition.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Left"'
-  - uid: 'excel!Excel.ChartTitlePosition.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Right"'
-  - uid: 'excel!Excel.ChartTitlePosition.top:member'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Top"'
+    summary: ''
+  - name: bottom
+    uid: 'excel!Excel.ChartTitlePosition.bottom:member'
+    package: excel!
+    summary: ''
+  - name: left
+    uid: 'excel!Excel.ChartTitlePosition.left:member'
+    package: excel!
+    summary: ''
+  - name: right
+    uid: 'excel!Excel.ChartTitlePosition.right:member'
+    package: excel!
+    summary: ''
+  - name: top
+    uid: 'excel!Excel.ChartTitlePosition.top:member'
+    package: excel!
+    summary: ''

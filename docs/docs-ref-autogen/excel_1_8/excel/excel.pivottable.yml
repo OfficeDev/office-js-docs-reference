@@ -1,54 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotTable:class'
-    summary: >-
-      Represents an Excel PivotTable. To learn more about the PivotTable object model, read [Work with PivotTables using
-      the Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.
+### YamlMime:TSType
+name: Excel.PivotTable
+uid: 'excel!Excel.PivotTable:class'
+package: excel!
+fullName: Excel.PivotTable
+summary: >-
+  Represents an Excel PivotTable. To learn more about the PivotTable object
+  model, read [Work with PivotTables using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotTable
-    fullName: Excel.PivotTable
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: ExcelApi
+  1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: columnHierarchies
+    uid: 'excel!Excel.PivotTable#columnHierarchies:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotTable#columnHierarchies:member'
-      - 'excel!Excel.PivotTable#context:member'
-      - 'excel!Excel.PivotTable#dataHierarchies:member'
-      - 'excel!Excel.PivotTable#delete:member(1)'
-      - 'excel!Excel.PivotTable#filterHierarchies:member'
-      - 'excel!Excel.PivotTable#hierarchies:member'
-      - 'excel!Excel.PivotTable#id:member'
-      - 'excel!Excel.PivotTable#layout:member'
-      - 'excel!Excel.PivotTable#load:member(1)'
-      - 'excel!Excel.PivotTable#load:member(2)'
-      - 'excel!Excel.PivotTable#load:member(3)'
-      - 'excel!Excel.PivotTable#name:member'
-      - 'excel!Excel.PivotTable#refresh:member(1)'
-      - 'excel!Excel.PivotTable#rowHierarchies:member'
-      - 'excel!Excel.PivotTable#set:member(1)'
-      - 'excel!Excel.PivotTable#set:member(2)'
-      - 'excel!Excel.PivotTable#toJSON:member(1)'
-      - 'excel!Excel.PivotTable#worksheet:member'
-  - uid: 'excel!Excel.PivotTable#columnHierarchies:member'
-    summary: |-
+    fullName: columnHierarchies
+    summary: >-
       The Column Pivot Hierarchies of the PivotTable.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: columnHierarchies
-    fullName: columnHierarchies
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly columnHierarchies: Excel.RowColumnPivotHierarchyCollection;'
       return:
-        type:
-          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
+        type: '<xref uid="excel!Excel.RowColumnPivotHierarchyCollection:class" />'
         description: >-
 
 
@@ -79,35 +66,38 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.PivotTable#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+  - name: context
+    uid: 'excel!Excel.PivotTable#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.PivotTable#dataHierarchies:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: dataHierarchies
+    uid: 'excel!Excel.PivotTable#dataHierarchies:member'
+    package: excel!
+    fullName: dataHierarchies
+    summary: >-
       The Data Pivot Hierarchies of the PivotTable.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: dataHierarchies
-    fullName: dataHierarchies
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly dataHierarchies: Excel.DataPivotHierarchyCollection;'
       return:
-        type:
-          - 'excel!Excel.DataPivotHierarchyCollection:class'
+        type: '<xref uid="excel!Excel.DataPivotHierarchyCollection:class" />'
         description: >-
 
 
@@ -128,54 +118,24 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.PivotTable#delete:member(1)'
-    summary: |-
-      Deletes the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
-
-          await Excel.run(async (context) => {
-              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
-
-              await context.sync();
-          });
-
-          ```
-  - uid: 'excel!Excel.PivotTable#filterHierarchies:member'
-    summary: |-
+  - name: filterHierarchies
+    uid: 'excel!Excel.PivotTable#filterHierarchies:member'
+    package: excel!
+    fullName: filterHierarchies
+    summary: >-
       The Filter Pivot Hierarchies of the PivotTable.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: filterHierarchies
-    fullName: filterHierarchies
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly filterHierarchies: Excel.FilterPivotHierarchyCollection;'
       return:
-        type:
-          - 'excel!Excel.FilterPivotHierarchyCollection:class'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchyCollection:class" />'
         description: >-
 
 
@@ -204,51 +164,61 @@ items:
           }
 
           ```
-  - uid: 'excel!Excel.PivotTable#hierarchies:member'
-    summary: |-
+  - name: hierarchies
+    uid: 'excel!Excel.PivotTable#hierarchies:member'
+    package: excel!
+    fullName: hierarchies
+    summary: >-
       The Pivot Hierarchies of the PivotTable.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: hierarchies
-    fullName: hierarchies
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly hierarchies: Excel.PivotHierarchyCollection;'
       return:
-        type:
-          - 'excel!Excel.PivotHierarchyCollection:class'
-  - uid: 'excel!Excel.PivotTable#id:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.PivotHierarchyCollection:class" />'
+  - name: id
+    uid: 'excel!Excel.PivotTable#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Id of the PivotTable.
 
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly id: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotTable#layout:member'
-    summary: |-
-      The PivotLayout describing the layout and visual structure of the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: layout
+        type: string
+  - name: layout
+    uid: 'excel!Excel.PivotTable#layout:member'
+    package: excel!
     fullName: layout
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The PivotLayout describing the layout and visual structure of the
+      PivotTable.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly layout: Excel.PivotLayout;'
       return:
-        type:
-          - 'excel!Excel.PivotLayout:class'
+        type: '<xref uid="excel!Excel.PivotLayout:class" />'
         description: >-
 
 
@@ -278,227 +248,261 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.PivotTable#load:member(1)'
+  - name: name
+    uid: 'excel!Excel.PivotTable#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Name of the PivotTable.
+
+
+      \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;'
+      content: 'name: string;'
       return:
-        type:
-          - 'excel!Excel.PivotTable:class'
-        description: ''
+        type: string
+  - name: rowHierarchies
+    uid: 'excel!Excel.PivotTable#rowHierarchies:member'
+    package: excel!
+    fullName: rowHierarchies
+    summary: >-
+      The Row Pivot Hierarchies of the PivotTable.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly rowHierarchies: Excel.RowColumnPivotHierarchyCollection;'
+      return:
+        type: '<xref uid="excel!Excel.RowColumnPivotHierarchyCollection:class" />'
+  - name: worksheet
+    uid: 'excel!Excel.PivotTable#worksheet:member'
+    package: excel!
+    fullName: worksheet
+    summary: >-
+      The worksheet containing the current PivotTable.
+
+
+      \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+methods:
+  - name: delete()
+    uid: 'excel!Excel.PivotTable#delete:member(1)'
+    package: excel!
+    fullName: delete()
+    summary: >-
+      Deletes the PivotTable.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
+          await Excel.run(async (context) => {
+              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
+
+              await context.sync();
+          });
+
+          ```
+  - name: load(options)
+    uid: 'excel!Excel.PivotTable#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.PivotTableLoadOptions):
+        Excel.PivotTable;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
-  - uid: 'excel!Excel.PivotTable#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.PivotTable#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotTable;'
-      return:
-        type:
-          - 'excel!Excel.PivotTable:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PivotTable#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.PivotTable#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.PivotTable;
-      return:
-        type:
-          - 'excel!Excel.PivotTable:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.PivotTable#name:member'
-    summary: |-
-      Name of the PivotTable.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotTable#refresh:member(1)'
-    summary: |-
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
+        description: ''
+  - name: refresh()
+    uid: 'excel!Excel.PivotTable#refresh:member(1)'
+    package: excel!
+    fullName: refresh()
+    summary: >-
       Refreshes the PivotTable.
 
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: refresh()
-    fullName: refresh()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'refresh(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.PivotTable#rowHierarchies:member'
-    summary: |-
-      The Row Pivot Hierarchies of the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rowHierarchies
-    fullName: rowHierarchies
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rowHierarchies: Excel.RowColumnPivotHierarchyCollection;'
-      return:
-        type:
-          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
-  - uid: 'excel!Excel.PivotTable#set:member(1)'
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.PivotTable#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.PivotTable): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.PivotTableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.PivotTableUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="excel!Excel.Interfaces.PivotTableUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.PivotTable#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.PivotTable#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.PivotTable): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.PivotTable:class'
-  - uid: 'excel!Excel.PivotTable#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.PivotTable object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.PivotTableData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+          type: '<xref uid="excel!Excel.PivotTable:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.PivotTable#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.PivotTable object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.PivotTableData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotTableData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PivotTableData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />'
         description: ''
-  - uid: 'excel!Excel.PivotTable#worksheet:member'
-    summary: |-
-      The worksheet containing the current PivotTable.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Excel.Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:class'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:class'
-    name: Excel.RowColumnPivotHierarchyCollection
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.DataPivotHierarchyCollection:class'
-    name: Excel.DataPivotHierarchyCollection
-  - uid: 'excel!Excel.FilterPivotHierarchyCollection:class'
-    name: Excel.FilterPivotHierarchyCollection
-  - uid: 'excel!Excel.PivotHierarchyCollection:class'
-    name: Excel.PivotHierarchyCollection
-  - uid: 'excel!Excel.PivotLayout:class'
-    name: Excel.PivotLayout
-  - uid: 'excel!Excel.PivotTable:class'
-    name: Excel.PivotTable
-  - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
-    name: Excel.Interfaces.PivotTableLoadOptions
-  - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
-    name: Interfaces.PivotTableUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
-    name: Excel.Interfaces.PivotTableData
-  - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

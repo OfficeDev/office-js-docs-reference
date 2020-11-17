@@ -1,57 +1,239 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Section:class'
-    summary: |-
-      Represents a OneNote section. Sections can contain pages.
+### YamlMime:TSType
+name: OneNote.Section
+uid: 'onenote!OneNote.Section:class'
+package: onenote!
+fullName: OneNote.Section
+summary: >-
+  Represents a OneNote section. Sections can contain pages.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Section
-    fullName: OneNote.Section
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: OneNoteApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: clientUrl
+    uid: 'onenote!OneNote.Section#clientUrl:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Section#addPage:member(1)'
-      - 'onenote!OneNote.Section#clientUrl:member'
-      - 'onenote!OneNote.Section#context:member'
-      - 'onenote!OneNote.Section#copyToNotebook:member(1)'
-      - 'onenote!OneNote.Section#copyToSectionGroup:member(1)'
-      - 'onenote!OneNote.Section#getRestApiId:member(1)'
-      - 'onenote!OneNote.Section#id:member'
-      - 'onenote!OneNote.Section#insertSectionAsSibling:member(1)'
-      - 'onenote!OneNote.Section#insertSectionAsSibling:member(2)'
-      - 'onenote!OneNote.Section#isEncrypted:member'
-      - 'onenote!OneNote.Section#isLocked:member'
-      - 'onenote!OneNote.Section#load:member(1)'
-      - 'onenote!OneNote.Section#load:member(2)'
-      - 'onenote!OneNote.Section#load:member(3)'
-      - 'onenote!OneNote.Section#name:member'
-      - 'onenote!OneNote.Section#notebook:member'
-      - 'onenote!OneNote.Section#pages:member'
-      - 'onenote!OneNote.Section#parentSectionGroup:member'
-      - 'onenote!OneNote.Section#parentSectionGroupOrNull:member'
-      - 'onenote!OneNote.Section#toJSON:member(1)'
-      - 'onenote!OneNote.Section#track:member(1)'
-      - 'onenote!OneNote.Section#untrack:member(1)'
-      - 'onenote!OneNote.Section#webUrl:member'
-  - uid: 'onenote!OneNote.Section#addPage:member(1)'
-    summary: |-
+    fullName: clientUrl
+    summary: >-
+      The client url of the section. Read only
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly clientUrl: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'onenote!OneNote.Section#context:member'
+    package: onenote!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
+  - name: id
+    uid: 'onenote!OneNote.Section#id:member'
+    package: onenote!
+    fullName: id
+    summary: >-
+      Gets the ID of the section. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: isEncrypted
+    uid: 'onenote!OneNote.Section#isEncrypted:member'
+    package: onenote!
+    fullName: isEncrypted
+    summary: >-
+      True if this section is encrypted with a password. Read only
+
+
+      \[ [API set: OneNoteApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isEncrypted: boolean;'
+      return:
+        type: boolean
+  - name: isLocked
+    uid: 'onenote!OneNote.Section#isLocked:member'
+    package: onenote!
+    fullName: isLocked
+    summary: >-
+      True if this section is locked. Read only
+
+
+      \[ [API set: OneNoteApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isLocked: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'onenote!OneNote.Section#name:member'
+    package: onenote!
+    fullName: name
+    summary: >-
+      Gets the name of the section. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type: string
+  - name: notebook
+    uid: 'onenote!OneNote.Section#notebook:member'
+    package: onenote!
+    fullName: notebook
+    summary: >-
+      Gets the notebook that contains the section. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly notebook: OneNote.Notebook;'
+      return:
+        type: '<xref uid="onenote!OneNote.Notebook:class" />'
+  - name: pages
+    uid: 'onenote!OneNote.Section#pages:member'
+    package: onenote!
+    fullName: pages
+    summary: >-
+      The collection of pages in the section. Read only
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly pages: OneNote.PageCollection;'
+      return:
+        type: '<xref uid="onenote!OneNote.PageCollection:class" />'
+  - name: parentSectionGroup
+    uid: 'onenote!OneNote.Section#parentSectionGroup:member'
+    package: onenote!
+    fullName: parentSectionGroup
+    summary: >-
+      Gets the section group that contains the section. Throws ItemNotFound if
+      the section is a direct child of the notebook. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentSectionGroup: OneNote.SectionGroup;'
+      return:
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
+  - name: parentSectionGroupOrNull
+    uid: 'onenote!OneNote.Section#parentSectionGroupOrNull:member'
+    package: onenote!
+    fullName: parentSectionGroupOrNull
+    summary: >-
+      Gets the section group that contains the section. Returns null if the
+      section is a direct child of the notebook. Read-only.
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentSectionGroupOrNull: OneNote.SectionGroup;'
+      return:
+        type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
+  - name: webUrl
+    uid: 'onenote!OneNote.Section#webUrl:member'
+    package: onenote!
+    fullName: webUrl
+    summary: >-
+      The web url of the page. Read only
+
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly webUrl: string;'
+      return:
+        type: string
+methods:
+  - name: addPage(title)
+    uid: 'onenote!OneNote.Section#addPage:member(1)'
+    package: onenote!
+    fullName: addPage(title)
+    summary: >-
       Adds a new page to the end of the section.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: addPage(title)
-    fullName: addPage(title)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'addPage(title: string): OneNote.Page;'
+      parameters:
+        - id: title
+          description: The title of the new page.
+          type: string
       return:
-        type:
-          - 'onenote!OneNote.Page:class'
+        type: '<xref uid="onenote!OneNote.Page:class" />'
         description: |-
 
 
@@ -84,55 +266,28 @@ items:
               }
           });
           ```
-      parameters:
-        - id: title
-          description: The title of the new page.
-          type:
-            - string
-  - uid: 'onenote!OneNote.Section#clientUrl:member'
-    summary: |-
-      The client url of the section. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: clientUrl
-    fullName: clientUrl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly clientUrl: string;'
-      return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Section#context:member'
+  - name: copyToNotebook(destinationNotebook)
+    uid: 'onenote!OneNote.Section#copyToNotebook:member(1)'
+    package: onenote!
+    fullName: copyToNotebook(destinationNotebook)
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - 'onenote!OneNote.RequestContext:class'
-  - uid: 'onenote!OneNote.Section#copyToNotebook:member(1)'
-    summary: |-
       Copies this section to specified notebook.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: copyToNotebook(destinationNotebook)
-    fullName: copyToNotebook(destinationNotebook)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'copyToNotebook(destinationNotebook: OneNote.Notebook): OneNote.Section;'
+      parameters:
+        - id: destinationNotebook
+          description: The notebook to copy this section to.
+          type: '<xref uid="onenote!OneNote.Notebook:class" />'
       return:
-        type:
-          - 'onenote!OneNote.Section:class'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -167,26 +322,30 @@ items:
               }
           });
           ```
-      parameters:
-        - id: destinationNotebook
-          description: The notebook to copy this section to.
-          type:
-            - 'onenote!OneNote.Notebook:class'
-  - uid: 'onenote!OneNote.Section#copyToSectionGroup:member(1)'
-    summary: |-
+  - name: copyToSectionGroup(destinationSectionGroup)
+    uid: 'onenote!OneNote.Section#copyToSectionGroup:member(1)'
+    package: onenote!
+    fullName: copyToSectionGroup(destinationSectionGroup)
+    summary: >-
       Copies this section to specified section group.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: copyToSectionGroup(destinationSectionGroup)
-    fullName: copyToSectionGroup(destinationSectionGroup)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'copyToSectionGroup(destinationSectionGroup: OneNote.SectionGroup): OneNote.Section;'
+      content: >-
+        copyToSectionGroup(destinationSectionGroup: OneNote.SectionGroup):
+        OneNote.Section;
+      parameters:
+        - id: destinationSectionGroup
+          description: The section group to copy this section to.
+          type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
       return:
-        type:
-          - 'onenote!OneNote.Section:class'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -222,26 +381,24 @@ items:
               }
           });
           ```
-      parameters:
-        - id: destinationSectionGroup
-          description: The section group to copy this section to.
-          type:
-            - 'onenote!OneNote.SectionGroup:class'
-  - uid: 'onenote!OneNote.Section#getRestApiId:member(1)'
-    summary: |-
+  - name: getRestApiId()
+    uid: 'onenote!OneNote.Section#getRestApiId:member(1)'
+    package: onenote!
+    fullName: getRestApiId()
+    summary: >-
       Gets the REST API ID.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: getRestApiId()
-    fullName: getRestApiId()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type:
-          - 'onenote!OneNote.Section#getRestApiId~0:complex'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: |-
 
 
@@ -264,61 +421,61 @@ items:
                   });
           });
           ```
-  - uid: 'onenote!OneNote.Section#id:member'
-    summary: |-
-      Gets the ID of the section. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Section#insertSectionAsSibling:member(1)'
-    summary: |-
+  - name: 'insertSectionAsSibling(location, title)'
+    uid: 'onenote!OneNote.Section#insertSectionAsSibling:member(1)'
+    package: onenote!
+    fullName: 'insertSectionAsSibling(location, title)'
+    summary: >-
       Inserts a new section before or after the current section.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertSectionAsSibling(location, title)'
-    fullName: 'insertSectionAsSibling(location, title)'
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'insertSectionAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Section;'
-      return:
-        type:
-          - 'onenote!OneNote.Section:class'
-        description: ''
+      content: >-
+        insertSectionAsSibling(location: OneNote.InsertLocation, title: string):
+        OneNote.Section;
       parameters:
         - id: location
           description: The location of the new section relative to the current section.
-          type:
-            - 'onenote!OneNote.InsertLocation:enum'
+          type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: title
           description: The name of the new section.
-          type:
-            - string
-  - uid: 'onenote!OneNote.Section#insertSectionAsSibling:member(2)'
-    summary: |-
+          type: string
+      return:
+        type: '<xref uid="onenote!OneNote.Section:class" />'
+        description: ''
+  - name: 'insertSectionAsSibling(locationString, title)'
+    uid: 'onenote!OneNote.Section#insertSectionAsSibling:member(2)'
+    package: onenote!
+    fullName: 'insertSectionAsSibling(locationString, title)'
+    summary: >-
       Inserts a new section before or after the current section.
 
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertSectionAsSibling(locationString, title)'
-    fullName: 'insertSectionAsSibling(locationString, title)'
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'insertSectionAsSibling(locationString: "Before" | "After", title: string): OneNote.Section;'
+      content: >-
+        insertSectionAsSibling(locationString: "Before" | "After", title:
+        string): OneNote.Section;
+      parameters:
+        - id: locationString
+          description: The location of the new section relative to the current section.
+          type: '"Before" | "After"'
+        - id: title
+          description: The name of the new section.
+          type: string
       return:
-        type:
-          - 'onenote!OneNote.Section:class'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -350,97 +507,68 @@ items:
               }
           });
           ```
-      parameters:
-        - id: locationString
-          description: The location of the new section relative to the current section.
-          type:
-            - '"Before" | "After"'
-        - id: title
-          description: The name of the new section.
-          type:
-            - string
-  - uid: 'onenote!OneNote.Section#isEncrypted:member'
-    summary: |-
-      True if this section is encrypted with a password. Read only
-
-      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: isEncrypted
-    fullName: isEncrypted
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isEncrypted: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Section#isLocked:member'
-    summary: |-
-      True if this section is locked. Read only
-
-      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: isLocked
-    fullName: isLocked
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isLocked: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'onenote!OneNote.Section#load:member(1)'
+  - name: load(option)
+    uid: 'onenote!OneNote.Section#load:member(1)'
+    package: onenote!
+    fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call "context.sync()" before reading the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.Section` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
+      `load(option?: string | string[]): OneNote.Section` - Where option is a
+      comma-delimited string or an array of strings that specify the properties
+      to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): OneNote.Section` -
+      Where option.select is a comma-delimited string that specifies the
+      properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
-    name: load(option)
-    fullName: load(option)
-    langs:
-      - typeScript
-    type: method
+      `load(option?: { select?: string; expand?: string; top?: number; skip?:
+      number }): OneNote.Section` - Only available on collection types. It is
+      similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in
+      the result. If option.top is specified, the result set will start after
+      skipping the specified number of items.
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;'
-      return:
-        type:
-          - 'onenote!OneNote.Section:class'
-        description: ''
       parameters:
         - id: option
           description: ''
-          type:
-            - 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
-  - uid: 'onenote!OneNote.Section#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref uid="onenote!OneNote.Interfaces.SectionLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="onenote!OneNote.Section:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'onenote!OneNote.Section#load:member(2)'
+    package: onenote!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): OneNote.Section;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'onenote!OneNote.Section:class'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: |-
 
 
@@ -517,207 +645,88 @@ items:
               }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'onenote!OneNote.Section#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'onenote!OneNote.Section#load:member(3)'
+    package: onenote!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Section;'
-      return:
-        type:
-          - 'onenote!OneNote.Section:class'
-        description: ''
+      content: >-
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
+        OneNote.Section;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - '{ select?: string; expand?: string; }'
-  - uid: 'onenote!OneNote.Section#name:member'
-    summary: |-
-      Gets the name of the section. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly name: string;'
+            Where propertyNamesAndPaths.select is a comma-delimited string that
+            specifies the properties to load, and propertyNamesAndPaths.expand
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '{ select?: string; expand?: string; }'
       return:
-        type:
-          - string
-  - uid: 'onenote!OneNote.Section#notebook:member'
-    summary: |-
-      Gets the notebook that contains the section. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: notebook
-    fullName: notebook
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly notebook: OneNote.Notebook;'
-      return:
-        type:
-          - 'onenote!OneNote.Notebook:class'
-  - uid: 'onenote!OneNote.Section#pages:member'
-    summary: |-
-      The collection of pages in the section. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: pages
-    fullName: pages
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly pages: OneNote.PageCollection;'
-      return:
-        type:
-          - 'onenote!OneNote.PageCollection:class'
-  - uid: 'onenote!OneNote.Section#parentSectionGroup:member'
-    summary: >-
-      Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the
-      notebook. Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentSectionGroup
-    fullName: parentSectionGroup
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly parentSectionGroup: OneNote.SectionGroup;'
-      return:
-        type:
-          - 'onenote!OneNote.SectionGroup:class'
-  - uid: 'onenote!OneNote.Section#parentSectionGroupOrNull:member'
-    summary: >-
-      Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
-      Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentSectionGroupOrNull
-    fullName: parentSectionGroupOrNull
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly parentSectionGroupOrNull: OneNote.SectionGroup;'
-      return:
-        type:
-          - 'onenote!OneNote.SectionGroup:class'
-  - uid: 'onenote!OneNote.Section#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original OneNote.Section object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `OneNote.Interfaces.SectionData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+        type: '<xref uid="onenote!OneNote.Section:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'onenote!OneNote.Section#toJSON:member(1)'
+    package: onenote!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original OneNote.Section object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `OneNote.Interfaces.SectionData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): OneNote.Interfaces.SectionData;'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.SectionData:interface'
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionData:interface" />'
         description: ''
-  - uid: 'onenote!OneNote.Section#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
-    name: track()
+  - name: track()
+    uid: 'onenote!OneNote.Section#track:member(1)'
+    package: onenote!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      context.trackedObjects.add(thisObject). If you are using this object
+      across ".sync" calls and outside the sequential execution of a ".run"
+      batch, and get an "InvalidObjectPath" error when setting a property or
+      invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): OneNote.Section;'
       return:
-        type:
-          - 'onenote!OneNote.Section:class'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
-  - uid: 'onenote!OneNote.Section#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'onenote!OneNote.Section#untrack:member(1)'
+    package: onenote!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects
+      slows down the host application, so please remember to free any objects
+      you add, once you're done using them. You will need to call
+      "context.sync()" before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): OneNote.Section;'
       return:
-        type:
-          - 'onenote!OneNote.Section:class'
+        type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
-  - uid: 'onenote!OneNote.Section#webUrl:member'
-    summary: |-
-      The web url of the page. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: webUrl
-    fullName: webUrl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly webUrl: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'onenote!OneNote.Page:class'
-    name: OneNote.Page
-  - uid: 'onenote!OneNote.RequestContext:class'
-    name: RequestContext
-  - uid: 'onenote!OneNote.Section:class'
-    name: OneNote.Section
-  - uid: 'onenote!OneNote.Notebook:class'
-    name: OneNote.Notebook
-  - uid: 'onenote!OneNote.SectionGroup:class'
-    name: OneNote.SectionGroup
-  - uid: 'onenote!OneNote.Section#getRestApiId~0:complex'
-    name: OfficeExtension.ClientResult<string>
-    fullName: OfficeExtension.ClientResult<string>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <string>
-        fullName: <string>
-  - uid: 'onenote!OneNote.InsertLocation:enum'
-    name: OneNote.InsertLocation
-  - uid: 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionLoadOptions
-  - uid: 'onenote!OneNote.PageCollection:class'
-    name: OneNote.PageCollection
-  - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
-    name: OneNote.Interfaces.SectionData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

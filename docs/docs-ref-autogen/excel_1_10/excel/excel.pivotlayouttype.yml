@@ -1,38 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotLayoutType:enum'
-    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.PivotLayoutType
-    fullName: Excel.PivotLayoutType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.PivotLayoutType
+uid: 'excel!Excel.PivotLayoutType:enum'
+package: excel!
+fullName: Excel.PivotLayoutType
+summary: >-
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: compact
+    uid: 'excel!Excel.PivotLayoutType.compact:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotLayoutType.compact:member'
-      - 'excel!Excel.PivotLayoutType.outline:member'
-      - 'excel!Excel.PivotLayoutType.tabular:member'
-  - uid: 'excel!Excel.PivotLayoutType.compact:member'
-    summary: A horizontally compressed form with labels from the next field in the same column.
-    name: compact
-    fullName: compact
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Compact"'
-  - uid: 'excel!Excel.PivotLayoutType.outline:member'
-    summary: Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
-    name: outline
-    fullName: outline
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Outline"'
-  - uid: 'excel!Excel.PivotLayoutType.tabular:member'
-    summary: Inner fields' items are always on a new line relative to the outer fields' items.
-    name: tabular
-    fullName: tabular
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Tabular"'
+    summary: >-
+      A horizontally compressed form with labels from the next field in the same
+      column.
+  - name: outline
+    uid: 'excel!Excel.PivotLayoutType.outline:member'
+    package: excel!
+    summary: >-
+      Inner fields' items are on same row as outer fields' items and subtotals
+      are always on the bottom.
+  - name: tabular
+    uid: 'excel!Excel.PivotLayoutType.tabular:member'
+    package: excel!
+    summary: >-
+      Inner fields' items are always on a new line relative to the outer fields'
+      items.

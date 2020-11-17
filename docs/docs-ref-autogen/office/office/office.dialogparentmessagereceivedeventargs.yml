@@ -1,47 +1,46 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
-    summary: >-
-      Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.
+### YamlMime:TSType
+name: Office.DialogParentMessageReceivedEventArgs
+uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+package: office!
+fullName: Office.DialogParentMessageReceivedEventArgs
+summary: >-
+  Provides information about the message from the parent page that raised the
+  `DialogParentMessageReceived` event.
 
 
-      To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the
-      [Office.UI](xref:office!Office.UI:interface) object.
-    name: Office.DialogParentMessageReceivedEventArgs
-    fullName: Office.DialogParentMessageReceivedEventArgs
-    langs:
-      - typeScript
-    type: interface
+  To add an event handler for the `DialogParentMessageReceived` event, use the
+  `addHandlerAsync` method of the [Office.UI](xref:office!Office.UI:interface)
+  object.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: message
+    uid: 'office!Office.DialogParentMessageReceivedEventArgs#message:member'
     package: office!
-    children:
-      - 'office!Office.DialogParentMessageReceivedEventArgs#message:member'
-      - 'office!Office.DialogParentMessageReceivedEventArgs#type:member'
-  - uid: 'office!Office.DialogParentMessageReceivedEventArgs#message:member'
-    summary: 'Gets the content of the message sent from the parent page, which can be any string or stringified data.'
-    name: message
     fullName: message
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the content of the message sent from the parent page, which can be
+      any string or stringified data.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'message: string;'
       return:
-        type:
-          - string
-  - uid: 'office!Office.DialogParentMessageReceivedEventArgs#type:member'
-    summary: >-
-      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
-      that was raised.
-    name: type
+        type: string
+  - name: type
+    uid: 'office!Office.DialogParentMessageReceivedEventArgs#type:member'
+    package: office!
     fullName: type
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration
+      value that identifies the kind of event that was raised.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type: EventType;'
       return:
-        type:
-          - 'office!Office.EventType:enum'
-references:
-  - uid: 'office!Office.EventType:enum'
-    name: EventType
+        type: '<xref uid="office!Office.EventType:enum" />'

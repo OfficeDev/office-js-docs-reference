@@ -1,44 +1,39 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.RequestContext:class'
-    name: OneNote.RequestContext
-    fullName: OneNote.RequestContext
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientRequestContext:class'
+### YamlMime:TSType
+name: OneNote.RequestContext
+uid: 'onenote!OneNote.RequestContext:class'
+package: onenote!
+fullName: OneNote.RequestContext
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(url)
+    uid: 'onenote!OneNote.RequestContext:constructor(1)'
     package: onenote!
-    children:
-      - 'onenote!OneNote.RequestContext:constructor(1)'
-      - 'onenote!OneNote.RequestContext#application:member'
-  - uid: 'onenote!OneNote.RequestContext:constructor(1)'
-    summary: Constructs a new instance of the `RequestContext` class
-    name: (constructor)(url)
     fullName: (constructor)(url)
-    langs:
-      - typeScript
-    type: constructor
+    summary: Constructs a new instance of the `RequestContext` class
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'constructor(url?: string);'
       parameters:
         - id: url
           description: ''
-          type:
-            - string
-  - uid: 'onenote!OneNote.RequestContext#application:member'
-    name: application
+          type: string
+properties:
+  - name: application
+    uid: 'onenote!OneNote.RequestContext#application:member'
+    package: onenote!
     fullName: application
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly application: Application;'
       return:
-        type:
-          - 'onenote!OneNote.Application:class'
-references:
-  - uid: 'office!OfficeExtension.ClientRequestContext:class'
-    name: OfficeExtension.ClientRequestContext
-  - uid: 'onenote!OneNote.Application:class'
-    name: Application
+        type: '<xref uid="onenote!OneNote.Application:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'

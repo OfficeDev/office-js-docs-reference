@@ -1,287 +1,320 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
-    summary: >-
-      Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To
-      learn more about how ranges are used throughout the API, read [Work with ranges using the Excel JavaScript
-      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) and [Work with ranges using the
-      Excel JavaScript API
-      (advanced)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.
+### YamlMime:TSType
+name: Excel.Interfaces.RangeLoadOptions
+uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.RangeLoadOptions
+summary: >-
+  Range represents a set of one or more contiguous cells such as a cell, a row,
+  a column, block of cells, etc. To learn more about how ranges are used
+  throughout the API, read [Work with ranges using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges)
+  and [Work with ranges using the Excel JavaScript API
+  (advanced)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!--
+  -->.
 
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.RangeLoadOptions
-    fullName: Excel.Interfaces.RangeLoadOptions
-    langs:
-      - typeScript
-    type: interface
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.RangeLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#address:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#cellCount:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#columnCount:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#format:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#formulas:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#text:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#values:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
-      - 'excel!Excel.Interfaces.RangeLoadOptions#worksheet:member'
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#address:member'
-    summary: |-
-      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: address
+        type: boolean
+  - name: address
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#address:member'
+    package: excel!
     fullName: address
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the range reference in A1-style. Address value will contain the
+      Sheet reference (e.g., "Sheet1!A1:B4").
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'address?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member'
-    summary: |-
-      Specifies the range reference for the specified range in the language of the user.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: addressLocal
+        type: boolean
+  - name: addressLocal
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member'
+    package: excel!
     fullName: addressLocal
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the range reference for the specified range in the language of
+      the user.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'addressLocal?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#cellCount:member'
-    summary: >-
-      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
-      (2,147,483,647).
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: cellCount
+        type: boolean
+  - name: cellCount
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#cellCount:member'
+    package: excel!
     fullName: cellCount
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the number of cells in the range. This API will return -1 if the
+      cell count exceeds 2^31-1 (2,147,483,647).
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'cellCount?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnCount:member'
-    summary: |-
+        type: boolean
+  - name: columnCount
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnCount:member'
+    package: excel!
+    fullName: columnCount
+    summary: >-
       Specifies the total number of columns in the range.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: columnCount
-    fullName: columnCount
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columnCount?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member'
-    summary: |-
+        type: boolean
+  - name: columnIndex
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member'
+    package: excel!
+    fullName: columnIndex
+    summary: >-
       Specifies the column number of the first cell in the range. Zero-indexed.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: columnIndex
-    fullName: columnIndex
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'columnIndex?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#format:member'
-    summary: |-
-      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
+        type: boolean
+  - name: format
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#format:member'
+    package: excel!
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a format object, encapsulating the range's font, fill, borders,
+      alignment, and other properties.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulas:member'
-    summary: |-
-      Represents the formula in A1-style notation.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formulas
+        type: '<xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface" />'
+  - name: formulas
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulas:member'
+    package: excel!
     fullName: formulas
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formula in A1-style notation. If a cell has no formula, its
+      value is returned instead.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formulas?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member'
-    summary: >-
-      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
-      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: formulasLocal
+        type: boolean
+  - name: formulasLocal
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member'
+    package: excel!
     fullName: formulasLocal
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formula in A1-style notation, in the user's language and
+      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
+      would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
+      value is returned instead.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'formulasLocal?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member'
-    summary: |-
+        type: boolean
+  - name: numberFormat
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member'
+    package: excel!
+    fullName: numberFormat
+    summary: >-
       Represents Excel's number format code for the given range.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'numberFormat?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
-    summary: |-
+        type: boolean
+  - name: rowCount
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
+    package: excel!
+    fullName: rowCount
+    summary: >-
       Returns the total number of rows in the range.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rowCount
-    fullName: rowCount
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowCount?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member'
-    summary: |-
+        type: boolean
+  - name: rowIndex
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member'
+    package: excel!
+    fullName: rowIndex
+    summary: >-
       Returns the row number of the first cell in the range. Zero-indexed.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: rowIndex
-    fullName: rowIndex
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'rowIndex?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#text:member'
-    summary: >-
-      Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: text
+        type: boolean
+  - name: text
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#text:member'
+    package: excel!
     fullName: text
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Text values of the specified range. The Text value will not depend on the
+      cell width. The \# sign substitution that happens in Excel UI will not
+      affect the text value returned by the API.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#values:member'
-    summary: >-
-      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: values
+        type: boolean
+  - name: values
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#values:member'
+    package: excel!
     fullName: values
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the raw values of the specified range. The data returned could
+      be of type string, number, or a boolean. Cells that contain an error will
+      return the error string.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'values?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
-    summary: |-
+        type: boolean
+  - name: valueTypes
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
+    package: excel!
+    fullName: valueTypes
+    summary: >-
       Specifies the type of data in each cell.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: valueTypes
-    fullName: valueTypes
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'valueTypes?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#worksheet:member'
-    summary: |-
+        type: boolean
+  - name: worksheet
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#worksheet:member'
+    package: excel!
+    fullName: worksheet
+    summary: >-
       The worksheet containing the current range.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
-    name: Excel.Interfaces.RangeFormatLoadOptions
-  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'

@@ -1,93 +1,132 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisTitle:class'
-    summary: |-
-      Represents the title of a chart axis.
+### YamlMime:TSType
+name: Excel.ChartAxisTitle
+uid: 'excel!Excel.ChartAxisTitle:class'
+package: excel!
+fullName: Excel.ChartAxisTitle
+summary: >-
+  Represents the title of a chart axis.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartAxisTitle
-    fullName: Excel.ChartAxisTitle
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartAxisTitle#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartAxisTitle#context:member'
-      - 'excel!Excel.ChartAxisTitle#format:member'
-      - 'excel!Excel.ChartAxisTitle#load:member(1)'
-      - 'excel!Excel.ChartAxisTitle#load:member(2)'
-      - 'excel!Excel.ChartAxisTitle#load:member(3)'
-      - 'excel!Excel.ChartAxisTitle#set:member(1)'
-      - 'excel!Excel.ChartAxisTitle#set:member(2)'
-      - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
-      - 'excel!Excel.ChartAxisTitle#text:member'
-      - 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
-      - 'excel!Excel.ChartAxisTitle#visible:member'
-  - uid: 'excel!Excel.ChartAxisTitle#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.ChartAxisTitle#format:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: format
+    uid: 'excel!Excel.ChartAxisTitle#format:member'
+    package: excel!
+    fullName: format
+    summary: >-
       Specifies the formatting of chart axis title.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly format: Excel.ChartAxisTitleFormat;'
       return:
-        type:
-          - 'excel!Excel.ChartAxisTitleFormat:class'
-  - uid: 'excel!Excel.ChartAxisTitle#load:member(1)'
+        type: '<xref uid="excel!Excel.ChartAxisTitleFormat:class" />'
+  - name: text
+    uid: 'excel!Excel.ChartAxisTitle#text:member'
+    package: excel!
+    fullName: text
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Specifies the axis title.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;'
+      content: 'text: string;'
       return:
-        type:
-          - 'excel!Excel.ChartAxisTitle:class'
-        description: ''
+        type: string
+  - name: visible
+    uid: 'excel!Excel.ChartAxisTitle#visible:member'
+    package: excel!
+    fullName: visible
+    summary: >-
+      Specifies if the axis title is visibile.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.ChartAxisTitle#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.ChartAxisTitleLoadOptions):
+        Excel.ChartAxisTitle;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
-  - uid: 'excel!Excel.ChartAxisTitle#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartAxisTitle#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxisTitle;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
       return:
-        type:
-          - 'excel!Excel.ChartAxisTitle:class'
+        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
         description: |-
 
 
@@ -108,172 +147,134 @@ items:
                   }
           });
           ```
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartAxisTitle#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartAxisTitle#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartAxisTitle;
-      return:
-        type:
-          - 'excel!Excel.ChartAxisTitle:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.ChartAxisTitle#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartAxisTitle#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartAxisTitle): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartAxisTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.ChartAxisTitleUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.ChartAxisTitle#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartAxisTitle#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.ChartAxisTitle): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.ChartAxisTitle:class'
-  - uid: 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
-    summary: |-
-      A string value that represents the formula of chart axis title using A1-style notation.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: setFormula(formula)
+          type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setFormula(formula)
+    uid: 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+    package: excel!
     fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      A string value that represents the formula of chart axis title using
+      A1-style notation.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: formula
           description: a string that present the formula to set
-          type:
-            - string
-  - uid: 'excel!Excel.ChartAxisTitle#text:member'
-    summary: |-
-      Specifies the axis title.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'text: string;'
+          type: string
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`<!-- -->) that contains shallow copies of
-      any loaded child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.ChartAxisTitle
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.ChartAxisTitleData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartAxisTitleData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisTitleData:interface" />'
         description: ''
-  - uid: 'excel!Excel.ChartAxisTitle#visible:member'
-    summary: |-
-      Specifies if the axis title is visibile.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visible: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
-    name: Excel.ChartAxisTitleFormat
-  - uid: 'excel!Excel.ChartAxisTitle:class'
-    name: Excel.ChartAxisTitle
-  - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxisTitleLoadOptions
-  - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
-    name: Interfaces.ChartAxisTitleUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
-    name: Excel.Interfaces.ChartAxisTitleData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -1,141 +1,159 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
-    summary: |-
-      Encapsulates the bin options for histogram charts and pareto charts.
+### YamlMime:TSType
+name: Excel.Interfaces.ChartBinOptionsLoadOptions
+uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartBinOptionsLoadOptions
+summary: >-
+  Encapsulates the bin options for histogram charts and pareto charts.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartBinOptionsLoadOptions
-    fullName: Excel.Interfaces.ChartBinOptionsLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#allowOverflow:member'
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#allowUnderflow:member'
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#count:member'
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#overflowValue:member'
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#type:member'
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#underflowValue:member'
-      - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#width:member'
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#allowOverflow:member'
-    summary: |-
+        type: boolean
+  - name: allowOverflow
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#allowOverflow:member'
+    package: excel!
+    fullName: allowOverflow
+    summary: >-
       Specifies if bin overflow is enabled in a histogram chart or pareto chart.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: allowOverflow
-    fullName: allowOverflow
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'allowOverflow?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#allowUnderflow:member'
-    summary: |-
-      Specifies if bin underflow is enabled in a histogram chart or pareto chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: allowUnderflow
+        type: boolean
+  - name: allowUnderflow
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#allowUnderflow:member'
+    package: excel!
     fullName: allowUnderflow
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if bin underflow is enabled in a histogram chart or pareto
+      chart.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'allowUnderflow?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#count:member'
-    summary: |-
+        type: boolean
+  - name: count
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#count:member'
+    package: excel!
+    fullName: count
+    summary: >-
       Specifies the bin count of a histogram chart or pareto chart.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'count?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#overflowValue:member'
-    summary: |-
+        type: boolean
+  - name: overflowValue
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#overflowValue:member'
+    package: excel!
+    fullName: overflowValue
+    summary: >-
       Specifies the bin overflow value of a histogram chart or pareto chart.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: overflowValue
-    fullName: overflowValue
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'overflowValue?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#type:member'
-    summary: |-
+        type: boolean
+  - name: type
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
       Specifies the bin's type for a histogram chart or pareto chart.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'type?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#underflowValue:member'
-    summary: |-
+        type: boolean
+  - name: underflowValue
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#underflowValue:member'
+    package: excel!
+    fullName: underflowValue
+    summary: >-
       Specifies the bin underflow value of a histogram chart or pareto chart.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: underflowValue
-    fullName: underflowValue
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'underflowValue?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#width:member'
-    summary: |-
+        type: boolean
+  - name: width
+    uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions#width:member'
+    package: excel!
+    fullName: width
+    summary: >-
       Specifies the bin width value of a histogram chart or pareto chart.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

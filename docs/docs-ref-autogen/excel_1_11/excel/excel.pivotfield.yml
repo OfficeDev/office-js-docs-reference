@@ -1,404 +1,377 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotField:class'
-    summary: |-
-      Represents the Excel PivotField.
+### YamlMime:TSType
+name: Excel.PivotField
+uid: 'excel!Excel.PivotField:class'
+package: excel!
+fullName: Excel.PivotField
+summary: >-
+  Represents the Excel PivotField.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotField
-    fullName: Excel.PivotField
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.PivotField#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.PivotField#context:member'
-      - 'excel!Excel.PivotField#id:member'
-      - 'excel!Excel.PivotField#items:member'
-      - 'excel!Excel.PivotField#load:member(1)'
-      - 'excel!Excel.PivotField#load:member(2)'
-      - 'excel!Excel.PivotField#load:member(3)'
-      - 'excel!Excel.PivotField#name:member'
-      - 'excel!Excel.PivotField#set:member(1)'
-      - 'excel!Excel.PivotField#set:member(2)'
-      - 'excel!Excel.PivotField#showAllItems:member'
-      - 'excel!Excel.PivotField#sortByLabels:member(1)'
-      - 'excel!Excel.PivotField#sortByValues:member(1)'
-      - 'excel!Excel.PivotField#sortByValues:member(2)'
-      - 'excel!Excel.PivotField#subtotals:member'
-      - 'excel!Excel.PivotField#toJSON:member(1)'
-  - uid: 'excel!Excel.PivotField#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.PivotField#id:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: id
+    uid: 'excel!Excel.PivotField#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Id of the PivotField.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly id: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotField#items:member'
-    summary: |-
+        type: string
+  - name: items
+    uid: 'excel!Excel.PivotField#items:member'
+    package: excel!
+    fullName: items
+    summary: >-
       Returns the PivotFields associated with the PivotField.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly items: Excel.PivotItemCollection;'
       return:
-        type:
-          - 'excel!Excel.PivotItemCollection:class'
-  - uid: 'excel!Excel.PivotField#load:member(1)'
+        type: '<xref uid="excel!Excel.PivotItemCollection:class" />'
+  - name: name
+    uid: 'excel!Excel.PivotField#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Name of the PivotField.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;'
+      content: 'name: string;'
       return:
-        type:
-          - 'excel!Excel.PivotField:class'
-        description: ''
+        type: string
+  - name: showAllItems
+    uid: 'excel!Excel.PivotField#showAllItems:member'
+    package: excel!
+    fullName: showAllItems
+    summary: >-
+      Determines whether to show all items of the PivotField.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAllItems: boolean;'
+      return:
+        type: boolean
+  - name: subtotals
+    uid: 'excel!Excel.PivotField#subtotals:member'
+    package: excel!
+    fullName: subtotals
+    summary: >-
+      Subtotals of the PivotField.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subtotals: Excel.Subtotals;'
+      return:
+        type: '<xref uid="excel!Excel.Subtotals:interface" />'
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.PivotField#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.PivotFieldLoadOptions):
+        Excel.PivotField;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
-  - uid: 'excel!Excel.PivotField#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref uid="excel!Excel.Interfaces.PivotFieldLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.PivotField:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.PivotField#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotField;'
-      return:
-        type:
-          - 'excel!Excel.PivotField:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PivotField#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.PivotField:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.PivotField#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.PivotField;
-      return:
-        type:
-          - 'excel!Excel.PivotField:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.PivotField#name:member'
-    summary: |-
-      Name of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotField#set:member(1)'
+        type: '<xref uid="excel!Excel.PivotField:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.PivotField#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.PivotField): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.PivotFieldUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.PivotFieldUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="excel!Excel.Interfaces.PivotFieldUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.PivotField#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.PivotField#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.PivotField): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.PivotField:class'
-  - uid: 'excel!Excel.PivotField#showAllItems:member'
-    summary: |-
-      Determines whether to show all items of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: showAllItems
-    fullName: showAllItems
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showAllItems: boolean;'
+          type: '<xref uid="excel!Excel.PivotField:class" />'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotField#sortByLabels:member(1)'
-    summary: >-
-      Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort
-      will be based on the PivotField itself.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: sortByLabels(sortBy)
+        type: void
+        description: ''
+  - name: sortByLabels(sortBy)
+    uid: 'excel!Excel.PivotField#sortByLabels:member(1)'
+    package: excel!
     fullName: sortByLabels(sortBy)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will
+      be applied based on it, if not sort will be based on the PivotField
+      itself.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'sortByLabels(sortBy: SortBy): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: sortBy
           description: Specifies if the sorting is done in ascending or descending order.
-          type:
-            - 'excel!Excel.SortBy:enum'
-  - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
-    summary: >-
-      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
-      sort when there are multiple values from the same DataPivotHierarchy.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+          type: '<xref uid="excel!Excel.SortBy:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    uid: 'excel!Excel.PivotField#sortByValues:member(1)'
+    package: excel!
     fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sorts the PivotField by specified values in a given scope. The scope
+      defines which specific values will be used to sort when there are multiple
+      values from the same DataPivotHierarchy.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem |
-        string>): void;
-      return:
-        type:
-          - void
-        description: ''
+        sortByValues(sortBy: Excel.SortBy, valuesHierarchy:
+        Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>):
+        void;
       parameters:
         - id: sortBy
           description: Specifies if the sorting is done in ascending or descending order.
-          type:
-            - 'excel!Excel.SortBy:enum'
+          type: '<xref uid="excel!Excel.SortBy:enum" />'
         - id: valuesHierarchy
-          description: Specifies the values hierarchy on the data axis to be used for sorting.
-          type:
-            - 'excel!Excel.DataPivotHierarchy:class'
+          description: >-
+            Specifies the values hierarchy on the data axis to be used for
+            sorting.
+          type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         - id: pivotItemScope
           description: >-
-            The items that should be used for the scope of the sorting. These will be the items that make up the row or
-            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
-            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
-            empty.
-          type:
-            - 'excel!Excel.PivotField#sortByValues~0:complex'
-  - uid: 'excel!Excel.PivotField#sortByValues:member(2)'
-    summary: >-
-      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
-      sort when there are multiple values from the same DataPivotHierarchy.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
+            The items that should be used for the scope of the sorting. These
+            will be the items that make up the row or column that you want to
+            sort on. If a string is used instead of a PivotItem, the string
+            represents the ID of the PivotItem. If there are no items other than
+            data hierarchy on the axis you want to sort on, this can be empty.
+          type: 'Array&lt;<xref uid="excel!Excel.PivotItem:class" /> | string&gt;'
+      return:
+        type: void
+        description: ''
+  - name: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
+    uid: 'excel!Excel.PivotField#sortByValues:member(2)'
+    package: excel!
     fullName: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sorts the PivotField by specified values in a given scope. The scope
+      defines which specific values will be used to sort when there are multiple
+      values from the same DataPivotHierarchy.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: >-
-        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
-        pivotItemScope?: Array<PivotItem | string>): void;
-      return:
-        type:
-          - void
-        description: ''
+        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy:
+        Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>):
+        void;
       parameters:
         - id: sortByString
           description: Specifies if the sorting is done in ascending or descending order.
-          type:
-            - '"Ascending" | "Descending"'
+          type: '"Ascending" | "Descending"'
         - id: valuesHierarchy
-          description: Specifies the values hierarchy on the data axis to be used for sorting.
-          type:
-            - 'excel!Excel.DataPivotHierarchy:class'
+          description: >-
+            Specifies the values hierarchy on the data axis to be used for
+            sorting.
+          type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         - id: pivotItemScope
           description: >-
-            The items that should be used for the scope of the sorting. These will be the items that make up the row or
-            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
-            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
-            empty.
-          type:
-            - 'excel!Excel.PivotField#sortByValues~1:complex'
-  - uid: 'excel!Excel.PivotField#subtotals:member'
-    summary: |-
-      Subtotals of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: subtotals
-    fullName: subtotals
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'subtotals: Excel.Subtotals;'
+            The items that should be used for the scope of the sorting. These
+            will be the items that make up the row or column that you want to
+            sort on. If a string is used instead of a PivotItem, the string
+            represents the ID of the PivotItem. If there are no items other than
+            data hierarchy on the axis you want to sort on, this can be empty.
+          type: 'Array&lt;<xref uid="excel!Excel.PivotItem:class" /> | string&gt;'
       return:
-        type:
-          - 'excel!Excel.Subtotals:interface'
-  - uid: 'excel!Excel.PivotField#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.PivotField object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.PivotFieldData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.PivotField#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.PivotField object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.PivotFieldData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotFieldData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.PivotFieldData:interface'
+        type: '<xref uid="excel!Excel.Interfaces.PivotFieldData:interface" />'
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.PivotItemCollection:class'
-    name: Excel.PivotItemCollection
-  - uid: 'excel!Excel.PivotField:class'
-    name: Excel.PivotField
-  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
-    name: Excel.Interfaces.PivotFieldLoadOptions
-  - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
-    name: Interfaces.PivotFieldUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.SortBy:enum'
-    name: SortBy
-  - uid: 'excel!Excel.DataPivotHierarchy:class'
-    name: Excel.DataPivotHierarchy
-  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
-    name: Array<PivotItem | string>
-    fullName: Array<Excel.PivotItem | string>
-    spec.typeScript:
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.PivotItem:class'
-        name: PivotItem
-        fullName: Excel.PivotItem
-      - name: ' | string>'
-        fullName: ' | string>'
-  - uid: 'excel!Excel.PivotField#sortByValues~1:complex'
-    name: Array<PivotItem | string>
-    fullName: Array<Excel.PivotItem | string>
-    spec.typeScript:
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.PivotItem:class'
-        name: PivotItem
-        fullName: Excel.PivotItem
-      - name: ' | string>'
-        fullName: ' | string>'
-  - uid: 'excel!Excel.Subtotals:interface'
-    name: Excel.Subtotals
-  - uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
-    name: Excel.Interfaces.PivotFieldData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

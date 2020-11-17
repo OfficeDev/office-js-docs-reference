@@ -1,29 +1,20 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!Office.StartupBehavior:enum'
-    summary: Provides options to determine the startup behavior of the add-in upon next start-up.
-    name: Office.StartupBehavior
-    fullName: Office.StartupBehavior
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.StartupBehavior
+uid: 'office!Office.StartupBehavior:enum'
+package: office!
+fullName: Office.StartupBehavior
+summary: >-
+  Provides options to determine the startup behavior of the add-in upon next
+  start-up.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: load
+    uid: 'office!Office.StartupBehavior.load:member'
     package: office!
-    children:
-      - 'office!Office.StartupBehavior.load:member'
-      - 'office!Office.StartupBehavior.none:member'
-  - uid: 'office!Office.StartupBehavior.load:member'
     summary: Load the add-in but do not show UI.
-    name: load
-    fullName: load
-    langs:
-      - typeScript
-    type: field
-    numericValue: '''Load'''
-  - uid: 'office!Office.StartupBehavior.none:member'
+  - name: none
+    uid: 'office!Office.StartupBehavior.none:member'
+    package: office!
     summary: The add-in does not load until opened by the user.
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '''None'''

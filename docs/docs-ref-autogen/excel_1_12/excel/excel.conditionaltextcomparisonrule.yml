@@ -1,49 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
-    summary: |-
-      Represents a Cell Value Conditional Format Rule
+### YamlMime:TSType
+name: Excel.ConditionalTextComparisonRule
+uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
+package: excel!
+fullName: Excel.ConditionalTextComparisonRule
+summary: >-
+  Represents a Cell Value Conditional Format Rule
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalTextComparisonRule
-    fullName: Excel.ConditionalTextComparisonRule
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: operator
+    uid: 'excel!Excel.ConditionalTextComparisonRule#operator:member'
     package: excel!
-    children:
-      - 'excel!Excel.ConditionalTextComparisonRule#operator:member'
-      - 'excel!Excel.ConditionalTextComparisonRule#text:member'
-  - uid: 'excel!Excel.ConditionalTextComparisonRule#operator:member'
-    summary: |-
+    fullName: operator
+    summary: >-
       The operator of the text conditional format.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'operator: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith";'
+      content: >-
+        operator: Excel.ConditionalTextOperator | "Invalid" | "Contains" |
+        "NotContains" | "BeginsWith" | "EndsWith";
       return:
-        type:
-          - 'excel!Excel.ConditionalTextComparisonRule#operator~0:complex'
-  - uid: 'excel!Excel.ConditionalTextComparisonRule#text:member'
-    summary: |-
+        type: >-
+          <xref uid="excel!Excel.ConditionalTextOperator:enum" /> | "Invalid" |
+          "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
+  - name: text
+    uid: 'excel!Excel.ConditionalTextComparisonRule#text:member'
+    package: excel!
+    fullName: text
+    summary: >-
       The Text value of conditional format.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'text: string;'
       return:
-        type:
-          - string
+        type: string
         description: >-
 
 
@@ -67,13 +78,3 @@ items:
           });
 
           ```
-references:
-  - uid: 'excel!Excel.ConditionalTextComparisonRule#operator~0:complex'
-    name: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
-    fullName: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
-    spec.typeScript:
-      - uid: 'excel!Excel.ConditionalTextOperator:enum'
-        name: Excel.ConditionalTextOperator
-        fullName: Excel.ConditionalTextOperator
-      - name: ' | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"'
-        fullName: ' | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"'

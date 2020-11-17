@@ -1,74 +1,74 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FiveRatingSet:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.FiveRatingSet
-    fullName: Excel.FiveRatingSet
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.FiveRatingSet
+uid: 'excel!Excel.FiveRatingSet:interface'
+package: excel!
+fullName: Excel.FiveRatingSet
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fourBars
+    uid: 'excel!Excel.FiveRatingSet#fourBars:member'
     package: excel!
-    children:
-      - 'excel!Excel.FiveRatingSet#fourBars:member'
-      - 'excel!Excel.FiveRatingSet#noBars:member'
-      - 'excel!Excel.FiveRatingSet#oneBar:member'
-      - 'excel!Excel.FiveRatingSet#threeBars:member'
-      - 'excel!Excel.FiveRatingSet#twoBars:member'
-  - uid: 'excel!Excel.FiveRatingSet#fourBars:member'
-    name: fourBars
     fullName: fourBars
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'fourBars: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveRatingSet#noBars:member'
-    name: noBars
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: noBars
+    uid: 'excel!Excel.FiveRatingSet#noBars:member'
+    package: excel!
     fullName: noBars
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'noBars: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveRatingSet#oneBar:member'
-    name: oneBar
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: oneBar
+    uid: 'excel!Excel.FiveRatingSet#oneBar:member'
+    package: excel!
     fullName: oneBar
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'oneBar: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveRatingSet#threeBars:member'
-    name: threeBars
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: threeBars
+    uid: 'excel!Excel.FiveRatingSet#threeBars:member'
+    package: excel!
     fullName: threeBars
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'threeBars: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.FiveRatingSet#twoBars:member'
-    name: twoBars
+        type: '<xref uid="excel!Excel.Icon:interface" />'
+  - name: twoBars
+    uid: 'excel!Excel.FiveRatingSet#twoBars:member'
+    package: excel!
     fullName: twoBars
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'twoBars: Icon;'
       return:
-        type:
-          - 'excel!Excel.Icon:interface'
-references:
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
+        type: '<xref uid="excel!Excel.Icon:interface" />'

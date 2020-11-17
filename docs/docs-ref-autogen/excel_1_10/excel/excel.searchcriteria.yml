@@ -1,75 +1,77 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SearchCriteria:interface'
-    summary: |-
-      Represents the search criteria to be used.
+### YamlMime:TSType
+name: Excel.SearchCriteria
+uid: 'excel!Excel.SearchCriteria:interface'
+package: excel!
+fullName: Excel.SearchCriteria
+summary: >-
+  Represents the search criteria to be used.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SearchCriteria
-    fullName: Excel.SearchCriteria
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: completeMatch
+    uid: 'excel!Excel.SearchCriteria#completeMatch:member'
     package: excel!
-    children:
-      - 'excel!Excel.SearchCriteria#completeMatch:member'
-      - 'excel!Excel.SearchCriteria#matchCase:member'
-      - 'excel!Excel.SearchCriteria#searchDirection:member'
-  - uid: 'excel!Excel.SearchCriteria#completeMatch:member'
-    summary: >-
-      Specifies if the match needs to be complete or partial. A complete match matches the entire contents of the cell.
-      A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar`
-      and `scatter`<!-- -->). Default is false (partial).
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: completeMatch
     fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies if the match needs to be complete or partial. A complete match
+      matches the entire contents of the cell. A partial match matches a
+      substring within the content of the cell (e.g., `cat` partially matches
+      `caterpillar` and `scatter`<!-- -->). Default is false (partial).
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'completeMatch?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SearchCriteria#matchCase:member'
-    summary: |-
+        type: boolean
+  - name: matchCase
+    uid: 'excel!Excel.SearchCriteria#matchCase:member'
+    package: excel!
+    fullName: matchCase
+    summary: >-
       Specifies if the match is case sensitive. Default is false (insensitive).
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'matchCase?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SearchCriteria#searchDirection:member'
-    summary: |-
-      Specifies the search direction. Default is forward. See Excel.SearchDirection.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: searchDirection
+        type: boolean
+  - name: searchDirection
+    uid: 'excel!Excel.SearchCriteria#searchDirection:member'
+    package: excel!
     fullName: searchDirection
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifies the search direction. Default is forward. See
+      Excel.SearchDirection.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'searchDirection?: Excel.SearchDirection | "Forward" | "Backwards";'
       return:
-        type:
-          - 'excel!Excel.SearchCriteria#searchDirection~0:complex'
-references:
-  - uid: 'excel!Excel.SearchCriteria#searchDirection~0:complex'
-    name: Excel.SearchDirection | "Forward" | "Backwards"
-    fullName: Excel.SearchDirection | "Forward" | "Backwards"
-    spec.typeScript:
-      - uid: 'excel!Excel.SearchDirection:enum'
-        name: Excel.SearchDirection
-        fullName: Excel.SearchDirection
-      - name: ' | "Forward" | "Backwards"'
-        fullName: ' | "Forward" | "Backwards"'
+        type: >-
+          <xref uid="excel!Excel.SearchDirection:enum" /> | "Forward" |
+          "Backwards"

@@ -1,67 +1,89 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.Setting:class'
-    summary: >-
-      Represents a setting of the add-in.
+### YamlMime:TSType
+name: Word.Setting
+uid: 'word!Word.Setting:class'
+package: word!
+fullName: Word.Setting
+summary: >-
+  Represents a setting of the add-in.
 
 
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: Word.Setting
-    fullName: Word.Setting
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.Setting#context:member'
     package: word!
-    children:
-      - 'word!Word.Setting#context:member'
-      - 'word!Word.Setting#delete:member(1)'
-      - 'word!Word.Setting#key:member'
-      - 'word!Word.Setting#load:member(1)'
-      - 'word!Word.Setting#load:member(2)'
-      - 'word!Word.Setting#load:member(3)'
-      - 'word!Word.Setting#set:member(1)'
-      - 'word!Word.Setting#set:member(2)'
-      - 'word!Word.Setting#toJSON:member(1)'
-      - 'word!Word.Setting#track:member(1)'
-      - 'word!Word.Setting#untrack:member(1)'
-      - 'word!Word.Setting#value:member'
-  - uid: 'word!Word.Setting#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    isPreview: true
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'word!Word.RequestContext:class'
-  - uid: 'word!Word.Setting#delete:member(1)'
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: key
+    uid: 'word!Word.Setting#key:member'
+    package: word!
+    fullName: key
+    summary: >-
+      Gets the key of the setting. Read only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type: string
+  - name: value
+    uid: 'word!Word.Setting#value:member'
+    package: word!
+    fullName: value
+    summary: >-
+      Gets or sets the value of the setting.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'value: any;'
+      return:
+        type: any
+methods:
+  - name: delete()
+    uid: 'word!Word.Setting#delete:member(1)'
+    package: word!
+    fullName: delete()
     summary: >-
       Deletes the setting.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
-        type:
-          - void
+        type: void
         description: |-
 
 
@@ -104,233 +126,186 @@ items:
               }
           });
           ```
-  - uid: 'word!Word.Setting#key:member'
-    summary: >-
-      Gets the key of the setting. Read only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly key: string;'
-      return:
-        type:
-          - string
-  - uid: 'word!Word.Setting#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(options)
+  - name: load(options)
+    uid: 'word!Word.Setting#load:member(1)'
+    package: word!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'load(options?: Word.Interfaces.SettingLoadOptions): Word.Setting;'
-      return:
-        type:
-          - 'word!Word.Setting:class'
-        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'word!Word.Interfaces.SettingLoadOptions:interface'
-  - uid: 'word!Word.Setting#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(propertyNames)
+          type: '<xref uid="word!Word.Interfaces.SettingLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Setting:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.Setting#load:member(2)'
+    package: word!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Setting;'
-      return:
-        type:
-          - 'word!Word.Setting:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'word!Word.Setting#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    isPreview: true
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.Setting:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.Setting#load:member(3)'
+    package: word!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.Setting;
-      return:
-        type:
-          - 'word!Word.Setting:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'word!Word.Setting#set:member(1)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.Setting:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.Setting#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Word.Setting): void`
     isPreview: true
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.SettingUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.SettingUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'word!Word.Interfaces.SettingUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="word!Word.Interfaces.SettingUpdateData:interface" />'
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'word!Word.Setting#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.Setting#set:member(2)'
+    package: word!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'set(properties: Word.Setting): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'word!Word.Setting:class'
-  - uid: 'word!Word.Setting#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Setting object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Word.Interfaces.SettingData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    isPreview: true
-    name: toJSON()
+          type: '<xref uid="word!Word.Setting:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.Setting#toJSON:member(1)'
+    package: word!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Word.Setting object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.SettingData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.SettingData;'
       return:
-        type:
-          - 'word!Word.Interfaces.SettingData:interface'
+        type: '<xref uid="word!Word.Interfaces.SettingData:interface" />'
         description: ''
-  - uid: 'word!Word.Setting#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
-    isPreview: true
-    name: track()
+  - name: track()
+    uid: 'word!Word.Setting#track:member(1)'
+    package: word!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
+      object across `.sync` calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'track(): Word.Setting;'
       return:
-        type:
-          - 'word!Word.Setting:class'
+        type: '<xref uid="word!Word.Setting:class" />'
         description: ''
-  - uid: 'word!Word.Setting#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
-    isPreview: true
-    name: untrack()
+  - name: untrack()
+    uid: 'word!Word.Setting#untrack:member(1)'
+    package: word!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
+      objects slows down the host application, so please remember to free any
+      objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
     syntax:
       content: 'untrack(): Word.Setting;'
       return:
-        type:
-          - 'word!Word.Setting:class'
+        type: '<xref uid="word!Word.Setting:class" />'
         description: ''
-  - uid: 'word!Word.Setting#value:member'
-    summary: >-
-      Gets or sets the value of the setting.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'value: any;'
-      return:
-        type:
-          - any
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'word!Word.RequestContext:class'
-    name: RequestContext
-  - uid: 'word!Word.Setting:class'
-    name: Word.Setting
-  - uid: 'word!Word.Interfaces.SettingLoadOptions:interface'
-    name: Word.Interfaces.SettingLoadOptions
-  - uid: 'word!Word.Interfaces.SettingUpdateData:interface'
-    name: Interfaces.SettingUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'word!Word.Interfaces.SettingData:interface'
-    name: Word.Interfaces.SettingData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

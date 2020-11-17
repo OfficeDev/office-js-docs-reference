@@ -1,109 +1,126 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
-    summary: |-
-      This object represents the font attributes (font style, color, etc.) for an object.
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalRangeFontLoadOptions
+uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions
+summary: >-
+  This object represents the font attributes (font style, color, etc.) for an
+  object.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ConditionalRangeFontLoadOptions
-    fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#$all:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#$all:member'
-      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#bold:member'
-      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#color:member'
-      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#italic:member'
-      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#strikethrough:member'
-      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#underline:member'
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#$all:member'
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    name: $all
     fullName: $all
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: '$all?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#bold:member'
-    summary: |-
+        type: boolean
+  - name: bold
+    uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#bold:member'
+    package: excel!
+    fullName: bold
+    summary: >-
       Specifies if the font is bold.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: bold
-    fullName: bold
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'bold?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#color:member'
-    summary: |-
-      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: color
+        type: boolean
+  - name: color
+    uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#color:member'
+    package: excel!
     fullName: color
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      HTML color code representation of the text color (e.g., \#FF0000
+      represents Red).
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'color?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#italic:member'
-    summary: |-
+        type: boolean
+  - name: italic
+    uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#italic:member'
+    package: excel!
+    fullName: italic
+    summary: >-
       Specifies if the font is italic.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: italic
-    fullName: italic
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'italic?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#strikethrough:member'
-    summary: |-
+        type: boolean
+  - name: strikethrough
+    uid: >-
+      excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#strikethrough:member
+    package: excel!
+    fullName: strikethrough
+    summary: >-
       Specifies the strikethrough status of the font.
 
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: strikethrough
-    fullName: strikethrough
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'strikethrough?: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#underline:member'
-    summary: |-
-      The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: underline
+        type: boolean
+  - name: underline
+    uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#underline:member'
+    package: excel!
     fullName: underline
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The type of underline applied to the font. See
+      Excel.ConditionalRangeFontUnderlineStyle for details.
+
+
+      \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'underline?: boolean;'
       return:
-        type:
-          - boolean
+        type: boolean

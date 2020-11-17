@@ -1,35 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the PageContentCollection object, for use in "pageContentCollection.set(<!--
-      -->{ ... }<!-- -->)".
-    name: OneNote.Interfaces.PageContentCollectionUpdateData
-    fullName: OneNote.Interfaces.PageContentCollectionUpdateData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: OneNote.Interfaces.PageContentCollectionUpdateData
+uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
+package: onenote!
+fullName: OneNote.Interfaces.PageContentCollectionUpdateData
+summary: >-
+  An interface for updating data on the PageContentCollection object, for use in
+  "pageContentCollection.set(<!-- -->{ ... }<!-- -->)".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items:member'
     package: onenote!
-    children:
-      - 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items:member'
-  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items:member'
-    name: items
     fullName: items
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.PageContentData[];'
       return:
-        type:
-          - 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items~0:complex'
-references:
-  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items~0:complex'
-    name: 'OneNote.Interfaces.PageContentData[]'
-    fullName: 'OneNote.Interfaces.PageContentData[]'
-    spec.typeScript:
-      - uid: 'onenote!OneNote.Interfaces.PageContentData:interface'
-        name: OneNote.Interfaces.PageContentData
-        fullName: OneNote.Interfaces.PageContentData
-      - name: '[]'
-        fullName: '[]'
+        type: '<xref uid="onenote!OneNote.Interfaces.PageContentData:interface" />[]'

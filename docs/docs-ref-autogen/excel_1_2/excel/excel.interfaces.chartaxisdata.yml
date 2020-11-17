@@ -1,154 +1,167 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
-    summary: An interface describing the data returned by calling `chartAxis.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartAxisData
-    fullName: Excel.Interfaces.ChartAxisData
-    langs:
-      - typeScript
-    type: interface
+### YamlMime:TSType
+name: Excel.Interfaces.ChartAxisData
+uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartAxisData
+summary: >-
+  An interface describing the data returned by calling `chartAxis.toJSON()`<!--
+  -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'excel!Excel.Interfaces.ChartAxisData#format:member'
     package: excel!
-    children:
-      - 'excel!Excel.Interfaces.ChartAxisData#format:member'
-      - 'excel!Excel.Interfaces.ChartAxisData#majorGridlines:member'
-      - 'excel!Excel.Interfaces.ChartAxisData#majorUnit:member'
-      - 'excel!Excel.Interfaces.ChartAxisData#maximum:member'
-      - 'excel!Excel.Interfaces.ChartAxisData#minimum:member'
-      - 'excel!Excel.Interfaces.ChartAxisData#minorGridlines:member'
-      - 'excel!Excel.Interfaces.ChartAxisData#minorUnit:member'
-      - 'excel!Excel.Interfaces.ChartAxisData#title:member'
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#format:member'
-    summary: |-
-      Represents the formatting of a chart object, which includes line and font formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: format
     fullName: format
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the formatting of a chart object, which includes line and font
+      formatting.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisFormatData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#majorGridlines:member'
-    summary: |-
-      Returns a Gridlines object that represents the major gridlines for the specified axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: majorGridlines
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisFormatData:interface" />'
+  - name: majorGridlines
+    uid: 'excel!Excel.Interfaces.ChartAxisData#majorGridlines:member'
+    package: excel!
     fullName: majorGridlines
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a Gridlines object that represents the major gridlines for the
+      specified axis.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartGridlinesData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#majorUnit:member'
-    summary: >-
-      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
-      returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: majorUnit
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesData:interface" />'
+  - name: majorUnit
+    uid: 'excel!Excel.Interfaces.ChartAxisData#majorUnit:member'
+    package: excel!
     fullName: majorUnit
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a
+      numeric value or an empty string. The returned value is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'majorUnit?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#maximum:member'
-    summary: >-
-      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: maximum
+        type: any
+  - name: maximum
+    uid: 'excel!Excel.Interfaces.ChartAxisData#maximum:member'
+    package: excel!
     fullName: maximum
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric
+      value or an empty string (for automatic axis values). The returned value
+      is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'maximum?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#minimum:member'
-    summary: >-
-      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minimum
+        type: any
+  - name: minimum
+    uid: 'excel!Excel.Interfaces.ChartAxisData#minimum:member'
+    package: excel!
     fullName: minimum
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric
+      value or an empty string (for automatic axis values). The returned value
+      is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minimum?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#minorGridlines:member'
-    summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minorGridlines
+        type: any
+  - name: minorGridlines
+    uid: 'excel!Excel.Interfaces.ChartAxisData#minorGridlines:member'
+    package: excel!
     fullName: minorGridlines
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Returns a Gridlines object that represents the minor gridlines for the
+      specified axis.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartGridlinesData:interface'
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#minorUnit:member'
-    summary: >-
-      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
-      automatic axis values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: minorUnit
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesData:interface" />'
+  - name: minorUnit
+    uid: 'excel!Excel.Interfaces.ChartAxisData#minorUnit:member'
+    package: excel!
     fullName: minorUnit
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a
+      numeric value or an empty string (for automatic axis values). The returned
+      value is always a number.
+
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'minorUnit?: any;'
       return:
-        type:
-          - any
-  - uid: 'excel!Excel.Interfaces.ChartAxisData#title:member'
-    summary: |-
+        type: any
+  - name: title
+    uid: 'excel!Excel.Interfaces.ChartAxisData#title:member'
+    package: excel!
+    fullName: title
+    summary: >-
       Represents the axis title.
 
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'title?: Excel.Interfaces.ChartAxisTitleData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
-references:
-  - uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
-    name: Excel.Interfaces.ChartAxisFormatData
-  - uid: 'excel!Excel.Interfaces.ChartGridlinesData:interface'
-    name: Excel.Interfaces.ChartGridlinesData
-  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
-    name: Excel.Interfaces.ChartAxisTitleData
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisTitleData:interface" />'

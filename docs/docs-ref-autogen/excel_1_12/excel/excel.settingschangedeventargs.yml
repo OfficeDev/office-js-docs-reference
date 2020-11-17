@@ -1,33 +1,36 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SettingsChangedEventArgs:interface'
-    summary: |-
-      Provides information about the setting that raised the SettingsChanged event
+### YamlMime:TSType
+name: Excel.SettingsChangedEventArgs
+uid: 'excel!Excel.SettingsChangedEventArgs:interface'
+package: excel!
+fullName: Excel.SettingsChangedEventArgs
+summary: >-
+  Provides information about the setting that raised the SettingsChanged event
 
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SettingsChangedEventArgs
-    fullName: Excel.SettingsChangedEventArgs
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: settings
+    uid: 'excel!Excel.SettingsChangedEventArgs#settings:member'
     package: excel!
-    children:
-      - 'excel!Excel.SettingsChangedEventArgs#settings:member'
-  - uid: 'excel!Excel.SettingsChangedEventArgs#settings:member'
-    summary: |-
-      Gets the Setting object that represents the binding that raised the SettingsChanged event
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: settings
     fullName: settings
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets the Setting object that represents the binding that raised the
+      SettingsChanged event
+
+
+      \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'settings: Excel.SettingCollection;'
       return:
-        type:
-          - 'excel!Excel.SettingCollection:class'
-references:
-  - uid: 'excel!Excel.SettingCollection:class'
-    name: Excel.SettingCollection
+        type: '<xref uid="excel!Excel.SettingCollection:class" />'

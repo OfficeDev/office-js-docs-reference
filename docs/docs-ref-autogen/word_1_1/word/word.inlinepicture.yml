@@ -1,96 +1,183 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'word!Word.InlinePicture:class'
-    summary: |-
-      Represents an inline picture.
+### YamlMime:TSType
+name: Word.InlinePicture
+uid: 'word!Word.InlinePicture:class'
+package: word!
+fullName: Word.InlinePicture
+summary: >-
+  Represents an inline picture.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.InlinePicture
-    fullName: Word.InlinePicture
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: WordApi
+  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: altTextDescription
+    uid: 'word!Word.InlinePicture#altTextDescription:member'
     package: word!
-    children:
-      - 'word!Word.InlinePicture#altTextDescription:member'
-      - 'word!Word.InlinePicture#altTextTitle:member'
-      - 'word!Word.InlinePicture#context:member'
-      - 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
-      - 'word!Word.InlinePicture#height:member'
-      - 'word!Word.InlinePicture#hyperlink:member'
-      - 'word!Word.InlinePicture#insertContentControl:member(1)'
-      - 'word!Word.InlinePicture#load:member(1)'
-      - 'word!Word.InlinePicture#load:member(2)'
-      - 'word!Word.InlinePicture#load:member(3)'
-      - 'word!Word.InlinePicture#lockAspectRatio:member'
-      - 'word!Word.InlinePicture#parentContentControl:member'
-      - 'word!Word.InlinePicture#set:member(1)'
-      - 'word!Word.InlinePicture#set:member(2)'
-      - 'word!Word.InlinePicture#toJSON:member(1)'
-      - 'word!Word.InlinePicture#track:member(1)'
-      - 'word!Word.InlinePicture#untrack:member(1)'
-      - 'word!Word.InlinePicture#width:member'
-  - uid: 'word!Word.InlinePicture#altTextDescription:member'
-    summary: |-
-      Gets or sets a string that represents the alternative text associated with the inline image.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: altTextDescription
     fullName: altTextDescription
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Gets or sets a string that represents the alternative text associated with
+      the inline image.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'altTextDescription: string;'
       return:
-        type:
-          - string
-  - uid: 'word!Word.InlinePicture#altTextTitle:member'
-    summary: |-
+        type: string
+  - name: altTextTitle
+    uid: 'word!Word.InlinePicture#altTextTitle:member'
+    package: word!
+    fullName: altTextTitle
+    summary: >-
       Gets or sets a string that contains the title for the inline image.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: altTextTitle
-    fullName: altTextTitle
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'altTextTitle: string;'
       return:
-        type:
-          - string
-  - uid: 'word!Word.InlinePicture#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: string
+  - name: context
+    uid: 'word!Word.InlinePicture#context:member'
+    package: word!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'word!Word.RequestContext:class'
-  - uid: 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
-    summary: |-
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: height
+    uid: 'word!Word.InlinePicture#height:member'
+    package: word!
+    fullName: height
+    summary: >-
+      Gets or sets a number that describes the height of the inline image.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height: number;'
+      return:
+        type: number
+  - name: hyperlink
+    uid: 'word!Word.InlinePicture#hyperlink:member'
+    package: word!
+    fullName: hyperlink
+    summary: >-
+      Gets or sets a hyperlink on the image. Use a '\#' to separate the address
+      part from the optional location part.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink: string;'
+      return:
+        type: string
+  - name: lockAspectRatio
+    uid: 'word!Word.InlinePicture#lockAspectRatio:member'
+    package: word!
+    fullName: lockAspectRatio
+    summary: >-
+      Gets or sets a value that indicates whether the inline image retains its
+      original proportions when you resize it.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio: boolean;'
+      return:
+        type: boolean
+  - name: parentContentControl
+    uid: 'word!Word.InlinePicture#parentContentControl:member'
+    package: word!
+    fullName: parentContentControl
+    summary: >-
+      Gets the content control that contains the inline image. Throws an error
+      if there isn't a parent content control. Read-only.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentContentControl: Word.ContentControl;'
+      return:
+        type: '<xref uid="word!Word.ContentControl:class" />'
+  - name: width
+    uid: 'word!Word.InlinePicture#width:member'
+    package: word!
+    fullName: width
+    summary: >-
+      Gets or sets a number that describes the width of the inline image.
+
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
+methods:
+  - name: getBase64ImageSrc()
+    uid: 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
+    package: word!
+    fullName: getBase64ImageSrc()
+    summary: >-
       Gets the base64 encoded string representation of the inline image.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getBase64ImageSrc()
-    fullName: getBase64ImageSrc()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getBase64ImageSrc(): OfficeExtension.ClientResult<string>;'
       return:
-        type:
-          - 'word!Word.InlinePicture#getBase64ImageSrc~0:complex'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: >-
 
 
@@ -116,293 +203,212 @@ items:
           });
 
           ```
-  - uid: 'word!Word.InlinePicture#height:member'
-    summary: |-
-      Gets or sets a number that describes the height of the inline image.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'height: number;'
-      return:
-        type:
-          - number
-  - uid: 'word!Word.InlinePicture#hyperlink:member'
-    summary: |-
-      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: hyperlink
-    fullName: hyperlink
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hyperlink: string;'
-      return:
-        type:
-          - string
-  - uid: 'word!Word.InlinePicture#insertContentControl:member(1)'
-    summary: |-
+  - name: insertContentControl()
+    uid: 'word!Word.InlinePicture#insertContentControl:member(1)'
+    package: word!
+    fullName: insertContentControl()
+    summary: >-
       Wraps the inline picture with a rich text content control.
 
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: insertContentControl()
-    fullName: insertContentControl()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
-        type:
-          - 'word!Word.ContentControl:class'
+        type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-  - uid: 'word!Word.InlinePicture#load:member(1)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
+  - name: load(options)
+    uid: 'word!Word.InlinePicture#load:member(1)'
+    package: word!
     fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;'
-      return:
-        type:
-          - 'word!Word.InlinePicture:class'
-        description: ''
+      content: >-
+        load(options?: Word.Interfaces.InlinePictureLoadOptions):
+        Word.InlinePicture;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
-  - uid: 'word!Word.InlinePicture#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref uid="word!Word.Interfaces.InlinePictureLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="word!Word.InlinePicture:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.InlinePicture#load:member(2)'
+    package: word!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.InlinePicture;'
-      return:
-        type:
-          - 'word!Word.InlinePicture:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'word!Word.InlinePicture#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.InlinePicture:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.InlinePicture#load:member(3)'
+    package: word!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.InlinePicture;
-      return:
-        type:
-          - 'word!Word.InlinePicture:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'word!Word.InlinePicture#lockAspectRatio:member'
-    summary: |-
-      Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: lockAspectRatio
-    fullName: lockAspectRatio
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'lockAspectRatio: boolean;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - boolean
-  - uid: 'word!Word.InlinePicture#parentContentControl:member'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.InlinePicture#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
     summary: >-
-      Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControl
-    fullName: parentContentControl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly parentContentControl: Word.ContentControl;'
-      return:
-        type:
-          - 'word!Word.ContentControl:class'
-  - uid: 'word!Word.InlinePicture#set:member(1)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Word.InlinePicture): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.InlinePictureUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'word!Word.Interfaces.InlinePictureUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="word!Word.Interfaces.InlinePictureUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'word!Word.InlinePicture#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.InlinePicture#set:member(2)'
+    package: word!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Word.InlinePicture): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'word!Word.InlinePicture:class'
-  - uid: 'word!Word.InlinePicture#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.InlinePicture object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`<!-- -->) that contains shallow copies of any
-      loaded child properties from the original object.
-    name: toJSON()
+          type: '<xref uid="word!Word.InlinePicture:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.InlinePicture#toJSON:member(1)'
+    package: word!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Word.InlinePicture
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.InlinePictureData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.InlinePictureData;'
       return:
-        type:
-          - 'word!Word.Interfaces.InlinePictureData:interface'
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />'
         description: ''
-  - uid: 'word!Word.InlinePicture#track:member(1)'
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
-    name: track()
+  - name: track()
+    uid: 'word!Word.InlinePicture#track:member(1)'
+    package: word!
     fullName: track()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
+      object across `.sync` calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to
+      the tracked object collection when the object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'track(): Word.InlinePicture;'
       return:
-        type:
-          - 'word!Word.InlinePicture:class'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-  - uid: 'word!Word.InlinePicture#untrack:member(1)'
-    summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
-    name: untrack()
+  - name: untrack()
+    uid: 'word!Word.InlinePicture#untrack:member(1)'
+    package: word!
     fullName: untrack()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
+      objects slows down the host application, so please remember to free any
+      objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'untrack(): Word.InlinePicture;'
       return:
-        type:
-          - 'word!Word.InlinePicture:class'
+        type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-  - uid: 'word!Word.InlinePicture#width:member'
-    summary: |-
-      Gets or sets a number that describes the width of the inline image.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'width: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'word!Word.RequestContext:class'
-    name: RequestContext
-  - uid: 'word!Word.InlinePicture#getBase64ImageSrc~0:complex'
-    name: OfficeExtension.ClientResult<string>
-    fullName: OfficeExtension.ClientResult<string>
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: <string>
-        fullName: <string>
-  - uid: 'word!Word.ContentControl:class'
-    name: Word.ContentControl
-  - uid: 'word!Word.InlinePicture:class'
-    name: Word.InlinePicture
-  - uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
-    name: Word.Interfaces.InlinePictureLoadOptions
-  - uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
-    name: Interfaces.InlinePictureUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-    name: Word.Interfaces.InlinePictureData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -1,236 +1,173 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office-runtime!OfficeRuntime.Storage:interface'
-    summary: |-
-      Asynchronous, global, and persistent key-value storage.
+### YamlMime:TSType
+name: OfficeRuntime.Storage
+uid: 'office-runtime!OfficeRuntime.Storage:interface'
+package: office-runtime!
+fullName: OfficeRuntime.Storage
+summary: >-
+  Asynchronous, global, and persistent key-value storage.
 
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: 'Storage limit is 10 MB per domain, which may be shared by multiple add-ins.'
-    name: OfficeRuntime.Storage
-    fullName: OfficeRuntime.Storage
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: SharedRuntime
+  1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+remarks: 'Storage limit is 10 MB per domain, which may be shared by multiple add-ins.'
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: getItem(key)
+    uid: 'office-runtime!OfficeRuntime.Storage#getItem:member(1)'
     package: office-runtime!
-    children:
-      - 'office-runtime!OfficeRuntime.Storage#getItem:member(1)'
-      - 'office-runtime!OfficeRuntime.Storage#getItems:member(1)'
-      - 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
-      - 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
-      - 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
-      - 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
-      - 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
-  - uid: 'office-runtime!OfficeRuntime.Storage#getItem:member(1)'
-    summary: >-
-      Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve,
-      returns null.
-
-
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: getItem(key)
     fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Retrieves an item from storage based on its key. Returns a Promise. In the
+      event the Promise does not resolve, returns null.
+
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItem(key: string): Promise<string | null>;'
-      return:
-        type:
-          - 'office-runtime!OfficeRuntime.Storage#getItem~0:complex'
-        description: ''
       parameters:
         - id: key
           description: Key of item to be retrieved. Must be a string.
-          type:
-            - string
-  - uid: 'office-runtime!OfficeRuntime.Storage#getItems:member(1)'
-    summary: >-
-      Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not
-      resolve, returns null.
-
-
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: getItems(keys)
+          type: string
+      return:
+        type: Promise&lt;string | null&gt;
+        description: ''
+  - name: getItems(keys)
+    uid: 'office-runtime!OfficeRuntime.Storage#getItems:member(1)'
+    package: office-runtime!
     fullName: getItems(keys)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Retrieves multiple items from storage based on their key. Returns a
+      Promise. In the event the Promise does not resolve, returns null.
+
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getItems(keys: string[]): Promise<{ [key: string]: string | null }>;'
-      return:
-        type:
-          - 'office-runtime!OfficeRuntime.Storage#getItems~0:complex'
-        description: ''
       parameters:
         - id: keys
           description: Keys of items to be removed. Must be an array of strings.
-          type:
-            - 'string[]'
-  - uid: 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
-    summary: |-
+          type: 'string[]'
+      return:
+        type: 'Promise&lt;{ [key: string]: string | null }&gt;'
+        description: ''
+  - name: getKeys()
+    uid: 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
+    package: office-runtime!
+    fullName: getKeys()
+    summary: >-
       Retrieves an array of all keys from storage. Returns a Promise.
 
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: getKeys()
-    fullName: getKeys()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'getKeys(): Promise<string[]>;'
       return:
-        type:
-          - 'office-runtime!OfficeRuntime.Storage#getKeys~0:complex'
+        type: 'Promise&lt;string[]&gt;'
         description: ''
-  - uid: 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
-    summary: |-
+  - name: removeItem(key)
+    uid: 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
+    package: office-runtime!
+    fullName: removeItem(key)
+    summary: >-
       Removes an item from storage based on its key. Returns a Promise.
 
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: removeItem(key)
-    fullName: removeItem(key)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'removeItem(key: string): Promise<void>;'
-      return:
-        type:
-          - 'office-runtime!OfficeRuntime.Storage#removeItem~0:complex'
-        description: ''
       parameters:
         - id: key
           description: Key of item to be removed. Must be a string.
-          type:
-            - string
-  - uid: 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
-    summary: |-
+          type: string
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: removeItems(keys)
+    uid: 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
+    package: office-runtime!
+    fullName: removeItems(keys)
+    summary: >-
       Removes multiple items from storage. Returns a Promise.
 
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: removeItems(keys)
-    fullName: removeItems(keys)
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'removeItems(keys: string[]): Promise<void>;'
-      return:
-        type:
-          - 'office-runtime!OfficeRuntime.Storage#removeItems~0:complex'
-        description: ''
       parameters:
         - id: keys
           description: Keys of items to be removed. Must be an array of strings.
-          type:
-            - 'string[]'
-  - uid: 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
-    summary: |-
-      Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
-
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: 'setItem(key, value)'
+          type: 'string[]'
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: 'setItem(key, value)'
+    uid: 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
+    package: office-runtime!
     fullName: 'setItem(key, value)'
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets a key-value pair into storage or updates an existing key-value pair.
+      Returns a Promise.
+
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setItem(key: string, value: string): Promise<void>;'
-      return:
-        type:
-          - 'office-runtime!OfficeRuntime.Storage#setItem~0:complex'
-        description: ''
       parameters:
         - id: key
           description: Key of item to be set. Must be a string.
-          type:
-            - string
+          type: string
         - id: value
           description: Must be a string.
-          type:
-            - string
-  - uid: 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
-    summary: |-
-      Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
-
-      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: setItems(keyValues)
+          type: string
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: setItems(keyValues)
+    uid: 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
+    package: office-runtime!
     fullName: setItems(keyValues)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple items into storage or updates multiple items within storage.
+      Returns a Promise.
+
+
+      \[ [API set: SharedRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setItems(keyValues: { [key: string]: string }): Promise<void>;'
-      return:
-        type:
-          - 'office-runtime!OfficeRuntime.Storage#setItems~0:complex'
-        description: ''
       parameters:
         - id: keyValues
           description: Key-value pairs to be set. Must be strings.
-          type:
-            - '{ [key: string]: string }'
-references:
-  - uid: 'office-runtime!OfficeRuntime.Storage#getItem~0:complex'
-    name: Promise<string | null>
-    fullName: Promise<string | null>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <string | null>
-        fullName: <string | null>
-  - uid: 'office-runtime!OfficeRuntime.Storage#getItems~0:complex'
-    name: 'Promise<{ [key: string]: string | null }>'
-    fullName: 'Promise<{ [key: string]: string | null }>'
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: '<{ [key: string]: string | null }>'
-        fullName: '<{ [key: string]: string | null }>'
-  - uid: 'office-runtime!OfficeRuntime.Storage#getKeys~0:complex'
-    name: 'Promise<string[]>'
-    fullName: 'Promise<string[]>'
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: '<string[]>'
-        fullName: '<string[]>'
-  - uid: 'office-runtime!OfficeRuntime.Storage#removeItem~0:complex'
-    name: Promise<void>
-    fullName: Promise<void>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <void>
-        fullName: <void>
-  - uid: 'office-runtime!OfficeRuntime.Storage#removeItems~0:complex'
-    name: Promise<void>
-    fullName: Promise<void>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <void>
-        fullName: <void>
-  - uid: 'office-runtime!OfficeRuntime.Storage#setItem~0:complex'
-    name: Promise<void>
-    fullName: Promise<void>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <void>
-        fullName: <void>
-  - uid: 'office-runtime!OfficeRuntime.Storage#setItems~0:complex'
-    name: Promise<void>
-    fullName: Promise<void>
-    spec.typeScript:
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <void>
-        fullName: <void>
+          type: '{ [key: string]: string }'
+      return:
+        type: Promise&lt;void&gt;
+        description: ''

@@ -1,59 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTrendlineType:enum'
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartTrendlineType
-    fullName: Excel.ChartTrendlineType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Excel.ChartTrendlineType
+uid: 'excel!Excel.ChartTrendlineType:enum'
+package: excel!
+fullName: Excel.ChartTrendlineType
+summary: >-
+  \[ [API set: ExcelApi
+  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: exponential
+    uid: 'excel!Excel.ChartTrendlineType.exponential:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartTrendlineType.exponential:member'
-      - 'excel!Excel.ChartTrendlineType.linear:member'
-      - 'excel!Excel.ChartTrendlineType.logarithmic:member'
-      - 'excel!Excel.ChartTrendlineType.movingAverage:member'
-      - 'excel!Excel.ChartTrendlineType.polynomial:member'
-      - 'excel!Excel.ChartTrendlineType.power:member'
-  - uid: 'excel!Excel.ChartTrendlineType.exponential:member'
-    name: exponential
-    fullName: exponential
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Exponential"'
-  - uid: 'excel!Excel.ChartTrendlineType.linear:member'
-    name: linear
-    fullName: linear
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Linear"'
-  - uid: 'excel!Excel.ChartTrendlineType.logarithmic:member'
-    name: logarithmic
-    fullName: logarithmic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Logarithmic"'
-  - uid: 'excel!Excel.ChartTrendlineType.movingAverage:member'
-    name: movingAverage
-    fullName: movingAverage
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"MovingAverage"'
-  - uid: 'excel!Excel.ChartTrendlineType.polynomial:member'
-    name: polynomial
-    fullName: polynomial
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Polynomial"'
-  - uid: 'excel!Excel.ChartTrendlineType.power:member'
-    name: power
-    fullName: power
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Power"'
+    summary: ''
+  - name: linear
+    uid: 'excel!Excel.ChartTrendlineType.linear:member'
+    package: excel!
+    summary: ''
+  - name: logarithmic
+    uid: 'excel!Excel.ChartTrendlineType.logarithmic:member'
+    package: excel!
+    summary: ''
+  - name: movingAverage
+    uid: 'excel!Excel.ChartTrendlineType.movingAverage:member'
+    package: excel!
+    summary: ''
+  - name: polynomial
+    uid: 'excel!Excel.ChartTrendlineType.polynomial:member'
+    package: excel!
+    summary: ''
+  - name: power
+    uid: 'excel!Excel.ChartTrendlineType.power:member'
+    package: excel!
+    summary: ''

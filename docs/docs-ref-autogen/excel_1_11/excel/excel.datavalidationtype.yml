@@ -1,104 +1,62 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DataValidationType:enum'
-    summary: |-
-      Represents Data validation type enum.
+### YamlMime:TSEnum
+name: Excel.DataValidationType
+uid: 'excel!Excel.DataValidationType:enum'
+package: excel!
+fullName: Excel.DataValidationType
+summary: >-
+  Represents Data validation type enum.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DataValidationType
-    fullName: Excel.DataValidationType
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: custom
+    uid: 'excel!Excel.DataValidationType.custom:member'
     package: excel!
-    children:
-      - 'excel!Excel.DataValidationType.custom:member'
-      - 'excel!Excel.DataValidationType.date:member'
-      - 'excel!Excel.DataValidationType.decimal:member'
-      - 'excel!Excel.DataValidationType.inconsistent:member'
-      - 'excel!Excel.DataValidationType.list:member'
-      - 'excel!Excel.DataValidationType.mixedCriteria:member'
-      - 'excel!Excel.DataValidationType.none:member'
-      - 'excel!Excel.DataValidationType.textLength:member'
-      - 'excel!Excel.DataValidationType.time:member'
-      - 'excel!Excel.DataValidationType.wholeNumber:member'
-  - uid: 'excel!Excel.DataValidationType.custom:member'
     summary: Custom data validation type
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Custom"'
-  - uid: 'excel!Excel.DataValidationType.date:member'
+  - name: date
+    uid: 'excel!Excel.DataValidationType.date:member'
+    package: excel!
     summary: Date data validation type
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Date"'
-  - uid: 'excel!Excel.DataValidationType.decimal:member'
+  - name: decimal
+    uid: 'excel!Excel.DataValidationType.decimal:member'
+    package: excel!
     summary: Decimal data validation type
-    name: decimal
-    fullName: decimal
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Decimal"'
-  - uid: 'excel!Excel.DataValidationType.inconsistent:member'
-    summary: Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
-    name: inconsistent
-    fullName: inconsistent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Inconsistent"'
-  - uid: 'excel!Excel.DataValidationType.list:member'
+  - name: inconsistent
+    uid: 'excel!Excel.DataValidationType.inconsistent:member'
+    package: excel!
+    summary: >-
+      Inconsistent means that the range has inconsistent data validation (there
+      are different rules on different cells)
+  - name: list
+    uid: 'excel!Excel.DataValidationType.list:member'
+    package: excel!
     summary: List data validation type
-    name: list
-    fullName: list
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"List"'
-  - uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
-    summary: MixedCriteria means that the range has data validation present on some but not all cells
-    name: mixedCriteria
-    fullName: mixedCriteria
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"MixedCriteria"'
-  - uid: 'excel!Excel.DataValidationType.none:member'
-    summary: None means allow any value and so there is no data validation in the range.
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'excel!Excel.DataValidationType.textLength:member'
+  - name: mixedCriteria
+    uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
+    package: excel!
+    summary: >-
+      MixedCriteria means that the range has data validation present on some but
+      not all cells
+  - name: none
+    uid: 'excel!Excel.DataValidationType.none:member'
+    package: excel!
+    summary: >-
+      None means allow any value and so there is no data validation in the
+      range.
+  - name: textLength
+    uid: 'excel!Excel.DataValidationType.textLength:member'
+    package: excel!
     summary: Text length data validation type
-    name: textLength
-    fullName: textLength
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TextLength"'
-  - uid: 'excel!Excel.DataValidationType.time:member'
+  - name: time
+    uid: 'excel!Excel.DataValidationType.time:member'
+    package: excel!
     summary: Time data validation type
-    name: time
-    fullName: time
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Time"'
-  - uid: 'excel!Excel.DataValidationType.wholeNumber:member'
+  - name: wholeNumber
+    uid: 'excel!Excel.DataValidationType.wholeNumber:member'
+    package: excel!
     summary: Whole number data validation type
-    name: wholeNumber
-    fullName: wholeNumber
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WholeNumber"'

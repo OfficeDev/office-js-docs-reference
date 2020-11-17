@@ -1,505 +1,245 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Slicer:class'
-    summary: |-
-      Represents a slicer object in the workbook.
+### YamlMime:TSType
+name: Excel.Slicer
+uid: 'excel!Excel.Slicer:class'
+package: excel!
+fullName: Excel.Slicer
+summary: >-
+  Represents a slicer object in the workbook.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Slicer
-    fullName: Excel.Slicer
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: caption
+    uid: 'excel!Excel.Slicer#caption:member'
     package: excel!
-    children:
-      - 'excel!Excel.Slicer#caption:member'
-      - 'excel!Excel.Slicer#clearFilters:member(1)'
-      - 'excel!Excel.Slicer#context:member'
-      - 'excel!Excel.Slicer#delete:member(1)'
-      - 'excel!Excel.Slicer#getSelectedItems:member(1)'
-      - 'excel!Excel.Slicer#height:member'
-      - 'excel!Excel.Slicer#id:member'
-      - 'excel!Excel.Slicer#isFilterCleared:member'
-      - 'excel!Excel.Slicer#left:member'
-      - 'excel!Excel.Slicer#load:member(1)'
-      - 'excel!Excel.Slicer#load:member(2)'
-      - 'excel!Excel.Slicer#load:member(3)'
-      - 'excel!Excel.Slicer#name:member'
-      - 'excel!Excel.Slicer#nameInFormula:member'
-      - 'excel!Excel.Slicer#selectItems:member(1)'
-      - 'excel!Excel.Slicer#set:member(1)'
-      - 'excel!Excel.Slicer#set:member(2)'
-      - 'excel!Excel.Slicer#setStyle:member(1)'
-      - 'excel!Excel.Slicer#slicerItems:member'
-      - 'excel!Excel.Slicer#slicerStyle:member'
-      - 'excel!Excel.Slicer#sortBy:member'
-      - 'excel!Excel.Slicer#style:member'
-      - 'excel!Excel.Slicer#toJSON:member(1)'
-      - 'excel!Excel.Slicer#top:member'
-      - 'excel!Excel.Slicer#width:member'
-      - 'excel!Excel.Slicer#worksheet:member'
-  - uid: 'excel!Excel.Slicer#caption:member'
-    summary: |-
+    fullName: caption
+    summary: >-
       Represents the caption of slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: caption
-    fullName: caption
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'caption: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Slicer#clearFilters:member(1)'
-    summary: |-
-      Clears all the filters currently applied on the slicer.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clearFilters()
-    fullName: clearFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearFilters(): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.clearFilters();
-              await context.sync();
-          });
-
-          ```
-  - uid: 'excel!Excel.Slicer#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
+        type: string
+  - name: context
+    uid: 'excel!Excel.Slicer#context:member'
+    package: excel!
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.Slicer#delete:member(1)'
-    summary: |-
-      Deletes the slicer.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.slicers.getItemAt(0).delete();
-              await context.sync();
-          });
-
-          ```
-  - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
-    summary: |-
-      Returns an array of selected items' keys.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getSelectedItems()
-    fullName: getSelectedItems()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedItems(): OfficeExtension.ClientResult<string[]>;'
-      return:
-        type:
-          - 'excel!Excel.Slicer#getSelectedItems~0:complex'
-        description: ''
-  - uid: 'excel!Excel.Slicer#height:member'
-    summary: >-
-      Represents the height, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: height
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: height
+    uid: 'excel!Excel.Slicer#height:member'
+    package: excel!
     fullName: height
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the height, in points, of the slicer. Throws an "The argument
+      is invalid or missing or has an incorrect format." exception when set with
+      negative value or zero as input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'height: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#id:member'
-    summary: |-
+        type: number
+  - name: id
+    uid: 'excel!Excel.Slicer#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Represents the unique id of slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly id: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Slicer#isFilterCleared:member'
-    summary: |-
+        type: string
+  - name: isFilterCleared
+    uid: 'excel!Excel.Slicer#isFilterCleared:member'
+    package: excel!
+    fullName: isFilterCleared
+    summary: >-
       True if all filters currently applied on the slicer are cleared.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: isFilterCleared
-    fullName: isFilterCleared
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly isFilterCleared: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Slicer#left:member'
-    summary: >-
-      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: left
+        type: boolean
+  - name: left
+    uid: 'excel!Excel.Slicer#left:member'
+    package: excel!
     fullName: left
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the distance, in points, from the left side of the slicer to
+      the left of the worksheet. Throws an "The argument is invalid or missing
+      or has an incorrect format." exception when set with negative value as
+      input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'left: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#load:member(1)'
+        type: number
+  - name: name
+    uid: 'excel!Excel.Slicer#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(options?: Excel.Interfaces.SlicerLoadOptions): Excel.Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:class'
-        description: ''
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
-  - uid: 'excel!Excel.Slicer#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:class'
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Slicer#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.Slicer;
-      return:
-        type:
-          - 'excel!Excel.Slicer:class'
-        description: ''
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.Slicer#name:member'
-    summary: |-
       Represents the name of slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Slicer#nameInFormula:member'
+        type: string
+  - name: nameInFormula
+    uid: 'excel!Excel.Slicer#nameInFormula:member'
+    package: excel!
+    fullName: nameInFormula
     summary: >-
       Represents the slicer name used in the formula.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: nameInFormula
-    fullName: nameInFormula
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'nameInFormula: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.Slicer#selectItems:member(1)'
+        type: string
+  - name: slicerItems
+    uid: 'excel!Excel.Slicer#slicerItems:member'
+    package: excel!
+    fullName: slicerItems
     summary: >-
-      Selects slicer items based on their keys. The previous selections are cleared. All items will be selected by
-      default if the array is empty.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: selectItems(items)
-    fullName: selectItems(items)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'selectItems(items?: string[]): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.selectItems(["Lemon", "Lime", "Orange"]);
-              await context.sync();
-          });
-
-          ```
-      parameters:
-        - id: items
-          description: Optional. The specified slicer item names to be selected.
-          type:
-            - 'string[]'
-  - uid: 'excel!Excel.Slicer#set:member(1)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Slicer): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.SlicerUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.SlicerUpdateData:interface'
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.Slicer#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
-    fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Excel.Slicer): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - 'excel!Excel.Slicer:class'
-  - uid: 'excel!Excel.Slicer#setStyle:member(1)'
-    summary: >-
-      Sets the style applied to the slicer.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: setStyle(style)
-    fullName: setStyle(style)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStyle(style: string | SlicerStyle | BuiltInSlicerStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: style
-          description: >-
-            The style to apply to the slicer. An `InvalidArgumentException` is thrown if a string is provided that does
-            not match the name of any style.
-          type:
-            - 'excel!Excel.Slicer#setStyle~0:complex'
-  - uid: 'excel!Excel.Slicer#slicerItems:member'
-    summary: |-
       Represents the collection of SlicerItems that are part of the slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: slicerItems
-    fullName: slicerItems
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly slicerItems: Excel.SlicerItemCollection;'
       return:
-        type:
-          - 'excel!Excel.SlicerItemCollection:class'
-  - uid: 'excel!Excel.Slicer#slicerStyle:member'
+        type: '<xref uid="excel!Excel.SlicerItemCollection:class" />'
+  - name: slicerStyle
+    uid: 'excel!Excel.Slicer#slicerStyle:member'
+    package: excel!
+    fullName: slicerStyle
     summary: >-
       The style applied to the Slicer.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
     isPreview: true
-    name: slicerStyle
-    fullName: slicerStyle
-    langs:
-      - typeScript
-    type: property
+    isDeprecated: false
     syntax:
       content: 'readonly slicerStyle: Excel.SlicerStyle;'
       return:
-        type:
-          - 'excel!Excel.SlicerStyle:class'
-  - uid: 'excel!Excel.Slicer#sortBy:member'
-    summary: >-
-      Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
-      "Descending".
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: sortBy
+        type: '<xref uid="excel!Excel.SlicerStyle:class" />'
+  - name: sortBy
+    uid: 'excel!Excel.Slicer#sortBy:member'
+    package: excel!
     fullName: sortBy
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'sortBy: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
-      return:
-        type:
-          - 'excel!Excel.Slicer#sortBy~0:complex'
-  - uid: 'excel!Excel.Slicer#style:member'
     summary: >-
-      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
-      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      Represents the sort order of the items in the slicer. Possible values are:
+      "DataSourceOrder", "Ascending", "Descending".
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        sortBy: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" |
+        "Descending";
+      return:
+        type: >-
+          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
+          "Ascending" | "Descending"
+  - name: style
+    uid: 'excel!Excel.Slicer#style:member'
+    package: excel!
+    fullName: style
+    summary: >-
+      Constant value that represents the Slicer style. Possible values are:
+      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
+      through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'style: string;'
       return:
-        type:
-          - string
+        type: string
         description: >-
 
 
@@ -518,123 +258,368 @@ items:
           });
 
           ```
-  - uid: 'excel!Excel.Slicer#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Slicer object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.SlicerData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
-    name: toJSON()
-    fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'toJSON(): Excel.Interfaces.SlicerData;'
-      return:
-        type:
-          - 'excel!Excel.Interfaces.SlicerData:interface'
-        description: ''
-  - uid: 'excel!Excel.Slicer#top:member'
-    summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: top
+  - name: top
+    uid: 'excel!Excel.Slicer#top:member'
+    package: excel!
     fullName: top
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the distance, in points, from the top edge of the slicer to the
+      top of the worksheet. Throws an "The argument is invalid or missing or has
+      an incorrect format." exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'top: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#width:member'
-    summary: >-
-      Represents the width, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: width
+        type: number
+  - name: width
+    uid: 'excel!Excel.Slicer#width:member'
+    package: excel!
     fullName: width
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Represents the width, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with
+      negative value or zero as input.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'width: number;'
       return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#worksheet:member'
-    summary: |-
+        type: number
+  - name: worksheet
+    uid: 'excel!Excel.Slicer#worksheet:member'
+    package: excel!
+    fullName: worksheet
+    summary: >-
       Represents the worksheet containing the slicer.
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
-        type:
-          - 'excel!Excel.Worksheet:class'
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.Slicer#getSelectedItems~0:complex'
-    name: 'OfficeExtension.ClientResult<string[]>'
-    fullName: 'OfficeExtension.ClientResult<string[]>'
-    spec.typeScript:
-      - uid: 'office!OfficeExtension.ClientResult:class'
-        name: OfficeExtension.ClientResult
-        fullName: OfficeExtension.ClientResult
-      - name: '<string[]>'
-        fullName: '<string[]>'
-  - uid: 'excel!Excel.Slicer:class'
-    name: Excel.Slicer
-  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
-    name: Excel.Interfaces.SlicerLoadOptions
-  - uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
-    name: Interfaces.SlicerUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Slicer#setStyle~0:complex'
-    name: string | SlicerStyle | BuiltInSlicerStyle
-    fullName: string | Excel.SlicerStyle | Excel.BuiltInSlicerStyle
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.SlicerStyle:class'
-        name: SlicerStyle
-        fullName: Excel.SlicerStyle
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.BuiltInSlicerStyle:enum'
-        name: BuiltInSlicerStyle
-        fullName: Excel.BuiltInSlicerStyle
-  - uid: 'excel!Excel.SlicerItemCollection:class'
-    name: Excel.SlicerItemCollection
-  - uid: 'excel!Excel.SlicerStyle:class'
-    name: Excel.SlicerStyle
-  - uid: 'excel!Excel.Slicer#sortBy~0:complex'
-    name: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-    fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-    spec.typeScript:
-      - uid: 'excel!Excel.SlicerSortType:enum'
-        name: Excel.SlicerSortType
-        fullName: Excel.SlicerSortType
-      - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
-        fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
-  - uid: 'excel!Excel.Interfaces.SlicerData:interface'
-    name: Excel.Interfaces.SlicerData
-  - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+methods:
+  - name: clearFilters()
+    uid: 'excel!Excel.Slicer#clearFilters:member(1)'
+    package: excel!
+    fullName: clearFilters()
+    summary: >-
+      Clears all the filters currently applied on the slicer.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+          await Excel.run(async (context) => {
+              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.clearFilters();
+              await context.sync();
+          });
+
+          ```
+  - name: delete()
+    uid: 'excel!Excel.Slicer#delete:member(1)'
+    package: excel!
+    fullName: delete()
+    summary: >-
+      Deletes the slicer.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.slicers.getItemAt(0).delete();
+              await context.sync();
+          });
+
+          ```
+  - name: getSelectedItems()
+    uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
+    package: excel!
+    fullName: getSelectedItems()
+    summary: >-
+      Returns an array of selected items' keys.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedItems(): OfficeExtension.ClientResult<string[]>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;string[]&gt;
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.Slicer#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.SlicerLoadOptions): Excel.Slicer;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="excel!Excel.Interfaces.SlicerLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.Slicer:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Slicer#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Slicer;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.Slicer:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Slicer#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Slicer;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.Slicer:class" />'
+        description: ''
+  - name: selectItems(items)
+    uid: 'excel!Excel.Slicer#selectItems:member(1)'
+    package: excel!
+    fullName: selectItems(items)
+    summary: >-
+      Selects slicer items based on their keys. The previous selections are
+      cleared. All items will be selected by default if the array is empty.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectItems(items?: string[]): void;'
+      parameters:
+        - id: items
+          description: Optional. The specified slicer item names to be selected.
+          type: 'string[]'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+          await Excel.run(async (context) => {
+              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.selectItems(["Lemon", "Lime", "Orange"]);
+              await context.sync();
+          });
+
+          ```
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.Slicer#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Slicer): void`
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.SlicerUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: '<xref uid="excel!Excel.Interfaces.SlicerUpdateData:interface" />'
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.Slicer#set:member(2)'
+    package: excel!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.Slicer): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="excel!Excel.Slicer:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setStyle(style)
+    uid: 'excel!Excel.Slicer#setStyle:member(1)'
+    package: excel!
+    fullName: setStyle(style)
+    summary: >-
+      Sets the style applied to the slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setStyle(style: string | SlicerStyle | BuiltInSlicerStyle): void;'
+      parameters:
+        - id: style
+          description: >-
+            The style to apply to the slicer. An `InvalidArgumentException` is
+            thrown if a string is provided that does not match the name of any
+            style.
+          type: >-
+            string | <xref uid="excel!Excel.SlicerStyle:class" /> | <xref
+            uid="excel!Excel.BuiltInSlicerStyle:enum" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Slicer#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original Excel.Slicer object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.SlicerData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.SlicerData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.SlicerData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

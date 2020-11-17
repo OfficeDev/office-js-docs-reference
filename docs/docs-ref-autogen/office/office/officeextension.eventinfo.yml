@@ -1,83 +1,47 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'office!OfficeExtension.EventInfo:interface'
-    name: OfficeExtension.EventInfo
-    fullName: OfficeExtension.EventInfo
-    langs:
-      - typeScript
-    type: interface
-    syntax:
-      typeParameters:
-        - id: T
+### YamlMime:TSType
+name: OfficeExtension.EventInfo
+uid: 'office!OfficeExtension.EventInfo:interface'
+package: office!
+fullName: OfficeExtension.EventInfo
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: eventArgsTransformFunc
+    uid: 'office!OfficeExtension.EventInfo#eventArgsTransformFunc:member'
     package: office!
-    children:
-      - 'office!OfficeExtension.EventInfo#eventArgsTransformFunc:member'
-      - 'office!OfficeExtension.EventInfo#registerFunc:member'
-      - 'office!OfficeExtension.EventInfo#unregisterFunc:member'
-  - uid: 'office!OfficeExtension.EventInfo#eventArgsTransformFunc:member'
-    name: eventArgsTransformFunc
     fullName: eventArgsTransformFunc
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'eventArgsTransformFunc: (args: any) => Promise<T>;'
       return:
-        type:
-          - 'office!OfficeExtension.EventInfo#eventArgsTransformFunc~0:complex'
-  - uid: 'office!OfficeExtension.EventInfo#registerFunc:member'
-    name: registerFunc
+        type: '(args: any) =&gt; Promise&lt;T&gt;'
+  - name: registerFunc
+    uid: 'office!OfficeExtension.EventInfo#registerFunc:member'
+    package: office!
     fullName: registerFunc
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'registerFunc: (callback: (args: any) => void) => Promise<any>;'
       return:
-        type:
-          - 'office!OfficeExtension.EventInfo#registerFunc~0:complex'
-  - uid: 'office!OfficeExtension.EventInfo#unregisterFunc:member'
-    name: unregisterFunc
+        type: '(callback: (args: any) =&gt; void) =&gt; Promise&lt;any&gt;'
+  - name: unregisterFunc
+    uid: 'office!OfficeExtension.EventInfo#unregisterFunc:member'
+    package: office!
     fullName: unregisterFunc
-    langs:
-      - typeScript
-    type: property
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'unregisterFunc: (callback: (args: any) => void) => Promise<any>;'
       return:
-        type:
-          - 'office!OfficeExtension.EventInfo#unregisterFunc~0:complex'
-references:
-  - uid: 'office!OfficeExtension.EventInfo#eventArgsTransformFunc~0:complex'
-    name: '(args: any) => Promise<T>'
-    fullName: '(args: any) => Promise<T>'
-    spec.typeScript:
-      - name: '(args: any) => '
-        fullName: '(args: any) => '
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <T>
-        fullName: <T>
-  - uid: 'office!OfficeExtension.EventInfo#registerFunc~0:complex'
-    name: '(callback: (args: any) => void) => Promise<any>'
-    fullName: '(callback: (args: any) => void) => Promise<any>'
-    spec.typeScript:
-      - name: '(callback: (args: any) => void) => '
-        fullName: '(callback: (args: any) => void) => '
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <any>
-        fullName: <any>
-  - uid: 'office!OfficeExtension.EventInfo#unregisterFunc~0:complex'
-    name: '(callback: (args: any) => void) => Promise<any>'
-    fullName: '(callback: (args: any) => void) => Promise<any>'
-    spec.typeScript:
-      - name: '(callback: (args: any) => void) => '
-        fullName: '(callback: (args: any) => void) => '
-      - uid: '!Promise:interface'
-        name: Promise
-        fullName: Promise
-      - name: <any>
-        fullName: <any>
+        type: '(callback: (args: any) =&gt; void) =&gt; Promise&lt;any&gt;'

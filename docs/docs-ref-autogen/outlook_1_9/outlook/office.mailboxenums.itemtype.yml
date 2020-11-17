@@ -1,33 +1,21 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'outlook!Office.MailboxEnums.ItemType:enum'
-    summary: Specifies an item's type.
-    remarks: >-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: Office.MailboxEnums.ItemType
-    fullName: Office.MailboxEnums.ItemType
-    langs:
-      - typeScript
-    type: enum
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ItemType
+uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ItemType
+summary: Specifies an item's type.
+remarks: >-
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Appointment
+    uid: 'outlook!Office.MailboxEnums.ItemType.Appointment:member'
     package: outlook!
-    children:
-      - 'outlook!Office.MailboxEnums.ItemType.Appointment:member'
-      - 'outlook!Office.MailboxEnums.ItemType.Message:member'
-  - uid: 'outlook!Office.MailboxEnums.ItemType.Appointment:member'
     summary: An appointment item.
-    name: Appointment
-    fullName: Appointment
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"appointment"'
-  - uid: 'outlook!Office.MailboxEnums.ItemType.Message:member'
+  - name: Message
+    uid: 'outlook!Office.MailboxEnums.ItemType.Message:member'
+    package: outlook!
     summary: 'An email, meeting request, meeting response, or meeting cancellation.'
-    name: Message
-    fullName: Message
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"message"'

@@ -1,287 +1,296 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterPivotHierarchy:class'
-    summary: |-
-      Represents the Excel FilterPivotHierarchy.
+### YamlMime:TSType
+name: Excel.FilterPivotHierarchy
+uid: 'excel!Excel.FilterPivotHierarchy:class'
+package: excel!
+fullName: Excel.FilterPivotHierarchy
+summary: >-
+  Represents the Excel FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.FilterPivotHierarchy
-    fullName: Excel.FilterPivotHierarchy
-    langs:
-      - typeScript
-    type: class
-    extends:
-      - 'office!OfficeExtension.ClientObject:class'
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.FilterPivotHierarchy#context:member'
     package: excel!
-    children:
-      - 'excel!Excel.FilterPivotHierarchy#context:member'
-      - 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
-      - 'excel!Excel.FilterPivotHierarchy#fields:member'
-      - 'excel!Excel.FilterPivotHierarchy#id:member'
-      - 'excel!Excel.FilterPivotHierarchy#load:member(1)'
-      - 'excel!Excel.FilterPivotHierarchy#load:member(2)'
-      - 'excel!Excel.FilterPivotHierarchy#load:member(3)'
-      - 'excel!Excel.FilterPivotHierarchy#name:member'
-      - 'excel!Excel.FilterPivotHierarchy#position:member'
-      - 'excel!Excel.FilterPivotHierarchy#set:member(1)'
-      - 'excel!Excel.FilterPivotHierarchy#set:member(2)'
-      - 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
-      - 'excel!Excel.FilterPivotHierarchy#toJSON:member(1)'
-  - uid: 'excel!Excel.FilterPivotHierarchy#context:member'
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
     fullName: context
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type:
-          - 'excel!Excel.RequestContext:class'
-  - uid: 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: enableMultipleFilterItems
+    uid: 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
+    package: excel!
+    fullName: enableMultipleFilterItems
+    summary: >-
       Determines whether to allow multiple filter items.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: enableMultipleFilterItems
-    fullName: enableMultipleFilterItems
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'enableMultipleFilterItems: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.FilterPivotHierarchy#fields:member'
-    summary: |-
+        type: boolean
+  - name: fields
+    uid: 'excel!Excel.FilterPivotHierarchy#fields:member'
+    package: excel!
+    fullName: fields
+    summary: >-
       Returns the PivotFields associated with the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly fields: Excel.PivotFieldCollection;'
       return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:class'
-  - uid: 'excel!Excel.FilterPivotHierarchy#id:member'
-    summary: |-
+        type: '<xref uid="excel!Excel.PivotFieldCollection:class" />'
+  - name: id
+    uid: 'excel!Excel.FilterPivotHierarchy#id:member'
+    package: excel!
+    fullName: id
+    summary: >-
       Id of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'readonly id: string;'
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterPivotHierarchy#load:member(1)'
+        type: string
+  - name: name
+    uid: 'excel!Excel.FilterPivotHierarchy#name:member'
+    package: excel!
+    fullName: name
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(options)
-    fullName: load(options)
-    langs:
-      - typeScript
-    type: method
+      Name of the FilterPivotHierarchy.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.FilterPivotHierarchyLoadOptions): Excel.FilterPivotHierarchy;'
+      content: 'name: string;'
       return:
-        type:
-          - 'excel!Excel.FilterPivotHierarchy:class'
-        description: ''
+        type: string
+  - name: position
+    uid: 'excel!Excel.FilterPivotHierarchy#position:member'
+    package: excel!
+    fullName: position
+    summary: >-
+      Position of the FilterPivotHierarchy.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position: number;'
+      return:
+        type: number
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.FilterPivotHierarchy#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.FilterPivotHierarchyLoadOptions):
+        Excel.FilterPivotHierarchy;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type:
-            - 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface'
-  - uid: 'excel!Excel.FilterPivotHierarchy#load:member(2)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNames)
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface"
+            />
+      return:
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.FilterPivotHierarchy#load:member(2)'
+    package: excel!
     fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.FilterPivotHierarchy;'
-      return:
-        type:
-          - 'excel!Excel.FilterPivotHierarchy:class'
-        description: ''
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.FilterPivotHierarchy#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.FilterPivotHierarchy#load:member(3)'
+    package: excel!
     fullName: load(propertyNamesAndPaths)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.FilterPivotHierarchy;
-      return:
-        type:
-          - 'excel!Excel.FilterPivotHierarchy:class'
-        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
-  - uid: 'excel!Excel.FilterPivotHierarchy#name:member'
-    summary: |-
-      Name of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterPivotHierarchy#position:member'
-    summary: |-
-      Position of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'position: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.FilterPivotHierarchy#set:member(1)'
+        type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.FilterPivotHierarchy#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.FilterPivotHierarchy): void`
-    name: 'set(properties, options)'
-    fullName: 'set(properties, options)'
-    langs:
-      - typeScript
-    type: method
+    isPreview: false
+    isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.FilterPivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
+      content: >-
+        set(properties: Interfaces.FilterPivotHierarchyUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - 'office!OfficeExtension.UpdateOptions:interface'
-  - uid: 'excel!Excel.FilterPivotHierarchy#set:member(2)'
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    name: set(properties)
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.FilterPivotHierarchy#set:member(2)'
+    package: excel!
     fullName: set(properties)
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'set(properties: Excel.FilterPivotHierarchy): void;'
-      return:
-        type:
-          - void
-        description: ''
       parameters:
         - id: properties
           description: ''
-          type:
-            - 'excel!Excel.FilterPivotHierarchy:class'
-  - uid: 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
-    summary: |-
+          type: '<xref uid="excel!Excel.FilterPivotHierarchy:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setToDefault()
+    uid: 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
+    package: excel!
+    fullName: setToDefault()
+    summary: >-
       Reset the FilterPivotHierarchy back to its default values.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: setToDefault()
-    fullName: setToDefault()
-    langs:
-      - typeScript
-    type: method
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'setToDefault(): void;'
       return:
-        type:
-          - void
+        type: void
         description: ''
-  - uid: 'excel!Excel.FilterPivotHierarchy#toJSON:member(1)'
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.FilterPivotHierarchy object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.FilterPivotHierarchyData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
-    name: toJSON()
+  - name: toJSON()
+    uid: 'excel!Excel.FilterPivotHierarchy#toJSON:member(1)'
+    package: excel!
     fullName: toJSON()
-    langs:
-      - typeScript
-    type: method
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      Excel.FilterPivotHierarchy object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.FilterPivotHierarchyData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.FilterPivotHierarchyData;'
       return:
-        type:
-          - 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
+        type: >-
+          <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData:interface"
+          />
         description: ''
-references:
-  - uid: 'office!OfficeExtension.ClientObject:class'
-    name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.RequestContext:class'
-    name: RequestContext
-  - uid: 'excel!Excel.PivotFieldCollection:class'
-    name: Excel.PivotFieldCollection
-  - uid: 'excel!Excel.FilterPivotHierarchy:class'
-    name: Excel.FilterPivotHierarchy
-  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface'
-    name: Excel.Interfaces.FilterPivotHierarchyLoadOptions
-  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
-    name: Interfaces.FilterPivotHierarchyUpdateData
-  - uid: 'office!OfficeExtension.UpdateOptions:interface'
-    name: OfficeExtension.UpdateOptions
-  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
-    name: Excel.Interfaces.FilterPivotHierarchyData
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

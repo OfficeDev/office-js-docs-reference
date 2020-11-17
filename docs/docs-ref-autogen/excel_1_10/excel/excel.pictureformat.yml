@@ -1,67 +1,40 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PictureFormat:enum'
-    summary: |-
-      The format of the image.
+### YamlMime:TSEnum
+name: Excel.PictureFormat
+uid: 'excel!Excel.PictureFormat:enum'
+package: excel!
+fullName: Excel.PictureFormat
+summary: >-
+  The format of the image.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PictureFormat
-    fullName: Excel.PictureFormat
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bmp
+    uid: 'excel!Excel.PictureFormat.bmp:member'
     package: excel!
-    children:
-      - 'excel!Excel.PictureFormat.bmp:member'
-      - 'excel!Excel.PictureFormat.gif:member'
-      - 'excel!Excel.PictureFormat.jpeg:member'
-      - 'excel!Excel.PictureFormat.png:member'
-      - 'excel!Excel.PictureFormat.svg:member'
-      - 'excel!Excel.PictureFormat.unknown:member'
-  - uid: 'excel!Excel.PictureFormat.bmp:member'
     summary: Bitmap image.
-    name: bmp
-    fullName: bmp
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BMP"'
-  - uid: 'excel!Excel.PictureFormat.gif:member'
+  - name: gif
+    uid: 'excel!Excel.PictureFormat.gif:member'
+    package: excel!
     summary: Graphics Interchange Format.
-    name: gif
-    fullName: gif
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GIF"'
-  - uid: 'excel!Excel.PictureFormat.jpeg:member'
+  - name: jpeg
+    uid: 'excel!Excel.PictureFormat.jpeg:member'
+    package: excel!
     summary: Joint Photographic Experts Group.
-    name: jpeg
-    fullName: jpeg
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"JPEG"'
-  - uid: 'excel!Excel.PictureFormat.png:member'
+  - name: png
+    uid: 'excel!Excel.PictureFormat.png:member'
+    package: excel!
     summary: Portable Network Graphics.
-    name: png
-    fullName: png
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PNG"'
-  - uid: 'excel!Excel.PictureFormat.svg:member'
+  - name: svg
+    uid: 'excel!Excel.PictureFormat.svg:member'
+    package: excel!
     summary: Scalable Vector Graphic.
-    name: svg
-    fullName: svg
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SVG"'
-  - uid: 'excel!Excel.PictureFormat.unknown:member'
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"UNKNOWN"'
+  - name: unknown
+    uid: 'excel!Excel.PictureFormat.unknown:member'
+    package: excel!
+    summary: ''

@@ -1,38 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
-    summary: |-
-      Represents the region level of a chart series layout. This only applies to region map charts.
+### YamlMime:TSEnum
+name: Excel.ChartMapLabelStrategy
+uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+package: excel!
+fullName: Excel.ChartMapLabelStrategy
+summary: >-
+  Represents the region level of a chart series layout. This only applies to
+  region map charts.
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartMapLabelStrategy
-    fullName: Excel.ChartMapLabelStrategy
-    langs:
-      - typeScript
-    type: enum
+
+  \[ [API set: ExcelApi
+  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bestFit
+    uid: 'excel!Excel.ChartMapLabelStrategy.bestFit:member'
     package: excel!
-    children:
-      - 'excel!Excel.ChartMapLabelStrategy.bestFit:member'
-      - 'excel!Excel.ChartMapLabelStrategy.none:member'
-      - 'excel!Excel.ChartMapLabelStrategy.showAll:member'
-  - uid: 'excel!Excel.ChartMapLabelStrategy.bestFit:member'
-    name: bestFit
-    fullName: bestFit
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BestFit"'
-  - uid: 'excel!Excel.ChartMapLabelStrategy.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
-  - uid: 'excel!Excel.ChartMapLabelStrategy.showAll:member'
-    name: showAll
-    fullName: showAll
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ShowAll"'
+    summary: ''
+  - name: none
+    uid: 'excel!Excel.ChartMapLabelStrategy.none:member'
+    package: excel!
+    summary: ''
+  - name: showAll
+    uid: 'excel!Excel.ChartMapLabelStrategy.showAll:member'
+    package: excel!
+    summary: ''

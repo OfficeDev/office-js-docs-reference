@@ -1,0 +1,189 @@
+### YamlMime:TSType
+name: Excel.TaskHistoryRecordCollection
+uid: 'excel!Excel.TaskHistoryRecordCollection:class'
+package: excel!
+fullName: Excel.TaskHistoryRecordCollection
+summary: >-
+  Represents a collection of history records for a task.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.TaskHistoryRecordCollection#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: items
+    uid: 'excel!Excel.TaskHistoryRecordCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.TaskHistoryRecord[];'
+      return:
+        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />[]'
+methods:
+  - name: getCount()
+    uid: 'excel!Excel.TaskHistoryRecordCollection#getCount:member(1)'
+    package: excel!
+    fullName: getCount()
+    summary: >-
+      Gets the number of history records in the collection for the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: ''
+  - name: getItemAt(index)
+    uid: 'excel!Excel.TaskHistoryRecordCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
+    summary: >-
+      Gets a task history record by using its index in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Excel.TaskHistoryRecord;'
+      parameters:
+        - id: index
+          description: >-
+            The records are stored in chronological order of when the changes
+            were recorded by Excel (not necessarily ordered by
+            historyRecordCreatedDate). The "Create" record is always at index 0.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />'
+        description: The history record with the given index.
+  - name: load(options)
+    uid: 'excel!Excel.TaskHistoryRecordCollection#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.TaskHistoryRecordCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions):
+        Excel.TaskHistoryRecordCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.TaskHistoryRecordCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.TaskHistoryRecordCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.TaskHistoryRecordCollection#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNames?: string | string[]):
+        Excel.TaskHistoryRecordCollection;
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.TaskHistoryRecordCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.TaskHistoryRecordCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.TaskHistoryRecordCollection;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.TaskHistoryRecordCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.TaskHistoryRecordCollection#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that is passed to it.) Whereas the original
+      `Excel.TaskHistoryRecordCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `Excel.Interfaces.TaskHistoryRecordCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TaskHistoryRecordCollectionData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.TaskHistoryRecordCollectionData:interface"
+          />
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -1,58 +1,55 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ListDataValidation:interface'
-    summary: |-
-      Represents the List data validation criteria.
+### YamlMime:TSType
+name: Excel.ListDataValidation
+uid: 'excel!Excel.ListDataValidation:interface'
+package: excel!
+fullName: Excel.ListDataValidation
+summary: >-
+  Represents the List data validation criteria.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ListDataValidation
-    fullName: Excel.ListDataValidation
-    langs:
-      - typeScript
-    type: interface
+
+  \[ [API set: ExcelApi
+  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: inCellDropDown
+    uid: 'excel!Excel.ListDataValidation#inCellDropDown:member'
     package: excel!
-    children:
-      - 'excel!Excel.ListDataValidation#inCellDropDown:member'
-      - 'excel!Excel.ListDataValidation#source:member'
-  - uid: 'excel!Excel.ListDataValidation#inCellDropDown:member'
-    summary: |-
+    fullName: inCellDropDown
+    summary: >-
       Displays the list in cell drop down or not, it defaults to true.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: inCellDropDown
-    fullName: inCellDropDown
-    langs:
-      - typeScript
-    type: property
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'inCellDropDown: boolean;'
       return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ListDataValidation#source:member'
-    summary: >-
-      Source of the list for data validation When setting the value, it can be passed in as a Excel Range object, or a
-      string that contains comma separated number, boolean or date.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: source
+        type: boolean
+  - name: source
+    uid: 'excel!Excel.ListDataValidation#source:member'
+    package: excel!
     fullName: source
-    langs:
-      - typeScript
-    type: property
+    summary: >-
+      Source of the list for data validation When setting the value, it can be
+      passed in as a Excel Range object, or a string that contains comma
+      separated number, boolean or date.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
     syntax:
       content: 'source: string | Range;'
       return:
-        type:
-          - 'excel!Excel.ListDataValidation#source~0:complex'
-references:
-  - uid: 'excel!Excel.ListDataValidation#source~0:complex'
-    name: string | Range
-    fullName: string | Excel.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
+        type: 'string | <xref uid="excel!Excel.Range:class" />'
