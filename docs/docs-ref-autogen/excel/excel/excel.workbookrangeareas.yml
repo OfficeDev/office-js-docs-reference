@@ -41,8 +41,8 @@ properties:
     package: excel!
     fullName: areas
     summary: >-
-      Returns the `RangeAreasCollection` object. Each `RangeAreas` object in the
-      collection represents one or more rectangle ranges in one worksheet.
+      Returns the `RangeAreasCollection` object. Each `RangeAreas` in the
+      collection represent one or more rectangle ranges in one worksheet.
 
 
       \[ [API set: ExcelApi
@@ -148,7 +148,7 @@ methods:
     package: excel!
     fullName: getRangeAreasOrNullObjectBySheet(key)
     summary: >-
-      Returns the `RangeAreas` object based on worksheet name or id in the
+      Returns the RangeAreas object based on worksheet name or id in the
       collection. If the worksheet does not exist, will return a null object.
 
 

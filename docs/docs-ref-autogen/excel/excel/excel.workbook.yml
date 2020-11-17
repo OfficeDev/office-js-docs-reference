@@ -648,6 +648,24 @@ properties:
       content: 'readonly tableStyles: Excel.TableStyleCollection;'
       return:
         type: '<xref uid="excel!Excel.TableStyleCollection:class" />'
+  - name: tasks
+    uid: 'excel!Excel.Workbook#tasks:member'
+    package: excel!
+    fullName: tasks
+    summary: >-
+      Returns a collection of tasks that are present in the workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tasks: Excel.TaskCollection;'
+      return:
+        type: '<xref uid="excel!Excel.TaskCollection:class" />'
   - name: timelineStyles
     uid: 'excel!Excel.Workbook#timelineStyles:member'
     package: excel!

@@ -170,7 +170,7 @@ properties:
     package: excel!
     fullName: onChanged
     summary: >-
-      Occurs when data changed on a specific worksheet.
+      Occurs when data changes in a specific worksheet.
 
 
       \[ [API set: ExcelApi

@@ -4,7 +4,8 @@ uid: 'excel!Excel.CommentDeletedEventArgs:interface'
 package: excel!
 fullName: Excel.CommentDeletedEventArgs
 summary: >-
-  Provides information about the comments that raised the Deleted event.
+  Provides information about the comments that raised the "CommentDeleted"
+  event.
 
 
   \[ [API set: ExcelApi
@@ -20,7 +21,7 @@ properties:
     package: excel!
     fullName: commentDetails
     summary: >-
-      Get the CommentDetail array which contains the comment Id and Ids of its
+      Gets the `CommentDetail` array that contains the comment ID and IDs of its
       related replies.
 
 
@@ -39,7 +40,7 @@ properties:
     package: excel!
     fullName: source
     summary: >-
-      Specifies the source of the event. See Excel.EventSource for details.
+      Specifies the source of the event. See `Excel.EventSource` for details.
 
 
       \[ [API set: ExcelApi
@@ -57,7 +58,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
 
       \[ [API set: ExcelApi

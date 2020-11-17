@@ -114,7 +114,7 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: >-
-      Specifies a double that lightens or darkens a color for Range Fill, the
+      Specifies a double that lightens or darkens a color for Range Fill. The
       value is between -1 (darkest) and 1 (brightest), with 0 for the original
       color. If the tintAndShades are not uniform, null will be returned.
 

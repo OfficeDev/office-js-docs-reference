@@ -366,7 +366,7 @@ properties:
     package: excel!
     fullName: onChanged
     summary: >-
-      Occurs when data changed on a specific worksheet.
+      Occurs when data changes in a specific worksheet.
 
 
       \[ [API set: ExcelApi
@@ -1099,6 +1099,24 @@ properties:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type: '<xref uid="excel!Excel.TableCollection:class" />'
+  - name: tasks
+    uid: 'excel!Excel.Worksheet#tasks:member'
+    package: excel!
+    fullName: tasks
+    summary: >-
+      Returns a collection of tasks that are present in the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tasks: Excel.TaskCollection;'
+      return:
+        type: '<xref uid="excel!Excel.TaskCollection:class" />'
   - name: verticalPageBreaks
     uid: 'excel!Excel.Worksheet#verticalPageBreaks:member'
     package: excel!

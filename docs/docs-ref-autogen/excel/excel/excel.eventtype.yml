@@ -80,12 +80,6 @@ fields:
       RefreshRequestCompleted represents the type of event registered on
       LinkedDataType, and occurs when a request to refresh a data source is
       completed.
-  - name: recordingStateChangedEvent
-    uid: 'excel!Excel.EventType.recordingStateChangedEvent:member'
-    package: excel!
-    summary: >-
-      RecordingStateChangedEvent represents the event fired when macro recording
-      starts or stops.
   - name: ribbonCommandExecuted
     uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
     package: excel!
@@ -146,10 +140,6 @@ fields:
     summary: >-
       VisualSelectionChanged represents the type of event registered on
       VisualCollection, and occurs when visual selection changes.
-  - name: wacoperationEvent
-    uid: 'excel!Excel.EventType.wacoperationEvent:member'
-    package: excel!
-    summary: ''
   - name: workbookAutoSaveSettingChanged
     uid: 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
     package: excel!
@@ -213,6 +203,12 @@ fields:
     summary: >-
       WorksheetFormatChanged represents the type of event registered on
       worksheet, and occurs when there is a format changed.
+  - name: worksheetFormulaChanged
+    uid: 'excel!Excel.EventType.worksheetFormulaChanged:member'
+    package: excel!
+    summary: >-
+      WorksheetFormulaChanged represents the type of event registered on a
+      worksheet, and occurs when a formula is changed.
   - name: worksheetRowHiddenChanged
     uid: 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
     package: excel!

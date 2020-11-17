@@ -3,7 +3,7 @@
 |[ChartAxisTitle](/javascript/api/excel/excel.chartaxistitle)|[textOrientation](/javascript/api/excel/excel.chartaxistitle#textorientation)|Specifies the angle to which the text is oriented for the chart axis title.|
 |[ChartSeries](/javascript/api/excel/excel.chartseries)|[getDimensionValues(dimension: Excel.ChartSeriesDimension)](/javascript/api/excel/excel.chartseries#getdimensionvalues-dimension-)|Gets the values from a single dimension of the chart series.|
 |[Comment](/javascript/api/excel/excel.comment)|[contentType](/javascript/api/excel/excel.comment#contenttype)|Gets the content type of the comment.|
-|[CommentAddedEventArgs](/javascript/api/excel/excel.commentaddedeventargs)|[commentDetails](/javascript/api/excel/excel.commentaddedeventargs#commentdetails)|Get the CommentDetail array which contains the comment Id and Ids of its related replies.|
+|[CommentAddedEventArgs](/javascript/api/excel/excel.commentaddedeventargs)|[commentDetails](/javascript/api/excel/excel.commentaddedeventargs#commentdetails)|Gets the `CommentDetail` array that contains the comment ID and IDs of its related replies.|
 ||[source](/javascript/api/excel/excel.commentaddedeventargs#source)|Specifies the source of the event.|
 ||[type](/javascript/api/excel/excel.commentaddedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.commentaddedeventargs#worksheetid)|Gets the Id of the worksheet in which the event happened.|
@@ -15,7 +15,7 @@
 |[CommentCollection](/javascript/api/excel/excel.commentcollection)|[onAdded](/javascript/api/excel/excel.commentcollection#onadded)|Occurs when the comments are added.|
 ||[onChanged](/javascript/api/excel/excel.commentcollection#onchanged)|Occurs when comments or replies in a comment collection are changed, including when replies are deleted.|
 ||[onDeleted](/javascript/api/excel/excel.commentcollection#ondeleted)|Occurs when comments are deleted in the comment collection.|
-|[CommentDeletedEventArgs](/javascript/api/excel/excel.commentdeletedeventargs)|[commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#commentdetails)|Get the CommentDetail array which contains the comment Id and Ids of its related replies.|
+|[CommentDeletedEventArgs](/javascript/api/excel/excel.commentdeletedeventargs)|[commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#commentdetails)|Gets the `CommentDetail` array that contains the comment ID and IDs of its related replies.|
 ||[source](/javascript/api/excel/excel.commentdeletedeventargs#source)|Specifies the source of the event.|
 ||[type](/javascript/api/excel/excel.commentdeletedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.commentdeletedeventargs#worksheetid)|Gets the Id of the worksheet in which the event happened.|
@@ -76,11 +76,11 @@
 |[RangeAreasCollection](/javascript/api/excel/excel.rangeareascollection)|[getCount()](/javascript/api/excel/excel.rangeareascollection#getcount--)|Gets the number of RangeAreas objects in this collection.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.rangeareascollection#getitemat-index-)|Returns the RangeAreas object based on position in the collection.|
 ||[items](/javascript/api/excel/excel.rangeareascollection#items)|Gets the loaded child items in this collection.|
-|[WorkbookRangeAreas](/javascript/api/excel/excel.workbookrangeareas)|[getRangeAreasBySheet(key: string)](/javascript/api/excel/excel.workbookrangeareas#getrangeareasbysheet-key-)|Returns the `RangeAreas` object based on worksheet id or name in the collection.|
-||[getRangeAreasOrNullObjectBySheet(key: string)](/javascript/api/excel/excel.workbookrangeareas#getrangeareasornullobjectbysheet-key-)|Returns the `RangeAreas` object based on worksheet name or id in the collection.|
+|[WorkbookRangeAreas](/javascript/api/excel/excel.workbookrangeareas)|[getRangeAreasBySheet(key: string)](/javascript/api/excel/excel.workbookrangeareas#getrangeareasbysheet-key-)|Returns the `RangeAreas` object based on worksheet ID or name in the collection.|
+||[getRangeAreasOrNullObjectBySheet(key: string)](/javascript/api/excel/excel.workbookrangeareas#getrangeareasornullobjectbysheet-key-)|Returns the `RangeAreas` object based on worksheet name or ID in the collection.|
 ||[addresses](/javascript/api/excel/excel.workbookrangeareas#addresses)|Returns an array of address in A1-style.|
 ||[areas](/javascript/api/excel/excel.workbookrangeareas#areas)|Returns the `RangeAreasCollection` object.|
-||[ranges](/javascript/api/excel/excel.workbookrangeareas#ranges)|Returns ranges that comprise this object in a `RangeCollection` object.|
+||[ranges](/javascript/api/excel/excel.workbookrangeareas#ranges)|Returns ranges that comprise this object in a `RangeCollection` object.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[customProperties](/javascript/api/excel/excel.worksheet#customproperties)|Gets a collection of worksheet-level custom properties.|
 |[WorksheetCustomProperty](/javascript/api/excel/excel.worksheetcustomproperty)|[delete()](/javascript/api/excel/excel.worksheetcustomproperty#delete--)|Deletes the custom property.|
 ||[key](/javascript/api/excel/excel.worksheetcustomproperty#key)|Gets the key of the custom property.|
