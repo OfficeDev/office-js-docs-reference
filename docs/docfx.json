@@ -155,6 +155,7 @@
           "**/*.yml"
         ],
         "group": "common-js",
+        "version": "common-js",
         "src": "docs-ref-autogen/common",
         "dest": "api"
       },
@@ -164,6 +165,7 @@
           "**/*.yml"
         ],
         "group": "common-js",
+        "version": "common-js",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -172,6 +174,7 @@
           "office.yml"
         ],
         "group": "common-js",
+        "version": "common-js",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -180,6 +183,7 @@
           "overview.md"
         ],
         "group": "common-js",
+        "version": "common-js",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -188,6 +192,7 @@
           "toc.yml"
         ],
         "group": "common-js",
+        "version": "common-js",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -198,6 +203,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-preview",
+        "version": "outlook-js-preview",
         "src": "docs-ref-autogen/outlook",
         "dest": "api"
       },
@@ -206,6 +212,7 @@
           "outlook.yml"
         ],
         "group": "outlook-js-preview",
+        "version": "outlook-js-preview",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -214,6 +221,7 @@
           "overview.md"
         ],
         "group": "outlook-js-preview",
+        "version": "outlook-js-preview",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -223,6 +231,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-preview",
+        "version": "outlook-js-preview",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -231,6 +240,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-preview",
+        "version": "outlook-js-preview",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -241,6 +251,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.1",
+        "version": "outlook-js-1.1",
         "src": "docs-ref-autogen/outlook_1_1",
         "dest": "api"
       },
@@ -250,6 +261,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.1",
+        "version": "outlook-js-1.1",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -258,6 +270,7 @@
           "outlook_1_1.yml"
         ],
         "group": "outlook-js-1.1",
+        "version": "outlook-js-1.1",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -266,6 +279,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.1",
+        "version": "outlook-js-1.1",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -274,6 +288,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.1",
+        "version": "outlook-js-1.1",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -284,6 +299,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.2",
+        "version": "outlook-js-1.2",
         "src": "docs-ref-autogen/outlook_1_2",
         "dest": "api"
       },
@@ -293,6 +309,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.2",
+        "version": "outlook-js-1.2",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -301,6 +318,7 @@
           "outlook_1_2.yml"
         ],
         "group": "outlook-js-1.2",
+        "version": "outlook-js-1.2",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -309,6 +327,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.2",
+        "version": "outlook-js-1.2",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -317,6 +336,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.2",
+        "version": "outlook-js-1.2",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -327,6 +347,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.3",
+        "version": "outlook-js-1.3",
         "src": "docs-ref-autogen/outlook_1_3",
         "dest": "api"
       },
@@ -336,6 +357,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.3",
+        "version": "outlook-js-1.3",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -344,6 +366,7 @@
           "outlook_1_3.yml"
         ],
         "group": "outlook-js-1.3",
+        "version": "outlook-js-1.3",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -352,6 +375,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.3",
+        "version": "outlook-js-1.3",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -360,6 +384,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.3",
+        "version": "outlook-js-1.3",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -370,6 +395,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.4",
+        "version": "outlook-js-1.4",
         "src": "docs-ref-autogen/outlook_1_4",
         "dest": "api"
       },
@@ -379,6 +405,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.4",
+        "version": "outlook-js-1.4",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -387,6 +414,7 @@
           "outlook_1_4.yml"
         ],
         "group": "outlook-js-1.4",
+        "version": "outlook-js-1.4",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -395,6 +423,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.4",
+        "version": "outlook-js-1.4",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -403,6 +432,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.4",
+        "version": "outlook-js-1.4",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -413,6 +443,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.5",
+        "version": "outlook-js-1.5",
         "src": "docs-ref-autogen/outlook_1_5",
         "dest": "api"
       },
@@ -422,6 +453,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.5",
+        "version": "outlook-js-1.5",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -430,6 +462,7 @@
           "outlook_1_5.yml"
         ],
         "group": "outlook-js-1.5",
+        "version": "outlook-js-1.5",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -438,6 +471,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.5",
+        "version": "outlook-js-1.5",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -446,6 +480,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.5",
+        "version": "outlook-js-1.5",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -456,6 +491,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.6",
+        "version": "outlook-js-1.6",
         "src": "docs-ref-autogen/outlook_1_6",
         "dest": "api"
       },
@@ -465,6 +501,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.6",
+        "version": "outlook-js-1.6",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -473,6 +510,7 @@
           "outlook_1_6.yml"
         ],
         "group": "outlook-js-1.6",
+        "version": "outlook-js-1.6",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -481,6 +519,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.6",
+        "version": "outlook-js-1.6",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -489,6 +528,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.6",
+        "version": "outlook-js-1.6",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -499,6 +539,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.7",
+        "version": "outlook-js-1.7",
         "src": "docs-ref-autogen/outlook_1_7",
         "dest": "api"
       },
@@ -508,6 +549,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.7",
+        "version": "outlook-js-1.7",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -516,6 +558,7 @@
           "outlook_1_7.yml"
         ],
         "group": "outlook-js-1.7",
+        "version": "outlook-js-1.7",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -524,6 +567,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.7",
+        "version": "outlook-js-1.7",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -532,6 +576,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.7",
+        "version": "outlook-js-1.7",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -542,6 +587,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.8",
+        "version": "outlook-js-1.8",
         "src": "docs-ref-autogen/outlook_1_8",
         "dest": "api"
       },
@@ -551,6 +597,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.8",
+        "version": "outlook-js-1.8",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -559,6 +606,7 @@
           "outlook_1_8.yml"
         ],
         "group": "outlook-js-1.8",
+        "version": "outlook-js-1.8",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -567,6 +615,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.8",
+        "version": "outlook-js-1.8",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -575,6 +624,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.8",
+        "version": "outlook-js-1.8",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -585,6 +635,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.9",
+        "version": "outlook-js-1.9",
         "src": "docs-ref-autogen/outlook_1_9",
         "dest": "api"
       },
@@ -594,6 +645,7 @@
           "**/*.yml"
         ],
         "group": "outlook-js-1.9",
+        "version": "outlook-js-1.9",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -602,6 +654,7 @@
           "outlook_1_9.yml"
         ],
         "group": "outlook-js-1.9",
+        "version": "outlook-js-1.9",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -610,6 +663,7 @@
           "overview.md"
         ],
         "group": "outlook-js-1.9",
+        "version": "outlook-js-1.9",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -618,6 +672,7 @@
           "toc.yml"
         ],
         "group": "outlook-js-1.9",
+        "version": "outlook-js-1.9",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -636,6 +691,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-preview",
+        "version": "excel-js-preview",
         "src": "docs-ref-autogen/excel",
         "dest": "api"
       },
@@ -645,6 +701,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-preview",
+        "version": "excel-js-preview",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -653,6 +710,7 @@
           "excel.yml"
         ],
         "group": "excel-js-preview",
+        "version": "excel-js-preview",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -661,6 +719,7 @@
           "overview.md"
         ],
         "group": "excel-js-preview",
+        "version": "excel-js-preview",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -669,6 +728,7 @@
           "toc.yml"
         ],
         "group": "excel-js-preview",
+        "version": "excel-js-preview",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -679,6 +739,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-1.1",
+        "version": "excel-js-1.1",
         "src": "docs-ref-autogen/excel_1_1",
         "dest": "api"
       },
@@ -688,6 +749,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-1.1",
+        "version": "excel-js-1.1",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -696,6 +758,7 @@
           "excel_1_1.yml"
         ],
         "group": "excel-js-1.1",
+        "version": "excel-js-1.1",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -704,6 +767,7 @@
           "overview.md"
         ],
         "group": "excel-js-1.1",
+        "version": "excel-js-1.1",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -712,6 +776,7 @@
           "toc.yml"
         ],
         "group": "excel-js-1.1",
+        "version": "excel-js-1.1",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -722,6 +787,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-1.2",
+        "version": "excel-js-1.2",
         "src": "docs-ref-autogen/excel_1_2",
         "dest": "api"
       },
@@ -731,6 +797,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-1.2",
+        "version": "excel-js-1.2",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -739,6 +806,7 @@
           "excel_1_2.yml"
         ],
         "group": "excel-js-1.2",
+        "version": "excel-js-1.2",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -747,6 +815,7 @@
           "overview.md"
         ],
         "group": "excel-js-1.2",
+        "version": "excel-js-1.2",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -755,6 +824,7 @@
           "toc.yml"
         ],
         "group": "excel-js-1.2",
+        "version": "excel-js-1.2",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -765,6 +835,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-1.3",
+        "version": "excel-js-1.3",
         "src": "docs-ref-autogen/excel_1_3",
         "dest": "api"
       },
@@ -774,6 +845,7 @@
           "**/*.yml"
         ],
         "group": "excel-js-1.3",
+        "version": "excel-js-1.3",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -782,6 +854,7 @@
           "excel_1_3.yml"
         ],
         "group": "excel-js-1.3",
+        "version": "excel-js-1.3",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -790,6 +863,7 @@
           "overview.md"
         ],
         "group": "excel-js-1.3",
+        "version": "excel-js-1.3",
         "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
@@ -798,6 +872,7 @@
           "toc.yml"
         ],
         "group": "excel-js-1.3",
+        "version": "excel-js-1.3",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -808,6 +883,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.4",
+      "version": "excel-js-1.4",
       "src": "docs-ref-autogen/excel_1_4",
       "dest": "api"
     },
@@ -817,6 +893,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.4",
+      "version": "excel-js-1.4",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -825,6 +902,7 @@
         "excel_1_4.yml"
       ],
       "group": "excel-js-1.4",
+      "version": "excel-js-1.4",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -833,6 +911,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.4",
+      "version": "excel-js-1.4",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -841,6 +920,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.4",
+      "version": "excel-js-1.4",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -851,6 +931,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.5",
+      "version": "excel-js-1.5",
       "src": "docs-ref-autogen/excel_1_5",
       "dest": "api"
     },
@@ -860,6 +941,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.5",
+      "version": "excel-js-1.5",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -868,6 +950,7 @@
         "excel_1_5.yml"
       ],
       "group": "excel-js-1.5",
+      "version": "excel-js-1.5",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -876,6 +959,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.5",
+      "version": "excel-js-1.5",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -884,6 +968,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.5",
+      "version": "excel-js-1.5",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -894,6 +979,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.6",
+      "version": "excel-js-1.6",
       "src": "docs-ref-autogen/excel_1_6",
       "dest": "api"
     },
@@ -903,6 +989,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.6",
+      "version": "excel-js-1.6",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -911,6 +998,7 @@
         "excel_1_6.yml"
       ],
       "group": "excel-js-1.6",
+      "version": "excel-js-1.6",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -919,6 +1007,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.6",
+      "version": "excel-js-1.6",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -927,6 +1016,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.6",
+      "version": "excel-js-1.6",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -937,6 +1027,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.7",
+      "version": "excel-js-1.7",
       "src": "docs-ref-autogen/excel_1_7",
       "dest": "api"
     },
@@ -946,6 +1037,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.7",
+      "version": "excel-js-1.7",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -954,6 +1046,7 @@
         "excel_1_7.yml"
       ],
       "group": "excel-js-1.7",
+      "version": "excel-js-1.7",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -962,6 +1055,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.7",
+      "version": "excel-js-1.7",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -970,6 +1064,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.7",
+      "version": "excel-js-1.7",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -980,6 +1075,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.8",
+      "version": "excel-js-1.8",
       "src": "docs-ref-autogen/excel_1_8",
       "dest": "api"
     },
@@ -989,6 +1085,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.8",
+      "version": "excel-js-1.8",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -997,6 +1094,7 @@
         "excel_1_8.yml"
       ],
       "group": "excel-js-1.8",
+      "version": "excel-js-1.8",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1005,6 +1103,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.8",
+      "version": "excel-js-1.8",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1013,6 +1112,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.8",
+      "version": "excel-js-1.8",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1023,6 +1123,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.9",
+      "version": "excel-js-1.9",
       "src": "docs-ref-autogen/excel_1_9",
       "dest": "api"
     },
@@ -1032,6 +1133,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.9",
+      "version": "excel-js-1.9",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1040,6 +1142,7 @@
         "excel_1_9.yml"
       ],
       "group": "excel-js-1.9",
+      "version": "excel-js-1.9",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1048,6 +1151,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.9",
+      "version": "excel-js-1.9",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1056,6 +1160,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.9",
+      "version": "excel-js-1.9",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1066,6 +1171,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.10",
+      "version": "excel-js-1.10",
       "src": "docs-ref-autogen/excel_1_10",
       "dest": "api"
     },
@@ -1075,6 +1181,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.10",
+      "version": "excel-js-1.10",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1083,6 +1190,7 @@
         "excel_1_10.yml"
       ],
       "group": "excel-js-1.10",
+      "version": "excel-js-1.10",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1091,6 +1199,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.10",
+      "version": "excel-js-1.10",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1099,6 +1208,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.10",
+      "version": "excel-js-1.10",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1109,6 +1219,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.11",
+      "version": "excel-js-1.11",
       "src": "docs-ref-autogen/excel_1_11",
       "dest": "api"
     },
@@ -1118,6 +1229,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.11",
+      "version": "excel-js-1.11",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1126,6 +1238,7 @@
         "excel_1_11.yml"
       ],
       "group": "excel-js-1.11",
+      "version": "excel-js-1.11",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1134,6 +1247,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.11",
+      "version": "excel-js-1.11",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1142,6 +1256,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.11",
+      "version": "excel-js-1.11",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1152,6 +1267,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.12",
+      "version": "excel-js-1.12",
       "src": "docs-ref-autogen/excel_1_12",
       "dest": "api"
     },
@@ -1161,6 +1277,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-1.12",
+      "version": "excel-js-1.12",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1169,6 +1286,7 @@
         "excel_1_12.yml"
       ],
       "group": "excel-js-1.12",
+      "version": "excel-js-1.12",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1177,6 +1295,7 @@
         "overview.md"
       ],
       "group": "excel-js-1.12",
+      "version": "excel-js-1.12",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1185,6 +1304,7 @@
         "toc.yml"
       ],
       "group": "excel-js-1.12",
+      "version": "excel-js-1.12",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1195,6 +1315,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-online",
+      "version": "excel-js-online",
       "src": "docs-ref-autogen/excel_online",
       "dest": "api"
     },
@@ -1204,6 +1325,7 @@
         "**/*.yml"
       ],
       "group": "excel-js-online",
+      "version": "excel-js-online",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1212,6 +1334,7 @@
         "excel_online.yml"
       ],
       "group": "excel-js-online",
+      "version": "excel-js-online",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1220,6 +1343,7 @@
         "overview.md"
       ],
       "group": "excel-js-online",
+      "version": "excel-js-online",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1228,6 +1352,7 @@
         "toc.yml"
       ],
       "group": "excel-js-online",
+      "version": "excel-js-online",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1238,6 +1363,7 @@
         "**/*.yml"
       ],
       "group": "onenote-js-1.1",
+      "version": "onenote-js-1.1",
       "src": "docs-ref-autogen/onenote",
       "dest": "api"
     },
@@ -1247,6 +1373,7 @@
         "**/*.yml"
       ],
       "group": "onenote-js-1.1",
+      "version": "onenote-js-1.1",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1255,6 +1382,7 @@
         "onenote.yml"
       ],
       "group": "onenote-js-1.1",
+      "version": "onenote-js-1.1",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1263,6 +1391,7 @@
         "overview.md"
       ],
       "group": "onenote-js-1.1",
+      "version": "onenote-js-1.1",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1271,6 +1400,7 @@
         "toc.yml"
       ],
       "group": "onenote-js-1.1",
+      "version": "onenote-js-1.1",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1281,6 +1411,7 @@
         "**/*.yml"
       ],
       "group": "powerpoint-js-1.1",
+      "version": "powerpoint-js-1.1",
       "src": "docs-ref-autogen/powerpoint_1_1",
       "dest": "api"
     },
@@ -1290,6 +1421,7 @@
         "**/*.yml"
       ],
       "group": "powerpoint-js-1.1",
+      "version": "powerpoint-js-1.1",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1298,6 +1430,7 @@
         "powerpoint_1_1.yml"
       ],
       "group": "powerpoint-js-1.1",
+      "version": "powerpoint-js-1.1",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1306,6 +1439,7 @@
         "overview.md"
       ],
       "group": "powerpoint-js-1.1",
+      "version": "powerpoint-js-1.1",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1314,6 +1448,7 @@
         "toc.yml"
       ],
       "group": "powerpoint-js-1.1",
+      "version": "powerpoint-js-1.1",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1324,6 +1459,7 @@
         "**/*.yml"
       ],
       "group": "powerpoint-js-preview",
+      "version": "powerpoint-js-preview",
       "src": "docs-ref-autogen/powerpoint",
       "dest": "api"
     },
@@ -1333,6 +1469,7 @@
         "**/*.yml"
       ],
       "group": "powerpoint-js-preview",
+      "version": "powerpoint-js-preview",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1341,6 +1478,7 @@
         "powerpoint.yml"
       ],
       "group": "powerpoint-js-preview",
+      "version": "powerpoint-js-preview",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1349,6 +1487,7 @@
         "overview.md"
       ],
       "group": "powerpoint-js-preview",
+      "version": "powerpoint-js-preview",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1357,6 +1496,7 @@
         "toc.yml"
       ],
       "group": "powerpoint-js-preview",
+      "version": "powerpoint-js-preview",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1367,6 +1507,7 @@
         "**/*.yml"
       ],
       "group": "visio-js-1.1",
+      "version": "visio-js-1.1",
       "src": "docs-ref-autogen/visio",
       "dest": "api"
     },
@@ -1376,6 +1517,7 @@
         "**/*.yml"
       ],
       "group": "visio-js-1.1",
+      "version": "visio-js-1.1",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1384,6 +1526,7 @@
         "visio.yml"
       ],
       "group": "visio-js-1.1",
+      "version": "visio-js-1.1",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1392,6 +1535,7 @@
         "overview.md"
       ],
       "group": "visio-js-1.1",
+      "version": "visio-js-1.1",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1400,6 +1544,7 @@
         "toc.yml"
       ],
       "group": "visio-js-1.1",
+      "version": "visio-js-1.1",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1410,6 +1555,7 @@
         "**/*.yml"
       ],
       "group": "word-js-preview",
+      "version": "word-js-preview",
       "src": "docs-ref-autogen/word",
       "dest": "api"
     },
@@ -1419,6 +1565,7 @@
         "**/*.yml"
       ],
       "group": "word-js-preview",
+      "version": "word-js-preview",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1427,6 +1574,7 @@
         "word.yml"
       ],
       "group": "word-js-preview",
+      "version": "word-js-preview",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1435,6 +1583,7 @@
         "overview.md"
       ],
       "group": "word-js-preview",
+      "version": "word-js-preview",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1443,6 +1592,7 @@
         "toc.yml"
       ],
       "group": "word-js-preview",
+      "version": "word-js-preview",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1453,6 +1603,7 @@
         "**/*.yml"
       ],
       "group": "word-js-1.1",
+      "version": "word-js-1.1",
       "src": "docs-ref-autogen/word_1_1",
       "dest": "api"
     },
@@ -1462,6 +1613,7 @@
         "**/*.yml"
       ],
       "group": "word-js-1.1",
+      "version": "word-js-1.1",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1470,6 +1622,7 @@
         "word_1_1.yml"
       ],
       "group": "word-js-1.1",
+      "version": "word-js-1.1",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1478,6 +1631,7 @@
         "overview.md"
       ],
       "group": "word-js-1.1",
+      "version": "word-js-1.1",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1486,6 +1640,7 @@
         "toc.yml"
       ],
       "group": "word-js-1.1",
+      "version": "word-js-1.1",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1496,6 +1651,7 @@
         "**/*.yml"
       ],
       "group": "word-js-1.2",
+      "version": "word-js-1.2",
       "src": "docs-ref-autogen/word_1_2",
       "dest": "api"
     },
@@ -1505,6 +1661,7 @@
         "**/*.yml"
       ],
       "group": "word-js-1.2",
+      "version": "word-js-1.2",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1513,6 +1670,7 @@
         "word_1_2.yml"
       ],
       "group": "word-js-1.2",
+      "version": "word-js-1.2",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1521,6 +1679,7 @@
         "overview.md"
       ],
       "group": "word-js-1.2",
+      "version": "word-js-1.2",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1529,6 +1688,7 @@
         "toc.yml"
       ],
       "group": "word-js-1.2",
+      "version": "word-js-1.2",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1539,6 +1699,7 @@
         "**/*.yml"
       ],
       "group": "word-js-1.3",
+      "version": "word-js-1.3",
       "src": "docs-ref-autogen/word_1_3",
       "dest": "api"
     },
@@ -1548,6 +1709,7 @@
         "**/*.yml"
       ],
       "group": "word-js-1.3",
+      "version": "word-js-1.3",
       "src": "docs-ref-autogen/office",
       "dest": "api"
     },
@@ -1556,6 +1718,7 @@
         "word_1_3.yml"
       ],
       "group": "word-js-1.3",
+      "version": "word-js-1.3",
       "src": "docs-ref-autogen",
       "dest": "api"
     },
@@ -1564,6 +1727,7 @@
         "overview.md"
       ],
       "group": "word-js-1.3",
+      "version": "word-js-1.3",
       "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
@@ -1572,6 +1736,7 @@
         "toc.yml"
       ],
       "group": "word-js-1.3",
+      "version": "word-js-1.3",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
@@ -1599,6 +1764,107 @@
         "dest": "api"
       }
     ],
+    "versions": {
+      "common-js": {
+        "dest": "common-js"
+      },
+      "outlook-js-preview": {
+        "dest": "outlook-js-preview"
+      },
+      "outlook-js-1.1": {
+        "dest": "outlook-js-1.1"
+      },
+      "outlook-js-1.2": {
+        "dest": "outlook-js-1.2"
+      },
+      "outlook-js-1.3": {
+        "dest": "outlook-js-1.3"
+      },
+      "outlook-js-1.4": {
+        "dest": "outlook-js-1.4"
+      },
+      "outlook-js-1.5": {
+        "dest": "outlook-js-1.5"
+      },
+      "outlook-js-1.6": {
+        "dest": "outlook-js-1.6"
+      },
+      "outlook-js-1.7": {
+        "dest": "outlook-js-1.7"
+      },
+      "outlook-js-1.8": {
+        "dest": "outlook-js-1.8"
+      },
+      "outlook-js-1.9": {
+        "dest": "outlook-js-1.9"
+      },
+      "excel-js-preview": {
+        "dest": "excel-js-preview"
+      },
+      "excel-js-1.1": {
+        "dest": "excel-js-1.1"
+      },
+      "excel-js-1.2": {
+        "dest": "excel-js-1.2"
+      },
+      "excel-js-1.3": {
+        "dest": "excel-js-1.3"
+      },
+      "excel-js-1.4": {
+        "dest": "excel-js-1.4"
+      },
+      "excel-js-1.5": {
+        "dest": "excel-js-1.5"
+      },
+      "excel-js-1.6": {
+        "dest": "excel-js-1.6"
+      },
+      "excel-js-1.7": {
+        "dest": "excel-js-1.7"
+      },
+      "excel-js-1.8": {
+        "dest": "excel-js-1.8"
+      },
+      "excel-js-1.9": {
+        "dest": "excel-js-1.9"
+      },
+      "excel-js-1.10": {
+        "dest": "excel-js-1.10"
+      },
+      "excel-js-1.11": {
+        "dest": "excel-js-1.11"
+      },
+      "excel-js-1.12": {
+        "dest": "excel-js-1.12"
+      },
+      "excel-js-online": {
+        "dest": "excel-js-online"
+      },
+      "onenote-js-1.1": {
+        "dest": "onenote-js-1.1"
+      },
+      "powerpoint-js-preview": {
+        "dest": "powerpoint-js-preview"
+      },
+      "powerpoint-js-1.1": {
+        "dest": "powerpoint-js-1.1"
+      },
+      "visio-js-1.1": {
+        "dest": "visio-js-1.1"
+      },
+      "word-js-preview": {
+        "dest": "word-js-preview"
+      },
+      "word-js-1.1": {
+        "dest": "word-js-1.1"
+      },
+      "word-js-1.2": {
+        "dest": "word-js-1.2"
+      },
+      "word-js-1.3": {
+        "dest": "word-js-1.3"
+      }
+    },
     "groups": {
       "common-js": {
         "dest": "common-js",
