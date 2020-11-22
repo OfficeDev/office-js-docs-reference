@@ -1,33 +1,32 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
-uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
-summary: >-
-  An interface for updating data on the ColorScaleConditionalFormat object, for
-  use in `colorScaleConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: criteria
-    uid: >-
-      excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member
-    package: excel!
-    fullName: criteria
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
     summary: >-
-      The criteria of the color scale. Midpoint is optional when using a two
-      point color scale.
+      An interface for updating data on the ColorScaleConditionalFormat object, for use in
+      `colorScaleConditionalFormat.set({ ... })`<!-- -->.
+    name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member'
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member'
+    summary: |-
+      The criteria of the color scale. Midpoint is optional when using a two point color scale.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'criteria?: Excel.ConditionalColorScaleCriteria;'
       return:
-        type: '<xref uid="excel!Excel.ConditionalColorScaleCriteria:interface" />'
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriteria:interface'
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+    name: Excel.ConditionalColorScaleCriteria

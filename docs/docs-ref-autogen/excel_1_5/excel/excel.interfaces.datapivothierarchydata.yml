@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.DataPivotHierarchyData
-uid: 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
-package: excel!
-fullName: Excel.Interfaces.DataPivotHierarchyData
-summary: >-
-  An interface describing the data returned by calling
-  `dataPivotHierarchy.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
+    summary: An interface describing the data returned by calling `dataPivotHierarchy.toJSON()`<!-- -->.
+    name: Excel.Interfaces.DataPivotHierarchyData
+    fullName: Excel.Interfaces.DataPivotHierarchyData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

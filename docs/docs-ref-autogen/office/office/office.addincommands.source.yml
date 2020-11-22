@@ -1,79 +1,56 @@
-### YamlMime:TSType
-name: Office.AddinCommands.Source
-uid: 'office!Office.AddinCommands.Source:interface'
-package: office!
-fullName: Office.AddinCommands.Source
-summary: Encapsulates source data for add-in events.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: id
-    uid: 'office!Office.AddinCommands.Source#id:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.AddinCommands.Source:interface'
+    summary: Encapsulates source data for add-in events.
+    name: Office.AddinCommands.Source
+    fullName: Office.AddinCommands.Source
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: id
+    children:
+      - 'office!Office.AddinCommands.Source#id:member'
+  - uid: 'office!Office.AddinCommands.Source#id:member'
     summary: >-
-      The ID of the control that triggered calling this function. The ID comes
-      from the manifest and is the unique ID of your Office Add-in as a GUID.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The ID of the control that triggered calling this function. The ID comes from the manifest and is the unique ID of
+      your Office Add-in as a GUID.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id: string;'
       return:
-        type: string
-        description: >-
+        type:
+          - string
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // In this example, consider a button defined in an add-in manifest as
-          follows:
-
+          // In this example, consider a button defined in an add-in manifest as follows:
           //<Control xsi:type="Button" id="eventTestButton">
-
           //    <Label resid="eventButtonLabel" />
-
           //    <Tooltip resid="eventButtonTooltip" />
-
           //    <Supertip>
-
           //        <Title resid="eventSuperTipTitle" />
-
           //        <Description resid="eventSuperTipDescription" />
-
           //    </Supertip>
-
           //    <Icon>
-
           //        <bt:Image size="16" resid="blue-icon-16" />
-
           //        <bt:Image size="32" resid="blue-icon-32" />
-
           //        <bt:Image size="80" resid="blue-icon-80" />
-
           //    </Icon>
-
           //    <Action xsi:type="ExecuteFunction">
-
           //        <FunctionName>testEventObject</FunctionName>
-
           //    </Action>
-
           //</Control>
 
-
-          // The button has an id attribute set to eventTestButton, and will
-          invoke
-
+          // The button has an id attribute set to eventTestButton, and will invoke
           // the testEventObject function defined in the add-in.
-
           // That function looks like this:
-
           function testEventObject(event) {
               // The event object implements the Event interface.
 
@@ -83,15 +60,10 @@ properties:
               // Signal to the host app that processing is complete.
               event.completed();
           }
-
           ```
-
           ```javascript
-
           // Function is used by two buttons:
-
           // button1 and button2
-
           function multiButton (event) {
               // Check which button was clicked.
               var buttonId = event.source.id;
@@ -104,5 +76,4 @@ properties:
 
               event.completed();
           }
-
           ```

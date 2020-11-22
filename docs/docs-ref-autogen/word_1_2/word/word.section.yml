@@ -1,78 +1,79 @@
-### YamlMime:TSType
-name: Word.Section
-uid: 'word!Word.Section:class'
-package: word!
-fullName: Word.Section
-summary: >-
-  Represents a section in a Word document.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Section:class'
+    summary: |-
+      Represents a section in a Word document.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: body
-    uid: 'word!Word.Section#body:member'
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Section
+    fullName: Word.Section
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
-    fullName: body
+    children:
+      - 'word!Word.Section#body:member'
+      - 'word!Word.Section#context:member'
+      - 'word!Word.Section#getFooter:member(1)'
+      - 'word!Word.Section#getFooter:member(2)'
+      - 'word!Word.Section#getHeader:member(1)'
+      - 'word!Word.Section#getHeader:member(2)'
+      - 'word!Word.Section#load:member(1)'
+      - 'word!Word.Section#load:member(2)'
+      - 'word!Word.Section#load:member(3)'
+      - 'word!Word.Section#set:member(1)'
+      - 'word!Word.Section#set:member(2)'
+      - 'word!Word.Section#toJSON:member(1)'
+      - 'word!Word.Section#track:member(1)'
+      - 'word!Word.Section#untrack:member(1)'
+  - uid: 'word!Word.Section#body:member'
     summary: >-
-      Gets the body object of the section. This does not include the
-      header/footer and other section metadata. Read-only.
+      Gets the body object of the section. This does not include the header/footer and other section metadata.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
-  - name: context
-    uid: 'word!Word.Section#context:member'
-    package: word!
-    fullName: context
+        type:
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.Section#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-methods:
-  - name: getFooter(type)
-    uid: 'word!Word.Section#getFooter:member(1)'
-    package: word!
-    fullName: getFooter(type)
-    summary: >-
+        type:
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Section#getFooter:member(1)'
+    summary: |-
       Gets one of the section's footers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getFooter(type)
+    fullName: getFooter(type)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
-      parameters:
-        - id: type
-          description: >-
-            Required. The type of footer to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
-          type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
+        type:
+          - 'word!Word.Body:class'
         description: >-
 
 
@@ -92,30 +93,26 @@ methods:
           });
 
           ```
-  - name: getFooter(typeString)
-    uid: 'word!Word.Section#getFooter:member(2)'
-    package: word!
-    fullName: getFooter(typeString)
-    summary: >-
+      parameters:
+        - id: type
+          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - 'word!Word.HeaderFooterType:enum'
+  - uid: 'word!Word.Section#getFooter:member(2)'
+    summary: |-
       Gets one of the section's footers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getFooter(typeString)
+    fullName: getFooter(typeString)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
-      parameters:
-        - id: typeString
-          description: >-
-            Required. The type of footer to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
-          type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
+        type:
+          - 'word!Word.Body:class'
         description: |-
 
 
@@ -159,30 +156,26 @@ methods:
               }
           });
           ```
-  - name: getHeader(type)
-    uid: 'word!Word.Section#getHeader:member(1)'
-    package: word!
-    fullName: getHeader(type)
-    summary: >-
+      parameters:
+        - id: typeString
+          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - '"Primary" | "FirstPage" | "EvenPages"'
+  - uid: 'word!Word.Section#getHeader:member(1)'
+    summary: |-
       Gets one of the section's headers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getHeader(type)
+    fullName: getHeader(type)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getHeader(type: Word.HeaderFooterType): Word.Body;'
-      parameters:
-        - id: type
-          description: >-
-            Required. The type of header to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
-          type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
+        type:
+          - 'word!Word.Body:class'
         description: >-
 
 
@@ -202,30 +195,26 @@ methods:
           });
 
           ```
-  - name: getHeader(typeString)
-    uid: 'word!Word.Section#getHeader:member(2)'
-    package: word!
-    fullName: getHeader(typeString)
-    summary: >-
+      parameters:
+        - id: type
+          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - 'word!Word.HeaderFooterType:enum'
+  - uid: 'word!Word.Section#getHeader:member(2)'
+    summary: |-
       Gets one of the section's headers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getHeader(typeString)
+    fullName: getHeader(typeString)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
-      parameters:
-        - id: typeString
-          description: >-
-            Required. The type of header to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
-          type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
+        type:
+          - 'word!Word.Body:class'
         description: |-
 
 
@@ -269,186 +258,198 @@ methods:
               }
           });
           ```
-  - name: load(options)
-    uid: 'word!Word.Section#load:member(1)'
-    package: word!
-    fullName: load(options)
+      parameters:
+        - id: typeString
+          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - '"Primary" | "FirstPage" | "EvenPages"'
+  - uid: 'word!Word.Section#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(options?: Word.Interfaces.SectionLoadOptions): Word.Section;'
+      return:
+        type:
+          - 'word!Word.Section:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="word!Word.Interfaces.SectionLoadOptions:interface" />'
-      return:
-        type: '<xref uid="word!Word.Section:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'word!Word.Section#load:member(2)'
-    package: word!
-    fullName: load(propertyNames)
+          type:
+            - 'word!Word.Interfaces.SectionLoadOptions:interface'
+  - uid: 'word!Word.Section#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Section;'
+      return:
+        type:
+          - 'word!Word.Section:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="word!Word.Section:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.Section#load:member(3)'
-    package: word!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'word!Word.Section#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.Section;
+      return:
+        type:
+          - 'word!Word.Section:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="word!Word.Section:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'word!Word.Section#set:member(1)'
-    package: word!
-    fullName: 'set(properties, options)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'word!Word.Section#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Word.Section): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.SectionUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: '<xref uid="word!Word.Interfaces.SectionUpdateData:interface" />'
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'word!Word.Interfaces.SectionUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'word!Word.Section#set:member(2)'
-    package: word!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.Section#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Word.Section): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="word!Word.Section:class" />'
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'word!Word.Section#toJSON:member(1)'
-    package: word!
-    fullName: toJSON()
+          type:
+            - 'word!Word.Section:class'
+  - uid: 'word!Word.Section#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.Section object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Word.Interfaces.SectionData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />'
+        type:
+          - 'word!Word.Interfaces.SectionData:interface'
         description: ''
-  - name: track()
-    uid: 'word!Word.Section#track:member(1)'
-    package: word!
-    fullName: track()
+  - uid: 'word!Word.Section#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): Word.Section;'
       return:
-        type: '<xref uid="word!Word.Section:class" />'
+        type:
+          - 'word!Word.Section:class'
         description: ''
-  - name: untrack()
-    uid: 'word!Word.Section#untrack:member(1)'
-    package: word!
-    fullName: untrack()
+  - uid: 'word!Word.Section#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): Word.Section;'
       return:
-        type: '<xref uid="word!Word.Section:class" />'
+        type:
+          - 'word!Word.Section:class'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.Body:class'
+    name: Word.Body
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.HeaderFooterType:enum'
+    name: Word.HeaderFooterType
+  - uid: 'word!Word.Section:class'
+    name: Word.Section
+  - uid: 'word!Word.Interfaces.SectionLoadOptions:interface'
+    name: Word.Interfaces.SectionLoadOptions
+  - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
+    name: Interfaces.SectionUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.SectionData:interface'
+    name: Word.Interfaces.SectionData

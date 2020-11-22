@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TimelineStyleCollectionUpdateData
-uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
-summary: >-
-  An interface for updating data on the TimelineStyleCollection object, for use
-  in `timelineStyleCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({
+      ... })`<!-- -->.
+    name: Excel.Interfaces.TimelineStyleCollectionUpdateData
+    fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.TimelineStyleData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.TimelineStyleData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.TimelineStyleData[]'
+    fullName: 'Excel.Interfaces.TimelineStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
+        name: Excel.Interfaces.TimelineStyleData
+        fullName: Excel.Interfaces.TimelineStyleData
+      - name: '[]'
+        fullName: '[]'

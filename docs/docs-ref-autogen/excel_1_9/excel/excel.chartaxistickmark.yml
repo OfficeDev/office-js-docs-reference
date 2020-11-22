@@ -1,29 +1,43 @@
-### YamlMime:TSEnum
-name: Excel.ChartAxisTickMark
-uid: 'excel!Excel.ChartAxisTickMark:enum'
-package: excel!
-fullName: Excel.ChartAxisTickMark
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: cross
-    uid: 'excel!Excel.ChartAxisTickMark.cross:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTickMark:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartAxisTickMark
+    fullName: Excel.ChartAxisTickMark
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: inside
-    uid: 'excel!Excel.ChartAxisTickMark.inside:member'
-    package: excel!
-    summary: ''
-  - name: none
-    uid: 'excel!Excel.ChartAxisTickMark.none:member'
-    package: excel!
-    summary: ''
-  - name: outside
-    uid: 'excel!Excel.ChartAxisTickMark.outside:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartAxisTickMark.cross:member'
+      - 'excel!Excel.ChartAxisTickMark.inside:member'
+      - 'excel!Excel.ChartAxisTickMark.none:member'
+      - 'excel!Excel.ChartAxisTickMark.outside:member'
+  - uid: 'excel!Excel.ChartAxisTickMark.cross:member'
+    name: cross
+    fullName: cross
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cross"'
+  - uid: 'excel!Excel.ChartAxisTickMark.inside:member'
+    name: inside
+    fullName: inside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Inside"'
+  - uid: 'excel!Excel.ChartAxisTickMark.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: 'excel!Excel.ChartAxisTickMark.outside:member'
+    name: outside
+    fullName: outside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Outside"'

@@ -1,85 +1,127 @@
-### YamlMime:TSType
-name: OfficeExtension.EventHandlers
-uid: 'office!OfficeExtension.EventHandlers:class'
-package: office!
-fullName: OfficeExtension.EventHandlers
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: '(constructor)(context, parentObject, name, eventInfo)'
-    uid: 'office!OfficeExtension.EventHandlers:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!OfficeExtension.EventHandlers:class'
+    name: OfficeExtension.EventHandlers
+    fullName: OfficeExtension.EventHandlers
+    langs:
+      - typeScript
+    type: class
     package: office!
-    fullName: '(constructor)(context, parentObject, name, eventInfo)'
+    children:
+      - 'office!OfficeExtension.EventHandlers:constructor(1)'
+      - 'office!OfficeExtension.EventHandlers#add:member(1)'
+      - 'office!OfficeExtension.EventHandlers#remove:member(1)'
+  - uid: 'office!OfficeExtension.EventHandlers:constructor(1)'
     summary: Constructs a new instance of the `EventHandlers` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: '(constructor)(context, parentObject, name, eventInfo)'
+    fullName: '(constructor)(context, parentObject, name, eventInfo)'
+    langs:
+      - typeScript
+    type: constructor
     syntax:
-      content: >-
-        constructor(context: ClientRequestContext, parentObject: ClientObject,
-        name: string, eventInfo: EventInfo<T>);
+      content: 'constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);'
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+          type:
+            - 'office!OfficeExtension.ClientRequestContext:class'
         - id: parentObject
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+          type:
+            - 'office!OfficeExtension.ClientObject:class'
         - id: name
           description: ''
-          type: string
+          type:
+            - string
         - id: eventInfo
           description: ''
-          type: '<xref uid="office!OfficeExtension.EventInfo:interface" />&lt;T&gt;'
-methods:
-  - name: add(handler)
-    uid: 'office!OfficeExtension.EventHandlers#add:member(1)'
-    package: office!
-    fullName: add(handler)
+          type:
+            - 'office!OfficeExtension.EventHandlers~0:complex'
+  - uid: 'office!OfficeExtension.EventHandlers#add:member(1)'
     summary: Adds a function to be called when the event is triggered.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: add(handler)
+    fullName: add(handler)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;'
+      return:
+        type:
+          - 'office!OfficeExtension.EventHandlers#add~0:complex'
+        description: ''
       parameters:
         - id: handler
           description: A promise-based function that takes in any relevant event arguments.
-          type: '(args: T) =&gt; Promise&lt;any&gt;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlerResult:class"
-          />&lt;T&gt;
-        description: ''
-  - name: remove(handler)
-    uid: 'office!OfficeExtension.EventHandlers#remove:member(1)'
-    package: office!
-    fullName: remove(handler)
+          type:
+            - 'office!OfficeExtension.EventHandlers#add~1:complex'
+  - uid: 'office!OfficeExtension.EventHandlers#remove:member(1)'
     summary: >-
-      Removes the specified function from the event handler list so that it will
-      not be called on subsequent events.
+      Removes the specified function from the event handler list so that it will not be called on subsequent events.
 
 
-      **Note**: The same
-      [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class)
-      object that the handler was added in must be used when removing the
-      handler. More information can be found in [Remove an event
+      **Note**: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
+      handler was added in must be used when removing the handler. More information can be found in [Remove an event
       handler](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
       -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: remove(handler)
+    fullName: remove(handler)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'remove(handler: (args: T) => Promise<any>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: handler
-          description: >-
-            A reference to a function previously provided to the `add` method as
-            an event handler.
-          type: '(args: T) =&gt; Promise&lt;any&gt;'
-      return:
-        type: void
-        description: ''
+          description: A reference to a function previously provided to the `add` method as an event handler.
+          type:
+            - 'office!OfficeExtension.EventHandlers#remove~0:complex'
+references:
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
+    name: ClientRequestContext
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: ClientObject
+  - uid: 'office!OfficeExtension.EventHandlers~0:complex'
+    name: EventInfo<T>
+    fullName: OfficeExtension.EventInfo<T>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.EventInfo:interface'
+        name: EventInfo
+        fullName: OfficeExtension.EventInfo
+      - name: <T>
+        fullName: <T>
+  - uid: 'office!OfficeExtension.EventHandlers#add~0:complex'
+    name: EventHandlerResult<T>
+    fullName: OfficeExtension.EventHandlerResult<T>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.EventHandlerResult:class'
+        name: EventHandlerResult
+        fullName: OfficeExtension.EventHandlerResult
+      - name: <T>
+        fullName: <T>
+  - uid: 'office!OfficeExtension.EventHandlers#add~1:complex'
+    name: '(args: T) => Promise<any>'
+    fullName: '(args: T) => Promise<any>'
+    spec.typeScript:
+      - name: '(args: T) => '
+        fullName: '(args: T) => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <any>
+        fullName: <any>
+  - uid: 'office!OfficeExtension.EventHandlers#remove~0:complex'
+    name: '(args: T) => Promise<any>'
+    fullName: '(args: T) => Promise<any>'
+    spec.typeScript:
+      - name: '(args: T) => '
+        fullName: '(args: T) => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <any>
+        fullName: <any>

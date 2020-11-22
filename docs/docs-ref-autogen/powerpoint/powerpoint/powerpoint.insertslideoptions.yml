@@ -1,88 +1,85 @@
-### YamlMime:TSType
-name: PowerPoint.InsertSlideOptions
-uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
-package: powerpoint!
-fullName: PowerPoint.InsertSlideOptions
-summary: >-
-  Represents the available options when inserting slides.
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
+    summary: |-
+      Represents the available options when inserting slides.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-type: interface
-properties:
-  - name: formatting
-    uid: 'powerpoint!PowerPoint.InsertSlideOptions#formatting:member'
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    name: PowerPoint.InsertSlideOptions
+    fullName: PowerPoint.InsertSlideOptions
+    langs:
+      - typeScript
+    type: interface
     package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.InsertSlideOptions#formatting:member'
+      - 'powerpoint!PowerPoint.InsertSlideOptions#sourceSlideIds:member'
+      - 'powerpoint!PowerPoint.InsertSlideOptions#targetSlideId:member'
+  - uid: 'powerpoint!PowerPoint.InsertSlideOptions#formatting:member'
+    summary: |-
+      Specifies which formatting to use during slide insertion. The default option is to use "KeepSourceFormatting".
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    name: formatting
     fullName: formatting
-    summary: >-
-      Specifies which formatting to use during slide insertion. The default
-      option is to use "KeepSourceFormatting".
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" |
-        "UseDestinationTheme";
+      content: 'formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme";'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.InsertSlideFormatting:enum" /> |
-          "KeepSourceFormatting" | "UseDestinationTheme"
-  - name: sourceSlideIds
-    uid: 'powerpoint!PowerPoint.InsertSlideOptions#sourceSlideIds:member'
-    package: powerpoint!
-    fullName: sourceSlideIds
+        type:
+          - 'powerpoint!PowerPoint.InsertSlideOptions#formatting~0:complex'
+  - uid: 'powerpoint!PowerPoint.InsertSlideOptions#sourceSlideIds:member'
     summary: >-
-      Specifies the slides from the source presentation that will be inserted
-      into the current presentation. These slides are represented by their IDs
-      which can be retrieved from a `Slide` object. The order of these slides is
-      preserved during the insertion. If any of the source slides are not found,
-      or if the IDs are invalid, the operation throws a `SlideNotFound`
-      exception and no slides will be inserted. All of the source slides will be
-      inserted when `sourceSlideIds` is not provided (this is the default
-      behavior).
+      Specifies the slides from the source presentation that will be inserted into the current presentation. These
+      slides are represented by their IDs which can be retrieved from a `Slide` object. The order of these slides is
+      preserved during the insertion. If any of the source slides are not found, or if the IDs are invalid, the
+      operation throws a `SlideNotFound` exception and no slides will be inserted. All of the source slides will be
+      inserted when `sourceSlideIds` is not provided (this is the default behavior).
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
-    remarks: ''
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: sourceSlideIds
+    fullName: sourceSlideIds
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'sourceSlideIds?: string[];'
       return:
-        type: 'string[]'
-  - name: targetSlideId
-    uid: 'powerpoint!PowerPoint.InsertSlideOptions#targetSlideId:member'
-    package: powerpoint!
-    fullName: targetSlideId
+        type:
+          - 'string[]'
+  - uid: 'powerpoint!PowerPoint.InsertSlideOptions#targetSlideId:member'
     summary: >-
-      Specifies where in the presentation the new slides will be inserted. The
-      new slides will be inserted after the slide with the given slide ID. If
-      `targetSlideId` is not provided, the slides will be inserted at the
-      beginning of the presentation. If `targetSlideId` is invalid or if it is
-      pointing to a non-existing slide, the operation throws a `SlideNotFound`
-      exception and no slides will be inserted.
+      Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the
+      slide with the given slide ID. If `targetSlideId` is not provided, the slides will be inserted at the beginning of
+      the presentation. If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws
+      a `SlideNotFound` exception and no slides will be inserted.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
-    remarks: ''
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: targetSlideId
+    fullName: targetSlideId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'targetSlideId?: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: 'powerpoint!PowerPoint.InsertSlideOptions#formatting~0:complex'
+    name: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme"
+    fullName: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme"
+    spec.typeScript:
+      - uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
+        name: PowerPoint.InsertSlideFormatting
+        fullName: PowerPoint.InsertSlideFormatting
+      - name: ' | "KeepSourceFormatting" | "UseDestinationTheme"'
+        fullName: ' | "KeepSourceFormatting" | "UseDestinationTheme"'

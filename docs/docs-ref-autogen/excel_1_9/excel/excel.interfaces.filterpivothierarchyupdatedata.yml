@@ -1,68 +1,61 @@
-### YamlMime:TSType
-name: Excel.Interfaces.FilterPivotHierarchyUpdateData
-uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
-summary: >-
-  An interface for updating data on the FilterPivotHierarchy object, for use in
-  `filterPivotHierarchy.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: enableMultipleFilterItems
-    uid: >-
-      excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#enableMultipleFilterItems:member
-    package: excel!
-    fullName: enableMultipleFilterItems
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
     summary: >-
+      An interface for updating data on the FilterPivotHierarchy object, for use in `filterPivotHierarchy.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.FilterPivotHierarchyUpdateData
+    fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#enableMultipleFilterItems:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#name:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#position:member'
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#enableMultipleFilterItems:member'
+    summary: |-
       Determines whether to allow multiple filter items.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableMultipleFilterItems
+    fullName: enableMultipleFilterItems
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'enableMultipleFilterItems?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#name:member'
+    summary: |-
       Name of the FilterPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
-  - name: position
-    uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#position:member'
-    package: excel!
-    fullName: position
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#position:member'
+    summary: |-
       Position of the FilterPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'position?: number;'
       return:
-        type: number
+        type:
+          - number

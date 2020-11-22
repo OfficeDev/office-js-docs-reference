@@ -1,26 +1,43 @@
-### YamlMime:TSEnum
-name: Office.Index
-uid: 'office!Office.Index:enum'
-package: office!
-fullName: Office.Index
-summary: Specifies the relative PowerPoint slide.
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: First
-    uid: 'office!Office.Index.First:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Index:enum'
+    summary: Specifies the relative PowerPoint slide.
+    name: Office.Index
+    fullName: Office.Index
+    langs:
+      - typeScript
+    type: enum
     package: office!
+    children:
+      - 'office!Office.Index.First:member'
+      - 'office!Office.Index.Last:member'
+      - 'office!Office.Index.Next:member'
+      - 'office!Office.Index.Previous:member'
+  - uid: 'office!Office.Index.First:member'
     summary: Represents the first PowerPoint slide
-  - name: Last
-    uid: 'office!Office.Index.Last:member'
-    package: office!
+    name: First
+    fullName: First
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.Index.Last:member'
     summary: Represents the last PowerPoint slide
-  - name: Next
-    uid: 'office!Office.Index.Next:member'
-    package: office!
+    name: Last
+    fullName: Last
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.Index.Next:member'
     summary: Represents the next PowerPoint slide
-  - name: Previous
-    uid: 'office!Office.Index.Previous:member'
-    package: office!
+    name: Next
+    fullName: Next
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.Index.Previous:member'
     summary: Represents the previous PowerPoint slide
+    name: Previous
+    fullName: Previous
+    langs:
+      - typeScript
+    type: field

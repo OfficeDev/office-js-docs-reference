@@ -1,806 +1,797 @@
-### YamlMime:TSType
-name: Word.TableCell
-uid: 'word!Word.TableCell:class'
-package: word!
-fullName: Word.TableCell
-summary: >-
-  Represents a table cell in a Word document.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.TableCell:class'
+    summary: |-
+      Represents a table cell in a Word document.
 
-
-  \[ [API set: WordApi
-  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: body
-    uid: 'word!Word.TableCell#body:member'
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.TableCell
+    fullName: Word.TableCell
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
-    fullName: body
-    summary: >-
+    children:
+      - 'word!Word.TableCell#body:member'
+      - 'word!Word.TableCell#cellIndex:member'
+      - 'word!Word.TableCell#columnWidth:member'
+      - 'word!Word.TableCell#context:member'
+      - 'word!Word.TableCell#deleteColumn:member(1)'
+      - 'word!Word.TableCell#deleteRow:member(1)'
+      - 'word!Word.TableCell#getBorder:member(1)'
+      - 'word!Word.TableCell#getBorder:member(2)'
+      - 'word!Word.TableCell#getCellPadding:member(1)'
+      - 'word!Word.TableCell#getCellPadding:member(2)'
+      - 'word!Word.TableCell#getNext:member(1)'
+      - 'word!Word.TableCell#getNextOrNullObject:member(1)'
+      - 'word!Word.TableCell#horizontalAlignment:member'
+      - 'word!Word.TableCell#insertColumns:member(1)'
+      - 'word!Word.TableCell#insertColumns:member(2)'
+      - 'word!Word.TableCell#insertRows:member(1)'
+      - 'word!Word.TableCell#insertRows:member(2)'
+      - 'word!Word.TableCell#load:member(1)'
+      - 'word!Word.TableCell#load:member(2)'
+      - 'word!Word.TableCell#load:member(3)'
+      - 'word!Word.TableCell#parentRow:member'
+      - 'word!Word.TableCell#parentTable:member'
+      - 'word!Word.TableCell#rowIndex:member'
+      - 'word!Word.TableCell#set:member(1)'
+      - 'word!Word.TableCell#set:member(2)'
+      - 'word!Word.TableCell#setCellPadding:member(1)'
+      - 'word!Word.TableCell#setCellPadding:member(2)'
+      - 'word!Word.TableCell#shadingColor:member'
+      - 'word!Word.TableCell#toJSON:member(1)'
+      - 'word!Word.TableCell#track:member(1)'
+      - 'word!Word.TableCell#untrack:member(1)'
+      - 'word!Word.TableCell#value:member'
+      - 'word!Word.TableCell#verticalAlignment:member'
+      - 'word!Word.TableCell#width:member'
+  - uid: 'word!Word.TableCell#body:member'
+    summary: |-
       Gets the body object of the cell. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
-  - name: cellIndex
-    uid: 'word!Word.TableCell#cellIndex:member'
-    package: word!
-    fullName: cellIndex
-    summary: >-
+        type:
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.TableCell#cellIndex:member'
+    summary: |-
       Gets the index of the cell in its row. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cellIndex
+    fullName: cellIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly cellIndex: number;'
       return:
-        type: number
-  - name: columnWidth
-    uid: 'word!Word.TableCell#columnWidth:member'
-    package: word!
+        type:
+          - number
+  - uid: 'word!Word.TableCell#columnWidth:member'
+    summary: |-
+      Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: columnWidth
     fullName: columnWidth
-    summary: >-
-      Gets and sets the width of the cell's column in points. This is applicable
-      to uniform tables.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columnWidth: number;'
       return:
-        type: number
-  - name: context
-    uid: 'word!Word.TableCell#context:member'
-    package: word!
-    fullName: context
+        type:
+          - number
+  - uid: 'word!Word.TableCell#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-  - name: horizontalAlignment
-    uid: 'word!Word.TableCell#horizontalAlignment:member'
-    package: word!
-    fullName: horizontalAlignment
-    summary: >-
-      Gets and sets the horizontal alignment of the cell. The value can be
-      'Left', 'Centered', 'Right', or 'Justified'.
+        type:
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.TableCell#deleteColumn:member(1)'
+    summary: |-
+      Deletes the column containing this cell. This is applicable to uniform tables.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" |
-        "Centered" | "Right" | "Justified";
-      return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
-  - name: parentRow
-    uid: 'word!Word.TableCell#parentRow:member'
-    package: word!
-    fullName: parentRow
-    summary: >-
-      Gets the parent row of the cell. Read-only.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly parentRow: Word.TableRow;'
-      return:
-        type: '<xref uid="word!Word.TableRow:class" />'
-  - name: parentTable
-    uid: 'word!Word.TableCell#parentTable:member'
-    package: word!
-    fullName: parentTable
-    summary: >-
-      Gets the parent table of the cell. Read-only.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly parentTable: Word.Table;'
-      return:
-        type: '<xref uid="word!Word.Table:class" />'
-  - name: rowIndex
-    uid: 'word!Word.TableCell#rowIndex:member'
-    package: word!
-    fullName: rowIndex
-    summary: >-
-      Gets the index of the cell's row in the table. Read-only.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly rowIndex: number;'
-      return:
-        type: number
-  - name: shadingColor
-    uid: 'word!Word.TableCell#shadingColor:member'
-    package: word!
-    fullName: shadingColor
-    summary: >-
-      Gets or sets the shading color of the cell. Color is specified in
-      "\#RRGGBB" format or by using the color name.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'shadingColor: string;'
-      return:
-        type: string
-  - name: value
-    uid: 'word!Word.TableCell#value:member'
-    package: word!
-    fullName: value
-    summary: >-
-      Gets and sets the text of the cell.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'value: string;'
-      return:
-        type: string
-  - name: verticalAlignment
-    uid: 'word!Word.TableCell#verticalAlignment:member'
-    package: word!
-    fullName: verticalAlignment
-    summary: >-
-      Gets and sets the vertical alignment of the cell. The value can be 'Top',
-      'Center', or 'Bottom'.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" |
-        "Bottom";
-      return:
-        type: >-
-          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
-          "Center" | "Bottom"
-  - name: width
-    uid: 'word!Word.TableCell#width:member'
-    package: word!
-    fullName: width
-    summary: >-
-      Gets the width of the cell in points. Read-only.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly width: number;'
-      return:
-        type: number
-methods:
-  - name: deleteColumn()
-    uid: 'word!Word.TableCell#deleteColumn:member(1)'
-    package: word!
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: deleteColumn()
     fullName: deleteColumn()
-    summary: >-
-      Deletes the column containing this cell. This is applicable to uniform
-      tables.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'deleteColumn(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: deleteRow()
-    uid: 'word!Word.TableCell#deleteRow:member(1)'
-    package: word!
-    fullName: deleteRow()
-    summary: >-
+  - uid: 'word!Word.TableCell#deleteRow:member(1)'
+    summary: |-
       Deletes the row containing this cell.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: deleteRow()
+    fullName: deleteRow()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'deleteRow(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: getBorder(borderLocation)
-    uid: 'word!Word.TableCell#getBorder:member(1)'
-    package: word!
-    fullName: getBorder(borderLocation)
-    summary: >-
+  - uid: 'word!Word.TableCell#getBorder:member(1)'
+    summary: |-
       Gets the border style for the specified border.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getBorder(borderLocation)
+    fullName: getBorder(borderLocation)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
+      return:
+        type:
+          - 'word!Word.TableBorder:class'
+        description: ''
       parameters:
         - id: borderLocation
           description: Required. The border location.
-          type: '<xref uid="word!Word.BorderLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.TableBorder:class" />'
-        description: ''
-  - name: getBorder(borderLocationString)
-    uid: 'word!Word.TableCell#getBorder:member(2)'
-    package: word!
-    fullName: getBorder(borderLocationString)
-    summary: >-
+          type:
+            - 'word!Word.BorderLocation:enum'
+  - uid: 'word!Word.TableCell#getBorder:member(2)'
+    summary: |-
       Gets the border style for the specified border.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getBorder(borderLocationString)
+    fullName: getBorder(borderLocationString)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" |
-        "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"):
-        Word.TableBorder;
+        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" |
+        "Inside" | "Outside" | "All"): Word.TableBorder;
+      return:
+        type:
+          - 'word!Word.TableBorder:class'
+        description: ''
       parameters:
         - id: borderLocationString
           description: Required. The border location.
-          type: >-
-            "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
-            "InsideVertical" | "Inside" | "Outside" | "All"
-      return:
-        type: '<xref uid="word!Word.TableBorder:class" />'
-        description: ''
-  - name: getCellPadding(cellPaddingLocation)
-    uid: 'word!Word.TableCell#getCellPadding:member(1)'
-    package: word!
-    fullName: getCellPadding(cellPaddingLocation)
-    summary: >-
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
+  - uid: 'word!Word.TableCell#getCellPadding:member(1)'
+    summary: |-
       Gets cell padding in points.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getCellPadding(cellPaddingLocation)
+    fullName: getCellPadding(cellPaddingLocation)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getCellPadding(cellPaddingLocation: Word.CellPaddingLocation):
-        OfficeExtension.ClientResult<number>;
+      content: 'getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - 'word!Word.TableCell#getCellPadding~0:complex'
+        description: ''
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            Required. The cell padding location can be 'Top', 'Left', 'Bottom',
-            or 'Right'.
-          type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
-      return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
-        description: ''
-  - name: getCellPadding(cellPaddingLocationString)
-    uid: 'word!Word.TableCell#getCellPadding:member(2)'
-    package: word!
-    fullName: getCellPadding(cellPaddingLocationString)
-    summary: >-
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - 'word!Word.CellPaddingLocation:enum'
+  - uid: 'word!Word.TableCell#getCellPadding:member(2)'
+    summary: |-
       Gets cell padding in points.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getCellPadding(cellPaddingLocationString)
+    fullName: getCellPadding(cellPaddingLocationString)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" |
-        "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"):
+        OfficeExtension.ClientResult<number>;
+      return:
+        type:
+          - 'word!Word.TableCell#getCellPadding~1:complex'
+        description: ''
       parameters:
         - id: cellPaddingLocationString
-          description: >-
-            Required. The cell padding location can be 'Top', 'Left', 'Bottom',
-            or 'Right'.
-          type: '"Top" | "Left" | "Bottom" | "Right"'
-      return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
-        description: ''
-  - name: getNext()
-    uid: 'word!Word.TableCell#getNext:member(1)'
-    package: word!
-    fullName: getNext()
-    summary: >-
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right"'
+  - uid: 'word!Word.TableCell#getNext:member(1)'
+    summary: |-
       Gets the next cell. Throws an error if this cell is the last one.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getNext()
+    fullName: getNext()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getNext(): Word.TableCell;'
       return:
-        type: '<xref uid="word!Word.TableCell:class" />'
+        type:
+          - 'word!Word.TableCell:class'
         description: ''
-  - name: getNextOrNullObject()
-    uid: 'word!Word.TableCell#getNextOrNullObject:member(1)'
-    package: word!
-    fullName: getNextOrNullObject()
-    summary: >-
+  - uid: 'word!Word.TableCell#getNextOrNullObject:member(1)'
+    summary: |-
       Gets the next cell. Returns a null object if this cell is the last one.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getNextOrNullObject()
+    fullName: getNextOrNullObject()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getNextOrNullObject(): Word.TableCell;'
       return:
-        type: '<xref uid="word!Word.TableCell:class" />'
+        type:
+          - 'word!Word.TableCell:class'
         description: ''
-  - name: 'insertColumns(insertLocation, columnCount, values)'
-    uid: 'word!Word.TableCell#insertColumns:member(1)'
-    package: word!
+  - uid: 'word!Word.TableCell#horizontalAlignment:member'
+    summary: |-
+      Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
+      return:
+        type:
+          - 'word!Word.TableCell#horizontalAlignment~0:complex'
+  - uid: 'word!Word.TableCell#insertColumns:member(1)'
+    summary: >-
+      Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to
+      uniform tables. The string values, if specified, are set in the newly inserted rows.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertColumns(insertLocation, columnCount, values)'
     fullName: 'insertColumns(insertLocation, columnCount, values)'
-    summary: >-
-      Adds columns to the left or right of the cell, using the cell's column as
-      a template. This is applicable to uniform tables. The string values, if
-      specified, are set in the newly inserted rows.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        insertColumns(insertLocation: Word.InsertLocation, columnCount: number,
-        values?: string[][]): void;
+      content: 'insertColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
+          type:
+            - 'word!Word.InsertLocation:enum'
         - id: columnCount
           description: Required. Number of columns to add.
-          type: number
+          type:
+            - number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are
-            specified in the array.
-          type: 'string[][]'
-      return:
-        type: void
-        description: ''
-  - name: 'insertColumns(insertLocationString, columnCount, values)'
-    uid: 'word!Word.TableCell#insertColumns:member(2)'
-    package: word!
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: 'word!Word.TableCell#insertColumns:member(2)'
+    summary: >-
+      Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to
+      uniform tables. The string values, if specified, are set in the newly inserted rows.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertColumns(insertLocationString, columnCount, values)'
     fullName: 'insertColumns(insertLocationString, columnCount, values)'
-    summary: >-
-      Adds columns to the left or right of the cell, using the cell's column as
-      a template. This is applicable to uniform tables. The string values, if
-      specified, are set in the newly inserted rows.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        insertColumns(insertLocationString: "Before" | "After" | "Start" | "End"
-        | "Replace", columnCount: number, values?: string[][]): void;
+        insertColumns(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number,
+        values?: string[][]): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: insertLocationString
           description: Required. It can be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
         - id: columnCount
           description: Required. Number of columns to add.
-          type: number
+          type:
+            - number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are
-            specified in the array.
-          type: 'string[][]'
-      return:
-        type: void
-        description: ''
-  - name: 'insertRows(insertLocation, rowCount, values)'
-    uid: 'word!Word.TableCell#insertRows:member(1)'
-    package: word!
-    fullName: 'insertRows(insertLocation, rowCount, values)'
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: 'word!Word.TableCell#insertRows:member(1)'
     summary: >-
-      Inserts rows above or below the cell, using the cell's row as a template.
-      The string values, if specified, are set in the newly inserted rows.
+      Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
+      in the newly inserted rows.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertRows(insertLocation, rowCount, values)'
+    fullName: 'insertRows(insertLocation, rowCount, values)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        insertRows(insertLocation: Word.InsertLocation, rowCount: number,
-        values?: string[][]): Word.TableRowCollection;
+      content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
+      return:
+        type:
+          - 'word!Word.TableRowCollection:class'
+        description: ''
       parameters:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
+          type:
+            - 'word!Word.InsertLocation:enum'
         - id: rowCount
           description: Required. Number of rows to add.
-          type: number
+          type:
+            - number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are
-            specified in the array.
-          type: 'string[][]'
-      return:
-        type: '<xref uid="word!Word.TableRowCollection:class" />'
-        description: ''
-  - name: 'insertRows(insertLocationString, rowCount, values)'
-    uid: 'word!Word.TableCell#insertRows:member(2)'
-    package: word!
-    fullName: 'insertRows(insertLocationString, rowCount, values)'
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: 'word!Word.TableCell#insertRows:member(2)'
     summary: >-
-      Inserts rows above or below the cell, using the cell's row as a template.
-      The string values, if specified, are set in the newly inserted rows.
+      Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
+      in the newly inserted rows.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertRows(insertLocationString, rowCount, values)'
+    fullName: 'insertRows(insertLocationString, rowCount, values)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        insertRows(insertLocationString: "Before" | "After" | "Start" | "End" |
-        "Replace", rowCount: number, values?: string[][]):
-        Word.TableRowCollection;
+        insertRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
+        string[][]): Word.TableRowCollection;
+      return:
+        type:
+          - 'word!Word.TableRowCollection:class'
+        description: ''
       parameters:
         - id: insertLocationString
           description: Required. It can be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
         - id: rowCount
           description: Required. Number of rows to add.
-          type: number
+          type:
+            - number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are
-            specified in the array.
-          type: 'string[][]'
-      return:
-        type: '<xref uid="word!Word.TableRowCollection:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'word!Word.TableCell#load:member(1)'
-    package: word!
-    fullName: load(options)
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: 'word!Word.TableCell#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(options?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;'
+      return:
+        type:
+          - 'word!Word.TableCell:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
-      return:
-        type: '<xref uid="word!Word.TableCell:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'word!Word.TableCell#load:member(2)'
-    package: word!
-    fullName: load(propertyNames)
+          type:
+            - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.TableCell#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.TableCell;'
+      return:
+        type:
+          - 'word!Word.TableCell:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="word!Word.TableCell:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.TableCell#load:member(3)'
-    package: word!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'word!Word.TableCell#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.TableCell;
+      return:
+        type:
+          - 'word!Word.TableCell:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'word!Word.TableCell#parentRow:member'
+    summary: |-
+      Gets the parent row of the cell. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentRow
+    fullName: parentRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentRow: Word.TableRow;'
       return:
-        type: '<xref uid="word!Word.TableCell:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'word!Word.TableCell#set:member(1)'
-    package: word!
-    fullName: 'set(properties, options)'
+        type:
+          - 'word!Word.TableRow:class'
+  - uid: 'word!Word.TableCell#parentTable:member'
+    summary: |-
+      Gets the parent table of the cell. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentTable: Word.Table;'
+      return:
+        type:
+          - 'word!Word.Table:class'
+  - uid: 'word!Word.TableCell#rowIndex:member'
+    summary: |-
+      Gets the index of the cell's row in the table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowIndex: number;'
+      return:
+        type:
+          - number
+  - uid: 'word!Word.TableCell#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Word.TableCell): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.TableCellUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: '<xref uid="word!Word.Interfaces.TableCellUpdateData:interface" />'
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'word!Word.Interfaces.TableCellUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'word!Word.TableCell#set:member(2)'
-    package: word!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.TableCell#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Word.TableCell): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="word!Word.TableCell:class" />'
-      return:
-        type: void
-        description: ''
-  - name: 'setCellPadding(cellPaddingLocation, cellPadding)'
-    uid: 'word!Word.TableCell#setCellPadding:member(1)'
-    package: word!
-    fullName: 'setCellPadding(cellPaddingLocation, cellPadding)'
-    summary: >-
+          type:
+            - 'word!Word.TableCell:class'
+  - uid: 'word!Word.TableCell#setCellPadding:member(1)'
+    summary: |-
       Sets cell padding in points.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'setCellPadding(cellPaddingLocation, cellPadding)'
+    fullName: 'setCellPadding(cellPaddingLocation, cellPadding)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        setCellPadding(cellPaddingLocation: Word.CellPaddingLocation,
-        cellPadding: number): void;
+      content: 'setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            Required. The cell padding location can be 'Top', 'Left', 'Bottom',
-            or 'Right'.
-          type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - 'word!Word.CellPaddingLocation:enum'
         - id: cellPadding
           description: Required. The cell padding.
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: 'setCellPadding(cellPaddingLocationString, cellPadding)'
-    uid: 'word!Word.TableCell#setCellPadding:member(2)'
-    package: word!
-    fullName: 'setCellPadding(cellPaddingLocationString, cellPadding)'
-    summary: >-
+          type:
+            - number
+  - uid: 'word!Word.TableCell#setCellPadding:member(2)'
+    summary: |-
       Sets cell padding in points.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    fullName: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" |
-        "Right", cellPadding: number): void;
+      content: 'setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: cellPaddingLocationString
-          description: >-
-            Required. The cell padding location can be 'Top', 'Left', 'Bottom',
-            or 'Right'.
-          type: '"Top" | "Left" | "Bottom" | "Right"'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
           description: Required. The cell padding.
-          type: number
+          type:
+            - number
+  - uid: 'word!Word.TableCell#shadingColor:member'
+    summary: |-
+      Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
+    fullName: shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor: string;'
       return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'word!Word.TableCell#toJSON:member(1)'
-    package: word!
-    fullName: toJSON()
+        type:
+          - string
+  - uid: 'word!Word.TableCell#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.TableCell object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.TableCellData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.TableCell object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.TableCellData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Word.Interfaces.TableCellData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableCellData:interface" />'
+        type:
+          - 'word!Word.Interfaces.TableCellData:interface'
         description: ''
-  - name: track()
-    uid: 'word!Word.TableCell#track:member(1)'
-    package: word!
-    fullName: track()
+  - uid: 'word!Word.TableCell#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): Word.TableCell;'
       return:
-        type: '<xref uid="word!Word.TableCell:class" />'
+        type:
+          - 'word!Word.TableCell:class'
         description: ''
-  - name: untrack()
-    uid: 'word!Word.TableCell#untrack:member(1)'
-    package: word!
-    fullName: untrack()
+  - uid: 'word!Word.TableCell#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): Word.TableCell;'
       return:
-        type: '<xref uid="word!Word.TableCell:class" />'
+        type:
+          - 'word!Word.TableCell:class'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'word!Word.TableCell#value:member'
+    summary: |-
+      Gets and sets the text of the cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: string;'
+      return:
+        type:
+          - string
+  - uid: 'word!Word.TableCell#verticalAlignment:member'
+    summary: |-
+      Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
+      return:
+        type:
+          - 'word!Word.TableCell#verticalAlignment~0:complex'
+  - uid: 'word!Word.TableCell#width:member'
+    summary: |-
+      Gets the width of the cell in points. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.Body:class'
+    name: Word.Body
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.TableBorder:class'
+    name: Word.TableBorder
+  - uid: 'word!Word.BorderLocation:enum'
+    name: Word.BorderLocation
+  - uid: 'word!Word.TableCell#getCellPadding~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'word!Word.CellPaddingLocation:enum'
+    name: Word.CellPaddingLocation
+  - uid: 'word!Word.TableCell#getCellPadding~1:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'word!Word.TableCell:class'
+    name: Word.TableCell
+  - uid: 'word!Word.TableCell#horizontalAlignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.InsertLocation:enum'
+    name: Word.InsertLocation
+  - uid: 'word!Word.TableRowCollection:class'
+    name: Word.TableRowCollection
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
+    name: Word.Interfaces.TableCellLoadOptions
+  - uid: 'word!Word.TableRow:class'
+    name: Word.TableRow
+  - uid: 'word!Word.Table:class'
+    name: Word.Table
+  - uid: 'word!Word.Interfaces.TableCellUpdateData:interface'
+    name: Interfaces.TableCellUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.TableCellData:interface'
+    name: Word.Interfaces.TableCellData
+  - uid: 'word!Word.TableCell#verticalAlignment~0:complex'
+    name: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    fullName: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    spec.typeScript:
+      - uid: 'word!Word.VerticalAlignment:enum'
+        name: Word.VerticalAlignment
+        fullName: Word.VerticalAlignment
+      - name: ' | "Mixed" | "Top" | "Center" | "Bottom"'
+        fullName: ' | "Mixed" | "Top" | "Center" | "Bottom"'

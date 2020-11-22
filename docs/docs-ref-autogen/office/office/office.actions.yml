@@ -1,23 +1,24 @@
-### YamlMime:TSType
-name: Office.Actions
-uid: 'office!Office.Actions:interface'
-package: office!
-fullName: Office.Actions
-summary: Used to associate an action name to a function.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: associate
-    uid: 'office!Office.Actions#associate:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Actions:interface'
+    summary: Used to associate an action name to a function.
+    name: Office.Actions
+    fullName: Office.Actions
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: associate
+    children:
+      - 'office!Office.Actions#associate:member'
+  - uid: 'office!Office.Actions#associate:member'
     summary: Function to associate a name with the action function.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: associate
+    fullName: associate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'associate: (actionName: string, action: (arg?: any) => void) => void;'
       return:
-        type: '(actionName: string, action: (arg?: any) =&gt; void) =&gt; void'
+        type:
+          - '(actionName: string, action: (arg?: any) => void) => void'

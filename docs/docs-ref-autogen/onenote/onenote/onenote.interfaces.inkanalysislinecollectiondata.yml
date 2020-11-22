@@ -1,27 +1,33 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.InkAnalysisLineCollectionData
-uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.InkAnalysisLineCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "inkAnalysisLineCollection.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
+    summary: An interface describing the data returned by calling "inkAnalysisLineCollection.toJSON()".
+    name: OneNote.Interfaces.InkAnalysisLineCollectionData
+    fullName: OneNote.Interfaces.InkAnalysisLineCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisLineData[];'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData:interface"
-          />[]
+        type:
+          - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.InkAnalysisLineData[]'
+    fullName: 'OneNote.Interfaces.InkAnalysisLineData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
+        name: OneNote.Interfaces.InkAnalysisLineData
+        fullName: OneNote.Interfaces.InkAnalysisLineData
+      - name: '[]'
+        fullName: '[]'

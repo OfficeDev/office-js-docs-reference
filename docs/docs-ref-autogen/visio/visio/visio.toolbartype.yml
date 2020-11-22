@@ -1,28 +1,41 @@
-### YamlMime:TSEnum
-name: Visio.ToolBarType
-uid: 'visio!Visio.ToolBarType:enum'
-package: visio!
-fullName: Visio.ToolBarType
-summary: >-
-  Toolbar IDs of the app
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.ToolBarType:enum'
+    summary: |-
+      Toolbar IDs of the app
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: commandBar
-    uid: 'visio!Visio.ToolBarType.commandBar:member'
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.ToolBarType
+    fullName: Visio.ToolBarType
+    langs:
+      - typeScript
+    type: enum
     package: visio!
+    children:
+      - 'visio!Visio.ToolBarType.commandBar:member'
+      - 'visio!Visio.ToolBarType.pageNavigationBar:member'
+      - 'visio!Visio.ToolBarType.statusBar:member'
+  - uid: 'visio!Visio.ToolBarType.commandBar:member'
     summary: CommandBar
-  - name: pageNavigationBar
-    uid: 'visio!Visio.ToolBarType.pageNavigationBar:member'
-    package: visio!
+    name: commandBar
+    fullName: commandBar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommandBar"'
+  - uid: 'visio!Visio.ToolBarType.pageNavigationBar:member'
     summary: PageNavigationBar
-  - name: statusBar
-    uid: 'visio!Visio.ToolBarType.statusBar:member'
-    package: visio!
+    name: pageNavigationBar
+    fullName: pageNavigationBar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PageNavigationBar"'
+  - uid: 'visio!Visio.ToolBarType.statusBar:member'
     summary: StatusBar
+    name: statusBar
+    fullName: statusBar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StatusBar"'

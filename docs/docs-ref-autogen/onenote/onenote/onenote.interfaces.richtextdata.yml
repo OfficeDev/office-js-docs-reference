@@ -1,65 +1,59 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.RichTextData
-uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.RichTextData
-summary: An interface describing the data returned by calling "richText.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.RichTextData#id:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
+    summary: An interface describing the data returned by calling "richText.toJSON()".
+    name: OneNote.Interfaces.RichTextData
+    fullName: OneNote.Interfaces.RichTextData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
-    fullName: id
-    summary: >-
+    children:
+      - 'onenote!OneNote.Interfaces.RichTextData#id:member'
+      - 'onenote!OneNote.Interfaces.RichTextData#languageId:member'
+      - 'onenote!OneNote.Interfaces.RichTextData#text:member'
+  - uid: 'onenote!OneNote.Interfaces.RichTextData#id:member'
+    summary: |-
       Gets the ID of the RichText object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: languageId
-    uid: 'onenote!OneNote.Interfaces.RichTextData#languageId:member'
-    package: onenote!
-    fullName: languageId
-    summary: >-
+        type:
+          - string
+  - uid: 'onenote!OneNote.Interfaces.RichTextData#languageId:member'
+    summary: |-
       The language id of the text. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: languageId
+    fullName: languageId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'languageId?: string;'
       return:
-        type: string
-  - name: text
-    uid: 'onenote!OneNote.Interfaces.RichTextData#text:member'
-    package: onenote!
-    fullName: text
-    summary: >-
+        type:
+          - string
+  - uid: 'onenote!OneNote.Interfaces.RichTextData#text:member'
+    summary: |-
       Gets the text content of the RichText object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: string;'
       return:
-        type: string
+        type:
+          - string

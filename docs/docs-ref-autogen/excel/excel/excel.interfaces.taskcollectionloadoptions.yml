@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions:interface'
+    summary: >-
+      Represents a collection of tasks.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.TaskCollectionLoadOptions
+    fullName: Excel.Interfaces.TaskCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#assignees:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#comment:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#dueDate:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#percentComplete:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#priority:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#startDate:member'
+      - 'excel!Excel.Interfaces.TaskCollectionLoadOptions#title:member'
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#assignees:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets the users to which the task is assigned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: assignees
+    fullName: assignees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'assignees?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#comment:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets the comment associated with the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: comment
+    fullName: comment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comment?: Excel.Interfaces.CommentLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.CommentLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#dueDate:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets the date and time the task is due. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dueDate
+    fullName: dueDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dueDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#id:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets the id of the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#percentComplete:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets the completion percentage of the task. This is a value between 0 and 100,
+      where 100 represents a completed task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: percentComplete
+    fullName: percentComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'percentComplete?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#priority:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets the priority of the task. This is a value between 0 and 10, where 0
+      represents the highest priority.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#startDate:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets the date and time the task should start. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: startDate
+    fullName: startDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions#title:member'
+    summary: >-
+      For EACH ITEM in the collection: Gets title of the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
+    name: Excel.Interfaces.CommentLoadOptions

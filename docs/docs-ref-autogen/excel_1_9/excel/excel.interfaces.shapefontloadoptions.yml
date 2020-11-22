@@ -1,150 +1,135 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ShapeFontLoadOptions
-uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.ShapeFontLoadOptions
-summary: >-
-  Represents the font attributes, such as font name, font size, and color, for a
-  shape's TextRange object.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
+    summary: |-
+      Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ShapeFontLoadOptions
+    fullName: Excel.Interfaces.ShapeFontLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.ShapeFontLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ShapeFontLoadOptions#bold:member'
+      - 'excel!Excel.Interfaces.ShapeFontLoadOptions#color:member'
+      - 'excel!Excel.Interfaces.ShapeFontLoadOptions#italic:member'
+      - 'excel!Excel.Interfaces.ShapeFontLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ShapeFontLoadOptions#size:member'
+      - 'excel!Excel.Interfaces.ShapeFontLoadOptions#underline:member'
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: bold
-    uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#bold:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#bold:member'
+    summary: |-
+      Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
     fullName: bold
-    summary: >-
-      Represents the bold status of font. Returns null the TextRange includes
-      both bold and non-bold text fragments.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'bold?: boolean;'
       return:
-        type: boolean
-  - name: color
-    uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#color:member'
-    package: excel!
-    fullName: color
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#color:member'
     summary: >-
-      HTML color code representation of the text color (e.g., "\#FF0000"
-      represents red). Returns null if the TextRange includes text fragments
-      with different colors.
+      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns null if the TextRange
+      includes text fragments with different colors.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color?: boolean;'
       return:
-        type: boolean
-  - name: italic
-    uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#italic:member'
-    package: excel!
-    fullName: italic
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#italic:member'
     summary: >-
-      Represents the italic status of font. Returns null if the TextRange
-      includes both italic and non-italic text fragments.
+      Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text
+      fragments.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'italic?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#name:member'
-    package: excel!
-    fullName: name
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#name:member'
     summary: >-
-      Represents font name (e.g., "Calibri"). If the text is Complex Script or
-      East Asian language, this is the corresponding font name; otherwise it is
-      the Latin font name.
+      Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it is the Latin font name.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: size
-    uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#size:member'
-    package: excel!
-    fullName: size
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#size:member'
     summary: >-
-      Represents font size in points (e.g., 11). Returns null if the TextRange
-      includes text fragments with different font sizes.
+      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
+      font sizes.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'size?: boolean;'
       return:
-        type: boolean
-  - name: underline
-    uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#underline:member'
-    package: excel!
-    fullName: underline
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#underline:member'
     summary: >-
-      Type of underline applied to the font. Returns null if the TextRange
-      includes text fragments with different underline styles. See
-      Excel.ShapeFontUnderlineStyle for details.
+      Type of underline applied to the font. Returns null if the TextRange includes text fragments with different
+      underline styles. See Excel.ShapeFontUnderlineStyle for details.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'underline?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

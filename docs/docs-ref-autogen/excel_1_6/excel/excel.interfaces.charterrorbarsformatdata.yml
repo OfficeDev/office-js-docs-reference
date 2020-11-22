@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartErrorBarsFormatData
-uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartErrorBarsFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartErrorBarsFormat.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
+    summary: An interface describing the data returned by calling `chartErrorBarsFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartErrorBarsFormatData
+    fullName: Excel.Interfaces.ChartErrorBarsFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

@@ -1,31 +1,30 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartTrendlineFormatData
-uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartTrendlineFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartTrendlineFormat.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: line
-    uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData#line:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData:interface'
+    summary: An interface describing the data returned by calling `chartTrendlineFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartTrendlineFormatData
+    fullName: Excel.Interfaces.ChartTrendlineFormatData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: line
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.ChartTrendlineFormatData#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData#line:member'
+    summary: |-
       Represents chart line formatting.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'line?: Excel.Interfaces.ChartLineFormatData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartLineFormatData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartLineFormatData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
+    name: Excel.Interfaces.ChartLineFormatData

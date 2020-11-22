@@ -1,74 +1,47 @@
-### YamlMime:TSType
-name: Excel.WorksheetCollection
-uid: 'excel!Excel.WorksheetCollection:class'
-package: excel!
-fullName: Excel.WorksheetCollection
-summary: >-
-  Represents a collection of worksheet objects that are part of the workbook.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetCollection:class'
+    summary: |-
+      Represents a collection of worksheet objects that are part of the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.WorksheetCollection#context:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetCollection
+    fullName: Excel.WorksheetCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
+    children:
+      - 'excel!Excel.WorksheetCollection#add:member(1)'
+      - 'excel!Excel.WorksheetCollection#context:member'
+      - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.WorksheetCollection#items:member'
+      - 'excel!Excel.WorksheetCollection#load:member(1)'
+      - 'excel!Excel.WorksheetCollection#load:member(2)'
+      - 'excel!Excel.WorksheetCollection#load:member(3)'
+      - 'excel!Excel.WorksheetCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.WorksheetCollection#add:member(1)'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: items
-    uid: 'excel!Excel.WorksheetCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.Worksheet[];'
-      return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />[]'
-methods:
-  - name: add(name)
-    uid: 'excel!Excel.WorksheetCollection#add:member(1)'
-    package: excel!
+      Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
+      to activate the newly added worksheet, call ".activate() on it.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: add(name)
     fullName: add(name)
-    summary: >-
-      Adds a new worksheet to the workbook. The worksheet will be added at the
-      end of existing worksheets. If you wish to activate the newly added
-      worksheet, call ".activate() on it.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(name?: string): Excel.Worksheet;'
-      parameters:
-        - id: name
-          description: >-
-            Optional. The name of the worksheet to be added. If specified, name
-            should be unqiue. If not specified, Excel determines the name of the
-            new worksheet.
-          type: string
       return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        type:
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -89,24 +62,42 @@ methods:
               }
           });
           ```
-  - name: getActiveWorksheet()
-    uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
-    package: excel!
-    fullName: getActiveWorksheet()
+      parameters:
+        - id: name
+          description: >-
+            Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified,
+            Excel determines the name of the new worksheet.
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetCollection#context:member'
     summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+    summary: |-
       Gets the currently active worksheet in the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getActiveWorksheet()
+    fullName: getActiveWorksheet()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getActiveWorksheet(): Excel.Worksheet;'
       return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        type:
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -126,123 +117,117 @@ methods:
               }
           });
           ```
-  - name: getCount(visibleOnly)
-    uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
-    package: excel!
-    fullName: getCount(visibleOnly)
-    summary: >-
+  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
+    summary: |-
       Gets the number of worksheets in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount(visibleOnly)
+    fullName: getCount(visibleOnly)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(visibleOnly?: boolean): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetCollection#getCount~0:complex'
+        description: ''
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
-          type: boolean
-      return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
-        description: ''
-  - name: getItem(key)
-    uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(key)
-    summary: >-
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    summary: |-
       Gets a worksheet object using its Name or ID.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(key: string): Excel.Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:class'
+        description: ''
       parameters:
         - id: key
           description: The Name or ID of the worksheet.
-          type: string
-      return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
-        description: ''
-  - name: getItemOrNullObject(key)
-    uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
-    package: excel!
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
+    summary: |-
+      Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemOrNullObject(key)
     fullName: getItemOrNullObject(key)
-    summary: >-
-      Gets a worksheet object using its Name or ID. If the worksheet does not
-      exist, will return a null object.
-
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:class'
+        description: ''
       parameters:
         - id: key
           description: The Name or ID of the worksheet.
-          type: string
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Worksheet[];'
       return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.WorksheetCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+        type:
+          - 'excel!Excel.WorksheetCollection#items~0:complex'
+  - uid: 'excel!Excel.WorksheetCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
+        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.WorksheetCollection;
+      return:
+        type:
+          - 'excel!Excel.WorksheetCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.WorksheetCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.WorksheetCollection#load~0:complex'
+  - uid: 'excel!Excel.WorksheetCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
       return:
-        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
+        type:
+          - 'excel!Excel.WorksheetCollection:class'
         description: |-
 
 
@@ -266,53 +251,91 @@ methods:
               }
           });
           ```
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.WorksheetCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.WorksheetCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.WorksheetCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.WorksheetCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.WorksheetCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.WorksheetCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Excel.Worksheet
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.WorksheetCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.WorksheetCollection#items~0:complex'
+    name: 'Excel.Worksheet[]'
+    fullName: 'Excel.Worksheet[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Worksheet:class'
+        name: Excel.Worksheet
+        fullName: Excel.Worksheet
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.WorksheetCollection:class'
+    name: Excel.WorksheetCollection
+  - uid: 'excel!Excel.WorksheetCollection#load~0:complex'
+    name: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
+        name: Excel.Interfaces.WorksheetCollectionLoadOptions
+        fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
+    name: Excel.Interfaces.WorksheetCollectionData

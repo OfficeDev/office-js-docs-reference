@@ -1,20 +1,27 @@
-### YamlMime:TSEnum
-name: Office.FilterType
-uid: 'office!Office.FilterType:enum'
-package: office!
-fullName: Office.FilterType
-summary: >-
-  Specifies whether filtering from the host application is applied when the data
-  is retrieved.
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: All
-    uid: 'office!Office.FilterType.All:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.FilterType:enum'
+    summary: Specifies whether filtering from the host application is applied when the data is retrieved.
+    name: Office.FilterType
+    fullName: Office.FilterType
+    langs:
+      - typeScript
+    type: enum
     package: office!
+    children:
+      - 'office!Office.FilterType.All:member'
+      - 'office!Office.FilterType.OnlyVisible:member'
+  - uid: 'office!Office.FilterType.All:member'
     summary: Return all data (not filtered by the host application).
-  - name: OnlyVisible
-    uid: 'office!Office.FilterType.OnlyVisible:member'
-    package: office!
+    name: All
+    fullName: All
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.FilterType.OnlyVisible:member'
     summary: Return only the visible data (as filtered by the host application).
+    name: OnlyVisible
+    fullName: OnlyVisible
+    langs:
+      - typeScript
+    type: field

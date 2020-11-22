@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: PowerPoint.Interfaces.SlideCollectionData
-uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
-package: powerpoint!
-fullName: PowerPoint.Interfaces.SlideCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `slideCollection.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
+    summary: An interface describing the data returned by calling `slideCollection.toJSON()`<!-- -->.
+    name: PowerPoint.Interfaces.SlideCollectionData
+    fullName: PowerPoint.Interfaces.SlideCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData#items:member'
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: PowerPoint.Interfaces.SlideData[];'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideData:interface" />[]'
+        type:
+          - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData#items~0:complex'
+references:
+  - uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData#items~0:complex'
+    name: 'PowerPoint.Interfaces.SlideData[]'
+    fullName: 'PowerPoint.Interfaces.SlideData[]'
+    spec.typeScript:
+      - uid: 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
+        name: PowerPoint.Interfaces.SlideData
+        fullName: PowerPoint.Interfaces.SlideData
+      - name: '[]'
+        fullName: '[]'

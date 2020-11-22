@@ -1,38 +1,36 @@
-### YamlMime:TSType
-name: Excel.RangeHyperlink
-uid: 'excel!Excel.RangeHyperlink:interface'
-package: excel!
-fullName: Excel.RangeHyperlink
-summary: >-
-  Represents the necessary strings to get/set a hyperlink (XHL) object.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeHyperlink:interface'
+    summary: |-
+      Represents the necessary strings to get/set a hyperlink (XHL) object.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: address
-    uid: 'excel!Excel.RangeHyperlink#address:member'
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RangeHyperlink
+    fullName: Excel.RangeHyperlink
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: address
-    summary: >-
+    children:
+      - 'excel!Excel.RangeHyperlink#address:member'
+      - 'excel!Excel.RangeHyperlink#documentReference:member'
+      - 'excel!Excel.RangeHyperlink#screenTip:member'
+      - 'excel!Excel.RangeHyperlink#textToDisplay:member'
+  - uid: 'excel!Excel.RangeHyperlink#address:member'
+    summary: |-
       Represents the url target for the hyperlink.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'address?: string;'
       return:
-        type: string
+        type:
+          - string
         description: >-
 
 
@@ -70,24 +68,21 @@ properties:
           });
 
           ```
-  - name: documentReference
-    uid: 'excel!Excel.RangeHyperlink#documentReference:member'
-    package: excel!
-    fullName: documentReference
-    summary: >-
+  - uid: 'excel!Excel.RangeHyperlink#documentReference:member'
+    summary: |-
       Represents the document reference target for the hyperlink.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: documentReference
+    fullName: documentReference
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'documentReference?: string;'
       return:
-        type: string
+        type:
+          - string
         description: >-
 
 
@@ -125,24 +120,21 @@ properties:
           });
 
           ```
-  - name: screenTip
-    uid: 'excel!Excel.RangeHyperlink#screenTip:member'
-    package: excel!
-    fullName: screenTip
-    summary: >-
+  - uid: 'excel!Excel.RangeHyperlink#screenTip:member'
+    summary: |-
       Represents the string displayed when hovering over the hyperlink.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: screenTip
+    fullName: screenTip
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'screenTip?: string;'
       return:
-        type: string
+        type:
+          - string
         description: >-
 
 
@@ -180,25 +172,21 @@ properties:
           });
 
           ```
-  - name: textToDisplay
-    uid: 'excel!Excel.RangeHyperlink#textToDisplay:member'
-    package: excel!
+  - uid: 'excel!Excel.RangeHyperlink#textToDisplay:member'
+    summary: |-
+      Represents the string that is displayed in the top left most cell in the range.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textToDisplay
     fullName: textToDisplay
-    summary: >-
-      Represents the string that is displayed in the top left most cell in the
-      range.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'textToDisplay?: string;'
       return:
-        type: string
+        type:
+          - string
         description: >-
 
 

@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordCollectionData:interface'
+    summary: An interface describing the data returned by calling `taskHistoryRecordCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.TaskHistoryRecordCollectionData
+    fullName: Excel.Interfaces.TaskHistoryRecordCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskHistoryRecordCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordCollectionData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.TaskHistoryRecordData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TaskHistoryRecordCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.TaskHistoryRecordData[]'
+    fullName: 'Excel.Interfaces.TaskHistoryRecordData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TaskHistoryRecordData:interface'
+        name: Excel.Interfaces.TaskHistoryRecordData
+        fullName: Excel.Interfaces.TaskHistoryRecordData
+      - name: '[]'
+        fullName: '[]'

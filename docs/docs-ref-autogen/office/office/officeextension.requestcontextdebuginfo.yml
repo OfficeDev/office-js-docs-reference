@@ -1,28 +1,27 @@
-### YamlMime:TSType
-name: OfficeExtension.RequestContextDebugInfo
-uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
-package: office!
-fullName: OfficeExtension.RequestContextDebugInfo
-summary: Contains debug information about the request context.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: pendingStatements
-    uid: 'office!OfficeExtension.RequestContextDebugInfo#pendingStatements:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+    summary: Contains debug information about the request context.
+    name: OfficeExtension.RequestContextDebugInfo
+    fullName: OfficeExtension.RequestContextDebugInfo
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: pendingStatements
-    summary: >-
+    children:
+      - 'office!OfficeExtension.RequestContextDebugInfo#pendingStatements:member'
+  - uid: 'office!OfficeExtension.RequestContextDebugInfo#pendingStatements:member'
+    summary: |-
       The statements to be executed in the host.
 
-
-      These statements may not match the code exactly as written, but will be a
-      close approximation.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      These statements may not match the code exactly as written, but will be a close approximation.
+    name: pendingStatements
+    fullName: pendingStatements
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'pendingStatements: string[];'
       return:
-        type: 'string[]'
+        type:
+          - 'string[]'

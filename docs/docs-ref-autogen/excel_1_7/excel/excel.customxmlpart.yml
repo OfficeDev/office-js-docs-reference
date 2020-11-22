@@ -1,121 +1,58 @@
-### YamlMime:TSType
-name: Excel.CustomXmlPart
-uid: 'excel!Excel.CustomXmlPart:class'
-package: excel!
-fullName: Excel.CustomXmlPart
-summary: >-
-  Represents a custom XML part object in a workbook.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomXmlPart:class'
+    summary: |-
+      Represents a custom XML part object in a workbook.
 
-
-  \[ [API set: ExcelApi
-  1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.CustomXmlPart#context:member'
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CustomXmlPart
+    fullName: Excel.CustomXmlPart
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
+    children:
+      - 'excel!Excel.CustomXmlPart#context:member'
+      - 'excel!Excel.CustomXmlPart#delete:member(1)'
+      - 'excel!Excel.CustomXmlPart#getXml:member(1)'
+      - 'excel!Excel.CustomXmlPart#id:member'
+      - 'excel!Excel.CustomXmlPart#load:member(1)'
+      - 'excel!Excel.CustomXmlPart#load:member(2)'
+      - 'excel!Excel.CustomXmlPart#load:member(3)'
+      - 'excel!Excel.CustomXmlPart#namespaceUri:member'
+      - 'excel!Excel.CustomXmlPart#setXml:member(1)'
+      - 'excel!Excel.CustomXmlPart#toJSON:member(1)'
+  - uid: 'excel!Excel.CustomXmlPart#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: id
-    uid: 'excel!Excel.CustomXmlPart#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
-      The custom XML part's ID.
-
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
-
-          await Excel.run(async (context) => {
-              // You must have the xmlns attribute to populate the 
-              // CustomXml.namespaceUri property.
-              const originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
-              const customXmlPart = context.workbook.customXmlParts.add(originalXml);
-              customXmlPart.load("id");
-              const xmlBlob = customXmlPart.getXml();
-
-              await context.sync();
-
-              const readableXml = addLineBreaksToXML(xmlBlob.value);
-              $("#display-xml").text(readableXml);
-
-              // Store the XML part's ID in a setting.
-              const settings = context.workbook.settings;
-              settings.add("ContosoReviewXmlPartId", customXmlPart.id);
-
-              await context.sync();
-          });
-
-          ```
-  - name: namespaceUri
-    uid: 'excel!Excel.CustomXmlPart#namespaceUri:member'
-    package: excel!
-    fullName: namespaceUri
-    summary: >-
-      The custom XML part's namespace URI.
-
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly namespaceUri: string;'
-      return:
-        type: string
-methods:
-  - name: delete()
-    uid: 'excel!Excel.CustomXmlPart#delete:member(1)'
-    package: excel!
-    fullName: delete()
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CustomXmlPart#delete:member(1)'
+    summary: |-
       Deletes the custom XML part.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'delete(): void;'
       return:
-        type: void
+        type:
+          - void
         description: >-
 
 
@@ -156,24 +93,21 @@ methods:
           });
 
           ```
-  - name: getXml()
-    uid: 'excel!Excel.CustomXmlPart#getXml:member(1)'
-    package: excel!
-    fullName: getXml()
-    summary: >-
+  - uid: 'excel!Excel.CustomXmlPart#getXml:member(1)'
+    summary: |-
       Gets the custom XML part's full XML content.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getXml()
+    fullName: getXml()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type:
+          - 'excel!Excel.CustomXmlPart#getXml~0:complex'
         description: >-
 
 
@@ -206,103 +140,153 @@ methods:
           });
 
           ```
-  - name: load(options)
-    uid: 'excel!Excel.CustomXmlPart#load:member(1)'
-    package: excel!
-    fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+  - uid: 'excel!Excel.CustomXmlPart#id:member'
+    summary: |-
+      The custom XML part's ID.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.CustomXmlPartLoadOptions):
-        Excel.CustomXmlPart;
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
+          await Excel.run(async (context) => {
+              // You must have the xmlns attribute to populate the 
+              // CustomXml.namespaceUri property.
+              const originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+              const customXmlPart = context.workbook.customXmlParts.add(originalXml);
+              customXmlPart.load("id");
+              const xmlBlob = customXmlPart.getXml();
+
+              await context.sync();
+
+              const readableXml = addLineBreaksToXML(xmlBlob.value);
+              $("#display-xml").text(readableXml);
+
+              // Store the XML part's ID in a setting.
+              const settings = context.workbook.settings;
+              settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+              await context.sync();
+          });
+
+          ```
+  - uid: 'excel!Excel.CustomXmlPart#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.CustomXmlPart#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface'
+  - uid: 'excel!Excel.CustomXmlPart#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.CustomXmlPart#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CustomXmlPart#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.CustomXmlPart;
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.CustomXmlPart#namespaceUri:member'
+    summary: |-
+      The custom XML part's namespace URI.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: namespaceUri
+    fullName: namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly namespaceUri: string;'
       return:
-        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
-        description: ''
-  - name: setXml(xml)
-    uid: 'excel!Excel.CustomXmlPart#setXml:member(1)'
-    package: excel!
-    fullName: setXml(xml)
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.CustomXmlPart#setXml:member(1)'
+    summary: |-
       Sets the custom XML part's full XML content.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setXml(xml)
+    fullName: setXml(xml)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setXml(xml: string): void;'
-      parameters:
-        - id: xml
-          description: XML content for the part.
-          type: string
       return:
-        type: void
+        type:
+          - void
         description: >-
 
 
@@ -335,25 +319,46 @@ methods:
           });
 
           ```
-  - name: toJSON()
-    uid: 'excel!Excel.CustomXmlPart#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+      parameters:
+        - id: xml
+          description: XML content for the part.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPart#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.CustomXmlPart
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.CustomXmlPartData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.CustomXmlPart object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.CustomXmlPartData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.CustomXmlPart#getXml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'excel!Excel.CustomXmlPart:class'
+    name: Excel.CustomXmlPart
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface'
+    name: Excel.Interfaces.CustomXmlPartLoadOptions
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
+    name: Excel.Interfaces.CustomXmlPartData

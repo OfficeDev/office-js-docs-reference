@@ -1,82 +1,160 @@
-### YamlMime:TSEnum
-name: Excel.ShowAsCalculation
-uid: 'excel!Excel.ShowAsCalculation:enum'
-package: excel!
-fullName: Excel.ShowAsCalculation
-summary: >-
-  The ShowAs Calculation function for the Data Pivot Field.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShowAsCalculation:enum'
+    summary: |-
+      The ShowAs Calculation function for the Data Pivot Field.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: differenceFrom
-    uid: 'excel!Excel.ShowAsCalculation.differenceFrom:member'
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShowAsCalculation
+    fullName: Excel.ShowAsCalculation
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.ShowAsCalculation.differenceFrom:member'
+      - 'excel!Excel.ShowAsCalculation.index:member'
+      - 'excel!Excel.ShowAsCalculation.none:member'
+      - 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
+      - 'excel!Excel.ShowAsCalculation.percentOf:member'
+      - 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
+      - 'excel!Excel.ShowAsCalculation.percentOfGrandTotal:member'
+      - 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
+      - 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
+      - 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
+      - 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
+      - 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
+      - 'excel!Excel.ShowAsCalculation.rankAscending:member'
+      - 'excel!Excel.ShowAsCalculation.rankDecending:member'
+      - 'excel!Excel.ShowAsCalculation.runningTotal:member'
+      - 'excel!Excel.ShowAsCalculation.unknown:member'
+  - uid: 'excel!Excel.ShowAsCalculation.differenceFrom:member'
     summary: Difference from the specified Base Field and Base Item.
-  - name: index
-    uid: 'excel!Excel.ShowAsCalculation.index:member'
-    package: excel!
+    name: differenceFrom
+    fullName: differenceFrom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DifferenceFrom"'
+  - uid: 'excel!Excel.ShowAsCalculation.index:member'
     summary: >-
-      Calculates the values as follows: ((value in cell) x (Grand Total of Grand
-      Totals)) / ((Grand Row Total) x (Grand Column Total))
-  - name: none
-    uid: 'excel!Excel.ShowAsCalculation.none:member'
-    package: excel!
+      Calculates the values as follows: ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand
+      Column Total))
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Index"'
+  - uid: 'excel!Excel.ShowAsCalculation.none:member'
     summary: No calculation is applied.
-  - name: percentDifferenceFrom
-    uid: 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
-    package: excel!
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
     summary: Difference from the specified Base Field and Base Item.
-  - name: percentOf
-    uid: 'excel!Excel.ShowAsCalculation.percentOf:member'
-    package: excel!
+    name: percentDifferenceFrom
+    fullName: percentDifferenceFrom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentDifferenceFrom"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentOf:member'
     summary: Percent of the specified Base Field and Base Item.
-  - name: percentOfColumnTotal
-    uid: 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
-    package: excel!
+    name: percentOf
+    fullName: percentOf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOf"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
     summary: Percent of the column total.
-  - name: percentOfGrandTotal
-    uid: 'excel!Excel.ShowAsCalculation.percentOfGrandTotal:member'
-    package: excel!
+    name: percentOfColumnTotal
+    fullName: percentOfColumnTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfColumnTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentOfGrandTotal:member'
     summary: Percent of the grand total.
-  - name: percentOfParentColumnTotal
-    uid: 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
-    package: excel!
+    name: percentOfGrandTotal
+    fullName: percentOfGrandTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfGrandTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
     summary: Percent of the column total for the specified Base Field.
-  - name: percentOfParentRowTotal
-    uid: 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
-    package: excel!
+    name: percentOfParentColumnTotal
+    fullName: percentOfParentColumnTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfParentColumnTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
     summary: Percent of the row total for the specified Base Field.
-  - name: percentOfParentTotal
-    uid: 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
-    package: excel!
+    name: percentOfParentRowTotal
+    fullName: percentOfParentRowTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfParentRowTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
     summary: Percent of the grand total for the specified Base Field.
-  - name: percentOfRowTotal
-    uid: 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
-    package: excel!
+    name: percentOfParentTotal
+    fullName: percentOfParentTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfParentTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
     summary: Percent of the row total.
-  - name: percentRunningTotal
-    uid: 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
-    package: excel!
+    name: percentOfRowTotal
+    fullName: percentOfRowTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfRowTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
     summary: Percent Running Total of the specified Base Field.
-  - name: rankAscending
-    uid: 'excel!Excel.ShowAsCalculation.rankAscending:member'
-    package: excel!
+    name: percentRunningTotal
+    fullName: percentRunningTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentRunningTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.rankAscending:member'
     summary: Ascending Rank of the specified Base Field.
-  - name: rankDecending
-    uid: 'excel!Excel.ShowAsCalculation.rankDecending:member'
-    package: excel!
+    name: rankAscending
+    fullName: rankAscending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RankAscending"'
+  - uid: 'excel!Excel.ShowAsCalculation.rankDecending:member'
     summary: Descending Rank of the specified Base Field.
-  - name: runningTotal
-    uid: 'excel!Excel.ShowAsCalculation.runningTotal:member'
-    package: excel!
+    name: rankDecending
+    fullName: rankDecending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RankDecending"'
+  - uid: 'excel!Excel.ShowAsCalculation.runningTotal:member'
     summary: Running Total of the specified Base Field.
-  - name: unknown
-    uid: 'excel!Excel.ShowAsCalculation.unknown:member'
-    package: excel!
+    name: runningTotal
+    fullName: runningTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RunningTotal"'
+  - uid: 'excel!Excel.ShowAsCalculation.unknown:member'
     summary: Calculation is unknown or unsupported.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

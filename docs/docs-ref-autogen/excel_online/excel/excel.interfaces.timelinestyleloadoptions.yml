@@ -1,69 +1,61 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TimelineStyleLoadOptions
-uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.TimelineStyleLoadOptions
-summary: >-
-  Represents a Timeline style, which defines style elements by region in the
-  Timeline.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions:interface'
+    summary: |-
+      Represents a Timeline style, which defines style elements by region in the Timeline.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TimelineStyleLoadOptions
+    fullName: Excel.Interfaces.TimelineStyleLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.TimelineStyleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TimelineStyleLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TimelineStyleLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#name:member'
+    summary: |-
       Gets the name of the TimelineStyle.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: readOnly
-    uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#readOnly:member'
-    package: excel!
-    fullName: readOnly
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#readOnly:member'
+    summary: |-
       Specifies if this TimelineStyle object is read-only.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readOnly?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

@@ -1,175 +1,157 @@
-### YamlMime:TSType
-name: Excel.Interfaces.DocumentPropertiesUpdateData
-uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.DocumentPropertiesUpdateData
-summary: >-
-  An interface for updating data on the DocumentProperties object, for use in
-  `documentProperties.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: author
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#author:member'
-    package: excel!
-    fullName: author
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
     summary: >-
+      An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!--
+      -->.
+    name: Excel.Interfaces.DocumentPropertiesUpdateData
+    fullName: Excel.Interfaces.DocumentPropertiesUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#author:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#category:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#comments:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#company:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#keywords:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#manager:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#revisionNumber:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#subject:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#title:member'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#author:member'
+    summary: |-
       The author of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'author?: string;'
       return:
-        type: string
-  - name: category
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#category:member'
-    package: excel!
-    fullName: category
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#category:member'
+    summary: |-
       The category of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'category?: string;'
       return:
-        type: string
-  - name: comments
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#comments:member'
-    package: excel!
-    fullName: comments
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#comments:member'
+    summary: |-
       The comments of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'comments?: string;'
       return:
-        type: string
-  - name: company
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#company:member'
-    package: excel!
-    fullName: company
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#company:member'
+    summary: |-
       The company of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'company?: string;'
       return:
-        type: string
-  - name: keywords
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#keywords:member'
-    package: excel!
-    fullName: keywords
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#keywords:member'
+    summary: |-
       The keywords of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keywords?: string;'
       return:
-        type: string
-  - name: manager
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#manager:member'
-    package: excel!
-    fullName: manager
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#manager:member'
+    summary: |-
       The manager of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'manager?: string;'
       return:
-        type: string
-  - name: revisionNumber
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#revisionNumber:member'
-    package: excel!
-    fullName: revisionNumber
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#revisionNumber:member'
+    summary: |-
       Gets the revision number of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: revisionNumber
+    fullName: revisionNumber
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'revisionNumber?: number;'
       return:
-        type: number
-  - name: subject
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#subject:member'
-    package: excel!
-    fullName: subject
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#subject:member'
+    summary: |-
       The subject of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'subject?: string;'
       return:
-        type: string
-  - name: title
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#title:member'
-    package: excel!
-    fullName: title
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#title:member'
+    summary: |-
       The title of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: string;'
       return:
-        type: string
+        type:
+          - string

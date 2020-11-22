@@ -1,106 +1,51 @@
-### YamlMime:TSType
-name: Excel.TableColumnCollection
-uid: 'excel!Excel.TableColumnCollection:class'
-package: excel!
-fullName: Excel.TableColumnCollection
-summary: >-
-  Represents a collection of all the columns that are part of the table.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    summary: |-
+      Represents a collection of all the columns that are part of the table.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.TableColumnCollection#context:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.TableColumnCollection
+    fullName: Excel.TableColumnCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: count
-    uid: 'excel!Excel.TableColumnCollection#count:member'
-    package: excel!
-    fullName: count
-    summary: >-
-      Returns the number of columns in the table.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type: number
-  - name: items
-    uid: 'excel!Excel.TableColumnCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.TableColumn[];'
-      return:
-        type: '<xref uid="excel!Excel.TableColumn:class" />[]'
-methods:
-  - name: 'add(index, values, name)'
-    uid: 'excel!Excel.TableColumnCollection#add:member(1)'
-    package: excel!
-    fullName: 'add(index, values, name)'
+    children:
+      - 'excel!Excel.TableColumnCollection#add:member(1)'
+      - 'excel!Excel.TableColumnCollection#context:member'
+      - 'excel!Excel.TableColumnCollection#count:member'
+      - 'excel!Excel.TableColumnCollection#getCount:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItem:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableColumnCollection#items:member'
+      - 'excel!Excel.TableColumnCollection#load:member(1)'
+      - 'excel!Excel.TableColumnCollection#load:member(2)'
+      - 'excel!Excel.TableColumnCollection#load:member(3)'
+      - 'excel!Excel.TableColumnCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#add:member(1)'
     summary: >-
       Adds a new column to the table.
 
 
-      \[ [API set: ExcelApi 1.1 requires an index smaller than the total column
-      count; 1.4 allows index to be optional (null or -1) and will append a
-      column at the end; 1.4 allows name parameter at creation
-      time.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional
+      (null or -1) and will append a column at the end; 1.4 allows name parameter at creation
+      time.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(index, values, name)'
+    fullName: 'add(index, values, name)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        add(index?: number, values?: Array<Array<boolean | string | number>> |
-        boolean | string | number, name?: string): Excel.TableColumn;
-      parameters:
-        - id: index
-          description: >-
-            Optional. Specifies the relative position of the new column. If null
-            or -1, the addition happens at the end. Columns with a higher index
-            will be shifted to the side. Zero-indexed.
-          type: number
-        - id: values
-          description: >-
-            Optional. A 2-dimensional array of unformatted values of the table
-            column.
-          type: >-
-            Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean |
-            string | number
-        - id: name
-          description: >-
-            Optional. Specifies the name of the new column. If null, the default
-            name will be used.
-          type: string
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?:
+        string): Excel.TableColumn;
       return:
-        type: '<xref uid="excel!Excel.TableColumn:class" />'
+        type:
+          - 'excel!Excel.TableColumn:class'
         description: |-
 
 
@@ -122,47 +67,81 @@ methods:
               }
           });
           ```
-  - name: getCount()
-    uid: 'excel!Excel.TableColumnCollection#getCount:member(1)'
-    package: excel!
-    fullName: getCount()
+      parameters:
+        - id: index
+          description: >-
+            Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end.
+            Columns with a higher index will be shifted to the side. Zero-indexed.
+          type:
+            - number
+        - id: values
+          description: Optional. A 2-dimensional array of unformatted values of the table column.
+          type:
+            - 'excel!Excel.TableColumnCollection#add~0:complex'
+        - id: name
+          description: 'Optional. Specifies the name of the new column. If null, the default name will be used.'
+          type:
+            - string
+  - uid: 'excel!Excel.TableColumnCollection#context:member'
     summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableColumnCollection#count:member'
+    summary: |-
+      Returns the number of columns in the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumnCollection#getCount:member(1)'
+    summary: |-
       Gets the number of columns in the table.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type:
+          - 'excel!Excel.TableColumnCollection#getCount~0:complex'
         description: ''
-  - name: getItem(key)
-    uid: 'excel!Excel.TableColumnCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(key)
-    summary: >-
+  - uid: 'excel!Excel.TableColumnCollection#getItem:member(1)'
+    summary: |-
       Gets a column object by Name or ID.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(key: number | string): Excel.TableColumn;'
-      parameters:
-        - id: key
-          description: Column Name or ID.
-          type: number | string
       return:
-        type: '<xref uid="excel!Excel.TableColumn:class" />'
+        type:
+          - 'excel!Excel.TableColumn:class'
         description: |-
 
 
@@ -182,28 +161,26 @@ methods:
               }
           });
           ```
-  - name: getItemAt(index)
-    uid: 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
-    package: excel!
-    fullName: getItemAt(index)
-    summary: >-
+      parameters:
+        - id: key
+          description: Column Name or ID.
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
+    summary: |-
       Gets a column based on its position in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemAt(index: number): Excel.TableColumn;'
-      parameters:
-        - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
-          type: number
       return:
-        type: '<xref uid="excel!Excel.TableColumn:class" />'
+        type:
+          - 'excel!Excel.TableColumn:class'
         description: |-
 
 
@@ -223,75 +200,80 @@ methods:
               }
           });
           ```
-  - name: getItemOrNullObject(key)
-    uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
-    package: excel!
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+    summary: |-
+      Gets a column object by Name or ID. If the column does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemOrNullObject(key)
     fullName: getItemOrNullObject(key)
-    summary: >-
-      Gets a column object by Name or ID. If the column does not exist, will
-      return a null object.
-
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemOrNullObject(key: number | string): Excel.TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
       parameters:
         - id: key
           description: Column Name or ID.
-          type: number | string
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.TableColumn[];'
       return:
-        type: '<xref uid="excel!Excel.TableColumn:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.TableColumnCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+        type:
+          - 'excel!Excel.TableColumnCollection#items~0:complex'
+  - uid: 'excel!Excel.TableColumnCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.TableColumnCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
+        load(options?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableColumnCollection;
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.TableColumnCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.TableColumnCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.TableColumnCollection#load~0:complex'
+  - uid: 'excel!Excel.TableColumnCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.TableColumnCollection;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
       return:
-        type: '<xref uid="excel!Excel.TableColumnCollection:class" />'
+        type:
+          - 'excel!Excel.TableColumnCollection:class'
         description: |-
 
 
@@ -314,53 +296,105 @@ methods:
               }
           });
           ```
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.TableColumnCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableColumnCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.TableColumnCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableColumnCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.TableColumnCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.TableColumnCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.TableColumnCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.TableColumnCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.TableColumnCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TableColumnCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableColumnCollectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.TableColumnCollectionData:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.TableColumn:class'
+    name: Excel.TableColumn
+  - uid: 'excel!Excel.TableColumnCollection#add~0:complex'
+    name: Array<Array<boolean | string | number>> | boolean | string | number
+    fullName: Array<Array<boolean | string | number>> | boolean | string | number
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <boolean | string | number>> | boolean | string | number
+        fullName: <boolean | string | number>> | boolean | string | number
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.TableColumnCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.TableColumnCollection#items~0:complex'
+    name: 'Excel.TableColumn[]'
+    fullName: 'Excel.TableColumn[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.TableColumn:class'
+        name: Excel.TableColumn
+        fullName: Excel.TableColumn
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    name: Excel.TableColumnCollection
+  - uid: 'excel!Excel.TableColumnCollection#load~0:complex'
+    name: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+        name: Excel.Interfaces.TableColumnCollectionLoadOptions
+        fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
+    name: Excel.Interfaces.TableColumnCollectionData

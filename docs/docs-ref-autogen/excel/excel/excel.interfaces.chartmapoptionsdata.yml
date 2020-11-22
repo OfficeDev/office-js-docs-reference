@@ -1,80 +1,93 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartMapOptionsData
-uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartMapOptionsData
-summary: >-
-  An interface describing the data returned by calling
-  `chartMapOptions.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: labelStrategy
-    uid: 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
+    summary: An interface describing the data returned by calling `chartMapOptions.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartMapOptionsData
+    fullName: Excel.Interfaces.ChartMapOptionsData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: labelStrategy
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsData#level:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member'
+    summary: |-
       Specifies the series map labels strategy of a region map chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        labelStrategy?: Excel.ChartMapLabelStrategy | "None" | "BestFit" |
-        "ShowAll";
+      content: 'labelStrategy?: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartMapLabelStrategy:enum" /> | "None" |
-          "BestFit" | "ShowAll"
-  - name: level
-    uid: 'excel!Excel.Interfaces.ChartMapOptionsData#level:member'
-    package: excel!
-    fullName: level
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#level:member'
+    summary: |-
       Specifies the series mapping level of a region map chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        level?: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" |
-        "County" | "State" | "Country" | "Continent" | "World";
+        level?: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" |
+        "Continent" | "World";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartMapAreaLevel:enum" /> | "Automatic" |
-          "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
-          "World"
-  - name: projectionType
-    uid: 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member'
-    package: excel!
-    fullName: projectionType
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartMapOptionsData#level~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member'
+    summary: |-
       Specifies the series projection type of a region map chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        projectionType?: Excel.ChartMapProjectionType | "Automatic" | "Mercator"
-        | "Miller" | "Robinson" | "Albers";
+      content: 'projectionType?: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartMapProjectionType:enum" /> | "Automatic" |
-          "Mercator" | "Miller" | "Robinson" | "Albers"
+        type:
+          - 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy~0:complex'
+    name: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+    fullName: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+        name: Excel.ChartMapLabelStrategy
+        fullName: Excel.ChartMapLabelStrategy
+      - name: ' | "None" | "BestFit" | "ShowAll"'
+        fullName: ' | "None" | "BestFit" | "ShowAll"'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#level~0:complex'
+    name: >-
+      Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+      "World"
+    fullName: >-
+      Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+      "World"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapAreaLevel:enum'
+        name: Excel.ChartMapAreaLevel
+        fullName: Excel.ChartMapAreaLevel
+      - name: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
+        fullName: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType~0:complex'
+    name: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
+    fullName: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapProjectionType:enum'
+        name: Excel.ChartMapProjectionType
+        fullName: Excel.ChartMapProjectionType
+      - name: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'
+        fullName: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'

@@ -1,250 +1,244 @@
-### YamlMime:TSType
-name: Excel.ConditionalDataBarPositiveFormat
-uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
-package: excel!
-fullName: Excel.ConditionalDataBarPositiveFormat
-summary: >-
-  Represents a conditional format DataBar Format for the positive side of the
-  data bar.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+    summary: |-
+      Represents a conditional format DataBar Format for the positive side of the data bar.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: borderColor
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalDataBarPositiveFormat
+    fullName: Excel.ConditionalDataBarPositiveFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: borderColor
+    children:
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#context:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(2)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(3)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(1)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(2)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). ""
-      (empty string) if no border is present or set.
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange"). "" (empty string) if no border is present or set.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borderColor
+    fullName: borderColor
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'borderColor: string;'
       return:
-        type: string
-  - name: context
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#context:member'
-    package: excel!
-    fullName: context
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: fillColor
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
-    package: excel!
-    fullName: fillColor
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
     summary: >-
-      HTML color code representing the fill color, of the form \#RRGGBB (e.g.,
-      "FFA500") or as a named HTML color (e.g., "orange").
+      HTML color code representing the fill color, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
+      "orange").
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fillColor
+    fullName: fillColor
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fillColor: string;'
       return:
-        type: string
-  - name: gradientFill
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
-    package: excel!
-    fullName: gradientFill
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
+    summary: |-
       Specifies if the DataBar has a gradient.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientFill
+    fullName: gradientFill
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'gradientFill: boolean;'
       return:
-        type: boolean
-methods:
-  - name: load(options)
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
-    package: excel!
-    fullName: load(options)
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?:
-        Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions):
+        load(options?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions):
         Excel.ConditionalDataBarPositiveFormat;
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.ConditionalDataBarPositiveFormat:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNames?: string | string[]):
-        Excel.ConditionalDataBarPositiveFormat;
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalDataBarPositiveFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalDataBarPositiveFormat:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ConditionalDataBarPositiveFormat;
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.ConditionalDataBarPositiveFormat:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ConditionalDataBarPositiveFormat): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData,
-        options?: OfficeExtension.UpdateOptions): void;
+        set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: OfficeExtension.UpdateOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.ConditionalDataBarPositiveFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.ConditionalDataBarPositiveFormat:class" />'
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.ConditionalDataBarPositiveFormat#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+          type:
+            - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.ConditionalDataBarPositiveFormat object is an API object, the
-      `toJSON` method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.ConditionalDataBarPositiveFormatData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ConditionalDataBarPositiveFormat object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarPositiveFormatData`<!--
+      -->) that contains shallow copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.ConditionalDataBarPositiveFormatData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+    name: Excel.ConditionalDataBarPositiveFormat
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
+    name: Interfaces.ConditionalDataBarPositiveFormatUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatData

@@ -1,51 +1,48 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.ParagraphUpdateData
-uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.ParagraphUpdateData
-summary: >-
-  An interface for updating data on the Paragraph object, for use in
-  "paragraph.set(<!-- -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: image
-    uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData#image:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
+    summary: 'An interface for updating data on the Paragraph object, for use in "paragraph.set(<!-- -->{ ... }<!-- -->)".'
+    name: OneNote.Interfaces.ParagraphUpdateData
+    fullName: OneNote.Interfaces.ParagraphUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.ParagraphUpdateData#image:member'
+      - 'onenote!OneNote.Interfaces.ParagraphUpdateData#table:member'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData#image:member'
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: image
     fullName: image
-    summary: >-
-      Gets the Image object in the Paragraph. Throws an exception if
-      ParagraphType is not Image.
-
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'image?: OneNote.Interfaces.ImageUpdateData;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.ImageUpdateData:interface" />'
-  - name: table
-    uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData#table:member'
-    package: onenote!
+        type:
+          - 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData#table:member'
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: table
     fullName: table
-    summary: >-
-      Gets the Table object in the Paragraph. Throws an exception if
-      ParagraphType is not Table.
-
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'table?: OneNote.Interfaces.TableUpdateData;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.TableUpdateData:interface" />'
+        type:
+          - 'onenote!OneNote.Interfaces.TableUpdateData:interface'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+    name: OneNote.Interfaces.ImageUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
+    name: OneNote.Interfaces.TableUpdateData

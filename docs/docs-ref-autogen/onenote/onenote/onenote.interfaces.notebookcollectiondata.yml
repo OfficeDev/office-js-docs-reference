@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.NotebookCollectionData
-uid: 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.NotebookCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "notebookCollection.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.NotebookCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
+    summary: An interface describing the data returned by calling "notebookCollection.toJSON()".
+    name: OneNote.Interfaces.NotebookCollectionData
+    fullName: OneNote.Interfaces.NotebookCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.NotebookCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.NotebookData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.NotebookData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.NotebookCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.NotebookData[]'
+    fullName: 'OneNote.Interfaces.NotebookData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
+        name: OneNote.Interfaces.NotebookData
+        fullName: OneNote.Interfaces.NotebookData
+      - name: '[]'
+        fullName: '[]'

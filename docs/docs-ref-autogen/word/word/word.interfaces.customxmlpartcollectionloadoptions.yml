@@ -1,72 +1,71 @@
-### YamlMime:TSType
-name: Word.Interfaces.CustomXmlPartCollectionLoadOptions
-uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
-package: word!
-fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions
-summary: >-
-  Contains the collection of
-  [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
-
-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member'
-    package: word!
-    fullName: $all
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
+      Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: Word.Interfaces.CustomXmlPartCollectionLoadOptions
+    fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word!
+    children:
+      - 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#id:member'
+      - 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#id:member'
-    package: word!
-    fullName: id
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#id:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the ID of the custom XML part. Read
-      only.
+      For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: namespaceUri
-    uid: >-
-      word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member
-    package: word!
-    fullName: namespaceUri
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the namespace URI of the custom XML
-      part. Read only.
+      For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: namespaceUri
+    fullName: namespaceUri
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'namespaceUri?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

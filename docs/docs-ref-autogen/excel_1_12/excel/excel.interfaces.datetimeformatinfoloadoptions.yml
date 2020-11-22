@@ -1,131 +1,109 @@
-### YamlMime:TSType
-name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
-uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.DatetimeFormatInfoLoadOptions
-summary: >-
-  Defines the culturally appropriate format of displaying numbers. This is based
-  on current system culture settings.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+    summary: |-
+      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
+    fullName: Excel.Interfaces.DatetimeFormatInfoLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#dateSeparator:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#timeSeparator:member'
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: dateSeparator
-    uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#dateSeparator:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#dateSeparator:member'
+    summary: |-
+      Gets the string used as the date separator. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dateSeparator
     fullName: dateSeparator
-    summary: >-
-      Gets the string used as the date separator. This is based on current
-      system settings.
-
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dateSeparator?: boolean;'
       return:
-        type: boolean
-  - name: longDatePattern
-    uid: >-
-      excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member'
+    summary: |-
+      Gets the format string for a long date value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: longDatePattern
     fullName: longDatePattern
-    summary: >-
-      Gets the format string for a long date value. This is based on current
-      system settings.
-
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'longDatePattern?: boolean;'
       return:
-        type: boolean
-  - name: longTimePattern
-    uid: >-
-      excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member'
+    summary: |-
+      Gets the format string for a long time value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: longTimePattern
     fullName: longTimePattern
-    summary: >-
-      Gets the format string for a long time value. This is based on current
-      system settings.
-
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'longTimePattern?: boolean;'
       return:
-        type: boolean
-  - name: shortDatePattern
-    uid: >-
-      excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member'
+    summary: |-
+      Gets the format string for a short date value. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shortDatePattern
     fullName: shortDatePattern
-    summary: >-
-      Gets the format string for a short date value. This is based on current
-      system settings.
-
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shortDatePattern?: boolean;'
       return:
-        type: boolean
-  - name: timeSeparator
-    uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#timeSeparator:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#timeSeparator:member'
+    summary: |-
+      Gets the string used as the time separator. This is based on current system settings.
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: timeSeparator
     fullName: timeSeparator
-    summary: >-
-      Gets the string used as the time separator. This is based on current
-      system settings.
-
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'timeSeparator?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

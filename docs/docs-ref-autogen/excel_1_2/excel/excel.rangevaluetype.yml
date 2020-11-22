@@ -1,46 +1,77 @@
-### YamlMime:TSEnum
-name: Excel.RangeValueType
-uid: 'excel!Excel.RangeValueType:enum'
-package: excel!
-fullName: Excel.RangeValueType
-summary: >-
-  \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double,
-  Boolean, Error. 1.7 for
-  RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: boolean
-    uid: 'excel!Excel.RangeValueType.boolean:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeValueType:enum'
+    summary: >-
+      \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for
+      RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RangeValueType
+    fullName: Excel.RangeValueType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: double
-    uid: 'excel!Excel.RangeValueType.double:member'
-    package: excel!
-    summary: ''
-  - name: empty
-    uid: 'excel!Excel.RangeValueType.empty:member'
-    package: excel!
-    summary: ''
-  - name: error
-    uid: 'excel!Excel.RangeValueType.error:member'
-    package: excel!
-    summary: ''
-  - name: integer
-    uid: 'excel!Excel.RangeValueType.integer:member'
-    package: excel!
-    summary: ''
-  - name: richValue
-    uid: 'excel!Excel.RangeValueType.richValue:member'
-    package: excel!
-    summary: ''
-  - name: string
-    uid: 'excel!Excel.RangeValueType.string:member'
-    package: excel!
-    summary: ''
-  - name: unknown
-    uid: 'excel!Excel.RangeValueType.unknown:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.RangeValueType.boolean:member'
+      - 'excel!Excel.RangeValueType.double:member'
+      - 'excel!Excel.RangeValueType.empty:member'
+      - 'excel!Excel.RangeValueType.error:member'
+      - 'excel!Excel.RangeValueType.integer:member'
+      - 'excel!Excel.RangeValueType.richValue:member'
+      - 'excel!Excel.RangeValueType.string:member'
+      - 'excel!Excel.RangeValueType.unknown:member'
+  - uid: 'excel!Excel.RangeValueType.boolean:member'
+    name: boolean
+    fullName: boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: 'excel!Excel.RangeValueType.double:member'
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: 'excel!Excel.RangeValueType.empty:member'
+    name: empty
+    fullName: empty
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Empty"'
+  - uid: 'excel!Excel.RangeValueType.error:member'
+    name: error
+    fullName: error
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Error"'
+  - uid: 'excel!Excel.RangeValueType.integer:member'
+    name: integer
+    fullName: integer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Integer"'
+  - uid: 'excel!Excel.RangeValueType.richValue:member'
+    name: richValue
+    fullName: richValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichValue"'
+  - uid: 'excel!Excel.RangeValueType.string:member'
+    name: string
+    fullName: string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'
+  - uid: 'excel!Excel.RangeValueType.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

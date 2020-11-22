@@ -1,278 +1,246 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartTitleLoadOptions
-uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartTitleLoadOptions
-summary: >-
-  Represents a chart title object of a chart.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+    summary: |-
+      Represents a chart title object of a chart.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartTitleLoadOptions
+    fullName: Excel.Interfaces.ChartTitleLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#text:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#textOrientation:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#visible:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: format
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#format:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#format:member'
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
     fullName: format
-    summary: >-
-      Represents the formatting of a chart title, which includes fill and font
-      formatting.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'format?: Excel.Interfaces.ChartTitleFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface" />
-  - name: height
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#height:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#height:member'
+    summary: |-
+      Returns the height, in points, of the chart title. Null if chart title is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
     fullName: height
-    summary: >-
-      Returns the height, in points, of the chart title. Null if chart title is
-      not visible.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: boolean;'
       return:
-        type: boolean
-  - name: horizontalAlignment
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#horizontalAlignment:member'
-    package: excel!
-    fullName: horizontalAlignment
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#horizontalAlignment:member'
+    summary: |-
       Specifies the horizontal alignment for chart title.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'horizontalAlignment?: boolean;'
       return:
-        type: boolean
-  - name: left
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#left:member'
-    package: excel!
-    fullName: left
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#left:member'
     summary: >-
-      Specifies the distance, in points, from the left edge of chart title to
-      the left edge of chart area. Null if chart title is not visible.
+      Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart
+      title is not visible.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'left?: boolean;'
       return:
-        type: boolean
-  - name: overlay
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member'
-    package: excel!
-    fullName: overlay
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member'
+    summary: |-
       Specifies if the chart title will overlay the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overlay?: boolean;'
       return:
-        type: boolean
-  - name: position
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#position:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#position:member'
+    summary: |-
+      Represents the position of chart title. See Excel.ChartTitlePosition for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
     fullName: position
-    summary: >-
-      Represents the position of chart title. See Excel.ChartTitlePosition for
-      details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'position?: boolean;'
       return:
-        type: boolean
-  - name: showShadow
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#showShadow:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#showShadow:member'
+    summary: |-
+      Represents a boolean value that determines if the chart title has a shadow.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
     fullName: showShadow
-    summary: >-
-      Represents a boolean value that determines if the chart title has a
-      shadow.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showShadow?: boolean;'
       return:
-        type: boolean
-  - name: text
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#text:member'
-    package: excel!
-    fullName: text
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#text:member'
+    summary: |-
       Specifies the chart's title text.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: boolean;'
       return:
-        type: boolean
-  - name: textOrientation
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#textOrientation:member'
-    package: excel!
-    fullName: textOrientation
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#textOrientation:member'
     summary: >-
-      Specifies the angle to which the text is oriented for the chart title. The
-      value should either be an integer from -90 to 90 or the integer 180 for
-      vertically-oriented text.
+      Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from
+      -90 to 90 or the integer 180 for vertically-oriented text.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'textOrientation?: boolean;'
       return:
-        type: boolean
-  - name: top
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#top:member'
-    package: excel!
-    fullName: top
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#top:member'
     summary: >-
-      Specifies the distance, in points, from the top edge of chart title to the
-      top of chart area. Null if chart title is not visible.
+      Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
+      is not visible.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'top?: boolean;'
       return:
-        type: boolean
-  - name: verticalAlignment
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#verticalAlignment:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#verticalAlignment:member'
+    summary: |-
+      Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of chart title. See
-      Excel.ChartTextVerticalAlignment for details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'verticalAlignment?: boolean;'
       return:
-        type: boolean
-  - name: visible
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#visible:member'
-    package: excel!
-    fullName: visible
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#visible:member'
+    summary: |-
       Specifies if the chart title is visibile.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'visible?: boolean;'
       return:
-        type: boolean
-  - name: width
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#width:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#width:member'
+    summary: |-
+      Specifies the width, in points, of the chart title. Null if chart title is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
     fullName: width
-    summary: >-
-      Specifies the width, in points, of the chart title. Null if chart title is
-      not visible.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartTitleFormatLoadOptions

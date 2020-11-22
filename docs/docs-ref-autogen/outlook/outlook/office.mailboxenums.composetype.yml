@@ -1,49 +1,58 @@
-### YamlMime:TSEnum
-name: Office.MailboxEnums.ComposeType
-uid: 'outlook!Office.MailboxEnums.ComposeType:enum'
-package: outlook!
-fullName: Office.MailboxEnums.ComposeType
-summary: >-
-  Compose type.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.ComposeType:enum'
+    summary: |-
+      Compose type.
 
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: >-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
-isPreview: true
-isDeprecated: false
-fields:
-  - name: Forward
-    uid: 'outlook!Office.MailboxEnums.ComposeType.Forward:member'
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: true
+    name: Office.MailboxEnums.ComposeType
+    fullName: Office.MailboxEnums.ComposeType
+    langs:
+      - typeScript
+    type: enum
     package: outlook!
-    summary: >-
+    children:
+      - 'outlook!Office.MailboxEnums.ComposeType.Forward:member'
+      - 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
+      - 'outlook!Office.MailboxEnums.ComposeType.Reply:member'
+  - uid: 'outlook!Office.MailboxEnums.ComposeType.Forward:member'
+    summary: |-
       Forward.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
-  - name: NewMail
-    uid: 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
-    package: outlook!
-    summary: >-
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: Forward
+    fullName: Forward
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"forward"'
+  - uid: 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
+    summary: |-
       New mail.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
-  - name: Reply
-    uid: 'outlook!Office.MailboxEnums.ComposeType.Reply:member'
-    package: outlook!
-    summary: >-
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: NewMail
+    fullName: NewMail
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"newMail"'
+  - uid: 'outlook!Office.MailboxEnums.ComposeType.Reply:member'
+    summary: |-
       Reply.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: Reply
+    fullName: Reply
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"reply"'

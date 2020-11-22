@@ -1,37 +1,54 @@
-### YamlMime:TSEnum
-name: Excel.ChartMapProjectionType
-uid: 'excel!Excel.ChartMapProjectionType:enum'
-package: excel!
-fullName: Excel.ChartMapProjectionType
-summary: >-
-  Represents the region projection type of a chart series layout. This only
-  applies to region map charts.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartMapProjectionType:enum'
+    summary: |-
+      Represents the region projection type of a chart series layout. This only applies to region map charts.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: albers
-    uid: 'excel!Excel.ChartMapProjectionType.albers:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartMapProjectionType
+    fullName: Excel.ChartMapProjectionType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: automatic
-    uid: 'excel!Excel.ChartMapProjectionType.automatic:member'
-    package: excel!
-    summary: ''
-  - name: mercator
-    uid: 'excel!Excel.ChartMapProjectionType.mercator:member'
-    package: excel!
-    summary: ''
-  - name: miller
-    uid: 'excel!Excel.ChartMapProjectionType.miller:member'
-    package: excel!
-    summary: ''
-  - name: robinson
-    uid: 'excel!Excel.ChartMapProjectionType.robinson:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartMapProjectionType.albers:member'
+      - 'excel!Excel.ChartMapProjectionType.automatic:member'
+      - 'excel!Excel.ChartMapProjectionType.mercator:member'
+      - 'excel!Excel.ChartMapProjectionType.miller:member'
+      - 'excel!Excel.ChartMapProjectionType.robinson:member'
+  - uid: 'excel!Excel.ChartMapProjectionType.albers:member'
+    name: albers
+    fullName: albers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Albers"'
+  - uid: 'excel!Excel.ChartMapProjectionType.automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: 'excel!Excel.ChartMapProjectionType.mercator:member'
+    name: mercator
+    fullName: mercator
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mercator"'
+  - uid: 'excel!Excel.ChartMapProjectionType.miller:member'
+    name: miller
+    fullName: miller
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Miller"'
+  - uid: 'excel!Excel.ChartMapProjectionType.robinson:member'
+    name: robinson
+    fullName: robinson
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Robinson"'

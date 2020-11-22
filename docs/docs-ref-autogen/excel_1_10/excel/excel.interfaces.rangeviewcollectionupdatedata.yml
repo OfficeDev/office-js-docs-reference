@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RangeViewCollectionUpdateData
-uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.RangeViewCollectionUpdateData
-summary: >-
-  An interface for updating data on the RangeViewCollection object, for use in
-  `rangeViewCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.RangeViewCollectionUpdateData
+    fullName: Excel.Interfaces.RangeViewCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.RangeViewData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.RangeViewData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.RangeViewData[]'
+    fullName: 'Excel.Interfaces.RangeViewData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeViewData:interface'
+        name: Excel.Interfaces.RangeViewData
+        fullName: Excel.Interfaces.RangeViewData
+      - name: '[]'
+        fullName: '[]'

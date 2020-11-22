@@ -1,28 +1,44 @@
-### YamlMime:TSType
-name: Office.CustomXmlNode
-uid: 'office!Office.CustomXmlNode:interface'
-package: office!
-fullName: Office.CustomXmlNode
-summary: Represents an XML node in a tree in a document.
-remarks: '**Hosts**: Word'
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: baseName
-    uid: 'office!Office.CustomXmlNode#baseName:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.CustomXmlNode:interface'
+    summary: Represents an XML node in a tree in a document.
+    remarks: '**Hosts**: Word'
+    name: Office.CustomXmlNode
+    fullName: Office.CustomXmlNode
+    langs:
+      - typeScript
+    type: interface
     package: office!
+    children:
+      - 'office!Office.CustomXmlNode#baseName:member'
+      - 'office!Office.CustomXmlNode#getNodesAsync:member(1)'
+      - 'office!Office.CustomXmlNode#getNodesAsync:member(2)'
+      - 'office!Office.CustomXmlNode#getNodeValueAsync:member(1)'
+      - 'office!Office.CustomXmlNode#getNodeValueAsync:member(2)'
+      - 'office!Office.CustomXmlNode#getTextAsync:member(1)'
+      - 'office!Office.CustomXmlNode#getTextAsync:member(2)'
+      - 'office!Office.CustomXmlNode#getXmlAsync:member(1)'
+      - 'office!Office.CustomXmlNode#getXmlAsync:member(2)'
+      - 'office!Office.CustomXmlNode#namespaceUri:member'
+      - 'office!Office.CustomXmlNode#nodeType:member'
+      - 'office!Office.CustomXmlNode#setNodeValueAsync:member(1)'
+      - 'office!Office.CustomXmlNode#setNodeValueAsync:member(2)'
+      - 'office!Office.CustomXmlNode#setTextAsync:member(1)'
+      - 'office!Office.CustomXmlNode#setTextAsync:member(2)'
+      - 'office!Office.CustomXmlNode#setXmlAsync:member(1)'
+      - 'office!Office.CustomXmlNode#setXmlAsync:member(2)'
+  - uid: 'office!Office.CustomXmlNode#baseName:member'
+    summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
+    name: baseName
     fullName: baseName
-    summary: >-
-      Gets the base name of the node without the namespace prefix, if one
-      exists.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'baseName: string;'
       return:
-        type: string
+        type:
+          - string
         description: |-
 
 
@@ -46,118 +62,42 @@ properties:
               document.getElementById('message').innerText += message; 
           }
           ```
-  - name: namespaceUri
-    uid: 'office!Office.CustomXmlNode#namespaceUri:member'
-    package: office!
-    fullName: namespaceUri
-    summary: Retrieves the string GUID of the CustomXMLPart.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'namespaceUri: string;'
-      return:
-        type: string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showXmlNamespaceUri() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
-                          write(node.namespaceUri);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - name: nodeType
-    uid: 'office!Office.CustomXmlNode#nodeType:member'
-    package: office!
-    fullName: nodeType
-    summary: Gets the type of the CustomXMLNode.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'nodeType: string;'
-      return:
-        type: string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showXmlNodeType() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
-                          write(node.nodeType);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-methods:
-  - name: 'getNodesAsync(xPath, options, callback)'
-    uid: 'office!Office.CustomXmlNode#getNodesAsync:member(1)'
-    package: office!
-    fullName: 'getNodesAsync(xPath, options, callback)'
+  - uid: 'office!Office.CustomXmlNode#getNodesAsync:member(1)'
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    isPreview: false
-    isDeprecated: false
+    name: 'getNodesAsync(xPath, options, callback)'
+    fullName: 'getNodesAsync(xPath, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<CustomXmlNode[]>) => void): void;
+        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<CustomXmlNode[]>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xPath
           description: The XPath expression that specifies the nodes to get. Required.
-          type: string
+          type:
+            - string
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is an array of CustomXmlNode
-            objects that represent the nodes specified by the XPath expression
-            passed to the `xPath` parameter.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CustomXmlNode:interface" />[]&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getNodesAsync(xPath, callback)'
-    uid: 'office!Office.CustomXmlNode#getNodesAsync:member(2)'
-    package: office!
-    fullName: 'getNodesAsync(xPath, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to
+            the `xPath` parameter.
+          type:
+            - 'office!Office.CustomXmlNode#getNodesAsync~0:complex'
+  - uid: 'office!Office.CustomXmlNode#getNodesAsync:member(2)'
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
       **Requirement set**:
@@ -191,67 +131,59 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'getNodesAsync(xPath, callback)'
+    fullName: 'getNodesAsync(xPath, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getNodesAsync(xPath: string, callback?: (result:
-        AsyncResult<CustomXmlNode[]>) => void): void;
+      content: 'getNodesAsync(xPath: string, callback?: (result: AsyncResult<CustomXmlNode[]>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xPath
           description: The XPath expression that specifies the nodes to get. Required.
-          type: string
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is an array of CustomXmlNode
-            objects that represent the nodes specified by the XPath expression
-            passed to the `xPath` parameter.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CustomXmlNode:interface" />[]&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getNodeValueAsync(options, callback)'
-    uid: 'office!Office.CustomXmlNode#getNodeValueAsync:member(1)'
-    package: office!
-    fullName: 'getNodeValueAsync(options, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to
+            the `xPath` parameter.
+          type:
+            - 'office!Office.CustomXmlNode#getNodesAsync~1:complex'
+  - uid: 'office!Office.CustomXmlNode#getNodeValueAsync:member(1)'
     summary: Gets the node value.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    isPreview: false
-    isDeprecated: false
+    name: 'getNodeValueAsync(options, callback)'
+    fullName: 'getNodeValueAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getNodeValueAsync(options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+      content: 'getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is a string that contains
-            the value of the referenced node.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: getNodeValueAsync(callback)
-    uid: 'office!Office.CustomXmlNode#getNodeValueAsync:member(2)'
-    package: office!
-    fullName: getNodeValueAsync(callback)
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the value of the referenced node.
+          type:
+            - 'office!Office.CustomXmlNode#getNodeValueAsync~0:complex'
+  - uid: 'office!Office.CustomXmlNode#getNodeValueAsync:member(2)'
     summary: Gets the node value.
     remarks: >-
       **Requirement set**:
@@ -285,30 +217,26 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: getNodeValueAsync(callback)
+    fullName: getNodeValueAsync(callback)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getNodeValueAsync(callback?: (result: AsyncResult<string>) => void):
-        void;
+      content: 'getNodeValueAsync(callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is a string that contains
-            the value of the referenced node.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getTextAsync(options, callback)'
-    uid: 'office!Office.CustomXmlNode#getTextAsync:member(1)'
-    package: office!
-    fullName: 'getTextAsync(options, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the value of the referenced node.
+          type:
+            - 'office!Office.CustomXmlNode#getNodeValueAsync~1:complex'
+  - uid: 'office!Office.CustomXmlNode#getTextAsync:member(1)'
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
@@ -320,8 +248,7 @@ methods:
 
       ```javascript
 
-      // Get the built-in core properties XML part by using its ID. This results
-      in a call to Word.
+      // Get the built-in core properties XML part by using its ID. This results in a call to Word.
 
       Office.context.document.customXmlParts.getByIdAsync(
           "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
@@ -357,94 +284,82 @@ methods:
       });
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'getTextAsync(options, callback)'
+    fullName: 'getTextAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getTextAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: 'getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is a string that contains
-            the inner text of the referenced nodes.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: getTextAsync(callback)
-    uid: 'office!Office.CustomXmlNode#getTextAsync:member(2)'
-    package: office!
-    fullName: getTextAsync(callback)
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the inner text of the referenced nodes.
+          type:
+            - 'office!Office.CustomXmlNode#getTextAsync~0:complex'
+  - uid: 'office!Office.CustomXmlNode#getTextAsync:member(2)'
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    isPreview: false
-    isDeprecated: false
+    name: getTextAsync(callback)
+    fullName: getTextAsync(callback)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getTextAsync(callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is a string that contains
-            the inner text of the referenced nodes.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getXmlAsync(options, callback)'
-    uid: 'office!Office.CustomXmlNode#getXmlAsync:member(1)'
-    package: office!
-    fullName: 'getXmlAsync(options, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the inner text of the referenced nodes.
+          type:
+            - 'office!Office.CustomXmlNode#getTextAsync~1:complex'
+  - uid: 'office!Office.CustomXmlNode#getXmlAsync:member(1)'
     summary: Gets the node's XML.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    isPreview: false
-    isDeprecated: false
+    name: 'getXmlAsync(options, callback)'
+    fullName: 'getXmlAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is a string that contains
-            the XML of the referenced node.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: getXmlAsync(callback)
-    uid: 'office!Office.CustomXmlNode#getXmlAsync:member(2)'
-    package: office!
-    fullName: getXmlAsync(callback)
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the XML of the referenced node.
+          type:
+            - 'office!Office.CustomXmlNode#getXmlAsync~0:complex'
+  - uid: 'office!Office.CustomXmlNode#getXmlAsync:member(2)'
     summary: Gets the node's XML.
     remarks: >-
       **Requirement set**:
@@ -478,63 +393,129 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: getXmlAsync(callback)
+    fullName: getXmlAsync(callback)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getXmlAsync(callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is a string that contains
-            the XML of the referenced node.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the XML of the referenced node.
+          type:
+            - 'office!Office.CustomXmlNode#getXmlAsync~1:complex'
+  - uid: 'office!Office.CustomXmlNode#namespaceUri:member'
+    summary: Retrieves the string GUID of the CustomXMLPart.
+    name: namespaceUri
+    fullName: namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'namespaceUri: string;'
       return:
-        type: void
-        description: ''
-  - name: 'setNodeValueAsync(value, options, callback)'
-    uid: 'office!Office.CustomXmlNode#setNodeValueAsync:member(1)'
-    package: office!
-    fullName: 'setNodeValueAsync(value, options, callback)'
+        type:
+          - string
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function showXmlNamespaceUri() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                      for (i = 0; i < nodeResults.value.length; i++) {
+                          var node = nodeResults.value[i];
+                          write(node.namespaceUri);
+                      }
+                  });
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: 'office!Office.CustomXmlNode#nodeType:member'
+    summary: Gets the type of the CustomXMLNode.
+    name: nodeType
+    fullName: nodeType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'nodeType: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function showXmlNodeType() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                      for (i = 0; i < nodeResults.value.length; i++) {
+                          var node = nodeResults.value[i];
+                          write(node.nodeType);
+                      }
+                  });
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: 'office!Office.CustomXmlNode#setNodeValueAsync:member(1)'
     summary: Sets the node value.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    isPreview: false
-    isDeprecated: false
+    name: 'setNodeValueAsync(value, options, callback)'
+    fullName: 'setNodeValueAsync(value, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: value
           description: The value to be set on the node
-          type: string
+          type:
+            - string
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'setNodeValueAsync(value, callback)'
-    uid: 'office!Office.CustomXmlNode#setNodeValueAsync:member(2)'
-    package: office!
-    fullName: 'setNodeValueAsync(value, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.CustomXmlNode#setNodeValueAsync~0:complex'
+  - uid: 'office!Office.CustomXmlNode#setNodeValueAsync:member(2)'
     summary: Sets the node value.
     remarks: >-
       **Requirement set**:
@@ -567,32 +548,29 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'setNodeValueAsync(value, callback)'
+    fullName: 'setNodeValueAsync(value, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        setNodeValueAsync(value: string, callback?: (result: AsyncResult<void>)
-        => void): void;
+      content: 'setNodeValueAsync(value: string, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: value
           description: The value to be set on the node
-          type: string
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'setTextAsync(text, options, callback)'
-    uid: 'office!Office.CustomXmlNode#setTextAsync:member(1)'
-    package: office!
-    fullName: 'setTextAsync(text, options, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.CustomXmlNode#setNodeValueAsync~1:complex'
+  - uid: 'office!Office.CustomXmlNode#setTextAsync:member(1)'
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
@@ -604,12 +582,10 @@ methods:
 
       ```javascript
 
-      // Learn how to set the text value of a node in a custom XML part from the
-      following example.
+      // Learn how to set the text value of a node in a custom XML part from the following example.
 
 
-      // Get the built-in core properties XML part by using its ID. This results
-      in a call to Word.
+      // Get the built-in core properties XML part by using its ID. This results in a call to Word.
 
       Office.context.document.customXmlParts.getByIdAsync(
           "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}",
@@ -650,67 +626,62 @@ methods:
       });
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'setTextAsync(text, options, callback)'
+    fullName: 'setTextAsync(text, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        setTextAsync(text: string, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: text
           description: Required. The text value of the XML node.
-          type: string
+          type:
+            - string
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'setTextAsync(text, callback)'
-    uid: 'office!Office.CustomXmlNode#setTextAsync:member(2)'
-    package: office!
-    fullName: 'setTextAsync(text, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.CustomXmlNode#setTextAsync~0:complex'
+  - uid: 'office!Office.CustomXmlNode#setTextAsync:member(2)'
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    isPreview: false
-    isDeprecated: false
+    name: 'setTextAsync(text, callback)'
+    fullName: 'setTextAsync(text, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        setTextAsync(text: string, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: 'setTextAsync(text: string, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: text
           description: Required. The text value of the XML node.
-          type: string
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'setXmlAsync(xml, options, callback)'
-    uid: 'office!Office.CustomXmlNode#setXmlAsync:member(1)'
-    package: office!
-    fullName: 'setXmlAsync(xml, options, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.CustomXmlNode#setTextAsync~1:complex'
+  - uid: 'office!Office.CustomXmlNode#setXmlAsync:member(1)'
     summary: Sets the node XML.
     remarks: >-
       **Requirement set**:
@@ -736,60 +707,225 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'setXmlAsync(xml, options, callback)'
+    fullName: 'setXmlAsync(xml, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        setXmlAsync(xml: string, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xml
           description: The XML to be set on the node
-          type: string
+          type:
+            - string
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'setXmlAsync(xml, callback)'
-    uid: 'office!Office.CustomXmlNode#setXmlAsync:member(2)'
-    package: office!
-    fullName: 'setXmlAsync(xml, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.CustomXmlNode#setXmlAsync~0:complex'
+  - uid: 'office!Office.CustomXmlNode#setXmlAsync:member(2)'
     summary: Sets the node XML.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    isPreview: false
-    isDeprecated: false
+    name: 'setXmlAsync(xml, callback)'
+    fullName: 'setXmlAsync(xml, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        setXmlAsync(xml: string, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: 'setXmlAsync(xml: string, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xml
           description: The XML to be set on the node
-          type: string
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.CustomXmlNode#setXmlAsync~1:complex'
+references:
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'office!Office.CustomXmlNode#getNodesAsync~0:complex'
+    name: '(result: AsyncResult<CustomXmlNode[]>) => void'
+    fullName: '(result: Office.AsyncResult<Office.CustomXmlNode[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.CustomXmlNode:interface'
+        name: CustomXmlNode
+        fullName: Office.CustomXmlNode
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'office!Office.CustomXmlNode#getNodesAsync~1:complex'
+    name: '(result: AsyncResult<CustomXmlNode[]>) => void'
+    fullName: '(result: Office.AsyncResult<Office.CustomXmlNode[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.CustomXmlNode:interface'
+        name: CustomXmlNode
+        fullName: Office.CustomXmlNode
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'office!Office.CustomXmlNode#getNodeValueAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlNode#getNodeValueAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlNode#getTextAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlNode#getTextAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlNode#getXmlAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlNode#getXmlAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlNode#setNodeValueAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlNode#setNodeValueAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlNode#setTextAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlNode#setTextAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlNode#setXmlAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlNode#setXmlAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

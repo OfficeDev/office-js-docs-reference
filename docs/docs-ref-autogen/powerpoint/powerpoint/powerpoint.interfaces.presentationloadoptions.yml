@@ -1,41 +1,38 @@
-### YamlMime:TSType
-name: PowerPoint.Interfaces.PresentationLoadOptions
-uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
-package: powerpoint!
-fullName: PowerPoint.Interfaces.PresentationLoadOptions
-summary: >-
-  \[ [API set: PowerPointApi
-  1.0](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#$all:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+    summary: '\[ [API set: PowerPointApi 1.0](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    name: PowerPoint.Interfaces.PresentationLoadOptions
+    fullName: PowerPoint.Interfaces.PresentationLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: powerpoint!
-    fullName: $all
+    children:
+      - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#$all:member'
+      - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#title:member'
+  - uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: title
-    uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#title:member'
-    package: powerpoint!
+        type:
+          - boolean
+  - uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#title:member'
+    name: title
     fullName: title
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

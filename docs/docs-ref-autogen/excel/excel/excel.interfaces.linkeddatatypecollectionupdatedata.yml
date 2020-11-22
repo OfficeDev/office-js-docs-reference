@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
-uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
-summary: >-
-  An interface for updating data on the LinkedDataTypeCollection object, for use
-  in `linkedDataTypeCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the LinkedDataTypeCollection object, for use in `linkedDataTypeCollection.set({
+      ... })`<!-- -->.
+    name: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
+    fullName: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.LinkedDataTypeData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.LinkedDataTypeData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.LinkedDataTypeData[]'
+    fullName: 'Excel.Interfaces.LinkedDataTypeData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.LinkedDataTypeData:interface'
+        name: Excel.Interfaces.LinkedDataTypeData
+        fullName: Excel.Interfaces.LinkedDataTypeData
+      - name: '[]'
+        fullName: '[]'

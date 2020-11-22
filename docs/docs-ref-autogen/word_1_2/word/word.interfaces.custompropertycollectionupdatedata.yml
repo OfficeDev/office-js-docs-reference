@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Word.Interfaces.CustomPropertyCollectionUpdateData
-uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.CustomPropertyCollectionUpdateData
-summary: >-
-  An interface for updating data on the CustomPropertyCollection object, for use
-  in `customPropertyCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({
+      ... })`<!-- -->.
+    name: Word.Interfaces.CustomPropertyCollectionUpdateData
+    fullName: Word.Interfaces.CustomPropertyCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.CustomPropertyData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.CustomPropertyData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.CustomPropertyCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData#items~0:complex'
+    name: 'Word.Interfaces.CustomPropertyData[]'
+    fullName: 'Word.Interfaces.CustomPropertyData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.CustomPropertyData:interface'
+        name: Word.Interfaces.CustomPropertyData
+        fullName: Word.Interfaces.CustomPropertyData
+      - name: '[]'
+        fullName: '[]'

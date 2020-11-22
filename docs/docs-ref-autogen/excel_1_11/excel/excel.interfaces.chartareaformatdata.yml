@@ -1,105 +1,104 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartAreaFormatData
-uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartAreaFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartAreaFormat.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: border
-    uid: 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
+    summary: An interface describing the data returned by calling `chartAreaFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartAreaFormatData
+    fullName: Excel.Interfaces.ChartAreaFormatData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#roundedCorners:member'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
+    summary: |-
+      Represents the border format of chart area, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: border
     fullName: border
-    summary: >-
-      Represents the border format of chart area, which includes color,
-      linestyle, and weight.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartBorderData:interface" />'
-  - name: colorScheme
-    uid: 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member'
-    package: excel!
-    fullName: colorScheme
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member'
+    summary: |-
       Specifies the color scheme of the chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: colorScheme
+    fullName: colorScheme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        colorScheme?: Excel.ChartColorScheme | "ColorfulPalette1" |
-        "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
-        "MonochromaticPalette1" | "MonochromaticPalette2" |
-        "MonochromaticPalette3" | "MonochromaticPalette4" |
-        "MonochromaticPalette5" | "MonochromaticPalette6" |
-        "MonochromaticPalette7" | "MonochromaticPalette8" |
-        "MonochromaticPalette9" | "MonochromaticPalette10" |
-        "MonochromaticPalette11" | "MonochromaticPalette12" |
-        "MonochromaticPalette13";
+        colorScheme?: Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" |
+        "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" |
+        "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" |
+        "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" |
+        "MonochromaticPalette12" | "MonochromaticPalette13";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartColorScheme:enum" /> | "ColorfulPalette1"
-          | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
-          "MonochromaticPalette1" | "MonochromaticPalette2" |
-          "MonochromaticPalette3" | "MonochromaticPalette4" |
-          "MonochromaticPalette5" | "MonochromaticPalette6" |
-          "MonochromaticPalette7" | "MonochromaticPalette8" |
-          "MonochromaticPalette9" | "MonochromaticPalette10" |
-          "MonochromaticPalette11" | "MonochromaticPalette12" |
-          "MonochromaticPalette13"
-  - name: font
-    uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
     fullName: font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for the
-      current object.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartFontData:interface" />'
-  - name: roundedCorners
-    uid: 'excel!Excel.Interfaces.ChartAreaFormatData#roundedCorners:member'
-    package: excel!
-    fullName: roundedCorners
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartFontData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#roundedCorners:member'
+    summary: |-
       Specifies if the chart area of the chart has rounded corners.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: roundedCorners
+    fullName: roundedCorners
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'roundedCorners?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
+    name: Excel.Interfaces.ChartBorderData
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme~0:complex'
+    name: >-
+      Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
+      "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" |
+      "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" |
+      "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" |
+      "MonochromaticPalette13"
+    fullName: >-
+      Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
+      "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" |
+      "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" |
+      "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" |
+      "MonochromaticPalette13"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartColorScheme:enum'
+        name: Excel.ChartColorScheme
+        fullName: Excel.ChartColorScheme
+      - name: ' | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13"'
+        fullName: ' | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13"'
+  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
+    name: Excel.Interfaces.ChartFontData

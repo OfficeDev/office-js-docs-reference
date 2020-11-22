@@ -1,193 +1,175 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ApplicationLoadOptions
-uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.ApplicationLoadOptions
-summary: >-
-  Represents the Excel application that manages the workbook.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+    summary: |-
+      Represents the Excel application that manages the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ApplicationLoadOptions
+    fullName: Excel.Interfaces.ApplicationLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: calculationEngineVersion
-    uid: >-
-      excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member'
+    summary: |-
+      Returns the Excel calculation engine version used for the last full recalculation.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationEngineVersion
     fullName: calculationEngineVersion
-    summary: >-
-      Returns the Excel calculation engine version used for the last full
-      recalculation.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'calculationEngineVersion?: boolean;'
       return:
-        type: boolean
-  - name: calculationMode
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
-    package: excel!
-    fullName: calculationMode
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
     summary: >-
-      Returns the calculation mode used in the workbook, as defined by the
-      constants in Excel.CalculationMode. Possible values are: `Automatic`<!--
-      -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->,
-      where Excel controls recalculation but ignores changes in tables;
-      `Manual`<!-- -->, where calculation is done when the user requests it.
+      Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
+      values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel
+      controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when the user
+      requests it.
 
 
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationMode
+    fullName: calculationMode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'calculationMode?: boolean;'
       return:
-        type: boolean
-  - name: calculationState
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member'
+    summary: |-
+      Returns the calculation state of the application. See Excel.CalculationState for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationState
     fullName: calculationState
-    summary: >-
-      Returns the calculation state of the application. See
-      Excel.CalculationState for details.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'calculationState?: boolean;'
       return:
-        type: boolean
-  - name: cultureInfo
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
-    package: excel!
-    fullName: cultureInfo
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
     summary: >-
-      Provides information based on current system culture settings. This
-      includes the culture names, number formatting, and other culturally
-      dependent settings.
+      Provides information based on current system culture settings. This includes the culture names, number formatting,
+      and other culturally dependent settings.
 
 
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cultureInfo
+    fullName: cultureInfo
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cultureInfo?: Excel.Interfaces.CultureInfoLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.CultureInfoLoadOptions:interface" />'
-  - name: decimalSeparator
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
+    summary: |-
+      Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: decimalSeparator
     fullName: decimalSeparator
-    summary: >-
-      Gets the string used as the decimal separator for numeric values. This is
-      based on Excel's local settings.
-
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'decimalSeparator?: boolean;'
       return:
-        type: boolean
-  - name: iterativeCalculation
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
-    package: excel!
-    fullName: iterativeCalculation
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
     summary: >-
-      Returns the Iterative Calculation settings. In Excel on Windows and Mac,
-      the settings will apply to the Excel Application. In Excel on the web and
-      other platforms, the settings will apply to the active workbook.
+      Returns the Iterative Calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
+      Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: iterativeCalculation
+    fullName: iterativeCalculation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface"
-          />
-  - name: thousandsSeparator
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
-    package: excel!
-    fullName: thousandsSeparator
+        type:
+          - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
     summary: >-
-      Gets the string used to separate groups of digits to the left of the
-      decimal for numeric values. This is based on Excel's local settings.
+      Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on
+      Excel's local settings.
 
 
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: thousandsSeparator
+    fullName: thousandsSeparator
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'thousandsSeparator?: boolean;'
       return:
-        type: boolean
-  - name: useSystemSeparators
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
-    package: excel!
-    fullName: useSystemSeparators
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
     summary: >-
-      Specifies if the system separators of Excel are enabled. System separators
-      include the decimal separator and thousands separator.
+      Specifies if the system separators of Excel are enabled. System separators include the decimal separator and
+      thousands separator.
 
 
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSystemSeparators
+    fullName: useSystemSeparators
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useSystemSeparators?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+    name: Excel.Interfaces.CultureInfoLoadOptions
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
+    name: Excel.Interfaces.IterativeCalculationLoadOptions

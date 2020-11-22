@@ -1,61 +1,107 @@
-### YamlMime:TSEnum
-name: Excel.ChartDataLabelPosition
-uid: 'excel!Excel.ChartDataLabelPosition:enum'
-package: excel!
-fullName: Excel.ChartDataLabelPosition
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: bestFit
-    uid: 'excel!Excel.ChartDataLabelPosition.bestFit:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartDataLabelPosition:enum'
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartDataLabelPosition
+    fullName: Excel.ChartDataLabelPosition
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: bottom
-    uid: 'excel!Excel.ChartDataLabelPosition.bottom:member'
-    package: excel!
-    summary: ''
-  - name: callout
-    uid: 'excel!Excel.ChartDataLabelPosition.callout:member'
-    package: excel!
-    summary: ''
-  - name: center
-    uid: 'excel!Excel.ChartDataLabelPosition.center:member'
-    package: excel!
-    summary: ''
-  - name: insideBase
-    uid: 'excel!Excel.ChartDataLabelPosition.insideBase:member'
-    package: excel!
-    summary: ''
-  - name: insideEnd
-    uid: 'excel!Excel.ChartDataLabelPosition.insideEnd:member'
-    package: excel!
-    summary: ''
-  - name: invalid
-    uid: 'excel!Excel.ChartDataLabelPosition.invalid:member'
-    package: excel!
-    summary: ''
-  - name: left
-    uid: 'excel!Excel.ChartDataLabelPosition.left:member'
-    package: excel!
-    summary: ''
-  - name: none
-    uid: 'excel!Excel.ChartDataLabelPosition.none:member'
-    package: excel!
-    summary: ''
-  - name: outsideEnd
-    uid: 'excel!Excel.ChartDataLabelPosition.outsideEnd:member'
-    package: excel!
-    summary: ''
-  - name: right
-    uid: 'excel!Excel.ChartDataLabelPosition.right:member'
-    package: excel!
-    summary: ''
-  - name: top
-    uid: 'excel!Excel.ChartDataLabelPosition.top:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartDataLabelPosition.bestFit:member'
+      - 'excel!Excel.ChartDataLabelPosition.bottom:member'
+      - 'excel!Excel.ChartDataLabelPosition.callout:member'
+      - 'excel!Excel.ChartDataLabelPosition.center:member'
+      - 'excel!Excel.ChartDataLabelPosition.insideBase:member'
+      - 'excel!Excel.ChartDataLabelPosition.insideEnd:member'
+      - 'excel!Excel.ChartDataLabelPosition.invalid:member'
+      - 'excel!Excel.ChartDataLabelPosition.left:member'
+      - 'excel!Excel.ChartDataLabelPosition.none:member'
+      - 'excel!Excel.ChartDataLabelPosition.outsideEnd:member'
+      - 'excel!Excel.ChartDataLabelPosition.right:member'
+      - 'excel!Excel.ChartDataLabelPosition.top:member'
+  - uid: 'excel!Excel.ChartDataLabelPosition.bestFit:member'
+    name: bestFit
+    fullName: bestFit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BestFit"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.callout:member'
+    name: callout
+    fullName: callout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Callout"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.center:member'
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.insideBase:member'
+    name: insideBase
+    fullName: insideBase
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideBase"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.insideEnd:member'
+    name: insideEnd
+    fullName: insideEnd
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideEnd"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.invalid:member'
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.left:member'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.outsideEnd:member'
+    name: outsideEnd
+    fullName: outsideEnd
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OutsideEnd"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.right:member'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: 'excel!Excel.ChartDataLabelPosition.top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

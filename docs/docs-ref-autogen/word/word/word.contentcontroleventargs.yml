@@ -1,61 +1,74 @@
-### YamlMime:TSType
-name: Word.ContentControlEventArgs
-uid: 'word!Word.ContentControlEventArgs:interface'
-package: word!
-fullName: Word.ContentControlEventArgs
-summary: >-
-  Provides information about the content control that raised an event.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.ContentControlEventArgs:interface'
+    summary: >-
+      Provides information about the content control that raised an event.
 
 
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-type: interface
-properties:
-  - name: contentControl
-    uid: 'word!Word.ContentControlEventArgs#contentControl:member'
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: Word.ContentControlEventArgs
+    fullName: Word.ContentControlEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: contentControl
+    children:
+      - 'word!Word.ContentControlEventArgs#contentControl:member'
+      - 'word!Word.ContentControlEventArgs#eventType:member'
+  - uid: 'word!Word.ContentControlEventArgs#contentControl:member'
     summary: >-
       The object that raised the event. Load this object to get its properties.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: contentControl
+    fullName: contentControl
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'contentControl: Word.ContentControl;'
       return:
-        type: '<xref uid="word!Word.ContentControl:class" />'
-  - name: eventType
-    uid: 'word!Word.ContentControlEventArgs#eventType:member'
-    package: word!
-    fullName: eventType
+        type:
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.ContentControlEventArgs#eventType:member'
     summary: >-
       The event type. See Word.EventType for details.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: eventType
+    fullName: eventType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        eventType: Word.EventType | "ContentControlDeleted" |
-        "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-        "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
         "AnnotationDeleted";
       return:
-        type: >-
-          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
-          "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-          "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
-          "AnnotationDeleted"
+        type:
+          - 'word!Word.ContentControlEventArgs#eventType~0:complex'
+references:
+  - uid: 'word!Word.ContentControl:class'
+    name: Word.ContentControl
+  - uid: 'word!Word.ContentControlEventArgs#eventType~0:complex'
+    name: >-
+      Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" |
+      "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted"
+    fullName: >-
+      Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" |
+      "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted"
+    spec.typeScript:
+      - uid: 'word!Word.EventType:enum'
+        name: Word.EventType
+        fullName: Word.EventType
+      - name: ' | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted"'
+        fullName: ' | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted"'

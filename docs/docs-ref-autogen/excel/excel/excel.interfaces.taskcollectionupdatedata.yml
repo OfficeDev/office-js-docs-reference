@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskCollectionUpdateData:interface'
+    summary: 'An interface for updating data on the TaskCollection object, for use in `taskCollection.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.TaskCollectionUpdateData
+    fullName: Excel.Interfaces.TaskCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TaskCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.TaskData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TaskCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TaskCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.TaskData[]'
+    fullName: 'Excel.Interfaces.TaskData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TaskData:interface'
+        name: Excel.Interfaces.TaskData
+        fullName: Excel.Interfaces.TaskData
+      - name: '[]'
+        fullName: '[]'

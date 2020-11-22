@@ -1,91 +1,77 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
-uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
-summary: >-
-  Represents a collection of RowColumnPivotHierarchy items associated with the
-  PivotTable.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: >-
-      excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#$all:member
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#position:member'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: >-
-      excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#id:member
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#id:member'
+    summary: |-
       For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: >-
-      excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#name:member
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#name:member'
+    summary: |-
       For EACH ITEM in the collection: Name of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: position
-    uid: >-
-      excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#position:member
-    package: excel!
-    fullName: position
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions#position:member'
+    summary: |-
       For EACH ITEM in the collection: Position of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'position?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

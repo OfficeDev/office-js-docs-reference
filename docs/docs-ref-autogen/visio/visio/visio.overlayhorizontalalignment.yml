@@ -1,28 +1,41 @@
-### YamlMime:TSEnum
-name: Visio.OverlayHorizontalAlignment
-uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
-package: visio!
-fullName: Visio.OverlayHorizontalAlignment
-summary: >-
-  Represents the Horizontal Alignment of the Overlay relative to the shape.
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
+    summary: |-
+      Represents the Horizontal Alignment of the Overlay relative to the shape.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: center
-    uid: 'visio!Visio.OverlayHorizontalAlignment.center:member'
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.OverlayHorizontalAlignment
+    fullName: Visio.OverlayHorizontalAlignment
+    langs:
+      - typeScript
+    type: enum
     package: visio!
+    children:
+      - 'visio!Visio.OverlayHorizontalAlignment.center:member'
+      - 'visio!Visio.OverlayHorizontalAlignment.left:member'
+      - 'visio!Visio.OverlayHorizontalAlignment.right:member'
+  - uid: 'visio!Visio.OverlayHorizontalAlignment.center:member'
     summary: center
-  - name: left
-    uid: 'visio!Visio.OverlayHorizontalAlignment.left:member'
-    package: visio!
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: 'visio!Visio.OverlayHorizontalAlignment.left:member'
     summary: left
-  - name: right
-    uid: 'visio!Visio.OverlayHorizontalAlignment.right:member'
-    package: visio!
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: 'visio!Visio.OverlayHorizontalAlignment.right:member'
     summary: right
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'

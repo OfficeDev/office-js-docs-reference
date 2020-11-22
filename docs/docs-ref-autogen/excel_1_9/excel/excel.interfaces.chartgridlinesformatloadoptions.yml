@@ -1,52 +1,48 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartGridlinesFormatLoadOptions
-uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartGridlinesFormatLoadOptions
-summary: >-
-  Encapsulates the format properties for chart gridlines.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
+    summary: |-
+      Encapsulates the format properties for chart gridlines.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    fullName: Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: line
-    uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member'
-    package: excel!
-    fullName: line
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member'
+    summary: |-
       Represents chart line formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />
+        type:
+          - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartLineFormatLoadOptions

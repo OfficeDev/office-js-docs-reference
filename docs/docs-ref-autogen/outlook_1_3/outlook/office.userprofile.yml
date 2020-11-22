@@ -1,38 +1,39 @@
-### YamlMime:TSType
-name: Office.UserProfile
-uid: 'outlook!Office.UserProfile:interface'
-package: outlook!
-fullName: Office.UserProfile
-summary: >-
-  Information about the user associated with the mailbox. This includes their
-  account type, display name, email address, and time zone.
-remarks: >-
-  **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
-
-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: displayName
-    uid: 'outlook!Office.UserProfile#displayName:member'
-    package: outlook!
-    fullName: displayName
-    summary: Gets the user's display name.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.UserProfile:interface'
+    summary: >-
+      Information about the user associated with the mailbox. This includes their account type, display name, email
+      address, and time zone.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.UserProfile
+    fullName: Office.UserProfile
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.UserProfile#displayName:member'
+      - 'outlook!Office.UserProfile#emailAddress:member'
+      - 'outlook!Office.UserProfile#timeZone:member'
+  - uid: 'outlook!Office.UserProfile#displayName:member'
+    summary: Gets the user's display name.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -45,26 +46,27 @@ properties:
       console.log(Office.context.mailbox.userProfile.displayName);
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'displayName: string;'
       return:
-        type: string
-  - name: emailAddress
-    uid: 'outlook!Office.UserProfile#emailAddress:member'
-    package: outlook!
-    fullName: emailAddress
+        type:
+          - string
+  - uid: 'outlook!Office.UserProfile#emailAddress:member'
     summary: Gets the user's SMTP email address.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -77,31 +79,32 @@ properties:
       console.log(Office.context.mailbox.userProfile.emailAddress);
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: emailAddress
+    fullName: emailAddress
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'emailAddress: string;'
       return:
-        type: string
-  - name: timeZone
-    uid: 'outlook!Office.UserProfile#timeZone:member'
-    package: outlook!
-    fullName: timeZone
+        type:
+          - string
+  - uid: 'outlook!Office.UserProfile#timeZone:member'
     summary: >-
       Gets the user's time zone in Windows format.
 
 
-      The system time zone is usually returned. However, in Outlook on the web,
-      the default time zone in the calendar preferences is returned instead.
+      The system time zone is usually returned. However, in Outlook on the web, the default time zone in the calendar
+      preferences is returned instead.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -114,9 +117,13 @@ properties:
       console.log(Office.context.mailbox.userProfile.timeZone);
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: timeZone
+    fullName: timeZone
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'timeZone: string;'
       return:
-        type: string
+        type:
+          - string

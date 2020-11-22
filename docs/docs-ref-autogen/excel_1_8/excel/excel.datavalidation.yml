@@ -1,55 +1,81 @@
-### YamlMime:TSType
-name: Excel.DataValidation
-uid: 'excel!Excel.DataValidation:class'
-package: excel!
-fullName: Excel.DataValidation
-summary: >-
-  Represents the data validation applied to the current range. To learn more
-  about the data validation object model, read [Add data validation to Excel
-  ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!--
-  -->.
-
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.DataValidation#context:member'
-    package: excel!
-    fullName: context
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataValidation:class'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Represents the data validation applied to the current range. To learn more about the data validation object model,
+      read [Add data validation to Excel
+      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidation
+    fullName: Excel.DataValidation
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.DataValidation#clear:member(1)'
+      - 'excel!Excel.DataValidation#context:member'
+      - 'excel!Excel.DataValidation#errorAlert:member'
+      - 'excel!Excel.DataValidation#ignoreBlanks:member'
+      - 'excel!Excel.DataValidation#load:member(1)'
+      - 'excel!Excel.DataValidation#load:member(2)'
+      - 'excel!Excel.DataValidation#load:member(3)'
+      - 'excel!Excel.DataValidation#prompt:member'
+      - 'excel!Excel.DataValidation#rule:member'
+      - 'excel!Excel.DataValidation#set:member(1)'
+      - 'excel!Excel.DataValidation#set:member(2)'
+      - 'excel!Excel.DataValidation#toJSON:member(1)'
+      - 'excel!Excel.DataValidation#type:member'
+      - 'excel!Excel.DataValidation#valid:member'
+  - uid: 'excel!Excel.DataValidation#clear:member(1)'
+    summary: |-
+      Clears the data validation from the current range.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.DataValidation#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: errorAlert
-    uid: 'excel!Excel.DataValidation#errorAlert:member'
-    package: excel!
-    fullName: errorAlert
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DataValidation#errorAlert:member'
+    summary: |-
       Error alert when user enters invalid data.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: errorAlert
+    fullName: errorAlert
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'errorAlert: Excel.DataValidationErrorAlert;'
       return:
-        type: '<xref uid="excel!Excel.DataValidationErrorAlert:interface" />'
+        type:
+          - 'excel!Excel.DataValidationErrorAlert:interface'
         description: >-
 
 
@@ -90,43 +116,106 @@ properties:
           });
 
           ```
-  - name: ignoreBlanks
-    uid: 'excel!Excel.DataValidation#ignoreBlanks:member'
-    package: excel!
+  - uid: 'excel!Excel.DataValidation#ignoreBlanks:member'
+    summary: |-
+      Specifies if data validation will be performed on blank cells, it defaults to true.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: ignoreBlanks
     fullName: ignoreBlanks
-    summary: >-
-      Specifies if data validation will be performed on blank cells, it defaults
-      to true.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ignoreBlanks: boolean;'
       return:
-        type: boolean
-  - name: prompt
-    uid: 'excel!Excel.DataValidation#prompt:member'
-    package: excel!
-    fullName: prompt
+        type:
+          - boolean
+  - uid: 'excel!Excel.DataValidation#load:member(1)'
     summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.DataValidationLoadOptions): Excel.DataValidation;'
+      return:
+        type:
+          - 'excel!Excel.DataValidation:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+  - uid: 'excel!Excel.DataValidation#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.DataValidation;'
+      return:
+        type:
+          - 'excel!Excel.DataValidation:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DataValidation#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.DataValidation;
+      return:
+        type:
+          - 'excel!Excel.DataValidation:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.DataValidation#prompt:member'
+    summary: |-
       Prompt when users select a cell.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: prompt
+    fullName: prompt
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'prompt: Excel.DataValidationPrompt;'
       return:
-        type: '<xref uid="excel!Excel.DataValidationPrompt:interface" />'
+        type:
+          - 'excel!Excel.DataValidationPrompt:interface'
         description: >-
 
 
@@ -171,25 +260,21 @@ properties:
           });
 
           ```
-  - name: rule
-    uid: 'excel!Excel.DataValidation#rule:member'
-    package: excel!
+  - uid: 'excel!Excel.DataValidation#rule:member'
+    summary: |-
+      Data validation rule that contains different type of data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
     fullName: rule
-    summary: >-
-      Data validation rule that contains different type of data validation
-      criteria.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rule: Excel.DataValidationRule;'
       return:
-        type: '<xref uid="excel!Excel.DataValidationRule:interface" />'
+        type:
+          - 'excel!Excel.DataValidationRule:interface'
         description: >-
 
 
@@ -224,219 +309,138 @@ properties:
           });
 
           ```
-  - name: type
-    uid: 'excel!Excel.DataValidation#type:member'
-    package: excel!
-    fullName: type
+  - uid: 'excel!Excel.DataValidation#set:member(1)'
     summary: >-
-      Type of the data validation, see Excel.DataValidationType for details.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly type: Excel.DataValidationType | "None" | "WholeNumber" |
-        "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom" |
-        "Inconsistent" | "MixedCriteria";
-      return:
-        type: >-
-          <xref uid="excel!Excel.DataValidationType:enum" /> | "None" |
-          "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" |
-          "Custom" | "Inconsistent" | "MixedCriteria"
-  - name: valid
-    uid: 'excel!Excel.DataValidation#valid:member'
-    package: excel!
-    fullName: valid
-    summary: >-
-      Represents if all cell values are valid according to the data validation
-      rules. Returns true if all cell values are valid, or false if all cell
-      values are invalid. Returns null if there are both valid and invalid cell
-      values within the range.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly valid: boolean;'
-      return:
-        type: boolean
-methods:
-  - name: clear()
-    uid: 'excel!Excel.DataValidation#clear:member(1)'
-    package: excel!
-    fullName: clear()
-    summary: >-
-      Clears the data validation from the current range.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type: void
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.DataValidation#load:member(1)'
-    package: excel!
-    fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DataValidationLoadOptions):
-        Excel.DataValidation;
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DataValidationLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.DataValidation:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.DataValidation#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.DataValidation;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.DataValidation:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.DataValidation#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.DataValidation;
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.DataValidation:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.DataValidation#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.DataValidation): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.DataValidationUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.DataValidationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DataValidationUpdateData:interface" />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.DataValidation#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.DataValidation#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.DataValidation): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.DataValidation:class" />'
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.DataValidation#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+          type:
+            - 'excel!Excel.DataValidation:class'
+  - uid: 'excel!Excel.DataValidation#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.DataValidation
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.DataValidationData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.DataValidation object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.DataValidationData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.DataValidationData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.DataValidationData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.DataValidationData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'excel!Excel.DataValidation#type:member'
+    summary: |-
+      Type of the data validation, see Excel.DataValidationType for details.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        readonly type: Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" |
+        "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria";
+      return:
+        type:
+          - 'excel!Excel.DataValidation#type~0:complex'
+  - uid: 'excel!Excel.DataValidation#valid:member'
+    summary: >-
+      Represents if all cell values are valid according to the data validation rules. Returns true if all cell values
+      are valid, or false if all cell values are invalid. Returns null if there are both valid and invalid cell values
+      within the range.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valid
+    fullName: valid
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valid: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.DataValidationErrorAlert:interface'
+    name: Excel.DataValidationErrorAlert
+  - uid: 'excel!Excel.DataValidation:class'
+    name: Excel.DataValidation
+  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+    name: Excel.Interfaces.DataValidationLoadOptions
+  - uid: 'excel!Excel.DataValidationPrompt:interface'
+    name: Excel.DataValidationPrompt
+  - uid: 'excel!Excel.DataValidationRule:interface'
+    name: Excel.DataValidationRule
+  - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+    name: Interfaces.DataValidationUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
+    name: Excel.Interfaces.DataValidationData
+  - uid: 'excel!Excel.DataValidation#type~0:complex'
+    name: >-
+      Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom"
+      | "Inconsistent" | "MixedCriteria"
+    fullName: >-
+      Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom"
+      | "Inconsistent" | "MixedCriteria"
+    spec.typeScript:
+      - uid: 'excel!Excel.DataValidationType:enum'
+        name: Excel.DataValidationType
+        fullName: Excel.DataValidationType
+      - name: ' | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria"'
+        fullName: ' | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria"'

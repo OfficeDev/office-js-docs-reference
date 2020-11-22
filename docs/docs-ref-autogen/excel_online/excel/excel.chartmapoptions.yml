@@ -1,250 +1,269 @@
-### YamlMime:TSType
-name: Excel.ChartMapOptions
-uid: 'excel!Excel.ChartMapOptions:class'
-package: excel!
-fullName: Excel.ChartMapOptions
-summary: >-
-  Encapsulates the properties for a region map chart.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartMapOptions:class'
+    summary: |-
+      Encapsulates the properties for a region map chart.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.ChartMapOptions#context:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartMapOptions
+    fullName: Excel.ChartMapOptions
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
+    children:
+      - 'excel!Excel.ChartMapOptions#context:member'
+      - 'excel!Excel.ChartMapOptions#labelStrategy:member'
+      - 'excel!Excel.ChartMapOptions#level:member'
+      - 'excel!Excel.ChartMapOptions#load:member(1)'
+      - 'excel!Excel.ChartMapOptions#load:member(2)'
+      - 'excel!Excel.ChartMapOptions#load:member(3)'
+      - 'excel!Excel.ChartMapOptions#projectionType:member'
+      - 'excel!Excel.ChartMapOptions#set:member(1)'
+      - 'excel!Excel.ChartMapOptions#set:member(2)'
+      - 'excel!Excel.ChartMapOptions#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartMapOptions#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: labelStrategy
-    uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
-    package: excel!
-    fullName: labelStrategy
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
+    summary: |-
       Specifies the series map labels strategy of a region map chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        labelStrategy: Excel.ChartMapLabelStrategy | "None" | "BestFit" |
-        "ShowAll";
+      content: 'labelStrategy: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartMapLabelStrategy:enum" /> | "None" |
-          "BestFit" | "ShowAll"
-  - name: level
-    uid: 'excel!Excel.ChartMapOptions#level:member'
-    package: excel!
-    fullName: level
-    summary: >-
+        type:
+          - 'excel!Excel.ChartMapOptions#labelStrategy~0:complex'
+  - uid: 'excel!Excel.ChartMapOptions#level:member'
+    summary: |-
       Specifies the series mapping level of a region map chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        level: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" |
-        "County" | "State" | "Country" | "Continent" | "World";
+        level: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" |
+        "Continent" | "World";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartMapAreaLevel:enum" /> | "Automatic" |
-          "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
-          "World"
-  - name: projectionType
-    uid: 'excel!Excel.ChartMapOptions#projectionType:member'
-    package: excel!
-    fullName: projectionType
+        type:
+          - 'excel!Excel.ChartMapOptions#level~0:complex'
+  - uid: 'excel!Excel.ChartMapOptions#load:member(1)'
     summary: >-
-      Specifies the series projection type of a region map chart.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        projectionType: Excel.ChartMapProjectionType | "Automatic" | "Mercator"
-        | "Miller" | "Robinson" | "Albers";
-      return:
-        type: >-
-          <xref uid="excel!Excel.ChartMapProjectionType:enum" /> | "Automatic" |
-          "Mercator" | "Miller" | "Robinson" | "Albers"
-methods:
-  - name: load(options)
-    uid: 'excel!Excel.ChartMapOptions#load:member(1)'
-    package: excel!
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ChartMapOptionsLoadOptions):
-        Excel.ChartMapOptions;
+      content: 'load(options?: Excel.Interfaces.ChartMapOptionsLoadOptions): Excel.ChartMapOptions;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapOptions:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.ChartMapOptions#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.ChartMapOptions#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartMapOptions;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapOptions:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ChartMapOptions#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartMapOptions#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartMapOptions;
+      return:
+        type:
+          - 'excel!Excel.ChartMapOptions:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartMapOptions#projectionType:member'
+    summary: |-
+      Specifies the series projection type of a region map chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers";'
       return:
-        type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.ChartMapOptions#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
+        type:
+          - 'excel!Excel.ChartMapOptions#projectionType~0:complex'
+  - uid: 'excel!Excel.ChartMapOptions#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartMapOptions): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.ChartMapOptionsUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ChartMapOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface" />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.ChartMapOptions#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartMapOptions#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.ChartMapOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.ChartMapOptions#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+          type:
+            - 'excel!Excel.ChartMapOptions:class'
+  - uid: 'excel!Excel.ChartMapOptions#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.ChartMapOptions
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.ChartMapOptionsData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartMapOptions object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartMapOptionsData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartMapOptionsData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartMapOptionsData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartMapOptions#labelStrategy~0:complex'
+    name: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+    fullName: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+        name: Excel.ChartMapLabelStrategy
+        fullName: Excel.ChartMapLabelStrategy
+      - name: ' | "None" | "BestFit" | "ShowAll"'
+        fullName: ' | "None" | "BestFit" | "ShowAll"'
+  - uid: 'excel!Excel.ChartMapOptions#level~0:complex'
+    name: >-
+      Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+      "World"
+    fullName: >-
+      Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+      "World"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapAreaLevel:enum'
+        name: Excel.ChartMapAreaLevel
+        fullName: Excel.ChartMapAreaLevel
+      - name: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
+        fullName: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
+  - uid: 'excel!Excel.ChartMapOptions:class'
+    name: Excel.ChartMapOptions
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
+    name: Excel.Interfaces.ChartMapOptionsLoadOptions
+  - uid: 'excel!Excel.ChartMapOptions#projectionType~0:complex'
+    name: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
+    fullName: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapProjectionType:enum'
+        name: Excel.ChartMapProjectionType
+        fullName: Excel.ChartMapProjectionType
+      - name: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'
+        fullName: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
+    name: Interfaces.ChartMapOptionsUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
+    name: Excel.Interfaces.ChartMapOptionsData

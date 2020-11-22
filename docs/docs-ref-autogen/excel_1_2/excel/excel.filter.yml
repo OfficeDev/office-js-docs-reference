@@ -1,512 +1,507 @@
-### YamlMime:TSType
-name: Excel.Filter
-uid: 'excel!Excel.Filter:class'
-package: excel!
-fullName: Excel.Filter
-summary: >-
-  Manages the filtering of a table's column.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Filter:class'
+    summary: |-
+      Manages the filtering of a table's column.
 
-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.Filter#context:member'
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Filter
+    fullName: Excel.Filter
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: criteria
-    uid: 'excel!Excel.Filter#criteria:member'
-    package: excel!
-    fullName: criteria
-    summary: >-
-      The currently applied filter on the given column.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly criteria: Excel.FilterCriteria;'
-      return:
-        type: '<xref uid="excel!Excel.FilterCriteria:interface" />'
-methods:
-  - name: apply(criteria)
-    uid: 'excel!Excel.Filter#apply:member(1)'
-    package: excel!
-    fullName: apply(criteria)
-    summary: >-
+    children:
+      - 'excel!Excel.Filter#apply:member(1)'
+      - 'excel!Excel.Filter#applyBottomItemsFilter:member(1)'
+      - 'excel!Excel.Filter#applyBottomPercentFilter:member(1)'
+      - 'excel!Excel.Filter#applyCellColorFilter:member(1)'
+      - 'excel!Excel.Filter#applyCustomFilter:member(1)'
+      - 'excel!Excel.Filter#applyCustomFilter:member(2)'
+      - 'excel!Excel.Filter#applyDynamicFilter:member(1)'
+      - 'excel!Excel.Filter#applyDynamicFilter:member(2)'
+      - 'excel!Excel.Filter#applyFontColorFilter:member(1)'
+      - 'excel!Excel.Filter#applyIconFilter:member(1)'
+      - 'excel!Excel.Filter#applyTopItemsFilter:member(1)'
+      - 'excel!Excel.Filter#applyTopPercentFilter:member(1)'
+      - 'excel!Excel.Filter#applyValuesFilter:member(1)'
+      - 'excel!Excel.Filter#clear:member(1)'
+      - 'excel!Excel.Filter#context:member'
+      - 'excel!Excel.Filter#criteria:member'
+      - 'excel!Excel.Filter#load:member(1)'
+      - 'excel!Excel.Filter#load:member(2)'
+      - 'excel!Excel.Filter#load:member(3)'
+      - 'excel!Excel.Filter#toJSON:member(1)'
+  - uid: 'excel!Excel.Filter#apply:member(1)'
+    summary: |-
       Apply the given filter criteria on the given column.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: apply(criteria)
+    fullName: apply(criteria)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'apply(criteria: Excel.FilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: criteria
           description: The criteria to apply.
-          type: '<xref uid="excel!Excel.FilterCriteria:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: applyBottomItemsFilter(count)
-    uid: 'excel!Excel.Filter#applyBottomItemsFilter:member(1)'
-    package: excel!
+          type:
+            - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.Filter#applyBottomItemsFilter:member(1)'
+    summary: |-
+      Apply a "Bottom Item" filter to the column for the given number of elements.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyBottomItemsFilter(count)
     fullName: applyBottomItemsFilter(count)
-    summary: >-
-      Apply a "Bottom Item" filter to the column for the given number of
-      elements.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyBottomItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: count
           description: The number of elements from the bottom to show.
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyBottomPercentFilter(percent)
-    uid: 'excel!Excel.Filter#applyBottomPercentFilter:member(1)'
-    package: excel!
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyBottomPercentFilter:member(1)'
+    summary: |-
+      Apply a "Bottom Percent" filter to the column for the given percentage of elements.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyBottomPercentFilter(percent)
     fullName: applyBottomPercentFilter(percent)
-    summary: >-
-      Apply a "Bottom Percent" filter to the column for the given percentage of
-      elements.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyBottomPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: percent
           description: The percentage of elements from the bottom to show.
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyCellColorFilter(color)
-    uid: 'excel!Excel.Filter#applyCellColorFilter:member(1)'
-    package: excel!
-    fullName: applyCellColorFilter(color)
-    summary: >-
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyCellColorFilter:member(1)'
+    summary: |-
       Apply a "Cell Color" filter to the column for the given color.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyCellColorFilter(color)
+    fullName: applyCellColorFilter(color)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyCellColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: color
           description: The background color of the cells to show.
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: 'applyCustomFilter(criteria1, criteria2, oper)'
-    uid: 'excel!Excel.Filter#applyCustomFilter:member(1)'
-    package: excel!
+          type:
+            - string
+  - uid: 'excel!Excel.Filter#applyCustomFilter:member(1)'
+    summary: |-
+      Apply an "Icon" filter to the column for the given criteria strings.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'applyCustomFilter(criteria1, criteria2, oper)'
     fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
-    summary: >-
-      Apply an "Icon" filter to the column for the given criteria strings.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        applyCustomFilter(criteria1: string, criteria2?: string, oper?:
-        Excel.FilterOperator): void;
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: Excel.FilterOperator): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: criteria1
           description: The first criteria string.
-          type: string
+          type:
+            - string
         - id: criteria2
           description: Optional. The second criteria string.
-          type: string
+          type:
+            - string
         - id: oper
-          description: >-
-            Optional. The operator that describes how the two criteria are
-            joined.
-          type: '<xref uid="excel!Excel.FilterOperator:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: 'applyCustomFilter(criteria1, criteria2, operString)'
-    uid: 'excel!Excel.Filter#applyCustomFilter:member(2)'
-    package: excel!
-    fullName: 'applyCustomFilter(criteria1, criteria2, operString)'
-    summary: >-
+          description: Optional. The operator that describes how the two criteria are joined.
+          type:
+            - 'excel!Excel.FilterOperator:enum'
+  - uid: 'excel!Excel.Filter#applyCustomFilter:member(2)'
+    summary: |-
       Apply an "Icon" filter to the column for the given criteria strings.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'applyCustomFilter(criteria1, criteria2, operString)'
+    fullName: 'applyCustomFilter(criteria1, criteria2, operString)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        applyCustomFilter(criteria1: string, criteria2?: string, operString?:
-        "And" | "Or"): void;
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: criteria1
           description: The first criteria string.
-          type: string
+          type:
+            - string
         - id: criteria2
           description: Optional. The second criteria string.
-          type: string
+          type:
+            - string
         - id: operString
-          description: >-
-            Optional. The operator that describes how the two criteria are
-            joined.
-          type: '"And" | "Or"'
-      return:
-        type: void
-        description: ''
-  - name: applyDynamicFilter(criteria)
-    uid: 'excel!Excel.Filter#applyDynamicFilter:member(1)'
-    package: excel!
-    fullName: applyDynamicFilter(criteria)
-    summary: >-
+          description: Optional. The operator that describes how the two criteria are joined.
+          type:
+            - '"And" | "Or"'
+  - uid: 'excel!Excel.Filter#applyDynamicFilter:member(1)'
+    summary: |-
       Apply a "Dynamic" filter to the column.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyDynamicFilter(criteria)
+    fullName: applyDynamicFilter(criteria)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyDynamicFilter(criteria: Excel.DynamicFilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: criteria
           description: The dynamic criteria to apply.
-          type: '<xref uid="excel!Excel.DynamicFilterCriteria:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: applyDynamicFilter(criteriaString)
-    uid: 'excel!Excel.Filter#applyDynamicFilter:member(2)'
-    package: excel!
-    fullName: applyDynamicFilter(criteriaString)
-    summary: >-
+          type:
+            - 'excel!Excel.DynamicFilterCriteria:enum'
+  - uid: 'excel!Excel.Filter#applyDynamicFilter:member(2)'
+    summary: |-
       Apply a "Dynamic" filter to the column.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyDynamicFilter(criteriaString)
+    fullName: applyDynamicFilter(criteriaString)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" |
-        "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
-        "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
-        "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
-        "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay"
-        | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" |
-        "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" |
-        "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
-        "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" |
-        "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" |
-        "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
-        "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
+        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
+        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
+        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
+        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
+        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
+        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
+        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"):
+        void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: criteriaString
           description: The dynamic criteria to apply.
-          type: >-
-            "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
-            "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" |
-            "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
-            "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" |
-            "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
-            "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" |
-            "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" |
-            "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
-            "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" |
-            "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" |
-            "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" |
-            "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" |
-            "YearToDate" | "Yesterday"
-      return:
-        type: void
-        description: ''
-  - name: applyFontColorFilter(color)
-    uid: 'excel!Excel.Filter#applyFontColorFilter:member(1)'
-    package: excel!
-    fullName: applyFontColorFilter(color)
-    summary: >-
+          type:
+            - >-
+              "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
+              "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
+              "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
+              "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" |
+              "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
+              "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" |
+              "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
+              "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
+  - uid: 'excel!Excel.Filter#applyFontColorFilter:member(1)'
+    summary: |-
       Apply a "Font Color" filter to the column for the given color.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyFontColorFilter(color)
+    fullName: applyFontColorFilter(color)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyFontColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: color
           description: The font color of the cells to show.
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: applyIconFilter(icon)
-    uid: 'excel!Excel.Filter#applyIconFilter:member(1)'
-    package: excel!
-    fullName: applyIconFilter(icon)
-    summary: >-
+          type:
+            - string
+  - uid: 'excel!Excel.Filter#applyIconFilter:member(1)'
+    summary: |-
       Apply an "Icon" filter to the column for the given icon.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyIconFilter(icon)
+    fullName: applyIconFilter(icon)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyIconFilter(icon: Excel.Icon): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: icon
           description: The icons of the cells to show.
-          type: '<xref uid="excel!Excel.Icon:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: applyTopItemsFilter(count)
-    uid: 'excel!Excel.Filter#applyTopItemsFilter:member(1)'
-    package: excel!
-    fullName: applyTopItemsFilter(count)
-    summary: >-
+          type:
+            - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.Filter#applyTopItemsFilter:member(1)'
+    summary: |-
       Apply a "Top Item" filter to the column for the given number of elements.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyTopItemsFilter(count)
+    fullName: applyTopItemsFilter(count)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyTopItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: count
           description: The number of elements from the top to show.
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyTopPercentFilter(percent)
-    uid: 'excel!Excel.Filter#applyTopPercentFilter:member(1)'
-    package: excel!
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyTopPercentFilter:member(1)'
+    summary: |-
+      Apply a "Top Percent" filter to the column for the given percentage of elements.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyTopPercentFilter(percent)
     fullName: applyTopPercentFilter(percent)
-    summary: >-
-      Apply a "Top Percent" filter to the column for the given percentage of
-      elements.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyTopPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: percent
           description: The percentage of elements from the top to show.
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyValuesFilter(values)
-    uid: 'excel!Excel.Filter#applyValuesFilter:member(1)'
-    package: excel!
-    fullName: applyValuesFilter(values)
-    summary: >-
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyValuesFilter:member(1)'
+    summary: |-
       Apply a "Values" filter to the column for the given values.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyValuesFilter(values)
+    fullName: applyValuesFilter(values)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: values
-          description: >-
-            The list of values to show. This must be an array of strings or an
-            array of Excel.FilterDateTime objects.
-          type: >-
-            Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface"
-            />&gt;
-      return:
-        type: void
-        description: ''
-  - name: clear()
-    uid: 'excel!Excel.Filter#clear:member(1)'
-    package: excel!
-    fullName: clear()
-    summary: >-
+          description: The list of values to show. This must be an array of strings or an array of Excel.FilterDateTime objects.
+          type:
+            - 'excel!Excel.Filter#applyValuesFilter~0:complex'
+  - uid: 'excel!Excel.Filter#clear:member(1)'
+    summary: |-
       Clear the filter on the given column.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'clear(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: load(options)
-    uid: 'excel!Excel.Filter#load:member(1)'
-    package: excel!
-    fullName: load(options)
+  - uid: 'excel!Excel.Filter#context:member'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Filter#criteria:member'
+    summary: |-
+      The currently applied filter on the given column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly criteria: Excel.FilterCriteria;'
+      return:
+        type:
+          - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.Filter#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(options?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;'
+      return:
+        type:
+          - 'excel!Excel.Filter:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.FilterLoadOptions:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.Filter:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.Filter#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.FilterLoadOptions:interface'
+  - uid: 'excel!Excel.Filter#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Filter;'
+      return:
+        type:
+          - 'excel!Excel.Filter:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.Filter:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.Filter#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Filter#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.Filter;
+      return:
+        type:
+          - 'excel!Excel.Filter:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.Filter:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.Filter#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Filter#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Filter object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.FilterData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Filter object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.FilterData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.FilterData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.FilterData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.FilterData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    name: Excel.FilterCriteria
+  - uid: 'excel!Excel.FilterOperator:enum'
+    name: Excel.FilterOperator
+  - uid: 'excel!Excel.DynamicFilterCriteria:enum'
+    name: Excel.DynamicFilterCriteria
+  - uid: 'excel!Excel.Icon:interface'
+    name: Excel.Icon
+  - uid: 'excel!Excel.Filter#applyValuesFilter~0:complex'
+    name: Array<string | FilterDatetime>
+    fullName: Array<string | Excel.FilterDatetime>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'excel!Excel.FilterDatetime:interface'
+        name: FilterDatetime
+        fullName: Excel.FilterDatetime
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Filter:class'
+    name: Excel.Filter
+  - uid: 'excel!Excel.Interfaces.FilterLoadOptions:interface'
+    name: Excel.Interfaces.FilterLoadOptions
+  - uid: 'excel!Excel.Interfaces.FilterData:interface'
+    name: Excel.Interfaces.FilterData

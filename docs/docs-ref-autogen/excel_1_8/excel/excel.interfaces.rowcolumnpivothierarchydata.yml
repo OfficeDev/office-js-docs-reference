@@ -1,85 +1,85 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RowColumnPivotHierarchyData
-uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
-package: excel!
-fullName: Excel.Interfaces.RowColumnPivotHierarchyData
-summary: >-
-  An interface describing the data returned by calling
-  `rowColumnPivotHierarchy.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: fields
-    uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
+    summary: An interface describing the data returned by calling `rowColumnPivotHierarchy.toJSON()`<!-- -->.
+    name: Excel.Interfaces.RowColumnPivotHierarchyData
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: fields
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#id:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#name:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#position:member'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member'
+    summary: |-
       Returns the PivotFields associated with the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fields?: Excel.Interfaces.PivotFieldData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.PivotFieldData:interface" />[]'
-  - name: id
-    uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields~0:complex'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#id:member'
+    summary: |-
       Id of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: name
-    uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#name:member'
+    summary: |-
       Name of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
-  - name: position
-    uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#position:member'
-    package: excel!
-    fullName: position
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#position:member'
+    summary: |-
       Position of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'position?: number;'
       return:
-        type: number
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields~0:complex'
+    name: 'Excel.Interfaces.PivotFieldData[]'
+    fullName: 'Excel.Interfaces.PivotFieldData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
+        name: Excel.Interfaces.PivotFieldData
+        fullName: Excel.Interfaces.PivotFieldData
+      - name: '[]'
+        fullName: '[]'

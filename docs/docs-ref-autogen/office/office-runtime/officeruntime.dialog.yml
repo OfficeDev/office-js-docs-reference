@@ -1,29 +1,38 @@
-### YamlMime:TSType
-name: OfficeRuntime.Dialog
-uid: 'office-runtime!OfficeRuntime.Dialog:interface'
-package: office-runtime!
-fullName: OfficeRuntime.Dialog
-summary: Object representing the dialog box.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-methods:
-  - name: close()
-    uid: 'office-runtime!OfficeRuntime.Dialog#close:member(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+    summary: Object representing the dialog box.
+    name: OfficeRuntime.Dialog
+    fullName: OfficeRuntime.Dialog
+    langs:
+      - typeScript
+    type: interface
     package: office-runtime!
-    fullName: close()
-    summary: >-
+    children:
+      - 'office-runtime!OfficeRuntime.Dialog#close:member(1)'
+  - uid: 'office-runtime!OfficeRuntime.Dialog#close:member(1)'
+    summary: |-
       Method to close a dialog box. Returns a Promise.
 
-
-      \[ [API set: SharedRuntime
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: close()
+    fullName: close()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'close(): Promise<void>;'
       return:
-        type: Promise&lt;void&gt;
+        type:
+          - 'office-runtime!OfficeRuntime.Dialog#close~0:complex'
         description: ''
+references:
+  - uid: 'office-runtime!OfficeRuntime.Dialog#close~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>

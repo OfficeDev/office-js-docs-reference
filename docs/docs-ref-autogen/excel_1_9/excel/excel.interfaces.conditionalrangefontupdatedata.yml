@@ -1,109 +1,103 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ConditionalRangeFontUpdateData
-uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
-summary: >-
-  An interface for updating data on the ConditionalRangeFont object, for use in
-  `conditionalRangeFont.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: bold
-    uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#bold:member'
-    package: excel!
-    fullName: bold
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
     summary: >-
+      An interface for updating data on the ConditionalRangeFont object, for use in `conditionalRangeFont.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.ConditionalRangeFontUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#bold:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#color:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#italic:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#strikethrough:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#bold:member'
+    summary: |-
       Specifies if the font is bold.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'bold?: boolean;'
       return:
-        type: boolean
-  - name: color
-    uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#color:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#color:member'
+    summary: |-
+      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
     fullName: color
-    summary: >-
-      HTML color code representation of the text color (e.g., \#FF0000
-      represents Red).
-
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color?: string;'
       return:
-        type: string
-  - name: italic
-    uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#italic:member'
-    package: excel!
-    fullName: italic
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#italic:member'
+    summary: |-
       Specifies if the font is italic.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'italic?: boolean;'
       return:
-        type: boolean
-  - name: strikethrough
-    uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#strikethrough:member'
-    package: excel!
-    fullName: strikethrough
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#strikethrough:member'
+    summary: |-
       Specifies the strikethrough status of the font.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'strikethrough?: boolean;'
       return:
-        type: boolean
-  - name: underline
-    uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member'
+    summary: |-
+      The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
     fullName: underline
-    summary: >-
-      The type of underline applied to the font. See
-      Excel.ConditionalRangeFontUnderlineStyle for details.
-
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        underline?: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single"
-        | "Double";
+      content: 'underline?: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalRangeFontUnderlineStyle:enum" /> |
-          "None" | "Single" | "Double"
+        type:
+          - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline~0:complex'
+    name: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    fullName: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+        name: Excel.ConditionalRangeFontUnderlineStyle
+        fullName: Excel.ConditionalRangeFontUnderlineStyle
+      - name: ' | "None" | "Single" | "Double"'
+        fullName: ' | "None" | "Single" | "Double"'

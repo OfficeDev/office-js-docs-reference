@@ -1,12 +1,12 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
-uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
-summary: >-
-  An interface for updating data on the ChartPlotAreaFormat object, for use in
-  `chartPlotAreaFormat.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
+    summary: >-
+      An interface for updating data on the ChartPlotAreaFormat object, for use in `chartPlotAreaFormat.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

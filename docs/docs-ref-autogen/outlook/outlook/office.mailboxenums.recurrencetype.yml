@@ -1,39 +1,63 @@
-### YamlMime:TSEnum
-name: Office.MailboxEnums.RecurrenceType
-uid: 'outlook!Office.MailboxEnums.RecurrenceType:enum'
-package: outlook!
-fullName: Office.MailboxEnums.RecurrenceType
-summary: >-
-  Specifies the type of recurrence.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.RecurrenceType:enum'
+    summary: |-
+      Specifies the type of recurrence.
 
-
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: >-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Daily
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Daily:member'
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.MailboxEnums.RecurrenceType
+    fullName: Office.MailboxEnums.RecurrenceType
+    langs:
+      - typeScript
+    type: enum
     package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.RecurrenceType.Daily:member'
+      - 'outlook!Office.MailboxEnums.RecurrenceType.Monthly:member'
+      - 'outlook!Office.MailboxEnums.RecurrenceType.Weekday:member'
+      - 'outlook!Office.MailboxEnums.RecurrenceType.Weekly:member'
+      - 'outlook!Office.MailboxEnums.RecurrenceType.Yearly:member'
+  - uid: 'outlook!Office.MailboxEnums.RecurrenceType.Daily:member'
     summary: Daily.
-  - name: Monthly
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Monthly:member'
-    package: outlook!
+    name: Daily
+    fullName: Daily
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"daily"'
+  - uid: 'outlook!Office.MailboxEnums.RecurrenceType.Monthly:member'
     summary: Monthly.
-  - name: Weekday
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Weekday:member'
-    package: outlook!
+    name: Monthly
+    fullName: Monthly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"monthly"'
+  - uid: 'outlook!Office.MailboxEnums.RecurrenceType.Weekday:member'
     summary: Weekday.
-  - name: Weekly
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Weekly:member'
-    package: outlook!
+    name: Weekday
+    fullName: Weekday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"weekday"'
+  - uid: 'outlook!Office.MailboxEnums.RecurrenceType.Weekly:member'
     summary: Weekly.
-  - name: Yearly
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Yearly:member'
-    package: outlook!
+    name: Weekly
+    fullName: Weekly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"weekly"'
+  - uid: 'outlook!Office.MailboxEnums.RecurrenceType.Yearly:member'
     summary: Yearly.
+    name: Yearly
+    fullName: Yearly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"yearly"'

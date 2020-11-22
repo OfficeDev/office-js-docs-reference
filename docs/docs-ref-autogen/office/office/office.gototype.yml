@@ -1,42 +1,57 @@
-### YamlMime:TSEnum
-name: Office.GoToType
-uid: 'office!Office.GoToType:enum'
-package: office!
-fullName: Office.GoToType
-summary: Specifies the type of place or object to navigate to.
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Binding
-    uid: 'office!Office.GoToType.Binding:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.GoToType:enum'
+    summary: Specifies the type of place or object to navigate to.
+    name: Office.GoToType
+    fullName: Office.GoToType
+    langs:
+      - typeScript
+    type: enum
     package: office!
+    children:
+      - 'office!Office.GoToType.Binding:member'
+      - 'office!Office.GoToType.Index:member'
+      - 'office!Office.GoToType.NamedItem:member'
+      - 'office!Office.GoToType.Slide:member'
+  - uid: 'office!Office.GoToType.Binding:member'
     summary: |-
       Goes to a binding object using the specified binding id.
 
       Supported hosts: Excel, Word
-  - name: Index
-    uid: 'office!Office.GoToType.Index:member'
-    package: office!
-    summary: >-
-      Goes to the specified index by slide number or
-      [Office.Index](xref:office!Office.Index:enum)<!-- -->.
-
+    name: Binding
+    fullName: Binding
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.GoToType.Index:member'
+    summary: |-
+      Goes to the specified index by slide number or [Office.Index](xref:office!Office.Index:enum)<!-- -->.
 
       Supported hosts: PowerPoint
-  - name: NamedItem
-    uid: 'office!Office.GoToType.NamedItem:member'
-    package: office!
+    name: Index
+    fullName: Index
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.GoToType.NamedItem:member'
     summary: >-
-      Goes to a named item using that item's name. In Excel, you can use any
-      structured reference for a named range or table: "Worksheet2!Table1"
+      Goes to a named item using that item's name. In Excel, you can use any structured reference for a named range or
+      table: "Worksheet2!Table1"
 
 
       Supported hosts: Excel
-  - name: Slide
-    uid: 'office!Office.GoToType.Slide:member'
-    package: office!
+    name: NamedItem
+    fullName: NamedItem
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.GoToType.Slide:member'
     summary: |-
       Goes to a slide using the specified id.
 
       Supported hosts: PowerPoint
+    name: Slide
+    fullName: Slide
+    langs:
+      - typeScript
+    type: field

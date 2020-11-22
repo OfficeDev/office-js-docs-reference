@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.SettingUpdateData
-uid: 'excel!Excel.Interfaces.SettingUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.SettingUpdateData
-summary: >-
-  An interface for updating data on the Setting object, for use in
-  `setting.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SettingUpdateData:interface'
+    summary: 'An interface for updating data on the Setting object, for use in `setting.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.SettingUpdateData
+    fullName: Excel.Interfaces.SettingUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

@@ -1,52 +1,53 @@
-### YamlMime:TSType
-name: Word.Interfaces.DocumentCreatedUpdateData
-uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.DocumentCreatedUpdateData
-summary: >-
-  An interface for updating data on the DocumentCreated object, for use in
-  `documentCreated.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: body
-    uid: 'word!Word.Interfaces.DocumentCreatedUpdateData#body:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
+    summary: 'An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.DocumentCreatedUpdateData
+    fullName: Word.Interfaces.DocumentCreatedUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: body
+    children:
+      - 'word!Word.Interfaces.DocumentCreatedUpdateData#body:member'
+      - 'word!Word.Interfaces.DocumentCreatedUpdateData#properties:member'
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData#body:member'
     summary: >-
-      Gets the body object of the document. The body is the text that excludes
-      headers, footers, footnotes, textboxes, etc..
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc..
 
 
-      \[ [API set: WordApiHiddenDocument
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
-  - name: properties
-    uid: 'word!Word.Interfaces.DocumentCreatedUpdateData#properties:member'
-    package: word!
-    fullName: properties
+        type:
+          - 'word!Word.Interfaces.BodyUpdateData:interface'
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData#properties:member'
     summary: >-
       Gets the properties of the document.
 
 
-      \[ [API set: WordApiHiddenDocument
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />
+        type:
+          - 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
+references:
+  - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
+    name: Word.Interfaces.BodyUpdateData
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
+    name: Word.Interfaces.DocumentPropertiesUpdateData

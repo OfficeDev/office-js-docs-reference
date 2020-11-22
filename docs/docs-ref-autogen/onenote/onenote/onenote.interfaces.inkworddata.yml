@@ -1,66 +1,59 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.InkWordData
-uid: 'onenote!OneNote.Interfaces.InkWordData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.InkWordData
-summary: An interface describing the data returned by calling "inkWord.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.InkWordData#id:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.InkWordData:interface'
+    summary: An interface describing the data returned by calling "inkWord.toJSON()".
+    name: OneNote.Interfaces.InkWordData
+    fullName: OneNote.Interfaces.InkWordData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
-    fullName: id
-    summary: >-
+    children:
+      - 'onenote!OneNote.Interfaces.InkWordData#id:member'
+      - 'onenote!OneNote.Interfaces.InkWordData#languageId:member'
+      - 'onenote!OneNote.Interfaces.InkWordData#wordAlternates:member'
+  - uid: 'onenote!OneNote.Interfaces.InkWordData#id:member'
+    summary: |-
       Gets the ID of the InkWord object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: languageId
-    uid: 'onenote!OneNote.Interfaces.InkWordData#languageId:member'
-    package: onenote!
-    fullName: languageId
-    summary: >-
+        type:
+          - string
+  - uid: 'onenote!OneNote.Interfaces.InkWordData#languageId:member'
+    summary: |-
       The id of the recognized language in this ink word. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: languageId
+    fullName: languageId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'languageId?: string;'
       return:
-        type: string
-  - name: wordAlternates
-    uid: 'onenote!OneNote.Interfaces.InkWordData#wordAlternates:member'
-    package: onenote!
+        type:
+          - string
+  - uid: 'onenote!OneNote.Interfaces.InkWordData#wordAlternates:member'
+    summary: |-
+      The words that were recognized in this ink word, in order of likelihood. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: wordAlternates
     fullName: wordAlternates
-    summary: >-
-      The words that were recognized in this ink word, in order of likelihood.
-      Read-only.
-
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'wordAlternates?: string[];'
       return:
-        type: 'string[]'
+        type:
+          - 'string[]'

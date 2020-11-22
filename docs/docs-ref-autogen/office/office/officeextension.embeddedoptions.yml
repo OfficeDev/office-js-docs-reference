@@ -1,83 +1,85 @@
-### YamlMime:TSType
-name: OfficeExtension.EmbeddedOptions
-uid: 'office!OfficeExtension.EmbeddedOptions:interface'
-package: office!
-fullName: OfficeExtension.EmbeddedOptions
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: container
-    uid: 'office!OfficeExtension.EmbeddedOptions#container:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+    name: OfficeExtension.EmbeddedOptions
+    fullName: OfficeExtension.EmbeddedOptions
+    langs:
+      - typeScript
+    type: interface
     package: office!
+    children:
+      - 'office!OfficeExtension.EmbeddedOptions#container:member'
+      - 'office!OfficeExtension.EmbeddedOptions#height:member'
+      - 'office!OfficeExtension.EmbeddedOptions#id:member'
+      - 'office!OfficeExtension.EmbeddedOptions#sessionKey:member'
+      - 'office!OfficeExtension.EmbeddedOptions#timeoutInMilliseconds:member'
+      - 'office!OfficeExtension.EmbeddedOptions#width:member'
+  - uid: 'office!OfficeExtension.EmbeddedOptions#container:member'
+    name: container
     fullName: container
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'container?: HTMLElement,'
       return:
-        type: HTMLElement
-  - name: height
-    uid: 'office!OfficeExtension.EmbeddedOptions#height:member'
-    package: office!
+        type:
+          - '!HTMLElement:interface'
+  - uid: 'office!OfficeExtension.EmbeddedOptions#height:member'
+    name: height
     fullName: height
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: string;'
       return:
-        type: string
-  - name: id
-    uid: 'office!OfficeExtension.EmbeddedOptions#id:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.EmbeddedOptions#id:member'
+    name: id
     fullName: id
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: sessionKey
-    uid: 'office!OfficeExtension.EmbeddedOptions#sessionKey:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.EmbeddedOptions#sessionKey:member'
+    name: sessionKey
     fullName: sessionKey
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'sessionKey?: string,'
       return:
-        type: string
-  - name: timeoutInMilliseconds
-    uid: 'office!OfficeExtension.EmbeddedOptions#timeoutInMilliseconds:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.EmbeddedOptions#timeoutInMilliseconds:member'
+    name: timeoutInMilliseconds
     fullName: timeoutInMilliseconds
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'timeoutInMilliseconds?: number;'
       return:
-        type: number
-  - name: width
-    uid: 'office!OfficeExtension.EmbeddedOptions#width:member'
-    package: office!
+        type:
+          - number
+  - uid: 'office!OfficeExtension.EmbeddedOptions#width:member'
+    name: width
     fullName: width
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: '!HTMLElement:interface'
+    name: HTMLElement

@@ -1,145 +1,131 @@
-### YamlMime:TSType
-name: Excel.Interfaces.PivotLayoutLoadOptions
-uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.PivotLayoutLoadOptions
-summary: >-
-  Represents the visual layout of the PivotTable.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+    summary: |-
+      Represents the visual layout of the PivotTable.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.PivotLayoutLoadOptions
+    fullName: Excel.Interfaces.PivotLayoutLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#autoFormat:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#layoutType:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#preserveFormatting:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#subtotalLocation:member'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: autoFormat
-    uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#autoFormat:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#autoFormat:member'
+    summary: |-
+      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFormat
     fullName: autoFormat
-    summary: >-
-      Specifies if formatting will be automatically formatted when it’s
-      refreshed or when fields are moved.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'autoFormat?: boolean;'
       return:
-        type: boolean
-  - name: layoutType
-    uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#layoutType:member'
-    package: excel!
-    fullName: layoutType
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#layoutType:member'
     summary: >-
-      This property indicates the PivotLayoutType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'layoutType?: boolean;'
       return:
-        type: boolean
-  - name: preserveFormatting
-    uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#preserveFormatting:member'
-    package: excel!
-    fullName: preserveFormatting
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#preserveFormatting:member'
     summary: >-
-      Specifies if formatting is preserved when the report is refreshed or
-      recalculated by operations such as pivoting, sorting, or changing page
-      field items.
+      Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
+      sorting, or changing page field items.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: preserveFormatting
+    fullName: preserveFormatting
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'preserveFormatting?: boolean;'
       return:
-        type: boolean
-  - name: showColumnGrandTotals
-    uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
-    package: excel!
-    fullName: showColumnGrandTotals
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
+    summary: |-
       Specifies if the PivotTable report shows grand totals for columns.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showColumnGrandTotals?: boolean;'
       return:
-        type: boolean
-  - name: showRowGrandTotals
-    uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
-    package: excel!
-    fullName: showRowGrandTotals
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
+    summary: |-
       Specifies if the PivotTable report shows grand totals for rows.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showRowGrandTotals?: boolean;'
       return:
-        type: boolean
-  - name: subtotalLocation
-    uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#subtotalLocation:member'
-    package: excel!
-    fullName: subtotalLocation
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#subtotalLocation:member'
     summary: >-
-      This property indicates the SubtotalLocationType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'subtotalLocation?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

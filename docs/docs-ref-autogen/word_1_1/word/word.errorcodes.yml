@@ -1,38 +1,66 @@
-### YamlMime:TSEnum
-name: Word.ErrorCodes
-uid: 'word!Word.ErrorCodes:enum'
-package: word!
-fullName: Word.ErrorCodes
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: accessDenied
-    uid: 'word!Word.ErrorCodes.accessDenied:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.ErrorCodes:enum'
+    name: Word.ErrorCodes
+    fullName: Word.ErrorCodes
+    langs:
+      - typeScript
+    type: enum
     package: word!
-    summary: ''
-  - name: generalException
-    uid: 'word!Word.ErrorCodes.generalException:member'
-    package: word!
-    summary: ''
-  - name: invalidArgument
-    uid: 'word!Word.ErrorCodes.invalidArgument:member'
-    package: word!
-    summary: ''
-  - name: itemNotFound
-    uid: 'word!Word.ErrorCodes.itemNotFound:member'
-    package: word!
-    summary: ''
-  - name: notImplemented
-    uid: 'word!Word.ErrorCodes.notImplemented:member'
-    package: word!
-    summary: ''
-  - name: searchDialogIsOpen
-    uid: 'word!Word.ErrorCodes.searchDialogIsOpen:member'
-    package: word!
-    summary: ''
-  - name: searchStringInvalidOrTooLong
-    uid: 'word!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
-    package: word!
-    summary: ''
+    children:
+      - 'word!Word.ErrorCodes.accessDenied:member'
+      - 'word!Word.ErrorCodes.generalException:member'
+      - 'word!Word.ErrorCodes.invalidArgument:member'
+      - 'word!Word.ErrorCodes.itemNotFound:member'
+      - 'word!Word.ErrorCodes.notImplemented:member'
+      - 'word!Word.ErrorCodes.searchDialogIsOpen:member'
+      - 'word!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
+  - uid: 'word!Word.ErrorCodes.accessDenied:member'
+    name: accessDenied
+    fullName: accessDenied
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccessDenied"'
+  - uid: 'word!Word.ErrorCodes.generalException:member'
+    name: generalException
+    fullName: generalException
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeneralException"'
+  - uid: 'word!Word.ErrorCodes.invalidArgument:member'
+    name: invalidArgument
+    fullName: invalidArgument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidArgument"'
+  - uid: 'word!Word.ErrorCodes.itemNotFound:member'
+    name: itemNotFound
+    fullName: itemNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemNotFound"'
+  - uid: 'word!Word.ErrorCodes.notImplemented:member'
+    name: notImplemented
+    fullName: notImplemented
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotImplemented"'
+  - uid: 'word!Word.ErrorCodes.searchDialogIsOpen:member'
+    name: searchDialogIsOpen
+    fullName: searchDialogIsOpen
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SearchDialogIsOpen"'
+  - uid: 'word!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
+    name: searchStringInvalidOrTooLong
+    fullName: searchStringInvalidOrTooLong
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SearchStringInvalidOrTooLong"'

@@ -1,220 +1,235 @@
-### YamlMime:TSType
-name: Word.InlinePictureCollection
-uid: 'word!Word.InlinePictureCollection:class'
-package: word!
-fullName: Word.InlinePictureCollection
-summary: >-
-  Contains a collection of
-  [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.InlinePictureCollection:class'
+    summary: |-
+      Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'word!Word.InlinePictureCollection#context:member'
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.InlinePictureCollection
+    fullName: Word.InlinePictureCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
-    fullName: context
+    children:
+      - 'word!Word.InlinePictureCollection#context:member'
+      - 'word!Word.InlinePictureCollection#getFirst:member(1)'
+      - 'word!Word.InlinePictureCollection#getFirstOrNullObject:member(1)'
+      - 'word!Word.InlinePictureCollection#items:member'
+      - 'word!Word.InlinePictureCollection#load:member(1)'
+      - 'word!Word.InlinePictureCollection#load:member(2)'
+      - 'word!Word.InlinePictureCollection#load:member(3)'
+      - 'word!Word.InlinePictureCollection#toJSON:member(1)'
+      - 'word!Word.InlinePictureCollection#track:member(1)'
+      - 'word!Word.InlinePictureCollection#untrack:member(1)'
+  - uid: 'word!Word.InlinePictureCollection#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-  - name: items
-    uid: 'word!Word.InlinePictureCollection#items:member'
-    package: word!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Word.InlinePicture[];'
-      return:
-        type: '<xref uid="word!Word.InlinePicture:class" />[]'
-methods:
-  - name: getFirst()
-    uid: 'word!Word.InlinePictureCollection#getFirst:member(1)'
-    package: word!
+        type:
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.InlinePictureCollection#getFirst:member(1)'
+    summary: |-
+      Gets the first inline image in this collection. Throws an error if this collection is empty.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getFirst()
     fullName: getFirst()
-    summary: >-
-      Gets the first inline image in this collection. Throws an error if this
-      collection is empty.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getFirst(): Word.InlinePicture;'
       return:
-        type: '<xref uid="word!Word.InlinePicture:class" />'
+        type:
+          - 'word!Word.InlinePicture:class'
         description: ''
-  - name: getFirstOrNullObject()
-    uid: 'word!Word.InlinePictureCollection#getFirstOrNullObject:member(1)'
-    package: word!
+  - uid: 'word!Word.InlinePictureCollection#getFirstOrNullObject:member(1)'
+    summary: |-
+      Gets the first inline image in this collection. Returns a null object if this collection is empty.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getFirstOrNullObject()
     fullName: getFirstOrNullObject()
-    summary: >-
-      Gets the first inline image in this collection. Returns a null object if
-      this collection is empty.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getFirstOrNullObject(): Word.InlinePicture;'
       return:
-        type: '<xref uid="word!Word.InlinePicture:class" />'
+        type:
+          - 'word!Word.InlinePicture:class'
         description: ''
-  - name: load(options)
-    uid: 'word!Word.InlinePictureCollection#load:member(1)'
-    package: word!
-    fullName: load(options)
+  - uid: 'word!Word.InlinePictureCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Word.InlinePicture[];'
+      return:
+        type:
+          - 'word!Word.InlinePictureCollection#items~0:complex'
+  - uid: 'word!Word.InlinePictureCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Word.Interfaces.InlinePictureCollectionLoadOptions &
-        Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
+        load(options?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.InlinePictureCollection;
+      return:
+        type:
+          - 'word!Word.InlinePictureCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface"
-            /> & <xref
-            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="word!Word.InlinePictureCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'word!Word.InlinePictureCollection#load:member(2)'
-    package: word!
-    fullName: load(propertyNames)
+          type:
+            - 'word!Word.InlinePictureCollection#load~0:complex'
+  - uid: 'word!Word.InlinePictureCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.InlinePictureCollection;'
+      return:
+        type:
+          - 'word!Word.InlinePictureCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="word!Word.InlinePictureCollection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.InlinePictureCollection#load:member(3)'
-    package: word!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'word!Word.InlinePictureCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Word.InlinePictureCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.InlinePictureCollection;'
+      return:
+        type:
+          - 'word!Word.InlinePictureCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="word!Word.InlinePictureCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'word!Word.InlinePictureCollection#toJSON:member(1)'
-    package: word!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'word!Word.InlinePictureCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Word.InlinePictureCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Word.Interfaces.InlinePictureCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Word.Interfaces.InlinePictureCollectionData;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.InlinePictureCollectionData:interface"
-          />
+        type:
+          - 'word!Word.Interfaces.InlinePictureCollectionData:interface'
         description: ''
-  - name: track()
-    uid: 'word!Word.InlinePictureCollection#track:member(1)'
-    package: word!
-    fullName: track()
+  - uid: 'word!Word.InlinePictureCollection#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): Word.InlinePictureCollection;'
       return:
-        type: '<xref uid="word!Word.InlinePictureCollection:class" />'
+        type:
+          - 'word!Word.InlinePictureCollection:class'
         description: ''
-  - name: untrack()
-    uid: 'word!Word.InlinePictureCollection#untrack:member(1)'
-    package: word!
-    fullName: untrack()
+  - uid: 'word!Word.InlinePictureCollection#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): Word.InlinePictureCollection;'
       return:
-        type: '<xref uid="word!Word.InlinePictureCollection:class" />'
+        type:
+          - 'word!Word.InlinePictureCollection:class'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.InlinePicture:class'
+    name: Word.InlinePicture
+  - uid: 'word!Word.InlinePictureCollection#items~0:complex'
+    name: 'Word.InlinePicture[]'
+    fullName: 'Word.InlinePicture[]'
+    spec.typeScript:
+      - uid: 'word!Word.InlinePicture:class'
+        name: Word.InlinePicture
+        fullName: Word.InlinePicture
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.InlinePictureCollection:class'
+    name: Word.InlinePictureCollection
+  - uid: 'word!Word.InlinePictureCollection#load~0:complex'
+    name: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    fullName: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
+        name: Word.Interfaces.InlinePictureCollectionLoadOptions
+        fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+        name: Word.Interfaces.CollectionLoadOptions
+        fullName: Word.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
+    name: Word.Interfaces.InlinePictureCollectionData

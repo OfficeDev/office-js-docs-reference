@@ -1,34 +1,58 @@
-### YamlMime:TSEnum
-name: Visio.ErrorCodes
-uid: 'visio!Visio.ErrorCodes:enum'
-package: visio!
-fullName: Visio.ErrorCodes
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: accessDenied
-    uid: 'visio!Visio.ErrorCodes.accessDenied:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.ErrorCodes:enum'
+    name: Visio.ErrorCodes
+    fullName: Visio.ErrorCodes
+    langs:
+      - typeScript
+    type: enum
     package: visio!
-    summary: ''
-  - name: generalException
-    uid: 'visio!Visio.ErrorCodes.generalException:member'
-    package: visio!
-    summary: ''
-  - name: invalidArgument
-    uid: 'visio!Visio.ErrorCodes.invalidArgument:member'
-    package: visio!
-    summary: ''
-  - name: itemNotFound
-    uid: 'visio!Visio.ErrorCodes.itemNotFound:member'
-    package: visio!
-    summary: ''
-  - name: notImplemented
-    uid: 'visio!Visio.ErrorCodes.notImplemented:member'
-    package: visio!
-    summary: ''
-  - name: unsupportedOperation
-    uid: 'visio!Visio.ErrorCodes.unsupportedOperation:member'
-    package: visio!
-    summary: ''
+    children:
+      - 'visio!Visio.ErrorCodes.accessDenied:member'
+      - 'visio!Visio.ErrorCodes.generalException:member'
+      - 'visio!Visio.ErrorCodes.invalidArgument:member'
+      - 'visio!Visio.ErrorCodes.itemNotFound:member'
+      - 'visio!Visio.ErrorCodes.notImplemented:member'
+      - 'visio!Visio.ErrorCodes.unsupportedOperation:member'
+  - uid: 'visio!Visio.ErrorCodes.accessDenied:member'
+    name: accessDenied
+    fullName: accessDenied
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccessDenied"'
+  - uid: 'visio!Visio.ErrorCodes.generalException:member'
+    name: generalException
+    fullName: generalException
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeneralException"'
+  - uid: 'visio!Visio.ErrorCodes.invalidArgument:member'
+    name: invalidArgument
+    fullName: invalidArgument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidArgument"'
+  - uid: 'visio!Visio.ErrorCodes.itemNotFound:member'
+    name: itemNotFound
+    fullName: itemNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemNotFound"'
+  - uid: 'visio!Visio.ErrorCodes.notImplemented:member'
+    name: notImplemented
+    fullName: notImplemented
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotImplemented"'
+  - uid: 'visio!Visio.ErrorCodes.unsupportedOperation:member'
+    name: unsupportedOperation
+    fullName: unsupportedOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UnsupportedOperation"'

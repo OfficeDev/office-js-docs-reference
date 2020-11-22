@@ -1,50 +1,45 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RuntimeLoadOptions
-uid: 'excel!Excel.Interfaces.RuntimeLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.RuntimeLoadOptions
-summary: >-
-  Represents the Excel Runtime class.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RuntimeLoadOptions:interface'
+    summary: |-
+      Represents the Excel Runtime class.
 
-
-  \[ [API set: ExcelApi
-  1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.RuntimeLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.RuntimeLoadOptions
+    fullName: Excel.Interfaces.RuntimeLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.RuntimeLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RuntimeLoadOptions#enableEvents:member'
+  - uid: 'excel!Excel.Interfaces.RuntimeLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: enableEvents
-    uid: 'excel!Excel.Interfaces.RuntimeLoadOptions#enableEvents:member'
-    package: excel!
-    fullName: enableEvents
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RuntimeLoadOptions#enableEvents:member'
+    summary: |-
       Toggle JavaScript events in the current task pane or content add-in.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableEvents
+    fullName: enableEvents
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'enableEvents?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

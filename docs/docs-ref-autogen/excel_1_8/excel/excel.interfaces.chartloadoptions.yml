@@ -1,467 +1,425 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartLoadOptions
-uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartLoadOptions
-summary: >-
-  Represents a chart object in a workbook. To learn more about the Chart object
-  model, see [Work with charts using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!--
-  -->.
-
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#$all:member'
-    package: excel!
-    fullName: $all
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using
+      the Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLoadOptions
+    fullName: Excel.Interfaces.ChartLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#axes:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#categoryLabelLevel:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#chartType:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#displayBlanksAs:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#legend:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#plotArea:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#plotBy:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#plotVisibleOnly:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#series:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#seriesNameLevel:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#showAllFieldButtons:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#showDataLabelsOverMaximum:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#title:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#width:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: axes
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#axes:member'
-    package: excel!
-    fullName: axes
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#axes:member'
+    summary: |-
       Represents chart axes.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axes
+    fullName: axes
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions:interface" />'
-  - name: categoryLabelLevel
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#categoryLabelLevel:member'
-    package: excel!
-    fullName: categoryLabelLevel
+        type:
+          - 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#categoryLabelLevel:member'
     summary: >-
-      Specifies a ChartCategoryLabelLevel enumeration constant referring to the
-      level of where the category labels are being sourced from.
+      Specifies a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are
+      being sourced from.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryLabelLevel
+    fullName: categoryLabelLevel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'categoryLabelLevel?: boolean;'
       return:
-        type: boolean
-  - name: chartType
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#chartType:member'
-    package: excel!
-    fullName: chartType
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#chartType:member'
+    summary: |-
       Specifies the type of the chart. See Excel.ChartType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartType
+    fullName: chartType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'chartType?: boolean;'
       return:
-        type: boolean
-  - name: dataLabels
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member'
-    package: excel!
-    fullName: dataLabels
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member'
+    summary: |-
       Represents the datalabels on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabels
+    fullName: dataLabels
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />
-  - name: displayBlanksAs
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#displayBlanksAs:member'
-    package: excel!
-    fullName: displayBlanksAs
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#displayBlanksAs:member'
+    summary: |-
       Specifies the way that blank cells are plotted on a chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: displayBlanksAs
+    fullName: displayBlanksAs
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'displayBlanksAs?: boolean;'
       return:
-        type: boolean
-  - name: format
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#format:member'
-    package: excel!
-    fullName: format
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#format:member'
+    summary: |-
       Encapsulates the format properties for the chart area.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface" />
-  - name: height
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#height:member'
-    package: excel!
-    fullName: height
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#height:member'
+    summary: |-
       Specifies the height, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#id:member'
+    summary: |-
       The unique id of chart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: left
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#left:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#left:member'
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
     fullName: left
-    summary: >-
-      The distance, in points, from the left side of the chart to the worksheet
-      origin.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'left?: boolean;'
       return:
-        type: boolean
-  - name: legend
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#legend:member'
-    package: excel!
-    fullName: legend
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#legend:member'
+    summary: |-
       Represents the legend for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: legend
+    fullName: legend
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartLegendLoadOptions:interface" />'
-  - name: name
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#name:member'
+    summary: |-
       Specifies the name of a chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: plotArea
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotArea:member'
-    package: excel!
-    fullName: plotArea
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotArea:member'
+    summary: |-
       Represents the plotArea for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotArea
+    fullName: plotArea
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface"
-          />
-  - name: plotBy
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotBy:member'
-    package: excel!
-    fullName: plotBy
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotBy:member'
+    summary: |-
       Specifies the way columns or rows are used as data series on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotBy
+    fullName: plotBy
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'plotBy?: boolean;'
       return:
-        type: boolean
-  - name: plotVisibleOnly
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotVisibleOnly:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotVisibleOnly:member'
+    summary: |-
+      True if only visible cells are plotted. False if both visible and hidden cells are plotted.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotVisibleOnly
     fullName: plotVisibleOnly
-    summary: >-
-      True if only visible cells are plotted. False if both visible and hidden
-      cells are plotted.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'plotVisibleOnly?: boolean;'
       return:
-        type: boolean
-  - name: series
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#series:member'
-    package: excel!
-    fullName: series
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#series:member'
+    summary: |-
       Represents either a single series or collection of series in the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: series
+    fullName: series
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface"
-          />
-  - name: seriesNameLevel
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#seriesNameLevel:member'
-    package: excel!
-    fullName: seriesNameLevel
+        type:
+          - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#seriesNameLevel:member'
     summary: >-
-      Specifies a ChartSeriesNameLevel enumeration constant referring to the
-      level of where the series names are being sourced from.
+      Specifies a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are being
+      sourced from.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: seriesNameLevel
+    fullName: seriesNameLevel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'seriesNameLevel?: boolean;'
       return:
-        type: boolean
-  - name: showAllFieldButtons
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#showAllFieldButtons:member'
-    package: excel!
-    fullName: showAllFieldButtons
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#showAllFieldButtons:member'
+    summary: |-
       Specifies whether to display all field buttons on a PivotChart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showAllFieldButtons
+    fullName: showAllFieldButtons
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showAllFieldButtons?: boolean;'
       return:
-        type: boolean
-  - name: showDataLabelsOverMaximum
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#showDataLabelsOverMaximum:member'
-    package: excel!
-    fullName: showDataLabelsOverMaximum
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#showDataLabelsOverMaximum:member'
     summary: >-
-      Specifies whether to show the data labels when the value is greater than
-      the maximum value on the value axis. If value axis became smaller than the
-      size of data points, you can use this property to set whether to show the
-      data labels. This property applies to 2-D charts only.
+      Specifies whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      value axis became smaller than the size of data points, you can use this property to set whether to show the data
+      labels. This property applies to 2-D charts only.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showDataLabelsOverMaximum
+    fullName: showDataLabelsOverMaximum
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showDataLabelsOverMaximum?: boolean;'
       return:
-        type: boolean
-  - name: style
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#style:member'
-    package: excel!
-    fullName: style
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#style:member'
+    summary: |-
       Specifies the chart style for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: boolean;'
       return:
-        type: boolean
-  - name: title
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#title:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#title:member'
+    summary: |-
+      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
     fullName: title
-    summary: >-
-      Specifies the title of the specified chart, including the text,
-      visibility, position, and formatting of the title.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartTitleLoadOptions:interface" />'
-  - name: top
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#top:member'
-    package: excel!
-    fullName: top
+        type:
+          - 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#top:member'
     summary: >-
-      Specifies the distance, in points, from the top edge of the object to the
-      top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+      Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
+      of the chart area (on a chart).
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'top?: boolean;'
       return:
-        type: boolean
-  - name: width
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#width:member'
-    package: excel!
-    fullName: width
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#width:member'
+    summary: |-
       Specifies the width, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: boolean;'
       return:
-        type: boolean
-  - name: worksheet
-    uid: 'excel!Excel.Interfaces.ChartLoadOptions#worksheet:member'
-    package: excel!
-    fullName: worksheet
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#worksheet:member'
+    summary: |-
       The worksheet containing the current chart.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+    name: Excel.Interfaces.ChartAxesLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartAreaFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+    name: Excel.Interfaces.ChartLegendLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
+    name: Excel.Interfaces.ChartPlotAreaLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+    name: Excel.Interfaces.ChartTitleLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

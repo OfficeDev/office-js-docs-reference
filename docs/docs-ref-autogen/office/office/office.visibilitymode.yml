@@ -1,18 +1,29 @@
-### YamlMime:TSEnum
-name: Office.VisibilityMode
-uid: 'office!Office.VisibilityMode:enum'
-package: office!
-fullName: Office.VisibilityMode
-summary: Visibility mode of the add-in.
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: hidden
-    uid: 'office!Office.VisibilityMode.hidden:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.VisibilityMode:enum'
+    summary: Visibility mode of the add-in.
+    name: Office.VisibilityMode
+    fullName: Office.VisibilityMode
+    langs:
+      - typeScript
+    type: enum
     package: office!
+    children:
+      - 'office!Office.VisibilityMode.hidden:member'
+      - 'office!Office.VisibilityMode.taskpane:member'
+  - uid: 'office!Office.VisibilityMode.hidden:member'
     summary: UI is Hidden
-  - name: taskpane
-    uid: 'office!Office.VisibilityMode.taskpane:member'
-    package: office!
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '''Hidden'''
+  - uid: 'office!Office.VisibilityMode.taskpane:member'
     summary: Displayed as taskpane
+    name: taskpane
+    fullName: taskpane
+    langs:
+      - typeScript
+    type: field
+    numericValue: '''Taskpane'''

@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.HeaderFooterUpdateData
-uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.HeaderFooterUpdateData
-summary: >-
-  An interface for updating data on the HeaderFooter object, for use in
-  `headerFooter.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+    summary: 'An interface for updating data on the HeaderFooter object, for use in `headerFooter.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.HeaderFooterUpdateData
+    fullName: Excel.Interfaces.HeaderFooterUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

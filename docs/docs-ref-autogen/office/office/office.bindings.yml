@@ -1,33 +1,28 @@
-### YamlMime:TSType
-name: Office.Bindings
-uid: 'office!Office.Bindings:interface'
-package: office!
-fullName: Office.Bindings
-summary: Represents the bindings the add-in has within the document.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: document
-    uid: 'office!Office.Bindings#document:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Bindings:interface'
+    summary: Represents the bindings the add-in has within the document.
+    name: Office.Bindings
+    fullName: Office.Bindings
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: document
-    summary: >-
-      Gets an [Office.Document](xref:office!Office.Document:interface) object
-      that represents the document associated with this set of bindings.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'document: Document;'
-      return:
-        type: '<xref uid="office!Office.Document:interface" />'
-methods:
-  - name: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
-    uid: 'office!Office.Bindings#addFromNamedItemAsync:member(1)'
-    package: office!
-    fullName: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
+    children:
+      - 'office!Office.Bindings#addFromNamedItemAsync:member(1)'
+      - 'office!Office.Bindings#addFromNamedItemAsync:member(2)'
+      - 'office!Office.Bindings#addFromPromptAsync:member(1)'
+      - 'office!Office.Bindings#addFromPromptAsync:member(2)'
+      - 'office!Office.Bindings#addFromSelectionAsync:member(1)'
+      - 'office!Office.Bindings#addFromSelectionAsync:member(2)'
+      - 'office!Office.Bindings#document:member'
+      - 'office!Office.Bindings#getAllAsync:member(1)'
+      - 'office!Office.Bindings#getAllAsync:member(2)'
+      - 'office!Office.Bindings#getByIdAsync:member(1)'
+      - 'office!Office.Bindings#getByIdAsync:member(2)'
+      - 'office!Office.Bindings#releaseByIdAsync:member(1)'
+      - 'office!Office.Bindings#releaseByIdAsync:member(2)'
+  - uid: 'office!Office.Bindings#addFromNamedItemAsync:member(1)'
     summary: Creates a binding against a named object in the document.
     remarks: >-
       **Requirement sets**:
@@ -48,34 +43,28 @@ methods:
       For Excel, the itemName parameter can refer to a named range or a table.
 
 
-      By default, adding a table in Excel assigns the name "Table1" for the
-      first table you add, "Table2" for the second table you add, and so on. To
-      assign a meaningful name for a table in the Excel UI, use the Table Name
-      property on the Table Tools \| Design tab of the ribbon.
+      By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second
+      table you add, and so on. To assign a meaningful name for a table in the Excel UI, use the Table Name property on
+      the Table Tools \| Design tab of the ribbon.
 
 
-      **Note**: In Excel, when specifying a table as a named item, you must
-      fully qualify the name to include the worksheet name in the name of the
-      table in this format: "Sheet1!Table1"
+      **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the
+      worksheet name in the name of the table in this format: "Sheet1!Table1"
 
 
-      For Word, the itemName parameter refers to the Title property of a Rich
-      Text content control. (You can't bind to content controls other than the
-      Rich Text content control).
+      For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to
+      content controls other than the Rich Text content control).
 
 
-      By default, a content control has no Title value assigned. To assign a
-      meaningful name in the Word UI, after inserting a Rich Text content
-      control from the Controls group on the Developer tab of the ribbon, use
-      the Properties command in the Controls group to display the Content
-      Control Properties dialog box. Then set the Title property of the content
-      control to the name you want to reference from your code.
+      By default, a content control has no Title value assigned. To assign a meaningful name in the Word UI, after
+      inserting a Rich Text content control from the Controls group on the Developer tab of the ribbon, use the
+      Properties command in the Controls group to display the Content Control Properties dialog box. Then set the Title
+      property of the content control to the name you want to reference from your code.
 
 
-      **Note**: In Word, if there are multiple Rich Text content controls with
-      the same Title property value (name), and you try to bind to one these
-      content controls with this method (by specifying its name as the itemName
-      parameter), the operation will fail.
+      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
+      you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
+      the operation will fail.
 
 
       #### Examples
@@ -83,8 +72,7 @@ methods:
 
       ```javascript
 
-      // The following example adds a binding to the myRange named item in Excel
-      as a "matrix" binding,
+      // The following example adds a binding to the myRange named item in Excel as a "matrix" binding,
 
       // and assigns the binding's id as myMatrix.
 
@@ -107,8 +95,7 @@ methods:
       }
 
 
-      // The following example adds a binding to the Table1 named item in Excel
-      as a "table" binding,
+      // The following example adds a binding to the Table1 named item in Excel as a "table" binding,
 
       // and assigns the binding's id as myTable.
 
@@ -131,8 +118,7 @@ methods:
       }
 
 
-      // The following example creates a text binding in Word to a rich text
-      content control named "FirstName",
+      // The following example creates a text binding in Word to a rich text content control named "FirstName",
 
       // assigns the id "firstName", and then displays that information.
 
@@ -156,47 +142,42 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
+    fullName: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        addFromNamedItemAsync(itemName: string, bindingType: BindingType,
-        options?: AddBindingFromNamedItemOptions, callback?: (result:
-        AsyncResult<Binding>) => void): void;
+        addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: AddBindingFromNamedItemOptions,
+        callback?: (result: AsyncResult<Binding>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: itemName
-          description: >-
-            Name of the bindable object in the document. For Example
-            'MyExpenses' table in Excel."
-          type: string
+          description: Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
+          type:
+            - string
         - id: bindingType
           description: >-
-            The [Office.BindingType](xref:office!Office.BindingType:enum) for
-            the data. The method returns null if the selected object cannot be
-            coerced into the specified type.
-          type: '<xref uid="office!Office.BindingType:enum" />'
+            The [Office.BindingType](xref:office!Office.BindingType:enum) for the data. The method returns null if the
+            selected object cannot be coerced into the specified type.
+          type:
+            - 'office!Office.BindingType:enum'
         - id: options
           description: Provides options for configuring the binding that is created.
-          type: >-
-            <xref uid="office!Office.AddBindingFromNamedItemOptions:interface"
-            />
+          type:
+            - 'office!Office.AddBindingFromNamedItemOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object that
-            represents the specified named item.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'addFromNamedItemAsync(itemName, bindingType, callback)'
-    uid: 'office!Office.Bindings#addFromNamedItemAsync:member(2)'
-    package: office!
-    fullName: 'addFromNamedItemAsync(itemName, bindingType, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the specified named item.
+          type:
+            - 'office!Office.Bindings#addFromNamedItemAsync~0:complex'
+  - uid: 'office!Office.Bindings#addFromNamedItemAsync:member(2)'
     summary: Creates a binding against a named object in the document.
     remarks: >-
       [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
@@ -209,80 +190,68 @@ methods:
       For Excel, the itemName parameter can refer to a named range or a table.
 
 
-      By default, adding a table in Excel assigns the name "Table1" for the
-      first table you add, "Table2" for the second table you add, and so on. To
-      assign a meaningful name for a table in the Excel UI, use the Table Name
-      property on the Table Tools \| Design tab of the ribbon.
+      By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second
+      table you add, and so on. To assign a meaningful name for a table in the Excel UI, use the Table Name property on
+      the Table Tools \| Design tab of the ribbon.
 
 
-      **Note**: In Excel, when specifying a table as a named item, you must
-      fully qualify the name to include the worksheet name in the name of the
-      table in this format: "Sheet1!Table1"
+      **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the
+      worksheet name in the name of the table in this format: "Sheet1!Table1"
 
 
-      For Word, the itemName parameter refers to the Title property of a Rich
-      Text content control. (You can't bind to content controls other than the
-      Rich Text content control).
+      For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to
+      content controls other than the Rich Text content control).
 
 
-      By default, a content control has no Title value assigned. To assign a
-      meaningful name in the Word UI, after inserting a Rich Text content
-      control from the Controls group on the Developer tab of the ribbon, use
-      the Properties command in the Controls group to display the Content
-      Control Properties dialog box. Then set the Title property of the content
-      control to the name you want to reference from your code.
+      By default, a content control has no Title value assigned. To assign a meaningful name in the Word UI, after
+      inserting a Rich Text content control from the Controls group on the Developer tab of the ribbon, use the
+      Properties command in the Controls group to display the Content Control Properties dialog box. Then set the Title
+      property of the content control to the name you want to reference from your code.
 
 
-      **Note**: In Word, if there are multiple Rich Text content controls with
-      the same Title property value (name), and you try to bind to one these
-      content controls with this method (by specifying its name as the itemName
-      parameter), the operation will fail.
-    isPreview: false
-    isDeprecated: false
+      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
+      you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
+      the operation will fail.
+    name: 'addFromNamedItemAsync(itemName, bindingType, callback)'
+    fullName: 'addFromNamedItemAsync(itemName, bindingType, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        addFromNamedItemAsync(itemName: string, bindingType: BindingType,
-        callback?: (result: AsyncResult<Binding>) => void): void;
+        addFromNamedItemAsync(itemName: string, bindingType: BindingType, callback?: (result: AsyncResult<Binding>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: itemName
-          description: >-
-            Name of the bindable object in the document. For Example
-            'MyExpenses' table in Excel."
-          type: string
+          description: Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
+          type:
+            - string
         - id: bindingType
           description: >-
-            The [Office.BindingType](xref:office!Office.BindingType:enum) for
-            the data. The method returns null if the selected object cannot be
-            coerced into the specified type.
-          type: '<xref uid="office!Office.BindingType:enum" />'
+            The [Office.BindingType](xref:office!Office.BindingType:enum) for the data. The method returns null if the
+            selected object cannot be coerced into the specified type.
+          type:
+            - 'office!Office.BindingType:enum'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object that
-            represents the specified named item.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'addFromPromptAsync(bindingType, options, callback)'
-    uid: 'office!Office.Bindings#addFromPromptAsync:member(1)'
-    package: office!
-    fullName: 'addFromPromptAsync(bindingType, options, callback)'
-    summary: >-
-      Create a binding by prompting the user to make a selection on the
-      document.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the specified named item.
+          type:
+            - 'office!Office.Bindings#addFromNamedItemAsync~1:complex'
+  - uid: 'office!Office.Bindings#addFromPromptAsync:member(1)'
+    summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
       **Requirement set**: [Not in a
       set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
-      Adds a binding object of the specified type to the Bindings collection,
-      which will be identified with the supplied id. The method fails if the
-      specified selection cannot be bound.
+      Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
+      id. The method fails if the specified selection cannot be bound.
 
 
       #### Examples
@@ -306,83 +275,72 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'addFromPromptAsync(bindingType, options, callback)'
+    fullName: 'addFromPromptAsync(bindingType, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        addFromPromptAsync(bindingType: BindingType, options?:
-        AddBindingFromPromptOptions, callback?: (result: AsyncResult<Binding>)
-        => void): void;
+        addFromPromptAsync(bindingType: BindingType, options?: AddBindingFromPromptOptions, callback?: (result:
+        AsyncResult<Binding>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: bindingType
           description: >-
-            Specifies the type of the binding object to create. Required.
-            Returns null if the selected object cannot be coerced into the
-            specified type.
-          type: '<xref uid="office!Office.BindingType:enum" />'
+            Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
+            coerced into the specified type.
+          type:
+            - 'office!Office.BindingType:enum'
         - id: options
-          description: >-
-            Provides options for configuring the prompt and identifying the
-            binding that is created.
-          type: '<xref uid="office!Office.AddBindingFromPromptOptions:interface" />'
+          description: Provides options for configuring the prompt and identifying the binding that is created.
+          type:
+            - 'office!Office.AddBindingFromPromptOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object that
-            represents the selection specified by the user.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'addFromPromptAsync(bindingType, callback)'
-    uid: 'office!Office.Bindings#addFromPromptAsync:member(2)'
-    package: office!
-    fullName: 'addFromPromptAsync(bindingType, callback)'
-    summary: >-
-      Create a binding by prompting the user to make a selection on the
-      document.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
+          type:
+            - 'office!Office.Bindings#addFromPromptAsync~0:complex'
+  - uid: 'office!Office.Bindings#addFromPromptAsync:member(2)'
+    summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
       **Requirement set**: [Not in a
       set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
-      Adds a binding object of the specified type to the Bindings collection,
-      which will be identified with the supplied id. The method fails if the
-      specified selection cannot be bound.
-    isPreview: false
-    isDeprecated: false
+      Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
+      id. The method fails if the specified selection cannot be bound.
+    name: 'addFromPromptAsync(bindingType, callback)'
+    fullName: 'addFromPromptAsync(bindingType, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        addFromPromptAsync(bindingType: BindingType, callback?: (result:
-        AsyncResult<Binding>) => void): void;
+      content: 'addFromPromptAsync(bindingType: BindingType, callback?: (result: AsyncResult<Binding>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: bindingType
           description: >-
-            Specifies the type of the binding object to create. Required.
-            Returns null if the selected object cannot be coerced into the
-            specified type.
-          type: '<xref uid="office!Office.BindingType:enum" />'
+            Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
+            coerced into the specified type.
+          type:
+            - 'office!Office.BindingType:enum'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object that
-            represents the selection specified by the user.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'addFromSelectionAsync(bindingType, options, callback)'
-    uid: 'office!Office.Bindings#addFromSelectionAsync:member(1)'
-    package: office!
-    fullName: 'addFromSelectionAsync(bindingType, options, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
+          type:
+            - 'office!Office.Bindings#addFromPromptAsync~1:complex'
+  - uid: 'office!Office.Bindings#addFromSelectionAsync:member(1)'
     summary: Create a binding based on the user's current selection.
     remarks: >-
       **Requirement sets**:
@@ -400,16 +358,14 @@ methods:
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
-      Adds the specified type of binding object to the Bindings collection,
-      which will be identified with the supplied id.
+      Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied
+      id.
 
 
-      Note In Excel, if you call the addFromSelectionAsync method passing in the
-      Binding.id of an existing binding, the Binding.type of that binding is
-      used, and its type cannot be changed by specifying a different value for
-      the bindingType parameter. If you need to use an existing id and change
-      the bindingType, call the Bindings.releaseByIdAsync method first to
-      release the binding, and then call the addFromSelectionAsync method to
+      Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the
+      Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the
+      bindingType parameter. If you need to use an existing id and change the bindingType, call the
+      Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
 
 
@@ -433,42 +389,38 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'addFromSelectionAsync(bindingType, options, callback)'
+    fullName: 'addFromSelectionAsync(bindingType, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        addFromSelectionAsync(bindingType: BindingType, options?:
-        AddBindingFromSelectionOptions, callback?: (result:
+        addFromSelectionAsync(bindingType: BindingType, options?: AddBindingFromSelectionOptions, callback?: (result:
         AsyncResult<Binding>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: bindingType
           description: >-
-            Specifies the type of the binding object to create. Required.
-            Returns null if the selected object cannot be coerced into the
-            specified type.
-          type: '<xref uid="office!Office.BindingType:enum" />'
+            Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
+            coerced into the specified type.
+          type:
+            - 'office!Office.BindingType:enum'
         - id: options
           description: Provides options for identifying the binding that is created.
-          type: >-
-            <xref uid="office!Office.AddBindingFromSelectionOptions:interface"
-            />
+          type:
+            - 'office!Office.AddBindingFromSelectionOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object that
-            represents the selection specified by the user.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'addFromSelectionAsync(bindingType, callback)'
-    uid: 'office!Office.Bindings#addFromSelectionAsync:member(2)'
-    package: office!
-    fullName: 'addFromSelectionAsync(bindingType, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
+          type:
+            - 'office!Office.Bindings#addFromSelectionAsync~0:complex'
+  - uid: 'office!Office.Bindings#addFromSelectionAsync:member(2)'
     summary: Create a binding based on the user's current selection.
     remarks: >-
       **Requirement sets**:
@@ -486,47 +438,55 @@ methods:
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
-      Adds the specified type of binding object to the Bindings collection,
-      which will be identified with the supplied id.
+      Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied
+      id.
 
 
-      Note In Excel, if you call the addFromSelectionAsync method passing in the
-      Binding.id of an existing binding, the Binding.type of that binding is
-      used, and its type cannot be changed by specifying a different value for
-      the bindingType parameter. If you need to use an existing id and change
-      the bindingType, call the Bindings.releaseByIdAsync method first to
-      release the binding, and then call the addFromSelectionAsync method to
+      Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the
+      Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the
+      bindingType parameter. If you need to use an existing id and change the bindingType, call the
+      Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
-    isPreview: false
-    isDeprecated: false
+    name: 'addFromSelectionAsync(bindingType, callback)'
+    fullName: 'addFromSelectionAsync(bindingType, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        addFromSelectionAsync(bindingType: BindingType, callback?: (result:
-        AsyncResult<Binding>) => void): void;
+      content: 'addFromSelectionAsync(bindingType: BindingType, callback?: (result: AsyncResult<Binding>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: bindingType
           description: >-
-            Specifies the type of the binding object to create. Required.
-            Returns null if the selected object cannot be coerced into the
-            specified type.
-          type: '<xref uid="office!Office.BindingType:enum" />'
+            Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
+            coerced into the specified type.
+          type:
+            - 'office!Office.BindingType:enum'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object that
-            represents the selection specified by the user.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
+          type:
+            - 'office!Office.Bindings#addFromSelectionAsync~1:complex'
+  - uid: 'office!Office.Bindings#document:member'
+    summary: >-
+      Gets an [Office.Document](xref:office!Office.Document:interface) object that represents the document associated
+      with this set of bindings.
+    name: document
+    fullName: document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
       return:
-        type: void
-        description: ''
-  - name: 'getAllAsync(options, callback)'
-    uid: 'office!Office.Bindings#getAllAsync:member(1)'
-    package: office!
-    fullName: 'getAllAsync(options, callback)'
+        type:
+          - 'office!Office.Document:interface'
+  - uid: 'office!Office.Bindings#getAllAsync:member(1)'
     summary: Gets all bindings that were previously created.
     remarks: >-
       **Requirement sets**:
@@ -542,35 +502,30 @@ methods:
 
       -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
-    isPreview: false
-    isDeprecated: false
+    name: 'getAllAsync(options, callback)'
+    fullName: 'getAllAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getAllAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Binding[]>) => void): void;
+      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding[]>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            A function that is invoked when the callback returns, whose only
-            parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is an array that contains
-            each binding created for the referenced Bindings object.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />[]&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: getAllAsync(callback)
-    uid: 'office!Office.Bindings#getAllAsync:member(2)'
-    package: office!
-    fullName: getAllAsync(callback)
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array that contains each binding created for the referenced Bindings object.
+          type:
+            - 'office!Office.Bindings#getAllAsync~0:complex'
+  - uid: 'office!Office.Bindings#getAllAsync:member(2)'
     summary: Gets all bindings that were previously created.
     remarks: >-
       **Requirement sets**:
@@ -610,28 +565,26 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: getAllAsync(callback)
+    fullName: getAllAsync(callback)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getAllAsync(callback?: (result: AsyncResult<Binding[]>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: callback
           description: >-
-            A function that is invoked when the callback returns, whose only
-            parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is an array that contains
-            each binding created for the referenced Bindings object.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />[]&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getByIdAsync(id, options, callback)'
-    uid: 'office!Office.Bindings#getByIdAsync:member(1)'
-    package: office!
-    fullName: 'getByIdAsync(id, options, callback)'
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array that contains each binding created for the referenced Bindings object.
+          type:
+            - 'office!Office.Bindings#getAllAsync~1:complex'
+  - uid: 'office!Office.Bindings#getByIdAsync:member(1)'
     summary: Retrieves a binding based on its Name
     remarks: >-
       **Requirement sets**:
@@ -650,38 +603,36 @@ methods:
 
 
       Fails if the specified id does not exist.
-    isPreview: false
-    isDeprecated: false
+    name: 'getByIdAsync(id, options, callback)'
+    fullName: 'getByIdAsync(id, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        getByIdAsync(id: string, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<Binding>) => void): void;
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: id
           description: Specifies the unique name of the binding object. Required.
-          type: string
+          type:
+            - string
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object
-            specified by the id in the call.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getByIdAsync(id, callback)'
-    uid: 'office!Office.Bindings#getByIdAsync:member(2)'
-    package: office!
-    fullName: 'getByIdAsync(id, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object specified by the id in the call.
+          type:
+            - 'office!Office.Bindings#getByIdAsync~0:complex'
+  - uid: 'office!Office.Bindings#getByIdAsync:member(2)'
     summary: Retrieves a binding based on its Name
     remarks: >-
       **Requirement sets**:
@@ -720,33 +671,30 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'getByIdAsync(id, callback)'
+    fullName: 'getByIdAsync(id, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getByIdAsync(id: string, callback?: (result: AsyncResult<Binding>) =>
-        void): void;
+      content: 'getByIdAsync(id: string, callback?: (result: AsyncResult<Binding>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: id
           description: Specifies the unique name of the binding object. Required.
-          type: string
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the Binding object
-            specified by the id in the call.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Binding:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'releaseByIdAsync(id, options, callback)'
-    uid: 'office!Office.Bindings#releaseByIdAsync:member(1)'
-    package: office!
-    fullName: 'releaseByIdAsync(id, options, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object specified by the id in the call.
+          type:
+            - 'office!Office.Bindings#getByIdAsync~1:complex'
+  - uid: 'office!Office.Bindings#releaseByIdAsync:member(1)'
     summary: Removes the binding from the document
     remarks: >-
       **Requirement sets**:
@@ -765,39 +713,35 @@ methods:
 
 
       Fails if the specified id does not exist.
-    isPreview: false
-    isDeprecated: false
+    name: 'releaseByIdAsync(id, options, callback)'
+    fullName: 'releaseByIdAsync(id, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: id
-          description: >-
-            Specifies the unique name to be used to identify the binding object.
-            Required.
-          type: string
+          description: Specifies the unique name to be used to identify the binding object. Required.
+          type:
+            - string
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'releaseByIdAsync(id, callback)'
-    uid: 'office!Office.Bindings#releaseByIdAsync:member(2)'
-    package: office!
-    fullName: 'releaseByIdAsync(id, callback)'
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.Bindings#releaseByIdAsync~0:complex'
+  - uid: 'office!Office.Bindings#releaseByIdAsync:member(2)'
     summary: Removes the binding from the document
     remarks: >-
       **Requirement sets**:
@@ -823,8 +767,7 @@ methods:
 
       ```javascript
 
-      Office.context.document.bindings.releaseByIdAsync("MyBinding", function
-      (asyncResult) { 
+      Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
           write("Released MyBinding!"); 
       }); 
 
@@ -835,27 +778,220 @@ methods:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'releaseByIdAsync(id, callback)'
+    fullName: 'releaseByIdAsync(id, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        releaseByIdAsync(id: string, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: 'releaseByIdAsync(id: string, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: id
-          description: >-
-            Specifies the unique name to be used to identify the binding object.
-            Required.
-          type: string
+          description: Specifies the unique name to be used to identify the binding object. Required.
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.Bindings#releaseByIdAsync~1:complex'
+references:
+  - uid: 'office!Office.BindingType:enum'
+    name: BindingType
+  - uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
+    name: AddBindingFromNamedItemOptions
+  - uid: 'office!Office.Bindings#addFromNamedItemAsync~0:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Bindings#addFromNamedItemAsync~1:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.AddBindingFromPromptOptions:interface'
+    name: AddBindingFromPromptOptions
+  - uid: 'office!Office.Bindings#addFromPromptAsync~0:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Bindings#addFromPromptAsync~1:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+    name: AddBindingFromSelectionOptions
+  - uid: 'office!Office.Bindings#addFromSelectionAsync~0:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Bindings#addFromSelectionAsync~1:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Document:interface'
+    name: Document
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'office!Office.Bindings#getAllAsync~0:complex'
+    name: '(result: AsyncResult<Binding[]>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'office!Office.Bindings#getAllAsync~1:complex'
+    name: '(result: AsyncResult<Binding[]>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'office!Office.Bindings#getByIdAsync~0:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Bindings#getByIdAsync~1:complex'
+    name: '(result: AsyncResult<Binding>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Binding:interface'
+        name: Binding
+        fullName: Office.Binding
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Bindings#releaseByIdAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Bindings#releaseByIdAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

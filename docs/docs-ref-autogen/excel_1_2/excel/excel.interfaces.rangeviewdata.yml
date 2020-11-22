@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RangeViewData
-uid: 'excel!Excel.Interfaces.RangeViewData:interface'
-package: excel!
-fullName: Excel.Interfaces.RangeViewData
-summary: >-
-  An interface describing the data returned by calling `rangeView.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeViewData:interface'
+    summary: An interface describing the data returned by calling `rangeView.toJSON()`<!-- -->.
+    name: Excel.Interfaces.RangeViewData
+    fullName: Excel.Interfaces.RangeViewData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

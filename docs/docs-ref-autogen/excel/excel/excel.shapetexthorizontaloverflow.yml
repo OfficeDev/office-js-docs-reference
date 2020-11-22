@@ -1,24 +1,30 @@
-### YamlMime:TSEnum
-name: Excel.ShapeTextHorizontalOverflow
-uid: 'excel!Excel.ShapeTextHorizontalOverflow:enum'
-package: excel!
-fullName: Excel.ShapeTextHorizontalOverflow
-summary: >-
-  Specifies the horizontal overflow for the text frame in a shape.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeTextHorizontalOverflow:enum'
+    summary: |-
+      Specifies the horizontal overflow for the text frame in a shape.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: clip
-    uid: 'excel!Excel.ShapeTextHorizontalOverflow.clip:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeTextHorizontalOverflow
+    fullName: Excel.ShapeTextHorizontalOverflow
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: overflow
-    uid: 'excel!Excel.ShapeTextHorizontalOverflow.overflow:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ShapeTextHorizontalOverflow.clip:member'
+      - 'excel!Excel.ShapeTextHorizontalOverflow.overflow:member'
+  - uid: 'excel!Excel.ShapeTextHorizontalOverflow.clip:member'
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Clip"'
+  - uid: 'excel!Excel.ShapeTextHorizontalOverflow.overflow:member'
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Overflow"'

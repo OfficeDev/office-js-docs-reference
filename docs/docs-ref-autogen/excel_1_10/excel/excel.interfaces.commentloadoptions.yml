@@ -1,123 +1,111 @@
-### YamlMime:TSType
-name: Excel.Interfaces.CommentLoadOptions
-uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.CommentLoadOptions
-summary: >-
-  Represents a comment in the workbook.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
+    summary: |-
+      Represents a comment in the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.CommentLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.CommentLoadOptions
+    fullName: Excel.Interfaces.CommentLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.CommentLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#authorEmail:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#authorName:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#content:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#creationDate:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#id:member'
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: authorEmail
-    uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorEmail:member'
-    package: excel!
-    fullName: authorEmail
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorEmail:member'
+    summary: |-
       Gets the email of the comment's author.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'authorEmail?: boolean;'
       return:
-        type: boolean
-  - name: authorName
-    uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorName:member'
-    package: excel!
-    fullName: authorName
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorName:member'
+    summary: |-
       Gets the name of the comment's author.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'authorName?: boolean;'
       return:
-        type: boolean
-  - name: content
-    uid: 'excel!Excel.Interfaces.CommentLoadOptions#content:member'
-    package: excel!
-    fullName: content
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#content:member'
+    summary: |-
       The comment's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'content?: boolean;'
       return:
-        type: boolean
-  - name: creationDate
-    uid: 'excel!Excel.Interfaces.CommentLoadOptions#creationDate:member'
-    package: excel!
-    fullName: creationDate
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#creationDate:member'
     summary: >-
-      Gets the creation time of the comment. Returns null if the comment was
-      converted from a note, since the comment does not have a creation date.
+      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
+      does not have a creation date.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'creationDate?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'excel!Excel.Interfaces.CommentLoadOptions#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#id:member'
+    summary: |-
       Specifies the comment identifier.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

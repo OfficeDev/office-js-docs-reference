@@ -1,312 +1,312 @@
-### YamlMime:TSType
-name: Excel.ConditionalRangeBorderCollection
-uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
-package: excel!
-fullName: Excel.ConditionalRangeBorderCollection
-summary: >-
-  Represents the border objects that make up range border.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
+    summary: |-
+      Represents the border objects that make up range border.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: bottom
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalRangeBorderCollection
+    fullName: Excel.ConditionalRangeBorderCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: bottom
-    summary: >-
+    children:
+      - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#context:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(2)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#items:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(2)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(3)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#toJSON:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+    summary: |-
       Gets the bottom border.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly bottom: Excel.ConditionalRangeBorder;'
       return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
-  - name: context
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#context:member'
-    package: excel!
-    fullName: context
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: count
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
-    package: excel!
-    fullName: count
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
+    summary: |-
       Number of border objects in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly count: number;'
       return:
-        type: number
-  - name: items
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.ConditionalRangeBorder[];'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />[]'
-  - name: left
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
-    package: excel!
-    fullName: left
-    summary: >-
-      Gets the left border.
-
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly left: Excel.ConditionalRangeBorder;'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
-  - name: right
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
-    package: excel!
-    fullName: right
-    summary: >-
-      Gets the right border.
-
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly right: Excel.ConditionalRangeBorder;'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
-  - name: top
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
-    package: excel!
-    fullName: top
-    summary: >-
-      Gets the top border.
-
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly top: Excel.ConditionalRangeBorder;'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
-methods:
-  - name: getItem(index)
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(index)
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+    summary: |-
       Gets a border object using its name.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getItem(index: Excel.ConditionalRangeBorderIndex):
-        Excel.ConditionalRangeBorder;
+      content: 'getItem(index: Excel.ConditionalRangeBorderIndex): Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:class'
+        description: ''
       parameters:
         - id: index
-          description: >-
-            Index value of the border object to be retrieved. See
-            Excel.ConditionalRangeBorderIndex for details.
-          type: '<xref uid="excel!Excel.ConditionalRangeBorderIndex:enum" />'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
-        description: ''
-  - name: getItem(indexString)
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(2)'
-    package: excel!
-    fullName: getItem(indexString)
-    summary: >-
+          description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+          type:
+            - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(2)'
+    summary: |-
       Gets a border object using its name.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(indexString)
+    fullName: getItem(indexString)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" |
-        "EdgeRight"): Excel.ConditionalRangeBorder;
+      content: 'getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:class'
+        description: ''
       parameters:
         - id: indexString
-          description: >-
-            Index value of the border object to be retrieved. See
-            Excel.ConditionalRangeBorderIndex for details.
-          type: '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
-        description: ''
-  - name: getItemAt(index)
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
-    package: excel!
-    fullName: getItemAt(index)
-    summary: >-
+          description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+          type:
+            - '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
+    summary: |-
       Gets a border object using its index.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemAt(index: number): Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
-          type: number
+          type:
+            - number
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.ConditionalRangeBorder[];'
       return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+        type:
+          - 'excel!Excel.ConditionalRangeBorderCollection#items~0:complex'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+    summary: |-
+      Gets the left border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?:
-        Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions):
-        Excel.ConditionalRangeBorderCollection;
+        load(options?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorderCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.ConditionalRangeBorderCollection#load~0:complex'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNames?: string | string[]):
-        Excel.ConditionalRangeBorderCollection;
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorderCollection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.ConditionalRangeBorderCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+    summary: |-
+      Gets the right border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly right: Excel.ConditionalRangeBorder;'
       return:
-        type: '<xref uid="excel!Excel.ConditionalRangeBorderCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.ConditionalRangeBorderCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.ConditionalRangeBorderCollection` object is an API object, the
-      `toJSON` method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.ConditionalRangeBorderCollectionData`<!-- -->) that
-      contains an "items" array with shallow copies of any loaded properties
-      from the collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.ConditionalRangeBorderCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderCollectionData`<!--
+      -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+    summary: |-
+      Gets the top border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:class'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.ConditionalRangeBorder:class'
+    name: Excel.ConditionalRangeBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+    name: Excel.ConditionalRangeBorderIndex
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#items~0:complex'
+    name: 'Excel.ConditionalRangeBorder[]'
+    fullName: 'Excel.ConditionalRangeBorder[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalRangeBorder:class'
+        name: Excel.ConditionalRangeBorder
+        fullName: Excel.ConditionalRangeBorder
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
+    name: Excel.ConditionalRangeBorderCollection
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load~0:complex'
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions:interface'
+        name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+        fullName: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionData

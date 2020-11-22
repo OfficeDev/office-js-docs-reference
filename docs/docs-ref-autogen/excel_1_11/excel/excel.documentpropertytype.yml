@@ -1,33 +1,51 @@
-### YamlMime:TSEnum
-name: Excel.DocumentPropertyType
-uid: 'excel!Excel.DocumentPropertyType:enum'
-package: excel!
-fullName: Excel.DocumentPropertyType
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: boolean
-    uid: 'excel!Excel.DocumentPropertyType.boolean:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DocumentPropertyType:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.DocumentPropertyType
+    fullName: Excel.DocumentPropertyType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: date
-    uid: 'excel!Excel.DocumentPropertyType.date:member'
-    package: excel!
-    summary: ''
-  - name: float
-    uid: 'excel!Excel.DocumentPropertyType.float:member'
-    package: excel!
-    summary: ''
-  - name: number
-    uid: 'excel!Excel.DocumentPropertyType.number:member'
-    package: excel!
-    summary: ''
-  - name: string
-    uid: 'excel!Excel.DocumentPropertyType.string:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.DocumentPropertyType.boolean:member'
+      - 'excel!Excel.DocumentPropertyType.date:member'
+      - 'excel!Excel.DocumentPropertyType.float:member'
+      - 'excel!Excel.DocumentPropertyType.number:member'
+      - 'excel!Excel.DocumentPropertyType.string:member'
+  - uid: 'excel!Excel.DocumentPropertyType.boolean:member'
+    name: boolean
+    fullName: boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: 'excel!Excel.DocumentPropertyType.date:member'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Date"'
+  - uid: 'excel!Excel.DocumentPropertyType.float:member'
+    name: float
+    fullName: float
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Float"'
+  - uid: 'excel!Excel.DocumentPropertyType.number:member'
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: 'excel!Excel.DocumentPropertyType.string:member'
+    name: string
+    fullName: string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'

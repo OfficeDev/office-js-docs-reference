@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.User:interface'
+    summary: >-
+      Represents information about an Excel user.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.User
+    fullName: Excel.User
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.User#displayName:member'
+      - 'excel!Excel.User#email:member'
+      - 'excel!Excel.User#uid:member'
+  - uid: 'excel!Excel.User#displayName:member'
+    summary: >-
+      Represents the user's display name.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.User#email:member'
+    summary: >-
+      Represents the user's email address.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: email
+    fullName: email
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'email?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.User#uid:member'
+    summary: >-
+      Represents the user's unique ID.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: uid
+    fullName: uid
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'uid?: string;'
+      return:
+        type:
+          - string

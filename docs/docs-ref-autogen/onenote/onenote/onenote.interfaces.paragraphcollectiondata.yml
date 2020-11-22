@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.ParagraphCollectionData
-uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.ParagraphCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "paragraphCollection.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
+    summary: An interface describing the data returned by calling "paragraphCollection.toJSON()".
+    name: OneNote.Interfaces.ParagraphCollectionData
+    fullName: OneNote.Interfaces.ParagraphCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.ParagraphCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.ParagraphData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.ParagraphCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.ParagraphData[]'
+    fullName: 'OneNote.Interfaces.ParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
+        name: OneNote.Interfaces.ParagraphData
+        fullName: OneNote.Interfaces.ParagraphData
+      - name: '[]'
+        fullName: '[]'

@@ -1,86 +1,91 @@
-### YamlMime:TSType
-name: Word.Interfaces.RangeData
-uid: 'word!Word.Interfaces.RangeData:interface'
-package: word!
-fullName: Word.Interfaces.RangeData
-summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: font
-    uid: 'word!Word.Interfaces.RangeData#font:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.RangeData:interface'
+    summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
+    name: Word.Interfaces.RangeData
+    fullName: Word.Interfaces.RangeData
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: font
+    children:
+      - 'word!Word.Interfaces.RangeData#font:member'
+      - 'word!Word.Interfaces.RangeData#inlinePictures:member'
+      - 'word!Word.Interfaces.RangeData#style:member'
+      - 'word!Word.Interfaces.RangeData#text:member'
+  - uid: 'word!Word.Interfaces.RangeData#font:member'
     summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties. Read-only.
+      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Word.Interfaces.FontData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
-  - name: inlinePictures
-    uid: 'word!Word.Interfaces.RangeData#inlinePictures:member'
-    package: word!
-    fullName: inlinePictures
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.RangeData#inlinePictures:member'
+    summary: |-
       Gets the collection of inline picture objects in the range. Read-only.
 
-
-      \[ [API set: WordApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: inlinePictures
+    fullName: inlinePictures
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
-  - name: style
-    uid: 'word!Word.Interfaces.RangeData#style:member'
-    package: word!
-    fullName: style
+        type:
+          - 'word!Word.Interfaces.RangeData#inlinePictures~0:complex'
+  - uid: 'word!Word.Interfaces.RangeData#style:member'
     summary: >-
-      Gets or sets the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
+      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: string;'
       return:
-        type: string
-  - name: text
-    uid: 'word!Word.Interfaces.RangeData#text:member'
-    package: word!
-    fullName: text
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.RangeData#text:member'
+    summary: |-
       Gets the text of the range. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: 'word!Word.Interfaces.FontData:interface'
+    name: Word.Interfaces.FontData
+  - uid: 'word!Word.Interfaces.RangeData#inlinePictures~0:complex'
+    name: 'Word.Interfaces.InlinePictureData[]'
+    fullName: 'Word.Interfaces.InlinePictureData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.InlinePictureData:interface'
+        name: Word.Interfaces.InlinePictureData
+        fullName: Word.Interfaces.InlinePictureData
+      - name: '[]'
+        fullName: '[]'

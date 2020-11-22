@@ -1,21 +1,27 @@
-### YamlMime:TSEnum
-name: Excel.FilterOperator
-uid: 'excel!Excel.FilterOperator:enum'
-package: excel!
-fullName: Excel.FilterOperator
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: and
-    uid: 'excel!Excel.FilterOperator.and:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FilterOperator:enum'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FilterOperator
+    fullName: Excel.FilterOperator
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: or
-    uid: 'excel!Excel.FilterOperator.or:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.FilterOperator.and:member'
+      - 'excel!Excel.FilterOperator.or:member'
+  - uid: 'excel!Excel.FilterOperator.and:member'
+    name: and
+    fullName: and
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"And"'
+  - uid: 'excel!Excel.FilterOperator.or:member'
+    name: or
+    fullName: or
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Or"'

@@ -1,25 +1,35 @@
-### YamlMime:TSEnum
-name: Excel.ArrowheadWidth
-uid: 'excel!Excel.ArrowheadWidth:enum'
-package: excel!
-fullName: Excel.ArrowheadWidth
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: medium
-    uid: 'excel!Excel.ArrowheadWidth.medium:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ArrowheadWidth:enum'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ArrowheadWidth
+    fullName: Excel.ArrowheadWidth
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: narrow
-    uid: 'excel!Excel.ArrowheadWidth.narrow:member'
-    package: excel!
-    summary: ''
-  - name: wide
-    uid: 'excel!Excel.ArrowheadWidth.wide:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ArrowheadWidth.medium:member'
+      - 'excel!Excel.ArrowheadWidth.narrow:member'
+      - 'excel!Excel.ArrowheadWidth.wide:member'
+  - uid: 'excel!Excel.ArrowheadWidth.medium:member'
+    name: medium
+    fullName: medium
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Medium"'
+  - uid: 'excel!Excel.ArrowheadWidth.narrow:member'
+    name: narrow
+    fullName: narrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Narrow"'
+  - uid: 'excel!Excel.ArrowheadWidth.wide:member'
+    name: wide
+    fullName: wide
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wide"'

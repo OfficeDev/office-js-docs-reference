@@ -1,12 +1,12 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
-uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
-summary: >-
-  An interface for updating data on the ConditionalDataBarNegativeFormat object,
-  for use in `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
+    summary: >-
+      An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in
+      `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
+    name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

@@ -1,31 +1,27 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RuntimeUpdateData
-uid: 'excel!Excel.Interfaces.RuntimeUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.RuntimeUpdateData
-summary: >-
-  An interface for updating data on the Runtime object, for use in
-  `runtime.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: enableEvents
-    uid: 'excel!Excel.Interfaces.RuntimeUpdateData#enableEvents:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RuntimeUpdateData:interface'
+    summary: 'An interface for updating data on the Runtime object, for use in `runtime.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.RuntimeUpdateData
+    fullName: Excel.Interfaces.RuntimeUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: enableEvents
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.RuntimeUpdateData#enableEvents:member'
+  - uid: 'excel!Excel.Interfaces.RuntimeUpdateData#enableEvents:member'
+    summary: |-
       Toggle JavaScript events in the current task pane or content add-in.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableEvents
+    fullName: enableEvents
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'enableEvents?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

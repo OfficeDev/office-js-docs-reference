@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.SectionCollectionUpdateData
-uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.SectionCollectionUpdateData
-summary: >-
-  An interface for updating data on the SectionCollection object, for use in
-  "sectionCollection.set(<!-- -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the SectionCollection object, for use in "sectionCollection.set(<!-- -->{ ...
+      }<!-- -->)".
+    name: OneNote.Interfaces.SectionCollectionUpdateData
+    fullName: OneNote.Interfaces.SectionCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.SectionCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.SectionData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.SectionData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.SectionCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.SectionData[]'
+    fullName: 'OneNote.Interfaces.SectionData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
+        name: OneNote.Interfaces.SectionData
+        fullName: OneNote.Interfaces.SectionData
+      - name: '[]'
+        fullName: '[]'

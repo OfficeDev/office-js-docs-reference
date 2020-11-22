@@ -1,187 +1,176 @@
-### YamlMime:TSType
-name: Word.Interfaces.TableCellData
-uid: 'word!Word.Interfaces.TableCellData:interface'
-package: word!
-fullName: Word.Interfaces.TableCellData
-summary: >-
-  An interface describing the data returned by calling `tableCell.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: body
-    uid: 'word!Word.Interfaces.TableCellData#body:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.TableCellData:interface'
+    summary: An interface describing the data returned by calling `tableCell.toJSON()`<!-- -->.
+    name: Word.Interfaces.TableCellData
+    fullName: Word.Interfaces.TableCellData
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: body
-    summary: >-
+    children:
+      - 'word!Word.Interfaces.TableCellData#body:member'
+      - 'word!Word.Interfaces.TableCellData#cellIndex:member'
+      - 'word!Word.Interfaces.TableCellData#columnWidth:member'
+      - 'word!Word.Interfaces.TableCellData#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableCellData#rowIndex:member'
+      - 'word!Word.Interfaces.TableCellData#shadingColor:member'
+      - 'word!Word.Interfaces.TableCellData#value:member'
+      - 'word!Word.Interfaces.TableCellData#verticalAlignment:member'
+      - 'word!Word.Interfaces.TableCellData#width:member'
+  - uid: 'word!Word.Interfaces.TableCellData#body:member'
+    summary: |-
       Gets the body object of the cell. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.BodyData:interface" />'
-  - name: cellIndex
-    uid: 'word!Word.Interfaces.TableCellData#cellIndex:member'
-    package: word!
-    fullName: cellIndex
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.BodyData:interface'
+  - uid: 'word!Word.Interfaces.TableCellData#cellIndex:member'
+    summary: |-
       Gets the index of the cell in its row. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cellIndex
+    fullName: cellIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cellIndex?: number;'
       return:
-        type: number
-  - name: columnWidth
-    uid: 'word!Word.Interfaces.TableCellData#columnWidth:member'
-    package: word!
+        type:
+          - number
+  - uid: 'word!Word.Interfaces.TableCellData#columnWidth:member'
+    summary: |-
+      Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: columnWidth
     fullName: columnWidth
-    summary: >-
-      Gets and sets the width of the cell's column in points. This is applicable
-      to uniform tables.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columnWidth?: number;'
       return:
-        type: number
-  - name: horizontalAlignment
-    uid: 'word!Word.Interfaces.TableCellData#horizontalAlignment:member'
-    package: word!
+        type:
+          - number
+  - uid: 'word!Word.Interfaces.TableCellData#horizontalAlignment:member'
+    summary: |-
+      Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
     fullName: horizontalAlignment
-    summary: >-
-      Gets and sets the horizontal alignment of the cell. The value can be
-      'Left', 'Centered', 'Right', or 'Justified'.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" |
-        "Centered" | "Right" | "Justified";
+      content: 'horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
-  - name: rowIndex
-    uid: 'word!Word.Interfaces.TableCellData#rowIndex:member'
-    package: word!
-    fullName: rowIndex
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.TableCellData#horizontalAlignment~0:complex'
+  - uid: 'word!Word.Interfaces.TableCellData#rowIndex:member'
+    summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rowIndex?: number;'
       return:
-        type: number
-  - name: shadingColor
-    uid: 'word!Word.Interfaces.TableCellData#shadingColor:member'
-    package: word!
+        type:
+          - number
+  - uid: 'word!Word.Interfaces.TableCellData#shadingColor:member'
+    summary: |-
+      Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
     fullName: shadingColor
-    summary: >-
-      Gets or sets the shading color of the cell. Color is specified in
-      "\#RRGGBB" format or by using the color name.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shadingColor?: string;'
       return:
-        type: string
-  - name: value
-    uid: 'word!Word.Interfaces.TableCellData#value:member'
-    package: word!
-    fullName: value
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.TableCellData#value:member'
+    summary: |-
       Gets and sets the text of the cell.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'value?: string;'
       return:
-        type: string
-  - name: verticalAlignment
-    uid: 'word!Word.Interfaces.TableCellData#verticalAlignment:member'
-    package: word!
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.TableCellData#verticalAlignment:member'
+    summary: |-
+      Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
     fullName: verticalAlignment
-    summary: >-
-      Gets and sets the vertical alignment of the cell. The value can be 'Top',
-      'Center', or 'Bottom'.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center"
-        | "Bottom";
+      content: 'verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
-        type: >-
-          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
-          "Center" | "Bottom"
-  - name: width
-    uid: 'word!Word.Interfaces.TableCellData#width:member'
-    package: word!
-    fullName: width
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.TableCellData#verticalAlignment~0:complex'
+  - uid: 'word!Word.Interfaces.TableCellData#width:member'
+    summary: |-
       Gets the width of the cell in points. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number;'
       return:
-        type: number
+        type:
+          - number
+references:
+  - uid: 'word!Word.Interfaces.BodyData:interface'
+    name: Word.Interfaces.BodyData
+  - uid: 'word!Word.Interfaces.TableCellData#horizontalAlignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.Interfaces.TableCellData#verticalAlignment~0:complex'
+    name: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    fullName: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    spec.typeScript:
+      - uid: 'word!Word.VerticalAlignment:enum'
+        name: Word.VerticalAlignment
+        fullName: Word.VerticalAlignment
+      - name: ' | "Mixed" | "Top" | "Center" | "Bottom"'
+        fullName: ' | "Mixed" | "Top" | "Center" | "Bottom"'

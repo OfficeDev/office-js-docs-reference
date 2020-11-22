@@ -1,35 +1,30 @@
-### YamlMime:TSType
-name: Excel.WorkbookAutoSaveSettingChangedEventArgs
-uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
-package: excel!
-fullName: Excel.WorkbookAutoSaveSettingChangedEventArgs
-summary: >-
-  Provides information about the workbook's onAutoSaveSettingChanged event.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
+    summary: |-
+      Provides information about the workbook's onAutoSaveSettingChanged event.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: type
-    uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorkbookAutoSaveSettingChangedEventArgs
+    fullName: Excel.WorkbookAutoSaveSettingChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: type
-    summary: >-
+    children:
+      - 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
+  - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: "WorkbookAutoSaveSettingChanged";'
       return:
-        type: '"WorkbookAutoSaveSettingChanged"'
+        type:
+          - '"WorkbookAutoSaveSettingChanged"'

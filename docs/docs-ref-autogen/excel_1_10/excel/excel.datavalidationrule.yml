@@ -1,93 +1,86 @@
-### YamlMime:TSType
-name: Excel.DataValidationRule
-uid: 'excel!Excel.DataValidationRule:interface'
-package: excel!
-fullName: Excel.DataValidationRule
-summary: >-
-  Data validation rule contains different types of data validation. You can only
-  use one of them at a time according the Excel.DataValidationType.
-
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: custom
-    uid: 'excel!Excel.DataValidationRule#custom:member'
-    package: excel!
-    fullName: custom
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataValidationRule:interface'
     summary: >-
+      Data validation rule contains different types of data validation. You can only use one of them at a time according
+      the Excel.DataValidationType.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidationRule
+    fullName: Excel.DataValidationRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.DataValidationRule#custom:member'
+      - 'excel!Excel.DataValidationRule#date:member'
+      - 'excel!Excel.DataValidationRule#decimal:member'
+      - 'excel!Excel.DataValidationRule#list:member'
+      - 'excel!Excel.DataValidationRule#textLength:member'
+      - 'excel!Excel.DataValidationRule#time:member'
+      - 'excel!Excel.DataValidationRule#wholeNumber:member'
+  - uid: 'excel!Excel.DataValidationRule#custom:member'
+    summary: |-
       Custom data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'custom?: Excel.CustomDataValidation;'
       return:
-        type: '<xref uid="excel!Excel.CustomDataValidation:interface" />'
-  - name: date
-    uid: 'excel!Excel.DataValidationRule#date:member'
-    package: excel!
-    fullName: date
-    summary: >-
+        type:
+          - 'excel!Excel.CustomDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#date:member'
+    summary: |-
       Date data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'date?: Excel.DateTimeDataValidation;'
       return:
-        type: '<xref uid="excel!Excel.DateTimeDataValidation:interface" />'
-  - name: decimal
-    uid: 'excel!Excel.DataValidationRule#decimal:member'
-    package: excel!
-    fullName: decimal
-    summary: >-
+        type:
+          - 'excel!Excel.DateTimeDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#decimal:member'
+    summary: |-
       Decimal data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'decimal?: Excel.BasicDataValidation;'
       return:
-        type: '<xref uid="excel!Excel.BasicDataValidation:interface" />'
-  - name: list
-    uid: 'excel!Excel.DataValidationRule#list:member'
-    package: excel!
-    fullName: list
-    summary: >-
+        type:
+          - 'excel!Excel.BasicDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#list:member'
+    summary: |-
       List data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'list?: Excel.ListDataValidation;'
       return:
-        type: '<xref uid="excel!Excel.ListDataValidation:interface" />'
+        type:
+          - 'excel!Excel.ListDataValidation:interface'
         description: >-
 
 
@@ -122,60 +115,51 @@ properties:
           });
 
           ```
-  - name: textLength
-    uid: 'excel!Excel.DataValidationRule#textLength:member'
-    package: excel!
-    fullName: textLength
-    summary: >-
+  - uid: 'excel!Excel.DataValidationRule#textLength:member'
+    summary: |-
       TextLength data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'textLength?: Excel.BasicDataValidation;'
       return:
-        type: '<xref uid="excel!Excel.BasicDataValidation:interface" />'
-  - name: time
-    uid: 'excel!Excel.DataValidationRule#time:member'
-    package: excel!
-    fullName: time
-    summary: >-
+        type:
+          - 'excel!Excel.BasicDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#time:member'
+    summary: |-
       Time data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'time?: Excel.DateTimeDataValidation;'
       return:
-        type: '<xref uid="excel!Excel.DateTimeDataValidation:interface" />'
-  - name: wholeNumber
-    uid: 'excel!Excel.DataValidationRule#wholeNumber:member'
-    package: excel!
-    fullName: wholeNumber
-    summary: >-
+        type:
+          - 'excel!Excel.DateTimeDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#wholeNumber:member'
+    summary: |-
       WholeNumber data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'wholeNumber?: Excel.BasicDataValidation;'
       return:
-        type: '<xref uid="excel!Excel.BasicDataValidation:interface" />'
+        type:
+          - 'excel!Excel.BasicDataValidation:interface'
         description: >-
 
 
@@ -220,3 +204,12 @@ properties:
           });
 
           ```
+references:
+  - uid: 'excel!Excel.CustomDataValidation:interface'
+    name: Excel.CustomDataValidation
+  - uid: 'excel!Excel.DateTimeDataValidation:interface'
+    name: Excel.DateTimeDataValidation
+  - uid: 'excel!Excel.BasicDataValidation:interface'
+    name: Excel.BasicDataValidation
+  - uid: 'excel!Excel.ListDataValidation:interface'
+    name: Excel.ListDataValidation

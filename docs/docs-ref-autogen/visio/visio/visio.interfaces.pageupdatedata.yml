@@ -1,31 +1,30 @@
-### YamlMime:TSType
-name: Visio.Interfaces.PageUpdateData
-uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
-package: visio!
-fullName: Visio.Interfaces.PageUpdateData
-summary: >-
-  An interface for updating data on the Page object, for use in "page.set(<!--
-  -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: view
-    uid: 'visio!Visio.Interfaces.PageUpdateData#view:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
+    summary: 'An interface for updating data on the Page object, for use in "page.set(<!-- -->{ ... }<!-- -->)".'
+    name: Visio.Interfaces.PageUpdateData
+    fullName: Visio.Interfaces.PageUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: visio!
-    fullName: view
-    summary: >-
+    children:
+      - 'visio!Visio.Interfaces.PageUpdateData#view:member'
+  - uid: 'visio!Visio.Interfaces.PageUpdateData#view:member'
+    summary: |-
       Returns the view of the page.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: view
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'view?: Visio.Interfaces.PageViewUpdateData;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.PageViewUpdateData:interface" />'
+        type:
+          - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+references:
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+    name: Visio.Interfaces.PageViewUpdateData

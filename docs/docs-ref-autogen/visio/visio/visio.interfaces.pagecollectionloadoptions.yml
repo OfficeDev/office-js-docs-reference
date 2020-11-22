@@ -1,139 +1,125 @@
-### YamlMime:TSType
-name: Visio.Interfaces.PageCollectionLoadOptions
-uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
-package: visio!
-fullName: Visio.Interfaces.PageCollectionLoadOptions
-summary: >-
-  Represents a collection of Page objects that are part of the document.
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of Page objects that are part of the document.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#$all:member'
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.PageCollectionLoadOptions
+    fullName: Visio.Interfaces.PageCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: visio!
+    children:
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#height:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#index:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#isBackground:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#name:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#view:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#width:member'
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#$all:member'
+    name: $all
     fullName: $all
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: height
-    uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#height:member'
-    package: visio!
+        type:
+          - boolean
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#height:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns the height of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: height
     fullName: height
-    summary: >-
-      For EACH ITEM in the collection: Returns the height of the page.
-      Read-only.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: boolean;'
       return:
-        type: boolean
-  - name: index
-    uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#index:member'
-    package: visio!
-    fullName: index
-    summary: >-
+        type:
+          - boolean
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#index:member'
+    summary: |-
       For EACH ITEM in the collection: Index of the Page. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'index?: boolean;'
       return:
-        type: boolean
-  - name: isBackground
-    uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#isBackground:member'
-    package: visio!
+        type:
+          - boolean
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#isBackground:member'
+    summary: |-
+      For EACH ITEM in the collection: Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: isBackground
     fullName: isBackground
-    summary: >-
-      For EACH ITEM in the collection: Whether the page is a background page or
-      not. Read-only.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isBackground?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#name:member'
-    package: visio!
-    fullName: name
-    summary: >-
+        type:
+          - boolean
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#name:member'
+    summary: |-
       For EACH ITEM in the collection: Page name. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: view
-    uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#view:member'
-    package: visio!
-    fullName: view
-    summary: >-
+        type:
+          - boolean
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#view:member'
+    summary: |-
       For EACH ITEM in the collection: Returns the view of the page.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: view
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'view?: Visio.Interfaces.PageViewLoadOptions;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.PageViewLoadOptions:interface" />'
-  - name: width
-    uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#width:member'
-    package: visio!
-    fullName: width
-    summary: >-
+        type:
+          - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#width:member'
+    summary: |-
       For EACH ITEM in the collection: Returns the width of the page. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+    name: Visio.Interfaces.PageViewLoadOptions

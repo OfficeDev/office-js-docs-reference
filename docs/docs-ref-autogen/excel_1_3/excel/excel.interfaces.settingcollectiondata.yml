@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Excel.Interfaces.SettingCollectionData
-uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
-package: excel!
-fullName: Excel.Interfaces.SettingCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `settingCollection.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.SettingCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
+    summary: An interface describing the data returned by calling `settingCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.SettingCollectionData
+    fullName: Excel.Interfaces.SettingCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.SettingCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.SettingCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.SettingData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.SettingData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.SettingCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.SettingCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.SettingData[]'
+    fullName: 'Excel.Interfaces.SettingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SettingData:interface'
+        name: Excel.Interfaces.SettingData
+        fullName: Excel.Interfaces.SettingData
+      - name: '[]'
+        fullName: '[]'

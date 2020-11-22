@@ -1,91 +1,90 @@
-### YamlMime:TSType
-name: Excel.WorksheetColumnSortedEventArgs
-uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
-package: excel!
-fullName: Excel.WorksheetColumnSortedEventArgs
-summary: >-
-  Provides information about the column-sorted event and its related worksheet.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
+    summary: |-
+      Provides information about the column-sorted event and its related worksheet.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: address
-    uid: 'excel!Excel.WorksheetColumnSortedEventArgs#address:member'
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetColumnSortedEventArgs
+    fullName: Excel.WorksheetColumnSortedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: address
+    children:
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#address:member'
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#source:member'
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#type:member'
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#address:member'
     summary: >-
-      Gets the range address that represents the sorted areas of a specific
-      worksheet. Only columns changed as a result of the sort operation are
-      returned.
+      Gets the range address that represents the sorted areas of a specific worksheet. Only columns changed as a result
+      of the sort operation are returned.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'address: string;'
       return:
-        type: string
-  - name: source
-    uid: 'excel!Excel.WorksheetColumnSortedEventArgs#source:member'
-    package: excel!
-    fullName: source
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#source:member'
+    summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
-  - name: type
-    uid: 'excel!Excel.WorksheetColumnSortedEventArgs#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
+        type:
+          - 'excel!Excel.WorksheetColumnSortedEventArgs#source~0:complex'
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#type:member'
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: "WorksheetColumnSorted";'
       return:
-        type: '"WorksheetColumnSorted"'
-  - name: worksheetId
-    uid: 'excel!Excel.WorksheetColumnSortedEventArgs#worksheetId:member'
-    package: excel!
-    fullName: worksheetId
-    summary: >-
+        type:
+          - '"WorksheetColumnSorted"'
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#worksheetId:member'
+    summary: |-
       Gets the id of the worksheet where the sorting happened.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'worksheetId: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#source~0:complex'
+    name: Excel.EventSource | "Local" | "Remote"
+    fullName: Excel.EventSource | "Local" | "Remote"
+    spec.typeScript:
+      - uid: 'excel!Excel.EventSource:enum'
+        name: Excel.EventSource
+        fullName: Excel.EventSource
+      - name: ' | "Local" | "Remote"'
+        fullName: ' | "Local" | "Remote"'

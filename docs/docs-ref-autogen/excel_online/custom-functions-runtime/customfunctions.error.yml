@@ -1,65 +1,66 @@
-### YamlMime:TSType
-name: CustomFunctions.Error
-uid: 'custom-functions-runtime!CustomFunctions.Error:class'
-package: custom-functions-runtime!
-fullName: CustomFunctions.Error
-summary: >-
-  Use this class to handle errors and write custom error messages. \[ [API set:
-  CustomFunctionsRuntime
-  1.2](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: '(constructor)(code, message)'
-    uid: 'custom-functions-runtime!CustomFunctions.Error:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'custom-functions-runtime!CustomFunctions.Error:class'
+    summary: >-
+      Use this class to handle errors and write custom error messages. \[ [API set: CustomFunctionsRuntime
+      1.2](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
+    name: CustomFunctions.Error
+    fullName: CustomFunctions.Error
+    langs:
+      - typeScript
+    type: class
     package: custom-functions-runtime!
-    fullName: '(constructor)(code, message)'
+    children:
+      - 'custom-functions-runtime!CustomFunctions.Error:constructor(1)'
+      - 'custom-functions-runtime!CustomFunctions.Error#code:member'
+      - 'custom-functions-runtime!CustomFunctions.Error#message:member'
+  - uid: 'custom-functions-runtime!CustomFunctions.Error:constructor(1)'
     summary: Constructs a new instance of the `Error` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: '(constructor)(code, message)'
+    fullName: '(constructor)(code, message)'
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(code: ErrorCode, message?: string);'
       parameters:
         - id: code
           description: ''
-          type: >-
-            <xref uid="custom-functions-runtime!CustomFunctions.ErrorCode:enum"
-            />
+          type:
+            - 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
         - id: message
           description: ''
-          type: string
-properties:
-  - name: code
-    uid: 'custom-functions-runtime!CustomFunctions.Error#code:member'
-    package: custom-functions-runtime!
-    fullName: code
+          type:
+            - string
+  - uid: 'custom-functions-runtime!CustomFunctions.Error#code:member'
     summary: >-
-      The error code returned by your custom function. \[ [API set:
-      CustomFunctionsRuntime
+      The error code returned by your custom function. \[ [API set: CustomFunctionsRuntime
       1.2](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: code
+    fullName: code
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'code: ErrorCode;'
       return:
-        type: '<xref uid="custom-functions-runtime!CustomFunctions.ErrorCode:enum" />'
-  - name: message
-    uid: 'custom-functions-runtime!CustomFunctions.Error#message:member'
-    package: custom-functions-runtime!
-    fullName: message
+        type:
+          - 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
+  - uid: 'custom-functions-runtime!CustomFunctions.Error#message:member'
     summary: >-
-      Your custom error message, such as "This stock price is unavailable".
-      Custom messages are only available with certain error codes. \[ [API set:
-      CustomFunctionsRuntime
+      Your custom error message, such as "This stock price is unavailable". Custom messages are only available with
+      certain error codes. \[ [API set: CustomFunctionsRuntime
       1.2](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'message?: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: 'custom-functions-runtime!CustomFunctions.ErrorCode:enum'
+    name: ErrorCode

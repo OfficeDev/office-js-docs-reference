@@ -1,69 +1,45 @@
-### YamlMime:TSType
-name: Excel.CustomXmlPartCollection
-uid: 'excel!Excel.CustomXmlPartCollection:class'
-package: excel!
-fullName: Excel.CustomXmlPartCollection
-summary: >-
-  A collection of custom XML parts.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomXmlPartCollection:class'
+    summary: |-
+      A collection of custom XML parts.
 
-
-  \[ [API set: ExcelApi
-  1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.CustomXmlPartCollection#context:member'
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CustomXmlPartCollection
+    fullName: Excel.CustomXmlPartCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: items
-    uid: 'excel!Excel.CustomXmlPartCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.CustomXmlPart[];'
-      return:
-        type: '<xref uid="excel!Excel.CustomXmlPart:class" />[]'
-methods:
-  - name: add(xml)
-    uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
-    package: excel!
-    fullName: add(xml)
-    summary: >-
+    children:
+      - 'excel!Excel.CustomXmlPartCollection#add:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#context:member'
+      - 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#items:member'
+      - 'excel!Excel.CustomXmlPartCollection#load:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#load:member(2)'
+      - 'excel!Excel.CustomXmlPartCollection#load:member(3)'
+      - 'excel!Excel.CustomXmlPartCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
+    summary: |-
       Adds a new custom XML part to the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: add(xml)
+    fullName: add(xml)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(xml: string): Excel.CustomXmlPart;'
-      parameters:
-        - id: xml
-          description: XML content. Must be a valid XML fragment.
-          type: string
       return:
-        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
+        type:
+          - 'excel!Excel.CustomXmlPart:class'
         description: >-
 
 
@@ -96,33 +72,40 @@ methods:
           });
 
           ```
-  - name: getByNamespace(namespaceUri)
-    uid: 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
-    package: excel!
-    fullName: getByNamespace(namespaceUri)
-    summary: >-
-      Gets a new scoped collection of custom XML parts whose namespaces match
-      the given namespace.
-
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        getByNamespace(namespaceUri: string):
-        Excel.CustomXmlPartScopedCollection;
       parameters:
-        - id: namespaceUri
-          description: >-
-            This must be a fully qualified schema URI; for example,
-            "http://schemas.contoso.com/review/1.0".
-          type: string
+        - id: xml
+          description: XML content. Must be a valid XML fragment.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.CustomXmlPartScopedCollection:class" />'
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+    summary: |-
+      Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getByNamespace(namespaceUri)
+    fullName: getByNamespace(namespaceUri)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartScopedCollection:class'
         description: >-
 
 
@@ -163,47 +146,42 @@ methods:
           });
 
           ```
-  - name: getCount()
-    uid: 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
-    package: excel!
-    fullName: getCount()
-    summary: >-
+      parameters:
+        - id: namespaceUri
+          description: 'This must be a fully qualified schema URI; for example, "http://schemas.contoso.com/review/1.0".'
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+    summary: |-
       Gets the number of CustomXml parts in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type:
+          - 'excel!Excel.CustomXmlPartCollection#getCount~0:complex'
         description: ''
-  - name: getItem(id)
-    uid: 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(id)
-    summary: >-
+  - uid: 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
+    summary: |-
       Gets a custom XML part based on its ID.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(id: string): Excel.CustomXmlPart;'
-      parameters:
-        - id: id
-          description: ID of the object to be retrieved.
-          type: string
       return:
-        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
+        type:
+          - 'excel!Excel.CustomXmlPart:class'
         description: >-
 
 
@@ -236,123 +214,170 @@ methods:
           });
 
           ```
-  - name: getItemOrNullObject(id)
-    uid: 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
-    package: excel!
-    fullName: getItemOrNullObject(id)
-    summary: >-
-      Gets a custom XML part based on its ID. If the CustomXmlPart does not
-      exist, the return object's isNull property will be true.
-
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getItemOrNullObject(id: string): Excel.CustomXmlPart;'
       parameters:
         - id: id
           description: ID of the object to be retrieved.
-          type: string
-      return:
-        type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.CustomXmlPartCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
+      will be true.
+
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemOrNullObject(id)
+    fullName: getItemOrNullObject(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): Excel.CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:class'
+        description: ''
+      parameters:
+        - id: id
+          description: ID of the object to be retrieved.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.CustomXmlPart[];'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartCollection#items~0:complex'
+  - uid: 'excel!Excel.CustomXmlPartCollection#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartCollection;
+        load(options?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CustomXmlPartCollection;
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.CustomXmlPartCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.CustomXmlPartCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.CustomXmlPartCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.CustomXmlPartCollection#load~0:complex'
+  - uid: 'excel!Excel.CustomXmlPartCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.CustomXmlPartCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.CustomXmlPartCollection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.CustomXmlPartCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CustomXmlPartCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.CustomXmlPartCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.CustomXmlPartCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.CustomXmlPartCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.CustomXmlPartCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.CustomXmlPartCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.CustomXmlPartCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.CustomXmlPartCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.CustomXmlPartCollectionData:interface" />
+        type:
+          - 'excel!Excel.Interfaces.CustomXmlPartCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.CustomXmlPart:class'
+    name: Excel.CustomXmlPart
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection:class'
+    name: Excel.CustomXmlPartScopedCollection
+  - uid: 'excel!Excel.CustomXmlPartCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.CustomXmlPartCollection#items~0:complex'
+    name: 'Excel.CustomXmlPart[]'
+    fullName: 'Excel.CustomXmlPart[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.CustomXmlPart:class'
+        name: Excel.CustomXmlPart
+        fullName: Excel.CustomXmlPart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.CustomXmlPartCollection:class'
+    name: Excel.CustomXmlPartCollection
+  - uid: 'excel!Excel.CustomXmlPartCollection#load~0:complex'
+    name: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
+        name: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
+        fullName: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionData:interface'
+    name: Excel.Interfaces.CustomXmlPartCollectionData

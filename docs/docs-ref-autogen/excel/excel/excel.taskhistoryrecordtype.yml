@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TaskHistoryRecordType:enum'
+    summary: >-
+      Represents the type of change recorded in the task history record.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.TaskHistoryRecordType
+    fullName: Excel.TaskHistoryRecordType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.TaskHistoryRecordType.assign:member'
+      - 'excel!Excel.TaskHistoryRecordType.create:member'
+      - 'excel!Excel.TaskHistoryRecordType.delete:member'
+      - 'excel!Excel.TaskHistoryRecordType.priority:member'
+      - 'excel!Excel.TaskHistoryRecordType.progress:member'
+      - 'excel!Excel.TaskHistoryRecordType.schedule:member'
+      - 'excel!Excel.TaskHistoryRecordType.setTitle:member'
+      - 'excel!Excel.TaskHistoryRecordType.unassign:member'
+      - 'excel!Excel.TaskHistoryRecordType.unassignAll:member'
+      - 'excel!Excel.TaskHistoryRecordType.undelete:member'
+      - 'excel!Excel.TaskHistoryRecordType.undo:member'
+      - 'excel!Excel.TaskHistoryRecordType.unknown:member'
+  - uid: 'excel!Excel.TaskHistoryRecordType.assign:member'
+    summary: Represents a user being assigned to a task.
+    isPreview: true
+    name: assign
+    fullName: assign
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Assign"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.create:member'
+    summary: Represents the creation of a new task.
+    isPreview: true
+    name: create
+    fullName: create
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Create"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.delete:member'
+    summary: Represents the deletion of a task history record.
+    isPreview: true
+    name: delete
+    fullName: delete
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Delete"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.priority:member'
+    summary: Represents an update to a task's priority.
+    isPreview: true
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Priority"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.progress:member'
+    summary: Represents an update to a task's progress.
+    isPreview: true
+    name: progress
+    fullName: progress
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Progress"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.schedule:member'
+    summary: Represents an update to a task's start date or due date.
+    isPreview: true
+    name: schedule
+    fullName: schedule
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Schedule"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.setTitle:member'
+    summary: Represents a change in the title of a task.
+    isPreview: true
+    name: setTitle
+    fullName: setTitle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SetTitle"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.unassign:member'
+    summary: Represents a user being unassigned from a task.
+    isPreview: true
+    name: unassign
+    fullName: unassign
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unassign"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.unassignAll:member'
+    summary: Represents all users being unassigned from a task.
+    isPreview: true
+    name: unassignAll
+    fullName: unassignAll
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UnassignAll"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.undelete:member'
+    summary: Represents the restoration of a history record after being deleted.
+    isPreview: true
+    name: undelete
+    fullName: undelete
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Undelete"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.undo:member'
+    summary: Represents a previous task action being undone.
+    isPreview: true
+    name: undo
+    fullName: undo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Undo"'
+  - uid: 'excel!Excel.TaskHistoryRecordType.unknown:member'
+    summary: >-
+      Represents unknown history type. This value will be returned when the version of Excel running doesn't understand
+      the type of the history record that is in the loaded file.
+    isPreview: true
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

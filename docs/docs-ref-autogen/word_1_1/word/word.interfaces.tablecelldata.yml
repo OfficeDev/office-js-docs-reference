@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Word.Interfaces.TableCellData
-uid: 'word!Word.Interfaces.TableCellData:interface'
-package: word!
-fullName: Word.Interfaces.TableCellData
-summary: >-
-  An interface describing the data returned by calling `tableCell.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.TableCellData:interface'
+    summary: An interface describing the data returned by calling `tableCell.toJSON()`<!-- -->.
+    name: Word.Interfaces.TableCellData
+    fullName: Word.Interfaces.TableCellData
+    langs:
+      - typeScript
+    type: interface
+    package: word!

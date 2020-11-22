@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TableColumnCollectionUpdateData
-uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.TableColumnCollectionUpdateData
-summary: >-
-  An interface for updating data on the TableColumnCollection object, for use in
-  `tableColumnCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the TableColumnCollection object, for use in `tableColumnCollection.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.TableColumnCollectionUpdateData
+    fullName: Excel.Interfaces.TableColumnCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.TableColumnData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.TableColumnData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.TableColumnData[]'
+    fullName: 'Excel.Interfaces.TableColumnData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableColumnData:interface'
+        name: Excel.Interfaces.TableColumnData
+        fullName: Excel.Interfaces.TableColumnData
+      - name: '[]'
+        fullName: '[]'

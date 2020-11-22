@@ -1,24 +1,35 @@
-### YamlMime:TSEnum
-name: PowerPoint.InsertSlideFormatting
-uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
-package: powerpoint!
-fullName: PowerPoint.InsertSlideFormatting
-summary: >-
-  Specifies the formatting options for when slides are inserted.
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
+    summary: |-
+      Specifies the formatting options for when slides are inserted.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-fields:
-  - name: keepSourceFormatting
-    uid: 'powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member'
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    name: PowerPoint.InsertSlideFormatting
+    fullName: PowerPoint.InsertSlideFormatting
+    langs:
+      - typeScript
+    type: enum
     package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member'
+      - 'powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member'
+  - uid: 'powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member'
     summary: Copy the source theme into the target presentation and use that theme.
-  - name: useDestinationTheme
-    uid: 'powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member'
-    package: powerpoint!
+    isPreview: true
+    name: keepSourceFormatting
+    fullName: keepSourceFormatting
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"KeepSourceFormatting"'
+  - uid: 'powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member'
     summary: Use the existing theme in the target presentation.
+    isPreview: true
+    name: useDestinationTheme
+    fullName: useDestinationTheme
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UseDestinationTheme"'

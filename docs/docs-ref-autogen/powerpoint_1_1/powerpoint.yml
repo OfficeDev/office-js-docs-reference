@@ -1,52 +1,48 @@
-### YamlMime:TSPackage
-uid: powerpoint!
-name: powerpoint
-type: package
-summary: ''
-classes:
-  - 'powerpoint!PowerPoint.Application:class'
-  - 'powerpoint!PowerPoint.Presentation:class'
-  - 'powerpoint!PowerPoint.RequestContext:class'
-enums:
-  - 'powerpoint!PowerPoint.ErrorCodes:enum'
-interfaces:
-  - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
-  - 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
-  - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
-functions:
-  - name: PowerPoint.createPresentation(base64File)
-    uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
-    package: powerpoint!
+### YamlMime:UniversalReference
+items:
+  - uid: powerpoint!
+    name: powerpoint
+    fullName: powerpoint
+    langs:
+      - typeScript
+    type: package
+    children:
+      - 'powerpoint!PowerPoint.Application:class'
+      - 'powerpoint!PowerPoint.createPresentation:function(1)'
+      - 'powerpoint!PowerPoint.ErrorCodes:enum'
+      - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
+      - 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
+      - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+      - 'powerpoint!PowerPoint.Presentation:class'
+      - 'powerpoint!PowerPoint.RequestContext:class'
+      - 'powerpoint!PowerPoint.run:function(1)'
+      - 'powerpoint!PowerPoint.run:function(2)'
+      - 'powerpoint!PowerPoint.run:function(3)'
+  - uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
     summary: >-
-      Creates and opens a new presentation. Optionally, the presentation can be
-      pre-populated with a base64-encoded .pptx file.
+      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
+      .pptx file.
 
 
-      \[ [API set: PowerPointApi
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: PowerPointApi 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: PowerPoint.createPresentation(base64File)
+    fullName: PowerPoint.createPresentation(base64File)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export function createPresentation(base64File?: string): Promise<void>;'
-      parameters:
-        - id: base64File
-          description: Optional. The base64-encoded .pptx file. The default value is null.
-          type: string
       return:
-        type: Promise&lt;void&gt;
-        description: >-
+        type:
+          - 'powerpoint!PowerPoint.createPresentation~0:complex'
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           var myFile = document.getElementById("file");
-
           var reader = new FileReader();
-
 
           reader.onload = function (event) {
               // strip off the metadata before the base64-encoded string
@@ -56,117 +52,219 @@ functions:
               PowerPoint.createPresentation(copyBase64);        
           };
 
-
-          // read in the file as a data URL so we can parse the base64-encoded
-          string
-
+          // read in the file as a data URL so we can parse the base64-encoded string
           reader.readAsDataURL(myFile.files[0]);
-
           ```
-  - name: PowerPoint.run(batch)
-    uid: 'powerpoint!PowerPoint.run:function(1)'
-    package: powerpoint!
+      parameters:
+        - id: base64File
+          description: Optional. The base64-encoded .pptx file. The default value is null.
+          type:
+            - string
+  - uid: 'powerpoint!PowerPoint.run:function(1)'
     summary: >-
-      Executes a batch script that performs actions on the PowerPoint object
-      model, using a new RequestContext. When the promise is resolved, any
-      tracked objects that were automatically allocated during execution will be
-      released.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    name: PowerPoint.run(batch)
+    fullName: PowerPoint.run(batch)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export function run<T>(batch: (context: PowerPoint.RequestContext) =>
-        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+        export function run<T>(batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>):
+        OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - 'powerpoint!PowerPoint.run~0:complex'
+        description: ''
       parameters:
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the PowerPoint application. Since
-            the Office add-in and the PowerPoint application run in two
-            different processes, the RequestContext is required to get access to
-            the PowerPoint object model from the add-in.
-          type: >-
-            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />)
-            =&gt; <xref uid="powerpoint!OfficeExtension.IPromise:type"
-            />&lt;T&gt;
-      return:
-        type: '<xref uid="powerpoint!OfficeExtension.IPromise:type" />&lt;T&gt;'
-        description: ''
-  - name: 'PowerPoint.run(object, batch)'
-    uid: 'powerpoint!PowerPoint.run:function(2)'
-    package: powerpoint!
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type:
+            - 'powerpoint!PowerPoint.run~1:complex'
+      typeParameters:
+        - id: T
+  - uid: 'powerpoint!PowerPoint.run:function(2)'
     summary: >-
-      Executes a batch script that performs actions on the PowerPoint object
-      model, using the RequestContext of a previously-created API object. When
-      the promise is resolved, any tracked objects that were automatically
-      allocated during execution will be released.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    name: 'PowerPoint.run(object, batch)'
+    fullName: 'PowerPoint.run(object, batch)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export function run<T>(object: OfficeExtension.ClientObject, batch:
-        (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>):
-        OfficeExtension.IPromise<T>;
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: PowerPoint.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - 'powerpoint!PowerPoint.run~2:complex'
+        description: ''
       parameters:
         - id: object
           description: >-
-            A previously-created API object. The batch will use the same
-            RequestContext as the passed-in object, which means that any changes
-            applied to the object will be picked up by "context.sync()".
-          type: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'
+            A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type:
+            - 'powerpoint!OfficeExtension.ClientObject:class'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the PowerPoint application. Since
-            the Office add-in and the PowerPoint application run in two
-            different processes, the RequestContext is required to get access to
-            the PowerPoint object model from the add-in.
-          type: >-
-            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />)
-            =&gt; <xref uid="powerpoint!OfficeExtension.IPromise:type"
-            />&lt;T&gt;
-      return:
-        type: '<xref uid="powerpoint!OfficeExtension.IPromise:type" />&lt;T&gt;'
-        description: ''
-  - name: 'PowerPoint.run(objects, batch)'
-    uid: 'powerpoint!PowerPoint.run:function(3)'
-    package: powerpoint!
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type:
+            - 'powerpoint!PowerPoint.run~3:complex'
+      typeParameters:
+        - id: T
+  - uid: 'powerpoint!PowerPoint.run:function(3)'
     summary: >-
-      Executes a batch script that performs actions on the PowerPoint object
-      model, using the RequestContext of previously-created API objects.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of
+      previously-created API objects.
+    name: 'PowerPoint.run(objects, batch)'
+    fullName: 'PowerPoint.run(objects, batch)'
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export function run<T>(objects: OfficeExtension.ClientObject[], batch:
-        (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>):
-        OfficeExtension.IPromise<T>;
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: PowerPoint.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - 'powerpoint!PowerPoint.run~4:complex'
+        description: ''
       parameters:
         - id: objects
           description: >-
-            An array of previously-created API objects. The array will be
-            validated to make sure that all of the objects share the same
-            context. The batch will use this shared RequestContext, which means
-            that any changes applied to these objects will be picked up by
-            "context.sync()".
-          type: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />[]'
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'powerpoint!PowerPoint.run~5:complex'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the PowerPoint application. Since
-            the Office add-in and the PowerPoint application run in two
-            different processes, the RequestContext is required to get access to
-            the PowerPoint object model from the add-in.
-          type: >-
-            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />)
-            =&gt; <xref uid="powerpoint!OfficeExtension.IPromise:type"
-            />&lt;T&gt;
-      return:
-        type: '<xref uid="powerpoint!OfficeExtension.IPromise:type" />&lt;T&gt;'
-        description: ''
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type:
+            - 'powerpoint!PowerPoint.run~6:complex'
+      typeParameters:
+        - id: T
+references:
+  - uid: 'powerpoint!PowerPoint.Application:class'
+    name: PowerPoint.Application
+  - uid: 'powerpoint!PowerPoint.createPresentation~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>
+  - uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
+    name: PowerPoint.ErrorCodes
+  - uid: 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
+    name: PowerPoint.Interfaces.CollectionLoadOptions
+  - uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
+    name: PowerPoint.Interfaces.PresentationData
+  - uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+    name: PowerPoint.Interfaces.PresentationLoadOptions
+  - uid: 'powerpoint!PowerPoint.Presentation:class'
+    name: PowerPoint.Presentation
+  - uid: 'powerpoint!PowerPoint.RequestContext:class'
+    name: PowerPoint.RequestContext
+  - uid: 'powerpoint!PowerPoint.run~0:complex'
+    name: OfficeExtension.IPromise<T>
+    fullName: OfficeExtension.IPromise<T>
+    spec.typeScript:
+      - uid: 'powerpoint!OfficeExtension.IPromise:type'
+        name: OfficeExtension.IPromise
+        fullName: OfficeExtension.IPromise
+      - name: <T>
+        fullName: <T>
+  - uid: 'powerpoint!PowerPoint.run~1:complex'
+    name: '(context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>'
+    fullName: '(context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'powerpoint!PowerPoint.RequestContext:class'
+        name: PowerPoint.RequestContext
+        fullName: PowerPoint.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: 'powerpoint!OfficeExtension.IPromise:type'
+        name: OfficeExtension.IPromise
+        fullName: OfficeExtension.IPromise
+      - name: <T>
+        fullName: <T>
+  - uid: 'powerpoint!PowerPoint.run~2:complex'
+    name: OfficeExtension.IPromise<T>
+    fullName: OfficeExtension.IPromise<T>
+    spec.typeScript:
+      - uid: 'powerpoint!OfficeExtension.IPromise:type'
+        name: OfficeExtension.IPromise
+        fullName: OfficeExtension.IPromise
+      - name: <T>
+        fullName: <T>
+  - uid: 'powerpoint!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'powerpoint!PowerPoint.run~3:complex'
+    name: '(context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>'
+    fullName: '(context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'powerpoint!PowerPoint.RequestContext:class'
+        name: PowerPoint.RequestContext
+        fullName: PowerPoint.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: 'powerpoint!OfficeExtension.IPromise:type'
+        name: OfficeExtension.IPromise
+        fullName: OfficeExtension.IPromise
+      - name: <T>
+        fullName: <T>
+  - uid: 'powerpoint!PowerPoint.run~4:complex'
+    name: OfficeExtension.IPromise<T>
+    fullName: OfficeExtension.IPromise<T>
+    spec.typeScript:
+      - uid: 'powerpoint!OfficeExtension.IPromise:type'
+        name: OfficeExtension.IPromise
+        fullName: OfficeExtension.IPromise
+      - name: <T>
+        fullName: <T>
+  - uid: 'powerpoint!PowerPoint.run~5:complex'
+    name: 'OfficeExtension.ClientObject[]'
+    fullName: 'OfficeExtension.ClientObject[]'
+    spec.typeScript:
+      - uid: 'powerpoint!OfficeExtension.ClientObject:class'
+        name: OfficeExtension.ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'powerpoint!PowerPoint.run~6:complex'
+    name: '(context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>'
+    fullName: '(context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'powerpoint!PowerPoint.RequestContext:class'
+        name: PowerPoint.RequestContext
+        fullName: PowerPoint.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: 'powerpoint!OfficeExtension.IPromise:type'
+        name: OfficeExtension.IPromise
+        fullName: OfficeExtension.IPromise
+      - name: <T>
+        fullName: <T>

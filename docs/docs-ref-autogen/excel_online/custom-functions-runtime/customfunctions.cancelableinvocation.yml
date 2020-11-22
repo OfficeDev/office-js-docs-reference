@@ -1,38 +1,40 @@
-### YamlMime:TSType
-name: CustomFunctions.CancelableInvocation
-uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
-package: custom-functions-runtime!
-fullName: CustomFunctions.CancelableInvocation
-summary: >-
-  Provides information about the invocation of a cancelable custom function. A
-  cancelable custom function can provide a handler for the onCanceled event.
-
-
-  To indicate that a function is cancelable, in the metadata JSON file, the
-  function options should specify: `{ "cancelable": true }`
-
-
-  If the metadata JSON file is being generated from JSDoc comments, include the
-  tag `@cancelable`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: onCanceled
-    uid: >-
-      custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member
-    package: custom-functions-runtime!
-    fullName: onCanceled
+### YamlMime:UniversalReference
+items:
+  - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
     summary: >-
-      Event handler called when the custom function is canceled. \[ [API set:
-      CustomFunctionsRuntime
+      Provides information about the invocation of a cancelable custom function. A cancelable custom function can
+      provide a handler for the onCanceled event.
+
+
+      To indicate that a function is cancelable, in the metadata JSON file, the function options should specify: `{
+      "cancelable": true }`
+
+
+      If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`<!-- -->.
+    name: CustomFunctions.CancelableInvocation
+    fullName: CustomFunctions.CancelableInvocation
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'custom-functions-runtime!CustomFunctions.Invocation:interface'
+    package: custom-functions-runtime!
+    children:
+      - 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
+  - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
+    summary: >-
+      Event handler called when the custom function is canceled. \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: onCanceled
+    fullName: onCanceled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'onCanceled: () => void;'
       return:
-        type: () =&gt; void
-extends: '<xref uid="custom-functions-runtime!CustomFunctions.Invocation:interface" />'
+        type:
+          - () => void
+references:
+  - uid: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
+    name: Invocation

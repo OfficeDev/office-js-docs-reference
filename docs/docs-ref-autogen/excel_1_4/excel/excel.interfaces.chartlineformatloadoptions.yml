@@ -1,50 +1,45 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartLineFormatLoadOptions
-uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartLineFormatLoadOptions
-summary: >-
-  Encapsulates the formatting options for line elements.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+    summary: |-
+      Encapsulates the formatting options for line elements.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLineFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#color:member'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: color
-    uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#color:member'
-    package: excel!
-    fullName: color
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#color:member'
+    summary: |-
       HTML color code representing the color of lines in the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

@@ -1,49 +1,43 @@
-### YamlMime:TSType
-name: Visio.Interfaces.ApplicationUpdateData
-uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
-package: visio!
-fullName: Visio.Interfaces.ApplicationUpdateData
-summary: >-
-  An interface for updating data on the Application object, for use in
-  "application.set(<!-- -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: showBorders
-    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showBorders:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+    summary: 'An interface for updating data on the Application object, for use in "application.set(<!-- -->{ ... }<!-- -->)".'
+    name: Visio.Interfaces.ApplicationUpdateData
+    fullName: Visio.Interfaces.ApplicationUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: visio!
-    fullName: showBorders
-    summary: >-
+    children:
+      - 'visio!Visio.Interfaces.ApplicationUpdateData#showBorders:member'
+      - 'visio!Visio.Interfaces.ApplicationUpdateData#showToolbars:member'
+  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showBorders:member'
+    summary: |-
       Show or hide the iFrame application borders.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: showBorders
+    fullName: showBorders
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showBorders?: boolean;'
       return:
-        type: boolean
-  - name: showToolbars
-    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showToolbars:member'
-    package: visio!
-    fullName: showToolbars
-    summary: >-
+        type:
+          - boolean
+  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showToolbars:member'
+    summary: |-
       Show or hide the standard toolbars.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: showToolbars
+    fullName: showToolbars
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showToolbars?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

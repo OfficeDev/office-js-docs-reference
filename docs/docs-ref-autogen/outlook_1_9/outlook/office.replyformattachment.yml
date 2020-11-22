@@ -1,80 +1,78 @@
-### YamlMime:TSType
-name: Office.ReplyFormAttachment
-uid: 'outlook!Office.ReplyFormAttachment:interface'
-package: outlook!
-fullName: Office.ReplyFormAttachment
-summary: A file or item attachment. Used when displaying a reply form.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: inLine
-    uid: 'outlook!Office.ReplyFormAttachment#inLine:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.ReplyFormAttachment:interface'
+    summary: A file or item attachment. Used when displaying a reply form.
+    name: Office.ReplyFormAttachment
+    fullName: Office.ReplyFormAttachment
+    langs:
+      - typeScript
+    type: interface
     package: outlook!
-    fullName: inLine
+    children:
+      - 'outlook!Office.ReplyFormAttachment#inLine:member'
+      - 'outlook!Office.ReplyFormAttachment#itemId:member'
+      - 'outlook!Office.ReplyFormAttachment#name:member'
+      - 'outlook!Office.ReplyFormAttachment#type:member'
+      - 'outlook!Office.ReplyFormAttachment#url:member'
+  - uid: 'outlook!Office.ReplyFormAttachment#inLine:member'
     summary: >-
-      Only used if type is set to file. If true, indicates that the attachment
-      will be shown inline in the message body, and should not be displayed in
-      the attachment list.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body,
+      and should not be displayed in the attachment list.
+    name: inLine
+    fullName: inLine
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inLine?: boolean;'
       return:
-        type: boolean
-  - name: itemId
-    uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
-    package: outlook!
+        type:
+          - boolean
+  - uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
+    summary: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+    name: itemId
     fullName: itemId
-    summary: >-
-      Only used if type is set to item. The EWS item id of the attachment. This
-      is a string up to 100 characters.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'itemId?: string;'
       return:
-        type: string
-  - name: name
-    uid: 'outlook!Office.ReplyFormAttachment#name:member'
-    package: outlook!
+        type:
+          - string
+  - uid: 'outlook!Office.ReplyFormAttachment#name:member'
+    summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
+    name: name
     fullName: name
-    summary: >-
-      A string that contains the name of the attachment, up to 255 characters in
-      length.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name: string;'
       return:
-        type: string
-  - name: type
-    uid: 'outlook!Office.ReplyFormAttachment#type:member'
-    package: outlook!
+        type:
+          - string
+  - uid: 'outlook!Office.ReplyFormAttachment#type:member'
+    summary: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+    name: type
     fullName: type
-    summary: >-
-      Indicates the type of attachment. Must be file for a file attachment or
-      item for an item attachment.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: string;'
       return:
-        type: string
-  - name: url
-    uid: 'outlook!Office.ReplyFormAttachment#url:member'
-    package: outlook!
-    fullName: url
+        type:
+          - string
+  - uid: 'outlook!Office.ReplyFormAttachment#url:member'
     summary: Only used if type is set to file. The URI of the location for the file.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: url
+    fullName: url
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'url?: string;'
       return:
-        type: string
+        type:
+          - string

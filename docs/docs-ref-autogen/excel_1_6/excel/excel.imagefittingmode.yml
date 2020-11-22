@@ -1,25 +1,35 @@
-### YamlMime:TSEnum
-name: Excel.ImageFittingMode
-uid: 'excel!Excel.ImageFittingMode:enum'
-package: excel!
-fullName: Excel.ImageFittingMode
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: fill
-    uid: 'excel!Excel.ImageFittingMode.fill:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ImageFittingMode:enum'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ImageFittingMode
+    fullName: Excel.ImageFittingMode
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: fit
-    uid: 'excel!Excel.ImageFittingMode.fit:member'
-    package: excel!
-    summary: ''
-  - name: fitAndCenter
-    uid: 'excel!Excel.ImageFittingMode.fitAndCenter:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ImageFittingMode.fill:member'
+      - 'excel!Excel.ImageFittingMode.fit:member'
+      - 'excel!Excel.ImageFittingMode.fitAndCenter:member'
+  - uid: 'excel!Excel.ImageFittingMode.fill:member'
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Fill"'
+  - uid: 'excel!Excel.ImageFittingMode.fit:member'
+    name: fit
+    fullName: fit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Fit"'
+  - uid: 'excel!Excel.ImageFittingMode.fitAndCenter:member'
+    name: fitAndCenter
+    fullName: fitAndCenter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FitAndCenter"'

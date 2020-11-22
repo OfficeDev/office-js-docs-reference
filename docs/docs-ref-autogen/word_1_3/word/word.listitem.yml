@@ -1,347 +1,353 @@
-### YamlMime:TSType
-name: Word.ListItem
-uid: 'word!Word.ListItem:class'
-package: word!
-fullName: Word.ListItem
-summary: >-
-  Represents the paragraph list item format.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.ListItem:class'
+    summary: |-
+      Represents the paragraph list item format.
 
-
-  \[ [API set: WordApi
-  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'word!Word.ListItem#context:member'
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.ListItem
+    fullName: Word.ListItem
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
-    fullName: context
+    children:
+      - 'word!Word.ListItem#context:member'
+      - 'word!Word.ListItem#getAncestor:member(1)'
+      - 'word!Word.ListItem#getAncestorOrNullObject:member(1)'
+      - 'word!Word.ListItem#getDescendants:member(1)'
+      - 'word!Word.ListItem#level:member'
+      - 'word!Word.ListItem#listString:member'
+      - 'word!Word.ListItem#load:member(1)'
+      - 'word!Word.ListItem#load:member(2)'
+      - 'word!Word.ListItem#load:member(3)'
+      - 'word!Word.ListItem#set:member(1)'
+      - 'word!Word.ListItem#set:member(2)'
+      - 'word!Word.ListItem#siblingIndex:member'
+      - 'word!Word.ListItem#toJSON:member(1)'
+      - 'word!Word.ListItem#track:member(1)'
+      - 'word!Word.ListItem#untrack:member(1)'
+  - uid: 'word!Word.ListItem#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-  - name: level
-    uid: 'word!Word.ListItem#level:member'
-    package: word!
-    fullName: level
+        type:
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.ListItem#getAncestor:member(1)'
     summary: >-
-      Gets or sets the level of the item in the list.
+      Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an error if the list item
+      has no ancestor.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'level: number;'
-      return:
-        type: number
-  - name: listString
-    uid: 'word!Word.ListItem#listString:member'
-    package: word!
-    fullName: listString
-    summary: >-
-      Gets the list item bullet, number, or picture as a string. Read-only.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly listString: string;'
-      return:
-        type: string
-  - name: siblingIndex
-    uid: 'word!Word.ListItem#siblingIndex:member'
-    package: word!
-    fullName: siblingIndex
-    summary: >-
-      Gets the list item order number in relation to its siblings. Read-only.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly siblingIndex: number;'
-      return:
-        type: number
-methods:
-  - name: getAncestor(parentOnly)
-    uid: 'word!Word.ListItem#getAncestor:member(1)'
-    package: word!
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getAncestor(parentOnly)
     fullName: getAncestor(parentOnly)
-    summary: >-
-      Gets the list item parent, or the closest ancestor if the parent does not
-      exist. Throws an error if the list item has no ancestor.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getAncestor(parentOnly?: boolean): Word.Paragraph;'
+      return:
+        type:
+          - 'word!Word.Paragraph:class'
+        description: ''
       parameters:
         - id: parentOnly
           description: >-
-            Optional. Specifies only the list item's parent will be returned.
-            The default is false that specifies to get the lowest ancestor.
-          type: boolean
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
-  - name: getAncestorOrNullObject(parentOnly)
-    uid: 'word!Word.ListItem#getAncestorOrNullObject:member(1)'
-    package: word!
-    fullName: getAncestorOrNullObject(parentOnly)
+            Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get
+            the lowest ancestor.
+          type:
+            - boolean
+  - uid: 'word!Word.ListItem#getAncestorOrNullObject:member(1)'
     summary: >-
-      Gets the list item parent, or the closest ancestor if the parent does not
-      exist. Returns a null object if the list item has no ancestor.
+      Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list
+      item has no ancestor.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getAncestorOrNullObject(parentOnly)
+    fullName: getAncestorOrNullObject(parentOnly)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getAncestorOrNullObject(parentOnly?: boolean): Word.Paragraph;'
+      return:
+        type:
+          - 'word!Word.Paragraph:class'
+        description: ''
       parameters:
         - id: parentOnly
           description: >-
-            Optional. Specifies only the list item's parent will be returned.
-            The default is false that specifies to get the lowest ancestor.
-          type: boolean
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
-  - name: getDescendants(directChildrenOnly)
-    uid: 'word!Word.ListItem#getDescendants:member(1)'
-    package: word!
-    fullName: getDescendants(directChildrenOnly)
-    summary: >-
+            Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get
+            the lowest ancestor.
+          type:
+            - boolean
+  - uid: 'word!Word.ListItem#getDescendants:member(1)'
+    summary: |-
       Gets all descendant list items of the list item.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getDescendants(directChildrenOnly)
+    fullName: getDescendants(directChildrenOnly)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getDescendants(directChildrenOnly?: boolean): Word.ParagraphCollection;'
+      return:
+        type:
+          - 'word!Word.ParagraphCollection:class'
+        description: ''
       parameters:
         - id: directChildrenOnly
           description: >-
-            Optional. Specifies only the list item's direct children will be
-            returned. The default is false that indicates to get all descendant
-            items.
-          type: boolean
+            Optional. Specifies only the list item's direct children will be returned. The default is false that
+            indicates to get all descendant items.
+          type:
+            - boolean
+  - uid: 'word!Word.ListItem#level:member'
+    summary: |-
+      Gets or sets the level of the item in the list.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level: number;'
       return:
-        type: '<xref uid="word!Word.ParagraphCollection:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'word!Word.ListItem#load:member(1)'
-    package: word!
-    fullName: load(options)
+        type:
+          - number
+  - uid: 'word!Word.ListItem#listString:member'
+    summary: |-
+      Gets the list item bullet, number, or picture as a string. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: listString
+    fullName: listString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly listString: string;'
+      return:
+        type:
+          - string
+  - uid: 'word!Word.ListItem#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(options?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;'
+      return:
+        type:
+          - 'word!Word.ListItem:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="word!Word.Interfaces.ListItemLoadOptions:interface" />'
-      return:
-        type: '<xref uid="word!Word.ListItem:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'word!Word.ListItem#load:member(2)'
-    package: word!
-    fullName: load(propertyNames)
+          type:
+            - 'word!Word.Interfaces.ListItemLoadOptions:interface'
+  - uid: 'word!Word.ListItem#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.ListItem;'
+      return:
+        type:
+          - 'word!Word.ListItem:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="word!Word.ListItem:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.ListItem#load:member(3)'
-    package: word!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'word!Word.ListItem#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.ListItem;
+      return:
+        type:
+          - 'word!Word.ListItem:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="word!Word.ListItem:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'word!Word.ListItem#set:member(1)'
-    package: word!
-    fullName: 'set(properties, options)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'word!Word.ListItem#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Word.ListItem): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.ListItemUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ListItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: '<xref uid="word!Word.Interfaces.ListItemUpdateData:interface" />'
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'word!Word.Interfaces.ListItemUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'word!Word.ListItem#set:member(2)'
-    package: word!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.ListItem#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Word.ListItem): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="word!Word.ListItem:class" />'
+          type:
+            - 'word!Word.ListItem:class'
+  - uid: 'word!Word.ListItem#siblingIndex:member'
+    summary: |-
+      Gets the list item order number in relation to its siblings. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: siblingIndex
+    fullName: siblingIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly siblingIndex: number;'
       return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'word!Word.ListItem#toJSON:member(1)'
-    package: word!
-    fullName: toJSON()
+        type:
+          - number
+  - uid: 'word!Word.ListItem#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.ListItem object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.ListItemData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.ListItem object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ListItemData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Word.Interfaces.ListItemData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ListItemData:interface" />'
+        type:
+          - 'word!Word.Interfaces.ListItemData:interface'
         description: ''
-  - name: track()
-    uid: 'word!Word.ListItem#track:member(1)'
-    package: word!
-    fullName: track()
+  - uid: 'word!Word.ListItem#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): Word.ListItem;'
       return:
-        type: '<xref uid="word!Word.ListItem:class" />'
+        type:
+          - 'word!Word.ListItem:class'
         description: ''
-  - name: untrack()
-    uid: 'word!Word.ListItem#untrack:member(1)'
-    package: word!
-    fullName: untrack()
+  - uid: 'word!Word.ListItem#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): Word.ListItem;'
       return:
-        type: '<xref uid="word!Word.ListItem:class" />'
+        type:
+          - 'word!Word.ListItem:class'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.Paragraph:class'
+    name: Word.Paragraph
+  - uid: 'word!Word.ParagraphCollection:class'
+    name: Word.ParagraphCollection
+  - uid: 'word!Word.ListItem:class'
+    name: Word.ListItem
+  - uid: 'word!Word.Interfaces.ListItemLoadOptions:interface'
+    name: Word.Interfaces.ListItemLoadOptions
+  - uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
+    name: Interfaces.ListItemUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.ListItemData:interface'
+    name: Word.Interfaces.ListItemData

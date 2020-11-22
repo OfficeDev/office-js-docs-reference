@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Word.Interfaces.TableBorderData
-uid: 'word!Word.Interfaces.TableBorderData:interface'
-package: word!
-fullName: Word.Interfaces.TableBorderData
-summary: >-
-  An interface describing the data returned by calling
-  `tableBorder.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.TableBorderData:interface'
+    summary: An interface describing the data returned by calling `tableBorder.toJSON()`<!-- -->.
+    name: Word.Interfaces.TableBorderData
+    fullName: Word.Interfaces.TableBorderData
+    langs:
+      - typeScript
+    type: interface
+    package: word!

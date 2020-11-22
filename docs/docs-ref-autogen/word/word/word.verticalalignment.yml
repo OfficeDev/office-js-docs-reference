@@ -1,29 +1,43 @@
-### YamlMime:TSEnum
-name: Word.VerticalAlignment
-uid: 'word!Word.VerticalAlignment:enum'
-package: word!
-fullName: Word.VerticalAlignment
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: bottom
-    uid: 'word!Word.VerticalAlignment.bottom:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.VerticalAlignment:enum'
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.VerticalAlignment
+    fullName: Word.VerticalAlignment
+    langs:
+      - typeScript
+    type: enum
     package: word!
-    summary: ''
-  - name: center
-    uid: 'word!Word.VerticalAlignment.center:member'
-    package: word!
-    summary: ''
-  - name: mixed
-    uid: 'word!Word.VerticalAlignment.mixed:member'
-    package: word!
-    summary: ''
-  - name: top
-    uid: 'word!Word.VerticalAlignment.top:member'
-    package: word!
-    summary: ''
+    children:
+      - 'word!Word.VerticalAlignment.bottom:member'
+      - 'word!Word.VerticalAlignment.center:member'
+      - 'word!Word.VerticalAlignment.mixed:member'
+      - 'word!Word.VerticalAlignment.top:member'
+  - uid: 'word!Word.VerticalAlignment.bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: 'word!Word.VerticalAlignment.center:member'
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: 'word!Word.VerticalAlignment.mixed:member'
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mixed"'
+  - uid: 'word!Word.VerticalAlignment.top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

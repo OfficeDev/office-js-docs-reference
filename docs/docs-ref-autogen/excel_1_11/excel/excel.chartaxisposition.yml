@@ -1,29 +1,43 @@
-### YamlMime:TSEnum
-name: Excel.ChartAxisPosition
-uid: 'excel!Excel.ChartAxisPosition:enum'
-package: excel!
-fullName: Excel.ChartAxisPosition
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: automatic
-    uid: 'excel!Excel.ChartAxisPosition.automatic:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisPosition:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartAxisPosition
+    fullName: Excel.ChartAxisPosition
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: custom
-    uid: 'excel!Excel.ChartAxisPosition.custom:member'
-    package: excel!
-    summary: ''
-  - name: maximum
-    uid: 'excel!Excel.ChartAxisPosition.maximum:member'
-    package: excel!
-    summary: ''
-  - name: minimum
-    uid: 'excel!Excel.ChartAxisPosition.minimum:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartAxisPosition.automatic:member'
+      - 'excel!Excel.ChartAxisPosition.custom:member'
+      - 'excel!Excel.ChartAxisPosition.maximum:member'
+      - 'excel!Excel.ChartAxisPosition.minimum:member'
+  - uid: 'excel!Excel.ChartAxisPosition.automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: 'excel!Excel.ChartAxisPosition.custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: 'excel!Excel.ChartAxisPosition.maximum:member'
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Maximum"'
+  - uid: 'excel!Excel.ChartAxisPosition.minimum:member'
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Minimum"'

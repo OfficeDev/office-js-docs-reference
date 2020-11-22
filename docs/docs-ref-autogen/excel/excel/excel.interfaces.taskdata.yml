@@ -1,0 +1,157 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskData:interface'
+    summary: An interface describing the data returned by calling `task.toJSON()`<!-- -->.
+    name: Excel.Interfaces.TaskData
+    fullName: Excel.Interfaces.TaskData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskData#assignees:member'
+      - 'excel!Excel.Interfaces.TaskData#dueDate:member'
+      - 'excel!Excel.Interfaces.TaskData#id:member'
+      - 'excel!Excel.Interfaces.TaskData#percentComplete:member'
+      - 'excel!Excel.Interfaces.TaskData#priority:member'
+      - 'excel!Excel.Interfaces.TaskData#startDate:member'
+      - 'excel!Excel.Interfaces.TaskData#title:member'
+  - uid: 'excel!Excel.Interfaces.TaskData#assignees:member'
+    summary: >-
+      Gets the users to which the task is assigned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: assignees
+    fullName: assignees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'assignees?: Excel.User[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TaskData#assignees~0:complex'
+  - uid: 'excel!Excel.Interfaces.TaskData#dueDate:member'
+    summary: >-
+      Gets the date and time the task is due. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dueDate
+    fullName: dueDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dueDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.TaskData#id:member'
+    summary: >-
+      Gets the id of the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.TaskData#percentComplete:member'
+    summary: >-
+      Gets the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed
+      task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: percentComplete
+    fullName: percentComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'percentComplete?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.TaskData#priority:member'
+    summary: >-
+      Gets the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.TaskData#startDate:member'
+    summary: >-
+      Gets the date and time the task should start. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: startDate
+    fullName: startDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.TaskData#title:member'
+    summary: >-
+      Gets title of the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.Interfaces.TaskData#assignees~0:complex'
+    name: 'Excel.User[]'
+    fullName: 'Excel.User[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.User:interface'
+        name: Excel.User
+        fullName: Excel.User
+      - name: '[]'
+        fullName: '[]'
+  - uid: '!Date:interface'
+    name: Date

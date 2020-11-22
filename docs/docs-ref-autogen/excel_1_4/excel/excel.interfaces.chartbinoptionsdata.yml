@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartBinOptionsData
-uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartBinOptionsData
-summary: >-
-  An interface describing the data returned by calling
-  `chartBinOptions.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
+    summary: An interface describing the data returned by calling `chartBinOptions.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartBinOptionsData
+    fullName: Excel.Interfaces.ChartBinOptionsData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.SectionGroupCollectionUpdateData
-uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.SectionGroupCollectionUpdateData
-summary: >-
-  An interface for updating data on the SectionGroupCollection object, for use
-  in "sectionGroupCollection.set(<!-- -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the SectionGroupCollection object, for use in "sectionGroupCollection.set(<!--
+      -->{ ... }<!-- -->)".
+    name: OneNote.Interfaces.SectionGroupCollectionUpdateData
+    fullName: OneNote.Interfaces.SectionGroupCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.SectionGroupData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.SectionGroupData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.SectionGroupData[]'
+    fullName: 'OneNote.Interfaces.SectionGroupData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
+        name: OneNote.Interfaces.SectionGroupData
+        fullName: OneNote.Interfaces.SectionGroupData
+      - name: '[]'
+        fullName: '[]'

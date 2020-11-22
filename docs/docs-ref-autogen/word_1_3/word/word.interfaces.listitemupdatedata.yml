@@ -1,31 +1,27 @@
-### YamlMime:TSType
-name: Word.Interfaces.ListItemUpdateData
-uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.ListItemUpdateData
-summary: >-
-  An interface for updating data on the ListItem object, for use in
-  `listItem.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: level
-    uid: 'word!Word.Interfaces.ListItemUpdateData#level:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
+    summary: 'An interface for updating data on the ListItem object, for use in `listItem.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.ListItemUpdateData
+    fullName: Word.Interfaces.ListItemUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: level
-    summary: >-
+    children:
+      - 'word!Word.Interfaces.ListItemUpdateData#level:member'
+  - uid: 'word!Word.Interfaces.ListItemUpdateData#level:member'
+    summary: |-
       Gets or sets the level of the item in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'level?: number;'
       return:
-        type: number
+        type:
+          - number

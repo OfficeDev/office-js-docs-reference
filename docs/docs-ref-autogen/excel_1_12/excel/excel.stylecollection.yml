@@ -1,143 +1,127 @@
-### YamlMime:TSType
-name: Excel.StyleCollection
-uid: 'excel!Excel.StyleCollection:class'
-package: excel!
-fullName: Excel.StyleCollection
-summary: >-
-  Represents a collection of all the styles.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.StyleCollection:class'
+    summary: |-
+      Represents a collection of all the styles.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.StyleCollection#context:member'
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.StyleCollection
+    fullName: Excel.StyleCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: items
-    uid: 'excel!Excel.StyleCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.Style[];'
-      return:
-        type: '<xref uid="excel!Excel.Style:class" />[]'
-methods:
-  - name: add(name)
-    uid: 'excel!Excel.StyleCollection#add:member(1)'
-    package: excel!
-    fullName: add(name)
-    summary: >-
+    children:
+      - 'excel!Excel.StyleCollection#add:member(1)'
+      - 'excel!Excel.StyleCollection#context:member'
+      - 'excel!Excel.StyleCollection#getCount:member(1)'
+      - 'excel!Excel.StyleCollection#getItem:member(1)'
+      - 'excel!Excel.StyleCollection#getItemAt:member(1)'
+      - 'excel!Excel.StyleCollection#items:member'
+      - 'excel!Excel.StyleCollection#load:member(1)'
+      - 'excel!Excel.StyleCollection#load:member(2)'
+      - 'excel!Excel.StyleCollection#load:member(3)'
+      - 'excel!Excel.StyleCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.StyleCollection#add:member(1)'
+    summary: |-
       Adds a new style to the collection.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: add(name)
+    fullName: add(name)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(name: string): void;'
+      return:
+        type:
+          - void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
+          await Excel.run(async (context) => {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          });
+
+          ```
       parameters:
         - id: name
           description: Name of the style to be added.
-          type: string
-      return:
-        type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
-
-          await Excel.run(async (context) => {
-              let styles = context.workbook.styles;
-
-              // Add a new style to the style collection.
-              // Styles is in the Home tab ribbon.
-              styles.add("Diagonal Orientation Style");
-                    
-              let newStyle = styles.getItem("Diagonal Orientation Style");
-              
-              // The "Diagonal Orientation Style" properties.
-              newStyle.textOrientation = 38;
-              newStyle.autoIndent = true;
-              newStyle.includeProtection = true;
-              newStyle.shrinkToFit = true;
-              newStyle.locked = false;
-              
-              await context.sync();
-
-              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
-          });
-
-          ```
-  - name: getCount()
-    uid: 'excel!Excel.StyleCollection#getCount:member(1)'
-    package: excel!
-    fullName: getCount()
+          type:
+            - string
+  - uid: 'excel!Excel.StyleCollection#context:member'
     summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.StyleCollection#getCount:member(1)'
+    summary: |-
       Gets the number of styles in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type:
+          - 'excel!Excel.StyleCollection#getCount~0:complex'
         description: ''
-  - name: getItem(name)
-    uid: 'excel!Excel.StyleCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(name)
-    summary: >-
+  - uid: 'excel!Excel.StyleCollection#getItem:member(1)'
+    summary: |-
       Gets a style by name.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(name: string): Excel.Style;'
-      parameters:
-        - id: name
-          description: Name of the style to be retrieved.
-          type: string
       return:
-        type: '<xref uid="excel!Excel.Style:class" />'
+        type:
+          - 'excel!Excel.Style:class'
         description: >-
 
 
@@ -171,119 +155,166 @@ methods:
           });
 
           ```
-  - name: getItemAt(index)
-    uid: 'excel!Excel.StyleCollection#getItemAt:member(1)'
-    package: excel!
-    fullName: getItemAt(index)
-    summary: >-
+      parameters:
+        - id: name
+          description: Name of the style to be retrieved.
+          type:
+            - string
+  - uid: 'excel!Excel.StyleCollection#getItemAt:member(1)'
+    summary: |-
       Gets a style based on its position in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemAt(index: number): Excel.Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the style object to be retrieved. Zero-indexed.
-          type: number
+          type:
+            - number
+  - uid: 'excel!Excel.StyleCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Style[];'
       return:
-        type: '<xref uid="excel!Excel.Style:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.StyleCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+        type:
+          - 'excel!Excel.StyleCollection#items~0:complex'
+  - uid: 'excel!Excel.StyleCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.StyleCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.StyleCollection;
+        load(options?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.StyleCollection;
+      return:
+        type:
+          - 'excel!Excel.StyleCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.StyleCollectionLoadOptions:interface" />
-            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.StyleCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.StyleCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.StyleCollection#load~0:complex'
+  - uid: 'excel!Excel.StyleCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.StyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.StyleCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.StyleCollection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.StyleCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.StyleCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.StyleCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.StyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.StyleCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.StyleCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.StyleCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.StyleCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original `Excel.StyleCollection`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.StyleCollectionData`<!-- -->) that
-      contains an "items" array with shallow copies of any loaded properties
-      from the collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.StyleCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.StyleCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.StyleCollectionData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.StyleCollectionData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.StyleCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.StyleCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.Style:class'
+    name: Excel.Style
+  - uid: 'excel!Excel.StyleCollection#items~0:complex'
+    name: 'Excel.Style[]'
+    fullName: 'Excel.Style[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Style:class'
+        name: Excel.Style
+        fullName: Excel.Style
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.StyleCollection:class'
+    name: Excel.StyleCollection
+  - uid: 'excel!Excel.StyleCollection#load~0:complex'
+    name: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions:interface'
+        name: Excel.Interfaces.StyleCollectionLoadOptions
+        fullName: Excel.Interfaces.StyleCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.StyleCollectionData:interface'
+    name: Excel.Interfaces.StyleCollectionData

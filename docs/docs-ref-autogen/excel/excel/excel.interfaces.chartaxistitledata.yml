@@ -1,89 +1,80 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartAxisTitleData
-uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartAxisTitleData
-summary: >-
-  An interface describing the data returned by calling
-  `chartAxisTitle.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: format
-    uid: 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
+    summary: An interface describing the data returned by calling `chartAxisTitle.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartAxisTitleData
+    fullName: Excel.Interfaces.ChartAxisTitleData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: format
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#textOrientation:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
+    summary: |-
       Specifies the formatting of chart axis title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatData:interface"
-          />
-  - name: text
-    uid: 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
-    package: excel!
-    fullName: text
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
+    summary: |-
       Specifies the axis title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: string;'
       return:
-        type: string
-  - name: textOrientation
-    uid: 'excel!Excel.Interfaces.ChartAxisTitleData#textOrientation:member'
-    package: excel!
-    fullName: textOrientation
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#textOrientation:member'
     summary: >-
-      Specifies the angle to which the text is oriented for the chart axis
-      title. The value should either be an integer from -90 to 90 or the integer
-      180 for vertically-oriented text.
+      Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer
+      from -90 to 90 or the integer 180 for vertically-oriented text.
 
 
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'textOrientation?: number;'
       return:
-        type: number
-  - name: visible
-    uid: 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
-    package: excel!
-    fullName: visible
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
+    summary: |-
       Specifies if the axis title is visibile.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'visible?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
+    name: Excel.Interfaces.ChartAxisTitleFormatData

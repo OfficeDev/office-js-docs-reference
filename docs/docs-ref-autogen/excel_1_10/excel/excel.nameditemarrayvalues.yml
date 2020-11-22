@@ -1,168 +1,175 @@
-### YamlMime:TSType
-name: Excel.NamedItemArrayValues
-uid: 'excel!Excel.NamedItemArrayValues:class'
-package: excel!
-fullName: Excel.NamedItemArrayValues
-summary: >-
-  Represents an object containing values and types of a named item.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItemArrayValues:class'
+    summary: |-
+      Represents an object containing values and types of a named item.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.NamedItemArrayValues#context:member'
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
+    children:
+      - 'excel!Excel.NamedItemArrayValues#context:member'
+      - 'excel!Excel.NamedItemArrayValues#load:member(1)'
+      - 'excel!Excel.NamedItemArrayValues#load:member(2)'
+      - 'excel!Excel.NamedItemArrayValues#load:member(3)'
+      - 'excel!Excel.NamedItemArrayValues#toJSON:member(1)'
+      - 'excel!Excel.NamedItemArrayValues#types:member'
+      - 'excel!Excel.NamedItemArrayValues#values:member'
+  - uid: 'excel!Excel.NamedItemArrayValues#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: types
-    uid: 'excel!Excel.NamedItemArrayValues#types:member'
-    package: excel!
-    fullName: types
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'
     summary: >-
-      Represents the types for each item in the named item array
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly types: Excel.RangeValueType[][];'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType:enum" />[][]'
-  - name: values
-    uid: 'excel!Excel.NamedItemArrayValues#values:member'
-    package: excel!
-    fullName: values
-    summary: >-
-      Represents the values of each item in the named item array.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly values: any[][];'
-      return:
-        type: 'any[][]'
-methods:
-  - name: load(options)
-    uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'
-    package: excel!
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.NamedItemArrayValuesLoadOptions):
-        Excel.NamedItemArrayValues;
+      content: 'load(options?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.NamedItemArrayValues:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.NamedItemArrayValues#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
+  - uid: 'excel!Excel.NamedItemArrayValues#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItemArrayValues;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.NamedItemArrayValues:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.NamedItemArrayValues#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NamedItemArrayValues#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.NamedItemArrayValues;
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.NamedItemArrayValues:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.NamedItemArrayValues#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.NamedItemArrayValues#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.NamedItemArrayValues object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.NamedItemArrayValuesData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.NamedItemArrayValues object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemArrayValuesData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.NamedItemArrayValuesData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.NamedItemArrayValuesData:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'excel!Excel.NamedItemArrayValues#types:member'
+    summary: |-
+      Represents the types for each item in the named item array
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: types
+    fullName: types
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly types: Excel.RangeValueType[][];'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues#types~0:complex'
+  - uid: 'excel!Excel.NamedItemArrayValues#values:member'
+    summary: |-
+      Represents the values of each item in the named item array.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.NamedItemArrayValues:class'
+    name: Excel.NamedItemArrayValues
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
+    name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
+    name: Excel.Interfaces.NamedItemArrayValuesData
+  - uid: 'excel!Excel.NamedItemArrayValues#types~0:complex'
+    name: 'Excel.RangeValueType[][]'
+    fullName: 'Excel.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: Excel.RangeValueType
+        fullName: Excel.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

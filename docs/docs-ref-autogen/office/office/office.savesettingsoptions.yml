@@ -1,38 +1,39 @@
-### YamlMime:TSType
-name: Office.SaveSettingsOptions
-uid: 'office!Office.SaveSettingsOptions:interface'
-package: office!
-fullName: Office.SaveSettingsOptions
-summary: Provides options for saving settings.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: asyncContext
-    uid: 'office!Office.SaveSettingsOptions#asyncContext:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.SaveSettingsOptions:interface'
+    summary: Provides options for saving settings.
+    name: Office.SaveSettingsOptions
+    fullName: Office.SaveSettingsOptions
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: asyncContext
+    children:
+      - 'office!Office.SaveSettingsOptions#asyncContext:member'
+      - 'office!Office.SaveSettingsOptions#overwriteIfStale:member'
+  - uid: 'office!Office.SaveSettingsOptions#asyncContext:member'
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
+    name: asyncContext
+    fullName: asyncContext
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'asyncContext?: any'
       return:
-        type: any
-  - name: overwriteIfStale
-    uid: 'office!Office.SaveSettingsOptions#overwriteIfStale:member'
-    package: office!
-    fullName: overwriteIfStale
+        type:
+          - any
+  - uid: 'office!Office.SaveSettingsOptions#overwriteIfStale:member'
     summary: Indicates whether the setting will be replaced if stale.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: overwriteIfStale
+    fullName: overwriteIfStale
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overwriteIfStale?: boolean'
       return:
-        type: boolean
+        type:
+          - boolean

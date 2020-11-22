@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.SlicerData
-uid: 'excel!Excel.Interfaces.SlicerData:interface'
-package: excel!
-fullName: Excel.Interfaces.SlicerData
-summary: >-
-  An interface describing the data returned by calling `slicer.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SlicerData:interface'
+    summary: An interface describing the data returned by calling `slicer.toJSON()`<!-- -->.
+    name: Excel.Interfaces.SlicerData
+    fullName: Excel.Interfaces.SlicerData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

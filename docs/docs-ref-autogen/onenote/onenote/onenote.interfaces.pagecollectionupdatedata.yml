@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.PageCollectionUpdateData
-uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.PageCollectionUpdateData
-summary: >-
-  An interface for updating data on the PageCollection object, for use in
-  "pageCollection.set(<!-- -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the PageCollection object, for use in "pageCollection.set(<!-- -->{ ... }<!--
+      -->)".
+    name: OneNote.Interfaces.PageCollectionUpdateData
+    fullName: OneNote.Interfaces.PageCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.PageData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.PageData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.PageData[]'
+    fullName: 'OneNote.Interfaces.PageData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.PageData:interface'
+        name: OneNote.Interfaces.PageData
+        fullName: OneNote.Interfaces.PageData
+      - name: '[]'
+        fullName: '[]'

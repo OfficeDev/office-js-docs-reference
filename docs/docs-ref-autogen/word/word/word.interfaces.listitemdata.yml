@@ -1,67 +1,59 @@
-### YamlMime:TSType
-name: Word.Interfaces.ListItemData
-uid: 'word!Word.Interfaces.ListItemData:interface'
-package: word!
-fullName: Word.Interfaces.ListItemData
-summary: >-
-  An interface describing the data returned by calling `listItem.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: level
-    uid: 'word!Word.Interfaces.ListItemData#level:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ListItemData:interface'
+    summary: An interface describing the data returned by calling `listItem.toJSON()`<!-- -->.
+    name: Word.Interfaces.ListItemData
+    fullName: Word.Interfaces.ListItemData
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: level
-    summary: >-
+    children:
+      - 'word!Word.Interfaces.ListItemData#level:member'
+      - 'word!Word.Interfaces.ListItemData#listString:member'
+      - 'word!Word.Interfaces.ListItemData#siblingIndex:member'
+  - uid: 'word!Word.Interfaces.ListItemData#level:member'
+    summary: |-
       Gets or sets the level of the item in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'level?: number;'
       return:
-        type: number
-  - name: listString
-    uid: 'word!Word.Interfaces.ListItemData#listString:member'
-    package: word!
-    fullName: listString
-    summary: >-
+        type:
+          - number
+  - uid: 'word!Word.Interfaces.ListItemData#listString:member'
+    summary: |-
       Gets the list item bullet, number, or picture as a string. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: listString
+    fullName: listString
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'listString?: string;'
       return:
-        type: string
-  - name: siblingIndex
-    uid: 'word!Word.Interfaces.ListItemData#siblingIndex:member'
-    package: word!
-    fullName: siblingIndex
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.ListItemData#siblingIndex:member'
+    summary: |-
       Gets the list item order number in relation to its siblings. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: siblingIndex
+    fullName: siblingIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'siblingIndex?: number;'
       return:
-        type: number
+        type:
+          - number

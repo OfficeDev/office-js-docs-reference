@@ -1,56 +1,38 @@
-### YamlMime:TSType
-name: Excel.ConditionalPresetCriteriaRule
-uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
-package: excel!
-fullName: Excel.ConditionalPresetCriteriaRule
-summary: >-
-  Represents the Preset Criteria Conditional Format Rule
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
+    summary: |-
+      Represents the Preset Criteria Conditional Format Rule
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: criterion
-    uid: 'excel!Excel.ConditionalPresetCriteriaRule#criterion:member'
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalPresetCriteriaRule
+    fullName: Excel.ConditionalPresetCriteriaRule
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: criterion
-    summary: >-
+    children:
+      - 'excel!Excel.ConditionalPresetCriteriaRule#criterion:member'
+  - uid: 'excel!Excel.ConditionalPresetCriteriaRule#criterion:member'
+    summary: |-
       The criterion of the conditional format.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criterion
+    fullName: criterion
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        criterion: Excel.ConditionalFormatPresetCriterion | "Invalid" | "Blanks"
-        | "NonBlanks" | "Errors" | "NonErrors" | "Yesterday" | "Today" |
-        "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" |
-        "LastMonth" | "ThisMonth" | "NextMonth" | "AboveAverage" |
-        "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" |
-        "OneStdDevAboveAverage" | "OneStdDevBelowAverage" |
-        "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" |
-        "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" |
-        "DuplicateValues";
+        criterion: Excel.ConditionalFormatPresetCriterion | "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors"
+        | "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" | "LastMonth" |
+        "ThisMonth" | "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" |
+        "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" |
+        "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues";
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalFormatPresetCriterion:enum" /> |
-          "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors" |
-          "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" |
-          "ThisWeek" | "NextWeek" | "LastMonth" | "ThisMonth" | "NextMonth" |
-          "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" |
-          "EqualOrBelowAverage" | "OneStdDevAboveAverage" |
-          "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" |
-          "TwoStdDevBelowAverage" | "ThreeStdDevAboveAverage" |
-          "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues"
+        type:
+          - 'excel!Excel.ConditionalPresetCriteriaRule#criterion~0:complex'
         description: >-
 
 
@@ -74,3 +56,23 @@ properties:
           });
 
           ```
+references:
+  - uid: 'excel!Excel.ConditionalPresetCriteriaRule#criterion~0:complex'
+    name: >-
+      Excel.ConditionalFormatPresetCriterion | "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors" | "Yesterday"
+      | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" | "LastMonth" | "ThisMonth" |
+      "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" |
+      "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" |
+      "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues"
+    fullName: >-
+      Excel.ConditionalFormatPresetCriterion | "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors" | "Yesterday"
+      | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" | "LastMonth" | "ThisMonth" |
+      "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" |
+      "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" |
+      "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalFormatPresetCriterion:enum'
+        name: Excel.ConditionalFormatPresetCriterion
+        fullName: Excel.ConditionalFormatPresetCriterion
+      - name: ' | "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors" | "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" | "LastMonth" | "ThisMonth" | "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" | "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" | "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues"'
+        fullName: ' | "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors" | "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" | "LastMonth" | "ThisMonth" | "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" | "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" | "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues"'

@@ -1,36 +1,54 @@
-### YamlMime:TSEnum
-name: Excel.ChartTextVerticalAlignment
-uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
-package: excel!
-fullName: Excel.ChartTextVerticalAlignment
-summary: >-
-  Represents the vertical alignment for the specified object.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+    summary: |-
+      Represents the vertical alignment for the specified object.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: bottom
-    uid: 'excel!Excel.ChartTextVerticalAlignment.bottom:member'
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTextVerticalAlignment
+    fullName: Excel.ChartTextVerticalAlignment
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: center
-    uid: 'excel!Excel.ChartTextVerticalAlignment.center:member'
-    package: excel!
-    summary: ''
-  - name: distributed
-    uid: 'excel!Excel.ChartTextVerticalAlignment.distributed:member'
-    package: excel!
-    summary: ''
-  - name: justify
-    uid: 'excel!Excel.ChartTextVerticalAlignment.justify:member'
-    package: excel!
-    summary: ''
-  - name: top
-    uid: 'excel!Excel.ChartTextVerticalAlignment.top:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartTextVerticalAlignment.bottom:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.center:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.distributed:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.justify:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.top:member'
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.center:member'
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.distributed:member'
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.justify:member'
+    name: justify
+    fullName: justify
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justify"'
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

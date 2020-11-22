@@ -1,195 +1,199 @@
-### YamlMime:TSType
-name: Excel.PageBreak
-uid: 'excel!Excel.PageBreak:class'
-package: excel!
-fullName: Excel.PageBreak
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: columnIndex
-    uid: 'excel!Excel.PageBreak#columnIndex:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PageBreak:class'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.PageBreak
+    fullName: Excel.PageBreak
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: columnIndex
-    summary: >-
+    children:
+      - 'excel!Excel.PageBreak#columnIndex:member'
+      - 'excel!Excel.PageBreak#context:member'
+      - 'excel!Excel.PageBreak#delete:member(1)'
+      - 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
+      - 'excel!Excel.PageBreak#load:member(1)'
+      - 'excel!Excel.PageBreak#load:member(2)'
+      - 'excel!Excel.PageBreak#load:member(3)'
+      - 'excel!Excel.PageBreak#rowIndex:member'
+      - 'excel!Excel.PageBreak#toJSON:member(1)'
+  - uid: 'excel!Excel.PageBreak#columnIndex:member'
+    summary: |-
       Specifies the column index for the page break
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly columnIndex: number;'
       return:
-        type: number
-  - name: context
-    uid: 'excel!Excel.PageBreak#context:member'
-    package: excel!
-    fullName: context
+        type:
+          - number
+  - uid: 'excel!Excel.PageBreak#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: rowIndex
-    uid: 'excel!Excel.PageBreak#rowIndex:member'
-    package: excel!
-    fullName: rowIndex
-    summary: >-
-      Specifies the row index for the page break
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly rowIndex: number;'
-      return:
-        type: number
-methods:
-  - name: delete()
-    uid: 'excel!Excel.PageBreak#delete:member(1)'
-    package: excel!
-    fullName: delete()
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PageBreak#delete:member(1)'
+    summary: |-
       Deletes a page break object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'delete(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: getCellAfterBreak()
-    uid: 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
-    package: excel!
-    fullName: getCellAfterBreak()
-    summary: >-
+  - uid: 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
+    summary: |-
       Gets the first cell after the page break.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCellAfterBreak()
+    fullName: getCellAfterBreak()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCellAfterBreak(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: ''
-  - name: load(options)
-    uid: 'excel!Excel.PageBreak#load:member(1)'
-    package: excel!
-    fullName: load(options)
+  - uid: 'excel!Excel.PageBreak#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(options?: Excel.Interfaces.PageBreakLoadOptions): Excel.PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.PageBreakLoadOptions:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.PageBreak:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.PageBreak#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.PageBreakLoadOptions:interface'
+  - uid: 'excel!Excel.PageBreak#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.PageBreak:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.PageBreak#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PageBreak#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.PageBreak;
+      return:
+        type:
+          - 'excel!Excel.PageBreak:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PageBreak#rowIndex:member'
+    summary: |-
+      Specifies the row index for the page break
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowIndex: number;'
       return:
-        type: '<xref uid="excel!Excel.PageBreak:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.PageBreak#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+        type:
+          - number
+  - uid: 'excel!Excel.PageBreak#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.PageBreak object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.PageBreakData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PageBreak object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.PageBreakData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.PageBreakData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.PageBreakData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.PageBreakData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.PageBreak:class'
+    name: Excel.PageBreak
+  - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions:interface'
+    name: Excel.Interfaces.PageBreakLoadOptions
+  - uid: 'excel!Excel.Interfaces.PageBreakData:interface'
+    name: Excel.Interfaces.PageBreakData

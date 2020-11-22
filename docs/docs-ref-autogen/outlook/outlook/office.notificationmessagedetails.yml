@@ -1,141 +1,156 @@
-### YamlMime:TSType
-name: Office.NotificationMessageDetails
-uid: 'outlook!Office.NotificationMessageDetails:interface'
-package: outlook!
-fullName: Office.NotificationMessageDetails
-summary: >-
-  An array of `NotificationMessageDetails` objects are returned by the
-  `NotificationMessages.getAllAsync` method.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.NotificationMessageDetails:interface'
+    summary: |-
+      An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-  \[ [API set: Mailbox
-  1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: >-
-  **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
-
-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: actions
-    uid: 'outlook!Office.NotificationMessageDetails#actions:member'
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.NotificationMessageDetails
+    fullName: Office.NotificationMessageDetails
+    langs:
+      - typeScript
+    type: interface
     package: outlook!
-    fullName: actions
+    children:
+      - 'outlook!Office.NotificationMessageDetails#actions:member'
+      - 'outlook!Office.NotificationMessageDetails#icon:member'
+      - 'outlook!Office.NotificationMessageDetails#key:member'
+      - 'outlook!Office.NotificationMessageDetails#message:member'
+      - 'outlook!Office.NotificationMessageDetails#persistent:member'
+      - 'outlook!Office.NotificationMessageDetails#type:member'
+  - uid: 'outlook!Office.NotificationMessageDetails#actions:member'
     summary: >-
-      Specifies actions for the message. Limit: 1 action. This limit doesn't
-      count the "Dismiss" action which is included by default. Only applicable
-      when the type is `InsightMessage`<!-- -->. Specifying this property for an
+      Specifies actions for the message. Limit: 1 action. This limit doesn't count the "Dismiss" action which is
+      included by default. Only applicable when the type is `InsightMessage`<!-- -->. Specifying this property for an
       unsupported type or including too many actions throws an error.
 
 
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
     isPreview: true
-    isDeprecated: false
+    name: actions
+    fullName: actions
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'actions?: NotificationMessageAction[];'
       return:
-        type: '<xref uid="outlook!Office.NotificationMessageAction:interface" />[]'
-  - name: icon
-    uid: 'outlook!Office.NotificationMessageDetails#icon:member'
-    package: outlook!
-    fullName: icon
+        type:
+          - 'outlook!Office.NotificationMessageDetails#actions~0:complex'
+  - uid: 'outlook!Office.NotificationMessageDetails#icon:member'
     summary: >-
-      A reference to an icon that is defined in the manifest in the `Resources`
-      section. It appears in the infobar area. It is only applicable if the type
-      is `InformationalMessage`<!-- -->. Specifying this parameter for an
-      unsupported type results in an exception.
+      A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.
+      It is only applicable if the type is `InformationalMessage`<!-- -->. Specifying this parameter for an unsupported
+      type results in an exception.
 
 
-      **Note**: At present, the custom icon is displayed in Outlook on Windows
-      only and not on other clients (e.g., Mac, web browser).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac,
+      web browser).
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'icon?: string;'
       return:
-        type: string
-  - name: key
-    uid: 'outlook!Office.NotificationMessageDetails#key:member'
-    package: outlook!
-    fullName: key
+        type:
+          - string
+  - uid: 'outlook!Office.NotificationMessageDetails#key:member'
     summary: The identifier for the notification message.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'key?: string;'
       return:
-        type: string
-  - name: message
-    uid: 'outlook!Office.NotificationMessageDetails#message:member'
-    package: outlook!
-    fullName: message
+        type:
+          - string
+  - uid: 'outlook!Office.NotificationMessageDetails#message:member'
     summary: >-
-      The text of the notification message. Maximum length is 150 characters. If
-      the developer passes in a longer string, an `ArgumentOutOfRange` exception
-      is thrown.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The text of the notification message. Maximum length is 150 characters. If the developer passes in a longer
+      string, an `ArgumentOutOfRange` exception is thrown.
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'message: string;'
       return:
-        type: string
-  - name: persistent
-    uid: 'outlook!Office.NotificationMessageDetails#persistent:member'
-    package: outlook!
-    fullName: persistent
+        type:
+          - string
+  - uid: 'outlook!Office.NotificationMessageDetails#persistent:member'
     summary: >-
-      Specifies if the message should be persistent. Only applicable when type
-      is `InformationalMessage`<!-- -->. If true, the message remains until
-      removed by this add-in or dismissed by the user. If false, it is removed
-      when the user navigates to a different item. For error notifications, the
-      message persists until the user sees it once. Specifying this parameter
-      for an unsupported type throws an exception.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies if the message should be persistent. Only applicable when type is `InformationalMessage`<!-- -->. If
+      true, the message remains until removed by this add-in or dismissed by the user. If false, it is removed when the
+      user navigates to a different item. For error notifications, the message persists until the user sees it once.
+      Specifying this parameter for an unsupported type throws an exception.
+    name: persistent
+    fullName: persistent
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'persistent?: Boolean;'
       return:
-        type: Boolean
-  - name: type
-    uid: 'outlook!Office.NotificationMessageDetails#type:member'
-    package: outlook!
-    fullName: type
+        type:
+          - '!Boolean:interface'
+  - uid: 'outlook!Office.NotificationMessageDetails#type:member'
     summary: >-
       Specifies the `ItemNotificationMessageType` of message.
 
 
-      If type is `ProgressIndicator` or `ErrorMessage`<!-- -->, an icon is
-      automatically supplied and the message is not persistent. Therefore the
-      icon and persistent properties are not valid for these types of messages.
-      Including them will result in an `ArgumentException`<!-- -->.
+      If type is `ProgressIndicator` or `ErrorMessage`<!-- -->, an icon is automatically supplied and the message is not
+      persistent. Therefore the icon and persistent properties are not valid for these types of messages. Including them
+      will result in an `ArgumentException`<!-- -->.
 
 
-      If type is `ProgressIndicator`<!-- -->, the developer should remove or
-      replace the progress indicator when the action is complete.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      If type is `ProgressIndicator`<!-- -->, the developer should remove or replace the progress indicator when the
+      action is complete.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: MailboxEnums.ItemNotificationMessageType | string;'
       return:
-        type: >-
-          <xref
-          uid="outlook!Office.MailboxEnums.ItemNotificationMessageType:enum" />
-          | string
+        type:
+          - 'outlook!Office.NotificationMessageDetails#type~0:complex'
+references:
+  - uid: 'outlook!Office.NotificationMessageDetails#actions~0:complex'
+    name: 'NotificationMessageAction[]'
+    fullName: 'Office.NotificationMessageAction[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.NotificationMessageAction:interface'
+        name: NotificationMessageAction
+        fullName: Office.NotificationMessageAction
+      - name: '[]'
+        fullName: '[]'
+  - uid: '!Boolean:interface'
+    name: Boolean
+  - uid: 'outlook!Office.NotificationMessageDetails#type~0:complex'
+    name: MailboxEnums.ItemNotificationMessageType | string
+    fullName: Office.MailboxEnums.ItemNotificationMessageType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
+        name: MailboxEnums.ItemNotificationMessageType
+        fullName: Office.MailboxEnums.ItemNotificationMessageType
+      - name: ' | string'
+        fullName: ' | string'

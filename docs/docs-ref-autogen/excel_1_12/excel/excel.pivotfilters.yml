@@ -1,39 +1,36 @@
-### YamlMime:TSType
-name: Excel.PivotFilters
-uid: 'excel!Excel.PivotFilters:interface'
-package: excel!
-fullName: Excel.PivotFilters
-summary: >-
-  An interface representing all PivotFilters currently applied to a given
-  PivotField.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotFilters:interface'
+    summary: |-
+      An interface representing all PivotFilters currently applied to a given PivotField.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: dateFilter
-    uid: 'excel!Excel.PivotFilters#dateFilter:member'
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotFilters
+    fullName: Excel.PivotFilters
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: dateFilter
-    summary: >-
+    children:
+      - 'excel!Excel.PivotFilters#dateFilter:member'
+      - 'excel!Excel.PivotFilters#labelFilter:member'
+      - 'excel!Excel.PivotFilters#manualFilter:member'
+      - 'excel!Excel.PivotFilters#valueFilter:member'
+  - uid: 'excel!Excel.PivotFilters#dateFilter:member'
+    summary: |-
       The PivotField's currently applied date filter. Null if none is applied.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dateFilter
+    fullName: dateFilter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dateFilter?: Excel.PivotDateFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotDateFilter:interface" />'
+        type:
+          - 'excel!Excel.PivotDateFilter:interface'
         description: >-
 
 
@@ -74,24 +71,21 @@ properties:
           });
 
           ```
-  - name: labelFilter
-    uid: 'excel!Excel.PivotFilters#labelFilter:member'
-    package: excel!
-    fullName: labelFilter
-    summary: >-
+  - uid: 'excel!Excel.PivotFilters#labelFilter:member'
+    summary: |-
       The PivotField's currently applied label filter. Null if none is applied.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: labelFilter
+    fullName: labelFilter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'labelFilter?: Excel.PivotLabelFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotLabelFilter:interface" />'
+        type:
+          - 'excel!Excel.PivotLabelFilter:interface'
         description: >-
 
 
@@ -126,24 +120,21 @@ properties:
           });
 
           ```
-  - name: manualFilter
-    uid: 'excel!Excel.PivotFilters#manualFilter:member'
-    package: excel!
-    fullName: manualFilter
-    summary: >-
+  - uid: 'excel!Excel.PivotFilters#manualFilter:member'
+    summary: |-
       The PivotField's currently applied manual filter. Null if none is applied.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: manualFilter
+    fullName: manualFilter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'manualFilter?: Excel.PivotManualFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotManualFilter:interface" />'
+        type:
+          - 'excel!Excel.PivotManualFilter:interface'
         description: >-
 
 
@@ -178,24 +169,21 @@ properties:
           });
 
           ```
-  - name: valueFilter
-    uid: 'excel!Excel.PivotFilters#valueFilter:member'
-    package: excel!
-    fullName: valueFilter
-    summary: >-
+  - uid: 'excel!Excel.PivotFilters#valueFilter:member'
+    summary: |-
       The PivotField's currently applied value filter. Null if none is applied.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueFilter
+    fullName: valueFilter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'valueFilter?: Excel.PivotValueFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotValueFilter:interface" />'
+        type:
+          - 'excel!Excel.PivotValueFilter:interface'
         description: >-
 
 
@@ -230,3 +218,12 @@ properties:
           });
 
           ```
+references:
+  - uid: 'excel!Excel.PivotDateFilter:interface'
+    name: Excel.PivotDateFilter
+  - uid: 'excel!Excel.PivotLabelFilter:interface'
+    name: Excel.PivotLabelFilter
+  - uid: 'excel!Excel.PivotManualFilter:interface'
+    name: Excel.PivotManualFilter
+  - uid: 'excel!Excel.PivotValueFilter:interface'
+    name: Excel.PivotValueFilter

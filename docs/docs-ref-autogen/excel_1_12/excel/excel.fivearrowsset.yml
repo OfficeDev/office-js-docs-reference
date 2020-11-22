@@ -1,74 +1,74 @@
-### YamlMime:TSType
-name: Excel.FiveArrowsSet
-uid: 'excel!Excel.FiveArrowsSet:interface'
-package: excel!
-fullName: Excel.FiveArrowsSet
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: greenUpArrow
-    uid: 'excel!Excel.FiveArrowsSet#greenUpArrow:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FiveArrowsSet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FiveArrowsSet
+    fullName: Excel.FiveArrowsSet
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.FiveArrowsSet#greenUpArrow:member'
+      - 'excel!Excel.FiveArrowsSet#redDownArrow:member'
+      - 'excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member'
+      - 'excel!Excel.FiveArrowsSet#yellowSideArrow:member'
+      - 'excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member'
+  - uid: 'excel!Excel.FiveArrowsSet#greenUpArrow:member'
+    name: greenUpArrow
     fullName: greenUpArrow
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'greenUpArrow: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: redDownArrow
-    uid: 'excel!Excel.FiveArrowsSet#redDownArrow:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#redDownArrow:member'
+    name: redDownArrow
     fullName: redDownArrow
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'redDownArrow: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: yellowDownInclineArrow
-    uid: 'excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member'
+    name: yellowDownInclineArrow
     fullName: yellowDownInclineArrow
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'yellowDownInclineArrow: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: yellowSideArrow
-    uid: 'excel!Excel.FiveArrowsSet#yellowSideArrow:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#yellowSideArrow:member'
+    name: yellowSideArrow
     fullName: yellowSideArrow
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'yellowSideArrow: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: yellowUpInclineArrow
-    uid: 'excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member'
+    name: yellowUpInclineArrow
     fullName: yellowUpInclineArrow
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'yellowUpInclineArrow: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

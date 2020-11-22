@@ -1,12 +1,12 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
-uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
-summary: >-
-  An interface for updating data on the RowColumnPivotHierarchy object, for use
-  in `rowColumnPivotHierarchy.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface'
+    summary: >-
+      An interface for updating data on the RowColumnPivotHierarchy object, for use in `rowColumnPivotHierarchy.set({
+      ... })`<!-- -->.
+    name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

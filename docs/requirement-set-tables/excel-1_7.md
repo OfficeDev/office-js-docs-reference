@@ -197,7 +197,7 @@
 ||[getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number)](/javascript/api/excel/excel.worksheet#getrangebyindexes-startrow--startcolumn--rowcount--columncount-)|Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows and columns.|
 ||[freezePanes](/javascript/api/excel/excel.worksheet#freezepanes)|Gets an object that can be used to manipulate frozen panes on the worksheet.|
 ||[onActivated](/javascript/api/excel/excel.worksheet#onactivated)|Occurs when the worksheet is activated.|
-||[onChanged](/javascript/api/excel/excel.worksheet#onchanged)|Occurs when data changed on a specific worksheet.|
+||[onChanged](/javascript/api/excel/excel.worksheet#onchanged)|Occurs when data changes in a specific worksheet.|
 ||[onDeactivated](/javascript/api/excel/excel.worksheet#ondeactivated)|Occurs when the worksheet is deactivated.|
 ||[onSelectionChanged](/javascript/api/excel/excel.worksheet#onselectionchanged)|Occurs when the selection changes on a specific worksheet.|
 ||[standardHeight](/javascript/api/excel/excel.worksheet#standardheight)|Returns the standard (default) height of all the rows in the worksheet, in points.|
@@ -223,8 +223,8 @@
 ||[type](/javascript/api/excel/excel.worksheetdeletedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetdeletedeventargs#worksheetid)|Gets the id of the worksheet that is deleted from the workbook.|
 |[WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes)|[freezeAt(frozenRange: Range \| string)](/javascript/api/excel/excel.worksheetfreezepanes#freezeat-frozenrange-)|Sets the frozen cells in the active worksheet view.|
-||[freezeColumns(count?: number)](/javascript/api/excel/excel.worksheetfreezepanes#freezecolumns-count-)|Freeze the first column(s) of the worksheet in place.|
-||[freezeRows(count?: number)](/javascript/api/excel/excel.worksheetfreezepanes#freezerows-count-)|Freeze the top row(s) of the worksheet in place.|
+||[freezeColumns(count?: number)](/javascript/api/excel/excel.worksheetfreezepanes#freezecolumns-count-)|Freeze the first column or columns of the worksheet in place.|
+||[freezeRows(count?: number)](/javascript/api/excel/excel.worksheetfreezepanes#freezerows-count-)|Freeze the top row or rows of the worksheet in place.|
 ||[getLocation()](/javascript/api/excel/excel.worksheetfreezepanes#getlocation--)|Gets a range that describes the frozen cells in the active worksheet view.|
 ||[getLocationOrNullObject()](/javascript/api/excel/excel.worksheetfreezepanes#getlocationornullobject--)|Gets a range that describes the frozen cells in the active worksheet view.|
 ||[unfreeze()](/javascript/api/excel/excel.worksheetfreezepanes#unfreeze--)|Removes all frozen panes in the worksheet.|

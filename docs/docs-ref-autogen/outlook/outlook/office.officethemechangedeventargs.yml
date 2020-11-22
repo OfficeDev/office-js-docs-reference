@@ -1,54 +1,52 @@
-### YamlMime:TSType
-name: Office.OfficeThemeChangedEventArgs
-uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
-package: outlook!
-fullName: Office.OfficeThemeChangedEventArgs
-summary: >-
-  Provides the updated Office theme that raised the
-  `Office.EventType.OfficeThemeChanged` event.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
+    summary: |-
+      Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
 
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-type: interface
-properties:
-  - name: officeTheme
-    uid: 'outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member'
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: Office.OfficeThemeChangedEventArgs
+    fullName: Office.OfficeThemeChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: outlook!
-    fullName: officeTheme
-    summary: >-
+    children:
+      - 'outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member'
+      - 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
+  - uid: 'outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member'
+    summary: |-
       Gets the updated Office theme.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
-    remarks: ''
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: officeTheme
+    fullName: officeTheme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'officeTheme: Office.OfficeTheme;'
       return:
-        type: '<xref uid="office!Office.OfficeTheme:interface" />'
-  - name: type
-    uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
-    package: outlook!
-    fullName: type
-    summary: >-
+        type:
+          - 'office!Office.OfficeTheme:interface'
+  - uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
+    summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
-    remarks: ''
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: "officeThemeChanged";'
       return:
-        type: '"officeThemeChanged"'
+        type:
+          - '"officeThemeChanged"'
+references:
+  - uid: 'office!Office.OfficeTheme:interface'
+    name: Office.OfficeTheme

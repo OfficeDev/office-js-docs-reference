@@ -1,64 +1,62 @@
-### YamlMime:TSType
-name: Office.NodeReplacedEventArgs
-uid: 'office!Office.NodeReplacedEventArgs:interface'
-package: office!
-fullName: Office.NodeReplacedEventArgs
-summary: >-
-  Provides information about the replaced node that raised the nodeReplaced
-  event.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: isUndoRedo
-    uid: 'office!Office.NodeReplacedEventArgs#isUndoRedo:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.NodeReplacedEventArgs:interface'
+    summary: Provides information about the replaced node that raised the nodeReplaced event.
+    name: Office.NodeReplacedEventArgs
+    fullName: Office.NodeReplacedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: office!
+    children:
+      - 'office!Office.NodeReplacedEventArgs#isUndoRedo:member'
+      - 'office!Office.NodeReplacedEventArgs#newNode:member'
+      - 'office!Office.NodeReplacedEventArgs#oldNode:member'
+  - uid: 'office!Office.NodeReplacedEventArgs#isUndoRedo:member'
+    summary: Gets whether the replaced node was inserted as part of an undo or redo operation by the user.
+    name: isUndoRedo
     fullName: isUndoRedo
-    summary: >-
-      Gets whether the replaced node was inserted as part of an undo or redo
-      operation by the user.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isUndoRedo: boolean;'
       return:
-        type: boolean
-  - name: newNode
-    uid: 'office!Office.NodeReplacedEventArgs#newNode:member'
-    package: office!
-    fullName: newNode
-    summary: >-
+        type:
+          - boolean
+  - uid: 'office!Office.NodeReplacedEventArgs#newNode:member'
+    summary: |-
       Gets the node that was just added to the CustomXMLPart object.
 
-
-      Note that this node may have children, if a subtree was just added to the
-      document.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that this node may have children, if a subtree was just added to the document.
+    name: newNode
+    fullName: newNode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'newNode: CustomXmlNode;'
       return:
-        type: '<xref uid="office!Office.CustomXmlNode:interface" />'
-  - name: oldNode
-    uid: 'office!Office.NodeReplacedEventArgs#oldNode:member'
-    package: office!
-    fullName: oldNode
+        type:
+          - 'office!Office.CustomXmlNode:interface'
+  - uid: 'office!Office.NodeReplacedEventArgs#oldNode:member'
     summary: >-
-      Gets the node which was just deleted (replaced) from the CustomXmlPart
-      object.
+      Gets the node which was just deleted (replaced) from the CustomXmlPart object.
 
 
-      Note that this node may have children, if a subtree is being removed from
-      the document. Also, this node will be a "disconnected" node in that you
-      can query down from the node, but you cannot query up the tree - the node
-      appears to exist alone.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a
+      "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears
+      to exist alone.
+    name: oldNode
+    fullName: oldNode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'oldNode: CustomXmlNode;'
       return:
-        type: '<xref uid="office!Office.CustomXmlNode:interface" />'
+        type:
+          - 'office!Office.CustomXmlNode:interface'
+references:
+  - uid: 'office!Office.CustomXmlNode:interface'
+    name: CustomXmlNode

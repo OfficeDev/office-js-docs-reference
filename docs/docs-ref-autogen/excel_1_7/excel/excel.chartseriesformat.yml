@@ -1,222 +1,224 @@
-### YamlMime:TSType
-name: Excel.ChartSeriesFormat
-uid: 'excel!Excel.ChartSeriesFormat:class'
-package: excel!
-fullName: Excel.ChartSeriesFormat
-summary: >-
-  Encapsulates the format properties for the chart series
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesFormat:class'
+    summary: |-
+      Encapsulates the format properties for the chart series
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.ChartSeriesFormat#context:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartSeriesFormat
+    fullName: Excel.ChartSeriesFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
+    children:
+      - 'excel!Excel.ChartSeriesFormat#context:member'
+      - 'excel!Excel.ChartSeriesFormat#fill:member'
+      - 'excel!Excel.ChartSeriesFormat#line:member'
+      - 'excel!Excel.ChartSeriesFormat#load:member(1)'
+      - 'excel!Excel.ChartSeriesFormat#load:member(2)'
+      - 'excel!Excel.ChartSeriesFormat#load:member(3)'
+      - 'excel!Excel.ChartSeriesFormat#set:member(1)'
+      - 'excel!Excel.ChartSeriesFormat#set:member(2)'
+      - 'excel!Excel.ChartSeriesFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartSeriesFormat#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: fill
-    uid: 'excel!Excel.ChartSeriesFormat#fill:member'
-    package: excel!
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartSeriesFormat#fill:member'
+    summary: |-
+      Represents the fill format of a chart series, which includes background formatting information.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
     fullName: fill
-    summary: >-
-      Represents the fill format of a chart series, which includes background
-      formatting information.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly fill: Excel.ChartFill;'
       return:
-        type: '<xref uid="excel!Excel.ChartFill:class" />'
-  - name: line
-    uid: 'excel!Excel.ChartSeriesFormat#line:member'
-    package: excel!
-    fullName: line
-    summary: >-
+        type:
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartSeriesFormat#line:member'
+    summary: |-
       Represents line formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly line: Excel.ChartLineFormat;'
       return:
-        type: '<xref uid="excel!Excel.ChartLineFormat:class" />'
-methods:
-  - name: load(options)
-    uid: 'excel!Excel.ChartSeriesFormat#load:member(1)'
-    package: excel!
-    fullName: load(options)
+        type:
+          - 'excel!Excel.ChartLineFormat:class'
+  - uid: 'excel!Excel.ChartSeriesFormat#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ChartSeriesFormatLoadOptions):
-        Excel.ChartSeriesFormat;
+      content: 'load(options?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeriesFormat:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.ChartSeriesFormat:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.ChartSeriesFormat#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ChartSeriesFormat#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeriesFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeriesFormat:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.ChartSeriesFormat:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ChartSeriesFormat#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartSeriesFormat#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartSeriesFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartSeriesFormat:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.ChartSeriesFormat:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.ChartSeriesFormat#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartSeriesFormat#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartSeriesFormat): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.ChartSeriesFormatUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.ChartSeriesFormat#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartSeriesFormat#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.ChartSeriesFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.ChartSeriesFormat:class" />'
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.ChartSeriesFormat#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+          type:
+            - 'excel!Excel.ChartSeriesFormat:class'
+  - uid: 'excel!Excel.ChartSeriesFormat#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.ChartSeriesFormat
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.ChartSeriesFormatData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`<!-- -->) that contains shallow copies
+      of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesFormatData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesFormatData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: Excel.ChartFill
+  - uid: 'excel!Excel.ChartLineFormat:class'
+    name: Excel.ChartLineFormat
+  - uid: 'excel!Excel.ChartSeriesFormat:class'
+    name: Excel.ChartSeriesFormat
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
+    name: Interfaces.ChartSeriesFormatUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
+    name: Excel.Interfaces.ChartSeriesFormatData

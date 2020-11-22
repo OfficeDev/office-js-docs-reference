@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TextFrameData
-uid: 'excel!Excel.Interfaces.TextFrameData:interface'
-package: excel!
-fullName: Excel.Interfaces.TextFrameData
-summary: >-
-  An interface describing the data returned by calling `textFrame.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TextFrameData:interface'
+    summary: An interface describing the data returned by calling `textFrame.toJSON()`<!-- -->.
+    name: Excel.Interfaces.TextFrameData
+    fullName: Excel.Interfaces.TextFrameData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

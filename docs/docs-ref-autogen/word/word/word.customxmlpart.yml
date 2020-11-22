@@ -1,508 +1,553 @@
-### YamlMime:TSType
-name: Word.CustomXmlPart
-uid: 'word!Word.CustomXmlPart:class'
-package: word!
-fullName: Word.CustomXmlPart
-summary: >-
-  Represents a custom XML part.
-
-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'word!Word.CustomXmlPart#context:member'
-    package: word!
-    fullName: context
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.CustomXmlPart:class'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
+      Represents a custom XML part.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: Word.CustomXmlPart
+    fullName: Word.CustomXmlPart
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: word!
+    children:
+      - 'word!Word.CustomXmlPart#context:member'
+      - 'word!Word.CustomXmlPart#delete:member(1)'
+      - 'word!Word.CustomXmlPart#deleteAttribute:member(1)'
+      - 'word!Word.CustomXmlPart#deleteElement:member(1)'
+      - 'word!Word.CustomXmlPart#getXml:member(1)'
+      - 'word!Word.CustomXmlPart#id:member'
+      - 'word!Word.CustomXmlPart#insertAttribute:member(1)'
+      - 'word!Word.CustomXmlPart#insertElement:member(1)'
+      - 'word!Word.CustomXmlPart#load:member(1)'
+      - 'word!Word.CustomXmlPart#load:member(2)'
+      - 'word!Word.CustomXmlPart#load:member(3)'
+      - 'word!Word.CustomXmlPart#namespaceUri:member'
+      - 'word!Word.CustomXmlPart#query:member(1)'
+      - 'word!Word.CustomXmlPart#setXml:member(1)'
+      - 'word!Word.CustomXmlPart#toJSON:member(1)'
+      - 'word!Word.CustomXmlPart#track:member(1)'
+      - 'word!Word.CustomXmlPart#untrack:member(1)'
+      - 'word!Word.CustomXmlPart#updateAttribute:member(1)'
+      - 'word!Word.CustomXmlPart#updateElement:member(1)'
+  - uid: 'word!Word.CustomXmlPart#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    isPreview: true
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-  - name: id
-    uid: 'word!Word.CustomXmlPart#id:member'
-    package: word!
-    fullName: id
-    summary: >-
-      Gets the ID of the custom XML part. Read only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type: string
-  - name: namespaceUri
-    uid: 'word!Word.CustomXmlPart#namespaceUri:member'
-    package: word!
-    fullName: namespaceUri
-    summary: >-
-      Gets the namespace URI of the custom XML part. Read only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly namespaceUri: string;'
-      return:
-        type: string
-methods:
-  - name: delete()
-    uid: 'word!Word.CustomXmlPart#delete:member(1)'
-    package: word!
-    fullName: delete()
+        type:
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.CustomXmlPart#delete:member(1)'
     summary: >-
       Deletes the custom XML part.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'delete(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'deleteAttribute(xpath, namespaceMappings, name)'
-    uid: 'word!Word.CustomXmlPart#deleteAttribute:member(1)'
-    package: word!
-    fullName: 'deleteAttribute(xpath, namespaceMappings, name)'
+  - uid: 'word!Word.CustomXmlPart#deleteAttribute:member(1)'
     summary: >-
-      Deletes an attribute with the given name from the element identified by
-      xpath.
+      Deletes an attribute with the given name from the element identified by xpath.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: 'deleteAttribute(xpath, namespaceMappings, name)'
+    fullName: 'deleteAttribute(xpath, namespaceMappings, name)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        deleteAttribute(xpath: string, namespaceMappings: any, name: string):
-        void;
+      content: 'deleteAttribute(xpath: string, namespaceMappings: any, name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
-          type: string
+          type:
+            - string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
-          type: any
+            Required. An object whose properties represent namespace aliases and the values are the actual namespace
+            URIs.
+          type:
+            - any
         - id: name
           description: Required. Name of the attribute.
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: 'deleteElement(xpath, namespaceMappings)'
-    uid: 'word!Word.CustomXmlPart#deleteElement:member(1)'
-    package: word!
-    fullName: 'deleteElement(xpath, namespaceMappings)'
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPart#deleteElement:member(1)'
     summary: >-
       Deletes the element identified by xpath.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: 'deleteElement(xpath, namespaceMappings)'
+    fullName: 'deleteElement(xpath, namespaceMappings)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'deleteElement(xpath: string, namespaceMappings: any): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
-          type: string
+          type:
+            - string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
-          type: any
-      return:
-        type: void
-        description: ''
-  - name: getXml()
-    uid: 'word!Word.CustomXmlPart#getXml:member(1)'
-    package: word!
-    fullName: getXml()
+            Required. An object whose properties represent namespace aliases and the values are the actual namespace
+            URIs.
+          type:
+            - any
+  - uid: 'word!Word.CustomXmlPart#getXml:member(1)'
     summary: >-
       Gets the full XML content of the custom XML part.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: getXml()
+    fullName: getXml()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type:
+          - 'word!Word.CustomXmlPart#getXml~0:complex'
         description: ''
-  - name: 'insertAttribute(xpath, namespaceMappings, name, value)'
-    uid: 'word!Word.CustomXmlPart#insertAttribute:member(1)'
-    package: word!
-    fullName: 'insertAttribute(xpath, namespaceMappings, name, value)'
+  - uid: 'word!Word.CustomXmlPart#id:member'
     summary: >-
-      Inserts an attribute with the given name and value to the element
-      identified by xpath.
+      Gets the ID of the custom XML part. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        insertAttribute(xpath: string, namespaceMappings: any, name: string,
-        value: string): void;
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'word!Word.CustomXmlPart#insertAttribute:member(1)'
+    summary: >-
+      Inserts an attribute with the given name and value to the element identified by xpath.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: 'insertAttribute(xpath, namespaceMappings, name, value)'
+    fullName: 'insertAttribute(xpath, namespaceMappings, name, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
-          type: string
+          type:
+            - string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
-          type: any
+            Required. An object whose properties represent namespace aliases and the values are the actual namespace
+            URIs.
+          type:
+            - any
         - id: name
           description: Required. Name of the attribute.
-          type: string
+          type:
+            - string
         - id: value
           description: Required. Value of the attribute.
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: 'insertElement(xpath, xml, namespaceMappings, index)'
-    uid: 'word!Word.CustomXmlPart#insertElement:member(1)'
-    package: word!
-    fullName: 'insertElement(xpath, xml, namespaceMappings, index)'
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPart#insertElement:member(1)'
     summary: >-
-      Inserts the given XML under the parent element identified by xpath at
-      child position index.
+      Inserts the given XML under the parent element identified by xpath at child position index.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: 'insertElement(xpath, xml, namespaceMappings, index)'
+    fullName: 'insertElement(xpath, xml, namespaceMappings, index)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        insertElement(xpath: string, xml: string, namespaceMappings: any,
-        index?: number): void;
+      content: 'insertElement(xpath: string, xml: string, namespaceMappings: any, index?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xpath
-          description: >-
-            Required. Absolute path to the single parent element in XPath
-            notation.
-          type: string
+          description: Required. Absolute path to the single parent element in XPath notation.
+          type:
+            - string
         - id: xml
           description: Required. XML content to be inserted.
-          type: string
+          type:
+            - string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
-          type: any
+            Required. An object whose properties represent namespace aliases and the values are the actual namespace
+            URIs.
+          type:
+            - any
         - id: index
           description: >-
-            Optional. Zero-based position at which the new XML to be inserted.
-            If omitted, the XML will be appended as the last child of this
-            parent.
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: load(options)
-    uid: 'word!Word.CustomXmlPart#load:member(1)'
-    package: word!
-    fullName: load(options)
+            Optional. Zero-based position at which the new XML to be inserted. If omitted, the XML will be appended as
+            the last child of this parent.
+          type:
+            - number
+  - uid: 'word!Word.CustomXmlPart#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     isPreview: true
-    isDeprecated: false
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.CustomXmlPartLoadOptions):
-        Word.CustomXmlPart;
+      content: 'load(options?: Word.Interfaces.CustomXmlPartLoadOptions): Word.CustomXmlPart;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="word!Word.Interfaces.CustomXmlPartLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'word!Word.CustomXmlPart#load:member(2)'
-    package: word!
-    fullName: load(propertyNames)
+          type:
+            - 'word!Word.Interfaces.CustomXmlPartLoadOptions:interface'
+  - uid: 'word!Word.CustomXmlPart#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     isPreview: true
-    isDeprecated: false
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.CustomXmlPart;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.CustomXmlPart#load:member(3)'
-    package: word!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'word!Word.CustomXmlPart#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     isPreview: true
-    isDeprecated: false
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Word.CustomXmlPart;
+      return:
+        type:
+          - 'word!Word.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'word!Word.CustomXmlPart#namespaceUri:member'
+    summary: >-
+      Gets the namespace URI of the custom XML part. Read only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: namespaceUri
+    fullName: namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly namespaceUri: string;'
       return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
-        description: ''
-  - name: 'query(xpath, namespaceMappings)'
-    uid: 'word!Word.CustomXmlPart#query:member(1)'
-    package: word!
-    fullName: 'query(xpath, namespaceMappings)'
+        type:
+          - string
+  - uid: 'word!Word.CustomXmlPart#query:member(1)'
     summary: >-
       Queries the XML content of the custom XML part.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: 'query(xpath, namespaceMappings)'
+    fullName: 'query(xpath, namespaceMappings)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        query(xpath: string, namespaceMappings: any):
-        OfficeExtension.ClientResult<string[]>;
+      content: 'query(xpath: string, namespaceMappings: any): OfficeExtension.ClientResult<string[]>;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPart#query~0:complex'
+        description: An array where each item represents an entry matched by the XPath query.
       parameters:
         - id: xpath
           description: Required. An XPath query.
-          type: string
+          type:
+            - string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
-          type: any
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
-        description: >-
-          An array where each item represents an entry matched by the XPath
-          query.
-  - name: setXml(xml)
-    uid: 'word!Word.CustomXmlPart#setXml:member(1)'
-    package: word!
-    fullName: setXml(xml)
+            Required. An object whose properties represent namespace aliases and the values are the actual namespace
+            URIs.
+          type:
+            - any
+  - uid: 'word!Word.CustomXmlPart#setXml:member(1)'
     summary: >-
       Sets the full XML content of the custom XML part.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: setXml(xml)
+    fullName: setXml(xml)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setXml(xml: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xml
           description: Required. XML content to be set.
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'word!Word.CustomXmlPart#toJSON:member(1)'
-    package: word!
-    fullName: toJSON()
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPart#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.CustomXmlPart
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.CustomXmlPartData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
-    remarks: ''
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.CustomXmlPart object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     isPreview: true
-    isDeprecated: false
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Word.Interfaces.CustomXmlPartData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.CustomXmlPartData:interface" />'
+        type:
+          - 'word!Word.Interfaces.CustomXmlPartData:interface'
         description: ''
-  - name: track()
-    uid: 'word!Word.CustomXmlPart#track:member(1)'
-    package: word!
-    fullName: track()
+  - uid: 'word!Word.CustomXmlPart#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     isPreview: true
-    isDeprecated: false
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): Word.CustomXmlPart;'
       return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
+        type:
+          - 'word!Word.CustomXmlPart:class'
         description: ''
-  - name: untrack()
-    uid: 'word!Word.CustomXmlPart#untrack:member(1)'
-    package: word!
-    fullName: untrack()
+  - uid: 'word!Word.CustomXmlPart#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
-    remarks: ''
     isPreview: true
-    isDeprecated: false
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): Word.CustomXmlPart;'
       return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
+        type:
+          - 'word!Word.CustomXmlPart:class'
         description: ''
-  - name: 'updateAttribute(xpath, namespaceMappings, name, value)'
-    uid: 'word!Word.CustomXmlPart#updateAttribute:member(1)'
-    package: word!
-    fullName: 'updateAttribute(xpath, namespaceMappings, name, value)'
+  - uid: 'word!Word.CustomXmlPart#updateAttribute:member(1)'
     summary: >-
-      Updates the value of an attribute with the given name of the element
-      identified by xpath.
+      Updates the value of an attribute with the given name of the element identified by xpath.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: 'updateAttribute(xpath, namespaceMappings, name, value)'
+    fullName: 'updateAttribute(xpath, namespaceMappings, name, value)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        updateAttribute(xpath: string, namespaceMappings: any, name: string,
-        value: string): void;
+      content: 'updateAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
-          type: string
+          type:
+            - string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
-          type: any
+            Required. An object whose properties represent namespace aliases and the values are the actual namespace
+            URIs.
+          type:
+            - any
         - id: name
           description: Required. Name of the attribute.
-          type: string
+          type:
+            - string
         - id: value
           description: Required. New value of the attribute.
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: 'updateElement(xpath, xml, namespaceMappings)'
-    uid: 'word!Word.CustomXmlPart#updateElement:member(1)'
-    package: word!
-    fullName: 'updateElement(xpath, xml, namespaceMappings)'
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPart#updateElement:member(1)'
     summary: >-
       Updates the XML of the element identified by xpath.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: 'updateElement(xpath, xml, namespaceMappings)'
+    fullName: 'updateElement(xpath, xml, namespaceMappings)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'updateElement(xpath: string, xml: string, namespaceMappings: any): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
-          type: string
+          type:
+            - string
         - id: xml
           description: Required. New XML content to be stored.
-          type: string
+          type:
+            - string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
-          type: any
-      return:
-        type: void
-        description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+            Required. An object whose properties represent namespace aliases and the values are the actual namespace
+            URIs.
+          type:
+            - any
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.CustomXmlPart#getXml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.CustomXmlPart:class'
+    name: Word.CustomXmlPart
+  - uid: 'word!Word.Interfaces.CustomXmlPartLoadOptions:interface'
+    name: Word.Interfaces.CustomXmlPartLoadOptions
+  - uid: 'word!Word.CustomXmlPart#query~0:complex'
+    name: 'OfficeExtension.ClientResult<string[]>'
+    fullName: 'OfficeExtension.ClientResult<string[]>'
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: '<string[]>'
+        fullName: '<string[]>'
+  - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
+    name: Word.Interfaces.CustomXmlPartData

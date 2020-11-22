@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Word.Interfaces.RangeCollectionUpdateData
-uid: 'word!Word.Interfaces.RangeCollectionUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.RangeCollectionUpdateData
-summary: >-
-  An interface for updating data on the RangeCollection object, for use in
-  `rangeCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.RangeCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.RangeCollectionUpdateData:interface'
+    summary: 'An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.RangeCollectionUpdateData
+    fullName: Word.Interfaces.RangeCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.RangeCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.RangeCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.RangeData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.RangeData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.RangeCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.RangeCollectionUpdateData#items~0:complex'
+    name: 'Word.Interfaces.RangeData[]'
+    fullName: 'Word.Interfaces.RangeData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.RangeData:interface'
+        name: Word.Interfaces.RangeData
+        fullName: Word.Interfaces.RangeData
+      - name: '[]'
+        fullName: '[]'

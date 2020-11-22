@@ -1,94 +1,47 @@
-### YamlMime:TSType
-name: Word.CustomPropertyCollection
-uid: 'word!Word.CustomPropertyCollection:class'
-package: word!
-fullName: Word.CustomPropertyCollection
-summary: >-
-  Contains the collection of
-  [Word.CustomProperty](xref:word!Word.CustomProperty:class) objects.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.CustomPropertyCollection:class'
+    summary: |-
+      Contains the collection of [Word.CustomProperty](xref:word!Word.CustomProperty:class) objects.
 
-
-  \[ [API set: WordApi
-  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'word!Word.CustomPropertyCollection#context:member'
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.CustomPropertyCollection
+    fullName: Word.CustomPropertyCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-  - name: items
-    uid: 'word!Word.CustomPropertyCollection#items:member'
-    package: word!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Word.CustomProperty[];'
-      return:
-        type: '<xref uid="word!Word.CustomProperty:class" />[]'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
-
-          await Word.run(async (context) => {
-              let properties = context.document.properties.customProperties;
-              properties.load("key,type,value");
-
-              await context.sync();
-              for (var i = 0; i < properties.items.length; i++)
-                  console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
-          });
-
-          ```
-methods:
-  - name: 'add(key, value)'
-    uid: 'word!Word.CustomPropertyCollection#add:member(1)'
-    package: word!
-    fullName: 'add(key, value)'
-    summary: >-
+    children:
+      - 'word!Word.CustomPropertyCollection#add:member(1)'
+      - 'word!Word.CustomPropertyCollection#context:member'
+      - 'word!Word.CustomPropertyCollection#deleteAll:member(1)'
+      - 'word!Word.CustomPropertyCollection#getCount:member(1)'
+      - 'word!Word.CustomPropertyCollection#getItem:member(1)'
+      - 'word!Word.CustomPropertyCollection#getItemOrNullObject:member(1)'
+      - 'word!Word.CustomPropertyCollection#items:member'
+      - 'word!Word.CustomPropertyCollection#load:member(1)'
+      - 'word!Word.CustomPropertyCollection#load:member(2)'
+      - 'word!Word.CustomPropertyCollection#load:member(3)'
+      - 'word!Word.CustomPropertyCollection#toJSON:member(1)'
+      - 'word!Word.CustomPropertyCollection#track:member(1)'
+      - 'word!Word.CustomPropertyCollection#untrack:member(1)'
+  - uid: 'word!Word.CustomPropertyCollection#add:member(1)'
+    summary: |-
       Creates a new or sets an existing custom property.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'add(key, value)'
+    fullName: 'add(key, value)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(key: string, value: any): Word.CustomProperty;'
-      parameters:
-        - id: key
-          description: 'Required. The custom property''s key, which is case-insensitive.'
-          type: string
-        - id: value
-          description: Required. The custom property's value.
-          type: any
       return:
-        type: '<xref uid="word!Word.CustomProperty:class" />'
+        type:
+          - 'word!Word.CustomProperty:class'
         description: >-
 
 
@@ -122,224 +75,297 @@ methods:
           });
 
           ```
-  - name: deleteAll()
-    uid: 'word!Word.CustomPropertyCollection#deleteAll:member(1)'
-    package: word!
-    fullName: deleteAll()
+      parameters:
+        - id: key
+          description: 'Required. The custom property''s key, which is case-insensitive.'
+          type:
+            - string
+        - id: value
+          description: Required. The custom property's value.
+          type:
+            - any
+  - uid: 'word!Word.CustomPropertyCollection#context:member'
     summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.CustomPropertyCollection#deleteAll:member(1)'
+    summary: |-
       Deletes all custom properties in this collection.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: deleteAll()
+    fullName: deleteAll()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'deleteAll(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: getCount()
-    uid: 'word!Word.CustomPropertyCollection#getCount:member(1)'
-    package: word!
-    fullName: getCount()
-    summary: >-
+  - uid: 'word!Word.CustomPropertyCollection#getCount:member(1)'
+    summary: |-
       Gets the count of custom properties.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type:
+          - 'word!Word.CustomPropertyCollection#getCount~0:complex'
         description: ''
-  - name: getItem(key)
-    uid: 'word!Word.CustomPropertyCollection#getItem:member(1)'
-    package: word!
-    fullName: getItem(key)
+  - uid: 'word!Word.CustomPropertyCollection#getItem:member(1)'
     summary: >-
-      Gets a custom property object by its key, which is case-insensitive.
-      Throws an error if the custom property does not exist.
+      Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does
+      not exist.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(key: string): Word.CustomProperty;'
+      return:
+        type:
+          - 'word!Word.CustomProperty:class'
+        description: ''
       parameters:
         - id: key
           description: The key that identifies the custom property object.
-          type: string
-      return:
-        type: '<xref uid="word!Word.CustomProperty:class" />'
-        description: ''
-  - name: getItemOrNullObject(key)
-    uid: 'word!Word.CustomPropertyCollection#getItemOrNullObject:member(1)'
-    package: word!
-    fullName: getItemOrNullObject(key)
+          type:
+            - string
+  - uid: 'word!Word.CustomPropertyCollection#getItemOrNullObject:member(1)'
     summary: >-
-      Gets a custom property object by its key, which is case-insensitive.
-      Returns a null object if the custom property does not exist.
+      Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
+      does not exist.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemOrNullObject(key: string): Word.CustomProperty;'
+      return:
+        type:
+          - 'word!Word.CustomProperty:class'
+        description: ''
       parameters:
         - id: key
           description: Required. The key that identifies the custom property object.
-          type: string
+          type:
+            - string
+  - uid: 'word!Word.CustomPropertyCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Word.CustomProperty[];'
       return:
-        type: '<xref uid="word!Word.CustomProperty:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'word!Word.CustomPropertyCollection#load:member(1)'
-    package: word!
-    fullName: load(options)
+        type:
+          - 'word!Word.CustomPropertyCollection#items~0:complex'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
+
+          await Word.run(async (context) => {
+              let properties = context.document.properties.customProperties;
+              properties.load("key,type,value");
+
+              await context.sync();
+              for (var i = 0; i < properties.items.length; i++)
+                  console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+          });
+
+          ```
+  - uid: 'word!Word.CustomPropertyCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Word.Interfaces.CustomPropertyCollectionLoadOptions &
-        Word.Interfaces.CollectionLoadOptions): Word.CustomPropertyCollection;
+        load(options?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.CustomPropertyCollection;
+      return:
+        type:
+          - 'word!Word.CustomPropertyCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="word!Word.Interfaces.CustomPropertyCollectionLoadOptions:interface"
-            /> & <xref
-            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'word!Word.CustomPropertyCollection#load:member(2)'
-    package: word!
-    fullName: load(propertyNames)
+          type:
+            - 'word!Word.CustomPropertyCollection#load~0:complex'
+  - uid: 'word!Word.CustomPropertyCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.CustomPropertyCollection;'
+      return:
+        type:
+          - 'word!Word.CustomPropertyCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.CustomPropertyCollection#load:member(3)'
-    package: word!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'word!Word.CustomPropertyCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Word.CustomPropertyCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;'
+      return:
+        type:
+          - 'word!Word.CustomPropertyCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'word!Word.CustomPropertyCollection#toJSON:member(1)'
-    package: word!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'word!Word.CustomPropertyCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Word.CustomPropertyCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Word.Interfaces.CustomPropertyCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.CustomPropertyCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Word.Interfaces.CustomPropertyCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CustomPropertyCollectionData:interface" />
+        type:
+          - 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
         description: ''
-  - name: track()
-    uid: 'word!Word.CustomPropertyCollection#track:member(1)'
-    package: word!
-    fullName: track()
+  - uid: 'word!Word.CustomPropertyCollection#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): Word.CustomPropertyCollection;'
       return:
-        type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
+        type:
+          - 'word!Word.CustomPropertyCollection:class'
         description: ''
-  - name: untrack()
-    uid: 'word!Word.CustomPropertyCollection#untrack:member(1)'
-    package: word!
-    fullName: untrack()
+  - uid: 'word!Word.CustomPropertyCollection#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): Word.CustomPropertyCollection;'
       return:
-        type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
+        type:
+          - 'word!Word.CustomPropertyCollection:class'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.CustomProperty:class'
+    name: Word.CustomProperty
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.CustomPropertyCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'word!Word.CustomPropertyCollection#items~0:complex'
+    name: 'Word.CustomProperty[]'
+    fullName: 'Word.CustomProperty[]'
+    spec.typeScript:
+      - uid: 'word!Word.CustomProperty:class'
+        name: Word.CustomProperty
+        fullName: Word.CustomProperty
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.CustomPropertyCollection:class'
+    name: Word.CustomPropertyCollection
+  - uid: 'word!Word.CustomPropertyCollection#load~0:complex'
+    name: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    fullName: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions:interface'
+        name: Word.Interfaces.CustomPropertyCollectionLoadOptions
+        fullName: Word.Interfaces.CustomPropertyCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+        name: Word.Interfaces.CollectionLoadOptions
+        fullName: Word.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
+    name: Word.Interfaces.CustomPropertyCollectionData

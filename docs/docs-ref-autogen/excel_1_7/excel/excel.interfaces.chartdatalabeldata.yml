@@ -1,164 +1,157 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartDataLabelData
-uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartDataLabelData
-summary: >-
-  An interface describing the data returned by calling
-  `chartDataLabel.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: position
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#position:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
+    summary: An interface describing the data returned by calling `chartDataLabel.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartDataLabelData
+    fullName: Excel.Interfaces.ChartDataLabelData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: position
+    children:
+      - 'excel!Excel.Interfaces.ChartDataLabelData#position:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelData#separator:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelData#showBubbleSize:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelData#showCategoryName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelData#showLegendKey:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelData#showPercentage:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelData#showSeriesName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelData#showValue:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#position:member'
     summary: >-
-      DataLabelPosition value that represents the position of the data label.
-      See Excel.ChartDataLabelPosition for details.
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center"
-        | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" |
-        "Bottom" | "BestFit" | "Callout";
+        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" |
-          "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
-          | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
-  - name: separator
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#separator:member'
-    package: excel!
-    fullName: separator
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartDataLabelData#position~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#separator:member'
+    summary: |-
       String representing the separator used for the data label on a chart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: separator
+    fullName: separator
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'separator?: string;'
       return:
-        type: string
-  - name: showBubbleSize
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#showBubbleSize:member'
-    package: excel!
-    fullName: showBubbleSize
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showBubbleSize:member'
+    summary: |-
       Specifies if the data label bubble size is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBubbleSize
+    fullName: showBubbleSize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showBubbleSize?: boolean;'
       return:
-        type: boolean
-  - name: showCategoryName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#showCategoryName:member'
-    package: excel!
-    fullName: showCategoryName
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showCategoryName:member'
+    summary: |-
       Specifies if the data label category name is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showCategoryName
+    fullName: showCategoryName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showCategoryName?: boolean;'
       return:
-        type: boolean
-  - name: showLegendKey
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#showLegendKey:member'
-    package: excel!
-    fullName: showLegendKey
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showLegendKey:member'
+    summary: |-
       Specifies if the data label legend key is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendKey
+    fullName: showLegendKey
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showLegendKey?: boolean;'
       return:
-        type: boolean
-  - name: showPercentage
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#showPercentage:member'
-    package: excel!
-    fullName: showPercentage
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showPercentage:member'
+    summary: |-
       Specifies if the data label percentage is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showPercentage
+    fullName: showPercentage
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showPercentage?: boolean;'
       return:
-        type: boolean
-  - name: showSeriesName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#showSeriesName:member'
-    package: excel!
-    fullName: showSeriesName
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showSeriesName:member'
+    summary: |-
       Specifies if the data label series name is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showSeriesName
+    fullName: showSeriesName
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showSeriesName?: boolean;'
       return:
-        type: boolean
-  - name: showValue
-    uid: 'excel!Excel.Interfaces.ChartDataLabelData#showValue:member'
-    package: excel!
-    fullName: showValue
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showValue:member'
+    summary: |-
       Specifies if the data label value is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showValue
+    fullName: showValue
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showValue?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelData#position~0:complex'
+    name: >-
+      Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+      | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+    fullName: >-
+      Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+      | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartDataLabelPosition:enum'
+        name: Excel.ChartDataLabelPosition
+        fullName: Excel.ChartDataLabelPosition
+      - name: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
+        fullName: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'

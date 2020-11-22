@@ -1,364 +1,335 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TableLoadOptions
-uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.TableLoadOptions
-summary: >-
-  Represents an Excel table. To learn more about the table object model, read
-  [Work with tables using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!--
-  -->.
-
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
-    package: excel!
-    fullName: $all
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Represents an Excel table. To learn more about the table object model, read [Work with tables using the Excel
+      JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableLoadOptions
+    fullName: Excel.Interfaces.TableLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#autoFilter:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#highlightFirstColumn:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#highlightLastColumn:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#legacyId:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#showBandedColumns:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#showBandedRows:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#showFilterButton:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#sort:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#tableStyle:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: autoFilter
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#autoFilter:member'
-    package: excel!
-    fullName: autoFilter
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#autoFilter:member'
+    summary: |-
       Represents the AutoFilter object of the table.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface" />'
-  - name: columns
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
-    package: excel!
-    fullName: columns
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
+    summary: |-
       Represents a collection of all the columns in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
-          />
-  - name: highlightFirstColumn
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#highlightFirstColumn:member'
-    package: excel!
-    fullName: highlightFirstColumn
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#highlightFirstColumn:member'
+    summary: |-
       Specifies if the first column contains special formatting.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: highlightFirstColumn
+    fullName: highlightFirstColumn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'highlightFirstColumn?: boolean;'
       return:
-        type: boolean
-  - name: highlightLastColumn
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#highlightLastColumn:member'
-    package: excel!
-    fullName: highlightLastColumn
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#highlightLastColumn:member'
+    summary: |-
       Specifies if the last column contains special formatting.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: highlightLastColumn
+    fullName: highlightLastColumn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'highlightLastColumn?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#id:member'
-    package: excel!
-    fullName: id
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#id:member'
     summary: >-
-      Returns a value that uniquely identifies the table in a given workbook.
-      The value of the identifier remains the same even when the table is
-      renamed.
+      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
+      same even when the table is renamed.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: legacyId
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#legacyId:member'
-    package: excel!
-    fullName: legacyId
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#legacyId:member'
+    summary: |-
       Returns a numeric id.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: legacyId
+    fullName: legacyId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'legacyId?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#name:member'
-    package: excel!
-    fullName: name
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#name:member'
     summary: >-
       Name of the table.
 
 
-      The set name of the table must follow the guidelines specified in the
-      [Rename an Excel
-      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)
-      article.
+      The set name of the table must follow the guidelines specified in the [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: rows
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
-    package: excel!
-    fullName: rows
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
+    summary: |-
       Represents a collection of all the rows in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface"
-          />
-  - name: showBandedColumns
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#showBandedColumns:member'
-    package: excel!
-    fullName: showBandedColumns
+        type:
+          - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showBandedColumns:member'
     summary: >-
-      Specifies if the columns show banded formatting in which odd columns are
-      highlighted differently from even ones to make reading the table easier.
+      Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to
+      make reading the table easier.
 
 
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBandedColumns
+    fullName: showBandedColumns
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showBandedColumns?: boolean;'
       return:
-        type: boolean
-  - name: showBandedRows
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#showBandedRows:member'
-    package: excel!
-    fullName: showBandedRows
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showBandedRows:member'
     summary: >-
-      Specifies if the rows show banded formatting in which odd rows are
-      highlighted differently from even ones to make reading the table easier.
+      Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make
+      reading the table easier.
 
 
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBandedRows
+    fullName: showBandedRows
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showBandedRows?: boolean;'
       return:
-        type: boolean
-  - name: showFilterButton
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#showFilterButton:member'
-    package: excel!
-    fullName: showFilterButton
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showFilterButton:member'
     summary: >-
-      Specifies if the filter buttons are visible at the top of each column
-      header. Setting this is only allowed if the table contains a header row.
+      Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the
+      table contains a header row.
 
 
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showFilterButton
+    fullName: showFilterButton
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showFilterButton?: boolean;'
       return:
-        type: boolean
-  - name: showHeaders
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
+    summary: |-
+      Specifies if the header row is visible. This value can be set to show or remove the header row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeaders
     fullName: showHeaders
-    summary: >-
-      Specifies if the header row is visible. This value can be set to show or
-      remove the header row.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showHeaders?: boolean;'
       return:
-        type: boolean
-  - name: showTotals
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
+    summary: |-
+      Specifies if the total row is visible. This value can be set to show or remove the total row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showTotals
     fullName: showTotals
-    summary: >-
-      Specifies if the total row is visible. This value can be set to show or
-      remove the total row.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showTotals?: boolean;'
       return:
-        type: boolean
-  - name: sort
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#sort:member'
-    package: excel!
-    fullName: sort
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#sort:member'
+    summary: |-
       Represents the sorting for the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sort
+    fullName: sort
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.TableSortLoadOptions:interface" />'
-  - name: style
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#style:member'
-    package: excel!
-    fullName: style
+        type:
+          - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#style:member'
     summary: >-
-      Constant value that represents the Table style. Possible values are:
-      "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1"
-      through "TableStyleMedium28", "TableStyleDark1" through
-      "TableStyleDark11". A custom user-defined style present in the workbook
-      can also be specified.
+      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
+      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
+      "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: boolean;'
       return:
-        type: boolean
-  - name: tableStyle
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#tableStyle:member'
-    package: excel!
-    fullName: tableStyle
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#tableStyle:member'
     summary: >-
       The style applied to the Table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: tableStyle
+    fullName: tableStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tableStyle?: Excel.Interfaces.TableStyleLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.TableStyleLoadOptions:interface" />'
-  - name: worksheet
-    uid: 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
-    package: excel!
-    fullName: worksheet
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
+    summary: |-
       The worksheet containing the current table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+    name: Excel.Interfaces.AutoFilterLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableColumnCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableRowCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
+    name: Excel.Interfaces.TableSortLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
+    name: Excel.Interfaces.TableStyleLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

@@ -1,155 +1,154 @@
-### YamlMime:TSType
-name: OfficeExtension.ErrorCodes
-uid: 'office!OfficeExtension.ErrorCodes:class'
-package: office!
-fullName: OfficeExtension.ErrorCodes
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: accessDenied
-    uid: 'office!OfficeExtension.ErrorCodes.accessDenied:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!OfficeExtension.ErrorCodes:class'
+    name: OfficeExtension.ErrorCodes
+    fullName: OfficeExtension.ErrorCodes
+    langs:
+      - typeScript
+    type: class
     package: office!
+    children:
+      - 'office!OfficeExtension.ErrorCodes.accessDenied:member'
+      - 'office!OfficeExtension.ErrorCodes.activityLimitReached:member'
+      - 'office!OfficeExtension.ErrorCodes.apiNotFound:member'
+      - 'office!OfficeExtension.ErrorCodes.cannotRegisterEvent:member'
+      - 'office!OfficeExtension.ErrorCodes.connectionFailure:member'
+      - 'office!OfficeExtension.ErrorCodes.generalException:member'
+      - 'office!OfficeExtension.ErrorCodes.invalidArgument:member'
+      - 'office!OfficeExtension.ErrorCodes.invalidObjectPath:member'
+      - 'office!OfficeExtension.ErrorCodes.invalidRequestContext:member'
+      - 'office!OfficeExtension.ErrorCodes.propertyNotLoaded:member'
+      - 'office!OfficeExtension.ErrorCodes.runMustReturnPromise:member'
+      - 'office!OfficeExtension.ErrorCodes.valueNotLoaded:member'
+  - uid: 'office!OfficeExtension.ErrorCodes.accessDenied:member'
+    name: accessDenied
     fullName: accessDenied
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static accessDenied: string;'
       return:
-        type: string
-  - name: activityLimitReached
-    uid: 'office!OfficeExtension.ErrorCodes.activityLimitReached:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.activityLimitReached:member'
+    name: activityLimitReached
     fullName: activityLimitReached
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static activityLimitReached: string;'
       return:
-        type: string
-  - name: apiNotFound
-    uid: 'office!OfficeExtension.ErrorCodes.apiNotFound:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.apiNotFound:member'
+    name: apiNotFound
     fullName: apiNotFound
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static apiNotFound: string;'
       return:
-        type: string
-  - name: cannotRegisterEvent
-    uid: 'office!OfficeExtension.ErrorCodes.cannotRegisterEvent:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.cannotRegisterEvent:member'
+    name: cannotRegisterEvent
     fullName: cannotRegisterEvent
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static cannotRegisterEvent: string;'
       return:
-        type: string
-  - name: connectionFailure
-    uid: 'office!OfficeExtension.ErrorCodes.connectionFailure:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.connectionFailure:member'
+    name: connectionFailure
     fullName: connectionFailure
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static connectionFailure: string;'
       return:
-        type: string
-  - name: generalException
-    uid: 'office!OfficeExtension.ErrorCodes.generalException:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.generalException:member'
+    name: generalException
     fullName: generalException
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static generalException: string;'
       return:
-        type: string
-  - name: invalidArgument
-    uid: 'office!OfficeExtension.ErrorCodes.invalidArgument:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.invalidArgument:member'
+    name: invalidArgument
     fullName: invalidArgument
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static invalidArgument: string;'
       return:
-        type: string
-  - name: invalidObjectPath
-    uid: 'office!OfficeExtension.ErrorCodes.invalidObjectPath:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.invalidObjectPath:member'
+    name: invalidObjectPath
     fullName: invalidObjectPath
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static invalidObjectPath: string;'
       return:
-        type: string
-  - name: invalidRequestContext
-    uid: 'office!OfficeExtension.ErrorCodes.invalidRequestContext:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.invalidRequestContext:member'
+    name: invalidRequestContext
     fullName: invalidRequestContext
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static invalidRequestContext: string;'
       return:
-        type: string
-  - name: propertyNotLoaded
-    uid: 'office!OfficeExtension.ErrorCodes.propertyNotLoaded:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.propertyNotLoaded:member'
+    name: propertyNotLoaded
     fullName: propertyNotLoaded
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static propertyNotLoaded: string;'
       return:
-        type: string
-  - name: runMustReturnPromise
-    uid: 'office!OfficeExtension.ErrorCodes.runMustReturnPromise:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.runMustReturnPromise:member'
+    name: runMustReturnPromise
     fullName: runMustReturnPromise
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static runMustReturnPromise: string;'
       return:
-        type: string
-  - name: valueNotLoaded
-    uid: 'office!OfficeExtension.ErrorCodes.valueNotLoaded:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!OfficeExtension.ErrorCodes.valueNotLoaded:member'
+    name: valueNotLoaded
     fullName: valueNotLoaded
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'public static valueNotLoaded: string;'
       return:
-        type: string
+        type:
+          - string

@@ -1,69 +1,59 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ConditionalFormatRuleData
-uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
-package: excel!
-fullName: Excel.Interfaces.ConditionalFormatRuleData
-summary: >-
-  An interface describing the data returned by calling
-  `conditionalFormatRule.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: formula
-    uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formula:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
+    summary: An interface describing the data returned by calling `conditionalFormatRule.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ConditionalFormatRuleData
+    fullName: Excel.Interfaces.ConditionalFormatRuleData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: formula
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleData#formula:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaLocal:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaR1C1:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formula:member'
+    summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formula?: string;'
       return:
-        type: string
-  - name: formulaLocal
-    uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaLocal:member'
-    package: excel!
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaLocal:member'
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in the user's language.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulaLocal
     fullName: formulaLocal
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on in
-      the user's language.
-
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formulaLocal?: string;'
       return:
-        type: string
-  - name: formulaR1C1
-    uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaR1C1:member'
-    package: excel!
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaR1C1:member'
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulaR1C1
     fullName: formulaR1C1
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on in
-      R1C1-style notation.
-
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formulaR1C1?: string;'
       return:
-        type: string
+        type:
+          - string

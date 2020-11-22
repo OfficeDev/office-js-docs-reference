@@ -1,31 +1,27 @@
-### YamlMime:TSType
-name: Excel.Interfaces.CommentUpdateData
-uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.CommentUpdateData
-summary: >-
-  An interface for updating data on the Comment object, for use in
-  `comment.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: content
-    uid: 'excel!Excel.Interfaces.CommentUpdateData#content:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
+    summary: 'An interface for updating data on the Comment object, for use in `comment.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.CommentUpdateData
+    fullName: Excel.Interfaces.CommentUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: content
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.CommentUpdateData#content:member'
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData#content:member'
+    summary: |-
       The comment's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'content?: string;'
       return:
-        type: string
+        type:
+          - string

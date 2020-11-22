@@ -1,243 +1,221 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RangeUpdateData
-uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.RangeUpdateData
-summary: >-
-  An interface for updating data on the Range object, for use in `range.set({
-  ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: columnHidden
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#columnHidden:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
+    summary: 'An interface for updating data on the Range object, for use in `range.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.RangeUpdateData
+    fullName: Excel.Interfaces.RangeUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: columnHidden
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.RangeUpdateData#columnHidden:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#dataValidation:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#format:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#hyperlink:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#numberFormatLocal:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#rowHidden:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#style:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#values:member'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#columnHidden:member'
+    summary: |-
       Represents if all columns of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columnHidden?: boolean;'
       return:
-        type: boolean
-  - name: dataValidation
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#dataValidation:member'
-    package: excel!
-    fullName: dataValidation
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#dataValidation:member'
+    summary: |-
       Returns a data validation object.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: dataValidation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dataValidation?: Excel.Interfaces.DataValidationUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.DataValidationUpdateData:interface"
-          />
-  - name: format
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#format:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#format:member'
+    summary: |-
+      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the range's font, fill, borders,
-      alignment, and other properties.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface" />'
-  - name: formulas
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
+    summary: |-
+      Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulas
     fullName: formulas
-    summary: >-
-      Represents the formula in A1-style notation.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formulas?: any[][];'
       return:
-        type: 'any[][]'
-  - name: formulasLocal
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
-    package: excel!
-    fullName: formulasLocal
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
     summary: >-
-      Represents the formula in A1-style notation, in the user's language and
-      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
-      would become "=SUMME(A1; 1,5)" in German.
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
+      returned instead.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasLocal
+    fullName: formulasLocal
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formulasLocal?: any[][];'
       return:
-        type: 'any[][]'
-  - name: formulasR1C1
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasR1C1:member'
-    package: excel!
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasR1C1:member'
+    summary: |-
+      Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasR1C1
     fullName: formulasR1C1
-    summary: >-
-      Represents the formula in R1C1-style notation.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'formulasR1C1?: any[][];'
       return:
-        type: 'any[][]'
-  - name: hyperlink
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#hyperlink:member'
-    package: excel!
-    fullName: hyperlink
-    summary: >-
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#hyperlink:member'
+    summary: |-
       Represents the hyperlink for the current range.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
-        type: '<xref uid="excel!Excel.RangeHyperlink:interface" />'
-  - name: numberFormat
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
-    package: excel!
-    fullName: numberFormat
-    summary: >-
+        type:
+          - 'excel!Excel.RangeHyperlink:interface'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
+    summary: |-
       Represents Excel's number format code for the given range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'numberFormat?: any[][];'
       return:
-        type: 'any[][]'
-  - name: numberFormatLocal
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormatLocal:member'
-    package: excel!
-    fullName: numberFormatLocal
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormatLocal:member'
     summary: >-
-      Represents Excel's number format code for the given range, based on the
-      language settings of the user.​ Excel does not perform any language or
-      format coercion when getting or setting the `numberFormatLocal` property.
-      Any returned text uses the locally-formatted strings based on the language
-      specified in the system settings.
+      Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
+      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
+      text uses the locally-formatted strings based on the language specified in the system settings.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormatLocal
+    fullName: numberFormatLocal
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'numberFormatLocal?: any[][];'
       return:
-        type: 'any[][]'
-  - name: rowHidden
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#rowHidden:member'
-    package: excel!
-    fullName: rowHidden
-    summary: >-
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#rowHidden:member'
+    summary: |-
       Represents if all rows of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHidden
+    fullName: rowHidden
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rowHidden?: boolean;'
       return:
-        type: boolean
-  - name: style
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#style:member'
-    package: excel!
-    fullName: style
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#style:member'
     summary: >-
-      Represents the style of the current range. If the styles of the cells are
-      inconsistent, null will be returned. For custom styles, the style name
-      will be returned. For built-in styles, a string representing a value in
-      the BuiltInStyle enum will be returned.
+      Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
+      custom styles, the style name will be returned. For built-in styles, a string representing a value in the
+      BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: string;'
       return:
-        type: string
-  - name: values
-    uid: 'excel!Excel.Interfaces.RangeUpdateData#values:member'
-    package: excel!
-    fullName: values
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#values:member'
     summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'values?: any[][];'
       return:
-        type: 'any[][]'
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+    name: Excel.Interfaces.DataValidationUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
+    name: Excel.Interfaces.RangeFormatUpdateData
+  - uid: 'excel!Excel.RangeHyperlink:interface'
+    name: Excel.RangeHyperlink

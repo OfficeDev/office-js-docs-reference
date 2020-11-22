@@ -1,36 +1,47 @@
-### YamlMime:TSType
-name: Office.Context
-uid: 'office!Office.Context:interface'
-package: office!
-fullName: Office.Context
-summary: >-
-  Represents the runtime environment of the add-in and provides access to key
-  objects of the API. The current context exists as a property of Office. It is
-  accessed using `Office.context`<!-- -->.
-remarks: '**Hosts**: Excel, Outlook, PowerPoint, Project, Word'
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: auth
-    uid: 'office!Office.Context#auth:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Context:interface'
+    summary: >-
+      Represents the runtime environment of the add-in and provides access to key objects of the API. The current
+      context exists as a property of Office. It is accessed using `Office.context`<!-- -->.
+    remarks: '**Hosts**: Excel, Outlook, PowerPoint, Project, Word'
+    name: Office.Context
+    fullName: Office.Context
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: auth
+    children:
+      - 'office!Office.Context#auth:member'
+      - 'office!Office.Context#commerceAllowed:member'
+      - 'office!Office.Context#contentLanguage:member'
+      - 'office!Office.Context#diagnostics:member'
+      - 'office!Office.Context#displayLanguage:member'
+      - 'office!Office.Context#document:member'
+      - 'office!Office.Context#host:member'
+      - 'office!Office.Context#license:member'
+      - 'office!Office.Context#mailbox:member'
+      - 'office!Office.Context#officeTheme:member'
+      - 'office!Office.Context#platform:member'
+      - 'office!Office.Context#requirements:member'
+      - 'office!Office.Context#roamingSettings:member'
+      - 'office!Office.Context#touchEnabled:member'
+      - 'office!Office.Context#ui:member'
+  - uid: 'office!Office.Context#auth:member'
     summary: Provides information and access to the signed-in user.
-    remarks: ''
     isPreview: true
-    isDeprecated: false
+    name: auth
+    fullName: auth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'auth: Auth;'
       return:
-        type: '<xref uid="office!Office.Auth:interface" />'
-  - name: commerceAllowed
-    uid: 'office!Office.Context#commerceAllowed:member'
-    package: office!
-    fullName: commerceAllowed
-    summary: >-
-      True, if the current platform allows the add-in to display a UI for
-      selling or upgrading; otherwise returns False.
+        type:
+          - 'office!Office.Auth:interface'
+  - uid: 'office!Office.Context#commerceAllowed:member'
+    summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
       **Hosts**: Excel, Word
 
@@ -38,57 +49,45 @@ properties:
       `commerceAllowed` is only supported in Office on iPad.
 
 
-      The iOS App Store doesn't support apps with add-ins that provide links to
-      additional payment systems. However, Office Add-ins running in Office on
-      the Windows desktop or in the browser do allow such links. If you want the
-      UI of your add-in to provide a link to an external payment system on
-      platforms other than iOS, you can use the commerceAllowed property to
-      control when that link is displayed.
-    isPreview: false
-    isDeprecated: false
+      The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However,
+      Office Add-ins running in Office on the Windows desktop or in the browser do allow such links. If you want the UI
+      of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the
+      commerceAllowed property to control when that link is displayed.
+    name: commerceAllowed
+    fullName: commerceAllowed
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'commerceAllowed: boolean;'
       return:
-        type: boolean
-  - name: contentLanguage
-    uid: 'office!Office.Context#contentLanguage:member'
-    package: office!
-    fullName: contentLanguage
-    summary: >-
-      Gets the locale (language) specified by the user for editing the document
-      or item.
+        type:
+          - boolean
+  - uid: 'office!Office.Context#contentLanguage:member'
+    summary: Gets the locale (language) specified by the user for editing the document or item.
     remarks: >-
-      The `contentLanguage` value reflects the **Editing Language** setting
-      specified with **File &gt; Options &gt; Language** in the Office host
-      application.
+      The `contentLanguage` value reflects the **Editing Language** setting specified with **File &gt; Options &gt;
+      Language** in the Office host application.
 
 
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this property is
-      supported in the corresponding Office host application. An empty cell
-      indicates that the Office host application doesn't support this
-      enumeration.
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server
-      requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-      -->.
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on
-      Windows </th><th> Office in web browser </th><th> Office on iPad </th><th>
-      Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> </td><td> </td></tr> <tr><td><strong> Outlook </strong></td><td>
-      Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr>
-      <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td>
-      Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td>
-      </td></tr> </table>
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
 
 
       #### Examples
@@ -115,24 +114,28 @@ properties:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: contentLanguage
+    fullName: contentLanguage
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'contentLanguage: string;'
       return:
-        type: string
-  - name: diagnostics
-    uid: 'office!Office.Context#diagnostics:member'
-    package: office!
-    fullName: diagnostics
+        type:
+          - string
+  - uid: 'office!Office.Context#diagnostics:member'
     summary: Gets information about the environment in which the add-in is running.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: diagnostics
+    fullName: diagnostics
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'diagnostics: ContextInformation;'
       return:
-        type: '<xref uid="office!Office.ContextInformation:interface" />'
+        type:
+          - 'office!Office.ContextInformation:interface'
         description: |-
 
 
@@ -144,21 +147,14 @@ properties:
           console.log("Office version: " + contextInfo.version);
           console.log("Platform: " + contextInfo.platform);
           ```
-  - name: displayLanguage
-    uid: 'office!Office.Context#displayLanguage:member'
-    package: office!
-    fullName: displayLanguage
-    summary: >-
-      Gets the locale (language) specified by the user for the UI of the Office
-      host application.
+  - uid: 'office!Office.Context#displayLanguage:member'
+    summary: Gets the locale (language) specified by the user for the UI of the Office host application.
     remarks: >-
-      The returned value is a string in the RFC 1766 Language tag format, such
-      as en-US.
+      The returned value is a string in the RFC 1766 Language tag format, such as en-US.
 
 
-      The `displayLanguage` value reflects the current **Display Language**
-      setting specified with **File &gt; Options &gt; Language** in the Office
-      host application.
+      The `displayLanguage` value reflects the current **Display Language** setting specified with **File &gt; Options
+      &gt; Language** in the Office host application.
 
 
       When using in Outlook, the applicable modes are Compose or Read.
@@ -167,29 +163,21 @@ properties:
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this property is
-      supported in the corresponding Office host application. An empty cell
-      indicates that the Office host application doesn't support this
-      enumeration.
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server
-      requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-      -->.
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on
-      Windows </th><th> Office in web browser </th><th> Office on iPad </th><th>
-      Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> </td><td> Y </td></tr> <tr><td><strong> Outlook
-      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Project
-      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> Y </td></tr>
-      <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y </td><td>
-      </td><td> Y </td></tr> </table>
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td>
+      Y </td><td> </td><td> Y </td><td> </td><td> Y </td></tr> </table>
 
 
       #### Examples
@@ -216,26 +204,28 @@ properties:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: displayLanguage
+    fullName: displayLanguage
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'displayLanguage: string;'
       return:
-        type: string
-  - name: document
-    uid: 'office!Office.Context#document:member'
-    package: office!
+        type:
+          - string
+  - uid: 'office!Office.Context#document:member'
+    summary: Gets an object that represents the document the content or task pane add-in is interacting with.
+    name: document
     fullName: document
-    summary: >-
-      Gets an object that represents the document the content or task pane
-      add-in is interacting with.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'document: Office.Document;'
       return:
-        type: '<xref uid="office!Office.Document:interface" />'
+        type:
+          - 'office!Office.Document:interface'
         description: |-
 
 
@@ -255,59 +245,53 @@ properties:
               });
           }
           ```
-  - name: host
-    uid: 'office!Office.Context#host:member'
-    package: office!
-    fullName: host
+  - uid: 'office!Office.Context#host:member'
     summary: Contains the Office application host in which the add-in is running.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: host
+    fullName: host
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'host: HostType;'
       return:
-        type: '<xref uid="office!Office.HostType:enum" />'
-  - name: license
-    uid: 'office!Office.Context#license:member'
-    package: office!
-    fullName: license
+        type:
+          - 'office!Office.HostType:enum'
+  - uid: 'office!Office.Context#license:member'
     summary: Gets the license information for the user's Office installation.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: license
+    fullName: license
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'license: string;'
       return:
-        type: string
-  - name: mailbox
-    uid: 'office!Office.Context#mailbox:member'
-    package: office!
-    fullName: mailbox
+        type:
+          - string
+  - uid: 'office!Office.Context#mailbox:member'
     summary: Provides access to the Microsoft Outlook add-in object model.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `Restricted`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       **Key properties**:
 
 
-      - `diagnostics`<!-- -->: Provides diagnostic information to an Outlook
-      add-in.
+      - `diagnostics`<!-- -->: Provides diagnostic information to an Outlook add-in.
 
 
-      - `item`<!-- -->: Provides methods and properties for accessing a message
-      or appointment in an Outlook add-in.
+      - `item`<!-- -->: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
 
 
-      - `userProfile`<!-- -->: Provides information about the user in an Outlook
-      add-in.
+      - `userProfile`<!-- -->: Provides information about the user in an Outlook add-in.
 
 
       #### Examples
@@ -315,30 +299,33 @@ properties:
 
       ```javascript
 
-      // The following line of code access the item object of the JavaScript API
-      for Office.
+      // The following line of code access the item object of the JavaScript API for Office.
 
       var item = Office.context.mailbox.item;
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: mailbox
+    fullName: mailbox
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'mailbox: Office.Mailbox;'
       return:
-        type: '<xref uid="outlook!Office.Mailbox:interface" />'
-  - name: officeTheme
-    uid: 'office!Office.Context#officeTheme:member'
-    package: office!
-    fullName: officeTheme
+        type:
+          - 'outlook!Office.Mailbox:interface'
+  - uid: 'office!Office.Context#officeTheme:member'
     summary: Provides access to the properties for Office theme colors.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: officeTheme
+    fullName: officeTheme
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'officeTheme: OfficeTheme;'
       return:
-        type: '<xref uid="office!Office.OfficeTheme:interface" />'
+        type:
+          - 'office!Office.OfficeTheme:interface'
         description: |-
 
 
@@ -356,54 +343,46 @@ properties:
               $('.body').css('background-color', bodyBackgroundColor);
           }
           ```
-  - name: platform
-    uid: 'office!Office.Context#platform:member'
-    package: office!
-    fullName: platform
+  - uid: 'office!Office.Context#platform:member'
     summary: Provides the platform on which the add-in is running.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: platform
+    fullName: platform
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'platform: PlatformType;'
       return:
-        type: '<xref uid="office!Office.PlatformType:enum" />'
-  - name: requirements
-    uid: 'office!Office.Context#requirements:member'
-    package: office!
+        type:
+          - 'office!Office.PlatformType:enum'
+  - uid: 'office!Office.Context#requirements:member'
+    summary: Provides a method for determining what requirement sets are supported on the current host and platform.
+    name: requirements
     fullName: requirements
-    summary: >-
-      Provides a method for determining what requirement sets are supported on
-      the current host and platform.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'requirements: RequirementSetSupport;'
       return:
-        type: '<xref uid="office!Office.RequirementSetSupport:interface" />'
-  - name: roamingSettings
-    uid: 'office!Office.Context#roamingSettings:member'
-    package: office!
-    fullName: roamingSettings
+        type:
+          - 'office!Office.RequirementSetSupport:interface'
+  - uid: 'office!Office.Context#roamingSettings:member'
     summary: >-
-      Gets an object that represents the custom settings or state of a mail
-      add-in saved to a user's mailbox.
+      Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
 
-      The `RoamingSettings` object lets you store and access data for a mail
-      add-in that is stored in a user's mailbox, so it's available to that
-      add-in when it is running from any host client application used to access
-      that mailbox.
+      The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox,
+      so it's available to that add-in when it is running from any host client application used to access that mailbox.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `Restricted`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -424,20 +403,20 @@ properties:
       Office.context.roamingSettings.saveAsync();
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: roamingSettings
+    fullName: roamingSettings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
-        type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
-  - name: touchEnabled
-    uid: 'office!Office.Context#touchEnabled:member'
-    package: office!
-    fullName: touchEnabled
+        type:
+          - 'outlook!Office.RoamingSettings:interface'
+  - uid: 'office!Office.Context#touchEnabled:member'
     summary: >-
-      Specifies whether the platform and device allows touch interaction. True
-      if the add-in is running on a touch device, such as an iPad; false
-      otherwise.
+      Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
+      device, such as an iPad; false otherwise.
     remarks: >-
       **Hosts**: Excel, PowerPoint, Word
 
@@ -445,26 +424,48 @@ properties:
       `touchEnabled` is only supported in Office on iPad.
 
 
-      Use the touchEnabled property to determine when your add-in is running on
-      a touch device and if necessary, adjust the kind of controls, and size and
-      spacing of elements in your add-in's UI to accommodate touch interactions.
-    isPreview: false
-    isDeprecated: false
+      Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust
+      the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+    name: touchEnabled
+    fullName: touchEnabled
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'touchEnabled: boolean;'
       return:
-        type: boolean
-  - name: ui
-    uid: 'office!Office.Context#ui:member'
-    package: office!
+        type:
+          - boolean
+  - uid: 'office!Office.Context#ui:member'
+    summary: 'Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.'
+    name: ui
     fullName: ui
-    summary: >-
-      Provides objects and methods that you can use to create and manipulate UI
-      components, such as dialog boxes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ui: UI;'
       return:
-        type: '<xref uid="office!Office.UI:interface" />'
+        type:
+          - 'office!Office.UI:interface'
+references:
+  - uid: 'office!Office.Auth:interface'
+    name: Auth
+  - uid: 'office!Office.ContextInformation:interface'
+    name: ContextInformation
+  - uid: 'office!Office.Document:interface'
+    name: Office.Document
+  - uid: 'office!Office.HostType:enum'
+    name: HostType
+  - uid: 'outlook!Office.Mailbox:interface'
+    name: Office.Mailbox
+  - uid: 'office!Office.OfficeTheme:interface'
+    name: OfficeTheme
+  - uid: 'office!Office.PlatformType:enum'
+    name: PlatformType
+  - uid: 'office!Office.RequirementSetSupport:interface'
+    name: RequirementSetSupport
+  - uid: 'outlook!Office.RoamingSettings:interface'
+    name: Office.RoamingSettings
+  - uid: 'office!Office.UI:interface'
+    name: UI

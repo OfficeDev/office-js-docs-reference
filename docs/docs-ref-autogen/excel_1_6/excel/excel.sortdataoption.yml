@@ -1,21 +1,27 @@
-### YamlMime:TSEnum
-name: Excel.SortDataOption
-uid: 'excel!Excel.SortDataOption:enum'
-package: excel!
-fullName: Excel.SortDataOption
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: normal
-    uid: 'excel!Excel.SortDataOption.normal:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SortDataOption:enum'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.SortDataOption
+    fullName: Excel.SortDataOption
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: textAsNumber
-    uid: 'excel!Excel.SortDataOption.textAsNumber:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.SortDataOption.normal:member'
+      - 'excel!Excel.SortDataOption.textAsNumber:member'
+  - uid: 'excel!Excel.SortDataOption.normal:member'
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Normal"'
+  - uid: 'excel!Excel.SortDataOption.textAsNumber:member'
+    name: textAsNumber
+    fullName: textAsNumber
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TextAsNumber"'

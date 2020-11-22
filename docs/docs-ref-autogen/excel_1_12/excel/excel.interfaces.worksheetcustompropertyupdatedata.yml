@@ -1,31 +1,29 @@
-### YamlMime:TSType
-name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
-uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.WorksheetCustomPropertyUpdateData
-summary: >-
-  An interface for updating data on the WorksheetCustomProperty object, for use
-  in `worksheetCustomProperty.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: value
-    uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData#value:member'
-    package: excel!
-    fullName: value
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
     summary: >-
+      An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({
+      ... })`<!-- -->.
+    name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
+    fullName: Excel.Interfaces.WorksheetCustomPropertyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData#value:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData#value:member'
+    summary: |-
       Gets or sets the value of the custom property.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'value?: string;'
       return:
-        type: string
+        type:
+          - string

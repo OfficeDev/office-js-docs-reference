@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Excel.Interfaces.WorksheetCollectionUpdateData
-uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.WorksheetCollectionUpdateData
-summary: >-
-  An interface for updating data on the WorksheetCollection object, for use in
-  `worksheetCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the WorksheetCollection object, for use in `worksheetCollection.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.WorksheetCollectionUpdateData
+    fullName: Excel.Interfaces.WorksheetCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.WorksheetData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.WorksheetCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.WorksheetData[]'
+    fullName: 'Excel.Interfaces.WorksheetData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
+        name: Excel.Interfaces.WorksheetData
+        fullName: Excel.Interfaces.WorksheetData
+      - name: '[]'
+        fullName: '[]'

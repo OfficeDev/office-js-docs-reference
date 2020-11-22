@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the TaskHistoryRecordCollection object, for use in
+      `taskHistoryRecordCollection.set({ ... })`<!-- -->.
+    name: Excel.Interfaces.TaskHistoryRecordCollectionUpdateData
+    fullName: Excel.Interfaces.TaskHistoryRecordCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskHistoryRecordCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.TaskHistoryRecordData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TaskHistoryRecordCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.TaskHistoryRecordData[]'
+    fullName: 'Excel.Interfaces.TaskHistoryRecordData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TaskHistoryRecordData:interface'
+        name: Excel.Interfaces.TaskHistoryRecordData
+        fullName: Excel.Interfaces.TaskHistoryRecordData
+      - name: '[]'
+        fullName: '[]'

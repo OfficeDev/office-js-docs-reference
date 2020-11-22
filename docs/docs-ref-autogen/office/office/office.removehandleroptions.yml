@@ -1,43 +1,45 @@
-### YamlMime:TSType
-name: Office.RemoveHandlerOptions
-uid: 'office!Office.RemoveHandlerOptions:interface'
-package: office!
-fullName: Office.RemoveHandlerOptions
-summary: Provides options to determine which event handler or handlers are removed.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: asyncContext
-    uid: 'office!Office.RemoveHandlerOptions#asyncContext:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.RemoveHandlerOptions:interface'
+    summary: Provides options to determine which event handler or handlers are removed.
+    name: Office.RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: asyncContext
+    children:
+      - 'office!Office.RemoveHandlerOptions#asyncContext:member'
+      - 'office!Office.RemoveHandlerOptions#handler:member'
+  - uid: 'office!Office.RemoveHandlerOptions#asyncContext:member'
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
+    name: asyncContext
+    fullName: asyncContext
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'asyncContext?: any'
       return:
-        type: any
-  - name: handler
-    uid: 'office!Office.RemoveHandlerOptions#handler:member'
-    package: office!
-    fullName: handler
+        type:
+          - any
+  - uid: 'office!Office.RemoveHandlerOptions#handler:member'
     summary: >-
-      The handler to be removed. If a particular handler is not specified, then
-      all handlers for the specified event type are removed. The
-      `BindingEventHandler` type is defined with `type BindingEventHandler =
-      (eventArgs?: Office.BindingDataChangedEventArgs |
-      Office.BindingSelectionChangedEventArgs) => any`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The handler to be removed. If a particular handler is not specified, then all handlers for the specified event
+      type are removed. The `BindingEventHandler` type is defined with `type BindingEventHandler = (eventArgs?:
+      Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any`<!-- -->.
+    name: handler
+    fullName: handler
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'handler?: BindingEventHandler'
       return:
-        type: '<xref uid="office!Office.BindingEventHandler:type" />'
+        type:
+          - 'office!Office.BindingEventHandler:type'
+references:
+  - uid: 'office!Office.BindingEventHandler:type'
+    name: BindingEventHandler

@@ -1,45 +1,75 @@
-### YamlMime:TSEnum
-name: Excel.HorizontalAlignment
-uid: 'excel!Excel.HorizontalAlignment:enum'
-package: excel!
-fullName: Excel.HorizontalAlignment
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: center
-    uid: 'excel!Excel.HorizontalAlignment.center:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.HorizontalAlignment:enum'
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.HorizontalAlignment
+    fullName: Excel.HorizontalAlignment
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: centerAcrossSelection
-    uid: 'excel!Excel.HorizontalAlignment.centerAcrossSelection:member'
-    package: excel!
-    summary: ''
-  - name: distributed
-    uid: 'excel!Excel.HorizontalAlignment.distributed:member'
-    package: excel!
-    summary: ''
-  - name: fill
-    uid: 'excel!Excel.HorizontalAlignment.fill:member'
-    package: excel!
-    summary: ''
-  - name: general
-    uid: 'excel!Excel.HorizontalAlignment.general:member'
-    package: excel!
-    summary: ''
-  - name: justify
-    uid: 'excel!Excel.HorizontalAlignment.justify:member'
-    package: excel!
-    summary: ''
-  - name: left
-    uid: 'excel!Excel.HorizontalAlignment.left:member'
-    package: excel!
-    summary: ''
-  - name: right
-    uid: 'excel!Excel.HorizontalAlignment.right:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.HorizontalAlignment.center:member'
+      - 'excel!Excel.HorizontalAlignment.centerAcrossSelection:member'
+      - 'excel!Excel.HorizontalAlignment.distributed:member'
+      - 'excel!Excel.HorizontalAlignment.fill:member'
+      - 'excel!Excel.HorizontalAlignment.general:member'
+      - 'excel!Excel.HorizontalAlignment.justify:member'
+      - 'excel!Excel.HorizontalAlignment.left:member'
+      - 'excel!Excel.HorizontalAlignment.right:member'
+  - uid: 'excel!Excel.HorizontalAlignment.center:member'
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: 'excel!Excel.HorizontalAlignment.centerAcrossSelection:member'
+    name: centerAcrossSelection
+    fullName: centerAcrossSelection
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CenterAcrossSelection"'
+  - uid: 'excel!Excel.HorizontalAlignment.distributed:member'
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: 'excel!Excel.HorizontalAlignment.fill:member'
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Fill"'
+  - uid: 'excel!Excel.HorizontalAlignment.general:member'
+    name: general
+    fullName: general
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"General"'
+  - uid: 'excel!Excel.HorizontalAlignment.justify:member'
+    name: justify
+    fullName: justify
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justify"'
+  - uid: 'excel!Excel.HorizontalAlignment.left:member'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: 'excel!Excel.HorizontalAlignment.right:member'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'

@@ -1,23 +1,23 @@
-### YamlMime:TSType
-name: Office.FileProperties
-uid: 'office!Office.FileProperties:interface'
-package: office!
-fullName: Office.FileProperties
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: url
-    uid: 'office!Office.FileProperties#url:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.FileProperties:interface'
+    name: Office.FileProperties
+    fullName: Office.FileProperties
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: url
+    children:
+      - 'office!Office.FileProperties#url:member'
+  - uid: 'office!Office.FileProperties#url:member'
     summary: File's URL
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: url
+    fullName: url
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'url: string'
       return:
-        type: string
+        type:
+          - string

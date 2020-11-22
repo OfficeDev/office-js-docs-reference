@@ -1,221 +1,427 @@
-### YamlMime:TSEnum
-name: Excel.BuiltInStyle
-uid: 'excel!Excel.BuiltInStyle:enum'
-package: excel!
-fullName: Excel.BuiltInStyle
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: accent1
-    uid: 'excel!Excel.BuiltInStyle.accent1:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.BuiltInStyle:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.BuiltInStyle
+    fullName: Excel.BuiltInStyle
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: accent1_20
-    uid: 'excel!Excel.BuiltInStyle.accent1_20:member'
-    package: excel!
-    summary: ''
-  - name: accent1_40
-    uid: 'excel!Excel.BuiltInStyle.accent1_40:member'
-    package: excel!
-    summary: ''
-  - name: accent1_60
-    uid: 'excel!Excel.BuiltInStyle.accent1_60:member'
-    package: excel!
-    summary: ''
-  - name: accent2
-    uid: 'excel!Excel.BuiltInStyle.accent2:member'
-    package: excel!
-    summary: ''
-  - name: accent2_20
-    uid: 'excel!Excel.BuiltInStyle.accent2_20:member'
-    package: excel!
-    summary: ''
-  - name: accent2_40
-    uid: 'excel!Excel.BuiltInStyle.accent2_40:member'
-    package: excel!
-    summary: ''
-  - name: accent2_60
-    uid: 'excel!Excel.BuiltInStyle.accent2_60:member'
-    package: excel!
-    summary: ''
-  - name: accent3
-    uid: 'excel!Excel.BuiltInStyle.accent3:member'
-    package: excel!
-    summary: ''
-  - name: accent3_20
-    uid: 'excel!Excel.BuiltInStyle.accent3_20:member'
-    package: excel!
-    summary: ''
-  - name: accent3_40
-    uid: 'excel!Excel.BuiltInStyle.accent3_40:member'
-    package: excel!
-    summary: ''
-  - name: accent3_60
-    uid: 'excel!Excel.BuiltInStyle.accent3_60:member'
-    package: excel!
-    summary: ''
-  - name: accent4
-    uid: 'excel!Excel.BuiltInStyle.accent4:member'
-    package: excel!
-    summary: ''
-  - name: accent4_20
-    uid: 'excel!Excel.BuiltInStyle.accent4_20:member'
-    package: excel!
-    summary: ''
-  - name: accent4_40
-    uid: 'excel!Excel.BuiltInStyle.accent4_40:member'
-    package: excel!
-    summary: ''
-  - name: accent4_60
-    uid: 'excel!Excel.BuiltInStyle.accent4_60:member'
-    package: excel!
-    summary: ''
-  - name: accent5
-    uid: 'excel!Excel.BuiltInStyle.accent5:member'
-    package: excel!
-    summary: ''
-  - name: accent5_20
-    uid: 'excel!Excel.BuiltInStyle.accent5_20:member'
-    package: excel!
-    summary: ''
-  - name: accent5_40
-    uid: 'excel!Excel.BuiltInStyle.accent5_40:member'
-    package: excel!
-    summary: ''
-  - name: accent5_60
-    uid: 'excel!Excel.BuiltInStyle.accent5_60:member'
-    package: excel!
-    summary: ''
-  - name: accent6
-    uid: 'excel!Excel.BuiltInStyle.accent6:member'
-    package: excel!
-    summary: ''
-  - name: accent6_20
-    uid: 'excel!Excel.BuiltInStyle.accent6_20:member'
-    package: excel!
-    summary: ''
-  - name: accent6_40
-    uid: 'excel!Excel.BuiltInStyle.accent6_40:member'
-    package: excel!
-    summary: ''
-  - name: accent6_60
-    uid: 'excel!Excel.BuiltInStyle.accent6_60:member'
-    package: excel!
-    summary: ''
-  - name: bad
-    uid: 'excel!Excel.BuiltInStyle.bad:member'
-    package: excel!
-    summary: ''
-  - name: calculation
-    uid: 'excel!Excel.BuiltInStyle.calculation:member'
-    package: excel!
-    summary: ''
-  - name: checkCell
-    uid: 'excel!Excel.BuiltInStyle.checkCell:member'
-    package: excel!
-    summary: ''
-  - name: comma
-    uid: 'excel!Excel.BuiltInStyle.comma:member'
-    package: excel!
-    summary: ''
-  - name: currency
-    uid: 'excel!Excel.BuiltInStyle.currency:member'
-    package: excel!
-    summary: ''
-  - name: emphasis1
-    uid: 'excel!Excel.BuiltInStyle.emphasis1:member'
-    package: excel!
-    summary: ''
-  - name: emphasis2
-    uid: 'excel!Excel.BuiltInStyle.emphasis2:member'
-    package: excel!
-    summary: ''
-  - name: emphasis3
-    uid: 'excel!Excel.BuiltInStyle.emphasis3:member'
-    package: excel!
-    summary: ''
-  - name: explanatoryText
-    uid: 'excel!Excel.BuiltInStyle.explanatoryText:member'
-    package: excel!
-    summary: ''
-  - name: good
-    uid: 'excel!Excel.BuiltInStyle.good:member'
-    package: excel!
-    summary: ''
-  - name: heading1
-    uid: 'excel!Excel.BuiltInStyle.heading1:member'
-    package: excel!
-    summary: ''
-  - name: heading2
-    uid: 'excel!Excel.BuiltInStyle.heading2:member'
-    package: excel!
-    summary: ''
-  - name: heading3
-    uid: 'excel!Excel.BuiltInStyle.heading3:member'
-    package: excel!
-    summary: ''
-  - name: heading4
-    uid: 'excel!Excel.BuiltInStyle.heading4:member'
-    package: excel!
-    summary: ''
-  - name: hlink
-    uid: 'excel!Excel.BuiltInStyle.hlink:member'
-    package: excel!
-    summary: ''
-  - name: hlinkTrav
-    uid: 'excel!Excel.BuiltInStyle.hlinkTrav:member'
-    package: excel!
-    summary: ''
-  - name: input
-    uid: 'excel!Excel.BuiltInStyle.input:member'
-    package: excel!
-    summary: ''
-  - name: linkedCell
-    uid: 'excel!Excel.BuiltInStyle.linkedCell:member'
-    package: excel!
-    summary: ''
-  - name: neutral
-    uid: 'excel!Excel.BuiltInStyle.neutral:member'
-    package: excel!
-    summary: ''
-  - name: normal
-    uid: 'excel!Excel.BuiltInStyle.normal:member'
-    package: excel!
-    summary: ''
-  - name: note
-    uid: 'excel!Excel.BuiltInStyle.note:member'
-    package: excel!
-    summary: ''
-  - name: output
-    uid: 'excel!Excel.BuiltInStyle.output:member'
-    package: excel!
-    summary: ''
-  - name: percent
-    uid: 'excel!Excel.BuiltInStyle.percent:member'
-    package: excel!
-    summary: ''
-  - name: sheetTitle
-    uid: 'excel!Excel.BuiltInStyle.sheetTitle:member'
-    package: excel!
-    summary: ''
-  - name: total
-    uid: 'excel!Excel.BuiltInStyle.total:member'
-    package: excel!
-    summary: ''
-  - name: warningText
-    uid: 'excel!Excel.BuiltInStyle.warningText:member'
-    package: excel!
-    summary: ''
-  - name: wholeComma
-    uid: 'excel!Excel.BuiltInStyle.wholeComma:member'
-    package: excel!
-    summary: ''
-  - name: wholeDollar
-    uid: 'excel!Excel.BuiltInStyle.wholeDollar:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.BuiltInStyle.accent1:member'
+      - 'excel!Excel.BuiltInStyle.accent1_20:member'
+      - 'excel!Excel.BuiltInStyle.accent1_40:member'
+      - 'excel!Excel.BuiltInStyle.accent1_60:member'
+      - 'excel!Excel.BuiltInStyle.accent2:member'
+      - 'excel!Excel.BuiltInStyle.accent2_20:member'
+      - 'excel!Excel.BuiltInStyle.accent2_40:member'
+      - 'excel!Excel.BuiltInStyle.accent2_60:member'
+      - 'excel!Excel.BuiltInStyle.accent3:member'
+      - 'excel!Excel.BuiltInStyle.accent3_20:member'
+      - 'excel!Excel.BuiltInStyle.accent3_40:member'
+      - 'excel!Excel.BuiltInStyle.accent3_60:member'
+      - 'excel!Excel.BuiltInStyle.accent4:member'
+      - 'excel!Excel.BuiltInStyle.accent4_20:member'
+      - 'excel!Excel.BuiltInStyle.accent4_40:member'
+      - 'excel!Excel.BuiltInStyle.accent4_60:member'
+      - 'excel!Excel.BuiltInStyle.accent5:member'
+      - 'excel!Excel.BuiltInStyle.accent5_20:member'
+      - 'excel!Excel.BuiltInStyle.accent5_40:member'
+      - 'excel!Excel.BuiltInStyle.accent5_60:member'
+      - 'excel!Excel.BuiltInStyle.accent6:member'
+      - 'excel!Excel.BuiltInStyle.accent6_20:member'
+      - 'excel!Excel.BuiltInStyle.accent6_40:member'
+      - 'excel!Excel.BuiltInStyle.accent6_60:member'
+      - 'excel!Excel.BuiltInStyle.bad:member'
+      - 'excel!Excel.BuiltInStyle.calculation:member'
+      - 'excel!Excel.BuiltInStyle.checkCell:member'
+      - 'excel!Excel.BuiltInStyle.comma:member'
+      - 'excel!Excel.BuiltInStyle.currency:member'
+      - 'excel!Excel.BuiltInStyle.emphasis1:member'
+      - 'excel!Excel.BuiltInStyle.emphasis2:member'
+      - 'excel!Excel.BuiltInStyle.emphasis3:member'
+      - 'excel!Excel.BuiltInStyle.explanatoryText:member'
+      - 'excel!Excel.BuiltInStyle.good:member'
+      - 'excel!Excel.BuiltInStyle.heading1:member'
+      - 'excel!Excel.BuiltInStyle.heading2:member'
+      - 'excel!Excel.BuiltInStyle.heading3:member'
+      - 'excel!Excel.BuiltInStyle.heading4:member'
+      - 'excel!Excel.BuiltInStyle.hlink:member'
+      - 'excel!Excel.BuiltInStyle.hlinkTrav:member'
+      - 'excel!Excel.BuiltInStyle.input:member'
+      - 'excel!Excel.BuiltInStyle.linkedCell:member'
+      - 'excel!Excel.BuiltInStyle.neutral:member'
+      - 'excel!Excel.BuiltInStyle.normal:member'
+      - 'excel!Excel.BuiltInStyle.note:member'
+      - 'excel!Excel.BuiltInStyle.output:member'
+      - 'excel!Excel.BuiltInStyle.percent:member'
+      - 'excel!Excel.BuiltInStyle.sheetTitle:member'
+      - 'excel!Excel.BuiltInStyle.total:member'
+      - 'excel!Excel.BuiltInStyle.warningText:member'
+      - 'excel!Excel.BuiltInStyle.wholeComma:member'
+      - 'excel!Excel.BuiltInStyle.wholeDollar:member'
+  - uid: 'excel!Excel.BuiltInStyle.accent1:member'
+    name: accent1
+    fullName: accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent1"'
+  - uid: 'excel!Excel.BuiltInStyle.accent1_20:member'
+    name: accent1_20
+    fullName: accent1_20
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent1_20"'
+  - uid: 'excel!Excel.BuiltInStyle.accent1_40:member'
+    name: accent1_40
+    fullName: accent1_40
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent1_40"'
+  - uid: 'excel!Excel.BuiltInStyle.accent1_60:member'
+    name: accent1_60
+    fullName: accent1_60
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent1_60"'
+  - uid: 'excel!Excel.BuiltInStyle.accent2:member'
+    name: accent2
+    fullName: accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent2"'
+  - uid: 'excel!Excel.BuiltInStyle.accent2_20:member'
+    name: accent2_20
+    fullName: accent2_20
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent2_20"'
+  - uid: 'excel!Excel.BuiltInStyle.accent2_40:member'
+    name: accent2_40
+    fullName: accent2_40
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent2_40"'
+  - uid: 'excel!Excel.BuiltInStyle.accent2_60:member'
+    name: accent2_60
+    fullName: accent2_60
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent2_60"'
+  - uid: 'excel!Excel.BuiltInStyle.accent3:member'
+    name: accent3
+    fullName: accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent3"'
+  - uid: 'excel!Excel.BuiltInStyle.accent3_20:member'
+    name: accent3_20
+    fullName: accent3_20
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent3_20"'
+  - uid: 'excel!Excel.BuiltInStyle.accent3_40:member'
+    name: accent3_40
+    fullName: accent3_40
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent3_40"'
+  - uid: 'excel!Excel.BuiltInStyle.accent3_60:member'
+    name: accent3_60
+    fullName: accent3_60
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent3_60"'
+  - uid: 'excel!Excel.BuiltInStyle.accent4:member'
+    name: accent4
+    fullName: accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent4"'
+  - uid: 'excel!Excel.BuiltInStyle.accent4_20:member'
+    name: accent4_20
+    fullName: accent4_20
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent4_20"'
+  - uid: 'excel!Excel.BuiltInStyle.accent4_40:member'
+    name: accent4_40
+    fullName: accent4_40
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent4_40"'
+  - uid: 'excel!Excel.BuiltInStyle.accent4_60:member'
+    name: accent4_60
+    fullName: accent4_60
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent4_60"'
+  - uid: 'excel!Excel.BuiltInStyle.accent5:member'
+    name: accent5
+    fullName: accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent5"'
+  - uid: 'excel!Excel.BuiltInStyle.accent5_20:member'
+    name: accent5_20
+    fullName: accent5_20
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent5_20"'
+  - uid: 'excel!Excel.BuiltInStyle.accent5_40:member'
+    name: accent5_40
+    fullName: accent5_40
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent5_40"'
+  - uid: 'excel!Excel.BuiltInStyle.accent5_60:member'
+    name: accent5_60
+    fullName: accent5_60
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent5_60"'
+  - uid: 'excel!Excel.BuiltInStyle.accent6:member'
+    name: accent6
+    fullName: accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent6"'
+  - uid: 'excel!Excel.BuiltInStyle.accent6_20:member'
+    name: accent6_20
+    fullName: accent6_20
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent6_20"'
+  - uid: 'excel!Excel.BuiltInStyle.accent6_40:member'
+    name: accent6_40
+    fullName: accent6_40
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent6_40"'
+  - uid: 'excel!Excel.BuiltInStyle.accent6_60:member'
+    name: accent6_60
+    fullName: accent6_60
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Accent6_60"'
+  - uid: 'excel!Excel.BuiltInStyle.bad:member'
+    name: bad
+    fullName: bad
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bad"'
+  - uid: 'excel!Excel.BuiltInStyle.calculation:member'
+    name: calculation
+    fullName: calculation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Calculation"'
+  - uid: 'excel!Excel.BuiltInStyle.checkCell:member'
+    name: checkCell
+    fullName: checkCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CheckCell"'
+  - uid: 'excel!Excel.BuiltInStyle.comma:member'
+    name: comma
+    fullName: comma
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Comma"'
+  - uid: 'excel!Excel.BuiltInStyle.currency:member'
+    name: currency
+    fullName: currency
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Currency"'
+  - uid: 'excel!Excel.BuiltInStyle.emphasis1:member'
+    name: emphasis1
+    fullName: emphasis1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Emphasis1"'
+  - uid: 'excel!Excel.BuiltInStyle.emphasis2:member'
+    name: emphasis2
+    fullName: emphasis2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Emphasis2"'
+  - uid: 'excel!Excel.BuiltInStyle.emphasis3:member'
+    name: emphasis3
+    fullName: emphasis3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Emphasis3"'
+  - uid: 'excel!Excel.BuiltInStyle.explanatoryText:member'
+    name: explanatoryText
+    fullName: explanatoryText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ExplanatoryText"'
+  - uid: 'excel!Excel.BuiltInStyle.good:member'
+    name: good
+    fullName: good
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Good"'
+  - uid: 'excel!Excel.BuiltInStyle.heading1:member'
+    name: heading1
+    fullName: heading1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading1"'
+  - uid: 'excel!Excel.BuiltInStyle.heading2:member'
+    name: heading2
+    fullName: heading2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading2"'
+  - uid: 'excel!Excel.BuiltInStyle.heading3:member'
+    name: heading3
+    fullName: heading3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading3"'
+  - uid: 'excel!Excel.BuiltInStyle.heading4:member'
+    name: heading4
+    fullName: heading4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading4"'
+  - uid: 'excel!Excel.BuiltInStyle.hlink:member'
+    name: hlink
+    fullName: hlink
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hlink"'
+  - uid: 'excel!Excel.BuiltInStyle.hlinkTrav:member'
+    name: hlinkTrav
+    fullName: hlinkTrav
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HlinkTrav"'
+  - uid: 'excel!Excel.BuiltInStyle.input:member'
+    name: input
+    fullName: input
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Input"'
+  - uid: 'excel!Excel.BuiltInStyle.linkedCell:member'
+    name: linkedCell
+    fullName: linkedCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinkedCell"'
+  - uid: 'excel!Excel.BuiltInStyle.neutral:member'
+    name: neutral
+    fullName: neutral
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Neutral"'
+  - uid: 'excel!Excel.BuiltInStyle.normal:member'
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Normal"'
+  - uid: 'excel!Excel.BuiltInStyle.note:member'
+    name: note
+    fullName: note
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Note"'
+  - uid: 'excel!Excel.BuiltInStyle.output:member'
+    name: output
+    fullName: output
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Output"'
+  - uid: 'excel!Excel.BuiltInStyle.percent:member'
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: 'excel!Excel.BuiltInStyle.sheetTitle:member'
+    name: sheetTitle
+    fullName: sheetTitle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SheetTitle"'
+  - uid: 'excel!Excel.BuiltInStyle.total:member'
+    name: total
+    fullName: total
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Total"'
+  - uid: 'excel!Excel.BuiltInStyle.warningText:member'
+    name: warningText
+    fullName: warningText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WarningText"'
+  - uid: 'excel!Excel.BuiltInStyle.wholeComma:member'
+    name: wholeComma
+    fullName: wholeComma
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WholeComma"'
+  - uid: 'excel!Excel.BuiltInStyle.wholeDollar:member'
+    name: wholeDollar
+    fullName: wholeDollar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WholeDollar"'

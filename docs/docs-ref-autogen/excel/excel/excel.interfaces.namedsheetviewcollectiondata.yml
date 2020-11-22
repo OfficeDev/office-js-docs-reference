@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Excel.Interfaces.NamedSheetViewCollectionData
-uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionData:interface'
-package: excel!
-fullName: Excel.Interfaces.NamedSheetViewCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `namedSheetViewCollection.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionData:interface'
+    summary: An interface describing the data returned by calling `namedSheetViewCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.NamedSheetViewCollectionData
+    fullName: Excel.Interfaces.NamedSheetViewCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.NamedSheetViewCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.NamedSheetViewData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.NamedSheetViewData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.NamedSheetViewCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.NamedSheetViewData[]'
+    fullName: 'Excel.Interfaces.NamedSheetViewData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.NamedSheetViewData:interface'
+        name: Excel.Interfaces.NamedSheetViewData
+        fullName: Excel.Interfaces.NamedSheetViewData
+      - name: '[]'
+        fullName: '[]'

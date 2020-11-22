@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Word.Interfaces.TableRowUpdateData
-uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.TableRowUpdateData
-summary: >-
-  An interface for updating data on the TableRow object, for use in
-  `tableRow.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
+    summary: 'An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.TableRowUpdateData
+    fullName: Word.Interfaces.TableRowUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word!

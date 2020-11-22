@@ -1,45 +1,75 @@
-### YamlMime:TSEnum
-name: Excel.BorderIndex
-uid: 'excel!Excel.BorderIndex:enum'
-package: excel!
-fullName: Excel.BorderIndex
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: diagonalDown
-    uid: 'excel!Excel.BorderIndex.diagonalDown:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.BorderIndex:enum'
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.BorderIndex
+    fullName: Excel.BorderIndex
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: diagonalUp
-    uid: 'excel!Excel.BorderIndex.diagonalUp:member'
-    package: excel!
-    summary: ''
-  - name: edgeBottom
-    uid: 'excel!Excel.BorderIndex.edgeBottom:member'
-    package: excel!
-    summary: ''
-  - name: edgeLeft
-    uid: 'excel!Excel.BorderIndex.edgeLeft:member'
-    package: excel!
-    summary: ''
-  - name: edgeRight
-    uid: 'excel!Excel.BorderIndex.edgeRight:member'
-    package: excel!
-    summary: ''
-  - name: edgeTop
-    uid: 'excel!Excel.BorderIndex.edgeTop:member'
-    package: excel!
-    summary: ''
-  - name: insideHorizontal
-    uid: 'excel!Excel.BorderIndex.insideHorizontal:member'
-    package: excel!
-    summary: ''
-  - name: insideVertical
-    uid: 'excel!Excel.BorderIndex.insideVertical:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.BorderIndex.diagonalDown:member'
+      - 'excel!Excel.BorderIndex.diagonalUp:member'
+      - 'excel!Excel.BorderIndex.edgeBottom:member'
+      - 'excel!Excel.BorderIndex.edgeLeft:member'
+      - 'excel!Excel.BorderIndex.edgeRight:member'
+      - 'excel!Excel.BorderIndex.edgeTop:member'
+      - 'excel!Excel.BorderIndex.insideHorizontal:member'
+      - 'excel!Excel.BorderIndex.insideVertical:member'
+  - uid: 'excel!Excel.BorderIndex.diagonalDown:member'
+    name: diagonalDown
+    fullName: diagonalDown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DiagonalDown"'
+  - uid: 'excel!Excel.BorderIndex.diagonalUp:member'
+    name: diagonalUp
+    fullName: diagonalUp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DiagonalUp"'
+  - uid: 'excel!Excel.BorderIndex.edgeBottom:member'
+    name: edgeBottom
+    fullName: edgeBottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeBottom"'
+  - uid: 'excel!Excel.BorderIndex.edgeLeft:member'
+    name: edgeLeft
+    fullName: edgeLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeLeft"'
+  - uid: 'excel!Excel.BorderIndex.edgeRight:member'
+    name: edgeRight
+    fullName: edgeRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeRight"'
+  - uid: 'excel!Excel.BorderIndex.edgeTop:member'
+    name: edgeTop
+    fullName: edgeTop
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeTop"'
+  - uid: 'excel!Excel.BorderIndex.insideHorizontal:member'
+    name: insideHorizontal
+    fullName: insideHorizontal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideHorizontal"'
+  - uid: 'excel!Excel.BorderIndex.insideVertical:member'
+    name: insideVertical
+    fullName: insideVertical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideVertical"'

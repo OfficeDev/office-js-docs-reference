@@ -1,33 +1,34 @@
-### YamlMime:TSType
-name: OfficeRuntime.ApiInformation
-uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
-package: office-runtime!
-fullName: OfficeRuntime.ApiInformation
-summary: Interface that contains functions for checking API requirement-set support.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-methods:
-  - name: 'isSetSupported(name, minVersion)'
-    uid: 'office-runtime!OfficeRuntime.ApiInformation#isSetSupported:member(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
+    summary: Interface that contains functions for checking API requirement-set support.
+    name: OfficeRuntime.ApiInformation
+    fullName: OfficeRuntime.ApiInformation
+    langs:
+      - typeScript
+    type: interface
     package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.ApiInformation#isSetSupported:member(1)'
+  - uid: 'office-runtime!OfficeRuntime.ApiInformation#isSetSupported:member(1)'
+    summary: Check if the specified requirement set is supported by the host Office application.
+    name: 'isSetSupported(name, minVersion)'
     fullName: 'isSetSupported(name, minVersion)'
-    summary: >-
-      Check if the specified requirement set is supported by the host Office
-      application.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'isSetSupported(name: string, minVersion?: string): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: name
           description: 'Set name; e.g., "MatrixBindings".'
-          type: string
+          type:
+            - string
         - id: minVersion
           description: 'The minimum required version; e.g., "1.4".'
-          type: string
-      return:
-        type: boolean
-        description: ''
+          type:
+            - string

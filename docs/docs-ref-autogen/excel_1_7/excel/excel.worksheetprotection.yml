@@ -1,174 +1,144 @@
-### YamlMime:TSType
-name: Excel.WorksheetProtection
-uid: 'excel!Excel.WorksheetProtection:class'
-package: excel!
-fullName: Excel.WorksheetProtection
-summary: >-
-  Represents the protection of a sheet object.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetProtection:class'
+    summary: |-
+      Represents the protection of a sheet object.
 
-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.WorksheetProtection#context:member'
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetProtection
+    fullName: Excel.WorksheetProtection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
+    children:
+      - 'excel!Excel.WorksheetProtection#context:member'
+      - 'excel!Excel.WorksheetProtection#load:member(1)'
+      - 'excel!Excel.WorksheetProtection#load:member(2)'
+      - 'excel!Excel.WorksheetProtection#load:member(3)'
+      - 'excel!Excel.WorksheetProtection#options:member'
+      - 'excel!Excel.WorksheetProtection#protect:member(1)'
+      - 'excel!Excel.WorksheetProtection#protected:member'
+      - 'excel!Excel.WorksheetProtection#toJSON:member(1)'
+      - 'excel!Excel.WorksheetProtection#unprotect:member(1)'
+  - uid: 'excel!Excel.WorksheetProtection#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: options
-    uid: 'excel!Excel.WorksheetProtection#options:member'
-    package: excel!
-    fullName: options
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(1)'
     summary: >-
-      Specifies the protection options for the worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly options: Excel.WorksheetProtectionOptions;'
-      return:
-        type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
-  - name: protected
-    uid: 'excel!Excel.WorksheetProtection#protected:member'
-    package: excel!
-    fullName: protected
-    summary: >-
-      Specifies if the worksheet is protected.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly protected: boolean;'
-      return:
-        type: boolean
-methods:
-  - name: load(options)
-    uid: 'excel!Excel.WorksheetProtection#load:member(1)'
-    package: excel!
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.WorksheetProtectionLoadOptions):
-        Excel.WorksheetProtection;
+      content: 'load(options?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.WorksheetProtection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetProtection;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.WorksheetProtection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.WorksheetProtection;
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.WorksheetProtection#options:member'
+    summary: |-
+      Specifies the protection options for the worksheet.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: options
+    fullName: options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly options: Excel.WorksheetProtectionOptions;'
       return:
-        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
-        description: ''
-  - name: 'protect(options, password)'
-    uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
-    package: excel!
-    fullName: 'protect(options, password)'
+        type:
+          - 'excel!Excel.WorksheetProtectionOptions:interface'
+  - uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
     summary: >-
       Protects a worksheet. Fails if the worksheet has already been protected.
 
 
       \[ [API set: ExcelApi 1.2 for options; 1.7 for
-      password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'protect(options, password)'
+    fullName: 'protect(options, password)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        protect(options?: Excel.WorksheetProtectionOptions, password?: string):
-        void;
-      parameters:
-        - id: options
-          description: Optional. Sheet protection options.
-          type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
-        - id: password
-          description: Optional. Sheet protection password.
-          type: string
+      content: 'protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;'
       return:
-        type: void
+        type:
+          - void
         description: >-
 
 
@@ -214,51 +184,65 @@ methods:
           });
 
           ```
-  - name: toJSON()
-    uid: 'excel!Excel.WorksheetProtection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+      parameters:
+        - id: options
+          description: Optional. Sheet protection options.
+          type:
+            - 'excel!Excel.WorksheetProtectionOptions:interface'
+        - id: password
+          description: Optional. Sheet protection password.
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetProtection#protected:member'
+    summary: |-
+      Specifies if the worksheet is protected.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protected
+    fullName: protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.WorksheetProtection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.WorksheetProtection object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.WorksheetProtectionData`<!-- -->) that contains shallow
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorksheetProtectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.WorksheetProtectionData:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
         description: ''
-  - name: unprotect(password)
-    uid: 'excel!Excel.WorksheetProtection#unprotect:member(1)'
-    package: excel!
-    fullName: unprotect(password)
+  - uid: 'excel!Excel.WorksheetProtection#unprotect:member(1)'
     summary: >-
       Unprotects a worksheet.
 
 
-      \[ [API set: ExcelApi 1.7 for
-      password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApi 1.7 for password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'unprotect(password?: string): void;'
-      parameters:
-        - id: password
-          description: sheet protection password.
-          type: string
       return:
-        type: void
+        type:
+          - void
         description: >-
 
 
@@ -292,4 +276,21 @@ methods:
           });
 
           ```
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+      parameters:
+        - id: password
+          description: sheet protection password.
+          type:
+            - string
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.WorksheetProtection:class'
+    name: Excel.WorksheetProtection
+  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+  - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+    name: Excel.WorksheetProtectionOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
+    name: Excel.Interfaces.WorksheetProtectionData

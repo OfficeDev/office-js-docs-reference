@@ -1,69 +1,61 @@
-### YamlMime:TSType
-name: Excel.Interfaces.PivotHierarchyCollectionLoadOptions
-uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.PivotHierarchyCollectionLoadOptions
-summary: >-
-  Represents a collection of all the PivotHierarchies that are part of the
-  PivotTable.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of all the PivotHierarchies that are part of the PivotTable.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.PivotHierarchyCollectionLoadOptions
+    fullName: Excel.Interfaces.PivotHierarchyCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#id:member'
+    summary: |-
       For EACH ITEM in the collection: Id of the PivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions#name:member'
+    summary: |-
       For EACH ITEM in the collection: Name of the PivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

@@ -1,147 +1,180 @@
-### YamlMime:TSType
-name: Office.GetBindingDataOptions
-uid: 'office!Office.GetBindingDataOptions:interface'
-package: office!
-fullName: Office.GetBindingDataOptions
-summary: Provides options for how to get the data in a binding.
-remarks: 'If the rows option is used, the value must be "thisRow".'
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: asyncContext
-    uid: 'office!Office.GetBindingDataOptions#asyncContext:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.GetBindingDataOptions:interface'
+    summary: Provides options for how to get the data in a binding.
+    remarks: 'If the rows option is used, the value must be "thisRow".'
+    name: Office.GetBindingDataOptions
+    fullName: Office.GetBindingDataOptions
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: asyncContext
+    children:
+      - 'office!Office.GetBindingDataOptions#asyncContext:member'
+      - 'office!Office.GetBindingDataOptions#coercionType:member'
+      - 'office!Office.GetBindingDataOptions#columnCount:member'
+      - 'office!Office.GetBindingDataOptions#filterType:member'
+      - 'office!Office.GetBindingDataOptions#rowCount:member'
+      - 'office!Office.GetBindingDataOptions#rows:member'
+      - 'office!Office.GetBindingDataOptions#startColumn:member'
+      - 'office!Office.GetBindingDataOptions#startRow:member'
+      - 'office!Office.GetBindingDataOptions#valueFormat:member'
+  - uid: 'office!Office.GetBindingDataOptions#asyncContext:member'
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
+    name: asyncContext
+    fullName: asyncContext
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'asyncContext?: any'
       return:
-        type: any
-  - name: coercionType
-    uid: 'office!Office.GetBindingDataOptions#coercionType:member'
-    package: office!
-    fullName: coercionType
+        type:
+          - any
+  - uid: 'office!Office.GetBindingDataOptions#coercionType:member'
     summary: >-
-      The expected shape of the selection. Use
-      [Office.CoercionType](xref:office!Office.CoercionType:enum) or text value.
-      Default: The original, uncoerced type of the binding.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The expected shape of the selection. Use [Office.CoercionType](xref:office!Office.CoercionType:enum) or text
+      value. Default: The original, uncoerced type of the binding.
+    name: coercionType
+    fullName: coercionType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'coercionType?: Office.CoercionType | string'
       return:
-        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
-  - name: columnCount
-    uid: 'office!Office.GetBindingDataOptions#columnCount:member'
-    package: office!
-    fullName: columnCount
+        type:
+          - 'office!Office.GetBindingDataOptions#coercionType~0:complex'
+  - uid: 'office!Office.GetBindingDataOptions#columnCount:member'
     summary: >-
-      For table or matrix bindings, specifies the number of columns offset from
-      the startColumn. Default is all subsequent columns.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all
+      subsequent columns.
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columnCount?: number'
       return:
-        type: number
-  - name: filterType
-    uid: 'office!Office.GetBindingDataOptions#filterType:member'
-    package: office!
-    fullName: filterType
+        type:
+          - number
+  - uid: 'office!Office.GetBindingDataOptions#filterType:member'
     summary: >-
-      Specify whether to get only the visible (filtered in) data or all the data
-      (default is all). Useful when filtering data. Use Office.FilterType or
-      text value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering
+      data. Use Office.FilterType or text value.
+    name: filterType
+    fullName: filterType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'filterType?: Office.FilterType | string'
       return:
-        type: '<xref uid="office!Office.FilterType:enum" /> | string'
-  - name: rowCount
-    uid: 'office!Office.GetBindingDataOptions#rowCount:member'
-    package: office!
-    fullName: rowCount
+        type:
+          - 'office!Office.GetBindingDataOptions#filterType~0:complex'
+  - uid: 'office!Office.GetBindingDataOptions#rowCount:member'
     summary: >-
-      For table or matrix bindings, specifies the number of rows offset from the
-      startRow. Default is all subsequent rows.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent
+      rows.
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rowCount?: number'
       return:
-        type: number
-  - name: rows
-    uid: 'office!Office.GetBindingDataOptions#rows:member'
-    package: office!
-    fullName: rows
+        type:
+          - number
+  - uid: 'office!Office.GetBindingDataOptions#rows:member'
     summary: >-
-      Only for table bindings in content add-ins for Access. Specifies the
-      pre-defined string "thisRow" to get data in the currently selected row.
+      Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
+      the currently selected row.
 
 
-      **Important**: We no longer recommend that you create and use Access web
-      apps and databases in SharePoint. As an alternative, we recommend that you
-      use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build
-      no-code business solutions for web and mobile devices.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As an
+      alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
+      business solutions for web and mobile devices.
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rows?: string'
       return:
-        type: string
-  - name: startColumn
-    uid: 'office!Office.GetBindingDataOptions#startColumn:member'
-    package: office!
-    fullName: startColumn
+        type:
+          - string
+  - uid: 'office!Office.GetBindingDataOptions#startColumn:member'
     summary: >-
-      For table or matrix bindings, specifies the zero-based starting column for
-      a subset of the data in the binding. Default is first column.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding.
+      Default is first column.
+    name: startColumn
+    fullName: startColumn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'startColumn?: number'
       return:
-        type: number
-  - name: startRow
-    uid: 'office!Office.GetBindingDataOptions#startRow:member'
-    package: office!
-    fullName: startRow
+        type:
+          - number
+  - uid: 'office!Office.GetBindingDataOptions#startRow:member'
     summary: >-
-      For table or matrix bindings, specifies the zero-based starting row for a
-      subset of the data in the binding. Default is first row.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding.
+      Default is first row.
+    name: startRow
+    fullName: startRow
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'startRow?: number'
       return:
-        type: number
-  - name: valueFormat
-    uid: 'office!Office.GetBindingDataOptions#valueFormat:member'
-    package: office!
-    fullName: valueFormat
+        type:
+          - number
+  - uid: 'office!Office.GetBindingDataOptions#valueFormat:member'
     summary: >-
-      Specifies whether values, such as numbers and dates, are returned with
-      their formatting applied. Use Office.ValueFormat or text value. Default:
-      Unformatted data.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use
+      Office.ValueFormat or text value. Default: Unformatted data.
+    name: valueFormat
+    fullName: valueFormat
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'valueFormat?: Office.ValueFormat | string'
       return:
-        type: '<xref uid="office!Office.ValueFormat:enum" /> | string'
+        type:
+          - 'office!Office.GetBindingDataOptions#valueFormat~0:complex'
+references:
+  - uid: 'office!Office.GetBindingDataOptions#coercionType~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'office!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'office!Office.GetBindingDataOptions#filterType~0:complex'
+    name: Office.FilterType | string
+    fullName: Office.FilterType | string
+    spec.typeScript:
+      - uid: 'office!Office.FilterType:enum'
+        name: Office.FilterType
+        fullName: Office.FilterType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'office!Office.GetBindingDataOptions#valueFormat~0:complex'
+    name: Office.ValueFormat | string
+    fullName: Office.ValueFormat | string
+    spec.typeScript:
+      - uid: 'office!Office.ValueFormat:enum'
+        name: Office.ValueFormat
+        fullName: Office.ValueFormat
+      - name: ' | string'
+        fullName: ' | string'

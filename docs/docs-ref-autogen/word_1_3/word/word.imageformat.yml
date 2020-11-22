@@ -1,69 +1,123 @@
-### YamlMime:TSEnum
-name: Word.ImageFormat
-uid: 'word!Word.ImageFormat:enum'
-package: word!
-fullName: Word.ImageFormat
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: bmp
-    uid: 'word!Word.ImageFormat.bmp:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.ImageFormat:enum'
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.ImageFormat
+    fullName: Word.ImageFormat
+    langs:
+      - typeScript
+    type: enum
     package: word!
-    summary: ''
-  - name: emf
-    uid: 'word!Word.ImageFormat.emf:member'
-    package: word!
-    summary: ''
-  - name: exif
-    uid: 'word!Word.ImageFormat.exif:member'
-    package: word!
-    summary: ''
-  - name: gif
-    uid: 'word!Word.ImageFormat.gif:member'
-    package: word!
-    summary: ''
-  - name: icon
-    uid: 'word!Word.ImageFormat.icon:member'
-    package: word!
-    summary: ''
-  - name: jpeg
-    uid: 'word!Word.ImageFormat.jpeg:member'
-    package: word!
-    summary: ''
-  - name: pdf
-    uid: 'word!Word.ImageFormat.pdf:member'
-    package: word!
-    summary: ''
-  - name: pict
-    uid: 'word!Word.ImageFormat.pict:member'
-    package: word!
-    summary: ''
-  - name: png
-    uid: 'word!Word.ImageFormat.png:member'
-    package: word!
-    summary: ''
-  - name: svg
-    uid: 'word!Word.ImageFormat.svg:member'
-    package: word!
-    summary: ''
-  - name: tiff
-    uid: 'word!Word.ImageFormat.tiff:member'
-    package: word!
-    summary: ''
-  - name: undefined
-    uid: 'word!Word.ImageFormat.undefined:member'
-    package: word!
-    summary: ''
-  - name: unsupported
-    uid: 'word!Word.ImageFormat.unsupported:member'
-    package: word!
-    summary: ''
-  - name: wmf
-    uid: 'word!Word.ImageFormat.wmf:member'
-    package: word!
-    summary: ''
+    children:
+      - 'word!Word.ImageFormat.bmp:member'
+      - 'word!Word.ImageFormat.emf:member'
+      - 'word!Word.ImageFormat.exif:member'
+      - 'word!Word.ImageFormat.gif:member'
+      - 'word!Word.ImageFormat.icon:member'
+      - 'word!Word.ImageFormat.jpeg:member'
+      - 'word!Word.ImageFormat.pdf:member'
+      - 'word!Word.ImageFormat.pict:member'
+      - 'word!Word.ImageFormat.png:member'
+      - 'word!Word.ImageFormat.svg:member'
+      - 'word!Word.ImageFormat.tiff:member'
+      - 'word!Word.ImageFormat.undefined:member'
+      - 'word!Word.ImageFormat.unsupported:member'
+      - 'word!Word.ImageFormat.wmf:member'
+  - uid: 'word!Word.ImageFormat.bmp:member'
+    name: bmp
+    fullName: bmp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bmp"'
+  - uid: 'word!Word.ImageFormat.emf:member'
+    name: emf
+    fullName: emf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Emf"'
+  - uid: 'word!Word.ImageFormat.exif:member'
+    name: exif
+    fullName: exif
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Exif"'
+  - uid: 'word!Word.ImageFormat.gif:member'
+    name: gif
+    fullName: gif
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gif"'
+  - uid: 'word!Word.ImageFormat.icon:member'
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Icon"'
+  - uid: 'word!Word.ImageFormat.jpeg:member'
+    name: jpeg
+    fullName: jpeg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Jpeg"'
+  - uid: 'word!Word.ImageFormat.pdf:member'
+    name: pdf
+    fullName: pdf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pdf"'
+  - uid: 'word!Word.ImageFormat.pict:member'
+    name: pict
+    fullName: pict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pict"'
+  - uid: 'word!Word.ImageFormat.png:member'
+    name: png
+    fullName: png
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Png"'
+  - uid: 'word!Word.ImageFormat.svg:member'
+    name: svg
+    fullName: svg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Svg"'
+  - uid: 'word!Word.ImageFormat.tiff:member'
+    name: tiff
+    fullName: tiff
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tiff"'
+  - uid: 'word!Word.ImageFormat.undefined:member'
+    name: undefined
+    fullName: undefined
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Undefined"'
+  - uid: 'word!Word.ImageFormat.unsupported:member'
+    name: unsupported
+    fullName: unsupported
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unsupported"'
+  - uid: 'word!Word.ImageFormat.wmf:member'
+    name: wmf
+    fullName: wmf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wmf"'

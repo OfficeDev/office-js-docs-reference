@@ -1,88 +1,72 @@
-### YamlMime:TSType
-name: Visio.PageCollection
-uid: 'visio!Visio.PageCollection:class'
-package: visio!
-fullName: Visio.PageCollection
-summary: >-
-  Represents a collection of Page objects that are part of the document.
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.PageCollection:class'
+    summary: |-
+      Represents a collection of Page objects that are part of the document.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'visio!Visio.PageCollection#context:member'
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.PageCollection
+    fullName: Visio.PageCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: visio!
-    fullName: context
+    children:
+      - 'visio!Visio.PageCollection#context:member'
+      - 'visio!Visio.PageCollection#getCount:member(1)'
+      - 'visio!Visio.PageCollection#getItem:member(1)'
+      - 'visio!Visio.PageCollection#items:member'
+      - 'visio!Visio.PageCollection#load:member(1)'
+      - 'visio!Visio.PageCollection#load:member(2)'
+      - 'visio!Visio.PageCollection#load:member(3)'
+      - 'visio!Visio.PageCollection#toJSON:member(1)'
+  - uid: 'visio!Visio.PageCollection#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="visio!Visio.RequestContext:class" />'
-  - name: items
-    uid: 'visio!Visio.PageCollection#items:member'
-    package: visio!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Visio.Page[];'
-      return:
-        type: '<xref uid="visio!Visio.Page:class" />[]'
-methods:
-  - name: getCount()
-    uid: 'visio!Visio.PageCollection#getCount:member(1)'
-    package: visio!
-    fullName: getCount()
-    summary: >-
+        type:
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.PageCollection#getCount:member(1)'
+    summary: |-
       Gets the number of pages in the collection.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type:
+          - 'visio!Visio.PageCollection#getCount~0:complex'
         description: ''
-  - name: getItem(key)
-    uid: 'visio!Visio.PageCollection#getItem:member(1)'
-    package: visio!
-    fullName: getItem(key)
-    summary: >-
+  - uid: 'visio!Visio.PageCollection#getItem:member(1)'
+    summary: |-
       Gets a page using its key (name or Id).
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(key: number | string): Visio.Page;'
-      parameters:
-        - id: key
-          description: Key is the name or Id of the page to be retrieved.
-          type: number | string
       return:
-        type: '<xref uid="visio!Visio.Page:class" />'
+        type:
+          - 'visio!Visio.Page:class'
         description: |-
 
 
@@ -101,109 +85,158 @@ methods:
               }
           });
           ```
-  - name: load(option)
-    uid: 'visio!Visio.PageCollection#load:member(1)'
-    package: visio!
-    fullName: load(option)
+      parameters:
+        - id: key
+          description: Key is the name or Id of the page to be retrieved.
+          type:
+            - number | string
+  - uid: 'visio!Visio.PageCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Visio.Page[];'
+      return:
+        type:
+          - 'visio!Visio.PageCollection#items~0:complex'
+  - uid: 'visio!Visio.PageCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.PageCollection` - Where option is
-      a comma-delimited string or an array of strings that specify the
-      properties to load.
+      `load(option?: string | string[]): Visio.PageCollection` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }):
-      Visio.PageCollection` - Where option.select is a comma-delimited string
-      that specifies the properties to load, and options.expand is a
-      comma-delimited string that specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): Visio.PageCollection` - Only available on collection types. It
-      is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
-    isPreview: false
-    isDeprecated: false
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(option?: Visio.Interfaces.PageCollectionLoadOptions &
-        Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;
+        load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.PageCollection;
+      return:
+        type:
+          - 'visio!Visio.PageCollection:class'
+        description: ''
       parameters:
         - id: option
           description: ''
-          type: >-
-            <xref
-            uid="visio!Visio.Interfaces.PageCollectionLoadOptions:interface" />
-            & <xref uid="visio!Visio.Interfaces.CollectionLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="visio!Visio.PageCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'visio!Visio.PageCollection#load:member(2)'
-    package: visio!
-    fullName: load(propertyNames)
+          type:
+            - 'visio!Visio.PageCollection#load~0:complex'
+  - uid: 'visio!Visio.PageCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Visio.PageCollection;'
+      return:
+        type:
+          - 'visio!Visio.PageCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="visio!Visio.PageCollection:class" />'
-        description: ''
-  - name: load(option)
-    uid: 'visio!Visio.PageCollection#load:member(3)'
-    package: visio!
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'visio!Visio.PageCollection#load:member(3)'
+    name: load(option)
     fullName: load(option)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(option?: OfficeExtension.LoadOption): Visio.PageCollection;'
+      return:
+        type:
+          - 'visio!Visio.PageCollection:class'
+        description: ''
       parameters:
         - id: option
           description: ''
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="visio!Visio.PageCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'visio!Visio.PageCollection#toJSON:member(1)'
-    package: visio!
-    fullName: toJSON()
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'visio!Visio.PageCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original `Visio.PageCollection`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Visio.Interfaces.PageCollectionData`<!-- -->) that
-      contains an "items" array with shallow copies of any loaded properties
-      from the collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Visio.PageCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Visio.Interfaces.PageCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Visio.Interfaces.PageCollectionData;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.PageCollectionData:interface" />'
+        type:
+          - 'visio!Visio.Interfaces.PageCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'visio!Visio.RequestContext:class'
+    name: RequestContext
+  - uid: 'visio!Visio.PageCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'visio!Visio.Page:class'
+    name: Visio.Page
+  - uid: 'visio!Visio.PageCollection#items~0:complex'
+    name: 'Visio.Page[]'
+    fullName: 'Visio.Page[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Page:class'
+        name: Visio.Page
+        fullName: Visio.Page
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'visio!Visio.PageCollection:class'
+    name: Visio.PageCollection
+  - uid: 'visio!Visio.PageCollection#load~0:complex'
+    name: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+    fullName: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+        name: Visio.Interfaces.PageCollectionLoadOptions
+        fullName: Visio.Interfaces.PageCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
+        name: Visio.Interfaces.CollectionLoadOptions
+        fullName: Visio.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
+    name: Visio.Interfaces.PageCollectionData

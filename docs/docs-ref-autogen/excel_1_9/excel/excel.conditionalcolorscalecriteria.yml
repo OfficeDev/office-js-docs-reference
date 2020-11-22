@@ -1,71 +1,65 @@
-### YamlMime:TSType
-name: Excel.ConditionalColorScaleCriteria
-uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-package: excel!
-fullName: Excel.ConditionalColorScaleCriteria
-summary: >-
-  Represents the criteria of the color scale.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+    summary: |-
+      Represents the criteria of the color scale.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: maximum
-    uid: 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: maximum
-    summary: >-
+    children:
+      - 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
+      - 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
+      - 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
+    summary: |-
       The maximum point Color Scale Criterion.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maximum: Excel.ConditionalColorScaleCriterion;'
       return:
-        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'
-  - name: midpoint
-    uid: 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
-    package: excel!
-    fullName: midpoint
-    summary: >-
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
+    summary: |-
       The midpoint Color Scale Criterion if the color scale is a 3-color scale.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: midpoint
+    fullName: midpoint
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
       return:
-        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'
-  - name: minimum
-    uid: 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
-    package: excel!
-    fullName: minimum
-    summary: >-
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
+    summary: |-
       The minimum point Color Scale Criterion.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'minimum: Excel.ConditionalColorScaleCriterion;'
       return:
-        type: '<xref uid="excel!Excel.ConditionalColorScaleCriterion:interface" />'
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
+    name: Excel.ConditionalColorScaleCriterion

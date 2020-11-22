@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Word.Interfaces.ContentControlCollectionUpdateData
-uid: 'word!Word.Interfaces.ContentControlCollectionUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.ContentControlCollectionUpdateData
-summary: >-
-  An interface for updating data on the ContentControlCollection object, for use
-  in `contentControlCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.ContentControlCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ContentControlCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the ContentControlCollection object, for use in `contentControlCollection.set({
+      ... })`<!-- -->.
+    name: Word.Interfaces.ContentControlCollectionUpdateData
+    fullName: Word.Interfaces.ContentControlCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.ContentControlCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.ContentControlCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.ContentControlData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.ContentControlCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.ContentControlCollectionUpdateData#items~0:complex'
+    name: 'Word.Interfaces.ContentControlData[]'
+    fullName: 'Word.Interfaces.ContentControlData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.ContentControlData:interface'
+        name: Word.Interfaces.ContentControlData
+        fullName: Word.Interfaces.ContentControlData
+      - name: '[]'
+        fullName: '[]'

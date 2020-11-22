@@ -1,110 +1,53 @@
-### YamlMime:TSType
-name: Excel.ChartCollection
-uid: 'excel!Excel.ChartCollection:class'
-package: excel!
-fullName: Excel.ChartCollection
-summary: >-
-  A collection of all the chart objects on a worksheet.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartCollection:class'
+    summary: |-
+      A collection of all the chart objects on a worksheet.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.ChartCollection#context:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: count
-    uid: 'excel!Excel.ChartCollection#count:member'
-    package: excel!
-    fullName: count
-    summary: >-
-      Returns the number of charts in the worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type: number
-  - name: items
-    uid: 'excel!Excel.ChartCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.Chart[];'
-      return:
-        type: '<xref uid="excel!Excel.Chart:class" />[]'
-methods:
-  - name: 'add(type, sourceData, seriesBy)'
-    uid: 'excel!Excel.ChartCollection#add:member(1)'
-    package: excel!
-    fullName: 'add(type, sourceData, seriesBy)'
-    summary: >-
+    children:
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#add:member(2)'
+      - 'excel!Excel.ChartCollection#context:member'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
+      - 'excel!Excel.ChartCollection#items:member'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+      - 'excel!Excel.ChartCollection#load:member(2)'
+      - 'excel!Excel.ChartCollection#load:member(3)'
+      - 'excel!Excel.ChartCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
+    summary: |-
       Creates a new chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        add(type: Excel.ChartType, sourceData: Range, seriesBy?:
-        Excel.ChartSeriesBy): Excel.Chart;
-      parameters:
-        - id: type
-          description: Represents the type of a chart. See Excel.ChartType for details.
-          type: '<xref uid="excel!Excel.ChartType:enum" />'
-        - id: sourceData
-          description: The Range object corresponding to the source data.
-          type: '<xref uid="excel!Excel.Range:class" />'
-        - id: seriesBy
-          description: >-
-            Optional. Specifies the way columns or rows are used as data series
-            on the chart. See Excel.ChartSeriesBy for details.
-          type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
+      content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
-        type: '<xref uid="excel!Excel.Chart:class" />'
-        description: >-
+        type:
+          - 'excel!Excel.Chart:class'
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-
-          // with sourceData from Range "A1:B4" and seriresBy is set to be
-          "auto".
-
+          // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
           Excel.run(function (ctx) { 
               var rangeSelection = "A1:B4";
               var range = ctx.workbook.worksheets.getItem(sheetName)
@@ -119,110 +62,127 @@ methods:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
-  - name: 'add(typeString, sourceData, seriesBy)'
-    uid: 'excel!Excel.ChartCollection#add:member(2)'
-    package: excel!
-    fullName: 'add(typeString, sourceData, seriesBy)'
-    summary: >-
+      parameters:
+        - id: type
+          description: Represents the type of a chart. See Excel.ChartType for details.
+          type:
+            - 'excel!Excel.ChartType:enum'
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - 'excel!Excel.Range:class'
+        - id: seriesBy
+          description: >-
+            Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
+            for details.
+          type:
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#add:member(2)'
+    summary: |-
       Creates a new chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(typeString, sourceData, seriesBy)'
+    fullName: 'add(typeString, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" |
-        "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" |
-        "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
-        "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" |
-        "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
-        "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" |
-        "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" |
-        "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
-        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" |
-        "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" |
-        "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" |
-        "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
-        "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
-        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked"
-        | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
-        "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
-        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" |
-        "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" |
-        "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" |
-        "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" |
-        "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
-        "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" |
-        "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns"
-        | "Rows"): Excel.Chart;
+        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
+        "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
+        "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
+        "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
+        "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
+        "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" |
+        "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" |
+        "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
+        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel",
+        sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
       parameters:
         - id: typeString
           description: Represents the type of a chart. See Excel.ChartType for details.
-          type: >-
-            "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100"
-            | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
-            "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
-            "3DBarStacked" | "3DBarStacked100" | "LineStacked" |
-            "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
-            "LineMarkersStacked100" | "PieOfPie" | "PieExploded" |
-            "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
-            "XYScatterSmoothNoMarkers" | "XYScatterLines" |
-            "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
-            "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
-            "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" |
-            "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" |
-            "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
-            "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
-            "CylinderColStacked100" | "CylinderBarClustered" |
-            "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" |
-            "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" |
-            "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
-            "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
-            "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked"
-            | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" |
-            "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" |
-            "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
-            "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+          type:
+            - >-
+              "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
+              "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
+              "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+              "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie"
+              | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
+              "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
+              "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+              "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+              "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+              "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" |
+              "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" |
+              "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" |
+              "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line"
+              | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
+              "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
         - id: sourceData
           description: The Range object corresponding to the source data.
-          type: '<xref uid="excel!Excel.Range:class" />'
+          type:
+            - 'excel!Excel.Range:class'
         - id: seriesBy
           description: >-
-            Optional. Specifies the way columns or rows are used as data series
-            on the chart. See Excel.ChartSeriesBy for details.
-          type: '"Auto" | "Columns" | "Rows"'
-      return:
-        type: '<xref uid="excel!Excel.Chart:class" />'
-        description: ''
-  - name: getItem(name)
-    uid: 'excel!Excel.ChartCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(name)
+            Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
+            for details.
+          type:
+            - '"Auto" | "Columns" | "Rows"'
+  - uid: 'excel!Excel.ChartCollection#context:member'
     summary: >-
-      Gets a chart using its name. If there are multiple charts with the same
-      name, the first one will be returned.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartCollection#count:member'
+    summary: |-
+      Returns the number of charts in the worksheet.
 
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
+    summary: |-
+      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(name: string): Excel.Chart;'
-      parameters:
-        - id: name
-          description: Name of the chart to be retrieved.
-          type: string
       return:
-        type: '<xref uid="excel!Excel.Chart:class" />'
+        type:
+          - 'excel!Excel.Chart:class'
         description: |-
 
 
@@ -243,28 +203,26 @@ methods:
               }
           });
           ```
-  - name: getItemAt(index)
-    uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
-    package: excel!
-    fullName: getItemAt(index)
-    summary: >-
+      parameters:
+        - id: name
+          description: Name of the chart to be retrieved.
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
+    summary: |-
       Gets a chart based on its position in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemAt(index: number): Excel.Chart;'
-      parameters:
-        - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
-          type: number
       return:
-        type: '<xref uid="excel!Excel.Chart:class" />'
+        type:
+          - 'excel!Excel.Chart:class'
         description: |-
 
 
@@ -284,51 +242,59 @@ methods:
               }
           });
           ```
-  - name: load(options)
-    uid: 'excel!Excel.ChartCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: 'excel!Excel.ChartCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Chart[];'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection#items~0:complex'
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.ChartCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
+        load(options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartCollection;
+      return:
+        type:
+          - 'excel!Excel.ChartCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ChartCollectionLoadOptions:interface" />
-            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.ChartCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.ChartCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.ChartCollection#load~0:complex'
+  - uid: 'excel!Excel.ChartCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
       return:
-        type: '<xref uid="excel!Excel.ChartCollection:class" />'
+        type:
+          - 'excel!Excel.ChartCollection:class'
         description: |-
 
 
@@ -350,50 +316,88 @@ methods:
               }
           });
           ```
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ChartCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.ChartCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.ChartCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.ChartCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.ChartCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original `Excel.ChartCollection`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.ChartCollectionData`<!-- -->) that
-      contains an "items" array with shallow copies of any loaded properties
-      from the collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartCollectionData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Chart:class'
+    name: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: Excel.ChartType
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: Excel.ChartSeriesBy
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartCollection#items~0:complex'
+    name: 'Excel.Chart[]'
+    fullName: 'Excel.Chart[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Chart:class'
+        name: Excel.Chart
+        fullName: Excel.Chart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.ChartCollection:class'
+    name: Excel.ChartCollection
+  - uid: 'excel!Excel.ChartCollection#load~0:complex'
+    name: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+        name: Excel.Interfaces.ChartCollectionLoadOptions
+        fullName: Excel.Interfaces.ChartCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.ChartCollectionData:interface'
+    name: Excel.Interfaces.ChartCollectionData

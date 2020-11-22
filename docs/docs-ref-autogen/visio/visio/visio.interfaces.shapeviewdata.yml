@@ -1,29 +1,30 @@
-### YamlMime:TSType
-name: Visio.Interfaces.ShapeViewData
-uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
-package: visio!
-fullName: Visio.Interfaces.ShapeViewData
-summary: An interface describing the data returned by calling "shapeView.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: highlight
-    uid: 'visio!Visio.Interfaces.ShapeViewData#highlight:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
+    summary: An interface describing the data returned by calling "shapeView.toJSON()".
+    name: Visio.Interfaces.ShapeViewData
+    fullName: Visio.Interfaces.ShapeViewData
+    langs:
+      - typeScript
+    type: interface
     package: visio!
-    fullName: highlight
-    summary: >-
+    children:
+      - 'visio!Visio.Interfaces.ShapeViewData#highlight:member'
+  - uid: 'visio!Visio.Interfaces.ShapeViewData#highlight:member'
+    summary: |-
       Represents the highlight around the shape.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: highlight
+    fullName: highlight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'highlight?: Visio.Highlight;'
       return:
-        type: '<xref uid="visio!Visio.Highlight:interface" />'
+        type:
+          - 'visio!Visio.Highlight:interface'
+references:
+  - uid: 'visio!Visio.Highlight:interface'
+    name: Visio.Highlight

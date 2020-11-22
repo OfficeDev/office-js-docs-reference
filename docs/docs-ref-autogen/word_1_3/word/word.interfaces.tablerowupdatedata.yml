@@ -1,133 +1,130 @@
-### YamlMime:TSType
-name: Word.Interfaces.TableRowUpdateData
-uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.TableRowUpdateData
-summary: >-
-  An interface for updating data on the TableRow object, for use in
-  `tableRow.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: font
-    uid: 'word!Word.Interfaces.TableRowUpdateData#font:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
+    summary: 'An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.TableRowUpdateData
+    fullName: Word.Interfaces.TableRowUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.TableRowUpdateData#font:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#preferredHeight:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#shadingColor:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#values:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#font:member'
+    summary: |-
+      Gets the font. Use this to get and set font name, size, color, and other properties.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
     fullName: font
-    summary: >-
-      Gets the font. Use this to get and set font name, size, color, and other
-      properties.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
-  - name: horizontalAlignment
-    uid: 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.FontUpdateData:interface'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member'
+    summary: >-
+      Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
+      'Justified'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
     fullName: horizontalAlignment
-    summary: >-
-      Gets and sets the horizontal alignment of every cell in the row. The value
-      can be 'Left', 'Centered', 'Right', or 'Justified'.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" |
-        "Centered" | "Right" | "Justified";
+      content: 'horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
-  - name: preferredHeight
-    uid: 'word!Word.Interfaces.TableRowUpdateData#preferredHeight:member'
-    package: word!
-    fullName: preferredHeight
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment~0:complex'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#preferredHeight:member'
+    summary: |-
       Gets and sets the preferred height of the row in points.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: preferredHeight
+    fullName: preferredHeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'preferredHeight?: number;'
       return:
-        type: number
-  - name: shadingColor
-    uid: 'word!Word.Interfaces.TableRowUpdateData#shadingColor:member'
-    package: word!
+        type:
+          - number
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#shadingColor:member'
+    summary: |-
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
     fullName: shadingColor
-    summary: >-
-      Gets and sets the shading color. Color is specified in "\#RRGGBB" format
-      or by using the color name.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shadingColor?: string;'
       return:
-        type: string
-  - name: values
-    uid: 'word!Word.Interfaces.TableRowUpdateData#values:member'
-    package: word!
-    fullName: values
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#values:member'
+    summary: |-
       Gets and sets the text values in the row, as a 2D Javascript array.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'values?: string[][];'
       return:
-        type: 'string[][]'
-  - name: verticalAlignment
-    uid: 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member'
-    package: word!
+        type:
+          - 'string[][]'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member'
+    summary: |-
+      Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
     fullName: verticalAlignment
-    summary: >-
-      Gets and sets the vertical alignment of the cells in the row. The value
-      can be 'Top', 'Center', or 'Bottom'.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center"
-        | "Bottom";
+      content: 'verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
-        type: >-
-          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
-          "Center" | "Bottom"
+        type:
+          - 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
+    name: Word.Interfaces.FontUpdateData
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment~0:complex'
+    name: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    fullName: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    spec.typeScript:
+      - uid: 'word!Word.VerticalAlignment:enum'
+        name: Word.VerticalAlignment
+        fullName: Word.VerticalAlignment
+      - name: ' | "Mixed" | "Top" | "Center" | "Bottom"'
+        fullName: ' | "Mixed" | "Top" | "Center" | "Bottom"'

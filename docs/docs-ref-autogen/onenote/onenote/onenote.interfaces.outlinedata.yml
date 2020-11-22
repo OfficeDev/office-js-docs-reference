@@ -1,47 +1,53 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.OutlineData
-uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.OutlineData
-summary: An interface describing the data returned by calling "outline.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.OutlineData#id:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
+    summary: An interface describing the data returned by calling "outline.toJSON()".
+    name: OneNote.Interfaces.OutlineData
+    fullName: OneNote.Interfaces.OutlineData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
-    fullName: id
-    summary: >-
+    children:
+      - 'onenote!OneNote.Interfaces.OutlineData#id:member'
+      - 'onenote!OneNote.Interfaces.OutlineData#paragraphs:member'
+  - uid: 'onenote!OneNote.Interfaces.OutlineData#id:member'
+    summary: |-
       Gets the ID of the Outline object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: paragraphs
-    uid: 'onenote!OneNote.Interfaces.OutlineData#paragraphs:member'
-    package: onenote!
-    fullName: paragraphs
-    summary: >-
+        type:
+          - string
+  - uid: 'onenote!OneNote.Interfaces.OutlineData#paragraphs:member'
+    summary: |-
       Gets the collection of Paragraph objects in the Outline. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.OutlineData#paragraphs~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.OutlineData#paragraphs~0:complex'
+    name: 'OneNote.Interfaces.ParagraphData[]'
+    fullName: 'OneNote.Interfaces.ParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
+        name: OneNote.Interfaces.ParagraphData
+        fullName: OneNote.Interfaces.ParagraphData
+      - name: '[]'
+        fullName: '[]'

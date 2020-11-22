@@ -1,29 +1,43 @@
-### YamlMime:TSEnum
-name: OneNote.PageContentType
-uid: 'onenote!OneNote.PageContentType:enum'
-package: onenote!
-fullName: OneNote.PageContentType
-summary: >-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: image
-    uid: 'onenote!OneNote.PageContentType.image:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.PageContentType:enum'
+    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    name: OneNote.PageContentType
+    fullName: OneNote.PageContentType
+    langs:
+      - typeScript
+    type: enum
     package: onenote!
-    summary: ''
-  - name: ink
-    uid: 'onenote!OneNote.PageContentType.ink:member'
-    package: onenote!
-    summary: ''
-  - name: other
-    uid: 'onenote!OneNote.PageContentType.other:member'
-    package: onenote!
-    summary: ''
-  - name: outline
-    uid: 'onenote!OneNote.PageContentType.outline:member'
-    package: onenote!
-    summary: ''
+    children:
+      - 'onenote!OneNote.PageContentType.image:member'
+      - 'onenote!OneNote.PageContentType.ink:member'
+      - 'onenote!OneNote.PageContentType.other:member'
+      - 'onenote!OneNote.PageContentType.outline:member'
+  - uid: 'onenote!OneNote.PageContentType.image:member'
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Image"'
+  - uid: 'onenote!OneNote.PageContentType.ink:member'
+    name: ink
+    fullName: ink
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ink"'
+  - uid: 'onenote!OneNote.PageContentType.other:member'
+    name: other
+    fullName: other
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Other"'
+  - uid: 'onenote!OneNote.PageContentType.outline:member'
+    name: outline
+    fullName: outline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Outline"'

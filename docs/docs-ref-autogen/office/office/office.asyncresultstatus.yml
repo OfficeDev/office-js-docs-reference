@@ -1,20 +1,28 @@
-### YamlMime:TSEnum
-name: Office.AsyncResultStatus
-uid: 'office!Office.AsyncResultStatus:enum'
-package: office!
-fullName: Office.AsyncResultStatus
-summary: Specifies the result of an asynchronous call.
-remarks: >-
-  Returned by the `status` property of the
-  [AsyncResult](xref:office!Office.AsyncResult:interface) object.
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Failed
-    uid: 'office!Office.AsyncResultStatus.Failed:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.AsyncResultStatus:enum'
+    summary: Specifies the result of an asynchronous call.
+    remarks: 'Returned by the `status` property of the [AsyncResult](xref:office!Office.AsyncResult:interface) object.'
+    name: Office.AsyncResultStatus
+    fullName: Office.AsyncResultStatus
+    langs:
+      - typeScript
+    type: enum
     package: office!
+    children:
+      - 'office!Office.AsyncResultStatus.Failed:member'
+      - 'office!Office.AsyncResultStatus.Succeeded:member'
+  - uid: 'office!Office.AsyncResultStatus.Failed:member'
     summary: 'The call failed, check the error object.'
-  - name: Succeeded
-    uid: 'office!Office.AsyncResultStatus.Succeeded:member'
-    package: office!
+    name: Failed
+    fullName: Failed
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.AsyncResultStatus.Succeeded:member'
     summary: The call succeeded.
+    name: Succeeded
+    fullName: Succeeded
+    langs:
+      - typeScript
+    type: field

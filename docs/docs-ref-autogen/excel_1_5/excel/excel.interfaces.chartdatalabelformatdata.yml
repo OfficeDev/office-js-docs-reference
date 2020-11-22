@@ -1,32 +1,30 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartDataLabelFormatData
-uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartDataLabelFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartDataLabelFormat.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: font
-    uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData#font:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
+    summary: An interface describing the data returned by calling `chartDataLabelFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartDataLabelFormatData
+    fullName: Excel.Interfaces.ChartDataLabelFormatData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartDataLabelFormatData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData#font:member'
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart data label.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
     fullName: font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for a
-      chart data label.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartFontData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartFontData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
+    name: Excel.Interfaces.ChartFontData

@@ -1,161 +1,154 @@
-### YamlMime:TSPackage
-uid: office!
-name: office
-type: package
-summary: ''
-interfaces:
-  - 'office!Office.Actions:interface'
-  - 'office!Office.AddBindingFromNamedItemOptions:interface'
-  - 'office!Office.AddBindingFromPromptOptions:interface'
-  - 'office!Office.AddBindingFromSelectionOptions:interface'
-  - 'office!Office.Addin:interface'
-  - 'office!Office.AddinCommands.Event:interface'
-  - 'office!Office.AddinCommands.EventCompletedOptions:interface'
-  - 'office!Office.AddinCommands.Source:interface'
-  - 'office!Office.AsyncContextOptions:interface'
-  - 'office!Office.AsyncResult:interface'
-  - 'office!Office.Auth:interface'
-  - 'office!Office.AuthOptions:interface'
-  - 'office!Office.Binding:interface'
-  - 'office!Office.BindingDataChangedEventArgs:interface'
-  - 'office!Office.Bindings:interface'
-  - 'office!Office.BindingSelectionChangedEventArgs:interface'
-  - 'office!Office.Context:interface'
-  - 'office!Office.ContextInformation:interface'
-  - 'office!Office.Control:interface'
-  - 'office!Office.CustomXmlNode:interface'
-  - 'office!Office.CustomXmlPart:interface'
-  - 'office!Office.CustomXmlParts:interface'
-  - 'office!Office.CustomXmlPrefixMappings:interface'
-  - 'office!Office.Dialog:interface'
-  - 'office!Office.DialogOptions:interface'
-  - 'office!Office.DialogParentMessageReceivedEventArgs:interface'
-  - 'office!Office.Document:interface'
-  - 'office!Office.DocumentSelectionChangedEventArgs:interface'
-  - 'office!Office.Error:interface'
-  - 'office!Office.File:interface'
-  - 'office!Office.FileProperties:interface'
-  - 'office!Office.GetBindingDataOptions:interface'
-  - 'office!Office.GetFileOptions:interface'
-  - 'office!Office.GetSelectedDataOptions:interface'
-  - 'office!Office.GoToByIdOptions:interface'
-  - 'office!Office.IPromiseConstructor:interface'
-  - 'office!Office.MatrixBinding:interface'
-  - 'office!Office.NodeDeletedEventArgs:interface'
-  - 'office!Office.NodeInsertedEventArgs:interface'
-  - 'office!Office.NodeReplacedEventArgs:interface'
-  - 'office!Office.OfficeTheme:interface'
-  - 'office!Office.RangeCoordinates:interface'
-  - 'office!Office.RangeFormatConfiguration:interface'
-  - 'office!Office.RemoveHandlerOptions:interface'
-  - 'office!Office.RequirementSetSupport:interface'
-  - 'office!Office.Ribbon:interface'
-  - 'office!Office.RibbonUpdaterData:interface'
-  - 'office!Office.SaveSettingsOptions:interface'
-  - 'office!Office.SetBindingDataOptions:interface'
-  - 'office!Office.SetSelectedDataOptions:interface'
-  - 'office!Office.Settings:interface'
-  - 'office!Office.SettingsChangedEventArgs:interface'
-  - 'office!Office.Slice:interface'
-  - 'office!Office.Tab:interface'
-  - 'office!Office.TableBinding:interface'
-  - 'office!Office.TextBinding:interface'
-  - 'office!Office.UI:interface'
-  - 'office!Office.VisibilityModeChangedMessage:interface'
-  - 'office!OfficeExtension.DebugInfo:interface'
-  - 'office!OfficeExtension.EmbeddedOptions:interface'
-  - 'office!OfficeExtension.EventInfo:interface'
-  - 'office!OfficeExtension.LoadOption:interface'
-  - 'office!OfficeExtension.RequestContextDebugInfo:interface'
-  - 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
-  - 'office!OfficeExtension.RunOptions:interface'
-  - 'office!OfficeExtension.UpdateOptions:interface'
-enums:
-  - 'office!Office.ActiveView:enum'
-  - 'office!Office.AsyncResultStatus:enum'
-  - 'office!Office.BindingType:enum'
-  - 'office!Office.CoercionType:enum'
-  - 'office!Office.CustomXMLNodeType:enum'
-  - 'office!Office.DocumentMode:enum'
-  - 'office!Office.EventType:enum'
-  - 'office!Office.FileType:enum'
-  - 'office!Office.FilterType:enum'
-  - 'office!Office.GoToType:enum'
-  - 'office!Office.HostType:enum'
-  - 'office!Office.Index:enum'
-  - 'office!Office.InitializationReason:enum'
-  - 'office!Office.PlatformType:enum'
-  - 'office!Office.ProjectProjectFields:enum'
-  - 'office!Office.ProjectResourceFields:enum'
-  - 'office!Office.ProjectTaskFields:enum'
-  - 'office!Office.ProjectViewTypes:enum'
-  - 'office!Office.SelectionMode:enum'
-  - 'office!Office.StartupBehavior:enum'
-  - 'office!Office.Table:enum'
-  - 'office!Office.ValueFormat:enum'
-  - 'office!Office.VisibilityMode:enum'
-classes:
-  - 'office!Office.TableData:class'
-  - 'office!OfficeExtension.ClientObject:class'
-  - 'office!OfficeExtension.ClientRequestContext:class'
-  - 'office!OfficeExtension.ClientResult:class'
-  - 'office!OfficeExtension.EmbeddedSession:class'
-  - 'office!OfficeExtension.Error:class'
-  - 'office!OfficeExtension.ErrorCodes:class'
-  - 'office!OfficeExtension.EventHandlerResult:class'
-  - 'office!OfficeExtension.EventHandlers:class'
-  - 'office!OfficeExtension.TrackedObjects:class'
-functions:
-  - name: Office.initialize(reason)
-    uid: 'office!Office.initialize:function(1)'
-    package: office!
+### YamlMime:UniversalReference
+items:
+  - uid: office!
+    name: office
+    fullName: office
+    langs:
+      - typeScript
+    type: package
+    children:
+      - 'office!Office.Actions:interface'
+      - 'office!Office.ActiveView:enum'
+      - 'office!Office.AddBindingFromNamedItemOptions:interface'
+      - 'office!Office.AddBindingFromPromptOptions:interface'
+      - 'office!Office.AddBindingFromSelectionOptions:interface'
+      - 'office!Office.Addin:interface'
+      - 'office!Office.AddinCommands.Event:interface'
+      - 'office!Office.AddinCommands.EventCompletedOptions:interface'
+      - 'office!Office.AddinCommands.Source:interface'
+      - 'office!Office.AsyncContextOptions:interface'
+      - 'office!Office.AsyncResult:interface'
+      - 'office!Office.AsyncResultStatus:enum'
+      - 'office!Office.Auth:interface'
+      - 'office!Office.AuthOptions:interface'
+      - 'office!Office.Binding:interface'
+      - 'office!Office.BindingDataChangedEventArgs:interface'
+      - 'office!Office.Bindings:interface'
+      - 'office!Office.BindingSelectionChangedEventArgs:interface'
+      - 'office!Office.BindingType:enum'
+      - 'office!Office.CoercionType:enum'
+      - 'office!Office.Context:interface'
+      - 'office!Office.ContextInformation:interface'
+      - 'office!Office.Control:interface'
+      - 'office!Office.CustomXmlNode:interface'
+      - 'office!Office.CustomXMLNodeType:enum'
+      - 'office!Office.CustomXmlPart:interface'
+      - 'office!Office.CustomXmlParts:interface'
+      - 'office!Office.CustomXmlPrefixMappings:interface'
+      - 'office!Office.Dialog:interface'
+      - 'office!Office.DialogOptions:interface'
+      - 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+      - 'office!Office.Document:interface'
+      - 'office!Office.DocumentMode:enum'
+      - 'office!Office.DocumentSelectionChangedEventArgs:interface'
+      - 'office!Office.Error:interface'
+      - 'office!Office.EventType:enum'
+      - 'office!Office.File:interface'
+      - 'office!Office.FileProperties:interface'
+      - 'office!Office.FileType:enum'
+      - 'office!Office.FilterType:enum'
+      - 'office!Office.GetBindingDataOptions:interface'
+      - 'office!Office.GetFileOptions:interface'
+      - 'office!Office.GetSelectedDataOptions:interface'
+      - 'office!Office.GoToByIdOptions:interface'
+      - 'office!Office.GoToType:enum'
+      - 'office!Office.HostType:enum'
+      - 'office!Office.Index:enum'
+      - 'office!Office.InitializationReason:enum'
+      - 'office!Office.initialize:function(1)'
+      - 'office!Office.IPromiseConstructor:interface'
+      - 'office!Office.isSetSupported:function(1)'
+      - 'office!Office.MatrixBinding:interface'
+      - 'office!Office.NodeDeletedEventArgs:interface'
+      - 'office!Office.NodeInsertedEventArgs:interface'
+      - 'office!Office.NodeReplacedEventArgs:interface'
+      - 'office!Office.OfficeTheme:interface'
+      - 'office!Office.onReady:function(1)'
+      - 'office!Office.PlatformType:enum'
+      - 'office!Office.ProjectProjectFields:enum'
+      - 'office!Office.ProjectResourceFields:enum'
+      - 'office!Office.ProjectTaskFields:enum'
+      - 'office!Office.ProjectViewTypes:enum'
+      - 'office!Office.RangeCoordinates:interface'
+      - 'office!Office.RangeFormatConfiguration:interface'
+      - 'office!Office.RemoveHandlerOptions:interface'
+      - 'office!Office.RequirementSetSupport:interface'
+      - 'office!Office.Ribbon:interface'
+      - 'office!Office.RibbonUpdaterData:interface'
+      - 'office!Office.SaveSettingsOptions:interface'
+      - 'office!Office.select:function(1)'
+      - 'office!Office.SelectionMode:enum'
+      - 'office!Office.SetBindingDataOptions:interface'
+      - 'office!Office.SetSelectedDataOptions:interface'
+      - 'office!Office.Settings:interface'
+      - 'office!Office.SettingsChangedEventArgs:interface'
+      - 'office!Office.Slice:interface'
+      - 'office!Office.StartupBehavior:enum'
+      - 'office!Office.Tab:interface'
+      - 'office!Office.Table:enum'
+      - 'office!Office.TableBinding:interface'
+      - 'office!Office.TableData:class'
+      - 'office!Office.TextBinding:interface'
+      - 'office!Office.UI:interface'
+      - 'office!Office.useShortNamespace:function(1)'
+      - 'office!Office.ValueFormat:enum'
+      - 'office!Office.VisibilityMode:enum'
+      - 'office!Office.VisibilityModeChangedMessage:interface'
+      - 'office!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientRequestContext:class'
+      - 'office!OfficeExtension.ClientResult:class'
+      - 'office!OfficeExtension.DebugInfo:interface'
+      - 'office!OfficeExtension.EmbeddedOptions:interface'
+      - 'office!OfficeExtension.EmbeddedSession:class'
+      - 'office!OfficeExtension.Error:class'
+      - 'office!OfficeExtension.ErrorCodes:class'
+      - 'office!OfficeExtension.EventHandlerResult:class'
+      - 'office!OfficeExtension.EventHandlers:class'
+      - 'office!OfficeExtension.EventInfo:interface'
+      - 'office!OfficeExtension.LoadOption:interface'
+      - 'office!OfficeExtension.RequestContextDebugInfo:interface'
+      - 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+      - 'office!OfficeExtension.RunOptions:interface'
+      - 'office!OfficeExtension.TrackedObjects:class'
+      - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!Office.initialize:function(1)'
     summary: >-
-      Occurs when the runtime environment is loaded and the add-in is ready to
-      start interacting with the application and hosted document.
+      Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application
+      and hosted document.
 
 
-      The reason parameter of the initialize event listener function returns an
-      `InitializationReason` enumeration value that specifies how initialization
-      occurred. A task pane or content add-in can be initialized in two ways:
+      The reason parameter of the initialize event listener function returns an `InitializationReason` enumeration value
+      that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
 
 
-      - The user just inserted it from Recently Used Add-ins section of the
-      Add-in drop-down list on the Insert tab of the ribbon in the Office host
-      application, or from Insert add-in dialog box.
+      - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of
+      the ribbon in the Office host application, or from Insert add-in dialog box.
 
 
       - The user opened a document that already contains the add-in.
 
 
-      *Note*: The reason parameter of the initialize event listener function
-      only returns an `InitializationReason` enumeration value for task pane and
-      content add-ins. It does not return a value for Outlook add-ins.
+      *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
+      enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
     remarks: >-
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this method is
-      supported in the corresponding Office host application. An empty cell
-      indicates that the Office host application doesn't support this method.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server
-      requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-      -->.
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on
-      Windows </th><th> Office in web browser </th><th> Office on iPad </th><th>
-      Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> </td><td> Y </td></tr> <tr><td><strong> Outlook
-      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Project
-      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> Y </td></tr>
-      <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> </td><td> Y </td></tr> </table>
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td>
+      Y </td><td> Y </td><td> Y </td><td> </td><td> Y </td></tr> </table>
 
 
       #### Examples
@@ -163,14 +156,11 @@ functions:
 
       ```javascript
 
-      // You can use the value of the InitializationEnumeration to implement
-      different logic for
+      // You can use the value of the InitializationEnumeration to implement different logic for
 
-      // when the add-in is first inserted versus when it is already part of the
-      document.
+      // when the add-in is first inserted versus when it is already part of the document.
 
-      // The following example shows some simple logic that uses the value of
-      the reason parameter
+      // The following example shows some simple logic that uses the value of the reason parameter
 
       // to display how the task pane or content add-in was initialized.
 
@@ -195,102 +185,88 @@ functions:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: Office.initialize(reason)
+    fullName: Office.initialize(reason)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export function initialize(reason: InitializationReason): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: reason
           description: Indicates how the app was initialized.
-          type: '<xref uid="office!Office.InitializationReason:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: 'Office.isSetSupported(name, minVersion)'
-    uid: 'office!Office.isSetSupported:function(1)'
-    package: office!
-    summary: >-
-      Checks if the specified requirement set is supported by the host Office
-      application.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+          type:
+            - 'office!Office.InitializationReason:enum'
+  - uid: 'office!Office.isSetSupported:function(1)'
+    summary: Checks if the specified requirement set is supported by the host Office application.
+    name: 'Office.isSetSupported(name, minVersion)'
+    fullName: 'Office.isSetSupported(name, minVersion)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export function isSetSupported(name: string, minVersion?: string):
-        boolean;
+      content: 'export function isSetSupported(name: string, minVersion?: string): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
       parameters:
         - id: name
           description: 'Set name; e.g., "MatrixBindings".'
-          type: string
+          type:
+            - string
         - id: minVersion
           description: 'The minimum required version; e.g., "1.4".'
-          type: string
-      return:
-        type: boolean
-        description: ''
-  - name: Office.onReady(callback)
-    uid: 'office!Office.onReady:function(1)'
-    package: office!
+          type:
+            - string
+  - uid: 'office!Office.onReady:function(1)'
     summary: >-
-      Ensures that the Office JavaScript APIs are ready to be called by the
-      add-in. If the framework hasn't initialized yet, the callback or promise
-      will wait until the Office host is ready to accept API calls. Note that
-      though this API is intended to be used inside an Office add-in, it can
-      also be used outside the add-in. In that case, once Office.js determines
-      that it is running outside of an Office host application, it will call the
-      callback and resolve the promise with "null" for both the host and
-      platform.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized
+      yet, the callback or promise will wait until the Office host is ready to accept API calls. Note that though this
+      API is intended to be used inside an Office add-in, it can also be used outside the add-in. In that case, once
+      Office.js determines that it is running outside of an Office host application, it will call the callback and
+      resolve the promise with "null" for both the host and platform.
+    name: Office.onReady(callback)
+    fullName: Office.onReady(callback)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: >-
-        export function onReady(callback?: (info: { host: HostType, platform:
-        PlatformType }) => any): Promise<{ host: HostType, platform:
-        PlatformType }>;
+        export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host:
+        HostType, platform: PlatformType }>;
+      return:
+        type:
+          - 'office!Office.onReady~0:complex'
+        description: 'A Promise that contains the host and platform info, once initialization is completed.'
       parameters:
         - id: callback
           description: >-
-            An optional callback method, that will receive the host and platform
-            info. Alternatively, rather than use a callback, an add-in may
-            simply wait for the Promise returned by the function to resolve.
-          type: >-
-            (info: { host: <xref uid="office!Office.HostType:enum" />, platform:
-            <xref uid="office!Office.PlatformType:enum" /> }) =&gt; any
-      return:
-        type: >-
-          Promise&lt;{ host: <xref uid="office!Office.HostType:enum" />,
-          platform: <xref uid="office!Office.PlatformType:enum" /> }&gt;
-        description: >-
-          A Promise that contains the host and platform info, once
-          initialization is completed.
-  - name: 'Office.select(expression, callback)'
-    uid: 'office!Office.select:function(1)'
-    package: office!
-    summary: >-
-      Returns a promise of an object described in the expression. Callback is
-      invoked only if method fails.
+            An optional callback method, that will receive the host and platform info. Alternatively, rather than use a
+            callback, an add-in may simply wait for the Promise returned by the function to resolve.
+          type:
+            - 'office!Office.onReady~1:complex'
+  - uid: 'office!Office.select:function(1)'
+    summary: Returns a promise of an object described in the expression. Callback is invoked only if method fails.
     remarks: >-
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this method is
-      supported in the corresponding Office host application. An empty cell
-      indicates that the Office host application doesn't support this method.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server
-      requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-      -->.
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on
-      Windows </th><th> Office in web browser </th><th> Office on iPad
-      </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> </td><td> Y </td></tr> </table>
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr>
+      <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
 
 
       #### Examples
@@ -298,11 +274,9 @@ functions:
 
       ```javascript
 
-      // The following code example uses the select method to retrieve a binding
-      with the id "cities" from
+      // The following code example uses the select method to retrieve a binding with the id "cities" from
 
-      // the Bindings collection, and then calls the addHandlerAsync method to
-      add an event handler for the
+      // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
 
       // dataChanged event of the binding.
 
@@ -314,62 +288,51 @@ functions:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: 'Office.select(expression, callback)'
+    fullName: 'Office.select(expression, callback)'
+    langs:
+      - typeScript
+    type: function
     syntax:
-      content: >-
-        export function select(expression: string, callback?: (result:
-        AsyncResult<any>) => void): Binding;
+      content: 'export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;'
+      return:
+        type:
+          - 'office!Office.Binding:interface'
+        description: ''
       parameters:
         - id: expression
           description: >-
-            The object to be retrieved. Example "bindings\#BindingName",
-            retrieves a binding promise for a binding named 'BindingName'
-          type: string
+            The object to be retrieved. Example "bindings\#BindingName", retrieves a binding promise for a binding named
+            'BindingName'
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
-      return:
-        type: '<xref uid="office!Office.Binding:interface" />'
-        description: ''
-  - name: Office.useShortNamespace(useShortNamespace)
-    uid: 'office!Office.useShortNamespace:function(1)'
-    package: office!
-    summary: >-
-      Toggles on and off the `Office` alias for the full
-      `Microsoft.Office.WebExtension` namespace.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.select~0:complex'
+  - uid: 'office!Office.useShortNamespace:function(1)'
+    summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     remarks: >-
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this method is
-      supported in the corresponding Office host application. An empty cell
-      indicates that the Office host application doesn't support this method.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server
-      requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-      -->.
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on
-      Windows </th><th> Office in web browser </th><th> Office on iPad </th><th>
-      Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> </td><td> </td></tr> <tr><td><strong> Outlook </strong></td><td>
-      Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr>
-      <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td>
-      Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td>
-      </td></tr> </table>
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
 
 
       #### Examples
@@ -406,16 +369,264 @@ functions:
       }
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: Office.useShortNamespace(useShortNamespace)
+    fullName: Office.useShortNamespace(useShortNamespace)
+    langs:
+      - typeScript
+    type: function
     syntax:
       content: 'export function useShortNamespace(useShortNamespace: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: useShortNamespace
-          description: >-
-            True to use the shortcut alias; otherwise false to disable it. The
-            default is true.
-          type: boolean
-      return:
-        type: void
-        description: ''
+          description: True to use the shortcut alias; otherwise false to disable it. The default is true.
+          type:
+            - boolean
+references:
+  - uid: 'office!Office.Actions:interface'
+    name: Office.Actions
+  - uid: 'office!Office.ActiveView:enum'
+    name: Office.ActiveView
+  - uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
+    name: Office.AddBindingFromNamedItemOptions
+  - uid: 'office!Office.AddBindingFromPromptOptions:interface'
+    name: Office.AddBindingFromPromptOptions
+  - uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+    name: Office.AddBindingFromSelectionOptions
+  - uid: 'office!Office.Addin:interface'
+    name: Office.Addin
+  - uid: 'office!Office.AddinCommands.Event:interface'
+    name: Office.AddinCommands.Event
+  - uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+    name: Office.AddinCommands.EventCompletedOptions
+  - uid: 'office!Office.AddinCommands.Source:interface'
+    name: Office.AddinCommands.Source
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'office!Office.AsyncResult:interface'
+    name: Office.AsyncResult
+  - uid: 'office!Office.AsyncResultStatus:enum'
+    name: Office.AsyncResultStatus
+  - uid: 'office!Office.Auth:interface'
+    name: Office.Auth
+  - uid: 'office!Office.AuthOptions:interface'
+    name: Office.AuthOptions
+  - uid: 'office!Office.Binding:interface'
+    name: Office.Binding
+  - uid: 'office!Office.BindingDataChangedEventArgs:interface'
+    name: Office.BindingDataChangedEventArgs
+  - uid: 'office!Office.Bindings:interface'
+    name: Office.Bindings
+  - uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
+    name: Office.BindingSelectionChangedEventArgs
+  - uid: 'office!Office.BindingType:enum'
+    name: Office.BindingType
+  - uid: 'office!Office.CoercionType:enum'
+    name: Office.CoercionType
+  - uid: 'office!Office.Context:interface'
+    name: Office.Context
+  - uid: 'office!Office.ContextInformation:interface'
+    name: Office.ContextInformation
+  - uid: 'office!Office.Control:interface'
+    name: Office.Control
+  - uid: 'office!Office.CustomXmlNode:interface'
+    name: Office.CustomXmlNode
+  - uid: 'office!Office.CustomXMLNodeType:enum'
+    name: Office.CustomXMLNodeType
+  - uid: 'office!Office.CustomXmlPart:interface'
+    name: Office.CustomXmlPart
+  - uid: 'office!Office.CustomXmlParts:interface'
+    name: Office.CustomXmlParts
+  - uid: 'office!Office.CustomXmlPrefixMappings:interface'
+    name: Office.CustomXmlPrefixMappings
+  - uid: 'office!Office.Dialog:interface'
+    name: Office.Dialog
+  - uid: 'office!Office.DialogOptions:interface'
+    name: Office.DialogOptions
+  - uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+    name: Office.DialogParentMessageReceivedEventArgs
+  - uid: 'office!Office.Document:interface'
+    name: Office.Document
+  - uid: 'office!Office.DocumentMode:enum'
+    name: Office.DocumentMode
+  - uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
+    name: Office.DocumentSelectionChangedEventArgs
+  - uid: 'office!Office.Error:interface'
+    name: Office.Error
+  - uid: 'office!Office.EventType:enum'
+    name: Office.EventType
+  - uid: 'office!Office.File:interface'
+    name: Office.File
+  - uid: 'office!Office.FileProperties:interface'
+    name: Office.FileProperties
+  - uid: 'office!Office.FileType:enum'
+    name: Office.FileType
+  - uid: 'office!Office.FilterType:enum'
+    name: Office.FilterType
+  - uid: 'office!Office.GetBindingDataOptions:interface'
+    name: Office.GetBindingDataOptions
+  - uid: 'office!Office.GetFileOptions:interface'
+    name: Office.GetFileOptions
+  - uid: 'office!Office.GetSelectedDataOptions:interface'
+    name: Office.GetSelectedDataOptions
+  - uid: 'office!Office.GoToByIdOptions:interface'
+    name: Office.GoToByIdOptions
+  - uid: 'office!Office.GoToType:enum'
+    name: Office.GoToType
+  - uid: 'office!Office.HostType:enum'
+    name: Office.HostType
+  - uid: 'office!Office.Index:enum'
+    name: Office.Index
+  - uid: 'office!Office.InitializationReason:enum'
+    name: Office.InitializationReason
+  - uid: 'office!Office.IPromiseConstructor:interface'
+    name: Office.IPromiseConstructor
+  - uid: 'office!Office.MatrixBinding:interface'
+    name: Office.MatrixBinding
+  - uid: 'office!Office.NodeDeletedEventArgs:interface'
+    name: Office.NodeDeletedEventArgs
+  - uid: 'office!Office.NodeInsertedEventArgs:interface'
+    name: Office.NodeInsertedEventArgs
+  - uid: 'office!Office.NodeReplacedEventArgs:interface'
+    name: Office.NodeReplacedEventArgs
+  - uid: 'office!Office.OfficeTheme:interface'
+    name: Office.OfficeTheme
+  - uid: 'office!Office.onReady~0:complex'
+    name: 'Promise<{ host: HostType, platform: PlatformType }>'
+    fullName: 'Promise<{ host: Office.HostType, platform: Office.PlatformType }>'
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: '<{ host: '
+        fullName: '<{ host: '
+      - uid: 'office!Office.HostType:enum'
+        name: HostType
+        fullName: Office.HostType
+      - name: ', platform: '
+        fullName: ', platform: '
+      - uid: 'office!Office.PlatformType:enum'
+        name: PlatformType
+        fullName: Office.PlatformType
+      - name: ' }>'
+        fullName: ' }>'
+  - uid: 'office!Office.onReady~1:complex'
+    name: '(info: { host: HostType, platform: PlatformType }) => any'
+    fullName: '(info: { host: Office.HostType, platform: Office.PlatformType }) => any'
+    spec.typeScript:
+      - name: '(info: { host: '
+        fullName: '(info: { host: '
+      - uid: 'office!Office.HostType:enum'
+        name: HostType
+        fullName: Office.HostType
+      - name: ', platform: '
+        fullName: ', platform: '
+      - uid: 'office!Office.PlatformType:enum'
+        name: PlatformType
+        fullName: Office.PlatformType
+      - name: ' }) => any'
+        fullName: ' }) => any'
+  - uid: 'office!Office.PlatformType:enum'
+    name: Office.PlatformType
+  - uid: 'office!Office.ProjectProjectFields:enum'
+    name: Office.ProjectProjectFields
+  - uid: 'office!Office.ProjectResourceFields:enum'
+    name: Office.ProjectResourceFields
+  - uid: 'office!Office.ProjectTaskFields:enum'
+    name: Office.ProjectTaskFields
+  - uid: 'office!Office.ProjectViewTypes:enum'
+    name: Office.ProjectViewTypes
+  - uid: 'office!Office.RangeCoordinates:interface'
+    name: Office.RangeCoordinates
+  - uid: 'office!Office.RangeFormatConfiguration:interface'
+    name: Office.RangeFormatConfiguration
+  - uid: 'office!Office.RemoveHandlerOptions:interface'
+    name: Office.RemoveHandlerOptions
+  - uid: 'office!Office.RequirementSetSupport:interface'
+    name: Office.RequirementSetSupport
+  - uid: 'office!Office.Ribbon:interface'
+    name: Office.Ribbon
+  - uid: 'office!Office.RibbonUpdaterData:interface'
+    name: Office.RibbonUpdaterData
+  - uid: 'office!Office.SaveSettingsOptions:interface'
+    name: Office.SaveSettingsOptions
+  - uid: 'office!Office.select~0:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.SelectionMode:enum'
+    name: Office.SelectionMode
+  - uid: 'office!Office.SetBindingDataOptions:interface'
+    name: Office.SetBindingDataOptions
+  - uid: 'office!Office.SetSelectedDataOptions:interface'
+    name: Office.SetSelectedDataOptions
+  - uid: 'office!Office.Settings:interface'
+    name: Office.Settings
+  - uid: 'office!Office.SettingsChangedEventArgs:interface'
+    name: Office.SettingsChangedEventArgs
+  - uid: 'office!Office.Slice:interface'
+    name: Office.Slice
+  - uid: 'office!Office.StartupBehavior:enum'
+    name: Office.StartupBehavior
+  - uid: 'office!Office.Tab:interface'
+    name: Office.Tab
+  - uid: 'office!Office.Table:enum'
+    name: Office.Table
+  - uid: 'office!Office.TableBinding:interface'
+    name: Office.TableBinding
+  - uid: 'office!Office.TableData:class'
+    name: Office.TableData
+  - uid: 'office!Office.TextBinding:interface'
+    name: Office.TextBinding
+  - uid: 'office!Office.UI:interface'
+    name: Office.UI
+  - uid: 'office!Office.ValueFormat:enum'
+    name: Office.ValueFormat
+  - uid: 'office!Office.VisibilityMode:enum'
+    name: Office.VisibilityMode
+  - uid: 'office!Office.VisibilityModeChangedMessage:interface'
+    name: Office.VisibilityModeChangedMessage
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext
+  - uid: 'office!OfficeExtension.ClientResult:class'
+    name: OfficeExtension.ClientResult
+  - uid: 'office!OfficeExtension.DebugInfo:interface'
+    name: OfficeExtension.DebugInfo
+  - uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+    name: OfficeExtension.EmbeddedOptions
+  - uid: 'office!OfficeExtension.EmbeddedSession:class'
+    name: OfficeExtension.EmbeddedSession
+  - uid: 'office!OfficeExtension.Error:class'
+    name: OfficeExtension.Error
+  - uid: 'office!OfficeExtension.ErrorCodes:class'
+    name: OfficeExtension.ErrorCodes
+  - uid: 'office!OfficeExtension.EventHandlerResult:class'
+    name: OfficeExtension.EventHandlerResult
+  - uid: 'office!OfficeExtension.EventHandlers:class'
+    name: OfficeExtension.EventHandlers
+  - uid: 'office!OfficeExtension.EventInfo:interface'
+    name: OfficeExtension.EventInfo
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+    name: OfficeExtension.RequestContextDebugInfo
+  - uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+    name: OfficeExtension.RequestUrlAndHeaderInfo
+  - uid: 'office!OfficeExtension.RunOptions:interface'
+    name: OfficeExtension.RunOptions
+  - uid: 'office!OfficeExtension.TrackedObjects:class'
+    name: OfficeExtension.TrackedObjects
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions

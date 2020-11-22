@@ -1,52 +1,45 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TableRowData
-uid: 'excel!Excel.Interfaces.TableRowData:interface'
-package: excel!
-fullName: Excel.Interfaces.TableRowData
-summary: >-
-  An interface describing the data returned by calling `tableRow.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: index
-    uid: 'excel!Excel.Interfaces.TableRowData#index:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TableRowData:interface'
+    summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
+    name: Excel.Interfaces.TableRowData
+    fullName: Excel.Interfaces.TableRowData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TableRowData#index:member'
+      - 'excel!Excel.Interfaces.TableRowData#values:member'
+  - uid: 'excel!Excel.Interfaces.TableRowData#index:member'
+    summary: |-
+      Returns the index number of the row within the rows collection of the table. Zero-indexed.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: index
     fullName: index
-    summary: >-
-      Returns the index number of the row within the rows collection of the
-      table. Zero-indexed.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'index?: number;'
       return:
-        type: number
-  - name: values
-    uid: 'excel!Excel.Interfaces.TableRowData#values:member'
-    package: excel!
-    fullName: values
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.TableRowData#values:member'
     summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'values?: any[][];'
       return:
-        type: 'any[][]'
+        type:
+          - 'any[][]'

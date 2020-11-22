@@ -1,30 +1,33 @@
-### YamlMime:TSType
-name: Office.MatrixBinding
-uid: 'office!Office.MatrixBinding:interface'
-package: office!
-fullName: Office.MatrixBinding
-summary: Represents a binding in two dimensions of rows and columns.
-remarks: >-
-  The MatrixBinding object inherits the id property, type property, getDataAsync
-  method, and setDataAsync method from the Binding object.
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: columnCount
-    uid: 'office!Office.MatrixBinding#columnCount:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.MatrixBinding:interface'
+    summary: Represents a binding in two dimensions of rows and columns.
+    remarks: >-
+      The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method
+      from the Binding object.
+    name: Office.MatrixBinding
+    fullName: Office.MatrixBinding
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'office!Office.Binding:interface'
     package: office!
+    children:
+      - 'office!Office.MatrixBinding#columnCount:member'
+      - 'office!Office.MatrixBinding#rowCount:member'
+  - uid: 'office!Office.MatrixBinding#columnCount:member'
+    summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
+    name: columnCount
     fullName: columnCount
-    summary: >-
-      Gets the number of columns in the matrix data structure, as an integer
-      value.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columnCount: number;'
       return:
-        type: number
+        type:
+          - number
         description: |-
 
 
@@ -41,18 +44,18 @@ properties:
               document.getElementById('message').innerText += message; 
           }
           ```
-  - name: rowCount
-    uid: 'office!Office.MatrixBinding#rowCount:member'
-    package: office!
-    fullName: rowCount
+  - uid: 'office!Office.MatrixBinding#rowCount:member'
     summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rowCount: number;'
       return:
-        type: number
+        type:
+          - number
         description: |-
 
 
@@ -69,4 +72,6 @@ properties:
               document.getElementById('message').innerText += message; 
           }
           ```
-extends: '<xref uid="office!Office.Binding:interface" />'
+references:
+  - uid: 'office!Office.Binding:interface'
+    name: Binding

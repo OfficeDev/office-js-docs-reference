@@ -1,118 +1,95 @@
-### YamlMime:TSType
-name: Visio.Comment
-uid: 'visio!Visio.Comment:class'
-package: visio!
-fullName: Visio.Comment
-summary: >-
-  Represents the Comment.
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Comment:class'
+    summary: |-
+      Represents the Comment.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: author
-    uid: 'visio!Visio.Comment#author:member'
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.Comment
+    fullName: Visio.Comment
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: visio!
-    fullName: author
-    summary: >-
+    children:
+      - 'visio!Visio.Comment#author:member'
+      - 'visio!Visio.Comment#context:member'
+      - 'visio!Visio.Comment#date:member'
+      - 'visio!Visio.Comment#load:member(1)'
+      - 'visio!Visio.Comment#load:member(2)'
+      - 'visio!Visio.Comment#load:member(3)'
+      - 'visio!Visio.Comment#set:member(1)'
+      - 'visio!Visio.Comment#set:member(2)'
+      - 'visio!Visio.Comment#text:member'
+      - 'visio!Visio.Comment#toJSON:member(1)'
+  - uid: 'visio!Visio.Comment#author:member'
+    summary: |-
       A string that specifies the name of the author of the comment.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'author: string;'
       return:
-        type: string
-  - name: context
-    uid: 'visio!Visio.Comment#context:member'
-    package: visio!
-    fullName: context
+        type:
+          - string
+  - uid: 'visio!Visio.Comment#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="visio!Visio.RequestContext:class" />'
-  - name: date
-    uid: 'visio!Visio.Comment#date:member'
-    package: visio!
-    fullName: date
-    summary: >-
+        type:
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.Comment#date:member'
+    summary: |-
       A string that specifies the date when the comment was created.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'date: string;'
       return:
-        type: string
-  - name: text
-    uid: 'visio!Visio.Comment#text:member'
-    package: visio!
-    fullName: text
+        type:
+          - string
+  - uid: 'visio!Visio.Comment#load:member(1)'
     summary: >-
-      A string that contains the comment text.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'text: string;'
-      return:
-        type: string
-methods:
-  - name: load(option)
-    uid: 'visio!Visio.Comment#load:member(1)'
-    package: visio!
-    fullName: load(option)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.Comment` - Where option is a
-      comma-delimited string or an array of strings that specify the properties
-      to load.
+      `load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Visio.Comment` -
-      Where option.select is a comma-delimited string that specifies the
-      properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): Visio.Comment` - Only available on collection types. It is
-      similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
@@ -143,133 +120,157 @@ methods:
       });
 
       ```
-    isPreview: false
-    isDeprecated: false
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;'
+      return:
+        type:
+          - 'visio!Visio.Comment:class'
+        description: ''
       parameters:
         - id: option
           description: ''
-          type: '<xref uid="visio!Visio.Interfaces.CommentLoadOptions:interface" />'
-      return:
-        type: '<xref uid="visio!Visio.Comment:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'visio!Visio.Comment#load:member(2)'
-    package: visio!
-    fullName: load(propertyNames)
+          type:
+            - 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+  - uid: 'visio!Visio.Comment#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Visio.Comment;'
+      return:
+        type:
+          - 'visio!Visio.Comment:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="visio!Visio.Comment:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'visio!Visio.Comment#load:member(3)'
-    package: visio!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'visio!Visio.Comment#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
-        Visio.Comment;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Comment;'
+      return:
+        type:
+          - 'visio!Visio.Comment:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that
-            specifies the properties to load, and propertyNamesAndPaths.expand
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '{ select?: string; expand?: string; }'
-      return:
-        type: '<xref uid="visio!Visio.Comment:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'visio!Visio.Comment#set:member(1)'
-    package: visio!
-    fullName: 'set(properties, options)'
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: 'visio!Visio.Comment#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Visio.Comment): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.CommentUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: '<xref uid="visio!Visio.Interfaces.CommentUpdateData:interface" />'
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'visio!Visio.Interfaces.CommentUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'visio!Visio.Comment#set:member(2)'
-    package: visio!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'visio!Visio.Comment#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Visio.Comment): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="visio!Visio.Comment:class" />'
+          type:
+            - 'visio!Visio.Comment:class'
+  - uid: 'visio!Visio.Comment#text:member'
+    summary: |-
+      A string that contains the comment text.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
       return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'visio!Visio.Comment#toJSON:member(1)'
-    package: visio!
-    fullName: toJSON()
+        type:
+          - string
+  - uid: 'visio!Visio.Comment#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Visio.Comment object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Visio.Interfaces.CommentData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Visio.Comment object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Visio.Interfaces.CommentData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Visio.Interfaces.CommentData;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.CommentData:interface" />'
+        type:
+          - 'visio!Visio.Interfaces.CommentData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'visio!Visio.RequestContext:class'
+    name: RequestContext
+  - uid: 'visio!Visio.Comment:class'
+    name: Visio.Comment
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+    name: Visio.Interfaces.CommentLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
+    name: Interfaces.CommentUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'visio!Visio.Interfaces.CommentData:interface'
+    name: Visio.Interfaces.CommentData

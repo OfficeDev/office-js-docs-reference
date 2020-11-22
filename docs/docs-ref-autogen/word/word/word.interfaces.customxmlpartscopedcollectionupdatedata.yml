@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
-uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
-summary: >-
-  An interface for updating data on the CustomXmlPartScopedCollection object,
-  for use in `customXmlPartScopedCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the CustomXmlPartScopedCollection object, for use in
+      `customXmlPartScopedCollection.set({ ... })`<!-- -->.
+    name: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
+    fullName: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.CustomXmlPartData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.CustomXmlPartData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items~0:complex'
+    name: 'Word.Interfaces.CustomXmlPartData[]'
+    fullName: 'Word.Interfaces.CustomXmlPartData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
+        name: Word.Interfaces.CustomXmlPartData
+        fullName: Word.Interfaces.CustomXmlPartData
+      - name: '[]'
+        fullName: '[]'

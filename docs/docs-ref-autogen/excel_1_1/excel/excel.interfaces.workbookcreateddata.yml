@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.WorkbookCreatedData
-uid: 'excel!Excel.Interfaces.WorkbookCreatedData:interface'
-package: excel!
-fullName: Excel.Interfaces.WorkbookCreatedData
-summary: >-
-  An interface describing the data returned by calling
-  `workbookCreated.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorkbookCreatedData:interface'
+    summary: An interface describing the data returned by calling `workbookCreated.toJSON()`<!-- -->.
+    name: Excel.Interfaces.WorkbookCreatedData
+    fullName: Excel.Interfaces.WorkbookCreatedData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

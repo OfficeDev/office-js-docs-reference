@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.CellValueConditionalFormatData
-uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
-package: excel!
-fullName: Excel.Interfaces.CellValueConditionalFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `cellValueConditionalFormat.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
+    summary: An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.CellValueConditionalFormatData
+    fullName: Excel.Interfaces.CellValueConditionalFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

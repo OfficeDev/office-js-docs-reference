@@ -1,0 +1,267 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData:interface'
+    summary: >-
+      An interface for updating data on the TaskHistoryRecord object, for use in `taskHistoryRecord.set({ ... })`<!--
+      -->.
+    name: Excel.Interfaces.TaskHistoryRecordUpdateData
+    fullName: Excel.Interfaces.TaskHistoryRecordUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#anchorId:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#assignee:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#attributionUser:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#dueDate:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#historyRecordCreatedDate:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#id:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#percentComplete:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#priority:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#startDate:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#title:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#type:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#undoHistoryId:member'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#anchorId:member'
+    summary: >-
+      Represents the ID of the object to which the task is anchored (e.g., commentId for tasks attached to comments).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: anchorId
+    fullName: anchorId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'anchorId?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#assignee:member'
+    summary: >-
+      Represents the user assigned to the task for an "Assign" history record type, or the user to unassign from the
+      task for an "Unassign" history record type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: assignee
+    fullName: assignee
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'assignee?: Excel.User;'
+      return:
+        type:
+          - 'excel!Excel.User:interface'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#attributionUser:member'
+    summary: >-
+      Represents the user who created or changed the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: attributionUser
+    fullName: attributionUser
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attributionUser?: Excel.User;'
+      return:
+        type:
+          - 'excel!Excel.User:interface'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#dueDate:member'
+    summary: >-
+      Represents the task's due date. It is used for "Schedule" history record type. It is in UTC time zone. Can be set
+      to `null` to remove the due date. It should be set together with `startDate` to avoid conflicts.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dueDate
+    fullName: dueDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dueDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#historyRecordCreatedDate:member'
+    summary: >-
+      Represents creation date of the task history record. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: historyRecordCreatedDate
+    fullName: historyRecordCreatedDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'historyRecordCreatedDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#id:member'
+    summary: >-
+      ID for the history record.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#percentComplete:member'
+    summary: >-
+      Represents the task's completion percentage. It is used for the "Progress" history record type. This is a value
+      between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated
+      comment. Changing the completion from 100 to a lower value reactivates the associated comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: percentComplete
+    fullName: percentComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'percentComplete?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#priority:member'
+    summary: >-
+      Represents the task's priority. It is used for the "Priority" history record type. This is a value between 0 and
+      10 with 5 being the default priority if not set, where 0 represents the highest priority.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#startDate:member'
+    summary: >-
+      Represents the task's start date. It is used for the "Schedule" history record type. It is in UTC time zone. Can
+      be set to `null` to remove the start date. It should be set together with `dueDate` to avoid conflicts.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: startDate
+    fullName: startDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#title:member'
+    summary: >-
+      Represents the task's title. It is used for "Title" history record type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#type:member'
+    summary: >-
+      Represents task history record's type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        type?: Excel.TaskHistoryRecordType | "Unknown" | "Create" | "Assign" | "Unassign" | "UnassignAll" | "Schedule" |
+        "Progress" | "Priority" | "Delete" | "Undelete" | "SetTitle" | "Undo";
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#type~0:complex'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#undoHistoryId:member'
+    summary: >-
+      Represents the TaskHistoryRecord.id property that was undone for the "Undo" history record type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: undoHistoryId
+    fullName: undoHistoryId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'undoHistoryId?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.User:interface'
+    name: Excel.User
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordUpdateData#type~0:complex'
+    name: >-
+      Excel.TaskHistoryRecordType | "Unknown" | "Create" | "Assign" | "Unassign" | "UnassignAll" | "Schedule" |
+      "Progress" | "Priority" | "Delete" | "Undelete" | "SetTitle" | "Undo"
+    fullName: >-
+      Excel.TaskHistoryRecordType | "Unknown" | "Create" | "Assign" | "Unassign" | "UnassignAll" | "Schedule" |
+      "Progress" | "Priority" | "Delete" | "Undelete" | "SetTitle" | "Undo"
+    spec.typeScript:
+      - uid: 'excel!Excel.TaskHistoryRecordType:enum'
+        name: Excel.TaskHistoryRecordType
+        fullName: Excel.TaskHistoryRecordType
+      - name: ' | "Unknown" | "Create" | "Assign" | "Unassign" | "UnassignAll" | "Schedule" | "Progress" | "Priority" | "Delete" | "Undelete" | "SetTitle" | "Undo"'
+        fullName: ' | "Unknown" | "Create" | "Assign" | "Unassign" | "UnassignAll" | "Schedule" | "Progress" | "Priority" | "Delete" | "Undelete" | "SetTitle" | "Undo"'

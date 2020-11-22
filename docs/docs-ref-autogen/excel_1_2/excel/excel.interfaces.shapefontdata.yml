@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ShapeFontData
-uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
-package: excel!
-fullName: Excel.Interfaces.ShapeFontData
-summary: >-
-  An interface describing the data returned by calling `shapeFont.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
+    summary: An interface describing the data returned by calling `shapeFont.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ShapeFontData
+    fullName: Excel.Interfaces.ShapeFontData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

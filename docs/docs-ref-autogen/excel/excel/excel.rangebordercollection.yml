@@ -1,110 +1,74 @@
-### YamlMime:TSType
-name: Excel.RangeBorderCollection
-uid: 'excel!Excel.RangeBorderCollection:class'
-package: excel!
-fullName: Excel.RangeBorderCollection
-summary: >-
-  Represents the border objects that make up the range border.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorderCollection:class'
+    summary: |-
+      Represents the border objects that make up the range border.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.RangeBorderCollection#context:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
+    children:
+      - 'excel!Excel.RangeBorderCollection#context:member'
+      - 'excel!Excel.RangeBorderCollection#count:member'
+      - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#getItem:member(2)'
+      - 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+      - 'excel!Excel.RangeBorderCollection#items:member'
+      - 'excel!Excel.RangeBorderCollection#load:member(1)'
+      - 'excel!Excel.RangeBorderCollection#load:member(2)'
+      - 'excel!Excel.RangeBorderCollection#load:member(3)'
+      - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+      - 'excel!Excel.RangeBorderCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.RangeBorderCollection#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: count
-    uid: 'excel!Excel.RangeBorderCollection#count:member'
-    package: excel!
-    fullName: count
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeBorderCollection#count:member'
+    summary: |-
       Number of border objects in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly count: number;'
       return:
-        type: number
-  - name: items
-    uid: 'excel!Excel.RangeBorderCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.RangeBorder[];'
-      return:
-        type: '<xref uid="excel!Excel.RangeBorder:class" />[]'
-  - name: tintAndShade
-    uid: 'excel!Excel.RangeBorderCollection#tintAndShade:member'
-    package: excel!
-    fullName: tintAndShade
-    summary: >-
-      Specifies a double that lightens or darkens a color for Range Borders, the
-      value is between -1 (darkest) and 1 (brightest), with 0 for the original
-      color. A null value indicates that the entire border collections don't
-      have uniform tintAndShade setting.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'tintAndShade: number;'
-      return:
-        type: number
-methods:
-  - name: getItem(index)
-    uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(index)
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+    summary: |-
       Gets a border object using its name.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
-      parameters:
-        - id: index
-          description: >-
-            Index value of the border object to be retrieved. See
-            Excel.BorderIndex for details.
-          type: '<xref uid="excel!Excel.BorderIndex:enum" />'
       return:
-        type: '<xref uid="excel!Excel.RangeBorder:class" />'
+        type:
+          - 'excel!Excel.RangeBorder:class'
         description: |-
 
 
@@ -129,59 +93,51 @@ methods:
               }
           });
           ```
-  - name: getItem(indexString)
-    uid: 'excel!Excel.RangeBorderCollection#getItem:member(2)'
-    package: excel!
-    fullName: getItem(indexString)
-    summary: >-
-      Gets a border object using its name.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
-        | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" |
-        "DiagonalUp"): Excel.RangeBorder;
-      parameters:
-        - id: indexString
-          description: >-
-            Index value of the border object to be retrieved. See
-            Excel.BorderIndex for details.
-          type: >-
-            "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" |
-            "InsideVertical" | "InsideHorizontal" | "DiagonalDown" |
-            "DiagonalUp"
-      return:
-        type: '<xref uid="excel!Excel.RangeBorder:class" />'
-        description: ''
-  - name: getItemAt(index)
-    uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
-    package: excel!
-    fullName: getItemAt(index)
-    summary: >-
-      Gets a border object using its index.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getItemAt(index: number): Excel.RangeBorder;'
       parameters:
         - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
-          type: number
+          description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+          type:
+            - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(2)'
+    summary: |-
+      Gets a border object using its name.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(indexString)
+    fullName: getItem(indexString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal"
+        | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
       return:
-        type: '<xref uid="excel!Excel.RangeBorder:class" />'
+        type:
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
+      parameters:
+        - id: indexString
+          description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+          type:
+            - >-
+              "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
+              "DiagonalDown" | "DiagonalUp"
+  - uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+    summary: |-
+      Gets a border object using its index.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:class'
         description: |-
 
 
@@ -205,51 +161,59 @@ methods:
               }
           });
           ```
-  - name: load(options)
-    uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: 'excel!Excel.RangeBorderCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.RangeBorder[];'
+      return:
+        type:
+          - 'excel!Excel.RangeBorderCollection#items~0:complex'
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.RangeBorderCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
+        load(options?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.RangeBorderCollection;
+      return:
+        type:
+          - 'excel!Excel.RangeBorderCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.RangeBorderCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.RangeBorderCollection#load~0:complex'
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.RangeBorderCollection;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
       return:
-        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
+        type:
+          - 'excel!Excel.RangeBorderCollection:class'
         description: |-
 
 
@@ -276,53 +240,102 @@ methods:
               }
           });
           ```
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.RangeBorderCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.RangeBorderCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorderCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.RangeBorderCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.RangeBorderCollection#tintAndShade:member'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.RangeBorderCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.RangeBorderCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
+      uniform tintAndShade setting.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeBorderCollection#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.RangeBorderCollectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.RangeBorderCollectionData:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.RangeBorderCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.RangeBorder:class'
+    name: Excel.RangeBorder
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: Excel.BorderIndex
+  - uid: 'excel!Excel.RangeBorderCollection#items~0:complex'
+    name: 'Excel.RangeBorder[]'
+    fullName: 'Excel.RangeBorder[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeBorder:class'
+        name: Excel.RangeBorder
+        fullName: Excel.RangeBorder
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.RangeBorderCollection:class'
+    name: Excel.RangeBorderCollection
+  - uid: 'excel!Excel.RangeBorderCollection#load~0:complex'
+    name: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+        name: Excel.Interfaces.RangeBorderCollectionLoadOptions
+        fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionData:interface'
+    name: Excel.Interfaces.RangeBorderCollectionData

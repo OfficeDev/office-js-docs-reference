@@ -1,204 +1,389 @@
-### YamlMime:TSEnum
-name: Excel.DateFilterCondition
-uid: 'excel!Excel.DateFilterCondition:enum'
-package: excel!
-fullName: Excel.DateFilterCondition
-summary: >-
-  Enum representing all accepted conditions by which a date filter can be
-  applied. Used to configure the type of PivotFilter that is applied to the
-  field.
-
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: after
-    uid: 'excel!Excel.DateFilterCondition.after:member'
-    package: excel!
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DateFilterCondition:enum'
     summary: >-
+      Enum representing all accepted conditions by which a date filter can be applied. Used to configure the type of
+      PivotFilter that is applied to the field.
+
+
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DateFilterCondition
+    fullName: Excel.DateFilterCondition
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.DateFilterCondition.after:member'
+      - 'excel!Excel.DateFilterCondition.afterOrEqualTo:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodApril:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodAugust:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodDecember:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodFebruary:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodJanuary:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodJuly:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodJune:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodMarch:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodMay:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodNovember:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodOctober:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter1:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter2:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter3:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter4:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodSeptember:member'
+      - 'excel!Excel.DateFilterCondition.before:member'
+      - 'excel!Excel.DateFilterCondition.beforeOrEqualTo:member'
+      - 'excel!Excel.DateFilterCondition.between:member'
+      - 'excel!Excel.DateFilterCondition.equals:member'
+      - 'excel!Excel.DateFilterCondition.lastMonth:member'
+      - 'excel!Excel.DateFilterCondition.lastQuarter:member'
+      - 'excel!Excel.DateFilterCondition.lastWeek:member'
+      - 'excel!Excel.DateFilterCondition.lastYear:member'
+      - 'excel!Excel.DateFilterCondition.nextMonth:member'
+      - 'excel!Excel.DateFilterCondition.nextQuarter:member'
+      - 'excel!Excel.DateFilterCondition.nextWeek:member'
+      - 'excel!Excel.DateFilterCondition.nextYear:member'
+      - 'excel!Excel.DateFilterCondition.thisMonth:member'
+      - 'excel!Excel.DateFilterCondition.thisQuarter:member'
+      - 'excel!Excel.DateFilterCondition.thisWeek:member'
+      - 'excel!Excel.DateFilterCondition.thisYear:member'
+      - 'excel!Excel.DateFilterCondition.today:member'
+      - 'excel!Excel.DateFilterCondition.tomorrow:member'
+      - 'excel!Excel.DateFilterCondition.unknown:member'
+      - 'excel!Excel.DateFilterCondition.yearToDate:member'
+      - 'excel!Excel.DateFilterCondition.yesterday:member'
+  - uid: 'excel!Excel.DateFilterCondition.after:member'
+    summary: |-
       Date is after comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
-  - name: afterOrEqualTo
-    uid: 'excel!Excel.DateFilterCondition.afterOrEqualTo:member'
-    package: excel!
-    summary: >-
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    name: after
+    fullName: after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: 'excel!Excel.DateFilterCondition.afterOrEqualTo:member'
+    summary: |-
       Date is after or equal to comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
-  - name: allDatesInPeriodApril
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodApril:member'
-    package: excel!
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    name: afterOrEqualTo
+    fullName: afterOrEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AfterOrEqualTo"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodApril:member'
     summary: Date is in April.
-  - name: allDatesInPeriodAugust
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodAugust:member'
-    package: excel!
+    name: allDatesInPeriodApril
+    fullName: allDatesInPeriodApril
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodApril"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodAugust:member'
     summary: Date is in August.
-  - name: allDatesInPeriodDecember
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodDecember:member'
-    package: excel!
+    name: allDatesInPeriodAugust
+    fullName: allDatesInPeriodAugust
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodAugust"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodDecember:member'
     summary: Date is in December.
-  - name: allDatesInPeriodFebruary
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodFebruary:member'
-    package: excel!
+    name: allDatesInPeriodDecember
+    fullName: allDatesInPeriodDecember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodDecember"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodFebruary:member'
     summary: Date is in February.
-  - name: allDatesInPeriodJanuary
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJanuary:member'
-    package: excel!
+    name: allDatesInPeriodFebruary
+    fullName: allDatesInPeriodFebruary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodFebruary"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJanuary:member'
     summary: Date is in January.
-  - name: allDatesInPeriodJuly
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJuly:member'
-    package: excel!
+    name: allDatesInPeriodJanuary
+    fullName: allDatesInPeriodJanuary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJanuary"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJuly:member'
     summary: Date is in July.
-  - name: allDatesInPeriodJune
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJune:member'
-    package: excel!
+    name: allDatesInPeriodJuly
+    fullName: allDatesInPeriodJuly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJuly"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJune:member'
     summary: Date is in June.
-  - name: allDatesInPeriodMarch
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodMarch:member'
-    package: excel!
+    name: allDatesInPeriodJune
+    fullName: allDatesInPeriodJune
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJune"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodMarch:member'
     summary: Date is in March.
-  - name: allDatesInPeriodMay
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodMay:member'
-    package: excel!
+    name: allDatesInPeriodMarch
+    fullName: allDatesInPeriodMarch
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMarch"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodMay:member'
     summary: Date is in May.
-  - name: allDatesInPeriodNovember
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodNovember:member'
-    package: excel!
+    name: allDatesInPeriodMay
+    fullName: allDatesInPeriodMay
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMay"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodNovember:member'
     summary: Date is in November.
-  - name: allDatesInPeriodOctober
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodOctober:member'
-    package: excel!
+    name: allDatesInPeriodNovember
+    fullName: allDatesInPeriodNovember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodNovember"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodOctober:member'
     summary: Date is in October.
-  - name: allDatesInPeriodQuarter1
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter1:member'
-    package: excel!
+    name: allDatesInPeriodOctober
+    fullName: allDatesInPeriodOctober
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodOctober"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter1:member'
     summary: Date is in Quarter 1.
-  - name: allDatesInPeriodQuarter2
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter2:member'
-    package: excel!
+    name: allDatesInPeriodQuarter1
+    fullName: allDatesInPeriodQuarter1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter1"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter2:member'
     summary: Date is in Quarter 2.
-  - name: allDatesInPeriodQuarter3
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter3:member'
-    package: excel!
+    name: allDatesInPeriodQuarter2
+    fullName: allDatesInPeriodQuarter2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter2"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter3:member'
     summary: Date is in Quarter 3.
-  - name: allDatesInPeriodQuarter4
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter4:member'
-    package: excel!
+    name: allDatesInPeriodQuarter3
+    fullName: allDatesInPeriodQuarter3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter3"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter4:member'
     summary: Date is in Quarter 4.
-  - name: allDatesInPeriodSeptember
-    uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodSeptember:member'
-    package: excel!
+    name: allDatesInPeriodQuarter4
+    fullName: allDatesInPeriodQuarter4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter4"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodSeptember:member'
     summary: Date is in September.
-  - name: before
-    uid: 'excel!Excel.DateFilterCondition.before:member'
-    package: excel!
-    summary: >-
+    name: allDatesInPeriodSeptember
+    fullName: allDatesInPeriodSeptember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodSeptember"'
+  - uid: 'excel!Excel.DateFilterCondition.before:member'
+    summary: |-
       Date is before comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
-  - name: beforeOrEqualTo
-    uid: 'excel!Excel.DateFilterCondition.beforeOrEqualTo:member'
-    package: excel!
-    summary: >-
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    name: before
+    fullName: before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'
+  - uid: 'excel!Excel.DateFilterCondition.beforeOrEqualTo:member'
+    summary: |-
       Date is before or equal to comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
-  - name: between
-    uid: 'excel!Excel.DateFilterCondition.between:member'
-    package: excel!
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    name: beforeOrEqualTo
+    fullName: beforeOrEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BeforeOrEqualTo"'
+  - uid: 'excel!Excel.DateFilterCondition.between:member'
     summary: >-
       Between `lowerBound` and `upperBound` dates.
 
 
-      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->.
-      Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
-  - name: equals
-    uid: 'excel!Excel.DateFilterCondition.equals:member'
-    package: excel!
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->,
+      `exclusive`<!-- -->}<!-- -->.
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Between"'
+  - uid: 'excel!Excel.DateFilterCondition.equals:member'
     summary: >-
       Equals comparator criterion.
 
 
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
-  - name: lastMonth
-    uid: 'excel!Excel.DateFilterCondition.lastMonth:member'
-    package: excel!
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!--
+      -->}<!-- -->.
+    name: equals
+    fullName: equals
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Equals"'
+  - uid: 'excel!Excel.DateFilterCondition.lastMonth:member'
     summary: Date is last month.
-  - name: lastQuarter
-    uid: 'excel!Excel.DateFilterCondition.lastQuarter:member'
-    package: excel!
+    name: lastMonth
+    fullName: lastMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastMonth"'
+  - uid: 'excel!Excel.DateFilterCondition.lastQuarter:member'
     summary: Date is last quarter.
-  - name: lastWeek
-    uid: 'excel!Excel.DateFilterCondition.lastWeek:member'
-    package: excel!
+    name: lastQuarter
+    fullName: lastQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastQuarter"'
+  - uid: 'excel!Excel.DateFilterCondition.lastWeek:member'
     summary: Date is last week.
-  - name: lastYear
-    uid: 'excel!Excel.DateFilterCondition.lastYear:member'
-    package: excel!
+    name: lastWeek
+    fullName: lastWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastWeek"'
+  - uid: 'excel!Excel.DateFilterCondition.lastYear:member'
     summary: Date is last year.
-  - name: nextMonth
-    uid: 'excel!Excel.DateFilterCondition.nextMonth:member'
-    package: excel!
+    name: lastYear
+    fullName: lastYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastYear"'
+  - uid: 'excel!Excel.DateFilterCondition.nextMonth:member'
     summary: Date is next month.
-  - name: nextQuarter
-    uid: 'excel!Excel.DateFilterCondition.nextQuarter:member'
-    package: excel!
+    name: nextMonth
+    fullName: nextMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextMonth"'
+  - uid: 'excel!Excel.DateFilterCondition.nextQuarter:member'
     summary: Date is next quarter.
-  - name: nextWeek
-    uid: 'excel!Excel.DateFilterCondition.nextWeek:member'
-    package: excel!
+    name: nextQuarter
+    fullName: nextQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextQuarter"'
+  - uid: 'excel!Excel.DateFilterCondition.nextWeek:member'
     summary: Date is next week.
-  - name: nextYear
-    uid: 'excel!Excel.DateFilterCondition.nextYear:member'
-    package: excel!
+    name: nextWeek
+    fullName: nextWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextWeek"'
+  - uid: 'excel!Excel.DateFilterCondition.nextYear:member'
     summary: Date is next year.
-  - name: thisMonth
-    uid: 'excel!Excel.DateFilterCondition.thisMonth:member'
-    package: excel!
+    name: nextYear
+    fullName: nextYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextYear"'
+  - uid: 'excel!Excel.DateFilterCondition.thisMonth:member'
     summary: Date is this month.
-  - name: thisQuarter
-    uid: 'excel!Excel.DateFilterCondition.thisQuarter:member'
-    package: excel!
+    name: thisMonth
+    fullName: thisMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisMonth"'
+  - uid: 'excel!Excel.DateFilterCondition.thisQuarter:member'
     summary: Date is this quarter.
-  - name: thisWeek
-    uid: 'excel!Excel.DateFilterCondition.thisWeek:member'
-    package: excel!
+    name: thisQuarter
+    fullName: thisQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisQuarter"'
+  - uid: 'excel!Excel.DateFilterCondition.thisWeek:member'
     summary: Date is this week.
-  - name: thisYear
-    uid: 'excel!Excel.DateFilterCondition.thisYear:member'
-    package: excel!
+    name: thisWeek
+    fullName: thisWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisWeek"'
+  - uid: 'excel!Excel.DateFilterCondition.thisYear:member'
     summary: Date is this year.
-  - name: today
-    uid: 'excel!Excel.DateFilterCondition.today:member'
-    package: excel!
+    name: thisYear
+    fullName: thisYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisYear"'
+  - uid: 'excel!Excel.DateFilterCondition.today:member'
     summary: Date is today.
-  - name: tomorrow
-    uid: 'excel!Excel.DateFilterCondition.tomorrow:member'
-    package: excel!
+    name: today
+    fullName: today
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Today"'
+  - uid: 'excel!Excel.DateFilterCondition.tomorrow:member'
     summary: Date is tomorrow.
-  - name: unknown
-    uid: 'excel!Excel.DateFilterCondition.unknown:member'
-    package: excel!
+    name: tomorrow
+    fullName: tomorrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tomorrow"'
+  - uid: 'excel!Excel.DateFilterCondition.unknown:member'
     summary: DateFilterCondition is unknown or unsupported.
-  - name: yearToDate
-    uid: 'excel!Excel.DateFilterCondition.yearToDate:member'
-    package: excel!
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'
+  - uid: 'excel!Excel.DateFilterCondition.yearToDate:member'
     summary: Date is in the same year to date.
-  - name: yesterday
-    uid: 'excel!Excel.DateFilterCondition.yesterday:member'
-    package: excel!
+    name: yearToDate
+    fullName: yearToDate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"YearToDate"'
+  - uid: 'excel!Excel.DateFilterCondition.yesterday:member'
     summary: Date is yesterday.
+    name: yesterday
+    fullName: yesterday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Yesterday"'

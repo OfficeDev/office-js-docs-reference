@@ -1,47 +1,46 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.InkAnalysisData
-uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.InkAnalysisData
-summary: An interface describing the data returned by calling "inkAnalysis.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisData#id:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
+    summary: An interface describing the data returned by calling "inkAnalysis.toJSON()".
+    name: OneNote.Interfaces.InkAnalysisData
+    fullName: OneNote.Interfaces.InkAnalysisData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
-    fullName: id
-    summary: >-
+    children:
+      - 'onenote!OneNote.Interfaces.InkAnalysisData#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisData#page:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisData#id:member'
+    summary: |-
       Gets the ID of the InkAnalysis object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: page
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisData#page:member'
-    package: onenote!
-    fullName: page
-    summary: >-
+        type:
+          - string
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisData#page:member'
+    summary: |-
       Gets the parent page object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: page
+    fullName: page
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'page?: OneNote.Interfaces.PageData;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.PageData:interface" />'
+        type:
+          - 'onenote!OneNote.Interfaces.PageData:interface'
+references:
+  - uid: 'onenote!OneNote.Interfaces.PageData:interface'
+    name: OneNote.Interfaces.PageData

@@ -1,33 +1,51 @@
-### YamlMime:TSEnum
-name: Excel.RangeUnderlineStyle
-uid: 'excel!Excel.RangeUnderlineStyle:enum'
-package: excel!
-fullName: Excel.RangeUnderlineStyle
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: double
-    uid: 'excel!Excel.RangeUnderlineStyle.double:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeUnderlineStyle:enum'
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.RangeUnderlineStyle
+    fullName: Excel.RangeUnderlineStyle
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: doubleAccountant
-    uid: 'excel!Excel.RangeUnderlineStyle.doubleAccountant:member'
-    package: excel!
-    summary: ''
-  - name: none
-    uid: 'excel!Excel.RangeUnderlineStyle.none:member'
-    package: excel!
-    summary: ''
-  - name: single
-    uid: 'excel!Excel.RangeUnderlineStyle.single:member'
-    package: excel!
-    summary: ''
-  - name: singleAccountant
-    uid: 'excel!Excel.RangeUnderlineStyle.singleAccountant:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.RangeUnderlineStyle.double:member'
+      - 'excel!Excel.RangeUnderlineStyle.doubleAccountant:member'
+      - 'excel!Excel.RangeUnderlineStyle.none:member'
+      - 'excel!Excel.RangeUnderlineStyle.single:member'
+      - 'excel!Excel.RangeUnderlineStyle.singleAccountant:member'
+  - uid: 'excel!Excel.RangeUnderlineStyle.double:member'
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: 'excel!Excel.RangeUnderlineStyle.doubleAccountant:member'
+    name: doubleAccountant
+    fullName: doubleAccountant
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DoubleAccountant"'
+  - uid: 'excel!Excel.RangeUnderlineStyle.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: 'excel!Excel.RangeUnderlineStyle.single:member'
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'
+  - uid: 'excel!Excel.RangeUnderlineStyle.singleAccountant:member'
+    name: singleAccountant
+    fullName: singleAccountant
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SingleAccountant"'

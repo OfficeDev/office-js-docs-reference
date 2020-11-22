@@ -1,49 +1,49 @@
-### YamlMime:TSType
-name: Word.Interfaces.CustomXmlPartData
-uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
-package: word!
-fullName: Word.Interfaces.CustomXmlPartData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPart.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: id
-    uid: 'word!Word.Interfaces.CustomXmlPartData#id:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
+    summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+    name: Word.Interfaces.CustomXmlPartData
+    fullName: Word.Interfaces.CustomXmlPartData
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: id
+    children:
+      - 'word!Word.Interfaces.CustomXmlPartData#id:member'
+      - 'word!Word.Interfaces.CustomXmlPartData#namespaceUri:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartData#id:member'
     summary: >-
       Gets the ID of the custom XML part. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: namespaceUri
-    uid: 'word!Word.Interfaces.CustomXmlPartData#namespaceUri:member'
-    package: word!
-    fullName: namespaceUri
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.CustomXmlPartData#namespaceUri:member'
     summary: >-
       Gets the namespace URI of the custom XML part. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: namespaceUri
+    fullName: namespaceUri
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'namespaceUri?: string;'
       return:
-        type: string
+        type:
+          - string

@@ -1,32 +1,32 @@
-### YamlMime:TSType
-name: Word.Interfaces.DocumentUpdateData
-uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.DocumentUpdateData
-summary: >-
-  An interface for updating data on the Document object, for use in
-  `document.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: body
-    uid: 'word!Word.Interfaces.DocumentUpdateData#body:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
+    summary: 'An interface for updating data on the Document object, for use in `document.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.DocumentUpdateData
+    fullName: Word.Interfaces.DocumentUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: body
+    children:
+      - 'word!Word.Interfaces.DocumentUpdateData#body:member'
+  - uid: 'word!Word.Interfaces.DocumentUpdateData#body:member'
     summary: >-
-      Gets the body object of the document. The body is the text that excludes
-      headers, footers, footnotes, textboxes, etc..
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc..
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
+        type:
+          - 'word!Word.Interfaces.BodyUpdateData:interface'
+references:
+  - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
+    name: Word.Interfaces.BodyUpdateData

@@ -1,31 +1,27 @@
-### YamlMime:TSType
-name: Excel.Interfaces.PivotTableStyleUpdateData
-uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.PivotTableStyleUpdateData
-summary: >-
-  An interface for updating data on the PivotTableStyle object, for use in
-  `pivotTableStyle.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: name
-    uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
+    summary: 'An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.PivotTableStyleUpdateData
+    fullName: Excel.Interfaces.PivotTableStyleUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: name
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
+    summary: |-
       Gets the name of the PivotTableStyle.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
+        type:
+          - string

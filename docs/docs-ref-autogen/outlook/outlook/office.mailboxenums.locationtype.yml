@@ -1,27 +1,36 @@
-### YamlMime:TSEnum
-name: Office.MailboxEnums.LocationType
-uid: 'outlook!Office.MailboxEnums.LocationType:enum'
-package: outlook!
-fullName: Office.MailboxEnums.LocationType
-summary: >-
-  Specifies an appointment location's type.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.LocationType:enum'
+    summary: |-
+      Specifies an appointment location's type.
 
-
-  \[ [API set: Mailbox
-  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: >-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Custom
-    uid: 'outlook!Office.MailboxEnums.LocationType.Custom:member'
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.MailboxEnums.LocationType
+    fullName: Office.MailboxEnums.LocationType
+    langs:
+      - typeScript
+    type: enum
     package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.LocationType.Custom:member'
+      - 'outlook!Office.MailboxEnums.LocationType.Room:member'
+  - uid: 'outlook!Office.MailboxEnums.LocationType.Custom:member'
     summary: A custom location.
-  - name: Room
-    uid: 'outlook!Office.MailboxEnums.LocationType.Room:member'
-    package: outlook!
+    name: Custom
+    fullName: Custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"custom"'
+  - uid: 'outlook!Office.MailboxEnums.LocationType.Room:member'
     summary: A conference room or similar resource.
+    name: Room
+    fullName: Room
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"room"'

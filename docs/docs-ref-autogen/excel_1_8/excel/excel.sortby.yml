@@ -1,24 +1,32 @@
-### YamlMime:TSEnum
-name: Excel.SortBy
-uid: 'excel!Excel.SortBy:enum'
-package: excel!
-fullName: Excel.SortBy
-summary: >-
-  Represents the sort direction.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SortBy:enum'
+    summary: |-
+      Represents the sort direction.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: ascending
-    uid: 'excel!Excel.SortBy.ascending:member'
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.SortBy
+    fullName: Excel.SortBy
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.SortBy.ascending:member'
+      - 'excel!Excel.SortBy.descending:member'
+  - uid: 'excel!Excel.SortBy.ascending:member'
     summary: Ascending sort. Smallest to largest or A to Z.
-  - name: descending
-    uid: 'excel!Excel.SortBy.descending:member'
-    package: excel!
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ascending"'
+  - uid: 'excel!Excel.SortBy.descending:member'
     summary: Descending sort. Largest to smallest or Z to A.
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Descending"'

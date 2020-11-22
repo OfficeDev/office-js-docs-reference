@@ -1,71 +1,62 @@
-### YamlMime:TSType
-name: Excel.ShapeActivatedEventArgs
-uid: 'excel!Excel.ShapeActivatedEventArgs:interface'
-package: excel!
-fullName: Excel.ShapeActivatedEventArgs
-summary: >-
-  Provides information about the shape that raised the Activated event.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeActivatedEventArgs:interface'
+    summary: |-
+      Provides information about the shape that raised the Activated event.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: shapeId
-    uid: 'excel!Excel.ShapeActivatedEventArgs#shapeId:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeActivatedEventArgs
+    fullName: Excel.ShapeActivatedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: shapeId
-    summary: >-
+    children:
+      - 'excel!Excel.ShapeActivatedEventArgs#shapeId:member'
+      - 'excel!Excel.ShapeActivatedEventArgs#type:member'
+      - 'excel!Excel.ShapeActivatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.ShapeActivatedEventArgs#shapeId:member'
+    summary: |-
       Gets the id of the activated shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shapeId
+    fullName: shapeId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shapeId: string;'
       return:
-        type: string
-  - name: type
-    uid: 'excel!Excel.ShapeActivatedEventArgs#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.ShapeActivatedEventArgs#type:member'
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: "ShapeActivated";'
       return:
-        type: '"ShapeActivated"'
-  - name: worksheetId
-    uid: 'excel!Excel.ShapeActivatedEventArgs#worksheetId:member'
-    package: excel!
-    fullName: worksheetId
-    summary: >-
+        type:
+          - '"ShapeActivated"'
+  - uid: 'excel!Excel.ShapeActivatedEventArgs#worksheetId:member'
+    summary: |-
       Gets the id of the worksheet in which the shape is activated.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'worksheetId: string;'
       return:
-        type: string
+        type:
+          - string

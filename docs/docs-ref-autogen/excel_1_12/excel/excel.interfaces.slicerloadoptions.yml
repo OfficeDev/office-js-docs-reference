@@ -1,243 +1,221 @@
-### YamlMime:TSType
-name: Excel.Interfaces.SlicerLoadOptions
-uid: 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.SlicerLoadOptions
-summary: >-
-  Represents a slicer object in the workbook.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
+    summary: |-
+      Represents a slicer object in the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.SlicerLoadOptions
+    fullName: Excel.Interfaces.SlicerLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#caption:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#isFilterCleared:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#width:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: caption
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#caption:member'
-    package: excel!
-    fullName: caption
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#caption:member'
+    summary: |-
       Represents the caption of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: caption
+    fullName: caption
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'caption?: boolean;'
       return:
-        type: boolean
-  - name: height
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#height:member'
-    package: excel!
-    fullName: height
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#height:member'
     summary: >-
-      Represents the height, in points, of the slicer. Throws an "The argument
-      is invalid or missing or has an incorrect format." exception when set with
-      negative value or zero as input.
+      Represents the height, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#id:member'
+    summary: |-
       Represents the unique id of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: isFilterCleared
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#isFilterCleared:member'
-    package: excel!
-    fullName: isFilterCleared
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#isFilterCleared:member'
+    summary: |-
       True if all filters currently applied on the slicer are cleared.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isFilterCleared
+    fullName: isFilterCleared
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isFilterCleared?: boolean;'
       return:
-        type: boolean
-  - name: left
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#left:member'
-    package: excel!
-    fullName: left
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#left:member'
     summary: >-
-      Represents the distance, in points, from the left side of the slicer to
-      the left of the worksheet. Throws an "The argument is invalid or missing
-      or has an incorrect format." exception when set with negative value as
-      input.
+      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'left?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#name:member'
+    summary: |-
       Represents the name of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: sortBy
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
-    package: excel!
-    fullName: sortBy
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
     summary: >-
-      Represents the sort order of the items in the slicer. Possible values are:
-      "DataSourceOrder", "Ascending", "Descending".
+      Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
+      "Descending".
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sortBy
+    fullName: sortBy
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'sortBy?: boolean;'
       return:
-        type: boolean
-  - name: style
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#style:member'
-    package: excel!
-    fullName: style
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#style:member'
     summary: >-
-      Constant value that represents the Slicer style. Possible values are:
-      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
-      through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
+      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: boolean;'
       return:
-        type: boolean
-  - name: top
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#top:member'
-    package: excel!
-    fullName: top
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the
-      top of the worksheet. Throws an "The argument is invalid or missing or has
-      an incorrect format." exception when set with negative value as input.
+      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'top?: boolean;'
       return:
-        type: boolean
-  - name: width
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#width:member'
-    package: excel!
-    fullName: width
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#width:member'
     summary: >-
-      Represents the width, in points, of the slicer. Throws an "The argument is
-      invalid or missing or has an incorrect format." exception when set with
-      negative value or zero as input.
+      Represents the width, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: boolean;'
       return:
-        type: boolean
-  - name: worksheet
-    uid: 'excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member'
-    package: excel!
-    fullName: worksheet
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member'
+    summary: |-
       Represents the worksheet containing the slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

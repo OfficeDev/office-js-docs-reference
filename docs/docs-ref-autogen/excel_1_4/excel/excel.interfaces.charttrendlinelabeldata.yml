@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartTrendlineLabelData
-uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartTrendlineLabelData
-summary: >-
-  An interface describing the data returned by calling
-  `chartTrendlineLabel.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
+    summary: An interface describing the data returned by calling `chartTrendlineLabel.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartTrendlineLabelData
+    fullName: Excel.Interfaces.ChartTrendlineLabelData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

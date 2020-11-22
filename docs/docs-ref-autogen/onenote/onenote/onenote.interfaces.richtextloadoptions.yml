@@ -1,103 +1,93 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.RichTextLoadOptions
-uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
-package: onenote!
-fullName: OneNote.Interfaces.RichTextLoadOptions
-summary: >-
-  Represents a RichText object in a Paragraph.
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
+    summary: |-
+      Represents a RichText object in a Paragraph.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#$all:member'
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.RichTextLoadOptions
+    fullName: OneNote.Interfaces.RichTextLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#text:member'
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#$all:member'
+    name: $all
     fullName: $all
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#id:member'
-    package: onenote!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#id:member'
+    summary: |-
       Gets the ID of the RichText object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: languageId
-    uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
-    package: onenote!
-    fullName: languageId
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
+    summary: |-
       The language id of the text. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: languageId
+    fullName: languageId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'languageId?: boolean;'
       return:
-        type: boolean
-  - name: paragraph
-    uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
-    package: onenote!
-    fullName: paragraph
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
+    summary: |-
       Gets the Paragraph object that contains the RichText object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraph
+    fullName: paragraph
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
-          />
-  - name: text
-    uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#text:member'
-    package: onenote!
-    fullName: text
-    summary: >-
+        type:
+          - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#text:member'
+    summary: |-
       Gets the text content of the RichText object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+    name: OneNote.Interfaces.ParagraphLoadOptions

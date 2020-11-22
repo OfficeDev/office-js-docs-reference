@@ -1,44 +1,43 @@
-### YamlMime:TSType
-name: Office.NodeInsertedEventArgs
-uid: 'office!Office.NodeInsertedEventArgs:interface'
-package: office!
-fullName: Office.NodeInsertedEventArgs
-summary: >-
-  Provides information about the inserted node that raised the nodeInserted
-  event.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: isUndoRedo
-    uid: 'office!Office.NodeInsertedEventArgs#isUndoRedo:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.NodeInsertedEventArgs:interface'
+    summary: Provides information about the inserted node that raised the nodeInserted event.
+    name: Office.NodeInsertedEventArgs
+    fullName: Office.NodeInsertedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: office!
+    children:
+      - 'office!Office.NodeInsertedEventArgs#isUndoRedo:member'
+      - 'office!Office.NodeInsertedEventArgs#newNode:member'
+  - uid: 'office!Office.NodeInsertedEventArgs#isUndoRedo:member'
+    summary: Gets whether the node was inserted as part of an Undo/Redo action by the user.
+    name: isUndoRedo
     fullName: isUndoRedo
-    summary: >-
-      Gets whether the node was inserted as part of an Undo/Redo action by the
-      user.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isUndoRedo: boolean;'
       return:
-        type: boolean
-  - name: newNode
-    uid: 'office!Office.NodeInsertedEventArgs#newNode:member'
-    package: office!
-    fullName: newNode
-    summary: >-
+        type:
+          - boolean
+  - uid: 'office!Office.NodeInsertedEventArgs#newNode:member'
+    summary: |-
       Gets the node that was just added to the CustomXMLPart object.
 
-
-      Note that this node may have children, if a subtree was just added to the
-      document.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Note that this node may have children, if a subtree was just added to the document.
+    name: newNode
+    fullName: newNode
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'newNode: CustomXmlNode;'
       return:
-        type: '<xref uid="office!Office.CustomXmlNode:interface" />'
+        type:
+          - 'office!Office.CustomXmlNode:interface'
+references:
+  - uid: 'office!Office.CustomXmlNode:interface'
+    name: CustomXmlNode

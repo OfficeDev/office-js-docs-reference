@@ -1,269 +1,245 @@
-### YamlMime:TSType
-name: Excel.CellPropertiesFormatLoadOptions
-uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
-package: excel!
-fullName: Excel.CellPropertiesFormatLoadOptions
-summary: >-
-  Represents which properties to load on the format object.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
+    summary: |-
+      Represents which properties to load on the format object.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: autoIndent
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#autoIndent:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesFormatLoadOptions
+    fullName: Excel.CellPropertiesFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: autoIndent
-    summary: >-
+    children:
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#autoIndent:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#borders:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#fill:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#font:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#horizontalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#indentLevel:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#protection:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#readingOrder:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#shrinkToFit:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#textOrientation:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardHeight:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardWidth:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#verticalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#wrapText:member'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#autoIndent:member'
+    summary: |-
       Specifies whether to load on the `autoIndent` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'autoIndent?: boolean;'
       return:
-        type: boolean
-  - name: borders
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#borders:member'
-    package: excel!
-    fullName: borders
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#borders:member'
+    summary: |-
       Specifies whether to load on the `borders` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'borders?: Excel.CellPropertiesBorderLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.CellPropertiesBorderLoadOptions:interface" />'
-  - name: fill
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#fill:member'
-    package: excel!
-    fullName: fill
-    summary: >-
+        type:
+          - 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#fill:member'
+    summary: |-
       Specifies whether to load on the `fill` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'fill?: Excel.CellPropertiesFillLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.CellPropertiesFillLoadOptions:interface" />'
-  - name: font
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#font:member'
-    package: excel!
-    fullName: font
-    summary: >-
+        type:
+          - 'excel!Excel.CellPropertiesFillLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#font:member'
+    summary: |-
       Specifies whether to load on the `font` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Excel.CellPropertiesFontLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.CellPropertiesFontLoadOptions:interface" />'
-  - name: horizontalAlignment
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#horizontalAlignment:member'
-    package: excel!
-    fullName: horizontalAlignment
-    summary: >-
+        type:
+          - 'excel!Excel.CellPropertiesFontLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#horizontalAlignment:member'
+    summary: |-
       Specifies whether to load on the `horizontalAlignment` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'horizontalAlignment?: boolean;'
       return:
-        type: boolean
-  - name: indentLevel
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#indentLevel:member'
-    package: excel!
-    fullName: indentLevel
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#indentLevel:member'
+    summary: |-
       Specifies whether to load on the `indentLevel` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'indentLevel?: boolean;'
       return:
-        type: boolean
-  - name: protection
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#protection:member'
-    package: excel!
-    fullName: protection
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#protection:member'
+    summary: |-
       Specifies whether to load on the `protection` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'protection?: boolean;'
       return:
-        type: boolean
-  - name: readingOrder
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#readingOrder:member'
-    package: excel!
-    fullName: readingOrder
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#readingOrder:member'
+    summary: |-
       Specifies whether to load on the `readingOrder` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readingOrder?: boolean;'
       return:
-        type: boolean
-  - name: shrinkToFit
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#shrinkToFit:member'
-    package: excel!
-    fullName: shrinkToFit
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#shrinkToFit:member'
+    summary: |-
       Specifies whether to load on the `shrinkToFit` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shrinkToFit?: boolean;'
       return:
-        type: boolean
-  - name: textOrientation
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#textOrientation:member'
-    package: excel!
-    fullName: textOrientation
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#textOrientation:member'
+    summary: |-
       Specifies whether to load on the `textOrientation` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'textOrientation?: boolean;'
       return:
-        type: boolean
-  - name: useStandardHeight
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardHeight:member'
-    package: excel!
-    fullName: useStandardHeight
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardHeight:member'
+    summary: |-
       Specifies whether to load on the `useStandardHeight` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useStandardHeight
+    fullName: useStandardHeight
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useStandardHeight?: boolean;'
       return:
-        type: boolean
-  - name: useStandardWidth
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardWidth:member'
-    package: excel!
-    fullName: useStandardWidth
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardWidth:member'
+    summary: |-
       Specifies whether to load on the `useStandardWidth` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useStandardWidth
+    fullName: useStandardWidth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useStandardWidth?: boolean;'
       return:
-        type: boolean
-  - name: verticalAlignment
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#verticalAlignment:member'
-    package: excel!
-    fullName: verticalAlignment
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#verticalAlignment:member'
+    summary: |-
       Specifies whether to load on the `verticalAlignment` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'verticalAlignment?: boolean;'
       return:
-        type: boolean
-  - name: wrapText
-    uid: 'excel!Excel.CellPropertiesFormatLoadOptions#wrapText:member'
-    package: excel!
-    fullName: wrapText
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#wrapText:member'
+    summary: |-
       Specifies whether to load on the `wrapText` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wrapText
+    fullName: wrapText
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'wrapText?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
+    name: Excel.CellPropertiesBorderLoadOptions
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions:interface'
+    name: Excel.CellPropertiesFillLoadOptions
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions:interface'
+    name: Excel.CellPropertiesFontLoadOptions

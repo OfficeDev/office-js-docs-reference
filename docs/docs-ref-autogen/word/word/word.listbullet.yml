@@ -1,41 +1,67 @@
-### YamlMime:TSEnum
-name: Word.ListBullet
-uid: 'word!Word.ListBullet:enum'
-package: word!
-fullName: Word.ListBullet
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: arrow
-    uid: 'word!Word.ListBullet.arrow:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.ListBullet:enum'
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.ListBullet
+    fullName: Word.ListBullet
+    langs:
+      - typeScript
+    type: enum
     package: word!
-    summary: ''
-  - name: checkmark
-    uid: 'word!Word.ListBullet.checkmark:member'
-    package: word!
-    summary: ''
-  - name: custom
-    uid: 'word!Word.ListBullet.custom:member'
-    package: word!
-    summary: ''
-  - name: diamonds
-    uid: 'word!Word.ListBullet.diamonds:member'
-    package: word!
-    summary: ''
-  - name: hollow
-    uid: 'word!Word.ListBullet.hollow:member'
-    package: word!
-    summary: ''
-  - name: solid
-    uid: 'word!Word.ListBullet.solid:member'
-    package: word!
-    summary: ''
-  - name: square
-    uid: 'word!Word.ListBullet.square:member'
-    package: word!
-    summary: ''
+    children:
+      - 'word!Word.ListBullet.arrow:member'
+      - 'word!Word.ListBullet.checkmark:member'
+      - 'word!Word.ListBullet.custom:member'
+      - 'word!Word.ListBullet.diamonds:member'
+      - 'word!Word.ListBullet.hollow:member'
+      - 'word!Word.ListBullet.solid:member'
+      - 'word!Word.ListBullet.square:member'
+  - uid: 'word!Word.ListBullet.arrow:member'
+    name: arrow
+    fullName: arrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Arrow"'
+  - uid: 'word!Word.ListBullet.checkmark:member'
+    name: checkmark
+    fullName: checkmark
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Checkmark"'
+  - uid: 'word!Word.ListBullet.custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: 'word!Word.ListBullet.diamonds:member'
+    name: diamonds
+    fullName: diamonds
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Diamonds"'
+  - uid: 'word!Word.ListBullet.hollow:member'
+    name: hollow
+    fullName: hollow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hollow"'
+  - uid: 'word!Word.ListBullet.solid:member'
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Solid"'
+  - uid: 'word!Word.ListBullet.square:member'
+    name: square
+    fullName: square
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Square"'

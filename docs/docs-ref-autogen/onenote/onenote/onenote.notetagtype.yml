@@ -1,61 +1,107 @@
-### YamlMime:TSEnum
-name: OneNote.NoteTagType
-uid: 'onenote!OneNote.NoteTagType:enum'
-package: onenote!
-fullName: OneNote.NoteTagType
-summary: >-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: address
-    uid: 'onenote!OneNote.NoteTagType.address:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.NoteTagType:enum'
+    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    name: OneNote.NoteTagType
+    fullName: OneNote.NoteTagType
+    langs:
+      - typeScript
+    type: enum
     package: onenote!
-    summary: ''
-  - name: contact
-    uid: 'onenote!OneNote.NoteTagType.contact:member'
-    package: onenote!
-    summary: ''
-  - name: critical
-    uid: 'onenote!OneNote.NoteTagType.critical:member'
-    package: onenote!
-    summary: ''
-  - name: idea
-    uid: 'onenote!OneNote.NoteTagType.idea:member'
-    package: onenote!
-    summary: ''
-  - name: important
-    uid: 'onenote!OneNote.NoteTagType.important:member'
-    package: onenote!
-    summary: ''
-  - name: phoneNumber
-    uid: 'onenote!OneNote.NoteTagType.phoneNumber:member'
-    package: onenote!
-    summary: ''
-  - name: question
-    uid: 'onenote!OneNote.NoteTagType.question:member'
-    package: onenote!
-    summary: ''
-  - name: toDo
-    uid: 'onenote!OneNote.NoteTagType.toDo:member'
-    package: onenote!
-    summary: ''
-  - name: toDoPriority1
-    uid: 'onenote!OneNote.NoteTagType.toDoPriority1:member'
-    package: onenote!
-    summary: ''
-  - name: toDoPriority2
-    uid: 'onenote!OneNote.NoteTagType.toDoPriority2:member'
-    package: onenote!
-    summary: ''
-  - name: unknown
-    uid: 'onenote!OneNote.NoteTagType.unknown:member'
-    package: onenote!
-    summary: ''
-  - name: website
-    uid: 'onenote!OneNote.NoteTagType.website:member'
-    package: onenote!
-    summary: ''
+    children:
+      - 'onenote!OneNote.NoteTagType.address:member'
+      - 'onenote!OneNote.NoteTagType.contact:member'
+      - 'onenote!OneNote.NoteTagType.critical:member'
+      - 'onenote!OneNote.NoteTagType.idea:member'
+      - 'onenote!OneNote.NoteTagType.important:member'
+      - 'onenote!OneNote.NoteTagType.phoneNumber:member'
+      - 'onenote!OneNote.NoteTagType.question:member'
+      - 'onenote!OneNote.NoteTagType.toDo:member'
+      - 'onenote!OneNote.NoteTagType.toDoPriority1:member'
+      - 'onenote!OneNote.NoteTagType.toDoPriority2:member'
+      - 'onenote!OneNote.NoteTagType.unknown:member'
+      - 'onenote!OneNote.NoteTagType.website:member'
+  - uid: 'onenote!OneNote.NoteTagType.address:member'
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Address"'
+  - uid: 'onenote!OneNote.NoteTagType.contact:member'
+    name: contact
+    fullName: contact
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Contact"'
+  - uid: 'onenote!OneNote.NoteTagType.critical:member'
+    name: critical
+    fullName: critical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Critical"'
+  - uid: 'onenote!OneNote.NoteTagType.idea:member'
+    name: idea
+    fullName: idea
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Idea"'
+  - uid: 'onenote!OneNote.NoteTagType.important:member'
+    name: important
+    fullName: important
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Important"'
+  - uid: 'onenote!OneNote.NoteTagType.phoneNumber:member'
+    name: phoneNumber
+    fullName: phoneNumber
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PhoneNumber"'
+  - uid: 'onenote!OneNote.NoteTagType.question:member'
+    name: question
+    fullName: question
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Question"'
+  - uid: 'onenote!OneNote.NoteTagType.toDo:member'
+    name: toDo
+    fullName: toDo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ToDo"'
+  - uid: 'onenote!OneNote.NoteTagType.toDoPriority1:member'
+    name: toDoPriority1
+    fullName: toDoPriority1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ToDoPriority1"'
+  - uid: 'onenote!OneNote.NoteTagType.toDoPriority2:member'
+    name: toDoPriority2
+    fullName: toDoPriority2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ToDoPriority2"'
+  - uid: 'onenote!OneNote.NoteTagType.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'
+  - uid: 'onenote!OneNote.NoteTagType.website:member'
+    name: website
+    fullName: website
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Website"'

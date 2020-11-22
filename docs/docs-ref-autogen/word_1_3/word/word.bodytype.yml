@@ -1,37 +1,59 @@
-### YamlMime:TSEnum
-name: Word.BodyType
-uid: 'word!Word.BodyType:enum'
-package: word!
-fullName: Word.BodyType
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: footer
-    uid: 'word!Word.BodyType.footer:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.BodyType:enum'
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.BodyType
+    fullName: Word.BodyType
+    langs:
+      - typeScript
+    type: enum
     package: word!
-    summary: ''
-  - name: header
-    uid: 'word!Word.BodyType.header:member'
-    package: word!
-    summary: ''
-  - name: mainDoc
-    uid: 'word!Word.BodyType.mainDoc:member'
-    package: word!
-    summary: ''
-  - name: section
-    uid: 'word!Word.BodyType.section:member'
-    package: word!
-    summary: ''
-  - name: tableCell
-    uid: 'word!Word.BodyType.tableCell:member'
-    package: word!
-    summary: ''
-  - name: unknown
-    uid: 'word!Word.BodyType.unknown:member'
-    package: word!
-    summary: ''
+    children:
+      - 'word!Word.BodyType.footer:member'
+      - 'word!Word.BodyType.header:member'
+      - 'word!Word.BodyType.mainDoc:member'
+      - 'word!Word.BodyType.section:member'
+      - 'word!Word.BodyType.tableCell:member'
+      - 'word!Word.BodyType.unknown:member'
+  - uid: 'word!Word.BodyType.footer:member'
+    name: footer
+    fullName: footer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Footer"'
+  - uid: 'word!Word.BodyType.header:member'
+    name: header
+    fullName: header
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Header"'
+  - uid: 'word!Word.BodyType.mainDoc:member'
+    name: mainDoc
+    fullName: mainDoc
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MainDoc"'
+  - uid: 'word!Word.BodyType.section:member'
+    name: section
+    fullName: section
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Section"'
+  - uid: 'word!Word.BodyType.tableCell:member'
+    name: tableCell
+    fullName: tableCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TableCell"'
+  - uid: 'word!Word.BodyType.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

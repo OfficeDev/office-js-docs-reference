@@ -1,77 +1,106 @@
-### YamlMime:TSType
-name: Excel.PageLayout
-uid: 'excel!Excel.PageLayout:class'
-package: excel!
-fullName: Excel.PageLayout
-summary: >-
-  Represents layout and print settings that are not dependent any
-  printer-specific implementation. These settings include margins, orientation,
-  page numbering, title rows, and print area.
-
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: blackAndWhite
-    uid: 'excel!Excel.PageLayout#blackAndWhite:member'
-    package: excel!
-    fullName: blackAndWhite
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PageLayout:class'
     summary: >-
+      Represents layout and print settings that are not dependent any printer-specific implementation. These settings
+      include margins, orientation, page numbering, title rows, and print area.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PageLayout
+    fullName: Excel.PageLayout
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.PageLayout#blackAndWhite:member'
+      - 'excel!Excel.PageLayout#bottomMargin:member'
+      - 'excel!Excel.PageLayout#centerHorizontally:member'
+      - 'excel!Excel.PageLayout#centerVertically:member'
+      - 'excel!Excel.PageLayout#context:member'
+      - 'excel!Excel.PageLayout#draftMode:member'
+      - 'excel!Excel.PageLayout#firstPageNumber:member'
+      - 'excel!Excel.PageLayout#footerMargin:member'
+      - 'excel!Excel.PageLayout#getPrintArea:member(1)'
+      - 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
+      - 'excel!Excel.PageLayout#headerMargin:member'
+      - 'excel!Excel.PageLayout#headersFooters:member'
+      - 'excel!Excel.PageLayout#leftMargin:member'
+      - 'excel!Excel.PageLayout#load:member(1)'
+      - 'excel!Excel.PageLayout#load:member(2)'
+      - 'excel!Excel.PageLayout#load:member(3)'
+      - 'excel!Excel.PageLayout#orientation:member'
+      - 'excel!Excel.PageLayout#paperSize:member'
+      - 'excel!Excel.PageLayout#printComments:member'
+      - 'excel!Excel.PageLayout#printErrors:member'
+      - 'excel!Excel.PageLayout#printGridlines:member'
+      - 'excel!Excel.PageLayout#printHeadings:member'
+      - 'excel!Excel.PageLayout#printOrder:member'
+      - 'excel!Excel.PageLayout#rightMargin:member'
+      - 'excel!Excel.PageLayout#set:member(1)'
+      - 'excel!Excel.PageLayout#set:member(2)'
+      - 'excel!Excel.PageLayout#setPrintArea:member(1)'
+      - 'excel!Excel.PageLayout#setPrintMargins:member(1)'
+      - 'excel!Excel.PageLayout#setPrintMargins:member(2)'
+      - 'excel!Excel.PageLayout#setPrintTitleColumns:member(1)'
+      - 'excel!Excel.PageLayout#setPrintTitleRows:member(1)'
+      - 'excel!Excel.PageLayout#toJSON:member(1)'
+      - 'excel!Excel.PageLayout#topMargin:member'
+      - 'excel!Excel.PageLayout#zoom:member'
+  - uid: 'excel!Excel.PageLayout#blackAndWhite:member'
+    summary: |-
       The worksheet's black and white print option.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: blackAndWhite
+    fullName: blackAndWhite
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'blackAndWhite: boolean;'
       return:
-        type: boolean
-  - name: bottomMargin
-    uid: 'excel!Excel.PageLayout#bottomMargin:member'
-    package: excel!
-    fullName: bottomMargin
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.PageLayout#bottomMargin:member'
+    summary: |-
       The worksheet's bottom page margin to use for printing in points.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'bottomMargin: number;'
       return:
-        type: number
-  - name: centerHorizontally
-    uid: 'excel!Excel.PageLayout#centerHorizontally:member'
-    package: excel!
-    fullName: centerHorizontally
+        type:
+          - number
+  - uid: 'excel!Excel.PageLayout#centerHorizontally:member'
     summary: >-
-      The worksheet's center horizontally flag. This flag determines whether the
-      worksheet will be centered horizontally when it's printed.
+      The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally
+      when it's printed.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerHorizontally
+    fullName: centerHorizontally
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'centerHorizontally: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: >-
 
 
@@ -91,25 +120,23 @@ properties:
           });
 
           ```
-  - name: centerVertically
-    uid: 'excel!Excel.PageLayout#centerVertically:member'
-    package: excel!
-    fullName: centerVertically
+  - uid: 'excel!Excel.PageLayout#centerVertically:member'
     summary: >-
-      The worksheet's center vertically flag. This flag determines whether the
-      worksheet will be centered vertically when it's printed.
+      The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically
+      when it's printed.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerVertically
+    fullName: centerVertically
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'centerVertically: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: >-
 
 
@@ -129,150 +156,295 @@ properties:
           });
 
           ```
-  - name: context
-    uid: 'excel!Excel.PageLayout#context:member'
-    package: excel!
-    fullName: context
+  - uid: 'excel!Excel.PageLayout#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: draftMode
-    uid: 'excel!Excel.PageLayout#draftMode:member'
-    package: excel!
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PageLayout#draftMode:member'
+    summary: |-
+      The worksheet's draft mode option. If true the sheet will be printed without graphics.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: draftMode
     fullName: draftMode
-    summary: >-
-      The worksheet's draft mode option. If true the sheet will be printed
-      without graphics.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'draftMode: boolean;'
       return:
-        type: boolean
-  - name: firstPageNumber
-    uid: 'excel!Excel.PageLayout#firstPageNumber:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.PageLayout#firstPageNumber:member'
+    summary: |-
+      The worksheet's first page number to print. Null value represents "auto" page numbering.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstPageNumber
     fullName: firstPageNumber
-    summary: >-
-      The worksheet's first page number to print. Null value represents "auto"
-      page numbering.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'firstPageNumber: number | "";'
       return:
-        type: number | ""
-  - name: footerMargin
-    uid: 'excel!Excel.PageLayout#footerMargin:member'
-    package: excel!
-    fullName: footerMargin
-    summary: >-
+        type:
+          - number | ""
+  - uid: 'excel!Excel.PageLayout#footerMargin:member'
+    summary: |-
       The worksheet's footer margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: footerMargin
+    fullName: footerMargin
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'footerMargin: number;'
       return:
-        type: number
-  - name: headerMargin
-    uid: 'excel!Excel.PageLayout#headerMargin:member'
-    package: excel!
-    fullName: headerMargin
+        type:
+          - number
+  - uid: 'excel!Excel.PageLayout#getPrintArea:member(1)'
     summary: >-
+      Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the
+      worksheet. If there is no print area, an ItemNotFound error will be thrown.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintArea()
+    fullName: getPrintArea()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintArea(): Excel.RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:class'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
+    summary: >-
+      Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the
+      worksheet. If there is no print area, a null object will be returned.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintAreaOrNullObject()
+    fullName: getPrintAreaOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintAreaOrNullObject(): Excel.RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:class'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
+    summary: |-
+      Gets the range object representing the title columns.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleColumns()
+    fullName: getPrintTitleColumns()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleColumns(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
+    summary: |-
+      Gets the range object representing the title columns. If not set, this will return a null object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleColumnsOrNullObject()
+    fullName: getPrintTitleColumnsOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleColumnsOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
+    summary: |-
+      Gets the range object representing the title rows.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleRows()
+    fullName: getPrintTitleRows()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleRows(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
+    summary: |-
+      Gets the range object representing the title rows. If not set, this will return a null object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleRowsOrNullObject()
+    fullName: getPrintTitleRowsOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleRowsOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#headerMargin:member'
+    summary: |-
       The worksheet's header margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headerMargin
+    fullName: headerMargin
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'headerMargin: number;'
       return:
-        type: number
-  - name: headersFooters
-    uid: 'excel!Excel.PageLayout#headersFooters:member'
-    package: excel!
-    fullName: headersFooters
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.PageLayout#headersFooters:member'
+    summary: |-
       Header and footer configuration for the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headersFooters
+    fullName: headersFooters
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly headersFooters: Excel.HeaderFooterGroup;'
       return:
-        type: '<xref uid="excel!Excel.HeaderFooterGroup:class" />'
-  - name: leftMargin
-    uid: 'excel!Excel.PageLayout#leftMargin:member'
-    package: excel!
-    fullName: leftMargin
-    summary: >-
+        type:
+          - 'excel!Excel.HeaderFooterGroup:class'
+  - uid: 'excel!Excel.PageLayout#leftMargin:member'
+    summary: |-
       The worksheet's left margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'leftMargin: number;'
       return:
-        type: number
-  - name: orientation
-    uid: 'excel!Excel.PageLayout#orientation:member'
-    package: excel!
-    fullName: orientation
+        type:
+          - number
+  - uid: 'excel!Excel.PageLayout#load:member(1)'
     summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.PageLayoutLoadOptions): Excel.PageLayout;'
+      return:
+        type:
+          - 'excel!Excel.PageLayout:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
+  - uid: 'excel!Excel.PageLayout#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PageLayout;'
+      return:
+        type:
+          - 'excel!Excel.PageLayout:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PageLayout#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PageLayout;
+      return:
+        type:
+          - 'excel!Excel.PageLayout:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PageLayout#orientation:member'
+    summary: |-
       The worksheet's orientation of the page.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'orientation: Excel.PageOrientation | "Portrait" | "Landscape";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PageOrientation:enum" /> | "Portrait" |
-          "Landscape"
+        type:
+          - 'excel!Excel.PageLayout#orientation~0:complex'
         description: >-
 
 
@@ -291,490 +463,180 @@ properties:
           });
 
           ```
-  - name: paperSize
-    uid: 'excel!Excel.PageLayout#paperSize:member'
-    package: excel!
-    fullName: paperSize
-    summary: >-
+  - uid: 'excel!Excel.PageLayout#paperSize:member'
+    summary: |-
       The worksheet's paper size of the page.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: paperSize
+    fullName: paperSize
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        paperSize: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" |
-        "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small"
-        | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17"
-        | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" |
-        "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
-        "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" |
-        "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" |
-        "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" |
-        "FanfoldStdGerman" | "FanfoldLegalGerman";
+        paperSize: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" |
+        "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" |
+        "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" |
+        "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" |
+        "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" |
+        "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
       return:
-        type: >-
-          <xref uid="excel!Excel.PaperType:enum" /> | "Letter" | "LetterSmall" |
-          "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
-          "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" |
-          "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" |
-          "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" |
-          "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" |
-          "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
-          "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" |
-          "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
-          "FanfoldLegalGerman"
-  - name: printComments
-    uid: 'excel!Excel.PageLayout#printComments:member'
-    package: excel!
-    fullName: printComments
-    summary: >-
+        type:
+          - 'excel!Excel.PageLayout#paperSize~0:complex'
+  - uid: 'excel!Excel.PageLayout#printComments:member'
+    summary: |-
       Specifies if the worksheet's comments should be displayed when printing.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printComments
+    fullName: printComments
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        printComments: Excel.PrintComments | "NoComments" | "EndSheet" |
-        "InPlace";
+      content: 'printComments: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PrintComments:enum" /> | "NoComments" |
-          "EndSheet" | "InPlace"
-  - name: printErrors
-    uid: 'excel!Excel.PageLayout#printErrors:member'
-    package: excel!
-    fullName: printErrors
-    summary: >-
+        type:
+          - 'excel!Excel.PageLayout#printComments~0:complex'
+  - uid: 'excel!Excel.PageLayout#printErrors:member'
+    summary: |-
       The worksheet's print errors option.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printErrors
+    fullName: printErrors
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        printErrors: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" |
-        "NotAvailable";
+      content: 'printErrors: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PrintErrorType:enum" /> | "AsDisplayed" |
-          "Blank" | "Dash" | "NotAvailable"
-  - name: printGridlines
-    uid: 'excel!Excel.PageLayout#printGridlines:member'
-    package: excel!
-    fullName: printGridlines
-    summary: >-
+        type:
+          - 'excel!Excel.PageLayout#printErrors~0:complex'
+  - uid: 'excel!Excel.PageLayout#printGridlines:member'
+    summary: |-
       Specifies if the worksheet's gridlines will be printed.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printGridlines
+    fullName: printGridlines
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'printGridlines: boolean;'
       return:
-        type: boolean
-  - name: printHeadings
-    uid: 'excel!Excel.PageLayout#printHeadings:member'
-    package: excel!
-    fullName: printHeadings
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.PageLayout#printHeadings:member'
+    summary: |-
       Specifies if the worksheet's headings will be printed.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printHeadings
+    fullName: printHeadings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'printHeadings: boolean;'
       return:
-        type: boolean
-  - name: printOrder
-    uid: 'excel!Excel.PageLayout#printOrder:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.PageLayout#printOrder:member'
+    summary: |-
+      The worksheet's page print order option. This specifies the order to use for processing the page number printed.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printOrder
     fullName: printOrder
-    summary: >-
-      The worksheet's page print order option. This specifies the order to use
-      for processing the page number printed.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PrintOrder:enum" /> | "DownThenOver" |
-          "OverThenDown"
-  - name: rightMargin
-    uid: 'excel!Excel.PageLayout#rightMargin:member'
-    package: excel!
-    fullName: rightMargin
-    summary: >-
+        type:
+          - 'excel!Excel.PageLayout#printOrder~0:complex'
+  - uid: 'excel!Excel.PageLayout#rightMargin:member'
+    summary: |-
       The worksheet's right margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rightMargin: number;'
       return:
-        type: number
-  - name: topMargin
-    uid: 'excel!Excel.PageLayout#topMargin:member'
-    package: excel!
-    fullName: topMargin
+        type:
+          - number
+  - uid: 'excel!Excel.PageLayout#set:member(1)'
     summary: >-
-      The worksheet's top margin, in points, for use when printing.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'topMargin: number;'
-      return:
-        type: number
-  - name: zoom
-    uid: 'excel!Excel.PageLayout#zoom:member'
-    package: excel!
-    fullName: zoom
-    summary: >-
-      The worksheet's print zoom options. The `PageLayoutZoomOptions` object
-      must be set as a JSON object (use `x.zoom = {...}` instead of
-      `x.zoom.scale = ...`<!-- -->).
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'zoom: Excel.PageLayoutZoomOptions;'
-      return:
-        type: '<xref uid="excel!Excel.PageLayoutZoomOptions:interface" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
-          await Excel.run(async (context) => {
-              const farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.pageLayout.zoom = { scale: 200 };
-              await context.sync();
-          });
-
-          ```
-methods:
-  - name: getPrintArea()
-    uid: 'excel!Excel.PageLayout#getPrintArea:member(1)'
-    package: excel!
-    fullName: getPrintArea()
-    summary: >-
-      Gets the RangeAreas object, comprising one or more rectangular ranges,
-      that represents the print area for the worksheet. If there is no print
-      area, an ItemNotFound error will be thrown.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintArea(): Excel.RangeAreas;'
-      return:
-        type: '<xref uid="excel!Excel.RangeAreas:class" />'
-        description: ''
-  - name: getPrintAreaOrNullObject()
-    uid: 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
-    package: excel!
-    fullName: getPrintAreaOrNullObject()
-    summary: >-
-      Gets the RangeAreas object, comprising one or more rectangular ranges,
-      that represents the print area for the worksheet. If there is no print
-      area, a null object will be returned.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintAreaOrNullObject(): Excel.RangeAreas;'
-      return:
-        type: '<xref uid="excel!Excel.RangeAreas:class" />'
-        description: ''
-  - name: getPrintTitleColumns()
-    uid: 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
-    package: excel!
-    fullName: getPrintTitleColumns()
-    summary: >-
-      Gets the range object representing the title columns.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintTitleColumns(): Excel.Range;'
-      return:
-        type: '<xref uid="excel!Excel.Range:class" />'
-        description: ''
-  - name: getPrintTitleColumnsOrNullObject()
-    uid: 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
-    package: excel!
-    fullName: getPrintTitleColumnsOrNullObject()
-    summary: >-
-      Gets the range object representing the title columns. If not set, this
-      will return a null object.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintTitleColumnsOrNullObject(): Excel.Range;'
-      return:
-        type: '<xref uid="excel!Excel.Range:class" />'
-        description: ''
-  - name: getPrintTitleRows()
-    uid: 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
-    package: excel!
-    fullName: getPrintTitleRows()
-    summary: >-
-      Gets the range object representing the title rows.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintTitleRows(): Excel.Range;'
-      return:
-        type: '<xref uid="excel!Excel.Range:class" />'
-        description: ''
-  - name: getPrintTitleRowsOrNullObject()
-    uid: 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
-    package: excel!
-    fullName: getPrintTitleRowsOrNullObject()
-    summary: >-
-      Gets the range object representing the title rows. If not set, this will
-      return a null object.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintTitleRowsOrNullObject(): Excel.Range;'
-      return:
-        type: '<xref uid="excel!Excel.Range:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.PageLayout#load:member(1)'
-    package: excel!
-    fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PageLayoutLoadOptions):
-        Excel.PageLayout;
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.PageLayoutLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.PageLayout:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.PageLayout#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.PageLayout;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.PageLayout:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.PageLayout#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.PageLayout;
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.PageLayout:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.PageLayout#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.PageLayout): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.PageLayoutUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.PageLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: '<xref uid="excel!Excel.Interfaces.PageLayoutUpdateData:interface" />'
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.PageLayout#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.PageLayout#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.PageLayout): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.PageLayout:class" />'
-      return:
-        type: void
-        description: ''
-  - name: setPrintArea(printArea)
-    uid: 'excel!Excel.PageLayout#setPrintArea:member(1)'
-    package: excel!
-    fullName: setPrintArea(printArea)
-    summary: >-
+          type:
+            - 'excel!Excel.PageLayout:class'
+  - uid: 'excel!Excel.PageLayout#setPrintArea:member(1)'
+    summary: |-
       Sets the worksheet's print area.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setPrintArea(printArea)
+    fullName: setPrintArea(printArea)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
-      parameters:
-        - id: printArea
-          description: 'The range, or RangeAreas of the content to print.'
-          type: >-
-            <xref uid="excel!Excel.Range:class" /> | <xref
-            uid="excel!Excel.RangeAreas:class" /> | string
       return:
-        type: void
+        type:
+          - void
         description: >-
 
 
@@ -793,113 +655,99 @@ methods:
           });
 
           ```
-  - name: 'setPrintMargins(unit, marginOptions)'
-    uid: 'excel!Excel.PageLayout#setPrintMargins:member(1)'
-    package: excel!
-    fullName: 'setPrintMargins(unit, marginOptions)'
-    summary: >-
+      parameters:
+        - id: printArea
+          description: 'The range, or RangeAreas of the content to print.'
+          type:
+            - 'excel!Excel.PageLayout#setPrintArea~0:complex'
+  - uid: 'excel!Excel.PageLayout#setPrintMargins:member(1)'
+    summary: |-
       Sets the worksheet's page margins with units.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'setPrintMargins(unit, marginOptions)'
+    fullName: 'setPrintMargins(unit, marginOptions)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        setPrintMargins(unit: Excel.PrintMarginUnit, marginOptions:
-        Excel.PageLayoutMarginOptions): void;
+      content: 'setPrintMargins(unit: Excel.PrintMarginUnit, marginOptions: Excel.PageLayoutMarginOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: unit
           description: Measurement unit for the margins provided.
-          type: '<xref uid="excel!Excel.PrintMarginUnit:enum" />'
+          type:
+            - 'excel!Excel.PrintMarginUnit:enum'
         - id: marginOptions
           description: 'Margin values to set, margins not provided will remain unchanged.'
-          type: '<xref uid="excel!Excel.PageLayoutMarginOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: 'setPrintMargins(unitString, marginOptions)'
-    uid: 'excel!Excel.PageLayout#setPrintMargins:member(2)'
-    package: excel!
-    fullName: 'setPrintMargins(unitString, marginOptions)'
-    summary: >-
+          type:
+            - 'excel!Excel.PageLayoutMarginOptions:interface'
+  - uid: 'excel!Excel.PageLayout#setPrintMargins:member(2)'
+    summary: |-
       Sets the worksheet's page margins with units.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'setPrintMargins(unitString, marginOptions)'
+    fullName: 'setPrintMargins(unitString, marginOptions)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        setPrintMargins(unitString: "Points" | "Inches" | "Centimeters",
-        marginOptions: Excel.PageLayoutMarginOptions): void;
+        setPrintMargins(unitString: "Points" | "Inches" | "Centimeters", marginOptions: Excel.PageLayoutMarginOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: unitString
           description: Measurement unit for the margins provided.
-          type: '"Points" | "Inches" | "Centimeters"'
+          type:
+            - '"Points" | "Inches" | "Centimeters"'
         - id: marginOptions
           description: 'Margin values to set, margins not provided will remain unchanged.'
-          type: '<xref uid="excel!Excel.PageLayoutMarginOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: setPrintTitleColumns(printTitleColumns)
-    uid: 'excel!Excel.PageLayout#setPrintTitleColumns:member(1)'
-    package: excel!
+          type:
+            - 'excel!Excel.PageLayoutMarginOptions:interface'
+  - uid: 'excel!Excel.PageLayout#setPrintTitleColumns:member(1)'
+    summary: |-
+      Sets the columns that contain the cells to be repeated at the left of each page of the worksheet for printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setPrintTitleColumns(printTitleColumns)
     fullName: setPrintTitleColumns(printTitleColumns)
-    summary: >-
-      Sets the columns that contain the cells to be repeated at the left of each
-      page of the worksheet for printing.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: printTitleColumns
-          description: >-
-            The columns to be repeated to the left of each page, range must span
-            the entire column to be valid.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
-      return:
-        type: void
-        description: ''
-  - name: setPrintTitleRows(printTitleRows)
-    uid: 'excel!Excel.PageLayout#setPrintTitleRows:member(1)'
-    package: excel!
+          description: 'The columns to be repeated to the left of each page, range must span the entire column to be valid.'
+          type:
+            - 'excel!Excel.PageLayout#setPrintTitleColumns~0:complex'
+  - uid: 'excel!Excel.PageLayout#setPrintTitleRows:member(1)'
+    summary: |-
+      Sets the rows that contain the cells to be repeated at the top of each page of the worksheet for printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setPrintTitleRows(printTitleRows)
     fullName: setPrintTitleRows(printTitleRows)
-    summary: >-
-      Sets the rows that contain the cells to be repeated at the top of each
-      page of the worksheet for printing.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
-      parameters:
-        - id: printTitleRows
-          description: >-
-            The rows to be repeated at the top of each page, range must span the
-            entire row to be valid.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
-        type: void
+        type:
+          - void
         description: >-
 
 
@@ -918,24 +766,192 @@ methods:
           });
 
           ```
-  - name: toJSON()
-    uid: 'excel!Excel.PageLayout#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+      parameters:
+        - id: printTitleRows
+          description: 'The rows to be repeated at the top of each page, range must span the entire row to be valid.'
+          type:
+            - 'excel!Excel.PageLayout#setPrintTitleRows~0:complex'
+  - uid: 'excel!Excel.PageLayout#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.PageLayout object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.PageLayoutData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PageLayout object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.PageLayoutData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.PageLayoutData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.PageLayoutData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.PageLayoutData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'excel!Excel.PageLayout#topMargin:member'
+    summary: |-
+      The worksheet's top margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.PageLayout#zoom:member'
+    summary: >-
+      The worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom =
+      {...}` instead of `x.zoom.scale = ...`<!-- -->).
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: zoom
+    fullName: zoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zoom: Excel.PageLayoutZoomOptions;'
+      return:
+        type:
+          - 'excel!Excel.PageLayoutZoomOptions:interface'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.zoom = { scale: 200 };
+              await context.sync();
+          });
+
+          ```
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.RangeAreas:class'
+    name: Excel.RangeAreas
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.HeaderFooterGroup:class'
+    name: Excel.HeaderFooterGroup
+  - uid: 'excel!Excel.PageLayout:class'
+    name: Excel.PageLayout
+  - uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
+    name: Excel.Interfaces.PageLayoutLoadOptions
+  - uid: 'excel!Excel.PageLayout#orientation~0:complex'
+    name: Excel.PageOrientation | "Portrait" | "Landscape"
+    fullName: Excel.PageOrientation | "Portrait" | "Landscape"
+    spec.typeScript:
+      - uid: 'excel!Excel.PageOrientation:enum'
+        name: Excel.PageOrientation
+        fullName: Excel.PageOrientation
+      - name: ' | "Portrait" | "Landscape"'
+        fullName: ' | "Portrait" | "Landscape"'
+  - uid: 'excel!Excel.PageLayout#paperSize~0:complex'
+    name: >-
+      Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
+      "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" |
+      "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
+      "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
+      "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
+      "FanfoldLegalGerman"
+    fullName: >-
+      Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
+      "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" |
+      "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
+      "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
+      "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
+      "FanfoldLegalGerman"
+    spec.typeScript:
+      - uid: 'excel!Excel.PaperType:enum'
+        name: Excel.PaperType
+        fullName: Excel.PaperType
+      - name: ' | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"'
+        fullName: ' | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"'
+  - uid: 'excel!Excel.PageLayout#printComments~0:complex'
+    name: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
+    fullName: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintComments:enum'
+        name: Excel.PrintComments
+        fullName: Excel.PrintComments
+      - name: ' | "NoComments" | "EndSheet" | "InPlace"'
+        fullName: ' | "NoComments" | "EndSheet" | "InPlace"'
+  - uid: 'excel!Excel.PageLayout#printErrors~0:complex'
+    name: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
+    fullName: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintErrorType:enum'
+        name: Excel.PrintErrorType
+        fullName: Excel.PrintErrorType
+      - name: ' | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"'
+        fullName: ' | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"'
+  - uid: 'excel!Excel.PageLayout#printOrder~0:complex'
+    name: Excel.PrintOrder | "DownThenOver" | "OverThenDown"
+    fullName: Excel.PrintOrder | "DownThenOver" | "OverThenDown"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintOrder:enum'
+        name: Excel.PrintOrder
+        fullName: Excel.PrintOrder
+      - name: ' | "DownThenOver" | "OverThenDown"'
+        fullName: ' | "DownThenOver" | "OverThenDown"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
+    name: Interfaces.PageLayoutUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.PageLayout#setPrintArea~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:class'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PrintMarginUnit:enum'
+    name: Excel.PrintMarginUnit
+  - uid: 'excel!Excel.PageLayoutMarginOptions:interface'
+    name: Excel.PageLayoutMarginOptions
+  - uid: 'excel!Excel.PageLayout#setPrintTitleColumns~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PageLayout#setPrintTitleRows~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData:interface'
+    name: Excel.Interfaces.PageLayoutData
+  - uid: 'excel!Excel.PageLayoutZoomOptions:interface'
+    name: Excel.PageLayoutZoomOptions

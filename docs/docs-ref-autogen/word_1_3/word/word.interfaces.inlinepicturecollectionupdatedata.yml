@@ -1,25 +1,35 @@
-### YamlMime:TSType
-name: Word.Interfaces.InlinePictureCollectionUpdateData
-uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.InlinePictureCollectionUpdateData
-summary: >-
-  An interface for updating data on the InlinePictureCollection object, for use
-  in `inlinePictureCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the InlinePictureCollection object, for use in `inlinePictureCollection.set({
+      ... })`<!-- -->.
+    name: Word.Interfaces.InlinePictureCollectionUpdateData
+    fullName: Word.Interfaces.InlinePictureCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.InlinePictureData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData#items~0:complex'
+    name: 'Word.Interfaces.InlinePictureData[]'
+    fullName: 'Word.Interfaces.InlinePictureData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.InlinePictureData:interface'
+        name: Word.Interfaces.InlinePictureData
+        fullName: Word.Interfaces.InlinePictureData
+      - name: '[]'
+        fullName: '[]'

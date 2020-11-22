@@ -1,29 +1,43 @@
-### YamlMime:TSEnum
-name: Excel.TopBottomSelectionType
-uid: 'excel!Excel.TopBottomSelectionType:enum'
-package: excel!
-fullName: Excel.TopBottomSelectionType
-summary: >-
-  A simple enum for Top/Bottom filters to select whether to filter by the top N
-  or bottom N percent, number, or sum of values.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TopBottomSelectionType:enum'
+    summary: >-
+      A simple enum for Top/Bottom filters to select whether to filter by the top N or bottom N percent, number, or sum
+      of values.
 
 
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: items
-    uid: 'excel!Excel.TopBottomSelectionType.items:member'
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.TopBottomSelectionType
+    fullName: Excel.TopBottomSelectionType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.TopBottomSelectionType.items:member'
+      - 'excel!Excel.TopBottomSelectionType.percent:member'
+      - 'excel!Excel.TopBottomSelectionType.sum:member'
+  - uid: 'excel!Excel.TopBottomSelectionType.items:member'
     summary: Filter the top/bottom N number of items as measured by the chosen value.
-  - name: percent
-    uid: 'excel!Excel.TopBottomSelectionType.percent:member'
-    package: excel!
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Items"'
+  - uid: 'excel!Excel.TopBottomSelectionType.percent:member'
     summary: Filter the top/bottom N percent of items as measured by the chosen value.
-  - name: sum
-    uid: 'excel!Excel.TopBottomSelectionType.sum:member'
-    package: excel!
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: 'excel!Excel.TopBottomSelectionType.sum:member'
     summary: Filter the top/bottom N sum as measured by the chosen value.
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Sum"'

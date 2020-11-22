@@ -1,74 +1,65 @@
-### YamlMime:TSType
-name: Excel.WorksheetAddedEventArgs
-uid: 'excel!Excel.WorksheetAddedEventArgs:interface'
-package: excel!
-fullName: Excel.WorksheetAddedEventArgs
-summary: >-
-  Provides information about the worksheet that raised the Added event.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetAddedEventArgs:interface'
+    summary: |-
+      Provides information about the worksheet that raised the Added event.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: source
-    uid: 'excel!Excel.WorksheetAddedEventArgs#source:member'
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetAddedEventArgs
+    fullName: Excel.WorksheetAddedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: source
-    summary: >-
+    children:
+      - 'excel!Excel.WorksheetAddedEventArgs#source:member'
+      - 'excel!Excel.WorksheetAddedEventArgs#type:member'
+      - 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#source:member'
+    summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
-  - name: type
-    uid: 'excel!Excel.WorksheetAddedEventArgs#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
+        type:
+          - 'excel!Excel.WorksheetAddedEventArgs#source~0:complex'
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#type:member'
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: "WorksheetAdded";'
       return:
-        type: '"WorksheetAdded"'
-  - name: worksheetId
-    uid: 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
-    package: excel!
-    fullName: worksheetId
-    summary: >-
+        type:
+          - '"WorksheetAdded"'
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
+    summary: |-
       Gets the id of the worksheet that is added to the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'worksheetId: string;'
       return:
-        type: string
+        type:
+          - string
         description: >-
 
 
@@ -90,3 +81,13 @@ properties:
           }
 
           ```
+references:
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#source~0:complex'
+    name: Excel.EventSource | "Local" | "Remote"
+    fullName: Excel.EventSource | "Local" | "Remote"
+    spec.typeScript:
+      - uid: 'excel!Excel.EventSource:enum'
+        name: Excel.EventSource
+        fullName: Excel.EventSource
+      - name: ' | "Local" | "Remote"'
+        fullName: ' | "Local" | "Remote"'

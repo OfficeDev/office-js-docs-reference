@@ -1,28 +1,38 @@
-### YamlMime:TSEnum
-name: Excel.ChartAxisTimeUnit
-uid: 'excel!Excel.ChartAxisTimeUnit:enum'
-package: excel!
-fullName: Excel.ChartAxisTimeUnit
-summary: >-
-  Specifies the unit of time for chart axes and data series.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTimeUnit:enum'
+    summary: |-
+      Specifies the unit of time for chart axes and data series.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: days
-    uid: 'excel!Excel.ChartAxisTimeUnit.days:member'
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartAxisTimeUnit
+    fullName: Excel.ChartAxisTimeUnit
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: months
-    uid: 'excel!Excel.ChartAxisTimeUnit.months:member'
-    package: excel!
-    summary: ''
-  - name: years
-    uid: 'excel!Excel.ChartAxisTimeUnit.years:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartAxisTimeUnit.days:member'
+      - 'excel!Excel.ChartAxisTimeUnit.months:member'
+      - 'excel!Excel.ChartAxisTimeUnit.years:member'
+  - uid: 'excel!Excel.ChartAxisTimeUnit.days:member'
+    name: days
+    fullName: days
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Days"'
+  - uid: 'excel!Excel.ChartAxisTimeUnit.months:member'
+    name: months
+    fullName: months
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Months"'
+  - uid: 'excel!Excel.ChartAxisTimeUnit.years:member'
+    name: years
+    fullName: years
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Years"'

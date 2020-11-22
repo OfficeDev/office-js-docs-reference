@@ -1,46 +1,41 @@
-### YamlMime:TSType
-name: Office.Error
-uid: 'office!Office.Error:interface'
-package: office!
-fullName: Office.Error
-summary: >-
-  Provides specific information about an error that occurred during an
-  asynchronous data operation.
-remarks: >-
-  The Error object is accessed from the AsyncResult object that is returned in
-  the function passed as the callback argument of an asynchronous data
-  operation, such as the `setSelectedDataAsync` method of the Document object.
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: code
-    uid: 'office!Office.Error#code:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Error:interface'
+    summary: Provides specific information about an error that occurred during an asynchronous data operation.
+    remarks: >-
+      The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback
+      argument of an asynchronous data operation, such as the `setSelectedDataAsync` method of the Document object.
+    name: Office.Error
+    fullName: Office.Error
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: code
+    children:
+      - 'office!Office.Error#code:member'
+      - 'office!Office.Error#message:member'
+      - 'office!Office.Error#name:member'
+  - uid: 'office!Office.Error#code:member'
     summary: >-
-      Gets the numeric code of the error. For a list of error codes, see
-      [JavaScript API for Office error
-      codes](https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!--
-      -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Gets the numeric code of the error. For a list of error codes, see [JavaScript API for Office error
+      codes](https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
+    name: code
+    fullName: code
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'code: number;'
       return:
-        type: number
-        description: >-
+        type:
+          - number
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
+          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
@@ -50,37 +45,30 @@ properties:
                   });
           }
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message){
               document.getElementById('message').innerText += message; 
           }
-
           ```
-  - name: message
-    uid: 'office!Office.Error#message:member'
-    package: office!
-    fullName: message
+  - uid: 'office!Office.Error#message:member'
     summary: Gets the name of the error.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'message: string;'
       return:
-        type: string
-        description: >-
+        type:
+          - string
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
+          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
@@ -90,37 +78,30 @@ properties:
                   });
           }
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message){
               document.getElementById('message').innerText += message; 
           }
-
           ```
-  - name: name
-    uid: 'office!Office.Error#name:member'
-    package: office!
-    fullName: name
+  - uid: 'office!Office.Error#name:member'
     summary: Gets a detailed description of the error.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name: string;'
       return:
-        type: string
-        description: >-
+        type:
+          - string
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
+          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
@@ -130,11 +111,8 @@ properties:
                   });
           }
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message){
               document.getElementById('message').innerText += message; 
           }
-
           ```

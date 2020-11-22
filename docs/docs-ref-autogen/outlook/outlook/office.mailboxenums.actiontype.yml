@@ -1,20 +1,25 @@
-### YamlMime:TSEnum
-name: Office.MailboxEnums.ActionType
-uid: 'outlook!Office.MailboxEnums.ActionType:enum'
-package: outlook!
-fullName: Office.MailboxEnums.ActionType
-summary: >-
-  Specifies the type of action in a notification message.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.ActionType:enum'
+    summary: |-
+      Specifies the type of action in a notification message.
 
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-fields:
-  - name: ShowTaskPane
-    uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: Office.MailboxEnums.ActionType
+    fullName: Office.MailboxEnums.ActionType
+    langs:
+      - typeScript
+    type: enum
     package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+  - uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
     summary: The `showTaskPane` action.
+    isPreview: true
+    name: ShowTaskPane
+    fullName: ShowTaskPane
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"showTaskPane"'

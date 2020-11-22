@@ -1,90 +1,79 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
-uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
-package: onenote!
-fullName: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
-summary: >-
-  Represents ink analysis data for an identified paragraph formed by ink
-  strokes.
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
+    summary: |-
+      Represents ink analysis data for an identified paragraph formed by ink strokes.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#$all:member'
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#inkAnalysis:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#lines:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#$all:member'
+    name: $all
     fullName: $all
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#id:member'
-    package: onenote!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#id:member'
+    summary: |-
       Gets the ID of the InkAnalysisParagraph object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: inkAnalysis
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#inkAnalysis:member
-    package: onenote!
-    fullName: inkAnalysis
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#inkAnalysis:member'
+    summary: |-
       Reference to the parent InkAnalysisPage.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkAnalysis
+    fullName: inkAnalysis
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'inkAnalysis?: OneNote.Interfaces.InkAnalysisLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />
-  - name: lines
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#lines:member'
-    package: onenote!
-    fullName: lines
-    summary: >-
+        type:
+          - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#lines:member'
+    summary: |-
       Gets the ink analysis lines in this ink analysis paragraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: lines
+    fullName: lines
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'lines?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface"
-          />
+        type:
+          - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
+    name: OneNote.Interfaces.InkAnalysisLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
+    name: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions

@@ -1,32 +1,30 @@
-### YamlMime:TSType
-name: Word.Interfaces.SectionUpdateData
-uid: 'word!Word.Interfaces.SectionUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.SectionUpdateData
-summary: >-
-  An interface for updating data on the Section object, for use in
-  `section.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: body
-    uid: 'word!Word.Interfaces.SectionUpdateData#body:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
+    summary: 'An interface for updating data on the Section object, for use in `section.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.SectionUpdateData
+    fullName: Word.Interfaces.SectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.SectionUpdateData#body:member'
+  - uid: 'word!Word.Interfaces.SectionUpdateData#body:member'
+    summary: |-
+      Gets the body object of the section. This does not include the header/footer and other section metadata.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
     fullName: body
-    summary: >-
-      Gets the body object of the section. This does not include the
-      header/footer and other section metadata.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
+        type:
+          - 'word!Word.Interfaces.BodyUpdateData:interface'
+references:
+  - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
+    name: Word.Interfaces.BodyUpdateData

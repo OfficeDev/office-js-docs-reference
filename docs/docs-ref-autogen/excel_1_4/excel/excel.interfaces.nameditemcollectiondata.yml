@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Excel.Interfaces.NamedItemCollectionData
-uid: 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
-package: excel!
-fullName: Excel.Interfaces.NamedItemCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `namedItemCollection.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.NamedItemCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
+    summary: An interface describing the data returned by calling `namedItemCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.NamedItemCollectionData
+    fullName: Excel.Interfaces.NamedItemCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.NamedItemCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.NamedItemCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.NamedItemData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.NamedItemCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.NamedItemCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.NamedItemData[]'
+    fullName: 'Excel.Interfaces.NamedItemData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+        name: Excel.Interfaces.NamedItemData
+        fullName: Excel.Interfaces.NamedItemData
+      - name: '[]'
+        fullName: '[]'

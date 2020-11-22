@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.HeaderFooterData
-uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
-package: excel!
-fullName: Excel.Interfaces.HeaderFooterData
-summary: >-
-  An interface describing the data returned by calling
-  `headerFooter.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
+    summary: An interface describing the data returned by calling `headerFooter.toJSON()`<!-- -->.
+    name: Excel.Interfaces.HeaderFooterData
+    fullName: Excel.Interfaces.HeaderFooterData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

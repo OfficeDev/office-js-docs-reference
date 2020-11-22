@@ -1,36 +1,54 @@
-### YamlMime:TSEnum
-name: Excel.ChartErrorBarsType
-uid: 'excel!Excel.ChartErrorBarsType:enum'
-package: excel!
-fullName: Excel.ChartErrorBarsType
-summary: >-
-  Represents the range type for error bars.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartErrorBarsType:enum'
+    summary: |-
+      Represents the range type for error bars.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: custom
-    uid: 'excel!Excel.ChartErrorBarsType.custom:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartErrorBarsType
+    fullName: Excel.ChartErrorBarsType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: fixedValue
-    uid: 'excel!Excel.ChartErrorBarsType.fixedValue:member'
-    package: excel!
-    summary: ''
-  - name: percent
-    uid: 'excel!Excel.ChartErrorBarsType.percent:member'
-    package: excel!
-    summary: ''
-  - name: stDev
-    uid: 'excel!Excel.ChartErrorBarsType.stDev:member'
-    package: excel!
-    summary: ''
-  - name: stError
-    uid: 'excel!Excel.ChartErrorBarsType.stError:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartErrorBarsType.custom:member'
+      - 'excel!Excel.ChartErrorBarsType.fixedValue:member'
+      - 'excel!Excel.ChartErrorBarsType.percent:member'
+      - 'excel!Excel.ChartErrorBarsType.stDev:member'
+      - 'excel!Excel.ChartErrorBarsType.stError:member'
+  - uid: 'excel!Excel.ChartErrorBarsType.custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: 'excel!Excel.ChartErrorBarsType.fixedValue:member'
+    name: fixedValue
+    fullName: fixedValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FixedValue"'
+  - uid: 'excel!Excel.ChartErrorBarsType.percent:member'
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: 'excel!Excel.ChartErrorBarsType.stDev:member'
+    name: stDev
+    fullName: stDev
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StDev"'
+  - uid: 'excel!Excel.ChartErrorBarsType.stError:member'
+    name: stError
+    fullName: stError
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StError"'

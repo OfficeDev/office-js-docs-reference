@@ -1,32 +1,45 @@
-### YamlMime:TSEnum
-name: Office.MailboxEnums.RestVersion
-uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
-package: outlook!
-fullName: Office.MailboxEnums.RestVersion
-summary: >-
-  Specifies the version of the REST API that corresponds to a REST-formatted
-  item ID.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
+    summary: |-
+      Specifies the version of the REST API that corresponds to a REST-formatted item ID.
 
-
-  \[ [API set: Mailbox
-  1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: >-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Beta
-    uid: 'outlook!Office.MailboxEnums.RestVersion.Beta:member'
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.MailboxEnums.RestVersion
+    fullName: Office.MailboxEnums.RestVersion
+    langs:
+      - typeScript
+    type: enum
     package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.RestVersion.Beta:member'
+      - 'outlook!Office.MailboxEnums.RestVersion.v1_0:member'
+      - 'outlook!Office.MailboxEnums.RestVersion.v2_0:member'
+  - uid: 'outlook!Office.MailboxEnums.RestVersion.Beta:member'
     summary: Beta.
-  - name: v1_0
-    uid: 'outlook!Office.MailboxEnums.RestVersion.v1_0:member'
-    package: outlook!
+    name: Beta
+    fullName: Beta
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"beta"'
+  - uid: 'outlook!Office.MailboxEnums.RestVersion.v1_0:member'
     summary: Version 1.0.
-  - name: v2_0
-    uid: 'outlook!Office.MailboxEnums.RestVersion.v2_0:member'
-    package: outlook!
+    name: v1_0
+    fullName: v1_0
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"v1.0"'
+  - uid: 'outlook!Office.MailboxEnums.RestVersion.v2_0:member'
     summary: Version 2.0.
+    name: v2_0
+    fullName: v2_0
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"v2.0"'

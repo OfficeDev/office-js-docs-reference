@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Word.Interfaces.ParagraphCollectionData
-uid: 'word!Word.Interfaces.ParagraphCollectionData:interface'
-package: word!
-fullName: Word.Interfaces.ParagraphCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `paragraphCollection.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.ParagraphCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ParagraphCollectionData:interface'
+    summary: An interface describing the data returned by calling `paragraphCollection.toJSON()`<!-- -->.
+    name: Word.Interfaces.ParagraphCollectionData
+    fullName: Word.Interfaces.ParagraphCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.ParagraphCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.ParagraphData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.ParagraphCollectionData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.ParagraphCollectionData#items~0:complex'
+    name: 'Word.Interfaces.ParagraphData[]'
+    fullName: 'Word.Interfaces.ParagraphData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.ParagraphData:interface'
+        name: Word.Interfaces.ParagraphData
+        fullName: Word.Interfaces.ParagraphData
+      - name: '[]'
+        fullName: '[]'

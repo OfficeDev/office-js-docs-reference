@@ -1,78 +1,69 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TableRowLoadOptions
-uid: 'excel!Excel.Interfaces.TableRowLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.TableRowLoadOptions
-summary: >-
-  Represents a row in a table.
-
-
-  Note that unlike Ranges or Columns, which will adjust if new rows/columns are
-  added before them, a TableRow object represent the physical location of the
-  table row, but not the data. That is, if the data is sorted or if new rows are
-  added, a table row will continue to point at the index for which it was
-  created.
-
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.TableRowLoadOptions#$all:member'
-    package: excel!
-    fullName: $all
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions:interface'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Represents a row in a table.
+
+
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableRowLoadOptions
+    fullName: Excel.Interfaces.TableRowLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TableRowLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableRowLoadOptions#index:member'
+      - 'excel!Excel.Interfaces.TableRowLoadOptions#values:member'
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: index
-    uid: 'excel!Excel.Interfaces.TableRowLoadOptions#index:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions#index:member'
+    summary: |-
+      Returns the index number of the row within the rows collection of the table. Zero-indexed.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: index
     fullName: index
-    summary: >-
-      Returns the index number of the row within the rows collection of the
-      table. Zero-indexed.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'index?: boolean;'
       return:
-        type: boolean
-  - name: values
-    uid: 'excel!Excel.Interfaces.TableRowLoadOptions#values:member'
-    package: excel!
-    fullName: values
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions#values:member'
     summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'values?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

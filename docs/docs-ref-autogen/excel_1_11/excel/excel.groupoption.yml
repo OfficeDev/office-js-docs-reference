@@ -1,21 +1,29 @@
-### YamlMime:TSEnum
-name: Excel.GroupOption
-uid: 'excel!Excel.GroupOption:enum'
-package: excel!
-fullName: Excel.GroupOption
-summary: >-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: byColumns
-    uid: 'excel!Excel.GroupOption.byColumns:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.GroupOption:enum'
+    summary: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.GroupOption
+    fullName: Excel.GroupOption
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.GroupOption.byColumns:member'
+      - 'excel!Excel.GroupOption.byRows:member'
+  - uid: 'excel!Excel.GroupOption.byColumns:member'
     summary: Group by columns.
-  - name: byRows
-    uid: 'excel!Excel.GroupOption.byRows:member'
-    package: excel!
+    name: byColumns
+    fullName: byColumns
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByColumns"'
+  - uid: 'excel!Excel.GroupOption.byRows:member'
     summary: Group by rows.
+    name: byRows
+    fullName: byRows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByRows"'

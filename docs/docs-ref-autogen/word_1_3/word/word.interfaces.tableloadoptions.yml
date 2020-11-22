@@ -1,506 +1,446 @@
-### YamlMime:TSType
-name: Word.Interfaces.TableLoadOptions
-uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-package: word!
-fullName: Word.Interfaces.TableLoadOptions
-summary: >-
-  Represents a table in a Word document.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
+    summary: |-
+      Represents a table in a Word document.
 
-
-  \[ [API set: WordApi
-  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'word!Word.Interfaces.TableLoadOptions#$all:member'
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.TableLoadOptions
+    fullName: Word.Interfaces.TableLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: $all
+    children:
+      - 'word!Word.Interfaces.TableLoadOptions#$all:member'
+      - 'word!Word.Interfaces.TableLoadOptions#alignment:member'
+      - 'word!Word.Interfaces.TableLoadOptions#font:member'
+      - 'word!Word.Interfaces.TableLoadOptions#headerRowCount:member'
+      - 'word!Word.Interfaces.TableLoadOptions#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableLoadOptions#isUniform:member'
+      - 'word!Word.Interfaces.TableLoadOptions#nestingLevel:member'
+      - 'word!Word.Interfaces.TableLoadOptions#parentBody:member'
+      - 'word!Word.Interfaces.TableLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.TableLoadOptions#parentContentControlOrNullObject:member'
+      - 'word!Word.Interfaces.TableLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.TableLoadOptions#parentTableCell:member'
+      - 'word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member'
+      - 'word!Word.Interfaces.TableLoadOptions#parentTableOrNullObject:member'
+      - 'word!Word.Interfaces.TableLoadOptions#rowCount:member'
+      - 'word!Word.Interfaces.TableLoadOptions#shadingColor:member'
+      - 'word!Word.Interfaces.TableLoadOptions#style:member'
+      - 'word!Word.Interfaces.TableLoadOptions#styleBandedColumns:member'
+      - 'word!Word.Interfaces.TableLoadOptions#styleBandedRows:member'
+      - 'word!Word.Interfaces.TableLoadOptions#styleBuiltIn:member'
+      - 'word!Word.Interfaces.TableLoadOptions#styleFirstColumn:member'
+      - 'word!Word.Interfaces.TableLoadOptions#styleLastColumn:member'
+      - 'word!Word.Interfaces.TableLoadOptions#styleTotalRow:member'
+      - 'word!Word.Interfaces.TableLoadOptions#values:member'
+      - 'word!Word.Interfaces.TableLoadOptions#verticalAlignment:member'
+      - 'word!Word.Interfaces.TableLoadOptions#width:member'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: alignment
-    uid: 'word!Word.Interfaces.TableLoadOptions#alignment:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#alignment:member'
+    summary: |-
+      Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: alignment
     fullName: alignment
-    summary: >-
-      Gets or sets the alignment of the table against the page column. The value
-      can be 'Left', 'Centered', or 'Right'.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'alignment?: boolean;'
       return:
-        type: boolean
-  - name: font
-    uid: 'word!Word.Interfaces.TableLoadOptions#font:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#font:member'
+    summary: |-
+      Gets the font. Use this to get and set font name, size, color, and other properties.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
     fullName: font
-    summary: >-
-      Gets the font. Use this to get and set font name, size, color, and other
-      properties.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
-  - name: headerRowCount
-    uid: 'word!Word.Interfaces.TableLoadOptions#headerRowCount:member'
-    package: word!
-    fullName: headerRowCount
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#headerRowCount:member'
+    summary: |-
       Gets and sets the number of header rows.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: headerRowCount
+    fullName: headerRowCount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'headerRowCount?: boolean;'
       return:
-        type: boolean
-  - name: horizontalAlignment
-    uid: 'word!Word.Interfaces.TableLoadOptions#horizontalAlignment:member'
-    package: word!
-    fullName: horizontalAlignment
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#horizontalAlignment:member'
     summary: >-
-      Gets and sets the horizontal alignment of every cell in the table. The
-      value can be 'Left', 'Centered', 'Right', or 'Justified'.
+      Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right',
+      or 'Justified'.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'horizontalAlignment?: boolean;'
       return:
-        type: boolean
-  - name: isUniform
-    uid: 'word!Word.Interfaces.TableLoadOptions#isUniform:member'
-    package: word!
-    fullName: isUniform
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#isUniform:member'
+    summary: |-
       Indicates whether all of the table rows are uniform. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: isUniform
+    fullName: isUniform
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isUniform?: boolean;'
       return:
-        type: boolean
-  - name: nestingLevel
-    uid: 'word!Word.Interfaces.TableLoadOptions#nestingLevel:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#nestingLevel:member'
+    summary: |-
+      Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: nestingLevel
     fullName: nestingLevel
-    summary: >-
-      Gets the nesting level of the table. Top-level tables have level 1.
-      Read-only.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'nestingLevel?: boolean;'
       return:
-        type: boolean
-  - name: parentBody
-    uid: 'word!Word.Interfaces.TableLoadOptions#parentBody:member'
-    package: word!
-    fullName: parentBody
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#parentBody:member'
+    summary: |-
       Gets the parent body of the table.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentBody
+    fullName: parentBody
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
-  - name: parentContentControl
-    uid: 'word!Word.Interfaces.TableLoadOptions#parentContentControl:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#parentContentControl:member'
+    summary: |-
+      Gets the content control that contains the table. Throws an error if there isn't a parent content control.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
     fullName: parentContentControl
-    summary: >-
-      Gets the content control that contains the table. Throws an error if there
-      isn't a parent content control.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
-  - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.TableLoadOptions#parentContentControlOrNullObject:member
-    package: word!
+        type:
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#parentContentControlOrNullObject:member'
+    summary: |-
+      Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
     fullName: parentContentControlOrNullObject
-    summary: >-
-      Gets the content control that contains the table. Returns a null object if
-      there isn't a parent content control.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
-  - name: parentTable
-    uid: 'word!Word.Interfaces.TableLoadOptions#parentTable:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#parentTable:member'
+    summary: |-
+      Gets the table that contains this table. Throws an error if it is not contained in a table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
     fullName: parentTable
-    summary: >-
-      Gets the table that contains this table. Throws an error if it is not
-      contained in a table.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
-  - name: parentTableCell
-    uid: 'word!Word.Interfaces.TableLoadOptions#parentTableCell:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#parentTableCell:member'
+    summary: |-
+      Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCell
     fullName: parentTableCell
-    summary: >-
-      Gets the table cell that contains this table. Throws an error if it is not
-      contained in a table cell.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
-  - name: parentTableCellOrNullObject
-    uid: 'word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member'
+    summary: |-
+      Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCellOrNullObject
     fullName: parentTableCellOrNullObject
-    summary: >-
-      Gets the table cell that contains this table. Returns a null object if it
-      is not contained in a table cell.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
-  - name: parentTableOrNullObject
-    uid: 'word!Word.Interfaces.TableLoadOptions#parentTableOrNullObject:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#parentTableOrNullObject:member'
+    summary: |-
+      Gets the table that contains this table. Returns a null object if it is not contained in a table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableOrNullObject
     fullName: parentTableOrNullObject
-    summary: >-
-      Gets the table that contains this table. Returns a null object if it is
-      not contained in a table.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
-  - name: rowCount
-    uid: 'word!Word.Interfaces.TableLoadOptions#rowCount:member'
-    package: word!
-    fullName: rowCount
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableLoadOptions#rowCount:member'
+    summary: |-
       Gets the number of rows in the table. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rowCount?: boolean;'
       return:
-        type: boolean
-  - name: shadingColor
-    uid: 'word!Word.Interfaces.TableLoadOptions#shadingColor:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#shadingColor:member'
+    summary: |-
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
     fullName: shadingColor
-    summary: >-
-      Gets and sets the shading color. Color is specified in "\#RRGGBB" format
-      or by using the color name.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shadingColor?: boolean;'
       return:
-        type: boolean
-  - name: style
-    uid: 'word!Word.Interfaces.TableLoadOptions#style:member'
-    package: word!
-    fullName: style
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#style:member'
     summary: >-
-      Gets or sets the style name for the table. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
+      Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: boolean;'
       return:
-        type: boolean
-  - name: styleBandedColumns
-    uid: 'word!Word.Interfaces.TableLoadOptions#styleBandedColumns:member'
-    package: word!
-    fullName: styleBandedColumns
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#styleBandedColumns:member'
+    summary: |-
       Gets and sets whether the table has banded columns.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleBandedColumns
+    fullName: styleBandedColumns
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styleBandedColumns?: boolean;'
       return:
-        type: boolean
-  - name: styleBandedRows
-    uid: 'word!Word.Interfaces.TableLoadOptions#styleBandedRows:member'
-    package: word!
-    fullName: styleBandedRows
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#styleBandedRows:member'
+    summary: |-
       Gets and sets whether the table has banded rows.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleBandedRows
+    fullName: styleBandedRows
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styleBandedRows?: boolean;'
       return:
-        type: boolean
-  - name: styleBuiltIn
-    uid: 'word!Word.Interfaces.TableLoadOptions#styleBuiltIn:member'
-    package: word!
-    fullName: styleBuiltIn
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#styleBuiltIn:member'
     summary: >-
-      Gets or sets the built-in style name for the table. Use this property for
-      built-in styles that are portable between locales. To use custom styles or
-      localized style names, see the "style" property.
+      Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable
+      between locales. To use custom styles or localized style names, see the "style" property.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleBuiltIn
+    fullName: styleBuiltIn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styleBuiltIn?: boolean;'
       return:
-        type: boolean
-  - name: styleFirstColumn
-    uid: 'word!Word.Interfaces.TableLoadOptions#styleFirstColumn:member'
-    package: word!
-    fullName: styleFirstColumn
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#styleFirstColumn:member'
+    summary: |-
       Gets and sets whether the table has a first column with a special style.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleFirstColumn
+    fullName: styleFirstColumn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styleFirstColumn?: boolean;'
       return:
-        type: boolean
-  - name: styleLastColumn
-    uid: 'word!Word.Interfaces.TableLoadOptions#styleLastColumn:member'
-    package: word!
-    fullName: styleLastColumn
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#styleLastColumn:member'
+    summary: |-
       Gets and sets whether the table has a last column with a special style.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleLastColumn
+    fullName: styleLastColumn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styleLastColumn?: boolean;'
       return:
-        type: boolean
-  - name: styleTotalRow
-    uid: 'word!Word.Interfaces.TableLoadOptions#styleTotalRow:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#styleTotalRow:member'
+    summary: |-
+      Gets and sets whether the table has a total (last) row with a special style.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleTotalRow
     fullName: styleTotalRow
-    summary: >-
-      Gets and sets whether the table has a total (last) row with a special
-      style.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'styleTotalRow?: boolean;'
       return:
-        type: boolean
-  - name: values
-    uid: 'word!Word.Interfaces.TableLoadOptions#values:member'
-    package: word!
-    fullName: values
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#values:member'
+    summary: |-
       Gets and sets the text values in the table, as a 2D Javascript array.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'values?: boolean;'
       return:
-        type: boolean
-  - name: verticalAlignment
-    uid: 'word!Word.Interfaces.TableLoadOptions#verticalAlignment:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#verticalAlignment:member'
+    summary: |-
+      Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
     fullName: verticalAlignment
-    summary: >-
-      Gets and sets the vertical alignment of every cell in the table. The value
-      can be 'Top', 'Center', or 'Bottom'.
-
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'verticalAlignment?: boolean;'
       return:
-        type: boolean
-  - name: width
-    uid: 'word!Word.Interfaces.TableLoadOptions#width:member'
-    package: word!
-    fullName: width
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.TableLoadOptions#width:member'
+    summary: |-
       Gets and sets the width of the table in points.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions
+  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
+    name: Word.Interfaces.TableLoadOptions
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
+    name: Word.Interfaces.TableCellLoadOptions

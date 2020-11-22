@@ -1,48 +1,42 @@
-### YamlMime:TSType
-name: Visio.Interfaces.PageViewLoadOptions
-uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-package: visio!
-fullName: Visio.Interfaces.PageViewLoadOptions
-summary: >-
-  Represents the PageView class.
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+    summary: |-
+      Represents the PageView class.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'visio!Visio.Interfaces.PageViewLoadOptions#$all:member'
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.PageViewLoadOptions
+    fullName: Visio.Interfaces.PageViewLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: visio!
+    children:
+      - 'visio!Visio.Interfaces.PageViewLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.PageViewLoadOptions#zoom:member'
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions#$all:member'
+    name: $all
     fullName: $all
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: zoom
-    uid: 'visio!Visio.Interfaces.PageViewLoadOptions#zoom:member'
-    package: visio!
+        type:
+          - boolean
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions#zoom:member'
+    summary: |-
+      Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: zoom
     fullName: zoom
-    summary: >-
-      Get and set Page's Zoom level. The value can be between 10 and 400 and
-      denotes the percentage of zoom.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'zoom?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

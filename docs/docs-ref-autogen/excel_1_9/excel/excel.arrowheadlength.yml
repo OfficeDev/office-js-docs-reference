@@ -1,25 +1,35 @@
-### YamlMime:TSEnum
-name: Excel.ArrowheadLength
-uid: 'excel!Excel.ArrowheadLength:enum'
-package: excel!
-fullName: Excel.ArrowheadLength
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: long
-    uid: 'excel!Excel.ArrowheadLength.long:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ArrowheadLength:enum'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ArrowheadLength
+    fullName: Excel.ArrowheadLength
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: medium
-    uid: 'excel!Excel.ArrowheadLength.medium:member'
-    package: excel!
-    summary: ''
-  - name: short
-    uid: 'excel!Excel.ArrowheadLength.short:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ArrowheadLength.long:member'
+      - 'excel!Excel.ArrowheadLength.medium:member'
+      - 'excel!Excel.ArrowheadLength.short:member'
+  - uid: 'excel!Excel.ArrowheadLength.long:member'
+    name: long
+    fullName: long
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Long"'
+  - uid: 'excel!Excel.ArrowheadLength.medium:member'
+    name: medium
+    fullName: medium
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Medium"'
+  - uid: 'excel!Excel.ArrowheadLength.short:member'
+    name: short
+    fullName: short
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Short"'

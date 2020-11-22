@@ -1,173 +1,152 @@
-### YamlMime:TSType
-name: Word.Interfaces.InlinePictureCollectionLoadOptions
-uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
-package: word!
-fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
-summary: >-
-  Contains a collection of
-  [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
+    summary: |-
+      Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member'
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.InlinePictureCollectionLoadOptions
+    fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: $all
+    children:
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: altTextDescription
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member
-    package: word!
-    fullName: altTextDescription
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member'
     summary: >-
-      For EACH ITEM in the collection: Gets or sets a string that represents the
-      alternative text associated with the inline image.
+      For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the
+      inline image.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'altTextDescription?: boolean;'
       return:
-        type: boolean
-  - name: altTextTitle
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextTitle
     fullName: altTextTitle
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets a string that contains the
-      title for the inline image.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'altTextTitle?: boolean;'
       return:
-        type: boolean
-  - name: height
-    uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: height
     fullName: height
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets a number that describes the
-      height of the inline image.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: boolean;'
       return:
-        type: boolean
-  - name: hyperlink
-    uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member'
-    package: word!
-    fullName: hyperlink
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member'
     summary: >-
-      For EACH ITEM in the collection: Gets or sets a hyperlink on the image.
-      Use a '\#' to separate the address part from the optional location part.
+      For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '\#' to separate the address part
+      from the optional location part.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hyperlink?: boolean;'
       return:
-        type: boolean
-  - name: lockAspectRatio
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member
-    package: word!
-    fullName: lockAspectRatio
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member'
     summary: >-
-      For EACH ITEM in the collection: Gets or sets a value that indicates
-      whether the inline image retains its original proportions when you resize
-      it.
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original
+      proportions when you resize it.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lockAspectRatio
+    fullName: lockAspectRatio
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'lockAspectRatio?: boolean;'
       return:
-        type: boolean
-  - name: parentContentControl
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member
-    package: word!
-    fullName: parentContentControl
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the inline image. Throws an error if there isn't a parent content control.
+      For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an error if there
+      isn't a parent content control.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
-  - name: width
-    uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: width
     fullName: width
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets a number that describes the
-      width of the inline image.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions

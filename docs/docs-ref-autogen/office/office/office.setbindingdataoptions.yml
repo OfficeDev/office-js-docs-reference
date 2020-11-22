@@ -1,146 +1,163 @@
-### YamlMime:TSType
-name: Office.SetBindingDataOptions
-uid: 'office!Office.SetBindingDataOptions:interface'
-package: office!
-fullName: Office.SetBindingDataOptions
-summary: Provides options for how to set the data in a binding.
-remarks: 'If the rows option is used, the value must be "thisRow".'
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: asyncContext
-    uid: 'office!Office.SetBindingDataOptions#asyncContext:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.SetBindingDataOptions:interface'
+    summary: Provides options for how to set the data in a binding.
+    remarks: 'If the rows option is used, the value must be "thisRow".'
+    name: Office.SetBindingDataOptions
+    fullName: Office.SetBindingDataOptions
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: asyncContext
+    children:
+      - 'office!Office.SetBindingDataOptions#asyncContext:member'
+      - 'office!Office.SetBindingDataOptions#cellFormat:member'
+      - 'office!Office.SetBindingDataOptions#coercionType:member'
+      - 'office!Office.SetBindingDataOptions#columns:member'
+      - 'office!Office.SetBindingDataOptions#rows:member'
+      - 'office!Office.SetBindingDataOptions#startColumn:member'
+      - 'office!Office.SetBindingDataOptions#startRow:member'
+      - 'office!Office.SetBindingDataOptions#tableOptions:member'
+  - uid: 'office!Office.SetBindingDataOptions#asyncContext:member'
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
+    name: asyncContext
+    fullName: asyncContext
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'asyncContext?: any'
       return:
-        type: any
-  - name: cellFormat
-    uid: 'office!Office.SetBindingDataOptions#cellFormat:member'
-    package: office!
-    fullName: cellFormat
+        type:
+          - any
+  - uid: 'office!Office.SetBindingDataOptions#cellFormat:member'
     summary: >-
-      Use only with binding type table and when a TableData object is passed for
-      the data parameter. An array of objects that specify a range of columns,
-      rows, or cells and specify, as key-value pairs, the cell formatting to
-      apply to that range.
+      Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects
+      that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to
+      that range.
 
 
-      Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}},
-      {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle:
-      "bold"}}]`
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
+      {borderColor: "white", fontStyle: "bold"}}]`
+    name: cellFormat
+    fullName: cellFormat
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cellFormat?: RangeFormatConfiguration[]'
       return:
-        type: '<xref uid="office!Office.RangeFormatConfiguration:interface" />[]'
-  - name: coercionType
-    uid: 'office!Office.SetBindingDataOptions#coercionType:member'
-    package: office!
+        type:
+          - 'office!Office.SetBindingDataOptions#cellFormat~0:complex'
+  - uid: 'office!Office.SetBindingDataOptions#coercionType:member'
+    summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
+    name: coercionType
     fullName: coercionType
-    summary: >-
-      Explicitly sets the shape of the data object. If not supplied is inferred
-      from the data type.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'coercionType?: Office.CoercionType | string'
       return:
-        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
-  - name: columns
-    uid: 'office!Office.SetBindingDataOptions#columns:member'
-    package: office!
-    fullName: columns
+        type:
+          - 'office!Office.SetBindingDataOptions#coercionType~0:complex'
+  - uid: 'office!Office.SetBindingDataOptions#columns:member'
     summary: >-
-      Only for table bindings in content add-ins for Access. Array of strings.
-      Specifies the column names.
+      Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
 
 
-      **Important**: We no longer recommend that you create and use Access web
-      apps and databases in SharePoint. As an alternative, we recommend that you
-      use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build
-      no-code business solutions for web and mobile devices.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As an
+      alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
+      business solutions for web and mobile devices.
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'columns?: string[]'
       return:
-        type: 'string[]'
-  - name: rows
-    uid: 'office!Office.SetBindingDataOptions#rows:member'
-    package: office!
-    fullName: rows
+        type:
+          - 'string[]'
+  - uid: 'office!Office.SetBindingDataOptions#rows:member'
     summary: >-
-      Only for table bindings in content add-ins for Access. Specifies the
-      pre-defined string "thisRow" to get data in the currently selected row.
+      Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
+      the currently selected row.
 
 
-      **Important**: We no longer recommend that you create and use Access web
-      apps and databases in SharePoint. As an alternative, we recommend that you
-      use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build
-      no-code business solutions for web and mobile devices.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As an
+      alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
+      business solutions for web and mobile devices.
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rows?: string'
       return:
-        type: string
-  - name: startColumn
-    uid: 'office!Office.SetBindingDataOptions#startColumn:member'
-    package: office!
-    fullName: startColumn
+        type:
+          - string
+  - uid: 'office!Office.SetBindingDataOptions#startColumn:member'
     summary: >-
-      Specifies the zero-based starting column for a subset of the data. Only
-      for table or matrix bindings. If omitted, data is set starting in the
-      first column.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted,
+      data is set starting in the first column.
+    name: startColumn
+    fullName: startColumn
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'startColumn?: number'
       return:
-        type: number
-  - name: startRow
-    uid: 'office!Office.SetBindingDataOptions#startRow:member'
-    package: office!
-    fullName: startRow
+        type:
+          - number
+  - uid: 'office!Office.SetBindingDataOptions#startRow:member'
     summary: >-
-      Specifies the zero-based starting row for a subset of the data in the
-      binding. Only for table or matrix bindings. If omitted, data is set
-      starting in the first row.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings.
+      If omitted, data is set starting in the first row.
+    name: startRow
+    fullName: startRow
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'startRow?: number'
       return:
-        type: number
-  - name: tableOptions
-    uid: 'office!Office.SetBindingDataOptions#tableOptions:member'
-    package: office!
-    fullName: tableOptions
+        type:
+          - number
+  - uid: 'office!Office.SetBindingDataOptions#tableOptions:member'
     summary: >-
-      For an inserted table, a list of key-value pairs that specify table
-      formatting options, such as header row, total row, and banded rows.
-      Example: `{bandedRows: true,  filterButton: false}`
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
+      row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
+    name: tableOptions
+    fullName: tableOptions
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tableOptions?: object'
       return:
-        type: object
+        type:
+          - object
+references:
+  - uid: 'office!Office.SetBindingDataOptions#cellFormat~0:complex'
+    name: 'RangeFormatConfiguration[]'
+    fullName: 'Office.RangeFormatConfiguration[]'
+    spec.typeScript:
+      - uid: 'office!Office.RangeFormatConfiguration:interface'
+        name: RangeFormatConfiguration
+        fullName: Office.RangeFormatConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'office!Office.SetBindingDataOptions#coercionType~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'office!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'

@@ -1,142 +1,151 @@
-### YamlMime:TSType
-name: Excel.ChartAxis
-uid: 'excel!Excel.ChartAxis:class'
-package: excel!
-fullName: Excel.ChartAxis
-summary: >-
-  Represents a single axis in a chart.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxis:class'
+    summary: |-
+      Represents a single axis in a chart.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: axisGroup
-    uid: 'excel!Excel.ChartAxis#axisGroup:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartAxis
+    fullName: Excel.ChartAxis
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
+    children:
+      - 'excel!Excel.ChartAxis#axisGroup:member'
+      - 'excel!Excel.ChartAxis#baseTimeUnit:member'
+      - 'excel!Excel.ChartAxis#categoryType:member'
+      - 'excel!Excel.ChartAxis#context:member'
+      - 'excel!Excel.ChartAxis#customDisplayUnit:member'
+      - 'excel!Excel.ChartAxis#displayUnit:member'
+      - 'excel!Excel.ChartAxis#format:member'
+      - 'excel!Excel.ChartAxis#height:member'
+      - 'excel!Excel.ChartAxis#left:member'
+      - 'excel!Excel.ChartAxis#load:member(1)'
+      - 'excel!Excel.ChartAxis#load:member(2)'
+      - 'excel!Excel.ChartAxis#load:member(3)'
+      - 'excel!Excel.ChartAxis#logBase:member'
+      - 'excel!Excel.ChartAxis#majorGridlines:member'
+      - 'excel!Excel.ChartAxis#majorTickMark:member'
+      - 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
+      - 'excel!Excel.ChartAxis#majorUnit:member'
+      - 'excel!Excel.ChartAxis#maximum:member'
+      - 'excel!Excel.ChartAxis#minimum:member'
+      - 'excel!Excel.ChartAxis#minorGridlines:member'
+      - 'excel!Excel.ChartAxis#minorTickMark:member'
+      - 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
+      - 'excel!Excel.ChartAxis#minorUnit:member'
+      - 'excel!Excel.ChartAxis#reversePlotOrder:member'
+      - 'excel!Excel.ChartAxis#scaleType:member'
+      - 'excel!Excel.ChartAxis#set:member(1)'
+      - 'excel!Excel.ChartAxis#set:member(2)'
+      - 'excel!Excel.ChartAxis#setCategoryNames:member(1)'
+      - 'excel!Excel.ChartAxis#setCustomDisplayUnit:member(1)'
+      - 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
+      - 'excel!Excel.ChartAxis#tickLabelPosition:member'
+      - 'excel!Excel.ChartAxis#tickLabelSpacing:member'
+      - 'excel!Excel.ChartAxis#tickMarkSpacing:member'
+      - 'excel!Excel.ChartAxis#title:member'
+      - 'excel!Excel.ChartAxis#toJSON:member(1)'
+      - 'excel!Excel.ChartAxis#top:member'
+      - 'excel!Excel.ChartAxis#type:member'
+      - 'excel!Excel.ChartAxis#visible:member'
+      - 'excel!Excel.ChartAxis#width:member'
+  - uid: 'excel!Excel.ChartAxis#axisGroup:member'
+    summary: |-
+      Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axisGroup
     fullName: axisGroup
-    summary: >-
-      Specifies the group for the specified axis. See Excel.ChartAxisGroup for
-      details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly axisGroup: Excel.ChartAxisGroup | "Primary" | "Secondary";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" |
-          "Secondary"
-  - name: baseTimeUnit
-    uid: 'excel!Excel.ChartAxis#baseTimeUnit:member'
-    package: excel!
-    fullName: baseTimeUnit
-    summary: >-
+        type:
+          - 'excel!Excel.ChartAxis#axisGroup~0:complex'
+  - uid: 'excel!Excel.ChartAxis#baseTimeUnit:member'
+    summary: |-
       Specifies the base unit for the specified category axis.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: baseTimeUnit
+    fullName: baseTimeUnit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'baseTimeUnit: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
-          | "Years"
-  - name: categoryType
-    uid: 'excel!Excel.ChartAxis#categoryType:member'
-    package: excel!
-    fullName: categoryType
-    summary: >-
+        type:
+          - 'excel!Excel.ChartAxis#baseTimeUnit~0:complex'
+  - uid: 'excel!Excel.ChartAxis#categoryType:member'
+    summary: |-
       Specifies the category axis type.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryType
+    fullName: categoryType
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        categoryType: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" |
-        "DateAxis";
+      content: 'categoryType: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisCategoryType:enum" /> | "Automatic" |
-          "TextAxis" | "DateAxis"
-  - name: context
-    uid: 'excel!Excel.ChartAxis#context:member'
-    package: excel!
-    fullName: context
+        type:
+          - 'excel!Excel.ChartAxis#categoryType~0:complex'
+  - uid: 'excel!Excel.ChartAxis#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: customDisplayUnit
-    uid: 'excel!Excel.ChartAxis#customDisplayUnit:member'
-    package: excel!
-    fullName: customDisplayUnit
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxis#customDisplayUnit:member'
     summary: >-
-      Specifies the custom axis display unit value. To set this property, please
-      use the SetCustomDisplayUnit(double) method.
+      Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double)
+      method.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: customDisplayUnit
+    fullName: customDisplayUnit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly customDisplayUnit: number;'
       return:
-        type: number
-  - name: displayUnit
-    uid: 'excel!Excel.ChartAxis#displayUnit:member'
-    package: excel!
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#displayUnit:member'
+    summary: |-
+      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: displayUnit
     fullName: displayUnit
-    summary: >-
-      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for
-      details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        displayUnit: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" |
-        "Thousands" | "TenThousands" | "HundredThousands" | "Millions" |
-        "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
+        displayUnit: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+        "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisDisplayUnit:enum" /> | "None" |
-          "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
-          "Millions" | "TenMillions" | "HundredMillions" | "Billions" |
-          "Trillions" | "Custom"
+        type:
+          - 'excel!Excel.ChartAxis#displayUnit~0:complex'
         description: >-
 
 
@@ -164,347 +173,451 @@ properties:
           });
 
           ```
-  - name: format
-    uid: 'excel!Excel.ChartAxis#format:member'
-    package: excel!
+  - uid: 'excel!Excel.ChartAxis#format:member'
+    summary: |-
+      Represents the formatting of a chart object, which includes line and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
     fullName: format
-    summary: >-
-      Represents the formatting of a chart object, which includes line and font
-      formatting.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly format: Excel.ChartAxisFormat;'
       return:
-        type: '<xref uid="excel!Excel.ChartAxisFormat:class" />'
-  - name: height
-    uid: 'excel!Excel.ChartAxis#height:member'
-    package: excel!
+        type:
+          - 'excel!Excel.ChartAxisFormat:class'
+  - uid: 'excel!Excel.ChartAxis#height:member'
+    summary: |-
+      Specifies the height, in points, of the chart axis. Null if the axis is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
     fullName: height
-    summary: >-
-      Specifies the height, in points, of the chart axis. Null if the axis is
-      not visible.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly height: number;'
       return:
-        type: number
-  - name: left
-    uid: 'excel!Excel.ChartAxis#left:member'
-    package: excel!
-    fullName: left
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#left:member'
     summary: >-
-      Specifies the distance, in points, from the left edge of the axis to the
-      left of chart area. Null if the axis is not visible.
+      Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is
+      not visible.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly left: number;'
       return:
-        type: number
-  - name: logBase
-    uid: 'excel!Excel.ChartAxis#logBase:member'
-    package: excel!
-    fullName: logBase
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#load:member(1)'
     summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+  - uid: 'excel!Excel.ChartAxis#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Get the maximum of Chart Axis from Chart1
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              var axis = chart.axes.valueAxis;
+              axis.load('maximum');
+              return ctx.sync().then(function() {
+                      console.log(axis.maximum);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxis#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxis;
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartAxis#logBase:member'
+    summary: |-
       Specifies the base of the logarithm when using logarithmic scales.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: logBase
+    fullName: logBase
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'logBase: number;'
       return:
-        type: number
-  - name: majorGridlines
-    uid: 'excel!Excel.ChartAxis#majorGridlines:member'
-    package: excel!
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#majorGridlines:member'
+    summary: |-
+      Returns a Gridlines object that represents the major gridlines for the specified axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorGridlines
     fullName: majorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the major gridlines for the
-      specified axis.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly majorGridlines: Excel.ChartGridlines;'
       return:
-        type: '<xref uid="excel!Excel.ChartGridlines:class" />'
-  - name: majorTickMark
-    uid: 'excel!Excel.ChartAxis#majorTickMark:member'
-    package: excel!
+        type:
+          - 'excel!Excel.ChartGridlines:class'
+  - uid: 'excel!Excel.ChartAxis#majorTickMark:member'
+    summary: |-
+      Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorTickMark
     fullName: majorTickMark
-    summary: >-
-      Specifies the type of major tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        majorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" |
-        "Outside";
+      content: 'majorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
-          "Inside" | "Outside"
-  - name: majorTimeUnitScale
-    uid: 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
-    package: excel!
+        type:
+          - 'excel!Excel.ChartAxis#majorTickMark~0:complex'
+  - uid: 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
+    summary: |-
+      Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorTimeUnitScale
     fullName: majorTimeUnitScale
-    summary: >-
-      Specifies the major unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        majorTimeUnitScale: Excel.ChartAxisTimeUnit | "Days" | "Months" |
-        "Years";
+      content: 'majorTimeUnitScale: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
-          | "Years"
-  - name: majorUnit
-    uid: 'excel!Excel.ChartAxis#majorUnit:member'
-    package: excel!
-    fullName: majorUnit
+        type:
+          - 'excel!Excel.ChartAxis#majorTimeUnitScale~0:complex'
+  - uid: 'excel!Excel.ChartAxis#majorUnit:member'
     summary: >-
-      Represents the interval between two major tick marks. Can be set to a
-      numeric value or an empty string. The returned value is always a number.
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorUnit
+    fullName: majorUnit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'majorUnit: any;'
       return:
-        type: any
-  - name: maximum
-    uid: 'excel!Excel.ChartAxis#maximum:member'
-    package: excel!
-    fullName: maximum
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#maximum:member'
     summary: >-
-      Represents the maximum value on the value axis. Can be set to a numeric
-      value or an empty string (for automatic axis values). The returned value
-      is always a number.
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'maximum: any;'
       return:
-        type: any
-  - name: minimum
-    uid: 'excel!Excel.ChartAxis#minimum:member'
-    package: excel!
-    fullName: minimum
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#minimum:member'
     summary: >-
-      Represents the minimum value on the value axis. Can be set to a numeric
-      value or an empty string (for automatic axis values). The returned value
-      is always a number.
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'minimum: any;'
       return:
-        type: any
-  - name: minorGridlines
-    uid: 'excel!Excel.ChartAxis#minorGridlines:member'
-    package: excel!
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#minorGridlines:member'
+    summary: |-
+      Returns a Gridlines object that represents the minor gridlines for the specified axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorGridlines
     fullName: minorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the minor gridlines for the
-      specified axis.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly minorGridlines: Excel.ChartGridlines;'
       return:
-        type: '<xref uid="excel!Excel.ChartGridlines:class" />'
-  - name: minorTickMark
-    uid: 'excel!Excel.ChartAxis#minorTickMark:member'
-    package: excel!
+        type:
+          - 'excel!Excel.ChartGridlines:class'
+  - uid: 'excel!Excel.ChartAxis#minorTickMark:member'
+    summary: |-
+      Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorTickMark
     fullName: minorTickMark
-    summary: >-
-      Specifies the type of minor tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        minorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" |
-        "Outside";
+      content: 'minorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
-          "Inside" | "Outside"
-  - name: minorTimeUnitScale
-    uid: 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
-    package: excel!
+        type:
+          - 'excel!Excel.ChartAxis#minorTickMark~0:complex'
+  - uid: 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
+    summary: |-
+      Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorTimeUnitScale
     fullName: minorTimeUnitScale
-    summary: >-
-      Specifies the minor unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        minorTimeUnitScale: Excel.ChartAxisTimeUnit | "Days" | "Months" |
-        "Years";
+      content: 'minorTimeUnitScale: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
-          | "Years"
-  - name: minorUnit
-    uid: 'excel!Excel.ChartAxis#minorUnit:member'
-    package: excel!
-    fullName: minorUnit
+        type:
+          - 'excel!Excel.ChartAxis#minorTimeUnitScale~0:complex'
+  - uid: 'excel!Excel.ChartAxis#minorUnit:member'
     summary: >-
-      Represents the interval between two minor tick marks. Can be set to a
-      numeric value or an empty string (for automatic axis values). The returned
-      value is always a number.
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorUnit
+    fullName: minorUnit
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'minorUnit: any;'
       return:
-        type: any
-  - name: reversePlotOrder
-    uid: 'excel!Excel.ChartAxis#reversePlotOrder:member'
-    package: excel!
-    fullName: reversePlotOrder
-    summary: >-
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#reversePlotOrder:member'
+    summary: |-
       Specifies if Excel plots data points from last to first.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: reversePlotOrder
+    fullName: reversePlotOrder
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'reversePlotOrder: boolean;'
       return:
-        type: boolean
-  - name: scaleType
-    uid: 'excel!Excel.ChartAxis#scaleType:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartAxis#scaleType:member'
+    summary: |-
+      Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: scaleType
     fullName: scaleType
-    summary: >-
-      Specifies the value axis scale type. See Excel.ChartAxisScaleType for
-      details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'scaleType: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisScaleType:enum" /> | "Linear" |
-          "Logarithmic"
-  - name: showDisplayUnitLabel
-    uid: 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
-    package: excel!
-    fullName: showDisplayUnitLabel
+        type:
+          - 'excel!Excel.ChartAxis#scaleType~0:complex'
+  - uid: 'excel!Excel.ChartAxis#set:member(1)'
     summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartAxis): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartAxisUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartAxis#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxis): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartAxis:class'
+  - uid: 'excel!Excel.ChartAxis#setCategoryNames:member(1)'
+    summary: |-
+      Sets all the category names for the specified axis.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setCategoryNames(sourceData)
+    fullName: setCategoryNames(sourceData)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategoryNames(sourceData: Range): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartAxis#setCustomDisplayUnit:member(1)'
+    summary: |-
+      Sets the axis display unit to a custom value.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setCustomDisplayUnit(value)
+    fullName: setCustomDisplayUnit(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCustomDisplayUnit(value: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: Custom value of the display unit.
+          type:
+            - number
+  - uid: 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
+    summary: |-
       Specifies if the axis display unit label is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showDisplayUnitLabel
+    fullName: showDisplayUnitLabel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'showDisplayUnitLabel: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
         description: >-
 
 
@@ -528,371 +641,273 @@ properties:
           });
 
           ```
-  - name: tickLabelPosition
-    uid: 'excel!Excel.ChartAxis#tickLabelPosition:member'
-    package: excel!
+  - uid: 'excel!Excel.ChartAxis#tickLabelPosition:member'
+    summary: >-
+      Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      details.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tickLabelPosition
     fullName: tickLabelPosition
-    summary: >-
-      Specifies the position of tick-mark labels on the specified axis. See
-      Excel.ChartAxisTickLabelPosition for details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        tickLabelPosition: Excel.ChartAxisTickLabelPosition | "NextToAxis" |
-        "High" | "Low" | "None";
+      content: 'tickLabelPosition: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTickLabelPosition:enum" /> |
-          "NextToAxis" | "High" | "Low" | "None"
-  - name: tickLabelSpacing
-    uid: 'excel!Excel.ChartAxis#tickLabelSpacing:member'
-    package: excel!
-    fullName: tickLabelSpacing
+        type:
+          - 'excel!Excel.ChartAxis#tickLabelPosition~0:complex'
+  - uid: 'excel!Excel.ChartAxis#tickLabelSpacing:member'
     summary: >-
-      Specifies the number of categories or series between tick-mark labels. Can
-      be a value from 1 through 31999 or an empty string for automatic setting.
-      The returned value is always a number.
+      Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tickLabelSpacing
+    fullName: tickLabelSpacing
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tickLabelSpacing: any;'
       return:
-        type: any
-  - name: tickMarkSpacing
-    uid: 'excel!Excel.ChartAxis#tickMarkSpacing:member'
-    package: excel!
-    fullName: tickMarkSpacing
-    summary: >-
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#tickMarkSpacing:member'
+    summary: |-
       Specifies the number of categories or series between tick marks.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tickMarkSpacing
+    fullName: tickMarkSpacing
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tickMarkSpacing: number;'
       return:
-        type: number
-  - name: title
-    uid: 'excel!Excel.ChartAxis#title:member'
-    package: excel!
-    fullName: title
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#title:member'
+    summary: |-
       Represents the axis title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly title: Excel.ChartAxisTitle;'
       return:
-        type: '<xref uid="excel!Excel.ChartAxisTitle:class" />'
-  - name: top
-    uid: 'excel!Excel.ChartAxis#top:member'
-    package: excel!
-    fullName: top
+        type:
+          - 'excel!Excel.ChartAxisTitle:class'
+  - uid: 'excel!Excel.ChartAxis#toJSON:member(1)'
     summary: >-
-      Specifies the distance, in points, from the top edge of the axis to the
-      top of chart area. Null if the axis is not visible.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly top: number;'
-      return:
-        type: number
-  - name: type
-    uid: 'excel!Excel.ChartAxis#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
-      Specifies the axis type. See Excel.ChartAxisType for details.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly type: Excel.ChartAxisType | "Invalid" | "Category" | "Value" |
-        "Series";
-      return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisType:enum" /> | "Invalid" | "Category"
-          | "Value" | "Series"
-  - name: visible
-    uid: 'excel!Excel.ChartAxis#visible:member'
-    package: excel!
-    fullName: visible
-    summary: >-
-      Specifies if the axis is visible.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'visible: boolean;'
-      return:
-        type: boolean
-  - name: width
-    uid: 'excel!Excel.ChartAxis#width:member'
-    package: excel!
-    fullName: width
-    summary: >-
-      Specifies the width, in points, of the chart axis. Null if the axis is not
-      visible.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly width: number;'
-      return:
-        type: number
-methods:
-  - name: load(options)
-    uid: 'excel!Excel.ChartAxis#load:member(1)'
-    package: excel!
-    fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'load(options?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.ChartAxisLoadOptions:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.ChartAxis:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.ChartAxis#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.ChartAxis;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.ChartAxis:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the maximum of Chart Axis from Chart1
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var axis = chart.axes.valueAxis;
-              axis.load('maximum');
-              return ctx.sync().then(function() {
-                      console.log(axis.maximum);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ChartAxis#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.ChartAxis;
-      parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.ChartAxis:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.ChartAxis#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartAxis): void`
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        set(properties: Interfaces.ChartAxisUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: '<xref uid="excel!Excel.Interfaces.ChartAxisUpdateData:interface" />'
-        - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.ChartAxis#set:member(2)'
-    package: excel!
-    fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'set(properties: Excel.ChartAxis): void;'
-      parameters:
-        - id: properties
-          description: ''
-          type: '<xref uid="excel!Excel.ChartAxis:class" />'
-      return:
-        type: void
-        description: ''
-  - name: setCategoryNames(sourceData)
-    uid: 'excel!Excel.ChartAxis#setCategoryNames:member(1)'
-    package: excel!
-    fullName: setCategoryNames(sourceData)
-    summary: >-
-      Sets all the category names for the specified axis.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setCategoryNames(sourceData: Range): void;'
-      parameters:
-        - id: sourceData
-          description: The Range object corresponding to the source data.
-          type: '<xref uid="excel!Excel.Range:class" />'
-      return:
-        type: void
-        description: ''
-  - name: setCustomDisplayUnit(value)
-    uid: 'excel!Excel.ChartAxis#setCustomDisplayUnit:member(1)'
-    package: excel!
-    fullName: setCustomDisplayUnit(value)
-    summary: >-
-      Sets the axis display unit to a custom value.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setCustomDisplayUnit(value: number): void;'
-      parameters:
-        - id: value
-          description: Custom value of the display unit.
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.ChartAxis#toJSON:member(1)'
-    package: excel!
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartAxisData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.ChartAxis object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.ChartAxisData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartAxisData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartAxisData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'excel!Excel.ChartAxis#top:member'
+    summary: >-
+      Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not
+      visible.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#type:member'
+    summary: |-
+      Specifies the axis type. See Excel.ChartAxisType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series";'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis#type~0:complex'
+  - uid: 'excel!Excel.ChartAxis#visible:member'
+    summary: |-
+      Specifies if the axis is visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartAxis#width:member'
+    summary: |-
+      Specifies the width, in points, of the chart axis. Null if the axis is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.ChartAxis#axisGroup~0:complex'
+    name: Excel.ChartAxisGroup | "Primary" | "Secondary"
+    fullName: Excel.ChartAxisGroup | "Primary" | "Secondary"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisGroup:enum'
+        name: Excel.ChartAxisGroup
+        fullName: Excel.ChartAxisGroup
+      - name: ' | "Primary" | "Secondary"'
+        fullName: ' | "Primary" | "Secondary"'
+  - uid: 'excel!Excel.ChartAxis#baseTimeUnit~0:complex'
+    name: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+    fullName: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisTimeUnit:enum'
+        name: Excel.ChartAxisTimeUnit
+        fullName: Excel.ChartAxisTimeUnit
+      - name: ' | "Days" | "Months" | "Years"'
+        fullName: ' | "Days" | "Months" | "Years"'
+  - uid: 'excel!Excel.ChartAxis#categoryType~0:complex'
+    name: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
+    fullName: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisCategoryType:enum'
+        name: Excel.ChartAxisCategoryType
+        fullName: Excel.ChartAxisCategoryType
+      - name: ' | "Automatic" | "TextAxis" | "DateAxis"'
+        fullName: ' | "Automatic" | "TextAxis" | "DateAxis"'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartAxis#displayUnit~0:complex'
+    name: >-
+      Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions"
+      | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
+    fullName: >-
+      Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions"
+      | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisDisplayUnit:enum'
+        name: Excel.ChartAxisDisplayUnit
+        fullName: Excel.ChartAxisDisplayUnit
+      - name: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
+        fullName: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
+  - uid: 'excel!Excel.ChartAxisFormat:class'
+    name: Excel.ChartAxisFormat
+  - uid: 'excel!Excel.ChartAxis:class'
+    name: Excel.ChartAxis
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+    name: Excel.Interfaces.ChartAxisLoadOptions
+  - uid: 'excel!Excel.ChartGridlines:class'
+    name: Excel.ChartGridlines
+  - uid: 'excel!Excel.ChartAxis#majorTickMark~0:complex'
+    name: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+    fullName: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisTickMark:enum'
+        name: Excel.ChartAxisTickMark
+        fullName: Excel.ChartAxisTickMark
+      - name: ' | "None" | "Cross" | "Inside" | "Outside"'
+        fullName: ' | "None" | "Cross" | "Inside" | "Outside"'
+  - uid: 'excel!Excel.ChartAxis#majorTimeUnitScale~0:complex'
+    name: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+    fullName: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisTimeUnit:enum'
+        name: Excel.ChartAxisTimeUnit
+        fullName: Excel.ChartAxisTimeUnit
+      - name: ' | "Days" | "Months" | "Years"'
+        fullName: ' | "Days" | "Months" | "Years"'
+  - uid: 'excel!Excel.ChartAxis#minorTickMark~0:complex'
+    name: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+    fullName: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisTickMark:enum'
+        name: Excel.ChartAxisTickMark
+        fullName: Excel.ChartAxisTickMark
+      - name: ' | "None" | "Cross" | "Inside" | "Outside"'
+        fullName: ' | "None" | "Cross" | "Inside" | "Outside"'
+  - uid: 'excel!Excel.ChartAxis#minorTimeUnitScale~0:complex'
+    name: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+    fullName: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisTimeUnit:enum'
+        name: Excel.ChartAxisTimeUnit
+        fullName: Excel.ChartAxisTimeUnit
+      - name: ' | "Days" | "Months" | "Years"'
+        fullName: ' | "Days" | "Months" | "Years"'
+  - uid: 'excel!Excel.ChartAxis#scaleType~0:complex'
+    name: Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
+    fullName: Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisScaleType:enum'
+        name: Excel.ChartAxisScaleType
+        fullName: Excel.ChartAxisScaleType
+      - name: ' | "Linear" | "Logarithmic"'
+        fullName: ' | "Linear" | "Logarithmic"'
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+    name: Interfaces.ChartAxisUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+  - uid: 'excel!Excel.ChartAxis#tickLabelPosition~0:complex'
+    name: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
+    fullName: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisTickLabelPosition:enum'
+        name: Excel.ChartAxisTickLabelPosition
+        fullName: Excel.ChartAxisTickLabelPosition
+      - name: ' | "NextToAxis" | "High" | "Low" | "None"'
+        fullName: ' | "NextToAxis" | "High" | "Low" | "None"'
+  - uid: 'excel!Excel.ChartAxisTitle:class'
+    name: Excel.ChartAxisTitle
+  - uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
+    name: Excel.Interfaces.ChartAxisData
+  - uid: 'excel!Excel.ChartAxis#type~0:complex'
+    name: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
+    fullName: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisType:enum'
+        name: Excel.ChartAxisType
+        fullName: Excel.ChartAxisType
+      - name: ' | "Invalid" | "Category" | "Value" | "Series"'
+        fullName: ' | "Invalid" | "Category" | "Value" | "Series"'

@@ -1,0 +1,267 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions:interface'
+    summary: >-
+      Represents a recorded change to the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.TaskHistoryRecordLoadOptions
+    fullName: Excel.Interfaces.TaskHistoryRecordLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#anchorId:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#assignee:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#attributionUser:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#dueDate:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#historyRecordCreatedDate:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#percentComplete:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#priority:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#startDate:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#title:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#type:member'
+      - 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#undoHistoryId:member'
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#anchorId:member'
+    summary: >-
+      Represents the ID of the object to which the task is anchored (e.g., commentId for tasks attached to comments).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: anchorId
+    fullName: anchorId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'anchorId?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#assignee:member'
+    summary: >-
+      Represents the user assigned to the task for an "Assign" history record type, or the user to unassign from the
+      task for an "Unassign" history record type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: assignee
+    fullName: assignee
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'assignee?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#attributionUser:member'
+    summary: >-
+      Represents the user who created or changed the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: attributionUser
+    fullName: attributionUser
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attributionUser?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#dueDate:member'
+    summary: >-
+      Represents the task's due date. It is used for "Schedule" history record type. It is in UTC time zone. Can be set
+      to `null` to remove the due date. It should be set together with `startDate` to avoid conflicts.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dueDate
+    fullName: dueDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dueDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#historyRecordCreatedDate:member'
+    summary: >-
+      Represents creation date of the task history record. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: historyRecordCreatedDate
+    fullName: historyRecordCreatedDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'historyRecordCreatedDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#id:member'
+    summary: >-
+      ID for the history record.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#percentComplete:member'
+    summary: >-
+      Represents the task's completion percentage. It is used for the "Progress" history record type. This is a value
+      between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated
+      comment. Changing the completion from 100 to a lower value reactivates the associated comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: percentComplete
+    fullName: percentComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'percentComplete?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#priority:member'
+    summary: >-
+      Represents the task's priority. It is used for the "Priority" history record type. This is a value between 0 and
+      10 with 5 being the default priority if not set, where 0 represents the highest priority.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#startDate:member'
+    summary: >-
+      Represents the task's start date. It is used for the "Schedule" history record type. It is in UTC time zone. Can
+      be set to `null` to remove the start date. It should be set together with `dueDate` to avoid conflicts.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: startDate
+    fullName: startDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#title:member'
+    summary: >-
+      Represents the task's title. It is used for "Title" history record type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#type:member'
+    summary: >-
+      Represents task history record's type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TaskHistoryRecordLoadOptions#undoHistoryId:member'
+    summary: >-
+      Represents the TaskHistoryRecord.id property that was undone for the "Undo" history record type.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: undoHistoryId
+    fullName: undoHistoryId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'undoHistoryId?: boolean;'
+      return:
+        type:
+          - boolean

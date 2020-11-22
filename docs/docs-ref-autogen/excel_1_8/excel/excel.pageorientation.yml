@@ -1,21 +1,27 @@
-### YamlMime:TSEnum
-name: Excel.PageOrientation
-uid: 'excel!Excel.PageOrientation:enum'
-package: excel!
-fullName: Excel.PageOrientation
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: landscape
-    uid: 'excel!Excel.PageOrientation.landscape:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PageOrientation:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.PageOrientation
+    fullName: Excel.PageOrientation
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: portrait
-    uid: 'excel!Excel.PageOrientation.portrait:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.PageOrientation.landscape:member'
+      - 'excel!Excel.PageOrientation.portrait:member'
+  - uid: 'excel!Excel.PageOrientation.landscape:member'
+    name: landscape
+    fullName: landscape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Landscape"'
+  - uid: 'excel!Excel.PageOrientation.portrait:member'
+    name: portrait
+    fullName: portrait
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Portrait"'

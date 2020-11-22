@@ -1,39 +1,63 @@
-### YamlMime:TSEnum
-name: Office.MailboxEnums.WeekNumber
-uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
-package: outlook!
-fullName: Office.MailboxEnums.WeekNumber
-summary: >-
-  Specifies the week of the month.
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
+    summary: |-
+      Specifies the week of the month.
 
-
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: >-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-isPreview: false
-isDeprecated: false
-fields:
-  - name: First
-    uid: 'outlook!Office.MailboxEnums.WeekNumber.First:member'
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    name: Office.MailboxEnums.WeekNumber
+    fullName: Office.MailboxEnums.WeekNumber
+    langs:
+      - typeScript
+    type: enum
     package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.WeekNumber.First:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Last:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
+      - 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.First:member'
     summary: First week of the month.
-  - name: Fourth
-    uid: 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
-    package: outlook!
+    name: First
+    fullName: First
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"first"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
     summary: Fourth week of the month.
-  - name: Last
-    uid: 'outlook!Office.MailboxEnums.WeekNumber.Last:member'
-    package: outlook!
+    name: Fourth
+    fullName: Fourth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"fourth"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Last:member'
     summary: Last week of the month.
-  - name: Second
-    uid: 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
-    package: outlook!
+    name: Last
+    fullName: Last
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"last"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
     summary: Second week of the month.
-  - name: Third
-    uid: 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
-    package: outlook!
+    name: Second
+    fullName: Second
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"second"'
+  - uid: 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
     summary: Third week of the month.
+    name: Third
+    fullName: Third
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"third"'

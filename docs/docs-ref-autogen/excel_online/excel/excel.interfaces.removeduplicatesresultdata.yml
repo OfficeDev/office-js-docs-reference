@@ -1,49 +1,43 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RemoveDuplicatesResultData
-uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
-package: excel!
-fullName: Excel.Interfaces.RemoveDuplicatesResultData
-summary: >-
-  An interface describing the data returned by calling
-  `removeDuplicatesResult.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: removed
-    uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#removed:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
+    summary: An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`<!-- -->.
+    name: Excel.Interfaces.RemoveDuplicatesResultData
+    fullName: Excel.Interfaces.RemoveDuplicatesResultData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: removed
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.RemoveDuplicatesResultData#removed:member'
+      - 'excel!Excel.Interfaces.RemoveDuplicatesResultData#uniqueRemaining:member'
+  - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#removed:member'
+    summary: |-
       Number of duplicated rows removed by the operation.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: removed
+    fullName: removed
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'removed?: number;'
       return:
-        type: number
-  - name: uniqueRemaining
-    uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#uniqueRemaining:member'
-    package: excel!
-    fullName: uniqueRemaining
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#uniqueRemaining:member'
+    summary: |-
       Number of remaining unique rows present in the resulting range.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: uniqueRemaining
+    fullName: uniqueRemaining
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'uniqueRemaining?: number;'
       return:
-        type: number
+        type:
+          - number

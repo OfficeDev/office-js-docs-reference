@@ -1,212 +1,84 @@
-### YamlMime:TSType
-name: Excel.NamedItem
-uid: 'excel!Excel.NamedItem:class'
-package: excel!
-fullName: Excel.NamedItem
-summary: >-
-  Represents a defined name for a range of cells or value. Names can be
-  primitive named objects (as seen in the type below), range object, or a
-  reference to a range. This object can be used to obtain range object
-  associated with names.
-
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: comment
-    uid: 'excel!Excel.NamedItem#comment:member'
-    package: excel!
-    fullName: comment
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItem:class'
     summary: >-
+      Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
+      below), range object, or a reference to a range. This object can be used to obtain range object associated with
+      names.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.NamedItem
+    fullName: Excel.NamedItem
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItem#comment:member'
+      - 'excel!Excel.NamedItem#context:member'
+      - 'excel!Excel.NamedItem#delete:member(1)'
+      - 'excel!Excel.NamedItem#getRange:member(1)'
+      - 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.NamedItem#load:member(1)'
+      - 'excel!Excel.NamedItem#load:member(2)'
+      - 'excel!Excel.NamedItem#load:member(3)'
+      - 'excel!Excel.NamedItem#name:member'
+      - 'excel!Excel.NamedItem#scope:member'
+      - 'excel!Excel.NamedItem#set:member(1)'
+      - 'excel!Excel.NamedItem#set:member(2)'
+      - 'excel!Excel.NamedItem#toJSON:member(1)'
+      - 'excel!Excel.NamedItem#type:member'
+      - 'excel!Excel.NamedItem#value:member'
+      - 'excel!Excel.NamedItem#visible:member'
+      - 'excel!Excel.NamedItem#worksheet:member'
+      - 'excel!Excel.NamedItem#worksheetOrNullObject:member'
+  - uid: 'excel!Excel.NamedItem#comment:member'
+    summary: |-
       Specifies the comment associated with this name.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comment
+    fullName: comment
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'comment: string;'
       return:
-        type: string
-  - name: context
-    uid: 'excel!Excel.NamedItem#context:member'
-    package: excel!
-    fullName: context
+        type:
+          - string
+  - uid: 'excel!Excel.NamedItem#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: name
-    uid: 'excel!Excel.NamedItem#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
-      The name of the object.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly name: string;'
-      return:
-        type: string
-  - name: scope
-    uid: 'excel!Excel.NamedItem#scope:member'
-    package: excel!
-    fullName: scope
-    summary: >-
-      Specifies if the name is scoped to the workbook or to a specific
-      worksheet. Possible values are: Worksheet, Workbook.
-
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly scope: Excel.NamedItemScope | "Worksheet" | "Workbook";'
-      return:
-        type: >-
-          <xref uid="excel!Excel.NamedItemScope:enum" /> | "Worksheet" |
-          "Workbook"
-  - name: type
-    uid: 'excel!Excel.NamedItem#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
-      Specifies the type of the value returned by the name's formula. See
-      Excel.NamedItemType for details.
-
-
-      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
-      1.7 for
-      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly type: Excel.NamedItemType | "String" | "Integer" | "Double" |
-        "Boolean" | "Range" | "Error" | "Array";
-      return:
-        type: >-
-          <xref uid="excel!Excel.NamedItemType:enum" /> | "String" | "Integer" |
-          "Double" | "Boolean" | "Range" | "Error" | "Array"
-  - name: value
-    uid: 'excel!Excel.NamedItem#value:member'
-    package: excel!
-    fullName: value
-    summary: >-
-      Represents the value computed by the name's formula. For a named range,
-      will return the range address.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly value: any;'
-      return:
-        type: any
-  - name: visible
-    uid: 'excel!Excel.NamedItem#visible:member'
-    package: excel!
-    fullName: visible
-    summary: >-
-      Specifies if the object is visible.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'visible: boolean;'
-      return:
-        type: boolean
-  - name: worksheet
-    uid: 'excel!Excel.NamedItem#worksheet:member'
-    package: excel!
-    fullName: worksheet
-    summary: >-
-      Returns the worksheet on which the named item is scoped to. Throws an
-      error if the item is scoped to the workbook instead.
-
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly worksheet: Excel.Worksheet;'
-      return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
-  - name: worksheetOrNullObject
-    uid: 'excel!Excel.NamedItem#worksheetOrNullObject:member'
-    package: excel!
-    fullName: worksheetOrNullObject
-    summary: >-
-      Returns the worksheet on which the named item is scoped to. Returns a null
-      object if the item is scoped to the workbook instead.
-
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly worksheetOrNullObject: Excel.Worksheet;'
-      return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
-methods:
-  - name: delete()
-    uid: 'excel!Excel.NamedItem#delete:member(1)'
-    package: excel!
-    fullName: delete()
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.NamedItem#delete:member(1)'
+    summary: |-
       Deletes the given name.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'delete(): void;'
       return:
-        type: void
+        type:
+          - void
         description: >-
 
 
@@ -237,25 +109,23 @@ methods:
           });
 
           ```
-  - name: getRange()
-    uid: 'excel!Excel.NamedItem#getRange:member(1)'
-    package: excel!
-    fullName: getRange()
+  - uid: 'excel!Excel.NamedItem#getRange:member(1)'
     summary: >-
-      Returns the range object that is associated with the name. Throws an error
-      if the named item's type is not a range.
+      Returns the range object that is associated with the name. Throws an error if the named item's type is not a
+      range.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -279,65 +149,58 @@ methods:
               }
           });
           ```
-  - name: getRangeOrNullObject()
-    uid: 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
-    package: excel!
-    fullName: getRangeOrNullObject()
+  - uid: 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
     summary: >-
-      Returns the range object that is associated with the name. Returns a null
-      object if the named item's type is not a range.
+      Returns the range object that is associated with the name. Returns a null object if the named item's type is not a
+      range.
 
 
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: ''
-  - name: load(options)
-    uid: 'excel!Excel.NamedItem#load:member(1)'
-    package: excel!
-    fullName: load(options)
+  - uid: 'excel!Excel.NamedItem#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(options?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;'
+      return:
+        type:
+          - 'excel!Excel.NamedItem:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.NamedItemLoadOptions:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.NamedItem:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.NamedItem#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
+  - uid: 'excel!Excel.NamedItem#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItem;'
-      parameters:
-        - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
       return:
-        type: '<xref uid="excel!Excel.NamedItem:class" />'
+        type:
+          - 'excel!Excel.NamedItem:class'
         description: |-
 
 
@@ -358,107 +221,254 @@ methods:
                   }
           });
           ```
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.NamedItem#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NamedItem#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.NamedItem;
+      return:
+        type:
+          - 'excel!Excel.NamedItem:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.NamedItem#name:member'
+    summary: |-
+      The name of the object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
       return:
-        type: '<xref uid="excel!Excel.NamedItem:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.NamedItem#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
+        type:
+          - string
+  - uid: 'excel!Excel.NamedItem#scope:member'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
+      Workbook.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: scope
+    fullName: scope
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly scope: Excel.NamedItemScope | "Worksheet" | "Workbook";'
+      return:
+        type:
+          - 'excel!Excel.NamedItem#scope~0:complex'
+  - uid: 'excel!Excel.NamedItem#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.NamedItem): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.NamedItemUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.NamedItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: '<xref uid="excel!Excel.Interfaces.NamedItemUpdateData:interface" />'
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.NamedItem#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.NamedItem#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.NamedItem): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.NamedItem:class" />'
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.NamedItem#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+          type:
+            - 'excel!Excel.NamedItem:class'
+  - uid: 'excel!Excel.NamedItem#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.NamedItem object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.NamedItemData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.NamedItemData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.NamedItemData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.NamedItemData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'excel!Excel.NamedItem#type:member'
+    summary: >-
+      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
+
+
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";'
+      return:
+        type:
+          - 'excel!Excel.NamedItem#type~0:complex'
+  - uid: 'excel!Excel.NamedItem#value:member'
+    summary: |-
+      Represents the value computed by the name's formula. For a named range, will return the range address.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.NamedItem#visible:member'
+    summary: |-
+      Specifies if the object is visible.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.NamedItem#worksheet:member'
+    summary: >-
+      Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook
+      instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.NamedItem#worksheetOrNullObject:member'
+    summary: >-
+      Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
+      workbook instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetOrNullObject
+    fullName: worksheetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheetOrNullObject: Excel.Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:class'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.NamedItem:class'
+    name: Excel.NamedItem
+  - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
+    name: Excel.Interfaces.NamedItemLoadOptions
+  - uid: 'excel!Excel.NamedItem#scope~0:complex'
+    name: Excel.NamedItemScope | "Worksheet" | "Workbook"
+    fullName: Excel.NamedItemScope | "Worksheet" | "Workbook"
+    spec.typeScript:
+      - uid: 'excel!Excel.NamedItemScope:enum'
+        name: Excel.NamedItemScope
+        fullName: Excel.NamedItemScope
+      - name: ' | "Worksheet" | "Workbook"'
+        fullName: ' | "Worksheet" | "Workbook"'
+  - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+    name: Interfaces.NamedItemUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+    name: Excel.Interfaces.NamedItemData
+  - uid: 'excel!Excel.NamedItem#type~0:complex'
+    name: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
+    fullName: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
+    spec.typeScript:
+      - uid: 'excel!Excel.NamedItemType:enum'
+        name: Excel.NamedItemType
+        fullName: Excel.NamedItemType
+      - name: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
+        fullName: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Excel.Worksheet

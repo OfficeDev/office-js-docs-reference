@@ -1,81 +1,45 @@
-### YamlMime:TSType
-name: Excel.CommentReplyCollection
-uid: 'excel!Excel.CommentReplyCollection:class'
-package: excel!
-fullName: Excel.CommentReplyCollection
-summary: >-
-  Represents a collection of comment reply objects that are part of the comment.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentReplyCollection:class'
+    summary: |-
+      Represents a collection of comment reply objects that are part of the comment.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'excel!Excel.CommentReplyCollection#context:member'
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CommentReplyCollection
+    fullName: Excel.CommentReplyCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: items
-    uid: 'excel!Excel.CommentReplyCollection#items:member'
-    package: excel!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Excel.CommentReply[];'
-      return:
-        type: '<xref uid="excel!Excel.CommentReply:class" />[]'
-methods:
-  - name: 'add(content, contentType)'
-    uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
-    package: excel!
-    fullName: 'add(content, contentType)'
-    summary: >-
+    children:
+      - 'excel!Excel.CommentReplyCollection#add:member(1)'
+      - 'excel!Excel.CommentReplyCollection#add:member(2)'
+      - 'excel!Excel.CommentReplyCollection#context:member'
+      - 'excel!Excel.CommentReplyCollection#getCount:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
+      - 'excel!Excel.CommentReplyCollection#items:member'
+      - 'excel!Excel.CommentReplyCollection#load:member(1)'
+      - 'excel!Excel.CommentReplyCollection#load:member(2)'
+      - 'excel!Excel.CommentReplyCollection#load:member(3)'
+      - 'excel!Excel.CommentReplyCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
+    summary: |-
       Creates a comment reply for comment.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(content, contentType)'
+    fullName: 'add(content, contentType)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        add(content: string, contentType?: Excel.ContentType):
-        Excel.CommentReply;
-      parameters:
-        - id: content
-          description: >-
-            The comment's content. This can be either a string or Interface
-            CommentRichContent (e.g., for comments with mentions). \[Api set:
-            ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
-          type: string
-        - id: contentType
-          description: >-
-            Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
-            ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
-            ContentType.Mention\]
-          type: '<xref uid="excel!Excel.ContentType:enum" />'
+      content: 'add(content: string, contentType?: Excel.ContentType): Excel.CommentReply;'
       return:
-        type: '<xref uid="excel!Excel.CommentReply:class" />'
+        type:
+          - 'excel!Excel.CommentReply:class'
         description: >-
 
 
@@ -96,201 +60,258 @@ methods:
           });
 
           ```
-  - name: 'add(content, contentTypeString)'
-    uid: 'excel!Excel.CommentReplyCollection#add:member(2)'
-    package: excel!
-    fullName: 'add(content, contentTypeString)'
-    summary: >-
-      Creates a comment reply for comment.
-
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        add(content: string, contentTypeString?: "Plain" | "Mention"):
-        Excel.CommentReply;
       parameters:
         - id: content
           description: >-
-            The comment's content. This can be either a string or Interface
-            CommentRichContent (e.g., for comments with mentions). \[Api set:
-            ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
-          type: string
+            The comment's content. This can be either a string or Interface CommentRichContent (e.g., for comments with
+            mentions). \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
+          type:
+            - string
+        - id: contentType
+          description: >-
+            Optional. The type of content contained within the comment. The default value is enum
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            ContentType.Mention\]
+          type:
+            - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentReplyCollection#add:member(2)'
+    summary: |-
+      Creates a comment reply for comment.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(content, contentTypeString)'
+    fullName: 'add(content, contentTypeString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(content: string, contentTypeString?: "Plain" | "Mention"): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
+      parameters:
+        - id: content
+          description: >-
+            The comment's content. This can be either a string or Interface CommentRichContent (e.g., for comments with
+            mentions). \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
+          type:
+            - string
         - id: contentTypeString
           description: >-
-            Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
-            ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            Optional. The type of content contained within the comment. The default value is enum
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
             ContentType.Mention\]
-          type: '"Plain" | "Mention"'
-      return:
-        type: '<xref uid="excel!Excel.CommentReply:class" />'
-        description: ''
-  - name: getCount()
-    uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
-    package: excel!
-    fullName: getCount()
+          type:
+            - '"Plain" | "Mention"'
+  - uid: 'excel!Excel.CommentReplyCollection#context:member'
     summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
+    summary: |-
       Gets the number of comment replies in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type:
+          - 'excel!Excel.CommentReplyCollection#getCount~0:complex'
         description: ''
-  - name: getItem(commentReplyId)
-    uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
-    package: excel!
-    fullName: getItem(commentReplyId)
-    summary: >-
+  - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+    summary: |-
       Returns a comment reply identified by its ID.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(commentReplyId)
+    fullName: getItem(commentReplyId)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(commentReplyId: string): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
       parameters:
         - id: commentReplyId
           description: The identifier for the comment reply.
-          type: string
-      return:
-        type: '<xref uid="excel!Excel.CommentReply:class" />'
-        description: ''
-  - name: getItemAt(index)
-    uid: 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
-    package: excel!
-    fullName: getItemAt(index)
-    summary: >-
+          type:
+            - string
+  - uid: 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
+    summary: |-
       Gets a comment reply based on its position in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemAt(index: number): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
       parameters:
         - id: index
-          description: >-
-            The index value of the comment reply to be retrieved. The collection
-            uses zero-based indexing.
-          type: number
+          description: The index value of the comment reply to be retrieved. The collection uses zero-based indexing.
+          type:
+            - number
+  - uid: 'excel!Excel.CommentReplyCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.CommentReply[];'
       return:
-        type: '<xref uid="excel!Excel.CommentReply:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'excel!Excel.CommentReplyCollection#load:member(1)'
-    package: excel!
-    fullName: load(options)
+        type:
+          - 'excel!Excel.CommentReplyCollection#items~0:complex'
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.CommentReplyCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.CommentReplyCollection;
+        load(options?: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CommentReplyCollection;
+      return:
+        type:
+          - 'excel!Excel.CommentReplyCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.CommentReplyCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.CommentReplyCollection#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.CommentReplyCollection#load~0:complex'
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.CommentReplyCollection;'
+      return:
+        type:
+          - 'excel!Excel.CommentReplyCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.CommentReplyCollection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.CommentReplyCollection#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.CommentReplyCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CommentReplyCollection;'
+      return:
+        type:
+          - 'excel!Excel.CommentReplyCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="excel!Excel.CommentReplyCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.CommentReplyCollection#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.CommentReplyCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.CommentReplyCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.CommentReplyCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.CommentReplyCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.CommentReplyCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.CommentReplyCollectionData:interface" />
+        type:
+          - 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.CommentReply:class'
+    name: Excel.CommentReply
+  - uid: 'excel!Excel.ContentType:enum'
+    name: Excel.ContentType
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.CommentReplyCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.CommentReplyCollection#items~0:complex'
+    name: 'Excel.CommentReply[]'
+    fullName: 'Excel.CommentReply[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentReply:class'
+        name: Excel.CommentReply
+        fullName: Excel.CommentReply
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.CommentReplyCollection:class'
+    name: Excel.CommentReplyCollection
+  - uid: 'excel!Excel.CommentReplyCollection#load~0:complex'
+    name: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface'
+        name: Excel.Interfaces.CommentReplyCollectionLoadOptions
+        fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
+    name: Excel.Interfaces.CommentReplyCollectionData

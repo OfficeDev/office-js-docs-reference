@@ -1,94 +1,112 @@
-### YamlMime:TSType
-name: Excel.RefreshModeChangedEventArgs
-uid: 'excel!Excel.RefreshModeChangedEventArgs:interface'
-package: excel!
-fullName: Excel.RefreshModeChangedEventArgs
-summary: >-
-  Represents information about a newly added linked data type, such as source
-  and ID.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RefreshModeChangedEventArgs:interface'
+    summary: >-
+      Represents information about a newly added linked data type, such as source and ID.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-type: interface
-properties:
-  - name: refreshMode
-    uid: 'excel!Excel.RefreshModeChangedEventArgs#refreshMode:member'
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.RefreshModeChangedEventArgs
+    fullName: Excel.RefreshModeChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: refreshMode
+    children:
+      - 'excel!Excel.RefreshModeChangedEventArgs#refreshMode:member'
+      - 'excel!Excel.RefreshModeChangedEventArgs#serviceId:member'
+      - 'excel!Excel.RefreshModeChangedEventArgs#source:member'
+      - 'excel!Excel.RefreshModeChangedEventArgs#type:member'
+  - uid: 'excel!Excel.RefreshModeChangedEventArgs#refreshMode:member'
     summary: >-
       The linked data type refresh mode.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: refreshMode
+    fullName: refreshMode
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        refreshMode: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" |
-        "OnLoad" | "Periodic";
+      content: 'refreshMode: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";'
       return:
-        type: >-
-          <xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" /> | "Unknown"
-          | "Manual" | "OnLoad" | "Periodic"
-  - name: serviceId
-    uid: 'excel!Excel.RefreshModeChangedEventArgs#serviceId:member'
-    package: excel!
-    fullName: serviceId
+        type:
+          - 'excel!Excel.RefreshModeChangedEventArgs#refreshMode~0:complex'
+  - uid: 'excel!Excel.RefreshModeChangedEventArgs#serviceId:member'
     summary: >-
       The unique id of the object whose refresh mode was changed.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: serviceId
+    fullName: serviceId
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'serviceId: number;'
       return:
-        type: number
-  - name: source
-    uid: 'excel!Excel.RefreshModeChangedEventArgs#source:member'
-    package: excel!
-    fullName: source
+        type:
+          - number
+  - uid: 'excel!Excel.RefreshModeChangedEventArgs#source:member'
     summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
-  - name: type
-    uid: 'excel!Excel.RefreshModeChangedEventArgs#type:member'
-    package: excel!
-    fullName: type
+        type:
+          - 'excel!Excel.RefreshModeChangedEventArgs#source~0:complex'
+  - uid: 'excel!Excel.RefreshModeChangedEventArgs#type:member'
     summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type: "LinkedDataTypeRefreshModeChanged";'
       return:
-        type: '"LinkedDataTypeRefreshModeChanged"'
+        type:
+          - '"LinkedDataTypeRefreshModeChanged"'
+references:
+  - uid: 'excel!Excel.RefreshModeChangedEventArgs#refreshMode~0:complex'
+    name: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic"
+    fullName: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic"
+    spec.typeScript:
+      - uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
+        name: Excel.LinkedDataTypeRefreshMode
+        fullName: Excel.LinkedDataTypeRefreshMode
+      - name: ' | "Unknown" | "Manual" | "OnLoad" | "Periodic"'
+        fullName: ' | "Unknown" | "Manual" | "OnLoad" | "Periodic"'
+  - uid: 'excel!Excel.RefreshModeChangedEventArgs#source~0:complex'
+    name: Excel.EventSource | "Local" | "Remote"
+    fullName: Excel.EventSource | "Local" | "Remote"
+    spec.typeScript:
+      - uid: 'excel!Excel.EventSource:enum'
+        name: Excel.EventSource
+        fullName: Excel.EventSource
+      - name: ' | "Local" | "Remote"'
+        fullName: ' | "Local" | "Remote"'

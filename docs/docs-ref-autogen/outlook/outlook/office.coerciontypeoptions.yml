@@ -1,23 +1,34 @@
-### YamlMime:TSType
-name: Office.CoercionTypeOptions
-uid: 'outlook!Office.CoercionTypeOptions:interface'
-package: outlook!
-fullName: Office.CoercionTypeOptions
-summary: Provides an option for the data format.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: coercionType
-    uid: 'outlook!Office.CoercionTypeOptions#coercionType:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.CoercionTypeOptions:interface'
+    summary: Provides an option for the data format.
+    name: Office.CoercionTypeOptions
+    fullName: Office.CoercionTypeOptions
+    langs:
+      - typeScript
+    type: interface
     package: outlook!
-    fullName: coercionType
+    children:
+      - 'outlook!Office.CoercionTypeOptions#coercionType:member'
+  - uid: 'outlook!Office.CoercionTypeOptions#coercionType:member'
     summary: The desired data format.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: coercionType
+    fullName: coercionType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'coercionType?: Office.CoercionType | string;'
       return:
-        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
+        type:
+          - 'outlook!Office.CoercionTypeOptions#coercionType~0:complex'
+references:
+  - uid: 'outlook!Office.CoercionTypeOptions#coercionType~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'office!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'

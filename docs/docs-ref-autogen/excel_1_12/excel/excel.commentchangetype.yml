@@ -1,40 +1,68 @@
-### YamlMime:TSEnum
-name: Excel.CommentChangeType
-uid: 'excel!Excel.CommentChangeType:enum'
-package: excel!
-fullName: Excel.CommentChangeType
-summary: >-
-  Represents how the comments in the event were changed.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentChangeType:enum'
+    summary: |-
+      Represents how the comments in the event were changed.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: commentEdited
-    uid: 'excel!Excel.CommentChangeType.commentEdited:member'
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CommentChangeType
+    fullName: Excel.CommentChangeType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.CommentChangeType.commentEdited:member'
+      - 'excel!Excel.CommentChangeType.commentReopened:member'
+      - 'excel!Excel.CommentChangeType.commentResolved:member'
+      - 'excel!Excel.CommentChangeType.replyAdded:member'
+      - 'excel!Excel.CommentChangeType.replyDeleted:member'
+      - 'excel!Excel.CommentChangeType.replyEdited:member'
+  - uid: 'excel!Excel.CommentChangeType.commentEdited:member'
     summary: Comments were edited.
-  - name: commentReopened
-    uid: 'excel!Excel.CommentChangeType.commentReopened:member'
-    package: excel!
+    name: commentEdited
+    fullName: commentEdited
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentEdited"'
+  - uid: 'excel!Excel.CommentChangeType.commentReopened:member'
     summary: Comments were reopened.
-  - name: commentResolved
-    uid: 'excel!Excel.CommentChangeType.commentResolved:member'
-    package: excel!
+    name: commentReopened
+    fullName: commentReopened
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentReopened"'
+  - uid: 'excel!Excel.CommentChangeType.commentResolved:member'
     summary: Comments were resolved.
-  - name: replyAdded
-    uid: 'excel!Excel.CommentChangeType.replyAdded:member'
-    package: excel!
+    name: commentResolved
+    fullName: commentResolved
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentResolved"'
+  - uid: 'excel!Excel.CommentChangeType.replyAdded:member'
     summary: Replies were added.
-  - name: replyDeleted
-    uid: 'excel!Excel.CommentChangeType.replyDeleted:member'
-    package: excel!
+    name: replyAdded
+    fullName: replyAdded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ReplyAdded"'
+  - uid: 'excel!Excel.CommentChangeType.replyDeleted:member'
     summary: Replies were deleted.
-  - name: replyEdited
-    uid: 'excel!Excel.CommentChangeType.replyEdited:member'
-    package: excel!
+    name: replyDeleted
+    fullName: replyDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ReplyDeleted"'
+  - uid: 'excel!Excel.CommentChangeType.replyEdited:member'
     summary: Replies were edited.
+    name: replyEdited
+    fullName: replyEdited
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ReplyEdited"'

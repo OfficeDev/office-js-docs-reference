@@ -1,229 +1,215 @@
-### YamlMime:TSType
-name: Excel.Interfaces.DocumentPropertiesData
-uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
-package: excel!
-fullName: Excel.Interfaces.DocumentPropertiesData
-summary: >-
-  An interface describing the data returned by calling
-  `documentProperties.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: author
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#author:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+    summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
+    name: Excel.Interfaces.DocumentPropertiesData
+    fullName: Excel.Interfaces.DocumentPropertiesData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: author
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#author:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#category:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#comments:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#company:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#creationDate:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#custom:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#keywords:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#lastAuthor:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#manager:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#revisionNumber:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#subject:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#title:member'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#author:member'
+    summary: |-
       The author of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'author?: string;'
       return:
-        type: string
-  - name: category
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#category:member'
-    package: excel!
-    fullName: category
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#category:member'
+    summary: |-
       The category of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'category?: string;'
       return:
-        type: string
-  - name: comments
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#comments:member'
-    package: excel!
-    fullName: comments
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#comments:member'
+    summary: |-
       The comments of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'comments?: string;'
       return:
-        type: string
-  - name: company
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#company:member'
-    package: excel!
-    fullName: company
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#company:member'
+    summary: |-
       The company of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'company?: string;'
       return:
-        type: string
-  - name: creationDate
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#creationDate:member'
-    package: excel!
-    fullName: creationDate
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#creationDate:member'
+    summary: |-
       Gets the creation date of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'creationDate?: Date;'
       return:
-        type: Date
-  - name: custom
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#custom:member'
-    package: excel!
-    fullName: custom
-    summary: >-
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#custom:member'
+    summary: |-
       Gets the collection of custom properties of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'custom?: Excel.Interfaces.CustomPropertyData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.CustomPropertyData:interface" />[]'
-  - name: keywords
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#keywords:member'
-    package: excel!
-    fullName: keywords
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.DocumentPropertiesData#custom~0:complex'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#keywords:member'
+    summary: |-
       The keywords of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'keywords?: string;'
       return:
-        type: string
-  - name: lastAuthor
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#lastAuthor:member'
-    package: excel!
-    fullName: lastAuthor
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#lastAuthor:member'
+    summary: |-
       Gets the last author of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lastAuthor
+    fullName: lastAuthor
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'lastAuthor?: string;'
       return:
-        type: string
-  - name: manager
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#manager:member'
-    package: excel!
-    fullName: manager
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#manager:member'
+    summary: |-
       The manager of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'manager?: string;'
       return:
-        type: string
-  - name: revisionNumber
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#revisionNumber:member'
-    package: excel!
-    fullName: revisionNumber
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#revisionNumber:member'
+    summary: |-
       Gets the revision number of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: revisionNumber
+    fullName: revisionNumber
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'revisionNumber?: number;'
       return:
-        type: number
-  - name: subject
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#subject:member'
-    package: excel!
-    fullName: subject
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#subject:member'
+    summary: |-
       The subject of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'subject?: string;'
       return:
-        type: string
-  - name: title
-    uid: 'excel!Excel.Interfaces.DocumentPropertiesData#title:member'
-    package: excel!
-    fullName: title
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#title:member'
+    summary: |-
       The title of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#custom~0:complex'
+    name: 'Excel.Interfaces.CustomPropertyData[]'
+    fullName: 'Excel.Interfaces.CustomPropertyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
+        name: Excel.Interfaces.CustomPropertyData
+        fullName: Excel.Interfaces.CustomPropertyData
+      - name: '[]'
+        fullName: '[]'

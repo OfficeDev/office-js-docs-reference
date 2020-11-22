@@ -1,21 +1,29 @@
-### YamlMime:TSEnum
-name: Excel.ContentType
-uid: 'excel!Excel.ContentType:enum'
-package: excel!
-fullName: Excel.ContentType
-summary: >-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: mention
-    uid: 'excel!Excel.ContentType.mention:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ContentType:enum'
+    summary: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ContentType
+    fullName: Excel.ContentType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.ContentType.mention:member'
+      - 'excel!Excel.ContentType.plain:member'
+  - uid: 'excel!Excel.ContentType.mention:member'
     summary: Comment content containing mentions.
-  - name: plain
-    uid: 'excel!Excel.ContentType.plain:member'
-    package: excel!
+    name: mention
+    fullName: mention
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mention"'
+  - uid: 'excel!Excel.ContentType.plain:member'
     summary: Indicates plain format type of the comment content.
+    name: plain
+    fullName: plain
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Plain"'

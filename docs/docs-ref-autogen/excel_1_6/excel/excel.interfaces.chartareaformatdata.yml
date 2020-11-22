@@ -1,32 +1,30 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartAreaFormatData
-uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartAreaFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartAreaFormat.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: font
-    uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
+    summary: An interface describing the data returned by calling `chartAreaFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartAreaFormatData
+    fullName: Excel.Interfaces.ChartAreaFormatData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
     fullName: font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for the
-      current object.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartFontData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartFontData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
+    name: Excel.Interfaces.ChartFontData

@@ -1,42 +1,54 @@
-### YamlMime:TSType
-name: OfficeExtension.EmbeddedSession
-uid: 'office!OfficeExtension.EmbeddedSession:class'
-package: office!
-fullName: OfficeExtension.EmbeddedSession
-summary: ''
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: '(constructor)(url, options)'
-    uid: 'office!OfficeExtension.EmbeddedSession:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!OfficeExtension.EmbeddedSession:class'
+    name: OfficeExtension.EmbeddedSession
+    fullName: OfficeExtension.EmbeddedSession
+    langs:
+      - typeScript
+    type: class
     package: office!
-    fullName: '(constructor)(url, options)'
+    children:
+      - 'office!OfficeExtension.EmbeddedSession:constructor(1)'
+      - 'office!OfficeExtension.EmbeddedSession#init:member(1)'
+  - uid: 'office!OfficeExtension.EmbeddedSession:constructor(1)'
     summary: Constructs a new instance of the `EmbeddedSession` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: '(constructor)(url, options)'
+    fullName: '(constructor)(url, options)'
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(url: string, options?: EmbeddedOptions);'
       parameters:
         - id: url
           description: ''
-          type: string
+          type:
+            - string
         - id: options
           description: ''
-          type: '<xref uid="office!OfficeExtension.EmbeddedOptions:interface" />'
-methods:
-  - name: init()
-    uid: 'office!OfficeExtension.EmbeddedSession#init:member(1)'
-    package: office!
+          type:
+            - 'office!OfficeExtension.EmbeddedOptions:interface'
+  - uid: 'office!OfficeExtension.EmbeddedSession#init:member(1)'
+    name: init()
     fullName: init()
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'public init(): Promise<any>;'
       return:
-        type: Promise&lt;any&gt;
+        type:
+          - 'office!OfficeExtension.EmbeddedSession#init~0:complex'
         description: ''
+references:
+  - uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+    name: EmbeddedOptions
+  - uid: 'office!OfficeExtension.EmbeddedSession#init~0:complex'
+    name: Promise<any>
+    fullName: Promise<any>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <any>
+        fullName: <any>

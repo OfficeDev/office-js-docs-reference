@@ -1,29 +1,43 @@
-### YamlMime:TSEnum
-name: Excel.ChartAxisTickLabelPosition
-uid: 'excel!Excel.ChartAxisTickLabelPosition:enum'
-package: excel!
-fullName: Excel.ChartAxisTickLabelPosition
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: high
-    uid: 'excel!Excel.ChartAxisTickLabelPosition.high:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTickLabelPosition:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartAxisTickLabelPosition
+    fullName: Excel.ChartAxisTickLabelPosition
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: low
-    uid: 'excel!Excel.ChartAxisTickLabelPosition.low:member'
-    package: excel!
-    summary: ''
-  - name: nextToAxis
-    uid: 'excel!Excel.ChartAxisTickLabelPosition.nextToAxis:member'
-    package: excel!
-    summary: ''
-  - name: none
-    uid: 'excel!Excel.ChartAxisTickLabelPosition.none:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartAxisTickLabelPosition.high:member'
+      - 'excel!Excel.ChartAxisTickLabelPosition.low:member'
+      - 'excel!Excel.ChartAxisTickLabelPosition.nextToAxis:member'
+      - 'excel!Excel.ChartAxisTickLabelPosition.none:member'
+  - uid: 'excel!Excel.ChartAxisTickLabelPosition.high:member'
+    name: high
+    fullName: high
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"High"'
+  - uid: 'excel!Excel.ChartAxisTickLabelPosition.low:member'
+    name: low
+    fullName: low
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Low"'
+  - uid: 'excel!Excel.ChartAxisTickLabelPosition.nextToAxis:member'
+    name: nextToAxis
+    fullName: nextToAxis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextToAxis"'
+  - uid: 'excel!Excel.ChartAxisTickLabelPosition.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'

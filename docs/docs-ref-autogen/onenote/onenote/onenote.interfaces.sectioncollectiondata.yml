@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.SectionCollectionData
-uid: 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.SectionCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "sectionCollection.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.SectionCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
+    summary: An interface describing the data returned by calling "sectionCollection.toJSON()".
+    name: OneNote.Interfaces.SectionCollectionData
+    fullName: OneNote.Interfaces.SectionCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.SectionCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.SectionData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.SectionData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.SectionCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.SectionData[]'
+    fullName: 'OneNote.Interfaces.SectionData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
+        name: OneNote.Interfaces.SectionData
+        fullName: OneNote.Interfaces.SectionData
+      - name: '[]'
+        fullName: '[]'

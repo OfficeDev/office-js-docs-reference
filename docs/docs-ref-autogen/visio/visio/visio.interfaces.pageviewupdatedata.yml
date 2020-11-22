@@ -1,32 +1,27 @@
-### YamlMime:TSType
-name: Visio.Interfaces.PageViewUpdateData
-uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
-package: visio!
-fullName: Visio.Interfaces.PageViewUpdateData
-summary: >-
-  An interface for updating data on the PageView object, for use in
-  "pageView.set(<!-- -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: zoom
-    uid: 'visio!Visio.Interfaces.PageViewUpdateData#zoom:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+    summary: 'An interface for updating data on the PageView object, for use in "pageView.set(<!-- -->{ ... }<!-- -->)".'
+    name: Visio.Interfaces.PageViewUpdateData
+    fullName: Visio.Interfaces.PageViewUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: visio!
+    children:
+      - 'visio!Visio.Interfaces.PageViewUpdateData#zoom:member'
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData#zoom:member'
+    summary: |-
+      Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: zoom
     fullName: zoom
-    summary: >-
-      Get and set Page's Zoom level. The value can be between 10 and 400 and
-      denotes the percentage of zoom.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'zoom?: number;'
       return:
-        type: number
+        type:
+          - number

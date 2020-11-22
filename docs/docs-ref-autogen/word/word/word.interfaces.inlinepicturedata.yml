@@ -1,148 +1,142 @@
-### YamlMime:TSType
-name: Word.Interfaces.InlinePictureData
-uid: 'word!Word.Interfaces.InlinePictureData:interface'
-package: word!
-fullName: Word.Interfaces.InlinePictureData
-summary: >-
-  An interface describing the data returned by calling
-  `inlinePicture.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: altTextDescription
-    uid: 'word!Word.Interfaces.InlinePictureData#altTextDescription:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.InlinePictureData:interface'
+    summary: An interface describing the data returned by calling `inlinePicture.toJSON()`<!-- -->.
+    name: Word.Interfaces.InlinePictureData
+    fullName: Word.Interfaces.InlinePictureData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.InlinePictureData#altTextDescription:member'
+      - 'word!Word.Interfaces.InlinePictureData#altTextTitle:member'
+      - 'word!Word.Interfaces.InlinePictureData#height:member'
+      - 'word!Word.Interfaces.InlinePictureData#hyperlink:member'
+      - 'word!Word.Interfaces.InlinePictureData#imageFormat:member'
+      - 'word!Word.Interfaces.InlinePictureData#lockAspectRatio:member'
+      - 'word!Word.Interfaces.InlinePictureData#width:member'
+  - uid: 'word!Word.Interfaces.InlinePictureData#altTextDescription:member'
+    summary: |-
+      Gets or sets a string that represents the alternative text associated with the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextDescription
     fullName: altTextDescription
-    summary: >-
-      Gets or sets a string that represents the alternative text associated with
-      the inline image.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'altTextDescription?: string;'
       return:
-        type: string
-  - name: altTextTitle
-    uid: 'word!Word.Interfaces.InlinePictureData#altTextTitle:member'
-    package: word!
-    fullName: altTextTitle
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.InlinePictureData#altTextTitle:member'
+    summary: |-
       Gets or sets a string that contains the title for the inline image.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'altTextTitle?: string;'
       return:
-        type: string
-  - name: height
-    uid: 'word!Word.Interfaces.InlinePictureData#height:member'
-    package: word!
-    fullName: height
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.InlinePictureData#height:member'
+    summary: |-
       Gets or sets a number that describes the height of the inline image.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height?: number;'
       return:
-        type: number
-  - name: hyperlink
-    uid: 'word!Word.Interfaces.InlinePictureData#hyperlink:member'
-    package: word!
+        type:
+          - number
+  - uid: 'word!Word.Interfaces.InlinePictureData#hyperlink:member'
+    summary: |-
+      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: hyperlink
     fullName: hyperlink
-    summary: >-
-      Gets or sets a hyperlink on the image. Use a '\#' to separate the address
-      part from the optional location part.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'hyperlink?: string;'
       return:
-        type: string
-  - name: imageFormat
-    uid: 'word!Word.Interfaces.InlinePictureData#imageFormat:member'
-    package: word!
-    fullName: imageFormat
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.InlinePictureData#imageFormat:member'
     summary: >-
       Gets the format of the inline image. Read-only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: imageFormat
+    fullName: imageFormat
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: >-
-        imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" |
-        "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" |
-        "Pict" | "Pdf" | "Svg";
+        imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon"
+        | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
       return:
-        type: >-
-          <xref uid="word!Word.ImageFormat:enum" /> | "Unsupported" |
-          "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" |
-          "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
-  - name: lockAspectRatio
-    uid: 'word!Word.Interfaces.InlinePictureData#lockAspectRatio:member'
-    package: word!
+        type:
+          - 'word!Word.Interfaces.InlinePictureData#imageFormat~0:complex'
+  - uid: 'word!Word.Interfaces.InlinePictureData#lockAspectRatio:member'
+    summary: |-
+      Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lockAspectRatio
     fullName: lockAspectRatio
-    summary: >-
-      Gets or sets a value that indicates whether the inline image retains its
-      original proportions when you resize it.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'lockAspectRatio?: boolean;'
       return:
-        type: boolean
-  - name: width
-    uid: 'word!Word.Interfaces.InlinePictureData#width:member'
-    package: word!
-    fullName: width
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.InlinePictureData#width:member'
+    summary: |-
       Gets or sets a number that describes the width of the inline image.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number;'
       return:
-        type: number
+        type:
+          - number
+references:
+  - uid: 'word!Word.Interfaces.InlinePictureData#imageFormat~0:complex'
+    name: >-
+      Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf"
+      | "Emf" | "Pict" | "Pdf" | "Svg"
+    fullName: >-
+      Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf"
+      | "Emf" | "Pict" | "Pdf" | "Svg"
+    spec.typeScript:
+      - uid: 'word!Word.ImageFormat:enum'
+        name: Word.ImageFormat
+        fullName: Word.ImageFormat
+      - name: ' | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"'
+        fullName: ' | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"'

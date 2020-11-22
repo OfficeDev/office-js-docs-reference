@@ -1,295 +1,343 @@
-### YamlMime:TSType
-name: Word.CustomXmlPartCollection
-uid: 'word!Word.CustomXmlPartCollection:class'
-package: word!
-fullName: Word.CustomXmlPartCollection
-summary: >-
-  Contains the collection of
-  [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
-
-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: true
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'word!Word.CustomXmlPartCollection#context:member'
-    package: word!
-    fullName: context
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.CustomXmlPartCollection:class'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
+      Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-  - name: items
-    uid: 'word!Word.CustomXmlPartCollection#items:member'
+    name: Word.CustomXmlPartCollection
+    fullName: Word.CustomXmlPartCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: Word.CustomXmlPart[];'
-      return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />[]'
-methods:
-  - name: add(xml)
-    uid: 'word!Word.CustomXmlPartCollection#add:member(1)'
-    package: word!
-    fullName: add(xml)
+    children:
+      - 'word!Word.CustomXmlPartCollection#add:member(1)'
+      - 'word!Word.CustomXmlPartCollection#context:member'
+      - 'word!Word.CustomXmlPartCollection#getByNamespace:member(1)'
+      - 'word!Word.CustomXmlPartCollection#getCount:member(1)'
+      - 'word!Word.CustomXmlPartCollection#getItem:member(1)'
+      - 'word!Word.CustomXmlPartCollection#getItemOrNullObject:member(1)'
+      - 'word!Word.CustomXmlPartCollection#items:member'
+      - 'word!Word.CustomXmlPartCollection#load:member(1)'
+      - 'word!Word.CustomXmlPartCollection#load:member(2)'
+      - 'word!Word.CustomXmlPartCollection#load:member(3)'
+      - 'word!Word.CustomXmlPartCollection#toJSON:member(1)'
+      - 'word!Word.CustomXmlPartCollection#track:member(1)'
+      - 'word!Word.CustomXmlPartCollection#untrack:member(1)'
+  - uid: 'word!Word.CustomXmlPartCollection#add:member(1)'
     summary: >-
       Adds a new custom XML part to the document.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: add(xml)
+    fullName: add(xml)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(xml: string): Word.CustomXmlPart;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: xml
           description: Required. XML content. Must be a valid XML fragment.
-          type: string
-      return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
-        description: ''
-  - name: getByNamespace(namespaceUri)
-    uid: 'word!Word.CustomXmlPartCollection#getByNamespace:member(1)'
-    package: word!
-    fullName: getByNamespace(namespaceUri)
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPartCollection#context:member'
     summary: >-
-      Gets a new scoped collection of custom XML parts whose namespaces match
-      the given namespace.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    isPreview: true
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.CustomXmlPartCollection#getByNamespace:member(1)'
+    summary: >-
+      Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: getByNamespace(namespaceUri)
+    fullName: getByNamespace(namespaceUri)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getByNamespace(namespaceUri: string):
-        Word.CustomXmlPartScopedCollection;
+      content: 'getByNamespace(namespaceUri: string): Word.CustomXmlPartScopedCollection;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPartScopedCollection:class'
+        description: ''
       parameters:
         - id: namespaceUri
           description: Required. The namespace URI.
-          type: string
-      return:
-        type: '<xref uid="word!Word.CustomXmlPartScopedCollection:class" />'
-        description: ''
-  - name: getCount()
-    uid: 'word!Word.CustomXmlPartCollection#getCount:member(1)'
-    package: word!
-    fullName: getCount()
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPartCollection#getCount:member(1)'
     summary: >-
       Gets the number of items in the collection.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type:
+          - 'word!Word.CustomXmlPartCollection#getCount~0:complex'
         description: ''
-  - name: getItem(id)
-    uid: 'word!Word.CustomXmlPartCollection#getItem:member(1)'
-    package: word!
-    fullName: getItem(id)
+  - uid: 'word!Word.CustomXmlPartCollection#getItem:member(1)'
     summary: >-
       Gets a custom XML part based on its ID. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(id: string): Word.CustomXmlPart;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: id
           description: ID or index of the custom XML part to be retrieved.
-          type: string
-      return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
-        description: ''
-  - name: getItemOrNullObject(id)
-    uid: 'word!Word.CustomXmlPartCollection#getItemOrNullObject:member(1)'
-    package: word!
-    fullName: getItemOrNullObject(id)
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPartCollection#getItemOrNullObject:member(1)'
     summary: >-
-      Gets a custom XML part based on its ID. Returns a null object if the
-      CustomXmlPart does not exist.
+      Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    isDeprecated: false
+    name: getItemOrNullObject(id)
+    fullName: getItemOrNullObject(id)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemOrNullObject(id: string): Word.CustomXmlPart;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPart:class'
+        description: ''
       parameters:
         - id: id
           description: Required. ID of the object to be retrieved.
-          type: string
-      return:
-        type: '<xref uid="word!Word.CustomXmlPart:class" />'
-        description: ''
-  - name: load(options)
-    uid: 'word!Word.CustomXmlPartCollection#load:member(1)'
-    package: word!
-    fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
+          type:
+            - string
+  - uid: 'word!Word.CustomXmlPartCollection#items:member'
+    summary: Gets the loaded child items in this collection.
     isPreview: true
-    isDeprecated: false
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Word.CustomXmlPart[];'
+      return:
+        type:
+          - 'word!Word.CustomXmlPartCollection#items~0:complex'
+  - uid: 'word!Word.CustomXmlPartCollection#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(options?: Word.Interfaces.CustomXmlPartCollectionLoadOptions &
-        Word.Interfaces.CollectionLoadOptions): Word.CustomXmlPartCollection;
+        load(options?: Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.CustomXmlPartCollection;
+      return:
+        type:
+          - 'word!Word.CustomXmlPartCollection:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface"
-            /> & <xref
-            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'word!Word.CustomXmlPartCollection#load:member(2)'
-    package: word!
-    fullName: load(propertyNames)
+          type:
+            - 'word!Word.CustomXmlPartCollection#load~0:complex'
+  - uid: 'word!Word.CustomXmlPartCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     isPreview: true
-    isDeprecated: false
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.CustomXmlPartCollection;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPartCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.CustomXmlPartCollection#load:member(3)'
-    package: word!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'word!Word.CustomXmlPartCollection#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     isPreview: true
-    isDeprecated: false
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Word.CustomXmlPartCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CustomXmlPartCollection;'
+      return:
+        type:
+          - 'word!Word.CustomXmlPartCollection:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'word!Word.CustomXmlPartCollection#toJSON:member(1)'
-    package: word!
-    fullName: toJSON()
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'word!Word.CustomXmlPartCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Word.CustomXmlPartCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Word.Interfaces.CustomXmlPartCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.CustomXmlPartCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
     isPreview: true
-    isDeprecated: false
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Word.Interfaces.CustomXmlPartCollectionData;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData:interface"
-          />
+        type:
+          - 'word!Word.Interfaces.CustomXmlPartCollectionData:interface'
         description: ''
-  - name: track()
-    uid: 'word!Word.CustomXmlPartCollection#track:member(1)'
-    package: word!
-    fullName: track()
+  - uid: 'word!Word.CustomXmlPartCollection#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     isPreview: true
-    isDeprecated: false
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): Word.CustomXmlPartCollection;'
       return:
-        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
+        type:
+          - 'word!Word.CustomXmlPartCollection:class'
         description: ''
-  - name: untrack()
-    uid: 'word!Word.CustomXmlPartCollection#untrack:member(1)'
-    package: word!
-    fullName: untrack()
+  - uid: 'word!Word.CustomXmlPartCollection#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
-    remarks: ''
     isPreview: true
-    isDeprecated: false
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): Word.CustomXmlPartCollection;'
       return:
-        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
+        type:
+          - 'word!Word.CustomXmlPartCollection:class'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.CustomXmlPart:class'
+    name: Word.CustomXmlPart
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.CustomXmlPartScopedCollection:class'
+    name: Word.CustomXmlPartScopedCollection
+  - uid: 'word!Word.CustomXmlPartCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'word!Word.CustomXmlPartCollection#items~0:complex'
+    name: 'Word.CustomXmlPart[]'
+    fullName: 'Word.CustomXmlPart[]'
+    spec.typeScript:
+      - uid: 'word!Word.CustomXmlPart:class'
+        name: Word.CustomXmlPart
+        fullName: Word.CustomXmlPart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.CustomXmlPartCollection:class'
+    name: Word.CustomXmlPartCollection
+  - uid: 'word!Word.CustomXmlPartCollection#load~0:complex'
+    name: Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
+        name: Word.Interfaces.CustomXmlPartCollectionLoadOptions
+        fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+        name: Word.Interfaces.CollectionLoadOptions
+        fullName: Word.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionData:interface'
+    name: Word.Interfaces.CustomXmlPartCollectionData

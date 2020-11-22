@@ -1,41 +1,67 @@
-### YamlMime:TSEnum
-name: Word.TapObjectType
-uid: 'word!Word.TapObjectType:enum'
-package: word!
-fullName: Word.TapObjectType
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: chart
-    uid: 'word!Word.TapObjectType.chart:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.TapObjectType:enum'
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.TapObjectType
+    fullName: Word.TapObjectType
+    langs:
+      - typeScript
+    type: enum
     package: word!
-    summary: ''
-  - name: image
-    uid: 'word!Word.TapObjectType.image:member'
-    package: word!
-    summary: ''
-  - name: ole
-    uid: 'word!Word.TapObjectType.ole:member'
-    package: word!
-    summary: ''
-  - name: slide
-    uid: 'word!Word.TapObjectType.slide:member'
-    package: word!
-    summary: ''
-  - name: smartArt
-    uid: 'word!Word.TapObjectType.smartArt:member'
-    package: word!
-    summary: ''
-  - name: table
-    uid: 'word!Word.TapObjectType.table:member'
-    package: word!
-    summary: ''
-  - name: text
-    uid: 'word!Word.TapObjectType.text:member'
-    package: word!
-    summary: ''
+    children:
+      - 'word!Word.TapObjectType.chart:member'
+      - 'word!Word.TapObjectType.image:member'
+      - 'word!Word.TapObjectType.ole:member'
+      - 'word!Word.TapObjectType.slide:member'
+      - 'word!Word.TapObjectType.smartArt:member'
+      - 'word!Word.TapObjectType.table:member'
+      - 'word!Word.TapObjectType.text:member'
+  - uid: 'word!Word.TapObjectType.chart:member'
+    name: chart
+    fullName: chart
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Chart"'
+  - uid: 'word!Word.TapObjectType.image:member'
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Image"'
+  - uid: 'word!Word.TapObjectType.ole:member'
+    name: ole
+    fullName: ole
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OLE"'
+  - uid: 'word!Word.TapObjectType.slide:member'
+    name: slide
+    fullName: slide
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Slide"'
+  - uid: 'word!Word.TapObjectType.smartArt:member'
+    name: smartArt
+    fullName: smartArt
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SmartArt"'
+  - uid: 'word!Word.TapObjectType.table:member'
+    name: table
+    fullName: table
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Table"'
+  - uid: 'word!Word.TapObjectType.text:member'
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Text"'

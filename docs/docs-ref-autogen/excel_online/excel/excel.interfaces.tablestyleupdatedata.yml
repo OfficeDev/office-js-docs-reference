@@ -1,31 +1,27 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TableStyleUpdateData
-uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.TableStyleUpdateData
-summary: >-
-  An interface for updating data on the TableStyle object, for use in
-  `tableStyle.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: name
-    uid: 'excel!Excel.Interfaces.TableStyleUpdateData#name:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
+    summary: 'An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.TableStyleUpdateData
+    fullName: Excel.Interfaces.TableStyleUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: name
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.TableStyleUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleUpdateData#name:member'
+    summary: |-
       Gets the name of the TableStyle.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
+        type:
+          - string

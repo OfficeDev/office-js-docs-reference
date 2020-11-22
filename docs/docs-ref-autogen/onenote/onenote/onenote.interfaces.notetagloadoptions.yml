@@ -1,83 +1,74 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.NoteTagLoadOptions
-uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
-package: onenote!
-fullName: OneNote.Interfaces.NoteTagLoadOptions
-summary: >-
-  A container for the NoteTag in a paragraph.
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
+    summary: |-
+      A container for the NoteTag in a paragraph.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#$all:member'
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.NoteTagLoadOptions
+    fullName: OneNote.Interfaces.NoteTagLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#status:member'
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#type:member'
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#$all:member'
+    name: $all
     fullName: $all
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#id:member'
-    package: onenote!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#id:member'
+    summary: |-
       Gets the Id of the NoteTag object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: status
-    uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#status:member'
-    package: onenote!
-    fullName: status
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#status:member'
+    summary: |-
       Gets the status of the NoteTag object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: status
+    fullName: status
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'status?: boolean;'
       return:
-        type: boolean
-  - name: type
-    uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#type:member'
-    package: onenote!
-    fullName: type
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#type:member'
+    summary: |-
       Gets the type of the NoteTag object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean

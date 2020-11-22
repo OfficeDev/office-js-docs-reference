@@ -1,28 +1,38 @@
-### YamlMime:TSEnum
-name: Excel.ChartErrorBarsInclude
-uid: 'excel!Excel.ChartErrorBarsInclude:enum'
-package: excel!
-fullName: Excel.ChartErrorBarsInclude
-summary: >-
-  Represents which parts of the error bar to include.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
+    summary: |-
+      Represents which parts of the error bar to include.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: both
-    uid: 'excel!Excel.ChartErrorBarsInclude.both:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartErrorBarsInclude
+    fullName: Excel.ChartErrorBarsInclude
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: minusValues
-    uid: 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
-    package: excel!
-    summary: ''
-  - name: plusValues
-    uid: 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartErrorBarsInclude.both:member'
+      - 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
+      - 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
+  - uid: 'excel!Excel.ChartErrorBarsInclude.both:member'
+    name: both
+    fullName: both
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Both"'
+  - uid: 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
+    name: minusValues
+    fullName: minusValues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MinusValues"'
+  - uid: 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
+    name: plusValues
+    fullName: plusValues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlusValues"'

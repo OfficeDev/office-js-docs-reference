@@ -1,832 +1,1625 @@
-### YamlMime:TSEnum
-name: Office.ProjectResourceFields
-uid: 'office!Office.ProjectResourceFields:enum'
-package: office!
-fullName: Office.ProjectResourceFields
-summary: >-
-  Specifies the resource fields that are available as a parameter for the
-  [Document](xref:office!Office.Document:interface)<!--
-  -->.getResourceFieldAsync method.
-remarks: >-
-  A ProjectResourceFields constant can be used as a parameter of the
-  [Document](xref:office!Office.Document:interface)<!--
-  -->.getResourceFieldAsync method.
-
-
-  For more information about working with fields in Project, see [Available
-  fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
-  reference. In Project Help, search for Available fields.
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Accrual
-    uid: 'office!Office.ProjectResourceFields.Accrual:member'
-    package: office!
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.ProjectResourceFields:enum'
     summary: >-
-      The accrual method that defines how a task accrues the cost of the
-      resource: Accrues when the task starts = 1, accrues when the task ends =
-      2, accrues as the task progresses (prorated) = 3.
-  - name: ActualCost
-    uid: 'office!Office.ProjectResourceFields.ActualCost:member'
+      Specifies the resource fields that are available as a parameter for the
+      [Document](xref:office!Office.Document:interface)<!-- -->.getResourceFieldAsync method.
+    remarks: >-
+      A ProjectResourceFields constant can be used as a parameter of the
+      [Document](xref:office!Office.Document:interface)<!-- -->.getResourceFieldAsync method.
+
+
+      For more information about working with fields in Project, see [Available
+      fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
+      reference. In Project Help, search for Available fields.
+    name: Office.ProjectResourceFields
+    fullName: Office.ProjectResourceFields
+    langs:
+      - typeScript
+    type: enum
     package: office!
+    children:
+      - 'office!Office.ProjectResourceFields.Accrual:member'
+      - 'office!Office.ProjectResourceFields.ActualCost:member'
+      - 'office!Office.ProjectResourceFields.ActualOvertimeCost:member'
+      - 'office!Office.ProjectResourceFields.ActualOvertimeWork:member'
+      - 'office!Office.ProjectResourceFields.ActualOvertimeWorkProtected:member'
+      - 'office!Office.ProjectResourceFields.ActualWork:member'
+      - 'office!Office.ProjectResourceFields.ActualWorkProtected:member'
+      - 'office!Office.ProjectResourceFields.BaseCalendar:member'
+      - 'office!Office.ProjectResourceFields.Baseline10BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline10BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline10Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline10Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline1BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline1BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline1Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline1Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline2BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline2BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline2Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline2Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline3BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline3BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline3Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline3Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline4BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline4BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline4Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline4Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline5BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline5BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline5Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline5Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline6BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline6BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline6Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline6Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline7BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline7BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline7Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline7Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline8BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline8BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline8Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline8Work:member'
+      - 'office!Office.ProjectResourceFields.Baseline9BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.Baseline9BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Baseline9Cost:member'
+      - 'office!Office.ProjectResourceFields.Baseline9Work:member'
+      - 'office!Office.ProjectResourceFields.BaselineBudgetCost:member'
+      - 'office!Office.ProjectResourceFields.BaselineBudgetWork:member'
+      - 'office!Office.ProjectResourceFields.BaselineCost:member'
+      - 'office!Office.ProjectResourceFields.BaselineWork:member'
+      - 'office!Office.ProjectResourceFields.BudgetCost:member'
+      - 'office!Office.ProjectResourceFields.BudgetWork:member'
+      - 'office!Office.ProjectResourceFields.Code:member'
+      - 'office!Office.ProjectResourceFields.Cost:member'
+      - 'office!Office.ProjectResourceFields.Cost1:member'
+      - 'office!Office.ProjectResourceFields.Cost10:member'
+      - 'office!Office.ProjectResourceFields.Cost2:member'
+      - 'office!Office.ProjectResourceFields.Cost3:member'
+      - 'office!Office.ProjectResourceFields.Cost4:member'
+      - 'office!Office.ProjectResourceFields.Cost5:member'
+      - 'office!Office.ProjectResourceFields.Cost6:member'
+      - 'office!Office.ProjectResourceFields.Cost7:member'
+      - 'office!Office.ProjectResourceFields.Cost8:member'
+      - 'office!Office.ProjectResourceFields.Cost9:member'
+      - 'office!Office.ProjectResourceFields.CostPerUse:member'
+      - 'office!Office.ProjectResourceFields.Date1:member'
+      - 'office!Office.ProjectResourceFields.Date10:member'
+      - 'office!Office.ProjectResourceFields.Date2:member'
+      - 'office!Office.ProjectResourceFields.Date3:member'
+      - 'office!Office.ProjectResourceFields.Date4:member'
+      - 'office!Office.ProjectResourceFields.Date5:member'
+      - 'office!Office.ProjectResourceFields.Date6:member'
+      - 'office!Office.ProjectResourceFields.Date7:member'
+      - 'office!Office.ProjectResourceFields.Date8:member'
+      - 'office!Office.ProjectResourceFields.Date9:member'
+      - 'office!Office.ProjectResourceFields.Duration1:member'
+      - 'office!Office.ProjectResourceFields.Duration10:member'
+      - 'office!Office.ProjectResourceFields.Duration2:member'
+      - 'office!Office.ProjectResourceFields.Duration3:member'
+      - 'office!Office.ProjectResourceFields.Duration4:member'
+      - 'office!Office.ProjectResourceFields.Duration5:member'
+      - 'office!Office.ProjectResourceFields.Duration6:member'
+      - 'office!Office.ProjectResourceFields.Duration7:member'
+      - 'office!Office.ProjectResourceFields.Duration8:member'
+      - 'office!Office.ProjectResourceFields.Duration9:member'
+      - 'office!Office.ProjectResourceFields.Email:member'
+      - 'office!Office.ProjectResourceFields.End:member'
+      - 'office!Office.ProjectResourceFields.Finish1:member'
+      - 'office!Office.ProjectResourceFields.Finish10:member'
+      - 'office!Office.ProjectResourceFields.Finish2:member'
+      - 'office!Office.ProjectResourceFields.Finish3:member'
+      - 'office!Office.ProjectResourceFields.Finish4:member'
+      - 'office!Office.ProjectResourceFields.Finish5:member'
+      - 'office!Office.ProjectResourceFields.Finish6:member'
+      - 'office!Office.ProjectResourceFields.Finish7:member'
+      - 'office!Office.ProjectResourceFields.Finish8:member'
+      - 'office!Office.ProjectResourceFields.Finish9:member'
+      - 'office!Office.ProjectResourceFields.Flag1:member'
+      - 'office!Office.ProjectResourceFields.Flag10:member'
+      - 'office!Office.ProjectResourceFields.Flag11:member'
+      - 'office!Office.ProjectResourceFields.Flag12:member'
+      - 'office!Office.ProjectResourceFields.Flag13:member'
+      - 'office!Office.ProjectResourceFields.Flag14:member'
+      - 'office!Office.ProjectResourceFields.Flag15:member'
+      - 'office!Office.ProjectResourceFields.Flag16:member'
+      - 'office!Office.ProjectResourceFields.Flag17:member'
+      - 'office!Office.ProjectResourceFields.Flag18:member'
+      - 'office!Office.ProjectResourceFields.Flag19:member'
+      - 'office!Office.ProjectResourceFields.Flag2:member'
+      - 'office!Office.ProjectResourceFields.Flag20:member'
+      - 'office!Office.ProjectResourceFields.Flag3:member'
+      - 'office!Office.ProjectResourceFields.Flag4:member'
+      - 'office!Office.ProjectResourceFields.Flag5:member'
+      - 'office!Office.ProjectResourceFields.Flag6:member'
+      - 'office!Office.ProjectResourceFields.Flag7:member'
+      - 'office!Office.ProjectResourceFields.Flag8:member'
+      - 'office!Office.ProjectResourceFields.Flag9:member'
+      - 'office!Office.ProjectResourceFields.Generic:member'
+      - 'office!Office.ProjectResourceFields.Group:member'
+      - 'office!Office.ProjectResourceFields.Name:member'
+      - 'office!Office.ProjectResourceFields.Notes:member'
+      - 'office!Office.ProjectResourceFields.Number1:member'
+      - 'office!Office.ProjectResourceFields.Number10:member'
+      - 'office!Office.ProjectResourceFields.Number11:member'
+      - 'office!Office.ProjectResourceFields.Number12:member'
+      - 'office!Office.ProjectResourceFields.Number13:member'
+      - 'office!Office.ProjectResourceFields.Number14:member'
+      - 'office!Office.ProjectResourceFields.Number15:member'
+      - 'office!Office.ProjectResourceFields.Number16:member'
+      - 'office!Office.ProjectResourceFields.Number17:member'
+      - 'office!Office.ProjectResourceFields.Number18:member'
+      - 'office!Office.ProjectResourceFields.Number19:member'
+      - 'office!Office.ProjectResourceFields.Number2:member'
+      - 'office!Office.ProjectResourceFields.Number20:member'
+      - 'office!Office.ProjectResourceFields.Number3:member'
+      - 'office!Office.ProjectResourceFields.Number4:member'
+      - 'office!Office.ProjectResourceFields.Number5:member'
+      - 'office!Office.ProjectResourceFields.Number6:member'
+      - 'office!Office.ProjectResourceFields.Number7:member'
+      - 'office!Office.ProjectResourceFields.Number8:member'
+      - 'office!Office.ProjectResourceFields.Number9:member'
+      - 'office!Office.ProjectResourceFields.OverAllocated:member'
+      - 'office!Office.ProjectResourceFields.OvertimeCost:member'
+      - 'office!Office.ProjectResourceFields.OvertimeRate:member'
+      - 'office!Office.ProjectResourceFields.OvertimeWork:member'
+      - 'office!Office.ProjectResourceFields.PercentWorkComplete:member'
+      - 'office!Office.ProjectResourceFields.RegularWork:member'
+      - 'office!Office.ProjectResourceFields.RemainingCost:member'
+      - 'office!Office.ProjectResourceFields.RemainingOvertimeCost:member'
+      - 'office!Office.ProjectResourceFields.RemainingOvertimeWork:member'
+      - 'office!Office.ProjectResourceFields.RemainingWork:member'
+      - 'office!Office.ProjectResourceFields.ResourceCalendarGUID:member'
+      - 'office!Office.ProjectResourceFields.ResourceCreationDate:member'
+      - 'office!Office.ProjectResourceFields.ResourceGUID:member'
+      - 'office!Office.ProjectResourceFields.StandardRate:member'
+      - 'office!Office.ProjectResourceFields.Start:member'
+      - 'office!Office.ProjectResourceFields.Start1:member'
+      - 'office!Office.ProjectResourceFields.Start10:member'
+      - 'office!Office.ProjectResourceFields.Start2:member'
+      - 'office!Office.ProjectResourceFields.Start3:member'
+      - 'office!Office.ProjectResourceFields.Start4:member'
+      - 'office!Office.ProjectResourceFields.Start5:member'
+      - 'office!Office.ProjectResourceFields.Start6:member'
+      - 'office!Office.ProjectResourceFields.Start7:member'
+      - 'office!Office.ProjectResourceFields.Start8:member'
+      - 'office!Office.ProjectResourceFields.Start9:member'
+      - 'office!Office.ProjectResourceFields.Text1:member'
+      - 'office!Office.ProjectResourceFields.Text10:member'
+      - 'office!Office.ProjectResourceFields.Text11:member'
+      - 'office!Office.ProjectResourceFields.Text12:member'
+      - 'office!Office.ProjectResourceFields.Text13:member'
+      - 'office!Office.ProjectResourceFields.Text14:member'
+      - 'office!Office.ProjectResourceFields.Text15:member'
+      - 'office!Office.ProjectResourceFields.Text16:member'
+      - 'office!Office.ProjectResourceFields.Text17:member'
+      - 'office!Office.ProjectResourceFields.Text18:member'
+      - 'office!Office.ProjectResourceFields.Text19:member'
+      - 'office!Office.ProjectResourceFields.Text2:member'
+      - 'office!Office.ProjectResourceFields.Text20:member'
+      - 'office!Office.ProjectResourceFields.Text21:member'
+      - 'office!Office.ProjectResourceFields.Text22:member'
+      - 'office!Office.ProjectResourceFields.Text23:member'
+      - 'office!Office.ProjectResourceFields.Text24:member'
+      - 'office!Office.ProjectResourceFields.Text25:member'
+      - 'office!Office.ProjectResourceFields.Text26:member'
+      - 'office!Office.ProjectResourceFields.Text27:member'
+      - 'office!Office.ProjectResourceFields.Text28:member'
+      - 'office!Office.ProjectResourceFields.Text29:member'
+      - 'office!Office.ProjectResourceFields.Text3:member'
+      - 'office!Office.ProjectResourceFields.Text30:member'
+      - 'office!Office.ProjectResourceFields.Text4:member'
+      - 'office!Office.ProjectResourceFields.Text5:member'
+      - 'office!Office.ProjectResourceFields.Text6:member'
+      - 'office!Office.ProjectResourceFields.Text7:member'
+      - 'office!Office.ProjectResourceFields.Text8:member'
+      - 'office!Office.ProjectResourceFields.Text9:member'
+      - 'office!Office.ProjectResourceFields.Units:member'
+      - 'office!Office.ProjectResourceFields.Work:member'
+  - uid: 'office!Office.ProjectResourceFields.Accrual:member'
+    summary: >-
+      The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    name: Accrual
+    fullName: Accrual
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ActualCost:member'
     summary: The calculated actual cost of the resource for assignments in the project.
-  - name: ActualOvertimeCost
-    uid: 'office!Office.ProjectResourceFields.ActualOvertimeCost:member'
-    package: office!
+    name: ActualCost
+    fullName: ActualCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ActualOvertimeCost:member'
     summary: The actual overtime cost for a resource.
-  - name: ActualOvertimeWork
-    uid: 'office!Office.ProjectResourceFields.ActualOvertimeWork:member'
-    package: office!
+    name: ActualOvertimeCost
+    fullName: ActualOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ActualOvertimeWork:member'
     summary: 'The actual overtime work for a resource, in minutes.'
-  - name: ActualOvertimeWorkProtected
-    uid: 'office!Office.ProjectResourceFields.ActualOvertimeWorkProtected:member'
-    package: office!
-    summary: >-
-      The actual overtime work for the resource that has been protected (made
-      read-only).
-  - name: ActualWork
-    uid: 'office!Office.ProjectResourceFields.ActualWork:member'
-    package: office!
+    name: ActualOvertimeWork
+    fullName: ActualOvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ActualOvertimeWorkProtected:member'
+    summary: The actual overtime work for the resource that has been protected (made read-only).
+    name: ActualOvertimeWorkProtected
+    fullName: ActualOvertimeWorkProtected
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ActualWork:member'
     summary: The actual work that the resource has done on assignments in the project.
-  - name: ActualWorkProtected
-    uid: 'office!Office.ProjectResourceFields.ActualWorkProtected:member'
-    package: office!
+    name: ActualWork
+    fullName: ActualWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ActualWorkProtected:member'
     summary: The actual work for the resource that has been protected (made read-only).
-  - name: BaseCalendar
-    uid: 'office!Office.ProjectResourceFields.BaseCalendar:member'
-    package: office!
+    name: ActualWorkProtected
+    fullName: ActualWorkProtected
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.BaseCalendar:member'
     summary: The name of the base calendar for the resource.
-  - name: Baseline10BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline10BudgetCost:member'
-    package: office!
+    name: BaseCalendar
+    fullName: BaseCalendar
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline10BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline10BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline10BudgetWork:member'
-    package: office!
+    name: Baseline10BudgetCost
+    fullName: Baseline10BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline10BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline10Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline10Cost:member'
-    package: office!
+    name: Baseline10BudgetWork
+    fullName: Baseline10BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline10Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline10Work
-    uid: 'office!Office.ProjectResourceFields.Baseline10Work:member'
-    package: office!
+    name: Baseline10Cost
+    fullName: Baseline10Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline10Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline1BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline1BudgetCost:member'
-    package: office!
+    name: Baseline10Work
+    fullName: Baseline10Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline1BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline1BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline1BudgetWork:member'
-    package: office!
+    name: Baseline1BudgetCost
+    fullName: Baseline1BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline1BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline1Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline1Cost:member'
-    package: office!
+    name: Baseline1BudgetWork
+    fullName: Baseline1BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline1Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline1Work
-    uid: 'office!Office.ProjectResourceFields.Baseline1Work:member'
-    package: office!
+    name: Baseline1Cost
+    fullName: Baseline1Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline1Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline2BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline2BudgetCost:member'
-    package: office!
+    name: Baseline1Work
+    fullName: Baseline1Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline2BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline2BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline2BudgetWork:member'
-    package: office!
+    name: Baseline2BudgetCost
+    fullName: Baseline2BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline2BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline2Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline2Cost:member'
-    package: office!
+    name: Baseline2BudgetWork
+    fullName: Baseline2BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline2Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline2Work
-    uid: 'office!Office.ProjectResourceFields.Baseline2Work:member'
-    package: office!
+    name: Baseline2Cost
+    fullName: Baseline2Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline2Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline3BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline3BudgetCost:member'
-    package: office!
+    name: Baseline2Work
+    fullName: Baseline2Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline3BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline3BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline3BudgetWork:member'
-    package: office!
+    name: Baseline3BudgetCost
+    fullName: Baseline3BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline3BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline3Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline3Cost:member'
-    package: office!
+    name: Baseline3BudgetWork
+    fullName: Baseline3BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline3Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline3Work
-    uid: 'office!Office.ProjectResourceFields.Baseline3Work:member'
-    package: office!
+    name: Baseline3Cost
+    fullName: Baseline3Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline3Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline4BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline4BudgetCost:member'
-    package: office!
+    name: Baseline3Work
+    fullName: Baseline3Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline4BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline4BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline4BudgetWork:member'
-    package: office!
+    name: Baseline4BudgetCost
+    fullName: Baseline4BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline4BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline4Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline4Cost:member'
-    package: office!
+    name: Baseline4BudgetWork
+    fullName: Baseline4BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline4Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline4Work
-    uid: 'office!Office.ProjectResourceFields.Baseline4Work:member'
-    package: office!
+    name: Baseline4Cost
+    fullName: Baseline4Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline4Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline5BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline5BudgetCost:member'
-    package: office!
+    name: Baseline4Work
+    fullName: Baseline4Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline5BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline5BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline5BudgetWork:member'
-    package: office!
+    name: Baseline5BudgetCost
+    fullName: Baseline5BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline5BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline5Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline5Cost:member'
-    package: office!
+    name: Baseline5BudgetWork
+    fullName: Baseline5BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline5Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline5Work
-    uid: 'office!Office.ProjectResourceFields.Baseline5Work:member'
-    package: office!
+    name: Baseline5Cost
+    fullName: Baseline5Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline5Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline6BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline6BudgetCost:member'
-    package: office!
+    name: Baseline5Work
+    fullName: Baseline5Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline6BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline6BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline6BudgetWork:member'
-    package: office!
+    name: Baseline6BudgetCost
+    fullName: Baseline6BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline6BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline6Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline6Cost:member'
-    package: office!
+    name: Baseline6BudgetWork
+    fullName: Baseline6BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline6Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline6Work
-    uid: 'office!Office.ProjectResourceFields.Baseline6Work:member'
-    package: office!
+    name: Baseline6Cost
+    fullName: Baseline6Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline6Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline7BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline7BudgetCost:member'
-    package: office!
+    name: Baseline6Work
+    fullName: Baseline6Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline7BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline7BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline7BudgetWork:member'
-    package: office!
+    name: Baseline7BudgetCost
+    fullName: Baseline7BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline7BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline7Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline7Cost:member'
-    package: office!
+    name: Baseline7BudgetWork
+    fullName: Baseline7BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline7Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline7Work
-    uid: 'office!Office.ProjectResourceFields.Baseline7Work:member'
-    package: office!
+    name: Baseline7Cost
+    fullName: Baseline7Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline7Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline8BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline8BudgetCost:member'
-    package: office!
+    name: Baseline7Work
+    fullName: Baseline7Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline8BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline8BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline8BudgetWork:member'
-    package: office!
+    name: Baseline8BudgetCost
+    fullName: Baseline8BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline8BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline8Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline8Cost:member'
-    package: office!
+    name: Baseline8BudgetWork
+    fullName: Baseline8BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline8Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline8Work
-    uid: 'office!Office.ProjectResourceFields.Baseline8Work:member'
-    package: office!
+    name: Baseline8Cost
+    fullName: Baseline8Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline8Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: Baseline9BudgetCost
-    uid: 'office!Office.ProjectResourceFields.Baseline9BudgetCost:member'
-    package: office!
+    name: Baseline8Work
+    fullName: Baseline8Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline9BudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: Baseline9BudgetWork
-    uid: 'office!Office.ProjectResourceFields.Baseline9BudgetWork:member'
-    package: office!
+    name: Baseline9BudgetCost
+    fullName: Baseline9BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline9BudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: Baseline9Cost
-    uid: 'office!Office.ProjectResourceFields.Baseline9Cost:member'
-    package: office!
+    name: Baseline9BudgetWork
+    fullName: Baseline9BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline9Cost:member'
     summary: The cost for the baseline resource.
-  - name: Baseline9Work
-    uid: 'office!Office.ProjectResourceFields.Baseline9Work:member'
-    package: office!
+    name: Baseline9Cost
+    fullName: Baseline9Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Baseline9Work:member'
     summary: 'The work for the baseline resource, in minutes.'
-  - name: BaselineBudgetCost
-    uid: 'office!Office.ProjectResourceFields.BaselineBudgetCost:member'
-    package: office!
+    name: Baseline9Work
+    fullName: Baseline9Work
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.BaselineBudgetCost:member'
     summary: The budget cost for the baseline resource.
-  - name: BaselineBudgetWork
-    uid: 'office!Office.ProjectResourceFields.BaselineBudgetWork:member'
-    package: office!
+    name: BaselineBudgetCost
+    fullName: BaselineBudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.BaselineBudgetWork:member'
     summary: 'The budget work for the baseline resource, in hours.'
-  - name: BaselineCost
-    uid: 'office!Office.ProjectResourceFields.BaselineCost:member'
-    package: office!
+    name: BaselineBudgetWork
+    fullName: BaselineBudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.BaselineCost:member'
     summary: The baseline cost for the resource for assignments in the project.
-  - name: BaselineWork
-    uid: 'office!Office.ProjectResourceFields.BaselineWork:member'
-    package: office!
-    summary: >-
-      The baseline work for the resource for assignments in the project, in
-      minutes.
-  - name: BudgetCost
-    uid: 'office!Office.ProjectResourceFields.BudgetCost:member'
-    package: office!
+    name: BaselineCost
+    fullName: BaselineCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.BaselineWork:member'
+    summary: 'The baseline work for the resource for assignments in the project, in minutes.'
+    name: BaselineWork
+    fullName: BaselineWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.BudgetCost:member'
     summary: The budget cost for the resource.
-  - name: BudgetWork
-    uid: 'office!Office.ProjectResourceFields.BudgetWork:member'
-    package: office!
+    name: BudgetCost
+    fullName: BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.BudgetWork:member'
     summary: The budget work for the resource.
-  - name: Code
-    uid: 'office!Office.ProjectResourceFields.Code:member'
-    package: office!
+    name: BudgetWork
+    fullName: BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Code:member'
     summary: The code value of the resource.
-  - name: Cost
-    uid: 'office!Office.ProjectResourceFields.Cost:member'
-    package: office!
+    name: Code
+    fullName: Code
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost:member'
     summary: The total cost of the resource.
-  - name: Cost1
-    uid: 'office!Office.ProjectResourceFields.Cost1:member'
-    package: office!
+    name: Cost
+    fullName: Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost1:member'
     summary: A cost field for the resource.
-  - name: Cost10
-    uid: 'office!Office.ProjectResourceFields.Cost10:member'
-    package: office!
+    name: Cost1
+    fullName: Cost1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost10:member'
     summary: A cost field for the resource.
-  - name: Cost2
-    uid: 'office!Office.ProjectResourceFields.Cost2:member'
-    package: office!
+    name: Cost10
+    fullName: Cost10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost2:member'
     summary: A cost field for the resource.
-  - name: Cost3
-    uid: 'office!Office.ProjectResourceFields.Cost3:member'
-    package: office!
+    name: Cost2
+    fullName: Cost2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost3:member'
     summary: A cost field for the resource.
-  - name: Cost4
-    uid: 'office!Office.ProjectResourceFields.Cost4:member'
-    package: office!
+    name: Cost3
+    fullName: Cost3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost4:member'
     summary: A cost field for the resource.
-  - name: Cost5
-    uid: 'office!Office.ProjectResourceFields.Cost5:member'
-    package: office!
+    name: Cost4
+    fullName: Cost4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost5:member'
     summary: A cost field for the resource.
-  - name: Cost6
-    uid: 'office!Office.ProjectResourceFields.Cost6:member'
-    package: office!
+    name: Cost5
+    fullName: Cost5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost6:member'
     summary: A cost field for the resource.
-  - name: Cost7
-    uid: 'office!Office.ProjectResourceFields.Cost7:member'
-    package: office!
+    name: Cost6
+    fullName: Cost6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost7:member'
     summary: A cost field for the resource.
-  - name: Cost8
-    uid: 'office!Office.ProjectResourceFields.Cost8:member'
-    package: office!
+    name: Cost7
+    fullName: Cost7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost8:member'
     summary: A cost field for the resource.
-  - name: Cost9
-    uid: 'office!Office.ProjectResourceFields.Cost9:member'
-    package: office!
+    name: Cost8
+    fullName: Cost8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Cost9:member'
     summary: A cost field for the resource.
-  - name: CostPerUse
-    uid: 'office!Office.ProjectResourceFields.CostPerUse:member'
-    package: office!
+    name: Cost9
+    fullName: Cost9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.CostPerUse:member'
     summary: The cost per use of the resource.
-  - name: Date1
-    uid: 'office!Office.ProjectResourceFields.Date1:member'
-    package: office!
+    name: CostPerUse
+    fullName: CostPerUse
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date1:member'
     summary: A date field for the resource.
-  - name: Date10
-    uid: 'office!Office.ProjectResourceFields.Date10:member'
-    package: office!
+    name: Date1
+    fullName: Date1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date10:member'
     summary: A date field for the resource.
-  - name: Date2
-    uid: 'office!Office.ProjectResourceFields.Date2:member'
-    package: office!
+    name: Date10
+    fullName: Date10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date2:member'
     summary: A date field for the resource.
-  - name: Date3
-    uid: 'office!Office.ProjectResourceFields.Date3:member'
-    package: office!
+    name: Date2
+    fullName: Date2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date3:member'
     summary: A date field for the resource.
-  - name: Date4
-    uid: 'office!Office.ProjectResourceFields.Date4:member'
-    package: office!
+    name: Date3
+    fullName: Date3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date4:member'
     summary: A date field for the resource.
-  - name: Date5
-    uid: 'office!Office.ProjectResourceFields.Date5:member'
-    package: office!
+    name: Date4
+    fullName: Date4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date5:member'
     summary: A date field for the resource.
-  - name: Date6
-    uid: 'office!Office.ProjectResourceFields.Date6:member'
-    package: office!
+    name: Date5
+    fullName: Date5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date6:member'
     summary: A date field for the resource.
-  - name: Date7
-    uid: 'office!Office.ProjectResourceFields.Date7:member'
-    package: office!
+    name: Date6
+    fullName: Date6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date7:member'
     summary: A date field for the resource.
-  - name: Date8
-    uid: 'office!Office.ProjectResourceFields.Date8:member'
-    package: office!
+    name: Date7
+    fullName: Date7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date8:member'
     summary: A date field for the resource.
-  - name: Date9
-    uid: 'office!Office.ProjectResourceFields.Date9:member'
-    package: office!
+    name: Date8
+    fullName: Date8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Date9:member'
     summary: A date field for the resource.
-  - name: Duration1
-    uid: 'office!Office.ProjectResourceFields.Duration1:member'
-    package: office!
+    name: Date9
+    fullName: Date9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration1:member'
     summary: A duration field for the resource.
-  - name: Duration10
-    uid: 'office!Office.ProjectResourceFields.Duration10:member'
-    package: office!
+    name: Duration1
+    fullName: Duration1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration10:member'
     summary: A duration field for the resource.
-  - name: Duration2
-    uid: 'office!Office.ProjectResourceFields.Duration2:member'
-    package: office!
+    name: Duration10
+    fullName: Duration10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration2:member'
     summary: A duration field for the resource.
-  - name: Duration3
-    uid: 'office!Office.ProjectResourceFields.Duration3:member'
-    package: office!
+    name: Duration2
+    fullName: Duration2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration3:member'
     summary: A duration field for the resource.
-  - name: Duration4
-    uid: 'office!Office.ProjectResourceFields.Duration4:member'
-    package: office!
+    name: Duration3
+    fullName: Duration3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration4:member'
     summary: A duration field for the resource.
-  - name: Duration5
-    uid: 'office!Office.ProjectResourceFields.Duration5:member'
-    package: office!
+    name: Duration4
+    fullName: Duration4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration5:member'
     summary: A duration field for the resource.
-  - name: Duration6
-    uid: 'office!Office.ProjectResourceFields.Duration6:member'
-    package: office!
+    name: Duration5
+    fullName: Duration5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration6:member'
     summary: A duration field for the resource.
-  - name: Duration7
-    uid: 'office!Office.ProjectResourceFields.Duration7:member'
-    package: office!
+    name: Duration6
+    fullName: Duration6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration7:member'
     summary: A duration field for the resource.
-  - name: Duration8
-    uid: 'office!Office.ProjectResourceFields.Duration8:member'
-    package: office!
+    name: Duration7
+    fullName: Duration7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration8:member'
     summary: A duration field for the resource.
-  - name: Duration9
-    uid: 'office!Office.ProjectResourceFields.Duration9:member'
-    package: office!
+    name: Duration8
+    fullName: Duration8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Duration9:member'
     summary: A duration field for the resource.
-  - name: Email
-    uid: 'office!Office.ProjectResourceFields.Email:member'
-    package: office!
+    name: Duration9
+    fullName: Duration9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Email:member'
     summary: The email address of the resource.
-  - name: End
-    uid: 'office!Office.ProjectResourceFields.End:member'
-    package: office!
+    name: Email
+    fullName: Email
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.End:member'
     summary: The end date of the resource availability.
-  - name: Finish1
-    uid: 'office!Office.ProjectResourceFields.Finish1:member'
-    package: office!
+    name: End
+    fullName: End
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish1:member'
     summary: A finish field for the task.
-  - name: Finish10
-    uid: 'office!Office.ProjectResourceFields.Finish10:member'
-    package: office!
+    name: Finish1
+    fullName: Finish1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish10:member'
     summary: A finish field for the task.
-  - name: Finish2
-    uid: 'office!Office.ProjectResourceFields.Finish2:member'
-    package: office!
+    name: Finish10
+    fullName: Finish10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish2:member'
     summary: A finish field for the task.
-  - name: Finish3
-    uid: 'office!Office.ProjectResourceFields.Finish3:member'
-    package: office!
+    name: Finish2
+    fullName: Finish2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish3:member'
     summary: A finish field for the task.
-  - name: Finish4
-    uid: 'office!Office.ProjectResourceFields.Finish4:member'
-    package: office!
+    name: Finish3
+    fullName: Finish3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish4:member'
     summary: A finish field for the task.
-  - name: Finish5
-    uid: 'office!Office.ProjectResourceFields.Finish5:member'
-    package: office!
+    name: Finish4
+    fullName: Finish4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish5:member'
     summary: A finish field for the task.
-  - name: Finish6
-    uid: 'office!Office.ProjectResourceFields.Finish6:member'
-    package: office!
+    name: Finish5
+    fullName: Finish5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish6:member'
     summary: A finish field for the task.
-  - name: Finish7
-    uid: 'office!Office.ProjectResourceFields.Finish7:member'
-    package: office!
+    name: Finish6
+    fullName: Finish6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish7:member'
     summary: A finish field for the task.
-  - name: Finish8
-    uid: 'office!Office.ProjectResourceFields.Finish8:member'
-    package: office!
+    name: Finish7
+    fullName: Finish7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish8:member'
     summary: A finish field for the task.
-  - name: Finish9
-    uid: 'office!Office.ProjectResourceFields.Finish9:member'
-    package: office!
+    name: Finish8
+    fullName: Finish8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Finish9:member'
     summary: A finish field for the task.
-  - name: Flag1
-    uid: 'office!Office.ProjectResourceFields.Flag1:member'
-    package: office!
+    name: Finish9
+    fullName: Finish9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag1:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag10
-    uid: 'office!Office.ProjectResourceFields.Flag10:member'
-    package: office!
+    name: Flag1
+    fullName: Flag1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag10:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag11
-    uid: 'office!Office.ProjectResourceFields.Flag11:member'
-    package: office!
+    name: Flag10
+    fullName: Flag10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag11:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag12
-    uid: 'office!Office.ProjectResourceFields.Flag12:member'
-    package: office!
+    name: Flag11
+    fullName: Flag11
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag12:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag13
-    uid: 'office!Office.ProjectResourceFields.Flag13:member'
-    package: office!
+    name: Flag12
+    fullName: Flag12
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag13:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag14
-    uid: 'office!Office.ProjectResourceFields.Flag14:member'
-    package: office!
+    name: Flag13
+    fullName: Flag13
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag14:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag15
-    uid: 'office!Office.ProjectResourceFields.Flag15:member'
-    package: office!
+    name: Flag14
+    fullName: Flag14
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag15:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag16
-    uid: 'office!Office.ProjectResourceFields.Flag16:member'
-    package: office!
+    name: Flag15
+    fullName: Flag15
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag16:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag17
-    uid: 'office!Office.ProjectResourceFields.Flag17:member'
-    package: office!
+    name: Flag16
+    fullName: Flag16
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag17:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag18
-    uid: 'office!Office.ProjectResourceFields.Flag18:member'
-    package: office!
+    name: Flag17
+    fullName: Flag17
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag18:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag19
-    uid: 'office!Office.ProjectResourceFields.Flag19:member'
-    package: office!
+    name: Flag18
+    fullName: Flag18
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag19:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag2
-    uid: 'office!Office.ProjectResourceFields.Flag2:member'
-    package: office!
+    name: Flag19
+    fullName: Flag19
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag2:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag20
-    uid: 'office!Office.ProjectResourceFields.Flag20:member'
-    package: office!
+    name: Flag2
+    fullName: Flag2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag20:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag3
-    uid: 'office!Office.ProjectResourceFields.Flag3:member'
-    package: office!
+    name: Flag20
+    fullName: Flag20
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag3:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag4
-    uid: 'office!Office.ProjectResourceFields.Flag4:member'
-    package: office!
+    name: Flag3
+    fullName: Flag3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag4:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag5
-    uid: 'office!Office.ProjectResourceFields.Flag5:member'
-    package: office!
+    name: Flag4
+    fullName: Flag4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag5:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag6
-    uid: 'office!Office.ProjectResourceFields.Flag6:member'
-    package: office!
+    name: Flag5
+    fullName: Flag5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag6:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag7
-    uid: 'office!Office.ProjectResourceFields.Flag7:member'
-    package: office!
+    name: Flag6
+    fullName: Flag6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag7:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag8
-    uid: 'office!Office.ProjectResourceFields.Flag8:member'
-    package: office!
+    name: Flag7
+    fullName: Flag7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag8:member'
     summary: A Boolean flag field for the resource.
-  - name: Flag9
-    uid: 'office!Office.ProjectResourceFields.Flag9:member'
-    package: office!
+    name: Flag8
+    fullName: Flag8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Flag9:member'
     summary: A Boolean flag field for the resource.
-  - name: Generic
-    uid: 'office!Office.ProjectResourceFields.Generic:member'
-    package: office!
-    summary: >-
-      Indicates whether the resource is a generic resource (identified by skill
-      rather than by name).
-  - name: Group
-    uid: 'office!Office.ProjectResourceFields.Group:member'
-    package: office!
+    name: Flag9
+    fullName: Flag9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Generic:member'
+    summary: Indicates whether the resource is a generic resource (identified by skill rather than by name).
+    name: Generic
+    fullName: Generic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Group:member'
     summary: The group the resource belongs to.
-  - name: Name
-    uid: 'office!Office.ProjectResourceFields.Name:member'
-    package: office!
+    name: Group
+    fullName: Group
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Name:member'
     summary: The name of the resource.
-  - name: Notes
-    uid: 'office!Office.ProjectResourceFields.Notes:member'
-    package: office!
+    name: Name
+    fullName: Name
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Notes:member'
     summary: The text value of the notes regarding the resource.
-  - name: Number1
-    uid: 'office!Office.ProjectResourceFields.Number1:member'
-    package: office!
+    name: Notes
+    fullName: Notes
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number1:member'
     summary: A number field for the resource.
-  - name: Number10
-    uid: 'office!Office.ProjectResourceFields.Number10:member'
-    package: office!
+    name: Number1
+    fullName: Number1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number10:member'
     summary: A number field for the resource.
-  - name: Number11
-    uid: 'office!Office.ProjectResourceFields.Number11:member'
-    package: office!
+    name: Number10
+    fullName: Number10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number11:member'
     summary: A number field for the resource.
-  - name: Number12
-    uid: 'office!Office.ProjectResourceFields.Number12:member'
-    package: office!
+    name: Number11
+    fullName: Number11
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number12:member'
     summary: A number field for the resource.
-  - name: Number13
-    uid: 'office!Office.ProjectResourceFields.Number13:member'
-    package: office!
+    name: Number12
+    fullName: Number12
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number13:member'
     summary: A number field for the resource.
-  - name: Number14
-    uid: 'office!Office.ProjectResourceFields.Number14:member'
-    package: office!
+    name: Number13
+    fullName: Number13
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number14:member'
     summary: A number field for the resource.
-  - name: Number15
-    uid: 'office!Office.ProjectResourceFields.Number15:member'
-    package: office!
+    name: Number14
+    fullName: Number14
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number15:member'
     summary: A number field for the resource.
-  - name: Number16
-    uid: 'office!Office.ProjectResourceFields.Number16:member'
-    package: office!
+    name: Number15
+    fullName: Number15
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number16:member'
     summary: A number field for the resource.
-  - name: Number17
-    uid: 'office!Office.ProjectResourceFields.Number17:member'
-    package: office!
+    name: Number16
+    fullName: Number16
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number17:member'
     summary: A number field for the resource.
-  - name: Number18
-    uid: 'office!Office.ProjectResourceFields.Number18:member'
-    package: office!
+    name: Number17
+    fullName: Number17
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number18:member'
     summary: A number field for the resource.
-  - name: Number19
-    uid: 'office!Office.ProjectResourceFields.Number19:member'
-    package: office!
+    name: Number18
+    fullName: Number18
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number19:member'
     summary: A number field for the resource.
-  - name: Number2
-    uid: 'office!Office.ProjectResourceFields.Number2:member'
-    package: office!
+    name: Number19
+    fullName: Number19
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number2:member'
     summary: A number field for the resource.
-  - name: Number20
-    uid: 'office!Office.ProjectResourceFields.Number20:member'
-    package: office!
+    name: Number2
+    fullName: Number2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number20:member'
     summary: A number field for the resource.
-  - name: Number3
-    uid: 'office!Office.ProjectResourceFields.Number3:member'
-    package: office!
+    name: Number20
+    fullName: Number20
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number3:member'
     summary: A number field for the resource.
-  - name: Number4
-    uid: 'office!Office.ProjectResourceFields.Number4:member'
-    package: office!
+    name: Number3
+    fullName: Number3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number4:member'
     summary: A number field for the resource.
-  - name: Number5
-    uid: 'office!Office.ProjectResourceFields.Number5:member'
-    package: office!
+    name: Number4
+    fullName: Number4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number5:member'
     summary: A number field for the resource.
-  - name: Number6
-    uid: 'office!Office.ProjectResourceFields.Number6:member'
-    package: office!
+    name: Number5
+    fullName: Number5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number6:member'
     summary: A number field for the resource.
-  - name: Number7
-    uid: 'office!Office.ProjectResourceFields.Number7:member'
-    package: office!
+    name: Number6
+    fullName: Number6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number7:member'
     summary: A number field for the resource.
-  - name: Number8
-    uid: 'office!Office.ProjectResourceFields.Number8:member'
-    package: office!
+    name: Number7
+    fullName: Number7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number8:member'
     summary: A number field for the resource.
-  - name: Number9
-    uid: 'office!Office.ProjectResourceFields.Number9:member'
-    package: office!
+    name: Number8
+    fullName: Number8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Number9:member'
     summary: A number field for the resource.
-  - name: OverAllocated
-    uid: 'office!Office.ProjectResourceFields.OverAllocated:member'
-    package: office!
+    name: Number9
+    fullName: Number9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.OverAllocated:member'
     summary: Indicates whether the resource is overallocated.
-  - name: OvertimeCost
-    uid: 'office!Office.ProjectResourceFields.OvertimeCost:member'
-    package: office!
+    name: OverAllocated
+    fullName: OverAllocated
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.OvertimeCost:member'
     summary: The overtime cost for a resource.
-  - name: OvertimeRate
-    uid: 'office!Office.ProjectResourceFields.OvertimeRate:member'
-    package: office!
+    name: OvertimeCost
+    fullName: OvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.OvertimeRate:member'
     summary: The overtime rate for a resource.
-  - name: OvertimeWork
-    uid: 'office!Office.ProjectResourceFields.OvertimeWork:member'
-    package: office!
+    name: OvertimeRate
+    fullName: OvertimeRate
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.OvertimeWork:member'
     summary: The overtime work for a resource.
-  - name: PercentWorkComplete
-    uid: 'office!Office.ProjectResourceFields.PercentWorkComplete:member'
-    package: office!
+    name: OvertimeWork
+    fullName: OvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.PercentWorkComplete:member'
     summary: The percentage of work complete for a resource.
-  - name: RegularWork
-    uid: 'office!Office.ProjectResourceFields.RegularWork:member'
-    package: office!
+    name: PercentWorkComplete
+    fullName: PercentWorkComplete
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.RegularWork:member'
     summary: The amount of regular work for the resource.
-  - name: RemainingCost
-    uid: 'office!Office.ProjectResourceFields.RemainingCost:member'
-    package: office!
+    name: RegularWork
+    fullName: RegularWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.RemainingCost:member'
     summary: The remaining cost for the resource.
-  - name: RemainingOvertimeCost
-    uid: 'office!Office.ProjectResourceFields.RemainingOvertimeCost:member'
-    package: office!
+    name: RemainingCost
+    fullName: RemainingCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.RemainingOvertimeCost:member'
     summary: The remaining overtime cost for the resource.
-  - name: RemainingOvertimeWork
-    uid: 'office!Office.ProjectResourceFields.RemainingOvertimeWork:member'
-    package: office!
+    name: RemainingOvertimeCost
+    fullName: RemainingOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.RemainingOvertimeWork:member'
     summary: 'The remaining overtime work for the resource, in minutes.'
-  - name: RemainingWork
-    uid: 'office!Office.ProjectResourceFields.RemainingWork:member'
-    package: office!
+    name: RemainingOvertimeWork
+    fullName: RemainingOvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.RemainingWork:member'
     summary: 'The remaining work for the resource, in minutes.'
-  - name: ResourceCalendarGUID
-    uid: 'office!Office.ProjectResourceFields.ResourceCalendarGUID:member'
-    package: office!
+    name: RemainingWork
+    fullName: RemainingWork
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ResourceCalendarGUID:member'
     summary: The GUID of the resource calendar.
-  - name: ResourceCreationDate
-    uid: 'office!Office.ProjectResourceFields.ResourceCreationDate:member'
-    package: office!
+    name: ResourceCalendarGUID
+    fullName: ResourceCalendarGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ResourceCreationDate:member'
     summary: The date the resource was created.
-  - name: ResourceGUID
-    uid: 'office!Office.ProjectResourceFields.ResourceGUID:member'
-    package: office!
+    name: ResourceCreationDate
+    fullName: ResourceCreationDate
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.ResourceGUID:member'
     summary: The ID of the resource.
-  - name: StandardRate
-    uid: 'office!Office.ProjectResourceFields.StandardRate:member'
-    package: office!
+    name: ResourceGUID
+    fullName: ResourceGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.StandardRate:member'
     summary: 'The standard rate of pay for the resource, in cost per hour.'
-  - name: Start
-    uid: 'office!Office.ProjectResourceFields.Start:member'
-    package: office!
+    name: StandardRate
+    fullName: StandardRate
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start:member'
     summary: The start date for the resource.
-  - name: Start1
-    uid: 'office!Office.ProjectResourceFields.Start1:member'
-    package: office!
+    name: Start
+    fullName: Start
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start1:member'
     summary: A start field for the resource.
-  - name: Start10
-    uid: 'office!Office.ProjectResourceFields.Start10:member'
-    package: office!
+    name: Start1
+    fullName: Start1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start10:member'
     summary: A start field for the resource.
-  - name: Start2
-    uid: 'office!Office.ProjectResourceFields.Start2:member'
-    package: office!
+    name: Start10
+    fullName: Start10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start2:member'
     summary: A start field for the resource.
-  - name: Start3
-    uid: 'office!Office.ProjectResourceFields.Start3:member'
-    package: office!
+    name: Start2
+    fullName: Start2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start3:member'
     summary: A start field for the resource.
-  - name: Start4
-    uid: 'office!Office.ProjectResourceFields.Start4:member'
-    package: office!
+    name: Start3
+    fullName: Start3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start4:member'
     summary: A start field for the resource.
-  - name: Start5
-    uid: 'office!Office.ProjectResourceFields.Start5:member'
-    package: office!
+    name: Start4
+    fullName: Start4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start5:member'
     summary: A start field for the resource.
-  - name: Start6
-    uid: 'office!Office.ProjectResourceFields.Start6:member'
-    package: office!
+    name: Start5
+    fullName: Start5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start6:member'
     summary: A start field for the resource.
-  - name: Start7
-    uid: 'office!Office.ProjectResourceFields.Start7:member'
-    package: office!
+    name: Start6
+    fullName: Start6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start7:member'
     summary: A start field for the resource.
-  - name: Start8
-    uid: 'office!Office.ProjectResourceFields.Start8:member'
-    package: office!
+    name: Start7
+    fullName: Start7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start8:member'
     summary: A start field for the resource.
-  - name: Start9
-    uid: 'office!Office.ProjectResourceFields.Start9:member'
-    package: office!
+    name: Start8
+    fullName: Start8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Start9:member'
     summary: A start field for the resource.
-  - name: Text1
-    uid: 'office!Office.ProjectResourceFields.Text1:member'
-    package: office!
+    name: Start9
+    fullName: Start9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text1:member'
     summary: A text field for the resource.
-  - name: Text10
-    uid: 'office!Office.ProjectResourceFields.Text10:member'
-    package: office!
+    name: Text1
+    fullName: Text1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text10:member'
     summary: A text field for the resource.
-  - name: Text11
-    uid: 'office!Office.ProjectResourceFields.Text11:member'
-    package: office!
+    name: Text10
+    fullName: Text10
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text11:member'
     summary: A text field for the resource.
-  - name: Text12
-    uid: 'office!Office.ProjectResourceFields.Text12:member'
-    package: office!
+    name: Text11
+    fullName: Text11
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text12:member'
     summary: A text field for the resource.
-  - name: Text13
-    uid: 'office!Office.ProjectResourceFields.Text13:member'
-    package: office!
+    name: Text12
+    fullName: Text12
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text13:member'
     summary: A text field for the resource.
-  - name: Text14
-    uid: 'office!Office.ProjectResourceFields.Text14:member'
-    package: office!
+    name: Text13
+    fullName: Text13
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text14:member'
     summary: A text field for the resource.
-  - name: Text15
-    uid: 'office!Office.ProjectResourceFields.Text15:member'
-    package: office!
+    name: Text14
+    fullName: Text14
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text15:member'
     summary: A text field for the resource.
-  - name: Text16
-    uid: 'office!Office.ProjectResourceFields.Text16:member'
-    package: office!
+    name: Text15
+    fullName: Text15
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text16:member'
     summary: A text field for the resource.
-  - name: Text17
-    uid: 'office!Office.ProjectResourceFields.Text17:member'
-    package: office!
+    name: Text16
+    fullName: Text16
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text17:member'
     summary: A text field for the resource.
-  - name: Text18
-    uid: 'office!Office.ProjectResourceFields.Text18:member'
-    package: office!
+    name: Text17
+    fullName: Text17
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text18:member'
     summary: A text field for the resource.
-  - name: Text19
-    uid: 'office!Office.ProjectResourceFields.Text19:member'
-    package: office!
+    name: Text18
+    fullName: Text18
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text19:member'
     summary: A text field for the resource.
-  - name: Text2
-    uid: 'office!Office.ProjectResourceFields.Text2:member'
-    package: office!
+    name: Text19
+    fullName: Text19
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text2:member'
     summary: A text field for the resource.
-  - name: Text20
-    uid: 'office!Office.ProjectResourceFields.Text20:member'
-    package: office!
+    name: Text2
+    fullName: Text2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text20:member'
     summary: A text field for the resource.
-  - name: Text21
-    uid: 'office!Office.ProjectResourceFields.Text21:member'
-    package: office!
+    name: Text20
+    fullName: Text20
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text21:member'
     summary: A text field for the resource.
-  - name: Text22
-    uid: 'office!Office.ProjectResourceFields.Text22:member'
-    package: office!
+    name: Text21
+    fullName: Text21
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text22:member'
     summary: A text field for the resource.
-  - name: Text23
-    uid: 'office!Office.ProjectResourceFields.Text23:member'
-    package: office!
+    name: Text22
+    fullName: Text22
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text23:member'
     summary: A text field for the resource.
-  - name: Text24
-    uid: 'office!Office.ProjectResourceFields.Text24:member'
-    package: office!
+    name: Text23
+    fullName: Text23
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text24:member'
     summary: A text field for the resource.
-  - name: Text25
-    uid: 'office!Office.ProjectResourceFields.Text25:member'
-    package: office!
+    name: Text24
+    fullName: Text24
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text25:member'
     summary: A text field for the resource.
-  - name: Text26
-    uid: 'office!Office.ProjectResourceFields.Text26:member'
-    package: office!
+    name: Text25
+    fullName: Text25
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text26:member'
     summary: A text field for the resource.
-  - name: Text27
-    uid: 'office!Office.ProjectResourceFields.Text27:member'
-    package: office!
+    name: Text26
+    fullName: Text26
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text27:member'
     summary: A text field for the resource.
-  - name: Text28
-    uid: 'office!Office.ProjectResourceFields.Text28:member'
-    package: office!
+    name: Text27
+    fullName: Text27
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text28:member'
     summary: A text field for the resource.
-  - name: Text29
-    uid: 'office!Office.ProjectResourceFields.Text29:member'
-    package: office!
+    name: Text28
+    fullName: Text28
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text29:member'
     summary: A text field for the resource.
-  - name: Text3
-    uid: 'office!Office.ProjectResourceFields.Text3:member'
-    package: office!
+    name: Text29
+    fullName: Text29
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text3:member'
     summary: A text field for the resource.
-  - name: Text30
-    uid: 'office!Office.ProjectResourceFields.Text30:member'
-    package: office!
+    name: Text3
+    fullName: Text3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text30:member'
     summary: A text field for the resource.
-  - name: Text4
-    uid: 'office!Office.ProjectResourceFields.Text4:member'
-    package: office!
+    name: Text30
+    fullName: Text30
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text4:member'
     summary: A text field for the resource.
-  - name: Text5
-    uid: 'office!Office.ProjectResourceFields.Text5:member'
-    package: office!
+    name: Text4
+    fullName: Text4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text5:member'
     summary: A text field for the resource.
-  - name: Text6
-    uid: 'office!Office.ProjectResourceFields.Text6:member'
-    package: office!
+    name: Text5
+    fullName: Text5
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text6:member'
     summary: A text field for the resource.
-  - name: Text7
-    uid: 'office!Office.ProjectResourceFields.Text7:member'
-    package: office!
+    name: Text6
+    fullName: Text6
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text7:member'
     summary: A text field for the resource.
-  - name: Text8
-    uid: 'office!Office.ProjectResourceFields.Text8:member'
-    package: office!
+    name: Text7
+    fullName: Text7
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text8:member'
     summary: A text field for the resource.
-  - name: Text9
-    uid: 'office!Office.ProjectResourceFields.Text9:member'
-    package: office!
+    name: Text8
+    fullName: Text8
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Text9:member'
     summary: A text field for the resource.
-  - name: Units
-    uid: 'office!Office.ProjectResourceFields.Units:member'
-    package: office!
+    name: Text9
+    fullName: Text9
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Units:member'
     summary: >-
-      The percentage of work units that the resource has assigned in the
-      project. If the resource is working full-time on the project, Units = 100.
-  - name: Work
-    uid: 'office!Office.ProjectResourceFields.Work:member'
-    package: office!
+      The percentage of work units that the resource has assigned in the project. If the resource is working full-time
+      on the project, Units = 100.
+    name: Units
+    fullName: Units
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.ProjectResourceFields.Work:member'
     summary: 'The total work for the resource, in minutes.'
+    name: Work
+    fullName: Work
+    langs:
+      - typeScript
+    type: field

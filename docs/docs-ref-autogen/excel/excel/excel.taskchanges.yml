@@ -1,0 +1,179 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TaskChanges:interface'
+    summary: >-
+      Represents a set of intended changes for a task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.TaskChanges
+    fullName: Excel.TaskChanges
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TaskChanges#dueDate:member'
+      - 'excel!Excel.TaskChanges#emailsToAssign:member'
+      - 'excel!Excel.TaskChanges#emailsToUnassign:member'
+      - 'excel!Excel.TaskChanges#percentComplete:member'
+      - 'excel!Excel.TaskChanges#priority:member'
+      - 'excel!Excel.TaskChanges#removeAllPreviousAssignees:member'
+      - 'excel!Excel.TaskChanges#startDate:member'
+      - 'excel!Excel.TaskChanges#title:member'
+  - uid: 'excel!Excel.TaskChanges#dueDate:member'
+    summary: >-
+      Sets a new due date for the task, in UTC time zone. Can be set to `null` to remove the due date. Should be set
+      together with `startDate` to avoid conflicts.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dueDate
+    fullName: dueDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dueDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.TaskChanges#emailsToAssign:member'
+    summary: >-
+      Sets email addresses of the users to assign to the task. The specified emails will be added to the existing
+      assignees of the task unless `removeAllPreviousAssignees` property is set to `true`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: emailsToAssign
+    fullName: emailsToAssign
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailsToAssign?: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: 'excel!Excel.TaskChanges#emailsToUnassign:member'
+    summary: >-
+      Sets email addresses of the users to unassign from the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: emailsToUnassign
+    fullName: emailsToUnassign
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailsToUnassign?: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: 'excel!Excel.TaskChanges#percentComplete:member'
+    summary: >-
+      Sets a new completion percentage for the task. This is a value between 0 and 100, where 100 represents a completed
+      task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a
+      lower value reactivates the associated comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: percentComplete
+    fullName: percentComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'percentComplete?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TaskChanges#priority:member'
+    summary: >-
+      Sets a new priority for the task. This is a value between 0 and 10, where 0 represents the highest priority.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TaskChanges#removeAllPreviousAssignees:member'
+    summary: >-
+      Sets if the change should remove all previous assignees from the task. When this property is set to true,
+      `emailsToUnassign` property will have no effect and emails specified in `emailsToAssign` property will become the
+      only assignees.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: removeAllPreviousAssignees
+    fullName: removeAllPreviousAssignees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeAllPreviousAssignees?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.TaskChanges#startDate:member'
+    summary: >-
+      Sets a new start date for the task, in UTC time zone. Can be set to `null` to remove the start date. Should be set
+      together with `dueDate` to avoid conflicts.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: startDate
+    fullName: startDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.TaskChanges#title:member'
+    summary: >-
+      Sets a new title for the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: '!Date:interface'
+    name: Date

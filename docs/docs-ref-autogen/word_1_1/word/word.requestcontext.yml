@@ -1,43 +1,48 @@
-### YamlMime:TSType
-name: Word.RequestContext
-uid: 'word!Word.RequestContext:class'
-package: word!
-fullName: Word.RequestContext
-summary: >-
-  The RequestContext object facilitates requests to the Word application. Since
-  the Office add-in and the Word application run in two different processes, the
-  request context is required to get access to the Word object model from the
-  add-in.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(url)
-    uid: 'word!Word.RequestContext:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.RequestContext:class'
+    summary: >-
+      The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word
+      application run in two different processes, the request context is required to get access to the Word object model
+      from the add-in.
+    name: Word.RequestContext
+    fullName: Word.RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientRequestContext:class'
     package: word!
-    fullName: (constructor)(url)
+    children:
+      - 'word!Word.RequestContext:constructor(1)'
+      - 'word!Word.RequestContext#document:member'
+  - uid: 'word!Word.RequestContext:constructor(1)'
     summary: Constructs a new instance of the `RequestContext` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(url)
+    fullName: (constructor)(url)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(url?: string);'
       parameters:
         - id: url
           description: ''
-          type: string
-properties:
-  - name: document
-    uid: 'word!Word.RequestContext#document:member'
-    package: word!
+          type:
+            - string
+  - uid: 'word!Word.RequestContext#document:member'
+    name: document
     fullName: document
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly document: Document;'
       return:
-        type: '<xref uid="word!Word.Document:class" />'
-extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+        type:
+          - 'word!Word.Document:class'
+references:
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext
+  - uid: 'word!Word.Document:class'
+    name: Document

@@ -1,28 +1,36 @@
-### YamlMime:TSEnum
-name: Office.MailboxEnums.SourceProperty
-uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
-package: outlook!
-fullName: Office.MailboxEnums.SourceProperty
-summary: >-
-  Specifies the source of the selected data in an item (see
-  `Office.mailbox.item.getSelectedDataAsync` for details).
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
+    summary: |-
+      Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
 
-
-  \[ [API set: Mailbox
-  1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
-remarks: >-
-  **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
-isPreview: false
-isDeprecated: false
-fields:
-  - name: Body
-    uid: 'outlook!Office.MailboxEnums.SourceProperty.Body:member'
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    name: Office.MailboxEnums.SourceProperty
+    fullName: Office.MailboxEnums.SourceProperty
+    langs:
+      - typeScript
+    type: enum
     package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.SourceProperty.Body:member'
+      - 'outlook!Office.MailboxEnums.SourceProperty.Subject:member'
+  - uid: 'outlook!Office.MailboxEnums.SourceProperty.Body:member'
     summary: The source of the data is from the body of the item.
-  - name: Subject
-    uid: 'outlook!Office.MailboxEnums.SourceProperty.Subject:member'
-    package: outlook!
+    name: Body
+    fullName: Body
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"body"'
+  - uid: 'outlook!Office.MailboxEnums.SourceProperty.Subject:member'
     summary: The source of the data is from the subject of the item.
+    name: Subject
+    fullName: Subject
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"subject"'

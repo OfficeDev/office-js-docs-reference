@@ -1,86 +1,78 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartTitleData
-uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartTitleData
-summary: >-
-  An interface describing the data returned by calling `chartTitle.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: format
-    uid: 'excel!Excel.Interfaces.ChartTitleData#format:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
+    summary: An interface describing the data returned by calling `chartTitle.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartTitleData
+    fullName: Excel.Interfaces.ChartTitleData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartTitleData#format:member'
+      - 'excel!Excel.Interfaces.ChartTitleData#overlay:member'
+      - 'excel!Excel.Interfaces.ChartTitleData#text:member'
+      - 'excel!Excel.Interfaces.ChartTitleData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#format:member'
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
     fullName: format
-    summary: >-
-      Represents the formatting of a chart title, which includes fill and font
-      formatting.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'format?: Excel.Interfaces.ChartTitleFormatData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartTitleFormatData:interface" />'
-  - name: overlay
-    uid: 'excel!Excel.Interfaces.ChartTitleData#overlay:member'
-    package: excel!
-    fullName: overlay
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#overlay:member'
+    summary: |-
       Specifies if the chart title will overlay the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overlay?: boolean;'
       return:
-        type: boolean
-  - name: text
-    uid: 'excel!Excel.Interfaces.ChartTitleData#text:member'
-    package: excel!
-    fullName: text
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#text:member'
+    summary: |-
       Specifies the chart's title text.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: string;'
       return:
-        type: string
-  - name: visible
-    uid: 'excel!Excel.Interfaces.ChartTitleData#visible:member'
-    package: excel!
-    fullName: visible
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#visible:member'
+    summary: |-
       Specifies if the chart title is visibile.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'visible?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
+    name: Excel.Interfaces.ChartTitleFormatData

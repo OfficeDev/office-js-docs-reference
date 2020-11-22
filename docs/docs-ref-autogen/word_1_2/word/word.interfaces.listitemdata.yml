@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Word.Interfaces.ListItemData
-uid: 'word!Word.Interfaces.ListItemData:interface'
-package: word!
-fullName: Word.Interfaces.ListItemData
-summary: >-
-  An interface describing the data returned by calling `listItem.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ListItemData:interface'
+    summary: An interface describing the data returned by calling `listItem.toJSON()`<!-- -->.
+    name: Word.Interfaces.ListItemData
+    fullName: Word.Interfaces.ListItemData
+    langs:
+      - typeScript
+    type: interface
+    package: word!

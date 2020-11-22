@@ -1,43 +1,57 @@
-### YamlMime:TSType
-name: Visio.RequestContext
-uid: 'visio!Visio.RequestContext:class'
-package: visio!
-fullName: Visio.RequestContext
-summary: >-
-  The RequestContext object facilitates requests to the Visio application. Since
-  the Office add-in and the Visio application run in two different processes,
-  the request context is required to get access to the Visio object model from
-  the add-in.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-constructors:
-  - name: (constructor)(url)
-    uid: 'visio!Visio.RequestContext:constructor(1)'
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.RequestContext:class'
+    summary: >-
+      The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio
+      application run in two different processes, the request context is required to get access to the Visio object
+      model from the add-in.
+    name: Visio.RequestContext
+    fullName: Visio.RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientRequestContext:class'
     package: visio!
-    fullName: (constructor)(url)
+    children:
+      - 'visio!Visio.RequestContext:constructor(1)'
+      - 'visio!Visio.RequestContext#document:member'
+  - uid: 'visio!Visio.RequestContext:constructor(1)'
     summary: Constructs a new instance of the `RequestContext` class
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: (constructor)(url)
+    fullName: (constructor)(url)
+    langs:
+      - typeScript
+    type: constructor
     syntax:
       content: 'constructor(url?: string | OfficeExtension.EmbeddedSession);'
       parameters:
         - id: url
           description: ''
-          type: 'string | <xref uid="office!OfficeExtension.EmbeddedSession:class" />'
-properties:
-  - name: document
-    uid: 'visio!Visio.RequestContext#document:member'
-    package: visio!
+          type:
+            - 'visio!Visio.RequestContext~0:complex'
+  - uid: 'visio!Visio.RequestContext#document:member'
+    name: document
     fullName: document
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly document: Document;'
       return:
-        type: '<xref uid="visio!Visio.Document:class" />'
-extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+        type:
+          - 'visio!Visio.Document:class'
+references:
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext
+  - uid: 'visio!Visio.RequestContext~0:complex'
+    name: string | OfficeExtension.EmbeddedSession
+    fullName: string | OfficeExtension.EmbeddedSession
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'office!OfficeExtension.EmbeddedSession:class'
+        name: OfficeExtension.EmbeddedSession
+        fullName: OfficeExtension.EmbeddedSession
+  - uid: 'visio!Visio.Document:class'
+    name: Document

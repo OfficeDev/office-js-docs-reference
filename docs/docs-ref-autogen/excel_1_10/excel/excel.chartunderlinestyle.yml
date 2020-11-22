@@ -1,21 +1,27 @@
-### YamlMime:TSEnum
-name: Excel.ChartUnderlineStyle
-uid: 'excel!Excel.ChartUnderlineStyle:enum'
-package: excel!
-fullName: Excel.ChartUnderlineStyle
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: none
-    uid: 'excel!Excel.ChartUnderlineStyle.none:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartUnderlineStyle:enum'
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartUnderlineStyle
+    fullName: Excel.ChartUnderlineStyle
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: single
-    uid: 'excel!Excel.ChartUnderlineStyle.single:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartUnderlineStyle.none:member'
+      - 'excel!Excel.ChartUnderlineStyle.single:member'
+  - uid: 'excel!Excel.ChartUnderlineStyle.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: 'excel!Excel.ChartUnderlineStyle.single:member'
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'

@@ -1,171 +1,145 @@
-### YamlMime:TSType
-name: Excel.Interfaces.HeaderFooterGroupLoadOptions
-uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.HeaderFooterGroupLoadOptions
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#$all:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.Interfaces.HeaderFooterGroupLoadOptions
+    fullName: Excel.Interfaces.HeaderFooterGroupLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#state:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#useSheetMargins:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#useSheetScale:member'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: defaultForAllPages
-    uid: >-
-      excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member'
+    summary: |-
+      The general header/footer, used for all pages unless even/odd or first page is specified.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: defaultForAllPages
     fullName: defaultForAllPages
-    summary: >-
-      The general header/footer, used for all pages unless even/odd or first
-      page is specified.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultForAllPages?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
-          />
-  - name: evenPages
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member'
+    summary: |-
+      The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: evenPages
     fullName: evenPages
-    summary: >-
-      The header/footer to use for even pages, odd header/footer needs to be
-      specified for odd pages.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'evenPages?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
-          />
-  - name: firstPage
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member'
+    summary: |-
+      The first page header/footer, for all other pages general or even/odd is used.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstPage
     fullName: firstPage
-    summary: >-
-      The first page header/footer, for all other pages general or even/odd is
-      used.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'firstPage?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
-          />
-  - name: oddPages
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member'
+    summary: |-
+      The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: oddPages
     fullName: oddPages
-    summary: >-
-      The header/footer to use for odd pages, even header/footer needs to be
-      specified for even pages.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'oddPages?: Excel.Interfaces.HeaderFooterLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.HeaderFooterLoadOptions:interface"
-          />
-  - name: state
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#state:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#state:member'
+    summary: |-
+      The state by which headers/footers are set. See Excel.HeaderFooterState for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: state
     fullName: state
-    summary: >-
-      The state by which headers/footers are set. See Excel.HeaderFooterState
-      for details.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'state?: boolean;'
       return:
-        type: boolean
-  - name: useSheetMargins
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#useSheetMargins:member'
-    package: excel!
-    fullName: useSheetMargins
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#useSheetMargins:member'
     summary: >-
-      Gets or sets a flag indicating if headers/footers are aligned with the
-      page margins set in the page layout options for the worksheet.
+      Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
+      for the worksheet.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSheetMargins
+    fullName: useSheetMargins
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useSheetMargins?: boolean;'
       return:
-        type: boolean
-  - name: useSheetScale
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#useSheetScale:member'
-    package: excel!
-    fullName: useSheetScale
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#useSheetScale:member'
     summary: >-
-      Gets or sets a flag indicating if headers/footers should be scaled by the
-      page percentage scale set in the page layout options for the worksheet.
+      Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
+      layout options for the worksheet.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSheetScale
+    fullName: useSheetScale
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useSheetScale?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+    name: Excel.Interfaces.HeaderFooterLoadOptions

@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TaskCollectionData:interface'
+    summary: An interface describing the data returned by calling `taskCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.TaskCollectionData
+    fullName: Excel.Interfaces.TaskCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TaskCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.TaskCollectionData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.TaskData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TaskCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TaskCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.TaskData[]'
+    fullName: 'Excel.Interfaces.TaskData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TaskData:interface'
+        name: Excel.Interfaces.TaskData
+        fullName: Excel.Interfaces.TaskData
+      - name: '[]'
+        fullName: '[]'

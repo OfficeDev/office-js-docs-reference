@@ -1,29 +1,38 @@
-### YamlMime:TSEnum
-name: Excel.ShapeScaleFrom
-uid: 'excel!Excel.ShapeScaleFrom:enum'
-package: excel!
-fullName: Excel.ShapeScaleFrom
-summary: >-
-  Specifies which part of the shape retains its position when the shape is
-  scaled.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeScaleFrom:enum'
+    summary: |-
+      Specifies which part of the shape retains its position when the shape is scaled.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: scaleFromBottomRight
-    uid: 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeScaleFrom
+    fullName: Excel.ShapeScaleFrom
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: scaleFromMiddle
-    uid: 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
-    package: excel!
-    summary: ''
-  - name: scaleFromTopLeft
-    uid: 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
+      - 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
+      - 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
+  - uid: 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
+    name: scaleFromBottomRight
+    fullName: scaleFromBottomRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ScaleFromBottomRight"'
+  - uid: 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
+    name: scaleFromMiddle
+    fullName: scaleFromMiddle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ScaleFromMiddle"'
+  - uid: 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
+    name: scaleFromTopLeft
+    fullName: scaleFromTopLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ScaleFromTopLeft"'

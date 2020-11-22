@@ -1,112 +1,105 @@
-### YamlMime:TSType
-name: Word.Interfaces.RangeCollectionLoadOptions
-uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
-package: word!
-fullName: Word.Interfaces.RangeCollectionLoadOptions
-summary: >-
-  Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
+    summary: |-
+      Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#$all:member'
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.RangeCollectionLoadOptions
+    fullName: Word.Interfaces.RangeCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: $all
+    children:
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#font:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#style:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: font
-    uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#font:member'
-    package: word!
-    fullName: font
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#font:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the text format of the range. Use
-      this to get and set font name, size, color, and other properties.
+      For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,
+      color, and other properties.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
-  - name: parentContentControl
-    uid: >-
-      word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member
-    package: word!
-    fullName: parentContentControl
+        type:
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the range. Throws an error if there isn't a parent content control.
+      For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't
+      a parent content control.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
-  - name: style
-    uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#style:member'
-    package: word!
-    fullName: style
+        type:
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#style:member'
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the style name for the
-      range. Use this property for custom styles and localized style names. To
-      use the built-in styles that are portable between locales, see the
-      "styleBuiltIn" property.
+      For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles
+      and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
+      property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: boolean;'
       return:
-        type: boolean
-  - name: text
-    uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
-    package: word!
-    fullName: text
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
+    summary: |-
       For EACH ITEM in the collection: Gets the text of the range. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions

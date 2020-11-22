@@ -1,295 +1,264 @@
-### YamlMime:TSType
-name: Word.Interfaces.ParagraphLoadOptions
-uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
-package: word!
-fullName: Word.Interfaces.ParagraphLoadOptions
-summary: >-
-  Represents a single paragraph in a selection, range, content control, or
-  document body.
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+    summary: |-
+      Represents a single paragraph in a selection, range, content control, or document body.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#$all:member'
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.ParagraphLoadOptions
+    fullName: Word.Interfaces.ParagraphLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: word!
-    fullName: $all
+    children:
+      - 'word!Word.Interfaces.ParagraphLoadOptions#$all:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#alignment:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#firstLineIndent:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#font:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#leftIndent:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#lineSpacing:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#lineUnitAfter:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#lineUnitBefore:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#outlineLevel:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#rightIndent:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#spaceAfter:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#spaceBefore:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#style:member'
+      - 'word!Word.Interfaces.ParagraphLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: alignment
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#alignment:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#alignment:member'
+    summary: |-
+      Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: alignment
     fullName: alignment
-    summary: >-
-      Gets or sets the alignment for a paragraph. The value can be 'left',
-      'centered', 'right', or 'justified'.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'alignment?: boolean;'
       return:
-        type: boolean
-  - name: firstLineIndent
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#firstLineIndent:member'
-    package: word!
-    fullName: firstLineIndent
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#firstLineIndent:member'
     summary: >-
-      Gets or sets the value, in points, for a first line or hanging indent. Use
-      a positive value to set a first-line indent, and use a negative value to
-      set a hanging indent.
+      Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
+      indent, and use a negative value to set a hanging indent.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: firstLineIndent
+    fullName: firstLineIndent
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'firstLineIndent?: boolean;'
       return:
-        type: boolean
-  - name: font
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#font:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#font:member'
+    summary: |-
+      Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
     fullName: font
-    summary: >-
-      Gets the text format of the paragraph. Use this to get and set font name,
-      size, color, and other properties.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
-  - name: leftIndent
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#leftIndent:member'
-    package: word!
-    fullName: leftIndent
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#leftIndent:member'
+    summary: |-
       Gets or sets the left indent value, in points, for the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: leftIndent
+    fullName: leftIndent
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'leftIndent?: boolean;'
       return:
-        type: boolean
-  - name: lineSpacing
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#lineSpacing:member'
-    package: word!
-    fullName: lineSpacing
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#lineSpacing:member'
     summary: >-
-      Gets or sets the line spacing, in points, for the specified paragraph. In
-      the Word UI, this value is divided by 12.
+      Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
+      12.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lineSpacing
+    fullName: lineSpacing
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'lineSpacing?: boolean;'
       return:
-        type: boolean
-  - name: lineUnitAfter
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#lineUnitAfter:member'
-    package: word!
-    fullName: lineUnitAfter
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#lineUnitAfter:member'
+    summary: |-
       Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lineUnitAfter
+    fullName: lineUnitAfter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'lineUnitAfter?: boolean;'
       return:
-        type: boolean
-  - name: lineUnitBefore
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#lineUnitBefore:member'
-    package: word!
-    fullName: lineUnitBefore
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#lineUnitBefore:member'
+    summary: |-
       Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lineUnitBefore
+    fullName: lineUnitBefore
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'lineUnitBefore?: boolean;'
       return:
-        type: boolean
-  - name: outlineLevel
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#outlineLevel:member'
-    package: word!
-    fullName: outlineLevel
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#outlineLevel:member'
+    summary: |-
       Gets or sets the outline level for the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: outlineLevel
+    fullName: outlineLevel
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'outlineLevel?: boolean;'
       return:
-        type: boolean
-  - name: parentContentControl
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member'
+    summary: |-
+      Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
     fullName: parentContentControl
-    summary: >-
-      Gets the content control that contains the paragraph. Throws an error if
-      there isn't a parent content control.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
-  - name: rightIndent
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#rightIndent:member'
-    package: word!
-    fullName: rightIndent
-    summary: >-
+        type:
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#rightIndent:member'
+    summary: |-
       Gets or sets the right indent value, in points, for the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rightIndent
+    fullName: rightIndent
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'rightIndent?: boolean;'
       return:
-        type: boolean
-  - name: spaceAfter
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#spaceAfter:member'
-    package: word!
-    fullName: spaceAfter
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#spaceAfter:member'
+    summary: |-
       Gets or sets the spacing, in points, after the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: spaceAfter
+    fullName: spaceAfter
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'spaceAfter?: boolean;'
       return:
-        type: boolean
-  - name: spaceBefore
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#spaceBefore:member'
-    package: word!
-    fullName: spaceBefore
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#spaceBefore:member'
+    summary: |-
       Gets or sets the spacing, in points, before the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: spaceBefore
+    fullName: spaceBefore
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'spaceBefore?: boolean;'
       return:
-        type: boolean
-  - name: style
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#style:member'
-    package: word!
-    fullName: style
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#style:member'
     summary: >-
-      Gets or sets the style name for the paragraph. Use this property for
-      custom styles and localized style names. To use the built-in styles that
-      are portable between locales, see the "styleBuiltIn" property.
+      Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
+      use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: boolean;'
       return:
-        type: boolean
-  - name: text
-    uid: 'word!Word.Interfaces.ParagraphLoadOptions#text:member'
-    package: word!
-    fullName: text
-    summary: >-
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions#text:member'
+    summary: |-
       Gets the text of the paragraph. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'text?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions

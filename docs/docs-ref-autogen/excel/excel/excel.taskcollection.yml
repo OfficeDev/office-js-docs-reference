@@ -1,0 +1,281 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TaskCollection:class'
+    summary: >-
+      Represents a collection of tasks.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.TaskCollection
+    fullName: Excel.TaskCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.TaskCollection#context:member'
+      - 'excel!Excel.TaskCollection#getCount:member(1)'
+      - 'excel!Excel.TaskCollection#getItem:member(1)'
+      - 'excel!Excel.TaskCollection#getItemAt:member(1)'
+      - 'excel!Excel.TaskCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TaskCollection#items:member'
+      - 'excel!Excel.TaskCollection#load:member(1)'
+      - 'excel!Excel.TaskCollection#load:member(2)'
+      - 'excel!Excel.TaskCollection#load:member(3)'
+      - 'excel!Excel.TaskCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TaskCollection#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    isPreview: true
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TaskCollection#getCount:member(1)'
+    summary: >-
+      Gets the number of tasks in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.TaskCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.TaskCollection#getItem:member(1)'
+    summary: >-
+      Gets a task using its id.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.Task;'
+      return:
+        type:
+          - 'excel!Excel.Task:class'
+        description: 'The task with the given id. If there is no task with the given id, then an error is thrown.'
+      parameters:
+        - id: key
+          description: The id of the task.
+          type:
+            - string
+  - uid: 'excel!Excel.TaskCollection#getItemAt:member(1)'
+    summary: >-
+      Gets a task by its index in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Task;'
+      return:
+        type:
+          - 'excel!Excel.Task:class'
+        description: The task with the given index.
+      parameters:
+        - id: index
+          description: The index of the task in the collection.
+          type:
+            - number
+  - uid: 'excel!Excel.TaskCollection#getItemOrNullObject:member(1)'
+    summary: >-
+      Gets a task using its id.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.Task;'
+      return:
+        type:
+          - 'excel!Excel.Task:class'
+        description: >-
+          The task with the given id. If there is no task with the given id, an object with its `isNullObject` property
+          set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+          properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+          -->.
+      parameters:
+        - id: key
+          description: The id of the task.
+          type:
+            - string
+  - uid: 'excel!Excel.TaskCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    isPreview: true
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Task[];'
+      return:
+        type:
+          - 'excel!Excel.TaskCollection#items~0:complex'
+  - uid: 'excel!Excel.TaskCollection#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.TaskCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TaskCollection;
+      return:
+        type:
+          - 'excel!Excel.TaskCollection:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.TaskCollection#load~0:complex'
+  - uid: 'excel!Excel.TaskCollection#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TaskCollection;'
+      return:
+        type:
+          - 'excel!Excel.TaskCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TaskCollection#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TaskCollection;'
+      return:
+        type:
+          - 'excel!Excel.TaskCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.TaskCollection#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TaskCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.TaskCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    isPreview: true
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TaskCollectionData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TaskCollectionData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.TaskCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.Task:class'
+    name: Excel.Task
+  - uid: 'excel!Excel.TaskCollection#items~0:complex'
+    name: 'Excel.Task[]'
+    fullName: 'Excel.Task[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Task:class'
+        name: Excel.Task
+        fullName: Excel.Task
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.TaskCollection:class'
+    name: Excel.TaskCollection
+  - uid: 'excel!Excel.TaskCollection#load~0:complex'
+    name: Excel.Interfaces.TaskCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.TaskCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TaskCollectionLoadOptions:interface'
+        name: Excel.Interfaces.TaskCollectionLoadOptions
+        fullName: Excel.Interfaces.TaskCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.TaskCollectionData:interface'
+    name: Excel.Interfaces.TaskCollectionData

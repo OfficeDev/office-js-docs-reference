@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Word.Interfaces.TableCollectionData
-uid: 'word!Word.Interfaces.TableCollectionData:interface'
-package: word!
-fullName: Word.Interfaces.TableCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableCollection.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.TableCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.TableCollectionData:interface'
+    summary: An interface describing the data returned by calling `tableCollection.toJSON()`<!-- -->.
+    name: Word.Interfaces.TableCollectionData
+    fullName: Word.Interfaces.TableCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.TableCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.TableCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.TableData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.TableCollectionData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.TableCollectionData#items~0:complex'
+    name: 'Word.Interfaces.TableData[]'
+    fullName: 'Word.Interfaces.TableData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.TableData:interface'
+        name: Word.Interfaces.TableData
+        fullName: Word.Interfaces.TableData
+      - name: '[]'
+        fullName: '[]'

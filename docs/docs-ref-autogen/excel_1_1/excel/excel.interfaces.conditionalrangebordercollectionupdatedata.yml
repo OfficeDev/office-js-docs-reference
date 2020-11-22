@@ -1,28 +1,35 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
-uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
-summary: >-
-  An interface for updating data on the ConditionalRangeBorderCollection object,
-  for use in `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: >-
-      excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the ConditionalRangeBorderCollection object, for use in
+      `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]
+        type:
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ConditionalRangeBorderData[]'
+    fullName: 'Excel.Interfaces.ConditionalRangeBorderData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
+        name: Excel.Interfaces.ConditionalRangeBorderData
+        fullName: Excel.Interfaces.ConditionalRangeBorderData
+      - name: '[]'
+        fullName: '[]'

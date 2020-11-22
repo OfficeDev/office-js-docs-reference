@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.InkStrokeCollectionData
-uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.InkStrokeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "inkStrokeCollection.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
+    summary: An interface describing the data returned by calling "inkStrokeCollection.toJSON()".
+    name: OneNote.Interfaces.InkStrokeCollectionData
+    fullName: OneNote.Interfaces.InkStrokeCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.InkStrokeData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.InkStrokeData:interface" />[]'
+        type:
+          - 'onenote!OneNote.Interfaces.InkStrokeCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.InkStrokeData[]'
+    fullName: 'OneNote.Interfaces.InkStrokeData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkStrokeData:interface'
+        name: OneNote.Interfaces.InkStrokeData
+        fullName: OneNote.Interfaces.InkStrokeData
+      - name: '[]'
+        fullName: '[]'

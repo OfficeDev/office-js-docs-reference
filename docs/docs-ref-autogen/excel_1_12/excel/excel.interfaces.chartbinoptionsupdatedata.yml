@@ -1,144 +1,133 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartBinOptionsUpdateData
-uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartBinOptionsUpdateData
-summary: >-
-  An interface for updating data on the ChartBinOptions object, for use in
-  `chartBinOptions.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: allowOverflow
-    uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#allowOverflow:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
+    summary: 'An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.ChartBinOptionsUpdateData
+    fullName: Excel.Interfaces.ChartBinOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: allowOverflow
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#allowOverflow:member'
+      - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#allowUnderflow:member'
+      - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#count:member'
+      - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#overflowValue:member'
+      - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#type:member'
+      - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#underflowValue:member'
+      - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#allowOverflow:member'
+    summary: |-
       Specifies if bin overflow is enabled in a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowOverflow
+    fullName: allowOverflow
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowOverflow?: boolean;'
       return:
-        type: boolean
-  - name: allowUnderflow
-    uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#allowUnderflow:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#allowUnderflow:member'
+    summary: |-
+      Specifies if bin underflow is enabled in a histogram chart or pareto chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowUnderflow
     fullName: allowUnderflow
-    summary: >-
-      Specifies if bin underflow is enabled in a histogram chart or pareto
-      chart.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowUnderflow?: boolean;'
       return:
-        type: boolean
-  - name: count
-    uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#count:member'
-    package: excel!
-    fullName: count
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#count:member'
+    summary: |-
       Specifies the bin count of a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'count?: number;'
       return:
-        type: number
-  - name: overflowValue
-    uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#overflowValue:member'
-    package: excel!
-    fullName: overflowValue
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#overflowValue:member'
+    summary: |-
       Specifies the bin overflow value of a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overflowValue
+    fullName: overflowValue
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'overflowValue?: number;'
       return:
-        type: number
-  - name: type
-    uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#type:member'
+    summary: |-
       Specifies the bin's type for a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        type?: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" |
-        "BinCount";
+      content: 'type?: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartBinType:enum" /> | "Category" | "Auto" |
-          "BinWidth" | "BinCount"
-  - name: underflowValue
-    uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#underflowValue:member'
-    package: excel!
-    fullName: underflowValue
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#type~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#underflowValue:member'
+    summary: |-
       Specifies the bin underflow value of a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underflowValue
+    fullName: underflowValue
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'underflowValue?: number;'
       return:
-        type: number
-  - name: width
-    uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#width:member'
-    package: excel!
-    fullName: width
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#width:member'
+    summary: |-
       Specifies the bin width value of a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width?: number;'
       return:
-        type: number
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData#type~0:complex'
+    name: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    fullName: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartBinType:enum'
+        name: Excel.ChartBinType
+        fullName: Excel.ChartBinType
+      - name: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
+        fullName: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'

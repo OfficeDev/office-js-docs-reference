@@ -1,29 +1,35 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
-uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
-summary: >-
-  An interface for updating data on the InkAnalysisParagraphCollection object,
-  for use in "inkAnalysisParagraphCollection.set(<!-- -->{ ... }<!-- -->)".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the InkAnalysisParagraphCollection object, for use in
+      "inkAnalysisParagraphCollection.set(<!-- -->{ ... }<!-- -->)".
+    name: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
+    fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisParagraphData[];'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface"
-          />[]
+        type:
+          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+    fullName: 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
+        name: OneNote.Interfaces.InkAnalysisParagraphData
+        fullName: OneNote.Interfaces.InkAnalysisParagraphData
+      - name: '[]'
+        fullName: '[]'

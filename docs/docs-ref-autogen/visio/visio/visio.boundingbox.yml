@@ -1,91 +1,82 @@
-### YamlMime:TSType
-name: Visio.BoundingBox
-uid: 'visio!Visio.BoundingBox:interface'
-package: visio!
-fullName: Visio.BoundingBox
-summary: >-
-  Represents the BoundingBox of the shape.
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.BoundingBox:interface'
+    summary: |-
+      Represents the BoundingBox of the shape.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: height
-    uid: 'visio!Visio.BoundingBox#height:member'
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.BoundingBox
+    fullName: Visio.BoundingBox
+    langs:
+      - typeScript
+    type: interface
     package: visio!
-    fullName: height
+    children:
+      - 'visio!Visio.BoundingBox#height:member'
+      - 'visio!Visio.BoundingBox#width:member'
+      - 'visio!Visio.BoundingBox#x:member'
+      - 'visio!Visio.BoundingBox#y:member'
+  - uid: 'visio!Visio.BoundingBox#height:member'
     summary: >-
-      The distance between the top and bottom edges of the bounding box of the
-      shape, excluding any data graphics associated with the shape.
+      The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics
+      associated with the shape.
 
 
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'height: number;'
       return:
-        type: number
-  - name: width
-    uid: 'visio!Visio.BoundingBox#width:member'
-    package: visio!
-    fullName: width
+        type:
+          - number
+  - uid: 'visio!Visio.BoundingBox#width:member'
     summary: >-
-      The distance between the left and right edges of the bounding box of the
-      shape, excluding any data graphics associated with the shape.
+      The distance between the left and right edges of the bounding box of the shape, excluding any data graphics
+      associated with the shape.
 
 
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'width: number;'
       return:
-        type: number
-  - name: x
-    uid: 'visio!Visio.BoundingBox#x:member'
-    package: visio!
-    fullName: x
-    summary: >-
+        type:
+          - number
+  - uid: 'visio!Visio.BoundingBox#x:member'
+    summary: |-
       An integer that specifies the x-coordinate of the bounding box.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: x
+    fullName: x
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'x: number;'
       return:
-        type: number
-  - name: 'y'
-    uid: 'visio!Visio.BoundingBox#y:member'
-    package: visio!
-    fullName: 'y'
-    summary: >-
+        type:
+          - number
+  - uid: 'visio!Visio.BoundingBox#y:member'
+    summary: |-
       An integer that specifies the y-coordinate of the bounding box.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: 'y'
+    fullName: 'y'
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'y: number;'
       return:
-        type: number
+        type:
+          - number

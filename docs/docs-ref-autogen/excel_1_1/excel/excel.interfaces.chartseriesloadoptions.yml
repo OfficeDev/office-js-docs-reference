@@ -1,93 +1,82 @@
-### YamlMime:TSType
-name: Excel.Interfaces.ChartSeriesLoadOptions
-uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.ChartSeriesLoadOptions
-summary: >-
-  Represents a series in a chart.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
+    summary: |-
+      Represents a series in a chart.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartSeriesLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: format
-    uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#format:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#format:member'
+    summary: |-
+      Represents the formatting of a chart series, which includes fill and line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
     fullName: format
-    summary: >-
-      Represents the formatting of a chart series, which includes fill and line
-      formatting.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface" />
-  - name: name
-    uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
+    summary: |-
+      Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
     fullName: name
-    summary: >-
-      Specifies the name of a series in a chart. The name's length should not be
-      greater than 255 characters.
-
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: boolean;'
       return:
-        type: boolean
-  - name: points
-    uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
-    package: excel!
-    fullName: points
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
+    summary: |-
       Returns a collection of all points in the series.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface"
-          />
+        type:
+          - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartPointsCollectionLoadOptions

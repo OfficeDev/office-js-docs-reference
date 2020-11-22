@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Visio.Interfaces.CommentCollectionData
-uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
-package: visio!
-fullName: Visio.Interfaces.CommentCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "commentCollection.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'visio!Visio.Interfaces.CommentCollectionData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
+    summary: An interface describing the data returned by calling "commentCollection.toJSON()".
+    name: Visio.Interfaces.CommentCollectionData
+    fullName: Visio.Interfaces.CommentCollectionData
+    langs:
+      - typeScript
+    type: interface
     package: visio!
+    children:
+      - 'visio!Visio.Interfaces.CommentCollectionData#items:member'
+  - uid: 'visio!Visio.Interfaces.CommentCollectionData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Visio.Interfaces.CommentData[];'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.CommentData:interface" />[]'
+        type:
+          - 'visio!Visio.Interfaces.CommentCollectionData#items~0:complex'
+references:
+  - uid: 'visio!Visio.Interfaces.CommentCollectionData#items~0:complex'
+    name: 'Visio.Interfaces.CommentData[]'
+    fullName: 'Visio.Interfaces.CommentData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.CommentData:interface'
+        name: Visio.Interfaces.CommentData
+        fullName: Visio.Interfaces.CommentData
+      - name: '[]'
+        fullName: '[]'

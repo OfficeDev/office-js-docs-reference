@@ -1,81 +1,75 @@
-### YamlMime:TSType
-name: Office.UI
-uid: 'office!Office.UI:interface'
-package: office!
-fullName: Office.UI
-summary: >-
-  Provides objects and methods that you can use to create and manipulate UI
-  components, such as dialog boxes, in your Office Add-ins.
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.UI:interface'
+    summary: >-
+      Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in
+      your Office Add-ins.
 
 
-  Visit "[Use the Dialog API in your Office
-  Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
-  -->" for more information.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-methods:
-  - name: 'addHandlerAsync(eventType, handler, options, callback)'
-    uid: 'office!Office.UI#addHandlerAsync:member(1)'
+      Visit "[Use the Dialog API in your Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
+      information.
+    name: Office.UI
+    fullName: Office.UI
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
+    children:
+      - 'office!Office.UI#addHandlerAsync:member(1)'
+      - 'office!Office.UI#closeContainer:member(1)'
+      - 'office!Office.UI#displayDialogAsync:member(1)'
+      - 'office!Office.UI#displayDialogAsync:member(2)'
+      - 'office!Office.UI#messageParent:member(1)'
+      - 'office!Office.UI#openBrowserWindow:member(1)'
+  - uid: 'office!Office.UI#addHandlerAsync:member(1)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
       **Requirement set**: [DialogAPI
       1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
 
 
-      You can add multiple event handlers for the specified event type as long
-      as the name of each event handler function is unique.
-    isPreview: false
-    isDeprecated: false
+      You can add multiple event handlers for the specified event type as long as the name of each event handler
+      function is unique.
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (result:
-        DialogParentMessageReceivedEventArgs) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void,
+        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: eventType
-          description: >-
-            Specifies the type of event to add. This must be
-            `Office.EventType.DialogParentMessageReceived`<!-- -->.
-          type: '<xref uid="office!Office.EventType:enum" />'
+          description: Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`<!-- -->.
+          type:
+            - 'office!Office.EventType:enum'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
             [Office.DialogParentMessageReceivedEventArgs](xref:office!Office.DialogParentMessageReceivedEventArgs:interface)<!--
             -->.
-          type: >-
-            (result: <xref
-            uid="office!Office.DialogParentMessageReceivedEventArgs:interface"
-            />) =&gt; void
+          type:
+            - 'office!Office.UI#addHandlerAsync~0:complex'
         - id: options
-          description: >-
-            Optional. Provides an option for preserving context data of any
-            type, unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the handler registration
-            returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: closeContainer()
-    uid: 'office!Office.UI#closeContainer:member(1)'
-    package: office!
-    fullName: closeContainer()
+            Optional. A function that is invoked when the handler registration returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type:
+            - 'office!Office.UI#addHandlerAsync~1:complex'
+  - uid: 'office!Office.UI#closeContainer:member(1)'
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
-      **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.5),
-      PowerPoint, Word
+      **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
 
 
       **Requirement sets**:
@@ -92,30 +86,27 @@ methods:
       The behavior of this method is specified by the following:
 
 
-      - Called from a UI-less command button: No effect. Any dialog opened by
-      displayDialogAsync will remain open.
+      - Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
 
 
-      - Called from a task pane: The task pane will close. Any dialog opened by
-      displayDialogAsync will also close. If the task pane supports pinning and
-      was pinned by the user, it will be un-pinned.
+      - Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close. If
+      the task pane supports pinning and was pinned by the user, it will be un-pinned.
 
 
       - Called from a module extension: No effect.
-    isPreview: false
-    isDeprecated: false
+    name: closeContainer()
+    fullName: closeContainer()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'closeContainer(): void;'
       return:
-        type: void
+        type:
+          - void
         description: ''
-  - name: 'displayDialogAsync(startAddress, options, callback)'
-    uid: 'office!Office.UI#displayDialogAsync:member(1)'
-    package: office!
-    fullName: 'displayDialogAsync(startAddress, options, callback)'
-    summary: >-
-      Displays a dialog to show or collect information from the user or to
-      facilitate Web navigation.
+  - uid: 'office!Office.UI#displayDialogAsync:member(1)'
+    summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
       **Hosts**: Excel, Outlook, PowerPoint, Word
 
@@ -131,21 +122,18 @@ methods:
       1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
-      This method is available in the DialogApi requirement set for Excel,
-      PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4 for
-      Outlook. For more on how to specify a requirement set in your manifest,
-      see [Specify Office hosts and API
+      This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the
+      Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
+      [Specify Office hosts and API
       requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
       -->.
 
 
-      The initial page must be on the same domain as the parent page (the
-      startAddress parameter). After the initial page loads, you can go to other
-      domains.
+      The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial
+      page loads, you can go to other domains.
 
 
-      Any page calling `Office.context.ui.messageParent` must also be on the
-      same domain as the parent page.
+      Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
 
 
       **Design considerations**:
@@ -154,9 +142,8 @@ methods:
       The following design considerations apply to dialog boxes:
 
 
-      - An Office Add-in task pane can have only one dialog box open at any
-      time. Multiple dialogs can be open at the same time from Add-in Commands
-      (custom ribbon buttons or menu items).
+      - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the
+      same time from Add-in Commands (custom ribbon buttons or menu items).
 
 
       - Every dialog box can be moved and resized by the user.
@@ -165,8 +152,7 @@ methods:
       - Every dialog box is centered on the screen when opened.
 
 
-      - Dialog boxes appear on top of the host application and in the order in
-      which they were created.
+      - Dialog boxes appear on top of the host application and in the order in which they were created.
 
 
       Use a dialog box to:
@@ -175,82 +161,70 @@ methods:
       - Display authentication pages to collect user credentials.
 
 
-      - Display an error/progress/input screen from a ShowTaskpane or
-      ExecuteAction command.
+      - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
 
 
-      - Temporarily increase the surface area that a user has available to
-      complete a task.
+      - Temporarily increase the surface area that a user has available to complete a task.
 
 
-      Do not use a dialog box to interact with a document. Use a task pane
-      instead.
+      Do not use a dialog box to interact with a document. Use a task pane instead.
 
 
       **displayDialogAsync Errors**:
 
 
-      <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr>
-      <td>12004</td> <td>The domain of the URL passed to displayDialogAsync is
-      not trusted. The domain must be either the same domain as the host page
-      (including protocol and port number), or it must be registered in the
-      <AppDomains> section of the add-in manifest.</td> </tr> <tr>
-      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP
-      protocol. HTTPS is required. (In some versions of Office, the error
-      message returned with 12005 is the same one returned for 12004.)</td>
-      </tr> <tr> <td>12007</td> <td>A dialog box is already opened from the task
-      pane. A task pane add-in can only have one dialog box open at a time.</td>
-      </tr> <tr> <td>12009</td> <td>The user chose to ignore the dialog box.
-      This error can occur in online versions of Office, where users may choose
-      not to allow an add-in to present a dialog.</td> </tr> </table>
-
-
-      In the callback function passed to the displayDialogAsync method, you can
-      use the properties of the AsyncResult object to return the following
-      information.
-
-
-      <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr>
-      <td>AsyncResult.value</td> <td>Access the Dialog object.</td> </tr> <tr>
-      <td>AsyncResult.status</td> <td>Determine the success or failure of the
-      operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error
-      object that provides error information if the operation failed.</td> </tr>
-      <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object
-      or value, if you passed one as the asyncContext parameter.</td> </tr>
+      <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
+      displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
+      and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td> </tr> <tr>
+      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some
+      versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> <tr>
+      <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog
+      box open at a time.</td> </tr> <tr> <td>12009</td> <td>The user chose to ignore the dialog box. This error can
+      occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td> </tr>
       </table>
-    isPreview: false
-    isDeprecated: false
+
+
+      In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult
+      object to return the following information.
+
+
+      <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Dialog
+      object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td>
+      </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
+      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
+      passed one as the asyncContext parameter.</td> </tr> </table>
+    name: 'displayDialogAsync(startAddress, options, callback)'
+    fullName: 'displayDialogAsync(startAddress, options, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        displayDialogAsync(startAddress: string, options?: DialogOptions,
-        callback?: (result: AsyncResult<Dialog>) => void): void;
+        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: startAddress
           description: Accepts the initial HTTPS URL that opens in the dialog.
-          type: string
+          type:
+            - string
         - id: options
           description: >-
-            Optional. Accepts an
-            [Office.DialogOptions](xref:office!Office.DialogOptions:interface)
-            object to define dialog display.
-          type: '<xref uid="office!Office.DialogOptions:interface" />'
+            Optional. Accepts an [Office.DialogOptions](xref:office!Office.DialogOptions:interface) object to define
+            dialog display.
+          type:
+            - 'office!Office.DialogOptions:interface'
         - id: callback
           description: >-
-            Optional. Accepts a callback method to handle the dialog creation
-            attempt. If successful, the AsyncResult.value is a Dialog object.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Dialog:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'displayDialogAsync(startAddress, callback)'
-    uid: 'office!Office.UI#displayDialogAsync:member(2)'
-    package: office!
-    fullName: 'displayDialogAsync(startAddress, callback)'
-    summary: >-
-      Displays a dialog to show or collect information from the user or to
-      facilitate Web navigation.
+            Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
+            AsyncResult.value is a Dialog object.
+          type:
+            - 'office!Office.UI#displayDialogAsync~0:complex'
+  - uid: 'office!Office.UI#displayDialogAsync:member(2)'
+    summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
       **Hosts**: Excel, Outlook, PowerPoint, Word
 
@@ -266,21 +240,18 @@ methods:
       1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
-      This method is available in the DialogApi requirement set for Excel,
-      PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4 for
-      Outlook. For more on how to specify a requirement set in your manifest,
-      see [Specify Office hosts and API
+      This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the
+      Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
+      [Specify Office hosts and API
       requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
       -->.
 
 
-      The initial page must be on the same domain as the parent page (the
-      startAddress parameter). After the initial page loads, you can go to other
-      domains.
+      The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial
+      page loads, you can go to other domains.
 
 
-      Any page calling `Office.context.ui.messageParent` must also be on the
-      same domain as the parent page.
+      Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
 
 
       **Design considerations**:
@@ -289,9 +260,8 @@ methods:
       The following design considerations apply to dialog boxes:
 
 
-      - An Office Add-in task pane can have only one dialog box open at any
-      time. Multiple dialogs can be open at the same time from Add-in Commands
-      (custom ribbon buttons or menu items).
+      - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the
+      same time from Add-in Commands (custom ribbon buttons or menu items).
 
 
       - Every dialog box can be moved and resized by the user.
@@ -300,8 +270,7 @@ methods:
       - Every dialog box is centered on the screen when opened.
 
 
-      - Dialog boxes appear on top of the host application and in the order in
-      which they were created.
+      - Dialog boxes appear on top of the host application and in the order in which they were created.
 
 
       Use a dialog box to:
@@ -310,111 +279,164 @@ methods:
       - Display authentication pages to collect user credentials.
 
 
-      - Display an error/progress/input screen from a ShowTaskpane or
-      ExecuteAction command.
+      - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
 
 
-      - Temporarily increase the surface area that a user has available to
-      complete a task.
+      - Temporarily increase the surface area that a user has available to complete a task.
 
 
-      Do not use a dialog box to interact with a document. Use a task pane
-      instead.
+      Do not use a dialog box to interact with a document. Use a task pane instead.
 
 
       **displayDialogAsync Errors**:
 
 
-      <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr>
-      <td>12004</td> <td>The domain of the URL passed to displayDialogAsync is
-      not trusted. The domain must be either the same domain as the host page
-      (including protocol and port number), or it must be registered in the
-      <AppDomains> section of the add-in manifest.</td> </tr> <tr>
-      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP
-      protocol. HTTPS is required. (In some versions of Office, the error
-      message returned with 12005 is the same one returned for 12004.)</td>
-      </tr> <tr> <td>12007</td> <td>A dialog box is already opened from the task
-      pane. A task pane add-in can only have one dialog box open at a time.</td>
-      </tr> <tr> <td>12009</td> <td>The user chose to ignore the dialog box.
-      This error can occur in online versions of Office, where users may choose
-      not to allow an add-in to present a dialog.</td> </tr> </table>
-
-
-      In the callback function passed to the displayDialogAsync method, you can
-      use the properties of the AsyncResult object to return the following
-      information.
-
-
-      <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr>
-      <td>AsyncResult.value</td> <td>Access the Dialog object.</td> </tr> <tr>
-      <td>AsyncResult.status</td> <td>Determine the success or failure of the
-      operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error
-      object that provides error information if the operation failed.</td> </tr>
-      <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object
-      or value, if you passed one as the asyncContext parameter.</td> </tr>
+      <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
+      displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
+      and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td> </tr> <tr>
+      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some
+      versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> <tr>
+      <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog
+      box open at a time.</td> </tr> <tr> <td>12009</td> <td>The user chose to ignore the dialog box. This error can
+      occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td> </tr>
       </table>
-    isPreview: false
-    isDeprecated: false
+
+
+      In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult
+      object to return the following information.
+
+
+      <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Dialog
+      object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td>
+      </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
+      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
+      passed one as the asyncContext parameter.</td> </tr> </table>
+    name: 'displayDialogAsync(startAddress, callback)'
+    fullName: 'displayDialogAsync(startAddress, callback)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        displayDialogAsync(startAddress: string, callback?: (result:
-        AsyncResult<Dialog>) => void): void;
+      content: 'displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: startAddress
           description: Accepts the initial HTTPS URL that opens in the dialog.
-          type: string
+          type:
+            - string
         - id: callback
           description: >-
-            Optional. Accepts a callback method to handle the dialog creation
-            attempt. If successful, the AsyncResult.value is a Dialog object.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Dialog:interface" />&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: messageParent(message)
-    uid: 'office!Office.UI#messageParent:member(1)'
-    package: office!
-    fullName: messageParent(message)
+            Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
+            AsyncResult.value is a Dialog object.
+          type:
+            - 'office!Office.UI#displayDialogAsync~1:complex'
+  - uid: 'office!Office.UI#messageParent:member(1)'
     summary: >-
-      Delivers a message from the dialog box to its parent/opener page. The page
-      calling this API must be on the same domain as the parent.
+      Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
+      domain as the parent.
     remarks: >-
       **Requirement set**:
       [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
-    isPreview: false
-    isDeprecated: false
+    name: messageParent(message)
+    fullName: messageParent(message)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'messageParent(message: boolean | string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: message
           description: >-
-            Accepts a message from the dialog to deliver to the add-in. In
-            addition to a boolean, anything that can serialized to a string
-            including JSON and XML can be sent.
-          type: boolean | string
-      return:
-        type: void
-        description: ''
-  - name: openBrowserWindow(url)
-    uid: 'office!Office.UI#openBrowserWindow:member(1)'
-    package: office!
-    fullName: openBrowserWindow(url)
+            Accepts a message from the dialog to deliver to the add-in. In addition to a boolean, anything that can
+            serialized to a string including JSON and XML can be sent.
+          type:
+            - boolean | string
+  - uid: 'office!Office.UI#openBrowserWindow:member(1)'
     summary: Opens a browser window and loads the specified URL.
     remarks: >-
       **Requirement set**: [OpenBrowserWindowAPI
       1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets)
-    isPreview: false
-    isDeprecated: false
+    name: openBrowserWindow(url)
+    fullName: openBrowserWindow(url)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'openBrowserWindow(url: string): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: url
-          description: >-
-            The full URL to be opened including protocol (e.g., https), and port
-            number, if any.
-          type: string
-      return:
-        type: void
-        description: ''
+          description: 'The full URL to be opened including protocol (e.g., https), and port number, if any.'
+          type:
+            - string
+references:
+  - uid: 'office!Office.EventType:enum'
+    name: Office.EventType
+  - uid: 'office!Office.UI#addHandlerAsync~0:complex'
+    name: '(result: DialogParentMessageReceivedEventArgs) => void'
+    fullName: '(result: Office.DialogParentMessageReceivedEventArgs) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+        name: DialogParentMessageReceivedEventArgs
+        fullName: Office.DialogParentMessageReceivedEventArgs
+      - name: ) => void
+        fullName: ) => void
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'office!Office.UI#addHandlerAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.DialogOptions:interface'
+    name: DialogOptions
+  - uid: 'office!Office.UI#displayDialogAsync~0:complex'
+    name: '(result: AsyncResult<Dialog>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Dialog>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Dialog:interface'
+        name: Dialog
+        fullName: Office.Dialog
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.UI#displayDialogAsync~1:complex'
+    name: '(result: AsyncResult<Dialog>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Dialog>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Dialog:interface'
+        name: Dialog
+        fullName: Office.Dialog
+      - name: '>) => void'
+        fullName: '>) => void'

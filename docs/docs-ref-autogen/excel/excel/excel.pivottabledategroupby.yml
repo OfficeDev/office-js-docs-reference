@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableDateGroupBy:enum'
+    summary: >-
+      Represents the DateTime Grouping condition.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.PivotTableDateGroupBy
+    fullName: Excel.PivotTableDateGroupBy
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableDateGroupBy.byDays:member'
+      - 'excel!Excel.PivotTableDateGroupBy.byHours:member'
+      - 'excel!Excel.PivotTableDateGroupBy.byMinutes:member'
+      - 'excel!Excel.PivotTableDateGroupBy.byMonths:member'
+      - 'excel!Excel.PivotTableDateGroupBy.byQuarters:member'
+      - 'excel!Excel.PivotTableDateGroupBy.bySeconds:member'
+      - 'excel!Excel.PivotTableDateGroupBy.byYears:member'
+      - 'excel!Excel.PivotTableDateGroupBy.invalid:member'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.byDays:member'
+    isPreview: true
+    name: byDays
+    fullName: byDays
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByDays"'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.byHours:member'
+    isPreview: true
+    name: byHours
+    fullName: byHours
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByHours"'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.byMinutes:member'
+    isPreview: true
+    name: byMinutes
+    fullName: byMinutes
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByMinutes"'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.byMonths:member'
+    isPreview: true
+    name: byMonths
+    fullName: byMonths
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByMonths"'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.byQuarters:member'
+    isPreview: true
+    name: byQuarters
+    fullName: byQuarters
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByQuarters"'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.bySeconds:member'
+    isPreview: true
+    name: bySeconds
+    fullName: bySeconds
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BySeconds"'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.byYears:member'
+    isPreview: true
+    name: byYears
+    fullName: byYears
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByYears"'
+  - uid: 'excel!Excel.PivotTableDateGroupBy.invalid:member'
+    isPreview: true
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'

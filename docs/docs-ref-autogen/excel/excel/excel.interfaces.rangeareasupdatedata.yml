@@ -1,73 +1,69 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RangeAreasUpdateData
-uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.RangeAreasUpdateData
-summary: >-
-  An interface for updating data on the RangeAreas object, for use in
-  `rangeAreas.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: dataValidation
-    uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
+    summary: 'An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.RangeAreasUpdateData
+    fullName: Excel.Interfaces.RangeAreasUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: dataValidation
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member'
+      - 'excel!Excel.Interfaces.RangeAreasUpdateData#format:member'
+      - 'excel!Excel.Interfaces.RangeAreasUpdateData#style:member'
+  - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member'
+    summary: |-
       Returns a dataValidation object for all ranges in the RangeAreas.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: dataValidation
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'dataValidation?: Excel.Interfaces.DataValidationUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.DataValidationUpdateData:interface"
-          />
-  - name: format
-    uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#format:member'
-    package: excel!
-    fullName: format
+        type:
+          - 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#format:member'
     summary: >-
-      Returns a RangeFormat object, encapsulating the the font, fill, borders,
-      alignment, and other properties for all ranges in the RangeAreas object.
+      Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
+      ranges in the RangeAreas object.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface" />'
-  - name: style
-    uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#style:member'
-    package: excel!
-    fullName: style
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#style:member'
     summary: >-
-      Represents the style for all ranges in this RangeAreas object. If the
-      styles of the cells are inconsistent, null will be returned. For custom
-      styles, the style name will be returned. For built-in styles, a string
-      representing a value in the BuiltInStyle enum will be returned.
+      Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
+      will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
+      value in the BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+    name: Excel.Interfaces.DataValidationUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
+    name: Excel.Interfaces.RangeFormatUpdateData

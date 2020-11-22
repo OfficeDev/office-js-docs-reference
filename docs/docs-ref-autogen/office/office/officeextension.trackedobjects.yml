@@ -1,117 +1,136 @@
-### YamlMime:TSType
-name: OfficeExtension.TrackedObjects
-uid: 'office!OfficeExtension.TrackedObjects:class'
-package: office!
-fullName: OfficeExtension.TrackedObjects
-summary: >-
-  Collection of tracked objects, contained within a request context. See
-  "context.trackedObjects" for more information.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-methods:
-  - name: add(object)
-    uid: 'office!OfficeExtension.TrackedObjects#add:member(1)'
-    package: office!
-    fullName: add(object)
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!OfficeExtension.TrackedObjects:class'
     summary: >-
-      Track a new object for automatic adjustment based on surrounding changes
-      in the document. Only some object types require this. If you are using an
-      object across ".sync" calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more
+      information.
+    name: OfficeExtension.TrackedObjects
+    fullName: OfficeExtension.TrackedObjects
+    langs:
+      - typeScript
+    type: class
+    package: office!
+    children:
+      - 'office!OfficeExtension.TrackedObjects#add:member(1)'
+      - 'office!OfficeExtension.TrackedObjects#add:member(2)'
+      - 'office!OfficeExtension.TrackedObjects#remove:member(1)'
+      - 'office!OfficeExtension.TrackedObjects#remove:member(2)'
+  - uid: 'office!OfficeExtension.TrackedObjects#add:member(1)'
+    summary: >-
+      Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types
+      require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run"
+      batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed
+      to have added the object to the tracked object collection when the object was first created.
 
 
       This method also has the following signature:
 
 
-      `add(objects: ClientObject[]): void;` Where objects is an array of objects
-      to be tracked.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
+    name: add(object)
+    fullName: add(object)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(object: ClientObject): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: object
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
-      return:
-        type: void
-        description: ''
-  - name: add(objects)
-    uid: 'office!OfficeExtension.TrackedObjects#add:member(2)'
-    package: office!
-    fullName: add(objects)
+          type:
+            - 'office!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.TrackedObjects#add:member(2)'
     summary: >-
-      Track a set of objects for automatic adjustment based on surrounding
-      changes in the document. Only some object types require this. If you are
-      using an object across ".sync" calls and outside the sequential execution
-      of a ".run" batch, and get an "InvalidObjectPath" error when setting a
-      property or invoking a method on the object, you needed to have added the
-      object to the tracked object collection when the object was first created.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Track a set of objects for automatic adjustment based on surrounding changes in the document. Only some object
+      types require this. If you are using an object across ".sync" calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you
+      needed to have added the object to the tracked object collection when the object was first created.
+    name: add(objects)
+    fullName: add(objects)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'add(objects: ClientObject[]): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: objects
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
-      return:
-        type: void
-        description: ''
-  - name: remove(object)
-    uid: 'office!OfficeExtension.TrackedObjects#remove:member(1)'
-    package: office!
-    fullName: remove(object)
+          type:
+            - 'office!OfficeExtension.TrackedObjects#add~0:complex'
+  - uid: 'office!OfficeExtension.TrackedObjects#remove:member(1)'
     summary: >-
-      Release the memory associated with an object that was previously added to
-      this collection. Having many tracked objects slows down the host
-      application, so please remember to free any objects you add, once you're
-      done using them. You will need to call `context.sync()` before the memory
-      release takes effect.
+      Release the memory associated with an object that was previously added to this collection. Having many tracked
+      objects slows down the host application, so please remember to free any objects you add, once you're done using
+      them. You will need to call `context.sync()` before the memory release takes effect.
 
 
       This method also has the following signature:
 
 
-      `remove(objects: ClientObject[]): void;` Where objects is an array of
-      objects to be removed.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
+    name: remove(object)
+    fullName: remove(object)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'remove(object: ClientObject): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: object
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
-      return:
-        type: void
-        description: ''
-  - name: remove(objects)
-    uid: 'office!OfficeExtension.TrackedObjects#remove:member(2)'
-    package: office!
-    fullName: remove(objects)
+          type:
+            - 'office!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.TrackedObjects#remove:member(2)'
     summary: >-
-      Release the memory associated with an object that was previously added to
-      this collection. Having many tracked objects slows down the host
-      application, so please remember to free any objects you add, once you're
-      done using them. You will need to call `context.sync()` before the memory
-      release takes effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Release the memory associated with an object that was previously added to this collection. Having many tracked
+      objects slows down the host application, so please remember to free any objects you add, once you're done using
+      them. You will need to call `context.sync()` before the memory release takes effect.
+    name: remove(objects)
+    fullName: remove(objects)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'remove(objects: ClientObject[]): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: objects
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
-      return:
-        type: void
-        description: ''
+          type:
+            - 'office!OfficeExtension.TrackedObjects#remove~0:complex'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: ClientObject
+  - uid: 'office!OfficeExtension.TrackedObjects#add~0:complex'
+    name: 'ClientObject[]'
+    fullName: 'OfficeExtension.ClientObject[]'
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientObject:class'
+        name: ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'office!OfficeExtension.TrackedObjects#remove~0:complex'
+    name: 'ClientObject[]'
+    fullName: 'OfficeExtension.ClientObject[]'
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientObject:class'
+        name: ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: '[]'
+        fullName: '[]'

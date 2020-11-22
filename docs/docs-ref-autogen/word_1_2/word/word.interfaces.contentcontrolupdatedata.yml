@@ -1,206 +1,191 @@
-### YamlMime:TSType
-name: Word.Interfaces.ContentControlUpdateData
-uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.ContentControlUpdateData
-summary: >-
-  An interface for updating data on the ContentControl object, for use in
-  `contentControl.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: appearance
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#appearance:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
+    summary: 'An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.ContentControlUpdateData
+    fullName: Word.Interfaces.ContentControlUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.ContentControlUpdateData#appearance:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#cannotDelete:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#cannotEdit:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#color:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#font:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#placeholderText:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#removeWhenEdited:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#style:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#tag:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#title:member'
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#appearance:member'
+    summary: |-
+      Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: appearance
     fullName: appearance
-    summary: >-
-      Gets or sets the appearance of the content control. The value can be
-      'BoundingBox', 'Tags', or 'Hidden'.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" |
-        "Hidden";
+      content: 'appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";'
       return:
-        type: >-
-          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
-          | "Tags" | "Hidden"
-  - name: cannotDelete
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#cannotDelete:member'
-    package: word!
-    fullName: cannotDelete
+        type:
+          - 'word!Word.Interfaces.ContentControlUpdateData#appearance~0:complex'
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#cannotDelete:member'
     summary: >-
-      Gets or sets a value that indicates whether the user can delete the
-      content control. Mutually exclusive with removeWhenEdited.
+      Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
+      removeWhenEdited.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cannotDelete
+    fullName: cannotDelete
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cannotDelete?: boolean;'
       return:
-        type: boolean
-  - name: cannotEdit
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#cannotEdit:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#cannotEdit:member'
+    summary: |-
+      Gets or sets a value that indicates whether the user can edit the contents of the content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cannotEdit
     fullName: cannotEdit
-    summary: >-
-      Gets or sets a value that indicates whether the user can edit the contents
-      of the content control.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'cannotEdit?: boolean;'
       return:
-        type: boolean
-  - name: color
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#color:member'
-    package: word!
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#color:member'
+    summary: |-
+      Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: color
     fullName: color
-    summary: >-
-      Gets or sets the color of the content control. Color is specified in
-      '\#RRGGBB' format or by using the color name.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color?: string;'
       return:
-        type: string
-  - name: font
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#font:member'
-    package: word!
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#font:member'
+    summary: |-
+      Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
     fullName: font
-    summary: >-
-      Gets the text format of the content control. Use this to get and set font
-      name, size, color, and other properties.
-
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
-  - name: placeholderText
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#placeholderText:member'
-    package: word!
-    fullName: placeholderText
+        type:
+          - 'word!Word.Interfaces.FontUpdateData:interface'
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#placeholderText:member'
     summary: >-
-      Gets or sets the placeholder text of the content control. Dimmed text will
-      be displayed when the content control is empty.
+      Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
+      is empty.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: placeholderText
+    fullName: placeholderText
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'placeholderText?: string;'
       return:
-        type: string
-  - name: removeWhenEdited
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#removeWhenEdited:member'
-    package: word!
-    fullName: removeWhenEdited
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#removeWhenEdited:member'
     summary: >-
-      Gets or sets a value that indicates whether the content control is removed
-      after it is edited. Mutually exclusive with cannotDelete.
+      Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
+      with cannotDelete.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: removeWhenEdited
+    fullName: removeWhenEdited
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'removeWhenEdited?: boolean;'
       return:
-        type: boolean
-  - name: style
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#style:member'
-    package: word!
-    fullName: style
+        type:
+          - boolean
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#style:member'
     summary: >-
-      Gets or sets the style name for the content control. Use this property for
-      custom styles and localized style names. To use the built-in styles that
-      are portable between locales, see the "styleBuiltIn" property.
+      Gets or sets the style name for the content control. Use this property for custom styles and localized style
+      names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'style?: string;'
       return:
-        type: string
-  - name: tag
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#tag:member'
-    package: word!
-    fullName: tag
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#tag:member'
+    summary: |-
       Gets or sets a tag to identify a content control.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: tag
+    fullName: tag
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tag?: string;'
       return:
-        type: string
-  - name: title
-    uid: 'word!Word.Interfaces.ContentControlUpdateData#title:member'
-    package: word!
-    fullName: title
-    summary: >-
+        type:
+          - string
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#title:member'
+    summary: |-
       Gets or sets the title for a content control.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#appearance~0:complex'
+    name: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden"
+    fullName: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden"
+    spec.typeScript:
+      - uid: 'word!Word.ContentControlAppearance:enum'
+        name: Word.ContentControlAppearance
+        fullName: Word.ContentControlAppearance
+      - name: ' | "BoundingBox" | "Tags" | "Hidden"'
+        fullName: ' | "BoundingBox" | "Tags" | "Hidden"'
+  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
+    name: Word.Interfaces.FontUpdateData

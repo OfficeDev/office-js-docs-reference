@@ -1,259 +1,274 @@
-### YamlMime:TSType
-name: OneNote.InkStrokeCollection
-uid: 'onenote!OneNote.InkStrokeCollection:class'
-package: onenote!
-fullName: OneNote.InkStrokeCollection
-summary: >-
-  Represents a collection of InkStroke objects.
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.InkStrokeCollection:class'
+    summary: |-
+      Represents a collection of InkStroke objects.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: context
-    uid: 'onenote!OneNote.InkStrokeCollection#context:member'
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.InkStrokeCollection
+    fullName: OneNote.InkStrokeCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: onenote!
-    fullName: context
+    children:
+      - 'onenote!OneNote.InkStrokeCollection#context:member'
+      - 'onenote!OneNote.InkStrokeCollection#count:member'
+      - 'onenote!OneNote.InkStrokeCollection#getItem:member(1)'
+      - 'onenote!OneNote.InkStrokeCollection#getItemAt:member(1)'
+      - 'onenote!OneNote.InkStrokeCollection#items:member'
+      - 'onenote!OneNote.InkStrokeCollection#load:member(1)'
+      - 'onenote!OneNote.InkStrokeCollection#load:member(2)'
+      - 'onenote!OneNote.InkStrokeCollection#load:member(3)'
+      - 'onenote!OneNote.InkStrokeCollection#toJSON:member(1)'
+      - 'onenote!OneNote.InkStrokeCollection#track:member(1)'
+      - 'onenote!OneNote.InkStrokeCollection#untrack:member(1)'
+  - uid: 'onenote!OneNote.InkStrokeCollection#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
-  - name: count
-    uid: 'onenote!OneNote.InkStrokeCollection#count:member'
-    package: onenote!
-    fullName: count
-    summary: >-
+        type:
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.InkStrokeCollection#count:member'
+    summary: |-
       Returns the number of InkStrokes in the page. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'readonly count: number;'
       return:
-        type: number
-  - name: items
-    uid: 'onenote!OneNote.InkStrokeCollection#items:member'
-    package: onenote!
-    fullName: items
-    summary: Gets the loaded child items in this collection.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly items: OneNote.InkStroke[];'
-      return:
-        type: '<xref uid="onenote!OneNote.InkStroke:class" />[]'
-methods:
-  - name: getItem(index)
-    uid: 'onenote!OneNote.InkStrokeCollection#getItem:member(1)'
-    package: onenote!
+        type:
+          - number
+  - uid: 'onenote!OneNote.InkStrokeCollection#getItem:member(1)'
+    summary: |-
+      Gets a InkStroke object by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: getItem(index)
     fullName: getItem(index)
-    summary: >-
-      Gets a InkStroke object by ID or by its index in the collection.
-      Read-only.
-
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItem(index: number | string): OneNote.InkStroke;'
+      return:
+        type:
+          - 'onenote!OneNote.InkStroke:class'
+        description: ''
       parameters:
         - id: index
-          description: >-
-            The ID of the InkStroke object, or the index location of the
-            InkStroke object in the collection.
-          type: number | string
-      return:
-        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
-        description: ''
-  - name: getItemAt(index)
-    uid: 'onenote!OneNote.InkStrokeCollection#getItemAt:member(1)'
-    package: onenote!
-    fullName: getItemAt(index)
-    summary: >-
+          description: 'The ID of the InkStroke object, or the index location of the InkStroke object in the collection.'
+          type:
+            - number | string
+  - uid: 'onenote!OneNote.InkStrokeCollection#getItemAt:member(1)'
+    summary: |-
       Gets a InkStroke on its position in the collection.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getItemAt(index: number): OneNote.InkStroke;'
+      return:
+        type:
+          - 'onenote!OneNote.InkStroke:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
-          type: number
+          type:
+            - number
+  - uid: 'onenote!OneNote.InkStrokeCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: OneNote.InkStroke[];'
       return:
-        type: '<xref uid="onenote!OneNote.InkStroke:class" />'
-        description: ''
-  - name: load(option)
-    uid: 'onenote!OneNote.InkStrokeCollection#load:member(1)'
-    package: onenote!
-    fullName: load(option)
+        type:
+          - 'onenote!OneNote.InkStrokeCollection#items~0:complex'
+  - uid: 'onenote!OneNote.InkStrokeCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.InkStrokeCollection` - Where
-      option is a comma-delimited string or an array of strings that specify the
-      properties to load.
+      `load(option?: string | string[]): OneNote.InkStrokeCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }):
-      OneNote.InkStrokeCollection` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a
-      comma-delimited string that specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): OneNote.InkStrokeCollection` - Only available on collection
-      types. It is similar to the preceding signature. Option.top specifies the
-      maximum number of collection items that can be included in the result.
-      Option.skip specifies the number of items that are to be skipped and not
-      included in the result. If option.top is specified, the result set will
-      start after skipping the specified number of items.
-    isPreview: false
-    isDeprecated: false
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStrokeCollection` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        load(option?: OneNote.Interfaces.InkStrokeCollectionLoadOptions &
-        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkStrokeCollection;
+        load(option?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.InkStrokeCollection;
+      return:
+        type:
+          - 'onenote!OneNote.InkStrokeCollection:class'
+        description: ''
       parameters:
         - id: option
           description: ''
-          type: >-
-            <xref
-            uid="onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface"
-            /> & <xref
-            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
-      return:
-        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'onenote!OneNote.InkStrokeCollection#load:member(2)'
-    package: onenote!
-    fullName: load(propertyNames)
+          type:
+            - 'onenote!OneNote.InkStrokeCollection#load~0:complex'
+  - uid: 'onenote!OneNote.InkStrokeCollection#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): OneNote.InkStrokeCollection;'
+      return:
+        type:
+          - 'onenote!OneNote.InkStrokeCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
-        description: ''
-  - name: load(option)
-    uid: 'onenote!OneNote.InkStrokeCollection#load:member(3)'
-    package: onenote!
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'onenote!OneNote.InkStrokeCollection#load:member(3)'
+    name: load(option)
     fullName: load(option)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(option?: OfficeExtension.LoadOption): OneNote.InkStrokeCollection;'
+      return:
+        type:
+          - 'onenote!OneNote.InkStrokeCollection:class'
+        description: ''
       parameters:
         - id: option
           description: ''
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
-      return:
-        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
-        description: ''
-  - name: toJSON()
-    uid: 'onenote!OneNote.InkStrokeCollection#toJSON:member(1)'
-    package: onenote!
-    fullName: toJSON()
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'onenote!OneNote.InkStrokeCollection#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `OneNote.InkStrokeCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `OneNote.Interfaces.InkStrokeCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `OneNote.InkStrokeCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): OneNote.Interfaces.InkStrokeCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkStrokeCollectionData:interface" />
+        type:
+          - 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
         description: ''
-  - name: track()
-    uid: 'onenote!OneNote.InkStrokeCollection#track:member(1)'
-    package: onenote!
-    fullName: track()
+  - uid: 'onenote!OneNote.InkStrokeCollection#track:member(1)'
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      context.trackedObjects.add(thisObject). If you are using this object
-      across ".sync" calls and outside the sequential execution of a ".run"
-      batch, and get an "InvalidObjectPath" error when setting a property or
-      invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'track(): OneNote.InkStrokeCollection;'
       return:
-        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
+        type:
+          - 'onenote!OneNote.InkStrokeCollection:class'
         description: ''
-  - name: untrack()
-    uid: 'onenote!OneNote.InkStrokeCollection#untrack:member(1)'
-    package: onenote!
-    fullName: untrack()
+  - uid: 'onenote!OneNote.InkStrokeCollection#untrack:member(1)'
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects
-      slows down the host application, so please remember to free any objects
-      you add, once you're done using them. You will need to call
-      "context.sync()" before the memory release takes effect.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'untrack(): OneNote.InkStrokeCollection;'
       return:
-        type: '<xref uid="onenote!OneNote.InkStrokeCollection:class" />'
+        type:
+          - 'onenote!OneNote.InkStrokeCollection:class'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.InkStroke:class'
+    name: OneNote.InkStroke
+  - uid: 'onenote!OneNote.InkStrokeCollection#items~0:complex'
+    name: 'OneNote.InkStroke[]'
+    fullName: 'OneNote.InkStroke[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.InkStroke:class'
+        name: OneNote.InkStroke
+        fullName: OneNote.InkStroke
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'onenote!OneNote.InkStrokeCollection:class'
+    name: OneNote.InkStrokeCollection
+  - uid: 'onenote!OneNote.InkStrokeCollection#load~0:complex'
+    name: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+    fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
+        name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
+        fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
+        name: OneNote.Interfaces.CollectionLoadOptions
+        fullName: OneNote.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
+    name: OneNote.Interfaces.InkStrokeCollectionData

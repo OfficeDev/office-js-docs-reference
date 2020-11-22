@@ -1,25 +1,35 @@
-### YamlMime:TSEnum
-name: Excel.ChartTickLabelAlignment
-uid: 'excel!Excel.ChartTickLabelAlignment:enum'
-package: excel!
-fullName: Excel.ChartTickLabelAlignment
-summary: >-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: center
-    uid: 'excel!Excel.ChartTickLabelAlignment.center:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTickLabelAlignment:enum'
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartTickLabelAlignment
+    fullName: Excel.ChartTickLabelAlignment
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: left
-    uid: 'excel!Excel.ChartTickLabelAlignment.left:member'
-    package: excel!
-    summary: ''
-  - name: right
-    uid: 'excel!Excel.ChartTickLabelAlignment.right:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartTickLabelAlignment.center:member'
+      - 'excel!Excel.ChartTickLabelAlignment.left:member'
+      - 'excel!Excel.ChartTickLabelAlignment.right:member'
+  - uid: 'excel!Excel.ChartTickLabelAlignment.center:member'
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: 'excel!Excel.ChartTickLabelAlignment.left:member'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: 'excel!Excel.ChartTickLabelAlignment.right:member'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'

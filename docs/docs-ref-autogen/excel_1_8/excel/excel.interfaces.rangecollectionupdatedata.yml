@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Excel.Interfaces.RangeCollectionUpdateData
-uid: 'excel!Excel.Interfaces.RangeCollectionUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.RangeCollectionUpdateData
-summary: >-
-  An interface for updating data on the RangeCollection object, for use in
-  `rangeCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'excel!Excel.Interfaces.RangeCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeCollectionUpdateData:interface'
+    summary: 'An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.RangeCollectionUpdateData
+    fullName: Excel.Interfaces.RangeCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.Interfaces.RangeCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.RangeCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Excel.Interfaces.RangeData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.RangeData:interface" />[]'
+        type:
+          - 'excel!Excel.Interfaces.RangeCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.RangeData[]'
+    fullName: 'Excel.Interfaces.RangeData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeData:interface'
+        name: Excel.Interfaces.RangeData
+        fullName: Excel.Interfaces.RangeData
+      - name: '[]'
+        fullName: '[]'

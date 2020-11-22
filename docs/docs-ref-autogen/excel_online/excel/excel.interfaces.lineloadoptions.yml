@@ -1,311 +1,276 @@
-### YamlMime:TSType
-name: Excel.Interfaces.LineLoadOptions
-uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.LineLoadOptions
-summary: >-
-  Represents a line inside a worksheet. To get the corresponding Shape object,
-  use `Line.shape`<!-- -->.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
+    summary: |-
+      Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`<!-- -->.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#$all:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.LineLoadOptions
+    fullName: Excel.Interfaces.LineLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: $all
+    children:
+      - 'excel!Excel.Interfaces.LineLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadLength:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadStyle:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadWidth:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedSite:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#connectorType:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadLength:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadStyle:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadWidth:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endConnectedSite:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#isBeginConnected:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#isEndConnected:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#shape:member'
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#$all:member'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: beginArrowheadLength
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadLength:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadLength:member'
+    summary: |-
+      Represents the length of the arrowhead at the beginning of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginArrowheadLength
     fullName: beginArrowheadLength
-    summary: >-
-      Represents the length of the arrowhead at the beginning of the specified
-      line.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'beginArrowheadLength?: boolean;'
       return:
-        type: boolean
-  - name: beginArrowheadStyle
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadStyle:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadStyle:member'
+    summary: |-
+      Represents the style of the arrowhead at the beginning of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginArrowheadStyle
     fullName: beginArrowheadStyle
-    summary: >-
-      Represents the style of the arrowhead at the beginning of the specified
-      line.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'beginArrowheadStyle?: boolean;'
       return:
-        type: boolean
-  - name: beginArrowheadWidth
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadWidth:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadWidth:member'
+    summary: |-
+      Represents the width of the arrowhead at the beginning of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginArrowheadWidth
     fullName: beginArrowheadWidth
-    summary: >-
-      Represents the width of the arrowhead at the beginning of the specified
-      line.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'beginArrowheadWidth?: boolean;'
       return:
-        type: boolean
-  - name: beginConnectedShape
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member'
+    summary: |-
+      Represents the shape to which the beginning of the specified line is attached.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginConnectedShape
     fullName: beginConnectedShape
-    summary: >-
-      Represents the shape to which the beginning of the specified line is
-      attached.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'beginConnectedShape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
-  - name: beginConnectedSite
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedSite:member'
-    package: excel!
-    fullName: beginConnectedSite
+        type:
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedSite:member'
     summary: >-
-      Represents the connection site to which the beginning of a connector is
-      connected. Returns null when the beginning of the line is not attached to
-      any shape.
+      Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning
+      of the line is not attached to any shape.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginConnectedSite
+    fullName: beginConnectedSite
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'beginConnectedSite?: boolean;'
       return:
-        type: boolean
-  - name: connectorType
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#connectorType:member'
-    package: excel!
-    fullName: connectorType
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#connectorType:member'
+    summary: |-
       Represents the connector type for the line.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: connectorType
+    fullName: connectorType
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'connectorType?: boolean;'
       return:
-        type: boolean
-  - name: endArrowheadLength
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadLength:member'
-    package: excel!
-    fullName: endArrowheadLength
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadLength:member'
+    summary: |-
       Represents the length of the arrowhead at the end of the specified line.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endArrowheadLength
+    fullName: endArrowheadLength
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'endArrowheadLength?: boolean;'
       return:
-        type: boolean
-  - name: endArrowheadStyle
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadStyle:member'
-    package: excel!
-    fullName: endArrowheadStyle
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadStyle:member'
+    summary: |-
       Represents the style of the arrowhead at the end of the specified line.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endArrowheadStyle
+    fullName: endArrowheadStyle
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'endArrowheadStyle?: boolean;'
       return:
-        type: boolean
-  - name: endArrowheadWidth
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadWidth:member'
-    package: excel!
-    fullName: endArrowheadWidth
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadWidth:member'
+    summary: |-
       Represents the width of the arrowhead at the end of the specified line.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endArrowheadWidth
+    fullName: endArrowheadWidth
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'endArrowheadWidth?: boolean;'
       return:
-        type: boolean
-  - name: endConnectedShape
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member'
-    package: excel!
-    fullName: endConnectedShape
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member'
+    summary: |-
       Represents the shape to which the end of the specified line is attached.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endConnectedShape
+    fullName: endConnectedShape
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'endConnectedShape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
-  - name: endConnectedSite
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#endConnectedSite:member'
-    package: excel!
-    fullName: endConnectedSite
+        type:
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endConnectedSite:member'
     summary: >-
-      Represents the connection site to which the end of a connector is
-      connected. Returns null when the end of the line is not attached to any
-      shape.
+      Represents the connection site to which the end of a connector is connected. Returns null when the end of the line
+      is not attached to any shape.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endConnectedSite
+    fullName: endConnectedSite
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'endConnectedSite?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#id:member'
+    summary: |-
       Specifies the shape identifier.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: isBeginConnected
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#isBeginConnected:member'
-    package: excel!
-    fullName: isBeginConnected
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#isBeginConnected:member'
+    summary: |-
       Specifies if the beginning of the specified line is connected to a shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isBeginConnected
+    fullName: isBeginConnected
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isBeginConnected?: boolean;'
       return:
-        type: boolean
-  - name: isEndConnected
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#isEndConnected:member'
-    package: excel!
-    fullName: isEndConnected
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#isEndConnected:member'
+    summary: |-
       Specifies if the end of the specified line is connected to a shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEndConnected
+    fullName: isEndConnected
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'isEndConnected?: boolean;'
       return:
-        type: boolean
-  - name: shape
-    uid: 'excel!Excel.Interfaces.LineLoadOptions#shape:member'
-    package: excel!
-    fullName: shape
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#shape:member'
+    summary: |-
       Returns the Shape object associated with the line.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+    name: Excel.Interfaces.ShapeLoadOptions

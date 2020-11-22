@@ -1,314 +1,309 @@
-### YamlMime:TSType
-name: Excel.ChartBinOptions
-uid: 'excel!Excel.ChartBinOptions:class'
-package: excel!
-fullName: Excel.ChartBinOptions
-summary: >-
-  Encapsulates the bin options for histogram charts and pareto charts.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartBinOptions:class'
+    summary: |-
+      Encapsulates the bin options for histogram charts and pareto charts.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: allowOverflow
-    uid: 'excel!Excel.ChartBinOptions#allowOverflow:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartBinOptions
+    fullName: Excel.ChartBinOptions
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
-    fullName: allowOverflow
-    summary: >-
+    children:
+      - 'excel!Excel.ChartBinOptions#allowOverflow:member'
+      - 'excel!Excel.ChartBinOptions#allowUnderflow:member'
+      - 'excel!Excel.ChartBinOptions#context:member'
+      - 'excel!Excel.ChartBinOptions#count:member'
+      - 'excel!Excel.ChartBinOptions#load:member(1)'
+      - 'excel!Excel.ChartBinOptions#load:member(2)'
+      - 'excel!Excel.ChartBinOptions#load:member(3)'
+      - 'excel!Excel.ChartBinOptions#overflowValue:member'
+      - 'excel!Excel.ChartBinOptions#set:member(1)'
+      - 'excel!Excel.ChartBinOptions#set:member(2)'
+      - 'excel!Excel.ChartBinOptions#toJSON:member(1)'
+      - 'excel!Excel.ChartBinOptions#type:member'
+      - 'excel!Excel.ChartBinOptions#underflowValue:member'
+      - 'excel!Excel.ChartBinOptions#width:member'
+  - uid: 'excel!Excel.ChartBinOptions#allowOverflow:member'
+    summary: |-
       Specifies if bin overflow is enabled in a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowOverflow
+    fullName: allowOverflow
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowOverflow: boolean;'
       return:
-        type: boolean
-  - name: allowUnderflow
-    uid: 'excel!Excel.ChartBinOptions#allowUnderflow:member'
-    package: excel!
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartBinOptions#allowUnderflow:member'
+    summary: |-
+      Specifies if bin underflow is enabled in a histogram chart or pareto chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowUnderflow
     fullName: allowUnderflow
-    summary: >-
-      Specifies if bin underflow is enabled in a histogram chart or pareto
-      chart.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'allowUnderflow: boolean;'
       return:
-        type: boolean
-  - name: context
-    uid: 'excel!Excel.ChartBinOptions#context:member'
-    package: excel!
-    fullName: context
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartBinOptions#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: count
-    uid: 'excel!Excel.ChartBinOptions#count:member'
-    package: excel!
-    fullName: count
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartBinOptions#count:member'
+    summary: |-
       Specifies the bin count of a histogram chart or pareto chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'count: number;'
       return:
-        type: number
-  - name: overflowValue
-    uid: 'excel!Excel.ChartBinOptions#overflowValue:member'
-    package: excel!
-    fullName: overflowValue
+        type:
+          - number
+  - uid: 'excel!Excel.ChartBinOptions#load:member(1)'
     summary: >-
-      Specifies the bin overflow value of a histogram chart or pareto chart.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'overflowValue: number;'
-      return:
-        type: number
-  - name: type
-    uid: 'excel!Excel.ChartBinOptions#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
-      Specifies the bin's type for a histogram chart or pareto chart.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        type: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" |
-        "BinCount";
-      return:
-        type: >-
-          <xref uid="excel!Excel.ChartBinType:enum" /> | "Category" | "Auto" |
-          "BinWidth" | "BinCount"
-  - name: underflowValue
-    uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
-    package: excel!
-    fullName: underflowValue
-    summary: >-
-      Specifies the bin underflow value of a histogram chart or pareto chart.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'underflowValue: number;'
-      return:
-        type: number
-  - name: width
-    uid: 'excel!Excel.ChartBinOptions#width:member'
-    package: excel!
-    fullName: width
-    summary: >-
-      Specifies the bin width value of a histogram chart or pareto chart.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'width: number;'
-      return:
-        type: number
-methods:
-  - name: load(options)
-    uid: 'excel!Excel.ChartBinOptions#load:member(1)'
-    package: excel!
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ChartBinOptionsLoadOptions):
-        Excel.ChartBinOptions;
+      content: 'load(options?: Excel.Interfaces.ChartBinOptionsLoadOptions): Excel.ChartBinOptions;'
+      return:
+        type:
+          - 'excel!Excel.ChartBinOptions:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface" />
-      return:
-        type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.ChartBinOptions#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.ChartBinOptions#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartBinOptions;'
+      return:
+        type:
+          - 'excel!Excel.ChartBinOptions:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ChartBinOptions#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartBinOptions#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.ChartBinOptions;
+      return:
+        type:
+          - 'excel!Excel.ChartBinOptions:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartBinOptions#overflowValue:member'
+    summary: |-
+      Specifies the bin overflow value of a histogram chart or pareto chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overflowValue
+    fullName: overflowValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowValue: number;'
       return:
-        type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.ChartBinOptions#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
+        type:
+          - number
+  - uid: 'excel!Excel.ChartBinOptions#set:member(1)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.ChartBinOptions): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.ChartBinOptionsUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ChartBinOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface" />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.ChartBinOptions#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartBinOptions#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.ChartBinOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
-      return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.ChartBinOptions#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+          type:
+            - 'excel!Excel.ChartBinOptions:class'
+  - uid: 'excel!Excel.ChartBinOptions#toJSON:member(1)'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.ChartBinOptions
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.ChartBinOptionsData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartBinOptions object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartBinOptionsData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartBinOptionsData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartBinOptionsData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+  - uid: 'excel!Excel.ChartBinOptions#type:member'
+    summary: |-
+      Specifies the bin's type for a histogram chart or pareto chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
+      return:
+        type:
+          - 'excel!Excel.ChartBinOptions#type~0:complex'
+  - uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
+    summary: |-
+      Specifies the bin underflow value of a histogram chart or pareto chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underflowValue
+    fullName: underflowValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underflowValue: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartBinOptions#width:member'
+    summary: |-
+      Specifies the bin width value of a histogram chart or pareto chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartBinOptions:class'
+    name: Excel.ChartBinOptions
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+    name: Excel.Interfaces.ChartBinOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
+    name: Interfaces.ChartBinOptionsUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
+    name: Excel.Interfaces.ChartBinOptionsData
+  - uid: 'excel!Excel.ChartBinOptions#type~0:complex'
+    name: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    fullName: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartBinType:enum'
+        name: Excel.ChartBinType
+        fullName: Excel.ChartBinType
+      - name: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
+        fullName: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'

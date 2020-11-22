@@ -1,29 +1,43 @@
-### YamlMime:TSEnum
-name: Excel.ChartSplitType
-uid: 'excel!Excel.ChartSplitType:enum'
-package: excel!
-fullName: Excel.ChartSplitType
-summary: >-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: splitByCustomSplit
-    uid: 'excel!Excel.ChartSplitType.splitByCustomSplit:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSplitType:enum'
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartSplitType
+    fullName: Excel.ChartSplitType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: splitByPercentValue
-    uid: 'excel!Excel.ChartSplitType.splitByPercentValue:member'
-    package: excel!
-    summary: ''
-  - name: splitByPosition
-    uid: 'excel!Excel.ChartSplitType.splitByPosition:member'
-    package: excel!
-    summary: ''
-  - name: splitByValue
-    uid: 'excel!Excel.ChartSplitType.splitByValue:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ChartSplitType.splitByCustomSplit:member'
+      - 'excel!Excel.ChartSplitType.splitByPercentValue:member'
+      - 'excel!Excel.ChartSplitType.splitByPosition:member'
+      - 'excel!Excel.ChartSplitType.splitByValue:member'
+  - uid: 'excel!Excel.ChartSplitType.splitByCustomSplit:member'
+    name: splitByCustomSplit
+    fullName: splitByCustomSplit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByCustomSplit"'
+  - uid: 'excel!Excel.ChartSplitType.splitByPercentValue:member'
+    name: splitByPercentValue
+    fullName: splitByPercentValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByPercentValue"'
+  - uid: 'excel!Excel.ChartSplitType.splitByPosition:member'
+    name: splitByPosition
+    fullName: splitByPosition
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByPosition"'
+  - uid: 'excel!Excel.ChartSplitType.splitByValue:member'
+    name: splitByValue
+    fullName: splitByValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByValue"'

@@ -1,28 +1,41 @@
-### YamlMime:TSEnum
-name: Excel.Placement
-uid: 'excel!Excel.Placement:enum'
-package: excel!
-fullName: Excel.Placement
-summary: >-
-  Specifies the way that an object is attached to its underlying cells.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Placement:enum'
+    summary: |-
+      Specifies the way that an object is attached to its underlying cells.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: absolute
-    uid: 'excel!Excel.Placement.absolute:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Placement
+    fullName: Excel.Placement
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.Placement.absolute:member'
+      - 'excel!Excel.Placement.oneCell:member'
+      - 'excel!Excel.Placement.twoCell:member'
+  - uid: 'excel!Excel.Placement.absolute:member'
     summary: The object is free floating.
-  - name: oneCell
-    uid: 'excel!Excel.Placement.oneCell:member'
-    package: excel!
+    name: absolute
+    fullName: absolute
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Absolute"'
+  - uid: 'excel!Excel.Placement.oneCell:member'
     summary: The object is moved and sized with the cells.
-  - name: twoCell
-    uid: 'excel!Excel.Placement.twoCell:member'
-    package: excel!
+    name: oneCell
+    fullName: oneCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OneCell"'
+  - uid: 'excel!Excel.Placement.twoCell:member'
     summary: The object is moved with the cells.
+    name: twoCell
+    fullName: twoCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoCell"'

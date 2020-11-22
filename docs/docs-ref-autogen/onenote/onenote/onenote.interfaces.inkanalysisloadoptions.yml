@@ -1,65 +1,61 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.InkAnalysisLoadOptions
-uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
-package: onenote!
-fullName: OneNote.Interfaces.InkAnalysisLoadOptions
-summary: >-
-  Represents ink analysis data for a given set of ink strokes.
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
+    summary: |-
+      Represents ink analysis data for a given set of ink strokes.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#$all:member'
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.InkAnalysisLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisLoadOptions
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
+    children:
+      - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#$all:member'
+    name: $all
     fullName: $all
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#id:member'
-    package: onenote!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#id:member'
+    summary: |-
       Gets the ID of the InkAnalysis object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: page
-    uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member'
-    package: onenote!
-    fullName: page
-    summary: >-
+        type:
+          - boolean
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member'
+    summary: |-
       Gets the parent page object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: page
+    fullName: page
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'page?: OneNote.Interfaces.PageLoadOptions;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.PageLoadOptions:interface" />'
+        type:
+          - 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
+references:
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
+    name: OneNote.Interfaces.PageLoadOptions

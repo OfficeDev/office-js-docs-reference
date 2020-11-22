@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.TextRangeData
-uid: 'excel!Excel.Interfaces.TextRangeData:interface'
-package: excel!
-fullName: Excel.Interfaces.TextRangeData
-summary: >-
-  An interface describing the data returned by calling `textRange.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TextRangeData:interface'
+    summary: An interface describing the data returned by calling `textRange.toJSON()`<!-- -->.
+    name: Excel.Interfaces.TextRangeData
+    fullName: Excel.Interfaces.TextRangeData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

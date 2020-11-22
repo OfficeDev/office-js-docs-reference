@@ -1,70 +1,66 @@
-### YamlMime:TSType
-name: Excel.Interfaces.GeometricShapeLoadOptions
-uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.GeometricShapeLoadOptions
-summary: >-
-  Represents a geometric shape inside a worksheet. A geometric shape can be a
-  rectangle, block arrow, equation symbol, flowchart item, star, banner,
-  callout, or any other basic shape in Excel.
-
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#$all:member'
-    package: excel!
-    fullName: $all
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Represents a geometric shape inside a worksheet. A geometric shape can be a rectangle, block arrow, equation
+      symbol, flowchart item, star, banner, callout, or any other basic shape in Excel.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.GeometricShapeLoadOptions
+    fullName: Excel.Interfaces.GeometricShapeLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.GeometricShapeLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.GeometricShapeLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member'
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: id
-    uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#id:member'
-    package: excel!
-    fullName: id
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#id:member'
+    summary: |-
       Returns the shape identifier.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: boolean;'
       return:
-        type: boolean
-  - name: shape
-    uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member'
-    package: excel!
-    fullName: shape
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member'
+    summary: |-
       Returns the Shape object for the geometric shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ShapeLoadOptions:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+    name: Excel.Interfaces.ShapeLoadOptions

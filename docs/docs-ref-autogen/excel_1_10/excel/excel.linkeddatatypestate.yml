@@ -1,33 +1,51 @@
-### YamlMime:TSEnum
-name: Excel.LinkedDataTypeState
-uid: 'excel!Excel.LinkedDataTypeState:enum'
-package: excel!
-fullName: Excel.LinkedDataTypeState
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: brokenLinkedData
-    uid: 'excel!Excel.LinkedDataTypeState.brokenLinkedData:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.LinkedDataTypeState:enum'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.LinkedDataTypeState
+    fullName: Excel.LinkedDataTypeState
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: disambiguationNeeded
-    uid: 'excel!Excel.LinkedDataTypeState.disambiguationNeeded:member'
-    package: excel!
-    summary: ''
-  - name: fetchingData
-    uid: 'excel!Excel.LinkedDataTypeState.fetchingData:member'
-    package: excel!
-    summary: ''
-  - name: none
-    uid: 'excel!Excel.LinkedDataTypeState.none:member'
-    package: excel!
-    summary: ''
-  - name: validLinkedData
-    uid: 'excel!Excel.LinkedDataTypeState.validLinkedData:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.LinkedDataTypeState.brokenLinkedData:member'
+      - 'excel!Excel.LinkedDataTypeState.disambiguationNeeded:member'
+      - 'excel!Excel.LinkedDataTypeState.fetchingData:member'
+      - 'excel!Excel.LinkedDataTypeState.none:member'
+      - 'excel!Excel.LinkedDataTypeState.validLinkedData:member'
+  - uid: 'excel!Excel.LinkedDataTypeState.brokenLinkedData:member'
+    name: brokenLinkedData
+    fullName: brokenLinkedData
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BrokenLinkedData"'
+  - uid: 'excel!Excel.LinkedDataTypeState.disambiguationNeeded:member'
+    name: disambiguationNeeded
+    fullName: disambiguationNeeded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DisambiguationNeeded"'
+  - uid: 'excel!Excel.LinkedDataTypeState.fetchingData:member'
+    name: fetchingData
+    fullName: fetchingData
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FetchingData"'
+  - uid: 'excel!Excel.LinkedDataTypeState.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: 'excel!Excel.LinkedDataTypeState.validLinkedData:member'
+    name: validLinkedData
+    fullName: validLinkedData
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ValidLinkedData"'

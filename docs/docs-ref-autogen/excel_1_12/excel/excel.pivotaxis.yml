@@ -1,36 +1,59 @@
-### YamlMime:TSEnum
-name: Excel.PivotAxis
-uid: 'excel!Excel.PivotAxis:enum'
-package: excel!
-fullName: Excel.PivotAxis
-summary: >-
-  Represents the axis from which to get the PivotItems.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotAxis:enum'
+    summary: |-
+      Represents the axis from which to get the PivotItems.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: column
-    uid: 'excel!Excel.PivotAxis.column:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotAxis
+    fullName: Excel.PivotAxis
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.PivotAxis.column:member'
+      - 'excel!Excel.PivotAxis.data:member'
+      - 'excel!Excel.PivotAxis.filter:member'
+      - 'excel!Excel.PivotAxis.row:member'
+      - 'excel!Excel.PivotAxis.unknown:member'
+  - uid: 'excel!Excel.PivotAxis.column:member'
     summary: The column axis.
-  - name: data
-    uid: 'excel!Excel.PivotAxis.data:member'
-    package: excel!
+    name: column
+    fullName: column
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Column"'
+  - uid: 'excel!Excel.PivotAxis.data:member'
     summary: The data axis.
-  - name: filter
-    uid: 'excel!Excel.PivotAxis.filter:member'
-    package: excel!
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Data"'
+  - uid: 'excel!Excel.PivotAxis.filter:member'
     summary: The filter axis.
-  - name: row
-    uid: 'excel!Excel.PivotAxis.row:member'
-    package: excel!
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Filter"'
+  - uid: 'excel!Excel.PivotAxis.row:member'
     summary: The row axis.
-  - name: unknown
-    uid: 'excel!Excel.PivotAxis.unknown:member'
-    package: excel!
+    name: row
+    fullName: row
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Row"'
+  - uid: 'excel!Excel.PivotAxis.unknown:member'
     summary: The axis or region is unknown or unsupported.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

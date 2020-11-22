@@ -1,209 +1,118 @@
-### YamlMime:TSType
-name: Excel.PivotLayout
-uid: 'excel!Excel.PivotLayout:class'
-package: excel!
-fullName: Excel.PivotLayout
-summary: >-
-  Represents the visual layout of the PivotTable.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotLayout:class'
+    summary: |-
+      Represents the visual layout of the PivotTable.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: class
-properties:
-  - name: autoFormat
-    uid: 'excel!Excel.PivotLayout#autoFormat:member'
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotLayout
+    fullName: Excel.PivotLayout
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
+    children:
+      - 'excel!Excel.PivotLayout#autoFormat:member'
+      - 'excel!Excel.PivotLayout#context:member'
+      - 'excel!Excel.PivotLayout#enableFieldList:member'
+      - 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+      - 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+      - 'excel!Excel.PivotLayout#getPivotItems:member(1)'
+      - 'excel!Excel.PivotLayout#getPivotItems:member(2)'
+      - 'excel!Excel.PivotLayout#getRange:member(1)'
+      - 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#layoutType:member'
+      - 'excel!Excel.PivotLayout#load:member(1)'
+      - 'excel!Excel.PivotLayout#load:member(2)'
+      - 'excel!Excel.PivotLayout#load:member(3)'
+      - 'excel!Excel.PivotLayout#preserveFormatting:member'
+      - 'excel!Excel.PivotLayout#set:member(1)'
+      - 'excel!Excel.PivotLayout#set:member(2)'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(2)'
+      - 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+      - 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+      - 'excel!Excel.PivotLayout#subtotalLocation:member'
+      - 'excel!Excel.PivotLayout#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotLayout#autoFormat:member'
+    summary: |-
+      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFormat
     fullName: autoFormat
-    summary: >-
-      Specifies if formatting will be automatically formatted when it’s
-      refreshed or when fields are moved.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'autoFormat: boolean;'
       return:
-        type: boolean
-  - name: context
-    uid: 'excel!Excel.PivotLayout#context:member'
-    package: excel!
-    fullName: context
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#context:member'
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: enableFieldList
-    uid: 'excel!Excel.PivotLayout#enableFieldList:member'
-    package: excel!
-    fullName: enableFieldList
-    summary: >-
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotLayout#enableFieldList:member'
+    summary: |-
       Specifies if the field list can be shown in the UI.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableFieldList
+    fullName: enableFieldList
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'enableFieldList: boolean;'
       return:
-        type: boolean
-  - name: layoutType
-    uid: 'excel!Excel.PivotLayout#layoutType:member'
-    package: excel!
-    fullName: layoutType
-    summary: >-
-      This property indicates the PivotLayoutType of all fields on the
-      PivotTable. If fields have different states, this will be null.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
-      return:
-        type: >-
-          <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" |
-          "Tabular" | "Outline"
-  - name: preserveFormatting
-    uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
-    package: excel!
-    fullName: preserveFormatting
-    summary: >-
-      Specifies if formatting is preserved when the report is refreshed or
-      recalculated by operations such as pivoting, sorting, or changing page
-      field items.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'preserveFormatting: boolean;'
-      return:
-        type: boolean
-  - name: showColumnGrandTotals
-    uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
-    package: excel!
-    fullName: showColumnGrandTotals
-    summary: >-
-      Specifies if the PivotTable report shows grand totals for columns.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'showColumnGrandTotals: boolean;'
-      return:
-        type: boolean
-  - name: showRowGrandTotals
-    uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
-    package: excel!
-    fullName: showRowGrandTotals
-    summary: >-
-      Specifies if the PivotTable report shows grand totals for rows.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'showRowGrandTotals: boolean;'
-      return:
-        type: boolean
-  - name: subtotalLocation
-    uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
-    package: excel!
-    fullName: subtotalLocation
-    summary: >-
-      This property indicates the SubtotalLocationType of all fields on the
-      PivotTable. If fields have different states, this will be null.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        subtotalLocation: Excel.SubtotalLocationType | "AtTop" | "AtBottom" |
-        "Off";
-      return:
-        type: >-
-          <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" |
-          "AtBottom" | "Off"
-methods:
-  - name: getColumnLabelRange()
-    uid: 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
-    package: excel!
-    fullName: getColumnLabelRange()
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+    summary: |-
       Returns the range where the PivotTable's column labels reside.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getColumnLabelRange()
+    fullName: getColumnLabelRange()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getColumnLabelRange(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: ''
-  - name: getDataBodyRange()
-    uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
-    package: excel!
-    fullName: getDataBodyRange()
-    summary: >-
+  - uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+    summary: |-
       Returns the range where the PivotTable's data values reside.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: >-
 
 
@@ -233,364 +142,483 @@ methods:
           });
 
           ```
-  - name: getDataHierarchy(cell)
-    uid: 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
-    package: excel!
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+    summary: |-
+      Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getDataHierarchy(cell)
     fullName: getDataHierarchy(cell)
-    summary: >-
-      Gets the DataHierarchy that is used to calculate the value in a specified
-      range within the PivotTable.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getDataHierarchy(cell: Range | string): Excel.DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:class'
+        description: The DataPivotHierarchy object used to calculate the value in the specified cell.
       parameters:
         - id: cell
           description: A single cell within the PivotTable data body.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
-      return:
-        type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
-        description: >-
-          The DataPivotHierarchy object used to calculate the value in the
-          specified cell.
-  - name: getFilterAxisRange()
-    uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
-    package: excel!
-    fullName: getFilterAxisRange()
-    summary: >-
+          type:
+            - 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+  - uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+    summary: |-
       Returns the range of the PivotTable's filter area.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getFilterAxisRange()
+    fullName: getFilterAxisRange()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getFilterAxisRange(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: ''
-  - name: 'getPivotItems(axis, cell)'
-    uid: 'excel!Excel.PivotLayout#getPivotItems:member(1)'
-    package: excel!
+  - uid: 'excel!Excel.PivotLayout#getPivotItems:member(1)'
+    summary: |-
+      Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getPivotItems(axis, cell)'
     fullName: 'getPivotItems(axis, cell)'
-    summary: >-
-      Gets the PivotItems from an axis that make up the value in a specified
-      range within the PivotTable.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        getPivotItems(axis: Excel.PivotAxis, cell: Range | string):
-        Excel.PivotItemCollection;
+      content: 'getPivotItems(axis: Excel.PivotAxis, cell: Range | string): Excel.PivotItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection:class'
+        description: A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axis
-          description: >-
-            The axis from which to get the PivotItems. Must be either "row" or
-            "column."
-          type: '<xref uid="excel!Excel.PivotAxis:enum" />'
+          description: The axis from which to get the PivotItems. Must be either "row" or "column."
+          type:
+            - 'excel!Excel.PivotAxis:enum'
         - id: cell
           description: A single cell within the PivotTable's data body.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
-      return:
-        type: '<xref uid="excel!Excel.PivotItemCollection:class" />'
-        description: >-
-          A PivotItemCollection of the PivotItems that are used to calculate the
-          values in the specified row.
-  - name: 'getPivotItems(axisString, cell)'
-    uid: 'excel!Excel.PivotLayout#getPivotItems:member(2)'
-    package: excel!
+          type:
+            - 'excel!Excel.PivotLayout#getPivotItems~0:complex'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems:member(2)'
+    summary: |-
+      Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getPivotItems(axisString, cell)'
     fullName: 'getPivotItems(axisString, cell)'
-    summary: >-
-      Gets the PivotItems from an axis that make up the value in a specified
-      range within the PivotTable.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: >-
-        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" |
-        "Filter", cell: Range | string): Excel.PivotItemCollection;
+        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string):
+        Excel.PivotItemCollection;
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection:class'
+        description: A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axisString
-          description: >-
-            The axis from which to get the PivotItems. Must be either "row" or
-            "column."
-          type: '"Unknown" | "Row" | "Column" | "Data" | "Filter"'
+          description: The axis from which to get the PivotItems. Must be either "row" or "column."
+          type:
+            - '"Unknown" | "Row" | "Column" | "Data" | "Filter"'
         - id: cell
           description: A single cell within the PivotTable's data body.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
-      return:
-        type: '<xref uid="excel!Excel.PivotItemCollection:class" />'
-        description: >-
-          A PivotItemCollection of the PivotItems that are used to calculate the
-          values in the specified row.
-  - name: getRange()
-    uid: 'excel!Excel.PivotLayout#getRange:member(1)'
-    package: excel!
-    fullName: getRange()
-    summary: >-
+          type:
+            - 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+  - uid: 'excel!Excel.PivotLayout#getRange:member(1)'
+    summary: |-
       Returns the range the PivotTable exists on, excluding the filter area.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: ''
-  - name: getRowLabelRange()
-    uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
-    package: excel!
-    fullName: getRowLabelRange()
-    summary: >-
+  - uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+    summary: |-
       Returns the range where the PivotTable's row labels reside.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRowLabelRange()
+    fullName: getRowLabelRange()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'getRowLabelRange(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type:
+          - 'excel!Excel.Range:class'
         description: ''
-  - name: load(options)
-    uid: 'excel!Excel.PivotLayout#load:member(1)'
-    package: excel!
-    fullName: load(options)
+  - uid: 'excel!Excel.PivotLayout#layoutType:member'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PivotLayoutLoadOptions):
-        Excel.PivotLayout;
+      content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout#layoutType~0:complex'
+  - uid: 'excel!Excel.PivotLayout#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.PivotLayoutLoadOptions): Excel.PivotLayout;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:class'
+        description: ''
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.PivotLayoutLoadOptions:interface"
-            />
-      return:
-        type: '<xref uid="excel!Excel.PivotLayout:class" />'
-        description: ''
-  - name: load(propertyNames)
-    uid: 'excel!Excel.PivotLayout#load:member(2)'
-    package: excel!
-    fullName: load(propertyNames)
+          type:
+            - 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+  - uid: 'excel!Excel.PivotLayout#load:member(2)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotLayout;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:class'
+        description: ''
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
-          type: 'string | string[]'
-      return:
-        type: '<xref uid="excel!Excel.PivotLayout:class" />'
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.PivotLayout#load:member(3)'
-    package: excel!
-    fullName: load(propertyNamesAndPaths)
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotLayout#load:member(3)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
                 }): Excel.PivotLayout;
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: '<xref uid="excel!Excel.PivotLayout:class" />'
-        description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.PivotLayout#set:member(1)'
-    package: excel!
-    fullName: 'set(properties, options)'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
+      sorting, or changing page field items.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: preserveFormatting
+    fullName: preserveFormatting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preserveFormatting: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.PivotLayout): void`
-    isPreview: false
-    isDeprecated: false
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        set(properties: Interfaces.PivotLayoutUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.PivotLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: set(properties)
-    uid: 'excel!Excel.PivotLayout#set:member(2)'
-    package: excel!
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.PivotLayout#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'set(properties: Excel.PivotLayout): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.PivotLayout:class" />'
-      return:
-        type: void
-        description: ''
-  - name: 'setAutoSortOnCell(cell, sortBy)'
-    uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
-    package: excel!
-    fullName: 'setAutoSortOnCell(cell, sortBy)'
+          type:
+            - 'excel!Excel.PivotLayout:class'
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
     summary: >-
-      Sets the PivotTable to automatically sort using the specified cell to
-      automatically select all necessary criteria and context. This behaves
-      identically to applying an autosort from the UI.
+      Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria
+      and context. This behaves identically to applying an autosort from the UI.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'setAutoSortOnCell(cell, sortBy)'
+    fullName: 'setAutoSortOnCell(cell, sortBy)'
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'setAutoSortOnCell(cell: Range | string, sortBy: Excel.SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: cell
-          description: >-
-            A single cell to use get the criteria from for applying the
-            autosort.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
+          description: A single cell to use get the criteria from for applying the autosort.
+          type:
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
         - id: sortBy
           description: The direction of the sort.
-          type: '<xref uid="excel!Excel.SortBy:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: 'setAutoSortOnCell(cell, sortByString)'
-    uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(2)'
-    package: excel!
-    fullName: 'setAutoSortOnCell(cell, sortByString)'
+          type:
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(2)'
     summary: >-
-      Sets the PivotTable to automatically sort using the specified cell to
-      automatically select all necessary criteria and context. This behaves
-      identically to applying an autosort from the UI.
+      Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria
+      and context. This behaves identically to applying an autosort from the UI.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'setAutoSortOnCell(cell, sortByString)'
+    fullName: 'setAutoSortOnCell(cell, sortByString)'
+    langs:
+      - typeScript
+    type: method
     syntax:
-      content: >-
-        setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" |
-        "Descending"): void;
+      content: 'setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" | "Descending"): void;'
+      return:
+        type:
+          - void
+        description: ''
       parameters:
         - id: cell
-          description: >-
-            A single cell to use get the criteria from for applying the
-            autosort.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
+          description: A single cell to use get the criteria from for applying the autosort.
+          type:
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
         - id: sortByString
           description: The direction of the sort.
-          type: '"Ascending" | "Descending"'
+          type:
+            - '"Ascending" | "Descending"'
+  - uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+    summary: |-
+      Specifies if the PivotTable report shows grand totals for columns.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showColumnGrandTotals: boolean;'
       return:
-        type: void
-        description: ''
-  - name: toJSON()
-    uid: 'excel!Excel.PivotLayout#toJSON:member(1)'
-    package: excel!
-    fullName: toJSON()
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+    summary: |-
+      Specifies if the PivotTable report shows grand totals for rows.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRowGrandTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.PivotLayout
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.PivotLayoutData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotalLocation: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
+  - uid: 'excel!Excel.PivotLayout#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PivotLayout object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotLayoutData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.PivotLayoutData:interface" />'
+        type:
+          - 'excel!Excel.Interfaces.PivotLayoutData:interface'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
+    name: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotItemCollection:class'
+    name: Excel.PivotItemCollection
+  - uid: 'excel!Excel.PivotAxis:enum'
+    name: Excel.PivotAxis
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#layoutType~0:complex'
+    name: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    fullName: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotLayoutType:enum'
+        name: Excel.PivotLayoutType
+        fullName: Excel.PivotLayoutType
+      - name: ' | "Compact" | "Tabular" | "Outline"'
+        fullName: ' | "Compact" | "Tabular" | "Outline"'
+  - uid: 'excel!Excel.PivotLayout:class'
+    name: Excel.PivotLayout
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+    name: Excel.Interfaces.PivotLayoutLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
+    name: Interfaces.PivotLayoutUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.SortBy:enum'
+    name: Excel.SortBy
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
+    name: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    fullName: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    spec.typeScript:
+      - uid: 'excel!Excel.SubtotalLocationType:enum'
+        name: Excel.SubtotalLocationType
+        fullName: Excel.SubtotalLocationType
+      - name: ' | "AtTop" | "AtBottom" | "Off"'
+        fullName: ' | "AtTop" | "AtBottom" | "Off"'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData:interface'
+    name: Excel.Interfaces.PivotLayoutData

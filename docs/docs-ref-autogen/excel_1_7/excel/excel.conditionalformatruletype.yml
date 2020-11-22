@@ -1,48 +1,78 @@
-### YamlMime:TSEnum
-name: Excel.ConditionalFormatRuleType
-uid: 'excel!Excel.ConditionalFormatRuleType:enum'
-package: excel!
-fullName: Excel.ConditionalFormatRuleType
-summary: >-
-  Represents the types of conditional format values.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalFormatRuleType:enum'
+    summary: |-
+      Represents the types of conditional format values.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: automatic
-    uid: 'excel!Excel.ConditionalFormatRuleType.automatic:member'
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalFormatRuleType
+    fullName: Excel.ConditionalFormatRuleType
+    langs:
+      - typeScript
+    type: enum
     package: excel!
-    summary: ''
-  - name: formula
-    uid: 'excel!Excel.ConditionalFormatRuleType.formula:member'
-    package: excel!
-    summary: ''
-  - name: highestValue
-    uid: 'excel!Excel.ConditionalFormatRuleType.highestValue:member'
-    package: excel!
-    summary: ''
-  - name: invalid
-    uid: 'excel!Excel.ConditionalFormatRuleType.invalid:member'
-    package: excel!
-    summary: ''
-  - name: lowestValue
-    uid: 'excel!Excel.ConditionalFormatRuleType.lowestValue:member'
-    package: excel!
-    summary: ''
-  - name: number
-    uid: 'excel!Excel.ConditionalFormatRuleType.number:member'
-    package: excel!
-    summary: ''
-  - name: percent
-    uid: 'excel!Excel.ConditionalFormatRuleType.percent:member'
-    package: excel!
-    summary: ''
-  - name: percentile
-    uid: 'excel!Excel.ConditionalFormatRuleType.percentile:member'
-    package: excel!
-    summary: ''
+    children:
+      - 'excel!Excel.ConditionalFormatRuleType.automatic:member'
+      - 'excel!Excel.ConditionalFormatRuleType.formula:member'
+      - 'excel!Excel.ConditionalFormatRuleType.highestValue:member'
+      - 'excel!Excel.ConditionalFormatRuleType.invalid:member'
+      - 'excel!Excel.ConditionalFormatRuleType.lowestValue:member'
+      - 'excel!Excel.ConditionalFormatRuleType.number:member'
+      - 'excel!Excel.ConditionalFormatRuleType.percent:member'
+      - 'excel!Excel.ConditionalFormatRuleType.percentile:member'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.formula:member'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formula"'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.highestValue:member'
+    name: highestValue
+    fullName: highestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HighestValue"'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.invalid:member'
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.lowestValue:member'
+    name: lowestValue
+    fullName: lowestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LowestValue"'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.number:member'
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.percent:member'
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: 'excel!Excel.ConditionalFormatRuleType.percentile:member'
+    name: percentile
+    fullName: percentile
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percentile"'

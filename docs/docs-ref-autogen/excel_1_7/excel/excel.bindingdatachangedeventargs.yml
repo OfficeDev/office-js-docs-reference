@@ -1,37 +1,35 @@
-### YamlMime:TSType
-name: Excel.BindingDataChangedEventArgs
-uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
-package: excel!
-fullName: Excel.BindingDataChangedEventArgs
-summary: >-
-  Provides information about the binding that raised the DataChanged event.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
+    summary: |-
+      Provides information about the binding that raised the DataChanged event.
 
-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: binding
-    uid: 'excel!Excel.BindingDataChangedEventArgs#binding:member'
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.BindingDataChangedEventArgs
+    fullName: Excel.BindingDataChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: binding
+    children:
+      - 'excel!Excel.BindingDataChangedEventArgs#binding:member'
+  - uid: 'excel!Excel.BindingDataChangedEventArgs#binding:member'
     summary: >-
-      Gets a temporary `Binding` object that contains the ID of the `Binding`
-      object that raised the event. Use that ID with
-      `BindingCollection.getItem(id)` to get the binding.
+      Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID
+      with `BindingCollection.getItem(id)` to get the binding.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: binding
+    fullName: binding
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'binding: Excel.Binding;'
       return:
-        type: '<xref uid="excel!Excel.Binding:class" />'
+        type:
+          - 'excel!Excel.Binding:class'
+references:
+  - uid: 'excel!Excel.Binding:class'
+    name: Excel.Binding

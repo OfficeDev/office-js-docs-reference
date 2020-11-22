@@ -1,12 +1,10 @@
-### YamlMime:TSType
-name: Excel.Interfaces.PivotTableData
-uid: 'excel!Excel.Interfaces.PivotTableData:interface'
-package: excel!
-fullName: Excel.Interfaces.PivotTableData
-summary: >-
-  An interface describing the data returned by calling `pivotTable.toJSON()`<!--
-  -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+    summary: An interface describing the data returned by calling `pivotTable.toJSON()`<!-- -->.
+    name: Excel.Interfaces.PivotTableData
+    fullName: Excel.Interfaces.PivotTableData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

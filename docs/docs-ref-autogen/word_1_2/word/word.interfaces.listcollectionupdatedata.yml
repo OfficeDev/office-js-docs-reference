@@ -1,25 +1,33 @@
-### YamlMime:TSType
-name: Word.Interfaces.ListCollectionUpdateData
-uid: 'word!Word.Interfaces.ListCollectionUpdateData:interface'
-package: word!
-fullName: Word.Interfaces.ListCollectionUpdateData
-summary: >-
-  An interface for updating data on the ListCollection object, for use in
-  `listCollection.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: items
-    uid: 'word!Word.Interfaces.ListCollectionUpdateData#items:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces.ListCollectionUpdateData:interface'
+    summary: 'An interface for updating data on the ListCollection object, for use in `listCollection.set({ ... })`<!-- -->.'
+    name: Word.Interfaces.ListCollectionUpdateData
+    fullName: Word.Interfaces.ListCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: word!
+    children:
+      - 'word!Word.Interfaces.ListCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.ListCollectionUpdateData#items:member'
+    name: items
     fullName: items
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'items?: Word.Interfaces.ListData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.ListData:interface" />[]'
+        type:
+          - 'word!Word.Interfaces.ListCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.ListCollectionUpdateData#items~0:complex'
+    name: 'Word.Interfaces.ListData[]'
+    fullName: 'Word.Interfaces.ListData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.ListData:interface'
+        name: Word.Interfaces.ListData
+        fullName: Word.Interfaces.ListData
+      - name: '[]'
+        fullName: '[]'

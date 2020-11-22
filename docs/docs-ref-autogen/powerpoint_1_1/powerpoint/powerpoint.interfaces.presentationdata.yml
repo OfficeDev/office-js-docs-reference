@@ -1,25 +1,23 @@
-### YamlMime:TSType
-name: PowerPoint.Interfaces.PresentationData
-uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
-package: powerpoint!
-fullName: PowerPoint.Interfaces.PresentationData
-summary: >-
-  An interface describing the data returned by calling
-  `presentation.toJSON()`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: title
-    uid: 'powerpoint!PowerPoint.Interfaces.PresentationData#title:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
+    summary: An interface describing the data returned by calling `presentation.toJSON()`<!-- -->.
+    name: PowerPoint.Interfaces.PresentationData
+    fullName: PowerPoint.Interfaces.PresentationData
+    langs:
+      - typeScript
+    type: interface
     package: powerpoint!
+    children:
+      - 'powerpoint!PowerPoint.Interfaces.PresentationData#title:member'
+  - uid: 'powerpoint!PowerPoint.Interfaces.PresentationData#title:member'
+    name: title
     fullName: title
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'title?: string;'
       return:
-        type: string
+        type:
+          - string

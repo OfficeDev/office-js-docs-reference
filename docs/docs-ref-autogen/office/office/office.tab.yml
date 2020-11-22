@@ -1,35 +1,47 @@
-### YamlMime:TSType
-name: Office.Tab
-uid: 'office!Office.Tab:interface'
-package: office!
-fullName: Office.Tab
-summary: Represents an individual tab and the state it should have.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: controls
-    uid: 'office!Office.Tab#controls:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Tab:interface'
+    summary: Represents an individual tab and the state it should have.
+    name: Office.Tab
+    fullName: Office.Tab
+    langs:
+      - typeScript
+    type: interface
     package: office!
-    fullName: controls
+    children:
+      - 'office!Office.Tab#controls:member'
+      - 'office!Office.Tab#id:member'
+  - uid: 'office!Office.Tab#controls:member'
     summary: 'Specifies the controls in the tab, such as menu items, buttons, etc.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: controls
+    fullName: controls
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'controls: Control[];'
       return:
-        type: '<xref uid="office!Office.Control:interface" />[]'
-  - name: id
-    uid: 'office!Office.Tab#id:member'
-    package: office!
-    fullName: id
+        type:
+          - 'office!Office.Tab#controls~0:complex'
+  - uid: 'office!Office.Tab#id:member'
     summary: Identifier of the tab as specified in the manifest.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id: string;'
       return:
-        type: string
+        type:
+          - string
+references:
+  - uid: 'office!Office.Tab#controls~0:complex'
+    name: 'Control[]'
+    fullName: 'Office.Control[]'
+    spec.typeScript:
+      - uid: 'office!Office.Control:interface'
+        name: Control
+        fullName: Office.Control
+      - name: '[]'
+        fullName: '[]'

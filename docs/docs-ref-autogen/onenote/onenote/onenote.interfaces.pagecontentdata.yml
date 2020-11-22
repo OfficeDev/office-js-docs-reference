@@ -1,142 +1,139 @@
-### YamlMime:TSType
-name: OneNote.Interfaces.PageContentData
-uid: 'onenote!OneNote.Interfaces.PageContentData:interface'
-package: onenote!
-fullName: OneNote.Interfaces.PageContentData
-summary: An interface describing the data returned by calling "pageContent.toJSON()".
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: id
-    uid: 'onenote!OneNote.Interfaces.PageContentData#id:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'onenote!OneNote.Interfaces.PageContentData:interface'
+    summary: An interface describing the data returned by calling "pageContent.toJSON()".
+    name: OneNote.Interfaces.PageContentData
+    fullName: OneNote.Interfaces.PageContentData
+    langs:
+      - typeScript
+    type: interface
     package: onenote!
-    fullName: id
-    summary: >-
+    children:
+      - 'onenote!OneNote.Interfaces.PageContentData#id:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#image:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#ink:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#left:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#outline:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#top:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#type:member'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#id:member'
+    summary: |-
       Gets the ID of the PageContent object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'id?: string;'
       return:
-        type: string
-  - name: image
-    uid: 'onenote!OneNote.Interfaces.PageContentData#image:member'
-    package: onenote!
+        type:
+          - string
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#image:member'
+    summary: |-
+      Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: image
     fullName: image
-    summary: >-
-      Gets the Image in the PageContent object. Throws an exception if
-      PageContentType is not Image.
-
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.ImageData:interface" />'
-  - name: ink
-    uid: 'onenote!OneNote.Interfaces.PageContentData#ink:member'
-    package: onenote!
+        type:
+          - 'onenote!OneNote.Interfaces.ImageData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#ink:member'
+    summary: |-
+      Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: ink
     fullName: ink
-    summary: >-
-      Gets the ink in the PageContent object. Throws an exception if
-      PageContentType is not Ink.
-
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'ink?: OneNote.Interfaces.FloatingInkData;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkData:interface" />'
-  - name: left
-    uid: 'onenote!OneNote.Interfaces.PageContentData#left:member'
-    package: onenote!
-    fullName: left
-    summary: >-
+        type:
+          - 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#left:member'
+    summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'left?: number;'
       return:
-        type: number
-  - name: outline
-    uid: 'onenote!OneNote.Interfaces.PageContentData#outline:member'
-    package: onenote!
+        type:
+          - number
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#outline:member'
+    summary: |-
+      Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: outline
     fullName: outline
-    summary: >-
-      Gets the Outline in the PageContent object. Throws an exception if
-      PageContentType is not Outline.
-
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'outline?: OneNote.Interfaces.OutlineData;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.OutlineData:interface" />'
-  - name: top
-    uid: 'onenote!OneNote.Interfaces.PageContentData#top:member'
-    package: onenote!
-    fullName: top
-    summary: >-
+        type:
+          - 'onenote!OneNote.Interfaces.OutlineData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#top:member'
+    summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'top?: number;'
       return:
-        type: number
-  - name: type
-    uid: 'onenote!OneNote.Interfaces.PageContentData#type:member'
-    package: onenote!
-    fullName: type
-    summary: >-
+        type:
+          - number
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#type:member'
+    summary: |-
       Gets the type of the PageContent object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.PageContentType:enum" /> | "Outline" |
-          "Image" | "Ink" | "Other"
+        type:
+          - 'onenote!OneNote.Interfaces.PageContentData#type~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
+    name: OneNote.Interfaces.ImageData
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+    name: OneNote.Interfaces.FloatingInkData
+  - uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
+    name: OneNote.Interfaces.OutlineData
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#type~0:complex'
+    name: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
+    fullName: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
+    spec.typeScript:
+      - uid: 'onenote!OneNote.PageContentType:enum'
+        name: OneNote.PageContentType
+        fullName: OneNote.PageContentType
+      - name: ' | "Outline" | "Image" | "Ink" | "Other"'
+        fullName: ' | "Outline" | "Image" | "Ink" | "Other"'

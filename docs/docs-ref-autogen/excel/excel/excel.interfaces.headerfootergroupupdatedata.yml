@@ -1,151 +1,141 @@
-### YamlMime:TSType
-name: Excel.Interfaces.HeaderFooterGroupUpdateData
-uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
-summary: >-
-  An interface for updating data on the HeaderFooterGroup object, for use in
-  `headerFooterGroup.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: defaultForAllPages
-    uid: >-
-      excel!Excel.Interfaces.HeaderFooterGroupUpdateData#defaultForAllPages:member
-    package: excel!
-    fullName: defaultForAllPages
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
     summary: >-
-      The general header/footer, used for all pages unless even/odd or first
-      page is specified.
+      An interface for updating data on the HeaderFooterGroup object, for use in `headerFooterGroup.set({ ... })`<!--
+      -->.
+    name: Excel.Interfaces.HeaderFooterGroupUpdateData
+    fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#defaultForAllPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#evenPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#firstPage:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#oddPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetMargins:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetScale:member'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#defaultForAllPages:member'
+    summary: |-
+      The general header/footer, used for all pages unless even/odd or first page is specified.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: defaultForAllPages
+    fullName: defaultForAllPages
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'defaultForAllPages?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
-  - name: evenPages
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#evenPages:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#evenPages:member'
+    summary: |-
+      The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: evenPages
     fullName: evenPages
-    summary: >-
-      The header/footer to use for even pages, odd header/footer needs to be
-      specified for odd pages.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'evenPages?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
-  - name: firstPage
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#firstPage:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#firstPage:member'
+    summary: |-
+      The first page header/footer, for all other pages general or even/odd is used.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstPage
     fullName: firstPage
-    summary: >-
-      The first page header/footer, for all other pages general or even/odd is
-      used.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'firstPage?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
-  - name: oddPages
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#oddPages:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#oddPages:member'
+    summary: |-
+      The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: oddPages
     fullName: oddPages
-    summary: >-
-      The header/footer to use for odd pages, even header/footer needs to be
-      specified for even pages.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'oddPages?: Excel.Interfaces.HeaderFooterUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.HeaderFooterUpdateData:interface" />'
-  - name: state
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member'
+    summary: |-
+      The state by which headers/footers are set. See Excel.HeaderFooterState for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: state
     fullName: state
-    summary: >-
-      The state by which headers/footers are set. See Excel.HeaderFooterState
-      for details.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" |
-        "OddAndEven" | "FirstOddAndEven";
+      content: 'state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";'
       return:
-        type: >-
-          <xref uid="excel!Excel.HeaderFooterState:enum" /> | "Default" |
-          "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
-  - name: useSheetMargins
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetMargins:member'
-    package: excel!
-    fullName: useSheetMargins
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state~0:complex'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetMargins:member'
     summary: >-
-      Gets or sets a flag indicating if headers/footers are aligned with the
-      page margins set in the page layout options for the worksheet.
+      Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
+      for the worksheet.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSheetMargins
+    fullName: useSheetMargins
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useSheetMargins?: boolean;'
       return:
-        type: boolean
-  - name: useSheetScale
-    uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetScale:member'
-    package: excel!
-    fullName: useSheetScale
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetScale:member'
     summary: >-
-      Gets or sets a flag indicating if headers/footers should be scaled by the
-      page percentage scale set in the page layout options for the worksheet.
+      Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
+      layout options for the worksheet.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSheetScale
+    fullName: useSheetScale
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'useSheetScale?: boolean;'
       return:
-        type: boolean
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+    name: Excel.Interfaces.HeaderFooterUpdateData
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state~0:complex'
+    name: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+    fullName: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+    spec.typeScript:
+      - uid: 'excel!Excel.HeaderFooterState:enum'
+        name: Excel.HeaderFooterState
+        fullName: Excel.HeaderFooterState
+      - name: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'
+        fullName: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'

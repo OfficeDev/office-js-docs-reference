@@ -1,71 +1,71 @@
-### YamlMime:TSType
-name: Excel.Interfaces.WorksheetUpdateData
-uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
-package: excel!
-fullName: Excel.Interfaces.WorksheetUpdateData
-summary: >-
-  An interface for updating data on the Worksheet object, for use in
-  `worksheet.set({ ... })`<!-- -->.
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: name
-    uid: 'excel!Excel.Interfaces.WorksheetUpdateData#name:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
+    summary: 'An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.WorksheetUpdateData
+    fullName: Excel.Interfaces.WorksheetUpdateData
+    langs:
+      - typeScript
+    type: interface
     package: excel!
-    fullName: name
-    summary: >-
+    children:
+      - 'excel!Excel.Interfaces.WorksheetUpdateData#name:member'
+      - 'excel!Excel.Interfaces.WorksheetUpdateData#position:member'
+      - 'excel!Excel.Interfaces.WorksheetUpdateData#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#name:member'
+    summary: |-
       The display name of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
-  - name: position
-    uid: 'excel!Excel.Interfaces.WorksheetUpdateData#position:member'
-    package: excel!
-    fullName: position
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#position:member'
+    summary: |-
       The zero-based position of the worksheet within the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'position?: number;'
       return:
-        type: number
-  - name: visibility
-    uid: 'excel!Excel.Interfaces.WorksheetUpdateData#visibility:member'
-    package: excel!
-    fullName: visibility
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visibility
+    fullName: visibility
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        visibility?: Excel.SheetVisibility | "Visible" | "Hidden" |
-        "VeryHidden";
+      content: 'visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
-        type: >-
-          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
-          | "VeryHidden"
+        type:
+          - 'excel!Excel.Interfaces.WorksheetUpdateData#visibility~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#visibility~0:complex'
+    name: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    spec.typeScript:
+      - uid: 'excel!Excel.SheetVisibility:enum'
+        name: Excel.SheetVisibility
+        fullName: Excel.SheetVisibility
+      - name: ' | "Visible" | "Hidden" | "VeryHidden"'
+        fullName: ' | "Visible" | "Hidden" | "VeryHidden"'

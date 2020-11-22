@@ -1,74 +1,74 @@
-### YamlMime:TSType
-name: Excel.FiveQuartersSet
-uid: 'excel!Excel.FiveQuartersSet:interface'
-package: excel!
-fullName: Excel.FiveQuartersSet
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: blackCircle
-    uid: 'excel!Excel.FiveQuartersSet#blackCircle:member'
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FiveQuartersSet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FiveQuartersSet
+    fullName: Excel.FiveQuartersSet
+    langs:
+      - typeScript
+    type: interface
     package: excel!
+    children:
+      - 'excel!Excel.FiveQuartersSet#blackCircle:member'
+      - 'excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member'
+      - 'excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member'
+      - 'excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member'
+      - 'excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member'
+  - uid: 'excel!Excel.FiveQuartersSet#blackCircle:member'
+    name: blackCircle
     fullName: blackCircle
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'blackCircle: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: circleWithOneWhiteQuarter
-    uid: 'excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member'
+    name: circleWithOneWhiteQuarter
     fullName: circleWithOneWhiteQuarter
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'circleWithOneWhiteQuarter: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: circleWithThreeWhiteQuarters
-    uid: 'excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member'
+    name: circleWithThreeWhiteQuarters
     fullName: circleWithThreeWhiteQuarters
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'circleWithThreeWhiteQuarters: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: circleWithTwoWhiteQuarters
-    uid: 'excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member'
+    name: circleWithTwoWhiteQuarters
     fullName: circleWithTwoWhiteQuarters
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'circleWithTwoWhiteQuarters: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
-  - name: whiteCircleAllWhiteQuarters
-    uid: 'excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member'
-    package: excel!
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member'
+    name: whiteCircleAllWhiteQuarters
     fullName: whiteCircleAllWhiteQuarters
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'whiteCircleAllWhiteQuarters: Icon;'
       return:
-        type: '<xref uid="excel!Excel.Icon:interface" />'
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

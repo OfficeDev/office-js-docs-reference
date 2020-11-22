@@ -1,94 +1,87 @@
-### YamlMime:TSType
-name: Excel.Interfaces.WorkbookLoadOptions
-uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-package: excel!
-fullName: Excel.Interfaces.WorkbookLoadOptions
-summary: >-
-  Workbook is the top level object which contains related workbook objects such
-  as worksheets, tables, ranges, etc. To learn more about the workbook object
-  model, read [Work with workbooks using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
-  -->.
-
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: $all
-    uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
-    package: excel!
-    fullName: $all
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+      To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorkbookLoadOptions
+    fullName: Excel.Interfaces.WorkbookLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: '$all?: boolean;'
       return:
-        type: boolean
-  - name: application
-    uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
-    package: excel!
-    fullName: application
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
+    summary: |-
       Represents the Excel application instance that contains this workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ApplicationLoadOptions:interface" />'
-  - name: bindings
-    uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
-    package: excel!
-    fullName: bindings
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
+    summary: |-
       Represents a collection of bindings that are part of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.BindingCollectionLoadOptions:interface" />
-  - name: tables
-    uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
-    package: excel!
-    fullName: tables
-    summary: >-
+        type:
+          - 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
+    summary: |-
       Represents a collection of tables associated with the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
+        type:
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+    name: Excel.Interfaces.ApplicationLoadOptions
+  - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+    name: Excel.Interfaces.BindingCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableCollectionLoadOptions

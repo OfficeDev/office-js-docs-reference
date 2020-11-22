@@ -1,28 +1,36 @@
-### YamlMime:TSEnum
-name: Excel.SaveBehavior
-uid: 'excel!Excel.SaveBehavior:enum'
-package: excel!
-fullName: Excel.SaveBehavior
-summary: >-
-  Specifies the save behavior for Workbook.save API.
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SaveBehavior:enum'
+    summary: |-
+      Specifies the save behavior for Workbook.save API.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-fields:
-  - name: prompt
-    uid: 'excel!Excel.SaveBehavior.prompt:member'
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.SaveBehavior
+    fullName: Excel.SaveBehavior
+    langs:
+      - typeScript
+    type: enum
     package: excel!
+    children:
+      - 'excel!Excel.SaveBehavior.prompt:member'
+      - 'excel!Excel.SaveBehavior.save:member'
+  - uid: 'excel!Excel.SaveBehavior.prompt:member'
     summary: >-
-      Prompts the saveas experience to the user if the workbook has not been
-      saved, Ignored if the workbook was previously saved.
-  - name: save
-    uid: 'excel!Excel.SaveBehavior.save:member'
-    package: excel!
+      Prompts the saveas experience to the user if the workbook has not been saved, Ignored if the workbook was
+      previously saved.
+    name: prompt
+    fullName: prompt
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Prompt"'
+  - uid: 'excel!Excel.SaveBehavior.save:member'
     summary: >-
-      Save the workbook without prompting the user. If file is not saved, it
-      will save it with default name under default location.
+      Save the workbook without prompting the user. If file is not saved, it will save it with default name under
+      default location.
+    name: save
+    fullName: save
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Save"'

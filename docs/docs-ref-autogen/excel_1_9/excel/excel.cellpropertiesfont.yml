@@ -1,59 +1,60 @@
-### YamlMime:TSType
-name: Excel.CellPropertiesFont
-uid: 'excel!Excel.CellPropertiesFont:interface'
-package: excel!
-fullName: Excel.CellPropertiesFont
-summary: >-
-  Represents the `format.font` properties of `getCellProperties`<!-- -->,
-  `getRowProperties`<!-- -->, and `getColumnProperties` or the `format.font`
-  input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!-- -->,
-  and `setColumnProperties`<!-- -->.
-
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
-remarks: ''
-isPreview: false
-isDeprecated: false
-type: interface
-properties:
-  - name: bold
-    uid: 'excel!Excel.CellPropertiesFont#bold:member'
-    package: excel!
-    fullName: bold
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellPropertiesFont:interface'
     summary: >-
+      Represents the `format.font` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+      `getColumnProperties` or the `format.font` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!--
+      -->, and `setColumnProperties`<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesFont
+    fullName: Excel.CellPropertiesFont
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellPropertiesFont#bold:member'
+      - 'excel!Excel.CellPropertiesFont#color:member'
+      - 'excel!Excel.CellPropertiesFont#italic:member'
+      - 'excel!Excel.CellPropertiesFont#name:member'
+      - 'excel!Excel.CellPropertiesFont#size:member'
+      - 'excel!Excel.CellPropertiesFont#strikethrough:member'
+      - 'excel!Excel.CellPropertiesFont#subscript:member'
+      - 'excel!Excel.CellPropertiesFont#superscript:member'
+      - 'excel!Excel.CellPropertiesFont#tintAndShade:member'
+      - 'excel!Excel.CellPropertiesFont#underline:member'
+  - uid: 'excel!Excel.CellPropertiesFont#bold:member'
+    summary: |-
       Represents the `format.font.bold` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'bold?: boolean;'
       return:
-        type: boolean
-  - name: color
-    uid: 'excel!Excel.CellPropertiesFont#color:member'
-    package: excel!
-    fullName: color
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFont#color:member'
+    summary: |-
       Represents the `format.font.color` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'color?: string;'
       return:
-        type: string
+        type:
+          - string
         description: >-
 
 
@@ -138,151 +139,133 @@ properties:
           });
 
           ```
-  - name: italic
-    uid: 'excel!Excel.CellPropertiesFont#italic:member'
-    package: excel!
-    fullName: italic
-    summary: >-
+  - uid: 'excel!Excel.CellPropertiesFont#italic:member'
+    summary: |-
       Represents the `format.font.italic` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'italic?: boolean;'
       return:
-        type: boolean
-  - name: name
-    uid: 'excel!Excel.CellPropertiesFont#name:member'
-    package: excel!
-    fullName: name
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFont#name:member'
+    summary: |-
       Represents the `format.font.name` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'name?: string;'
       return:
-        type: string
-  - name: size
-    uid: 'excel!Excel.CellPropertiesFont#size:member'
-    package: excel!
-    fullName: size
-    summary: >-
+        type:
+          - string
+  - uid: 'excel!Excel.CellPropertiesFont#size:member'
+    summary: |-
       Represents the `format.font.size` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'size?: number;'
       return:
-        type: number
-  - name: strikethrough
-    uid: 'excel!Excel.CellPropertiesFont#strikethrough:member'
-    package: excel!
-    fullName: strikethrough
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.CellPropertiesFont#strikethrough:member'
+    summary: |-
       Represents the `format.font.strikethrough` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'strikethrough?: boolean;'
       return:
-        type: boolean
-  - name: subscript
-    uid: 'excel!Excel.CellPropertiesFont#subscript:member'
-    package: excel!
-    fullName: subscript
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFont#subscript:member'
+    summary: |-
       Represents the `format.font.subscript` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'subscript?: boolean;'
       return:
-        type: boolean
-  - name: superscript
-    uid: 'excel!Excel.CellPropertiesFont#superscript:member'
-    package: excel!
-    fullName: superscript
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFont#superscript:member'
+    summary: |-
       Represents the `format.font.superscript` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'superscript?: boolean;'
       return:
-        type: boolean
-  - name: tintAndShade
-    uid: 'excel!Excel.CellPropertiesFont#tintAndShade:member'
-    package: excel!
-    fullName: tintAndShade
-    summary: >-
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFont#tintAndShade:member'
+    summary: |-
       Represents the `format.font.tintAndShade` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
     syntax:
       content: 'tintAndShade?: number;'
       return:
-        type: number
-  - name: underline
-    uid: 'excel!Excel.CellPropertiesFont#underline:member'
-    package: excel!
-    fullName: underline
-    summary: >-
+        type:
+          - number
+  - uid: 'excel!Excel.CellPropertiesFont#underline:member'
+    summary: |-
       Represents the `format.font.underline` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
     syntax:
-      content: >-
-        underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" |
-        "SingleAccountant" | "DoubleAccountant";
+      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" |
-          "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+        type:
+          - 'excel!Excel.CellPropertiesFont#underline~0:complex'
+references:
+  - uid: 'excel!Excel.CellPropertiesFont#underline~0:complex'
+    name: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    fullName: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeUnderlineStyle:enum'
+        name: Excel.RangeUnderlineStyle
+        fullName: Excel.RangeUnderlineStyle
+      - name: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'
+        fullName: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'
