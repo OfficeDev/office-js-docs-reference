@@ -3,7 +3,13 @@ name: Office.Tab
 uid: 'office!Office.Tab:interface'
 package: office!
 fullName: Office.Tab
-summary: Represents an individual tab and the state it should have.
+summary: >-
+  Represents an individual tab and the state it should have. For code examples,
+  see [Enable and Disable Add-in
+  Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)
+  and [Create custom contextual
+  tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -18,7 +24,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'controls: Control[];'
+      content: 'controls?: Control[];'
       return:
         type: '<xref uid="office!Office.Control:interface" />[]'
   - name: id
@@ -33,3 +39,17 @@ properties:
       content: 'id: string;'
       return:
         type: string
+  - name: visibility
+    uid: 'office!Office.Tab#visibility:member'
+    package: office!
+    fullName: visibility
+    summary: >-
+      Specifies whether the tab is visible on the ribbon. Used only with
+      contextual tabs.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visibility?: boolean;'
+      return:
+        type: boolean

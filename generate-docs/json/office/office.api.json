@@ -467,7 +467,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#onVisibilityModeChanged:member(1)",
-                  "docComment": "/**\n * Adds a listener for the `onVisbilityModeChanged` event.\n *\n * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves to a function when the listener is added. The `RemoveEventListener` type is defined with `type RemoveEventListener = () => Promise<void>`. Calling it removes the listener.\n */\n",
+                  "docComment": "/**\n * Adds a listener for the `onVisibilityModeChanged` event.\n *\n * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves to a function when the listener is added. The `RemoveEventListener` type is defined with `type RemoveEventListener = () => Promise<void>`. Calling it removes the listener.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -751,7 +751,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "office!Office.AddinCommands.EventCompletedOptions#allowEvent:member",
-                      "docComment": "/**\n * A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.\n */\n",
+                      "docComment": "/**\n * A boolean value. When the completed method is used to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -4278,31 +4278,6 @@
                   ],
                   "releaseTag": "Public",
                   "name": "id",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
-                  "canonicalReference": "office!Office.Control#visible:member",
-                  "docComment": "/**\n * Indicates whether the control should be visible or hidden. The default is true.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "visible?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "visible",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -26440,7 +26415,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Ribbon:interface",
-              "docComment": "/**\n * An interface that contains all the functionality provided to manage the state of the OFfice ribbon.\n */\n",
+              "docComment": "/**\n * An interface that contains all the functionality provided to manage the state of the Office ribbon.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -26452,8 +26427,57 @@
               "members": [
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Ribbon#requestCreateControls:member(1)",
+                  "docComment": "/**\n * Registers a custom contextual tab with Office and defines the tab's controls. This method only requests that the tab be registered. The actual registration is controlled by the Office application and may not be complete when the returned `Promise` object is resolved. For more information and code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @param tabDefinition - Specifies the tab's properties and child controls and their properties. Pass a JSON string that conforms to the Office dynamic-ribbon JSON schema to `JSON.parse`, and then pass the returned object to this method.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "requestCreateControls(tabDefinition: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Object",
+                      "canonicalReference": "!Object:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "tabDefinition",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "requestCreateControls"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Ribbon#requestUpdate:member(1)",
-                  "docComment": "/**\n * Sends a request to Office to update the ribbon. Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.\n *\n * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.\n */\n",
+                  "docComment": "/**\n * Sends a request to Office to update the ribbon. Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API. For code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28044,7 +28068,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Tab:interface",
-              "docComment": "/**\n * Represents an individual tab and the state it should have.\n */\n",
+              "docComment": "/**\n * Represents an individual tab and the state it should have. For code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -28061,7 +28085,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "controls: "
+                      "text": "controls?: "
                     },
                     {
                       "kind": "Reference",
@@ -28104,6 +28128,31 @@
                   ],
                   "releaseTag": "Public",
                   "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Tab#visibility:member",
+                  "docComment": "/**\n * Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "visibility?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "visibility",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
