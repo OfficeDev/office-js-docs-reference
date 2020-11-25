@@ -28135,12 +28135,12 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "office!Office.Tab#visibility:member",
+                  "canonicalReference": "office!Office.Tab#visible:member",
                   "docComment": "/**\n * Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "visibility?: "
+                      "text": "visible?: "
                     },
                     {
                       "kind": "Content",
@@ -28152,7 +28152,7 @@
                     }
                   ],
                   "releaseTag": "Beta",
-                  "name": "visibility",
+                  "name": "visible",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2

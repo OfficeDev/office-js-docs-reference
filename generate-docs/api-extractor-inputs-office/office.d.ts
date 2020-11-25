@@ -612,7 +612,7 @@ export declare namespace Office {
          *
          * @beta 
          */
-        visibility?: boolean;
+        visible?: boolean;
     }
     /**
      * Represents an individual control or command and the state it should have.
