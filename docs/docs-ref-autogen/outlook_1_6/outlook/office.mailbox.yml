@@ -360,7 +360,7 @@ methods:
           var item = Office.context.mailbox.item;
 
           // Check that item is not null.
-          if (item != null) {
+          if (item !== null) {
               // Work with item e.g., define and call function that
               // loads the properties of the newly selected item.
               loadProps(item);
