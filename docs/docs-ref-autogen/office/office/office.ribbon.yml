@@ -5,12 +5,40 @@ package: office!
 fullName: Office.Ribbon
 summary: >-
   An interface that contains all the functionality provided to manage the state
-  of the OFfice ribbon.
+  of the Office ribbon.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
+  - name: requestCreateControls(tabDefinition)
+    uid: 'office!Office.Ribbon#requestCreateControls:member(1)'
+    package: office!
+    fullName: requestCreateControls(tabDefinition)
+    summary: >-
+      Registers a custom contextual tab with Office and defines the tab's
+      controls. This method only requests that the tab be registered. The actual
+      registration is controlled by the Office application and may not be
+      complete when the returned `Promise` object is resolved. For more
+      information and code examples, see [Create custom contextual
+      tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
+      -->.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'requestCreateControls(tabDefinition: Object): Promise<void>;'
+      parameters:
+        - id: tabDefinition
+          description: >-
+            Specifies the tab's properties and child controls and their
+            properties. Pass a JSON string that conforms to the Office
+            dynamic-ribbon JSON schema to `JSON.parse`<!-- -->, and then pass
+            the returned object to this method.
+          type: Object
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
   - name: requestUpdate(input)
     uid: 'office!Office.Ribbon#requestUpdate:member(1)'
     package: office!
@@ -19,7 +47,12 @@ methods:
       Sends a request to Office to update the ribbon. Note that this API is only
       to request an update. The actual UI update to the ribbon is controlled by
       the Office application and hence the exact timing of the ribbon update (or
-      refresh) cannot be determined by the completion of this API.
+      refresh) cannot be determined by the completion of this API. For code
+      examples, see [Enable and Disable Add-in
+      Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)
+      and [Create custom contextual
+      tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
+      -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
