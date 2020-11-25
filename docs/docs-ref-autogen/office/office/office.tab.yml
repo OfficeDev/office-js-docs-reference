@@ -39,10 +39,10 @@ properties:
       content: 'id: string;'
       return:
         type: string
-  - name: visibility
-    uid: 'office!Office.Tab#visibility:member'
+  - name: visible
+    uid: 'office!Office.Tab#visible:member'
     package: office!
-    fullName: visibility
+    fullName: visible
     summary: >-
       Specifies whether the tab is visible on the ribbon. Used only with
       contextual tabs.
@@ -50,6 +50,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'visibility?: boolean;'
+      content: 'visible?: boolean;'
       return:
         type: boolean
