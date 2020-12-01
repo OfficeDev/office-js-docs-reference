@@ -13667,9 +13667,9 @@
                 loadNewItem,
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
-                            // Handle error.
-                        }
-                    });
+                        // Handle error.
+                    }
+                });
         });
     };
 
@@ -13678,7 +13678,7 @@
 
         // Check that item is not null.
         if (item !== null) {
-            // Work with item e.g., define and call function that
+            // Work with item, e.g., define and call function that
             // loads the properties of the newly selected item.
             loadProps(item);
         }
