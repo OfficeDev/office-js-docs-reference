@@ -15,15 +15,19 @@ fields:
     uid: 'onenote!OneNote.PageContentType.image:member'
     package: onenote!
     summary: ''
+    value: '"Image"'
   - name: ink
     uid: 'onenote!OneNote.PageContentType.ink:member'
     package: onenote!
     summary: ''
+    value: '"Ink"'
   - name: other
     uid: 'onenote!OneNote.PageContentType.other:member'
     package: onenote!
     summary: ''
+    value: '"Other"'
   - name: outline
     uid: 'onenote!OneNote.PageContentType.outline:member'
     package: onenote!
     summary: ''
+    value: '"Outline"'

@@ -15,19 +15,24 @@ fields:
     uid: 'excel!Excel.RangeUnderlineStyle.double:member'
     package: excel!
     summary: ''
+    value: '"Double"'
   - name: doubleAccountant
     uid: 'excel!Excel.RangeUnderlineStyle.doubleAccountant:member'
     package: excel!
     summary: ''
+    value: '"DoubleAccountant"'
   - name: none
     uid: 'excel!Excel.RangeUnderlineStyle.none:member'
     package: excel!
     summary: ''
+    value: '"None"'
   - name: single
     uid: 'excel!Excel.RangeUnderlineStyle.single:member'
     package: excel!
     summary: ''
+    value: '"Single"'
   - name: singleAccountant
     uid: 'excel!Excel.RangeUnderlineStyle.singleAccountant:member'
     package: excel!
     summary: ''
+    value: '"SingleAccountant"'

@@ -18,7 +18,9 @@ fields:
     uid: 'excel!Excel.CloseBehavior.save:member'
     package: excel!
     summary: Save the possible changes before closing the workbook.
+    value: '"Save"'
   - name: skipSave
     uid: 'excel!Excel.CloseBehavior.skipSave:member'
     package: excel!
     summary: Discard the possible changes when closing the workbook.
+    value: '"SkipSave"'

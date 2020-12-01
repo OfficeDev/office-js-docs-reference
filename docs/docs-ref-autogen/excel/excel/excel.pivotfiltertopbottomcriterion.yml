@@ -18,27 +18,34 @@ fields:
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomItems:member'
     package: excel!
     summary: ''
+    value: '"BottomItems"'
   - name: bottomPercent
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomPercent:member'
     package: excel!
     summary: ''
+    value: '"BottomPercent"'
   - name: bottomSum
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomSum:member'
     package: excel!
     summary: ''
+    value: '"BottomSum"'
   - name: invalid
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.invalid:member'
     package: excel!
     summary: ''
+    value: '"Invalid"'
   - name: topItems
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.topItems:member'
     package: excel!
     summary: ''
+    value: '"TopItems"'
   - name: topPercent
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.topPercent:member'
     package: excel!
     summary: ''
+    value: '"TopPercent"'
   - name: topSum
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.topSum:member'
     package: excel!
     summary: ''
+    value: '"TopSum"'

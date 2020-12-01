@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.DeleteShiftDirection.left:member'
     package: excel!
     summary: ''
+    value: '"Left"'
   - name: up
     uid: 'excel!Excel.DeleteShiftDirection.up:member'
     package: excel!
     summary: ''
+    value: '"Up"'

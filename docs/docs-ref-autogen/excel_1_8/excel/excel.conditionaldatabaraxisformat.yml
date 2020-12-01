@@ -18,11 +18,14 @@ fields:
     uid: 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
     package: excel!
     summary: ''
+    value: '"Automatic"'
   - name: cellMidPoint
     uid: 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
     package: excel!
     summary: ''
+    value: '"CellMidPoint"'
   - name: none
     uid: 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
     package: excel!
     summary: ''
+    value: '"None"'

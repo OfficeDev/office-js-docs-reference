@@ -18,27 +18,34 @@ fields:
     uid: 'excel!Excel.ShapeTextOrientation.eastAsianVertical:member'
     package: excel!
     summary: ''
+    value: '"EastAsianVertical"'
   - name: horizontal
     uid: 'excel!Excel.ShapeTextOrientation.horizontal:member'
     package: excel!
     summary: ''
+    value: '"Horizontal"'
   - name: mongolianVertical
     uid: 'excel!Excel.ShapeTextOrientation.mongolianVertical:member'
     package: excel!
     summary: ''
+    value: '"MongolianVertical"'
   - name: vertical
     uid: 'excel!Excel.ShapeTextOrientation.vertical:member'
     package: excel!
     summary: ''
+    value: '"Vertical"'
   - name: vertical270
     uid: 'excel!Excel.ShapeTextOrientation.vertical270:member'
     package: excel!
     summary: ''
+    value: '"Vertical270"'
   - name: wordArtVertical
     uid: 'excel!Excel.ShapeTextOrientation.wordArtVertical:member'
     package: excel!
     summary: ''
+    value: '"WordArtVertical"'
   - name: wordArtVerticalRTL
     uid: 'excel!Excel.ShapeTextOrientation.wordArtVerticalRTL:member'
     package: excel!
     summary: ''
+    value: '"WordArtVerticalRTL"'

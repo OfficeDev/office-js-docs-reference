@@ -15,15 +15,19 @@ fields:
     uid: 'excel!Excel.PrintErrorType.asDisplayed:member'
     package: excel!
     summary: ''
+    value: '"AsDisplayed"'
   - name: blank
     uid: 'excel!Excel.PrintErrorType.blank:member'
     package: excel!
     summary: ''
+    value: '"Blank"'
   - name: dash
     uid: 'excel!Excel.PrintErrorType.dash:member'
     package: excel!
     summary: ''
+    value: '"Dash"'
   - name: notAvailable
     uid: 'excel!Excel.PrintErrorType.notAvailable:member'
     package: excel!
     summary: ''
+    value: '"NotAvailable"'

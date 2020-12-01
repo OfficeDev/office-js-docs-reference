@@ -15,55 +15,69 @@ fields:
     uid: 'word!Word.ImageFormat.bmp:member'
     package: word!
     summary: ''
+    value: '"Bmp"'
   - name: emf
     uid: 'word!Word.ImageFormat.emf:member'
     package: word!
     summary: ''
+    value: '"Emf"'
   - name: exif
     uid: 'word!Word.ImageFormat.exif:member'
     package: word!
     summary: ''
+    value: '"Exif"'
   - name: gif
     uid: 'word!Word.ImageFormat.gif:member'
     package: word!
     summary: ''
+    value: '"Gif"'
   - name: icon
     uid: 'word!Word.ImageFormat.icon:member'
     package: word!
     summary: ''
+    value: '"Icon"'
   - name: jpeg
     uid: 'word!Word.ImageFormat.jpeg:member'
     package: word!
     summary: ''
+    value: '"Jpeg"'
   - name: pdf
     uid: 'word!Word.ImageFormat.pdf:member'
     package: word!
     summary: ''
+    value: '"Pdf"'
   - name: pict
     uid: 'word!Word.ImageFormat.pict:member'
     package: word!
     summary: ''
+    value: '"Pict"'
   - name: png
     uid: 'word!Word.ImageFormat.png:member'
     package: word!
     summary: ''
+    value: '"Png"'
   - name: svg
     uid: 'word!Word.ImageFormat.svg:member'
     package: word!
     summary: ''
+    value: '"Svg"'
   - name: tiff
     uid: 'word!Word.ImageFormat.tiff:member'
     package: word!
     summary: ''
+    value: '"Tiff"'
   - name: undefined
     uid: 'word!Word.ImageFormat.undefined:member'
     package: word!
     summary: ''
+    value: '"Undefined"'
   - name: unsupported
     uid: 'word!Word.ImageFormat.unsupported:member'
     package: word!
     summary: ''
+    value: '"Unsupported"'
   - name: wmf
     uid: 'word!Word.ImageFormat.wmf:member'
     package: word!
     summary: ''
+    value: '"Wmf"'

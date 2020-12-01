@@ -21,7 +21,9 @@ fields:
     uid: 'outlook!Office.MailboxEnums.LocationType.Custom:member'
     package: outlook!
     summary: A custom location.
+    value: '"custom"'
   - name: Room
     uid: 'outlook!Office.MailboxEnums.LocationType.Room:member'
     package: outlook!
     summary: A conference room or similar resource.
+    value: '"room"'

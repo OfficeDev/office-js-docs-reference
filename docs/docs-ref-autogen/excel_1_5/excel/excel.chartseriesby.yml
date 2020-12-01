@@ -24,11 +24,14 @@ fields:
       On Desktop, the "auto" option will inspect the source data shape to
       automatically guess whether the data is by rows or columns; in Excel on
       the web, "auto" will simply default to "columns".
+    value: '"Auto"'
   - name: columns
     uid: 'excel!Excel.ChartSeriesBy.columns:member'
     package: excel!
     summary: ''
+    value: '"Columns"'
   - name: rows
     uid: 'excel!Excel.ChartSeriesBy.rows:member'
     package: excel!
     summary: ''
+    value: '"Rows"'

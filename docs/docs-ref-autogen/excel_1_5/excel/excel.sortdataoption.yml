@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.SortDataOption.normal:member'
     package: excel!
     summary: ''
+    value: '"Normal"'
   - name: textAsNumber
     uid: 'excel!Excel.SortDataOption.textAsNumber:member'
     package: excel!
     summary: ''
+    value: '"TextAsNumber"'

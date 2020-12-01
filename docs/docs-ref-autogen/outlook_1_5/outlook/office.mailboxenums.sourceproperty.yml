@@ -22,7 +22,9 @@ fields:
     uid: 'outlook!Office.MailboxEnums.SourceProperty.Body:member'
     package: outlook!
     summary: The source of the data is from the body of the item.
+    value: '"body"'
   - name: Subject
     uid: 'outlook!Office.MailboxEnums.SourceProperty.Subject:member'
     package: outlook!
     summary: The source of the data is from the subject of the item.
+    value: '"subject"'

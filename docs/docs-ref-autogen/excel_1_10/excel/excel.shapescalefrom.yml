@@ -19,11 +19,14 @@ fields:
     uid: 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
     package: excel!
     summary: ''
+    value: '"ScaleFromBottomRight"'
   - name: scaleFromMiddle
     uid: 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
     package: excel!
     summary: ''
+    value: '"ScaleFromMiddle"'
   - name: scaleFromTopLeft
     uid: 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
     package: excel!
     summary: ''
+    value: '"ScaleFromTopLeft"'

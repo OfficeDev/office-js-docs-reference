@@ -21,39 +21,46 @@ fields:
     summary: >-
       AnnotationAdded represents the event an annotation has been added to the
       document.
+    value: '"AnnotationAdded"'
   - name: annotationChanged
     uid: 'word!Word.EventType.annotationChanged:member'
     package: word!
     summary: >-
       AnnotationAdded represents the event an annotation has been updated in the
       document.
+    value: '"AnnotationChanged"'
   - name: annotationDeleted
     uid: 'word!Word.EventType.annotationDeleted:member'
     package: word!
     summary: >-
       AnnotationAdded represents the event an annotation has been deleted from
       the document.
+    value: '"AnnotationDeleted"'
   - name: contentControlAdded
     uid: 'word!Word.EventType.contentControlAdded:member'
     package: word!
     summary: >-
       ContentControlAdded represents the event a content control has been added
       to the document.
+    value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: 'word!Word.EventType.contentControlDataChanged:member'
     package: word!
     summary: >-
       ContentControlDataChanged represents the event that the data in the
       content control have been changed.
+    value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: 'word!Word.EventType.contentControlDeleted:member'
     package: word!
     summary: >-
       ContentControlDeleted represent the event that the content control has
       been deleted.
+    value: '"ContentControlDeleted"'
   - name: contentControlSelectionChanged
     uid: 'word!Word.EventType.contentControlSelectionChanged:member'
     package: word!
     summary: >-
       ContentControlSelectionChanged represents the event that the selection in
       the content control has been changed.
+    value: '"ContentControlSelectionChanged"'

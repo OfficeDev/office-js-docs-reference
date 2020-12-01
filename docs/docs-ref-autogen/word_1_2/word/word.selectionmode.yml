@@ -21,13 +21,16 @@ fields:
     summary: >-
       The cursor is at the end of the selection (just after the end of the
       selected range).
+    value: '"End"'
   - name: select
     uid: 'word!Word.SelectionMode.select:member'
     package: word!
     summary: The entire range is selected.
+    value: '"Select"'
   - name: start
     uid: 'word!Word.SelectionMode.start:member'
     package: word!
     summary: >-
       The cursor is at the beginning of the selection (just before the start of
       the selected range).
+    value: '"Start"'

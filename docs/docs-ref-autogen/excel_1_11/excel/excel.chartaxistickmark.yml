@@ -15,15 +15,19 @@ fields:
     uid: 'excel!Excel.ChartAxisTickMark.cross:member'
     package: excel!
     summary: ''
+    value: '"Cross"'
   - name: inside
     uid: 'excel!Excel.ChartAxisTickMark.inside:member'
     package: excel!
     summary: ''
+    value: '"Inside"'
   - name: none
     uid: 'excel!Excel.ChartAxisTickMark.none:member'
     package: excel!
     summary: ''
+    value: '"None"'
   - name: outside
     uid: 'excel!Excel.ChartAxisTickMark.outside:member'
     package: excel!
     summary: ''
+    value: '"Outside"'

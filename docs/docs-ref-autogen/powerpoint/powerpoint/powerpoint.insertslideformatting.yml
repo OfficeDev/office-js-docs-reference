@@ -18,7 +18,9 @@ fields:
     uid: 'powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member'
     package: powerpoint!
     summary: Copy the source theme into the target presentation and use that theme.
+    value: '"KeepSourceFormatting"'
   - name: useDestinationTheme
     uid: 'powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member'
     package: powerpoint!
     summary: Use the existing theme in the target presentation.
+    value: '"UseDestinationTheme"'

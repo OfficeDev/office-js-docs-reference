@@ -18,19 +18,24 @@ fields:
     uid: 'excel!Excel.ConditionalTopBottomCriterionType.bottomItems:member'
     package: excel!
     summary: ''
+    value: '"BottomItems"'
   - name: bottomPercent
     uid: 'excel!Excel.ConditionalTopBottomCriterionType.bottomPercent:member'
     package: excel!
     summary: ''
+    value: '"BottomPercent"'
   - name: invalid
     uid: 'excel!Excel.ConditionalTopBottomCriterionType.invalid:member'
     package: excel!
     summary: ''
+    value: '"Invalid"'
   - name: topItems
     uid: 'excel!Excel.ConditionalTopBottomCriterionType.topItems:member'
     package: excel!
     summary: ''
+    value: '"TopItems"'
   - name: topPercent
     uid: 'excel!Excel.ConditionalTopBottomCriterionType.topPercent:member'
     package: excel!
     summary: ''
+    value: '"TopPercent"'

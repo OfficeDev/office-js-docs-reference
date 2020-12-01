@@ -20,11 +20,14 @@ fields:
     summary: >-
       Represents a content control shown as a shaded rectangle or bounding box
       (with optional title).
+    value: '"BoundingBox"'
   - name: hidden
     uid: 'word!Word.ContentControlAppearance.hidden:member'
     package: word!
     summary: Represents a content control that is not shown.
+    value: '"Hidden"'
   - name: tags
     uid: 'word!Word.ContentControlAppearance.tags:member'
     package: word!
     summary: Represents a content control shown as start and end markers.
+    value: '"Tags"'

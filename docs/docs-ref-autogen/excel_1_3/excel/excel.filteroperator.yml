@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.FilterOperator.and:member'
     package: excel!
     summary: ''
+    value: '"And"'
   - name: or
     uid: 'excel!Excel.FilterOperator.or:member'
     package: excel!
     summary: ''
+    value: '"Or"'

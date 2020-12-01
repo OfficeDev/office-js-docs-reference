@@ -18,35 +18,44 @@ fields:
     uid: 'excel!Excel.ConditionalCellValueOperator.between:member'
     package: excel!
     summary: ''
+    value: '"Between"'
   - name: equalTo
     uid: 'excel!Excel.ConditionalCellValueOperator.equalTo:member'
     package: excel!
     summary: ''
+    value: '"EqualTo"'
   - name: greaterThan
     uid: 'excel!Excel.ConditionalCellValueOperator.greaterThan:member'
     package: excel!
     summary: ''
+    value: '"GreaterThan"'
   - name: greaterThanOrEqual
     uid: 'excel!Excel.ConditionalCellValueOperator.greaterThanOrEqual:member'
     package: excel!
     summary: ''
+    value: '"GreaterThanOrEqual"'
   - name: invalid
     uid: 'excel!Excel.ConditionalCellValueOperator.invalid:member'
     package: excel!
     summary: ''
+    value: '"Invalid"'
   - name: lessThan
     uid: 'excel!Excel.ConditionalCellValueOperator.lessThan:member'
     package: excel!
     summary: ''
+    value: '"LessThan"'
   - name: lessThanOrEqual
     uid: 'excel!Excel.ConditionalCellValueOperator.lessThanOrEqual:member'
     package: excel!
     summary: ''
+    value: '"LessThanOrEqual"'
   - name: notBetween
     uid: 'excel!Excel.ConditionalCellValueOperator.notBetween:member'
     package: excel!
     summary: ''
+    value: '"NotBetween"'
   - name: notEqualTo
     uid: 'excel!Excel.ConditionalCellValueOperator.notEqualTo:member'
     package: excel!
     summary: ''
+    value: '"NotEqualTo"'

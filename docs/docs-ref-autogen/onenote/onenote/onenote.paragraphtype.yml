@@ -15,19 +15,24 @@ fields:
     uid: 'onenote!OneNote.ParagraphType.image:member'
     package: onenote!
     summary: ''
+    value: '"Image"'
   - name: ink
     uid: 'onenote!OneNote.ParagraphType.ink:member'
     package: onenote!
     summary: ''
+    value: '"Ink"'
   - name: other
     uid: 'onenote!OneNote.ParagraphType.other:member'
     package: onenote!
     summary: ''
+    value: '"Other"'
   - name: richText
     uid: 'onenote!OneNote.ParagraphType.richText:member'
     package: onenote!
     summary: ''
+    value: '"RichText"'
   - name: table
     uid: 'onenote!OneNote.ParagraphType.table:member'
     package: onenote!
     summary: ''
+    value: '"Table"'

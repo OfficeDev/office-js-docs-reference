@@ -12,23 +12,29 @@ fields:
     uid: 'visio!Visio.ErrorCodes.accessDenied:member'
     package: visio!
     summary: ''
+    value: '"AccessDenied"'
   - name: generalException
     uid: 'visio!Visio.ErrorCodes.generalException:member'
     package: visio!
     summary: ''
+    value: '"GeneralException"'
   - name: invalidArgument
     uid: 'visio!Visio.ErrorCodes.invalidArgument:member'
     package: visio!
     summary: ''
+    value: '"InvalidArgument"'
   - name: itemNotFound
     uid: 'visio!Visio.ErrorCodes.itemNotFound:member'
     package: visio!
     summary: ''
+    value: '"ItemNotFound"'
   - name: notImplemented
     uid: 'visio!Visio.ErrorCodes.notImplemented:member'
     package: visio!
     summary: ''
+    value: '"NotImplemented"'
   - name: unsupportedOperation
     uid: 'visio!Visio.ErrorCodes.unsupportedOperation:member'
     package: visio!
     summary: ''
+    value: '"UnsupportedOperation"'

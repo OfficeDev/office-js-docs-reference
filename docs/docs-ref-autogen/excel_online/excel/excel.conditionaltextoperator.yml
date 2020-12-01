@@ -18,19 +18,24 @@ fields:
     uid: 'excel!Excel.ConditionalTextOperator.beginsWith:member'
     package: excel!
     summary: ''
+    value: '"BeginsWith"'
   - name: contains
     uid: 'excel!Excel.ConditionalTextOperator.contains:member'
     package: excel!
     summary: ''
+    value: '"Contains"'
   - name: endsWith
     uid: 'excel!Excel.ConditionalTextOperator.endsWith:member'
     package: excel!
     summary: ''
+    value: '"EndsWith"'
   - name: invalid
     uid: 'excel!Excel.ConditionalTextOperator.invalid:member'
     package: excel!
     summary: ''
+    value: '"Invalid"'
   - name: notContains
     uid: 'excel!Excel.ConditionalTextOperator.notContains:member'
     package: excel!
     summary: ''
+    value: '"NotContains"'

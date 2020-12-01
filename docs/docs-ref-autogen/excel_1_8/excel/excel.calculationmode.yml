@@ -17,13 +17,16 @@ fields:
     summary: >-
       The default recalculation behavior where Excel calculates new formula
       results every time the relevant data is changed.
+    value: '"Automatic"'
   - name: automaticExceptTables
     uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
     package: excel!
     summary: >-
       Calculates new formula results every time the relevant data is changed,
       unless the formula is in a data table.
+    value: '"AutomaticExceptTables"'
   - name: manual
     uid: 'excel!Excel.CalculationMode.manual:member'
     package: excel!
     summary: Calculations only occur when the user or add-in requests them.
+    value: '"Manual"'

@@ -18,23 +18,29 @@ fields:
     uid: 'excel!Excel.CommentChangeType.commentEdited:member'
     package: excel!
     summary: Comments were edited.
+    value: '"CommentEdited"'
   - name: commentReopened
     uid: 'excel!Excel.CommentChangeType.commentReopened:member'
     package: excel!
     summary: Comments were reopened.
+    value: '"CommentReopened"'
   - name: commentResolved
     uid: 'excel!Excel.CommentChangeType.commentResolved:member'
     package: excel!
     summary: Comments were resolved.
+    value: '"CommentResolved"'
   - name: replyAdded
     uid: 'excel!Excel.CommentChangeType.replyAdded:member'
     package: excel!
     summary: Replies were added.
+    value: '"ReplyAdded"'
   - name: replyDeleted
     uid: 'excel!Excel.CommentChangeType.replyDeleted:member'
     package: excel!
     summary: Replies were deleted.
+    value: '"ReplyDeleted"'
   - name: replyEdited
     uid: 'excel!Excel.CommentChangeType.replyEdited:member'
     package: excel!
     summary: Replies were edited.
+    value: '"ReplyEdited"'

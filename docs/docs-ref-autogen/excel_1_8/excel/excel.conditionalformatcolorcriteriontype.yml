@@ -18,27 +18,34 @@ fields:
     uid: 'excel!Excel.ConditionalFormatColorCriterionType.formula:member'
     package: excel!
     summary: ''
+    value: '"Formula"'
   - name: highestValue
     uid: 'excel!Excel.ConditionalFormatColorCriterionType.highestValue:member'
     package: excel!
     summary: ''
+    value: '"HighestValue"'
   - name: invalid
     uid: 'excel!Excel.ConditionalFormatColorCriterionType.invalid:member'
     package: excel!
     summary: ''
+    value: '"Invalid"'
   - name: lowestValue
     uid: 'excel!Excel.ConditionalFormatColorCriterionType.lowestValue:member'
     package: excel!
     summary: ''
+    value: '"LowestValue"'
   - name: number
     uid: 'excel!Excel.ConditionalFormatColorCriterionType.number:member'
     package: excel!
     summary: ''
+    value: '"Number"'
   - name: percent
     uid: 'excel!Excel.ConditionalFormatColorCriterionType.percent:member'
     package: excel!
     summary: ''
+    value: '"Percent"'
   - name: percentile
     uid: 'excel!Excel.ConditionalFormatColorCriterionType.percentile:member'
     package: excel!
     summary: ''
+    value: '"Percentile"'

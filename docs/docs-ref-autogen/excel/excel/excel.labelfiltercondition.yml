@@ -26,6 +26,7 @@ fields:
 
       Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
       {`exclusive`<!-- -->}<!-- -->.
+    value: '"BeginsWith"'
   - name: between
     uid: 'excel!Excel.LabelFilterCondition.between:member'
     package: excel!
@@ -35,6 +36,7 @@ fields:
 
       Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->.
       Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+    value: '"Between"'
   - name: contains
     uid: 'excel!Excel.LabelFilterCondition.contains:member'
     package: excel!
@@ -44,6 +46,7 @@ fields:
 
       Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
       {`exclusive`<!-- -->}<!-- -->.
+    value: '"Contains"'
   - name: endsWith
     uid: 'excel!Excel.LabelFilterCondition.endsWith:member'
     package: excel!
@@ -53,6 +56,7 @@ fields:
 
       Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
       {`exclusive`<!-- -->}<!-- -->.
+    value: '"EndsWith"'
   - name: equals
     uid: 'excel!Excel.LabelFilterCondition.equals:member'
     package: excel!
@@ -62,6 +66,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
       {`exclusive`<!-- -->}<!-- -->.
+    value: '"Equals"'
   - name: greaterThan
     uid: 'excel!Excel.LabelFilterCondition.greaterThan:member'
     package: excel!
@@ -69,6 +74,7 @@ fields:
       Greater than comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"GreaterThan"'
   - name: greaterThanOrEqualTo
     uid: 'excel!Excel.LabelFilterCondition.greaterThanOrEqualTo:member'
     package: excel!
@@ -76,6 +82,7 @@ fields:
       Greater than or equal to comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"GreaterThanOrEqualTo"'
   - name: lessThan
     uid: 'excel!Excel.LabelFilterCondition.lessThan:member'
     package: excel!
@@ -83,6 +90,7 @@ fields:
       Less than comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"LessThan"'
   - name: lessThanOrEqualTo
     uid: 'excel!Excel.LabelFilterCondition.lessThanOrEqualTo:member'
     package: excel!
@@ -90,7 +98,9 @@ fields:
       Less than or equal to comparator criterion.
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"LessThanOrEqualTo"'
   - name: unknown
     uid: 'excel!Excel.LabelFilterCondition.unknown:member'
     package: excel!
     summary: LabelFilterCondition is unknown or unsupported.
+    value: '"Unknown"'

@@ -15,15 +15,18 @@ fields:
     uid: 'excel!Excel.CalculationType.full:member'
     package: excel!
     summary: This will mark all cells as dirty and then recalculate them.
+    value: '"Full"'
   - name: fullRebuild
     uid: 'excel!Excel.CalculationType.fullRebuild:member'
     package: excel!
     summary: >-
       This will rebuild the full dependency chain, mark all cells as dirty and
       then recalculate them.
+    value: '"FullRebuild"'
   - name: recalculate
     uid: 'excel!Excel.CalculationType.recalculate:member'
     package: excel!
     summary: >-
       Recalculates all cells that Excel has marked as dirty, that is, dependents
       of volatile or changed data, and cells programmatically marked as dirty.
+    value: '"Recalculate"'

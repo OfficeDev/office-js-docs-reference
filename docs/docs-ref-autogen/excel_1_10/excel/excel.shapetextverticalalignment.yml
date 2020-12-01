@@ -18,19 +18,24 @@ fields:
     uid: 'excel!Excel.ShapeTextVerticalAlignment.bottom:member'
     package: excel!
     summary: ''
+    value: '"Bottom"'
   - name: distributed
     uid: 'excel!Excel.ShapeTextVerticalAlignment.distributed:member'
     package: excel!
     summary: ''
+    value: '"Distributed"'
   - name: justified
     uid: 'excel!Excel.ShapeTextVerticalAlignment.justified:member'
     package: excel!
     summary: ''
+    value: '"Justified"'
   - name: middle
     uid: 'excel!Excel.ShapeTextVerticalAlignment.middle:member'
     package: excel!
     summary: ''
+    value: '"Middle"'
   - name: top
     uid: 'excel!Excel.ShapeTextVerticalAlignment.top:member'
     package: excel!
     summary: ''
+    value: '"Top"'
