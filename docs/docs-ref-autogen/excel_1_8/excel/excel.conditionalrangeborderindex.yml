@@ -15,15 +15,19 @@ fields:
     uid: 'excel!Excel.ConditionalRangeBorderIndex.edgeBottom:member'
     package: excel!
     summary: ''
+    value: '"EdgeBottom"'
   - name: edgeLeft
     uid: 'excel!Excel.ConditionalRangeBorderIndex.edgeLeft:member'
     package: excel!
     summary: ''
+    value: '"EdgeLeft"'
   - name: edgeRight
     uid: 'excel!Excel.ConditionalRangeBorderIndex.edgeRight:member'
     package: excel!
     summary: ''
+    value: '"EdgeRight"'
   - name: edgeTop
     uid: 'excel!Excel.ConditionalRangeBorderIndex.edgeTop:member'
     package: excel!
     summary: ''
+    value: '"EdgeTop"'

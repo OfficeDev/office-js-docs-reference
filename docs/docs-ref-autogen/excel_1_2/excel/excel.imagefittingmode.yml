@@ -15,11 +15,14 @@ fields:
     uid: 'excel!Excel.ImageFittingMode.fill:member'
     package: excel!
     summary: ''
+    value: '"Fill"'
   - name: fit
     uid: 'excel!Excel.ImageFittingMode.fit:member'
     package: excel!
     summary: ''
+    value: '"Fit"'
   - name: fitAndCenter
     uid: 'excel!Excel.ImageFittingMode.fitAndCenter:member'
     package: excel!
     summary: ''
+    value: '"FitAndCenter"'

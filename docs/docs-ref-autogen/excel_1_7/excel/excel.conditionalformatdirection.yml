@@ -18,7 +18,9 @@ fields:
     uid: 'excel!Excel.ConditionalFormatDirection.bottom:member'
     package: excel!
     summary: ''
+    value: '"Bottom"'
   - name: top
     uid: 'excel!Excel.ConditionalFormatDirection.top:member'
     package: excel!
     summary: ''
+    value: '"Top"'

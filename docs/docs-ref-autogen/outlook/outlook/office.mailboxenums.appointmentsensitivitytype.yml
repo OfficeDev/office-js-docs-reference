@@ -27,6 +27,7 @@ fields:
       \[ [API set: Mailbox
       Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       \]
+    value: '"confidential"'
   - name: Normal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
     package: outlook!
@@ -37,6 +38,7 @@ fields:
       \[ [API set: Mailbox
       Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       \]
+    value: '"normal"'
   - name: Personal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
     package: outlook!
@@ -47,6 +49,7 @@ fields:
       \[ [API set: Mailbox
       Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       \]
+    value: '"personal"'
   - name: Private
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
     package: outlook!
@@ -57,3 +60,4 @@ fields:
       \[ [API set: Mailbox
       Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       \]
+    value: '"private"'

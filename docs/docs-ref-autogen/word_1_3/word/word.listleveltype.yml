@@ -15,11 +15,14 @@ fields:
     uid: 'word!Word.ListLevelType.bullet:member'
     package: word!
     summary: ''
+    value: '"Bullet"'
   - name: number
     uid: 'word!Word.ListLevelType.number:member'
     package: word!
     summary: ''
+    value: '"Number"'
   - name: picture
     uid: 'word!Word.ListLevelType.picture:member'
     package: word!
     summary: ''
+    value: '"Picture"'

@@ -18,83 +18,104 @@ fields:
     uid: 'word!Word.UnderlineType.dashLine:member'
     package: word!
     summary: A single dash underline.
+    value: '"DashLine"'
   - name: dashLineHeavy
     uid: 'word!Word.UnderlineType.dashLineHeavy:member'
     package: word!
     summary: ''
+    value: '"DashLineHeavy"'
   - name: dashLineLong
     uid: 'word!Word.UnderlineType.dashLineLong:member'
     package: word!
     summary: ''
+    value: '"DashLineLong"'
   - name: dashLineLongHeavy
     uid: 'word!Word.UnderlineType.dashLineLongHeavy:member'
     package: word!
     summary: ''
+    value: '"DashLineLongHeavy"'
   - name: dotDashLine
     uid: 'word!Word.UnderlineType.dotDashLine:member'
     package: word!
     summary: An alternating dot-dash underline.
+    value: '"DotDashLine"'
   - name: dotDashLineHeavy
     uid: 'word!Word.UnderlineType.dotDashLineHeavy:member'
     package: word!
     summary: ''
+    value: '"DotDashLineHeavy"'
   - name: dotLine
     uid: 'word!Word.UnderlineType.dotLine:member'
     package: word!
     summary: ''
+    value: '"DotLine"'
   - name: dotted
     uid: 'word!Word.UnderlineType.dotted:member'
     package: word!
     summary: A dotted underline.
+    value: '"Dotted"'
   - name: dottedHeavy
     uid: 'word!Word.UnderlineType.dottedHeavy:member'
     package: word!
     summary: ''
+    value: '"DottedHeavy"'
   - name: double
     uid: 'word!Word.UnderlineType.double:member'
     package: word!
     summary: A double underline.
+    value: '"Double"'
   - name: hidden
     uid: 'word!Word.UnderlineType.hidden:member'
     package: word!
     summary: ''
+    value: '"Hidden"'
   - name: mixed
     uid: 'word!Word.UnderlineType.mixed:member'
     package: word!
     summary: ''
+    value: '"Mixed"'
   - name: none
     uid: 'word!Word.UnderlineType.none:member'
     package: word!
     summary: No underline.
+    value: '"None"'
   - name: single
     uid: 'word!Word.UnderlineType.single:member'
     package: word!
     summary: A single underline. This is the default value.
+    value: '"Single"'
   - name: thick
     uid: 'word!Word.UnderlineType.thick:member'
     package: word!
     summary: A single thick underline.
+    value: '"Thick"'
   - name: twoDotDashLine
     uid: 'word!Word.UnderlineType.twoDotDashLine:member'
     package: word!
     summary: An alternating dot-dot-dash underline.
+    value: '"TwoDotDashLine"'
   - name: twoDotDashLineHeavy
     uid: 'word!Word.UnderlineType.twoDotDashLineHeavy:member'
     package: word!
     summary: ''
+    value: '"TwoDotDashLineHeavy"'
   - name: wave
     uid: 'word!Word.UnderlineType.wave:member'
     package: word!
     summary: A single wavy underline.
+    value: '"Wave"'
   - name: waveDouble
     uid: 'word!Word.UnderlineType.waveDouble:member'
     package: word!
     summary: ''
+    value: '"WaveDouble"'
   - name: waveHeavy
     uid: 'word!Word.UnderlineType.waveHeavy:member'
     package: word!
     summary: ''
+    value: '"WaveHeavy"'
   - name: word
     uid: 'word!Word.UnderlineType.word:member'
     package: word!
     summary: Only underline individual words.
+    value: '"Word"'

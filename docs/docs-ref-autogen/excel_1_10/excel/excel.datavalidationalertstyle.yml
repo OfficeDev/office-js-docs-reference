@@ -18,11 +18,14 @@ fields:
     uid: 'excel!Excel.DataValidationAlertStyle.information:member'
     package: excel!
     summary: ''
+    value: '"Information"'
   - name: stop
     uid: 'excel!Excel.DataValidationAlertStyle.stop:member'
     package: excel!
     summary: ''
+    value: '"Stop"'
   - name: warning
     uid: 'excel!Excel.DataValidationAlertStyle.warning:member'
     package: excel!
     summary: ''
+    value: '"Warning"'

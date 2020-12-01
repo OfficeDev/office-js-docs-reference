@@ -15,27 +15,34 @@ fields:
     uid: 'word!Word.ListBullet.arrow:member'
     package: word!
     summary: ''
+    value: '"Arrow"'
   - name: checkmark
     uid: 'word!Word.ListBullet.checkmark:member'
     package: word!
     summary: ''
+    value: '"Checkmark"'
   - name: custom
     uid: 'word!Word.ListBullet.custom:member'
     package: word!
     summary: ''
+    value: '"Custom"'
   - name: diamonds
     uid: 'word!Word.ListBullet.diamonds:member'
     package: word!
     summary: ''
+    value: '"Diamonds"'
   - name: hollow
     uid: 'word!Word.ListBullet.hollow:member'
     package: word!
     summary: ''
+    value: '"Hollow"'
   - name: solid
     uid: 'word!Word.ListBullet.solid:member'
     package: word!
     summary: ''
+    value: '"Solid"'
   - name: square
     uid: 'word!Word.ListBullet.square:member'
     package: word!
     summary: ''
+    value: '"Square"'

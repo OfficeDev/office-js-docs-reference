@@ -19,11 +19,14 @@ fields:
       entered. If a right-to-left language character is entered first, reading
       order is right to left. If a left-to-right language character is entered
       first, reading order is left to right.
+    value: '"Context"'
   - name: leftToRight
     uid: 'excel!Excel.ReadingOrder.leftToRight:member'
     package: excel!
     summary: Left to right reading order
+    value: '"LeftToRight"'
   - name: rightToLeft
     uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
     package: excel!
     summary: Right to left reading order
+    value: '"RightToLeft"'

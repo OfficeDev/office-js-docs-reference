@@ -15,7 +15,9 @@ fields:
     uid: 'onenote!OneNote.InsertLocation.after:member'
     package: onenote!
     summary: ''
+    value: '"After"'
   - name: before
     uid: 'onenote!OneNote.InsertLocation.before:member'
     package: onenote!
     summary: ''
+    value: '"Before"'

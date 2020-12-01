@@ -15,23 +15,29 @@ fields:
     uid: 'excel!Excel.ArrowheadStyle.diamond:member'
     package: excel!
     summary: ''
+    value: '"Diamond"'
   - name: none
     uid: 'excel!Excel.ArrowheadStyle.none:member'
     package: excel!
     summary: ''
+    value: '"None"'
   - name: open
     uid: 'excel!Excel.ArrowheadStyle.open:member'
     package: excel!
     summary: ''
+    value: '"Open"'
   - name: oval
     uid: 'excel!Excel.ArrowheadStyle.oval:member'
     package: excel!
     summary: ''
+    value: '"Oval"'
   - name: stealth
     uid: 'excel!Excel.ArrowheadStyle.stealth:member'
     package: excel!
     summary: ''
+    value: '"Stealth"'
   - name: triangle
     uid: 'excel!Excel.ArrowheadStyle.triangle:member'
     package: excel!
     summary: ''
+    value: '"Triangle"'

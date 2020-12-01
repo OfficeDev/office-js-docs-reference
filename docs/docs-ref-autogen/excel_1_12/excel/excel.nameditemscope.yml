@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.NamedItemScope.workbook:member'
     package: excel!
     summary: ''
+    value: '"Workbook"'
   - name: worksheet
     uid: 'excel!Excel.NamedItemScope.worksheet:member'
     package: excel!
     summary: ''
+    value: '"Worksheet"'

@@ -15,11 +15,14 @@ fields:
     uid: 'excel!Excel.ArrowheadWidth.medium:member'
     package: excel!
     summary: ''
+    value: '"Medium"'
   - name: narrow
     uid: 'excel!Excel.ArrowheadWidth.narrow:member'
     package: excel!
     summary: ''
+    value: '"Narrow"'
   - name: wide
     uid: 'excel!Excel.ArrowheadWidth.wide:member'
     package: excel!
     summary: ''
+    value: '"Wide"'

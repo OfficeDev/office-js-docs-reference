@@ -20,9 +20,11 @@ fields:
     summary: >-
       Prompts the saveas experience to the user if the workbook has not been
       saved, Ignored if the workbook was previously saved.
+    value: '"Prompt"'
   - name: save
     uid: 'excel!Excel.SaveBehavior.save:member'
     package: excel!
     summary: >-
       Save the workbook without prompting the user. If file is not saved, it
       will save it with default name under default location.
+    value: '"Save"'

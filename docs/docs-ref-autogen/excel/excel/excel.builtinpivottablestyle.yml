@@ -20,505 +20,590 @@ fields:
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled header, striped
       rows, and shaded body.
+    value: '"Dark1"'
   - name: dark10
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark10:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled header,
       striped rows, and outside border.
+    value: '"Dark10"'
   - name: dark11
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark11:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled header,
       striped rows, and outside border.
+    value: '"Dark11"'
   - name: dark12
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark12:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled header,
       striped rows, and outside border.
+    value: '"Dark12"'
   - name: dark13
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark13:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled header,
       striped rows, and outside border.
+    value: '"Dark13"'
   - name: dark14
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark14:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled header,
       striped rows, and outside border.
+    value: '"Dark14"'
   - name: dark15
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark15:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled header, filled
       footer, and striped rows.
+    value: '"Dark15"'
   - name: dark16
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark16:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled header, filled
       footer, and striped rows.
+    value: '"Dark16"'
   - name: dark17
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark17:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled header,
       filled footer, and striped rows.
+    value: '"Dark17"'
   - name: dark18
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark18:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled header, filled
       footer, and striped rows.
+    value: '"Dark18"'
   - name: dark19
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark19:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled header,
       filled footer, and striped rows.
+    value: '"Dark19"'
   - name: dark2
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark2:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled header,
       striped rows, and shaded body.
+    value: '"Dark2"'
   - name: dark20
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark20:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled header,
       filled footer, and striped rows.
+    value: '"Dark20"'
   - name: dark21
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark21:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled header,
       filled footer, and striped rows.
+    value: '"Dark21"'
   - name: dark22
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark22:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with shaded body, and white
       borders.
+    value: '"Dark22"'
   - name: dark23
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark23:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with shaded body, and
       white borders.
+    value: '"Dark23"'
   - name: dark24
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark24:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with shaded body, and
       white borders.
+    value: '"Dark24"'
   - name: dark25
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark25:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with shaded body, and
       white borders.
+    value: '"Dark25"'
   - name: dark26
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark26:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with shaded body, and
       white borders.
+    value: '"Dark26"'
   - name: dark27
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark27:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with shaded body,
       and white borders.
+    value: '"Dark27"'
   - name: dark28
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark28:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with shaded body, and
       white borders.
+    value: '"Dark28"'
   - name: dark3
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark3:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled header,
       striped rows, and shaded body.
+    value: '"Dark3"'
   - name: dark4
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark4:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled header,
       striped rows, and shaded body.
+    value: '"Dark4"'
   - name: dark5
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark5:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled header,
       striped rows, and shaded body.
+    value: '"Dark5"'
   - name: dark6
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark6:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled header,
       striped rows, and shaded body.
+    value: '"Dark6"'
   - name: dark7
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark7:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled header,
       striped rows, and shaded body.
+    value: '"Dark7"'
   - name: dark8
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark8:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled header, striped
       rows, and outside border.
+    value: '"Dark8"'
   - name: dark9
     uid: 'excel!Excel.BuiltInPivotTableStyle.dark9:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled header,
       striped rows, and outside border.
+    value: '"Dark9"'
   - name: light1
     uid: 'excel!Excel.BuiltInPivotTableStyle.light1:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with header borders and
       footer borders.
+    value: '"Light1"'
   - name: light10
     uid: 'excel!Excel.BuiltInPivotTableStyle.light10:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with header borders,
       footer borders, first column border, and striped rows.
+    value: '"Light10"'
   - name: light11
     uid: 'excel!Excel.BuiltInPivotTableStyle.light11:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with header borders,
       footer borders, first column border, and striped rows.
+    value: '"Light11"'
   - name: light12
     uid: 'excel!Excel.BuiltInPivotTableStyle.light12:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with header borders,
       footer borders, first column border, and striped rows.
+    value: '"Light12"'
   - name: light13
     uid: 'excel!Excel.BuiltInPivotTableStyle.light13:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with header borders,
       footer borders, first column border, and striped rows.
+    value: '"Light13"'
   - name: light14
     uid: 'excel!Excel.BuiltInPivotTableStyle.light14:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with header borders,
       footer borders, first column border, and striped rows.
+    value: '"Light14"'
   - name: light15
     uid: 'excel!Excel.BuiltInPivotTableStyle.light15:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled header and
       striped bordered rows.
+    value: '"Light15"'
   - name: light16
     uid: 'excel!Excel.BuiltInPivotTableStyle.light16:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled header and
       striped bordered rows.
+    value: '"Light16"'
   - name: light17
     uid: 'excel!Excel.BuiltInPivotTableStyle.light17:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled header and
       striped bordered rows.
+    value: '"Light17"'
   - name: light18
     uid: 'excel!Excel.BuiltInPivotTableStyle.light18:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled header and
       striped bordered rows.
+    value: '"Light18"'
   - name: light19
     uid: 'excel!Excel.BuiltInPivotTableStyle.light19:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled header and
       striped bordered rows.
+    value: '"Light19"'
   - name: light2
     uid: 'excel!Excel.BuiltInPivotTableStyle.light2:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with header borders and
       footer borders.
+    value: '"Light2"'
   - name: light20
     uid: 'excel!Excel.BuiltInPivotTableStyle.light20:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled header
       and striped bordered rows.
+    value: '"Light20"'
   - name: light21
     uid: 'excel!Excel.BuiltInPivotTableStyle.light21:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled header and
       striped bordered rows.
+    value: '"Light21"'
   - name: light22
     uid: 'excel!Excel.BuiltInPivotTableStyle.light22:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with header borders, footer
       borders, and bordered columns.
+    value: '"Light22"'
   - name: light23
     uid: 'excel!Excel.BuiltInPivotTableStyle.light23:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with header borders,
       footer borders, and bordered columns.
+    value: '"Light23"'
   - name: light24
     uid: 'excel!Excel.BuiltInPivotTableStyle.light24:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with header borders,
       footer borders, and bordered columns.
+    value: '"Light24"'
   - name: light25
     uid: 'excel!Excel.BuiltInPivotTableStyle.light25:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with header borders,
       footer borders, and bordered columns.
+    value: '"Light25"'
   - name: light26
     uid: 'excel!Excel.BuiltInPivotTableStyle.light26:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with header borders,
       footer borders, and bordered columns.
+    value: '"Light26"'
   - name: light27
     uid: 'excel!Excel.BuiltInPivotTableStyle.light27:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with header borders,
       footer borders, and bordered columns.
+    value: '"Light27"'
   - name: light28
     uid: 'excel!Excel.BuiltInPivotTableStyle.light28:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with header borders,
       footer borders, and bordered columns.
+    value: '"Light28"'
   - name: light3
     uid: 'excel!Excel.BuiltInPivotTableStyle.light3:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with header borders and
       footer borders.
+    value: '"Light3"'
   - name: light4
     uid: 'excel!Excel.BuiltInPivotTableStyle.light4:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with header borders and
       footer borders.
+    value: '"Light4"'
   - name: light5
     uid: 'excel!Excel.BuiltInPivotTableStyle.light5:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with header borders and
       footer borders.
+    value: '"Light5"'
   - name: light6
     uid: 'excel!Excel.BuiltInPivotTableStyle.light6:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with header borders
       and footer borders.
+    value: '"Light6"'
   - name: light7
     uid: 'excel!Excel.BuiltInPivotTableStyle.light7:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with header borders and
       footer borders.
+    value: '"Light7"'
   - name: light8
     uid: 'excel!Excel.BuiltInPivotTableStyle.light8:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with header borders, footer
       borders, first column border, and striped rows.
+    value: '"Light8"'
   - name: light9
     uid: 'excel!Excel.BuiltInPivotTableStyle.light9:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with header borders,
       footer borders, first column border, and striped rows.
+    value: '"Light9"'
   - name: medium1
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium1:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled header, striped
       rows, and footer border.
+    value: '"Medium1"'
   - name: medium10
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium10:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled header,
       striped rows, and total row border.
+    value: '"Medium10"'
   - name: medium11
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium11:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled header,
       striped rows, and total row border.
+    value: '"Medium11"'
   - name: medium12
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium12:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled header,
       striped rows, and total row border.
+    value: '"Medium12"'
   - name: medium13
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium13:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled header,
       striped rows, and total row border.
+    value: '"Medium13"'
   - name: medium14
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium14:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled header,
       striped rows, and total row border.
+    value: '"Medium14"'
   - name: medium15
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium15:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled header, filled
       footer, and shaded body.
+    value: '"Medium15"'
   - name: medium16
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium16:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled header, filled
       footer, and shaded body.
+    value: '"Medium16"'
   - name: medium17
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium17:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled header,
       filled footer, and shaded body.
+    value: '"Medium17"'
   - name: medium18
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium18:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled header, filled
       footer, and shaded body.
+    value: '"Medium18"'
   - name: medium19
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium19:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled header,
       filled footer, and shaded body.
+    value: '"Medium19"'
   - name: medium2
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium2:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled header,
       striped rows, and footer border.
+    value: '"Medium2"'
   - name: medium20
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium20:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled header,
       filled footer, and shaded body.
+    value: '"Medium20"'
   - name: medium21
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium21:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled header,
       filled footer, and shaded body.
+    value: '"Medium21"'
   - name: medium22
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium22:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled first column,
       and shaded body.
+    value: '"Medium22"'
   - name: medium23
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium23:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled first column,
       and shaded body.
+    value: '"Medium23"'
   - name: medium24
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium24:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled first
       column, and shaded body.
+    value: '"Medium24"'
   - name: medium25
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium25:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled first column,
       and shaded body.
+    value: '"Medium25"'
   - name: medium26
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium26:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled first
       column, and shaded body.
+    value: '"Medium26"'
   - name: medium27
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium27:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled first
       column, and shaded body.
+    value: '"Medium27"'
   - name: medium28
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium28:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled first column,
       and shaded body.
+    value: '"Medium28"'
   - name: medium3
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium3:member'
     package: excel!
     summary: >-
       "Accent 2" (orange in the default "Office" theme) with filled header,
       striped rows, and footer border.
+    value: '"Medium3"'
   - name: medium4
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium4:member'
     package: excel!
     summary: >-
       "Accent 3" (gray in the default "Office" theme) with filled header,
       striped rows, and footer border.
+    value: '"Medium4"'
   - name: medium5
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium5:member'
     package: excel!
     summary: >-
       "Accent 4" (yellow in the default "Office" theme) with filled header,
       striped rows, and footer border.
+    value: '"Medium5"'
   - name: medium6
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium6:member'
     package: excel!
     summary: >-
       "Accent 5" (light blue in the default "Office" theme) with filled header,
       striped rows, and footer border.
+    value: '"Medium6"'
   - name: medium7
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium7:member'
     package: excel!
     summary: >-
       "Accent 6" (green in the default "Office" theme) with filled header,
       striped rows, and footer border.
+    value: '"Medium7"'
   - name: medium8
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium8:member'
     package: excel!
     summary: >-
       "Dark 1" (black in the default "Office" theme) with filled header, striped
       rows, and total row border.
+    value: '"Medium8"'
   - name: medium9
     uid: 'excel!Excel.BuiltInPivotTableStyle.medium9:member'
     package: excel!
     summary: >-
       "Accent 1" (blue in the default "Office" theme) with filled header,
       striped rows, and total row border.
+    value: '"Medium9"'
   - name: none
     uid: 'excel!Excel.BuiltInPivotTableStyle.none:member'
     package: excel!
     summary: None
+    value: '"None"'

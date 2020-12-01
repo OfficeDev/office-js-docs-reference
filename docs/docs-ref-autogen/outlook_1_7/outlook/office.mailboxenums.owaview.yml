@@ -14,15 +14,18 @@ fields:
     summary: >-
       One-column view. Displayed when the screen is narrow. Outlook on the web
       uses this single-column layout on the entire screen of a smartphone.
+    value: '"OneColumn"'
   - name: ThreeColumns
     uid: 'outlook!Office.MailboxEnums.OWAView.ThreeColumns:member'
     package: outlook!
     summary: >-
       Three-column view. Displayed when the screen is wide. For example, Outlook
       on the web uses this view in a full screen window on a desktop computer.
+    value: '"ThreeColumns"'
   - name: TwoColumns
     uid: 'outlook!Office.MailboxEnums.OWAView.TwoColumns:member'
     package: outlook!
     summary: >-
       Two-column view. Displayed when the screen is wider. Outlook on the web
       uses this view on most tablets.
+    value: '"TwoColumns"'

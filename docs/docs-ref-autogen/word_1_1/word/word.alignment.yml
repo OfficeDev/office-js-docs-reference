@@ -15,23 +15,29 @@ fields:
     uid: 'word!Word.Alignment.centered:member'
     package: word!
     summary: Alignment to the center.
+    value: '"Centered"'
   - name: justified
     uid: 'word!Word.Alignment.justified:member'
     package: word!
     summary: Fully justified alignment.
+    value: '"Justified"'
   - name: left
     uid: 'word!Word.Alignment.left:member'
     package: word!
     summary: Alignment to the left.
+    value: '"Left"'
   - name: mixed
     uid: 'word!Word.Alignment.mixed:member'
     package: word!
     summary: ''
+    value: '"Mixed"'
   - name: right
     uid: 'word!Word.Alignment.right:member'
     package: word!
     summary: Alignment to the right.
+    value: '"Right"'
   - name: unknown
     uid: 'word!Word.Alignment.unknown:member'
     package: word!
     summary: Unknown alignment.
+    value: '"Unknown"'

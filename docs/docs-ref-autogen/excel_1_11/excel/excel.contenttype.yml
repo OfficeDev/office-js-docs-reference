@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.ContentType.mention:member'
     package: excel!
     summary: Comment content containing mentions.
+    value: '"Mention"'
   - name: plain
     uid: 'excel!Excel.ContentType.plain:member'
     package: excel!
     summary: Indicates plain format type of the comment content.
+    value: '"Plain"'

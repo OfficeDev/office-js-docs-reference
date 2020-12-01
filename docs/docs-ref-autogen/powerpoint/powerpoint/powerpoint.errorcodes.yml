@@ -12,3 +12,4 @@ fields:
     uid: 'powerpoint!PowerPoint.ErrorCodes.generalException:member'
     package: powerpoint!
     summary: ''
+    value: '"GeneralException"'

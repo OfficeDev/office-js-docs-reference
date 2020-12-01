@@ -15,11 +15,14 @@ fields:
     uid: 'word!Word.FileContentFormat.base64:member'
     package: word!
     summary: ''
+    value: '"Base64"'
   - name: html
     uid: 'word!Word.FileContentFormat.html:member'
     package: word!
     summary: ''
+    value: '"Html"'
   - name: ooxml
     uid: 'word!Word.FileContentFormat.ooxml:member'
     package: word!
     summary: ''
+    value: '"Ooxml"'

@@ -22,11 +22,14 @@ fields:
     uid: 'outlook!Office.MailboxEnums.RestVersion.Beta:member'
     package: outlook!
     summary: Beta.
+    value: '"beta"'
   - name: v1_0
     uid: 'outlook!Office.MailboxEnums.RestVersion.v1_0:member'
     package: outlook!
     summary: Version 1.0.
+    value: '"v1.0"'
   - name: v2_0
     uid: 'outlook!Office.MailboxEnums.RestVersion.v2_0:member'
     package: outlook!
     summary: Version 2.0.
+    value: '"v2.0"'

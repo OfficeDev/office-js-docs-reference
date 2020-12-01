@@ -18,11 +18,14 @@ fields:
     uid: 'excel!Excel.ChartErrorBarsInclude.both:member'
     package: excel!
     summary: ''
+    value: '"Both"'
   - name: minusValues
     uid: 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
     package: excel!
     summary: ''
+    value: '"MinusValues"'
   - name: plusValues
     uid: 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
     package: excel!
     summary: ''
+    value: '"PlusValues"'

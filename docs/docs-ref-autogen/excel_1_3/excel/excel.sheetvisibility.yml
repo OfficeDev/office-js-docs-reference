@@ -15,11 +15,14 @@ fields:
     uid: 'excel!Excel.SheetVisibility.hidden:member'
     package: excel!
     summary: ''
+    value: '"Hidden"'
   - name: veryHidden
     uid: 'excel!Excel.SheetVisibility.veryHidden:member'
     package: excel!
     summary: ''
+    value: '"VeryHidden"'
   - name: visible
     uid: 'excel!Excel.SheetVisibility.visible:member'
     package: excel!
     summary: ''
+    value: '"Visible"'

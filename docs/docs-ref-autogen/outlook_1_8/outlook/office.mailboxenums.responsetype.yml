@@ -15,19 +15,24 @@ fields:
     uid: 'outlook!Office.MailboxEnums.ResponseType.Accepted:member'
     package: outlook!
     summary: The meeting request was accepted by the attendee.
+    value: '"accepted"'
   - name: Declined
     uid: 'outlook!Office.MailboxEnums.ResponseType.Declined:member'
     package: outlook!
     summary: The meeting request was declined by the attendee.
+    value: '"declined"'
   - name: None
     uid: 'outlook!Office.MailboxEnums.ResponseType.None:member'
     package: outlook!
     summary: There has been no response from the attendee.
+    value: '"none"'
   - name: Organizer
     uid: 'outlook!Office.MailboxEnums.ResponseType.Organizer:member'
     package: outlook!
     summary: The attendee is the meeting organizer.
+    value: '"organizer"'
   - name: Tentative
     uid: 'outlook!Office.MailboxEnums.ResponseType.Tentative:member'
     package: outlook!
     summary: The meeting request was tentatively accepted by the attendee.
+    value: '"tentative"'

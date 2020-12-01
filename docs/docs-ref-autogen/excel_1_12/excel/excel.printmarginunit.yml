@@ -15,11 +15,14 @@ fields:
     uid: 'excel!Excel.PrintMarginUnit.centimeters:member'
     package: excel!
     summary: Assign the page margins in centimeters.
+    value: '"Centimeters"'
   - name: inches
     uid: 'excel!Excel.PrintMarginUnit.inches:member'
     package: excel!
     summary: Assign the page margins in inches.
+    value: '"Inches"'
   - name: points
     uid: 'excel!Excel.PrintMarginUnit.points:member'
     package: excel!
     summary: Assign the page margins in points. A point is 1/72 of an inch.
+    value: '"Points"'

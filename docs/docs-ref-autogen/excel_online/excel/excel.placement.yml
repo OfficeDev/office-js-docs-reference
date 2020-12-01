@@ -18,11 +18,14 @@ fields:
     uid: 'excel!Excel.Placement.absolute:member'
     package: excel!
     summary: The object is free floating.
+    value: '"Absolute"'
   - name: oneCell
     uid: 'excel!Excel.Placement.oneCell:member'
     package: excel!
     summary: The object is moved and sized with the cells.
+    value: '"OneCell"'
   - name: twoCell
     uid: 'excel!Excel.Placement.twoCell:member'
     package: excel!
     summary: The object is moved with the cells.
+    value: '"TwoCell"'

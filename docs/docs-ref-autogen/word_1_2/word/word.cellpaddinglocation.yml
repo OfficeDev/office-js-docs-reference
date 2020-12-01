@@ -15,15 +15,19 @@ fields:
     uid: 'word!Word.CellPaddingLocation.bottom:member'
     package: word!
     summary: ''
+    value: '"Bottom"'
   - name: left
     uid: 'word!Word.CellPaddingLocation.left:member'
     package: word!
     summary: ''
+    value: '"Left"'
   - name: right
     uid: 'word!Word.CellPaddingLocation.right:member'
     package: word!
     summary: ''
+    value: '"Right"'
   - name: top
     uid: 'word!Word.CellPaddingLocation.top:member'
     package: word!
     summary: ''
+    value: '"Top"'

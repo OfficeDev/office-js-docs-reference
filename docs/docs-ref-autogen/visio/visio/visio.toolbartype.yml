@@ -18,11 +18,14 @@ fields:
     uid: 'visio!Visio.ToolBarType.commandBar:member'
     package: visio!
     summary: CommandBar
+    value: '"CommandBar"'
   - name: pageNavigationBar
     uid: 'visio!Visio.ToolBarType.pageNavigationBar:member'
     package: visio!
     summary: PageNavigationBar
+    value: '"PageNavigationBar"'
   - name: statusBar
     uid: 'visio!Visio.ToolBarType.statusBar:member'
     package: visio!
     summary: StatusBar
+    value: '"StatusBar"'
