@@ -18,19 +18,24 @@ fields:
     uid: 'word!Word.InsertLocation.after:member'
     package: word!
     summary: Add content after the contents of the calling object.
+    value: '"After"'
   - name: before
     uid: 'word!Word.InsertLocation.before:member'
     package: word!
     summary: Add content before the contents of the calling object.
+    value: '"Before"'
   - name: end
     uid: 'word!Word.InsertLocation.end:member'
     package: word!
     summary: Append content to the contents of the calling object.
+    value: '"End"'
   - name: replace
     uid: 'word!Word.InsertLocation.replace:member'
     package: word!
     summary: Replace the contents of the current object.
+    value: '"Replace"'
   - name: start
     uid: 'word!Word.InsertLocation.start:member'
     package: word!
     summary: Prepend content to the contents of the calling object.
+    value: '"Start"'

@@ -19,7 +19,9 @@ fields:
     uid: 'excel!Excel.ChartBoxQuartileCalculation.exclusive:member'
     package: excel!
     summary: ''
+    value: '"Exclusive"'
   - name: inclusive
     uid: 'excel!Excel.ChartBoxQuartileCalculation.inclusive:member'
     package: excel!
     summary: ''
+    value: '"Inclusive"'

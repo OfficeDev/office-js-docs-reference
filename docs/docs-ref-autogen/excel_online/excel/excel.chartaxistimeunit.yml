@@ -18,11 +18,14 @@ fields:
     uid: 'excel!Excel.ChartAxisTimeUnit.days:member'
     package: excel!
     summary: ''
+    value: '"Days"'
   - name: months
     uid: 'excel!Excel.ChartAxisTimeUnit.months:member'
     package: excel!
     summary: ''
+    value: '"Months"'
   - name: years
     uid: 'excel!Excel.ChartAxisTimeUnit.years:member'
     package: excel!
     summary: ''
+    value: '"Years"'

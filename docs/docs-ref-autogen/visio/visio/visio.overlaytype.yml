@@ -18,11 +18,14 @@ fields:
     uid: 'visio!Visio.OverlayType.html:member'
     package: visio!
     summary: html
+    value: '"Html"'
   - name: image
     uid: 'visio!Visio.OverlayType.image:member'
     package: visio!
     summary: image
+    value: '"Image"'
   - name: text
     uid: 'visio!Visio.OverlayType.text:member'
     package: visio!
     summary: text
+    value: '"Text"'

@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.ChartUnderlineStyle.none:member'
     package: excel!
     summary: ''
+    value: '"None"'
   - name: single
     uid: 'excel!Excel.ChartUnderlineStyle.single:member'
     package: excel!
     summary: ''
+    value: '"Single"'

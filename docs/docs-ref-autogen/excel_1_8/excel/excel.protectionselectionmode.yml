@@ -15,11 +15,14 @@ fields:
     uid: 'excel!Excel.ProtectionSelectionMode.none:member'
     package: excel!
     summary: Selection is not allowed for all cells.
+    value: '"None"'
   - name: normal
     uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
     package: excel!
     summary: Selection is allowed for all cells.
+    value: '"Normal"'
   - name: unlocked
     uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
     package: excel!
     summary: Selection is allowed only for cells that are not locked.
+    value: '"Unlocked"'

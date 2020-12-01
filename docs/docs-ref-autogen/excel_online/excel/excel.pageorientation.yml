@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.PageOrientation.landscape:member'
     package: excel!
     summary: ''
+    value: '"Landscape"'
   - name: portrait
     uid: 'excel!Excel.PageOrientation.portrait:member'
     package: excel!
     summary: ''
+    value: '"Portrait"'

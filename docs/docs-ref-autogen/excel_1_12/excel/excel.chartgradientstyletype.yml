@@ -19,11 +19,14 @@ fields:
     uid: 'excel!Excel.ChartGradientStyleType.extremeValue:member'
     package: excel!
     summary: ''
+    value: '"ExtremeValue"'
   - name: number
     uid: 'excel!Excel.ChartGradientStyleType.number:member'
     package: excel!
     summary: ''
+    value: '"Number"'
   - name: percent
     uid: 'excel!Excel.ChartGradientStyleType.percent:member'
     package: excel!
     summary: ''
+    value: '"Percent"'

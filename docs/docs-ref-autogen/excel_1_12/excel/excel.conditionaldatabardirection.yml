@@ -18,11 +18,14 @@ fields:
     uid: 'excel!Excel.ConditionalDataBarDirection.context:member'
     package: excel!
     summary: ''
+    value: '"Context"'
   - name: leftToRight
     uid: 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
     package: excel!
     summary: ''
+    value: '"LeftToRight"'
   - name: rightToLeft
     uid: 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
     package: excel!
     summary: ''
+    value: '"RightToLeft"'

@@ -15,11 +15,14 @@ fields:
     uid: 'onenote!OneNote.ListType.bullet:member'
     package: onenote!
     summary: ''
+    value: '"Bullet"'
   - name: none
     uid: 'onenote!OneNote.ListType.none:member'
     package: onenote!
     summary: ''
+    value: '"None"'
   - name: number
     uid: 'onenote!OneNote.ListType.number:member'
     package: onenote!
     summary: ''
+    value: '"Number"'

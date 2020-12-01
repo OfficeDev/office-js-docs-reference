@@ -18,11 +18,14 @@ fields:
     uid: 'visio!Visio.OverlayVerticalAlignment.bottom:member'
     package: visio!
     summary: bottom
+    value: '"Bottom"'
   - name: middle
     uid: 'visio!Visio.OverlayVerticalAlignment.middle:member'
     package: visio!
     summary: middle
+    value: '"Middle"'
   - name: top
     uid: 'visio!Visio.OverlayVerticalAlignment.top:member'
     package: visio!
     summary: top
+    value: '"Top"'

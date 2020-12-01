@@ -18,11 +18,14 @@ fields:
     uid: 'visio!Visio.OverlayHorizontalAlignment.center:member'
     package: visio!
     summary: center
+    value: '"Center"'
   - name: left
     uid: 'visio!Visio.OverlayHorizontalAlignment.left:member'
     package: visio!
     summary: left
+    value: '"Left"'
   - name: right
     uid: 'visio!Visio.OverlayHorizontalAlignment.right:member'
     package: visio!
     summary: right
+    value: '"Right"'

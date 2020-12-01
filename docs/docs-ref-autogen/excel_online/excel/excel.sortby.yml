@@ -18,7 +18,9 @@ fields:
     uid: 'excel!Excel.SortBy.ascending:member'
     package: excel!
     summary: Ascending sort. Smallest to largest or A to Z.
+    value: '"Ascending"'
   - name: descending
     uid: 'excel!Excel.SortBy.descending:member'
     package: excel!
     summary: Descending sort. Largest to smallest or Z to A.
+    value: '"Descending"'

@@ -18,7 +18,9 @@ fields:
     uid: 'excel!Excel.ShapeTextHorizontalOverflow.clip:member'
     package: excel!
     summary: ''
+    value: '"Clip"'
   - name: overflow
     uid: 'excel!Excel.ShapeTextHorizontalOverflow.overflow:member'
     package: excel!
     summary: ''
+    value: '"Overflow"'

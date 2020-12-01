@@ -12,3 +12,4 @@ fields:
     uid: 'onenote!OneNote.ErrorCodes.generalException:member'
     package: onenote!
     summary: ''
+    value: '"GeneralException"'

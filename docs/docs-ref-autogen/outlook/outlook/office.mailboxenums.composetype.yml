@@ -27,6 +27,7 @@ fields:
       \[ [API set: Mailbox
       Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       \]
+    value: '"forward"'
   - name: NewMail
     uid: 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
     package: outlook!
@@ -37,6 +38,7 @@ fields:
       \[ [API set: Mailbox
       Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       \]
+    value: '"newMail"'
   - name: Reply
     uid: 'outlook!Office.MailboxEnums.ComposeType.Reply:member'
     package: outlook!
@@ -47,3 +49,4 @@ fields:
       \[ [API set: Mailbox
       Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       \]
+    value: '"reply"'

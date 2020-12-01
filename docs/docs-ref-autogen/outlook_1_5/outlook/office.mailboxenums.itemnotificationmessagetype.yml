@@ -22,13 +22,16 @@ fields:
       outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member
     package: outlook!
     summary: The notification message is an error message.
+    value: '"errorMessage"'
   - name: InformationalMessage
     uid: >-
       outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member
     package: outlook!
     summary: The notification message is an informational message.
+    value: '"informationalMessage"'
   - name: ProgressIndicator
     uid: >-
       outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member
     package: outlook!
     summary: The notification message is a progress indicator.
+    value: '"progressIndicator"'

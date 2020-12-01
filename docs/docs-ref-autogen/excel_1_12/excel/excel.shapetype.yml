@@ -18,19 +18,24 @@ fields:
     uid: 'excel!Excel.ShapeType.geometricShape:member'
     package: excel!
     summary: ''
+    value: '"GeometricShape"'
   - name: group
     uid: 'excel!Excel.ShapeType.group:member'
     package: excel!
     summary: ''
+    value: '"Group"'
   - name: image
     uid: 'excel!Excel.ShapeType.image:member'
     package: excel!
     summary: ''
+    value: '"Image"'
   - name: line
     uid: 'excel!Excel.ShapeType.line:member'
     package: excel!
     summary: ''
+    value: '"Line"'
   - name: unsupported
     uid: 'excel!Excel.ShapeType.unsupported:member'
     package: excel!
     summary: ''
+    value: '"Unsupported"'

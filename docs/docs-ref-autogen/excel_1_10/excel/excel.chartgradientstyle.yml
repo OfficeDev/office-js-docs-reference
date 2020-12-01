@@ -19,7 +19,9 @@ fields:
     uid: 'excel!Excel.ChartGradientStyle.threePhaseColor:member'
     package: excel!
     summary: ''
+    value: '"ThreePhaseColor"'
   - name: twoPhaseColor
     uid: 'excel!Excel.ChartGradientStyle.twoPhaseColor:member'
     package: excel!
     summary: ''
+    value: '"TwoPhaseColor"'

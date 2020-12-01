@@ -18,65 +18,81 @@ fields:
     uid: 'excel!Excel.ShowAsCalculation.differenceFrom:member'
     package: excel!
     summary: Difference from the specified Base Field and Base Item.
+    value: '"DifferenceFrom"'
   - name: index
     uid: 'excel!Excel.ShowAsCalculation.index:member'
     package: excel!
     summary: >-
       Calculates the values as follows: ((value in cell) x (Grand Total of Grand
       Totals)) / ((Grand Row Total) x (Grand Column Total))
+    value: '"Index"'
   - name: none
     uid: 'excel!Excel.ShowAsCalculation.none:member'
     package: excel!
     summary: No calculation is applied.
+    value: '"None"'
   - name: percentDifferenceFrom
     uid: 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
     package: excel!
     summary: Difference from the specified Base Field and Base Item.
+    value: '"PercentDifferenceFrom"'
   - name: percentOf
     uid: 'excel!Excel.ShowAsCalculation.percentOf:member'
     package: excel!
     summary: Percent of the specified Base Field and Base Item.
+    value: '"PercentOf"'
   - name: percentOfColumnTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
     package: excel!
     summary: Percent of the column total.
+    value: '"PercentOfColumnTotal"'
   - name: percentOfGrandTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfGrandTotal:member'
     package: excel!
     summary: Percent of the grand total.
+    value: '"PercentOfGrandTotal"'
   - name: percentOfParentColumnTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
     package: excel!
     summary: Percent of the column total for the specified Base Field.
+    value: '"PercentOfParentColumnTotal"'
   - name: percentOfParentRowTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
     package: excel!
     summary: Percent of the row total for the specified Base Field.
+    value: '"PercentOfParentRowTotal"'
   - name: percentOfParentTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
     package: excel!
     summary: Percent of the grand total for the specified Base Field.
+    value: '"PercentOfParentTotal"'
   - name: percentOfRowTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
     package: excel!
     summary: Percent of the row total.
+    value: '"PercentOfRowTotal"'
   - name: percentRunningTotal
     uid: 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
     package: excel!
     summary: Percent Running Total of the specified Base Field.
+    value: '"PercentRunningTotal"'
   - name: rankAscending
     uid: 'excel!Excel.ShowAsCalculation.rankAscending:member'
     package: excel!
     summary: Ascending Rank of the specified Base Field.
+    value: '"RankAscending"'
   - name: rankDecending
     uid: 'excel!Excel.ShowAsCalculation.rankDecending:member'
     package: excel!
     summary: Descending Rank of the specified Base Field.
+    value: '"RankDecending"'
   - name: runningTotal
     uid: 'excel!Excel.ShowAsCalculation.runningTotal:member'
     package: excel!
     summary: Running Total of the specified Base Field.
+    value: '"RunningTotal"'
   - name: unknown
     uid: 'excel!Excel.ShowAsCalculation.unknown:member'
     package: excel!
     summary: Calculation is unknown or unsupported.
+    value: '"Unknown"'

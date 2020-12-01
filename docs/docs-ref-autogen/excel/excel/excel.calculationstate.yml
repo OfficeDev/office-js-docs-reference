@@ -18,13 +18,16 @@ fields:
     uid: 'excel!Excel.CalculationState.calculating:member'
     package: excel!
     summary: Calculations in progress.
+    value: '"Calculating"'
   - name: done
     uid: 'excel!Excel.CalculationState.done:member'
     package: excel!
     summary: Calculations complete.
+    value: '"Done"'
   - name: pending
     uid: 'excel!Excel.CalculationState.pending:member'
     package: excel!
     summary: >-
       Changes that trigger calculation have been made, but a recalculation has
       not yet been performed.
+    value: '"Pending"'

@@ -15,15 +15,19 @@ fields:
     uid: 'word!Word.VerticalAlignment.bottom:member'
     package: word!
     summary: ''
+    value: '"Bottom"'
   - name: center
     uid: 'word!Word.VerticalAlignment.center:member'
     package: word!
     summary: ''
+    value: '"Center"'
   - name: mixed
     uid: 'word!Word.VerticalAlignment.mixed:member'
     package: word!
     summary: ''
+    value: '"Mixed"'
   - name: top
     uid: 'word!Word.VerticalAlignment.top:member'
     package: word!
     summary: ''
+    value: '"Top"'

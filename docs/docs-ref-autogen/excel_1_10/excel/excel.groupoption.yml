@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.GroupOption.byColumns:member'
     package: excel!
     summary: Group by columns.
+    value: '"ByColumns"'
   - name: byRows
     uid: 'excel!Excel.GroupOption.byRows:member'
     package: excel!
     summary: Group by rows.
+    value: '"ByRows"'

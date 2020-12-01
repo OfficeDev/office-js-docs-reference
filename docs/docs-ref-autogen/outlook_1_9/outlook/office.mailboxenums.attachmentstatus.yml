@@ -21,7 +21,9 @@ fields:
     uid: 'outlook!Office.MailboxEnums.AttachmentStatus.Added:member'
     package: outlook!
     summary: An attachment was added to the item.
+    value: '"added"'
   - name: Removed
     uid: 'outlook!Office.MailboxEnums.AttachmentStatus.Removed:member'
     package: outlook!
     summary: An attachment was removed from the item.
+    value: '"removed"'

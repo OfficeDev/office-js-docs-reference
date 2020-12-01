@@ -15,15 +15,19 @@ fields:
     uid: 'excel!Excel.RangeCopyType.all:member'
     package: excel!
     summary: ''
+    value: '"All"'
   - name: formats
     uid: 'excel!Excel.RangeCopyType.formats:member'
     package: excel!
     summary: ''
+    value: '"Formats"'
   - name: formulas
     uid: 'excel!Excel.RangeCopyType.formulas:member'
     package: excel!
     summary: ''
+    value: '"Formulas"'
   - name: values
     uid: 'excel!Excel.RangeCopyType.values:member'
     package: excel!
     summary: ''
+    value: '"Values"'
