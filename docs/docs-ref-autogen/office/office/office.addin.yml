@@ -41,7 +41,7 @@ methods:
     uid: 'office!Office.Addin#onVisibilityModeChanged:member(1)'
     package: office!
     fullName: onVisibilityModeChanged(listener)
-    summary: Adds a listener for the `onVisbilityModeChanged` event.
+    summary: Adds a listener for the `onVisibilityModeChanged` event.
     remarks: ''
     isPreview: false
     isDeprecated: false

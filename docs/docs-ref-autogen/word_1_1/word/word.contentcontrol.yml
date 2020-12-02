@@ -234,6 +234,9 @@ properties:
       be displayed when the content control is empty.
 
 
+      **Note**: This API is not supported in Word on the web.
+
+
       \[ [API set: WordApi
       1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
@@ -540,7 +543,7 @@ methods:
       in a web page or HTML viewer, the formatting will be a close, but not
       exact, match for of the formatting of the document. This method does not
       return the exact same HTML for the same document on different platforms
-      (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or
+      (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or
       consistency across platforms, use `ContentControl.getOoxml()` and convert
       the returned XML to HTML.
 

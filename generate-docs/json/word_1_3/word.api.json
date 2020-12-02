@@ -478,7 +478,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3974,7 +3974,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5650,7 +5650,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#placeholderText:member",
-                  "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7936,7 +7936,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.CustomProperty#value:member",
-                  "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15692,7 +15692,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16255,7 +16255,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16899,7 +16899,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17271,7 +17271,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17563,7 +17563,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyCollectionLoadOptions#value:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17705,7 +17705,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyData#value:member",
-                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17821,7 +17821,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyLoadOptions#value:member",
-                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17862,7 +17862,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyUpdateData#value:member",
-                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -35462,7 +35462,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38884,7 +38884,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

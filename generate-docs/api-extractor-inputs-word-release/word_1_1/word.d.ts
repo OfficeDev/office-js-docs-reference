@@ -94,7 +94,7 @@ export declare namespace Word {
          */
         clear(): void;
         /**
-         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -383,6 +383,8 @@ export declare namespace Word {
         /**
          *
          * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+         * 
+         * **Note**: This API is not supported in Word on the web.
          *
          * [Api set: WordApi 1.1]
          */
@@ -460,7 +462,7 @@ export declare namespace Word {
          */
         delete(keepContent: boolean): void;
         /**
-         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1331,7 +1333,7 @@ export declare namespace Word {
         delete(): void;
         
         /**
-         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1693,7 +1695,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -3070,6 +3072,8 @@ export declare namespace Word {
             /**
              *
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             * 
+             * **Note**: This API is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
@@ -3650,6 +3654,8 @@ export declare namespace Word {
             /**
              *
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             * 
+             * **Note**: This API is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
@@ -4342,6 +4348,8 @@ export declare namespace Word {
             /**
              *
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             * 
+             * **Note**: This API is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
@@ -4460,6 +4468,8 @@ export declare namespace Word {
             /**
              *
              * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             * 
+             * **Note**: This API is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
