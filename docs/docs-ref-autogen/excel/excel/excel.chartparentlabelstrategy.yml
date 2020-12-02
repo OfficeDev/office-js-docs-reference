@@ -19,11 +19,14 @@ fields:
     uid: 'excel!Excel.ChartParentLabelStrategy.banner:member'
     package: excel!
     summary: ''
+    value: '"Banner"'
   - name: none
     uid: 'excel!Excel.ChartParentLabelStrategy.none:member'
     package: excel!
     summary: ''
+    value: '"None"'
   - name: overlapping
     uid: 'excel!Excel.ChartParentLabelStrategy.overlapping:member'
     package: excel!
     summary: ''
+    value: '"Overlapping"'

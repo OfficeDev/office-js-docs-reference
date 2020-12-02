@@ -15,23 +15,29 @@ fields:
     uid: 'excel!Excel.ConditionalRangeBorderLineStyle.continuous:member'
     package: excel!
     summary: ''
+    value: '"Continuous"'
   - name: dash
     uid: 'excel!Excel.ConditionalRangeBorderLineStyle.dash:member'
     package: excel!
     summary: ''
+    value: '"Dash"'
   - name: dashDot
     uid: 'excel!Excel.ConditionalRangeBorderLineStyle.dashDot:member'
     package: excel!
     summary: ''
+    value: '"DashDot"'
   - name: dashDotDot
     uid: 'excel!Excel.ConditionalRangeBorderLineStyle.dashDotDot:member'
     package: excel!
     summary: ''
+    value: '"DashDotDot"'
   - name: dot
     uid: 'excel!Excel.ConditionalRangeBorderLineStyle.dot:member'
     package: excel!
     summary: ''
+    value: '"Dot"'
   - name: none
     uid: 'excel!Excel.ConditionalRangeBorderLineStyle.none:member'
     package: excel!
     summary: ''
+    value: '"None"'

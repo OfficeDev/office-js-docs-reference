@@ -18,26 +18,31 @@ fields:
       The point after the object. If the object is a paragraph content control
       or table content control, it is the point after the EOP or Table
       characters.
+    value: '"After"'
   - name: before
     uid: 'word!Word.RangeLocation.before:member'
     package: word!
     summary: For content control only. It is the point before the opening tag.
+    value: '"Before"'
   - name: content
     uid: 'word!Word.RangeLocation.content:member'
     package: word!
     summary: The range between 'Start' and 'End'.
+    value: '"Content"'
   - name: end
     uid: 'word!Word.RangeLocation.end:member'
     package: word!
     summary: >-
       The ending point of the object. For paragraph, it is the point before the
       EOP. For content control, it is the point before the closing tag.
+    value: '"End"'
   - name: start
     uid: 'word!Word.RangeLocation.start:member'
     package: word!
     summary: >-
       The starting point of the object. For content control, it is the point
       after the opening tag.
+    value: '"Start"'
   - name: whole
     uid: 'word!Word.RangeLocation.whole:member'
     package: word!
@@ -45,3 +50,4 @@ fields:
       The object's whole range. If the object is a paragraph content control or
       table content control, the EOP or Table characters after the content
       control are also included.
+    value: '"Whole"'

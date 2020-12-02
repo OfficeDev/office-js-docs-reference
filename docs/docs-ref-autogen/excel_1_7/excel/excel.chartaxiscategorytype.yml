@@ -18,11 +18,14 @@ fields:
     uid: 'excel!Excel.ChartAxisCategoryType.automatic:member'
     package: excel!
     summary: Excel controls the axis type.
+    value: '"Automatic"'
   - name: dateAxis
     uid: 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
     package: excel!
     summary: Axis groups data on a time scale.
+    value: '"DateAxis"'
   - name: textAxis
     uid: 'excel!Excel.ChartAxisCategoryType.textAxis:member'
     package: excel!
     summary: Axis groups data by an arbitrary set of categories.
+    value: '"TextAxis"'

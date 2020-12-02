@@ -15,15 +15,19 @@ fields:
     uid: 'word!Word.DocumentPropertyType.boolean:member'
     package: word!
     summary: ''
+    value: '"Boolean"'
   - name: date
     uid: 'word!Word.DocumentPropertyType.date:member'
     package: word!
     summary: ''
+    value: '"Date"'
   - name: number
     uid: 'word!Word.DocumentPropertyType.number:member'
     package: word!
     summary: ''
+    value: '"Number"'
   - name: string
     uid: 'word!Word.DocumentPropertyType.string:member'
     package: word!
     summary: ''
+    value: '"String"'

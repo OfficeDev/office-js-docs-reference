@@ -16,27 +16,34 @@ fields:
     uid: 'excel!Excel.NamedItemType.array:member'
     package: excel!
     summary: ''
+    value: '"Array"'
   - name: boolean
     uid: 'excel!Excel.NamedItemType.boolean:member'
     package: excel!
     summary: ''
+    value: '"Boolean"'
   - name: double
     uid: 'excel!Excel.NamedItemType.double:member'
     package: excel!
     summary: ''
+    value: '"Double"'
   - name: error
     uid: 'excel!Excel.NamedItemType.error:member'
     package: excel!
     summary: ''
+    value: '"Error"'
   - name: integer
     uid: 'excel!Excel.NamedItemType.integer:member'
     package: excel!
     summary: ''
+    value: '"Integer"'
   - name: range
     uid: 'excel!Excel.NamedItemType.range:member'
     package: excel!
     summary: ''
+    value: '"Range"'
   - name: string
     uid: 'excel!Excel.NamedItemType.string:member'
     package: excel!
     summary: ''
+    value: '"String"'

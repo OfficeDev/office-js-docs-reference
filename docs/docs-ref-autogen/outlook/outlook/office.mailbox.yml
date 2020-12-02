@@ -441,18 +441,27 @@ methods:
 
       Office.initialize = function (reason) {
           $(document).ready(function () {
-              Office.context.mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, function (result) {
-              if (result.status === Office.AsyncResultStatus.Failed) {
-                      // Handle error.
-                  }
-              });
+              Office.context.mailbox.addHandlerAsync(
+                  Office.EventType.ItemChanged,
+                  loadNewItem,
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          // Handle error.
+                      }
+                  });
           });
       };
 
 
       function loadNewItem(eventArgs) {
-          // Load the properties of the newly selected item.
-          loadProps(Office.context.mailbox.item);
+          var item = Office.context.mailbox.item;
+
+          // Check that item is not null.
+          if (item !== null) {
+              // Work with item, e.g., define and call function that
+              // loads the properties of the newly selected item.
+              loadProps(item);
+          }
       }
 
       ```

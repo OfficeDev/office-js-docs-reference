@@ -19,7 +19,9 @@ fields:
     uid: 'excel!Excel.ShapeScaleType.currentSize:member'
     package: excel!
     summary: ''
+    value: '"CurrentSize"'
   - name: originalSize
     uid: 'excel!Excel.ShapeScaleType.originalSize:member'
     package: excel!
     summary: ''
+    value: '"OriginalSize"'

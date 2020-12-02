@@ -18,19 +18,24 @@ fields:
     uid: 'excel!Excel.ConditionalFormatIconRuleType.formula:member'
     package: excel!
     summary: ''
+    value: '"Formula"'
   - name: invalid
     uid: 'excel!Excel.ConditionalFormatIconRuleType.invalid:member'
     package: excel!
     summary: ''
+    value: '"Invalid"'
   - name: number
     uid: 'excel!Excel.ConditionalFormatIconRuleType.number:member'
     package: excel!
     summary: ''
+    value: '"Number"'
   - name: percent
     uid: 'excel!Excel.ConditionalFormatIconRuleType.percent:member'
     package: excel!
     summary: ''
+    value: '"Percent"'
   - name: percentile
     uid: 'excel!Excel.ConditionalFormatIconRuleType.percentile:member'
     package: excel!
     summary: ''
+    value: '"Percentile"'

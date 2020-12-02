@@ -15,19 +15,24 @@ fields:
     uid: 'excel!Excel.LinkedDataTypeState.brokenLinkedData:member'
     package: excel!
     summary: ''
+    value: '"BrokenLinkedData"'
   - name: disambiguationNeeded
     uid: 'excel!Excel.LinkedDataTypeState.disambiguationNeeded:member'
     package: excel!
     summary: ''
+    value: '"DisambiguationNeeded"'
   - name: fetchingData
     uid: 'excel!Excel.LinkedDataTypeState.fetchingData:member'
     package: excel!
     summary: ''
+    value: '"FetchingData"'
   - name: none
     uid: 'excel!Excel.LinkedDataTypeState.none:member'
     package: excel!
     summary: ''
+    value: '"None"'
   - name: validLinkedData
     uid: 'excel!Excel.LinkedDataTypeState.validLinkedData:member'
     package: excel!
     summary: ''
+    value: '"ValidLinkedData"'

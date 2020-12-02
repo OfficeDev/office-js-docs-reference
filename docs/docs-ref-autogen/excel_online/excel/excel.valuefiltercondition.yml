@@ -27,6 +27,7 @@ fields:
       Required Criteria: {`value`<!-- -->, `lowerBound`<!-- -->,
       `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!--
       -->}<!-- -->.
+    value: '"Between"'
   - name: bottomN
     uid: 'excel!Excel.ValueFilterCondition.bottomN:member'
     package: excel!
@@ -37,6 +38,7 @@ fields:
 
       Required Criteria: {`value`<!-- -->, `threshold`<!-- -->,
       `selectionType`<!-- -->}<!-- -->.
+    value: '"BottomN"'
   - name: equals
     uid: 'excel!Excel.ValueFilterCondition.equals:member'
     package: excel!
@@ -46,6 +48,7 @@ fields:
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
       Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+    value: '"Equals"'
   - name: greaterThan
     uid: 'excel!Excel.ValueFilterCondition.greaterThan:member'
     package: excel!
@@ -53,6 +56,7 @@ fields:
       Greater than comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    value: '"GreaterThan"'
   - name: greaterThanOrEqualTo
     uid: 'excel!Excel.ValueFilterCondition.greaterThanOrEqualTo:member'
     package: excel!
@@ -60,6 +64,7 @@ fields:
       Greater than or equal to comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    value: '"GreaterThanOrEqualTo"'
   - name: lessThan
     uid: 'excel!Excel.ValueFilterCondition.lessThan:member'
     package: excel!
@@ -67,6 +72,7 @@ fields:
       Less than comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    value: '"LessThan"'
   - name: lessThanOrEqualTo
     uid: 'excel!Excel.ValueFilterCondition.lessThanOrEqualTo:member'
     package: excel!
@@ -74,6 +80,7 @@ fields:
       Less than or equal to comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+    value: '"LessThanOrEqualTo"'
   - name: topN
     uid: 'excel!Excel.ValueFilterCondition.topN:member'
     package: excel!
@@ -83,7 +90,9 @@ fields:
 
       Required Criteria: {`value`<!-- -->, `threshold`<!-- -->,
       `selectionType`<!-- -->}<!-- -->.
+    value: '"TopN"'
   - name: unknown
     uid: 'excel!Excel.ValueFilterCondition.unknown:member'
     package: excel!
     summary: ValueFilterCondition is unknown or unsupported.
+    value: '"Unknown"'

@@ -21,19 +21,23 @@ fields:
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member'
     package: outlook!
     summary: The content of the attachment is returned as a base64-encoded string.
+    value: '"base64"'
   - name: Eml
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member'
     package: outlook!
     summary: >-
       The content of the attachment is returned as a string representing an .eml
       formatted file.
+    value: '"eml"'
   - name: ICalendar
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member'
     package: outlook!
     summary: >-
       The content of the attachment is returned as a string representing an
       .icalendar formatted file.
+    value: '"iCalendar"'
   - name: Url
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
     package: outlook!
     summary: The content of the attachment is returned as a string representing a URL.
+    value: '"url"'

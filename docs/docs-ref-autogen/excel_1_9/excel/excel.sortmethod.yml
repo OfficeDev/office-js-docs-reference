@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.SortMethod.pinYin:member'
     package: excel!
     summary: ''
+    value: '"PinYin"'
   - name: strokeCount
     uid: 'excel!Excel.SortMethod.strokeCount:member'
     package: excel!
     summary: ''
+    value: '"StrokeCount"'

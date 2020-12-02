@@ -18,18 +18,22 @@ fields:
     uid: 'word!Word.BreakType.line:member'
     package: word!
     summary: Line break.
+    value: '"Line"'
   - name: next
     uid: 'word!Word.BreakType.next:member'
     package: word!
     summary: ''
+    value: '"Next"'
   - name: page
     uid: 'word!Word.BreakType.page:member'
     package: word!
     summary: Page break at the insertion point.
+    value: '"Page"'
   - name: sectionContinuous
     uid: 'word!Word.BreakType.sectionContinuous:member'
     package: word!
     summary: New section without a corresponding page break.
+    value: '"SectionContinuous"'
   - name: sectionEven
     uid: 'word!Word.BreakType.sectionEven:member'
     package: word!
@@ -37,10 +41,12 @@ fields:
       Section break with the next section beginning on the next even-numbered
       page. If the section break falls on an even-numbered page, Word leaves the
       next odd-numbered page blank.
+    value: '"SectionEven"'
   - name: sectionNext
     uid: 'word!Word.BreakType.sectionNext:member'
     package: word!
     summary: Section break on next page.
+    value: '"SectionNext"'
   - name: sectionOdd
     uid: 'word!Word.BreakType.sectionOdd:member'
     package: word!
@@ -48,3 +54,4 @@ fields:
       Section break with the next section beginning on the next odd-numbered
       page. If the section break falls on an odd-numbered page, Word leaves the
       next even-numbered page blank.
+    value: '"SectionOdd"'

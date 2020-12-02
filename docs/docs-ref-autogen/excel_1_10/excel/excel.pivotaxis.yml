@@ -18,19 +18,24 @@ fields:
     uid: 'excel!Excel.PivotAxis.column:member'
     package: excel!
     summary: The column axis.
+    value: '"Column"'
   - name: data
     uid: 'excel!Excel.PivotAxis.data:member'
     package: excel!
     summary: The data axis.
+    value: '"Data"'
   - name: filter
     uid: 'excel!Excel.PivotAxis.filter:member'
     package: excel!
     summary: The filter axis.
+    value: '"Filter"'
   - name: row
     uid: 'excel!Excel.PivotAxis.row:member'
     package: excel!
     summary: The row axis.
+    value: '"Row"'
   - name: unknown
     uid: 'excel!Excel.PivotAxis.unknown:member'
     package: excel!
     summary: The axis or region is unknown or unsupported.
+    value: '"Unknown"'

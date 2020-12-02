@@ -18,7 +18,9 @@ fields:
     uid: 'excel!Excel.SearchDirection.backwards:member'
     package: excel!
     summary: Search in reverse order.
+    value: '"Backwards"'
   - name: forward
     uid: 'excel!Excel.SearchDirection.forward:member'
     package: excel!
     summary: Search in forward order.
+    value: '"Forward"'

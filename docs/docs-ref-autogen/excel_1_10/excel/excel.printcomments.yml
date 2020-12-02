@@ -15,11 +15,14 @@ fields:
     uid: 'excel!Excel.PrintComments.endSheet:member'
     package: excel!
     summary: Comments will be printed as end notes at the end of the worksheet.
+    value: '"EndSheet"'
   - name: inPlace
     uid: 'excel!Excel.PrintComments.inPlace:member'
     package: excel!
     summary: Comments will be printed where they were inserted in the worksheet.
+    value: '"InPlace"'
   - name: noComments
     uid: 'excel!Excel.PrintComments.noComments:member'
     package: excel!
     summary: Comments will not be printed.
+    value: '"NoComments"'

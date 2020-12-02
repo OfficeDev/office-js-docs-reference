@@ -15,13 +15,16 @@ fields:
     uid: 'word!Word.HeaderFooterType.evenPages:member'
     package: word!
     summary: Returns all headers or footers on even-numbered pages of a section.
+    value: '"EvenPages"'
   - name: firstPage
     uid: 'word!Word.HeaderFooterType.firstPage:member'
     package: word!
     summary: Returns the header or footer on the first page of a section.
+    value: '"FirstPage"'
   - name: primary
     uid: 'word!Word.HeaderFooterType.primary:member'
     package: word!
     summary: >-
       Returns the header or footer on all pages of a section, but excludes the
       first page or odd pages if they are different.
+    value: '"Primary"'

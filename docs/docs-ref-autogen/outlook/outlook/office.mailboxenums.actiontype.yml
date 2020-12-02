@@ -18,3 +18,4 @@ fields:
     uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
     package: outlook!
     summary: The `showTaskPane` action.
+    value: '"showTaskPane"'

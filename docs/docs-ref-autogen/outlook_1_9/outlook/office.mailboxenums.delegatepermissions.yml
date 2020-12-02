@@ -21,29 +21,29 @@ fields:
     uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteAll:member'
     package: outlook!
     summary: Delegate has permission to delete any items.
-    numericValue: 8
+    value: '8'
   - name: DeleteOwn
     uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteOwn:member'
     package: outlook!
     summary: Delegate has permission to delete only the items they created.
-    numericValue: 4
+    value: '4'
   - name: EditAll
     uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditAll:member'
     package: outlook!
     summary: Delegate has permission to edit any items.
-    numericValue: 32
+    value: '32'
   - name: EditOwn
     uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditOwn:member'
     package: outlook!
     summary: Delegate has permission to edit only they items they created.
-    numericValue: 16
+    value: '16'
   - name: Read
     uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Read:member'
     package: outlook!
     summary: Delegate has permission to read items.
-    numericValue: 1
+    value: '1'
   - name: Write
     uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Write:member'
     package: outlook!
     summary: Delegate has permission to create and write items.
-    numericValue: 2
+    value: '2'

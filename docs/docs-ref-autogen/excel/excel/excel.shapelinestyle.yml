@@ -18,10 +18,12 @@ fields:
     uid: 'excel!Excel.ShapeLineStyle.single:member'
     package: excel!
     summary: Single line.
+    value: '"Single"'
   - name: thickBetweenThin
     uid: 'excel!Excel.ShapeLineStyle.thickBetweenThin:member'
     package: excel!
     summary: Thick line with a thin line on each side.
+    value: '"ThickBetweenThin"'
   - name: thickThin
     uid: 'excel!Excel.ShapeLineStyle.thickThin:member'
     package: excel!
@@ -29,6 +31,7 @@ fields:
       Thick line next to thin line. For horizontal lines, the thick line is
       above the thin line. For vertical lines, the thick line is to the left of
       the thin line.
+    value: '"ThickThin"'
   - name: thinThick
     uid: 'excel!Excel.ShapeLineStyle.thinThick:member'
     package: excel!
@@ -36,7 +39,9 @@ fields:
       Thick line next to thin line. For horizontal lines, the thick line is
       below the thin line. For vertical lines, the thick line is to the right of
       the thin line.
+    value: '"ThinThick"'
   - name: thinThin
     uid: 'excel!Excel.ShapeLineStyle.thinThin:member'
     package: excel!
     summary: Two thin lines.
+    value: '"ThinThin"'

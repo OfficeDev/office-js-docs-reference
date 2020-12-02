@@ -17,9 +17,11 @@ fields:
     summary: >-
       Process down the rows before processing across pages or page fields to the
       right.
+    value: '"DownThenOver"'
   - name: overThenDown
     uid: 'excel!Excel.PrintOrder.overThenDown:member'
     package: excel!
     summary: >-
       Process across pages or page fields to the right before moving down the
       rows.
+    value: '"OverThenDown"'

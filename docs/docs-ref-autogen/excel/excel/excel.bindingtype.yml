@@ -15,11 +15,14 @@ fields:
     uid: 'excel!Excel.BindingType.range:member'
     package: excel!
     summary: ''
+    value: '"Range"'
   - name: table
     uid: 'excel!Excel.BindingType.table:member'
     package: excel!
     summary: ''
+    value: '"Table"'
   - name: text
     uid: 'excel!Excel.BindingType.text:member'
     package: excel!
     summary: ''
+    value: '"Text"'

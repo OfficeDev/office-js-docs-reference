@@ -19,11 +19,14 @@ fields:
     uid: 'excel!Excel.TopBottomSelectionType.items:member'
     package: excel!
     summary: Filter the top/bottom N number of items as measured by the chosen value.
+    value: '"Items"'
   - name: percent
     uid: 'excel!Excel.TopBottomSelectionType.percent:member'
     package: excel!
     summary: Filter the top/bottom N percent of items as measured by the chosen value.
+    value: '"Percent"'
   - name: sum
     uid: 'excel!Excel.TopBottomSelectionType.sum:member'
     package: excel!
     summary: Filter the top/bottom N sum as measured by the chosen value.
+    value: '"Sum"'

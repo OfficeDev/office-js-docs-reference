@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.SortOrientation.columns:member'
     package: excel!
     summary: ''
+    value: '"Columns"'
   - name: rows
     uid: 'excel!Excel.SortOrientation.rows:member'
     package: excel!
     summary: ''
+    value: '"Rows"'

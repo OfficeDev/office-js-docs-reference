@@ -15,7 +15,9 @@ fields:
     uid: 'excel!Excel.ChartAxisGroup.primary:member'
     package: excel!
     summary: ''
+    value: '"Primary"'
   - name: secondary
     uid: 'excel!Excel.ChartAxisGroup.secondary:member'
     package: excel!
     summary: ''
+    value: '"Secondary"'
