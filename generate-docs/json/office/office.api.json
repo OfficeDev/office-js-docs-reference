@@ -3873,7 +3873,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#host:member",
-                  "docComment": "/**\n * Contains the Office application host in which the add-in is running.\n */\n",
+                  "docComment": "/**\n * Contains the Office application host in which the add-in is running.\n *\n * **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets, you can use the `Office.context.diagnostics` property to get the host.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3976,7 +3976,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#platform:member",
-                  "docComment": "/**\n * Provides the platform on which the add-in is running.\n */\n",
+                  "docComment": "/**\n * Provides the platform on which the add-in is running.\n *\n * **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets, you can use the `Office.context.diagnostics` property to get the platform.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
