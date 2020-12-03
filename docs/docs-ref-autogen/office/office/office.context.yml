@@ -259,7 +259,13 @@ properties:
     uid: 'office!Office.Context#host:member'
     package: office!
     fullName: host
-    summary: Contains the Office application host in which the add-in is running.
+    summary: >-
+      Contains the Office application host in which the add-in is running.
+
+
+      **Important**: In Outlook, this property is available from requirement set
+      1.5. For all Mailbox requirement sets, you can use the
+      `Office.context.diagnostics` property to get the host.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -360,7 +366,13 @@ properties:
     uid: 'office!Office.Context#platform:member'
     package: office!
     fullName: platform
-    summary: Provides the platform on which the add-in is running.
+    summary: >-
+      Provides the platform on which the add-in is running.
+
+
+      **Important**: In Outlook, this property is available from requirement set
+      1.5. For all Mailbox requirement sets, you can use the
+      `Office.context.diagnostics` property to get the platform.
     remarks: ''
     isPreview: false
     isDeprecated: false
