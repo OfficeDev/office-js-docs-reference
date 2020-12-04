@@ -129,7 +129,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <ul>
                 <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-preview">PowerPointApi Preview</a></li>
                 <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
-				<li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
+                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
                 <li><a style="font-size: 1rem;" href="/javascript/api/office?view=powerpoint-js-preview">Common APIs</a></li>
             </ul>
         </div>
