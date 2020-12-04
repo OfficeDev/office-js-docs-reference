@@ -117,7 +117,7 @@ tryCatch(async () => {
 
     console.log("create file: powerpoint.d.ts (release)");
     fsx.writeFileSync(
-        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_1/powerpoint.d.ts',
+        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_2/powerpoint.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true)
     );
 
