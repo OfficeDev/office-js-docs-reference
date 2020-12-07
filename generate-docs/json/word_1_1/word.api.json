@@ -4189,7 +4189,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#placeholderText:member",
-                  "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: The set operation for this property is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9595,7 +9595,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: The set operation for this property is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10078,7 +10078,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: The set operation for this property is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10476,7 +10476,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: The set operation for this property is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10798,7 +10798,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: This API is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.\n *\n * **Note**: The set operation for this property is not supported in Word on the web.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
