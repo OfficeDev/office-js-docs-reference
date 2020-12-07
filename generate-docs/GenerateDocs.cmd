@@ -58,8 +58,10 @@ call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_3\ou
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts "Mailbox 1.2" ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts "Mailbox 1.1" .\tool-inputs\outlook-base.d.ts
 
-call node version-remover ..\api-extractor-inputs-word-release\powerpoint_1_2\powerpoint.d.ts "PowerPointApi 1.2" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts
-call node version-remover ..\api-extractor-inputs-word-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts
+call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts "PowerPointApi 1.2" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts
+
+call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts
+
 
 call node version-remover ..\api-extractor-inputs-word-release\word_1_3\word.d.ts "WordApi 1.3" ..\api-extractor-inputs-word-release\word_1_2\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_2\word.d.ts "WordApi 1.2" ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
