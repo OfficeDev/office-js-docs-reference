@@ -36,9 +36,16 @@ methods:
       return a `NumberOfNotificationMessagesExceeded` error.
 
 
-      **Important**: Only one notification of type `InsightMessage` is allowed
-      per add-in. (The `InsightMessage` type is currently in preview.)
-      Attempting to add more will throw an error.
+      **Important**:
+
+
+      - Only one notification of type `InsightMessage` is allowed per add-in.
+      (The `InsightMessage` type is currently in preview.) Attempting to add
+      more will throw an error.
+
+
+      - In modern Outlook on the web, you can add an `InsightMessage`
+      notification only in Compose mode.
 
 
       \[ [API set: Mailbox

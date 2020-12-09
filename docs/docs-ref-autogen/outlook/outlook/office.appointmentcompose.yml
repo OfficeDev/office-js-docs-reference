@@ -2233,7 +2233,7 @@ methods:
 
       **Note**: This method is only supported by Outlook 2016 or later on
       Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on
-      the web for Office 365.
+      the web for Microsoft 365.
 
 
       \[ [API set: Mailbox
@@ -2301,11 +2301,11 @@ methods:
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. On success, the initialization data is
-            provided in the `asyncResult.value` property as a string. If there
-            is no initialization context, the `asyncResult` object will contain
-            an `Error` object with its `code` property set to 9020 and its
-            `name` property set to `GenericResponseError`<!-- -->.
+            `Office.AsyncResult`<!-- -->. On success, the initialization context
+            data is provided in the `asyncResult.value` property as a string. If
+            there is no initialization context, the `asyncResult` object will
+            contain an `Error` object with its `code` property set to 9020 and
+            its `name` property set to `GenericResponseError`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void

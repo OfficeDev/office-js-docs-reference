@@ -7,6 +7,10 @@ summary: >-
   The definition of the action for a notification message.
 
 
+  **Important**: In modern Outlook on the web, the `NotificationMessageAction`
+  object is available in Compose mode only.
+
+
   \[ [API set: Mailbox
   Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
   \]
@@ -18,7 +22,7 @@ remarks: >-
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
+  -->**: Compose or Read
 isPreview: true
 isDeprecated: false
 type: interface
@@ -65,7 +69,9 @@ properties:
     uid: 'outlook!Office.NotificationMessageAction#contextData:member'
     package: outlook!
     fullName: contextData
-    summary: Any JSON data the button needs to pass on.
+    summary: >-
+      Any JSON data the button needs to pass on. This data can be retrieved by
+      calling `item.getInitializationContextAsync`<!-- -->.
     remarks: ''
     isPreview: true
     isDeprecated: false
