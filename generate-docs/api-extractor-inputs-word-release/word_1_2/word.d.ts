@@ -400,7 +400,7 @@ export declare namespace Word {
          *
          * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
          * 
-         * **Note**: This API is not supported in Word on the web.
+         * **Note**: The set operation for this property is not supported in Word on the web.
          *
          * [Api set: WordApi 1.1]
          */
@@ -3264,7 +3264,7 @@ export declare namespace Word {
              *
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
              * 
-             * **Note**: This API is not supported in Word on the web.
+             * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
@@ -3846,7 +3846,7 @@ export declare namespace Word {
              *
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
              * 
-             * **Note**: This API is not supported in Word on the web.
+             * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
@@ -4546,7 +4546,7 @@ export declare namespace Word {
              *
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
              * 
-             * **Note**: This API is not supported in Word on the web.
+             * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
@@ -4666,7 +4666,7 @@ export declare namespace Word {
              *
              * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
              * 
-             * **Note**: This API is not supported in Word on the web.
+             * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * [Api set: WordApi 1.1]
              */
