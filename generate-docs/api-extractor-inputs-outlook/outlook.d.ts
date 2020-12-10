@@ -1783,7 +1783,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is activated by an actionable message.
          *
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Office 365.
+         * and Outlook on the web for Microsoft 365.
          *
          * [Api set: Mailbox Preview]
          *
@@ -1799,7 +1799,7 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization data is provided in the `asyncResult.value` property as a string.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
          *                 If there is no initialization context, the `asyncResult` object will contain
          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
          *
@@ -2868,7 +2868,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          *
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Office 365.
+         * and Outlook on the web for Microsoft 365.
          *
          * [Api set: Mailbox Preview]
          *
@@ -2880,11 +2880,11 @@ export declare namespace Office {
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *                 On success, the initialization data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property
-         *                 set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
          *
          * @beta
          */
@@ -5790,7 +5790,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is activated by an actionable message.
          *
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Office 365.
+         * and Outlook on the web for Microsoft 365.
          *
          * [Api set: Mailbox Preview]
          *
@@ -5804,10 +5804,11 @@ export declare namespace Office {
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. On success, the initialization data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property
-         *                 set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
          *
          * @beta
          */
@@ -6750,7 +6751,7 @@ export declare namespace Office {
          * {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          *
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Office 365.
+         * and Outlook on the web for Microsoft 365.
          *
          * [Api set: Mailbox Preview]
          *
@@ -6762,11 +6763,11 @@ export declare namespace Office {
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *                 On success, the initialization data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property
-         *                 set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
          *
          * @beta
          */
@@ -7127,13 +7128,15 @@ export declare namespace Office {
     /**
      * The definition of the action for a notification message.
      *
+     * **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
+     *
      * [Api set: Mailbox Preview]
      *
      * @remarks
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
-     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
      *
      * @beta
      */
@@ -7153,6 +7156,7 @@ export declare namespace Office {
         commandId: string;
         /**
          * Any JSON data the button needs to pass on.
+         * This data can be retrieved by calling `item.getInitializationContextAsync`.
          */
         contextData: any;
     }
@@ -7207,11 +7211,13 @@ export declare namespace Office {
          * Only applicable when the type is `InsightMessage`.
          * Specifying this property for an unsupported type or including too many actions throws an error.
          *
+         * **Important**: In modern Outlook on the web, the `actions` property is available in Compose mode only.
+         *
          * [Api set: Mailbox Preview]
          *
          * @remarks
          *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @beta
          */
@@ -7234,8 +7240,12 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
-         * **Important**: Only one notification of type `InsightMessage` is allowed per add-in.
+         * **Important**:
+         *
+         * - Only one notification of type `InsightMessage` is allowed per add-in.
          * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
+         *
+         * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
          * [Api set: Mailbox 1.3]
          *
@@ -8627,7 +8637,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>office365</td>
-         *     <td>The mailbox is associated with an Office 365 work or school account.</td>
+         *     <td>The mailbox is associated with a Microsoft 365 work or school account.</td>
          *   </tr>
          *   <tr>
          *     <td>outlookCom</td>
