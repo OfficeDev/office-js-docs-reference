@@ -187,4 +187,4 @@ methods:
           <xref
           uid="powerpoint!PowerPoint.Interfaces.PresentationData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'

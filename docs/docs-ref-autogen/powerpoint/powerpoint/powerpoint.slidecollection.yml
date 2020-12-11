@@ -240,4 +240,4 @@ methods:
           uid="powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface"
           />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'

@@ -12,13 +12,17 @@ const CURRENT_POWERPOINT_RELEASE = 1;
 
 tryCatch(async () => {
     // ----
-    // Clean up Office and Outlook json cross-referencing.
+    // Clean up Office, Outlook, and PowerPoint json cross-referencing.
     // ----
     console.log("\nCleaning up Office json cross-referencing...");
 
     const officeJsonPath = path.resolve("../json/office");
     const officeFilename = "office.api.json";
-    fsx.writeFileSync(officeJsonPath + '/' + officeFilename, fsx.readFileSync(officeJsonPath + '/' + officeFilename).toString().replace("office!Office.Mailbox", "outlook!Office.Mailbox").replace("office!Office.RoamingSettings", "outlook!Office.RoamingSettings"));
+    fsx.writeFileSync(officeJsonPath + '/' + officeFilename, fsx.readFileSync(officeJsonPath + '/' + officeFilename)
+        .toString()
+        .replace("office!Office.Mailbox", "outlook!Office.Mailbox")
+        .replace("office!Office.RoamingSettings", "outlook!Office.RoamingSettings")
+        .replace("powerpoint!OfficeExtension", "office!OfficeExtension"));
 
     console.log("\nCompleted Office json cross-referencing cleanup");
 
