@@ -18,7 +18,12 @@ tryCatch(async () => {
 
     const officeJsonPath = path.resolve("../json/office");
     const officeFilename = "office.api.json";
-    fsx.writeFileSync(officeJsonPath + '/' + officeFilename, fsx.readFileSync(officeJsonPath + '/' + officeFilename).toString().replace("office!Office.Mailbox", "outlook!Office.Mailbox").replace("office!Office.RoamingSettings", "outlook!Office.RoamingSettings"));
+    fsx.writeFileSync(
+        officeJsonPath + '/' + officeFilename,
+        fsx.readFileSync(officeJsonPath + '/' + officeFilename)
+            .toString()
+            .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
+            .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings"));
 
     console.log("\nCompleted Office json cross-referencing cleanup");
 
@@ -266,7 +271,7 @@ function cleanUpOutlookJson(jsonString : string) {
 }
 
 function cleanUpRichApiJson(jsonString : string) {
-    return jsonString.replace(/(excel|word|visio|onenote)\!OfficeExtension/g, "office!OfficeExtension");
+    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension");
 }
 
 function cleanUpOutlookMarkdown(markdownString : string) {
