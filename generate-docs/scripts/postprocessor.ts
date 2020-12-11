@@ -132,7 +132,7 @@ tryCatch(async () => {
             }
         });
 
-    console.log(`PowerPoint API requirement set link pass`);
+    console.log(`PowerPoint API requirement set link pass and namespace pass`);
     fsx.readdirSync(docsDestination)
         .filter(filename => filename.indexOf("powerpoint") >= 0 && filename.indexOf(".yml") < 0)
         .forEach(filename => {
@@ -142,7 +142,8 @@ tryCatch(async () => {
                     .forEach(subfilename => {
                         fsx.writeFileSync(subfolder + '/' + subfilename,
                             fsx.readFileSync(subfolder + '/' + subfilename).toString()
-                                .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets"));
+                                .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets")
+                                .replace("powerpoint!OfficeExtension", "office!OfficeExtension"));
                     });
             }
             let baseYml = docsDestination + '/powerpoint/powerpoint.yml';

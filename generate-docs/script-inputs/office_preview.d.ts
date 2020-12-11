@@ -546,7 +546,7 @@ declare namespace Office {
     /**
      * Function type to turn off the event.
      */
-    type RemoveEventListener = () => Promise<void>;
+    export type RemoveEventListener = () => Promise<void>;
     /**
      * Represents add-in level functionality for operating or configuring various aspects of the add-in.
      */
@@ -1513,7 +1513,7 @@ declare namespace Office {
 	/**
 	 * Used to strongly type the `handler` property of RemoveHandlerOptions.
 	 */
-	 type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
+	 export type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
     /**
      * Provides options to determine which event handler or handlers are removed.
      */
@@ -16932,7 +16932,7 @@ declare namespace OfficeExtension {
      * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
      */
     const Promise: Office.IPromiseConstructor;
-    type IPromise<T> = Promise<T>;
+    export type IPromise<T> = Promise<T>;
 
     /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
     class TrackedObjects {

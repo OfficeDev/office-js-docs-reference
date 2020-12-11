@@ -2245,7 +2245,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "type BindingEventHandler = "
+                  "text": "export type BindingEventHandler = "
                 },
                 {
                   "kind": "Content",
@@ -26194,7 +26194,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "type RemoveEventListener = "
+                  "text": "export type RemoveEventListener = "
                 },
                 {
                   "kind": "Content",
