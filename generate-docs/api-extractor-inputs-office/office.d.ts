@@ -530,7 +530,7 @@ export declare namespace Office {
     /**
      * Function type to turn off the event.
      */
-    export type RemoveEventListener = () => Promise<void>;
+    type RemoveEventListener = () => Promise<void>;
     /**
      * Represents add-in level functionality for operating or configuring various aspects of the add-in.
      */
@@ -1497,7 +1497,7 @@ export declare namespace Office {
 	/**
 	 * Used to strongly type the `handler` property of RemoveHandlerOptions.
 	 */
-	 export type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
+	 type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
     /**
      * Provides options to determine which event handler or handlers are removed.
      */
