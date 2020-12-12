@@ -59,9 +59,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: >-
-          <xref uid="powerpoint!OfficeExtension.ClientResult:class"
-          />&lt;number&gt;
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of slides in the collection.
   - name: getItem(key)
     uid: 'powerpoint!PowerPoint.SlideCollection#getItem:member(1)'
@@ -211,7 +209,7 @@ methods:
             specifies the properties to load, and `propertyNamesAndPaths.expand`
             is a comma-delimited string that specifies the navigation properties
             to load.
-          type: '<xref uid="powerpoint!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
         description: ''
@@ -240,4 +238,4 @@ methods:
           uid="powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface"
           />
         description: ''
-extends: '<xref uid="powerpoint!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
