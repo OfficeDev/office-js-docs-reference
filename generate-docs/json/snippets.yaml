@@ -13558,22 +13558,50 @@
     });
 'Office.InternetHeaders#getAsync:member(1)':
   - >-
-    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"],
-    callback);
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
-
-    function callback(asyncResult) {
-        var dictionary = asyncResult.value;
-        var header1_value = dictionary["header1"];
-    }
+    Office.context.mailbox.item.internetHeaders.getAsync(
+      ["x-preferred-fruit", "x-preferred-vegetable", "x-best-vegetable", "x-nonexistent-header"],
+      function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected headers: " + JSON.stringify(asyncResult.value));
+        } else {
+          console.log("Error getting selected headers: " + JSON.stringify(asyncResult.error));
+        }
+      }
+    );
 'Office.InternetHeaders#removeAsync:member(1)':
   - >-
-    Office.context.mailbox.item.internetHeaders.removeAsync(["header1",
-    "header2"]);
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
+    Office.context.mailbox.item.internetHeaders.removeAsync(
+      ["x-best-vegetable", "x-nonexistent-header"],
+      function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Successfully removed selected headers");
+        } else {
+          console.log("Error removing selected headers: " + JSON.stringify(asyncResult.error));
+        }
+      }
+    );
 'Office.InternetHeaders#setAsync:member(1)':
   - >-
-    Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1",
-    "header2": "value2"});
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
+    Office.context.mailbox.item.internetHeaders.setAsync(
+      { "x-preferred-fruit": "orange", "x-preferred-vegetable": "broccoli", "x-best-vegetable": "spinach" },
+      function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Successfully set headers");
+        } else {
+          console.log("Error setting headers: " + JSON.stringify(asyncResult.error));
+        }
+      }
+
+    );
 'Office.IsAllDayEvent#getAsync:member(2)':
   - >-
     // Link to full sample:
@@ -14838,14 +14866,19 @@
     });
 'Office.MessageCompose#internetHeaders:member':
   - >-
-    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"],
-    callback);
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
-
-    function callback(asyncResult) {
-        var dictionary = asyncResult.value;
-        var header1_value = dictionary["header1"];
-    }
+    Office.context.mailbox.item.internetHeaders.getAsync(
+      ["x-preferred-fruit", "x-preferred-vegetable", "x-best-vegetable", "x-nonexistent-header"],
+      function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected headers: " + JSON.stringify(asyncResult.value));
+        } else {
+          console.log("Error getting selected headers: " + JSON.stringify(asyncResult.error));
+        }
+      }
+    );
 'Office.MessageCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
@@ -15544,22 +15577,30 @@
     console.log("Message received from: " + msgFrom.displayName + " (" +
     msgFrom.emailAddress + ")");
 'Office.MessageRead#getAllInternetHeadersAsync:member(1)':
-  - |-
-    // Get the internet headers related to the mail.
-    Office.context.mailbox.item.getAllInternetHeadersAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log(asyncResult.value);
-            } else {
-                if (asyncResult.error.code == 9020) {
-                    // GenericResponseError returned when there is no context.
-                    // Treat as no context.
-                } else {
-                    // Handle the error.
-                }
-            }
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/70-mime-headers/get-internet-headers-message-read.yaml
+
+    Office.context.mailbox.item.getAllInternetHeadersAsync(function
+    (asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("Internet headers received successfully");
+        if (asyncResult.value.match(/x-preferred-fruit:.*/gim)) {
+          console.log("Sender's preferred fruit: " + asyncResult.value.match(/x-preferred-fruit:.*/gim)[0].slice(19));
+        } else {
+          console.log("Didn't receive header with sender's preferred fruit");
         }
-    );
+        if (asyncResult.value.match(/x-preferred-vegetable:.*/gim)) {
+          console.log(
+            "Sender's preferred vegetable: " + asyncResult.value.match(/x-preferred-vegetable:.*/gim)[0].slice(23)
+          );
+        } else {
+          console.log("Didn't receive header with sender's preferred vegetable");
+        }
+      } else {
+        console.log("Error getting internet headers: " + JSON.stringify(asyncResult.error));
+      }
+    });
 'Office.MessageRead#getAttachmentContentAsync:member(1)':
   - >-
     // Link to full sample:
