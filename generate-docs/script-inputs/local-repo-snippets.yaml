@@ -9024,20 +9024,6 @@ Office.Entities#urls:member:
   - |-
     var item = Office.context.mailbox.item;
     var urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
-Office.InternetHeaders#getAsync:member(1):
-  - |-
-    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
-
-    function callback(asyncResult) {
-        var dictionary = asyncResult.value;
-        var header1_value = dictionary["header1"];
-    }
-Office.InternetHeaders#removeAsync:member(1):
-  - |-
-    Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
-Office.InternetHeaders#setAsync:member(1):
-  - |-
-    Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
 Office.Location#getAsync:member(1):
   - |-
     var userContext = { value : 1 };
@@ -9305,14 +9291,6 @@ Office.MessageCompose#getSelectedDataAsync:member(1):
 
         console.log("Selected text in " + prop + ": " + text);
     }
-Office.MessageCompose#internetHeaders:member:
-  - |-
-    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
-
-    function callback(asyncResult) {
-        var dictionary = asyncResult.value;
-        var header1_value = dictionary["header1"];
-    }
 Office.MessageCompose#loadCustomPropertiesAsync:member(1):
   - |-
     // The following example shows how to use the loadCustomPropertiesAsync method
@@ -9559,23 +9537,6 @@ Office.MessageRead#displayReplyForm:member(1):
             console.log(asyncResult.value);
         }
     });
-Office.MessageRead#getAllInternetHeadersAsync:member(1):
-  - |-
-    // Get the internet headers related to the mail.
-    Office.context.mailbox.item.getAllInternetHeadersAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log(asyncResult.value);
-            } else {
-                if (asyncResult.error.code == 9020) {
-                    // GenericResponseError returned when there is no context.
-                    // Treat as no context.
-                } else {
-                    // Handle the error.
-                }
-            }
-        }
-    );
 Office.MessageRead#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
