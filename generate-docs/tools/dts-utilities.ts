@@ -240,7 +240,7 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
                 field.declarationString.lastIndexOf("(", paramIndex),
                 field.declarationString.lastIndexOf(" ", paramIndex)) + 1;
             // Remove the variable modifiers for the link.
-            parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace("?", "").replace("_", "-").replace("...", "") + "-";
+            parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace(/\?/gm, "").replace(/\_/gm, "-").replace(/\.\.\./gm, "") + "-";
             paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
         }
 
@@ -249,7 +249,7 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
         }
 
 
-        fieldLink = "/" + relativePath + className + "#" + field.name.replace("_", "-") + parameterLink;
+        fieldLink = "/" + relativePath + className + "#" + field.name.replace(/\_/gm, "-") + parameterLink;
     } else {
         fieldLink = "/" + relativePath + className + "#" + field.name;
     }
