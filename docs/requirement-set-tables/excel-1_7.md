@@ -139,8 +139,8 @@
 ||[showCard()](/javascript/api/excel/excel.range#showcard--)|Displays the card for an active cell if it has rich value content.|
 ||[style](/javascript/api/excel/excel.range#style)|Represents the style of the current range.|
 |[RangeFormat](/javascript/api/excel/excel.rangeformat)|[textOrientation](/javascript/api/excel/excel.rangeformat#textorientation)|The text orientation of all the cells within the range.|
-||[useStandardHeight](/javascript/api/excel/excel.rangeformat#usestandardheight)|Determines if the row height of the Range object equals the standard height of the sheet.|
-||[useStandardWidth](/javascript/api/excel/excel.rangeformat#usestandardwidth)|Specifies if the column width of the Range object equals the standard width of the sheet.|
+||[useStandardHeight](/javascript/api/excel/excel.rangeformat#usestandardheight)|Determines if the row height of the `Range` object equals the standard height of the sheet.|
+||[useStandardWidth](/javascript/api/excel/excel.rangeformat#usestandardwidth)|Specifies if the column width of the `Range` object equals the standard width of the sheet.|
 |[RangeHyperlink](/javascript/api/excel/excel.rangehyperlink)|[address](/javascript/api/excel/excel.rangehyperlink#address)|Represents the url target for the hyperlink.|
 ||[documentReference](/javascript/api/excel/excel.rangehyperlink#documentreference)|Represents the document reference target for the hyperlink.|
 ||[screenTip](/javascript/api/excel/excel.rangehyperlink#screentip)|Represents the string displayed when hovering over the hyperlink.|

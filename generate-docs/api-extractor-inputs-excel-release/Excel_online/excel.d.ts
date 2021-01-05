@@ -8040,20 +8040,22 @@ export declare namespace Excel {
         textOrientation: number;
         /**
          *
-         * Determines if the row height of the Range object equals the standard height of the sheet.
-                    Returns True if the row height of the Range object equals the standard height of the sheet.
-                    Returns Null if the range contains more than one row and the rows aren't all the same height.
-                    Returns False otherwise.
+         * Determines if the row height of the `Range` object equals the standard height of the sheet.
+                    Returns `true` if the row height of the `Range` object equals the standard height of the sheet.
+                    Returns `null` if the range contains more than one row and the rows aren't all the same height.
+                    Returns `false` otherwise.
+                    Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
          *
          * [Api set: ExcelApi 1.7]
          */
         useStandardHeight: boolean;
         /**
          *
-         * Specifies if the column width of the Range object equals the standard width of the sheet.
-                    Returns True if the column width of the Range object equals the standard width of the sheet.
-                    Returns Null if the range contains more than one column and the columns aren't all the same height.
-                    Returns False otherwise.
+         * Specifies if the column width of the `Range` object equals the standard width of the sheet.
+                    Returns `true` if the column width of the `Range` object equals the standard width of the sheet.
+                    Returns `null` if the range contains more than one column and the columns aren't all the same height.
+                    Returns `false` otherwise.
+                    Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -28793,20 +28795,22 @@ export declare namespace Excel {
             textOrientation?: number;
             /**
              *
-             * Determines if the row height of the Range object equals the standard height of the sheet.
-                        Returns True if the row height of the Range object equals the standard height of the sheet.
-                        Returns Null if the range contains more than one row and the rows aren't all the same height.
-                        Returns False otherwise.
+             * Determines if the row height of the `Range` object equals the standard height of the sheet.
+                        Returns `true` if the row height of the `Range` object equals the standard height of the sheet.
+                        Returns `null` if the range contains more than one row and the rows aren't all the same height.
+                        Returns `false` otherwise.
+                        Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
              *
              * [Api set: ExcelApi 1.7]
              */
             useStandardHeight?: boolean;
             /**
              *
-             * Specifies if the column width of the Range object equals the standard width of the sheet.
-                        Returns True if the column width of the Range object equals the standard width of the sheet.
-                        Returns Null if the range contains more than one column and the columns aren't all the same height.
-                        Returns False otherwise.
+             * Specifies if the column width of the `Range` object equals the standard width of the sheet.
+                        Returns `true` if the column width of the `Range` object equals the standard width of the sheet.
+                        Returns `null` if the range contains more than one column and the columns aren't all the same height.
+                        Returns `false` otherwise.
+                        Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -34190,20 +34194,22 @@ export declare namespace Excel {
             textOrientation?: number;
             /**
              *
-             * Determines if the row height of the Range object equals the standard height of the sheet.
-                        Returns True if the row height of the Range object equals the standard height of the sheet.
-                        Returns Null if the range contains more than one row and the rows aren't all the same height.
-                        Returns False otherwise.
+             * Determines if the row height of the `Range` object equals the standard height of the sheet.
+                        Returns `true` if the row height of the `Range` object equals the standard height of the sheet.
+                        Returns `null` if the range contains more than one row and the rows aren't all the same height.
+                        Returns `false` otherwise.
+                        Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
              *
              * [Api set: ExcelApi 1.7]
              */
             useStandardHeight?: boolean;
             /**
              *
-             * Specifies if the column width of the Range object equals the standard width of the sheet.
-                        Returns True if the column width of the Range object equals the standard width of the sheet.
-                        Returns Null if the range contains more than one column and the columns aren't all the same height.
-                        Returns False otherwise.
+             * Specifies if the column width of the `Range` object equals the standard width of the sheet.
+                        Returns `true` if the column width of the `Range` object equals the standard width of the sheet.
+                        Returns `null` if the range contains more than one column and the columns aren't all the same height.
+                        Returns `false` otherwise.
+                        Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -41123,20 +41129,22 @@ export declare namespace Excel {
             textOrientation?: boolean;
             /**
              *
-             * Determines if the row height of the Range object equals the standard height of the sheet.
-                        Returns True if the row height of the Range object equals the standard height of the sheet.
-                        Returns Null if the range contains more than one row and the rows aren't all the same height.
-                        Returns False otherwise.
+             * Determines if the row height of the `Range` object equals the standard height of the sheet.
+                        Returns `true` if the row height of the `Range` object equals the standard height of the sheet.
+                        Returns `null` if the range contains more than one row and the rows aren't all the same height.
+                        Returns `false` otherwise.
+                        Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
              *
              * [Api set: ExcelApi 1.7]
              */
             useStandardHeight?: boolean;
             /**
              *
-             * Specifies if the column width of the Range object equals the standard width of the sheet.
-                        Returns True if the column width of the Range object equals the standard width of the sheet.
-                        Returns Null if the range contains more than one column and the columns aren't all the same height.
-                        Returns False otherwise.
+             * Specifies if the column width of the `Range` object equals the standard width of the sheet.
+                        Returns `true` if the column width of the `Range` object equals the standard width of the sheet.
+                        Returns `null` if the range contains more than one column and the columns aren't all the same height.
+                        Returns `false` otherwise.
+                        Note: This property is only intended to be set to `true`. Setting it to `false` has no effect. 
              *
              * [Api set: ExcelApi 1.7]
              */
