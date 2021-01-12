@@ -87,7 +87,28 @@ methods:
           type: '<xref uid="powerpoint!PowerPoint.InsertSlideOptions:interface" />'
       return:
         type: void
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/powerpoint/preview-apis/insert-slides.yaml
+
+          await PowerPoint.run(async function(context) {
+              const selectedSlideID = await getSelectedSlideID();
+
+              context.presentation.insertSlidesFromBase64(chosenFileBase64, {
+                  formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+                  targetSlideId: selectedSlideID + "#"
+              });
+              await context.sync();
+          });
+
+          ```
   - name: load(options)
     uid: 'powerpoint!PowerPoint.Presentation#load:member(1)'
     package: powerpoint!
