@@ -58,6 +58,11 @@ call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_3\ou
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts "Mailbox 1.2" ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts "Mailbox 1.1" .\tool-inputs\outlook-base.d.ts
 
+call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts "PowerPointApi 1.2" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts
+
+call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts
+
+
 call node version-remover ..\api-extractor-inputs-word-release\word_1_3\word.d.ts "WordApi 1.3" ..\api-extractor-inputs-word-release\word_1_2\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_2\word.d.ts "WordApi 1.2" ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_1\word.d.ts "WordApi 1.1" .\tool-inputs\word-base.d.ts
@@ -89,7 +94,9 @@ call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_3\
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_2
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts .\tool-inputs\outlook-base.d.ts ..\..\docs\requirement-set-tables\outlook-1_1
 
-call node whats-new powerpoint ..\api-extractor-inputs-powerpoint\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts ..\..\docs\requirement-set-tables\powerpoint-preview
+call node whats-new powerpoint ..\api-extractor-inputs-powerpoint\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts ..\..\docs\requirement-set-tables\powerpoint-preview
+call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts ..\..\docs\requirement-set-tables\powerpoint-1_2
+call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts .\tool-inputs\powerpoint-base.d.ts ..\..\docs\requirement-set-tables\powerpoint-1_1
 
 call node whats-new word ..\api-extractor-inputs-word\word.d.ts ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\..\docs\requirement-set-tables\word-preview
 call node whats-new word ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\api-extractor-inputs-word-release\word_1_2\word.d.ts ..\..\docs\requirement-set-tables\word-1_3
@@ -166,7 +173,9 @@ cd ..
 
 cd ..\api-extractor-inputs-powerpoint
 call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-powerpoint-release\PowerPoint_1_1
+cd ..\api-extractor-inputs-powerpoint-release\PowerPoint_1_2
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\PowerPoint_1_1
 call ..\..\node_modules\.bin\api-extractor run
 cd ..
 
@@ -225,6 +234,7 @@ call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_8 -
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_9 --output-folder .\yaml\outlook_1_9 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint --output-folder .\yaml\powerpoint --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul
+call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_2 --output-folder .\yaml\powerpoint_1_2 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\visio --output-folder .\yaml\visio --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word --output-folder .\yaml\word --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul
