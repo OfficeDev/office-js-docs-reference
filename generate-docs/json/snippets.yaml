@@ -20259,6 +20259,20 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+'PowerPoint.Presentation#insertSlidesFromBase64:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/powerpoint/preview-apis/insert-slides.yaml
+
+    await PowerPoint.run(async function(context) {
+        const selectedSlideID = await getSelectedSlideID();
+
+        context.presentation.insertSlidesFromBase64(chosenFileBase64, {
+            formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+            targetSlideId: selectedSlideID + "#"
+        });
+        await context.sync();
+    });
 'PowerPoint.createPresentation:function(1)':
   - |-
     var myFile = document.getElementById("file");
