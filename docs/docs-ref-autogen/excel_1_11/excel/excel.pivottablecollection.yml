@@ -91,7 +91,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
           await Excel.run(async (context) => {
               const rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
