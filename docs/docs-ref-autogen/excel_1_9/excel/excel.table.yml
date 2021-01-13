@@ -197,7 +197,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
 
           await Excel.run(async (context) => {
               let table = context.workbook.tables.getItemAt(0);
@@ -239,7 +239,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
 
           await Excel.run(async (context) => {
               let table = context.workbook.tables.getItemAt(0);

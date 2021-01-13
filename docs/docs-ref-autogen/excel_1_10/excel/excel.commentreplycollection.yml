@@ -85,7 +85,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-replies.yaml
 
           await Excel.run(async (context) => {
               // Adds a reply to the first comment in this worksheet.

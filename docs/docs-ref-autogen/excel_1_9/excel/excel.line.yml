@@ -368,7 +368,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -416,7 +416,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -454,7 +454,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -492,7 +492,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;

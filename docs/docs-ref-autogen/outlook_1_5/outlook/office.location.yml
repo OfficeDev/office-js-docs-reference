@@ -125,7 +125,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
       Office.context.mailbox.item.location.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -194,7 +194,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
       var location = "my office";
 

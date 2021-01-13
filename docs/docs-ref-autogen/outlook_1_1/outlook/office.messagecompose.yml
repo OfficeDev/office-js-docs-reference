@@ -78,7 +78,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -97,7 +97,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
       var email = $("#emailBcc")
         .val()
@@ -220,7 +220,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
       Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -239,7 +239,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
       var email = $("#emailCc")
         .val()
@@ -298,7 +298,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
       console.log(`Conversation ID:
       ${Office.context.mailbox.item.conversationId}`);
@@ -338,7 +338,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
       console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 
@@ -380,7 +380,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
       Office.context.mailbox.item.subject.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -395,7 +395,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
       let subject = "Hello World!";
 
@@ -462,7 +462,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
       Office.context.mailbox.item.to.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -481,7 +481,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
       var email = $("#emailTo")
         .val()
@@ -607,7 +607,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
       var attachmentUrl = $("#attachmentUrl").val();
 
@@ -742,7 +742,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
       var attachmentItemId = $("#attachmentItemId").val();
 
@@ -874,7 +874,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
       Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
@@ -978,7 +978,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
       Office.context.mailbox.item.removeAttachmentAsync(
           $("#attachmentId").val(),

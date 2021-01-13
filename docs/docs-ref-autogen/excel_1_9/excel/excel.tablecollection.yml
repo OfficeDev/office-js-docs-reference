@@ -113,7 +113,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
 
           await Excel.run(async (context) => {
               let tables = context.workbook.tables;

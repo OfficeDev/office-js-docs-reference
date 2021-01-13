@@ -72,7 +72,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
           await Excel.run(async (context) => {
               let sheets = context.workbook.worksheets;
@@ -114,7 +114,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets;
@@ -223,7 +223,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
           await Excel.run(async (context) => {
               let sheets = context.workbook.worksheets;
@@ -515,7 +515,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
@@ -623,7 +623,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;

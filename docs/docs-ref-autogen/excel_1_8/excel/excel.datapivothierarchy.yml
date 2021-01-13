@@ -92,7 +92,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
           await Excel.run(async (context) => {
               const dataHierarchies = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales").dataHierarchies
@@ -168,7 +168,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-calculations.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
 
           await Excel.run(async (context) => {
               const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");

@@ -46,7 +46,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -135,7 +135,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/custom-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
 
           await Excel.run(async (context) => {
             // Load the keys and values of all custom properties in the current worksheet.
@@ -374,7 +374,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-worksheet.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
 
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
@@ -417,7 +417,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
 
           await Excel.run(async (context) => {
               console.log("Adding column handler");
@@ -574,7 +574,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
 
           await Excel.run(async (context) => {
               console.log("Adding row handler");
@@ -676,7 +676,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-worksheet-single-click.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-worksheet-single-click.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -738,7 +738,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
           await Excel.run(async (context) => {
             // Get the names of all the PivotTables in the current worksheet.
@@ -891,7 +891,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/gridlines.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/gridlines.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -946,7 +946,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Pivot");
@@ -1031,7 +1031,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/tab-color.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/tab-color.yaml
 
           await Excel.run(async (context) => {
               const activeSheet = context.workbook.worksheets.getActiveWorksheet();
@@ -1201,7 +1201,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-copy.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-copy.yaml
 
           await Excel.run(async (context) => {
 
@@ -1369,7 +1369,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-find-all.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-find-all.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1470,7 +1470,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
@@ -1558,7 +1558,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
@@ -1744,7 +1744,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
 
           await Excel.run(async (context) => {
 
@@ -2043,7 +2043,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
 
           Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -2058,7 +2058,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
 
           Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();

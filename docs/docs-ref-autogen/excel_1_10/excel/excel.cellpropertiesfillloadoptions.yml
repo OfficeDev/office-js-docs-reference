@@ -42,7 +42,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
 
           await Excel.run(async (context) => {
               const cell = context.workbook.getActiveCell();

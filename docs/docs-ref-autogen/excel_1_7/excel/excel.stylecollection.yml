@@ -73,7 +73,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
           await Excel.run(async (context) => {
               let styles = context.workbook.styles;
@@ -128,7 +128,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
           await Excel.run(async (context) => {
               let styles = context.workbook.styles;

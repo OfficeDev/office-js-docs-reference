@@ -156,7 +156,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
           await Word.run(async (context) => {
             let paragraphs = context.document.body.paragraphs;
@@ -1098,7 +1098,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
           await Word.run(async (context) => {
             let results = context.document.body.search("Online");
@@ -1119,7 +1119,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
           await Word.run(async (context) => {
             // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
@@ -1143,7 +1143,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
           await Word.run(async (context) => {
             let paragraphs = context.document.body.paragraphs;
