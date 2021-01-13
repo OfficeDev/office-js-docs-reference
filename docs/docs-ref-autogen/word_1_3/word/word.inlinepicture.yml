@@ -319,7 +319,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/15-images/insert-and-get-pictures.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
           await Word.run(async (context) => {
             const firstPicture = context.document.body.inlinePictures.getFirst();

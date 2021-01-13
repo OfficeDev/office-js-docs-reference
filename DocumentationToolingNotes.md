@@ -46,7 +46,7 @@ Code example snippets are added to the reference pages from two sources:
 
 The local snippets are in host-specific yaml files. Their content is organized by class and field, so it can be mapped to the appropriate place in a reference page. The language of the snippet (JavaScript or TypeScript) is inferred by the use of await statements.
 
-The Script Lab snippets are pulled from working samples. Currently, Excel, Outlook, and Word samples are mapped to reference document sections through [mapping files](https://github.com/OfficeDev/office-js-snippets/tree/master/snippet-extractor-metadata). These match individual sample methods to properties or methods in the API. When the office-js-snippets repository's `yarn start` runs, [a yaml file](https://github.com/OfficeDev/office-js-snippets/blob/master/snippet-extractor-output/snippets.yaml) containing all the mapped snippets is created. This yaml file is the input into the reference documentation tooling.
+The Script Lab snippets are pulled from working samples. Currently, Excel, Outlook, PowerPoint, and Word samples are mapped to reference document sections through [mapping files](https://github.com/OfficeDev/office-js-snippets/tree/prod/snippet-extractor-metadata). These match individual sample methods to properties or methods in the API. When the office-js-snippets repository's `yarn start` runs, [a yaml file](https://github.com/OfficeDev/office-js-snippets/blob/prod/snippet-extractor-output/snippets.yaml) containing all the mapped snippets is created. This yaml file is the input into the reference documentation tooling.
 
 ## Tooling pipeline
 

@@ -272,7 +272,7 @@
 'Word.Body#insertTable:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/40-tables/table-cell-access.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
     await Word.run(async (context) => {
       // Use a two-dimensional array to hold the initial table values.
@@ -312,7 +312,7 @@
 'Word.Body#paragraphs:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
     await Word.run(async (context) => {
       let paragraphs = context.document.body.paragraphs;
@@ -361,7 +361,7 @@
 'Word.Body#search:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
     await Word.run(async (context) => {
       let results = context.document.body.search("Online");
@@ -378,7 +378,7 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
     await Word.run(async (context) => {
       // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
@@ -398,7 +398,7 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
     await Word.run(async (context) => {
       let paragraphs = context.document.body.paragraphs;
@@ -936,7 +936,7 @@
 'Word.ContentControl#set:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
     // Adds title and colors to odd and even content controls and changes their
     appearance.
@@ -975,7 +975,7 @@
 'Word.ContentControl#tag:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
     // Traverses each paragraph of the document and wraps a content control on
     each with either a even or odd tags.
@@ -1052,7 +1052,7 @@
 'Word.ContentControlCollection#getByTag:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/doc-assembly.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
     await Word.run(async (context) => {
         let contentControls = context.document.contentControls.getByTag("customer");
@@ -1204,7 +1204,7 @@
 'Word.CustomPropertyCollection#add:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
     await Word.run(async (context) => {
         context.document.properties.customProperties.add("Numeric Property", 1234);
@@ -1214,7 +1214,7 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
     await Word.run(async (context) => {
         context.document.properties.customProperties.add("String Property", "Hello World!");
@@ -1225,7 +1225,7 @@
 'Word.CustomPropertyCollection#items:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
     await Word.run(async (context) => {
         let properties = context.document.properties.customProperties;
@@ -1298,7 +1298,7 @@
 'Word.Document#properties:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/get-built-in-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
 
     await Word.run(async (context) => {
         let builtInProperties = context.document.properties;
@@ -1513,7 +1513,7 @@
 'Word.InlinePicture#getBase64ImageSrc:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/15-images/insert-and-get-pictures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
     await Word.run(async (context) => {
       const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -1594,7 +1594,7 @@
 'Word.Paragraph#alignment:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
       // Centers last paragraph alignment.
@@ -1767,7 +1767,7 @@
 'Word.Paragraph#insertBreak:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
 
     Word.run(async (context) => {
       context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
@@ -1919,7 +1919,7 @@
 'Word.Paragraph#insertParagraph:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-formatted-text.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
 
     await Word.run(async (context) => {
       // Second sentence, let's insert it as a paragraph after the previously inserted one.
@@ -1940,7 +1940,7 @@
 'Word.Paragraph#insertText:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-in-different-locations.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-in-different-locations.yaml
 
     await Word.run(async (context) => {
       // Replace the last paragraph.
@@ -1953,7 +1953,7 @@
 'Word.Paragraph#leftIndent:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
       // Indents the first paragraph.
@@ -1964,7 +1964,7 @@
 'Word.Paragraph#lineSpacing:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
       // Adjusts line spacing.
@@ -1975,7 +1975,7 @@
 'Word.Paragraph#select:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
     await Word.run(async (context) => {
       // If select is called with no parameters, it selects the object.
@@ -1985,7 +1985,7 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
     await Word.run(async (context) => {
       // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -1996,7 +1996,7 @@
 'Word.Paragraph#set:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
 
     await Word.run(async (context) => {
       const paragraph = context.document.body.paragraphs.getFirst();
@@ -2012,7 +2012,7 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
 
     await Word.run(async (context) => {
       const firstParagraph = context.document.body.paragraphs.getFirst();
@@ -2028,7 +2028,7 @@
 'Word.Paragraph#spaceAfter:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
       // Adjust space between paragraphs.
@@ -2039,7 +2039,7 @@
 'Word.Paragraph#split:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/split-words-of-first-paragraph.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
 
     await Word.run(async (context) => {
       let paragraph = context.document.body.paragraphs.getFirst();
@@ -2061,7 +2061,7 @@
 'Word.Paragraph#startNewList:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/20-lists/insert-list.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
 
     // This example starts a new list stating with the second paragraph.
 
@@ -2088,7 +2088,7 @@
 'Word.Paragraph#text:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
     await Word.run(async (context) => {
       // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
@@ -2226,7 +2226,7 @@
 'Word.Range#getTextRanges:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
     await Word.run(async (context) => {
       // Gets the complete sentence (as range) associated with the insertion point.
@@ -2280,7 +2280,7 @@
 'Word.Range#insertContentControl:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/doc-assembly.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
     await Word.run(async (context) => {
         let results = context.document.body.search("Contractor");
@@ -2599,7 +2599,7 @@
 'Word.Section#getFooter:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
     await Word.run(async (context) => {
       context.document.sections.getFirst().getFooter("Primary")
@@ -2648,7 +2648,7 @@
 'Word.Section#getHeader:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
     await Word.run(async (context) => {
       context.document.sections.getFirst().getHeader("Primary")
@@ -2875,7 +2875,7 @@
 'Word.Table#getCell:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/40-tables/table-cell-access.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
     await Word.run(async (context) => {
       let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;

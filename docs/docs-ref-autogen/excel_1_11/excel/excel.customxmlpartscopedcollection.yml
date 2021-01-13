@@ -71,7 +71,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
 
           await Excel.run(async (context) => {
               $("#display-xml").text("");
@@ -157,7 +157,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
           await Excel.run(async (context) => {
               const settings = context.workbook.settings;
@@ -216,7 +216,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
 
           await Excel.run(async (context) => {
               $("#display-xml").text("");

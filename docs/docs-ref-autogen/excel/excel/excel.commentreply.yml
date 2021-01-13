@@ -78,7 +78,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-replies.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Comments");
@@ -271,7 +271,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-replies.yaml
 
           await Excel.run(async (context) => {
               // Remove the first comment reply from this worksheet's first comment.

@@ -345,7 +345,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
           await Excel.run(async (context) => {
             // Get the names of all the PivotTables in the workbook.
@@ -424,7 +424,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
 
           await Excel.run(async (context) => {
               let titleValue = "Excel document properties API";
@@ -588,7 +588,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
           await Excel.run(async (context) => {
               let styles = context.workbook.styles;
@@ -772,7 +772,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
 
           await Excel.run(async (context) => {
               context.workbook.close(Excel.CloseBehavior.save);
@@ -829,7 +829,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-get-active-cell.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
 
           await Excel.run(async (context) => {
 
@@ -1013,7 +1013,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
 
           await Excel.run(async (context) => {
 
@@ -1126,7 +1126,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
 
           await Excel.run(async (context) => {
               context.workbook.save(Excel.SaveBehavior.save);

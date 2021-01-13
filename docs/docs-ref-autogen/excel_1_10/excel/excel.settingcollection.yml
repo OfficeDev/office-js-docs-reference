@@ -74,7 +74,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
           await Excel.run(async (context) => {
               const settings = context.workbook.settings; 
@@ -122,7 +122,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
           await Excel.run(async (context) => {
               const settings = context.workbook.settings; 
@@ -207,7 +207,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/create-get-change-delete-settings.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/create-get-change-delete-settings.yaml
 
           await Excel.run(async (context) => {
               const settings = context.workbook.settings;

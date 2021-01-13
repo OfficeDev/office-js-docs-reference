@@ -56,7 +56,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-disable-events.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
 
           await Excel.run(async (context) => {
               context.runtime.load("enableEvents");

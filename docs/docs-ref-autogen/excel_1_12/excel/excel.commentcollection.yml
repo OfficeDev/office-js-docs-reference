@@ -72,7 +72,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
           await Excel.run(async (context) => {
               const comments = context.workbook.worksheets.getActiveWorksheet().comments;
@@ -92,7 +92,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
           async function commentAdded(event: Excel.CommentAddedEventArgs) {
               await Excel.run(async (context) => {
@@ -147,7 +147,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
           await Excel.run(async (context) => {
               const comments = context.workbook.worksheets.getActiveWorksheet().comments;
@@ -167,7 +167,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
           async function commentChanged(event: Excel.CommentChangedEventArgs) {
               await Excel.run(async (context) => {
@@ -221,7 +221,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
           await Excel.run(async (context) => {
               const comments = context.workbook.worksheets.getActiveWorksheet().comments;
@@ -241,7 +241,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-comment-event-handler.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
           async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
               await Excel.run(async (context) => {
@@ -308,7 +308,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Comments");

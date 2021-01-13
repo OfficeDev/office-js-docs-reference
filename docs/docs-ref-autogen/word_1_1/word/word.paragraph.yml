@@ -48,7 +48,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
           await Word.run(async (context) => {
             // Centers last paragraph alignment.
@@ -176,7 +176,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
           await Word.run(async (context) => {
             // Indents the first paragraph.
@@ -214,7 +214,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
           await Word.run(async (context) => {
             // Adjusts line spacing.
@@ -342,7 +342,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
           await Word.run(async (context) => {
             // Adjust space between paragraphs.
@@ -417,7 +417,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
           await Word.run(async (context) => {
             // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
@@ -689,7 +689,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
 
           Word.run(async (context) => {
             context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
@@ -1167,7 +1167,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-formatted-text.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
 
           await Word.run(async (context) => {
             // Second sentence, let's insert it as a paragraph after the previously inserted one.
@@ -1251,7 +1251,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-in-different-locations.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-in-different-locations.yaml
 
           await Word.run(async (context) => {
             // Replace the last paragraph.
@@ -1440,7 +1440,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
           await Word.run(async (context) => {
             // If select is called with no parameters, it selects the object.
@@ -1454,7 +1454,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
           await Word.run(async (context) => {
             // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -1510,7 +1510,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
 
       await Word.run(async (context) => {
         const paragraph = context.document.body.paragraphs.getFirst();
@@ -1530,7 +1530,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
 
       await Word.run(async (context) => {
         const firstParagraph = context.document.body.paragraphs.getFirst();

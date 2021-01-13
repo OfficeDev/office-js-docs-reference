@@ -58,7 +58,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/culture-info-date-time.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/culture-info-date-time.yaml
 
           await Excel.run(async (context) => {
             context.application.cultureInfo.datetimeFormat.load([

@@ -129,7 +129,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/doc-assembly.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
           await Word.run(async (context) => {
               let contentControls = context.document.contentControls.getByTag("customer");

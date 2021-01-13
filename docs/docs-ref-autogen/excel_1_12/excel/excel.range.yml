@@ -345,7 +345,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Orders");
@@ -639,7 +639,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
 
           async function sortTopToBottom(criteria: string) {
               await Excel.run(async (context) => {
@@ -697,7 +697,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
           await Excel.run(async (context) => {
               let worksheet = context.workbook.worksheets.getItem("Sample");
@@ -878,7 +878,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-auto-fill.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
 
           await Excel.run(async (context) => {
             const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -1128,7 +1128,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1297,7 +1297,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1364,7 +1364,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1571,7 +1571,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
 
           await Excel.run(async (context) => {
               const cell = context.workbook.getActiveCell();
@@ -1757,7 +1757,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/direct-precedents.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/direct-precedents.yaml
 
           await Excel.run(async (context) => {
             // Precedents are cells referenced by the formula in a cell.
@@ -1977,7 +1977,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2246,7 +2246,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
           await Excel.run(async (context) => {
             const activeRange = context.workbook.getSelectedRange();
@@ -2478,7 +2478,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
 
           await Excel.run(async (context) => {
 
@@ -2651,7 +2651,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/dynamic-arrays.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/dynamic-arrays.yaml
 
           await Excel.run(async (context) => {
             const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2814,7 +2814,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2904,7 +2904,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/used-range.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/used-range.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2995,7 +2995,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
 
           Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -3336,7 +3336,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3389,7 +3389,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-remove-duplicates.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-remove-duplicates.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3494,7 +3494,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3520,7 +3520,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3610,7 +3610,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -3895,7 +3895,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
 
           Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();

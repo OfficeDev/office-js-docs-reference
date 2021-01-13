@@ -114,7 +114,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -297,7 +297,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-groups.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -435,7 +435,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -497,7 +497,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -615,7 +615,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -774,7 +774,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
 
           await Excel.run(async (context) => {
               context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
@@ -827,7 +827,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -905,7 +905,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -950,7 +950,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -994,7 +994,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -1125,7 +1125,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -1350,7 +1350,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
