@@ -7,12 +7,21 @@ classes:
   - 'powerpoint!PowerPoint.Application:class'
   - 'powerpoint!PowerPoint.Presentation:class'
   - 'powerpoint!PowerPoint.RequestContext:class'
+  - 'powerpoint!PowerPoint.Slide:class'
+  - 'powerpoint!PowerPoint.SlideCollection:class'
 enums:
   - 'powerpoint!PowerPoint.ErrorCodes:enum'
+  - 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
 interfaces:
+  - 'powerpoint!PowerPoint.InsertSlideOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
   - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
 functions:
   - name: PowerPoint.createPresentation(base64File)
     uid: 'powerpoint!PowerPoint.createPresentation:function(1)'

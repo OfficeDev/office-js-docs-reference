@@ -26,6 +26,25 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: slideMasters
+    uid: 'powerpoint!PowerPoint.Presentation#slideMasters:member'
+    package: powerpoint!
+    fullName: slideMasters
+    summary: >-
+      Returns the collection of `SlideMaster` objects that are in the
+      presentation.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly slideMasters: PowerPoint.SlideMasterCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.SlideMasterCollection:class" />'
   - name: slides
     uid: 'powerpoint!PowerPoint.Presentation#slides:member'
     package: powerpoint!
@@ -34,11 +53,11 @@ properties:
       Returns an ordered collection of slides in the presentation.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly slides: PowerPoint.SlideCollection;'
@@ -66,11 +85,11 @@ methods:
       presentation.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

@@ -427,6 +427,113 @@
                     }
                   ],
                   "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slide.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideData",
+                  "members": [],
+                  "extendsTokenRanges": []
                 }
               ]
             },

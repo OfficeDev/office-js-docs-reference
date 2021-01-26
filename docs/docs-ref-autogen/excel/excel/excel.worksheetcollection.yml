@@ -300,6 +300,30 @@ properties:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
+  - name: onFormulaChanged
+    uid: 'excel!Excel.WorksheetCollection#onFormulaChanged:member'
+    package: excel!
+    fullName: onFormulaChanged
+    summary: >-
+      Occurs when one or more formulas are changed in any worksheet of this
+      collection. This event is for when the formula itself changes, not the
+      data value resulting from the formula's calculation.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onFormulaChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetFormulaChangedEventArgs:interface" />&gt;
   - name: onRowHiddenChanged
     uid: 'excel!Excel.WorksheetCollection#onRowHiddenChanged:member'
     package: excel!
@@ -742,7 +766,11 @@ methods:
     fullName: getItemOrNullObject(key)
     summary: >-
       Gets a worksheet object using its Name or ID. If the worksheet does not
-      exist, will return a null object.
+      exist, then this function will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi

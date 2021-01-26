@@ -97,7 +97,17 @@ methods:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
+    remarks: >-
+      If any element in the tree has an xmlns attribute (whose value is
+      typically, but not always, a URI), an alias for that attribute value must
+      prefix the element name in the xpath parameter. For example, suppose the
+      tree is the following: <Day> <Month
+      xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+      <Week>something</Week> </Month> </Day> The xpath to <Week> must be /<!--
+      -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an
+      alias that is mapped to "http:<!-- -->/<!-- -->/<!--
+      -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
+      -->GregorianCalendar" in the namespaceMappings parameter.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -110,8 +120,12 @@ methods:
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
+            Required. An object whose property values are namespace names and
+            whose property names are aliases for the corresponding namespaces.
+            For example, `{greg:
+            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
+            property names (such as "greg") can be any string that does not used
+            reserved XPath characters, such as the forward slash "/".
           type: any
         - id: name
           description: Required. Name of the attribute.
@@ -130,7 +144,17 @@ methods:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
+    remarks: >-
+      If any element in the tree has an xmlns attribute (whose value is
+      typically, but not always, a URI), an alias for that attribute value must
+      prefix the element name in the xpath parameter. For example, suppose the
+      tree is the following: <Day> <Month
+      xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+      <Week>something</Week> </Month> </Day> The xpath to <Week> must be /<!--
+      -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an
+      alias that is mapped to "http:<!-- -->/<!-- -->/<!--
+      -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
+      -->GregorianCalendar" in the namespaceMappings parameter.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -141,8 +165,12 @@ methods:
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
+            Required. An object whose property values are namespace names and
+            whose property names are aliases for the corresponding namespaces.
+            For example, `{greg:
+            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
+            property names (such as "greg") can be any string that does not used
+            reserved XPath characters, such as the forward slash "/".
           type: any
       return:
         type: void
@@ -178,7 +206,17 @@ methods:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
+    remarks: >-
+      If any element in the tree has an xmlns attribute (whose value is
+      typically, but not always, a URI), an alias for that attribute value must
+      prefix the element name in the xpath parameter. For example, suppose the
+      tree is the following: <Day> <Month
+      xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+      <Week>something</Week> </Month> </Day> The xpath to <Week> must be /<!--
+      -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an
+      alias that is mapped to "http:<!-- -->/<!-- -->/<!--
+      -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
+      -->GregorianCalendar" in the namespaceMappings parameter.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -191,8 +229,12 @@ methods:
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
+            Required. An object whose property values are namespace names and
+            whose property names are aliases for the corresponding namespaces.
+            For example, `{greg:
+            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
+            property names (such as "greg") can be any string that does not used
+            reserved XPath characters, such as the forward slash "/".
           type: any
         - id: name
           description: Required. Name of the attribute.
@@ -215,7 +257,17 @@ methods:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
+    remarks: >-
+      If any element in the tree has an xmlns attribute (whose value is
+      typically, but not always, a URI), an alias for that attribute value must
+      prefix the element name in the xpath parameter. For example, suppose the
+      tree is the following: <Day> <Month
+      xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+      <Week>something</Week> </Month> </Day> The xpath to <Week> must be /<!--
+      -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an
+      alias that is mapped to "http:<!-- -->/<!-- -->/<!--
+      -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
+      -->GregorianCalendar" in the namespaceMappings parameter.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -233,8 +285,12 @@ methods:
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
+            Required. An object whose property values are namespace names and
+            whose property names are aliases for the corresponding namespaces.
+            For example, `{greg:
+            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
+            property names (such as "greg") can be any string that does not used
+            reserved XPath characters, such as the forward slash "/".
           type: any
         - id: index
           description: >-
@@ -331,7 +387,17 @@ methods:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
+    remarks: >-
+      If any element in the tree has an xmlns attribute (whose value is
+      typically, but not always, a URI), an alias for that attribute value must
+      prefix the element name in the xpath parameter. For example, suppose the
+      tree is the following: <Day> <Month
+      xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+      <Week>something</Week> </Month> </Day> The xpath to <Week> must be /<!--
+      -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an
+      alias that is mapped to "http:<!-- -->/<!-- -->/<!--
+      -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
+      -->GregorianCalendar" in the namespaceMappings parameter.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -344,8 +410,12 @@ methods:
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
+            Required. An object whose property values are namespace names and
+            whose property names are aliases for the corresponding namespaces.
+            For example, `{greg:
+            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
+            property names (such as "greg") can be any string that does not used
+            reserved XPath characters, such as the forward slash "/".
           type: any
       return:
         type: >-
@@ -449,7 +519,17 @@ methods:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
+    remarks: >-
+      If any element in the tree has an xmlns attribute (whose value is
+      typically, but not always, a URI), an alias for that attribute value must
+      prefix the element name in the xpath parameter. For example, suppose the
+      tree is the following: <Day> <Month
+      xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+      <Week>something</Week> </Month> </Day> The xpath to <Week> must be /<!--
+      -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an
+      alias that is mapped to "http:<!-- -->/<!-- -->/<!--
+      -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
+      -->GregorianCalendar" in the namespaceMappings parameter.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -462,8 +542,12 @@ methods:
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
+            Required. An object whose property values are namespace names and
+            whose property names are aliases for the corresponding namespaces.
+            For example, `{greg:
+            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
+            property names (such as "greg") can be any string that does not used
+            reserved XPath characters, such as the forward slash "/".
           type: any
         - id: name
           description: Required. Name of the attribute.
@@ -485,7 +569,17 @@ methods:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    remarks: ''
+    remarks: >-
+      If any element in the tree has an xmlns attribute (whose value is
+      typically, but not always, a URI), an alias for that attribute value must
+      prefix the element name in the xpath parameter. For example, suppose the
+      tree is the following: <Day> <Month
+      xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+      <Week>something</Week> </Month> </Day> The xpath to <Week> must be /<!--
+      -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an
+      alias that is mapped to "http:<!-- -->/<!-- -->/<!--
+      -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
+      -->GregorianCalendar" in the namespaceMappings parameter.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -499,8 +593,12 @@ methods:
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose properties represent namespace aliases and
-            the values are the actual namespace URIs.
+            Required. An object whose property values are namespace names and
+            whose property names are aliases for the corresponding namespaces.
+            For example, `{greg:
+            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
+            property names (such as "greg") can be any string that does not used
+            reserved XPath characters, such as the forward slash "/".
           type: any
       return:
         type: void

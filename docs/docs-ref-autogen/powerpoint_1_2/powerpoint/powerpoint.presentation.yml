@@ -26,6 +26,24 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: slides
+    uid: 'powerpoint!PowerPoint.Presentation#slides:member'
+    package: powerpoint!
+    fullName: slides
+    summary: >-
+      Returns an ordered collection of slides in the presentation.
+
+
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly slides: PowerPoint.SlideCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
   - name: title
     uid: 'powerpoint!PowerPoint.Presentation#title:member'
     package: powerpoint!
@@ -39,6 +57,58 @@ properties:
       return:
         type: string
 methods:
+  - name: 'insertSlidesFromBase64(base64File, options)'
+    uid: 'powerpoint!PowerPoint.Presentation#insertSlidesFromBase64:member(1)'
+    package: powerpoint!
+    fullName: 'insertSlidesFromBase64(base64File, options)'
+    summary: >-
+      Inserts the specified slides from a presentation into the current
+      presentation.
+
+
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        insertSlidesFromBase64(base64File: string, options?:
+        PowerPoint.InsertSlideOptions): void;
+      parameters:
+        - id: base64File
+          description: The base64-encoded string representing the source presentation file.
+          type: string
+        - id: options
+          description: >-
+            The options that define which slides will be inserted, where the new
+            slides will go, and which presentation's formatting will be used.
+          type: '<xref uid="powerpoint!PowerPoint.InsertSlideOptions:interface" />'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/insert-slides.yaml
+
+          await PowerPoint.run(async function(context) {
+              const selectedSlideID = await getSelectedSlideID();
+
+              context.presentation.insertSlidesFromBase64(chosenFileBase64, {
+                  formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+                  targetSlideId: selectedSlideID + "#"
+              });
+              await context.sync();
+          });
+
+          ```
   - name: load(options)
     uid: 'powerpoint!PowerPoint.Presentation#load:member(1)'
     package: powerpoint!
