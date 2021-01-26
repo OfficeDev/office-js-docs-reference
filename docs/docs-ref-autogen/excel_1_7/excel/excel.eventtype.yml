@@ -239,7 +239,7 @@ fields:
     package: excel!
     summary: >-
       WorksheetFormulaChanged represents the type of event registered on
-      worksheet, and occurs when formula is changed.
+      worksheet, and occurs when a formula is changed.
     value: '"WorksheetFormulaChanged"'
   - name: worksheetRowHiddenChanged
     uid: 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
