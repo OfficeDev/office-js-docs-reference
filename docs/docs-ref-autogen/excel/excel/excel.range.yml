@@ -1328,8 +1328,11 @@ methods:
       Finds the given string based on the criteria specified. If the current
       range is larger than a single cell, then the search will be limited to
       that range, else the search will cover the entire sheet starting after
-      that cell. If there are no matches, this function will return a null
-      object.
+      that cell. If there are no matches, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -1879,10 +1882,10 @@ methods:
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a base64-encoded png image. **Important**: This API
-      is currently unsupported in Excel for Mac. Visit [OfficeDev/office-js
-      Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the
-      current status.
+      Renders the range as a base64-encoded png image. *Important**: This API is
+      currently unsupported in Excel for Mac. Visit \[OfficeDev/office-js Issue
+      \#235\](https://github.com/OfficeDev/office-js/issues/235) for the current
+      status.
 
 
       \[ [API set: ExcelApi
@@ -1949,7 +1952,11 @@ methods:
     fullName: getIntersectionOrNullObject(anotherRange)
     summary: >-
       Gets the range object that represents the rectangular intersection of the
-      given ranges. If no intersection is found, will return a null object.
+      given ranges. If no intersection is found, then this function will return
+      an object with its `isNullObject` property set to `true`<!-- -->. For
+      further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -2588,7 +2595,11 @@ methods:
     summary: >-
       Gets the RangeAreas object, comprising one or more ranges, that represents
       all the cells that match the specified type and value. If no special cells
-      are found, a null object will be returned.
+      are found, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -2623,7 +2634,11 @@ methods:
     summary: >-
       Gets the RangeAreas object, comprising one or more ranges, that represents
       all the cells that match the specified type and value. If no special cells
-      are found, a null object will be returned.
+      are found, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -2719,8 +2734,12 @@ methods:
     fullName: getSpillingToRangeOrNullObject()
     summary: >-
       Gets the range object containing the spill range when called on an anchor
-      cell. If the range is not an anchor cell or spill range can't be found, a
-      null object will be returned.
+      cell. If the range isn't an anchor cell or the spill range can't be found,
+      then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -2759,9 +2778,13 @@ methods:
     package: excel!
     fullName: getSpillParentOrNullObject()
     summary: >-
-      Gets the range object containing the anchor cell for a cell getting
-      spilled into. If it is not a spill cell or more than once cells are give,
-      a null object will be returned.
+      Gets the range object containing the anchor cell for the cell getting
+      spilled into. If it's not a spilled cell, or more than one cell is given,
+      then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -2919,7 +2942,11 @@ methods:
     fullName: getUsedRangeOrNullObject(valuesOnly)
     summary: >-
       Returns the used range of the given range object. If there are no used
-      cells within the range, this function will return a null object.
+      cells within the range, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi

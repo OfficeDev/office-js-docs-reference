@@ -13,6 +13,9 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
   - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
 functions:
   - name: PowerPoint.createPresentation(base64File)
     uid: 'powerpoint!PowerPoint.createPresentation:function(1)'

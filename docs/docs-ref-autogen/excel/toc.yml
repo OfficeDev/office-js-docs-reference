@@ -631,6 +631,8 @@ items:
             uid: 'excel!Excel.FilterPivotHierarchyCollection:class'
           - name: FormatProtection
             uid: 'excel!Excel.FormatProtection:class'
+          - name: FormulaChangedEventDetail
+            uid: 'excel!Excel.FormulaChangedEventDetail:interface'
           - name: FunctionResult
             uid: 'excel!Excel.FunctionResult:class'
           - name: Functions
@@ -915,6 +917,8 @@ items:
             uid: 'excel!Excel.WorksheetFilteredEventArgs:interface'
           - name: WorksheetFormatChangedEventArgs
             uid: 'excel!Excel.WorksheetFormatChangedEventArgs:interface'
+          - name: WorksheetFormulaChangedEventArgs
+            uid: 'excel!Excel.WorksheetFormulaChangedEventArgs:interface'
           - name: WorksheetFreezePanes
             uid: 'excel!Excel.WorksheetFreezePanes:class'
           - name: WorksheetProtection

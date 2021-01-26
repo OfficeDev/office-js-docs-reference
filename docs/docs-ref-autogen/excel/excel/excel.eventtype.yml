@@ -161,6 +161,13 @@ fields:
       VisualSelectionChanged represents the type of event registered on
       VisualCollection, and occurs when visual selection changes.
     value: '"VisualSelectionChanged"'
+  - name: workbookActivated
+    uid: 'excel!Excel.EventType.workbookActivated:member'
+    package: excel!
+    summary: >-
+      WorkbookActivated represents the type of event which is fired when a
+      workbook is activated.
+    value: '"WorkbookActivated"'
   - name: workbookAutoSaveSettingChanged
     uid: 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
     package: excel!
@@ -239,7 +246,7 @@ fields:
     package: excel!
     summary: >-
       WorksheetFormulaChanged represents the type of event registered on a
-      worksheet, and occurs when a formula is changed.
+      worksheet, and occurs when formula is changed.
     value: '"WorksheetFormulaChanged"'
   - name: worksheetRowHiddenChanged
     uid: 'excel!Excel.EventType.worksheetRowHiddenChanged:member'

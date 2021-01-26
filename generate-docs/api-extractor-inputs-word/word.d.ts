@@ -4,6 +4,7 @@ import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 /////////////////////// Begin Word APIs ////////////////////////
 ////////////////////////////////////////////////////////////////
 
+
 export declare namespace Word {
     /**
      *
@@ -1252,10 +1253,21 @@ export declare namespace Word {
          * Deletes an attribute with the given name from the element identified by xpath.
          *
          * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @remarks
+         * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
+         * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
+         * the tree is the following:
+         * <Day>
+         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+         * <Week>something</Week>
+         * </Month>
+         * </Day>
+         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
-         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param namespaceMappings - Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
          * @param name - Required. Name of the attribute.
          */
         deleteAttribute(xpath: string, namespaceMappings: any, name: string): void;
@@ -1263,10 +1275,21 @@ export declare namespace Word {
          * Deletes the element identified by xpath.
          *
          * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @remarks
+         * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
+         * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
+         * the tree is the following:
+         * <Day>
+         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+         * <Week>something</Week>
+         * </Month>
+         * </Day>
+         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
-         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param namespaceMappings - Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
          */
         deleteElement(xpath: string, namespaceMappings: any): void;
         /**
@@ -1280,10 +1303,21 @@ export declare namespace Word {
          * Inserts an attribute with the given name and value to the element identified by xpath.
          *
          * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @remarks
+         * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
+         * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
+         * the tree is the following:
+         * <Day>
+         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+         * <Week>something</Week>
+         * </Month>
+         * </Day>
+         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
-         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param namespaceMappings - Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
          * @param name - Required. Name of the attribute.
          * @param value - Required. Value of the attribute.
          */
@@ -1292,11 +1326,22 @@ export declare namespace Word {
          * Inserts the given XML under the parent element identified by xpath at child position index.
          *
          * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @remarks
+         * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
+         * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
+         * the tree is the following:
+         * <Day>
+         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+         * <Week>something</Week>
+         * </Month>
+         * </Day>
+         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
          * @param xpath - Required. Absolute path to the single parent element in XPath notation.
          * @param xml - Required. XML content to be inserted.
-         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param namespaceMappings - Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
          * @param index - Optional. Zero-based position at which the new XML to be inserted. If omitted, the XML will be appended as the last child of this parent.
          */
         insertElement(xpath: string, xml: string, namespaceMappings: any, index?: number): void;
@@ -1304,10 +1349,21 @@ export declare namespace Word {
          * Queries the XML content of the custom XML part.
          *
          * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @remarks
+         * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
+         * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
+         * the tree is the following:
+         * <Day>
+         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+         * <Week>something</Week>
+         * </Month>
+         * </Day>
+         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
          * @param xpath - Required. An XPath query.
-         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param namespaceMappings - Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
          * @returns An array where each item represents an entry matched by the XPath query.
          */
         query(xpath: string, namespaceMappings: any): OfficeExtension.ClientResult<string[]>;
@@ -1324,10 +1380,21 @@ export declare namespace Word {
          * Updates the value of an attribute with the given name of the element identified by xpath.
          *
          * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @remarks
+         * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
+         * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
+         * the tree is the following:
+         * <Day>
+         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+         * <Week>something</Week>
+         * </Month>
+         * </Day>
+         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
-         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param namespaceMappings - Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
          * @param name - Required. Name of the attribute.
          * @param value - Required. New value of the attribute.
          */
@@ -1336,11 +1403,22 @@ export declare namespace Word {
          * Updates the XML of the element identified by xpath.
          *
          * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @remarks
+         * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
+         * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
+         * the tree is the following:
+         * <Day>
+         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
+         * <Week>something</Week>
+         * </Month>
+         * </Day>
+         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
          * @param xml - Required. New XML content to be stored.
-         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param namespaceMappings - Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
          */
         updateElement(xpath: string, xml: string, namespaceMappings: any): void;
         /**
@@ -6041,10 +6119,11 @@ export declare namespace Word {
     }
     /**
      *
-     * Either bounding box, or tags, or hidden.
+     * ContentControl appearance.
      *
      * [Api set: WordApi]
      * @remarks
+     * Content control appearance options are bounding box, tags, or hidden.
      */
     enum ContentControlAppearance {
         /**
@@ -6185,6 +6264,10 @@ export declare namespace Word {
      * The insertion location types.
      *
      * [Api set: WordApi]
+     * @remarks
+     * To be used with an API call, such as `obj.insertSomething(newStuff, location);`
+     * If the location is "Before" or "After", the new content will be outside of the modified object.
+     * If the location is "Start" or "End", the new content will be included as part of the modified object.
      */
     enum InsertLocation {
         /**
@@ -11686,6 +11769,7 @@ export declare namespace Word {
      */
     export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }
+
 
 
 

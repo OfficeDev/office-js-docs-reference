@@ -10,7 +10,7 @@ summary: >-
   \[ [API set:
   WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
   \]
-remarks: ''
+remarks: 'Content control appearance options are bounding box, tags, or hidden.'
 isPreview: false
 isDeprecated: false
 fields:

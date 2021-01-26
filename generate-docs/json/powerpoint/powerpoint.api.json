@@ -29,6 +29,72 @@
           "name": "PowerPoint",
           "members": [
             {
+              "kind": "Interface",
+              "canonicalReference": "powerpoint!PowerPoint.AddSlideOptions:interface",
+              "docComment": "/**\n * Represents the available options when adding a new slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface AddSlideOptions "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "AddSlideOptions",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "powerpoint!PowerPoint.AddSlideOptions#layoutId:member",
+                  "docComment": "/**\n * Specifies the ID of a Slide Layout to be used for the new slide. If no `layoutId` is provided, but a `slideMasterId` is provided, then the ID of the first layout from the specified Slide Master will be used. If no `slideMasterId` is provided, but a `layoutId` is provided, then the specified layout needs to be available for the default Slide Master (as specified in the `slideMasterId` description). Otherwise, an error will be thrown.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "layoutId?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "layoutId",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "powerpoint!PowerPoint.AddSlideOptions#slideMasterId:member",
+                  "docComment": "/**\n * Specifies the ID of a Slide Master to be used for the new slide. If no `slideMasterId` is provided, then the previous slide's Slide Master will be used. If there is no previous slide, then the presentation's first Slide Master will be used.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "slideMasterId?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "slideMasterId",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.Application:class",
               "docComment": "/**\n * [Api set: PowerPointApi 1.0]\n */\n",
@@ -245,14 +311,14 @@
             {
               "kind": "Enum",
               "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting:enum",
-              "docComment": "/**\n * Specifies the formatting options for when slides are inserted.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Specifies the formatting options for when slides are inserted.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "enum InsertSlideFormatting "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "InsertSlideFormatting",
               "members": [
                 {
@@ -269,7 +335,7 @@
                       "text": "\"KeepSourceFormatting\""
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "keepSourceFormatting",
                   "initializerTokenRange": {
                     "startIndex": 1,
@@ -290,7 +356,7 @@
                       "text": "\"UseDestinationTheme\""
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "useDestinationTheme",
                   "initializerTokenRange": {
                     "startIndex": 1,
@@ -302,20 +368,20 @@
             {
               "kind": "Interface",
               "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions:interface",
-              "docComment": "/**\n * Represents the available options when inserting slides.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents the available options when inserting slides.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface InsertSlideOptions "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "InsertSlideOptions",
               "members": [
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions#formatting:member",
-                  "docComment": "/**\n * Specifies which formatting to use during slide insertion. The default option is to use \"KeepSourceFormatting\".\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies which formatting to use during slide insertion. The default option is to use \"KeepSourceFormatting\".\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -335,7 +401,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "formatting",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -345,7 +411,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions#sourceSlideIds:member",
-                  "docComment": "/**\n * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object. The order of these slides is preserved during the insertion. If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted. All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object. The order of these slides is preserved during the insertion. If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted. All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -360,7 +426,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "sourceSlideIds",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -370,7 +436,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions#targetSlideId:member",
-                  "docComment": "/**\n * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID. If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation. If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID. If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation. If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -385,7 +451,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "targetSlideId",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -583,6 +649,271 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface",
+                  "docComment": "/**\n * Represents the collection of shapes.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeCollectionLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "ShapeCollectionLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#id:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the shape.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shape.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData#id:member",
+                      "docComment": "/**\n * Gets the unique ID of the shape.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface",
+                  "docComment": "/**\n * Represents a single shape in the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "ShapeLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#id:member",
+                      "docComment": "/**\n * Gets the unique ID of the shape.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `slideCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -630,14 +961,14 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface",
-                  "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
                       "text": "export interface SlideCollectionLoadOptions "
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "SlideCollectionLoadOptions",
                   "members": [
                     {
@@ -658,7 +989,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Beta",
+                      "releaseTag": "Public",
                       "name": "$all",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
@@ -668,7 +999,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#id:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -683,8 +1014,60 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Beta",
+                      "releaseTag": "Public",
                       "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#layout:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the layout of the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "layout?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "layout",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#slideMaster:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "slideMaster?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "slideMaster",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -755,7 +1138,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData#id:member",
-                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -770,7 +1153,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Beta",
+                      "releaseTag": "Public",
                       "name": "id",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
@@ -782,20 +1165,66 @@
                 },
                 {
                   "kind": "Interface",
-                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface",
-                  "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideLayoutCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "export interface SlideLoadOptions "
+                      "text": "export interface SlideLayoutCollectionData "
                     }
                   ],
-                  "releaseTag": "Beta",
-                  "name": "SlideLoadOptions",
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutCollectionData",
                   "members": [
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions#$all:member",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface",
+                  "docComment": "/**\n * Represents the collection of layouts provided by the Slide Master for slides.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutCollectionLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "SlideLayoutCollectionLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#$all:member",
                       "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
@@ -820,8 +1249,8 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member",
-                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#id:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -838,6 +1267,692 @@
                       ],
                       "releaseTag": "Beta",
                       "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#name:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the name of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "name?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "name",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideLayout.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData#id:member",
+                      "docComment": "/**\n * Gets the unique ID of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData#name:member",
+                      "docComment": "/**\n * Gets the name of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "name?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "name",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface",
+                  "docComment": "/**\n * Represents the layout of a slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "SlideLayoutLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#id:member",
+                      "docComment": "/**\n * Gets the unique ID of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#name:member",
+                      "docComment": "/**\n * Gets the name of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "name?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "name",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface",
+                  "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member",
+                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions#layout:member",
+                      "docComment": "/**\n * Gets the layout of the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "layout?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "layout",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions#slideMaster:member",
+                      "docComment": "/**\n * Gets the `SlideMaster` object that represents the slide's default content.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "slideMaster?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "slideMaster",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideMasterCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface",
+                  "docComment": "/**\n * Represents the collection of Slide Masters in the presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterCollectionLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "SlideMasterCollectionLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#id:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#name:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique name of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "name?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "name",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideMaster.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData#id:member",
+                      "docComment": "/**\n * Gets the unique ID of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData#name:member",
+                      "docComment": "/**\n * Gets the unique name of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "name?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "name",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface",
+                  "docComment": "/**\n * Represents the Slide Master of a slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "SlideMasterLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#id:member",
+                      "docComment": "/**\n * Gets the unique ID of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#name:member",
+                      "docComment": "/**\n * Gets the unique name of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "name?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "name",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -900,7 +2015,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.Presentation#insertSlidesFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts the specified slides from a presentation into the current presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param base64File - The base64-encoded string representing the source presentation file.\n *\n * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Inserts the specified slides from a presentation into the current presentation.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param base64File - The base64-encoded string representing the source presentation file.\n *\n * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -937,7 +2052,7 @@
                     "startIndex": 5,
                     "endIndex": 6
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -1095,8 +2210,35 @@
                 },
                 {
                   "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.Presentation#slideMasters:member",
+                  "docComment": "/**\n * Returns the collection of `SlideMaster` objects that are in the presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly slideMasters: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMasterCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "slideMasters",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
                   "canonicalReference": "powerpoint!PowerPoint.Presentation#slides:member",
-                  "docComment": "/**\n * Returns an ordered collection of slides in the presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Returns an ordered collection of slides in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1112,7 +2254,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "slides",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -1570,12 +2712,12 @@
             },
             {
               "kind": "Class",
-              "canonicalReference": "powerpoint!PowerPoint.Slide:class",
-              "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "canonicalReference": "powerpoint!PowerPoint.Shape:class",
+              "docComment": "/**\n * Represents a single shape in the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "export class Slide extends "
+                  "text": "export class Shape extends "
                 },
                 {
                   "kind": "Reference",
@@ -1588,11 +2730,258 @@
                 }
               ],
               "releaseTag": "Beta",
-              "name": "Slide",
+              "name": "Shape",
               "members": [
                 {
                   "kind": "Property",
-                  "canonicalReference": "powerpoint!PowerPoint.Slide#context:member",
+                  "canonicalReference": "powerpoint!PowerPoint.Shape#context:member",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "context: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext",
+                      "canonicalReference": "powerpoint!PowerPoint.RequestContext:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.Shape#id:member",
+                  "docComment": "/**\n * Gets the unique ID of the shape.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.Shape#load:member(1)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.ShapeLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Shape",
+                      "canonicalReference": "powerpoint!PowerPoint.Shape:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.Shape#load:member(2)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNames?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Shape",
+                      "canonicalReference": "powerpoint!PowerPoint.Shape:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNames",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.Shape#load:member(3)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNamesAndPaths?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Shape",
+                      "canonicalReference": "powerpoint!PowerPoint.Shape:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 3,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNamesAndPaths",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.Shape#toJSON:member(1)",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original PowerPoint.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "toJSON(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.ShapeData",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "toJSON"
+                }
+              ],
+              "extendsTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "implementsTokenRanges": []
+            },
+            {
+              "kind": "Class",
+              "canonicalReference": "powerpoint!PowerPoint.ShapeCollection:class",
+              "docComment": "/**\n * Represents the collection of shapes.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export class ShapeCollection extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeExtension.ClientObject",
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "ShapeCollection",
+              "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#context:member",
                   "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
                   "excerptTokens": [
                     {
@@ -1619,8 +3008,438 @@
                 },
                 {
                   "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#getCount:member(1)",
+                  "docComment": "/**\n * Gets the number of shapes in the collection.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @returns The number of shapes in the collection.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getCount(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<number>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getCount"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#getItem:member(1)",
+                  "docComment": "/**\n * Gets a shape using its unique ID. An error is thrown if the shape does not exist.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param key - The ID of the shape.\n *\n * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItem(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Shape",
+                      "canonicalReference": "powerpoint!PowerPoint.Shape:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItem"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#getItemAt:member(1)",
+                  "docComment": "/**\n * Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param index - The index of the shape in the collection.\n *\n * @returns The shape at the given index. An error is thrown if index is out of range.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItemAt(index: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Shape",
+                      "canonicalReference": "powerpoint!PowerPoint.Shape:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "index",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItemAt"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#getItemOrNullObject:member(1)",
+                  "docComment": "/**\n * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param id - The ID of the shape.\n *\n * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItemOrNullObject(id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Shape",
+                      "canonicalReference": "powerpoint!PowerPoint.Shape:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "id",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItemOrNullObject"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#items:member",
+                  "docComment": "/**\n * Gets the loaded child items in this collection.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly items: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Shape",
+                      "canonicalReference": "powerpoint!PowerPoint.Shape:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "items",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#load:member(1)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.ShapeCollectionLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " & "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.CollectionLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.ShapeCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.ShapeCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#load:member(2)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNames?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.ShapeCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.ShapeCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNames",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#load:member(3)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNamesAndPaths?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.LoadOption",
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.ShapeCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.ShapeCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 3,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNamesAndPaths",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.ShapeCollection#toJSON:member(1)",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `PowerPoint.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "toJSON(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.ShapeCollectionData",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "toJSON"
+                }
+              ],
+              "extendsTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "implementsTokenRanges": []
+            },
+            {
+              "kind": "Class",
+              "canonicalReference": "powerpoint!PowerPoint.Slide:class",
+              "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export class Slide extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeExtension.ClientObject",
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Slide",
+              "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.Slide#context:member",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "context: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext",
+                      "canonicalReference": "powerpoint!PowerPoint.RequestContext:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.Slide#delete:member(1)",
-                  "docComment": "/**\n * Deletes the slide from the presentation. Does nothing if the slide does not exist.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Deletes the slide from the presentation. Does nothing if the slide does not exist.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1640,7 +3459,7 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [],
                   "name": "delete"
@@ -1648,7 +3467,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "powerpoint!PowerPoint.Slide#id:member",
-                  "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1663,8 +3482,35 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.Slide#layout:member",
+                  "docComment": "/**\n * Gets the layout of the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly layout: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "layout",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -1704,7 +3550,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -1749,7 +3595,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -1794,7 +3640,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 3,
                   "parameters": [
                     {
@@ -1806,6 +3652,60 @@
                     }
                   ],
                   "name": "load"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.Slide#shapes:member",
+                  "docComment": "/**\n * Returns a collection of shapes in the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly shapes: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.ShapeCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.ShapeCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "shapes",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.Slide#slideMaster:member",
+                  "docComment": "/**\n * Gets the `SlideMaster` object that represents the slide's default content.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly slideMaster: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "slideMaster",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
                 },
                 {
                   "kind": "Method",
@@ -1831,7 +3731,7 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [],
                   "name": "toJSON"
@@ -1846,7 +3746,7 @@
             {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.SlideCollection:class",
-              "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -1862,9 +3762,54 @@
                   "text": " "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "SlideCollection",
               "members": [
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideCollection#add:member(1)",
+                  "docComment": "/**\n * Adds a new slide at the end of the collection.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param options - The options that define the theme of the new slide.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "add(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.AddSlideOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.AddSlideOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "add"
+                },
                 {
                   "kind": "Property",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#context:member",
@@ -1884,7 +3829,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "context",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -1895,7 +3840,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getCount:member(1)",
-                  "docComment": "/**\n * Gets the number of slides in the collection.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @returns The number of slides in the collection.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the number of slides in the collection.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @returns The number of slides in the collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1920,7 +3865,7 @@
                     "startIndex": 1,
                     "endIndex": 3
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [],
                   "name": "getCount"
@@ -1928,7 +3873,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a slide using its unique ID. An exception is thrown if the slide does not exist.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param key - The ID of the slide.\n *\n * @returns The slide with the unique ID. If such a slide does not exist, an exception is thrown.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets a slide using its unique ID.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param key - The ID of the slide.\n *\n * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1957,7 +3902,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -1973,7 +3918,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getItemAt:member(1)",
-                  "docComment": "/**\n * Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they are shown in the presentation. An exception is thrown if index is out of range.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param index - The index of the slide in the collection.\n *\n * @returns The slide at the given index. An exception is thrown if index is out of range.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they are shown in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param index - The index of the slide in the collection.\n *\n * @returns The slide at the given index. An error is thrown if index is out of range.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2002,7 +3947,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -2018,7 +3963,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getItemOrNullObject:member(1)",
-                  "docComment": "/**\n * Gets a slide using its unique ID. Returns an object whose `isNullObject` property is set to `true` if the slide does not exist.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param id - The ID of the slide.\n *\n * @returns The slide with the unique ID. If such a slide does not exist, an object whose `isNullObject` property is set to `true` is returned.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods\n *                     and properties}.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param id - The ID of the slide.\n *\n * @returns The slide with the unique ID.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2047,7 +3992,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -2083,7 +4028,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "items",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -2133,7 +4078,7 @@
                     "startIndex": 5,
                     "endIndex": 6
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -2178,7 +4123,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -2224,7 +4169,7 @@
                     "startIndex": 3,
                     "endIndex": 4
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 3,
                   "parameters": [
                     {
@@ -2250,6 +4195,1439 @@
                       "kind": "Reference",
                       "text": "PowerPoint.Interfaces.SlideCollectionData",
                       "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "toJSON"
+                }
+              ],
+              "extendsTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "implementsTokenRanges": []
+            },
+            {
+              "kind": "Class",
+              "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class",
+              "docComment": "/**\n * Represents the layout of a slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export class SlideLayout extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeExtension.ClientObject",
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SlideLayout",
+              "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayout#context:member",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "context: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext",
+                      "canonicalReference": "powerpoint!PowerPoint.RequestContext:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayout#id:member",
+                  "docComment": "/**\n * Gets the unique ID of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayout#load:member(1)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideLayoutLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayout#load:member(2)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNames?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNames",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayout#load:member(3)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNamesAndPaths?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 3,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNamesAndPaths",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayout#name:member",
+                  "docComment": "/**\n * Gets the name of the slide layout.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "name",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayout#toJSON:member(1)",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original PowerPoint.SlideLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "toJSON(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideLayoutData",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "toJSON"
+                }
+              ],
+              "extendsTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "implementsTokenRanges": []
+            },
+            {
+              "kind": "Class",
+              "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection:class",
+              "docComment": "/**\n * Represents the collection of layouts provided by the Slide Master for slides.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export class SlideLayoutCollection extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeExtension.ClientObject",
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SlideLayoutCollection",
+              "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#context:member",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "context: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext",
+                      "canonicalReference": "powerpoint!PowerPoint.RequestContext:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#getCount:member(1)",
+                  "docComment": "/**\n * Gets the number of layouts in the collection.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @returns The number of layouts in the collection.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getCount(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<number>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getCount"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#getItem:member(1)",
+                  "docComment": "/**\n * Gets a layout using its unique ID.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param key - The ID of the layout.\n *\n * @returns The layout with the unique ID. If such a layout does not exist, an error is thrown.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItem(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItem"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#getItemAt:member(1)",
+                  "docComment": "/**\n * Gets a layout using its zero-based index in the collection.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param index - The index of the layout in the collection.\n *\n * @returns The layout at the given index. An error is thrown if index is out of range.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItemAt(index: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "index",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItemAt"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#getItemOrNullObject:member(1)",
+                  "docComment": "/**\n * Gets a layout using its unique ID. If such a layout does not exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param id - The ID of the layout.\n *\n * @returns The layout with the unique ID.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItemOrNullObject(id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "id",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItemOrNullObject"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#items:member",
+                  "docComment": "/**\n * Gets the loaded child items in this collection.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly items: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayout",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayout:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "items",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#load:member(1)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " & "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.CollectionLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayoutCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#load:member(2)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNames?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayoutCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNames",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#load:member(3)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNamesAndPaths?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.LoadOption",
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayoutCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 3,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNamesAndPaths",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection#toJSON:member(1)",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `PowerPoint.SlideLayoutCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "toJSON(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideLayoutCollectionData",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "toJSON"
+                }
+              ],
+              "extendsTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "implementsTokenRanges": []
+            },
+            {
+              "kind": "Class",
+              "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class",
+              "docComment": "/**\n * Represents the Slide Master of a slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export class SlideMaster extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeExtension.ClientObject",
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SlideMaster",
+              "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#context:member",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "context: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext",
+                      "canonicalReference": "powerpoint!PowerPoint.RequestContext:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#id:member",
+                  "docComment": "/**\n * Gets the unique ID of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#layouts:member",
+                  "docComment": "/**\n * Gets the collection of layouts provided by the Slide Master for slides.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly layouts: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideLayoutCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideLayoutCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "layouts",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#load:member(1)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideMasterLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#load:member(2)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNames?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNames",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#load:member(3)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNamesAndPaths?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 3,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNamesAndPaths",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#name:member",
+                  "docComment": "/**\n * Gets the unique name of the Slide Master.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "name",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMaster#toJSON:member(1)",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original PowerPoint.SlideMaster object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "toJSON(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideMasterData",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "toJSON"
+                }
+              ],
+              "extendsTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "implementsTokenRanges": []
+            },
+            {
+              "kind": "Class",
+              "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection:class",
+              "docComment": "/**\n * Represents the collection of Slide Masters in the presentation.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export class SlideMasterCollection extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeExtension.ClientObject",
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SlideMasterCollection",
+              "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#context:member",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "context: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext",
+                      "canonicalReference": "powerpoint!PowerPoint.RequestContext:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#getCount:member(1)",
+                  "docComment": "/**\n * Gets the number of Slide Masters in the collection.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @returns The number of Slide Masters in the collection.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getCount(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<number>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getCount"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#getItem:member(1)",
+                  "docComment": "/**\n * Gets a Slide Master using its unique ID.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param key - The ID of the Slide Master.\n *\n * @returns The Slide Master with the unique ID. If such a Slide Master does not exist, an error is thrown.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItem(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItem"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#getItemAt:member(1)",
+                  "docComment": "/**\n * Gets a Slide Master using its zero-based index in the collection.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param index - The index of the Slide Master in the collection.\n *\n * @returns The Slide Master at the given index. An error is thrown if index is out of range.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItemAt(index: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "index",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItemAt"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#getItemOrNullObject:member(1)",
+                  "docComment": "/**\n * Gets a Slide Master using its unique ID. If such a Slide Master does not exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\"\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @param id - The ID of the Slide Master.\n *\n * @returns The Slide Master with the unique ID.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItemOrNullObject(id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "id",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItemOrNullObject"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#items:member",
+                  "docComment": "/**\n * Gets the loaded child items in this collection.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly items: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMaster",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMaster:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "items",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#load:member(1)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideMasterCollectionLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " & "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.CollectionLoadOptions",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMasterCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#load:member(2)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNames?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMasterCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNames",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#load:member(3)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNamesAndPaths?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.LoadOption",
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.SlideMasterCollection",
+                      "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 3,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNamesAndPaths",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.SlideMasterCollection#toJSON:member(1)",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `PowerPoint.SlideMasterCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "toJSON(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PowerPoint.Interfaces.SlideMasterCollectionData",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface"
                     },
                     {
                       "kind": "Content",

@@ -532,7 +532,11 @@ methods:
     summary: >-
       Gets the RangeAreas object, comprising one or more rectangular ranges,
       that represents the print area for the worksheet. If there is no print
-      area, a null object will be returned.
+      area, then this function will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -570,8 +574,11 @@ methods:
     package: excel!
     fullName: getPrintTitleColumnsOrNullObject()
     summary: >-
-      Gets the range object representing the title columns. If not set, this
-      will return a null object.
+      Gets the range object representing the title columns. If not set, then
+      this function will return an object with its `isNullObject` property set
+      to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -609,8 +616,11 @@ methods:
     package: excel!
     fullName: getPrintTitleRowsOrNullObject()
     summary: >-
-      Gets the range object representing the title rows. If not set, this will
-      return a null object.
+      Gets the range object representing the title rows. If not set, then this
+      function will return an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi

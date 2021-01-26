@@ -239,7 +239,7 @@ methods:
       content: 'assignTask(email: string): Excel.Task;'
       parameters:
         - id: email
-          description: The email address of the user to assign the task.
+          description: The email address of the user to assign the task to.
           type: string
       return:
         type: '<xref uid="excel!Excel.Task:class" />'
@@ -346,7 +346,11 @@ methods:
     fullName: getTaskOrNullObject()
     summary: >-
       Gets the task associated with this comment. If there is no task for the
-      comment thread, a null object is returned.
+      comment thread, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

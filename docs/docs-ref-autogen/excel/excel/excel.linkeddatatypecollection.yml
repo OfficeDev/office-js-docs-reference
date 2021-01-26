@@ -112,9 +112,9 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a linked data type by ID. If the linked data type does not exist, an
-      object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
+      Gets a linked data type by id. If the linked data type doesn't exist, then
+      this function will return an object with its `isNullObject` property set
+      to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 

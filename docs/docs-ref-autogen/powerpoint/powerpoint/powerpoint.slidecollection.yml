@@ -7,11 +7,11 @@ summary: >-
   Represents the collection of slides in the presentation.
 
 
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
   \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -23,7 +23,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -35,13 +35,36 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: PowerPoint.Slide[];'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />[]'
 methods:
+  - name: add(options)
+    uid: 'powerpoint!PowerPoint.SlideCollection#add:member(1)'
+    package: powerpoint!
+    fullName: add(options)
+    summary: >-
+      Adds a new slide at the end of the collection.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'add(options?: PowerPoint.AddSlideOptions): void;'
+      parameters:
+        - id: options
+          description: The options that define the theme of the new slide.
+          type: '<xref uid="powerpoint!PowerPoint.AddSlideOptions:interface" />'
+      return:
+        type: void
+        description: ''
   - name: getCount()
     uid: 'powerpoint!PowerPoint.SlideCollection#getCount:member(1)'
     package: powerpoint!
@@ -50,11 +73,11 @@ methods:
       Gets the number of slides in the collection.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
@@ -66,15 +89,14 @@ methods:
     package: powerpoint!
     fullName: getItem(key)
     summary: >-
-      Gets a slide using its unique ID. An exception is thrown if the slide does
-      not exist.
+      Gets a slide using its unique ID.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItem(key: string): PowerPoint.Slide;'
@@ -85,23 +107,22 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: >-
-          The slide with the unique ID. If such a slide does not exist, an
-          exception is thrown.
+          The slide with the unique ID. If such a slide does not exist, an error
+          is thrown.
   - name: getItemAt(index)
     uid: 'powerpoint!PowerPoint.SlideCollection#getItemAt:member(1)'
     package: powerpoint!
     fullName: getItemAt(index)
     summary: >-
       Gets a slide using its zero-based index in the collection. Slides are
-      stored in the same order as they are shown in the presentation. An
-      exception is thrown if index is out of range.
+      stored in the same order as they are shown in the presentation.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemAt(index: number): PowerPoint.Slide;'
@@ -112,22 +133,25 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: >-
-          The slide at the given index. An exception is thrown if index is out
-          of range.
+          The slide at the given index. An error is thrown if index is out of
+          range.
   - name: getItemOrNullObject(id)
     uid: 'powerpoint!PowerPoint.SlideCollection#getItemOrNullObject:member(1)'
     package: powerpoint!
     fullName: getItemOrNullObject(id)
     summary: >-
-      Gets a slide using its unique ID. Returns an object whose `isNullObject`
-      property is set to `true` if the slide does not exist.
+      Gets a slide using its unique ID. If such a slide does not exist, an
+      object with an `isNullObject` property set to true is returned. For
+      further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemOrNullObject(id: string): PowerPoint.Slide;'
@@ -137,9 +161,7 @@ methods:
           type: string
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
-        description: >-
-          The slide with the unique ID. If such a slide does not exist, an
-          object whose `isNullObject` property is set to `true` is returned.
+        description: The slide with the unique ID.
   - name: load(options)
     uid: 'powerpoint!PowerPoint.SlideCollection#load:member(1)'
     package: powerpoint!
@@ -148,7 +170,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -175,7 +197,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.SlideCollection;'
@@ -196,7 +218,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -228,7 +250,7 @@ methods:
       "items" array with shallow copies of any loaded properties from the
       collection's items.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideCollectionData;'

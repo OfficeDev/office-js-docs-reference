@@ -151,7 +151,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: >-
-      Gets a NamedItem object using its name.
+      Gets a `NamedItem` object using its name.
 
 
       \[ [API set: ExcelApi
@@ -193,8 +193,12 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(name)
     summary: >-
-      Gets a NamedItem object using its name. If the nameditem object does not
-      exist, will return a null object.
+      Gets a `NamedItem` object using its name. If the object does not exist,
+      then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
