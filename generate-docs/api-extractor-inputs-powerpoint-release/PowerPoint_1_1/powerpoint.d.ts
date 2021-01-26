@@ -29,7 +29,9 @@ export declare namespace PowerPoint {
     export class Presentation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         readonly title: string;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -57,6 +59,10 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
+    
+    
+    
+    
     enum ErrorCodes {
         generalException = "GeneralException",
     }
@@ -74,9 +80,21 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
+        export interface SlideCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideData[];
+        }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             title?: string;
+        }
+        /** An interface describing the data returned by calling `slide.toJSON()`. */
+        export interface SlideData {
+            
+        }
+        /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
+        export interface SlideCollectionData {
+            items?: PowerPoint.Interfaces.SlideData[];
         }
         /**
          * [Api set: PowerPointApi 1.0]
@@ -88,6 +106,8 @@ export declare namespace PowerPoint {
             $all?: boolean;
             title?: boolean;
         }
+        
+        
     }
 }
 export declare namespace PowerPoint {

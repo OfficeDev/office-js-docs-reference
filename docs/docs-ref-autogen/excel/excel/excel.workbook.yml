@@ -869,7 +869,11 @@ methods:
     fullName: getActiveChartOrNullObject()
     summary: >-
       Gets the currently active chart in the workbook. If there is no active
-      chart, a null object is returned.
+      chart, then this function will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -909,7 +913,11 @@ methods:
     fullName: getActiveSlicerOrNullObject()
     summary: >-
       Gets the currently active slicer in the workbook. If there is no active
-      slicer, a null object is returned.
+      slicer, then this function will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi

@@ -333,8 +333,11 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a table by Name or ID. If the table does not exist, will return a
-      null object.
+      Gets a table by Name or ID. If the table doesn't exist, then this function
+      will return an object with its `isNullObject` property set to `true`<!--
+      -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi

@@ -7,11 +7,11 @@ summary: >-
   Represents a single slide of a presentation.
 
 
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi
+  1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
   \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -23,7 +23,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -37,6 +37,24 @@ properties:
       Gets the unique ID of the slide.
 
 
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: layout
+    uid: 'powerpoint!PowerPoint.Slide#layout:member'
+    package: powerpoint!
+    fullName: layout
+    summary: >-
+      Gets the layout of the slide.
+
+
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
@@ -44,9 +62,45 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly id: string;'
+      content: 'readonly layout: PowerPoint.SlideLayout;'
       return:
-        type: string
+        type: '<xref uid="powerpoint!PowerPoint.SlideLayout:class" />'
+  - name: shapes
+    uid: 'powerpoint!PowerPoint.Slide#shapes:member'
+    package: powerpoint!
+    fullName: shapes
+    summary: >-
+      Returns a collection of shapes in the slide.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shapes: PowerPoint.ShapeCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeCollection:class" />'
+  - name: slideMaster
+    uid: 'powerpoint!PowerPoint.Slide#slideMaster:member'
+    package: powerpoint!
+    fullName: slideMaster
+    summary: >-
+      Gets the `SlideMaster` object that represents the slide's default content.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly slideMaster: PowerPoint.SlideMaster;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.SlideMaster:class" />'
 methods:
   - name: delete()
     uid: 'powerpoint!PowerPoint.Slide#delete:member(1)'
@@ -57,11 +111,11 @@ methods:
       not exist.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
@@ -76,7 +130,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -99,7 +153,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Slide;'
@@ -120,7 +174,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -156,7 +210,7 @@ methods:
       (typed as `PowerPoint.Interfaces.SlideData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideData;'
