@@ -28,7 +28,10 @@ properties:
     uid: 'office!Office.SaveSettingsOptions#overwriteIfStale:member'
     package: office!
     fullName: overwriteIfStale
-    summary: Indicates whether the setting will be replaced if stale.
+    summary: >-
+      **Warning**: This setting is deprecated and should not be used. It has no
+      effect on most platforms and will cause errors if set to `false` in Excel
+      on the web.
     remarks: ''
     isPreview: false
     isDeprecated: false
