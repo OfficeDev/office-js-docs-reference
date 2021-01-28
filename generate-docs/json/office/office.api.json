@@ -26631,7 +26631,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.SaveSettingsOptions#overwriteIfStale:member",
-                  "docComment": "/**\n * Indicates whether the setting will be replaced if stale.\n */\n",
+                  "docComment": "/**\n * **Warning**: This setting is deprecated and should not be used. It has no effect on most platforms and will cause errors if set to `false` in Excel on the web.\n *\n * @deprecated\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
