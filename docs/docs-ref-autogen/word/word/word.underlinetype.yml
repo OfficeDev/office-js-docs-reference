@@ -47,7 +47,7 @@ fields:
   - name: dotLine
     uid: 'word!Word.UnderlineType.dotLine:member'
     package: word!
-    summary: ''
+    summary: '**Warning**: `dotLine` has been deprecated.'
     value: '"DotLine"'
   - name: dotted
     uid: 'word!Word.UnderlineType.dotted:member'
@@ -67,7 +67,7 @@ fields:
   - name: hidden
     uid: 'word!Word.UnderlineType.hidden:member'
     package: word!
-    summary: ''
+    summary: '**Warning**: `hidden` has been deprecated.'
     value: '"Hidden"'
   - name: mixed
     uid: 'word!Word.UnderlineType.mixed:member'

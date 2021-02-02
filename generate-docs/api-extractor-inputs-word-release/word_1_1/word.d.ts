@@ -2325,11 +2325,15 @@ export declare namespace Word {
          */
         none = "None",
         /**
-         * @deprecated Hidden is no longer supported.
+         * **Warning**: `hidden` has been deprecated.
+         *
+         * @deprecated `hidden` is no longer supported.
          */
         hidden = "Hidden",
         /**
-         * @deprecated DotLine is no longer supported.
+         * **Warning**: `dotLine` has been deprecated.
+         *
+         * @deprecated `dotLine` is no longer supported.
          */
         dotLine = "DotLine",
         /**
@@ -2399,6 +2403,8 @@ export declare namespace Word {
          */
         page = "Page",
         /**
+         * **Warning**: `next` has been deprecated. Use `sectionNext` instead.
+         *
          * @deprecated Use sectionNext instead.
          */
         next = "Next",

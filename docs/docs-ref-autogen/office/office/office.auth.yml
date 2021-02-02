@@ -62,6 +62,14 @@ methods:
       add-in's web application by using the ["on behalf of" OAuth
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->.
+
+
+      **Important**: In Outlook, this API is not supported if the add-in is
+      loaded in an Outlook.com or Gmail mailbox.
+
+
+      **Warning**: `getAccessTokenAsync` has been deprecated. Use
+      `Office.auth.getAccessToken` instead.
     remarks: >-
       **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
 
@@ -93,12 +101,7 @@ methods:
       ```
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: >-
-      Use Office.auth.getAccessToken instead.
-
-
-      \*\*Important\*\*: In Outlook, this API is not supported if the add-in is
-      loaded in an Outlook.com or Gmail mailbox.
+    customDeprecatedMessage: Use `Office.auth.getAccessToken` instead.
     syntax:
       content: >-
         getAccessTokenAsync(options?: AuthOptions, callback?: (result:
@@ -132,6 +135,14 @@ methods:
       add-in's web application by using the ["on behalf of" OAuth
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->.
+
+
+      **Important**: In Outlook, this API is not supported if the add-in is
+      loaded in an Outlook.com or Gmail mailbox.
+
+
+      **Warning**: `getAccessTokenAsync` has been deprecated. Use
+      `Office.auth.getAccessToken` instead.
     remarks: >-
       **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
 
@@ -146,12 +157,7 @@ methods:
       user account types to access resources in the Microsoft Graph.
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: >-
-      Use `Office.auth.getAccessToken` instead.
-
-
-      \*\*Important\*\*: In Outlook, this API is not supported if the add-in is
-      loaded in an Outlook.com or Gmail mailbox.
+    customDeprecatedMessage: Use `Office.auth.getAccessToken` instead.
     syntax:
       content: >-
         getAccessTokenAsync(callback?: (result: AsyncResult<string>) => void):

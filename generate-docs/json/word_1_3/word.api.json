@@ -3463,7 +3463,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.BreakType.next:member",
-                  "docComment": "/**\n * @deprecated\n *\n * Use sectionNext instead.\n */\n",
+                  "docComment": "/**\n * **Warning**: `next` has been deprecated. Use `sectionNext` instead.\n *\n * @deprecated\n *\n * Use sectionNext instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -54649,7 +54649,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.UnderlineType.dotLine:member",
-                  "docComment": "/**\n * @deprecated\n *\n * DotLine is no longer supported.\n */\n",
+                  "docComment": "/**\n * **Warning**: `dotLine` has been deprecated.\n *\n * @deprecated\n *\n * `dotLine` is no longer supported.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -54733,7 +54733,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.UnderlineType.hidden:member",
-                  "docComment": "/**\n * @deprecated\n *\n * Hidden is no longer supported.\n */\n",
+                  "docComment": "/**\n * **Warning**: `hidden` has been deprecated.\n *\n * @deprecated\n *\n * `hidden` is no longer supported.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
