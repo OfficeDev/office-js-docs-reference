@@ -40,6 +40,11 @@ methods:
     summary: >-
       Check if the specified requirement set is supported by the host Office
       application.
+
+
+      **Warning**: This overload of `isSetSupported` (where `minVersionNumber`
+      is a number) has been deprecated. Use the string overload of
+      `isSetSupported` instead.
     remarks: ''
     isPreview: false
     isDeprecated: true
@@ -51,10 +56,7 @@ methods:
           description: 'The requirement set name (e.g., "ExcelApi").'
           type: string
         - id: minVersionNumber
-          description: >-
-            The minimum required version (e.g., 1.4). **Warning**: This overload
-            of `isSetSupported` (where `minVersionNumber` is a number) is
-            deprecated. Use the string overload of `isSetSupported` instead.
+          description: 'The minimum required version (e.g., 1.4).'
           type: number
       return:
         type: boolean

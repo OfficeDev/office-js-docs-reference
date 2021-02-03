@@ -22,7 +22,7 @@ fields:
   - name: next
     uid: 'word!Word.BreakType.next:member'
     package: word!
-    summary: ''
+    summary: '**Warning**: `next` has been deprecated. Use `sectionNext` instead.'
     value: '"Next"'
   - name: page
     uid: 'word!Word.BreakType.page:member'

@@ -1126,7 +1126,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(1)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use Office.auth.getAccessToken instead.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1194,7 +1194,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(2)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1362,7 +1362,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AuthOptions#forceAddAccount:member",
-                  "docComment": "/**\n * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.\n *\n * @deprecated\n *\n * Use `allowSignInPrompt` instead.\n */\n",
+                  "docComment": "/**\n * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.\n *\n * **Warning**: `forceAddAccount` has been deprecated. Use `allowSignInPrompt` instead.\n *\n * @deprecated\n *\n * Use `allowSignInPrompt` instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1387,7 +1387,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AuthOptions#forceConsent:member",
-                  "docComment": "/**\n * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has been revoked. Default value is `false`.\n *\n * @deprecated\n *\n * Use `allowConsentPrompt` instead.\n */\n",
+                  "docComment": "/**\n * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has been revoked. Default value is `false`.\n *\n * **Warning**: `forceConsent` has been deprecated. Use `allowConsentPrompt` instead.\n *\n * @deprecated\n *\n * Use `allowConsentPrompt` instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26354,7 +26354,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.RequirementSetSupport#isSetSupported:member(2)",
-                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @deprecated\n *\n * Use the string overload of `isSetSupported` instead.\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersionNumber - The minimum required version (e.g., 1.4). **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.\n */\n",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use the string overload of `isSetSupported` instead.\n *\n * @deprecated\n *\n * Use the string overload of `isSetSupported` instead.\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersionNumber - The minimum required version (e.g., 1.4).\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26631,7 +26631,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.SaveSettingsOptions#overwriteIfStale:member",
-                  "docComment": "/**\n * **Warning**: This setting is deprecated and should not be used. It has no effect on most platforms and will cause errors if set to `false` in Excel on the web.\n *\n * @deprecated\n */\n",
+                  "docComment": "/**\n * **Warning**: This setting has been deprecated and should not be used. It has no effect on most platforms and will cause errors if set to `false` in Excel on the web.\n *\n * @deprecated\n *\n * `overwriteIfStale` is no longer supported.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
