@@ -1333,7 +1333,8 @@ export declare namespace Excel {
          * @beta
          *
          * @param key - The id of the task.
-         * @returns The task with the given id. If there is no task with the given id, an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * @returns The task with the given id. If there is no task with the given id, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         getItemOrNullObject(key: string): Excel.Task;
         /**
@@ -7902,7 +7903,8 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.Setting;
         /**
-         * Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
+         * Gets a Setting entry via the key. If the Setting does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * [Api set: ExcelApi 1.4]
          *
