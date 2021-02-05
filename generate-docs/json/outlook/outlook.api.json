@@ -20165,7 +20165,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.NotificationMessageAction#contextData:member",
-                  "docComment": "/**\n * Any JSON data the button needs to pass on. This data can be retrieved by calling `item.getInitializationContextAsync`.\n */\n",
+                  "docComment": "/**\n * Any JSON data the button needs to pass on. This data can be retrieved by calling `item.getInitializationContextAsync`.\n *\n * **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

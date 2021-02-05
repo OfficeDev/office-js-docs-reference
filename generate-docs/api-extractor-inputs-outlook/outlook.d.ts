@@ -7166,6 +7166,8 @@ export declare namespace Office {
         /**
          * Any JSON data the button needs to pass on.
          * This data can be retrieved by calling `item.getInitializationContextAsync`.
+         *
+         * **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
          */
         contextData: any;
     }
