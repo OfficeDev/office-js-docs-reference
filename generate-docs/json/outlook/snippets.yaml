@@ -5432,12 +5432,12 @@
 
     // IMPORTANT: At present, this only works in Outlook on Windows.
 
-    Office.context.mailbox.item.getInitializationContextAsync(function (result)
-    {
+    Office.context.mailbox.item.getInitializationContextAsync(function
+    (asyncResult) {
         console.log("Initialization context:");
-        console.log(result);
+        console.log(asyncResult);
 
-        // Note: Use JSON.parse(result.value) to read the result. Example:
+        // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
         var contextData = JSON.parse(asyncResult.value);
         console.log("a:")
         console.log(contextData.a);
