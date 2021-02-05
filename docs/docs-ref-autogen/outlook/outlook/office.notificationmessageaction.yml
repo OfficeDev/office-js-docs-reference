@@ -23,6 +23,52 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Define notification.
+
+  const insightMessage = {
+      type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+      message: "This is an insight notification",
+      icon: "Icon.80x80",
+      actions: [{
+          actionText: "Open insight",
+          actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+          commandId: "msgComposeOpenPaneButton",
+          contextData: JSON.stringify({a: "aValue", b: "bValue"})
+      }]
+  };
+
+
+  // Show notification.
+
+  Office.context.mailbox.item.notificationMessages.replaceAsync("messageKey",
+  insightMessage, (result) => {
+      console.log("Added notification:");
+      console.log(result);
+  });
+
+
+  // Retrieve contextData.
+
+  // IMPORTANT: At present, this only works in Outlook on Windows.
+
+  Office.context.mailbox.item.getInitializationContextAsync(function (result) {
+      console.log("Initialization context:");
+      console.log(result);
+
+      // Note: Use JSON.parse(result.value) to read the result. Example:
+      var contextData = JSON.parse(asyncResult.value);
+      console.log("a:")
+      console.log(contextData.a);
+  });
+
+  ```
 isPreview: true
 isDeprecated: false
 type: interface
