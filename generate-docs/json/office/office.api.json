@@ -7615,7 +7615,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.DialogOptions#height:member",
-                  "docComment": "/**\n * Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.\n */\n",
+                  "docComment": "/**\n * Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7665,7 +7665,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.DialogOptions#width:member",
-                  "docComment": "/**\n * Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.\n */\n",
+                  "docComment": "/**\n * Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
