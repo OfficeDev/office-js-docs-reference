@@ -48,7 +48,7 @@ properties:
     package: office!
     fullName: height
     summary: >-
-      Defines the width of the dialog as a percentage of the current display.
+      Defines the height of the dialog as a percentage of the current display.
       Defaults to 80%. 250px minimum.
     remarks: ''
     isPreview: false
@@ -82,7 +82,7 @@ properties:
     package: office!
     fullName: width
     summary: >-
-      Defines the height of the dialog as a percentage of the current display.
+      Defines the width of the dialog as a percentage of the current display.
       Defaults to 80%. 150px minimum.
     remarks: ''
     isPreview: false
