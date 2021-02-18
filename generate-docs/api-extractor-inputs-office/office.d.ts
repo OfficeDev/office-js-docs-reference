@@ -1740,7 +1740,9 @@ export declare namespace Office {
      */
     export interface Dialog {
         /**
-         * Called from a parent page to close the corresponding dialog box.
+         * Called from a parent page to close the corresponding dialog box. 
+         * 
+         * This method is asynchronous. It does not take a callback parameter and it does not return a Promise object, so it cannot be awaited with either the `await` keyword or the `then` function. See this best practice for more information: {@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-best-practices#opening-another-dialog-immediately-after-closing-one | Opening another dialog immediately after closing one}
          */
         close(): void;
         /**
