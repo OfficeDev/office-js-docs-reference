@@ -1732,7 +1732,7 @@ export declare namespace Office {
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -1755,7 +1755,7 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -2751,7 +2751,7 @@ export declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -2774,7 +2774,7 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -5245,7 +5245,7 @@ export declare namespace Office {
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
          *
@@ -5275,7 +5275,7 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
          *
@@ -6171,7 +6171,7 @@ export declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -6193,7 +6193,7 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -7252,7 +7252,7 @@ export declare namespace Office {
         setStartTime(time: string): void;
     }
     /**
-     * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
+     * Represents the properties of an appointment or message in a shared folder.
      *
      * For more information on how this object is used, see the
      * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
