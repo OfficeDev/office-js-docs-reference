@@ -5,12 +5,47 @@ package: office!
 fullName: Office.CoercionType
 summary: Specifies how to coerce data returned or set by the invoked method.
 remarks: >-
-  PowerPoint supports only `Office.CoercionType.Text`<!-- -->,
-  `Office.CoercionType.Image`<!-- -->, `Office.CoercionType.SlideRange`<!-- -->,
-  and `Office.CoercionType.XmlSvg`<!-- -->.
+  Application and platform support for each `CoercionType` is specified in the
+  following requirement set descriptions.
 
 
-  Project supports only `Office.CoercionType.Text`<!-- -->.
+  -
+  [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)<!--
+  -->, (when using `Office.CoercionType.Html`<!-- -->)
+
+
+  - [ImageCoercion
+  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets)
+  (when using `Office.CoercionType.Image`<!-- -->)
+
+
+  -
+  [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+  (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+  -
+  [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+  (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+  -
+  [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)
+
+
+  -
+  [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+  (when using `Office.CoercionType.Table`<!-- -->)
+
+
+  -
+  [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+  (when using `Office.CoercionType.Text`<!-- -->)
+
+
+  - [ImageCoercion
+  1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12)
+  (when using `Office.CoercionType.XmlSvg`<!-- -->)
 isPreview: false
 isDeprecated: false
 fields:

@@ -4,8 +4,7 @@ uid: 'outlook!Office.SharedProperties:interface'
 package: outlook!
 fullName: Office.SharedProperties
 summary: >-
-  Represents the properties of an appointment or message in a shared folder,
-  mailbox, or calendar.
+  Represents the properties of an appointment or message in a shared folder.
 
 
   For more information on how this object is used, see the [delegate
