@@ -2006,8 +2006,7 @@ methods:
     package: outlook!
     fullName: 'getSharedPropertiesAsync(options, callback)'
     summary: >-
-      Gets the properties of an appointment or message in a shared folder,
-      calendar, or mailbox.
+      Gets the properties of an appointment or message in a shared folder.
 
 
       **Important**: In Message Compose mode, this API is not supported in
@@ -2128,8 +2127,7 @@ methods:
     package: outlook!
     fullName: getSharedPropertiesAsync(callback)
     summary: >-
-      Gets the properties of an appointment or message in a shared folder,
-      calendar, or mailbox.
+      Gets the properties of an appointment or message in a shared folder.
 
 
       **Important**: In Message Compose mode, this API is not supported in

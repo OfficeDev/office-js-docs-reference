@@ -3556,7 +3556,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "office!Office.CoercionType:enum",
-              "docComment": "/**\n * Specifies how to coerce data returned or set by the invoked method.\n *\n * @remarks\n *\n * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, `Office.CoercionType.SlideRange`, and `Office.CoercionType.XmlSvg`.\n *\n * Project supports only `Office.CoercionType.Text`.\n */\n",
+              "docComment": "/**\n * Specifies how to coerce data returned or set by the invoked method.\n *\n * @remarks\n *\n * Application and platform support for each `CoercionType` is specified in the following requirement set descriptions.\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)\n *\n * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -7444,7 +7444,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Dialog#close:member(1)",
-                  "docComment": "/**\n * Called from a parent page to close the corresponding dialog box.\n */\n",
+                  "docComment": "/**\n * Called from a parent page to close the corresponding dialog box.\n *\n * This method is asynchronous. It does not take a callback parameter and it does not return a Promise object, so it cannot be awaited with either the `await` keyword or the `then` function. See this best practice for more information: {@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-best-practices#opening-another-dialog-immediately-after-closing-one | Opening another dialog immediately after closing one}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

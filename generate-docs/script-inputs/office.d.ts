@@ -1735,6 +1735,8 @@ declare namespace Office {
     interface Dialog {
         /**
          * Called from a parent page to close the corresponding dialog box. 
+         * 
+         * This method is asynchronous. It does not take a callback parameter and it does not return a Promise object, so it cannot be awaited with either the `await` keyword or the `then` function. See this best practice for more information: {@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-best-practices#opening-another-dialog-immediately-after-closing-one | Opening another dialog immediately after closing one}
          */
         close(): void;
         /**
@@ -1833,9 +1835,24 @@ declare namespace Office {
      *
      * @remarks
      * 
-     * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, `Office.CoercionType.SlideRange`, and `Office.CoercionType.XmlSvg`.
+     * Application and platform support for each `CoercionType` is specified in the following requirement set descriptions.
      * 
-     * Project supports only `Office.CoercionType.Text`.
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
+     * 
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
+     * 
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+     * 
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+     * 
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+     * 
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+     * 
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+     * 
+     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
+     * 
      */
     enum CoercionType {
         /**
@@ -9687,7 +9704,7 @@ declare namespace Office {
          */
         getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult: Office.AsyncResult<string>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -9710,7 +9727,7 @@ declare namespace Office {
          */
         getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -10761,7 +10778,7 @@ declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -10784,7 +10801,7 @@ declare namespace Office {
          */
         getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -13451,7 +13468,7 @@ declare namespace Office {
          */
         getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult: Office.AsyncResult<any>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
          *
@@ -13481,7 +13498,7 @@ declare namespace Office {
          */
         getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
          *
@@ -14432,7 +14449,7 @@ declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -14454,7 +14471,7 @@ declare namespace Office {
          */
         getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+         * Gets the properties of an appointment or message in a shared folder.
          *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
@@ -15513,7 +15530,7 @@ declare namespace Office {
         setStartTime(time: string): void;
     }
     /**
-     * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
+     * Represents the properties of an appointment or message in a shared folder.
      *
      * For more information on how this object is used, see the
      * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
