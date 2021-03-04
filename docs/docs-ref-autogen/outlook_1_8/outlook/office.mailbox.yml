@@ -171,12 +171,18 @@ properties:
       [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
       [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!--
       -->, [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
+
+
+      **Important**: `item` can be null if your add-in supports pinning the task
+      pane. For details on how to handle, see [Implement a pinnable task pane in
+      Outlook](https://docs.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
+      -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        item: Item & ItemCompose & ItemRead & Message & MessageCompose &
+        item?: Item & ItemCompose & ItemRead & Message & MessageCompose &
         MessageRead & Appointment & AppointmentCompose & AppointmentRead;
       return:
         type: >-
