@@ -19,5 +19,5 @@ fields:
   - name: plain
     uid: 'excel!Excel.ContentType.plain:member'
     package: excel!
-    summary: Indicates plain format type of the comment content.
+    summary: Indicates a plain format type for the comment content.
     value: '"Plain"'

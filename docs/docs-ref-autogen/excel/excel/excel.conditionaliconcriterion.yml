@@ -4,8 +4,8 @@ uid: 'excel!Excel.ConditionalIconCriterion:interface'
 package: excel!
 fullName: Excel.ConditionalIconCriterion
 summary: >-
-  Represents an Icon Criterion which contains a type, value, an Operator, and an
-  optional custom icon, if not using an iconset.
+  Represents an icon criterion which contains a type, value, an operator, and an
+  optional custom icon, if not using an icon set.
 
 
   \[ [API set: ExcelApi
@@ -21,8 +21,8 @@ properties:
     package: excel!
     fullName: customIcon
     summary: >-
-      The custom icon for the current criterion if different from the default
-      IconSet, else null will be returned.
+      The custom icon for the current criterion, if different from the default
+      icon set, else `null` will be returned.
 
 
       \[ [API set: ExcelApi
@@ -109,8 +109,8 @@ properties:
     package: excel!
     fullName: operator
     summary: >-
-      GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon
-      conditional format.
+      `greaterThan` or `greaterThanOrEqual` for each of the rule types for the
+      icon conditional format.
 
 
       \[ [API set: ExcelApi

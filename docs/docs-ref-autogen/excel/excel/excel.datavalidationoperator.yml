@@ -4,7 +4,7 @@ uid: 'excel!Excel.DataValidationOperator:enum'
 package: excel!
 fullName: Excel.DataValidationOperator
 summary: >-
-  Represents Data validation operator enum.
+  Represents the data validation operator enum.
 
 
   \[ [API set: ExcelApi

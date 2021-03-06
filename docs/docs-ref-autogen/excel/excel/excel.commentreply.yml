@@ -185,7 +185,7 @@ properties:
     package: excel!
     fullName: resolved
     summary: >-
-      The comment reply status. A value of "true" means the reply is in the
+      The comment reply status. A value of `true` means the reply is in the
       resolved state.
 
 
@@ -220,10 +220,10 @@ properties:
       return:
         type: string
 methods:
-  - name: assignTask(email)
+  - name: assignTask(assignee)
     uid: 'excel!Excel.CommentReply#assignTask:member(1)'
     package: excel!
-    fullName: assignTask(email)
+    fullName: assignTask(assignee)
     summary: >-
       Assigns the task attached to the comment to the given user as the sole
       assignee. If there is no task, one will be created.
@@ -236,13 +236,13 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'assignTask(email: string): Excel.Task;'
+      content: 'assignTask(assignee: Identity): Excel.DocumentTask;'
       parameters:
-        - id: email
-          description: The email address of the user to assign the task to.
-          type: string
+        - id: assignee
+          description: The assignee's user identity information.
+          type: '<xref uid="excel!Excel.Identity:interface" />'
       return:
-        type: '<xref uid="excel!Excel.Task:class" />'
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: ''
   - name: delete()
     uid: 'excel!Excel.CommentReply#delete:member(1)'
@@ -325,8 +325,8 @@ methods:
     package: excel!
     fullName: getTask()
     summary: >-
-      Gets the task associated with this comment. If there is no task for the
-      comment thread, an ItemNotFound exception is thrown.
+      Gets the task associated with this comment reply's thread. If there is no
+      task for the comment thread, an `ItemNotFound` exception is thrown.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -336,19 +336,19 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getTask(): Excel.Task;'
+      content: 'getTask(): Excel.DocumentTask;'
       return:
-        type: '<xref uid="excel!Excel.Task:class" />'
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: ''
   - name: getTaskOrNullObject()
     uid: 'excel!Excel.CommentReply#getTaskOrNullObject:member(1)'
     package: excel!
     fullName: getTaskOrNullObject()
     summary: >-
-      Gets the task associated with this comment. If there is no task for the
-      comment thread, then this function will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information,
-      see [*OrNullObject methods and
+      Gets the task associated with this comment reply's thread. If there is no
+      task for the comment thread, then this function will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 
@@ -360,9 +360,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getTaskOrNullObject(): Excel.Task;'
+      content: 'getTaskOrNullObject(): Excel.DocumentTask;'
       return:
-        type: '<xref uid="excel!Excel.Task:class" />'
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.CommentReply#load:member(1)'

@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Excel.TableCollectionCustom
+uid: 'excel!Excel.TableCollectionCustom:class'
+package: excel!
+fullName: Excel.TableCollectionCustom
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class

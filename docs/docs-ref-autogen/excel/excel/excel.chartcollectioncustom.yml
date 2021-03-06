@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Excel.ChartCollectionCustom
+uid: 'excel!Excel.ChartCollectionCustom:class'
+package: excel!
+fullName: Excel.ChartCollectionCustom
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class

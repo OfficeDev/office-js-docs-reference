@@ -37,8 +37,8 @@ properties:
     package: excel!
     fullName: key
     summary: >-
-      For EACH ITEM in the collection: The key that represents the id of the
-      Setting.
+      For EACH ITEM in the collection: The key that represents the ID of the
+      setting.
 
 
       \[ [API set: ExcelApi

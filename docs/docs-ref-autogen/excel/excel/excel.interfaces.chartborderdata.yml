@@ -34,7 +34,7 @@ properties:
     package: excel!
     fullName: lineStyle
     summary: >-
-      Represents the line style of the border. See Excel.ChartLineStyle for
+      Represents the line style of the border. See `Excel.ChartLineStyle` for
       details.
 
 

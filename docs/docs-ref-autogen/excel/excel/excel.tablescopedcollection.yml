@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.TableScopedCollection
 summary: >-
   Represents a scoped collection of tables. For each table its top-left corner
-  is considered its anchor location and the tables are sorted top to bottom and
-  then left to right.
+  is considered its anchor location, and the tables are sorted top-to-bottom and
+  then left-to-right.
 
 
   \[ [API set: ExcelApi
@@ -69,7 +69,7 @@ methods:
     fullName: getFirst()
     summary: >-
       Gets the first table in the collection. The tables in the collection are
-      sorted top to bottom and left to right, such that top left table is the
+      sorted top-to-bottom and left-to-right, such that top-left table is the
       first table in the collection.
 
 
@@ -89,7 +89,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: >-
-      Gets a table by Name or ID.
+      Gets a table by name or ID.
 
 
       \[ [API set: ExcelApi
@@ -100,6 +100,33 @@ methods:
     isDeprecated: false
     syntax:
       content: 'getItem(key: string): Excel.Table;'
+      parameters:
+        - id: key
+          description: Name or ID of the table to be retrieved.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Table:class" />'
+        description: ''
+  - name: getItemOrNullObject(key)
+    uid: 'excel!Excel.TableScopedCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(key)
+    summary: >-
+      Gets a table by name or ID. If the table object does not exist, then this
+      function will return an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.Table;'
       parameters:
         - id: key
           description: Name or ID of the table to be retrieved.

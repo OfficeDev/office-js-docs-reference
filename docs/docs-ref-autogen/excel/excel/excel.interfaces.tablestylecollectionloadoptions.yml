@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableStyleCollectionLoadOptions
 summary: >-
-  Represents a collection of TableStyles.
+  Represents a collection of table styles.
 
 
   \[ [API set: ExcelApi
@@ -35,7 +35,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      For EACH ITEM in the collection: Gets the name of the TableStyle.
+      For EACH ITEM in the collection: Gets the name of the table style.
 
 
       \[ [API set: ExcelApi
@@ -53,7 +53,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: >-
-      For EACH ITEM in the collection: Specifies if this TableStyle object is
+      For EACH ITEM in the collection: Specifies if this `TableStyle` object is
       read-only.
 
 

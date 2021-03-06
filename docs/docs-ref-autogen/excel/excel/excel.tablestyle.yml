@@ -4,8 +4,8 @@ uid: 'excel!Excel.TableStyle:class'
 package: excel!
 fullName: Excel.TableStyle
 summary: >-
-  Represents a TableStyle, which defines the style elements by region of the
-  Table.
+  Represents a table style, which defines the style elements by region of the
+  table.
 
 
   \[ [API set: ExcelApi
@@ -35,7 +35,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Gets the name of the TableStyle.
+      Gets the name of the table style.
 
 
       \[ [API set: ExcelApi
@@ -53,7 +53,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: >-
-      Specifies if this TableStyle object is read-only.
+      Specifies if this `TableStyle` object is read-only.
 
 
       \[ [API set: ExcelApi
@@ -72,7 +72,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: >-
-      Deletes the TableStyle.
+      Deletes the table style.
 
 
       \[ [API set: ExcelApi
@@ -91,7 +91,7 @@ methods:
     package: excel!
     fullName: duplicate()
     summary: >-
-      Creates a duplicate of this TableStyle with copies of all the style
+      Creates a duplicate of this table style with copies of all the style
       elements.
 
 
@@ -106,8 +106,8 @@ methods:
       return:
         type: '<xref uid="excel!Excel.TableStyle:class" />'
         description: >-
-          The new TableStyle object that has been duplicated from this
-          TableStyle.
+          The new `TableStyle` object that has been duplicated from this table
+          style.
   - name: load(options)
     uid: 'excel!Excel.TableStyle#load:member(1)'
     package: excel!

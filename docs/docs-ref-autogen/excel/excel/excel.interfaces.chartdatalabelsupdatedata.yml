@@ -59,8 +59,8 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       Specifies the horizontal alignment for chart data label. See
-      Excel.ChartTextHorizontalAlignment for details. This property is valid
-      only when TextOrientation of data label is 0.
+      `Excel.ChartTextHorizontalAlignment` for details. This property is valid
+      only when the `TextOrientation` of data label is 0.
 
 
       \[ [API set: ExcelApi
@@ -82,8 +82,8 @@ properties:
     package: excel!
     fullName: linkNumberFormat
     summary: >-
-      Specifies if the number format is linked to the cells. If true, the number
-      format will change in the labels when it changes in the cells.
+      Specifies if the number format is linked to the cells. If `true`<!-- -->,
+      the number format will change in the labels when it changes in the cells.
 
 
       \[ [API set: ExcelApi
@@ -119,8 +119,8 @@ properties:
     package: excel!
     fullName: position
     summary: >-
-      DataLabelPosition value that represents the position of the data label.
-      See Excel.ChartDataLabelPosition for details.
+      Value that represents the position of the data label. See
+      `Excel.ChartDataLabelPosition` for details.
 
 
       \[ [API set: ExcelApi
@@ -291,8 +291,8 @@ properties:
     fullName: verticalAlignment
     summary: >-
       Represents the vertical alignment of chart data label. See
-      Excel.ChartTextVerticalAlignment for details. This property is valid only
-      when TextOrientation of data label is -90, 90, or 180.
+      `Excel.ChartTextVerticalAlignment` for details. This property is valid
+      only when `TextOrientation` of the data label is -90, 90, or 180.
 
 
       \[ [API set: ExcelApi

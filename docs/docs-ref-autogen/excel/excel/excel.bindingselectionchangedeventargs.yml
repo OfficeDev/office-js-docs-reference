@@ -4,7 +4,7 @@ uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
 package: excel!
 fullName: Excel.BindingSelectionChangedEventArgs
 summary: >-
-  Provides information about the selection that raised the "SelectionChanged"
+  Provides information about the selection that raised the selection changed
   event.
 
 

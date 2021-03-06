@@ -21,7 +21,7 @@ properties:
     fullName: alignment
     summary: >-
       Specifies the alignment for the specified axis tick label. See
-      Excel.ChartTextHorizontalAlignment for detail.
+      `Excel.ChartTextHorizontalAlignment` for detail.
 
 
       \[ [API set: ExcelApi
@@ -41,7 +41,7 @@ properties:
     package: excel!
     fullName: axisGroup
     summary: >-
-      Specifies the group for the specified axis. See Excel.ChartAxisGroup for
+      Specifies the group for the specified axis. See `Excel.ChartAxisGroup` for
       details.
 
 
@@ -119,7 +119,7 @@ properties:
     fullName: customDisplayUnit
     summary: >-
       Specifies the custom axis display unit value. To set this property, please
-      use the SetCustomDisplayUnit(double) method.
+      use the `SetCustomDisplayUnit(double)` method.
 
 
       \[ [API set: ExcelApi
@@ -137,7 +137,7 @@ properties:
     package: excel!
     fullName: displayUnit
     summary: >-
-      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for
+      Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for
       details.
 
 
@@ -209,8 +209,8 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the chart axis. Null if the axis is
-      not visible.
+      Specifies the height, in points, of the chart axis. Returns `null` if the
+      axis is not visible.
 
 
       \[ [API set: ExcelApi
@@ -247,7 +247,7 @@ properties:
     fullName: left
     summary: >-
       Specifies the distance, in points, from the left edge of the axis to the
-      left of chart area. Null if the axis is not visible.
+      left of chart area. Returns `null` if the axis is not visible.
 
 
       \[ [API set: ExcelApi
@@ -265,8 +265,8 @@ properties:
     package: excel!
     fullName: linkNumberFormat
     summary: >-
-      Specifies if the number format is linked to the cells. If true, the number
-      format will change in the labels when it changes in the cells.
+      Specifies if the number format is linked to the cells. If `true`<!-- -->,
+      the number format will change in the labels when it changes in the cells.
 
 
       \[ [API set: ExcelApi
@@ -302,8 +302,8 @@ properties:
     package: excel!
     fullName: majorGridlines
     summary: >-
-      Returns a Gridlines object that represents the major gridlines for the
-      specified axis.
+      Returns an object that represents the major gridlines for the specified
+      axis.
 
 
       \[ [API set: ExcelApi
@@ -322,7 +322,7 @@ properties:
     fullName: majorTickMark
     summary: >-
       Specifies the type of major tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
+      `Excel.ChartAxisTickMark` for details.
 
 
       \[ [API set: ExcelApi
@@ -345,7 +345,7 @@ properties:
     fullName: majorTimeUnitScale
     summary: >-
       Specifies the major unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
+      `categoryType` property is set to `dateAxis`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -426,8 +426,8 @@ properties:
     package: excel!
     fullName: minorGridlines
     summary: >-
-      Returns a Gridlines object that represents the minor gridlines for the
-      specified axis.
+      Returns an object that represents the minor gridlines for the specified
+      axis.
 
 
       \[ [API set: ExcelApi
@@ -446,7 +446,7 @@ properties:
     fullName: minorTickMark
     summary: >-
       Specifies the type of minor tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
+      `Excel.ChartAxisTickMark` for details.
 
 
       \[ [API set: ExcelApi
@@ -469,7 +469,7 @@ properties:
     fullName: minorTimeUnitScale
     summary: >-
       Specifies the minor unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
+      `categoryType` property is set to `dateAxis`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -568,7 +568,7 @@ properties:
     fullName: position
     summary: >-
       Specifies the specified axis position where the other axis crosses. See
-      Excel.ChartAxisPosition for details.
+      `Excel.ChartAxisPosition` for details.
 
 
       \[ [API set: ExcelApi
@@ -590,8 +590,8 @@ properties:
     package: excel!
     fullName: positionAt
     summary: >-
-      Specifies the specified axis position where the other axis crosses at. You
-      should use the SetPositionAt(double) method to set this property.
+      Specifies the axis position where the other axis crosses. You should use
+      the `SetPositionAt(double)` method to set this property.
 
 
       \[ [API set: ExcelApi
@@ -627,7 +627,7 @@ properties:
     package: excel!
     fullName: scaleType
     summary: >-
-      Specifies the value axis scale type. See Excel.ChartAxisScaleType for
+      Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for
       details.
 
 
@@ -710,7 +710,7 @@ properties:
     fullName: tickLabelPosition
     summary: >-
       Specifies the position of tick-mark labels on the specified axis. See
-      Excel.ChartAxisTickLabelPosition for details.
+      `Excel.ChartAxisTickLabelPosition` for details.
 
 
       \[ [API set: ExcelApi
@@ -789,7 +789,7 @@ properties:
     fullName: top
     summary: >-
       Specifies the distance, in points, from the top edge of the axis to the
-      top of chart area. Null if the axis is not visible.
+      top of chart area. Returns `null` if the axis is not visible.
 
 
       \[ [API set: ExcelApi
@@ -807,7 +807,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Specifies the axis type. See Excel.ChartAxisType for details.
+      Specifies the axis type. See `Excel.ChartAxisType` for details.
 
 
       \[ [API set: ExcelApi
@@ -847,8 +847,8 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the chart axis. Null if the axis is not
-      visible.
+      Specifies the width, in points, of the chart axis. Returns `null` if the
+      axis is not visible.
 
 
       \[ [API set: ExcelApi
@@ -1023,7 +1023,7 @@ methods:
       content: 'setCategoryNames(sourceData: Range): void;'
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void
@@ -1056,7 +1056,7 @@ methods:
     package: excel!
     fullName: setPositionAt(value)
     summary: >-
-      Sets the specified axis position where the other axis crosses at.
+      Sets the specified axis position where the other axis crosses.
 
 
       \[ [API set: ExcelApi
@@ -1069,7 +1069,7 @@ methods:
       content: 'setPositionAt(value: number): void;'
       parameters:
         - id: value
-          description: Custom value of the crosses at
+          description: Custom value of the crossing point.
           type: number
       return:
         type: void

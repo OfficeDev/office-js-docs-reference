@@ -1,0 +1,11 @@
+### YamlMime:TSType
+name: Excel.TableCollection
+uid: 'excel!Excel.TableCollection:interface'
+package: excel!
+fullName: Excel.TableCollection
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

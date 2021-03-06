@@ -90,7 +90,7 @@ properties:
     fullName: underline
     summary: >-
       The type of underline applied to the font. See
-      Excel.ConditionalRangeFontUnderlineStyle for details.
+      `Excel.ConditionalRangeFontUnderlineStyle` for details.
 
 
       \[ [API set: ExcelApi

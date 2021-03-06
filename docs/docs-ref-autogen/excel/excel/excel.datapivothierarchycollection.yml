@@ -90,7 +90,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: >-
-      Gets a DataPivotHierarchy by its name or id.
+      Gets a DataPivotHierarchy by its name or ID.
 
 
       \[ [API set: ExcelApi

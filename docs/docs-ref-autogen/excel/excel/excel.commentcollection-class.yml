@@ -277,7 +277,7 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell to which the comment is added. This can be a Range object
+            The cell to which the comment is added. This can be a `Range` object
             or a string. If it's a string, it must contain the full address,
             including the sheet name. An `InvalidArgument` error is thrown if
             the provided range is larger than one cell.
@@ -285,9 +285,9 @@ methods:
         - id: content
           description: >-
             The comment's content. This can be either a string or
-            CommentRichContent object. Strings are used for plain text.
-            CommentRichContent objects allow for other comment features, such as
-            mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
+            `CommentRichContent` object. Strings are used for plain text.
+            `CommentRichContent` objects allow for other comment features, such
+            as mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
             CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentType
@@ -342,7 +342,7 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell to which the comment is added. This can be a Range object
+            The cell to which the comment is added. This can be a `Range` object
             or a string. If it's a string, it must contain the full address,
             including the sheet name. An `InvalidArgument` error is thrown if
             the provided range is larger than one cell.
@@ -350,9 +350,9 @@ methods:
         - id: content
           description: >-
             The comment's content. This can be either a string or
-            CommentRichContent object. Strings are used for plain text.
-            CommentRichContent objects allow for other comment features, such as
-            mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
+            `CommentRichContent` object. Strings are used for plain text.
+            `CommentRichContent` objects allow for other comment features, such
+            as mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
             CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentTypeString
@@ -449,7 +449,7 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell which the comment is on. This can be a Range object or a
+            The cell which the comment is on. This can be a `Range` object or a
             string. If it's a string, it must contain the full address,
             including the sheet name. An `InvalidArgument` error is thrown if
             the provided range is larger than one cell.
@@ -476,6 +476,34 @@ methods:
       parameters:
         - id: replyId
           description: The identifier of comment reply.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Comment:class" />'
+        description: ''
+  - name: getItemOrNullObject(commentId)
+    uid: 'excel!Excel.CommentCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(commentId)
+    summary: >-
+      Gets a comment from the collection based on its ID. If the comment object
+      does not exist, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(commentId: string): Excel.Comment;'
+      parameters:
+        - id: commentId
+          description: The identifier for the comment.
           type: string
       return:
         type: '<xref uid="excel!Excel.Comment:class" />'

@@ -4,7 +4,7 @@ uid: 'excel!Excel.NamedItemCollection:class'
 package: excel!
 fullName: Excel.NamedItemCollection
 summary: >-
-  A collection of all the NamedItem objects that are part of the workbook or
+  A collection of all the `NamedItem` objects that are part of the workbook or
   worksheet, depending on how it was reached.
 
 
@@ -116,7 +116,7 @@ methods:
         Excel.NamedItem;
       parameters:
         - id: name
-          description: The "name" of the named item.
+          description: The name of the named item.
           type: string
         - id: formula
           description: The formula in the user's locale that the name will refer to.

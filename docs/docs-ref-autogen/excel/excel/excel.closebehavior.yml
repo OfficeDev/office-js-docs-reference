@@ -4,7 +4,7 @@ uid: 'excel!Excel.CloseBehavior:enum'
 package: excel!
 fullName: Excel.CloseBehavior
 summary: >-
-  Specifies the close behavior for Workbook.close API.
+  Specifies the close behavior for `Workbook.close`<!-- -->.
 
 
   \[ [API set: ExcelApi

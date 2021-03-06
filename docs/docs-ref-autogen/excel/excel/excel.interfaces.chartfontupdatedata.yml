@@ -107,7 +107,7 @@ properties:
     package: excel!
     fullName: underline
     summary: >-
-      Type of underline applied to the font. See Excel.ChartUnderlineStyle for
+      Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for
       details.
 
 

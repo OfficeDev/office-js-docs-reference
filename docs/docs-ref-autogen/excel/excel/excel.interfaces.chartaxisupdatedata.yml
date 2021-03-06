@@ -17,7 +17,7 @@ properties:
     fullName: alignment
     summary: >-
       Specifies the alignment for the specified axis tick label. See
-      Excel.ChartTextHorizontalAlignment for detail.
+      `Excel.ChartTextHorizontalAlignment` for detail.
 
 
       \[ [API set: ExcelApi
@@ -79,7 +79,7 @@ properties:
     package: excel!
     fullName: displayUnit
     summary: >-
-      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for
+      Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for
       details.
 
 
@@ -144,8 +144,8 @@ properties:
     package: excel!
     fullName: linkNumberFormat
     summary: >-
-      Specifies if the number format is linked to the cells. If true, the number
-      format will change in the labels when it changes in the cells.
+      Specifies if the number format is linked to the cells. If `true`<!-- -->,
+      the number format will change in the labels when it changes in the cells.
 
 
       \[ [API set: ExcelApi
@@ -181,8 +181,8 @@ properties:
     package: excel!
     fullName: majorGridlines
     summary: >-
-      Returns a Gridlines object that represents the major gridlines for the
-      specified axis.
+      Returns an object that represents the major gridlines for the specified
+      axis.
 
 
       \[ [API set: ExcelApi
@@ -203,7 +203,7 @@ properties:
     fullName: majorTickMark
     summary: >-
       Specifies the type of major tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
+      `Excel.ChartAxisTickMark` for details.
 
 
       \[ [API set: ExcelApi
@@ -226,7 +226,7 @@ properties:
     fullName: majorTimeUnitScale
     summary: >-
       Specifies the major unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
+      `categoryType` property is set to `dateAxis`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -307,8 +307,8 @@ properties:
     package: excel!
     fullName: minorGridlines
     summary: >-
-      Returns a Gridlines object that represents the minor gridlines for the
-      specified axis.
+      Returns an object that represents the minor gridlines for the specified
+      axis.
 
 
       \[ [API set: ExcelApi
@@ -329,7 +329,7 @@ properties:
     fullName: minorTickMark
     summary: >-
       Specifies the type of minor tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
+      `Excel.ChartAxisTickMark` for details.
 
 
       \[ [API set: ExcelApi
@@ -352,7 +352,7 @@ properties:
     fullName: minorTimeUnitScale
     summary: >-
       Specifies the minor unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
+      `categoryType` property is set to `dateAxis`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -451,7 +451,7 @@ properties:
     fullName: position
     summary: >-
       Specifies the specified axis position where the other axis crosses. See
-      Excel.ChartAxisPosition for details.
+      `Excel.ChartAxisPosition` for details.
 
 
       \[ [API set: ExcelApi
@@ -491,7 +491,7 @@ properties:
     package: excel!
     fullName: scaleType
     summary: >-
-      Specifies the value axis scale type. See Excel.ChartAxisScaleType for
+      Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for
       details.
 
 
@@ -551,7 +551,7 @@ properties:
     fullName: tickLabelPosition
     summary: >-
       Specifies the position of tick-mark labels on the specified axis. See
-      Excel.ChartAxisTickLabelPosition for details.
+      `Excel.ChartAxisTickLabelPosition` for details.
 
 
       \[ [API set: ExcelApi

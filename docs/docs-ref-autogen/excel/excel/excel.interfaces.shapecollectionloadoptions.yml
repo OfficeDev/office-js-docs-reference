@@ -37,7 +37,7 @@ properties:
     fullName: altTextDescription
     summary: >-
       For EACH ITEM in the collection: Specifies the alternative description
-      text for a Shape object.
+      text for a `Shape` object.
 
 
       \[ [API set: ExcelApi
@@ -56,7 +56,7 @@ properties:
     fullName: altTextTitle
     summary: >-
       For EACH ITEM in the collection: Specifies the alternative title text for
-      a Shape object.
+      a `Shape` object.
 
 
       \[ [API set: ExcelApi
@@ -137,8 +137,8 @@ properties:
     fullName: geometricShapeType
     summary: >-
       For EACH ITEM in the collection: Specifies the geometric shape type of
-      this geometric shape. See Excel.GeometricShapeType for details. Returns
-      null if the shape type is not "GeometricShape".
+      this geometric shape. See `Excel.GeometricShapeType` for details. Returns
+      `null` if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi
@@ -176,8 +176,8 @@ properties:
     fullName: height
     summary: >-
       For EACH ITEM in the collection: Specifies the height, in points, of the
-      shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
+      shape. Throws an `InvalidArgument` exception when set with a negative
+      value or zero as an input.
 
 
       \[ [API set: ExcelApi
@@ -233,8 +233,8 @@ properties:
     fullName: left
     summary: >-
       For EACH ITEM in the collection: The distance, in points, from the left
-      side of the shape to the left side of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
+      side of the shape to the left side of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi
@@ -426,8 +426,8 @@ properties:
     fullName: top
     summary: >-
       For EACH ITEM in the collection: The distance, in points, from the top
-      edge of the shape to the top edge of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
+      edge of the shape to the top edge of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi
@@ -446,7 +446,7 @@ properties:
     fullName: type
     summary: >-
       For EACH ITEM in the collection: Returns the type of this shape. See
-      Excel.ShapeType for details.
+      `Excel.ShapeType` for details.
 
 
       \[ [API set: ExcelApi
@@ -483,8 +483,8 @@ properties:
     fullName: width
     summary: >-
       For EACH ITEM in the collection: Specifies the width, in points, of the
-      shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
+      shape. Throws an `InvalidArgument` exception when set with a negative
+      value or zero as an input.
 
 
       \[ [API set: ExcelApi

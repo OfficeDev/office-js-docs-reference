@@ -67,7 +67,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: >-
-      Gets a PivotItem by its name or id.
+      Gets a PivotItem by its name or ID.
 
 
       \[ [API set: ExcelApi

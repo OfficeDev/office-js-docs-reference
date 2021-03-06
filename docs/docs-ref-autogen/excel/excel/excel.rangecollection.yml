@@ -44,7 +44,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: >-
-      Returns the number of ranges in the RangeCollection.
+      Returns the number of ranges in the `RangeCollection`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -63,7 +63,8 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: >-
-      Returns the range object based on its position in the RangeCollection.
+      Returns the range object based on its position in the
+      `RangeCollection`<!-- -->.
 
 
       \[ [API set: ExcelApi

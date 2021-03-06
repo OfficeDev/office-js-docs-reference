@@ -75,7 +75,7 @@ properties:
     package: excel!
     fullName: rule
     summary: >-
-      Specifies the Rule object on this conditional format.
+      Specifies the `Rule` object on this conditional format.
 
 
       \[ [API set: ExcelApi

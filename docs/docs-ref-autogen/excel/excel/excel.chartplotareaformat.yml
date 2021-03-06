@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartPlotAreaFormat:class'
 package: excel!
 fullName: Excel.ChartPlotAreaFormat
 summary: >-
-  Represents the format properties for chart plotArea.
+  Represents the format properties for a chart plot area.
 
 
   \[ [API set: ExcelApi
@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: border
     summary: >-
-      Specifies the border attributes of a chart plotArea.
+      Specifies the border attributes of a chart plot area.
 
 
       \[ [API set: ExcelApi

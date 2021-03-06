@@ -170,7 +170,7 @@ properties:
     fullName: resolved
     summary: >-
       For EACH ITEM in the collection: The comment reply status. A value of
-      "true" means the reply is in the resolved state.
+      `true` means the reply is in the resolved state.
 
 
       \[ [API set: ExcelApi

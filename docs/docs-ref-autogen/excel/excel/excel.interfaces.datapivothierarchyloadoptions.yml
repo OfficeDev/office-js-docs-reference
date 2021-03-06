@@ -53,7 +53,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Id of the DataPivotHierarchy.
+      ID of the DataPivotHierarchy.
 
 
       \[ [API set: ExcelApi

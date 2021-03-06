@@ -236,15 +236,15 @@ methods:
         Excel.ChartSeriesBy): Excel.Chart;
       parameters:
         - id: type
-          description: Represents the type of a chart. See Excel.ChartType for details.
+          description: Represents the type of a chart. See `Excel.ChartType` for details.
           type: '<xref uid="excel!Excel.ChartType:enum" />'
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series
-            on the chart. See Excel.ChartSeriesBy for details.
+            on the chart. See `Excel.ChartSeriesBy` for details.
           type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'
@@ -319,7 +319,7 @@ methods:
         | "Rows"): Excel.Chart;
       parameters:
         - id: typeString
-          description: Represents the type of a chart. See Excel.ChartType for details.
+          description: Represents the type of a chart. See `Excel.ChartType` for details.
           type: >-
             "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100"
             | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
@@ -346,12 +346,12 @@ methods:
             "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series
-            on the chart. See Excel.ChartSeriesBy for details.
+            on the chart. See `Excel.ChartSeriesBy` for details.
           type: '"Auto" | "Columns" | "Rows"'
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'

@@ -4,7 +4,7 @@ uid: 'excel!Excel.RangeSort:class'
 package: excel!
 fullName: Excel.RangeSort
 summary: >-
-  Manages sorting operations on Range objects.
+  Manages sorting operations on `Range` objects.
 
 
   \[ [API set: ExcelApi

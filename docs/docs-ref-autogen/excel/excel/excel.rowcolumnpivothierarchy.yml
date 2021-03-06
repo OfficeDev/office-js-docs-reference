@@ -52,7 +52,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Id of the RowColumnPivotHierarchy.
+      ID of the RowColumnPivotHierarchy.
 
 
       \[ [API set: ExcelApi

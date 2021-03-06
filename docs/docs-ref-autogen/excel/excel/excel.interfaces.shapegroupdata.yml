@@ -34,7 +34,7 @@ properties:
     package: excel!
     fullName: shapes
     summary: >-
-      Returns the collection of Shape objects.
+      Returns the collection of `Shape` objects.
 
 
       \[ [API set: ExcelApi

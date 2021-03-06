@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Workbook
 summary: >-
   Workbook is the top level object which contains related workbook objects such
-  as worksheets, tables, ranges, etc. To learn more about the workbook object
+  as worksheets, tables, and ranges. To learn more about the workbook object
   model, read [Work with workbooks using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
   -->.
@@ -42,7 +42,7 @@ properties:
     package: excel!
     fullName: autoSave
     summary: >-
-      Specifies if the workbook is in autosave mode.
+      Specifies if the workbook is in AutoSave mode.
 
 
       \[ [API set: ExcelApi
@@ -116,7 +116,7 @@ properties:
     package: excel!
     fullName: comments
     summary: >-
-      Represents a collection of Comments associated with the workbook.
+      Represents a collection of comments associated with the workbook.
 
 
       \[ [API set: ExcelApi
@@ -204,7 +204,7 @@ properties:
     fullName: isDirty
     summary: >-
       Specifies if changes have been made since the workbook was last saved. You
-      can set this property to true if you want to close a modified workbook
+      can set this property to `true` if you want to close a modified workbook
       without either saving it or being prompted to save it.
 
 
@@ -259,7 +259,7 @@ properties:
     package: excel!
     fullName: names
     summary: >-
-      Represents a collection of workbook scoped named items (named ranges and
+      Represents a collection of workbook-scoped named items (named ranges and
       constants).
 
 
@@ -273,12 +273,35 @@ properties:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
+  - name: onActivated
+    uid: 'excel!Excel.Workbook#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: >-
+      Occurs when the the workbook is activated. Note: This event will not fire
+      when the workbook is opened.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onActivated:
+        OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
   - name: onAutoSaveSettingChanged
     uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
     package: excel!
     fullName: onAutoSaveSettingChanged
     summary: >-
-      Occurs when the autoSave setting is changed on the workbook.
+      Occurs when the AutoSave setting is changed on the workbook.
 
 
       \[ [API set: ExcelApi
@@ -475,7 +498,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: >-
-      True if the workbook is open in Read-only mode.
+      Returns `true` if the workbook is open in read-only mode.
 
 
       \[ [API set: ExcelApi
@@ -493,7 +516,7 @@ properties:
     package: excel!
     fullName: settings
     summary: >-
-      Represents a collection of Settings associated with the workbook.
+      Represents a collection of settings associated with the workbook.
 
 
       \[ [API set: ExcelApi
@@ -530,7 +553,7 @@ properties:
     package: excel!
     fullName: slicers
     summary: >-
-      Represents a collection of Slicers associated with the workbook.
+      Represents a collection of slicers associated with the workbook.
 
 
       \[ [API set: ExcelApi
@@ -663,9 +686,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly tasks: Excel.TaskCollection;'
+      content: 'readonly tasks: Excel.DocumentTaskCollection;'
       return:
-        type: '<xref uid="excel!Excel.TaskCollection:class" />'
+        type: '<xref uid="excel!Excel.DocumentTaskCollection:class" />'
   - name: timelineStyles
     uid: 'excel!Excel.Workbook#timelineStyles:member'
     package: excel!
@@ -709,7 +732,7 @@ properties:
     summary: >-
       True if calculations in this workbook will be done using only the
       precision of the numbers as they're displayed. Data will permanently lose
-      accuracy when switching this property from false to true.
+      accuracy when switching this property from `false` to `true`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -936,9 +959,10 @@ methods:
     package: excel!
     fullName: getIsActiveCollabSession()
     summary: >-
-      True if the workbook is being edited by multiple users (co-authoring).
-      Please be aware there might be some delay between when the workbook status
-      changes and when the changes are reflected on the result of the method.
+      Returns `true` if the workbook is being edited by multiple users (through
+      co-authoring). Please be aware there might be some delay between when the
+      workbook status changes and when the changes are reflected on the result
+      of the method.
 
 
       \[ [API set: ExcelApi
@@ -998,8 +1022,8 @@ methods:
     fullName: getSelectedRanges()
     summary: >-
       Gets the currently selected one or more ranges from the workbook. Unlike
-      getSelectedRange(), this method returns a RangeAreas object that
-      represents all the selected ranges.
+      `getSelectedRange()`<!-- -->, this method returns a `RangeAreas` object
+      that represents all the selected ranges.
 
 
       \[ [API set: ExcelApi
@@ -1032,6 +1056,47 @@ methods:
           })
 
           ```
+  - name: 'insertWorksheetsFromBase64(base64File, options)'
+    uid: 'excel!Excel.Workbook#insertWorksheetsFromBase64:member(1)'
+    package: excel!
+    fullName: 'insertWorksheetsFromBase64(base64File, options)'
+    summary: >-
+      Inserts the specified worksheets from a source workbook into the current
+      workbook.
+
+
+      *Note**: This API is currently only supported for Office on Windows, Mac
+      and Online.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        insertWorksheetsFromBase64(base64File: string, options?:
+        Excel.InsertWorksheetOptions): OfficeExtension.ClientResult<string[]>;
+      parameters:
+        - id: base64File
+          description: >-
+            Required. The base64-encoded string representing the source workbook
+            file.
+          type: string
+        - id: options
+          description: >-
+            Optional. The options that define which worksheets to insert and
+            where in the workbook the new worksheets will be inserted. By
+            default, all the worksheets from the source workbook are inserted at
+            the end of the current workbook.
+          type: '<xref uid="excel!Excel.InsertWorksheetOptions:interface" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;string[]&gt;
+        description: An array of ids corresponding to each newly inserted worksheet.
   - name: load(options)
     uid: 'excel!Excel.Workbook#load:member(1)'
     package: excel!
@@ -1121,7 +1186,7 @@ methods:
       content: 'save(saveBehavior?: Excel.SaveBehavior): void;'
       parameters:
         - id: saveBehavior
-          description: workbook save behavior.
+          description: Workbook save behavior.
           type: '<xref uid="excel!Excel.SaveBehavior:enum" />'
       return:
         type: void
@@ -1159,7 +1224,7 @@ methods:
       content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
       parameters:
         - id: saveBehaviorString
-          description: workbook save behavior.
+          description: Workbook save behavior.
           type: '"Save" | "Prompt"'
       return:
         type: void

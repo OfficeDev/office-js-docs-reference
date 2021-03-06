@@ -21,7 +21,8 @@ properties:
     package: excel!
     fullName: dateFilter
     summary: >-
-      The PivotField's currently applied date filter. Null if none is applied.
+      The PivotField's currently applied date filter. This property is `null` if
+      no value filter is applied.
 
 
       \[ [API set: ExcelApi
@@ -79,7 +80,8 @@ properties:
     package: excel!
     fullName: labelFilter
     summary: >-
-      The PivotField's currently applied label filter. Null if none is applied.
+      The PivotField's currently applied label filter. This property is `null`
+      if no value filter is applied.
 
 
       \[ [API set: ExcelApi
@@ -131,7 +133,8 @@ properties:
     package: excel!
     fullName: manualFilter
     summary: >-
-      The PivotField's currently applied manual filter. Null if none is applied.
+      The PivotField's currently applied manual filter. This property is `null`
+      if no value filter is applied.
 
 
       \[ [API set: ExcelApi
@@ -183,7 +186,8 @@ properties:
     package: excel!
     fullName: valueFilter
     summary: >-
-      The PivotField's currently applied value filter. Null if none is applied.
+      The PivotField's currently applied value filter. This property is `null`
+      if no value filter is applied.
 
 
       \[ [API set: ExcelApi

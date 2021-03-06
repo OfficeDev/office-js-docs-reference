@@ -34,7 +34,7 @@ properties:
     package: excel!
     fullName: seriesAxis
     summary: >-
-      Represents the series axis of a 3-dimensional chart.
+      Represents the series axis of a 3-D chart.
 
 
       \[ [API set: ExcelApi

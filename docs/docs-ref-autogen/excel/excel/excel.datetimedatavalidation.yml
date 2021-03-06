@@ -4,7 +4,7 @@ uid: 'excel!Excel.DateTimeDataValidation:interface'
 package: excel!
 fullName: Excel.DateTimeDataValidation
 summary: >-
-  Represents the Date data validation criteria.
+  Represents the date data validation criteria.
 
 
   \[ [API set: ExcelApi

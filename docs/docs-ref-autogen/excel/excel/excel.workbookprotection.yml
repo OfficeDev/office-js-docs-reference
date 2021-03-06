@@ -142,7 +142,7 @@ methods:
       content: 'protect(password?: string): void;'
       parameters:
         - id: password
-          description: workbook protection password.
+          description: Workbook protection password.
           type: string
       return:
         type: void
@@ -230,7 +230,7 @@ methods:
       content: 'unprotect(password?: string): void;'
       parameters:
         - id: password
-          description: workbook protection password.
+          description: Workbook protection password.
           type: string
       return:
         type: void

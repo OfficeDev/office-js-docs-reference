@@ -4,7 +4,7 @@ uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
 package: excel!
 fullName: Excel.ConditionalPresetCriteriaRule
 summary: >-
-  Represents the Preset Criteria Conditional Format Rule
+  Represents the preset criteria conditional format rule.
 
 
   \[ [API set: ExcelApi

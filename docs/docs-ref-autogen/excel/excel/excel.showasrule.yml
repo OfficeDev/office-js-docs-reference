@@ -17,8 +17,8 @@ properties:
     package: excel!
     fullName: baseField
     summary: >-
-      The base PivotField to base the ShowAs calculation, if applicable based on
-      the ShowAsCalculation type, else null.
+      The PivotField to base the `ShowAs` calculation on, if applicable
+      according to the `ShowAsCalculation` type, else `null`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -36,8 +36,8 @@ properties:
     package: excel!
     fullName: baseItem
     summary: >-
-      The base Item to base the ShowAs calculation on, if applicable based on
-      the ShowAsCalculation type, else null.
+      The item to base the `ShowAs` calculation on, if applicable according to
+      the `ShowAsCalculation` type, else `null`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -92,8 +92,8 @@ properties:
     package: excel!
     fullName: calculation
     summary: >-
-      The ShowAs Calculation to use for the Data PivotField. See
-      Excel.ShowAsCalculation for Details.
+      The `ShowAs` calculation to use for the PivotField. See
+      `Excel.ShowAsCalculation` for details.
 
 
       \[ [API set: ExcelApi

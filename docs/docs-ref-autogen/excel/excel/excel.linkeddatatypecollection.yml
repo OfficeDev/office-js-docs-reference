@@ -66,7 +66,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: >-
-      Gets a linked data type by service id.
+      Gets a linked data type by service ID.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -79,7 +79,7 @@ methods:
       content: 'getItem(key: number): Excel.LinkedDataType;'
       parameters:
         - id: key
-          description: The id of the linked data type.
+          description: The ID of the linked data type.
           type: number
       return:
         type: '<xref uid="excel!Excel.LinkedDataType:class" />'
@@ -112,7 +112,7 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a linked data type by id. If the linked data type doesn't exist, then
+      Gets a linked data type by ID. If the linked data type doesn't exist, then
       this function will return an object with its `isNullObject` property set
       to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -129,7 +129,7 @@ methods:
       content: 'getItemOrNullObject(key: number): Excel.LinkedDataType;'
       parameters:
         - id: key
-          description: The service id of the linked data type.
+          description: The service ID of the linked data type.
           type: number
       return:
         type: '<xref uid="excel!Excel.LinkedDataType:class" />'

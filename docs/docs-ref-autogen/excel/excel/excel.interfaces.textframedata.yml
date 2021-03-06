@@ -77,7 +77,7 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       Represents the horizontal alignment of the text frame. See
-      Excel.ShapeTextHorizontalAlignment for details.
+      `Excel.ShapeTextHorizontalAlignment` for details.
 
 
       \[ [API set: ExcelApi
@@ -102,7 +102,7 @@ properties:
     fullName: horizontalOverflow
     summary: >-
       Represents the horizontal overflow behavior of the text frame. See
-      Excel.ShapeTextHorizontalOverflow for details.
+      `Excel.ShapeTextHorizontalOverflow` for details.
 
 
       \[ [API set: ExcelApi
@@ -143,7 +143,7 @@ properties:
     fullName: orientation
     summary: >-
       Represents the angle to which the text is oriented for the text frame. See
-      Excel.ShapeTextOrientation for details.
+      `Excel.ShapeTextOrientation` for details.
 
 
       \[ [API set: ExcelApi
@@ -168,7 +168,7 @@ properties:
     fullName: readingOrder
     summary: >-
       Represents the reading order of the text frame, either left-to-right or
-      right-to-left. See Excel.ShapeTextReadingOrder for details.
+      right-to-left. See `Excel.ShapeTextReadingOrder` for details.
 
 
       \[ [API set: ExcelApi
@@ -227,7 +227,7 @@ properties:
     fullName: verticalAlignment
     summary: >-
       Represents the vertical alignment of the text frame. See
-      Excel.ShapeTextVerticalAlignment for details.
+      `Excel.ShapeTextVerticalAlignment` for details.
 
 
       \[ [API set: ExcelApi
@@ -250,7 +250,7 @@ properties:
     fullName: verticalOverflow
     summary: >-
       Represents the vertical overflow behavior of the text frame. See
-      Excel.ShapeTextVerticalOverflow for details.
+      Excel.ShapeTextVerticalOverflow<!-- -->\` for details.
 
 
       \[ [API set: ExcelApi

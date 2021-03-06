@@ -4,7 +4,7 @@ uid: 'excel!Excel.TimelineStyleCollection:class'
 package: excel!
 fullName: Excel.TimelineStyleCollection
 summary: >-
-  Represents a collection of TimelineStyles.
+  Represents a collection of timeline styles.
 
 
   \[ [API set: ExcelApi
@@ -47,7 +47,7 @@ methods:
     package: excel!
     fullName: 'add(name, makeUniqueName)'
     summary: >-
-      Creates a blank TimelineStyle with the specified name.
+      Creates a blank `TimelineStyle` with the specified name.
 
 
       \[ [API set: ExcelApi
@@ -61,17 +61,17 @@ methods:
       parameters:
         - id: name
           description: >-
-            The unique name for the new TimelineStyle. Will throw an invalid
-            argument exception if the name is already in use.
+            The unique name for the new timeline style. Will throw an
+            `InvalidArgument` error if the name is already in use.
           type: string
         - id: makeUniqueName
           description: >-
-            Optional, defaults to false. If true, will append numbers to the
-            name in order to make it unique, if needed.
+            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will
+            append numbers to the name in order to make it unique, if needed.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.TimelineStyle:class" />'
-        description: The newly created TimelineStyle.
+        description: The newly created `TimelineStyle`<!-- -->.
   - name: getCount()
     uid: 'excel!Excel.TimelineStyleCollection#getCount:member(1)'
     package: excel!
@@ -96,7 +96,7 @@ methods:
     package: excel!
     fullName: getDefault()
     summary: >-
-      Gets the default TimelineStyle for the parent object's scope.
+      Gets the default timeline style for the parent object's scope.
 
 
       \[ [API set: ExcelApi
@@ -109,13 +109,13 @@ methods:
       content: 'getDefault(): Excel.TimelineStyle;'
       return:
         type: '<xref uid="excel!Excel.TimelineStyle:class" />'
-        description: The TimelineStyle object that is the current default TimelineStyle.
+        description: The `TimelineStyle` object that is the current default timeline style.
   - name: getItem(name)
     uid: 'excel!Excel.TimelineStyleCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
     summary: >-
-      Gets a TimelineStyle by name.
+      Gets a `TimelineStyle` by name.
 
 
       \[ [API set: ExcelApi
@@ -128,17 +128,17 @@ methods:
       content: 'getItem(name: string): Excel.TimelineStyle;'
       parameters:
         - id: name
-          description: Name of the TimelineStyle to be retrieved.
+          description: Name of the timeline style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.TimelineStyle:class" />'
-        description: The TimelineStyle object whose name matches the input.
+        description: The `TimelineStyle` object whose name matches the input.
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(name)
     summary: >-
-      Gets a TimelineStyle by name. If the TimelineStyle doesn't exist, then
+      Gets a `TimelineStyle` by name. If the timeline style doesn't exist, then
       this function will return an object with its `isNullObject` property set
       to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -155,11 +155,11 @@ methods:
       content: 'getItemOrNullObject(name: string): Excel.TimelineStyle;'
       parameters:
         - id: name
-          description: Name of the TimelineStyle to be retrieved.
+          description: Name of the timeline style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.TimelineStyle:class" />'
-        description: The TimelineStyle object whose name matches the input.
+        description: The `TimelineStyle` object whose name matches the input.
   - name: load(options)
     uid: 'excel!Excel.TimelineStyleCollection#load:member(1)'
     package: excel!
@@ -236,7 +236,7 @@ methods:
     package: excel!
     fullName: setDefault(newDefaultStyle)
     summary: >-
-      Sets the default TimelineStyle for use in the parent object's scope.
+      Sets the default timeline style for use in the parent object's scope.
 
 
       \[ [API set: ExcelApi
@@ -250,8 +250,8 @@ methods:
       parameters:
         - id: newDefaultStyle
           description: >-
-            The TimelineStyle object or name of the TimelineStyle object that
-            should be the new default.
+            The `TimelineStyle` object, or name of the `TimelineStyle` object,
+            that should be the new default.
           type: '<xref uid="excel!Excel.TimelineStyle:class" /> | string'
       return:
         type: void

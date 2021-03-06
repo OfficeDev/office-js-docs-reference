@@ -64,7 +64,7 @@ methods:
           description: >-
             The key that identifies the custom property object. It is
             case-insensitive.The key is limited to 255 characters (larger values
-            will cause an "InvalidArgument" error to be thrown.)
+            will cause an `InvalidArgument` error to be thrown.)
           type: string
         - id: value
           description: The value of this custom property.
@@ -122,7 +122,7 @@ methods:
     fullName: getItem(key)
     summary: >-
       Gets a custom property object by its key, which is case-insensitive.
-      Throws if the custom property does not exist.
+      Throws an error if the custom property does not exist.
 
 
       \[ [API set: ExcelApi

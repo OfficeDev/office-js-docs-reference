@@ -26,8 +26,8 @@ properties:
     package: excel!
     fullName: address
     summary: >-
-      Specifies the range reference in A1-style. Address value will contain the
-      Sheet reference (e.g., "Sheet1!A1:B4").
+      Specifies the range reference in A1-style. Address value contains the
+      sheet reference (e.g., "Sheet1!A1:B4").
 
 
       \[ [API set: ExcelApi
@@ -45,7 +45,7 @@ properties:
     package: excel!
     fullName: addressLocal
     summary: >-
-      Specifies the range reference for the specified range in the language of
+      Represents the range reference for the specified range in the language of
       the user.
 
 
@@ -137,7 +137,7 @@ properties:
     package: excel!
     fullName: conditionalFormats
     summary: >-
-      The collection of ConditionalFormats that intersect the range.
+      The collection of `ConditionalFormats` that intersect the range.
 
 
       \[ [API set: ExcelApi
@@ -265,10 +265,10 @@ properties:
     package: excel!
     fullName: hasSpill
     summary: >-
-      Represents if all cells have a spill border. Returns true if all cells
-      have a spill border, or false if all cells do not have a spill border.
-      Returns null if there are cells both with and without spill borders within
-      the range.
+      Represents if all cells have a spill border. Returns `true` if all cells
+      have a spill border, or `false` if all cells do not have a spill border.
+      Returns `null` if there are cells both with and without spill borders
+      within the range.
 
 
       \[ [API set: ExcelApi
@@ -286,8 +286,8 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Returns the distance in points, for 100% zoom, from top edge of the range
-      to bottom edge of the range.
+      Returns the distance in points, for 100% zoom, from the top edge of the
+      range to the bottom edge of the range.
 
 
       \[ [API set: ExcelApi
@@ -414,8 +414,8 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      Returns the distance in points, for 100% zoom, from left edge of the
-      worksheet to left edge of the range.
+      Returns the distance in points, for 100% zoom, from the left edge of the
+      worksheet to the left edge of the range.
 
 
       \[ [API set: ExcelApi
@@ -596,9 +596,9 @@ properties:
     package: excel!
     fullName: savedAsArray
     summary: >-
-      Represents if ALL the cells would be saved as an array formula. Returns
-      true if ALL cells would be saved as an array formula, or false if ALL
-      cells would NOT be saved as an array formula. Returns null if some cells
+      Represents if all the cells would be saved as an array formula. Returns
+      `true` if all cells would be saved as an array formula, or `false` if all
+      cells would not be saved as an array formula. Returns `null` if some cells
       would be saved as an array formula and some would not be.
 
 
@@ -673,9 +673,9 @@ properties:
     fullName: style
     summary: >-
       Represents the style of the current range. If the styles of the cells are
-      inconsistent, null will be returned. For custom styles, the style name
+      inconsistent, `null` will be returned. For custom styles, the style name
       will be returned. For built-in styles, a string representing a value in
-      the BuiltInStyle enum will be returned.
+      the `BuiltInStyle` enum will be returned.
 
 
       \[ [API set: ExcelApi
@@ -717,9 +717,9 @@ properties:
     package: excel!
     fullName: text
     summary: >-
-      Text values of the specified range. The Text value will not depend on the
-      cell width. The \# sign substitution that happens in Excel UI will not
-      affect the text value returned by the API.
+      Text values of the specified range. The text value will not depend on the
+      cell width. The number sign (\#) substitution that happens in the Excel UI
+      will not affect the text value returned by the API.
 
 
       \[ [API set: ExcelApi
@@ -737,8 +737,8 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Returns the distance in points, for 100% zoom, from top edge of the
-      worksheet to top edge of the range.
+      Returns the distance in points, for 100% zoom, from the top edge of the
+      worksheet to the top edge of the range.
 
 
       \[ [API set: ExcelApi
@@ -757,8 +757,9 @@ properties:
     fullName: values
     summary: >-
       Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      be a string, number, or boolean. Cells that contain an error will return
+      the error string. If the returned value starts with a plus ("+"), minus
+      ("-"), or equal sign ("="), Excel interprets this value as a formula.
 
 
       \[ [API set: ExcelApi
@@ -794,8 +795,8 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Returns the distance in points, for 100% zoom, from left edge of the range
-      to right edge of the range.
+      Returns the distance in points, for 100% zoom, from the left edge of the
+      range to the right edge of the range.
 
 
       \[ [API set: ExcelApi
@@ -833,9 +834,9 @@ methods:
     fullName: 'autoFill(destinationRange, autoFillType)'
     summary: >-
       Fills range from the current range to the destination range using the
-      specified AutoFill logic. The destination range can be null, or can extend
-      the source either horizontally or vertically. Discontiguous ranges are not
-      supported.
+      specified AutoFill logic. The destination range can be `null`<!-- -->, or
+      can extend the source either horizontally or vertically. Discontiguous
+      ranges are not supported.
 
 
       For more information, read [Use AutoFill and Flash
@@ -857,13 +858,14 @@ methods:
       parameters:
         - id: destinationRange
           description: >-
-            The destination range to autofill. If the destination range is null,
-            data is filled out based on the surrounding cells (which is the
-            behavior when double-clicking the UI’s range fill handle).
+            The destination range to AutoFill. If the destination range is
+            `null`<!-- -->, data is filled out based on the surrounding cells
+            (which is the behavior when double-clicking the UI’s range fill
+            handle).
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: autoFillType
           description: >-
-            The type of autofill. Specifies how the destination range is to be
+            The type of AutoFill. Specifies how the destination range is to be
             filled, based on the contents of the current range. Default is
             "FillDefault".
           type: '<xref uid="excel!Excel.AutoFillType:enum" />'
@@ -897,9 +899,9 @@ methods:
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     summary: >-
       Fills range from the current range to the destination range using the
-      specified AutoFill logic. The destination range can be null, or can extend
-      the source either horizontally or vertically. Discontiguous ranges are not
-      supported.
+      specified AutoFill logic. The destination range can be `null`<!-- -->, or
+      can extend the source either horizontally or vertically. Discontiguous
+      ranges are not supported.
 
 
       For more information, read [Use AutoFill and Flash
@@ -923,13 +925,14 @@ methods:
       parameters:
         - id: destinationRange
           description: >-
-            The destination range to autofill. If the destination range is null,
-            data is filled out based on the surrounding cells (which is the
-            behavior when double-clicking the UI’s range fill handle).
+            The destination range to AutoFill. If the destination range is
+            `null`<!-- -->, data is filled out based on the surrounding cells
+            (which is the behavior when double-clicking the UI’s range fill
+            handle).
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: autoFillTypeString
           description: >-
-            The type of autofill. Specifies how the destination range is to be
+            The type of AutoFill. Specifies how the destination range is to be
             filled, based on the contents of the current range. Default is
             "FillDefault".
           type: >-
@@ -978,7 +981,7 @@ methods:
         - id: applyTo
           description: >-
             Optional. Determines the type of clear action. See
-            Excel.ClearApplyTo for details.
+            `Excel.ClearApplyTo` for details.
           type: '<xref uid="excel!Excel.ClearApplyTo:enum" />'
       return:
         type: void
@@ -1024,7 +1027,7 @@ methods:
         - id: applyToString
           description: >-
             Optional. Determines the type of clear action. See
-            Excel.ClearApplyTo for details.
+            `Excel.ClearApplyTo` for details.
           type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
       return:
         type: void
@@ -1034,7 +1037,7 @@ methods:
     package: excel!
     fullName: convertDataTypeToText()
     summary: >-
-      Converts the range cells with datatypes into text.
+      Converts the range cells with data types into text.
 
 
       \[ [API set: ExcelApi
@@ -1053,7 +1056,7 @@ methods:
     package: excel!
     fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
     summary: >-
-      Converts the range cells into linked datatype in the worksheet.
+      Converts the range cells into linked data types in the worksheet.
 
 
       \[ [API set: ExcelApi
@@ -1068,10 +1071,10 @@ methods:
         void;
       parameters:
         - id: serviceID
-          description: The Service ID which will be used to query the data.
+          description: The service ID which will be used to query the data.
           type: number
         - id: languageCulture
-          description: Language Culture to query the service for.
+          description: Language culture to query the service for.
           type: string
       return:
         type: void
@@ -1081,10 +1084,10 @@ methods:
     package: excel!
     fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     summary: >-
-      Copies cell data or formatting from the source range or RangeAreas to the
-      current range. The destination range can be a different size than the
-      source range or RangeAreas. The destination will be expanded automatically
-      if it is smaller than the source.
+      Copies cell data or formatting from the source range or `RangeAreas` to
+      the current range. The destination range can be a different size than the
+      source range or `RangeAreas`<!-- -->. The destination will be expanded
+      automatically if it is smaller than the source.
 
 
       \[ [API set: ExcelApi
@@ -1100,8 +1103,8 @@ methods:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source
-            RangeAreas has multiple ranges, their form must be able to be
+            The source range or `RangeAreas` to copy from. When the source
+            `RangeAreas` has multiple ranges, their form must be able to be
             created by removing full rows or columns from a rectangular range.
           type: >-
             <xref uid="excel!Excel.Range:class" /> | <xref
@@ -1147,10 +1150,10 @@ methods:
     package: excel!
     fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     summary: >-
-      Copies cell data or formatting from the source range or RangeAreas to the
-      current range. The destination range can be a different size than the
-      source range or RangeAreas. The destination will be expanded automatically
-      if it is smaller than the source.
+      Copies cell data or formatting from the source range or `RangeAreas` to
+      the current range. The destination range can be a different size than the
+      source range or `RangeAreas`<!-- -->. The destination will be expanded
+      automatically if it is smaller than the source.
 
 
       \[ [API set: ExcelApi
@@ -1167,8 +1170,8 @@ methods:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source
-            RangeAreas has multiple ranges, their form must be able to be
+            The source range or `RangeAreas` to copy from. When the source
+            `RangeAreas` has multiple ranges, their form must be able to be
             created by removing full rows or columns from a rectangular range.
           type: >-
             <xref uid="excel!Excel.Range:class" /> | <xref
@@ -1207,7 +1210,7 @@ methods:
         - id: shift
           description: >-
             Specifies which way to shift the cells. See
-            Excel.DeleteShiftDirection for details.
+            `Excel.DeleteShiftDirection` for details.
           type: '<xref uid="excel!Excel.DeleteShiftDirection:enum" />'
       return:
         type: void
@@ -1250,7 +1253,7 @@ methods:
         - id: shiftString
           description: >-
             Specifies which way to shift the cells. See
-            Excel.DeleteShiftDirection for details.
+            `Excel.DeleteShiftDirection` for details.
           type: '"Up" | "Left"'
       return:
         type: void
@@ -1281,13 +1284,13 @@ methods:
         - id: criteria
           description: >-
             Additional search criteria, including the search direction and
-            whether the search needs to match the entire cell or be case
-            sensitive.
+            whether the search needs to match the entire cell or be
+            case-sensitive.
           type: '<xref uid="excel!Excel.SearchCriteria:interface" />'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
-          The Range object representing the first cell that contains a value
+          The `Range` object representing the first cell that contains a value
           matching the search text and criteria.
 
 
@@ -1352,13 +1355,13 @@ methods:
         - id: criteria
           description: >-
             Additional search criteria, including the search direction and
-            whether the search needs to match the entire cell or be case
-            sensitive.
+            whether the search needs to match the entire cell or be
+            case-sensitive.
           type: '<xref uid="excel!Excel.SearchCriteria:interface" />'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
         description: >-
-          The Range which matched the search criteria.
+          The `Range` which matched the search criteria.
 
 
           #### Examples
@@ -1395,9 +1398,9 @@ methods:
     package: excel!
     fullName: flashFill()
     summary: >-
-      Does FlashFill to current range.Flash Fill will automatically fills data
-      when it senses a pattern, so the range must be single column range and
-      have data around in order to find pattern.
+      Does a Flash Fill to the current range. Flash Fill automatically fills
+      data when it senses a pattern, so the range must be a single column range
+      and have data around it in order to find a pattern.
 
 
       \[ [API set: ExcelApi
@@ -1416,7 +1419,7 @@ methods:
     package: excel!
     fullName: 'getAbsoluteResizedRange(numRows, numColumns)'
     summary: >-
-      Gets a Range object with the same top-left cell as the current Range
+      Gets a `Range` object with the same top-left cell as the current `Range`
       object, but with the specified numbers of rows and columns.
 
 
@@ -1446,7 +1449,7 @@ methods:
     fullName: getBoundingRect(anotherRange)
     summary: >-
       Gets the smallest range object that encompasses the given ranges. For
-      example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E15".
+      example, the `GetBoundingRect` of "B2:C5" and "D10:E15" is "B2:E15".
 
 
       \[ [API set: ExcelApi
@@ -1459,7 +1462,7 @@ methods:
       content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
       parameters:
         - id: anotherRange
-          description: The range object or address or range name.
+          description: 'The range object, address, or range name.'
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1682,7 +1685,8 @@ methods:
     package: excel!
     fullName: getColumnsAfter(count)
     summary: >-
-      Gets a certain number of columns to the right of the current Range object.
+      Gets a certain number of columns to the right of the current `Range`
+      object.
 
 
       \[ [API set: ExcelApi
@@ -1709,7 +1713,8 @@ methods:
     package: excel!
     fullName: getColumnsBefore(count)
     summary: >-
-      Gets a certain number of columns to the left of the current Range object.
+      Gets a certain number of columns to the left of the current `Range`
+      object.
 
 
       \[ [API set: ExcelApi
@@ -1731,13 +1736,55 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
+  - name: getDependents()
+    uid: 'excel!Excel.Range#getDependents:member(1)'
+    package: excel!
+    fullName: getDependents()
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing
+      all the dependents of a cell in the same worksheet or in multiple
+      worksheets.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getDependents(): Excel.WorkbookRangeAreas;'
+      return:
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
+  - name: getDirectDependents()
+    uid: 'excel!Excel.Range#getDirectDependents:member(1)'
+    package: excel!
+    fullName: getDirectDependents()
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing
+      all the direct dependents of a cell in the same worksheet or in multiple
+      worksheets.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getDirectDependents(): Excel.WorkbookRangeAreas;'
+      return:
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
   - name: getDirectPrecedents()
     uid: 'excel!Excel.Range#getDirectPrecedents:member(1)'
     package: excel!
     fullName: getDirectPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing
-      all the direct precedents of a cell in same worksheet or in multiple
+      all the direct precedents of a cell in the same worksheet or in multiple
       worksheets.
 
 
@@ -1877,15 +1924,81 @@ methods:
               }
           });
           ```
+  - name: 'getExtendedRange(direction, activeCell)'
+    uid: 'excel!Excel.Range#getExtendedRange:member(1)'
+    package: excel!
+    fullName: 'getExtendedRange(direction, activeCell)'
+    summary: >-
+      Returns a range object that includes the current range and up to the edge
+      of the range, based on the provided direction. This matches the
+      Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getExtendedRange(direction: Excel.KeyboardDirection, activeCell?: Range
+        | string): Excel.Range;
+      parameters:
+        - id: direction
+          description: The direction from the active cell.
+          type: '<xref uid="excel!Excel.KeyboardDirection:enum" />'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the
+            top-left cell of the range. An error is thrown if the active cell is
+            not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getExtendedRange(directionString, activeCell)'
+    uid: 'excel!Excel.Range#getExtendedRange:member(2)'
+    package: excel!
+    fullName: 'getExtendedRange(directionString, activeCell)'
+    summary: >-
+      Returns a range object that includes the current range and up to the edge
+      of the range, based on the provided direction. This matches the
+      Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down",
+        activeCell?: Range | string): Excel.Range;
+      parameters:
+        - id: directionString
+          description: The direction from the active cell.
+          type: '"Left" | "Right" | "Up" | "Down"'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the
+            top-left cell of the range. An error is thrown if the active cell is
+            not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
   - name: getImage()
     uid: 'excel!Excel.Range#getImage:member(1)'
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a base64-encoded png image. **Important**: This API
-      is currently unsupported in Excel for Mac. Visit [OfficeDev/office-js
-      Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the
-      current status.
+      Renders the range as a base64-encoded png image. *Important**: This API is
+      currently unsupported in Excel for Mac. Visit [OfficeDev/office-js Issue
+      \#235](https://github.com/OfficeDev/office-js/issues/235) for the current
+      status.
 
 
       \[ [API set: ExcelApi
@@ -2169,7 +2282,7 @@ methods:
     summary: >-
       Returns a `RangeAreas` object that represents the merged areas in this
       range. Note that if the merged areas count in this range is more than 512,
-      the API will fail to return the result.
+      an `InvalidOperation` error will be thrown.
 
 
       \[ [API set: ExcelApiOnline
@@ -2180,6 +2293,28 @@ methods:
     isDeprecated: false
     syntax:
       content: 'getMergedAreas(): Excel.RangeAreas;'
+      return:
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
+        description: ''
+  - name: getMergedAreasOrNullObject()
+    uid: 'excel!Excel.Range#getMergedAreasOrNullObject:member(1)'
+    package: excel!
+    fullName: getMergedAreasOrNullObject()
+    summary: >-
+      Returns a RangeAreas object that represents the merged areas in this
+      range. Note that if the merged areas count in this range is more than 512,
+      the API will fail to return the result. If the RangeAreas does not exist,
+      will return a null object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getMergedAreasOrNullObject(): Excel.RangeAreas;'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
@@ -2260,8 +2395,8 @@ methods:
       parameters:
         - id: fullyContained
           description: >-
-            If true, returns only PivotTables that are fully contained within
-            the range bounds. The default value is false.
+            If `true`<!-- -->, returns only PivotTables that are fully contained
+            within the range bounds. The default value is `false`<!-- -->.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.PivotTableScopedCollection:class" />'
@@ -2306,7 +2441,8 @@ methods:
     fullName: getPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing
-      all the precedents of a cell in same worksheet or in multiple worksheets.
+      all the precedents of a cell in the same worksheet or in multiple
+      worksheets.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -2320,12 +2456,78 @@ methods:
       return:
         type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
+  - name: 'getRangeEdge(direction, activeCell)'
+    uid: 'excel!Excel.Range#getRangeEdge:member(1)'
+    package: excel!
+    fullName: 'getRangeEdge(direction, activeCell)'
+    summary: >-
+      Returns a range object that is the edge cell of the data region that
+      corresponds to the provided direction. This matches the Ctrl+Arrow key
+      behavior in the Excel on Windows UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range |
+        string): Excel.Range;
+      parameters:
+        - id: direction
+          description: The direction from the active cell.
+          type: '<xref uid="excel!Excel.KeyboardDirection:enum" />'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the
+            top-left cell of the range. An error is thrown if the active cell is
+            not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getRangeEdge(directionString, activeCell)'
+    uid: 'excel!Excel.Range#getRangeEdge:member(2)'
+    package: excel!
+    fullName: 'getRangeEdge(directionString, activeCell)'
+    summary: >-
+      Returns a range object that is the edge cell of the data region that
+      corresponds to the provided direction. This matches the Ctrl+Arrow key
+      behavior in the Excel on Windows UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getRangeEdge(directionString: "Left" | "Right" | "Up" | "Down",
+        activeCell?: Range | string): Excel.Range;
+      parameters:
+        - id: directionString
+          description: The direction from the active cell.
+          type: '"Left" | "Right" | "Up" | "Down"'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the
+            top-left cell of the range. An error is thrown if the active cell is
+            not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
   - name: 'getResizedRange(deltaRows, deltaColumns)'
     uid: 'excel!Excel.Range#getResizedRange:member(1)'
     package: excel!
     fullName: 'getResizedRange(deltaRows, deltaColumns)'
     summary: >-
-      Gets a Range object similar to the current Range object, but with its
+      Gets a `Range` object similar to the current `Range` object, but with its
       bottom-right corner expanded (or contracted) by some number of rows and
       columns.
 
@@ -2404,7 +2606,7 @@ methods:
     summary: >-
       Returns a single-dimensional array, encapsulating the data for each row's
       font, fill, borders, alignment, and other properties. For properties that
-      are not consistent across each cell within a given row, null will be
+      are not consistent across each cell within a given row, `null` will be
       returned.
 
 
@@ -2434,7 +2636,7 @@ methods:
     package: excel!
     fullName: getRowsAbove(count)
     summary: >-
-      Gets a certain number of rows above the current Range object.
+      Gets a certain number of rows above the current `Range` object.
 
 
       \[ [API set: ExcelApi
@@ -2461,7 +2663,7 @@ methods:
     package: excel!
     fullName: getRowsBelow(count)
     summary: >-
-      Gets a certain number of rows below the current Range object.
+      Gets a certain number of rows below the current `Range` object.
 
 
       \[ [API set: ExcelApi
@@ -2488,9 +2690,9 @@ methods:
     package: excel!
     fullName: 'getSpecialCells(cellType, cellValueType)'
     summary: >-
-      Gets the RangeAreas object, comprising one or more rectangular ranges,
+      Gets the `RangeAreas` object, comprising one or more rectangular ranges,
       that represents all the cells that match the specified type and value. If
-      no special cells are found, an ItemNotFound error will be thrown.
+      no special cells are found, an `ItemNotFound` error will be thrown.
 
 
       \[ [API set: ExcelApi
@@ -2509,11 +2711,11 @@ methods:
           type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used
-            to determine which types of cells to include in the result. These
-            values can be combined together to return more than one type. The
-            default is to select all constants or formulas, no matter what the
-            type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this
+            argument is used to determine which types of cells to include in the
+            result. These values can be combined together to return more than
+            one type. The default is to select all constants or formulas, no
+            matter what the type.
           type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -2546,9 +2748,9 @@ methods:
     package: excel!
     fullName: 'getSpecialCells(cellTypeString, cellValueType)'
     summary: >-
-      Gets the RangeAreas object, comprising one or more rectangular ranges,
+      Gets the `RangeAreas` object, comprising one or more rectangular ranges,
       that represents all the cells that match the specified type and value. If
-      no special cells are found, an ItemNotFound error will be thrown.
+      no special cells are found, an `ItemNotFound` error will be thrown.
 
 
       \[ [API set: ExcelApi
@@ -2575,11 +2777,11 @@ methods:
             "Visible"
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used
-            to determine which types of cells to include in the result. These
-            values can be combined together to return more than one type. The
-            default is to select all constants or formulas, no matter what the
-            type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this
+            argument is used to determine which types of cells to include in the
+            result. These values can be combined together to return more than
+            one type. The default is to select all constants or formulas, no
+            matter what the type.
           type: >-
             "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText"
             | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" |
@@ -2593,9 +2795,9 @@ methods:
     package: excel!
     fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     summary: >-
-      Gets the RangeAreas object, comprising one or more ranges, that represents
-      all the cells that match the specified type and value. If no special cells
-      are found, then this function will return an object with its
+      Gets the `RangeAreas` object, comprising one or more ranges, that
+      represents all the cells that match the specified type and value. If no
+      special cells are found, then this function will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information,
       see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -2618,11 +2820,11 @@ methods:
           type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used
-            to determine which types of cells to include in the result. These
-            values can be combined together to return more than one type. The
-            default is to select all constants or formulas, no matter what the
-            type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this
+            argument is used to determine which types of cells to include in the
+            result. These values can be combined together to return more than
+            one type. The default is to select all constants or formulas, no
+            matter what the type.
           type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -2632,9 +2834,9 @@ methods:
     package: excel!
     fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     summary: >-
-      Gets the RangeAreas object, comprising one or more ranges, that represents
-      all the cells that match the specified type and value. If no special cells
-      are found, then this function will return an object with its
+      Gets the `RangeAreas` object, comprising one or more ranges, that
+      represents all the cells that match the specified type and value. If no
+      special cells are found, then this function will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information,
       see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -2666,11 +2868,11 @@ methods:
             "Visible"
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used
-            to determine which types of cells to include in the result. These
-            values can be combined together to return more than one type. The
-            default is to select all constants or formulas, no matter what the
-            type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this
+            argument is used to determine which types of cells to include in the
+            result. These values can be combined together to return more than
+            one type. The default is to select all constants or formulas, no
+            matter what the type.
           type: >-
             "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText"
             | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" |
@@ -2803,7 +3005,7 @@ methods:
     package: excel!
     fullName: getSurroundingRegion()
     summary: >-
-      Returns a Range object that represents the surrounding region for the
+      Returns a `Range` object that represents the surrounding region for the
       top-left cell in this range. A surrounding region is a range bounded by
       any combination of blank rows and blank columns relative to this range.
 
@@ -2838,8 +3040,8 @@ methods:
       parameters:
         - id: fullyContained
           description: >-
-            If true, returns only tables that are fully contained within the
-            range bounds. The default value is false.
+            If `true`<!-- -->, returns only tables that are fully contained
+            within the range bounds. The default value is `false`<!-- -->.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.TableScopedCollection:class" />'
@@ -2850,7 +3052,7 @@ methods:
     fullName: getUsedRange(valuesOnly)
     summary: >-
       Returns the used range of the given range object. If there are no used
-      cells within the range, this function will throw an ItemNotFound error.
+      cells within the range, this function will throw an `ItemNotFound` error.
 
 
       \[ [API set: ExcelApi
@@ -3113,7 +3315,7 @@ methods:
     package: excel!
     fullName: hideGroupDetails(groupOption)
     summary: >-
-      Hide details of the row or column group.
+      Hides the details of the row or column group.
 
 
       \[ [API set: ExcelApi
@@ -3127,7 +3329,7 @@ methods:
       parameters:
         - id: groupOption
           description: >-
-            Specifies whether to hide details of grouped rows or grouped
+            Specifies whether to hide the details of grouped rows or grouped
             columns.
           type: '<xref uid="excel!Excel.GroupOption:enum" />'
       return:
@@ -3138,7 +3340,7 @@ methods:
     package: excel!
     fullName: hideGroupDetails(groupOptionString)
     summary: >-
-      Hide details of the row or column group.
+      Hides the details of the row or column group.
 
 
       \[ [API set: ExcelApi
@@ -3152,7 +3354,7 @@ methods:
       parameters:
         - id: groupOptionString
           description: >-
-            Specifies whether to hide details of grouped rows or grouped
+            Specifies whether to hide the details of grouped rows or grouped
             columns.
           type: '"ByRows" | "ByColumns"'
       return:
@@ -3164,7 +3366,7 @@ methods:
     fullName: insert(shift)
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this
-      range, and shifts the other cells to make space. Returns a new Range
+      range, and shifts the other cells to make space. Returns a new `Range`
       object at the now blank space.
 
 
@@ -3180,7 +3382,7 @@ methods:
         - id: shift
           description: >-
             Specifies which way to shift the cells. See
-            Excel.InsertShiftDirection for details.
+            `Excel.InsertShiftDirection` for details.
           type: '<xref uid="excel!Excel.InsertShiftDirection:enum" />'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -3210,7 +3412,7 @@ methods:
     fullName: insert(shiftString)
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this
-      range, and shifts the other cells to make space. Returns a new Range
+      range, and shifts the other cells to make space. Returns a new `Range`
       object at the now blank space.
 
 
@@ -3226,7 +3428,7 @@ methods:
         - id: shiftString
           description: >-
             Specifies which way to shift the cells. See
-            Excel.InsertShiftDirection for details.
+            `Excel.InsertShiftDirection` for details.
           type: '"Down" | "Right"'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -3343,8 +3545,9 @@ methods:
       parameters:
         - id: across
           description: >-
-            Optional. Set true to merge cells in each row of the specified range
-            as separate merged cells. The default value is false.
+            Optional. Set `true` to merge cells in each row of the specified
+            range as separate merged cells. The default value is `false`<!--
+            -->.
           type: boolean
       return:
         type: void
@@ -3496,10 +3699,10 @@ methods:
           description: String to find.
           type: string
         - id: replacement
-          description: String to replace the original with.
+          description: The string that replaces the original string.
           type: string
         - id: criteria
-          description: Additional Replace Criteria.
+          description: Additional replacement criteria.
           type: '<xref uid="excel!Excel.ReplaceCriteria:interface" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
@@ -3651,8 +3854,8 @@ methods:
     package: excel!
     fullName: setCellProperties(cellPropertiesData)
     summary: >-
-      Updates the range based on a 2D array of cell properties , encapsulating
-      things like font, fill, borders, alignment, and so forth.
+      Updates the range based on a 2D array of cell properties, encapsulating
+      things like font, fill, borders, and alignment.
 
 
       \[ [API set: ExcelApi
@@ -3759,8 +3962,7 @@ methods:
     fullName: setColumnProperties(columnPropertiesData)
     summary: >-
       Updates the range based on a single-dimensional array of column
-      properties, encapsulating things like font, fill, borders, alignment, and
-      so forth.
+      properties, encapsulating things like font, fill, borders, and alignment.
 
 
       \[ [API set: ExcelApi
@@ -3805,7 +4007,7 @@ methods:
     fullName: setRowProperties(rowPropertiesData)
     summary: >-
       Updates the range based on a single-dimensional array of row properties,
-      encapsulating things like font, fill, borders, alignment, and so forth.
+      encapsulating things like font, fill, borders, and alignment.
 
 
       \[ [API set: ExcelApi
@@ -3847,7 +4049,7 @@ methods:
     package: excel!
     fullName: showGroupDetails(groupOption)
     summary: >-
-      Show details of the row or column group.
+      Shows the details of the row or column group.
 
 
       \[ [API set: ExcelApi
@@ -3861,7 +4063,7 @@ methods:
       parameters:
         - id: groupOption
           description: >-
-            Specifies whether to show details of grouped rows or grouped
+            Specifies whether to show the details of grouped rows or grouped
             columns.
           type: '<xref uid="excel!Excel.GroupOption:enum" />'
       return:
@@ -3872,7 +4074,7 @@ methods:
     package: excel!
     fullName: showGroupDetails(groupOptionString)
     summary: >-
-      Show details of the row or column group.
+      Shows the details of the row or column group.
 
 
       \[ [API set: ExcelApi
@@ -3886,7 +4088,7 @@ methods:
       parameters:
         - id: groupOptionString
           description: >-
-            Specifies whether to show details of grouped rows or grouped
+            Specifies whether to show the details of grouped rows or grouped
             columns.
           type: '"ByRows" | "ByColumns"'
       return:

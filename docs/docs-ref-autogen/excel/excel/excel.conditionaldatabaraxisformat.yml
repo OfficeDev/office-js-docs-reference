@@ -4,7 +4,7 @@ uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
 package: excel!
 fullName: Excel.ConditionalDataBarAxisFormat
 summary: >-
-  Represents the format options for a Data Bar Axis.
+  Represents the format options for a data bar axis.
 
 
   \[ [API set: ExcelApi

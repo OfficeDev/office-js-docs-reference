@@ -17,8 +17,7 @@ properties:
     fullName: cellValue
     summary: >-
       Returns the cell value conditional format properties if the current
-      conditional format is a CellValue type. For example to format all cells
-      between 5 and 10.
+      conditional format is a `CellValue` type.
 
 
       \[ [API set: ExcelApi
@@ -40,8 +39,7 @@ properties:
     fullName: cellValueOrNullObject
     summary: >-
       Returns the cell value conditional format properties if the current
-      conditional format is a CellValue type. For example to format all cells
-      between 5 and 10.
+      conditional format is a `CellValue` type.
 
 
       \[ [API set: ExcelApi
@@ -62,8 +60,8 @@ properties:
     package: excel!
     fullName: colorScale
     summary: >-
-      Returns the ColorScale conditional format properties if the current
-      conditional format is an ColorScale type.
+      Returns the color scale conditional format properties if the current
+      conditional format is a `ColorScale` type.
 
 
       \[ [API set: ExcelApi
@@ -84,8 +82,8 @@ properties:
     package: excel!
     fullName: colorScaleOrNullObject
     summary: >-
-      Returns the ColorScale conditional format properties if the current
-      conditional format is an ColorScale type.
+      Returns the color scale conditional format properties if the current
+      conditional format is a `ColorScale` type.
 
 
       \[ [API set: ExcelApi
@@ -192,8 +190,8 @@ properties:
     package: excel!
     fullName: iconSet
     summary: >-
-      Returns the IconSet conditional format properties if the current
-      conditional format is an IconSet type.
+      Returns the icon set conditional format properties if the current
+      conditional format is an `IconSet` type.
 
 
       \[ [API set: ExcelApi
@@ -213,8 +211,8 @@ properties:
     package: excel!
     fullName: iconSetOrNullObject
     summary: >-
-      Returns the IconSet conditional format properties if the current
-      conditional format is an IconSet type.
+      Returns the icon set conditional format properties if the current
+      conditional format is an `IconSet` type.
 
 
       \[ [API set: ExcelApi
@@ -234,8 +232,8 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      The Priority of the Conditional Format within the current
-      ConditionalFormatCollection.
+      The priority of the conditional format in the current
+      `ConditionalFormatCollection`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -254,7 +252,7 @@ properties:
     fullName: preset
     summary: >-
       Returns the preset criteria conditional format. See
-      Excel.PresetCriteriaConditionalFormat for more details.
+      `Excel.PresetCriteriaConditionalFormat` for more details.
 
 
       \[ [API set: ExcelApi
@@ -276,7 +274,7 @@ properties:
     fullName: presetOrNullObject
     summary: >-
       Returns the preset criteria conditional format. See
-      Excel.PresetCriteriaConditionalFormat for more details.
+      `Excel.PresetCriteriaConditionalFormat` for more details.
 
 
       \[ [API set: ExcelApi
@@ -303,7 +301,7 @@ properties:
       conditional format currently exists in. Changing this also changes other
       conditional formats' priorities, to allow for a contiguous priority order.
       Use a negative priority to begin from the back. Priorities greater than
-      than bounds will get and set to the maximum (or minimum if negative)
+      the bounds will get and set to the maximum (or minimum if negative)
       priority. Also note that if you change the priority, you have to re-fetch
       a new copy of the object at that new priority location if you want to make
       further changes to it.
@@ -325,8 +323,8 @@ properties:
     fullName: stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority
-      formats shall take effect on that cell. Null on databars, icon sets, and
-      colorscales as there's no concept of StopIfTrue for these
+      formats shall take effect on that cell. Value is `null` on data bars, icon
+      sets, and color scales as there's no concept of `StopIfTrue` for these.
 
 
       \[ [API set: ExcelApi
@@ -345,7 +343,7 @@ properties:
     fullName: textComparison
     summary: >-
       Returns the specific text conditional format properties if the current
-      conditional format is a text type. For example to format cells matching
+      conditional format is a text type. For example, to format cells matching
       the word "Text".
 
 
@@ -368,7 +366,7 @@ properties:
     fullName: textComparisonOrNullObject
     summary: >-
       Returns the specific text conditional format properties if the current
-      conditional format is a text type. For example to format cells matching
+      conditional format is a text type. For example, to format cells matching
       the word "Text".
 
 
@@ -389,9 +387,9 @@ properties:
     package: excel!
     fullName: topBottom
     summary: >-
-      Returns the Top/Bottom conditional format properties if the current
-      conditional format is an TopBottom type. For example to format the top 10%
-      or bottom 10 items.
+      Returns the top/bottom conditional format properties if the current
+      conditional format is a `TopBottom` type. For example, to format the top
+      10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi
@@ -412,9 +410,9 @@ properties:
     package: excel!
     fullName: topBottomOrNullObject
     summary: >-
-      Returns the Top/Bottom conditional format properties if the current
-      conditional format is an TopBottom type. For example to format the top 10%
-      or bottom 10 items.
+      Returns the top/bottom conditional format properties if the current
+      conditional format is a `TopBottom` type. For example, to format the top
+      10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi

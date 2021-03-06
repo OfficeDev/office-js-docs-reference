@@ -35,7 +35,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Id of the PivotHierarchy.
+      ID of the PivotHierarchy.
 
 
       \[ [API set: ExcelApi

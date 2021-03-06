@@ -1,10 +1,10 @@
 ### YamlMime:TSType
-name: Excel.TaskHistoryRecord
-uid: 'excel!Excel.TaskHistoryRecord:class'
+name: Excel.DocumentTask
+uid: 'excel!Excel.DocumentTask:class'
 package: excel!
-fullName: Excel.TaskHistoryRecord
+fullName: Excel.DocumentTask
 summary: >-
-  Represents a recorded change to the task.
+  Represents a task.
 
 
   \[ [API set: ExcelApi BETA (PREVIEW
@@ -15,13 +15,12 @@ isPreview: true
 isDeprecated: false
 type: class
 properties:
-  - name: anchorId
-    uid: 'excel!Excel.TaskHistoryRecord#anchorId:member'
+  - name: assignees
+    uid: 'excel!Excel.DocumentTask#assignees:member'
     package: excel!
-    fullName: anchorId
+    fullName: assignees
     summary: >-
-      Represents the ID of the object to which the task is anchored (e.g.,
-      commentId for tasks attached to comments).
+      Returns a collection of assignees of the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -31,17 +30,15 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'anchorId: string;'
+      content: 'readonly assignees: Excel.IdentityCollection;'
       return:
-        type: string
-  - name: assignee
-    uid: 'excel!Excel.TaskHistoryRecord#assignee:member'
+        type: '<xref uid="excel!Excel.IdentityCollection:class" />'
+  - name: changes
+    uid: 'excel!Excel.DocumentTask#changes:member'
     package: excel!
-    fullName: assignee
+    fullName: changes
     summary: >-
-      Represents the user assigned to the task for an "Assign" history record
-      type, or the user to unassign from the task for an "Unassign" history
-      record type.
+      Gets the change records of the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -51,15 +48,15 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'assignee: Excel.User;'
+      content: 'readonly changes: Excel.DocumentTaskChangeCollection;'
       return:
-        type: '<xref uid="excel!Excel.User:interface" />'
-  - name: attributionUser
-    uid: 'excel!Excel.TaskHistoryRecord#attributionUser:member'
+        type: '<xref uid="excel!Excel.DocumentTaskChangeCollection:class" />'
+  - name: comment
+    uid: 'excel!Excel.DocumentTask#comment:member'
     package: excel!
-    fullName: attributionUser
+    fullName: comment
     summary: >-
-      Represents the user who created or changed the task.
+      Gets the comment associated with the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -69,11 +66,47 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'attributionUser: Excel.User;'
+      content: 'readonly comment: Excel.Comment;'
       return:
-        type: '<xref uid="excel!Excel.User:interface" />'
+        type: '<xref uid="excel!Excel.Comment:class" />'
+  - name: completedBy
+    uid: 'excel!Excel.DocumentTask#completedBy:member'
+    package: excel!
+    fullName: completedBy
+    summary: >-
+      Gets the most recent user to have completed the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly completedBy: Excel.Identity;'
+      return:
+        type: '<xref uid="excel!Excel.Identity:interface" />'
+  - name: completedDateTime
+    uid: 'excel!Excel.DocumentTask#completedDateTime:member'
+    package: excel!
+    fullName: completedDateTime
+    summary: >-
+      Gets the date and time that the task was completed. All dates are in UTC.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly completedDateTime: Date;'
+      return:
+        type: Date
   - name: context
-    uid: 'excel!Excel.TaskHistoryRecord#context:member'
+    uid: 'excel!Excel.DocumentTask#context:member'
     package: excel!
     fullName: context
     summary: >-
@@ -86,14 +119,12 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="excel!Excel.RequestContext:class" />'
-  - name: dueDate
-    uid: 'excel!Excel.TaskHistoryRecord#dueDate:member'
+  - name: createdBy
+    uid: 'excel!Excel.DocumentTask#createdBy:member'
     package: excel!
-    fullName: dueDate
+    fullName: createdBy
     summary: >-
-      Represents the task's due date. It is used for "Schedule" history record
-      type. It is in UTC time zone. Can be set to `null` to remove the due date.
-      It should be set together with `startDate` to avoid conflicts.
+      Gets the user who created the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -103,15 +134,15 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'dueDate: Date;'
+      content: 'readonly createdBy: Excel.Identity;'
       return:
-        type: Date
-  - name: historyRecordCreatedDate
-    uid: 'excel!Excel.TaskHistoryRecord#historyRecordCreatedDate:member'
+        type: '<xref uid="excel!Excel.Identity:interface" />'
+  - name: createdDateTime
+    uid: 'excel!Excel.DocumentTask#createdDateTime:member'
     package: excel!
-    fullName: historyRecordCreatedDate
+    fullName: createdDateTime
     summary: >-
-      Represents creation date of the task history record. All dates are in UTC.
+      Gets the date and time that the task was created. All dates are in UTC.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -121,15 +152,15 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'historyRecordCreatedDate: Date;'
+      content: 'readonly createdDateTime: Date;'
       return:
         type: Date
   - name: id
-    uid: 'excel!Excel.TaskHistoryRecord#id:member'
+    uid: 'excel!Excel.DocumentTask#id:member'
     package: excel!
     fullName: id
     summary: >-
-      ID for the history record.
+      Gets the ID of the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -139,19 +170,16 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type: string
   - name: percentComplete
-    uid: 'excel!Excel.TaskHistoryRecord#percentComplete:member'
+    uid: 'excel!Excel.DocumentTask#percentComplete:member'
     package: excel!
     fullName: percentComplete
     summary: >-
-      Represents the task's completion percentage. It is used for the "Progress"
-      history record type. This is a value between 0 and 100, where 100
-      represents a completed task. Changing this value to 100 also completes the
-      associated comment. Changing the completion from 100 to a lower value
-      reactivates the associated comment.
+      Specifies the completion percentage of the task. This is a value between 0
+      and 100, where 100 represents a completed task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -165,13 +193,12 @@ properties:
       return:
         type: number
   - name: priority
-    uid: 'excel!Excel.TaskHistoryRecord#priority:member'
+    uid: 'excel!Excel.DocumentTask#priority:member'
     package: excel!
     fullName: priority
     summary: >-
-      Represents the task's priority. It is used for the "Priority" history
-      record type. This is a value between 0 and 10 with 5 being the default
-      priority if not set, where 0 represents the highest priority.
+      Specifies the priority of the task. This is a value between 0 and 10,
+      where 0 represents the highest priority.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -184,14 +211,12 @@ properties:
       content: 'priority: number;'
       return:
         type: number
-  - name: startDate
-    uid: 'excel!Excel.TaskHistoryRecord#startDate:member'
+  - name: startAndDueDateTime
+    uid: 'excel!Excel.DocumentTask#startAndDueDateTime:member'
     package: excel!
-    fullName: startDate
+    fullName: startAndDueDateTime
     summary: >-
-      Represents the task's start date. It is used for the "Schedule" history
-      record type. It is in UTC time zone. Can be set to `null` to remove the
-      start date. It should be set together with `dueDate` to avoid conflicts.
+      Gets or sets the date and time the task should start and is due.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -201,15 +226,15 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'startDate: Date;'
+      content: 'startAndDueDateTime: Excel.DocumentTaskSchedule;'
       return:
-        type: Date
+        type: '<xref uid="excel!Excel.DocumentTaskSchedule:interface" />'
   - name: title
-    uid: 'excel!Excel.TaskHistoryRecord#title:member'
+    uid: 'excel!Excel.DocumentTask#title:member'
     package: excel!
     fullName: title
     summary: >-
-      Represents the task's title. It is used for "Title" history record type.
+      Specifies title of the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -222,52 +247,9 @@ properties:
       content: 'title: string;'
       return:
         type: string
-  - name: type
-    uid: 'excel!Excel.TaskHistoryRecord#type:member'
-    package: excel!
-    fullName: type
-    summary: >-
-      Represents task history record's type.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: >-
-        type: Excel.TaskHistoryRecordType | "Unknown" | "Create" | "Assign" |
-        "Unassign" | "UnassignAll" | "Schedule" | "Progress" | "Priority" |
-        "Delete" | "Undelete" | "SetTitle" | "Undo";
-      return:
-        type: >-
-          <xref uid="excel!Excel.TaskHistoryRecordType:enum" /> | "Unknown" |
-          "Create" | "Assign" | "Unassign" | "UnassignAll" | "Schedule" |
-          "Progress" | "Priority" | "Delete" | "Undelete" | "SetTitle" | "Undo"
-  - name: undoHistoryId
-    uid: 'excel!Excel.TaskHistoryRecord#undoHistoryId:member'
-    package: excel!
-    fullName: undoHistoryId
-    summary: >-
-      Represents the TaskHistoryRecord.id property that was undone for the
-      "Undo" history record type.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'undoHistoryId: string;'
-      return:
-        type: string
 methods:
   - name: load(options)
-    uid: 'excel!Excel.TaskHistoryRecord#load:member(1)'
+    uid: 'excel!Excel.DocumentTask#load:member(1)'
     package: excel!
     fullName: load(options)
     summary: >-
@@ -278,20 +260,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.TaskHistoryRecordLoadOptions):
-        Excel.TaskHistoryRecord;
+        load(options?: Excel.Interfaces.DocumentTaskLoadOptions):
+        Excel.DocumentTask;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.TaskHistoryRecordLoadOptions:interface"
+            <xref uid="excel!Excel.Interfaces.DocumentTaskLoadOptions:interface"
             />
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />'
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.TaskHistoryRecord#load:member(2)'
+    uid: 'excel!Excel.DocumentTask#load:member(2)'
     package: excel!
     fullName: load(propertyNames)
     summary: >-
@@ -301,7 +282,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.TaskHistoryRecord;'
+      content: 'load(propertyNames?: string | string[]): Excel.DocumentTask;'
       parameters:
         - id: propertyNames
           description: >-
@@ -309,10 +290,10 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />'
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.TaskHistoryRecord#load:member(3)'
+    uid: 'excel!Excel.DocumentTask#load:member(3)'
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
@@ -326,7 +307,7 @@ methods:
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
-                }): Excel.TaskHistoryRecord;
+                }): Excel.DocumentTask;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
@@ -340,46 +321,57 @@ methods:
                         expand?: string;
                     }
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />'
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: ''
-  - name: newObject(context)
-    uid: 'excel!Excel.TaskHistoryRecord.newObject:member(1)'
+  - name: 'setStartAndDueDateTime(startDateTime, dueDateTime)'
+    uid: 'excel!Excel.DocumentTask#setStartAndDueDateTime:member(1)'
     package: excel!
-    fullName: newObject(context)
-    summary: Create a new instance of Excel.TaskHistoryRecord object
+    fullName: 'setStartAndDueDateTime(startDateTime, dueDateTime)'
+    summary: >-
+      Changes the start and the due dates of the task.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        static newObject(context: OfficeExtension.ClientRequestContext):
-        Excel.TaskHistoryRecord;
+      content: 'setStartAndDueDateTime(startDateTime: Date, dueDateTime: Date): void;'
       parameters:
-        - id: context
-          description: ''
-          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+        - id: startDateTime
+          description: >-
+            Represents the start date and time of the task in UTC time zone. Can
+            be set to `null` to remove the start date and time.
+          type: Date
+        - id: dueDateTime
+          description: >-
+            Represents the due date and time of the task in UTC time zone. Can
+            be set to `null` to remove the due date and time.
+          type: Date
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />'
+        type: void
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.TaskHistoryRecord#toJSON:member(1)'
+    uid: 'excel!Excel.DocumentTask#toJSON:member(1)'
     package: excel!
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful
       output when an API object is passed to `JSON.stringify()`<!-- -->.
       (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.TaskHistoryRecord
+      object that is passed to it.) Whereas the original Excel.DocumentTask
       object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.TaskHistoryRecordData`<!-- -->) that
+      object (typed as `Excel.Interfaces.DocumentTaskData`<!-- -->) that
       contains shallow copies of any loaded child properties from the original
       object.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'toJSON(): Excel.Interfaces.TaskHistoryRecordData;'
+      content: 'toJSON(): Excel.Interfaces.DocumentTaskData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.TaskHistoryRecordData:interface" />'
+        type: '<xref uid="excel!Excel.Interfaces.DocumentTaskData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

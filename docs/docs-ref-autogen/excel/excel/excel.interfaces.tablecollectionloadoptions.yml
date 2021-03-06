@@ -36,7 +36,7 @@ properties:
     package: excel!
     fullName: autoFilter
     summary: >-
-      For EACH ITEM in the collection: Represents the AutoFilter object of the
+      For EACH ITEM in the collection: Represents the `AutoFilter` object of the
       table.
 
 
@@ -137,7 +137,7 @@ properties:
     package: excel!
     fullName: legacyId
     summary: >-
-      For EACH ITEM in the collection: Returns a numeric id.
+      For EACH ITEM in the collection: Returns a numeric ID.
 
 
       \[ [API set: ExcelApi
@@ -202,8 +202,8 @@ properties:
     fullName: showBandedColumns
     summary: >-
       For EACH ITEM in the collection: Specifies if the columns show banded
-      formatting in which odd columns are highlighted differently from even ones
-      to make reading the table easier.
+      formatting in which odd columns are highlighted differently from even
+      ones, to make reading the table easier.
 
 
       \[ [API set: ExcelApi
@@ -222,8 +222,8 @@ properties:
     fullName: showBandedRows
     summary: >-
       For EACH ITEM in the collection: Specifies if the rows show banded
-      formatting in which odd rows are highlighted differently from even ones to
-      make reading the table easier.
+      formatting in which odd rows are highlighted differently from even ones,
+      to make reading the table easier.
 
 
       \[ [API set: ExcelApi
@@ -317,7 +317,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Constant value that represents the Table
+      For EACH ITEM in the collection: Constant value that represents the table
       style. Possible values are: "TableStyleLight1" through
       "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28",
       "TableStyleDark1" through "TableStyleDark11". A custom user-defined style
@@ -339,7 +339,7 @@ properties:
     package: excel!
     fullName: tableStyle
     summary: >-
-      For EACH ITEM in the collection: The style applied to the Table.
+      For EACH ITEM in the collection: The style applied to the table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

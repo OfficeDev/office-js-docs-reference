@@ -33,7 +33,7 @@ properties:
     fullName: address
     summary: >-
       For EACH ITEM in the collection: Specifies the range reference in
-      A1-style. Address value will contain the Sheet reference (e.g.,
+      A1-style. Address value contains the sheet reference (e.g.,
       "Sheet1!A1:B4").
 
 
@@ -52,7 +52,7 @@ properties:
     package: excel!
     fullName: addressLocal
     summary: >-
-      For EACH ITEM in the collection: Specifies the range reference for the
+      For EACH ITEM in the collection: Represents the range reference for the
       specified range in the language of the user.
 
 
@@ -247,8 +247,8 @@ properties:
     fullName: hasSpill
     summary: >-
       For EACH ITEM in the collection: Represents if all cells have a spill
-      border. Returns true if all cells have a spill border, or false if all
-      cells do not have a spill border. Returns null if there are cells both
+      border. Returns `true` if all cells have a spill border, or `false` if all
+      cells do not have a spill border. Returns `null` if there are cells both
       with and without spill borders within the range.
 
 
@@ -268,7 +268,7 @@ properties:
     fullName: height
     summary: >-
       For EACH ITEM in the collection: Returns the distance in points, for 100%
-      zoom, from top edge of the range to bottom edge of the range.
+      zoom, from the top edge of the range to the bottom edge of the range.
 
 
       \[ [API set: ExcelApi
@@ -363,7 +363,7 @@ properties:
     fullName: left
     summary: >-
       For EACH ITEM in the collection: Returns the distance in points, for 100%
-      zoom, from left edge of the worksheet to left edge of the range.
+      zoom, from the left edge of the worksheet to the left edge of the range.
 
 
       \[ [API set: ExcelApi
@@ -519,11 +519,11 @@ properties:
     package: excel!
     fullName: savedAsArray
     summary: >-
-      For EACH ITEM in the collection: Represents if ALL the cells would be
-      saved as an array formula. Returns true if ALL cells would be saved as an
-      array formula, or false if ALL cells would NOT be saved as an array
-      formula. Returns null if some cells would be saved as an array formula and
-      some would not be.
+      For EACH ITEM in the collection: Represents if all the cells would be
+      saved as an array formula. Returns `true` if all cells would be saved as
+      an array formula, or `false` if all cells would not be saved as an array
+      formula. Returns `null` if some cells would be saved as an array formula
+      and some would not be.
 
 
       \[ [API set: ExcelApi
@@ -542,9 +542,10 @@ properties:
     fullName: style
     summary: >-
       For EACH ITEM in the collection: Represents the style of the current
-      range. If the styles of the cells are inconsistent, null will be returned.
-      For custom styles, the style name will be returned. For built-in styles, a
-      string representing a value in the BuiltInStyle enum will be returned.
+      range. If the styles of the cells are inconsistent, `null` will be
+      returned. For custom styles, the style name will be returned. For built-in
+      styles, a string representing a value in the `BuiltInStyle` enum will be
+      returned.
 
 
       \[ [API set: ExcelApi
@@ -563,9 +564,9 @@ properties:
     fullName: text
     summary: >-
       For EACH ITEM in the collection: Text values of the specified range. The
-      Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the
-      API.
+      text value will not depend on the cell width. The number sign (\#)
+      substitution that happens in the Excel UI will not affect the text value
+      returned by the API.
 
 
       \[ [API set: ExcelApi
@@ -584,7 +585,7 @@ properties:
     fullName: top
     summary: >-
       For EACH ITEM in the collection: Returns the distance in points, for 100%
-      zoom, from top edge of the worksheet to top edge of the range.
+      zoom, from the top edge of the worksheet to the top edge of the range.
 
 
       \[ [API set: ExcelApi
@@ -603,8 +604,10 @@ properties:
     fullName: values
     summary: >-
       For EACH ITEM in the collection: Represents the raw values of the
-      specified range. The data returned could be of type string, number, or a
-      boolean. Cells that contain an error will return the error string.
+      specified range. The data returned could be a string, number, or boolean.
+      Cells that contain an error will return the error string. If the returned
+      value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel
+      interprets this value as a formula.
 
 
       \[ [API set: ExcelApi
@@ -641,7 +644,7 @@ properties:
     fullName: width
     summary: >-
       For EACH ITEM in the collection: Returns the distance in points, for 100%
-      zoom, from left edge of the range to right edge of the range.
+      zoom, from the left edge of the range to the right edge of the range.
 
 
       \[ [API set: ExcelApi

@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartLegendEntryCollection:class'
 package: excel!
 fullName: Excel.ChartLegendEntryCollection
 summary: >-
-  Represents a collection of legendEntries.
+  Represents a collection of legend entries.
 
 
   \[ [API set: ExcelApi
@@ -47,7 +47,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: >-
-      Returns the number of legendEntry in the collection.
+      Returns the number of legend entries in the collection.
 
 
       \[ [API set: ExcelApi
@@ -66,7 +66,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: >-
-      Returns a legendEntry at the given index.
+      Returns a legend entry at the given index.
 
 
       \[ [API set: ExcelApi
@@ -79,7 +79,7 @@ methods:
       content: 'getItemAt(index: number): Excel.ChartLegendEntry;'
       parameters:
         - id: index
-          description: Index of the legendEntry to be retrieved.
+          description: Index of the legend entry to be retrieved.
           type: number
       return:
         type: '<xref uid="excel!Excel.ChartLegendEntry:class" />'

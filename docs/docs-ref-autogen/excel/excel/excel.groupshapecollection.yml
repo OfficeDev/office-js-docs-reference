@@ -66,7 +66,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: >-
-      Gets a shape using its Name or ID.
+      Gets a shape using its name or ID.
 
 
       \[ [API set: ExcelApi
@@ -79,7 +79,7 @@ methods:
       content: 'getItem(key: string): Excel.Shape;'
       parameters:
         - id: key
-          description: The Name or ID of the shape to be retrieved.
+          description: The name or ID of the shape to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -104,6 +104,34 @@ methods:
         - id: index
           description: The zero-based index value of the object to be retrieved.
           type: number
+      return:
+        type: '<xref uid="excel!Excel.Shape:class" />'
+        description: ''
+  - name: getItemOrNullObject(key)
+    uid: 'excel!Excel.GroupShapeCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(key)
+    summary: >-
+      Gets a shape using its name or ID. If the shape object does not exist,
+      then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.Shape;'
+      parameters:
+        - id: key
+          description: The Name or ID of the shape to be retrieved.
+          type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''

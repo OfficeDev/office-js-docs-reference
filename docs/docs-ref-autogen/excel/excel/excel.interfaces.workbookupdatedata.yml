@@ -37,7 +37,7 @@ properties:
     fullName: isDirty
     summary: >-
       Specifies if changes have been made since the workbook was last saved. You
-      can set this property to true if you want to close a modified workbook
+      can set this property to `true` if you want to close a modified workbook
       without either saving it or being prompted to save it.
 
 
@@ -115,7 +115,7 @@ properties:
     summary: >-
       True if calculations in this workbook will be done using only the
       precision of the numbers as they're displayed. Data will permanently lose
-      accuracy when switching this property from false to true.
+      accuracy when switching this property from `false` to `true`<!-- -->.
 
 
       \[ [API set: ExcelApi

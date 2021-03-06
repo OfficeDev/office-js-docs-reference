@@ -70,7 +70,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Id of the FilterPivotHierarchy.
+      ID of the FilterPivotHierarchy.
 
 
       \[ [API set: ExcelApi

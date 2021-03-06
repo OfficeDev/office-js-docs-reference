@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      Represents the line color in HTML color format, of the form \#RRGGBB
+      Represents the line color in HTML color format, in the form \#RRGGBB
       (e.g., "FFA500") or as a named HTML color (e.g., "orange").
 
 
@@ -35,9 +35,9 @@ properties:
     package: excel!
     fullName: dashStyle
     summary: >-
-      Represents the line style of the shape. Returns null when the line is not
-      visible or there are inconsistent dash styles. See Excel.ShapeLineStyle
-      for details.
+      Represents the line style of the shape. Returns `null` when the line is
+      not visible or there are inconsistent dash styles. See
+      `Excel.ShapeLineStyle` for details.
 
 
       \[ [API set: ExcelApi
@@ -62,9 +62,9 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Represents the line style of the shape. Returns null when the line is not
-      visible or there are inconsistent styles. See Excel.ShapeLineStyle for
-      details.
+      Represents the line style of the shape. Returns `null` when the line is
+      not visible or there are inconsistent styles. See `Excel.ShapeLineStyle`
+      for details.
 
 
       \[ [API set: ExcelApi
@@ -87,7 +87,7 @@ properties:
     fullName: transparency
     summary: >-
       Represents the degree of transparency of the specified line as a value
-      from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has
+      from 0.0 (opaque) through 1.0 (clear). Returns `null` when the shape has
       inconsistent transparencies.
 
 
@@ -107,7 +107,7 @@ properties:
     fullName: visible
     summary: >-
       Specifies if the line formatting of a shape element is visible. Returns
-      null when the shape has inconsistent visibilities.
+      `null` when the shape has inconsistent visibilities.
 
 
       \[ [API set: ExcelApi
@@ -125,7 +125,7 @@ properties:
     package: excel!
     fullName: weight
     summary: >-
-      Represents the weight of the line, in points. Returns null when the line
+      Represents the weight of the line, in points. Returns `null` when the line
       is not visible or there are inconsistent line weights.
 
 

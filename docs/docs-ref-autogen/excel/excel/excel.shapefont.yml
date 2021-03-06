@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ShapeFont
 summary: >-
   Represents the font attributes, such as font name, font size, and color, for a
-  shape's TextRange object.
+  shape's `TextRange` object.
 
 
   \[ [API set: ExcelApi
@@ -21,8 +21,8 @@ properties:
     package: excel!
     fullName: bold
     summary: >-
-      Represents the bold status of font. Returns null the TextRange includes
-      both bold and non-bold text fragments.
+      Represents the bold status of font. Returns `null` if the `TextRange`
+      includes both bold and non-bold text fragments.
 
 
       \[ [API set: ExcelApi
@@ -41,7 +41,7 @@ properties:
     fullName: color
     summary: >-
       HTML color code representation of the text color (e.g., "\#FF0000"
-      represents red). Returns null if the TextRange includes text fragments
+      represents red). Returns `null` if the `TextRange` includes text fragments
       with different colors.
 
 
@@ -74,7 +74,7 @@ properties:
     package: excel!
     fullName: italic
     summary: >-
-      Represents the italic status of font. Returns null if the TextRange
+      Represents the italic status of font. Returns `null` if the `TextRange`
       includes both italic and non-italic text fragments.
 
 
@@ -93,7 +93,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Represents font name (e.g., "Calibri"). If the text is Complex Script or
+      Represents font name (e.g., "Calibri"). If the text is a Complex Script or
       East Asian language, this is the corresponding font name; otherwise it is
       the Latin font name.
 
@@ -113,8 +113,8 @@ properties:
     package: excel!
     fullName: size
     summary: >-
-      Represents font size in points (e.g., 11). Returns null if the TextRange
-      includes text fragments with different font sizes.
+      Represents font size in points (e.g., 11). Returns `null` if the
+      `TextRange` includes text fragments with different font sizes.
 
 
       \[ [API set: ExcelApi
@@ -132,9 +132,9 @@ properties:
     package: excel!
     fullName: underline
     summary: >-
-      Type of underline applied to the font. Returns null if the TextRange
+      Type of underline applied to the font. Returns `null` if the `TextRange`
       includes text fragments with different underline styles. See
-      Excel.ShapeFontUnderlineStyle for details.
+      `Excel.ShapeFontUnderlineStyle` for details.
 
 
       \[ [API set: ExcelApi

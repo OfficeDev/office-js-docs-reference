@@ -94,7 +94,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: >-
-      Gets a RowColumnPivotHierarchy by its name or id.
+      Gets a RowColumnPivotHierarchy by its name or ID.
 
 
       \[ [API set: ExcelApi

@@ -37,7 +37,7 @@ properties:
     package: excel!
     fullName: rule
     summary: >-
-      The criteria of the Top/Bottom conditional format.
+      The criteria of the top/bottom conditional format.
 
 
       \[ [API set: ExcelApi

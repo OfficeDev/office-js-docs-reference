@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: allowAutoFilter
     summary: >-
-      Represents the worksheet protection option of allowing using auto filter
+      Represents the worksheet protection option allowing use of the AutoFilter
       feature.
 
 
@@ -39,7 +39,7 @@ properties:
     package: excel!
     fullName: allowDeleteColumns
     summary: >-
-      Represents the worksheet protection option of allowing deleting columns.
+      Represents the worksheet protection option allowing deleting of columns.
 
 
       \[ [API set: ExcelApi
@@ -57,7 +57,7 @@ properties:
     package: excel!
     fullName: allowDeleteRows
     summary: >-
-      Represents the worksheet protection option of allowing deleting rows.
+      Represents the worksheet protection option allowing deleting of rows.
 
 
       \[ [API set: ExcelApi
@@ -75,7 +75,7 @@ properties:
     package: excel!
     fullName: allowEditObjects
     summary: >-
-      Represents the worksheet protection option of allowing editing objects.
+      Represents the worksheet protection option allowing editing of objects.
 
 
       \[ [API set: ExcelApi
@@ -93,7 +93,7 @@ properties:
     package: excel!
     fullName: allowEditScenarios
     summary: >-
-      Represents the worksheet protection option of allowing editing scenarios.
+      Represents the worksheet protection option allowing editing of scenarios.
 
 
       \[ [API set: ExcelApi
@@ -111,7 +111,7 @@ properties:
     package: excel!
     fullName: allowFormatCells
     summary: >-
-      Represents the worksheet protection option of allowing formatting cells.
+      Represents the worksheet protection option allowing formatting of cells.
 
 
       \[ [API set: ExcelApi
@@ -129,7 +129,7 @@ properties:
     package: excel!
     fullName: allowFormatColumns
     summary: >-
-      Represents the worksheet protection option of allowing formatting columns.
+      Represents the worksheet protection option allowing formatting of columns.
 
 
       \[ [API set: ExcelApi
@@ -147,7 +147,7 @@ properties:
     package: excel!
     fullName: allowFormatRows
     summary: >-
-      Represents the worksheet protection option of allowing formatting rows.
+      Represents the worksheet protection option allowing formatting of rows.
 
 
       \[ [API set: ExcelApi
@@ -165,7 +165,7 @@ properties:
     package: excel!
     fullName: allowInsertColumns
     summary: >-
-      Represents the worksheet protection option of allowing inserting columns.
+      Represents the worksheet protection option allowing inserting of columns.
 
 
       \[ [API set: ExcelApi
@@ -183,7 +183,7 @@ properties:
     package: excel!
     fullName: allowInsertHyperlinks
     summary: >-
-      Represents the worksheet protection option of allowing inserting
+      Represents the worksheet protection option allowing inserting of
       hyperlinks.
 
 
@@ -202,7 +202,7 @@ properties:
     package: excel!
     fullName: allowInsertRows
     summary: >-
-      Represents the worksheet protection option of allowing inserting rows.
+      Represents the worksheet protection option allowing inserting of rows.
 
 
       \[ [API set: ExcelApi
@@ -220,7 +220,7 @@ properties:
     package: excel!
     fullName: allowPivotTables
     summary: >-
-      Represents the worksheet protection option of allowing using PivotTable
+      Represents the worksheet protection option allowing use of the PivotTable
       feature.
 
 
@@ -239,7 +239,8 @@ properties:
     package: excel!
     fullName: allowSort
     summary: >-
-      Represents the worksheet protection option of allowing using sort feature.
+      Represents the worksheet protection option allowing use of the sort
+      feature.
 
 
       \[ [API set: ExcelApi

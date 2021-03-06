@@ -4,7 +4,7 @@ uid: 'excel!Excel.RangeReference:interface'
 package: excel!
 fullName: Excel.RangeReference
 summary: >-
-  Represents a string reference of the form SheetName!A1:B5, or a global or
+  Represents a string reference of the form "SheetName!A1:B5", or a global or
   local named range.
 
 
@@ -21,7 +21,7 @@ properties:
     package: excel!
     fullName: address
     summary: >-
-      The address of the range; for example 'SheetName!A1:B5'.
+      The address of the range, for example "SheetName!A1:B5".
 
 
       \[ [API set: ExcelApi
