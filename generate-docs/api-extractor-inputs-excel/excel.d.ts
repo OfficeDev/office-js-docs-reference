@@ -6863,10 +6863,6 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.RangeData;
     }
-    export class RangeCustom {
-    }
-    export interface Range extends OfficeExtension.ClientObject, RangeCustom {
-    }
     /**
      *
      * Represents a string reference of the form "SheetName!A1:B5", or a global or local named range.
@@ -8747,10 +8743,6 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.TableCollectionData;
     }
-    export class TableCollectionCustom {
-    }
-    export interface TableCollection extends OfficeExtension.ClientObject, TableCollectionCustom {
-    }
     /**
      *
      * Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location, and the tables are sorted top-to-bottom and then left-to-right.
@@ -10609,10 +10601,6 @@ export declare namespace Excel {
         * Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ChartCollectionData;
-    }
-    export class ChartCollectionCustom {
-    }
-    export interface ChartCollection extends OfficeExtension.ClientObject, ChartCollectionCustom {
     }
     /**
      *
@@ -13925,14 +13913,6 @@ export declare namespace Excel {
         toJSON(): {
             [key: string]: string;
         };
-    }
-    export class ChartFillCustom {
-        /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         */
-        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFill;
-    }
-    export interface ChartFill extends OfficeExtension.ClientObject, ChartFillCustom {
     }
     /**
      *
@@ -21888,10 +21868,6 @@ export declare namespace Excel {
         * Whereas the original `Excel.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.CommentCollectionData;
-    }
-    export class CommentCollectionCustom {
-    }
-    export interface CommentCollection extends OfficeExtension.ClientObject, CommentCollectionCustom {
     }
     /**
      *
