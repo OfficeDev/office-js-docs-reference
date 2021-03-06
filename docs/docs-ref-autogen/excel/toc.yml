@@ -451,12 +451,8 @@ items:
             uid: 'excel!Excel.ChartBorder:class'
           - name: ChartBoxwhiskerOptions
             uid: 'excel!Excel.ChartBoxwhiskerOptions:class'
-          - name: ChartCollection (Class)
+          - name: ChartCollection
             uid: 'excel!Excel.ChartCollection:class'
-          - name: ChartCollection (Interface)
-            uid: 'excel!Excel.ChartCollection:interface'
-          - name: ChartCollectionCustom
-            uid: 'excel!Excel.ChartCollectionCustom:class'
           - name: ChartDataLabel
             uid: 'excel!Excel.ChartDataLabel:class'
           - name: ChartDataLabelFormat
@@ -471,12 +467,8 @@ items:
             uid: 'excel!Excel.ChartErrorBars:class'
           - name: ChartErrorBarsFormat
             uid: 'excel!Excel.ChartErrorBarsFormat:class'
-          - name: ChartFill (Class)
+          - name: ChartFill
             uid: 'excel!Excel.ChartFill:class'
-          - name: ChartFill (Interface)
-            uid: 'excel!Excel.ChartFill:interface'
-          - name: ChartFillCustom
-            uid: 'excel!Excel.ChartFillCustom:class'
           - name: ChartFont
             uid: 'excel!Excel.ChartFont:class'
           - name: ChartFormatString
@@ -541,12 +533,8 @@ items:
             uid: 'excel!Excel.CommentAddedEventArgs:interface'
           - name: CommentChangedEventArgs
             uid: 'excel!Excel.CommentChangedEventArgs:interface'
-          - name: CommentCollection (Class)
+          - name: CommentCollection
             uid: 'excel!Excel.CommentCollection:class'
-          - name: CommentCollection (Interface)
-            uid: 'excel!Excel.CommentCollection:interface'
-          - name: CommentCollectionCustom
-            uid: 'excel!Excel.CommentCollectionCustom:class'
           - name: CommentDeletedEventArgs
             uid: 'excel!Excel.CommentDeletedEventArgs:interface'
           - name: CommentDetail
@@ -751,10 +739,8 @@ items:
             uid: 'excel!Excel.PivotValueFilter:interface'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
-          - name: Range (Class)
+          - name: Range
             uid: 'excel!Excel.Range:class'
-          - name: Range (Interface)
-            uid: 'excel!Excel.Range:interface'
           - name: RangeAreas
             uid: 'excel!Excel.RangeAreas:class'
           - name: RangeAreasCollection
@@ -765,8 +751,6 @@ items:
             uid: 'excel!Excel.RangeBorderCollection:class'
           - name: RangeCollection
             uid: 'excel!Excel.RangeCollection:class'
-          - name: RangeCustom
-            uid: 'excel!Excel.RangeCustom:class'
           - name: RangeFill
             uid: 'excel!Excel.RangeFill:class'
           - name: RangeFont
@@ -867,12 +851,8 @@ items:
             uid: 'excel!Excel.TableAddedEventArgs:interface'
           - name: TableChangedEventArgs
             uid: 'excel!Excel.TableChangedEventArgs:interface'
-          - name: TableCollection (Class)
+          - name: TableCollection
             uid: 'excel!Excel.TableCollection:class'
-          - name: TableCollection (Interface)
-            uid: 'excel!Excel.TableCollection:interface'
-          - name: TableCollectionCustom
-            uid: 'excel!Excel.TableCollectionCustom:class'
           - name: TableColumn
             uid: 'excel!Excel.TableColumn:class'
           - name: TableColumnCollection
