@@ -34,8 +34,8 @@ properties:
     package: excel!
     fullName: categoryLabelLevel
     summary: >-
-      Specifies a ChartCategoryLabelLevel enumeration constant referring to the
-      level of where the category labels are being sourced from.
+      Specifies a chart category label level enumeration constant, referring to
+      the level of the source category labels.
 
 
       \[ [API set: ExcelApi
@@ -53,7 +53,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: >-
-      Specifies the type of the chart. See Excel.ChartType for details.
+      Specifies the type of the chart. See `Excel.ChartType` for details.
 
 
       \[ [API set: ExcelApi
@@ -119,7 +119,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: >-
-      Represents the datalabels on the chart.
+      Represents the data labels on the chart.
 
 
       \[ [API set: ExcelApi
@@ -274,7 +274,7 @@ properties:
     package: excel!
     fullName: plotArea
     summary: >-
-      Represents the plotArea for the chart.
+      Represents the plot area for the chart.
 
 
       \[ [API set: ExcelApi
@@ -331,8 +331,8 @@ properties:
     package: excel!
     fullName: seriesNameLevel
     summary: >-
-      Specifies a ChartSeriesNameLevel enumeration constant referring to the
-      level of where the series names are being sourced from.
+      Specifies a chart series name level enumeration constant, referring to the
+      level of the source series names.
 
 
       \[ [API set: ExcelApi
@@ -369,9 +369,9 @@ properties:
     fullName: showDataLabelsOverMaximum
     summary: >-
       Specifies whether to show the data labels when the value is greater than
-      the maximum value on the value axis. If value axis became smaller than the
-      size of data points, you can use this property to set whether to show the
-      data labels. This property applies to 2-D charts only.
+      the maximum value on the value axis. If the value axis becomes smaller
+      than the size of the data points, you can use this property to set whether
+      to show the data labels. This property applies to 2-D charts only.
 
 
       \[ [API set: ExcelApi
@@ -407,7 +407,7 @@ properties:
     package: excel!
     fullName: title
     summary: >-
-      Specifies the title of the specified chart, including the text,
+      Represents the title of the specified chart, including the text,
       visibility, position, and formatting of the title.
 
 

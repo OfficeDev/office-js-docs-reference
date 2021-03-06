@@ -21,7 +21,7 @@ properties:
     package: excel!
     fullName: addresses
     summary: >-
-      Returns an array of address in A1-style. Address value will contain the
+      Returns an array of addresses in A1-style. Address values contain the
       worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4,
       Sheet1!D1:D4"). Read-only.
 
@@ -124,7 +124,7 @@ methods:
     package: excel!
     fullName: getRangeAreasBySheet(key)
     summary: >-
-      Returns the `RangeAreas` object based on worksheet id or name in the
+      Returns the `RangeAreas` object based on worksheet ID or name in the
       collection.
 
 
@@ -138,7 +138,7 @@ methods:
       content: 'getRangeAreasBySheet(key: string): Excel.RangeAreas;'
       parameters:
         - id: key
-          description: The name or id of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -148,7 +148,7 @@ methods:
     package: excel!
     fullName: getRangeAreasOrNullObjectBySheet(key)
     summary: >-
-      Returns the RangeAreas object based on worksheet name or id in the
+      Returns the `RangeAreas` object based on worksheet name or ID in the
       collection. If the worksheet does not exist, then this function will
       return an object with its `isNullObject` property set to `true`<!-- -->.
       For further information, see [*OrNullObject methods and
@@ -166,7 +166,7 @@ methods:
       content: 'getRangeAreasOrNullObjectBySheet(key: string): Excel.RangeAreas;'
       parameters:
         - id: key
-          description: The name or id of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'

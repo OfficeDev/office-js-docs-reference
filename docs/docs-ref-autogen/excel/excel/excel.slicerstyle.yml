@@ -4,7 +4,7 @@ uid: 'excel!Excel.SlicerStyle:class'
 package: excel!
 fullName: Excel.SlicerStyle
 summary: >-
-  Represents a Slicer Style, which defines style elements by region of the
+  Represents a slicer style, which defines style elements by region of the
   slicer.
 
 
@@ -35,7 +35,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Gets the name of the SlicerStyle.
+      Gets the name of the slicer style.
 
 
       \[ [API set: ExcelApi
@@ -53,7 +53,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: >-
-      Specifies if this SlicerStyle object is read-only.
+      Specifies if this `SlicerStyle` object is read-only.
 
 
       \[ [API set: ExcelApi
@@ -72,7 +72,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: >-
-      Deletes the SlicerStyle.
+      Deletes the slicer style.
 
 
       \[ [API set: ExcelApi
@@ -91,7 +91,7 @@ methods:
     package: excel!
     fullName: duplicate()
     summary: >-
-      Creates a duplicate of this SlicerStyle with copies of all the style
+      Creates a duplicate of this slicer style with copies of all the style
       elements.
 
 
@@ -106,8 +106,8 @@ methods:
       return:
         type: '<xref uid="excel!Excel.SlicerStyle:class" />'
         description: >-
-          The new SlicerStyle object that has been duplicated from this
-          SlicerStyle.
+          The new `SlicerStyle` object that has been duplicated from this slicer
+          style.
   - name: load(options)
     uid: 'excel!Excel.SlicerStyle#load:member(1)'
     package: excel!

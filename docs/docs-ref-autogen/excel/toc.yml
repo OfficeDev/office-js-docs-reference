@@ -190,6 +190,8 @@ items:
                 uid: 'excel!Excel.DocumentPropertyItem:enum'
               - name: DocumentPropertyType
                 uid: 'excel!Excel.DocumentPropertyType:enum'
+              - name: DocumentTaskChangeAction
+                uid: 'excel!Excel.DocumentTaskChangeAction:enum'
               - name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
               - name: ErrorCodes
@@ -220,6 +222,8 @@ items:
                 uid: 'excel!Excel.ImageFittingMode:enum'
               - name: InsertShiftDirection
                 uid: 'excel!Excel.InsertShiftDirection:enum'
+              - name: KeyboardDirection
+                uid: 'excel!Excel.KeyboardDirection:enum'
               - name: LabelFilterCondition
                 uid: 'excel!Excel.LabelFilterCondition:enum'
               - name: LinkedDataTypeRefreshMode
@@ -328,8 +332,6 @@ items:
                 uid: 'excel!Excel.SpecialCellValueType:enum'
               - name: SubtotalLocationType
                 uid: 'excel!Excel.SubtotalLocationType:enum'
-              - name: TaskHistoryRecordType
-                uid: 'excel!Excel.TaskHistoryRecordType:enum'
               - name: TopBottomSelectionType
                 uid: 'excel!Excel.TopBottomSelectionType:enum'
               - name: ValueFilterCondition
@@ -449,8 +451,12 @@ items:
             uid: 'excel!Excel.ChartBorder:class'
           - name: ChartBoxwhiskerOptions
             uid: 'excel!Excel.ChartBoxwhiskerOptions:class'
-          - name: ChartCollection
+          - name: ChartCollection (Class)
             uid: 'excel!Excel.ChartCollection:class'
+          - name: ChartCollection (Interface)
+            uid: 'excel!Excel.ChartCollection:interface'
+          - name: ChartCollectionCustom
+            uid: 'excel!Excel.ChartCollectionCustom:class'
           - name: ChartDataLabel
             uid: 'excel!Excel.ChartDataLabel:class'
           - name: ChartDataLabelFormat
@@ -465,8 +471,12 @@ items:
             uid: 'excel!Excel.ChartErrorBars:class'
           - name: ChartErrorBarsFormat
             uid: 'excel!Excel.ChartErrorBarsFormat:class'
-          - name: ChartFill
+          - name: ChartFill (Class)
             uid: 'excel!Excel.ChartFill:class'
+          - name: ChartFill (Interface)
+            uid: 'excel!Excel.ChartFill:interface'
+          - name: ChartFillCustom
+            uid: 'excel!Excel.ChartFillCustom:class'
           - name: ChartFont
             uid: 'excel!Excel.ChartFont:class'
           - name: ChartFormatString
@@ -531,8 +541,12 @@ items:
             uid: 'excel!Excel.CommentAddedEventArgs:interface'
           - name: CommentChangedEventArgs
             uid: 'excel!Excel.CommentChangedEventArgs:interface'
-          - name: CommentCollection
+          - name: CommentCollection (Class)
             uid: 'excel!Excel.CommentCollection:class'
+          - name: CommentCollection (Interface)
+            uid: 'excel!Excel.CommentCollection:interface'
+          - name: CommentCollectionCustom
+            uid: 'excel!Excel.CommentCollectionCustom:class'
           - name: CommentDeletedEventArgs
             uid: 'excel!Excel.CommentDeletedEventArgs:interface'
           - name: CommentDetail
@@ -619,6 +633,16 @@ items:
             uid: 'excel!Excel.DatetimeFormatInfo:class'
           - name: DocumentProperties
             uid: 'excel!Excel.DocumentProperties:class'
+          - name: DocumentTask
+            uid: 'excel!Excel.DocumentTask:class'
+          - name: DocumentTaskChange
+            uid: 'excel!Excel.DocumentTaskChange:class'
+          - name: DocumentTaskChangeCollection
+            uid: 'excel!Excel.DocumentTaskChangeCollection:class'
+          - name: DocumentTaskCollection
+            uid: 'excel!Excel.DocumentTaskCollection:class'
+          - name: DocumentTaskSchedule
+            uid: 'excel!Excel.DocumentTaskSchedule:interface'
           - name: Filter
             uid: 'excel!Excel.Filter:class'
           - name: FilterCriteria
@@ -649,8 +673,14 @@ items:
             uid: 'excel!Excel.Icon:interface'
           - name: IconSetConditionalFormat
             uid: 'excel!Excel.IconSetConditionalFormat:class'
+          - name: Identity
+            uid: 'excel!Excel.Identity:interface'
+          - name: IdentityCollection
+            uid: 'excel!Excel.IdentityCollection:class'
           - name: Image
             uid: 'excel!Excel.Image:class'
+          - name: InsertWorksheetOptions
+            uid: 'excel!Excel.InsertWorksheetOptions:interface'
           - name: IterativeCalculation
             uid: 'excel!Excel.IterativeCalculation:class'
           - name: Line
@@ -721,8 +751,10 @@ items:
             uid: 'excel!Excel.PivotValueFilter:interface'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
-          - name: Range
+          - name: Range (Class)
             uid: 'excel!Excel.Range:class'
+          - name: Range (Interface)
+            uid: 'excel!Excel.Range:interface'
           - name: RangeAreas
             uid: 'excel!Excel.RangeAreas:class'
           - name: RangeAreasCollection
@@ -733,6 +765,8 @@ items:
             uid: 'excel!Excel.RangeBorderCollection:class'
           - name: RangeCollection
             uid: 'excel!Excel.RangeCollection:class'
+          - name: RangeCustom
+            uid: 'excel!Excel.RangeCustom:class'
           - name: RangeFill
             uid: 'excel!Excel.RangeFill:class'
           - name: RangeFont
@@ -833,8 +867,12 @@ items:
             uid: 'excel!Excel.TableAddedEventArgs:interface'
           - name: TableChangedEventArgs
             uid: 'excel!Excel.TableChangedEventArgs:interface'
-          - name: TableCollection
+          - name: TableCollection (Class)
             uid: 'excel!Excel.TableCollection:class'
+          - name: TableCollection (Interface)
+            uid: 'excel!Excel.TableCollection:interface'
+          - name: TableCollectionCustom
+            uid: 'excel!Excel.TableCollectionCustom:class'
           - name: TableColumn
             uid: 'excel!Excel.TableColumn:class'
           - name: TableColumnCollection
@@ -857,16 +895,6 @@ items:
             uid: 'excel!Excel.TableStyle:class'
           - name: TableStyleCollection
             uid: 'excel!Excel.TableStyleCollection:class'
-          - name: Task
-            uid: 'excel!Excel.Task:class'
-          - name: TaskChanges
-            uid: 'excel!Excel.TaskChanges:interface'
-          - name: TaskCollection
-            uid: 'excel!Excel.TaskCollection:class'
-          - name: TaskHistoryRecord
-            uid: 'excel!Excel.TaskHistoryRecord:class'
-          - name: TaskHistoryRecordCollection
-            uid: 'excel!Excel.TaskHistoryRecordCollection:class'
           - name: TextConditionalFormat
             uid: 'excel!Excel.TextConditionalFormat:class'
           - name: TextFrame
@@ -879,10 +907,10 @@ items:
             uid: 'excel!Excel.TimelineStyleCollection:class'
           - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:class'
-          - name: User
-            uid: 'excel!Excel.User:interface'
           - name: Workbook
             uid: 'excel!Excel.Workbook:class'
+          - name: WorkbookActivatedEventArgs
+            uid: 'excel!Excel.WorkbookActivatedEventArgs:interface'
           - name: WorkbookAutoSaveSettingChangedEventArgs
             uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
           - name: WorkbookCreated

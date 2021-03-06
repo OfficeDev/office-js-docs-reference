@@ -89,8 +89,9 @@ properties:
     summary: >-
       The text that is automatically filled into any empty cell in the
       PivotTable if `fillEmptyCells == true`<!-- -->. Note that this value
-      persists if `fillEmptyCells` is set to false, and that setting this value
-      does not set that property to true. By default, this is an empty string.
+      persists if `fillEmptyCells` is set to `false`<!-- -->, and that setting
+      this value does not set that property to `true`<!-- -->. By default, this
+      is an empty string.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -127,8 +128,9 @@ properties:
     fullName: fillEmptyCells
     summary: >-
       Specifies whether empty cells in the PivotTable should be populated with
-      the `emptyCellText`<!-- -->. False by default. Note that the value of
-      `emptyCellText` persists when this property is set to false.
+      the `emptyCellText`<!-- -->. Default is `false`<!-- -->. Note that the
+      value of `emptyCellText` persists when this property is set to `false`<!--
+      -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -262,8 +264,8 @@ properties:
     package: excel!
     fullName: subtotalLocation
     summary: >-
-      This property indicates the SubtotalLocationType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the `SubtotalLocationType` of all fields on the
+      PivotTable. If fields have different states, this will be `null`<!-- -->.
 
 
       \[ [API set: ExcelApi

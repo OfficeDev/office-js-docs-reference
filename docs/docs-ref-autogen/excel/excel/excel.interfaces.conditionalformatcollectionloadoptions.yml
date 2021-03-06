@@ -38,8 +38,7 @@ properties:
     fullName: cellValue
     summary: >-
       For EACH ITEM in the collection: Returns the cell value conditional format
-      properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10.
+      properties if the current conditional format is a `CellValue` type.
 
 
       \[ [API set: ExcelApi
@@ -62,8 +61,7 @@ properties:
     fullName: cellValueOrNullObject
     summary: >-
       For EACH ITEM in the collection: Returns the cell value conditional format
-      properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10.
+      properties if the current conditional format is a `CellValue` type.
 
 
       \[ [API set: ExcelApi
@@ -87,8 +85,9 @@ properties:
     package: excel!
     fullName: colorScale
     summary: >-
-      For EACH ITEM in the collection: Returns the ColorScale conditional format
-      properties if the current conditional format is an ColorScale type.
+      For EACH ITEM in the collection: Returns the color scale conditional
+      format properties if the current conditional format is a `ColorScale`
+      type.
 
 
       \[ [API set: ExcelApi
@@ -110,8 +109,9 @@ properties:
     package: excel!
     fullName: colorScaleOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Returns the ColorScale conditional format
-      properties if the current conditional format is an ColorScale type.
+      For EACH ITEM in the collection: Returns the color scale conditional
+      format properties if the current conditional format is a `ColorScale`
+      type.
 
 
       \[ [API set: ExcelApi
@@ -231,8 +231,8 @@ properties:
     package: excel!
     fullName: iconSet
     summary: >-
-      For EACH ITEM in the collection: Returns the IconSet conditional format
-      properties if the current conditional format is an IconSet type.
+      For EACH ITEM in the collection: Returns the icon set conditional format
+      properties if the current conditional format is an `IconSet` type.
 
 
       \[ [API set: ExcelApi
@@ -254,8 +254,8 @@ properties:
     package: excel!
     fullName: iconSetOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Returns the IconSet conditional format
-      properties if the current conditional format is an IconSet type.
+      For EACH ITEM in the collection: Returns the icon set conditional format
+      properties if the current conditional format is an `IconSet` type.
 
 
       \[ [API set: ExcelApi
@@ -278,8 +278,8 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      For EACH ITEM in the collection: The Priority of the Conditional Format
-      within the current ConditionalFormatCollection.
+      For EACH ITEM in the collection: The priority of the conditional format in
+      the current `ConditionalFormatCollection`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -299,7 +299,7 @@ properties:
     fullName: preset
     summary: >-
       For EACH ITEM in the collection: Returns the preset criteria conditional
-      format. See Excel.PresetCriteriaConditionalFormat for more details.
+      format. See `Excel.PresetCriteriaConditionalFormat` for more details.
 
 
       \[ [API set: ExcelApi
@@ -322,7 +322,7 @@ properties:
     fullName: presetOrNullObject
     summary: >-
       For EACH ITEM in the collection: Returns the preset criteria conditional
-      format. See Excel.PresetCriteriaConditionalFormat for more details.
+      format. See `Excel.PresetCriteriaConditionalFormat` for more details.
 
 
       \[ [API set: ExcelApi
@@ -350,7 +350,7 @@ properties:
       conditional format collection that this conditional format currently
       exists in. Changing this also changes other conditional formats'
       priorities, to allow for a contiguous priority order. Use a negative
-      priority to begin from the back. Priorities greater than than bounds will
+      priority to begin from the back. Priorities greater than the bounds will
       get and set to the maximum (or minimum if negative) priority. Also note
       that if you change the priority, you have to re-fetch a new copy of the
       object at that new priority location if you want to make further changes
@@ -375,8 +375,8 @@ properties:
     summary: >-
       For EACH ITEM in the collection: If the conditions of this conditional
       format are met, no lower-priority formats shall take effect on that cell.
-      Null on databars, icon sets, and colorscales as there's no concept of
-      StopIfTrue for these
+      Value is `null` on data bars, icon sets, and color scales as there's no
+      concept of `StopIfTrue` for these.
 
 
       \[ [API set: ExcelApi
@@ -397,7 +397,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the specific text conditional
       format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text".
+      example, to format cells matching the word "Text".
 
 
       \[ [API set: ExcelApi
@@ -421,7 +421,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the specific text conditional
       format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text".
+      example, to format cells matching the word "Text".
 
 
       \[ [API set: ExcelApi
@@ -445,9 +445,9 @@ properties:
     package: excel!
     fullName: topBottom
     summary: >-
-      For EACH ITEM in the collection: Returns the Top/Bottom conditional format
-      properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items.
+      For EACH ITEM in the collection: Returns the top/bottom conditional format
+      properties if the current conditional format is a `TopBottom` type. For
+      example, to format the top 10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi
@@ -469,9 +469,9 @@ properties:
     package: excel!
     fullName: topBottomOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Returns the Top/Bottom conditional format
-      properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items.
+      For EACH ITEM in the collection: Returns the top/bottom conditional format
+      properties if the current conditional format is a `TopBottom` type. For
+      example, to format the top 10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi

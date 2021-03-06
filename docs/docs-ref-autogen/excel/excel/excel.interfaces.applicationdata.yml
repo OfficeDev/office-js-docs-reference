@@ -36,10 +36,11 @@ properties:
     fullName: calculationMode
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the
-      constants in Excel.CalculationMode. Possible values are: `Automatic`<!--
-      -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->,
-      where Excel controls recalculation but ignores changes in tables;
-      `Manual`<!-- -->, where calculation is done when the user requests it.
+      constants in `Excel.CalculationMode`<!-- -->. Possible values are:
+      `Automatic`<!-- -->, where Excel controls recalculation;
+      `AutomaticExceptTables`<!-- -->, where Excel controls recalculation but
+      ignores changes in tables; `Manual`<!-- -->, where calculation is done
+      when the user requests it.
 
 
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
@@ -62,7 +63,7 @@ properties:
     fullName: calculationState
     summary: >-
       Returns the calculation state of the application. See
-      Excel.CalculationState for details.
+      `Excel.CalculationState` for details.
 
 
       \[ [API set: ExcelApi
@@ -105,7 +106,7 @@ properties:
     fullName: decimalSeparator
     summary: >-
       Gets the string used as the decimal separator for numeric values. This is
-      based on Excel's local settings.
+      based on the local Excel settings.
 
 
       \[ [API set: ExcelApi
@@ -123,7 +124,7 @@ properties:
     package: excel!
     fullName: iterativeCalculation
     summary: >-
-      Returns the Iterative Calculation settings. In Excel on Windows and Mac,
+      Returns the iterative calculation settings. In Excel on Windows and Mac,
       the settings will apply to the Excel Application. In Excel on the web and
       other platforms, the settings will apply to the active workbook.
 
@@ -146,7 +147,7 @@ properties:
     fullName: thousandsSeparator
     summary: >-
       Gets the string used to separate groups of digits to the left of the
-      decimal for numeric values. This is based on Excel's local settings.
+      decimal for numeric values. This is based on the local Excel settings.
 
 
       \[ [API set: ExcelApi

@@ -90,8 +90,8 @@ properties:
     package: excel!
     fullName: draftMode
     summary: >-
-      The worksheet's draft mode option. If true the sheet will be printed
-      without graphics.
+      The worksheet's draft mode option. If `true`<!-- -->, the sheet will be
+      printed without graphics.
 
 
       \[ [API set: ExcelApi
@@ -109,8 +109,8 @@ properties:
     package: excel!
     fullName: firstPageNumber
     summary: >-
-      The worksheet's first page number to print. Null value represents "auto"
-      page numbering.
+      The worksheet's first page number to print. A `null` value represents
+      "auto" page numbering.
 
 
       \[ [API set: ExcelApi

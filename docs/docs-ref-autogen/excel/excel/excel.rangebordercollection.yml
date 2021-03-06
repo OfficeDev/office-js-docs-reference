@@ -64,10 +64,10 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: >-
-      Specifies a double that lightens or darkens a color for Range Borders, the
+      Specifies a double that lightens or darkens a color for range borders. The
       value is between -1 (darkest) and 1 (brightest), with 0 for the original
-      color. A null value indicates that the entire border collections don't
-      have uniform tintAndShade setting.
+      color. A `null` value indicates that the entire border collection doesn't
+      have a uniform `tintAndShade` setting.
 
 
       \[ [API set: ExcelApi
@@ -101,7 +101,7 @@ methods:
         - id: index
           description: >-
             Index value of the border object to be retrieved. See
-            Excel.BorderIndex for details.
+            `Excel.BorderIndex` for details.
           type: '<xref uid="excel!Excel.BorderIndex:enum" />'
       return:
         type: '<xref uid="excel!Excel.RangeBorder:class" />'
@@ -152,7 +152,7 @@ methods:
         - id: indexString
           description: >-
             Index value of the border object to be retrieved. See
-            Excel.BorderIndex for details.
+            `Excel.BorderIndex` for details.
           type: >-
             "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" |
             "InsideVertical" | "InsideHorizontal" | "DiagonalDown" |

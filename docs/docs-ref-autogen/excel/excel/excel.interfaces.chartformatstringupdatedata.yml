@@ -16,8 +16,8 @@ properties:
     package: excel!
     fullName: font
     summary: >-
-      Represents the font attributes, such as font name, font size, color, etc.
-      of chart characters object.
+      Represents the font attributes, such as font name, font size, and color of
+      a chart characters object.
 
 
       \[ [API set: ExcelApi

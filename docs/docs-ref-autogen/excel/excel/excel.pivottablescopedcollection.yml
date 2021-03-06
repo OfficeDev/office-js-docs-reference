@@ -6,7 +6,7 @@ fullName: Excel.PivotTableScopedCollection
 summary: >-
   Represents a scoped collection of PivotTables. The PivotTables are sorted
   based on the location of the PivotTable's top-left corner. They are ordered
-  top to bottom and then left to right.
+  top-to-bottom and then left-to-right.
 
 
   \[ [API set: ExcelApi
@@ -69,7 +69,7 @@ methods:
     fullName: getFirst()
     summary: >-
       Gets the first PivotTable in the collection. The PivotTables in the
-      collection are sorted top to bottom and left to right, such that top-left
+      collection are sorted top-to-bottom and left-to-right, such that top-left
       table is the first PivotTable in the collection.
 
 
@@ -81,6 +81,32 @@ methods:
     isDeprecated: false
     syntax:
       content: 'getFirst(): Excel.PivotTable;'
+      return:
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
+        description: ''
+  - name: getFirstOrNullObject()
+    uid: 'excel!Excel.PivotTableScopedCollection#getFirstOrNullObject:member(1)'
+    package: excel!
+    fullName: getFirstOrNullObject()
+    summary: >-
+      Gets the first PivotTable in the collection. The PivotTables in the
+      collection are sorted top-to-bottom and left-to-right, such that the
+      top-left table is the first PivotTable in the collection. If the
+      collection is empty, then this function returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFirstOrNullObject(): Excel.PivotTable;'
       return:
         type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: ''

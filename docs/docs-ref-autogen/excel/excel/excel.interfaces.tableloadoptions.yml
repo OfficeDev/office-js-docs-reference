@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: autoFilter
     summary: >-
-      Represents the AutoFilter object of the table.
+      Represents the `AutoFilter` object of the table.
 
 
       \[ [API set: ExcelApi
@@ -133,7 +133,7 @@ properties:
     package: excel!
     fullName: legacyId
     summary: >-
-      Returns a numeric id.
+      Returns a numeric ID.
 
 
       \[ [API set: ExcelApi
@@ -197,7 +197,7 @@ properties:
     fullName: showBandedColumns
     summary: >-
       Specifies if the columns show banded formatting in which odd columns are
-      highlighted differently from even ones to make reading the table easier.
+      highlighted differently from even ones, to make reading the table easier.
 
 
       \[ [API set: ExcelApi
@@ -216,7 +216,7 @@ properties:
     fullName: showBandedRows
     summary: >-
       Specifies if the rows show banded formatting in which odd rows are
-      highlighted differently from even ones to make reading the table easier.
+      highlighted differently from even ones, to make reading the table easier.
 
 
       \[ [API set: ExcelApi
@@ -309,7 +309,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Table style. Possible values are:
+      Constant value that represents the table style. Possible values are:
       "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1"
       through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook
@@ -331,7 +331,7 @@ properties:
     package: excel!
     fullName: tableStyle
     summary: >-
-      The style applied to the Table.
+      The style applied to the table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

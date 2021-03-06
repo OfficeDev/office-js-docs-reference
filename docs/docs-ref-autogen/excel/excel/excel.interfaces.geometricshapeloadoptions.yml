@@ -55,7 +55,7 @@ properties:
     package: excel!
     fullName: shape
     summary: >-
-      Returns the Shape object for the geometric shape.
+      Returns the `Shape` object for the geometric shape.
 
 
       \[ [API set: ExcelApi

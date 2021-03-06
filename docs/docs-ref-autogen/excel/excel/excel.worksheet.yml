@@ -24,7 +24,7 @@ properties:
     package: excel!
     fullName: autoFilter
     summary: >-
-      Represents the AutoFilter object of the worksheet.
+      Represents the `AutoFilter` object of the worksheet.
 
 
       \[ [API set: ExcelApi
@@ -255,11 +255,11 @@ properties:
       Returns a collection of sheet views that are present in the worksheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly namedSheetViews: Excel.NamedSheetViewCollection;'
@@ -409,7 +409,7 @@ properties:
     fullName: onColumnSorted
     summary: >-
       Occurs when one or more columns have been sorted. This happens as the
-      result of a left-to-right sort operation.
+      result of a left to right sort operation.
 
 
       \[ [API set: ExcelApi
@@ -503,7 +503,7 @@ properties:
     package: excel!
     fullName: onFiltered
     summary: >-
-      Occurs when filter is applied on a specific worksheet.
+      Occurs when a filter is applied on a specific worksheet.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -762,7 +762,7 @@ properties:
     package: excel!
     fullName: pageLayout
     summary: >-
-      Gets the PageLayout object of the worksheet.
+      Gets the `PageLayout` object of the worksheet.
 
 
       \[ [API set: ExcelApi
@@ -860,7 +860,7 @@ properties:
     package: excel!
     fullName: protection
     summary: >-
-      Returns sheet protection object for a worksheet.
+      Returns the sheet protection object for a worksheet.
 
 
       \[ [API set: ExcelApi
@@ -1069,11 +1069,11 @@ properties:
     fullName: tabColor
     summary: >-
       The tab color of the worksheet. When retrieving the tab color, if the
-      worksheet is invisible, the value will be null. If the worksheet is
-      visible but the tab color is set to auto, an empty string will be
+      worksheet is invisible, the value will be `null`<!-- -->. If the worksheet
+      is visible but the tab color is set to auto, an empty string will be
       returned. Otherwise, the property will be set to a color, in the form
-      "\#123456" When setting the color, use an empty-string to set an "auto"
-      color, or a real color otherwise.
+      \#RRGGBB (e.g., "FFA500"). When setting the color, use an empty-string to
+      set an "auto" color, or a real color otherwise.
 
 
       \[ [API set: ExcelApi
@@ -1138,9 +1138,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly tasks: Excel.TaskCollection;'
+      content: 'readonly tasks: Excel.DocumentTaskCollection;'
       return:
-        type: '<xref uid="excel!Excel.TaskCollection:class" />'
+        type: '<xref uid="excel!Excel.DocumentTaskCollection:class" />'
   - name: verticalPageBreaks
     uid: 'excel!Excel.Worksheet#verticalPageBreaks:member'
     package: excel!
@@ -1165,7 +1165,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: >-
-      The Visibility of the worksheet.
+      The visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
@@ -1379,7 +1379,7 @@ methods:
     fullName: 'findAll(text, criteria)'
     summary: >-
       Finds all occurrences of the given string based on the criteria specified
-      and returns them as a RangeAreas object, comprising one or more
+      and returns them as a `RangeAreas` object, comprising one or more
       rectangular ranges.
 
 
@@ -1400,21 +1400,21 @@ methods:
         - id: criteria
           description: >-
             Additional search criteria, including whether the search needs to
-            match the entire cell or be case sensitive.
+            match the entire cell or be case-sensitive.
           type: '<xref uid="excel!Excel.WorksheetSearchCriteria:interface" />'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: >-
-          A RangeArea object, comprising one or more rectangular ranges, that
+          A `RangeAreas` object, comprising one or more rectangular ranges, that
           matches the search criteria. If no cells meet this criteria, an
-          ItemNotFound error will be thrown.
+          `ItemNotFound` error will be thrown.
   - name: 'findAllOrNullObject(text, criteria)'
     uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
     package: excel!
     fullName: 'findAllOrNullObject(text, criteria)'
     summary: >-
       Finds all occurrences of the given string based on the criteria specified
-      and returns them as a RangeAreas object, comprising one or more
+      and returns them as a `RangeAreas` object, comprising one or more
       rectangular ranges.
 
 
@@ -1435,12 +1435,12 @@ methods:
         - id: criteria
           description: >-
             Additional search criteria, including whether the search needs to
-            match the entire cell or be case sensitive.
+            match the entire cell or be case-sensitive.
           type: '<xref uid="excel!Excel.WorksheetSearchCriteria:interface" />'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: >-
-          A RangeArea object, comprising one or more rectangular ranges, that
+          A `RangeAreas` object, comprising one or more rectangular ranges, that
           matches the search criteria. If there are no matches, then this
           function will return an object with its `isNullObject` property set to
           `true`<!-- -->. For further information, see [\*OrNullObject methods
@@ -1479,7 +1479,7 @@ methods:
     package: excel!
     fullName: 'getCell(row, column)'
     summary: >-
-      Gets the range object containing the single cell based on row and column
+      Gets the `Range` object containing the single cell based on row and column
       numbers. The cell can be outside the bounds of its parent range, so long
       as it stays within the worksheet grid.
 
@@ -1497,7 +1497,7 @@ methods:
           description: The row number of the cell to be retrieved. Zero-indexed.
           type: number
         - id: column
-          description: the column number of the cell to be retrieved. Zero-indexed.
+          description: The column number of the cell to be retrieved. Zero-indexed.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1542,8 +1542,8 @@ methods:
       parameters:
         - id: visibleOnly
           description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+            Optional. If `true`<!-- -->, considers only visible worksheets,
+            skipping over any hidden ones.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -1608,8 +1608,8 @@ methods:
       parameters:
         - id: visibleOnly
           description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+            Optional. If `true`<!-- -->, considers only visible worksheets,
+            skipping over any hidden ones.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -1634,8 +1634,8 @@ methods:
       parameters:
         - id: visibleOnly
           description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+            Optional. If `true`<!-- -->, considers only visible worksheets,
+            skipping over any hidden ones.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -1678,7 +1678,11 @@ methods:
     fullName: getPreviousOrNullObject(visibleOnly)
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous
-      worksheets, this method will return a null objet.
+      worksheets, then this method will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -1692,8 +1696,8 @@ methods:
       parameters:
         - id: visibleOnly
           description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+            Optional. If `true`<!-- -->, considers only visible worksheets,
+            skipping over any hidden ones.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -1703,7 +1707,7 @@ methods:
     package: excel!
     fullName: getRange(address)
     summary: >-
-      Gets the range object, representing a single rectangular block of cells,
+      Gets the `Range` object, representing a single rectangular block of cells,
       specified by the address or name.
 
 
@@ -1769,7 +1773,7 @@ methods:
     package: excel!
     fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
     summary: >-
-      Gets the range object beginning at a particular row index and column
+      Gets the `Range` object beginning at a particular row index and column
       index, and spanning a certain number of rows and columns.
 
 
@@ -1804,8 +1808,8 @@ methods:
     package: excel!
     fullName: getRanges(address)
     summary: >-
-      Gets the RangeAreas object, representing one or more blocks of rectangular
-      ranges, specified by the address or name.
+      Gets the `RangeAreas` object, representing one or more blocks of
+      rectangular ranges, specified by the address or name.
 
 
       \[ [API set: ExcelApi
@@ -1868,8 +1872,8 @@ methods:
       parameters:
         - id: valuesOnly
           description: >-
-            Optional. If true, considers only cells with values as used cells
-            (ignoring formatting). \[Api set: ExcelApi 1.2\]
+            Optional. If `true`<!-- -->, considers only cells with values as
+            used cells (ignoring formatting). \[Api set: ExcelApi 1.2\]
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -2038,10 +2042,10 @@ methods:
           description: String to find.
           type: string
         - id: replacement
-          description: String to replace the original with.
+          description: The string that replaces the original string.
           type: string
         - id: criteria
-          description: Additional Replace Criteria.
+          description: Additional replacement criteria.
           type: '<xref uid="excel!Excel.ReplaceCriteria:interface" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
@@ -2103,8 +2107,8 @@ methods:
     package: excel!
     fullName: 'showOutlineLevels(rowLevels, columnLevels)'
     summary: >-
-      Shows row or column groups by their outline levels. Outlines group and
-      summarize a list of data in the worksheet. The `rowLevels` and
+      Shows row or column groups by their outline levels. Outlines groups and
+      summarizes a list of data in the worksheet. The `rowLevels` and
       `columnLevels` parameters specify how many levels of the outline will be
       displayed. The acceptable argument range is between 0 and 8. A value of 0
       does not change the current display. A value greater than the current

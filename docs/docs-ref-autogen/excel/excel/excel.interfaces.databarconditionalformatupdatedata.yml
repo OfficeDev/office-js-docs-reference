@@ -16,9 +16,9 @@ properties:
     package: excel!
     fullName: axisColor
     summary: >-
-      HTML color code representing the color of the Axis line, of the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). ""
-      (empty string) if no axis is present or set.
+      HTML color code representing the color of the Axis line, in the form
+      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value
+      is "" (an empty string) if no axis is present or set.
 
 
       \[ [API set: ExcelApi
@@ -154,7 +154,8 @@ properties:
     package: excel!
     fullName: showDataBarOnly
     summary: >-
-      If true, hides the values from the cells where the data bar is applied.
+      If `true`<!-- -->, hides the values from the cells where the data bar is
+      applied.
 
 
       \[ [API set: ExcelApi

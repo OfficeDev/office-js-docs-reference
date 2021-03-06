@@ -4,7 +4,7 @@ uid: 'excel!Excel.DataValidationType:enum'
 package: excel!
 fullName: Excel.DataValidationType
 summary: >-
-  Represents Data validation type enum.
+  Represents the data validation type enum.
 
 
   \[ [API set: ExcelApi
@@ -17,56 +17,56 @@ fields:
   - name: custom
     uid: 'excel!Excel.DataValidationType.custom:member'
     package: excel!
-    summary: Custom data validation type
+    summary: The custom data validation type.
     value: '"Custom"'
   - name: date
     uid: 'excel!Excel.DataValidationType.date:member'
     package: excel!
-    summary: Date data validation type
+    summary: The date data validation type.
     value: '"Date"'
   - name: decimal
     uid: 'excel!Excel.DataValidationType.decimal:member'
     package: excel!
-    summary: Decimal data validation type
+    summary: The decimal data validation type.
     value: '"Decimal"'
   - name: inconsistent
     uid: 'excel!Excel.DataValidationType.inconsistent:member'
     package: excel!
     summary: >-
-      Inconsistent means that the range has inconsistent data validation (there
-      are different rules on different cells)
+      Inconsistent means that the range has inconsistent data validation,
+      indicating that there are different rules on different cells.
     value: '"Inconsistent"'
   - name: list
     uid: 'excel!Excel.DataValidationType.list:member'
     package: excel!
-    summary: List data validation type
+    summary: The list data validation type.
     value: '"List"'
   - name: mixedCriteria
     uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
     package: excel!
     summary: >-
-      MixedCriteria means that the range has data validation present on some but
-      not all cells
+      Mixed criteria means that the range has data validation present on some
+      but not all cells.
     value: '"MixedCriteria"'
   - name: none
     uid: 'excel!Excel.DataValidationType.none:member'
     package: excel!
     summary: >-
-      None means allow any value and so there is no data validation in the
-      range.
+      None means allow any value, indicating that there is no data validation in
+      the range.
     value: '"None"'
   - name: textLength
     uid: 'excel!Excel.DataValidationType.textLength:member'
     package: excel!
-    summary: Text length data validation type
+    summary: The text length data validation type.
     value: '"TextLength"'
   - name: time
     uid: 'excel!Excel.DataValidationType.time:member'
     package: excel!
-    summary: Time data validation type
+    summary: The time data validation type.
     value: '"Time"'
   - name: wholeNumber
     uid: 'excel!Excel.DataValidationType.wholeNumber:member'
     package: excel!
-    summary: Whole number data validation type
+    summary: The whole number data validation type.
     value: '"WholeNumber"'

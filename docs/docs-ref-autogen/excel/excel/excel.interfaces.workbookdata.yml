@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: autoSave
     summary: >-
-      Specifies if the workbook is in autosave mode.
+      Specifies if the workbook is in AutoSave mode.
 
 
       \[ [API set: ExcelApi
@@ -90,7 +90,7 @@ properties:
     package: excel!
     fullName: comments
     summary: >-
-      Represents a collection of Comments associated with the workbook.
+      Represents a collection of comments associated with the workbook.
 
 
       \[ [API set: ExcelApi
@@ -127,7 +127,7 @@ properties:
     fullName: isDirty
     summary: >-
       Specifies if changes have been made since the workbook was last saved. You
-      can set this property to true if you want to close a modified workbook
+      can set this property to `true` if you want to close a modified workbook
       without either saving it or being prompted to save it.
 
 
@@ -164,7 +164,7 @@ properties:
     package: excel!
     fullName: names
     summary: >-
-      Represents a collection of workbook scoped named items (named ranges and
+      Represents a collection of workbook-scoped named items (named ranges and
       constants).
 
 
@@ -273,7 +273,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: >-
-      True if the workbook is open in Read-only mode.
+      Returns `true` if the workbook is open in read-only mode.
 
 
       \[ [API set: ExcelApi
@@ -291,7 +291,7 @@ properties:
     package: excel!
     fullName: settings
     summary: >-
-      Represents a collection of Settings associated with the workbook.
+      Represents a collection of settings associated with the workbook.
 
 
       \[ [API set: ExcelApi
@@ -328,7 +328,7 @@ properties:
     package: excel!
     fullName: slicers
     summary: >-
-      Represents a collection of Slicers associated with the workbook.
+      Represents a collection of slicers associated with the workbook.
 
 
       \[ [API set: ExcelApi
@@ -456,7 +456,7 @@ properties:
     summary: >-
       True if calculations in this workbook will be done using only the
       precision of the numbers as they're displayed. Data will permanently lose
-      accuracy when switching this property from false to true.
+      accuracy when switching this property from `false` to `true`<!-- -->.
 
 
       \[ [API set: ExcelApi

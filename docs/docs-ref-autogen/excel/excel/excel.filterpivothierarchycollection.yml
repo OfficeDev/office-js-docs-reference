@@ -92,7 +92,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: >-
-      Gets a FilterPivotHierarchy by its name or id.
+      Gets a FilterPivotHierarchy by its name or ID.
 
 
       \[ [API set: ExcelApi

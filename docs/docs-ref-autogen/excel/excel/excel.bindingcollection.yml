@@ -82,15 +82,14 @@ methods:
       parameters:
         - id: range
           description: >-
-            Range to bind the binding to. May be an Excel Range object, or a
-            string. If string, must contain the full address, including the
-            sheet name
+            Range to bind the binding to. May be a `Range` object or a string.
+            If string, must contain the full address, including the sheet name
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: bindingType
-          description: Type of binding. See Excel.BindingType.
+          description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '<xref uid="excel!Excel.BindingType:enum" />'
         - id: id
-          description: Name of binding.
+          description: Name of the binding.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -116,15 +115,14 @@ methods:
       parameters:
         - id: range
           description: >-
-            Range to bind the binding to. May be an Excel Range object, or a
-            string. If string, must contain the full address, including the
-            sheet name
+            Range to bind the binding to. May be a `Range` object or a string.
+            If string, must contain the full address, including the sheet name
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: bindingTypeString
-          description: Type of binding. See Excel.BindingType.
+          description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '"Range" | "Table" | "Text"'
         - id: id
-          description: Name of binding.
+          description: Name of the binding.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -135,7 +133,7 @@ methods:
     fullName: 'addFromNamedItem(name, bindingType, id)'
     summary: >-
       Add a new binding based on a named item in the workbook. If the named item
-      references to multiple areas, the "InvalidReference" error will be
+      references to multiple areas, the `InvalidReference` error will be
       returned.
 
 
@@ -154,10 +152,10 @@ methods:
           description: Name from which to create binding.
           type: string
         - id: bindingType
-          description: Type of binding. See Excel.BindingType.
+          description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '<xref uid="excel!Excel.BindingType:enum" />'
         - id: id
-          description: Name of binding.
+          description: Name of the binding.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -168,7 +166,7 @@ methods:
     fullName: 'addFromNamedItem(name, bindingTypeString, id)'
     summary: >-
       Add a new binding based on a named item in the workbook. If the named item
-      references to multiple areas, the "InvalidReference" error will be
+      references to multiple areas, the `InvalidReference` error will be
       returned.
 
 
@@ -187,10 +185,10 @@ methods:
           description: Name from which to create binding.
           type: string
         - id: bindingTypeString
-          description: Type of binding. See Excel.BindingType.
+          description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '"Range" | "Table" | "Text"'
         - id: id
-          description: Name of binding.
+          description: Name of the binding.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -201,7 +199,7 @@ methods:
     fullName: 'addFromSelection(bindingType, id)'
     summary: >-
       Add a new binding based on the current selection. If the selection has
-      multiple areas, the "InvalidReference" error will be returned.
+      multiple areas, the `InvalidReference` error will be returned.
 
 
       \[ [API set: ExcelApi
@@ -216,10 +214,10 @@ methods:
         Excel.Binding;
       parameters:
         - id: bindingType
-          description: Type of binding. See Excel.BindingType.
+          description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '<xref uid="excel!Excel.BindingType:enum" />'
         - id: id
-          description: Name of binding.
+          description: Name of the binding.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -230,7 +228,7 @@ methods:
     fullName: 'addFromSelection(bindingTypeString, id)'
     summary: >-
       Add a new binding based on the current selection. If the selection has
-      multiple areas, the "InvalidReference" error will be returned.
+      multiple areas, the `InvalidReference` error will be returned.
 
 
       \[ [API set: ExcelApi
@@ -245,10 +243,10 @@ methods:
         string): Excel.Binding;
       parameters:
         - id: bindingTypeString
-          description: Type of binding. See Excel.BindingType.
+          description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '"Range" | "Table" | "Text"'
         - id: id
-          description: Name of binding.
+          description: Name of the binding.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -290,7 +288,7 @@ methods:
       content: 'getItem(id: string): Excel.Binding;'
       parameters:
         - id: id
-          description: Id of the binding object to be retrieved.
+          description: ID of the binding object to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -412,7 +410,7 @@ methods:
       content: 'getItemOrNullObject(id: string): Excel.Binding;'
       parameters:
         - id: id
-          description: Id of the binding object to be retrieved.
+          description: ID of the binding object to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'

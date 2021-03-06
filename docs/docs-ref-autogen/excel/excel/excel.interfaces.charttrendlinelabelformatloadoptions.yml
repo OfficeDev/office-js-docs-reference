@@ -53,8 +53,8 @@ properties:
     package: excel!
     fullName: font
     summary: >-
-      Specifies the font attributes (font name, font size, color, etc.) for a
-      chart trendline label.
+      Specifies the font attributes (such as font name, font size, and color)
+      for a chart trendline label.
 
 
       \[ [API set: ExcelApi

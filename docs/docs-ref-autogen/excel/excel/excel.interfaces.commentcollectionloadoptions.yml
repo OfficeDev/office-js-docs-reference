@@ -109,7 +109,7 @@ properties:
     fullName: creationDate
     summary: >-
       For EACH ITEM in the collection: Gets the creation time of the comment.
-      Returns null if the comment was converted from a note, since the comment
+      Returns `null` if the comment was converted from a note, since the comment
       does not have a creation date.
 
 
@@ -166,7 +166,7 @@ properties:
     fullName: resolved
     summary: >-
       For EACH ITEM in the collection: The comment thread status. A value of
-      "true" means the comment thread is resolved.
+      `true` means that the comment thread is resolved.
 
 
       \[ [API set: ExcelApi

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeViewCollectionLoadOptions
 summary: >-
-  Represents a collection of RangeView objects.
+  Represents a collection of `RangeView` objects.
 
 
   \[ [API set: ExcelApi
@@ -36,7 +36,7 @@ properties:
     fullName: cellAddresses
     summary: >-
       For EACH ITEM in the collection: Represents the cell addresses of the
-      RangeView.
+      `RangeView`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -73,7 +73,7 @@ properties:
     fullName: formulas
     summary: >-
       For EACH ITEM in the collection: Represents the formula in A1-style
-      notation.
+      notation. If a cell has no formula, its value is returned instead.
 
 
       \[ [API set: ExcelApi
@@ -94,7 +94,7 @@ properties:
       For EACH ITEM in the collection: Represents the formula in A1-style
       notation, in the user's language and number-formatting locale. For
       example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1;
-      1,5)" in German.
+      1,5)" in German. If a cell has no formula, its value is returned instead.
 
 
       \[ [API set: ExcelApi
@@ -113,7 +113,7 @@ properties:
     fullName: formulasR1C1
     summary: >-
       For EACH ITEM in the collection: Represents the formula in R1C1-style
-      notation.
+      notation. If a cell has no formula, its value is returned instead.
 
 
       \[ [API set: ExcelApi
@@ -132,7 +132,7 @@ properties:
     fullName: index
     summary: >-
       For EACH ITEM in the collection: Returns a value that represents the index
-      of the RangeView.
+      of the `RangeView`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -188,7 +188,7 @@ properties:
     fullName: text
     summary: >-
       For EACH ITEM in the collection: Text values of the specified range. The
-      Text value will not depend on the cell width. The \# sign substitution
+      text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the
       API.
 

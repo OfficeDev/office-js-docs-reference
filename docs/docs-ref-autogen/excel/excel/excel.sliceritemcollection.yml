@@ -4,7 +4,7 @@ uid: 'excel!Excel.SlicerItemCollection:class'
 package: excel!
 fullName: Excel.SlicerItemCollection
 summary: >-
-  Represents a collection of all the slicer item objects on the slicer.
+  Represents a collection of all the slicer item objects in the slicer.
 
 
   \[ [API set: ExcelApi

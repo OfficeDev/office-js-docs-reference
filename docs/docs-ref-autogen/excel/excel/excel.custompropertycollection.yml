@@ -4,7 +4,7 @@ uid: 'excel!Excel.CustomPropertyCollection:class'
 package: excel!
 fullName: Excel.CustomPropertyCollection
 summary: >-
-  Contains the collection of customProperty objects.
+  Contains the collection of custom properties.
 
 
   \[ [API set: ExcelApi
@@ -144,7 +144,7 @@ methods:
     fullName: getItem(key)
     summary: >-
       Gets a custom property object by its key, which is case-insensitive.
-      Throws if the custom property does not exist.
+      Throws an error if the custom property does not exist.
 
 
       \[ [API set: ExcelApi

@@ -54,7 +54,8 @@ properties:
     package: excel!
     fullName: formula
     summary: >-
-      The formula of the named item. Formula always starts with a '=' sign.
+      The formula of the named item. Formulas always start with an equal sign
+      ("=").
 
 
       \[ [API set: ExcelApi
@@ -112,7 +113,7 @@ properties:
     fullName: type
     summary: >-
       Specifies the type of the value returned by the name's formula. See
-      Excel.NamedItemType for details.
+      `Excel.NamedItemType` for details.
 
 
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;

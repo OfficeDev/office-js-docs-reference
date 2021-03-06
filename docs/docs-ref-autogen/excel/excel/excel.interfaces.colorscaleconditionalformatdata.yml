@@ -36,8 +36,8 @@ properties:
     package: excel!
     fullName: threeColorScale
     summary: >-
-      If true the color scale will have three points (minimum, midpoint,
-      maximum), otherwise it will have two (minimum, maximum).
+      If `true`<!-- -->, the color scale will have three points (minimum,
+      midpoint, maximum), otherwise it will have two (minimum, maximum).
 
 
       \[ [API set: ExcelApi

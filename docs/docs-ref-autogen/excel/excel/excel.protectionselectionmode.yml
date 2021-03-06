@@ -14,7 +14,7 @@ fields:
   - name: none
     uid: 'excel!Excel.ProtectionSelectionMode.none:member'
     package: excel!
-    summary: Selection is not allowed for all cells.
+    summary: Selection is not allowed for any cells.
     value: '"None"'
   - name: normal
     uid: 'excel!Excel.ProtectionSelectionMode.normal:member'

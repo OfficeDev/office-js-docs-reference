@@ -33,7 +33,7 @@ properties:
     fullName: columnIndex
     summary: >-
       For EACH ITEM in the collection: Specifies the column index for the page
-      break
+      break.
 
 
       \[ [API set: ExcelApi
@@ -52,7 +52,7 @@ properties:
     fullName: rowIndex
     summary: >-
       For EACH ITEM in the collection: Specifies the row index for the page
-      break
+      break.
 
 
       \[ [API set: ExcelApi

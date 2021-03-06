@@ -148,6 +148,25 @@ properties:
       content: 'refreshDataLoadWarnings?: boolean;'
       return:
         type: boolean
+  - name: refreshErrors
+    uid: 'excel!Excel.Interfaces.LinkedDataTypeLoadOptions#refreshErrors:member'
+    package: excel!
+    fullName: refreshErrors
+    summary: >-
+      Returns any errors that occurred during a refresh operation for this
+      linked data type from the workbook. 1st-party only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'refreshErrors?: boolean;'
+      return:
+        type: boolean
   - name: refreshMode
     uid: 'excel!Excel.Interfaces.LinkedDataTypeLoadOptions#refreshMode:member'
     package: excel!
@@ -171,7 +190,7 @@ properties:
     package: excel!
     fullName: serviceId
     summary: >-
-      The unique id of the linked data type.
+      The unique ID of the linked data type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

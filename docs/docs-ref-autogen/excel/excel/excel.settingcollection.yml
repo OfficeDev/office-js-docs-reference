@@ -48,7 +48,7 @@ properties:
     package: excel!
     fullName: onSettingsChanged
     summary: >-
-      Occurs when the Settings in the document are changed.
+      Occurs when the settings in the document are changed.
 
 
       \[ [API set: ExcelApi
@@ -106,10 +106,10 @@ methods:
         any): Excel.Setting;
       parameters:
         - id: key
-          description: The Key of the new setting.
+          description: The key of the new setting.
           type: string
         - id: value
-          description: The Value for the new setting.
+          description: The value for the new setting.
           type: string | number | boolean | Date | Array&lt;any&gt; | any
       return:
         type: '<xref uid="excel!Excel.Setting:class" />'
@@ -138,7 +138,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: >-
-      Gets the number of Settings in the collection.
+      Gets the number of settings in the collection.
 
 
       \[ [API set: ExcelApi
@@ -157,7 +157,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: >-
-      Gets a Setting entry via the key.
+      Gets a setting entry via the key.
 
 
       \[ [API set: ExcelApi
@@ -180,7 +180,7 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a Setting entry via the key. If the Setting does not exist, then this
+      Gets a setting entry via the key. If the setting does not exist, then this
       function will return an object with its `isNullObject` property set to
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--

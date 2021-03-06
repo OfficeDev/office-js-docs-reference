@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: maximum
     summary: >-
-      The maximum point Color Scale Criterion.
+      The maximum point of the color scale criterion.
 
 
       \[ [API set: ExcelApi
@@ -38,7 +38,8 @@ properties:
     package: excel!
     fullName: midpoint
     summary: >-
-      The midpoint Color Scale Criterion if the color scale is a 3-color scale.
+      The midpoint of the color scale criterion, if the color scale is a 3-color
+      scale.
 
 
       \[ [API set: ExcelApi
@@ -56,7 +57,7 @@ properties:
     package: excel!
     fullName: minimum
     summary: >-
-      The minimum point Color Scale Criterion.
+      The minimum point of the color scale criterion.
 
 
       \[ [API set: ExcelApi

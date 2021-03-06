@@ -36,7 +36,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      For EACH ITEM in the collection: Represents binding identifier.
+      For EACH ITEM in the collection: Represents the binding identifier.
 
 
       \[ [API set: ExcelApi
@@ -55,7 +55,7 @@ properties:
     fullName: type
     summary: >-
       For EACH ITEM in the collection: Returns the type of the binding. See
-      Excel.BindingType for details.
+      `Excel.BindingType` for details.
 
 
       \[ [API set: ExcelApi

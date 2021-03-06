@@ -16,7 +16,8 @@ properties:
     package: excel!
     fullName: dataValidation
     summary: >-
-      Returns a dataValidation object for all ranges in the RangeAreas.
+      Returns a data validation object for all ranges in the `RangeAreas`<!--
+      -->.
 
 
       \[ [API set: ExcelApi
@@ -36,8 +37,8 @@ properties:
     package: excel!
     fullName: format
     summary: >-
-      Returns a RangeFormat object, encapsulating the the font, fill, borders,
-      alignment, and other properties for all ranges in the RangeAreas object.
+      Returns a `RangeFormat` object, encapsulating the the font, fill, borders,
+      alignment, and other properties for all ranges in the `RangeAreas` object.
 
 
       \[ [API set: ExcelApi
@@ -55,10 +56,10 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Represents the style for all ranges in this RangeAreas object. If the
-      styles of the cells are inconsistent, null will be returned. For custom
+      Represents the style for all ranges in this `RangeAreas` object. If the
+      styles of the cells are inconsistent, `null` will be returned. For custom
       styles, the style name will be returned. For built-in styles, a string
-      representing a value in the BuiltInStyle enum will be returned.
+      representing a value in the `BuiltInStyle` enum will be returned.
 
 
       \[ [API set: ExcelApi

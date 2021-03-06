@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.CustomPropertyCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.CustomPropertyCollectionLoadOptions
 summary: >-
-  Contains the collection of customProperty objects.
+  Contains the collection of custom properties.
 
 
   \[ [API set: ExcelApi

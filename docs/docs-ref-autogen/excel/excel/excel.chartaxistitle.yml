@@ -34,7 +34,7 @@ properties:
     package: excel!
     fullName: format
     summary: >-
-      Specifies the formatting of chart axis title.
+      Specifies the formatting of the chart axis title.
 
 
       \[ [API set: ExcelApi
@@ -293,7 +293,7 @@ methods:
       content: 'setFormula(formula: string): void;'
       parameters:
         - id: formula
-          description: a string that present the formula to set
+          description: A string that represents the formula to set.
           type: string
       return:
         type: void

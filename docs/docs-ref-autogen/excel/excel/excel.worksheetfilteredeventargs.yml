@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: >-
-      Gets the id of the worksheet in which the filter is applied.
+      Gets the ID of the worksheet in which the filter is applied.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

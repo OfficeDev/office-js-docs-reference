@@ -4,7 +4,7 @@ uid: 'excel!Excel.GeometricShapeType:enum'
 package: excel!
 fullName: Excel.GeometricShapeType
 summary: >-
-  Specifies the shape type for a GeometricShape object.
+  Specifies the shape type for a `GeometricShape` object.
 
 
   \[ [API set: ExcelApi

@@ -52,7 +52,7 @@ properties:
     package: excel!
     fullName: seriesAxis
     summary: >-
-      Represents the series axis of a 3-dimensional chart.
+      Represents the series axis of a 3-D chart.
 
 
       \[ [API set: ExcelApi
@@ -127,11 +127,11 @@ methods:
         Excel.ChartAxis;
       parameters:
         - id: type
-          description: Specifies the axis type. See Excel.ChartAxisType for details.
+          description: Specifies the axis type. See `Excel.ChartAxisType` for details.
           type: '<xref uid="excel!Excel.ChartAxisType:enum" />'
         - id: group
           description: >-
-            Optional. Specifies the axis group. See Excel.ChartAxisGroup for
+            Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for
             details.
           type: '<xref uid="excel!Excel.ChartAxisGroup:enum" />'
       return:
@@ -157,11 +157,11 @@ methods:
         "Primary" | "Secondary"): Excel.ChartAxis;
       parameters:
         - id: typeString
-          description: Specifies the axis type. See Excel.ChartAxisType for details.
+          description: Specifies the axis type. See `Excel.ChartAxisType` for details.
           type: '"Invalid" | "Category" | "Value" | "Series"'
         - id: group
           description: >-
-            Optional. Specifies the axis group. See Excel.ChartAxisGroup for
+            Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for
             details.
           type: '"Primary" | "Secondary"'
       return:

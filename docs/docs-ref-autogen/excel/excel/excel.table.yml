@@ -23,7 +23,7 @@ properties:
     package: excel!
     fullName: autoFilter
     summary: >-
-      Represents the AutoFilter object of the table.
+      Represents the `AutoFilter` object of the table.
 
 
       \[ [API set: ExcelApi
@@ -129,7 +129,7 @@ properties:
     package: excel!
     fullName: legacyId
     summary: >-
-      Returns a numeric id.
+      Returns a numeric ID.
 
 
       \[ [API set: ExcelApi
@@ -213,7 +213,7 @@ properties:
     package: excel!
     fullName: onFiltered
     summary: >-
-      Occurs when filter is applied on a specific table.
+      Occurs when a filter is applied on a specific table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -296,7 +296,7 @@ properties:
     fullName: showBandedColumns
     summary: >-
       Specifies if the columns show banded formatting in which odd columns are
-      highlighted differently from even ones to make reading the table easier.
+      highlighted differently from even ones, to make reading the table easier.
 
 
       \[ [API set: ExcelApi
@@ -315,7 +315,7 @@ properties:
     fullName: showBandedRows
     summary: >-
       Specifies if the rows show banded formatting in which odd rows are
-      highlighted differently from even ones to make reading the table easier.
+      highlighted differently from even ones, to make reading the table easier.
 
 
       \[ [API set: ExcelApi
@@ -408,7 +408,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Table style. Possible values are:
+      Constant value that represents the table style. Possible values are:
       "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1"
       through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook
@@ -454,7 +454,7 @@ properties:
     package: excel!
     fullName: tableStyle
     summary: >-
-      The style applied to the Table.
+      The style applied to the table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -640,7 +640,7 @@ methods:
     package: excel!
     fullName: getHeaderRowRange()
     summary: >-
-      Gets the range object associated with header row of the table.
+      Gets the range object associated with the header row of the table.
 
 
       \[ [API set: ExcelApi
@@ -718,7 +718,7 @@ methods:
     package: excel!
     fullName: getTotalRowRange()
     summary: >-
-      Gets the range object associated with totals row of the table.
+      Gets the range object associated with the totals row of the table.
 
 
       \[ [API set: ExcelApi
@@ -875,6 +875,33 @@ methods:
     isDeprecated: false
     syntax:
       content: 'reapplyFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: resize(newRange)
+    uid: 'excel!Excel.Table#resize:member(1)'
+    package: excel!
+    fullName: resize(newRange)
+    summary: >-
+      Resize the table to the new range. The new range must overlap with the
+      original table range and the headers (or the top of the table) must be in
+      the same row.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resize(newRange: Range | string): void;'
+      parameters:
+        - id: newRange
+          description: >-
+            The range object or range address that will be used to determine the
+            new size of the table.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void
         description: ''

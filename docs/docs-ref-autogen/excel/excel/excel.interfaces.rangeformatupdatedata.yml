@@ -57,7 +57,7 @@ properties:
     fullName: columnWidth
     summary: >-
       Specifies the width of all colums within the range. If the column widths
-      are not uniform, null will be returned.
+      are not uniform, `null` will be returned.
 
 
       \[ [API set: ExcelApi
@@ -112,7 +112,7 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       Represents the horizontal alignment for the specified object. See
-      Excel.HorizontalAlignment for details.
+      `Excel.HorizontalAlignment` for details.
 
 
       \[ [API set: ExcelApi
@@ -197,7 +197,7 @@ properties:
     fullName: rowHeight
     summary: >-
       The height of all rows in the range. If the row heights are not uniform,
-      null will be returned.
+      `null` will be returned.
 
 
       \[ [API set: ExcelApi
@@ -237,7 +237,7 @@ properties:
       The text orientation of all the cells within the range. The text
       orientation should be an integer either from -90 to 90, or 180 for
       vertically-oriented text. If the orientation within a range are not
-      uniform, then null will be returned.
+      uniform, then `null` will be returned.
 
 
       \[ [API set: ExcelApi
@@ -302,7 +302,7 @@ properties:
     fullName: verticalAlignment
     summary: >-
       Represents the vertical alignment for the specified object. See
-      Excel.VerticalAlignment for details.
+      `Excel.VerticalAlignment` for details.
 
 
       \[ [API set: ExcelApi
@@ -324,8 +324,8 @@ properties:
     package: excel!
     fullName: wrapText
     summary: >-
-      Specifies if Excel wraps the text in the object. A null value indicates
-      that the entire range doesn't have uniform wrap setting
+      Specifies if Excel wraps the text in the object. A `null` value indicates
+      that the entire range doesn't have a uniform wrap setting
 
 
       \[ [API set: ExcelApi

@@ -4,7 +4,7 @@ uid: 'excel!Excel.TableSort:class'
 package: excel!
 fullName: Excel.TableSort
 summary: >-
-  Manages sorting operations on Table objects.
+  Manages sorting operations on `Table` objects.
 
 
   \[ [API set: ExcelApi
@@ -70,7 +70,8 @@ properties:
     package: excel!
     fullName: method
     summary: >-
-      Represents Chinese character ordering method last used to sort the table.
+      Represents the Chinese character ordering method last used to sort the
+      table.
 
 
       \[ [API set: ExcelApi

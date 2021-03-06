@@ -283,7 +283,7 @@ properties:
     package: excel!
     fullName: onFormatChanged
     summary: >-
-      Occurs when any worksheet in the workbook has format changed.
+      Occurs when any worksheet in the workbook has a format changed.
 
 
       \[ [API set: ExcelApi
@@ -426,7 +426,7 @@ methods:
     summary: >-
       Adds a new worksheet to the workbook. The worksheet will be added at the
       end of existing worksheets. If you wish to activate the newly added
-      worksheet, call ".activate() on it.
+      worksheet, call `.activate()` on it.
 
 
       \[ [API set: ExcelApi
@@ -440,9 +440,9 @@ methods:
       parameters:
         - id: name
           description: >-
-            Optional. The name of the worksheet to be added. If specified, name
-            should be unqiue. If not specified, Excel determines the name of the
-            new worksheet.
+            Optional. The name of the worksheet to be added. If specified, the
+            name should be unique. If not specified, Excel determines the name
+            of the new worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -475,11 +475,12 @@ methods:
 
 
       *Note**: This API is currently only supported for Office on Windows and
-      Mac.
+      Mac. And it has been deprecated, please use
+      `Workbook.insertWorksheetFromBase64` instead.
 
 
-      \[ [API set: ExcelApiAddFromBase64String
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
     isPreview: true
@@ -503,22 +504,22 @@ methods:
         - id: positionType
           description: >-
             Optional. Where in the current workbook the new worksheets will be
-            inserted. See Excel.WorksheetPositionType for details. Default is
+            inserted. See `Excel.WorksheetPositionType` for details. Default is
             "Start".
           type: '<xref uid="excel!Excel.WorksheetPositionType:enum" />'
         - id: relativeTo
           description: >-
             Optional. The worksheet in the current workbook that is referenced
-            for the positionType parameter. Default is null and, based on
-            positionType, it will insert worksheets at the start or end of the
-            current workbook.
+            for the `positionType` parameter. Default is `null` and, based on
+            `positionType`<!-- -->, it will insert worksheets at the start or
+            end of the current workbook.
           type: '<xref uid="excel!Excel.Worksheet:class" /> | string'
       return:
         type: >-
           <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: >-
-          An array of ids corresponding to each newly inserted worksheet.
+          An array of IDs corresponding to each newly inserted worksheet.
 
 
           #### Examples
@@ -570,11 +571,12 @@ methods:
 
 
       *Note**: This API is currently only supported for Office on Windows and
-      Mac.
+      Mac. And it has been deprecated, please use
+      `Workbook.insertWorksheetFromBase64` instead.
 
 
-      \[ [API set: ExcelApiAddFromBase64String
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
     isPreview: false
@@ -599,21 +601,21 @@ methods:
         - id: positionTypeString
           description: >-
             Optional. Where in the current workbook the new worksheets will be
-            inserted. See Excel.WorksheetPositionType for details. Default is
+            inserted. See `Excel.WorksheetPositionType` for details. Default is
             "Start".
           type: '"None" | "Before" | "After" | "Beginning" | "End"'
         - id: relativeTo
           description: >-
             Optional. The worksheet in the current workbook that is referenced
-            for the positionType parameter. Default is null and, based on
-            positionType, it will insert worksheets at the start or end of the
-            current workbook.
+            for the `positionType` parameter. Default is `null` and, based on
+            `positionType`<!-- -->, it will insert worksheets at the start or
+            end of the current workbook.
           type: '<xref uid="excel!Excel.Worksheet:class" /> | string'
       return:
         type: >-
           <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
-        description: An array of ids corresponding to each newly inserted worksheet.
+        description: An array of IDs corresponding to each newly inserted worksheet.
   - name: getActiveWorksheet()
     uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
     package: excel!
@@ -670,8 +672,8 @@ methods:
       parameters:
         - id: visibleOnly
           description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+            Optional. If `true`<!-- -->, considers only visible worksheets,
+            skipping over any hidden ones.
           type: boolean
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
@@ -695,8 +697,8 @@ methods:
       parameters:
         - id: visibleOnly
           description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+            Optional. If `true`<!-- -->, considers only visible worksheets,
+            skipping over any hidden ones.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -742,7 +744,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: >-
-      Gets a worksheet object using its Name or ID.
+      Gets a worksheet object using its name or ID.
 
 
       \[ [API set: ExcelApi
@@ -755,7 +757,7 @@ methods:
       content: 'getItem(key: string): Excel.Worksheet;'
       parameters:
         - id: key
-          description: The Name or ID of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -765,7 +767,7 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a worksheet object using its Name or ID. If the worksheet does not
+      Gets a worksheet object using its name or ID. If the worksheet does not
       exist, then this function will return an object with its `isNullObject`
       property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
@@ -783,7 +785,7 @@ methods:
       content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
       parameters:
         - id: key
-          description: The Name or ID of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -807,8 +809,8 @@ methods:
       parameters:
         - id: visibleOnly
           description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+            Optional. If `true`<!-- -->, considers only visible worksheets,
+            skipping over any hidden ones.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'

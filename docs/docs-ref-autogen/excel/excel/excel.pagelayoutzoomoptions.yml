@@ -20,8 +20,8 @@ properties:
     package: excel!
     fullName: horizontalFitToPages
     summary: >-
-      Number of pages to fit horizontally. This value can be null if percentage
-      scale is used.
+      Number of pages to fit horizontally. This value can be `null` if
+      percentage scale is used.
 
 
       \[ [API set: ExcelApi
@@ -39,7 +39,7 @@ properties:
     package: excel!
     fullName: scale
     summary: >-
-      Print page scale value can be between 10 and 400. This value can be null
+      Print page scale value can be between 10 and 400. This value can be `null`
       if fit to page tall or wide is specified.
 
 
@@ -58,7 +58,7 @@ properties:
     package: excel!
     fullName: verticalFitToPages
     summary: >-
-      Number of pages to fit vertically. This value can be null if percentage
+      Number of pages to fit vertically. This value can be `null` if percentage
       scale is used.
 
 

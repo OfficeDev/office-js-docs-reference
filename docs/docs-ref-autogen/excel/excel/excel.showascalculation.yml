@@ -4,7 +4,7 @@ uid: 'excel!Excel.ShowAsCalculation:enum'
 package: excel!
 fullName: Excel.ShowAsCalculation
 summary: >-
-  The ShowAs Calculation function for the Data Pivot Field.
+  The ShowAs calculation function for the DataPivotField.
 
 
   \[ [API set: ExcelApi
@@ -17,7 +17,7 @@ fields:
   - name: differenceFrom
     uid: 'excel!Excel.ShowAsCalculation.differenceFrom:member'
     package: excel!
-    summary: Difference from the specified Base Field and Base Item.
+    summary: Difference from the specified Base field and Base item.
     value: '"DifferenceFrom"'
   - name: index
     uid: 'excel!Excel.ShowAsCalculation.index:member'
@@ -34,12 +34,12 @@ fields:
   - name: percentDifferenceFrom
     uid: 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
     package: excel!
-    summary: Difference from the specified Base Field and Base Item.
+    summary: Difference from the specified Base field and Base item.
     value: '"PercentDifferenceFrom"'
   - name: percentOf
     uid: 'excel!Excel.ShowAsCalculation.percentOf:member'
     package: excel!
-    summary: Percent of the specified Base Field and Base Item.
+    summary: Percent of the specified Base field and Base item.
     value: '"PercentOf"'
   - name: percentOfColumnTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
@@ -54,17 +54,17 @@ fields:
   - name: percentOfParentColumnTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
     package: excel!
-    summary: Percent of the column total for the specified Base Field.
+    summary: Percent of the column total for the specified Base field.
     value: '"PercentOfParentColumnTotal"'
   - name: percentOfParentRowTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
     package: excel!
-    summary: Percent of the row total for the specified Base Field.
+    summary: Percent of the row total for the specified Base field.
     value: '"PercentOfParentRowTotal"'
   - name: percentOfParentTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
     package: excel!
-    summary: Percent of the grand total for the specified Base Field.
+    summary: Percent of the grand total for the specified Base field.
     value: '"PercentOfParentTotal"'
   - name: percentOfRowTotal
     uid: 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
@@ -74,22 +74,22 @@ fields:
   - name: percentRunningTotal
     uid: 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
     package: excel!
-    summary: Percent Running Total of the specified Base Field.
+    summary: Percent running total of the specified Base field.
     value: '"PercentRunningTotal"'
   - name: rankAscending
     uid: 'excel!Excel.ShowAsCalculation.rankAscending:member'
     package: excel!
-    summary: Ascending Rank of the specified Base Field.
+    summary: Ascending rank of the specified Base field.
     value: '"RankAscending"'
   - name: rankDecending
     uid: 'excel!Excel.ShowAsCalculation.rankDecending:member'
     package: excel!
-    summary: Descending Rank of the specified Base Field.
+    summary: Descending rank of the specified Base field.
     value: '"RankDecending"'
   - name: runningTotal
     uid: 'excel!Excel.ShowAsCalculation.runningTotal:member'
     package: excel!
-    summary: Running Total of the specified Base Field.
+    summary: Running total of the specified Base field.
     value: '"RunningTotal"'
   - name: unknown
     uid: 'excel!Excel.ShowAsCalculation.unknown:member'

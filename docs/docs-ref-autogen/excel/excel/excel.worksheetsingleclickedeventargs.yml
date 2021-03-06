@@ -123,7 +123,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: >-
-      Gets the id of the worksheet in which the cell was left-clicked/tapped.
+      Gets the ID of the worksheet in which the cell was left-clicked/tapped.
 
 
       \[ [API set: ExcelApi

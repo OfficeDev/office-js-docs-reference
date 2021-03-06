@@ -47,7 +47,7 @@ methods:
       parameters:
         - id: frozenRange
           description: >-
-            A range that represents the cells to be frozen, or null to remove
+            A range that represents the cells to be frozen, or `null` to remove
             all frozen panes.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
@@ -167,7 +167,7 @@ methods:
     fullName: getLocation()
     summary: >-
       Gets a range that describes the frozen cells in the active worksheet view.
-      The frozen range is corresponds to cells that are frozen in the top- and
+      The frozen range corresponds to cells that are frozen in the top- and
       left-most pane.
 
 
@@ -188,7 +188,7 @@ methods:
     fullName: getLocationOrNullObject()
     summary: >-
       Gets a range that describes the frozen cells in the active worksheet view.
-      The frozen range is corresponds to cells that are frozen in the top- and
+      The frozen range corresponds to cells that are frozen in the top- and
       left-most pane. If there is no frozen pane, then this function will return
       an object with its `isNullObject` property set to `true`<!-- -->. For
       further information, see [*OrNullObject methods and

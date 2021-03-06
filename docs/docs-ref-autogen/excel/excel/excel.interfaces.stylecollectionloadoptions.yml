@@ -54,8 +54,8 @@ properties:
     package: excel!
     fullName: borders
     summary: >-
-      For EACH ITEM in the collection: A Border collection of four Border
-      objects that represent the style of the four borders.
+      For EACH ITEM in the collection: A collection of four border objects that
+      represent the style of the four borders.
 
 
       \[ [API set: ExcelApi
@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: fill
     summary: >-
-      For EACH ITEM in the collection: The Fill of the style.
+      For EACH ITEM in the collection: The fill of the style.
 
 
       \[ [API set: ExcelApi
@@ -113,8 +113,8 @@ properties:
     package: excel!
     fullName: font
     summary: >-
-      For EACH ITEM in the collection: A Font object that represents the font of
-      the style.
+      For EACH ITEM in the collection: A `Font` object that represents the font
+      of the style.
 
 
       \[ [API set: ExcelApi
@@ -153,7 +153,7 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       For EACH ITEM in the collection: Represents the horizontal alignment for
-      the style. See Excel.HorizontalAlignment for details.
+      the style. See `Excel.HorizontalAlignment` for details.
 
 
       \[ [API set: ExcelApi
@@ -171,9 +171,9 @@ properties:
     package: excel!
     fullName: includeAlignment
     summary: >-
-      For EACH ITEM in the collection: Specifies if the style includes the
-      AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel,
-      and TextOrientation properties.
+      For EACH ITEM in the collection: Specifies if the style includes the auto
+      indent, horizontal alignment, vertical alignment, wrap text, indent level,
+      and text orientation properties.
 
 
       \[ [API set: ExcelApi
@@ -192,7 +192,7 @@ properties:
     fullName: includeBorder
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
-      Color, ColorIndex, LineStyle, and Weight border properties.
+      color, color index, line style, and weight border properties.
 
 
       \[ [API set: ExcelApi
@@ -211,8 +211,8 @@ properties:
     fullName: includeFont
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
-      Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
-      Strikethrough, Subscript, Superscript, and Underline font properties.
+      background, bold, color, color index, font style, italic, name, size,
+      strikethrough, subscript, superscript, and underline font properties.
 
 
       \[ [API set: ExcelApi
@@ -231,7 +231,7 @@ properties:
     fullName: includeNumber
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
-      NumberFormat property.
+      number format property.
 
 
       \[ [API set: ExcelApi
@@ -250,8 +250,8 @@ properties:
     fullName: includePatterns
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
-      Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
-      PatternColorIndex interior properties.
+      color, color index, invert if negative, pattern, pattern color, and
+      pattern color index interior properties.
 
 
       \[ [API set: ExcelApi
@@ -270,7 +270,7 @@ properties:
     fullName: includeProtection
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
-      FormulaHidden and Locked protection properties.
+      formula hidden and locked protection properties.
 
 
       \[ [API set: ExcelApi
@@ -438,7 +438,7 @@ properties:
     fullName: verticalAlignment
     summary: >-
       For EACH ITEM in the collection: Specifies the vertical alignment for the
-      style. See Excel.VerticalAlignment for details.
+      style. See `Excel.VerticalAlignment` for details.
 
 
       \[ [API set: ExcelApi

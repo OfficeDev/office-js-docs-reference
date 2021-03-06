@@ -4,7 +4,7 @@ uid: 'excel!Excel.RangeAreasCollection:class'
 package: excel!
 fullName: Excel.RangeAreasCollection
 summary: >-
-  Contains the collection of cross-worksheets level Ranges.
+  Contains the collection of cross-workbook level ranges.
 
 
   \[ [API set: ExcelApi
@@ -47,7 +47,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: >-
-      Gets the number of RangeAreas objects in this collection.
+      Gets the number of `RangeAreas` objects in this collection.
 
 
       \[ [API set: ExcelApi
@@ -66,7 +66,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: >-
-      Returns the RangeAreas object based on position in the collection.
+      Returns the `RangeAreas` object based on position in the collection.
 
 
       \[ [API set: ExcelApi

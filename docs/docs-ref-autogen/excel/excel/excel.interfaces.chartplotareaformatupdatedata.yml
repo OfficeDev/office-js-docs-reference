@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: border
     summary: >-
-      Specifies the border attributes of a chart plotArea.
+      Specifies the border attributes of a chart plot area.
 
 
       \[ [API set: ExcelApi
