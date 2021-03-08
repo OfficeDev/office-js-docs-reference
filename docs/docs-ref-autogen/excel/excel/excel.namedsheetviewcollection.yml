@@ -7,11 +7,11 @@ summary: >-
   Represents the collection of sheet views in the worksheet.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApiOnline
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -23,7 +23,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -35,7 +35,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: Excel.NamedSheetView[];'
@@ -50,11 +50,11 @@ methods:
       Creates a new sheet view with the given name.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'add(name: string): Excel.NamedSheetView;'
@@ -80,11 +80,11 @@ methods:
       exists.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enterTemporary(): Excel.NamedSheetView;'
@@ -99,11 +99,11 @@ methods:
       Exits the currently active sheet view.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'exit(): void;'
@@ -118,11 +118,11 @@ methods:
       Gets the worksheet's currently active sheet view.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getActive(): Excel.NamedSheetView;'
@@ -138,11 +138,11 @@ methods:
       sheet view if it exists.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
@@ -157,11 +157,11 @@ methods:
       Gets a sheet view using its name.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItem(key: string): Excel.NamedSheetView;'
@@ -185,11 +185,11 @@ methods:
       Gets a sheet view by its index in the collection.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemAt(index: number): Excel.NamedSheetView;'
@@ -200,6 +200,39 @@ methods:
       return:
         type: '<xref uid="excel!Excel.NamedSheetView:class" />'
         description: The sheet view at the given index.
+  - name: getItemOrNullObject(key)
+    uid: 'excel!Excel.NamedSheetViewCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(key)
+    summary: >-
+      Gets a sheet view using its name. If the sheet view object does not exist,
+      then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.NamedSheetView;'
+      parameters:
+        - id: key
+          description: >-
+            The case-sensitive name of the sheet view. Use the empty string ("")
+            to get the temporary sheet view, if the temporary view exists.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.NamedSheetView:class" />'
+        description: >-
+          The sheet view with the given name, or the temporary view if the empty
+          string was provided. If there is no current temporary view and the
+          empty string was provided, then the `ItemNotFound` error is thrown.
   - name: load(options)
     uid: 'excel!Excel.NamedSheetViewCollection#load:member(1)'
     package: excel!
@@ -208,7 +241,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -233,7 +266,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.NamedSheetViewCollection;'
@@ -254,7 +287,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -286,7 +319,7 @@ methods:
       "items" array with shallow copies of any loaded properties from the
       collection's items.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.NamedSheetViewCollectionData;'

@@ -14,7 +14,7 @@ fields:
   - name: all
     uid: 'excel!Excel.SpecialCellValueType.all:member'
     package: excel!
-    summary: 'Cells that have errors, true/false, numeric, or a string value.'
+    summary: 'Cells that have errors, boolean, numeric, or string values.'
     value: '"All"'
   - name: errors
     uid: 'excel!Excel.SpecialCellValueType.errors:member'
@@ -24,52 +24,52 @@ fields:
   - name: errorsLogical
     uid: 'excel!Excel.SpecialCellValueType.errorsLogical:member'
     package: excel!
-    summary: 'Cells that have errors, or a true/false value.'
+    summary: Cells that have errors or boolean values.
     value: '"ErrorsLogical"'
   - name: errorsLogicalNumber
     uid: 'excel!Excel.SpecialCellValueType.errorsLogicalNumber:member'
     package: excel!
-    summary: 'Cells that have errors, true/false, or a numeric value.'
+    summary: 'Cells that have errors, boolean, or numeric values.'
     value: '"ErrorsLogicalNumber"'
   - name: errorsLogicalText
     uid: 'excel!Excel.SpecialCellValueType.errorsLogicalText:member'
     package: excel!
-    summary: 'Cells that have errors, true/false, or a string value.'
+    summary: 'Cells that have errors, boolean, or string values.'
     value: '"ErrorsLogicalText"'
   - name: errorsNumbers
     uid: 'excel!Excel.SpecialCellValueType.errorsNumbers:member'
     package: excel!
-    summary: 'Cells that have errors, or a numeric value.'
+    summary: Cells that have errors or numeric values.
     value: '"ErrorsNumbers"'
   - name: errorsNumberText
     uid: 'excel!Excel.SpecialCellValueType.errorsNumberText:member'
     package: excel!
-    summary: 'Cells that have errors, numeric, or a string value.'
+    summary: 'Cells that have errors, numeric, or string values.'
     value: '"ErrorsNumberText"'
   - name: errorsText
     uid: 'excel!Excel.SpecialCellValueType.errorsText:member'
     package: excel!
-    summary: 'Cells that have errors, or a string value.'
+    summary: Cells that have errors or string values.
     value: '"ErrorsText"'
   - name: logical
     uid: 'excel!Excel.SpecialCellValueType.logical:member'
     package: excel!
-    summary: Cells that have a true/false value.
+    summary: Cells that have a boolean value.
     value: '"Logical"'
   - name: logicalNumbers
     uid: 'excel!Excel.SpecialCellValueType.logicalNumbers:member'
     package: excel!
-    summary: 'Cells that have a true/false, or a numeric value.'
+    summary: Cells that have a boolean or numeric value.
     value: '"LogicalNumbers"'
   - name: logicalNumbersText
     uid: 'excel!Excel.SpecialCellValueType.logicalNumbersText:member'
     package: excel!
-    summary: 'Cells that have a true/false, numeric, or a string value.'
+    summary: 'Cells that have a boolean, numeric, or string value.'
     value: '"LogicalNumbersText"'
   - name: logicalText
     uid: 'excel!Excel.SpecialCellValueType.logicalText:member'
     package: excel!
-    summary: 'Cells that have a true/false, or a string value.'
+    summary: Cells that have a boolean or string value.
     value: '"LogicalText"'
   - name: numbers
     uid: 'excel!Excel.SpecialCellValueType.numbers:member'
@@ -79,7 +79,7 @@ fields:
   - name: numbersText
     uid: 'excel!Excel.SpecialCellValueType.numbersText:member'
     package: excel!
-    summary: 'Cells that have a numeric, or a string value.'
+    summary: Cells that have a numeric or string value.
     value: '"NumbersText"'
   - name: text
     uid: 'excel!Excel.SpecialCellValueType.text:member'

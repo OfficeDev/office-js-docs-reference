@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      Specifies whether to load on the `color` property.
+      Specifies whether to load the `color` property.
 
 
       \[ [API set: ExcelApi
@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Specifies whether to load on the `style` property.
+      Specifies whether to load the `style` property.
 
 
       \[ [API set: ExcelApi
@@ -56,7 +56,7 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: >-
-      Specifies whether to load on the `tintAndShade` property.
+      Specifies whether to load the `tintAndShade` property.
 
 
       \[ [API set: ExcelApi
@@ -74,7 +74,7 @@ properties:
     package: excel!
     fullName: weight
     summary: >-
-      Specifies whether to load on the `weight` property.
+      Specifies whether to load the `weight` property.
 
 
       \[ [API set: ExcelApi

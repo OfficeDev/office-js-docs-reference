@@ -4,7 +4,7 @@ uid: 'excel!Excel.SaveBehavior:enum'
 package: excel!
 fullName: Excel.SaveBehavior
 summary: >-
-  Specifies the save behavior for Workbook.save API.
+  Specifies the save behavior for `Workbook.save`<!-- -->.
 
 
   \[ [API set: ExcelApi
@@ -18,7 +18,7 @@ fields:
     uid: 'excel!Excel.SaveBehavior.prompt:member'
     package: excel!
     summary: >-
-      Prompts the saveas experience to the user if the workbook has not been
+      Prompts the "Save As" experience to the user if the workbook has not been
       saved, Ignored if the workbook was previously saved.
     value: '"Prompt"'
   - name: save
@@ -26,5 +26,5 @@ fields:
     package: excel!
     summary: >-
       Save the workbook without prompting the user. If file is not saved, it
-      will save it with default name under default location.
+      will save it with default name in the default location.
     value: '"Save"'

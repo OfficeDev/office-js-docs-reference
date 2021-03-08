@@ -34,8 +34,8 @@ properties:
     package: excel!
     fullName: ignoreBlanks
     summary: >-
-      Specifies if data validation will be performed on blank cells, it defaults
-      to true.
+      Specifies if data validation will be performed on blank cells. Default is
+      `true`<!-- -->.
 
 
       \[ [API set: ExcelApi

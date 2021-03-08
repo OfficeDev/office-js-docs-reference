@@ -4,7 +4,7 @@ uid: 'excel!Excel.Slicer:class'
 package: excel!
 fullName: Excel.Slicer
 summary: >-
-  Represents a slicer object in the workbook.
+  Represents a `Slicer` object in the workbook.
 
 
   \[ [API set: ExcelApi
@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: caption
     summary: >-
-      Represents the caption of slicer.
+      Represents the caption of the slicer.
 
 
       \[ [API set: ExcelApi
@@ -52,9 +52,9 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Represents the height, in points, of the slicer. Throws an "The argument
-      is invalid or missing or has an incorrect format." exception when set with
-      negative value or zero as input.
+      Represents the height, in points, of the slicer. Throws an
+      `InvalidArgument` exception when set with a negative value or zero as an
+      input.
 
 
       \[ [API set: ExcelApi
@@ -72,7 +72,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Represents the unique id of slicer.
+      Represents the unique ID of the slicer.
 
 
       \[ [API set: ExcelApi
@@ -90,7 +90,8 @@ properties:
     package: excel!
     fullName: isFilterCleared
     summary: >-
-      True if all filters currently applied on the slicer are cleared.
+      Value is `true` if all filters currently applied on the slicer are
+      cleared.
 
 
       \[ [API set: ExcelApi
@@ -109,9 +110,8 @@ properties:
     fullName: left
     summary: >-
       Represents the distance, in points, from the left side of the slicer to
-      the left of the worksheet. Throws an "The argument is invalid or missing
-      or has an incorrect format." exception when set with negative value as
-      input.
+      the left of the worksheet. Throws an `InvalidArgument` error when set with
+      a negative value as an input.
 
 
       \[ [API set: ExcelApi
@@ -129,7 +129,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Represents the name of slicer.
+      Represents the name of the slicer.
 
 
       \[ [API set: ExcelApi
@@ -165,7 +165,7 @@ properties:
     package: excel!
     fullName: slicerItems
     summary: >-
-      Represents the collection of SlicerItems that are part of the slicer.
+      Represents the collection of slicer items that are part of the slicer.
 
 
       \[ [API set: ExcelApi
@@ -183,7 +183,7 @@ properties:
     package: excel!
     fullName: slicerStyle
     summary: >-
-      The style applied to the Slicer.
+      The style applied to the slicer.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -224,7 +224,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Slicer style. Possible values are:
+      Constant value that represents the slicer style. Possible values are:
       "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
       through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
@@ -264,8 +264,8 @@ properties:
     fullName: top
     summary: >-
       Represents the distance, in points, from the top edge of the slicer to the
-      top of the worksheet. Throws an "The argument is invalid or missing or has
-      an incorrect format." exception when set with negative value as input.
+      top of the worksheet. Throws an `InvalidArgument` error when set with a
+      negative value as an input.
 
 
       \[ [API set: ExcelApi
@@ -283,9 +283,9 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Represents the width, in points, of the slicer. Throws an "The argument is
-      invalid or missing or has an incorrect format." exception when set with
-      negative value or zero as input.
+      Represents the width, in points, of the slicer. Throws an
+      `InvalidArgument` error when set with a negative value or zero as an
+      input.
 
 
       \[ [API set: ExcelApi
@@ -593,7 +593,7 @@ methods:
       parameters:
         - id: style
           description: >-
-            The style to apply to the slicer. An `InvalidArgumentException` is
+            The style to apply to the slicer. An `InvalidArgument` error is
             thrown if a string is provided that does not match the name of any
             style.
           type: >-

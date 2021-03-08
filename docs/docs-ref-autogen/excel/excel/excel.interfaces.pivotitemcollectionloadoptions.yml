@@ -36,7 +36,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      For EACH ITEM in the collection: Id of the PivotItem.
+      For EACH ITEM in the collection: ID of the PivotItem.
 
 
       \[ [API set: ExcelApi

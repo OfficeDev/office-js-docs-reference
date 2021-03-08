@@ -4,7 +4,7 @@ uid: 'excel!Excel.RangeViewCollection:class'
 package: excel!
 fullName: Excel.RangeViewCollection
 summary: >-
-  Represents a collection of RangeView objects.
+  Represents a collection of `RangeView` objects.
 
 
   \[ [API set: ExcelApi
@@ -47,7 +47,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: >-
-      Gets the number of RangeView objects in the collection.
+      Gets the number of `RangeView` objects in the collection.
 
 
       \[ [API set: ExcelApi
@@ -66,7 +66,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: >-
-      Gets a RangeView Row via its index. Zero-Indexed.
+      Gets a `RangeView` row via its index. Zero-indexed.
 
 
       \[ [API set: ExcelApi

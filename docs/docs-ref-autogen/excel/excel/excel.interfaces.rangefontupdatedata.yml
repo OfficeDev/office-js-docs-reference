@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: bold
     summary: >-
-      Represents the bold status of font.
+      Represents the bold status of the font.
 
 
       \[ [API set: ExcelApi
@@ -108,8 +108,8 @@ properties:
     package: excel!
     fullName: strikethrough
     summary: >-
-      Specifies the strikethrough status of font. A null value indicates that
-      the entire range doesn't have uniform Strikethrough setting.
+      Specifies the strikethrough status of font. A `null` value indicates that
+      the entire range doesn't have a uniform strikethrough setting.
 
 
       \[ [API set: ExcelApi
@@ -127,9 +127,9 @@ properties:
     package: excel!
     fullName: subscript
     summary: >-
-      Specifies the Subscript status of font. Returns True if all the fonts of
-      the range are Subscript. Returns False if all the fonts of the range are
-      Superscript or normal (neither Superscript, nor Subscript). Returns Null
+      Specifies the subscript status of font. Returns `true` if all the fonts of
+      the range are subscript. Returns `false` if all the fonts of the range are
+      superscript or normal (neither superscript, nor subscript). Returns `null`
       otherwise.
 
 
@@ -148,10 +148,10 @@ properties:
     package: excel!
     fullName: superscript
     summary: >-
-      Specifies the Superscript status of font. Returns True if all the fonts of
-      the range are Superscript. Returns False if all the fonts of the range are
-      Subscript or normal (neither Superscript, nor Subscript). Returns Null
-      otherwise.
+      Specifies the superscript status of font. Returns `true` if all the fonts
+      of the range are superscript. Returns `false` if all the fonts of the
+      range are subscript or normal (neither superscript, nor subscript).
+      Returns `null` otherwise.
 
 
       \[ [API set: ExcelApi
@@ -169,10 +169,10 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: >-
-      Specifies a double that lightens or darkens a color for Range Font, the
-      value is between -1 (darkest) and 1 (brightest), with 0 for the original
-      color. A null value indicates that the entire range doesn't have uniform
-      font tintAndShade setting.
+      Specifies a double that lightens or darkens a color for the range font.
+      The value is between -1 (darkest) and 1 (brightest), with 0 for the
+      original color. A `null` value indicates that the entire range doesn't
+      have a uniform font `tintAndShade` setting.
 
 
       \[ [API set: ExcelApi
@@ -190,7 +190,7 @@ properties:
     package: excel!
     fullName: underline
     summary: >-
-      Type of underline applied to the font. See Excel.RangeUnderlineStyle for
+      Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for
       details.
 
 

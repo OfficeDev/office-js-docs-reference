@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Gets the name of the TimelineStyle.
+      Gets the name of the timeline style.
 
 
       \[ [API set: ExcelApi

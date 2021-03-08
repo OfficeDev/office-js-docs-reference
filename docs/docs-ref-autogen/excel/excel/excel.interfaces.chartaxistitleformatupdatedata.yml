@@ -36,7 +36,7 @@ properties:
     fullName: font
     summary: >-
       Specifies the chart axis title's font attributes, such as font name, font
-      size, color, etc. of chart axis title object.
+      size, or color, of the chart axis title object.
 
 
       \[ [API set: ExcelApi

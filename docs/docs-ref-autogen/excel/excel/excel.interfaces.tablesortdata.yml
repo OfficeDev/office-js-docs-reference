@@ -52,7 +52,8 @@ properties:
     package: excel!
     fullName: method
     summary: >-
-      Represents Chinese character ordering method last used to sort the table.
+      Represents the Chinese character ordering method last used to sort the
+      table.
 
 
       \[ [API set: ExcelApi

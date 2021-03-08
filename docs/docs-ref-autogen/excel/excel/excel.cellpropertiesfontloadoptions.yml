@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: bold
     summary: >-
-      Specifies whether to load on the `bold` property.
+      Specifies whether to load the `bold` property.
 
 
       \[ [API set: ExcelApi
@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      Specifies whether to load on the `color` property.
+      Specifies whether to load the `color` property.
 
 
       \[ [API set: ExcelApi
@@ -92,7 +92,7 @@ properties:
     package: excel!
     fullName: italic
     summary: >-
-      Specifies whether to load on the `italic` property.
+      Specifies whether to load the `italic` property.
 
 
       \[ [API set: ExcelApi
@@ -110,7 +110,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Specifies whether to load on the `name` property.
+      Specifies whether to load the `name` property.
 
 
       \[ [API set: ExcelApi
@@ -128,7 +128,7 @@ properties:
     package: excel!
     fullName: size
     summary: >-
-      Specifies whether to load on the `size` property.
+      Specifies whether to load the `size` property.
 
 
       \[ [API set: ExcelApi
@@ -146,7 +146,7 @@ properties:
     package: excel!
     fullName: strikethrough
     summary: >-
-      Specifies whether to load on the `strikethrough` property.
+      Specifies whether to load the `strikethrough` property.
 
 
       \[ [API set: ExcelApi
@@ -164,7 +164,7 @@ properties:
     package: excel!
     fullName: subscript
     summary: >-
-      Specifies whether to load on the `subscript` property.
+      Specifies whether to load the `subscript` property.
 
 
       \[ [API set: ExcelApi
@@ -182,7 +182,7 @@ properties:
     package: excel!
     fullName: superscript
     summary: >-
-      Specifies whether to load on the `superscript` property.
+      Specifies whether to load the `superscript` property.
 
 
       \[ [API set: ExcelApi
@@ -200,7 +200,7 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: >-
-      Specifies whether to load on the `tintAndShade` property.
+      Specifies whether to load the `tintAndShade` property.
 
 
       \[ [API set: ExcelApi
@@ -218,7 +218,7 @@ properties:
     package: excel!
     fullName: underline
     summary: >-
-      Specifies whether to load on the `underline` property.
+      Specifies whether to load the `underline` property.
 
 
       \[ [API set: ExcelApi

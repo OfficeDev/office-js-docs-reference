@@ -53,8 +53,8 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the legend on the chart. Null if
-      legend is not visible.
+      Specifies the height, in points, of the legend on the chart. Value is
+      `null` if the legend is not visible.
 
 
       \[ [API set: ExcelApi
@@ -72,8 +72,8 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      Specifies the left, in points, of the legend on the chart. Null if legend
-      is not visible.
+      Specifies the left value, in points, of the legend on the chart. Value is
+      `null` if the legend is not visible.
 
 
       \[ [API set: ExcelApi
@@ -129,7 +129,7 @@ properties:
     fullName: position
     summary: >-
       Specifies the position of the legend on the chart. See
-      Excel.ChartLegendPosition for details.
+      `Excel.ChartLegendPosition` for details.
 
 
       \[ [API set: ExcelApi
@@ -187,7 +187,7 @@ properties:
     package: excel!
     fullName: visible
     summary: >-
-      Specifies if the ChartLegend is visible.
+      Specifies if the chart legend is visible.
 
 
       \[ [API set: ExcelApi
@@ -205,8 +205,8 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the legend on the chart. Null if legend
-      is not visible.
+      Specifies the width, in points, of the legend on the chart. Value is
+      `null` if the legend is not visible.
 
 
       \[ [API set: ExcelApi

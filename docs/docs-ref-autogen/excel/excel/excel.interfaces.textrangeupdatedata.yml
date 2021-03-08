@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: font
     summary: >-
-      Returns a ShapeFont object that represents the font attributes for the
+      Returns a `ShapeFont` object that represents the font attributes for the
       text range.
 
 

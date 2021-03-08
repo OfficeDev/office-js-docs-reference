@@ -20,7 +20,8 @@ properties:
     package: excel!
     fullName: formula1
     summary: >-
-      The formula, if required, to evaluate the conditional format rule on.
+      The formula, if required, on which to evaluate the conditional format
+      rule.
 
 
       \[ [API set: ExcelApi
@@ -61,7 +62,8 @@ properties:
     package: excel!
     fullName: formula2
     summary: >-
-      The formula, if required, to evaluate the conditional format rule on.
+      The formula, if required, on which to evaluate the conditional format
+      rule.
 
 
       \[ [API set: ExcelApi

@@ -34,8 +34,8 @@ properties:
     package: excel!
     fullName: resolved
     summary: >-
-      The comment thread status. A value of "true" means the comment thread is
-      resolved.
+      The comment thread status. A value of `true` means that the comment thread
+      is resolved.
 
 
       \[ [API set: ExcelApi

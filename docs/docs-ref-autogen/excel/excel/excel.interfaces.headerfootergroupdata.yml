@@ -92,7 +92,7 @@ properties:
     package: excel!
     fullName: state
     summary: >-
-      The state by which headers/footers are set. See Excel.HeaderFooterState
+      The state by which headers/footers are set. See `Excel.HeaderFooterState`
       for details.
 
 

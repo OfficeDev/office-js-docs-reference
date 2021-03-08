@@ -115,7 +115,7 @@ properties:
     package: excel!
     fullName: serviceId
     summary: >-
-      The unique id of the linked data type.
+      The unique ID of the linked data type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

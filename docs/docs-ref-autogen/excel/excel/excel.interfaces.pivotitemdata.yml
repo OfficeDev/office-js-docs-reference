@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Id of the PivotItem.
+      ID of the PivotItem.
 
 
       \[ [API set: ExcelApi

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ShapeGroupLoadOptions
 summary: >-
-  Represents a shape group inside a worksheet. To get the corresponding Shape
+  Represents a shape group inside a worksheet. To get the corresponding `Shape`
   object, use `ShapeGroup.shape`<!-- -->.
 
 
@@ -54,7 +54,7 @@ properties:
     package: excel!
     fullName: shape
     summary: >-
-      Returns the Shape object associated with the group.
+      Returns the `Shape` object associated with the group.
 
 
       \[ [API set: ExcelApi

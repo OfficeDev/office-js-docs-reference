@@ -47,7 +47,7 @@ methods:
     package: excel!
     fullName: 'add(content, contentType)'
     summary: >-
-      Creates a comment reply for comment.
+      Creates a comment reply for a comment.
 
 
       \[ [API set: ExcelApi
@@ -63,9 +63,10 @@ methods:
       parameters:
         - id: content
           description: >-
-            The comment's content. This can be either a string or Interface
-            CommentRichContent (e.g., for comments with mentions). \[Api set:
-            ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
+            The comment's content. This can be either a string or a
+            `CommentRichContent` object (e.g., for comments with mentions).
+            \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent
+            object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentType
           description: >-
@@ -101,7 +102,7 @@ methods:
     package: excel!
     fullName: 'add(content, contentTypeString)'
     summary: >-
-      Creates a comment reply for comment.
+      Creates a comment reply for a comment.
 
 
       \[ [API set: ExcelApi
@@ -117,9 +118,10 @@ methods:
       parameters:
         - id: content
           description: >-
-            The comment's content. This can be either a string or Interface
-            CommentRichContent (e.g., for comments with mentions). \[Api set:
-            ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
+            The comment's content. This can be either a string or a
+            `CommentRichContent` object (e.g., for comments with mentions).
+            \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent
+            object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentTypeString
           description: >-
@@ -195,6 +197,34 @@ methods:
             The index value of the comment reply to be retrieved. The collection
             uses zero-based indexing.
           type: number
+      return:
+        type: '<xref uid="excel!Excel.CommentReply:class" />'
+        description: ''
+  - name: getItemOrNullObject(commentReplyId)
+    uid: 'excel!Excel.CommentReplyCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(commentReplyId)
+    summary: >-
+      Returns a comment reply identified by its ID. If the comment reply object
+      does not exist, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(commentReplyId: string): Excel.CommentReply;'
+      parameters:
+        - id: commentReplyId
+          description: The identifier for the comment reply
+          type: string
       return:
         type: '<xref uid="excel!Excel.CommentReply:class" />'
         description: ''

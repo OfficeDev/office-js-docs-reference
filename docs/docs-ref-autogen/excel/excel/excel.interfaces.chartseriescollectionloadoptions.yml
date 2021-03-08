@@ -119,7 +119,7 @@ properties:
     fullName: chartType
     summary: >-
       For EACH ITEM in the collection: Represents the chart type of a series.
-      See Excel.ChartType for details.
+      See `Excel.ChartType` for details.
 
 
       \[ [API set: ExcelApi
@@ -137,8 +137,8 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: >-
-      For EACH ITEM in the collection: Represents a collection of all dataLabels
-      in the series.
+      For EACH ITEM in the collection: Represents a collection of all data
+      labels in the series.
 
 
       \[ [API set: ExcelApi
@@ -160,8 +160,8 @@ properties:
     fullName: doughnutHoleSize
     summary: >-
       For EACH ITEM in the collection: Represents the doughnut hole size of a
-      chart series. Only valid on doughnut and doughnutExploded charts. Throws
-      an invalid argument exception on invalid charts.
+      chart series. Only valid on doughnut and doughnut exploded charts. Throws
+      an `InvalidArgument` error on invalid charts.
 
 
       \[ [API set: ExcelApi
@@ -343,8 +343,8 @@ properties:
     package: excel!
     fullName: gradientMidpointColor
     summary: >-
-      For EACH ITEM in the collection: Specifies the color for midpoint value of
-      a region map chart series.
+      For EACH ITEM in the collection: Specifies the color for the midpoint
+      value of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -363,8 +363,8 @@ properties:
     package: excel!
     fullName: gradientMidpointType
     summary: >-
-      For EACH ITEM in the collection: Specifies the type for midpoint value of
-      a region map chart series.
+      For EACH ITEM in the collection: Specifies the type for the midpoint value
+      of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -403,8 +403,8 @@ properties:
     package: excel!
     fullName: gradientMinimumColor
     summary: >-
-      For EACH ITEM in the collection: Specifies the color for minimum value of
-      a region map chart series.
+      For EACH ITEM in the collection: Specifies the color for the minimum value
+      of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -423,8 +423,8 @@ properties:
     package: excel!
     fullName: gradientMinimumType
     summary: >-
-      For EACH ITEM in the collection: Specifies the type for minimum value of a
-      region map chart series.
+      For EACH ITEM in the collection: Specifies the type for the minimum value
+      of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -562,7 +562,7 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: >-
-      For EACH ITEM in the collection: Specifies the markers background color of
+      For EACH ITEM in the collection: Specifies the marker background color of
       a chart series.
 
 
@@ -582,7 +582,7 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: >-
-      For EACH ITEM in the collection: Specifies the markers foreground color of
+      For EACH ITEM in the collection: Specifies the marker foreground color of
       a chart series.
 
 
@@ -621,7 +621,7 @@ properties:
     fullName: markerStyle
     summary: >-
       For EACH ITEM in the collection: Specifies the marker style of a chart
-      series. See Excel.ChartMarkerStyle for details.
+      series. See `Excel.ChartMarkerStyle` for details.
 
 
       \[ [API set: ExcelApi

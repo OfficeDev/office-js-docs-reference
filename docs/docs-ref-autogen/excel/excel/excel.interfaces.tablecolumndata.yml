@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: filter
     summary: >-
-      Retrieve the filter applied to the column.
+      Retrieves the filter applied to the column.
 
 
       \[ [API set: ExcelApi
@@ -90,8 +90,9 @@ properties:
     fullName: values
     summary: >-
       Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      be a string, number, or boolean. Cells that contain an error will return
+      the error string. If the returned value starts with a plus ("+"), minus
+      ("-"), or equal sign ("="), Excel interprets this value as a formula.
 
 
       \[ [API set: ExcelApi

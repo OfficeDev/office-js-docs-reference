@@ -1,10 +1,10 @@
 ### YamlMime:TSType
-name: Excel.TaskHistoryRecordCollection
-uid: 'excel!Excel.TaskHistoryRecordCollection:class'
+name: Excel.DocumentTaskCollection
+uid: 'excel!Excel.DocumentTaskCollection:class'
 package: excel!
-fullName: Excel.TaskHistoryRecordCollection
+fullName: Excel.DocumentTaskCollection
 summary: >-
-  Represents a collection of history records for a task.
+  Represents a collection of tasks.
 
 
   \[ [API set: ExcelApi BETA (PREVIEW
@@ -16,7 +16,7 @@ isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'excel!Excel.TaskHistoryRecordCollection#context:member'
+    uid: 'excel!Excel.DocumentTaskCollection#context:member'
     package: excel!
     fullName: context
     summary: >-
@@ -30,7 +30,7 @@ properties:
       return:
         type: '<xref uid="excel!Excel.RequestContext:class" />'
   - name: items
-    uid: 'excel!Excel.TaskHistoryRecordCollection#items:member'
+    uid: 'excel!Excel.DocumentTaskCollection#items:member'
     package: excel!
     fullName: items
     summary: Gets the loaded child items in this collection.
@@ -38,16 +38,16 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly items: Excel.TaskHistoryRecord[];'
+      content: 'readonly items: Excel.DocumentTask[];'
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />[]'
+        type: '<xref uid="excel!Excel.DocumentTask:class" />[]'
 methods:
   - name: getCount()
-    uid: 'excel!Excel.TaskHistoryRecordCollection#getCount:member(1)'
+    uid: 'excel!Excel.DocumentTaskCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
     summary: >-
-      Gets the number of history records in the collection for the task.
+      Gets the number of tasks in the collection.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -61,12 +61,12 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
-  - name: getItemAt(index)
-    uid: 'excel!Excel.TaskHistoryRecordCollection#getItemAt:member(1)'
+  - name: getItem(key)
+    uid: 'excel!Excel.DocumentTaskCollection#getItem:member(1)'
     package: excel!
-    fullName: getItemAt(index)
+    fullName: getItem(key)
     summary: >-
-      Gets a task history record by using its index in the collection.
+      Gets a task using its ID.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -76,19 +76,70 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getItemAt(index: number): Excel.TaskHistoryRecord;'
+      content: 'getItem(key: string): Excel.DocumentTask;'
+      parameters:
+        - id: key
+          description: The ID of the task.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
+        description: >-
+          The task with the given ID. If there is no task with the given ID,
+          then an `ItemNotFound` exception is thrown.
+  - name: getItemAt(index)
+    uid: 'excel!Excel.DocumentTaskCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
+    summary: >-
+      Gets a task by its index in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Excel.DocumentTask;'
       parameters:
         - id: index
-          description: >-
-            The records are stored in chronological order of when the changes
-            were recorded by Excel (not necessarily ordered by
-            historyRecordCreatedDate). The "Create" record is always at index 0.
+          description: The index of the task in the collection.
           type: number
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecord:class" />'
-        description: The history record with the given index.
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
+        description: The task with the given index.
+  - name: getItemOrNullObject(key)
+    uid: 'excel!Excel.DocumentTaskCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(key)
+    summary: >-
+      Gets a task using its ID.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.DocumentTask;'
+      parameters:
+        - id: key
+          description: The ID of the task.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.DocumentTask:class" />'
+        description: >-
+          The task with the given ID. If there is no task with the given ID,
+          then this function will return an object with its `isNullObject`
+          property set to `true`<!-- -->. For further information, see
+          [\*OrNullObject methods and
+          properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+          -->.
   - name: load(options)
-    uid: 'excel!Excel.TaskHistoryRecordCollection#load:member(1)'
+    uid: 'excel!Excel.DocumentTaskCollection#load:member(1)'
     package: excel!
     fullName: load(options)
     summary: >-
@@ -99,22 +150,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.TaskHistoryRecordCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions):
-        Excel.TaskHistoryRecordCollection;
+        load(options?: Excel.Interfaces.DocumentTaskCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
             <xref
-            uid="excel!Excel.Interfaces.TaskHistoryRecordCollectionLoadOptions:interface"
+            uid="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions:interface"
             /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecordCollection:class" />'
+        type: '<xref uid="excel!Excel.DocumentTaskCollection:class" />'
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.TaskHistoryRecordCollection#load:member(2)'
+    uid: 'excel!Excel.DocumentTaskCollection#load:member(2)'
     package: excel!
     fullName: load(propertyNames)
     summary: >-
@@ -124,9 +174,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNames?: string | string[]):
-        Excel.TaskHistoryRecordCollection;
+      content: 'load(propertyNames?: string | string[]): Excel.DocumentTaskCollection;'
       parameters:
         - id: propertyNames
           description: >-
@@ -134,10 +182,10 @@ methods:
             properties to load.
           type: 'string | string[]'
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecordCollection:class" />'
+        type: '<xref uid="excel!Excel.DocumentTaskCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.TaskHistoryRecordCollection#load:member(3)'
+    uid: 'excel!Excel.DocumentTaskCollection#load:member(3)'
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
@@ -149,7 +197,7 @@ methods:
     syntax:
       content: >-
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.TaskHistoryRecordCollection;
+        Excel.DocumentTaskCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
@@ -159,10 +207,10 @@ methods:
             to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: '<xref uid="excel!Excel.TaskHistoryRecordCollection:class" />'
+        type: '<xref uid="excel!Excel.DocumentTaskCollection:class" />'
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.TaskHistoryRecordCollection#toJSON:member(1)'
+    uid: 'excel!Excel.DocumentTaskCollection#toJSON:member(1)'
     package: excel!
     fullName: toJSON()
     summary: >-
@@ -170,20 +218,19 @@ methods:
       output when an API object is passed to `JSON.stringify()`<!-- -->.
       (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
       object that is passed to it.) Whereas the original
-      `Excel.TaskHistoryRecordCollection` object is an API object, the `toJSON`
+      `Excel.DocumentTaskCollection` object is an API object, the `toJSON`
       method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.TaskHistoryRecordCollectionData`<!-- -->) that contains
-      an "items" array with shallow copies of any loaded properties from the
+      `Excel.Interfaces.DocumentTaskCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
       collection's items.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'toJSON(): Excel.Interfaces.TaskHistoryRecordCollectionData;'
+      content: 'toJSON(): Excel.Interfaces.DocumentTaskCollectionData;'
       return:
         type: >-
           <xref
-          uid="excel!Excel.Interfaces.TaskHistoryRecordCollectionData:interface"
-          />
+          uid="excel!Excel.Interfaces.DocumentTaskCollectionData:interface" />
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

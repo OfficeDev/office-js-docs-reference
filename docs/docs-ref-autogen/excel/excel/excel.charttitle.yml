@@ -53,8 +53,8 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Returns the height, in points, of the chart title. Null if chart title is
-      not visible.
+      Returns the height, in points, of the chart title. Value is `null` if the
+      chart title is not visible.
 
 
       \[ [API set: ExcelApi
@@ -95,7 +95,8 @@ properties:
     fullName: left
     summary: >-
       Specifies the distance, in points, from the left edge of chart title to
-      the left edge of chart area. Null if chart title is not visible.
+      the left edge of chart area. Value is `null` if the chart title is not
+      visible.
 
 
       \[ [API set: ExcelApi
@@ -131,7 +132,7 @@ properties:
     package: excel!
     fullName: position
     summary: >-
-      Represents the position of chart title. See Excel.ChartTitlePosition for
+      Represents the position of chart title. See `Excel.ChartTitlePosition` for
       details.
 
 
@@ -232,7 +233,7 @@ properties:
     fullName: top
     summary: >-
       Specifies the distance, in points, from the top edge of chart title to the
-      top of chart area. Null if chart title is not visible.
+      top of chart area. Value is `null` if the chart title is not visible.
 
 
       \[ [API set: ExcelApi
@@ -251,7 +252,7 @@ properties:
     fullName: verticalAlignment
     summary: >-
       Specifies the vertical alignment of chart title. See
-      Excel.ChartTextVerticalAlignment for details.
+      `Excel.ChartTextVerticalAlignment` for details.
 
 
       \[ [API set: ExcelApi
@@ -291,8 +292,8 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the chart title. Null if chart title is
-      not visible.
+      Specifies the width, in points, of the chart title. Value is `null` if the
+      chart title is not visible.
 
 
       \[ [API set: ExcelApi
@@ -311,7 +312,7 @@ methods:
     package: excel!
     fullName: 'getSubstring(start, length)'
     summary: >-
-      Get the substring of a chart title. Line break '<!-- -->\\<!-- -->n' also
+      Get the substring of a chart title. Line break '<!-- -->\\<!-- -->n'
       counts one character.
 
 
@@ -325,10 +326,10 @@ methods:
       content: 'getSubstring(start: number, length: number): Excel.ChartFormatString;'
       parameters:
         - id: start
-          description: Start position of substring to be retrieved. Position start with 0.
+          description: Start position of substring to be retrieved. Zero-indexed.
           type: number
         - id: length
-          description: Length of substring to be retrieved.
+          description: Length of the substring to be retrieved.
           type: number
       return:
         type: '<xref uid="excel!Excel.ChartFormatString:class" />'

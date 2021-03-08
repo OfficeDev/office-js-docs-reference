@@ -190,6 +190,8 @@ items:
                 uid: 'excel!Excel.DocumentPropertyItem:enum'
               - name: DocumentPropertyType
                 uid: 'excel!Excel.DocumentPropertyType:enum'
+              - name: DocumentTaskChangeAction
+                uid: 'excel!Excel.DocumentTaskChangeAction:enum'
               - name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
               - name: ErrorCodes
@@ -220,6 +222,8 @@ items:
                 uid: 'excel!Excel.ImageFittingMode:enum'
               - name: InsertShiftDirection
                 uid: 'excel!Excel.InsertShiftDirection:enum'
+              - name: KeyboardDirection
+                uid: 'excel!Excel.KeyboardDirection:enum'
               - name: LabelFilterCondition
                 uid: 'excel!Excel.LabelFilterCondition:enum'
               - name: LinkedDataTypeRefreshMode
@@ -328,8 +332,6 @@ items:
                 uid: 'excel!Excel.SpecialCellValueType:enum'
               - name: SubtotalLocationType
                 uid: 'excel!Excel.SubtotalLocationType:enum'
-              - name: TaskHistoryRecordType
-                uid: 'excel!Excel.TaskHistoryRecordType:enum'
               - name: TopBottomSelectionType
                 uid: 'excel!Excel.TopBottomSelectionType:enum'
               - name: ValueFilterCondition
@@ -619,6 +621,16 @@ items:
             uid: 'excel!Excel.DatetimeFormatInfo:class'
           - name: DocumentProperties
             uid: 'excel!Excel.DocumentProperties:class'
+          - name: DocumentTask
+            uid: 'excel!Excel.DocumentTask:class'
+          - name: DocumentTaskChange
+            uid: 'excel!Excel.DocumentTaskChange:class'
+          - name: DocumentTaskChangeCollection
+            uid: 'excel!Excel.DocumentTaskChangeCollection:class'
+          - name: DocumentTaskCollection
+            uid: 'excel!Excel.DocumentTaskCollection:class'
+          - name: DocumentTaskSchedule
+            uid: 'excel!Excel.DocumentTaskSchedule:interface'
           - name: Filter
             uid: 'excel!Excel.Filter:class'
           - name: FilterCriteria
@@ -649,8 +661,14 @@ items:
             uid: 'excel!Excel.Icon:interface'
           - name: IconSetConditionalFormat
             uid: 'excel!Excel.IconSetConditionalFormat:class'
+          - name: Identity
+            uid: 'excel!Excel.Identity:interface'
+          - name: IdentityCollection
+            uid: 'excel!Excel.IdentityCollection:class'
           - name: Image
             uid: 'excel!Excel.Image:class'
+          - name: InsertWorksheetOptions
+            uid: 'excel!Excel.InsertWorksheetOptions:interface'
           - name: IterativeCalculation
             uid: 'excel!Excel.IterativeCalculation:class'
           - name: Line
@@ -857,16 +875,6 @@ items:
             uid: 'excel!Excel.TableStyle:class'
           - name: TableStyleCollection
             uid: 'excel!Excel.TableStyleCollection:class'
-          - name: Task
-            uid: 'excel!Excel.Task:class'
-          - name: TaskChanges
-            uid: 'excel!Excel.TaskChanges:interface'
-          - name: TaskCollection
-            uid: 'excel!Excel.TaskCollection:class'
-          - name: TaskHistoryRecord
-            uid: 'excel!Excel.TaskHistoryRecord:class'
-          - name: TaskHistoryRecordCollection
-            uid: 'excel!Excel.TaskHistoryRecordCollection:class'
           - name: TextConditionalFormat
             uid: 'excel!Excel.TextConditionalFormat:class'
           - name: TextFrame
@@ -879,10 +887,10 @@ items:
             uid: 'excel!Excel.TimelineStyleCollection:class'
           - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:class'
-          - name: User
-            uid: 'excel!Excel.User:interface'
           - name: Workbook
             uid: 'excel!Excel.Workbook:class'
+          - name: WorkbookActivatedEventArgs
+            uid: 'excel!Excel.WorkbookActivatedEventArgs:interface'
           - name: WorkbookAutoSaveSettingChangedEventArgs
             uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
           - name: WorkbookCreated

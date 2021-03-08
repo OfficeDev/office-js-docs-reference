@@ -52,7 +52,7 @@ properties:
     package: excel!
     fullName: lineStyle
     summary: >-
-      Represents the line style. See Excel.ChartLineStyle for details.
+      Represents the line style. See `Excel.ChartLineStyle` for details.
 
 
       \[ [API set: ExcelApi
@@ -95,7 +95,7 @@ methods:
     package: excel!
     fullName: clear()
     summary: >-
-      Clear the line format of a chart element.
+      Clears the line format of a chart element.
 
 
       \[ [API set: ExcelApi

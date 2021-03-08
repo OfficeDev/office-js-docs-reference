@@ -35,7 +35,7 @@ properties:
     package: excel!
     fullName: cellAddresses
     summary: >-
-      Represents the cell addresses of the RangeView.
+      Represents the cell addresses of the `RangeView`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -71,7 +71,8 @@ properties:
     package: excel!
     fullName: formulas
     summary: >-
-      Represents the formula in A1-style notation.
+      Represents the formula in A1-style notation. If a cell has no formula, its
+      value is returned instead.
 
 
       \[ [API set: ExcelApi
@@ -91,7 +92,8 @@ properties:
     summary: >-
       Represents the formula in A1-style notation, in the user's language and
       number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
-      would become "=SUMME(A1; 1,5)" in German.
+      would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
+      value is returned instead.
 
 
       \[ [API set: ExcelApi
@@ -109,7 +111,8 @@ properties:
     package: excel!
     fullName: formulasR1C1
     summary: >-
-      Represents the formula in R1C1-style notation.
+      Represents the formula in R1C1-style notation. If a cell has no formula,
+      its value is returned instead.
 
 
       \[ [API set: ExcelApi
@@ -127,7 +130,7 @@ properties:
     package: excel!
     fullName: index
     summary: >-
-      Returns a value that represents the index of the RangeView.
+      Returns a value that represents the index of the `RangeView`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -181,7 +184,7 @@ properties:
     package: excel!
     fullName: text
     summary: >-
-      Text values of the specified range. The Text value will not depend on the
+      Text values of the specified range. The text value will not depend on the
       cell width. The \# sign substitution that happens in Excel UI will not
       affect the text value returned by the API.
 

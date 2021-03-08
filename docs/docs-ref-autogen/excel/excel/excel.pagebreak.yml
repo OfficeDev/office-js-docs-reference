@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: columnIndex
     summary: >-
-      Specifies the column index for the page break
+      Specifies the column index for the page break.
 
 
       \[ [API set: ExcelApi
@@ -49,7 +49,7 @@ properties:
     package: excel!
     fullName: rowIndex
     summary: >-
-      Specifies the row index for the page break
+      Specifies the row index for the page break.
 
 
       \[ [API set: ExcelApi

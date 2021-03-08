@@ -4,7 +4,8 @@ uid: 'excel!Excel.DataValidationAlertStyle:enum'
 package: excel!
 fullName: Excel.DataValidationAlertStyle
 summary: >-
-  Represents Data validation error alert style. The default is "Stop".
+  Represents the data validation error alert style. The default is `Stop`<!--
+  -->.
 
 
   \[ [API set: ExcelApi

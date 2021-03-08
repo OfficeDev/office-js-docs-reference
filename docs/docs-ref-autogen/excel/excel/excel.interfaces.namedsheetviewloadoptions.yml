@@ -10,11 +10,11 @@ summary: >-
   view.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApiOnline
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -27,7 +27,7 @@ properties:
       (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
       `Range.format.fill.color`<!-- -->).
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -43,11 +43,11 @@ properties:
       the sheet view to be saved.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name?: boolean;'

@@ -34,7 +34,8 @@ properties:
     package: excel!
     fullName: formula
     summary: >-
-      The formula of the named item. Formula always starts with a '=' sign.
+      The formula of the named item. Formulas always start with an equal sign
+      ("=").
 
 
       \[ [API set: ExcelApi

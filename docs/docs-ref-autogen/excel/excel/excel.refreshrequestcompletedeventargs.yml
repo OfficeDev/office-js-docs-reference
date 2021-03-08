@@ -39,7 +39,7 @@ properties:
     package: excel!
     fullName: serviceId
     summary: >-
-      The unique id of the object whose refresh request was completed.
+      The unique ID of the object whose refresh request was completed.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -57,7 +57,7 @@ properties:
     package: excel!
     fullName: source
     summary: >-
-      Gets the source of the event. See Excel.EventSource for details.
+      Gets the source of the event. See `Excel.EventSource` for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -75,7 +75,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

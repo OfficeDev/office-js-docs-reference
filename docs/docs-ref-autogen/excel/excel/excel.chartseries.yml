@@ -96,7 +96,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: >-
-      Represents the chart type of a series. See Excel.ChartType for details.
+      Represents the chart type of a series. See `Excel.ChartType` for details.
 
 
       \[ [API set: ExcelApi
@@ -176,7 +176,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: >-
-      Represents a collection of all dataLabels in the series.
+      Represents a collection of all data labels in the series.
 
 
       \[ [API set: ExcelApi
@@ -195,7 +195,7 @@ properties:
     fullName: doughnutHoleSize
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on
-      doughnut and doughnutExploded charts. Throws an invalid argument exception
+      doughnut and doughnut exploded charts. Throws an `InvalidArgument` error
       on invalid charts.
 
 
@@ -369,7 +369,7 @@ properties:
     package: excel!
     fullName: gradientMidpointColor
     summary: >-
-      Specifies the color for midpoint value of a region map chart series.
+      Specifies the color for the midpoint value of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -387,7 +387,7 @@ properties:
     package: excel!
     fullName: gradientMidpointType
     summary: >-
-      Specifies the type for midpoint value of a region map chart series.
+      Specifies the type for the midpoint value of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -427,7 +427,7 @@ properties:
     package: excel!
     fullName: gradientMinimumColor
     summary: >-
-      Specifies the color for minimum value of a region map chart series.
+      Specifies the color for the minimum value of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -445,7 +445,7 @@ properties:
     package: excel!
     fullName: gradientMinimumType
     summary: >-
-      Specifies the type for minimum value of a region map chart series.
+      Specifies the type for the minimum value of a region map chart series.
 
 
       \[ [API set: ExcelApi
@@ -580,7 +580,7 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: >-
-      Specifies the markers background color of a chart series.
+      Specifies the marker background color of a chart series.
 
 
       \[ [API set: ExcelApi
@@ -638,7 +638,7 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: >-
-      Specifies the markers foreground color of a chart series.
+      Specifies the marker foreground color of a chart series.
 
 
       \[ [API set: ExcelApi
@@ -754,7 +754,7 @@ properties:
     package: excel!
     fullName: markerStyle
     summary: >-
-      Specifies the marker style of a chart series. See Excel.ChartMarkerStyle
+      Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle`
       for details.
 
 
@@ -1188,7 +1188,7 @@ methods:
         OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: dimension
-          description: the dimension of axis where the data from
+          description: The dimension of the axis where the data is from.
           type: '<xref uid="excel!Excel.ChartSeriesDimension:enum" />'
       return:
         type: >-
@@ -1249,7 +1249,7 @@ methods:
         | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: dimensionString
-          description: the dimension of axis where the data from
+          description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:
         type: >-
@@ -1422,7 +1422,7 @@ methods:
       content: 'setBubbleSizes(sourceData: Range): void;'
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void
@@ -1488,8 +1488,8 @@ methods:
     package: excel!
     fullName: setValues(sourceData)
     summary: >-
-      Sets the values for a chart series. For scatter chart, it means Y axis
-      values.
+      Sets the values for a chart series. For scatter charts, it refers to
+      y-axis values.
 
 
       \[ [API set: ExcelApi
@@ -1502,7 +1502,7 @@ methods:
       content: 'setValues(sourceData: Range): void;'
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void
@@ -1538,7 +1538,7 @@ methods:
     package: excel!
     fullName: setXAxisValues(sourceData)
     summary: >-
-      Sets the values of the X axis for a chart series. Only works for scatter
+      Sets the values of the x-axis for a chart series. Only works for scatter
       charts.
 
 
@@ -1552,7 +1552,7 @@ methods:
       content: 'setXAxisValues(sourceData: Range): void;'
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void

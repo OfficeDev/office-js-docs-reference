@@ -63,7 +63,7 @@ methods:
         - id: type
           description: >-
             The type of conditional format being added. See
-            Excel.ConditionalFormatType for details.
+            `Excel.ConditionalFormatType` for details.
           type: '<xref uid="excel!Excel.ConditionalFormatType:enum" />'
       return:
         type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
@@ -117,7 +117,7 @@ methods:
         - id: typeString
           description: >-
             The type of conditional format being added. See
-            Excel.ConditionalFormatType for details.
+            `Excel.ConditionalFormatType` for details.
           type: >-
             "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
             "PresetCriteria" | "ContainsText" | "CellValue"
@@ -224,12 +224,12 @@ methods:
       content: 'getItem(id: string): Excel.ConditionalFormat;'
       parameters:
         - id: id
-          description: The id of the conditional format.
+          description: The ID of the conditional format.
           type: string
       return:
         type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
         description: |-
-          Conditional Format object.
+          Conditional format object.
 
           #### Examples
 
@@ -310,6 +310,34 @@ methods:
           });
 
           ```
+  - name: getItemOrNullObject(id)
+    uid: 'excel!Excel.ConditionalFormatCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(id)
+    summary: >-
+      Returns a conditional format identified by its ID. If the conditional
+      format object does not exist, then this function will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(id: string): Excel.ConditionalFormat;'
+      parameters:
+        - id: id
+          description: The ID of the conditional format
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
     package: excel!

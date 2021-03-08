@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: addresses
     summary: >-
-      Returns an array of address in A1-style. Address value will contain the
+      Returns an array of addresses in A1-style. Address values contain the
       worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4,
       Sheet1!D1:D4"). Read-only.
 
@@ -36,8 +36,8 @@ properties:
     package: excel!
     fullName: areas
     summary: >-
-      Returns the RangeAreasCollection object, each RangeAreas in the collection
-      represent one or more rectangle ranges in one worksheet.
+      Returns the `RangeAreasCollection` object. Each `RangeAreas` in the
+      collection represent one or more rectangle ranges in one worksheet.
 
 
       \[ [API set: ExcelApi
@@ -55,7 +55,7 @@ properties:
     package: excel!
     fullName: ranges
     summary: >-
-      Returns ranges that comprise this object in a RangeCollection object.
+      Returns ranges that comprise this object in a `RangeCollection` object.
 
 
       \[ [API set: ExcelApi

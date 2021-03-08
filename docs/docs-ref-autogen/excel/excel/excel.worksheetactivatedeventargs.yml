@@ -4,7 +4,7 @@ uid: 'excel!Excel.WorksheetActivatedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetActivatedEventArgs
 summary: >-
-  Provides information about the worksheet that raised the Activated event.
+  Provides information about the worksheet that raised the activated event.
 
 
   \[ [API set: ExcelApi
@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
 
       \[ [API set: ExcelApi
@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: >-
-      Gets the id of the worksheet that is activated.
+      Gets the ID of the worksheet that is activated.
 
 
       \[ [API set: ExcelApi

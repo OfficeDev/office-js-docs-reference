@@ -10,11 +10,11 @@ summary: >-
   view.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApiOnline
+  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -26,7 +26,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -42,11 +42,11 @@ properties:
       the sheet view to be saved.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string;'
@@ -62,11 +62,11 @@ methods:
       Excel UI.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'activate(): void;'
@@ -81,11 +81,11 @@ methods:
       Removes the sheet view from the worksheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
@@ -100,11 +100,11 @@ methods:
       Creates a copy of this sheet view.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \[ [API set: ExcelApiOnline
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'duplicate(name?: string): Excel.NamedSheetView;'
@@ -125,7 +125,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -148,7 +148,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.NamedSheetView;'
@@ -169,7 +169,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -206,7 +206,7 @@ methods:
       contains shallow copies of any loaded child properties from the original
       object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.NamedSheetViewData;'

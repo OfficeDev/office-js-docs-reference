@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy.
+      For EACH ITEM in the collection: ID of the RowColumnPivotHierarchy.
 
 
       \[ [API set: ExcelApi

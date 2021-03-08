@@ -154,7 +154,7 @@ methods:
         - id: index
           description: >-
             Index value of the border object to be retrieved. See
-            Excel.ConditionalRangeBorderIndex for details.
+            `Excel.ConditionalRangeBorderIndex` for details.
           type: '<xref uid="excel!Excel.ConditionalRangeBorderIndex:enum" />'
       return:
         type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
@@ -181,7 +181,7 @@ methods:
         - id: indexString
           description: >-
             Index value of the border object to be retrieved. See
-            Excel.ConditionalRangeBorderIndex for details.
+            `Excel.ConditionalRangeBorderIndex` for details.
           type: '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"'
       return:
         type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'

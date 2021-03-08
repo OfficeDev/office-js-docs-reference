@@ -107,8 +107,9 @@ properties:
     summary: >-
       The text that is automatically filled into any empty cell in the
       PivotTable if `fillEmptyCells == true`<!-- -->. Note that this value
-      persists if `fillEmptyCells` is set to false, and that setting this value
-      does not set that property to true. By default, this is an empty string.
+      persists if `fillEmptyCells` is set to `false`<!-- -->, and that setting
+      this value does not set that property to `true`<!-- -->. By default, this
+      is an empty string.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -145,8 +146,9 @@ properties:
     fullName: fillEmptyCells
     summary: >-
       Specifies whether empty cells in the PivotTable should be populated with
-      the `emptyCellText`<!-- -->. False by default. Note that the value of
-      `emptyCellText` persists when this property is set to false.
+      the `emptyCellText`<!-- -->. Default is `false`<!-- -->. Note that the
+      value of `emptyCellText` persists when this property is set to `false`<!--
+      -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -278,8 +280,8 @@ properties:
     package: excel!
     fullName: subtotalLocation
     summary: >-
-      This property indicates the SubtotalLocationType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the `SubtotalLocationType` of all fields on the
+      PivotTable. If fields have different states, this will be `null`<!-- -->.
 
 
       \[ [API set: ExcelApi
@@ -331,8 +333,8 @@ methods:
       Gets a unique cell in the PivotTable based on a data hierarchy and the row
       and column items of their respective hierarchies. The returned cell is the
       intersection of the given row and column that contains the data from the
-      given hierarchy. This method is the inverse of calling getPivotItems and
-      getDataHierarchy on a particular cell.
+      given hierarchy. This method is the inverse of calling `getPivotItems` and
+      `getDataHierarchy` on a particular cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -348,7 +350,7 @@ methods:
         Excel.Range;
       parameters:
         - id: dataHierarchy
-          description: The dataHierarchy that provides the data item to find.
+          description: The `dataHierarchy` that provides the data item to find.
           type: '<xref uid="excel!Excel.DataPivotHierarchy:class" /> | string'
         - id: rowItems
           description: The PivotItems from the row axis that make up the value to find.

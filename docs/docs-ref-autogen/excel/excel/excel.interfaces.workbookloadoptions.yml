@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.WorkbookLoadOptions
 summary: >-
   Workbook is the top level object which contains related workbook objects such
-  as worksheets, tables, ranges, etc. To learn more about the workbook object
+  as worksheets, tables, and ranges. To learn more about the workbook object
   model, read [Work with workbooks using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
   -->.
@@ -57,7 +57,7 @@ properties:
     package: excel!
     fullName: autoSave
     summary: >-
-      Specifies if the workbook is in autosave mode.
+      Specifies if the workbook is in AutoSave mode.
 
 
       \[ [API set: ExcelApi
@@ -134,7 +134,7 @@ properties:
     fullName: isDirty
     summary: >-
       Specifies if changes have been made since the workbook was last saved. You
-      can set this property to true if you want to close a modified workbook
+      can set this property to `true` if you want to close a modified workbook
       without either saving it or being prompted to save it.
 
 
@@ -252,7 +252,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: >-
-      True if the workbook is open in Read-only mode.
+      Returns `true` if the workbook is open in read-only mode.
 
 
       \[ [API set: ExcelApi
@@ -329,7 +329,7 @@ properties:
     summary: >-
       True if calculations in this workbook will be done using only the
       precision of the numbers as they're displayed. Data will permanently lose
-      accuracy when switching this property from false to true.
+      accuracy when switching this property from `false` to `true`<!-- -->.
 
 
       \[ [API set: ExcelApi

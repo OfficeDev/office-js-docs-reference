@@ -4,7 +4,7 @@ uid: 'excel!Excel.SelectionChangedEventArgs:interface'
 package: excel!
 fullName: Excel.SelectionChangedEventArgs
 summary: >-
-  Provides information about the document that raised the SelectionChanged
+  Provides information about the document that raised the selection changed
   event.
 
 
@@ -21,7 +21,7 @@ properties:
     package: excel!
     fullName: workbook
     summary: >-
-      Gets the workbook object that raised the SelectionChanged event.
+      Gets the workbook object that raised the selection changed event.
 
 
       \[ [API set: ExcelApi

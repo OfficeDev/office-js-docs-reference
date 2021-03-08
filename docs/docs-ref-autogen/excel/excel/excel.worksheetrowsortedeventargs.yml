@@ -40,7 +40,7 @@ properties:
     package: excel!
     fullName: source
     summary: >-
-      Gets the source of the event. See Excel.EventSource for details.
+      Gets the source of the event. See `Excel.EventSource` for details.
 
 
       \[ [API set: ExcelApi
@@ -58,7 +58,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
 
       \[ [API set: ExcelApi
@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: >-
-      Gets the id of the worksheet where the sorting happened.
+      Gets the ID of the worksheet where the sorting happened.
 
 
       \[ [API set: ExcelApi

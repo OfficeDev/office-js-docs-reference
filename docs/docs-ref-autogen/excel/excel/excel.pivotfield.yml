@@ -34,7 +34,7 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Id of the PivotField.
+      ID of the PivotField.
 
 
       \[ [API set: ExcelApi
@@ -141,7 +141,7 @@ methods:
       parameters:
         - id: filter
           description: >-
-            A configured specific PivotFilter or a PivotFilters interface
+            A configured specific PivotFilter, or a PivotFilters interface
             containing multiple configured filters.
           type: '<xref uid="excel!Excel.PivotFilters:interface" />'
       return:
@@ -294,7 +294,7 @@ methods:
           />&lt;boolean&gt;
         description: >-
           True if the field has a filter of type `filterType` applied. If
-          filterType is not specified, true is returned if the field has any
+          `filterType` is not specified, `true` is returned if the field has any
           applied filters.
   - name: isFiltered(filterTypeString)
     uid: 'excel!Excel.PivotField#isFiltered:member(2)'
@@ -326,7 +326,7 @@ methods:
           />&lt;boolean&gt;
         description: >-
           True if the field has a filter of type `filterType` applied. If
-          filterType is not specified, true is returned if the field has any
+          `filterType` is not specified, `true` is returned if the field has any
           applied filters.
   - name: load(options)
     uid: 'excel!Excel.PivotField#load:member(1)'

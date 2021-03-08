@@ -121,7 +121,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: >-
-      Gets a style by name.
+      Gets a `Style` by name.
 
 
       \[ [API set: ExcelApi
@@ -191,6 +191,33 @@ methods:
         - id: index
           description: Index value of the style object to be retrieved. Zero-indexed.
           type: number
+      return:
+        type: '<xref uid="excel!Excel.Style:class" />'
+        description: ''
+  - name: getItemOrNullObject(name)
+    uid: 'excel!Excel.StyleCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(name)
+    summary: >-
+      Gets a style by name. If the style object does not exist, then this
+      function will return an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.Style;'
+      parameters:
+        - id: name
+          description: Name of the style to be retrieved.
+          type: string
       return:
         type: '<xref uid="excel!Excel.Style:class" />'
         description: ''

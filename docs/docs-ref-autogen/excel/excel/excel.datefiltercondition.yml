@@ -229,7 +229,7 @@ fields:
   - name: unknown
     uid: 'excel!Excel.DateFilterCondition.unknown:member'
     package: excel!
-    summary: DateFilterCondition is unknown or unsupported.
+    summary: '`DateFilterCondition` is unknown or unsupported.'
     value: '"Unknown"'
   - name: yearToDate
     uid: 'excel!Excel.DateFilterCondition.yearToDate:member'

@@ -4,8 +4,8 @@ uid: 'excel!Excel.AutoFilter:class'
 package: excel!
 fullName: Excel.AutoFilter
 summary: >-
-  Represents the AutoFilter object. AutoFilter turns the values in Excel column
-  into specific filters based on the cell contents.
+  Represents the `AutoFilter` object. AutoFilter turns the values in Excel
+  column into specific filters based on the cell contents.
 
 
   \[ [API set: ExcelApi
@@ -106,7 +106,7 @@ methods:
         Excel.FilterCriteria): void;
       parameters:
         - id: range
-          description: The range over which the AutoFilter will apply on.
+          description: The range on which the AutoFilter will apply.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: columnIndex
           description: The zero-based column index to which the AutoFilter is applied.
@@ -137,6 +137,34 @@ methods:
           });
 
           ```
+  - name: clearColumnCriteria(columnIndex)
+    uid: 'excel!Excel.AutoFilter#clearColumnCriteria:member(1)'
+    package: excel!
+    fullName: clearColumnCriteria(columnIndex)
+    summary: >-
+      Clears the filter criteria of the AutoFilter.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'clearColumnCriteria(columnIndex: number): void;'
+      parameters:
+        - id: columnIndex
+          description: >-
+            The zero-based column index, which represents which column filter
+            needs to be cleared. If the index value is not supported(for
+            example, if the value is a negative number, or if the value is
+            greater than the number of available columns in the range), then an
+            `InvalidArgument` exception will be thrown.
+          type: number
+      return:
+        type: void
+        description: ''
   - name: clearCriteria()
     uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
     package: excel!
@@ -161,8 +189,8 @@ methods:
     package: excel!
     fullName: getRange()
     summary: >-
-      Returns the Range object that represents the range to which the AutoFilter
-      applies.
+      Returns the `Range` object that represents the range to which the
+      AutoFilter applies.
 
 
       \[ [API set: ExcelApi
@@ -182,10 +210,10 @@ methods:
     fullName: getRangeOrNullObject()
     summary: >-
       Returns the `Range` object that represents the range to which the
-      `AutoFilter` applies. If there is no `Range` object associated with the
-      `AutoFilter`<!-- -->, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information,
-      see [*OrNullObject methods and
+      AutoFilter applies. If there is no `Range` object associated with the
+      AutoFilter, then this method returns an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Line:class'
 package: excel!
 fullName: Excel.Line
 summary: >-
-  Represents a line inside a worksheet. To get the corresponding Shape object,
+  Represents a line inside a worksheet. To get the corresponding `Shape` object,
   use `Line.shape`<!-- -->.
 
 
@@ -110,8 +110,8 @@ properties:
     fullName: beginConnectedSite
     summary: >-
       Represents the connection site to which the beginning of a connector is
-      connected. Returns null when the beginning of the line is not attached to
-      any shape.
+      connected. Returns `null` when the beginning of the line is not attached
+      to any shape.
 
 
       \[ [API set: ExcelApi
@@ -244,7 +244,7 @@ properties:
     fullName: endConnectedSite
     summary: >-
       Represents the connection site to which the end of a connector is
-      connected. Returns null when the end of the line is not attached to any
+      connected. Returns `null` when the end of the line is not attached to any
       shape.
 
 
@@ -317,7 +317,7 @@ properties:
     package: excel!
     fullName: shape
     summary: >-
-      Returns the Shape object associated with the line.
+      Returns the `Shape` object associated with the line.
 
 
       \[ [API set: ExcelApi

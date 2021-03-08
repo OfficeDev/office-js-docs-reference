@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.NamedItemCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.NamedItemCollectionLoadOptions
 summary: >-
-  A collection of all the NamedItem objects that are part of the workbook or
+  A collection of all the `NamedItem` objects that are part of the workbook or
   worksheet, depending on how it was reached.
 
 
@@ -77,8 +77,8 @@ properties:
     package: excel!
     fullName: formula
     summary: >-
-      For EACH ITEM in the collection: The formula of the named item. Formula
-      always starts with a '=' sign.
+      For EACH ITEM in the collection: The formula of the named item. Formulas
+      always start with an equal sign ("=").
 
 
       \[ [API set: ExcelApi
@@ -135,7 +135,7 @@ properties:
     fullName: type
     summary: >-
       For EACH ITEM in the collection: Specifies the type of the value returned
-      by the name's formula. See Excel.NamedItemType for details.
+      by the name's formula. See `Excel.NamedItemType` for details.
 
 
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;

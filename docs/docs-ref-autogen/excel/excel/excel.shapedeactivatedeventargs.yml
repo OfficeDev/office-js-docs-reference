@@ -4,7 +4,7 @@ uid: 'excel!Excel.ShapeDeactivatedEventArgs:interface'
 package: excel!
 fullName: Excel.ShapeDeactivatedEventArgs
 summary: >-
-  Provides information about the shape that raised the Deactivated event.
+  Provides information about the shape that raised the deactivated event.
 
 
   \[ [API set: ExcelApi
@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: shapeId
     summary: >-
-      Gets the id of the shape deactivated shape.
+      Gets the ID of the shape deactivated shape.
 
 
       \[ [API set: ExcelApi
@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
 
       \[ [API set: ExcelApi
@@ -56,7 +56,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: >-
-      Gets the id of the worksheet in which the shape is deactivated.
+      Gets the ID of the worksheet in which the shape is deactivated.
 
 
       \[ [API set: ExcelApi

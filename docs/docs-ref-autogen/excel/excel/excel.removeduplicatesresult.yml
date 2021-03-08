@@ -4,7 +4,7 @@ uid: 'excel!Excel.RemoveDuplicatesResult:class'
 package: excel!
 fullName: Excel.RemoveDuplicatesResult
 summary: >-
-  Represents the results from the removeDuplicates method on range
+  Represents the results from `Range.removeDuplicates`<!-- -->.
 
 
   \[ [API set: ExcelApi
