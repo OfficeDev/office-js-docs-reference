@@ -20907,7 +20907,6 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.TimelineStyleData;
     }
-    var EndIgnoreIntelliSenseInternalTestClass: any;
     /**
      *
      * Represents layout and print settings that are not dependent on any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
@@ -23478,7 +23477,7 @@ export declare namespace Excel {
         verticalAlignment: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed";
         /**
          *
-         * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow` for details.
+         * Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -26174,7 +26173,6 @@ export declare namespace Excel {
          *
          */
         worksheetFormatChanged = "WorksheetFormatChanged",
-        wacoperationEvent = "WACOperationEvent",
         /**
          * `RibbonCommandExecuted` represents the type of event registered on the ribbon and occurs when a user clicks on the ribbon
          *
@@ -35668,7 +35666,7 @@ export declare namespace Excel {
             verticalAlignment?: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed";
             /**
              *
-             * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow` for details.
+             * Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -42159,7 +42157,7 @@ export declare namespace Excel {
             verticalAlignment?: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed";
             /**
              *
-             * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow` for details.
+             * Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -53081,7 +53079,7 @@ export declare namespace Excel {
             verticalAlignment?: boolean;
             /**
              *
-             * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow` for details.
+             * Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
              *
              * [Api set: ExcelApi 1.9]
              */
