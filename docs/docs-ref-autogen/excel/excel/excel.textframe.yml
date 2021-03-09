@@ -288,7 +288,7 @@ properties:
     fullName: verticalOverflow
     summary: >-
       Represents the vertical overflow behavior of the text frame. See
-      Excel.ShapeTextVerticalOverflow<!-- -->\` for details.
+      `Excel.ShapeTextVerticalOverflow` for details.
 
 
       \[ [API set: ExcelApi

@@ -462,28 +462,28 @@ methods:
               }
           }); 
           ```
-  - name: load(option)
+  - name: load(propertyNamesAndPaths)
     uid: 'onenote!OneNote.Image#load:member(3)'
     package: onenote!
-    fullName: load(option)
-    summary: ''
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): OneNote.Image;
+      content: >-
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
+        OneNote.Image;
       parameters:
-        - id: option
-          description: ''
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that
+            specifies the properties to load, and propertyNamesAndPaths.expand
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: '{ select?: string; expand?: string; }'
       return:
         type: '<xref uid="onenote!OneNote.Image:class" />'
         description: ''
