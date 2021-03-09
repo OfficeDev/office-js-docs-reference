@@ -175,11 +175,6 @@ fields:
       `VisualSelectionChanged` represents the type of event registered on a
       `VisualCollection` and occurs when the visual selection changes.
     value: '"VisualSelectionChanged"'
-  - name: wacoperationEvent
-    uid: 'excel!Excel.EventType.wacoperationEvent:member'
-    package: excel!
-    summary: ''
-    value: '"WACOperationEvent"'
   - name: workbookActivated
     uid: 'excel!Excel.EventType.workbookActivated:member'
     package: excel!

@@ -32,6 +32,7 @@ popd
 
 
 pushd tools
+call md tool-inputs
 call npm install
 call npm run build
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts "ExcelApiOnline 1.1" ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts
