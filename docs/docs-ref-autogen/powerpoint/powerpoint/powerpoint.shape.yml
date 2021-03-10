@@ -34,7 +34,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: >-
-      Gets the unique ID of the shape.
+      Gets the unique ID of the shape. The `id` is unique within the slide.
 
 
       \[ [API set: PowerPointApi BETA (PREVIEW
@@ -47,6 +47,24 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: tags
+    uid: 'powerpoint!PowerPoint.Shape#tags:member'
+    package: powerpoint!
+    fullName: tags
+    summary: >-
+      Returns a collection of tags in the shape.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tags: PowerPoint.TagCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
 methods:
   - name: load(options)
     uid: 'powerpoint!PowerPoint.Shape#load:member(1)'

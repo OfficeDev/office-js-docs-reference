@@ -528,10 +528,6 @@ export declare namespace Office {
         visibilityMode: Office.VisibilityMode;
     }
     /**
-     * Function type to turn off the event.
-     */
-    type RemoveEventListener = () => Promise<void>;
-    /**
      * Represents add-in level functionality for operating or configuring various aspects of the add-in.
      */
     export interface Addin {
@@ -557,11 +553,11 @@ export declare namespace Office {
         /**
          * Adds a listener for the `onVisibilityModeChanged` event.
          * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.
-         * @returns A promise that resolves to a function when the listener is added. The `RemoveEventListener` type is defined with `type RemoveEventListener = () => Promise<void>`. Calling it removes the listener.
+         * @returns A promise that resolves to a function when the listener is added. Calling it removes the listener.
          */
         onVisibilityModeChanged(
             listener: (message: VisibilityModeChangedMessage) => void,
-        ): Promise<RemoveEventListener>;
+        ): Promise<() => Promise<void>>;
     }
     /**
      * An interface that contains all the functionality provided to manage the state of the Office ribbon.
@@ -1504,18 +1500,14 @@ export declare namespace Office {
          */
          column?: number
     }
-	/**
-	 * Used to strongly type the `handler` property of RemoveHandlerOptions.
-	 */
-	 type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
     /**
      * Provides options to determine which event handler or handlers are removed.
      */
     export interface RemoveHandlerOptions {
         /**
-         * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed. The `BindingEventHandler` type is defined with `type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any`.
+         * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed.
          */
-        handler?: BindingEventHandler
+        handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
@@ -8248,7 +8240,7 @@ export declare namespace OfficeExtension {
      * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
      */
     const Promise: Office.IPromiseConstructor;
-    type IPromise<T> = Promise<T>;
+    export type IPromise<T> = Promise<T>;
 
     /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
     export class TrackedObjects {

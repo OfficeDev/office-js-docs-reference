@@ -63,6 +63,24 @@ properties:
       content: 'readonly slides: PowerPoint.SlideCollection;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
+  - name: tags
+    uid: 'powerpoint!PowerPoint.Presentation#tags:member'
+    package: powerpoint!
+    fullName: tags
+    summary: >-
+      Returns a collection of tags attached to the presentation.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tags: PowerPoint.TagCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
   - name: title
     uid: 'powerpoint!PowerPoint.Presentation#title:member'
     package: powerpoint!

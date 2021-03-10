@@ -35,7 +35,8 @@ properties:
     package: powerpoint!
     fullName: id
     summary: >-
-      For EACH ITEM in the collection: Gets the unique ID of the shape.
+      For EACH ITEM in the collection: Gets the unique ID of the shape. The `id`
+      is unique within the slide.
 
 
       \[ [API set: PowerPointApi BETA (PREVIEW
