@@ -30,14 +30,17 @@ properties:
     fullName: handler
     summary: >-
       The handler to be removed. If a particular handler is not specified, then
-      all handlers for the specified event type are removed. The
-      `BindingEventHandler` type is defined with `type BindingEventHandler =
-      (eventArgs?: Office.BindingDataChangedEventArgs |
-      Office.BindingSelectionChangedEventArgs) => any`<!-- -->.
+      all handlers for the specified event type are removed.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'handler?: BindingEventHandler'
+      content: >-
+        handler?: (eventArgs?: Office.BindingDataChangedEventArgs |
+        Office.BindingSelectionChangedEventArgs) => any;
       return:
-        type: '<xref uid="office!Office.BindingEventHandler:type" />'
+        type: >-
+          (eventArgs?: <xref
+          uid="office!Office.BindingDataChangedEventArgs:interface" /> | <xref
+          uid="office!Office.BindingSelectionChangedEventArgs:interface" />)
+          =&gt; any

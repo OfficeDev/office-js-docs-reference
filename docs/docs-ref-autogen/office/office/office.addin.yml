@@ -49,7 +49,7 @@ methods:
       content: |-
         onVisibilityModeChanged(
                     listener: (message: VisibilityModeChangedMessage) => void,
-                ): Promise<RemoveEventListener>;
+                ): Promise<() => Promise<void>>;
       parameters:
         - id: listener
           description: >-
@@ -60,11 +60,10 @@ methods:
             uid="office!Office.VisibilityModeChangedMessage:interface" />) =&gt;
             void
       return:
-        type: 'Promise&lt;<xref uid="office!Office.RemoveEventListener:type" />&gt;'
+        type: Promise&lt;() =&gt; Promise&lt;void&gt;&gt;
         description: >-
-          A promise that resolves to a function when the listener is added. The
-          `RemoveEventListener` type is defined with `type RemoveEventListener =
-          () => Promise<void>`<!-- -->. Calling it removes the listener.
+          A promise that resolves to a function when the listener is added.
+          Calling it removes the listener.
   - name: setStartupBehavior(behavior)
     uid: 'office!Office.Addin#setStartupBehavior:member(1)'
     package: office!
