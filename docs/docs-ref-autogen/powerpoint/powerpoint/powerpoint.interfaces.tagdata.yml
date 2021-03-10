@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TagData
+uid: 'powerpoint!PowerPoint.Interfaces.TagData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TagData
+summary: An interface describing the data returned by calling `tag.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: key
+    uid: 'powerpoint!PowerPoint.Interfaces.TagData#key:member'
+    package: powerpoint!
+    fullName: key
+    summary: >-
+      Gets the unique ID of the tag. The `key` is unique within the owning
+      `TagCollection` and always stored as uppercase letters within the
+      document.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'key?: string;'
+      return:
+        type: string
+  - name: value
+    uid: 'powerpoint!PowerPoint.Interfaces.TagData#value:member'
+    package: powerpoint!
+    fullName: value
+    summary: >-
+      Gets the value of the tag.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'value?: string;'
+      return:
+        type: string

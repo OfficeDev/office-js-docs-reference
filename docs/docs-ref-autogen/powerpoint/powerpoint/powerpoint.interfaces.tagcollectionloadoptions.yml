@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TagCollectionLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TagCollectionLoadOptions
+summary: >-
+  Represents the collection of tags.
+
+
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: key
+    uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions#key:member'
+    package: powerpoint!
+    fullName: key
+    summary: >-
+      For EACH ITEM in the collection: Gets the unique ID of the tag. The `key`
+      is unique within the owning `TagCollection` and always stored as uppercase
+      letters within the document.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions#value:member'
+    package: powerpoint!
+    fullName: value
+    summary: >-
+      For EACH ITEM in the collection: Gets the value of the tag.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type: boolean

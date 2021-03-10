@@ -39,6 +39,10 @@ items:
             uid: 'powerpoint!PowerPoint.SlideMaster:class'
           - name: SlideMasterCollection
             uid: 'powerpoint!PowerPoint.SlideMasterCollection:class'
+          - name: Tag
+            uid: 'powerpoint!PowerPoint.Tag:class'
+          - name: TagCollection
+            uid: 'powerpoint!PowerPoint.TagCollection:class'
       - name: Common API
         uid: office!
         items:

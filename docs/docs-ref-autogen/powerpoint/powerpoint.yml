@@ -29,6 +29,12 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagUpdateData:interface'
 classes:
   - 'powerpoint!PowerPoint.Application:class'
   - 'powerpoint!PowerPoint.Presentation:class'
@@ -41,6 +47,8 @@ classes:
   - 'powerpoint!PowerPoint.SlideLayoutCollection:class'
   - 'powerpoint!PowerPoint.SlideMaster:class'
   - 'powerpoint!PowerPoint.SlideMasterCollection:class'
+  - 'powerpoint!PowerPoint.Tag:class'
+  - 'powerpoint!PowerPoint.TagCollection:class'
 enums:
   - 'powerpoint!PowerPoint.ErrorCodes:enum'
   - 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
