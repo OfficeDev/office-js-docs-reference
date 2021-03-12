@@ -101,6 +101,24 @@ properties:
       content: 'readonly slideMaster: PowerPoint.SlideMaster;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.SlideMaster:class" />'
+  - name: tags
+    uid: 'powerpoint!PowerPoint.Slide#tags:member'
+    package: powerpoint!
+    fullName: tags
+    summary: >-
+      Returns a collection of tags in the slide.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tags: PowerPoint.TagCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
 methods:
   - name: delete()
     uid: 'powerpoint!PowerPoint.Slide#delete:member(1)'

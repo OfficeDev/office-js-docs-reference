@@ -45,6 +45,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         readonly slides: PowerPoint.SlideCollection;
+        /**
+         *
+         * Returns a collection of tags attached to the presentation.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tags: PowerPoint.TagCollection;
         readonly title: string;
         /**
          * Inserts the specified slides from a presentation into the current presentation.
@@ -167,6 +175,152 @@ export declare namespace PowerPoint {
     }
     /**
      *
+     * Represents a single tag in the slide.
+     *
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Tag extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         *
+         * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly key: string;
+        /**
+         *
+         * Gets the value of the tag.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        value: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.TagLoadOptions): PowerPoint.Tag;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.Tag;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.Tag;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original PowerPoint.Tag object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.TagData;
+    }
+    /**
+     *
+     * Represents the collection of tags.
+     *
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class TagCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.Tag[];
+        /**
+         * Adds a new tag at the end of the collection. If the `key` already exists in the collection, the value of the existing tag will be replaced with the given `value`.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. 'key' parameter is case-insensitive, but it is always capitalized when saved in the document.
+         * @param value - The value of the tag.
+         */
+        add(key: string, value: string): void;
+        /**
+         * Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. `key` parameter is case-insensitive.
+         */
+        delete(key: string): void;
+        /**
+         * Gets the number of tags in the collection.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of tags in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a tag using its unique ID. An error is thrown if the tag does not exist.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The ID of the tag.
+         * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.
+         */
+        getItem(key: string): PowerPoint.Tag;
+        /**
+         * Gets a tag using its zero-based index in the collection. An error is thrown if the index is out of range.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The index of the tag in the collection.
+         * @returns The tag at the given index. An error is thrown if index is out of range.
+         */
+        getItemAt(index: number): PowerPoint.Tag;
+        /**
+         * Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The ID of the tag.
+         * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
+         */
+        getItemOrNullObject(key: string): PowerPoint.Tag;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.TagCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.TagCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.TagCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TagCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.TagCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.TagCollectionData;
+    }
+    /**
+     *
      * Represents a single shape in the slide.
      *
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -177,7 +331,15 @@ export declare namespace PowerPoint {
         context: RequestContext;
         /**
          *
-         * Gets the unique ID of the shape.
+         * Returns a collection of tags in the shape.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tags: PowerPoint.TagCollection;
+        /**
+         *
+         * Gets the unique ID of the shape. The `id` is unique within the slide.
          *
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
@@ -286,6 +448,195 @@ export declare namespace PowerPoint {
     }
     /**
      *
+     * Represents the layout of a slide.
+     *
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideLayout extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         *
+         * Gets the unique ID of the slide layout.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         *
+         * Gets the name of the slide layout.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideLayoutLoadOptions): PowerPoint.SlideLayout;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideLayout;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideLayout;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original PowerPoint.SlideLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.SlideLayoutData;
+    }
+    /**
+     *
+     * Represents the collection of layouts provided by the Slide Master for slides.
+     *
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideLayoutCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.SlideLayout[];
+        /**
+         * Gets the number of layouts in the collection.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of layouts in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a layout using its unique ID.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The ID of the layout.
+         * @returns The layout with the unique ID. If such a layout does not exist, an error is thrown.
+         */
+        getItem(key: string): PowerPoint.SlideLayout;
+        /**
+         * Gets a layout using its zero-based index in the collection.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The index of the layout in the collection.
+         * @returns The layout at the given index. An error is thrown if index is out of range.
+         */
+        getItemAt(index: number): PowerPoint.SlideLayout;
+        /**
+         * Gets a layout using its unique ID.  If such a layout does not exist, an object with an `isNullObject` property set to true is returned. For further information,
+                    see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - The ID of the layout.
+         * @returns The layout with the unique ID.
+         */
+        getItemOrNullObject(id: string): PowerPoint.SlideLayout;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.SlideLayoutCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideLayoutCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideLayoutCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.SlideLayoutCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.SlideLayoutCollectionData;
+    }
+    /**
+     *
+     * Represents the Slide Master of a slide.
+     *
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideMaster extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         *
+         * Gets the collection of layouts provided by the Slide Master for slides.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly layouts: PowerPoint.SlideLayoutCollection;
+        /**
+         *
+         * Gets the unique ID of the Slide Master.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         *
+         * Gets the unique name of the Slide Master.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideMasterLoadOptions): PowerPoint.SlideMaster;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideMaster;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideMaster;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original PowerPoint.SlideMaster object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.SlideMasterData;
+    }
+    /**
+     *
      * Represents a single slide of a presentation.
      *
      * [Api set: PowerPointApi 1.2]
@@ -317,6 +668,14 @@ export declare namespace PowerPoint {
          * @beta
          */
         readonly slideMaster: PowerPoint.SlideMaster;
+        /**
+         *
+         * Returns a collection of tags in the slide.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tags: PowerPoint.TagCollection;
         /**
          *
          * Gets the unique ID of the slide.
@@ -440,120 +799,6 @@ export declare namespace PowerPoint {
     }
     /**
      *
-     * Represents the Slide Master of a slide.
-     *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class SlideMaster extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         *
-         * Gets the collection of layouts provided by the Slide Master for slides.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly layouts: PowerPoint.SlideLayoutCollection;
-        /**
-         *
-         * Gets the unique ID of the Slide Master.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly id: string;
-        /**
-         *
-         * Gets the unique name of the Slide Master.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly name: string;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.SlideMasterLoadOptions): PowerPoint.SlideMaster;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.SlideMaster;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.SlideMaster;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.SlideMaster object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): PowerPoint.Interfaces.SlideMasterData;
-    }
-    /**
-     *
-     * Represents the layout of a slide.
-     *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class SlideLayout extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         *
-         * Gets the unique ID of the slide layout.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly id: string;
-        /**
-         *
-         * Gets the name of the slide layout.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly name: string;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.SlideLayoutLoadOptions): PowerPoint.SlideLayout;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.SlideLayout;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.SlideLayout;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.SlideLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): PowerPoint.Interfaces.SlideLayoutData;
-    }
-    /**
-     *
      * Represents the collection of Slide Masters in the presentation.
      *
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -627,81 +872,6 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.SlideMasterCollectionData;
     }
-    /**
-     *
-     * Represents the collection of layouts provided by the Slide Master for slides.
-     *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class SlideLayoutCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: PowerPoint.SlideLayout[];
-        /**
-         * Gets the number of layouts in the collection.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         * @returns The number of layouts in the collection.
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a layout using its unique ID.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param key - The ID of the layout.
-         * @returns The layout with the unique ID. If such a layout does not exist, an error is thrown.
-         */
-        getItem(key: string): PowerPoint.SlideLayout;
-        /**
-         * Gets a layout using its zero-based index in the collection.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param index - The index of the layout in the collection.
-         * @returns The layout at the given index. An error is thrown if index is out of range.
-         */
-        getItemAt(index: number): PowerPoint.SlideLayout;
-        /**
-         * Gets a layout using its unique ID.  If such a layout does not exist, an object with an `isNullObject` property set to true is returned. For further information,
-                    see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param id - The ID of the layout.
-         * @returns The layout with the unique ID.
-         */
-        getItemOrNullObject(id: string): PowerPoint.SlideLayout;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.SlideLayoutCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.SlideLayoutCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideLayoutCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.SlideLayoutCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): PowerPoint.Interfaces.SlideLayoutCollectionData;
-    }
     enum ErrorCodes {
         generalException = "GeneralException",
     }
@@ -719,9 +889,28 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the Tag object, for use in `tag.set({ ... })`. */
+        export interface TagUpdateData {
+            /**
+             *
+             * Gets the value of the tag.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: string;
+        }
+        /** An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`. */
+        export interface TagCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TagData[];
+        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`. */
+        export interface SlideLayoutCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideLayoutData[];
         }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
@@ -731,19 +920,38 @@ export declare namespace PowerPoint {
         export interface SlideMasterCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideMasterData[];
         }
-        /** An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`. */
-        export interface SlideLayoutCollectionUpdateData {
-            items?: PowerPoint.Interfaces.SlideLayoutData[];
-        }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             title?: string;
+        }
+        /** An interface describing the data returned by calling `tag.toJSON()`. */
+        export interface TagData {
+            /**
+             *
+             * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: string;
+            /**
+             *
+             * Gets the value of the tag.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: string;
+        }
+        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
+        export interface TagCollectionData {
+            items?: PowerPoint.Interfaces.TagData[];
         }
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
             /**
              *
-             * Gets the unique ID of the shape.
+             * Gets the unique ID of the shape. The `id` is unique within the slide.
              *
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
@@ -753,39 +961,6 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
-        }
-        /** An interface describing the data returned by calling `slide.toJSON()`. */
-        export interface SlideData {
-            /**
-             *
-             * Gets the unique ID of the slide.
-             *
-             * [Api set: PowerPointApi 1.2]
-             */
-            id?: string;
-        }
-        /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
-        export interface SlideCollectionData {
-            items?: PowerPoint.Interfaces.SlideData[];
-        }
-        /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
-        export interface SlideMasterData {
-            /**
-             *
-             * Gets the unique ID of the Slide Master.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: string;
-            /**
-             *
-             * Gets the unique name of the Slide Master.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            name?: string;
         }
         /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
         export interface SlideLayoutData {
@@ -806,13 +981,46 @@ export declare namespace PowerPoint {
              */
             name?: string;
         }
-        /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
-        export interface SlideMasterCollectionData {
-            items?: PowerPoint.Interfaces.SlideMasterData[];
-        }
         /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
         export interface SlideLayoutCollectionData {
             items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
+        /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
+        export interface SlideMasterData {
+            /**
+             *
+             * Gets the unique ID of the Slide Master.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             *
+             * Gets the unique name of the Slide Master.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+        }
+        /** An interface describing the data returned by calling `slide.toJSON()`. */
+        export interface SlideData {
+            /**
+             *
+             * Gets the unique ID of the slide.
+             *
+             * [Api set: PowerPointApi 1.2]
+             */
+            id?: string;
+        }
+        /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
+        export interface SlideCollectionData {
+            items?: PowerPoint.Interfaces.SlideData[];
+        }
+        /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
+        export interface SlideMasterCollectionData {
+            items?: PowerPoint.Interfaces.SlideMasterData[];
         }
         /**
          * [Api set: PowerPointApi 1.0]
@@ -823,6 +1031,64 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             title?: boolean;
+        }
+        /**
+         *
+         * Represents a single tag in the slide.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TagLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             *
+             * Gets the value of the tag.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
+        }
+        /**
+         *
+         * Represents the collection of tags.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TagCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the value of the tag.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
         }
         /**
          *
@@ -838,7 +1104,7 @@ export declare namespace PowerPoint {
             $all?: boolean;
             /**
              *
-             * Gets the unique ID of the shape.
+             * Gets the unique ID of the shape. The `id` is unique within the slide.
              *
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
@@ -859,12 +1125,99 @@ export declare namespace PowerPoint {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the unique ID of the shape.
+             * For EACH ITEM in the collection: Gets the unique ID of the shape. The `id` is unique within the slide.
              *
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             id?: boolean;
+        }
+        /**
+         *
+         * Represents the layout of a slide.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideLayoutLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * Gets the unique ID of the slide layout.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * Gets the name of the slide layout.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+        }
+        /**
+         *
+         * Represents the collection of layouts provided by the Slide Master for slides.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideLayoutCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the unique ID of the slide layout.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the name of the slide layout.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+        }
+        /**
+         *
+         * Represents the Slide Master of a slide.
+         *
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideMasterLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * Gets the unique ID of the Slide Master.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * Gets the unique name of the Slide Master.
+             *
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
         }
         /**
          *
@@ -938,64 +1291,6 @@ export declare namespace PowerPoint {
         }
         /**
          *
-         * Represents the Slide Master of a slide.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface SlideMasterLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             *
-             * Gets the unique ID of the Slide Master.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             *
-             * Gets the unique name of the Slide Master.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            name?: boolean;
-        }
-        /**
-         *
-         * Represents the layout of a slide.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface SlideLayoutLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             *
-             * Gets the unique ID of the slide layout.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             *
-             * Gets the name of the slide layout.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            name?: boolean;
-        }
-        /**
-         *
          * Represents the collection of Slide Masters in the presentation.
          *
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -1017,35 +1312,6 @@ export declare namespace PowerPoint {
             /**
              *
              * For EACH ITEM in the collection: Gets the unique name of the Slide Master.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            name?: boolean;
-        }
-        /**
-         *
-         * Represents the collection of layouts provided by the Slide Master for slides.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface SlideLayoutCollectionLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the unique ID of the slide layout.
-             *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the name of the slide layout.
              *
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta

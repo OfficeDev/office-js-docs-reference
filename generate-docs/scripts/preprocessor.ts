@@ -214,6 +214,7 @@ function applyRegularExpressions (definitionsIn) {
         .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(type)(\s+)/gm, `$1export $2$3`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
 }
