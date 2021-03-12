@@ -59,162 +59,6 @@ properties:
       content: 'readonly items: Excel.Chart[];'
       return:
         type: '<xref uid="excel!Excel.Chart:class" />[]'
-  - name: onActivated
-    uid: 'excel!Excel.ChartCollection#onActivated:member'
-    package: excel!
-    fullName: onActivated
-    summary: >-
-      Occurs when a chart is activated.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onActivated:
-        OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onActivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The ID of the active chart is: " + event.chartId)
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onAdded
-    uid: 'excel!Excel.ChartCollection#onAdded:member'
-    package: excel!
-    fullName: onAdded
-    summary: >-
-      Occurs when a new chart is added to the worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onAdded:
-        OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ChartAddedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onAdded.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("A chart has been added with ID: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onDeactivated
-    uid: 'excel!Excel.ChartCollection#onDeactivated:member'
-    package: excel!
-    fullName: onDeactivated
-    summary: >-
-      Occurs when a chart is deactivated.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDeactivated:
-        OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onDeactivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The chart with this ID was deactivated: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onDeleted
-    uid: 'excel!Excel.ChartCollection#onDeleted:member'
-    package: excel!
-    fullName: onDeleted
-    summary: >-
-      Occurs when a chart is deleted.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDeleted:
-        OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ChartDeletedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onDeleted.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The chart with this ID was deleted: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
 methods:
   - name: 'add(type, sourceData, seriesBy)'
     uid: 'excel!Excel.ChartCollection#add:member(1)'
@@ -596,4 +440,161 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.ChartCollectionData:interface" />'
         description: ''
+events:
+  - name: onActivated
+    uid: 'excel!Excel.ChartCollection#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: >-
+      Occurs when a chart is activated.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onActivated:
+        OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onActivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The ID of the active chart is: " + event.chartId)
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onAdded
+    uid: 'excel!Excel.ChartCollection#onAdded:member'
+    package: excel!
+    fullName: onAdded
+    summary: >-
+      Occurs when a new chart is added to the worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onAdded:
+        OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartAddedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onAdded.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("A chart has been added with ID: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onDeactivated
+    uid: 'excel!Excel.ChartCollection#onDeactivated:member'
+    package: excel!
+    fullName: onDeactivated
+    summary: >-
+      Occurs when a chart is deactivated.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeactivated:
+        OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onDeactivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The chart with this ID was deactivated: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onDeleted
+    uid: 'excel!Excel.ChartCollection#onDeleted:member'
+    package: excel!
+    fullName: onDeleted
+    summary: >-
+      Occurs when a chart is deleted.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeleted:
+        OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartDeletedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onDeleted.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The chart with this ID was deleted: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

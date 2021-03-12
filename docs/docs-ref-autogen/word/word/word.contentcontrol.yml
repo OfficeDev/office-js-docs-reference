@@ -206,76 +206,6 @@ properties:
       content: 'readonly lists: Word.ListCollection;'
       return:
         type: '<xref uid="word!Word.ListCollection:class" />'
-  - name: onDataChanged
-    uid: 'word!Word.ContentControl#onDataChanged:member'
-    package: word!
-    fullName: onDataChanged
-    summary: >-
-      Occurs when data within the content control are changed. To get the new
-      text, load this content control in the handler. To get the old text, do
-      not load it.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDataChanged:
-        OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
-  - name: onDeleted
-    uid: 'word!Word.ContentControl#onDeleted:member'
-    package: word!
-    fullName: onDeleted
-    summary: >-
-      Occurs when the content control is deleted. Do not load this content
-      control in the handler, otherwise you won't be able to get its original
-      properties.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDeleted:
-        OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
-  - name: onSelectionChanged
-    uid: 'word!Word.ContentControl#onSelectionChanged:member'
-    package: word!
-    fullName: onSelectionChanged
-    summary: >-
-      Occurs when selection within the content control is changed.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
   - name: paragraphs
     uid: 'word!Word.ContentControl#paragraphs:member'
     package: word!
@@ -2359,4 +2289,75 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
+events:
+  - name: onDataChanged
+    uid: 'word!Word.ContentControl#onDataChanged:member'
+    package: word!
+    fullName: onDataChanged
+    summary: >-
+      Occurs when data within the content control are changed. To get the new
+      text, load this content control in the handler. To get the old text, do
+      not load it.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDataChanged:
+        OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+  - name: onDeleted
+    uid: 'word!Word.ContentControl#onDeleted:member'
+    package: word!
+    fullName: onDeleted
+    summary: >-
+      Occurs when the content control is deleted. Do not load this content
+      control in the handler, otherwise you won't be able to get its original
+      properties.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeleted:
+        OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+  - name: onSelectionChanged
+    uid: 'word!Word.ContentControl#onSelectionChanged:member'
+    package: word!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when selection within the content control is changed.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

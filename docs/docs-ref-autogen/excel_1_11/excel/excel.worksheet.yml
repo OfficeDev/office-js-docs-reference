@@ -222,434 +222,6 @@ properties:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
-  - name: onActivated
-    uid: 'excel!Excel.Worksheet#onActivated:member'
-    package: excel!
-    fullName: onActivated
-    summary: >-
-      Occurs when the worksheet is activated.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onActivated:
-        OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onActivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The activated worksheet ID is: " + event.worksheetId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onCalculated
-    uid: 'excel!Excel.Worksheet#onCalculated:member'
-    package: excel!
-    fullName: onCalculated
-    summary: >-
-      Occurs when the worksheet is calculated.
-
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onCalculated:
-        OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onCalculated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The worksheet has recalculated.");
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onChanged
-    uid: 'excel!Excel.Worksheet#onChanged:member'
-    package: excel!
-    fullName: onChanged
-    summary: >-
-      Occurs when data changes in a specific worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onChanged:
-        OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
-
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onChanged.add(onChange);
-              await context.sync();
-
-              console.log("Added a worksheet-level data-changed event handler.");
-          });
-
-          ```
-  - name: onColumnSorted
-    uid: 'excel!Excel.Worksheet#onColumnSorted:member'
-    package: excel!
-    fullName: onColumnSorted
-    summary: >-
-      Occurs when one or more columns have been sorted. This happens as the
-      result of a left-to-right sort operation.
-
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onColumnSorted:
-        OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetColumnSortedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
-
-          await Excel.run(async (context) => {
-              console.log("Adding column handler");
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // This will fire whenever a column has been moved as the result of a sort action.
-              sheet.onColumnSorted.add((event) => {
-                  return Excel.run((context) => {
-                      console.log("Column sorted: " + event.address);
-                      const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-                      // Clear formatting for section, then highlight the sorted area.
-                      sheet.getRange("A1:E5").format.fill.clear();
-                      if (event.address !== "") {
-                          sheet.getRanges(event.address).format.fill.color = "yellow";
-                      }
-
-                      return context.sync();
-                  });
-              });
-          });
-
-          ```
-  - name: onDeactivated
-    uid: 'excel!Excel.Worksheet#onDeactivated:member'
-    package: excel!
-    fullName: onDeactivated
-    summary: >-
-      Occurs when the worksheet is deactivated.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDeactivated:
-        OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onDeactivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The deactivated worksheet is: " + event.worksheetId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onFormatChanged
-    uid: 'excel!Excel.Worksheet#onFormatChanged:member'
-    package: excel!
-    fullName: onFormatChanged
-    summary: >-
-      Occurs when format changed on a specific worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onFormatChanged:
-        OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
-  - name: onRowHiddenChanged
-    uid: 'excel!Excel.Worksheet#onRowHiddenChanged:member'
-    package: excel!
-    fullName: onRowHiddenChanged
-    summary: >-
-      Occurs when the hidden state of one or more rows has changed on a specific
-      worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onRowHiddenChanged:
-        OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetRowHiddenChangedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.onRowHiddenChanged.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log(`Row ${event.address} is now ${event.changeType}`);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onRowSorted
-    uid: 'excel!Excel.Worksheet#onRowSorted:member'
-    package: excel!
-    fullName: onRowSorted
-    summary: >-
-      Occurs when one or more rows have been sorted. This happens as the result
-      of a top-to-bottom sort operation.
-
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onRowSorted:
-        OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetRowSortedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
-
-          await Excel.run(async (context) => {
-              console.log("Adding row handler");
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // This will fire whenever a row has been moved as the result of a sort action.
-              sheet.onRowSorted.add((event) => {
-                  return Excel.run((context) => {
-                      console.log("Row sorted: " + event.address);
-                      const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-                      // Clear formatting for section, then highlight the sorted area.
-                      sheet.getRange("A1:E5").format.fill.clear();
-                      if (event.address !== "") {
-                          sheet.getRanges(event.address).format.fill.color = "yellow";
-                      }
-
-                      return context.sync();
-                  });
-              });
-          });
-
-          ```
-  - name: onSelectionChanged
-    uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
-    package: excel!
-    fullName: onSelectionChanged
-    summary: >-
-      Occurs when the selection changes on a specific worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onSelectionChanged.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The selected range has changed to: " + event.address);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onSingleClicked
-    uid: 'excel!Excel.Worksheet#onSingleClicked:member'
-    package: excel!
-    fullName: onSingleClicked
-    summary: >-
-      Occurs when a left-clicked/tapped action happens in the worksheet. This
-      event will not be fired when clicking in the following cases:
-
-
-      - The user drags the mouse for multi-selection.
-
-
-      - The user selects a cell in the mode when cell arguments are selected for
-      formula references.
-
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onSingleClicked:
-        OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetSingleClickedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-worksheet-single-click.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.onSingleClicked.add((event) => {
-                  return Excel.run((context) => {
-                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
-                      return context.sync();
-                  });
-              });
-
-              console.log("The worksheet click handler is registered.");
-
-              await context.sync();
-          });
-
-          ```
   - name: pageLayout
     uid: 'excel!Excel.Worksheet#pageLayout:member'
     package: excel!
@@ -2046,4 +1618,433 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'
         description: ''
+events:
+  - name: onActivated
+    uid: 'excel!Excel.Worksheet#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: >-
+      Occurs when the worksheet is activated.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onActivated:
+        OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onActivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The activated worksheet ID is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onCalculated
+    uid: 'excel!Excel.Worksheet#onCalculated:member'
+    package: excel!
+    fullName: onCalculated
+    summary: >-
+      Occurs when the worksheet is calculated.
+
+
+      \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onCalculated:
+        OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onCalculated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The worksheet has recalculated.");
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onChanged
+    uid: 'excel!Excel.Worksheet#onChanged:member'
+    package: excel!
+    fullName: onChanged
+    summary: >-
+      Occurs when data changes in a specific worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+          await Excel.run(async (context) => {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onChanged.add(onChange);
+              await context.sync();
+
+              console.log("Added a worksheet-level data-changed event handler.");
+          });
+
+          ```
+  - name: onColumnSorted
+    uid: 'excel!Excel.Worksheet#onColumnSorted:member'
+    package: excel!
+    fullName: onColumnSorted
+    summary: >-
+      Occurs when one or more columns have been sorted. This happens as the
+      result of a left-to-right sort operation.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onColumnSorted:
+        OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetColumnSortedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
+
+          await Excel.run(async (context) => {
+              console.log("Adding column handler");
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+              // This will fire whenever a column has been moved as the result of a sort action.
+              sheet.onColumnSorted.add((event) => {
+                  return Excel.run((context) => {
+                      console.log("Column sorted: " + event.address);
+                      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+                      // Clear formatting for section, then highlight the sorted area.
+                      sheet.getRange("A1:E5").format.fill.clear();
+                      if (event.address !== "") {
+                          sheet.getRanges(event.address).format.fill.color = "yellow";
+                      }
+
+                      return context.sync();
+                  });
+              });
+          });
+
+          ```
+  - name: onDeactivated
+    uid: 'excel!Excel.Worksheet#onDeactivated:member'
+    package: excel!
+    fullName: onDeactivated
+    summary: >-
+      Occurs when the worksheet is deactivated.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeactivated:
+        OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onDeactivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The deactivated worksheet is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onFormatChanged
+    uid: 'excel!Excel.Worksheet#onFormatChanged:member'
+    package: excel!
+    fullName: onFormatChanged
+    summary: >-
+      Occurs when format changed on a specific worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onFormatChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
+  - name: onRowHiddenChanged
+    uid: 'excel!Excel.Worksheet#onRowHiddenChanged:member'
+    package: excel!
+    fullName: onRowHiddenChanged
+    summary: >-
+      Occurs when the hidden state of one or more rows has changed on a specific
+      worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onRowHiddenChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetRowHiddenChangedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onRowHiddenChanged.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log(`Row ${event.address} is now ${event.changeType}`);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onRowSorted
+    uid: 'excel!Excel.Worksheet#onRowSorted:member'
+    package: excel!
+    fullName: onRowSorted
+    summary: >-
+      Occurs when one or more rows have been sorted. This happens as the result
+      of a top-to-bottom sort operation.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onRowSorted:
+        OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetRowSortedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
+
+          await Excel.run(async (context) => {
+              console.log("Adding row handler");
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+              // This will fire whenever a row has been moved as the result of a sort action.
+              sheet.onRowSorted.add((event) => {
+                  return Excel.run((context) => {
+                      console.log("Row sorted: " + event.address);
+                      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+                      // Clear formatting for section, then highlight the sorted area.
+                      sheet.getRange("A1:E5").format.fill.clear();
+                      if (event.address !== "") {
+                          sheet.getRanges(event.address).format.fill.color = "yellow";
+                      }
+
+                      return context.sync();
+                  });
+              });
+          });
+
+          ```
+  - name: onSelectionChanged
+    uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when the selection changes on a specific worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onSelectionChanged.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The selected range has changed to: " + event.address);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onSingleClicked
+    uid: 'excel!Excel.Worksheet#onSingleClicked:member'
+    package: excel!
+    fullName: onSingleClicked
+    summary: >-
+      Occurs when a left-clicked/tapped action happens in the worksheet. This
+      event will not be fired when clicking in the following cases:
+
+
+      - The user drags the mouse for multi-selection.
+
+
+      - The user selects a cell in the mode when cell arguments are selected for
+      formula references.
+
+
+      \[ [API set: ExcelApi
+      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSingleClicked:
+        OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetSingleClickedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-worksheet-single-click.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onSingleClicked.add((event) => {
+                  return Excel.run((context) => {
+                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
+                      return context.sync();
+                  });
+              });
+
+              console.log("The worksheet click handler is registered.");
+
+              await context.sync();
+          });
+
+          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -273,74 +273,6 @@ properties:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
-  - name: onActivated
-    uid: 'excel!Excel.Workbook#onActivated:member'
-    package: excel!
-    fullName: onActivated
-    summary: >-
-      Occurs when the the workbook is activated. Note: This event will not fire
-      when the workbook is opened.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onActivated:
-        OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
-  - name: onAutoSaveSettingChanged
-    uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
-    package: excel!
-    fullName: onAutoSaveSettingChanged
-    summary: >-
-      Occurs when the AutoSave setting is changed on the workbook.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onAutoSaveSettingChanged:
-        OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface"
-          />&gt;
-  - name: onSelectionChanged
-    uid: 'excel!Excel.Workbook#onSelectionChanged:member'
-    package: excel!
-    fullName: onSelectionChanged
-    summary: >-
-      Occurs when the selection in the document is changed.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
   - name: pivotTables
     uid: 'excel!Excel.Workbook#pivotTables:member'
     package: excel!
@@ -1345,4 +1277,73 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorkbookData:interface" />'
         description: ''
+events:
+  - name: onActivated
+    uid: 'excel!Excel.Workbook#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: >-
+      Occurs when the the workbook is activated. Note: This event will not fire
+      when the workbook is opened.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onActivated:
+        OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
+  - name: onAutoSaveSettingChanged
+    uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
+    package: excel!
+    fullName: onAutoSaveSettingChanged
+    summary: >-
+      Occurs when the AutoSave setting is changed on the workbook.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onAutoSaveSettingChanged:
+        OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface"
+          />&gt;
+  - name: onSelectionChanged
+    uid: 'excel!Excel.Workbook#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when the selection in the document is changed.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

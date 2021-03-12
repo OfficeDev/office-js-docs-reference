@@ -47,79 +47,6 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
-  - name: onDataChanged
-    uid: 'excel!Excel.Binding#onDataChanged:member'
-    package: excel!
-    fullName: onDataChanged
-    summary: >-
-      Occurs when data or formatting within the binding is changed.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDataChanged:
-        OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.BindingDataChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");    
-              const salesTable = sheet.tables.getItem("SalesTable");
-              const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
-              salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
-
-              console.log("The data changed handler is registered.");
-
-              await context.sync();
-          });
-
-          ```
-  - name: onSelectionChanged
-    uid: 'excel!Excel.Binding#onSelectionChanged:member'
-    package: excel!
-    fullName: onSelectionChanged
-    summary: >-
-      Occurs when the selected content in the binding is changed.
-
-
-      *Note**: If multiple, discontiguous cells are selected,
-      `Binding.onSelectionChanged` only reports row and column information for
-      one selection. Use `Worksheet.onSelectionChanged` for multiple selected
-      ranges.
-
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.BindingSelectionChangedEventArgs:interface" />&gt;
   - name: type
     uid: 'excel!Excel.Binding#type:member'
     package: excel!
@@ -386,4 +313,78 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.BindingData:interface" />'
         description: ''
+events:
+  - name: onDataChanged
+    uid: 'excel!Excel.Binding#onDataChanged:member'
+    package: excel!
+    fullName: onDataChanged
+    summary: >-
+      Occurs when data or formatting within the binding is changed.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDataChanged:
+        OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.BindingDataChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");    
+              const salesTable = sheet.tables.getItem("SalesTable");
+              const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+              salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+              console.log("The data changed handler is registered.");
+
+              await context.sync();
+          });
+
+          ```
+  - name: onSelectionChanged
+    uid: 'excel!Excel.Binding#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when the selected content in the binding is changed.
+
+
+      *Note**: If multiple, discontiguous cells are selected,
+      `Binding.onSelectionChanged` only reports row and column information for
+      one selection. Use `Worksheet.onSelectionChanged` for multiple selected
+      ranges.
+
+
+      \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.BindingSelectionChangedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

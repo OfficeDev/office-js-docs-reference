@@ -166,112 +166,6 @@ properties:
       content: 'name: string;'
       return:
         type: string
-  - name: onChanged
-    uid: 'excel!Excel.Table#onChanged:member'
-    package: excel!
-    fullName: onChanged
-    summary: >-
-      Occurs when data in cells changes on a specific table.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onChanged:
-        OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
-
-          await Excel.run(async (context) => {
-              let table = context.workbook.tables.getItemAt(0);
-              table.onChanged.add(onChange);
-
-              await context.sync();
-              console.log("A handler has been registered for the onChanged event");
-          });
-
-          ```
-  - name: onFiltered
-    uid: 'excel!Excel.Table#onFiltered:member'
-    package: excel!
-    fullName: onFiltered
-    summary: >-
-      Occurs when a filter is applied on a specific table.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onFiltered:
-        OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.TableFilteredEventArgs:interface" />&gt;
-  - name: onSelectionChanged
-    uid: 'excel!Excel.Table#onSelectionChanged:member'
-    package: excel!
-    fullName: onSelectionChanged
-    summary: >-
-      Occurs when the selection changes on a specific table.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.TableSelectionChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
-
-          await Excel.run(async (context) => {
-              let table = context.workbook.tables.getItemAt(0);
-              table.onSelectionChanged.add(onSelectionChange);
-
-              await context.sync();
-              console.log("A handler has been registered for table onSelectionChanged event");
-          });
-
-          ```
   - name: rows
     uid: 'excel!Excel.Table#rows:member'
     package: excel!
@@ -1005,4 +899,111 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.TableData:interface" />'
         description: ''
+events:
+  - name: onChanged
+    uid: 'excel!Excel.Table#onChanged:member'
+    package: excel!
+    fullName: onChanged
+    summary: >-
+      Occurs when data in cells changes on a specific table.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onChanged:
+        OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
+
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItemAt(0);
+              table.onChanged.add(onChange);
+
+              await context.sync();
+              console.log("A handler has been registered for the onChanged event");
+          });
+
+          ```
+  - name: onFiltered
+    uid: 'excel!Excel.Table#onFiltered:member'
+    package: excel!
+    fullName: onFiltered
+    summary: >-
+      Occurs when a filter is applied on a specific table.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onFiltered:
+        OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.TableFilteredEventArgs:interface" />&gt;
+  - name: onSelectionChanged
+    uid: 'excel!Excel.Table#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when the selection changes on a specific table.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.TableSelectionChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
+
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItemAt(0);
+              table.onSelectionChanged.add(onSelectionChange);
+
+              await context.sync();
+              console.log("A handler has been registered for table onSelectionChanged event");
+          });
+
+          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

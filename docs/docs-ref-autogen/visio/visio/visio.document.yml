@@ -48,139 +48,6 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="visio!Visio.RequestContext:class" />'
-  - name: onDataRefreshComplete
-    uid: 'visio!Visio.Document#onDataRefreshComplete:member'
-    package: visio!
-    fullName: onDataRefreshComplete
-    summary: >-
-      Occurs when the data is refreshed in the diagram.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDataRefreshComplete:
-        OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.DataRefreshCompleteEventArgs:interface" />&gt;
-  - name: onDocumentLoadComplete
-    uid: 'visio!Visio.Document#onDocumentLoadComplete:member'
-    package: visio!
-    fullName: onDocumentLoadComplete
-    summary: >-
-      Occurs when the Document is loaded, refreshed, or changed.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDocumentLoadComplete:
-        OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.DocumentLoadCompleteEventArgs:interface" />&gt;
-  - name: onPageLoadComplete
-    uid: 'visio!Visio.Document#onPageLoadComplete:member'
-    package: visio!
-    fullName: onPageLoadComplete
-    summary: >-
-      Occurs when the page is finished loading.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onPageLoadComplete:
-        OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.PageLoadCompleteEventArgs:interface" />&gt;
-  - name: onSelectionChanged
-    uid: 'visio!Visio.Document#onSelectionChanged:member'
-    package: visio!
-    fullName: onSelectionChanged
-    summary: >-
-      Occurs when the current selection of shapes changes.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.SelectionChangedEventArgs:interface" />&gt;
-  - name: onShapeMouseEnter
-    uid: 'visio!Visio.Document#onShapeMouseEnter:member'
-    package: visio!
-    fullName: onShapeMouseEnter
-    summary: >-
-      Occurs when the user moves the mouse pointer into the bounding box of a
-      shape.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onShapeMouseEnter:
-        OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.ShapeMouseEnterEventArgs:interface" />&gt;
-  - name: onShapeMouseLeave
-    uid: 'visio!Visio.Document#onShapeMouseLeave:member'
-    package: visio!
-    fullName: onShapeMouseLeave
-    summary: >-
-      Occurs when the user moves the mouse out of the bounding box of a shape.
-
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onShapeMouseLeave:
-        OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.ShapeMouseLeaveEventArgs:interface" />&gt;
   - name: pages
     uid: 'visio!Visio.Document#pages:member'
     package: visio!
@@ -508,4 +375,138 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />'
         description: ''
+events:
+  - name: onDataRefreshComplete
+    uid: 'visio!Visio.Document#onDataRefreshComplete:member'
+    package: visio!
+    fullName: onDataRefreshComplete
+    summary: >-
+      Occurs when the data is refreshed in the diagram.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDataRefreshComplete:
+        OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.DataRefreshCompleteEventArgs:interface" />&gt;
+  - name: onDocumentLoadComplete
+    uid: 'visio!Visio.Document#onDocumentLoadComplete:member'
+    package: visio!
+    fullName: onDocumentLoadComplete
+    summary: >-
+      Occurs when the Document is loaded, refreshed, or changed.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDocumentLoadComplete:
+        OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.DocumentLoadCompleteEventArgs:interface" />&gt;
+  - name: onPageLoadComplete
+    uid: 'visio!Visio.Document#onPageLoadComplete:member'
+    package: visio!
+    fullName: onPageLoadComplete
+    summary: >-
+      Occurs when the page is finished loading.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onPageLoadComplete:
+        OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.PageLoadCompleteEventArgs:interface" />&gt;
+  - name: onSelectionChanged
+    uid: 'visio!Visio.Document#onSelectionChanged:member'
+    package: visio!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when the current selection of shapes changes.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSelectionChanged:
+        OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.SelectionChangedEventArgs:interface" />&gt;
+  - name: onShapeMouseEnter
+    uid: 'visio!Visio.Document#onShapeMouseEnter:member'
+    package: visio!
+    fullName: onShapeMouseEnter
+    summary: >-
+      Occurs when the user moves the mouse pointer into the bounding box of a
+      shape.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onShapeMouseEnter:
+        OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.ShapeMouseEnterEventArgs:interface" />&gt;
+  - name: onShapeMouseLeave
+    uid: 'visio!Visio.Document#onShapeMouseLeave:member'
+    package: visio!
+    fullName: onShapeMouseLeave
+    summary: >-
+      Occurs when the user moves the mouse out of the bounding box of a shape.
+
+
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onShapeMouseLeave:
+        OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="visio!Visio.ShapeMouseLeaveEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

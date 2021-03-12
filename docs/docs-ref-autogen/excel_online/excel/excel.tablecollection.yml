@@ -60,92 +60,6 @@ properties:
       content: 'readonly items: Excel.Table[];'
       return:
         type: '<xref uid="excel!Excel.Table:class" />[]'
-  - name: onAdded
-    uid: 'excel!Excel.TableCollection#onAdded:member'
-    package: excel!
-    fullName: onAdded
-    summary: >-
-      Occurs when new table is added in a workbook.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onAdded:
-        OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.TableAddedEventArgs:interface" />&gt;
-  - name: onChanged
-    uid: 'excel!Excel.TableCollection#onChanged:member'
-    package: excel!
-    fullName: onChanged
-    summary: >-
-      Occurs when data changes on any table in a workbook, or a worksheet.
-
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onChanged:
-        OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
-
-          await Excel.run(async (context) => {
-              let tables = context.workbook.tables;
-              tables.onChanged.add(onChange);
-
-              await context.sync();
-              console.log("A handler has been registered for the table collection onChanged event");
-          });
-
-          ```
-  - name: onDeleted
-    uid: 'excel!Excel.TableCollection#onDeleted:member'
-    package: excel!
-    fullName: onDeleted
-    summary: >-
-      Occurs when the specified table is deleted in a workbook.
-
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        readonly onDeleted:
-        OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.TableDeletedEventArgs:interface" />&gt;
 methods:
   - name: 'add(address, hasHeaders)'
     uid: 'excel!Excel.TableCollection#add:member(1)'
@@ -459,4 +373,91 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.TableCollectionData:interface" />'
         description: ''
+events:
+  - name: onAdded
+    uid: 'excel!Excel.TableCollection#onAdded:member'
+    package: excel!
+    fullName: onAdded
+    summary: >-
+      Occurs when new table is added in a workbook.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onAdded:
+        OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.TableAddedEventArgs:interface" />&gt;
+  - name: onChanged
+    uid: 'excel!Excel.TableCollection#onChanged:member'
+    package: excel!
+    fullName: onChanged
+    summary: >-
+      Occurs when data changes on any table in a workbook, or a worksheet.
+
+
+      \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onChanged:
+        OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
+          await Excel.run(async (context) => {
+              let tables = context.workbook.tables;
+              tables.onChanged.add(onChange);
+
+              await context.sync();
+              console.log("A handler has been registered for the table collection onChanged event");
+          });
+
+          ```
+  - name: onDeleted
+    uid: 'excel!Excel.TableCollection#onDeleted:member'
+    package: excel!
+    fullName: onDeleted
+    summary: >-
+      Occurs when the specified table is deleted in a workbook.
+
+
+      \[ [API set: ExcelApi
+      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onDeleted:
+        OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.TableDeletedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
