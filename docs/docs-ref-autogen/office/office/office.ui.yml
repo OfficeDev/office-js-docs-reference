@@ -226,7 +226,9 @@ methods:
         callback?: (result: AsyncResult<Dialog>) => void): void;
       parameters:
         - id: startAddress
-          description: Accepts the initial HTTPS URL that opens in the dialog.
+          description: >-
+            Accepts the initial full HTTPS URL that opens in the dialog.
+            Relative URLs must not be used.
           type: string
         - id: options
           description: >-
@@ -361,7 +363,9 @@ methods:
         AsyncResult<Dialog>) => void): void;
       parameters:
         - id: startAddress
-          description: Accepts the initial HTTPS URL that opens in the dialog.
+          description: >-
+            Accepts the initial full HTTPS URL that opens in the dialog.
+            Relative URLs must not be used.
           type: string
         - id: callback
           description: >-

@@ -1007,7 +1007,7 @@ export declare namespace Office {
         *   </tr>
         * </table>
         *
-        * @param startAddress - Accepts the initial HTTPS URL that opens in the dialog.
+        * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
         * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
         * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
         */
@@ -1108,7 +1108,7 @@ export declare namespace Office {
         *   </tr>
         * </table>
         *
-        * @param startAddress - Accepts the initial HTTPS URL that opens in the dialog.
+        * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
         * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
         */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
@@ -4166,15 +4166,6 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * **Type-specific behaviors**
-         *
-         * <table>
-         *   <tr>
-         *     <td>`Office.CoercionType.XmlSvg`</td>
-         *     <td>(Excel only): In Excel builds between 16.0.11526.10000 and 16.0.12309.10000, there is a 64KB size limitation for SVG insertions.</td>
-         *   </tr>
-         * </table>
-         *
          * **Hosts**
          *
          * The possible values for the {@link Office.CoercionType} parameter vary by the host.
@@ -4361,16 +4352,6 @@ export declare namespace Office {
          *     <td>PowerPoint</td>
          *     <td>Insert image</td>
          *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
-         *   </tr>
-         * </table>
-         *
-         *
-         * **Type-specific behaviors**
-         *
-         * <table>
-         *   <tr>
-         *     <td>`Office.CoercionType.XmlSvg`</td>
-         *     <td>(Excel only): There is a 64KB size limitation for SVG insertions as of build 16.0.11526.10000.</td>
          *   </tr>
          * </table>
          *
