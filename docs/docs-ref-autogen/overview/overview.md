@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 12/01/2020
+ms.date: 03/17/2021
 ---
 
 # Office Add-ins JavaScript API reference
@@ -94,6 +94,22 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
+                <img src="https://docs.microsoft.com/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" height="140" />
+            </div>
+        </div>
+        <div class="cardText">
+            <h3>PowerPoint APIs</h3>
+            <ul>
+                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-preview">PowerPointApi Preview</a></li>
+                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
+                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
+                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=powerpoint-js-preview">Common APIs</a></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <div class="cardImageOuter">
+            <div class="cardImage">
                 <img src="https://docs.microsoft.com/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" height="140" />
             </div>
         </div>
@@ -115,22 +131,6 @@ The following is a list of APIs for the [supported Office host applications](/of
             <h3>Visio APIs</h3>
             <ul>
                 <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <div class="cardImageOuter">
-            <div class="cardImage">
-                <img src="https://docs.microsoft.com/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" height="140" />
-            </div>
-        </div>
-        <div class="cardText">
-            <h3>PowerPoint APIs</h3>
-            <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-preview">PowerPointApi Preview</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=powerpoint-js-preview">Common APIs</a></li>
             </ul>
         </div>
     </li>
