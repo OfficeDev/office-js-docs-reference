@@ -69,8 +69,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;
+        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails>) => void): void;
       parameters:
         - id: options
           description: >-

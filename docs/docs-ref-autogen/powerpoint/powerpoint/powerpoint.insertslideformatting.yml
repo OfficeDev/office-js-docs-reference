@@ -6,7 +6,7 @@ fullName: PowerPoint.InsertSlideFormatting
 summary: |-
   Specifies the formatting options for when slides are inserted.
 
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

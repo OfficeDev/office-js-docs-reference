@@ -1,8 +1,9 @@
 items:
   - name: API reference
-    href: ~/docs-ref-autogen/overview/office.md
     items:
-      - name: office
+      - name: API reference overview
+        href: ../overview/overview.md
+      - name: Common API
         uid: office!
         items:
           - name: Actions
@@ -203,7 +204,7 @@ items:
             uid: 'office!OfficeExtension.TrackedObjects:class'
           - name: UpdateOptions
             uid: 'office!OfficeExtension.UpdateOptions:interface'
-      - name: office-runtime
+      - name: OfficeRuntime
         uid: office-runtime!
         items:
           - name: ApiInformation

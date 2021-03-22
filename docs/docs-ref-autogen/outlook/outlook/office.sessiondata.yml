@@ -60,7 +60,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        clearAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
+        clearAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) =>
         void): void;
       parameters:
         - id: options
@@ -115,7 +115,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getAllAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getAllAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -166,7 +166,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getAsync(name: string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getAsync(name: string, callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       parameters:
         - id: name
           description: The session data key.
@@ -222,8 +222,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAsync(name: string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeAsync(name: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: name
           description: The session data key.
@@ -284,8 +284,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(name: string, value: string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(name: string, value: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: name
           description: The session data key.

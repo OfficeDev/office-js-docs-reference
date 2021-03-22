@@ -24,7 +24,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'officeTheme: CommonAPI.OfficeTheme;'
+      content: 'officeTheme: Office.OfficeTheme;'
       return:
         type: '<xref uid="office!Office.OfficeTheme:interface" />'
   - name: type

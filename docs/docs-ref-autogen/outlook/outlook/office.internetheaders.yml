@@ -97,8 +97,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(names: string[], options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        getAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<InternetHeaders>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be returned.
@@ -166,8 +166,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAsync(names: string[], options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        removeAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<InternetHeaders>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be removed.
@@ -239,8 +239,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(headers: Object, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(headers: Object, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: headers
           description: >-

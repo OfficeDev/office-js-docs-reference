@@ -1,10 +1,121 @@
 items:
   - name: API reference
-    href: ~/docs-ref-autogen/overview/office.md
     items:
-      - name: excel
+      - name: API reference overview
+        href: ../overview/overview.md
+      - name: Excel
         uid: excel!
         items:
+          - name: Enums
+            uid: ''
+            items:
+              - name: BindingType
+                uid: 'excel!Excel.BindingType:enum'
+              - name: BorderIndex
+                uid: 'excel!Excel.BorderIndex:enum'
+              - name: BorderLineStyle
+                uid: 'excel!Excel.BorderLineStyle:enum'
+              - name: BorderWeight
+                uid: 'excel!Excel.BorderWeight:enum'
+              - name: CalculationMode
+                uid: 'excel!Excel.CalculationMode:enum'
+              - name: CalculationType
+                uid: 'excel!Excel.CalculationType:enum'
+              - name: ChartDataLabelPosition
+                uid: 'excel!Excel.ChartDataLabelPosition:enum'
+              - name: ChartLegendPosition
+                uid: 'excel!Excel.ChartLegendPosition:enum'
+              - name: ChartSeriesBy
+                uid: 'excel!Excel.ChartSeriesBy:enum'
+              - name: ChartType
+                uid: 'excel!Excel.ChartType:enum'
+              - name: ChartUnderlineStyle
+                uid: 'excel!Excel.ChartUnderlineStyle:enum'
+              - name: ClearApplyTo
+                uid: 'excel!Excel.ClearApplyTo:enum'
+              - name: DeleteShiftDirection
+                uid: 'excel!Excel.DeleteShiftDirection:enum'
+              - name: DynamicFilterCriteria
+                uid: 'excel!Excel.DynamicFilterCriteria:enum'
+              - name: ErrorCodes
+                uid: 'excel!Excel.ErrorCodes:enum'
+              - name: FilterDatetimeSpecificity
+                uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
+              - name: FilterOn
+                uid: 'excel!Excel.FilterOn:enum'
+              - name: FilterOperator
+                uid: 'excel!Excel.FilterOperator:enum'
+              - name: HorizontalAlignment
+                uid: 'excel!Excel.HorizontalAlignment:enum'
+              - name: IconSet
+                uid: 'excel!Excel.IconSet:enum'
+              - name: ImageFittingMode
+                uid: 'excel!Excel.ImageFittingMode:enum'
+              - name: InsertShiftDirection
+                uid: 'excel!Excel.InsertShiftDirection:enum'
+              - name: NamedItemType
+                uid: 'excel!Excel.NamedItemType:enum'
+              - name: RangeUnderlineStyle
+                uid: 'excel!Excel.RangeUnderlineStyle:enum'
+              - name: RangeValueType
+                uid: 'excel!Excel.RangeValueType:enum'
+              - name: SheetVisibility
+                uid: 'excel!Excel.SheetVisibility:enum'
+              - name: SortDataOption
+                uid: 'excel!Excel.SortDataOption:enum'
+              - name: SortMethod
+                uid: 'excel!Excel.SortMethod:enum'
+              - name: SortOn
+                uid: 'excel!Excel.SortOn:enum'
+              - name: SortOrientation
+                uid: 'excel!Excel.SortOrientation:enum'
+              - name: VerticalAlignment
+                uid: 'excel!Excel.VerticalAlignment:enum'
+          - name: Icon Sets
+            uid: ''
+            items:
+              - name: FiveArrowsGraySet
+                uid: 'excel!Excel.FiveArrowsGraySet:interface'
+              - name: FiveArrowsSet
+                uid: 'excel!Excel.FiveArrowsSet:interface'
+              - name: FiveBoxesSet
+                uid: 'excel!Excel.FiveBoxesSet:interface'
+              - name: FiveQuartersSet
+                uid: 'excel!Excel.FiveQuartersSet:interface'
+              - name: FiveRatingSet
+                uid: 'excel!Excel.FiveRatingSet:interface'
+              - name: FourArrowsGraySet
+                uid: 'excel!Excel.FourArrowsGraySet:interface'
+              - name: FourArrowsSet
+                uid: 'excel!Excel.FourArrowsSet:interface'
+              - name: FourRatingSet
+                uid: 'excel!Excel.FourRatingSet:interface'
+              - name: FourRedToBlackSet
+                uid: 'excel!Excel.FourRedToBlackSet:interface'
+              - name: FourTrafficLightsSet
+                uid: 'excel!Excel.FourTrafficLightsSet:interface'
+              - name: IconCollections
+                uid: 'excel!Excel.IconCollections:interface'
+              - name: ThreeArrowsGraySet
+                uid: 'excel!Excel.ThreeArrowsGraySet:interface'
+              - name: ThreeArrowsSet
+                uid: 'excel!Excel.ThreeArrowsSet:interface'
+              - name: ThreeFlagsSet
+                uid: 'excel!Excel.ThreeFlagsSet:interface'
+              - name: ThreeSignsSet
+                uid: 'excel!Excel.ThreeSignsSet:interface'
+              - name: ThreeStarsSet
+                uid: 'excel!Excel.ThreeStarsSet:interface'
+              - name: ThreeSymbols2Set
+                uid: 'excel!Excel.ThreeSymbols2Set:interface'
+              - name: ThreeSymbolsSet
+                uid: 'excel!Excel.ThreeSymbolsSet:interface'
+              - name: ThreeTrafficLights1Set
+                uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
+              - name: ThreeTrafficLights2Set
+                uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
+              - name: ThreeTrianglesSet
+                uid: 'excel!Excel.ThreeTrianglesSet:interface'
           - name: Application
             uid: 'excel!Excel.Application:class'
           - name: Binding
@@ -15,18 +126,6 @@ items:
             uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
           - name: BindingSelectionChangedEventArgs
             uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
-          - name: BindingType
-            uid: 'excel!Excel.BindingType:enum'
-          - name: BorderIndex
-            uid: 'excel!Excel.BorderIndex:enum'
-          - name: BorderLineStyle
-            uid: 'excel!Excel.BorderLineStyle:enum'
-          - name: BorderWeight
-            uid: 'excel!Excel.BorderWeight:enum'
-          - name: CalculationMode
-            uid: 'excel!Excel.CalculationMode:enum'
-          - name: CalculationType
-            uid: 'excel!Excel.CalculationType:enum'
           - name: Chart
             uid: 'excel!Excel.Chart:class'
           - name: ChartAreaFormat
@@ -45,8 +144,6 @@ items:
             uid: 'excel!Excel.ChartCollection:class'
           - name: ChartDataLabelFormat
             uid: 'excel!Excel.ChartDataLabelFormat:class'
-          - name: ChartDataLabelPosition
-            uid: 'excel!Excel.ChartDataLabelPosition:enum'
           - name: ChartDataLabels
             uid: 'excel!Excel.ChartDataLabels:class'
           - name: ChartFill
@@ -61,8 +158,6 @@ items:
             uid: 'excel!Excel.ChartLegend:class'
           - name: ChartLegendFormat
             uid: 'excel!Excel.ChartLegendFormat:class'
-          - name: ChartLegendPosition
-            uid: 'excel!Excel.ChartLegendPosition:enum'
           - name: ChartLineFormat
             uid: 'excel!Excel.ChartLineFormat:class'
           - name: ChartPoint
@@ -73,8 +168,6 @@ items:
             uid: 'excel!Excel.ChartPointsCollection:class'
           - name: ChartSeries
             uid: 'excel!Excel.ChartSeries:class'
-          - name: ChartSeriesBy
-            uid: 'excel!Excel.ChartSeriesBy:enum'
           - name: ChartSeriesCollection
             uid: 'excel!Excel.ChartSeriesCollection:class'
           - name: ChartSeriesFormat
@@ -83,68 +176,20 @@ items:
             uid: 'excel!Excel.ChartTitle:class'
           - name: ChartTitleFormat
             uid: 'excel!Excel.ChartTitleFormat:class'
-          - name: ChartType
-            uid: 'excel!Excel.ChartType:enum'
-          - name: ChartUnderlineStyle
-            uid: 'excel!Excel.ChartUnderlineStyle:enum'
-          - name: ClearApplyTo
-            uid: 'excel!Excel.ClearApplyTo:enum'
-          - name: DeleteShiftDirection
-            uid: 'excel!Excel.DeleteShiftDirection:enum'
-          - name: DynamicFilterCriteria
-            uid: 'excel!Excel.DynamicFilterCriteria:enum'
-          - name: ErrorCodes
-            uid: 'excel!Excel.ErrorCodes:enum'
           - name: Filter
             uid: 'excel!Excel.Filter:class'
           - name: FilterCriteria
             uid: 'excel!Excel.FilterCriteria:interface'
           - name: FilterDatetime
             uid: 'excel!Excel.FilterDatetime:interface'
-          - name: FilterDatetimeSpecificity
-            uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
-          - name: FilterOn
-            uid: 'excel!Excel.FilterOn:enum'
-          - name: FilterOperator
-            uid: 'excel!Excel.FilterOperator:enum'
-          - name: FiveArrowsGraySet
-            uid: 'excel!Excel.FiveArrowsGraySet:interface'
-          - name: FiveArrowsSet
-            uid: 'excel!Excel.FiveArrowsSet:interface'
-          - name: FiveBoxesSet
-            uid: 'excel!Excel.FiveBoxesSet:interface'
-          - name: FiveQuartersSet
-            uid: 'excel!Excel.FiveQuartersSet:interface'
-          - name: FiveRatingSet
-            uid: 'excel!Excel.FiveRatingSet:interface'
           - name: FormatProtection
             uid: 'excel!Excel.FormatProtection:class'
-          - name: FourArrowsGraySet
-            uid: 'excel!Excel.FourArrowsGraySet:interface'
-          - name: FourArrowsSet
-            uid: 'excel!Excel.FourArrowsSet:interface'
-          - name: FourRatingSet
-            uid: 'excel!Excel.FourRatingSet:interface'
-          - name: FourRedToBlackSet
-            uid: 'excel!Excel.FourRedToBlackSet:interface'
-          - name: FourTrafficLightsSet
-            uid: 'excel!Excel.FourTrafficLightsSet:interface'
           - name: FunctionResult
             uid: 'excel!Excel.FunctionResult:class'
           - name: Functions
             uid: 'excel!Excel.Functions:class'
-          - name: HorizontalAlignment
-            uid: 'excel!Excel.HorizontalAlignment:enum'
           - name: Icon
             uid: 'excel!Excel.Icon:interface'
-          - name: IconCollections
-            uid: 'excel!Excel.IconCollections:interface'
-          - name: IconSet
-            uid: 'excel!Excel.IconSet:enum'
-          - name: ImageFittingMode
-            uid: 'excel!Excel.ImageFittingMode:enum'
-          - name: InsertShiftDirection
-            uid: 'excel!Excel.InsertShiftDirection:enum'
           - name: ApplicationData
             uid: 'excel!Excel.Interfaces.ApplicationData:interface'
           - name: ApplicationLoadOptions
@@ -166,7 +211,8 @@ items:
           - name: CellValueConditionalFormatData
             uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
           - name: CellValueConditionalFormatUpdateData
-            uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface
           - name: ChartAreaFormatData
             uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
           - name: ChartAreaFormatLoadOptions
@@ -274,7 +320,8 @@ items:
           - name: ChartLegendEntryCollectionData
             uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface'
           - name: ChartLegendEntryCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData:interface
           - name: ChartLegendEntryData
             uid: 'excel!Excel.Interfaces.ChartLegendEntryData:interface'
           - name: ChartLegendEntryUpdateData
@@ -364,7 +411,8 @@ items:
           - name: ChartTrendlineCollectionData
             uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionData:interface'
           - name: ChartTrendlineCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData:interface
           - name: ChartTrendlineData
             uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
           - name: ChartTrendlineFormatData
@@ -376,7 +424,8 @@ items:
           - name: ChartTrendlineLabelFormatData
             uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
           - name: ChartTrendlineLabelFormatUpdateData
-            uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface
           - name: ChartTrendlineLabelUpdateData
             uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
           - name: ChartTrendlineUpdateData
@@ -388,7 +437,8 @@ items:
           - name: ColorScaleConditionalFormatData
             uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
           - name: ColorScaleConditionalFormatUpdateData
-            uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface
           - name: CommentCollectionData
             uid: 'excel!Excel.Interfaces.CommentCollectionData:interface'
           - name: CommentCollectionUpdateData
@@ -406,17 +456,22 @@ items:
           - name: CommentUpdateData
             uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
           - name: ConditionalDataBarNegativeFormatData
-            uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface
           - name: ConditionalDataBarNegativeFormatUpdateData
-            uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface
           - name: ConditionalDataBarPositiveFormatData
-            uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface
           - name: ConditionalDataBarPositiveFormatUpdateData
-            uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface
           - name: ConditionalFormatCollectionData
             uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionData:interface'
           - name: ConditionalFormatCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface
           - name: ConditionalFormatData
             uid: 'excel!Excel.Interfaces.ConditionalFormatData:interface'
           - name: ConditionalFormatRuleData
@@ -426,9 +481,11 @@ items:
           - name: ConditionalFormatUpdateData
             uid: 'excel!Excel.Interfaces.ConditionalFormatUpdateData:interface'
           - name: ConditionalRangeBorderCollectionData
-            uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface
           - name: ConditionalRangeBorderCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface
           - name: ConditionalRangeBorderData
             uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
           - name: ConditionalRangeBorderUpdateData
@@ -454,7 +511,8 @@ items:
           - name: CustomPropertyCollectionData
             uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData:interface'
           - name: CustomPropertyCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.CustomPropertyCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.CustomPropertyCollectionUpdateData:interface
           - name: CustomPropertyData
             uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
           - name: CustomPropertyUpdateData
@@ -468,15 +526,18 @@ items:
           - name: CustomXmlPartScopedCollectionData
             uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface'
           - name: CustomXmlPartScopedCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface
           - name: DataBarConditionalFormatData
             uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
           - name: DataBarConditionalFormatUpdateData
-            uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface
           - name: DataPivotHierarchyCollectionData
             uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionData:interface'
           - name: DataPivotHierarchyCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData:interface
           - name: DataPivotHierarchyData
             uid: 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
           - name: DataPivotHierarchyUpdateData
@@ -496,9 +557,11 @@ items:
           - name: FilterLoadOptions
             uid: 'excel!Excel.Interfaces.FilterLoadOptions:interface'
           - name: FilterPivotHierarchyCollectionData
-            uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface'
+            uid: >-
+              excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface
           - name: FilterPivotHierarchyCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData:interface
           - name: FilterPivotHierarchyData
             uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
           - name: FilterPivotHierarchyUpdateData
@@ -530,7 +593,8 @@ items:
           - name: IconSetConditionalFormatData
             uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
           - name: IconSetConditionalFormatUpdateData
-            uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface
           - name: ImageData
             uid: 'excel!Excel.Interfaces.ImageData:interface'
           - name: IterativeCalculationData
@@ -578,7 +642,8 @@ items:
           - name: PivotHierarchyCollectionData
             uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionData:interface'
           - name: PivotHierarchyCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.PivotHierarchyCollectionUpdateData:interface
           - name: PivotHierarchyData
             uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
           - name: PivotHierarchyUpdateData
@@ -608,11 +673,13 @@ items:
           - name: PivotTableScopedCollectionData
             uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
           - name: PivotTableScopedCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface
           - name: PivotTableStyleCollectionData
             uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
           - name: PivotTableStyleCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface
           - name: PivotTableStyleData
             uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
           - name: PivotTableStyleUpdateData
@@ -620,9 +687,11 @@ items:
           - name: PivotTableUpdateData
             uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
           - name: PresetCriteriaConditionalFormatData
-            uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
+            uid: >-
+              excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface
           - name: PresetCriteriaConditionalFormatUpdateData
-            uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface
           - name: RangeAreasCollectionData
             uid: 'excel!Excel.Interfaces.RangeAreasCollectionData:interface'
           - name: RangeAreasCollectionUpdateData
@@ -686,9 +755,11 @@ items:
           - name: RemoveDuplicatesResultData
             uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
           - name: RowColumnPivotHierarchyCollectionData
-            uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface'
+            uid: >-
+              excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface
           - name: RowColumnPivotHierarchyCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData:interface
           - name: RowColumnPivotHierarchyData
             uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
           - name: RowColumnPivotHierarchyUpdateData
@@ -834,7 +905,8 @@ items:
           - name: TopBottomConditionalFormatData
             uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
           - name: TopBottomConditionalFormatUpdateData
-            uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface
           - name: WorkbookCreatedData
             uid: 'excel!Excel.Interfaces.WorkbookCreatedData:interface'
           - name: WorkbookData
@@ -854,9 +926,11 @@ items:
           - name: WorksheetCollectionUpdateData
             uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
           - name: WorksheetCustomPropertyCollectionData
-            uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface'
+            uid: >-
+              excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface
           - name: WorksheetCustomPropertyCollectionUpdateData
-            uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
+            uid: >-
+              excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface
           - name: WorksheetCustomPropertyData
             uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
           - name: WorksheetCustomPropertyUpdateData
@@ -875,8 +949,6 @@ items:
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemCollection
             uid: 'excel!Excel.NamedItemCollection:class'
-          - name: NamedItemType
-            uid: 'excel!Excel.NamedItemType:enum'
           - name: PivotTable
             uid: 'excel!Excel.PivotTable:class'
           - name: PivotTableCollection
@@ -897,10 +969,6 @@ items:
             uid: 'excel!Excel.RangeReference:interface'
           - name: RangeSort
             uid: 'excel!Excel.RangeSort:class'
-          - name: RangeUnderlineStyle
-            uid: 'excel!Excel.RangeUnderlineStyle:enum'
-          - name: RangeValueType
-            uid: 'excel!Excel.RangeValueType:enum'
           - name: RangeView
             uid: 'excel!Excel.RangeView:class'
           - name: RangeViewCollection
@@ -913,18 +981,8 @@ items:
             uid: 'excel!Excel.SelectionChangedEventArgs:interface'
           - name: Session
             uid: 'excel!Excel.Session:interface'
-          - name: SheetVisibility
-            uid: 'excel!Excel.SheetVisibility:enum'
-          - name: SortDataOption
-            uid: 'excel!Excel.SortDataOption:enum'
           - name: SortField
             uid: 'excel!Excel.SortField:interface'
-          - name: SortMethod
-            uid: 'excel!Excel.SortMethod:enum'
-          - name: SortOn
-            uid: 'excel!Excel.SortOn:enum'
-          - name: SortOrientation
-            uid: 'excel!Excel.SortOrientation:enum'
           - name: Table
             uid: 'excel!Excel.Table:class'
           - name: TableCollection
@@ -939,28 +997,6 @@ items:
             uid: 'excel!Excel.TableRowCollection:class'
           - name: TableSort
             uid: 'excel!Excel.TableSort:class'
-          - name: ThreeArrowsGraySet
-            uid: 'excel!Excel.ThreeArrowsGraySet:interface'
-          - name: ThreeArrowsSet
-            uid: 'excel!Excel.ThreeArrowsSet:interface'
-          - name: ThreeFlagsSet
-            uid: 'excel!Excel.ThreeFlagsSet:interface'
-          - name: ThreeSignsSet
-            uid: 'excel!Excel.ThreeSignsSet:interface'
-          - name: ThreeStarsSet
-            uid: 'excel!Excel.ThreeStarsSet:interface'
-          - name: ThreeSymbols2Set
-            uid: 'excel!Excel.ThreeSymbols2Set:interface'
-          - name: ThreeSymbolsSet
-            uid: 'excel!Excel.ThreeSymbolsSet:interface'
-          - name: ThreeTrafficLights1Set
-            uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
-          - name: ThreeTrafficLights2Set
-            uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
-          - name: ThreeTrianglesSet
-            uid: 'excel!Excel.ThreeTrianglesSet:interface'
-          - name: VerticalAlignment
-            uid: 'excel!Excel.VerticalAlignment:enum'
           - name: Workbook
             uid: 'excel!Excel.Workbook:class'
           - name: Worksheet
@@ -971,3 +1007,204 @@ items:
             uid: 'excel!Excel.WorksheetProtection:class'
           - name: WorksheetProtectionOptions
             uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+      - name: Common API
+        uid: office!
+        items:
+          - name: Actions
+            uid: 'office!Office.Actions:interface'
+          - name: ActiveView
+            uid: 'office!Office.ActiveView:enum'
+          - name: AddBindingFromNamedItemOptions
+            uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
+          - name: AddBindingFromPromptOptions
+            uid: 'office!Office.AddBindingFromPromptOptions:interface'
+          - name: AddBindingFromSelectionOptions
+            uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+          - name: Addin
+            uid: 'office!Office.Addin:interface'
+          - name: Event
+            uid: 'office!Office.AddinCommands.Event:interface'
+          - name: EventCompletedOptions
+            uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+          - name: Source
+            uid: 'office!Office.AddinCommands.Source:interface'
+          - name: AsyncContextOptions
+            uid: 'office!Office.AsyncContextOptions:interface'
+          - name: AsyncResult
+            uid: 'office!Office.AsyncResult:interface'
+          - name: AsyncResultStatus
+            uid: 'office!Office.AsyncResultStatus:enum'
+          - name: Auth
+            uid: 'office!Office.Auth:interface'
+          - name: AuthOptions
+            uid: 'office!Office.AuthOptions:interface'
+          - name: Binding
+            uid: 'office!Office.Binding:interface'
+          - name: BindingDataChangedEventArgs
+            uid: 'office!Office.BindingDataChangedEventArgs:interface'
+          - name: Bindings
+            uid: 'office!Office.Bindings:interface'
+          - name: BindingSelectionChangedEventArgs
+            uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
+          - name: BindingType
+            uid: 'office!Office.BindingType:enum'
+          - name: CoercionType
+            uid: 'office!Office.CoercionType:enum'
+          - name: Context
+            uid: 'office!Office.Context:interface'
+          - name: ContextInformation
+            uid: 'office!Office.ContextInformation:interface'
+          - name: Control
+            uid: 'office!Office.Control:interface'
+          - name: CustomXmlNode
+            uid: 'office!Office.CustomXmlNode:interface'
+          - name: CustomXMLNodeType
+            uid: 'office!Office.CustomXMLNodeType:enum'
+          - name: CustomXmlPart
+            uid: 'office!Office.CustomXmlPart:interface'
+          - name: CustomXmlParts
+            uid: 'office!Office.CustomXmlParts:interface'
+          - name: CustomXmlPrefixMappings
+            uid: 'office!Office.CustomXmlPrefixMappings:interface'
+          - name: Dialog
+            uid: 'office!Office.Dialog:interface'
+          - name: DialogOptions
+            uid: 'office!Office.DialogOptions:interface'
+          - name: DialogParentMessageReceivedEventArgs
+            uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+          - name: Document
+            uid: 'office!Office.Document:interface'
+          - name: DocumentMode
+            uid: 'office!Office.DocumentMode:enum'
+          - name: DocumentSelectionChangedEventArgs
+            uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
+          - name: Error
+            uid: 'office!Office.Error:interface'
+          - name: EventType
+            uid: 'office!Office.EventType:enum'
+          - name: File
+            uid: 'office!Office.File:interface'
+          - name: FileProperties
+            uid: 'office!Office.FileProperties:interface'
+          - name: FileType
+            uid: 'office!Office.FileType:enum'
+          - name: FilterType
+            uid: 'office!Office.FilterType:enum'
+          - name: GetBindingDataOptions
+            uid: 'office!Office.GetBindingDataOptions:interface'
+          - name: GetFileOptions
+            uid: 'office!Office.GetFileOptions:interface'
+          - name: GetSelectedDataOptions
+            uid: 'office!Office.GetSelectedDataOptions:interface'
+          - name: GoToByIdOptions
+            uid: 'office!Office.GoToByIdOptions:interface'
+          - name: GoToType
+            uid: 'office!Office.GoToType:enum'
+          - name: HostType
+            uid: 'office!Office.HostType:enum'
+          - name: Index
+            uid: 'office!Office.Index:enum'
+          - name: InitializationReason
+            uid: 'office!Office.InitializationReason:enum'
+          - name: IPromiseConstructor
+            uid: 'office!Office.IPromiseConstructor:interface'
+          - name: MatrixBinding
+            uid: 'office!Office.MatrixBinding:interface'
+          - name: NodeDeletedEventArgs
+            uid: 'office!Office.NodeDeletedEventArgs:interface'
+          - name: NodeInsertedEventArgs
+            uid: 'office!Office.NodeInsertedEventArgs:interface'
+          - name: NodeReplacedEventArgs
+            uid: 'office!Office.NodeReplacedEventArgs:interface'
+          - name: OfficeTheme
+            uid: 'office!Office.OfficeTheme:interface'
+          - name: PlatformType
+            uid: 'office!Office.PlatformType:enum'
+          - name: ProjectProjectFields
+            uid: 'office!Office.ProjectProjectFields:enum'
+          - name: ProjectResourceFields
+            uid: 'office!Office.ProjectResourceFields:enum'
+          - name: ProjectTaskFields
+            uid: 'office!Office.ProjectTaskFields:enum'
+          - name: ProjectViewTypes
+            uid: 'office!Office.ProjectViewTypes:enum'
+          - name: RangeCoordinates
+            uid: 'office!Office.RangeCoordinates:interface'
+          - name: RangeFormatConfiguration
+            uid: 'office!Office.RangeFormatConfiguration:interface'
+          - name: RemoveHandlerOptions
+            uid: 'office!Office.RemoveHandlerOptions:interface'
+          - name: RequirementSetSupport
+            uid: 'office!Office.RequirementSetSupport:interface'
+          - name: Ribbon
+            uid: 'office!Office.Ribbon:interface'
+          - name: RibbonUpdaterData
+            uid: 'office!Office.RibbonUpdaterData:interface'
+          - name: SaveSettingsOptions
+            uid: 'office!Office.SaveSettingsOptions:interface'
+          - name: SelectionMode
+            uid: 'office!Office.SelectionMode:enum'
+          - name: SetBindingDataOptions
+            uid: 'office!Office.SetBindingDataOptions:interface'
+          - name: SetSelectedDataOptions
+            uid: 'office!Office.SetSelectedDataOptions:interface'
+          - name: Settings
+            uid: 'office!Office.Settings:interface'
+          - name: SettingsChangedEventArgs
+            uid: 'office!Office.SettingsChangedEventArgs:interface'
+          - name: Slice
+            uid: 'office!Office.Slice:interface'
+          - name: StartupBehavior
+            uid: 'office!Office.StartupBehavior:enum'
+          - name: Tab
+            uid: 'office!Office.Tab:interface'
+          - name: Table
+            uid: 'office!Office.Table:enum'
+          - name: TableBinding
+            uid: 'office!Office.TableBinding:interface'
+          - name: TableData
+            uid: 'office!Office.TableData:class'
+          - name: TextBinding
+            uid: 'office!Office.TextBinding:interface'
+          - name: UI
+            uid: 'office!Office.UI:interface'
+          - name: ValueFormat
+            uid: 'office!Office.ValueFormat:enum'
+          - name: VisibilityMode
+            uid: 'office!Office.VisibilityMode:enum'
+          - name: VisibilityModeChangedMessage
+            uid: 'office!Office.VisibilityModeChangedMessage:interface'
+          - name: ClientObject
+            uid: 'office!OfficeExtension.ClientObject:class'
+          - name: ClientRequestContext
+            uid: 'office!OfficeExtension.ClientRequestContext:class'
+          - name: ClientResult
+            uid: 'office!OfficeExtension.ClientResult:class'
+          - name: DebugInfo
+            uid: 'office!OfficeExtension.DebugInfo:interface'
+          - name: EmbeddedOptions
+            uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+          - name: EmbeddedSession
+            uid: 'office!OfficeExtension.EmbeddedSession:class'
+          - name: Error
+            uid: 'office!OfficeExtension.Error:class'
+          - name: ErrorCodes
+            uid: 'office!OfficeExtension.ErrorCodes:class'
+          - name: EventHandlerResult
+            uid: 'office!OfficeExtension.EventHandlerResult:class'
+          - name: EventHandlers
+            uid: 'office!OfficeExtension.EventHandlers:class'
+          - name: EventInfo
+            uid: 'office!OfficeExtension.EventInfo:interface'
+          - name: LoadOption
+            uid: 'office!OfficeExtension.LoadOption:interface'
+          - name: RequestContextDebugInfo
+            uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+          - name: RequestUrlAndHeaderInfo
+            uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+          - name: RunOptions
+            uid: 'office!OfficeExtension.RunOptions:interface'
+          - name: TrackedObjects
+            uid: 'office!OfficeExtension.TrackedObjects:class'
+          - name: UpdateOptions
+            uid: 'office!OfficeExtension.UpdateOptions:interface'

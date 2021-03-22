@@ -1246,8 +1246,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: CommonAPI.AsyncContextOptions & {
-        isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions & {
+        isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: uri
           description: >-
@@ -1377,7 +1377,7 @@ methods:
     syntax:
       content: >-
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?:
-        CommonAPI.AsyncContextOptions &  { isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>)
+        Office.AsyncContextOptions &  { isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>)
         => void): void;
       parameters:
         - id: base64File
@@ -1451,8 +1451,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options?: CommonAPI.AsyncContextOptions,
-        callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -1562,8 +1562,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: itemId
           description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
@@ -1729,8 +1729,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAttachmentContentAsync(attachmentId: string, options?: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<AttachmentContent>) => void): void;
+        getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
@@ -1799,8 +1799,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAttachmentsAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
+        getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -1854,7 +1854,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getItemIdAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) =>
+        getItemIdAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
         void): void;
       parameters:
         - id: options
@@ -1924,7 +1924,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getItemIdAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getItemIdAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -1988,8 +1988,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions,
-        callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<any>) => void): void;
       parameters:
         - id: coercionType
           description: >-
@@ -2063,8 +2063,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: coercionType
           description: >-
@@ -2161,8 +2161,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult:
-        CommonAPI.AsyncResult<SharedProperties>) => void): void;
+        getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<SharedProperties>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -2229,7 +2229,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;'
+      content: 'getSharedPropertiesAsync(callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -2341,7 +2341,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void,
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
         userContext?: any): void;
       parameters:
         - id: callback
@@ -2433,8 +2433,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentId: string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: attachmentId
           description: >-
@@ -2482,8 +2482,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType | string, options?: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
@@ -2569,7 +2569,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        saveAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) =>
+        saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
         void): void;
       parameters:
         - id: options
@@ -2660,7 +2660,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -2734,8 +2734,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-

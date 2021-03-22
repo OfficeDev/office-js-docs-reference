@@ -36,7 +36,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;'
+      content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
       return:
         type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
   - name: htmlBody
@@ -64,6 +64,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'options?: CommonAPI.AsyncContextOptions;'
+      content: 'options?: Office.AsyncContextOptions;'
       return:
         type: '<xref uid="office!Office.AsyncContextOptions:interface" />'

@@ -6,7 +6,7 @@ fullName: PowerPoint.SlideCollection
 summary: |-
   Represents the collection of slides in the presentation.
 
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -46,7 +46,7 @@ methods:
     summary: |-
       Gets the number of slides in the collection.
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -62,7 +62,7 @@ methods:
     summary: |-
       Gets a slide using its unique ID.
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -84,7 +84,7 @@ methods:
       in the presentation.
 
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,7 +108,7 @@ methods:
       -->.
 
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

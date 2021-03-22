@@ -179,7 +179,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<Recurrence>) =>
+        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Recurrence>) =>
         void): void;
       parameters:
         - id: options
@@ -286,8 +286,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(recurrencePattern: Recurrence, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recurrencePattern
           description: A recurrence object.

@@ -1,10 +1,24 @@
 items:
   - name: API reference
-    href: ~/docs-ref-autogen/overview/office.md
     items:
-      - name: visio
+      - name: API reference overview
+        href: ../overview/overview.md
+      - name: Visio
         uid: visio!
         items:
+          - name: Enums
+            uid: ''
+            items:
+              - name: ErrorCodes
+                uid: 'visio!Visio.ErrorCodes:enum'
+              - name: OverlayHorizontalAlignment
+                uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
+              - name: OverlayType
+                uid: 'visio!Visio.OverlayType:enum'
+              - name: OverlayVerticalAlignment
+                uid: 'visio!Visio.OverlayVerticalAlignment:enum'
+              - name: ToolBarType
+                uid: 'visio!Visio.ToolBarType:enum'
           - name: Application
             uid: 'visio!Visio.Application:class'
           - name: BoundingBox
@@ -21,8 +35,6 @@ items:
             uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
           - name: DocumentView
             uid: 'visio!Visio.DocumentView:class'
-          - name: ErrorCodes
-            uid: 'visio!Visio.ErrorCodes:enum'
           - name: Highlight
             uid: 'visio!Visio.Highlight:interface'
           - name: Hyperlink
@@ -102,7 +114,8 @@ items:
           - name: ShapeDataItemCollectionData
             uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
           - name: ShapeDataItemCollectionLoadOptions
-            uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
+            uid: >-
+              visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface
           - name: ShapeDataItemCollectionUpdateData
             uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
           - name: ShapeDataItemData
@@ -119,12 +132,6 @@ items:
             uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
           - name: ShapeViewUpdateData
             uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
-          - name: OverlayHorizontalAlignment
-            uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
-          - name: OverlayType
-            uid: 'visio!Visio.OverlayType:enum'
-          - name: OverlayVerticalAlignment
-            uid: 'visio!Visio.OverlayVerticalAlignment:enum'
           - name: Page
             uid: 'visio!Visio.Page:class'
           - name: PageCollection
@@ -157,5 +164,3 @@ items:
             uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
           - name: ShapeView
             uid: 'visio!Visio.ShapeView:class'
-          - name: ToolBarType
-            uid: 'visio!Visio.ToolBarType:enum'

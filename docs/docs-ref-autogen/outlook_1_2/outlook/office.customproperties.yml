@@ -201,7 +201,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'saveAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void, asyncContext?: any): void;'
+      content: 'saveAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void, asyncContext?: any): void;'
       parameters:
         - id: callback
           description: >-

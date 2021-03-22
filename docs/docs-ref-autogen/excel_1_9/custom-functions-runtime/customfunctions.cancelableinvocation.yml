@@ -24,7 +24,7 @@ properties:
     fullName: onCanceled
     summary: >-
       Event handler called when the custom function is canceled. \[ [API set: CustomFunctionsRuntime
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

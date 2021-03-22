@@ -46,7 +46,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) =>
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
         void): void;
       parameters:
         - id: options
@@ -102,7 +102,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -159,8 +159,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(subject: string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(subject: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: subject
           description: The subject of the appointment or message. The string is limited to 255 characters.
