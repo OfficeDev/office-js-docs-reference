@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.PresentationData
 uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PresentationData
-summary: >-
-  An interface describing the data returned by calling
-  `presentation.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `presentation.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

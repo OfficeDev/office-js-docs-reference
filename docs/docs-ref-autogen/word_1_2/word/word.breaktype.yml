@@ -3,13 +3,10 @@ name: Word.BreakType
 uid: 'word!Word.BreakType:enum'
 package: word!
 fullName: Word.BreakType
-summary: >-
+summary: |-
   Specifies the form of a break.
 
-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -38,9 +35,8 @@ fields:
     uid: 'word!Word.BreakType.sectionEven:member'
     package: word!
     summary: >-
-      Section break with the next section beginning on the next even-numbered
-      page. If the section break falls on an even-numbered page, Word leaves the
-      next odd-numbered page blank.
+      Section break with the next section beginning on the next even-numbered page. If the section break falls on an
+      even-numbered page, Word leaves the next odd-numbered page blank.
     value: '"SectionEven"'
   - name: sectionNext
     uid: 'word!Word.BreakType.sectionNext:member'
@@ -51,7 +47,6 @@ fields:
     uid: 'word!Word.BreakType.sectionOdd:member'
     package: word!
     summary: >-
-      Section break with the next section beginning on the next odd-numbered
-      page. If the section break falls on an odd-numbered page, Word leaves the
-      next even-numbered page blank.
+      Section break with the next section beginning on the next odd-numbered page. If the section break falls on an
+      odd-numbered page, Word leaves the next even-numbered page blank.
     value: '"SectionOdd"'

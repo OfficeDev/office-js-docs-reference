@@ -3,13 +3,10 @@ name: Visio.Interfaces.PageViewLoadOptions
 uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.PageViewLoadOptions
-summary: >-
+summary: |-
   Represents the PageView class.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,14 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageViewLoadOptions#zoom:member'
     package: visio!
     fullName: zoom
-    summary: >-
-      Get and set Page's Zoom level. The value can be between 10 and 400 and
-      denotes the percentage of zoom.
+    summary: |-
+      Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

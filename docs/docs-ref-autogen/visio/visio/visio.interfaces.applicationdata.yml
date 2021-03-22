@@ -13,13 +13,10 @@ properties:
     uid: 'visio!Visio.Interfaces.ApplicationData#showBorders:member'
     package: visio!
     fullName: showBorders
-    summary: >-
+    summary: |-
       Show or hide the iFrame application borders.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.ApplicationData#showToolbars:member'
     package: visio!
     fullName: showToolbars
-    summary: >-
+    summary: |-
       Show or hide the standard toolbars.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

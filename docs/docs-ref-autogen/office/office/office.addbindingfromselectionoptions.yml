@@ -14,9 +14,8 @@ properties:
     package: office!
     fullName: asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Excel.Interfaces.SettingCollectionData
 uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.SettingCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `settingCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `settingCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

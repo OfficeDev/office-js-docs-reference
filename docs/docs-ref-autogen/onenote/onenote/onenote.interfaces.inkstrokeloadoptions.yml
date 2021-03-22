@@ -3,13 +3,10 @@ name: OneNote.Interfaces.InkStrokeLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkStrokeLoadOptions
-summary: >-
+summary: |-
   Represents a single stroke of ink.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,33 +28,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#floatingInk:member'
     package: onenote!
     fullName: floatingInk
-    summary: >-
+    summary: |-
       Gets the ID of the InkStroke object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
+        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />'
   - name: id
     uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

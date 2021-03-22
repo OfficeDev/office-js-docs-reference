@@ -4,12 +4,9 @@ uid: 'office!Office.Tab:interface'
 package: office!
 fullName: Office.Tab
 summary: >-
-  Represents an individual tab and the state it should have. For code examples,
-  see [Enable and Disable Add-in
-  Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)
-  and [Create custom contextual
-  tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
-  -->.
+  Represents an individual tab and the state it should have. For code examples, see [Enable and Disable Add-in
+  Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
+  tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -43,9 +40,7 @@ properties:
     uid: 'office!Office.Tab#visible:member'
     package: office!
     fullName: visible
-    summary: >-
-      Specifies whether the tab is visible on the ribbon. Used only with
-      contextual tabs.
+    summary: Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.
     remarks: ''
     isPreview: true
     isDeprecated: false

@@ -3,13 +3,10 @@ name: Visio.Application
 uid: 'visio!Visio.Application:class'
 package: visio!
 fullName: Visio.Application
-summary: >-
+summary: |-
   Represents the Application.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: visio!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'visio!Visio.Application#showBorders:member'
     package: visio!
     fullName: showBorders
-    summary: >-
+    summary: |-
       Show or hide the iFrame application borders.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +63,10 @@ properties:
     uid: 'visio!Visio.Application#showToolbars:member'
     package: visio!
     fullName: showToolbars
-    summary: >-
+    summary: |-
       Show or hide the standard toolbars.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,42 +80,34 @@ methods:
     package: visio!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.Application` - Where option is a
-      comma-delimited string or an array of strings that specify the properties
-      to load.
+      `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Visio.Application`
-      - Where option.select is a comma-delimited string that specifies the
-      properties to load, and options.expand is a comma-delimited string that
+      `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): Visio.Application` - Only available on collection types. It is
-      similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(option?: Visio.Interfaces.ApplicationLoadOptions):
-        Visio.Application;
+      content: 'load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;'
       parameters:
         - id: option
           description: ''
-          type: >-
-            <xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface"
-            />
+          type: '<xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface" />'
       return:
         type: '<xref uid="visio!Visio.Application:class" />'
         description: ''
@@ -133,8 +116,8 @@ methods:
     package: visio!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -142,9 +125,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Visio.Application;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="visio!Visio.Application:class" />'
@@ -154,22 +135,18 @@ methods:
     package: visio!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
-        Visio.Application;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Application;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that
-            specifies the properties to load, and propertyNamesAndPaths.expand
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type: '{ select?: string; expand?: string; }'
       return:
         type: '<xref uid="visio!Visio.Application:class" />'
@@ -179,9 +156,8 @@ methods:
     package: visio!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -189,22 +165,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ApplicationUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="visio!Visio.Interfaces.ApplicationUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="visio!Visio.Interfaces.ApplicationUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -213,9 +182,7 @@ methods:
     uid: 'visio!Visio.Application#set:member(2)'
     package: visio!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -232,13 +199,10 @@ methods:
     uid: 'visio!Visio.Application#showToolbar:member(1)'
     package: visio!
     fullName: 'showToolbar(id, show)'
-    summary: >-
+    summary: |-
       Sets the visibility of a specific toolbar in the application.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -258,20 +222,15 @@ methods:
     uid: 'visio!Visio.Application#showToolbar:member(2)'
     package: visio!
     fullName: 'showToolbar(idString, show)'
-    summary: >-
+    summary: |-
       Sets the visibility of a specific toolbar in the application.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar",
-        show: boolean): void;
+      content: 'showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;'
       parameters:
         - id: idString
           description: The type of the Toolbar
@@ -287,13 +246,11 @@ methods:
     package: visio!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Visio.Application
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Visio.Interfaces.ApplicationData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Visio.Application object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Visio.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

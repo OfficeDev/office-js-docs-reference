@@ -1,24 +1,10 @@
 items:
   - name: API reference
+    href: ~/docs-ref-autogen/overview/office.md
     items:
-      - name: API reference overview
-        href: ../overview/overview.md
-      - name: Visio
+      - name: visio
         uid: visio!
         items:
-          - name: Enums
-            uid: ''
-            items:
-              - name: ErrorCodes
-                uid: 'visio!Visio.ErrorCodes:enum'
-              - name: OverlayHorizontalAlignment
-                uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
-              - name: OverlayType
-                uid: 'visio!Visio.OverlayType:enum'
-              - name: OverlayVerticalAlignment
-                uid: 'visio!Visio.OverlayVerticalAlignment:enum'
-              - name: ToolBarType
-                uid: 'visio!Visio.ToolBarType:enum'
           - name: Application
             uid: 'visio!Visio.Application:class'
           - name: BoundingBox
@@ -35,12 +21,110 @@ items:
             uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
           - name: DocumentView
             uid: 'visio!Visio.DocumentView:class'
+          - name: ErrorCodes
+            uid: 'visio!Visio.ErrorCodes:enum'
           - name: Highlight
             uid: 'visio!Visio.Highlight:interface'
           - name: Hyperlink
             uid: 'visio!Visio.Hyperlink:class'
           - name: HyperlinkCollection
             uid: 'visio!Visio.HyperlinkCollection:class'
+          - name: ApplicationData
+            uid: 'visio!Visio.Interfaces.ApplicationData:interface'
+          - name: ApplicationLoadOptions
+            uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+          - name: ApplicationUpdateData
+            uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+          - name: CollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
+          - name: CommentCollectionData
+            uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
+          - name: CommentCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+          - name: CommentCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
+          - name: CommentData
+            uid: 'visio!Visio.Interfaces.CommentData:interface'
+          - name: CommentLoadOptions
+            uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+          - name: CommentUpdateData
+            uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
+          - name: DocumentData
+            uid: 'visio!Visio.Interfaces.DocumentData:interface'
+          - name: DocumentLoadOptions
+            uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
+          - name: DocumentUpdateData
+            uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
+          - name: DocumentViewData
+            uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
+          - name: DocumentViewLoadOptions
+            uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+          - name: DocumentViewUpdateData
+            uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+          - name: HyperlinkCollectionData
+            uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
+          - name: HyperlinkCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+          - name: HyperlinkCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+          - name: HyperlinkData
+            uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
+          - name: HyperlinkLoadOptions
+            uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
+          - name: PageCollectionData
+            uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
+          - name: PageCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+          - name: PageCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
+          - name: PageData
+            uid: 'visio!Visio.Interfaces.PageData:interface'
+          - name: PageLoadOptions
+            uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
+          - name: PageUpdateData
+            uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
+          - name: PageViewData
+            uid: 'visio!Visio.Interfaces.PageViewData:interface'
+          - name: PageViewLoadOptions
+            uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+          - name: PageViewUpdateData
+            uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+          - name: SelectionData
+            uid: 'visio!Visio.Interfaces.SelectionData:interface'
+          - name: ShapeCollectionData
+            uid: 'visio!Visio.Interfaces.ShapeCollectionData:interface'
+          - name: ShapeCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
+          - name: ShapeCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
+          - name: ShapeData
+            uid: 'visio!Visio.Interfaces.ShapeData:interface'
+          - name: ShapeDataItemCollectionData
+            uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
+          - name: ShapeDataItemCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
+          - name: ShapeDataItemCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
+          - name: ShapeDataItemData
+            uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+          - name: ShapeDataItemLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
+          - name: ShapeLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+          - name: ShapeUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
+          - name: ShapeViewData
+            uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
+          - name: ShapeViewLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
+          - name: ShapeViewUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+          - name: OverlayHorizontalAlignment
+            uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
+          - name: OverlayType
+            uid: 'visio!Visio.OverlayType:enum'
+          - name: OverlayVerticalAlignment
+            uid: 'visio!Visio.OverlayVerticalAlignment:enum'
           - name: Page
             uid: 'visio!Visio.Page:class'
           - name: PageCollection
@@ -73,3 +157,5 @@ items:
             uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
           - name: ShapeView
             uid: 'visio!Visio.ShapeView:class'
+          - name: ToolBarType
+            uid: 'visio!Visio.ToolBarType:enum'

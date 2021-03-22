@@ -4,10 +4,8 @@ uid: 'excel!Excel.NamedItemType:enum'
 package: excel!
 fullName: Excel.NamedItemType
 summary: >-
-  \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7
-  for
-  Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+  Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

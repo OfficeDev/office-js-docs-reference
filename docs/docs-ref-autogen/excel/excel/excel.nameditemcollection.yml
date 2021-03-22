@@ -4,13 +4,11 @@ uid: 'excel!Excel.NamedItemCollection:class'
 package: excel!
 fullName: Excel.NamedItemCollection
 summary: >-
-  A collection of all the `NamedItem` objects that are part of the workbook or
-  worksheet, depending on how it was reached.
+  A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was
+  reached.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +19,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -47,20 +45,15 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#add:member(1)'
     package: excel!
     fullName: 'add(name, reference, comment)'
-    summary: >-
+    summary: |-
       Adds a new name to the collection of the given scope.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        add(name: string, reference: Range | string, comment?: string):
-        Excel.NamedItem;
+      content: 'add(name: string, reference: Range | string, comment?: string): Excel.NamedItem;'
       parameters:
         - id: name
           description: The name of the named item.
@@ -99,21 +92,15 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
     package: excel!
     fullName: 'addFormulaLocal(name, formula, comment)'
-    summary: >-
-      Adds a new name to the collection of the given scope using the user's
-      locale for the formula.
+    summary: |-
+      Adds a new name to the collection of the given scope using the user's locale for the formula.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addFormulaLocal(name: string, formula: string, comment?: string):
-        Excel.NamedItem;
+      content: 'addFormulaLocal(name: string, formula: string, comment?: string): Excel.NamedItem;'
       parameters:
         - id: name
           description: The name of the named item.
@@ -131,13 +118,10 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of named items in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,13 +134,10 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: >-
+    summary: |-
       Gets a `NamedItem` object using its name.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -193,17 +174,13 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(name)
     summary: >-
-      Gets a `NamedItem` object using its name. If the object does not exist,
-      then this function will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      Gets a `NamedItem` object using its name. If the object does not exist, then this function will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 
 
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -221,22 +198,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.NamedItemCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
+        load(options?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.NamedItemCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
@@ -246,8 +221,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -255,9 +230,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItemCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
@@ -289,22 +262,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.NamedItemCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NamedItemCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
@@ -314,23 +283,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.NamedItemCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.NamedItemCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.NamedItemCollectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.NamedItemCollectionData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.NamedItemCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

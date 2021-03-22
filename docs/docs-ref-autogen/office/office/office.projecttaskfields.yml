@@ -5,17 +5,15 @@ package: office!
 fullName: Office.ProjectTaskFields
 summary: >-
   Specifies the task fields that are available as a parameter for the
-  [Document](xref:office!Office.Document:interface)<!-- -->.getTaskFieldAsync
-  method.
+  [Document](xref:office!Office.Document:interface)<!-- -->.getTaskFieldAsync method.
 remarks: >-
-  A ProjectTaskFields constant can be used as a parameter of the
-  [Document](xref:office!Office.Document:interface)<!-- -->.getTaskFieldAsync
-  method.
+  A ProjectTaskFields constant can be used as a parameter of the [Document](xref:office!Office.Document:interface)<!--
+  -->.getTaskFieldAsync method.
 
 
   For more information about working with fields in Project, see the [Available
-  fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
-  reference. In Project Help, search for Available fields.
+  fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460) reference.
+  In Project Help, search for Available fields.
 isPreview: false
 isDeprecated: false
 fields:
@@ -79,9 +77,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline10FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline10Start
     uid: 'office!Office.ProjectTaskFields.Baseline10Start:member'
     package: office!
@@ -118,9 +115,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline1FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline1Start
     uid: 'office!Office.ProjectTaskFields.Baseline1Start:member'
     package: office!
@@ -157,9 +153,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline2FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline2Start
     uid: 'office!Office.ProjectTaskFields.Baseline2Start:member'
     package: office!
@@ -196,9 +191,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline3FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline3Start
     uid: 'office!Office.ProjectTaskFields.Baseline3Start:member'
     package: office!
@@ -235,9 +229,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline4FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline4Start
     uid: 'office!Office.ProjectTaskFields.Baseline4Start:member'
     package: office!
@@ -274,9 +267,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline5FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline5Start
     uid: 'office!Office.ProjectTaskFields.Baseline5Start:member'
     package: office!
@@ -313,9 +305,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline6FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline6Start
     uid: 'office!Office.ProjectTaskFields.Baseline6Start:member'
     package: office!
@@ -352,9 +343,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline7FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline7Start
     uid: 'office!Office.ProjectTaskFields.Baseline7Start:member'
     package: office!
@@ -391,9 +381,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline8FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline8Start
     uid: 'office!Office.ProjectTaskFields.Baseline8Start:member'
     package: office!
@@ -430,9 +419,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.Baseline9FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Baseline9Start
     uid: 'office!Office.ProjectTaskFields.Baseline9Start:member'
     package: office!
@@ -469,9 +457,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.BaselineFixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: BaselineStart
     uid: 'office!Office.ProjectTaskFields.BaselineStart:member'
     package: office!
@@ -504,10 +491,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.ConstraintType:member'
     package: office!
     summary: >-
-      A constraint type for the task: As Soon As Possible = 0, As Late As
-      Possible = 1, Must Start On = 2, Must Finish On = 3, Start No Earlier Than
-      = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later
-      Than = 7.
+      A constraint type for the task: As Soon As Possible = 0, As Late As Possible = 1, Must Start On = 2, Must Finish
+      On = 3, Start No Earlier Than = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later Than = 7.
   - name: Cost
     uid: 'office!Office.ProjectTaskFields.Cost:member'
     package: office!
@@ -695,9 +680,7 @@ fields:
   - name: FinishSlack
     uid: 'office!Office.ProjectTaskFields.FinishSlack:member'
     package: office!
-    summary: >-
-      The duration between the Early Finish and Late Finish dates for the task,
-      in minutes.
+    summary: 'The duration between the Early Finish and Late Finish dates for the task, in minutes.'
   - name: FixedCost
     uid: 'office!Office.ProjectTaskFields.FixedCost:member'
     package: office!
@@ -706,9 +689,8 @@ fields:
     uid: 'office!Office.ProjectTaskFields.FixedCostAccrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how the baseline task accrues fixed costs:
-      Accrues when the task starts = 1, accrues when the task ends = 2, accrues
-      as the task progresses (prorated) = 3.
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: Flag1
     uid: 'office!Office.ProjectTaskFields.Flag1:member'
     package: office!
@@ -792,9 +774,7 @@ fields:
   - name: FreeSlack
     uid: 'office!Office.ProjectTaskFields.FreeSlack:member'
     package: office!
-    summary: >-
-      The amount of time that the task can be delayed without delaying its
-      successor tasks.
+    summary: The amount of time that the task can be delayed without delaying its successor tasks.
   - name: HasRollupSubTasks
     uid: 'office!Office.ProjectTaskFields.HasRollupSubTasks:member'
     package: office!
@@ -802,15 +782,11 @@ fields:
   - name: ID
     uid: 'office!Office.ProjectTaskFields.ID:member'
     package: office!
-    summary: >-
-      The index of the selected task. After the project summary task, the index
-      of the first task in a project is 1.
+    summary: 'The index of the selected task. After the project summary task, the index of the first task in a project is 1.'
   - name: IsRollup
     uid: 'office!Office.ProjectTaskFields.IsRollup:member'
     package: office!
-    summary: >-
-      Indicates whether subtask information is rolled up to the summary task
-      bar.
+    summary: Indicates whether subtask information is rolled up to the summary task bar.
   - name: Milestone
     uid: 'office!Office.ProjectTaskFields.Milestone:member'
     package: office!
@@ -942,9 +918,7 @@ fields:
   - name: Priority
     uid: 'office!Office.ProjectTaskFields.Priority:member'
     package: office!
-    summary: >-
-      The priority of the task, with values from 0 (low) to 1000 (high). The
-      default priority value is 500.
+    summary: 'The priority of the task, with values from 0 (low) to 1000 (high). The default priority value is 500.'
   - name: RegularWork
     uid: 'office!Office.ProjectTaskFields.RegularWork:member'
     package: office!
@@ -1032,15 +1006,11 @@ fields:
   - name: Status
     uid: 'office!Office.ProjectTaskFields.Status:member'
     package: office!
-    summary: >-
-      The status of the task: Complete = 0, on schedule = 1, late = 2, future
-      task = 3, status not available = 4.
+    summary: 'The status of the task: Complete = 0, on schedule = 1, late = 2, future task = 3, status not available = 4.'
   - name: StatusManager
     uid: 'office!Office.ProjectTaskFields.StatusManager:member'
     package: office!
-    summary: >-
-      The enterprise resource responsible for accepting or rejecting assignment
-      progress updates for the task.
+    summary: The enterprise resource responsible for accepting or rejecting assignment progress updates for the task.
   - name: Successors
     uid: 'office!Office.ProjectTaskFields.Successors:member'
     package: office!
@@ -1184,9 +1154,7 @@ fields:
   - name: Type
     uid: 'office!Office.ProjectTaskFields.Type:member'
     package: office!
-    summary: >-
-      The way the task is calculated: Fixed units = 0, fixed duration = 1, fixed
-      work = 2.
+    summary: 'The way the task is calculated: Fixed units = 0, fixed duration = 1, fixed work = 2.'
   - name: WBS
     uid: 'office!Office.ProjectTaskFields.WBS:member'
     package: office!
@@ -1194,15 +1162,11 @@ fields:
   - name: WBSPREDECESSORS
     uid: 'office!Office.ProjectTaskFields.WBSPREDECESSORS:member'
     package: office!
-    summary: >-
-      The work breakdown structure codes of the task predecessors, separated by
-      the list separator.
+    summary: 'The work breakdown structure codes of the task predecessors, separated by the list separator.'
   - name: WBSSUCCESSORS
     uid: 'office!Office.ProjectTaskFields.WBSSUCCESSORS:member'
     package: office!
-    summary: >-
-      The work breakdown structure codes of the task successors, separated by
-      the list separator.
+    summary: 'The work breakdown structure codes of the task successors, separated by the list separator.'
   - name: Work
     uid: 'office!Office.ProjectTaskFields.Work:member'
     package: office!
@@ -1210,6 +1174,4 @@ fields:
   - name: WSSID
     uid: 'office!Office.ProjectTaskFields.WSSID:member'
     package: office!
-    summary: >-
-      The ID of the task in a SharePoint list, for a project that is
-      synchronized with a SharePoint tasks list.
+    summary: 'The ID of the task in a SharePoint list, for a project that is synchronized with a SharePoint tasks list.'

@@ -3,13 +3,10 @@ name: Visio.Interfaces.ShapeViewLoadOptions
 uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeViewLoadOptions
-summary: >-
+summary: |-
   Represents the ShapeView class.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions#highlight:member'
     package: visio!
     fullName: highlight
-    summary: >-
+    summary: |-
       Represents the highlight around the shape.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

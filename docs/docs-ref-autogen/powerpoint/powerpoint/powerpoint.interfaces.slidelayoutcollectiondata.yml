@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.SlideLayoutCollectionData
 uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `slideLayoutCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideLayoutCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,6 +20,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.SlideLayoutData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
-          />[]
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface" />[]'

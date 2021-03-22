@@ -3,13 +3,10 @@ name: Excel.CloseBehavior
 uid: 'excel!Excel.CloseBehavior:enum'
 package: excel!
 fullName: Excel.CloseBehavior
-summary: >-
+summary: |-
   Specifies the close behavior for Workbook.close API.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

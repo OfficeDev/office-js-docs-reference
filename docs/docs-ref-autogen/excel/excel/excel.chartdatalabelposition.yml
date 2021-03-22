@@ -3,10 +3,7 @@ name: Excel.ChartDataLabelPosition
 uid: 'excel!Excel.ChartDataLabelPosition:enum'
 package: excel!
 fullName: Excel.ChartDataLabelPosition
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,22 +3,19 @@ name: Office.From
 uid: 'outlook!Office.From:interface'
 package: outlook!
 fullName: Office.From
-summary: >-
+summary: |-
   Provides a method to get the from value of a message in an Outlook add-in.
 
-
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
 isPreview: false
 isDeprecated: false
 type: interface
@@ -31,27 +28,23 @@ methods:
       Gets the from value of a message.
 
 
-      The `getAsync` method starts an asynchronous call to the Exchange server
-      to get the from value of a message.
+      The `getAsync` method starts an asynchronous call to the Exchange server to get the from value of a message.
 
 
       The from value of the item is provided as an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
-      in the `asyncResult.value` property.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the `asyncResult.value` property.
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -76,26 +69,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<EmailAddressDetails>) => void): void;
+        getAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The
-            `value` property of the result is the item's from value, as an
-            `EmailAddressDetails` object.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `value` property of the
+            result is the item's from value, as an `EmailAddressDetails` object.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;<xref uid="outlook!Office.EmailAddressDetails:interface"
-            />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''

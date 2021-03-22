@@ -3,9 +3,7 @@ name: Office.NodeReplacedEventArgs
 uid: 'office!Office.NodeReplacedEventArgs:interface'
 package: office!
 fullName: Office.NodeReplacedEventArgs
-summary: >-
-  Provides information about the replaced node that raised the nodeReplaced
-  event.
+summary: Provides information about the replaced node that raised the nodeReplaced event.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,9 +13,7 @@ properties:
     uid: 'office!Office.NodeReplacedEventArgs#isUndoRedo:member'
     package: office!
     fullName: isUndoRedo
-    summary: >-
-      Gets whether the replaced node was inserted as part of an undo or redo
-      operation by the user.
+    summary: Gets whether the replaced node was inserted as part of an undo or redo operation by the user.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -29,12 +25,10 @@ properties:
     uid: 'office!Office.NodeReplacedEventArgs#newNode:member'
     package: office!
     fullName: newNode
-    summary: >-
+    summary: |-
       Gets the node that was just added to the CustomXMLPart object.
 
-
-      Note that this node may have children, if a subtree was just added to the
-      document.
+      Note that this node may have children, if a subtree was just added to the document.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -47,14 +41,12 @@ properties:
     package: office!
     fullName: oldNode
     summary: >-
-      Gets the node which was just deleted (replaced) from the CustomXmlPart
-      object.
+      Gets the node which was just deleted (replaced) from the CustomXmlPart object.
 
 
-      Note that this node may have children, if a subtree is being removed from
-      the document. Also, this node will be a "disconnected" node in that you
-      can query down from the node, but you cannot query up the tree - the node
-      appears to exist alone.
+      Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a
+      "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears
+      to exist alone.
     remarks: ''
     isPreview: false
     isDeprecated: false

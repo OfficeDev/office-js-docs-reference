@@ -7,20 +7,17 @@ summary: >-
   Represents a suggested task identified in an item. Read mode only.
 
 
-  The list of tasks suggested in an email message is returned in the
-  `taskSuggestions` property of the
-  [Entities](xref:outlook!Office.Entities:interface) object that is returned
-  when the `getEntities` or `getEntitiesByType` method is called on the active
-  item.
+  The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the
+  [Entities](xref:outlook!Office.Entities:interface) object that is returned when the `getEntities` or
+  `getEntitiesByType` method is called on the active item.
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
   #### Examples
@@ -30,11 +27,9 @@ remarks: >-
 
   var item = Office.context.mailbox.item;
 
-  // Get an array of strings that represent task suggestions in the current
-  item's body.
+  // Get an array of strings that represent task suggestions in the current item's body.
 
-  var taskSuggestions =
-  item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+  var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
 
   console.log("There are " + taskSuggestions.length + " task suggestions.")
 

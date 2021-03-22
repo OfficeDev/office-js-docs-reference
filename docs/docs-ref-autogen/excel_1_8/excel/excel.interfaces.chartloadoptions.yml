@@ -4,15 +4,11 @@ uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartLoadOptions
 summary: >-
-  Represents a chart object in a workbook. To learn more about the Chart object
-  model, see [Work with charts using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!--
-  -->.
+  Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using the
+  Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,9 +19,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +32,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#axes:member'
     package: excel!
     fullName: axes
-    summary: >-
+    summary: |-
       Represents chart axes.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,13 +48,11 @@ properties:
     package: excel!
     fullName: categoryLabelLevel
     summary: >-
-      Specifies a ChartCategoryLabelLevel enumeration constant referring to the
-      level of where the category labels are being sourced from.
+      Specifies a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are
+      being sourced from.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,13 +64,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#chartType:member'
     package: excel!
     fullName: chartType
-    summary: >-
+    summary: |-
       Specifies the type of the chart. See Excel.ChartType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,33 +79,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member'
     package: excel!
     fullName: dataLabels
-    summary: >-
+    summary: |-
       Represents the datalabels on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />'
   - name: displayBlanksAs
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#displayBlanksAs:member'
     package: excel!
     fullName: displayBlanksAs
-    summary: >-
+    summary: |-
       Specifies the way that blank cells are plotted on a chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -130,33 +109,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Encapsulates the format properties for the chart area.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#height:member'
     package: excel!
     fullName: height
-    summary: >-
+    summary: |-
       Specifies the height, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -168,13 +139,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       The unique id of chart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -186,14 +154,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#left:member'
     package: excel!
     fullName: left
-    summary: >-
-      The distance, in points, from the left side of the chart to the worksheet
-      origin.
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -205,13 +169,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#legend:member'
     package: excel!
     fullName: legend
-    summary: >-
+    summary: |-
       Represents the legend for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -223,13 +184,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Specifies the name of a chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -241,33 +199,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotArea:member'
     package: excel!
     fullName: plotArea
-    summary: >-
+    summary: |-
       Represents the plotArea for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface" />'
   - name: plotBy
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotBy:member'
     package: excel!
     fullName: plotBy
-    summary: >-
+    summary: |-
       Specifies the way columns or rows are used as data series on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -279,14 +229,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#plotVisibleOnly:member'
     package: excel!
     fullName: plotVisibleOnly
-    summary: >-
-      True if only visible cells are plotted. False if both visible and hidden
-      cells are plotted.
+    summary: |-
+      True if only visible cells are plotted. False if both visible and hidden cells are plotted.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -298,35 +244,27 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#series:member'
     package: excel!
     fullName: series
-    summary: >-
+    summary: |-
       Represents either a single series or collection of series in the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface" />'
   - name: seriesNameLevel
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#seriesNameLevel:member'
     package: excel!
     fullName: seriesNameLevel
     summary: >-
-      Specifies a ChartSeriesNameLevel enumeration constant referring to the
-      level of where the series names are being sourced from.
+      Specifies a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are being
+      sourced from.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -338,13 +276,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#showAllFieldButtons:member'
     package: excel!
     fullName: showAllFieldButtons
-    summary: >-
+    summary: |-
       Specifies whether to display all field buttons on a PivotChart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -357,15 +292,12 @@ properties:
     package: excel!
     fullName: showDataLabelsOverMaximum
     summary: >-
-      Specifies whether to show the data labels when the value is greater than
-      the maximum value on the value axis. If value axis became smaller than the
-      size of data points, you can use this property to set whether to show the
-      data labels. This property applies to 2-D charts only.
+      Specifies whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      value axis became smaller than the size of data points, you can use this property to set whether to show the data
+      labels. This property applies to 2-D charts only.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -377,13 +309,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#style:member'
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       Specifies the chart style for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -395,14 +324,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#title:member'
     package: excel!
     fullName: title
-    summary: >-
-      Specifies the title of the specified chart, including the text,
-      visibility, position, and formatting of the title.
+    summary: |-
+      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -415,13 +340,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of the object to the
-      top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+      Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
+      of the chart area (on a chart).
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -433,13 +356,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#width:member'
     package: excel!
     fullName: width
-    summary: >-
+    summary: |-
       Specifies the width, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -451,13 +371,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: >-
+    summary: |-
       The worksheet containing the current chart.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

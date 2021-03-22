@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartTitleData
 uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartTitleData
-summary: >-
-  An interface describing the data returned by calling `chartTitle.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `chartTitle.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTitleData#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart title, which includes fill and font
-      formatting.
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTitleData#overlay:member'
     package: excel!
     fullName: overlay
-    summary: >-
+    summary: |-
       Specifies if the chart title will overlay the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTitleData#text:member'
     package: excel!
     fullName: text
-    summary: >-
+    summary: |-
       Specifies the chart's title text.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTitleData#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the chart title is visibile.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

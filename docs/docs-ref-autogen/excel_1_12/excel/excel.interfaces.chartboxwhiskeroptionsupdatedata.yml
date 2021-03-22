@@ -4,48 +4,36 @@ uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
 summary: >-
-  An interface for updating data on the ChartBoxwhiskerOptions object, for use
-  in `chartBoxwhiskerOptions.set({ ... })`<!-- -->.
+  An interface for updating data on the ChartBoxwhiskerOptions object, for use in `chartBoxwhiskerOptions.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: quartileCalculation
-    uid: >-
-      excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#quartileCalculation:member
+    uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#quartileCalculation:member'
     package: excel!
     fullName: quartileCalculation
-    summary: >-
+    summary: |-
       Specifies if the quartile calculation type of a box and whisker chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        quartileCalculation?: Excel.ChartBoxQuartileCalculation | "Inclusive" |
-        "Exclusive";
+      content: 'quartileCalculation?: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartBoxQuartileCalculation:enum" /> |
-          "Inclusive" | "Exclusive"
+        type: '<xref uid="excel!Excel.ChartBoxQuartileCalculation:enum" /> | "Inclusive" | "Exclusive"'
   - name: showInnerPoints
-    uid: >-
-      excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showInnerPoints:member
+    uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showInnerPoints:member'
     package: excel!
     fullName: showInnerPoints
-    summary: >-
+    summary: |-
       Specifies if inner points are shown in a box and whisker chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,17 +42,13 @@ properties:
       return:
         type: boolean
   - name: showMeanLine
-    uid: >-
-      excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showMeanLine:member
+    uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showMeanLine:member'
     package: excel!
     fullName: showMeanLine
-    summary: >-
+    summary: |-
       Specifies if the mean line is shown in a box and whisker chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,17 +57,13 @@ properties:
       return:
         type: boolean
   - name: showMeanMarker
-    uid: >-
-      excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showMeanMarker:member
+    uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showMeanMarker:member'
     package: excel!
     fullName: showMeanMarker
-    summary: >-
+    summary: |-
       Specifies if the mean marker is shown in a box and whisker chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,17 +72,13 @@ properties:
       return:
         type: boolean
   - name: showOutlierPoints
-    uid: >-
-      excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showOutlierPoints:member
+    uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#showOutlierPoints:member'
     package: excel!
     fullName: showOutlierPoints
-    summary: >-
+    summary: |-
       Specifies if outlier points are shown in a box and whisker chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

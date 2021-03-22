@@ -4,15 +4,11 @@ uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableLoadOptions
 summary: >-
-  Represents an Excel table. To learn more about the table object model, read
-  [Work with tables using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!--
-  -->.
+  Represents an Excel table. To learn more about the table object model, read [Work with tables using the Excel
+  JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,9 +19,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +32,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#autoFilter:member'
     package: excel!
     fullName: autoFilter
-    summary: >-
+    summary: |-
       Represents the `AutoFilter` object of the table.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,34 +47,25 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
     package: excel!
     fullName: columns
-    summary: >-
+    summary: |-
       Represents a collection of all the columns in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface" />'
   - name: highlightFirstColumn
     uid: 'excel!Excel.Interfaces.TableLoadOptions#highlightFirstColumn:member'
     package: excel!
     fullName: highlightFirstColumn
-    summary: >-
+    summary: |-
       Specifies if the first column contains special formatting.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,13 +77,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#highlightLastColumn:member'
     package: excel!
     fullName: highlightLastColumn
-    summary: >-
+    summary: |-
       Specifies if the last column contains special formatting.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -113,14 +93,11 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Returns a value that uniquely identifies the table in a given workbook.
-      The value of the identifier remains the same even when the table is
-      renamed.
+      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
+      same even when the table is renamed.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -132,13 +109,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#legacyId:member'
     package: excel!
     fullName: legacyId
-    summary: >-
+    summary: |-
       Returns a numeric ID.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -154,15 +128,11 @@ properties:
       Name of the table.
 
 
-      The set name of the table must follow the guidelines specified in the
-      [Rename an Excel
-      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)
-      article.
+      The set name of the table must follow the guidelines specified in the [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -174,35 +144,27 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
     package: excel!
     fullName: rows
-    summary: >-
+    summary: |-
       Represents a collection of all the rows in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface" />'
   - name: showBandedColumns
     uid: 'excel!Excel.Interfaces.TableLoadOptions#showBandedColumns:member'
     package: excel!
     fullName: showBandedColumns
     summary: >-
-      Specifies if the columns show banded formatting in which odd columns are
-      highlighted differently from even ones, to make reading the table easier.
+      Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones,
+      to make reading the table easier.
 
 
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -215,13 +177,11 @@ properties:
     package: excel!
     fullName: showBandedRows
     summary: >-
-      Specifies if the rows show banded formatting in which odd rows are
-      highlighted differently from even ones, to make reading the table easier.
+      Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones, to make
+      reading the table easier.
 
 
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -234,13 +194,11 @@ properties:
     package: excel!
     fullName: showFilterButton
     summary: >-
-      Specifies if the filter buttons are visible at the top of each column
-      header. Setting this is only allowed if the table contains a header row.
+      Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the
+      table contains a header row.
 
 
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -252,14 +210,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
     package: excel!
     fullName: showHeaders
-    summary: >-
-      Specifies if the header row is visible. This value can be set to show or
-      remove the header row.
+    summary: |-
+      Specifies if the header row is visible. This value can be set to show or remove the header row.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -271,14 +225,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
     package: excel!
     fullName: showTotals
-    summary: >-
-      Specifies if the total row is visible. This value can be set to show or
-      remove the total row.
+    summary: |-
+      Specifies if the total row is visible. This value can be set to show or remove the total row.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -290,13 +240,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#sort:member'
     package: excel!
     fullName: sort
-    summary: >-
+    summary: |-
       Represents the sorting for the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -309,16 +256,12 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the table style. Possible values are:
-      "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1"
-      through "TableStyleMedium28", "TableStyleDark1" through
-      "TableStyleDark11". A custom user-defined style present in the workbook
-      can also be specified.
+      Constant value that represents the table style. Possible values are: "TableStyleLight1" through
+      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
+      "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -335,8 +278,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -348,13 +290,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableLoadOptions#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: >-
+    summary: |-
       The worksheet containing the current table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

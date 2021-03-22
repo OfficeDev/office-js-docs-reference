@@ -4,13 +4,11 @@ uid: 'onenote!OneNote.Application:class'
 package: onenote!
 fullName: OneNote.Application
 summary: >-
-  Represents the top-level object that contains all globally addressable OneNote
-  objects such as notebooks, the active notebook, and the active section.
+  Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the active
+  notebook, and the active section.
 
 
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +19,8 @@ properties:
     package: onenote!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,14 +33,11 @@ properties:
     package: onenote!
     fullName: notebooks
     summary: >-
-      Gets the collection of notebooks that are open in the OneNote application
-      instance. In OneNote on the web, only one notebook at a time is open in
-      the application instance. Read-only.
+      Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only
+      one notebook at a time is open in the application instance. Read-only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,14 +50,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveNotebook:member(1)'
     package: onenote!
     fullName: getActiveNotebook()
-    summary: >-
-      Gets the active notebook if one exists. If no notebook is active, throws
-      ItemNotFound.
+    summary: |-
+      Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,14 +97,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveNotebookOrNull:member(1)'
     package: onenote!
     fullName: getActiveNotebookOrNull()
-    summary: >-
-      Gets the active notebook if one exists. If no notebook is active, returns
-      null.
+    summary: |-
+      Gets the active notebook if one exists. If no notebook is active, returns null.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -158,14 +145,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveOutline:member(1)'
     package: onenote!
     fullName: getActiveOutline()
-    summary: >-
-      Gets the active outline if one exists, If no outline is active, throws
-      ItemNotFound.
+    summary: |-
+      Gets the active outline if one exists, If no outline is active, throws ItemNotFound.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -206,13 +189,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveOutlineOrNull:member(1)'
     package: onenote!
     fullName: getActiveOutlineOrNull()
-    summary: >-
+    summary: |-
       Gets the active outline if one exists, otherwise returns null.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -254,14 +234,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActivePage:member(1)'
     package: onenote!
     fullName: getActivePage()
-    summary: >-
-      Gets the active page if one exists. If no page is active, throws
-      ItemNotFound.
+    summary: |-
+      Gets the active page if one exists. If no page is active, throws ItemNotFound.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -305,13 +281,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActivePageOrNull:member(1)'
     package: onenote!
     fullName: getActivePageOrNull()
-    summary: >-
+    summary: |-
       Gets the active page if one exists. If no page is active, returns null.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -356,14 +329,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveParagraph:member(1)'
     package: onenote!
     fullName: getActiveParagraph()
-    summary: >-
-      Gets the active Paragraph if one exists, If no Paragraph is active, throws
-      ItemNotFound.
+    summary: |-
+      Gets the active Paragraph if one exists, If no Paragraph is active, throws ItemNotFound.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -376,13 +345,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveParagraphOrNull:member(1)'
     package: onenote!
     fullName: getActiveParagraphOrNull()
-    summary: >-
+    summary: |-
       Gets the active Paragraph if one exists, otherwise returns null.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -395,14 +361,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveSection:member(1)'
     package: onenote!
     fullName: getActiveSection()
-    summary: >-
-      Gets the active section if one exists. If no section is active, throws
-      ItemNotFound.
+    summary: |-
+      Gets the active section if one exists. If no section is active, throws ItemNotFound.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -446,14 +408,10 @@ methods:
     uid: 'onenote!OneNote.Application#getActiveSectionOrNull:member(1)'
     package: onenote!
     fullName: getActiveSectionOrNull()
-    summary: >-
-      Gets the active section if one exists. If no section is active, returns
-      null.
+    summary: |-
+      Gets the active section if one exists. If no section is active, returns null.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -504,9 +462,7 @@ methods:
     syntax:
       content: 'getWindowSize(): OfficeExtension.ClientResult<number[]>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;number[]&gt;
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number[]&gt;'
         description: ''
   - name: insertHtmlAtCurrentPosition(html)
     uid: 'onenote!OneNote.Application#insertHtmlAtCurrentPosition:member(1)'
@@ -536,51 +492,41 @@ methods:
     syntax:
       content: 'isViewingDeletedNotes(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
   - name: load(option)
     uid: 'onenote!OneNote.Application#load:member(1)'
     package: onenote!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.Application` - Where option is
-      a comma-delimited string or an array of strings that specify the
-      properties to load.
+      `load(option?: string | string[]): OneNote.Application` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }):
-      OneNote.Application` - Where option.select is a comma-delimited string
-      that specifies the properties to load, and options.expand is a
-      comma-delimited string that specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): OneNote.Application` - Only available on collection types. It
-      is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Application` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(option?: OneNote.Interfaces.ApplicationLoadOptions):
-        OneNote.Application;
+      content: 'load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;'
       parameters:
         - id: option
           description: ''
-          type: >-
-            <xref
-            uid="onenote!OneNote.Interfaces.ApplicationLoadOptions:interface" />
+          type: '<xref uid="onenote!OneNote.Interfaces.ApplicationLoadOptions:interface" />'
       return:
         type: '<xref uid="onenote!OneNote.Application:class" />'
         description: ''
@@ -589,8 +535,8 @@ methods:
     package: onenote!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -598,9 +544,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): OneNote.Application;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="onenote!OneNote.Application:class" />'
@@ -610,22 +554,18 @@ methods:
     package: onenote!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
-        OneNote.Application;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Application;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that
-            specifies the properties to load, and propertyNamesAndPaths.expand
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type: '{ select?: string; expand?: string; }'
       return:
         type: '<xref uid="onenote!OneNote.Application:class" />'
@@ -634,13 +574,10 @@ methods:
     uid: 'onenote!OneNote.Application#navigateToPage:member(1)'
     package: onenote!
     fullName: navigateToPage(page)
-    summary: >-
+    summary: |-
       Opens the specified page in the application instance.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -692,13 +629,10 @@ methods:
     uid: 'onenote!OneNote.Application#navigateToPageWithClientUrl:member(1)'
     package: onenote!
     fullName: navigateToPageWithClientUrl(url)
-    summary: >-
+    summary: |-
       Gets the specified page, and opens it in the application instance.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -751,14 +685,11 @@ methods:
     package: onenote!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original OneNote.Application
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `OneNote.Interfaces.ApplicationData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Application object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

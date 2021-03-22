@@ -3,13 +3,10 @@ name: Excel.ShapeTextOrientation
 uid: 'excel!Excel.ShapeTextOrientation:enum'
 package: excel!
 fullName: Excel.ShapeTextOrientation
-summary: >-
+summary: |-
   Specifies the orientation for the text frame in a shape.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

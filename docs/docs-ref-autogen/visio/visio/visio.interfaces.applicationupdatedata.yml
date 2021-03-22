@@ -3,9 +3,7 @@ name: Visio.Interfaces.ApplicationUpdateData
 uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
 package: visio!
 fullName: Visio.Interfaces.ApplicationUpdateData
-summary: >-
-  An interface for updating data on the Application object, for use in
-  "application.set(<!-- -->{ ... }<!-- -->)".
+summary: 'An interface for updating data on the Application object, for use in "application.set(<!-- -->{ ... }<!-- -->)".'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showBorders:member'
     package: visio!
     fullName: showBorders
-    summary: >-
+    summary: |-
       Show or hide the iFrame application borders.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showToolbars:member'
     package: visio!
     fullName: showToolbars
-    summary: >-
+    summary: |-
       Show or hide the standard toolbars.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

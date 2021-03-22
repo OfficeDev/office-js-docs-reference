@@ -4,14 +4,11 @@ uid: 'excel!Excel.CustomXmlPartScopedCollection:class'
 package: excel!
 fullName: Excel.CustomXmlPartScopedCollection
 summary: >-
-  A scoped collection of custom XML parts. A scoped collection is the result of
-  some operation (e.g., filtering by namespace). A scoped collection cannot be
-  scoped any further.
+  A scoped collection of custom XML parts. A scoped collection is the result of some operation (e.g., filtering by
+  namespace). A scoped collection cannot be scoped any further.
 
 
-  \[ [API set: ExcelApi
-  1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,8 +19,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -48,13 +45,10 @@ methods:
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of CustomXML parts in this collection.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,13 +100,10 @@ methods:
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(id)
-    summary: >-
+    summary: |-
       Gets a custom XML part based on its ID.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -130,17 +121,14 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(id)
     summary: >-
-      Gets a custom XML part based on its ID. If the `CustomXmlPart` does not
-      exist, then this function returns an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      Gets a custom XML part based on its ID. If the `CustomXmlPart` does not exist, then this function returns an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 
 
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -196,14 +184,10 @@ methods:
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
     package: excel!
     fullName: getOnlyItem()
-    summary: >-
-      If the collection contains exactly one item, this method returns it.
-      Otherwise, this method produces an error.
+    summary: |-
+      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -252,18 +236,15 @@ methods:
 
           ```
   - name: getOnlyItemOrNullObject()
-    uid: >-
-      excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)
+    uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
     package: excel!
     fullName: getOnlyItemOrNullObject()
     summary: >-
-      If the collection contains exactly one item, this method returns it.
-      Otherwise, this method returns `null`<!-- -->.
+      If the collection contains exactly one item, this method returns it. Otherwise, this method returns `null`<!--
+      -->.
 
 
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -277,23 +258,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
-        & Excel.Interfaces.CollectionLoadOptions):
-        Excel.CustomXmlPartScopedCollection;
+        load(options?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.CustomXmlPartScopedCollection:class" />'
@@ -303,20 +281,16 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNames?: string | string[]):
-        Excel.CustomXmlPartScopedCollection;
+      content: 'load(propertyNames?: string | string[]): Excel.CustomXmlPartScopedCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.CustomXmlPartScopedCollection:class" />'
@@ -326,22 +300,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.CustomXmlPartScopedCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.CustomXmlPartScopedCollection:class" />'
@@ -351,24 +321,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.CustomXmlPartScopedCollection` object is an API object, the
-      `toJSON` method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.CustomXmlPartScopedCollectionData`<!-- -->) that
-      contains an "items" array with shallow copies of any loaded properties
-      from the collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.CustomXmlPartScopedCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartScopedCollectionData`<!-- -->)
+      that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

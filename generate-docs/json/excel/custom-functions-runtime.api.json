@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.5.0",
+    "toolVersion": "7.13.2",
     "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
@@ -179,6 +179,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "onCanceled",
                   "propertyTypeTokenRange": {
@@ -272,6 +273,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "code",
                   "propertyTypeTokenRange": {
@@ -298,6 +300,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "message",
                   "propertyTypeTokenRange": {
@@ -502,6 +505,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "address",
                   "propertyTypeTokenRange": {
@@ -527,6 +531,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "parameterAddresses",
                   "propertyTypeTokenRange": {
@@ -599,6 +604,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "setResult",
                   "propertyTypeTokenRange": {

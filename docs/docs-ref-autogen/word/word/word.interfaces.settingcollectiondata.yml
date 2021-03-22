@@ -3,9 +3,7 @@ name: Word.Interfaces.SettingCollectionData
 uid: 'word!Word.Interfaces.SettingCollectionData:interface'
 package: word!
 fullName: Word.Interfaces.SettingCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `settingCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `settingCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

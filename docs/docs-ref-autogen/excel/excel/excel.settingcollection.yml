@@ -4,14 +4,11 @@ uid: 'excel!Excel.SettingCollection:class'
 package: excel!
 fullName: Excel.SettingCollection
 summary: >-
-  Represents a collection of key-value pair setting objects that are part of the
-  workbook. The scope is limited to per file and add-in (task-pane or content)
-  combination.
+  Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per
+  file and add-in (task-pane or content) combination.
 
 
-  \[ [API set: ExcelApi
-  1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,8 +19,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -47,20 +44,15 @@ properties:
     uid: 'excel!Excel.SettingCollection#onSettingsChanged:member'
     package: excel!
     fullName: onSettingsChanged
-    summary: >-
+    summary: |-
       Occurs when the settings in the document are changed.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onSettingsChanged:
-        OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;
+      content: 'readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -90,20 +82,15 @@ methods:
     uid: 'excel!Excel.SettingCollection#add:member(1)'
     package: excel!
     fullName: 'add(key, value)'
-    summary: >-
+    summary: |-
       Sets or adds the specified setting to the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        add(key: string, value: string | number | boolean | Date | Array<any> |
-        any): Excel.Setting;
+      content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
       parameters:
         - id: key
           description: The key of the new setting.
@@ -137,13 +124,10 @@ methods:
     uid: 'excel!Excel.SettingCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of settings in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -156,13 +140,10 @@ methods:
     uid: 'excel!Excel.SettingCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: >-
+    summary: |-
       Gets a setting entry via the key.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -180,16 +161,13 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a setting entry via the key. If the setting does not exist, then this
-      function will return an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      Gets a setting entry via the key. If the setting does not exist, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 
 
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -235,22 +213,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.SettingCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.SettingCollection;
+        load(options?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.SettingCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.SettingCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.SettingCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.SettingCollection:class" />'
@@ -260,8 +236,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -269,9 +245,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.SettingCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.SettingCollection:class" />'
@@ -281,22 +255,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.SettingCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SettingCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.SettingCollection:class" />'
@@ -306,15 +276,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.SettingCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
-      array with shallow copies of any loaded properties from the collection's
-      items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false

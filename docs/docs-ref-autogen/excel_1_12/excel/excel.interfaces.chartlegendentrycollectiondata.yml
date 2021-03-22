@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartLegendEntryCollectionData
 uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartLegendEntryCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `chartLegendEntryCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartLegendEntryCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

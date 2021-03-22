@@ -3,13 +3,10 @@ name: OneNote.Interfaces.ParagraphCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions
-summary: >-
+summary: |-
   Represents a collection of Paragraph objects.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,14 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Gets the ID of the Paragraph object.
-      Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the Paragraph object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +44,11 @@ properties:
     package: onenote!
     fullName: image
     summary: >-
-      For EACH ITEM in the collection: Gets the Image object in the Paragraph.
-      Throws an exception if ParagraphType is not Image.
+      For EACH ITEM in the collection: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is
+      not Image.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,35 +61,26 @@ properties:
     package: onenote!
     fullName: inkWords
     summary: >-
-      For EACH ITEM in the collection: Gets the Ink collection in the Paragraph.
-      Throws an exception if ParagraphType is not Ink.
+      For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is
+      not Ink.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface" />'
   - name: outline
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#outline:member'
     package: onenote!
     fullName: outline
-    summary: >-
-      For EACH ITEM in the collection: Gets the Outline object that contains the
-      Paragraph.
+    summary: |-
+      For EACH ITEM in the collection: Gets the Outline object that contains the Paragraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,150 +89,113 @@ properties:
       return:
         type: '<xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface" />'
   - name: paragraphs
-    uid: >-
-      onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#paragraphs:member
+    uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: >-
-      For EACH ITEM in the collection: The collection of paragraphs under this
-      paragraph. Read only
+    summary: |-
+      For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface" />'
   - name: parentParagraph
-    uid: >-
-      onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraph:member
+    uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraph:member'
     package: onenote!
     fullName: parentParagraph
-    summary: >-
-      For EACH ITEM in the collection: Gets the parent paragraph object. Throws
-      if a parent paragraph does not exist.
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph does not exist.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
   - name: parentParagraphOrNull
-    uid: >-
-      onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraphOrNull:member
+    uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraphOrNull:member'
     package: onenote!
     fullName: parentParagraphOrNull
     summary: >-
-      For EACH ITEM in the collection: Gets the parent paragraph object. Returns
-      null if a parent paragraph does not exist.
+      For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph does not
+      exist.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
   - name: parentTableCell
-    uid: >-
-      onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member
+    uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member'
     package: onenote!
     fullName: parentTableCell
     summary: >-
-      For EACH ITEM in the collection: Gets the TableCell object that contains
-      the Paragraph if one exists. If parent is not a TableCell, throws
-      ItemNotFound.
+      For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is
+      not a TableCell, throws ItemNotFound.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableCellOrNull
-    uid: >-
-      onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNull:member
+    uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNull:member'
     package: onenote!
     fullName: parentTableCellOrNull
     summary: >-
-      For EACH ITEM in the collection: Gets the TableCell object that contains
-      the Paragraph if one exists. If parent is not a TableCell, returns null.
+      For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is
+      not a TableCell, returns null.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface" />'
   - name: richText
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#richText:member'
     package: onenote!
     fullName: richText
     summary: >-
-      For EACH ITEM in the collection: Gets the RichText object in the
-      Paragraph. Throws an exception if ParagraphType is not RichText.
+      For EACH ITEM in the collection: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType
+      is not RichText.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'richText?: OneNote.Interfaces.RichTextLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.RichTextLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.RichTextLoadOptions:interface" />'
   - name: table
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#table:member'
     package: onenote!
     fullName: table
     summary: >-
-      For EACH ITEM in the collection: Gets the Table object in the Paragraph.
-      Throws an exception if ParagraphType is not Table.
+      For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is
+      not Table.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -262,14 +207,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#type:member'
     package: onenote!
     fullName: type
-    summary: >-
-      For EACH ITEM in the collection: Gets the type of the Paragraph object.
-      Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the type of the Paragraph object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

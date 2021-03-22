@@ -14,9 +14,8 @@ properties:
     package: outlook!
     fullName: inLine
     summary: >-
-      Only used if type is set to file. If true, indicates that the attachment
-      will be shown inline in the message body, and should not be displayed in
-      the attachment list.
+      Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body,
+      and should not be displayed in the attachment list.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,9 +27,7 @@ properties:
     uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
     package: outlook!
     fullName: itemId
-    summary: >-
-      Only used if type is set to item. The EWS item id of the attachment. This
-      is a string up to 100 characters.
+    summary: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -42,9 +39,7 @@ properties:
     uid: 'outlook!Office.ReplyFormAttachment#name:member'
     package: outlook!
     fullName: name
-    summary: >-
-      A string that contains the name of the attachment, up to 255 characters in
-      length.
+    summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,9 +51,7 @@ properties:
     uid: 'outlook!Office.ReplyFormAttachment#type:member'
     package: outlook!
     fullName: type
-    summary: >-
-      Indicates the type of attachment. Must be file for a file attachment or
-      item for an item attachment.
+    summary: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,7 @@ name: Excel.ProtectionSelectionMode
 uid: 'excel!Excel.ProtectionSelectionMode:enum'
 package: excel!
 fullName: Excel.ProtectionSelectionMode
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

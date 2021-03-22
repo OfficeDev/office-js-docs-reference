@@ -3,10 +3,7 @@ name: OneNote.NumberType
 uid: 'onenote!OneNote.NumberType:enum'
 package: onenote!
 fullName: OneNote.NumberType
-summary: >-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

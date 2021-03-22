@@ -3,13 +3,10 @@ name: Excel.ShowAsCalculation
 uid: 'excel!Excel.ShowAsCalculation:enum'
 package: excel!
 fullName: Excel.ShowAsCalculation
-summary: >-
+summary: |-
   The ShowAs Calculation function for the Data Pivot Field.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,8 +20,8 @@ fields:
     uid: 'excel!Excel.ShowAsCalculation.index:member'
     package: excel!
     summary: >-
-      Calculates the values as follows: ((value in cell) x (Grand Total of Grand
-      Totals)) / ((Grand Row Total) x (Grand Column Total))
+      Calculates the values as follows: ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand
+      Column Total))
     value: '"Index"'
   - name: none
     uid: 'excel!Excel.ShowAsCalculation.none:member'

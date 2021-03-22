@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartAreaFormatUpdateData
 uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAreaFormatUpdateData
-summary: >-
-  An interface for updating data on the ChartAreaFormat object, for use in
-  `chartAreaFormat.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData#font:member'
     package: excel!
     fullName: font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for the
-      current object.
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

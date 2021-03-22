@@ -3,9 +3,7 @@ name: Excel.Interfaces.TableColumnData
 uid: 'excel!Excel.Interfaces.TableColumnData:interface'
 package: excel!
 fullName: Excel.Interfaces.TableColumnData
-summary: >-
-  An interface describing the data returned by calling
-  `tableColumn.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableColumn.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableColumnData#filter:member'
     package: excel!
     fullName: filter
-    summary: >-
+    summary: |-
       Retrieve the filter applied to the column.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableColumnData#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Returns a unique key that identifies the column within the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,14 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableColumnData#index:member'
     package: excel!
     fullName: index
-    summary: >-
-      Returns the index number of the column within the columns collection of
-      the table. Zero-indexed.
+    summary: |-
+      Returns the index number of the column within the columns collection of the table. Zero-indexed.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -75,8 +63,7 @@ properties:
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,14 +76,11 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

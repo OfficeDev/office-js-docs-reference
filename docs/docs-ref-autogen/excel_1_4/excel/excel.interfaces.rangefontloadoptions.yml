@@ -3,14 +3,10 @@ name: Excel.Interfaces.RangeFontLoadOptions
 uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeFontLoadOptions
-summary: >-
-  This object represents the font attributes (font name, font size, color, etc.)
-  for an object.
+summary: |-
+  This object represents the font attributes (font name, font size, color, etc.) for an object.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#bold:member'
     package: excel!
     fullName: bold
-    summary: >-
+    summary: |-
       Represents the bold status of font.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,14 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#color:member'
     package: excel!
     fullName: color
-    summary: >-
-      HTML color code representation of the text color (e.g., \#FF0000
-      represents Red).
+    summary: |-
+      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#italic:member'
     package: excel!
     fullName: italic
-    summary: >-
+    summary: |-
       Specifies the italic status of the font.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -90,14 +75,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
-      Font name (e.g., "Calibri"). The name's length should not be greater than
-      31 characters.
+    summary: |-
+      Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -109,13 +90,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#size:member'
     package: excel!
     fullName: size
-    summary: >-
+    summary: |-
       Font size.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,14 +105,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#underline:member'
     package: excel!
     fullName: underline
-    summary: >-
-      Type of underline applied to the font. See Excel.RangeUnderlineStyle for
-      details.
+    summary: |-
+      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,13 +3,10 @@ name: Excel.AutoFillType
 uid: 'excel!Excel.AutoFillType:enum'
 package: excel!
 fullName: Excel.AutoFillType
-summary: >-
+summary: |-
   The behavior types when AutoFill is used on a range in the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,15 +20,13 @@ fields:
     uid: 'excel!Excel.AutoFillType.fillDays:member'
     package: excel!
     summary: >-
-      A version of "FillSeries" for dates that bases the pattern on either the
-      day of the month or the day of the week, depending on the context.
+      A version of "FillSeries" for dates that bases the pattern on either the day of the month or the day of the week,
+      depending on the context.
     value: '"FillDays"'
   - name: fillDefault
     uid: 'excel!Excel.AutoFillType.fillDefault:member'
     package: excel!
-    summary: >-
-      Populates the adjacent cells based on the surrounding data (the standard
-      AutoFill behavior).
+    summary: Populates the adjacent cells based on the surrounding data (the standard AutoFill behavior).
     value: '"FillDefault"'
   - name: fillFormats
     uid: 'excel!Excel.AutoFillType.fillFormats:member'
@@ -46,9 +41,7 @@ fields:
   - name: fillSeries
     uid: 'excel!Excel.AutoFillType.fillSeries:member'
     package: excel!
-    summary: >-
-      Populates the adjacent cells with data that follows a pattern in the
-      copied cells.
+    summary: Populates the adjacent cells with data that follows a pattern in the copied cells.
     value: '"FillSeries"'
   - name: fillValues
     uid: 'excel!Excel.AutoFillType.fillValues:member'
@@ -58,9 +51,7 @@ fields:
   - name: fillWeekdays
     uid: 'excel!Excel.AutoFillType.fillWeekdays:member'
     package: excel!
-    summary: >-
-      A version of "FillSeries" for dates that bases the pattern on the day of
-      the week and only includes weekdays.
+    summary: A version of "FillSeries" for dates that bases the pattern on the day of the week and only includes weekdays.
     value: '"FillWeekdays"'
   - name: fillYears
     uid: 'excel!Excel.AutoFillType.fillYears:member'
@@ -76,13 +67,13 @@ fields:
     uid: 'excel!Excel.AutoFillType.growthTrend:member'
     package: excel!
     summary: >-
-      A version of "FillSeries" for numbers that fills out the values in the
-      adjacent cells according to a growth trend model.
+      A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend
+      model.
     value: '"GrowthTrend"'
   - name: linearTrend
     uid: 'excel!Excel.AutoFillType.linearTrend:member'
     package: excel!
     summary: >-
-      A version of "FillSeries" for numbers that fills out the values in the
-      adjacent cells according to a linear trend model.
+      A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend
+      model.
     value: '"LinearTrend"'

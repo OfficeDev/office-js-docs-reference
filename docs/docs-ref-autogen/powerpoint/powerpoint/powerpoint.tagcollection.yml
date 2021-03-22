@@ -3,13 +3,10 @@ name: PowerPoint.TagCollection
 uid: 'powerpoint!PowerPoint.TagCollection:class'
 package: powerpoint!
 fullName: PowerPoint.TagCollection
-summary: >-
+summary: |-
   Represents the collection of tags.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: powerpoint!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -47,14 +44,11 @@ methods:
     package: powerpoint!
     fullName: 'add(key, value)'
     summary: >-
-      Adds a new tag at the end of the collection. If the `key` already exists
-      in the collection, the value of the existing tag will be replaced with the
-      given `value`<!-- -->.
+      Adds a new tag at the end of the collection. If the `key` already exists in the collection, the value of the
+      existing tag will be replaced with the given `value`<!-- -->.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -63,9 +57,8 @@ methods:
       parameters:
         - id: key
           description: >-
-            The unique ID of a tag, which is unique within this
-            `TagCollection`<!-- -->. 'key' parameter is case-insensitive, but it
-            is always capitalized when saved in the document.
+            The unique ID of a tag, which is unique within this `TagCollection`<!-- -->. 'key' parameter is
+            case-insensitive, but it is always capitalized when saved in the document.
           type: string
         - id: value
           description: The value of the tag.
@@ -77,14 +70,10 @@ methods:
     uid: 'powerpoint!PowerPoint.TagCollection#delete:member(1)'
     package: powerpoint!
     fullName: delete(key)
-    summary: >-
-      Deletes the tag with the given `key` in this collection. Does nothing if
-      the `key` does not exist.
+    summary: |-
+      Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -93,8 +82,8 @@ methods:
       parameters:
         - id: key
           description: >-
-            The unique ID of a tag, which is unique within this
-            `TagCollection`<!-- -->. `key` parameter is case-insensitive.
+            The unique ID of a tag, which is unique within this `TagCollection`<!-- -->. `key` parameter is
+            case-insensitive.
           type: string
       return:
         type: void
@@ -103,13 +92,10 @@ methods:
     uid: 'powerpoint!PowerPoint.TagCollection#getCount:member(1)'
     package: powerpoint!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of tags in the collection.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -122,14 +108,10 @@ methods:
     uid: 'powerpoint!PowerPoint.TagCollection#getItem:member(1)'
     package: powerpoint!
     fullName: getItem(key)
-    summary: >-
-      Gets a tag using its unique ID. An error is thrown if the tag does not
-      exist.
+    summary: |-
+      Gets a tag using its unique ID. An error is thrown if the tag does not exist.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -141,21 +123,15 @@ methods:
           type: string
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'
-        description: >-
-          The tag with the unique ID. If such a tag does not exist, an error is
-          thrown.
+        description: 'The tag with the unique ID. If such a tag does not exist, an error is thrown.'
   - name: getItemAt(index)
     uid: 'powerpoint!PowerPoint.TagCollection#getItemAt:member(1)'
     package: powerpoint!
     fullName: getItemAt(index)
-    summary: >-
-      Gets a tag using its zero-based index in the collection. An error is
-      thrown if the index is out of range.
+    summary: |-
+      Gets a tag using its zero-based index in the collection. An error is thrown if the index is out of range.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -167,21 +143,17 @@ methods:
           type: number
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'
-        description: >-
-          The tag at the given index. An error is thrown if index is out of
-          range.
+        description: The tag at the given index. An error is thrown if index is out of range.
   - name: getItemOrNullObject(key)
     uid: 'powerpoint!PowerPoint.TagCollection#getItemOrNullObject:member(1)'
     package: powerpoint!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a tag using its unique ID. If such a tag does not exist, an object
-      with an `isNullObject` property set to true is returned.
+      Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to
+      true is returned.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -194,31 +166,28 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'
         description: >-
-          The tag with the unique ID. If such a tag does not exist, an object
-          with an `isNullObject` property set to true is returned.
+          The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to
+          true is returned.
   - name: load(options)
     uid: 'powerpoint!PowerPoint.TagCollection#load:member(1)'
     package: powerpoint!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: PowerPoint.Interfaces.TagCollectionLoadOptions &
-        PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.TagCollection;
+        load(options?: PowerPoint.Interfaces.TagCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions):
+        PowerPoint.TagCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface"
-            /> & <xref
-            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
-            />
+            <xref uid="powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface" /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
         description: ''
@@ -227,8 +196,8 @@ methods:
     package: powerpoint!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -236,9 +205,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): PowerPoint.TagCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
@@ -248,22 +215,18 @@ methods:
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        PowerPoint.TagCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TagCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
@@ -273,23 +236,17 @@ methods:
     package: powerpoint!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `PowerPoint.TagCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `PowerPoint.Interfaces.TagCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `PowerPoint.TagCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.TagCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.TagCollectionData:interface" />
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.TagCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

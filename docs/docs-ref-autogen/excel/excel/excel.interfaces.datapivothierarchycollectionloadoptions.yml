@@ -3,14 +3,10 @@ name: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
-summary: >-
-  Represents a collection of DataPivotHierarchy items associated with the
-  PivotTable.
+summary: |-
+  Represents a collection of DataPivotHierarchy items associated with the PivotTable.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -32,18 +27,13 @@ properties:
       return:
         type: boolean
   - name: field
-    uid: >-
-      excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#field:member
+    uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#field:member'
     package: excel!
     fullName: field
-    summary: >-
-      For EACH ITEM in the collection: Returns the PivotFields associated with
-      the DataPivotHierarchy.
+    summary: |-
+      For EACH ITEM in the collection: Returns the PivotFields associated with the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: ID of the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Name of the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,17 +72,13 @@ properties:
       return:
         type: boolean
   - name: numberFormat
-    uid: >-
-      excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#numberFormat:member
+    uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Number format of the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,17 +87,13 @@ properties:
       return:
         type: boolean
   - name: position
-    uid: >-
-      excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#position:member
+    uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#position:member'
     package: excel!
     fullName: position
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Position of the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -126,18 +102,13 @@ properties:
       return:
         type: boolean
   - name: showAs
-    uid: >-
-      excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#showAs:member
+    uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#showAs:member'
     package: excel!
     fullName: showAs
-    summary: >-
-      For EACH ITEM in the collection: Specifies if the data should be shown as
-      a specific summary calculation.
+    summary: |-
+      For EACH ITEM in the collection: Specifies if the data should be shown as a specific summary calculation.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -146,18 +117,13 @@ properties:
       return:
         type: boolean
   - name: summarizeBy
-    uid: >-
-      excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#summarizeBy:member
+    uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#summarizeBy:member'
     package: excel!
     fullName: summarizeBy
-    summary: >-
-      For EACH ITEM in the collection: Specifies if all items of the
-      DataPivotHierarchy are shown.
+    summary: |-
+      For EACH ITEM in the collection: Specifies if all items of the DataPivotHierarchy are shown.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

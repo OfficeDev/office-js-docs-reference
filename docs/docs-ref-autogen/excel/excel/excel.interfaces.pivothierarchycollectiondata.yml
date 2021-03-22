@@ -3,9 +3,7 @@ name: Excel.Interfaces.PivotHierarchyCollectionData
 uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotHierarchyCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pivotHierarchyCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `pivotHierarchyCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -4,17 +4,13 @@ uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.ContentControlCollectionLoadOptions
 summary: >-
-  Contains a collection of
-  [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content
-  controls are bounded and potentially labeled regions in a document that serve
-  as containers for specific types of content. Individual content controls may
-  contain contents such as images, tables, or paragraphs of formatted text.
-  Currently, only rich text content controls are supported.
+  Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
+  bounded and potentially labeled regions in a document that serve as containers for specific types of content.
+  Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
+  only rich text content controls are supported.
 
 
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,9 +21,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -40,13 +35,11 @@ properties:
     package: word!
     fullName: appearance
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the appearance of the
-      content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+      For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be
+      'BoundingBox', 'Tags', or 'Hidden'.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,19 +48,15 @@ properties:
       return:
         type: boolean
   - name: cannotDelete
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotDelete:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotDelete:member'
     package: word!
     fullName: cannotDelete
     summary: >-
-      For EACH ITEM in the collection: Gets or sets a value that indicates
-      whether the user can delete the content control. Mutually exclusive with
-      removeWhenEdited.
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content
+      control. Mutually exclusive with removeWhenEdited.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -80,13 +69,11 @@ properties:
     package: word!
     fullName: cannotEdit
     summary: >-
-      For EACH ITEM in the collection: Gets or sets a value that indicates
-      whether the user can edit the contents of the content control.
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the
+      content control.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -99,14 +86,11 @@ properties:
     package: word!
     fullName: color
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the color of the content
-      control. Color is specified in '\#RRGGBB' format or by using the color
-      name.
+      For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '\#RRGGBB'
+      format or by using the color name.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -119,14 +103,11 @@ properties:
     package: word!
     fullName: font
     summary: >-
-      For EACH ITEM in the collection: Gets the text format of the content
-      control. Use this to get and set font name, size, color, and other
-      properties.
+      For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name,
+      size, color, and other properties.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -138,14 +119,10 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#id:member'
     package: word!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Gets an integer that represents the
-      content control identifier. Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -157,14 +134,10 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member'
     package: word!
     fullName: parentBody
-    summary: >-
-      For EACH ITEM in the collection: Gets the parent body of the content
-      control.
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent body of the content control.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -173,66 +146,49 @@ properties:
       return:
         type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
   - name: parentContentControl
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member'
     package: word!
     fullName: parentContentControl
     summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the content control. Throws an error if there isn't a parent content
-      control.
+      For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if
+      there isn't a parent content control.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: '<xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />'
   - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControlOrNullObject:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControlOrNullObject:member'
     package: word!
     fullName: parentContentControlOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the content control. Returns a null object if there isn't a parent content
-      control.
+      For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object
+      if there isn't a parent content control.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: '<xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />'
   - name: parentTable
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTable:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTable:member'
     package: word!
     fullName: parentTable
     summary: >-
-      For EACH ITEM in the collection: Gets the table that contains the content
-      control. Throws an error if it is not contained in a table.
+      For EACH ITEM in the collection: Gets the table that contains the content control. Throws an error if it is not
+      contained in a table.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -241,18 +197,15 @@ properties:
       return:
         type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: parentTableCell
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member'
     package: word!
     fullName: parentTableCell
     summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains the
-      content control. Throws an error if it is not contained in a table cell.
+      For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an error if it is
+      not contained in a table cell.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -261,19 +214,15 @@ properties:
       return:
         type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableCellOrNullObject
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCellOrNullObject:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCellOrNullObject:member'
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains the
-      content control. Returns a null object if it is not contained in a table
-      cell.
+      For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if
+      it is not contained in a table cell.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -282,18 +231,15 @@ properties:
       return:
         type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
   - name: parentTableOrNullObject
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableOrNullObject:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableOrNullObject:member'
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Gets the table that contains the content
-      control. Returns a null object if it is not contained in a table.
+      For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is
+      not contained in a table.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -302,23 +248,18 @@ properties:
       return:
         type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
   - name: placeholderText
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member'
     package: word!
     fullName: placeholderText
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the placeholder text of the
-      content control. Dimmed text will be displayed when the content control is
-      empty.
+      For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be
+      displayed when the content control is empty.
 
 
-      **Note**: The set operation for this property is not supported in Word on
-      the web.
+      **Note**: The set operation for this property is not supported in Word on the web.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -327,19 +268,15 @@ properties:
       return:
         type: boolean
   - name: removeWhenEdited
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#removeWhenEdited:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#removeWhenEdited:member'
     package: word!
     fullName: removeWhenEdited
     summary: >-
-      For EACH ITEM in the collection: Gets or sets a value that indicates
-      whether the content control is removed after it is edited. Mutually
-      exclusive with cannotDelete.
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after
+      it is edited. Mutually exclusive with cannotDelete.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -352,15 +289,12 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the style name for the
-      content control. Use this property for custom styles and localized style
-      names. To use the built-in styles that are portable between locales, see
-      the "styleBuiltIn" property.
+      For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom
+      styles and localized style names. To use the built-in styles that are portable between locales, see the
+      "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -369,20 +303,16 @@ properties:
       return:
         type: boolean
   - name: styleBuiltIn
-    uid: >-
-      word!Word.Interfaces.ContentControlCollectionLoadOptions#styleBuiltIn:member
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#styleBuiltIn:member'
     package: word!
     fullName: styleBuiltIn
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the built-in style name for
-      the content control. Use this property for built-in styles that are
-      portable between locales. To use custom styles or localized style names,
-      see the "style" property.
+      For EACH ITEM in the collection: Gets or sets the built-in style name for the content control. Use this property
+      for built-in styles that are portable between locales. To use custom styles or localized style names, see the
+      "style" property.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -395,15 +325,12 @@ properties:
     package: word!
     fullName: subtype
     summary: >-
-      For EACH ITEM in the collection: Gets the content control subtype. The
-      subtype can be 'RichTextInline', 'RichTextParagraphs',
-      'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text
-      content controls. Read-only.
+      For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline',
+      'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -415,14 +342,10 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#tag:member'
     package: word!
     fullName: tag
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets a tag to identify a content
-      control.
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -434,14 +357,10 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: >-
-      For EACH ITEM in the collection: Gets the text of the content control.
-      Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the text of the content control. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -453,14 +372,10 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#title:member'
     package: word!
     fullName: title
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the title for a content
-      control.
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the title for a content control.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -473,13 +388,11 @@ properties:
     package: word!
     fullName: type
     summary: >-
-      For EACH ITEM in the collection: Gets the content control type. Only rich
-      text content controls are supported currently. Read-only.
+      For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported
+      currently. Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

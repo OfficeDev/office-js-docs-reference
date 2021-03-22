@@ -3,13 +3,10 @@ name: OneNote.Interfaces.NotebookLoadOptions
 uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.NotebookLoadOptions
-summary: >-
+summary: |-
   Represents a OneNote notebook. Notebooks contain section groups and sections.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#baseUrl:member'
     package: onenote!
     fullName: baseUrl
-    summary: >-
+    summary: |-
       The url of the site that this notebook is located. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: >-
+    summary: |-
       The client url of the notebook. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,13 +58,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the notebook. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -85,14 +73,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#isVirtual:member'
     package: onenote!
     fullName: isVirtual
-    summary: >-
-      True if the Notebook is not created by the user (i.e. 'Misplaced
-      Sections'). Read only
+    summary: |-
+      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
 
-
-      \[ [API set: OneNoteApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -104,13 +88,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#name:member'
     package: onenote!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the name of the notebook. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -122,41 +103,29 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: >-
+    summary: |-
       The section groups in the notebook. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface" />'
   - name: sections
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#sections:member'
     package: onenote!
     fullName: sections
-    summary: >-
+    summary: |-
       The the sections of the notebook. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'sections?: OneNote.Interfaces.SectionCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface" />'

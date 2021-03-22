@@ -3,13 +3,10 @@ name: Visio.Interfaces.CommentCollectionLoadOptions
 uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.CommentCollectionLoadOptions
-summary: >-
+summary: |-
   Represents the CommentCollection for a given Shape.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,14 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#author:member'
     package: visio!
     fullName: author
-    summary: >-
-      For EACH ITEM in the collection: A string that specifies the name of the
-      author of the comment.
+    summary: |-
+      For EACH ITEM in the collection: A string that specifies the name of the author of the comment.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -50,14 +43,10 @@ properties:
     uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#date:member'
     package: visio!
     fullName: date
-    summary: >-
-      For EACH ITEM in the collection: A string that specifies the date when the
-      comment was created.
+    summary: |-
+      For EACH ITEM in the collection: A string that specifies the date when the comment was created.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +58,10 @@ properties:
     uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#text:member'
     package: visio!
     fullName: text
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: A string that contains the comment text.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

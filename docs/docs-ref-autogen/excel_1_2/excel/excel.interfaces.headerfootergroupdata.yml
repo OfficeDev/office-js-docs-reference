@@ -3,9 +3,7 @@ name: Excel.Interfaces.HeaderFooterGroupData
 uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
 package: excel!
 fullName: Excel.Interfaces.HeaderFooterGroupData
-summary: >-
-  An interface describing the data returned by calling
-  `headerFooterGroup.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `headerFooterGroup.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,9 +3,7 @@ name: Visio.Interfaces.PageCollectionUpdateData
 uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
 package: visio!
 fullName: Visio.Interfaces.PageCollectionUpdateData
-summary: >-
-  An interface for updating data on the PageCollection object, for use in
-  "pageCollection.set(<!-- -->{ ... }<!-- -->)".
+summary: 'An interface for updating data on the PageCollection object, for use in "pageCollection.set(<!-- -->{ ... }<!-- -->)".'
 remarks: ''
 isPreview: false
 isDeprecated: false

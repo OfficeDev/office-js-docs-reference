@@ -3,13 +3,10 @@ name: Excel.PivotField
 uid: 'excel!Excel.PivotField:class'
 package: excel!
 fullName: Excel.PivotField
-summary: >-
+summary: |-
   Represents the Excel PivotField.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'excel!Excel.PivotField#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Id of the PivotField.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +45,10 @@ properties:
     uid: 'excel!Excel.PivotField#items:member'
     package: excel!
     fullName: items
-    summary: >-
+    summary: |-
       Returns the PivotFields associated with the PivotField.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +60,10 @@ properties:
     uid: 'excel!Excel.PivotField#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Name of the PivotField.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -87,13 +75,10 @@ properties:
     uid: 'excel!Excel.PivotField#showAllItems:member'
     package: excel!
     fullName: showAllItems
-    summary: >-
+    summary: |-
       Determines whether to show all items of the PivotField.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,13 +90,10 @@ properties:
     uid: 'excel!Excel.PivotField#subtotals:member'
     package: excel!
     fullName: subtotals
-    summary: >-
+    summary: |-
       Subtotals of the PivotField.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -125,14 +107,11 @@ methods:
     package: excel!
     fullName: applyFilter(filter)
     summary: >-
-      Sets one or more of the field's current PivotFilters and applies them to
-      the field. If the provided filters are invalid or cannot be applied, an
-      exception is thrown.
+      Sets one or more of the field's current PivotFilters and applies them to the field. If the provided filters are
+      invalid or cannot be applied, an exception is thrown.
 
 
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -140,9 +119,7 @@ methods:
       content: 'applyFilter(filter: Excel.PivotFilters): void;'
       parameters:
         - id: filter
-          description: >-
-            A configured specific PivotFilter or a PivotFilters interface
-            containing multiple configured filters.
+          description: A configured specific PivotFilter or a PivotFilters interface containing multiple configured filters.
           type: '<xref uid="excel!Excel.PivotFilters:interface" />'
       return:
         type: void
@@ -151,14 +128,10 @@ methods:
     uid: 'excel!Excel.PivotField#clearAllFilters:member(1)'
     package: excel!
     fullName: clearAllFilters()
-    summary: >-
-      Clears all criteria from all of the field's filters. This removes any
-      active filtering on the field.
+    summary: |-
+      Clears all criteria from all of the field's filters. This removes any active filtering on the field.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -197,14 +170,10 @@ methods:
     uid: 'excel!Excel.PivotField#clearFilter:member(1)'
     package: excel!
     fullName: clearFilter(filterType)
-    summary: >-
-      Clears all existing criteria from the field's filter of the given type (if
-      one is currently applied).
+    summary: |-
+      Clears all existing criteria from the field's filter of the given type (if one is currently applied).
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -221,21 +190,15 @@ methods:
     uid: 'excel!Excel.PivotField#clearFilter:member(2)'
     package: excel!
     fullName: clearFilter(filterTypeString)
-    summary: >-
-      Clears all existing criteria from the field's filter of the given type (if
-      one is currently applied).
+    summary: |-
+      Clears all existing criteria from the field's filter of the given type (if one is currently applied).
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        clearFilter(filterTypeString: "Unknown" | "Value" | "Manual" | "Label" |
-        "Date"): void;
+      content: 'clearFilter(filterTypeString: "Unknown" | "Value" | "Manual" | "Label" | "Date"): void;'
       parameters:
         - id: filterTypeString
           description: The type of filter on the field of which to clear all criteria.
@@ -247,13 +210,10 @@ methods:
     uid: 'excel!Excel.PivotField#getFilters:member(1)'
     package: excel!
     fullName: getFilters()
-    summary: >-
+    summary: |-
       Gets all filters currently applied on the field.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -261,93 +221,71 @@ methods:
       content: 'getFilters(): OfficeExtension.ClientResult<Excel.PivotFilters>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
-          uid="excel!Excel.PivotFilters:interface" />&gt;
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.PivotFilters:interface"
+          />&gt;
         description: A PivotFilters interface with all active filters.
   - name: isFiltered(filterType)
     uid: 'excel!Excel.PivotField#isFiltered:member(1)'
     package: excel!
     fullName: isFiltered(filterType)
-    summary: >-
+    summary: |-
       Checks if there are any applied filters on the field.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        isFiltered(filterType?: Excel.PivotFilterType):
-        OfficeExtension.ClientResult<boolean>;
+      content: 'isFiltered(filterType?: Excel.PivotFilterType): OfficeExtension.ClientResult<boolean>;'
       parameters:
         - id: filterType
-          description: >-
-            The filter type to check. If no type is provided, this method will
-            check if any filter is applied.
+          description: 'The filter type to check. If no type is provided, this method will check if any filter is applied.'
           type: '<xref uid="excel!Excel.PivotFilterType:enum" />'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: >-
-          True if the field has a filter of type `filterType` applied. If
-          filterType is not specified, true is returned if the field has any
-          applied filters.
+          True if the field has a filter of type `filterType` applied. If filterType is not specified, true is returned
+          if the field has any applied filters.
   - name: isFiltered(filterTypeString)
     uid: 'excel!Excel.PivotField#isFiltered:member(2)'
     package: excel!
     fullName: isFiltered(filterTypeString)
-    summary: >-
+    summary: |-
       Checks if there are any applied filters on the field.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        isFiltered(filterTypeString?: "Unknown" | "Value" | "Manual" | "Label" |
-        "Date"): OfficeExtension.ClientResult<boolean>;
+        isFiltered(filterTypeString?: "Unknown" | "Value" | "Manual" | "Label" | "Date"):
+        OfficeExtension.ClientResult<boolean>;
       parameters:
         - id: filterTypeString
-          description: >-
-            The filter type to check. If no type is provided, this method will
-            check if any filter is applied.
+          description: 'The filter type to check. If no type is provided, this method will check if any filter is applied.'
           type: '"Unknown" | "Value" | "Manual" | "Label" | "Date"'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: >-
-          True if the field has a filter of type `filterType` applied. If
-          filterType is not specified, true is returned if the field has any
-          applied filters.
+          True if the field has a filter of type `filterType` applied. If filterType is not specified, true is returned
+          if the field has any applied filters.
   - name: load(options)
     uid: 'excel!Excel.PivotField#load:member(1)'
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PivotFieldLoadOptions):
-        Excel.PivotField;
+      content: 'load(options?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.PivotFieldLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.PivotFieldLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.PivotField:class" />'
         description: ''
@@ -356,8 +294,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -365,9 +303,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.PivotField;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.PivotField:class" />'
@@ -377,8 +313,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -391,10 +327,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -408,9 +342,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -418,20 +351,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.PivotFieldUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.PivotFieldUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.PivotFieldUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -440,9 +368,7 @@ methods:
     uid: 'excel!Excel.PivotField#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -460,14 +386,11 @@ methods:
     package: excel!
     fullName: sortByLabels(sortBy)
     summary: >-
-      Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will
-      be applied based on it, if not sort will be based on the PivotField
-      itself.
+      Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort
+      will be based on the PivotField itself.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -485,38 +408,31 @@ methods:
     package: excel!
     fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
     summary: >-
-      Sorts the PivotField by specified values in a given scope. The scope
-      defines which specific values will be used to sort when there are multiple
-      values from the same DataPivotHierarchy.
+      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
+      sort when there are multiple values from the same DataPivotHierarchy.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        sortByValues(sortBy: Excel.SortBy, valuesHierarchy:
-        Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>):
-        void;
+        sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem |
+        string>): void;
       parameters:
         - id: sortBy
           description: Specifies if the sorting is done in ascending or descending order.
           type: '<xref uid="excel!Excel.SortBy:enum" />'
         - id: valuesHierarchy
-          description: >-
-            Specifies the values hierarchy on the data axis to be used for
-            sorting.
+          description: Specifies the values hierarchy on the data axis to be used for sorting.
           type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         - id: pivotItemScope
           description: >-
-            The items that should be used for the scope of the sorting. These
-            will be the items that make up the row or column that you want to
-            sort on. If a string is used instead of a PivotItem, the string
-            represents the ID of the PivotItem. If there are no items other than
-            data hierarchy on the axis you want to sort on, this can be empty.
+            The items that should be used for the scope of the sorting. These will be the items that make up the row or
+            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
+            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
+            empty.
           type: 'Array&lt;<xref uid="excel!Excel.PivotItem:class" /> | string&gt;'
       return:
         type: void
@@ -526,38 +442,31 @@ methods:
     package: excel!
     fullName: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
     summary: >-
-      Sorts the PivotField by specified values in a given scope. The scope
-      defines which specific values will be used to sort when there are multiple
-      values from the same DataPivotHierarchy.
+      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
+      sort when there are multiple values from the same DataPivotHierarchy.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy:
-        Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>):
-        void;
+        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
+        pivotItemScope?: Array<PivotItem | string>): void;
       parameters:
         - id: sortByString
           description: Specifies if the sorting is done in ascending or descending order.
           type: '"Ascending" | "Descending"'
         - id: valuesHierarchy
-          description: >-
-            Specifies the values hierarchy on the data axis to be used for
-            sorting.
+          description: Specifies the values hierarchy on the data axis to be used for sorting.
           type: '<xref uid="excel!Excel.DataPivotHierarchy:class" />'
         - id: pivotItemScope
           description: >-
-            The items that should be used for the scope of the sorting. These
-            will be the items that make up the row or column that you want to
-            sort on. If a string is used instead of a PivotItem, the string
-            represents the ID of the PivotItem. If there are no items other than
-            data hierarchy on the axis you want to sort on, this can be empty.
+            The items that should be used for the scope of the sorting. These will be the items that make up the row or
+            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
+            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
+            empty.
           type: 'Array&lt;<xref uid="excel!Excel.PivotItem:class" /> | string&gt;'
       return:
         type: void
@@ -567,13 +476,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.PivotField object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.PivotFieldData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PivotField object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.PivotFieldData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

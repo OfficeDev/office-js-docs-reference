@@ -3,14 +3,10 @@ name: Excel.WorkbookRangeAreas
 uid: 'excel!Excel.WorkbookRangeAreas:class'
 package: excel!
 fullName: Excel.WorkbookRangeAreas
-summary: >-
-  Represents a collection of one or more rectangular ranges in multiple
-  worksheets.
+summary: |-
+  Represents a collection of one or more rectangular ranges in multiple worksheets.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,14 +17,11 @@ properties:
     package: excel!
     fullName: addresses
     summary: >-
-      Returns an array of address in A1-style. Address value will contain the
-      worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4,
-      Sheet1!D1:D4"). Read-only.
+      Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block
+      of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
 
 
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,13 +34,11 @@ properties:
     package: excel!
     fullName: areas
     summary: >-
-      Returns the `RangeAreasCollection` object. Each `RangeAreas` object in the
-      collection represents one or more rectangle ranges in one worksheet.
+      Returns the `RangeAreasCollection` object. Each `RangeAreas` object in the collection represents one or more
+      rectangle ranges in one worksheet.
 
 
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,8 +82,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -104,13 +95,10 @@ properties:
     uid: 'excel!Excel.WorkbookRangeAreas#ranges:member'
     package: excel!
     fullName: ranges
-    summary: >-
+    summary: |-
       Returns ranges that comprise this object in a `RangeCollection` object.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -123,14 +111,10 @@ methods:
     uid: 'excel!Excel.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
     package: excel!
     fullName: getRangeAreasBySheet(key)
-    summary: >-
-      Returns the `RangeAreas` object based on worksheet ID or name in the
-      collection.
+    summary: |-
+      Returns the `RangeAreas` object based on worksheet ID or name in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -148,13 +132,11 @@ methods:
     package: excel!
     fullName: getRangeAreasOrNullObjectBySheet(key)
     summary: >-
-      Returns the `RangeAreas` object based on worksheet name or ID in the
-      collection. If the worksheet does not exist, will return a null object.
+      Returns the `RangeAreas` object based on worksheet name or ID in the collection. If the worksheet does not exist,
+      will return a null object.
 
 
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -172,22 +154,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.WorkbookRangeAreasLoadOptions):
-        Excel.WorkbookRangeAreas;
+      content: 'load(options?: Excel.Interfaces.WorkbookRangeAreasLoadOptions): Excel.WorkbookRangeAreas;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
@@ -196,8 +173,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -205,9 +182,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.WorkbookRangeAreas;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
@@ -217,8 +192,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -231,10 +206,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -248,13 +221,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.WorkbookRangeAreas object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.WorkbookRangeAreasData`<!-- -->) that contains shallow
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.WorkbookRangeAreas object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.WorkbookRangeAreasData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
@@ -269,13 +239,11 @@ methods:
     package: excel!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -289,11 +257,9 @@ methods:
     package: excel!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false

@@ -4,14 +4,12 @@ uid: 'office!OfficeExtension.LoadOption:interface'
 package: office!
 fullName: OfficeExtension.LoadOption
 summary: >-
-  Specifies which properties of an object should be loaded. This load happens
-  when the sync() method is executed. This synchronizes the states between
-  Office objects and corresponding JavaScript proxy objects.
+  Specifies which properties of an object should be loaded. This load happens when the sync() method is executed. This
+  synchronizes the states between Office objects and corresponding JavaScript proxy objects.
 remarks: >-
-  For Word, the preferred method for specifying the properties and paging
-  information is by using a string literal. The first two examples show the
-  preferred way to request the text and font size properties for paragraphs in a
-  paragraph collection:
+  For Word, the preferred method for specifying the properties and paging information is by using a string literal. The
+  first two examples show the preferred way to request the text and font size properties for paragraphs in a paragraph
+  collection:
 
 
   `context.load(paragraphs, 'text, font/size');`
@@ -23,17 +21,14 @@ remarks: >-
   Here is a similar example using object notation (includes paging):
 
 
-  `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50,
-  skip: 0});`
+  `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
 
-  `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip:
-  0});`
+  `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
 
-  Note that if we don't specify the specific properties on the font object in
-  the select statement, the expand statement by itself would indicate that all
-  of the font properties are loaded.
+  Note that if we don't specify the specific properties on the font object in the select statement, the expand statement
+  by itself would indicate that all of the font properties are loaded.
 
 
   #### Examples
@@ -80,9 +75,7 @@ properties:
     uid: 'office!OfficeExtension.LoadOption#expand:member'
     package: office!
     fullName: expand
-    summary: >-
-      A comma-delimited string, or array of strings, that specifies the
-      navigation properties to load.
+    summary: 'A comma-delimited string, or array of strings, that specifies the navigation properties to load.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,9 +87,7 @@ properties:
     uid: 'office!OfficeExtension.LoadOption#select:member'
     package: office!
     fullName: select
-    summary: >-
-      A comma-delimited string, or array of strings, that specifies the
-      properties to load.
+    summary: 'A comma-delimited string, or array of strings, that specifies the properties to load.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -109,10 +100,9 @@ properties:
     package: office!
     fullName: skip
     summary: >-
-      Only usable on collection types. Specifies the number of items in the
-      collection that are to be skipped and not included in the result. If top
-      is specified, the result set will start after skipping the specified
-      number of items.
+      Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not
+      included in the result. If top is specified, the result set will start after skipping the specified number of
+      items.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -125,8 +115,8 @@ properties:
     package: office!
     fullName: top
     summary: >-
-      Only usable on collection types. Specifies the maximum number of
-      collection items that can be included in the result.
+      Only usable on collection types. Specifies the maximum number of collection items that can be included in the
+      result.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -134,19 +124,14 @@ properties:
       content: 'top?: number;'
       return:
         type: number
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // This OneNote example shows how to get the page title and
-          indentation level
-
+          // This OneNote example shows how to get the page title and indentation level
           // of the top five pages in the current section.
-
           OneNote.run(function (context) {
               // Get the pages in the current section.
               var pages = context.application.getActiveSection().pages;

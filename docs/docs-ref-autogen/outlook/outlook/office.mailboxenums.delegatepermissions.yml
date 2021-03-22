@@ -3,17 +3,14 @@ name: Office.MailboxEnums.DelegatePermissions
 uid: 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
 package: outlook!
 fullName: Office.MailboxEnums.DelegatePermissions
-summary: >-
+summary: |-
   This bit mask represents a delegate's permissions on a shared folder.
 
-
-  \[ [API set: Mailbox
-  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 fields:

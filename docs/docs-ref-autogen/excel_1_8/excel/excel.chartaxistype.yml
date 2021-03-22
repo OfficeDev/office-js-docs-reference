@@ -3,10 +3,7 @@ name: Excel.ChartAxisType
 uid: 'excel!Excel.ChartAxisType:enum'
 package: excel!
 fullName: Excel.ChartAxisType
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

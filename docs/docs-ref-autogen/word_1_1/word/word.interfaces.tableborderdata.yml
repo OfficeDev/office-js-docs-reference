@@ -3,9 +3,7 @@ name: Word.Interfaces.TableBorderData
 uid: 'word!Word.Interfaces.TableBorderData:interface'
 package: word!
 fullName: Word.Interfaces.TableBorderData
-summary: >-
-  An interface describing the data returned by calling
-  `tableBorder.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableBorder.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

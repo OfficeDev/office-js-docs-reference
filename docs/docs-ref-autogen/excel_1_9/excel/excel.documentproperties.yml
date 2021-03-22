@@ -3,13 +3,10 @@ name: Excel.DocumentProperties
 uid: 'excel!Excel.DocumentProperties:class'
 package: excel!
 fullName: Excel.DocumentProperties
-summary: >-
+summary: |-
   Represents workbook properties.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#author:member'
     package: excel!
     fullName: author
-    summary: >-
+    summary: |-
       The author of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#category:member'
     package: excel!
     fullName: category
-    summary: >-
+    summary: |-
       The category of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +46,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#comments:member'
     package: excel!
     fullName: comments
-    summary: >-
+    summary: |-
       The comments of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,13 +61,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#company:member'
     package: excel!
     fullName: company
-    summary: >-
+    summary: |-
       The company of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,8 +77,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,13 +90,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#creationDate:member'
     package: excel!
     fullName: creationDate
-    summary: >-
+    summary: |-
       Gets the creation date of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -123,13 +105,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#custom:member'
     package: excel!
     fullName: custom
-    summary: >-
+    summary: |-
       Gets the collection of custom properties of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -166,13 +145,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#keywords:member'
     package: excel!
     fullName: keywords
-    summary: >-
+    summary: |-
       The keywords of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -184,13 +160,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#lastAuthor:member'
     package: excel!
     fullName: lastAuthor
-    summary: >-
+    summary: |-
       Gets the last author of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -202,13 +175,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#manager:member'
     package: excel!
     fullName: manager
-    summary: >-
+    summary: |-
       The manager of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -220,13 +190,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#revisionNumber:member'
     package: excel!
     fullName: revisionNumber
-    summary: >-
+    summary: |-
       Gets the revision number of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -238,13 +205,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#subject:member'
     package: excel!
     fullName: subject
-    summary: >-
+    summary: |-
       The subject of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -256,13 +220,10 @@ properties:
     uid: 'excel!Excel.DocumentProperties#title:member'
     package: excel!
     fullName: title
-    summary: >-
+    summary: |-
       The title of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -276,22 +237,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DocumentPropertiesLoadOptions):
-        Excel.DocumentProperties;
+      content: 'load(options?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.DocumentProperties:class" />'
         description: ''
@@ -300,8 +256,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -309,9 +265,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.DocumentProperties;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.DocumentProperties:class" />'
@@ -321,8 +275,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -335,10 +289,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -352,9 +304,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -362,23 +313,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.DocumentPropertiesUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -387,9 +330,7 @@ methods:
     uid: 'excel!Excel.DocumentProperties#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -407,13 +348,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.DocumentProperties object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.DocumentProperties object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false

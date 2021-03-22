@@ -3,9 +3,7 @@ name: Word.Interfaces.ParagraphData
 uid: 'word!Word.Interfaces.ParagraphData:interface'
 package: word!
 fullName: Word.Interfaces.ParagraphData
-summary: >-
-  An interface describing the data returned by calling `paragraph.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `paragraph.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,38 +13,27 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#alignment:member'
     package: word!
     fullName: alignment
-    summary: >-
-      Gets or sets the alignment for a paragraph. The value can be 'left',
-      'centered', 'right', or 'justified'.
+    summary: |-
+      Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" |
-        "Right" | "Justified";
+      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
+        type: '<xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
   - name: firstLineIndent
     uid: 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
     package: word!
     fullName: firstLineIndent
     summary: >-
-      Gets or sets the value, in points, for a first line or hanging indent. Use
-      a positive value to set a first-line indent, and use a negative value to
-      set a hanging indent.
+      Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
+      indent, and use a negative value to set a hanging indent.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -59,13 +46,11 @@ properties:
     package: word!
     fullName: font
     summary: >-
-      Gets the text format of the paragraph. Use this to get and set font name,
-      size, color, and other properties. Read-only.
+      Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -78,13 +63,11 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the paragraph. The
-      collection does not include floating images. Read-only.
+      Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -96,13 +79,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#leftIndent:member'
     package: word!
     fullName: leftIndent
-    summary: >-
+    summary: |-
       Gets or sets the left indent value, in points, for the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -115,13 +95,11 @@ properties:
     package: word!
     fullName: lineSpacing
     summary: >-
-      Gets or sets the line spacing, in points, for the specified paragraph. In
-      the Word UI, this value is divided by 12.
+      Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
+      12.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -133,13 +111,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
     package: word!
     fullName: lineUnitAfter
-    summary: >-
+    summary: |-
       Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -151,13 +126,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
     package: word!
     fullName: lineUnitBefore
-    summary: >-
+    summary: |-
       Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -169,13 +141,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
     package: word!
     fullName: outlineLevel
-    summary: >-
+    summary: |-
       Gets or sets the outline level for the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -187,13 +156,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#rightIndent:member'
     package: word!
     fullName: rightIndent
-    summary: >-
+    summary: |-
       Gets or sets the right indent value, in points, for the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -205,13 +171,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
     package: word!
     fullName: spaceAfter
-    summary: >-
+    summary: |-
       Gets or sets the spacing, in points, after the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -223,13 +186,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
     package: word!
     fullName: spaceBefore
-    summary: >-
+    summary: |-
       Gets or sets the spacing, in points, before the paragraph.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -242,14 +202,11 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the paragraph. Use this property for
-      custom styles and localized style names. To use the built-in styles that
-      are portable between locales, see the "styleBuiltIn" property.
+      Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
+      use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -261,13 +218,10 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#text:member'
     package: word!
     fullName: text
-    summary: >-
+    summary: |-
       Gets the text of the paragraph. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

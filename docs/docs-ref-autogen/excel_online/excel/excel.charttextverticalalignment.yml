@@ -3,13 +3,10 @@ name: Excel.ChartTextVerticalAlignment
 uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
 package: excel!
 fullName: Excel.ChartTextVerticalAlignment
-summary: >-
+summary: |-
   Represents the vertical alignment for the specified object.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

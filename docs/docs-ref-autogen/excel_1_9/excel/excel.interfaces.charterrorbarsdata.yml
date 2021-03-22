@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartErrorBarsData
 uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartErrorBarsData
-summary: >-
-  An interface describing the data returned by calling
-  `chartErrorBars.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartErrorBars.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartErrorBarsData#endStyleCap:member'
     package: excel!
     fullName: endStyleCap
-    summary: >-
+    summary: |-
       Specifies if error bars have an end style cap.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,77 +28,55 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartErrorBarsData#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Specifies the formatting type of the error bars.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartErrorBarsFormatData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartErrorBarsFormatData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartErrorBarsFormatData:interface" />'
   - name: include
     uid: 'excel!Excel.Interfaces.ChartErrorBarsData#include:member'
     package: excel!
     fullName: include
-    summary: >-
+    summary: |-
       Specifies which parts of the error bars to include.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        include?: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" |
-        "PlusValues";
+      content: 'include?: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartErrorBarsInclude:enum" /> | "Both" |
-          "MinusValues" | "PlusValues"
+        type: '<xref uid="excel!Excel.ChartErrorBarsInclude:enum" /> | "Both" | "MinusValues" | "PlusValues"'
   - name: type
     uid: 'excel!Excel.Interfaces.ChartErrorBarsData#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       The type of range marked by the error bars.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" |
-        "StError" | "Custom";
+      content: 'type?: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartErrorBarsType:enum" /> | "FixedValue" |
-          "Percent" | "StDev" | "StError" | "Custom"
+        type: '<xref uid="excel!Excel.ChartErrorBarsType:enum" /> | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"'
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartErrorBarsData#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies whether the error bars are displayed.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -4,30 +4,27 @@ uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
 package: custom-functions-runtime!
 fullName: CustomFunctions.CancelableInvocation
 summary: >-
-  Provides information about the invocation of a cancelable custom function. A
-  cancelable custom function can provide a handler for the onCanceled event.
+  Provides information about the invocation of a cancelable custom function. A cancelable custom function can provide a
+  handler for the onCanceled event.
 
 
-  To indicate that a function is cancelable, in the metadata JSON file, the
-  function options should specify: `{ "cancelable": true }`
+  To indicate that a function is cancelable, in the metadata JSON file, the function options should specify: `{
+  "cancelable": true }`
 
 
-  If the metadata JSON file is being generated from JSDoc comments, include the
-  tag `@cancelable`<!-- -->.
+  If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: onCanceled
-    uid: >-
-      custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member
+    uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
     package: custom-functions-runtime!
     fullName: onCanceled
     summary: >-
-      Event handler called when the custom function is canceled. \[ [API set:
-      CustomFunctionsRuntime
-      1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
+      Event handler called when the custom function is canceled. \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

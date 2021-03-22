@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartErrorBarsFormatData
 uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartErrorBarsFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartErrorBarsFormat.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartErrorBarsFormat.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

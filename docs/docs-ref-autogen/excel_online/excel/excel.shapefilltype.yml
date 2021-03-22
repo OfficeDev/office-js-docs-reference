@@ -3,13 +3,10 @@ name: Excel.ShapeFillType
 uid: 'excel!Excel.ShapeFillType:enum'
 package: excel!
 fullName: Excel.ShapeFillType
-summary: >-
+summary: |-
   Specifies a shape's fill type.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,13 +3,10 @@ name: Visio.PageLoadCompleteEventArgs
 uid: 'visio!Visio.PageLoadCompleteEventArgs:interface'
 package: visio!
 fullName: Visio.PageLoadCompleteEventArgs
-summary: >-
+summary: |-
   Provides information about the page that raised the PageLoadComplete event.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: |-
 
 
@@ -41,13 +38,10 @@ properties:
     uid: 'visio!Visio.PageLoadCompleteEventArgs#pageName:member'
     package: visio!
     fullName: pageName
-    summary: >-
+    summary: |-
       Gets the name of the page that raised the PageLoad event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -59,13 +53,10 @@ properties:
     uid: 'visio!Visio.PageLoadCompleteEventArgs#success:member'
     package: visio!
     fullName: success
-    summary: >-
+    summary: |-
       Gets the success or failure of the PageLoadComplete event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

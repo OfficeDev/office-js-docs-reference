@@ -3,14 +3,10 @@ name: Excel.RangeFormat
 uid: 'excel!Excel.RangeFormat:class'
 package: excel!
 fullName: Excel.RangeFormat
-summary: >-
-  A format object encapsulating the range's font, fill, borders, alignment, and
-  other properties.
+summary: |-
+  A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +16,10 @@ properties:
     uid: 'excel!Excel.RangeFormat#borders:member'
     package: excel!
     fullName: borders
-    summary: >-
+    summary: |-
       Collection of border objects that apply to the overall range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,14 +31,10 @@ properties:
     uid: 'excel!Excel.RangeFormat#columnWidth:member'
     package: excel!
     fullName: columnWidth
-    summary: >-
-      Specifies the width of all colums within the range. If the column widths
-      are not uniform, null will be returned.
+    summary: |-
+      Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -58,8 +47,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -71,13 +60,10 @@ properties:
     uid: 'excel!Excel.RangeFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       Returns the fill object defined on the overall range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,13 +75,10 @@ properties:
     uid: 'excel!Excel.RangeFormat#font:member'
     package: excel!
     fullName: font
-    summary: >-
+    summary: |-
       Returns the font object defined on the overall range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,38 +90,29 @@ properties:
     uid: 'excel!Excel.RangeFormat#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: >-
-      Represents the horizontal alignment for the specified object. See
-      Excel.HorizontalAlignment for details.
+    summary: |-
+      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" |
-        "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" |
-        "Distributed";
+        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
       return:
         type: >-
-          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
-          "Left" | "Center" | "Right" | "Fill" | "Justify" |
-          "CenterAcrossSelection" | "Distributed"
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" | "Left" | "Center" | "Right" | "Fill" |
+          "Justify" | "CenterAcrossSelection" | "Distributed"
   - name: protection
     uid: 'excel!Excel.RangeFormat#protection:member'
     package: excel!
     fullName: protection
-    summary: >-
+    summary: |-
       Returns the format protection object for a range.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,14 +124,10 @@ properties:
     uid: 'excel!Excel.RangeFormat#rowHeight:member'
     package: excel!
     fullName: rowHeight
-    summary: >-
-      The height of all rows in the range. If the row heights are not uniform,
-      null will be returned.
+    summary: |-
+      The height of all rows in the range. If the row heights are not uniform, null will be returned.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -170,15 +140,12 @@ properties:
     package: excel!
     fullName: textOrientation
     summary: >-
-      The text orientation of all the cells within the range. The text
-      orientation should be an integer either from -90 to 90, or 180 for
-      vertically-oriented text. If the orientation within a range are not
-      uniform, then null will be returned.
+      The text orientation of all the cells within the range. The text orientation should be an integer either from -90
+      to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform, then null will be
+      returned.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -214,17 +181,13 @@ properties:
     package: excel!
     fullName: useStandardHeight
     summary: >-
-      Determines if the row height of the `Range` object equals the standard
-      height of the sheet. Returns `true` if the row height of the `Range`
-      object equals the standard height of the sheet. Returns `null` if the
-      range contains more than one row and the rows aren't all the same height.
-      Returns `false` otherwise. Note: This property is only intended to be set
-      to `true`<!-- -->. Setting it to `false` has no effect.
+      Determines if the row height of the `Range` object equals the standard height of the sheet. Returns `true` if the
+      row height of the `Range` object equals the standard height of the sheet. Returns `null` if the range contains
+      more than one row and the rows aren't all the same height. Returns `false` otherwise. Note: This property is only
+      intended to be set to `true`<!-- -->. Setting it to `false` has no effect.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -237,17 +200,13 @@ properties:
     package: excel!
     fullName: useStandardWidth
     summary: >-
-      Specifies if the column width of the `Range` object equals the standard
-      width of the sheet. Returns `true` if the column width of the `Range`
-      object equals the standard width of the sheet. Returns `null` if the range
-      contains more than one column and the columns aren't all the same height.
-      Returns `false` otherwise. Note: This property is only intended to be set
-      to `true`<!-- -->. Setting it to `false` has no effect.
+      Specifies if the column width of the `Range` object equals the standard width of the sheet. Returns `true` if the
+      column width of the `Range` object equals the standard width of the sheet. Returns `null` if the range contains
+      more than one column and the columns aren't all the same height. Returns `false` otherwise. Note: This property is
+      only intended to be set to `true`<!-- -->. Setting it to `false` has no effect.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -259,37 +218,27 @@ properties:
     uid: 'excel!Excel.RangeFormat#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: >-
-      Represents the vertical alignment for the specified object. See
-      Excel.VerticalAlignment for details.
+    summary: |-
+      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom"
-        | "Justify" | "Distributed";
+      content: 'verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
       return:
-        type: >-
-          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
-          "Bottom" | "Justify" | "Distributed"
+        type: '<xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
   - name: wrapText
     uid: 'excel!Excel.RangeFormat#wrapText:member'
     package: excel!
     fullName: wrapText
     summary: >-
-      Specifies if Excel wraps the text in the object. A null value indicates
-      that the entire range doesn't have uniform wrap setting
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      wrap setting
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -303,13 +252,11 @@ methods:
     package: excel!
     fullName: autofitColumns()
     summary: >-
-      Changes the width of the columns of the current range to achieve the best
-      fit, based on the current data in the columns.
+      Changes the width of the columns of the current range to achieve the best fit, based on the current data in the
+      columns.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -323,13 +270,11 @@ methods:
     package: excel!
     fullName: autofitRows()
     summary: >-
-      Changes the height of the rows of the current range to achieve the best
-      fit, based on the current data in the columns.
+      Changes the height of the rows of the current range to achieve the best fit, based on the current data in the
+      columns.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -343,21 +288,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.RangeFormatLoadOptions):
-        Excel.RangeFormat;
+      content: 'load(options?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.RangeFormat:class" />'
         description: ''
@@ -366,8 +307,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -375,9 +316,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFormat;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.RangeFormat:class" />'
@@ -448,8 +387,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -462,10 +401,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -479,9 +416,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -489,22 +425,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.RangeFormatUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.RangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.RangeFormatUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -513,9 +442,7 @@ methods:
     uid: 'excel!Excel.RangeFormat#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -533,13 +460,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.RangeFormat
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.RangeFormatData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeFormatData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

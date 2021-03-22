@@ -3,13 +3,10 @@ name: PowerPoint.Interfaces.TagLoadOptions
 uid: 'powerpoint!PowerPoint.Interfaces.TagLoadOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagLoadOptions
-summary: >-
+summary: |-
   Represents a single tag in the slide.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -35,14 +31,11 @@ properties:
     package: powerpoint!
     fullName: key
     summary: >-
-      Gets the unique ID of the tag. The `key` is unique within the owning
-      `TagCollection` and always stored as uppercase letters within the
-      document.
+      Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as
+      uppercase letters within the document.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -54,13 +47,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.TagLoadOptions#value:member'
     package: powerpoint!
     fullName: value
-    summary: >-
+    summary: |-
       Gets the value of the tag.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

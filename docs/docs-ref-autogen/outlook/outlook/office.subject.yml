@@ -3,23 +3,19 @@ name: Office.Subject
 uid: 'outlook!Office.Subject:interface'
 package: outlook!
 fullName: Office.Subject
-summary: >-
-  Provides methods to get and set the subject of an appointment or message in an
-  Outlook add-in.
+summary: |-
+  Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 
-
-  \[ [API set: Mailbox
-  1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
 isPreview: false
 isDeprecated: false
 type: interface
@@ -32,44 +28,37 @@ methods:
       Gets the subject of an appointment or message.
 
 
-      The `getAsync` method starts an asynchronous call to the Exchange server
-      to get the subject of an appointment or message.
+      The `getAsync` method starts an asynchronous call to the Exchange server to get the subject of an appointment or
+      message.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<string>) => void): void;
+        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) =>
+        void): void;
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following
-            properties. `asyncContext`<!-- -->: Developers can provide any
-            object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback`
-            parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. The `value` property of the result is
-            the subject of the item.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the subject of the item.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -81,22 +70,20 @@ methods:
       Gets the subject of an appointment or message.
 
 
-      The `getAsync` method starts an asynchronous call to the Exchange server
-      to get the subject of an appointment or message.
+      The `getAsync` method starts an asynchronous call to the Exchange server to get the subject of an appointment or
+      message.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -115,19 +102,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void):
-        void;
+      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback`
-            parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. The `value` property of the result is
-            the subject of the item.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the subject of the item.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -139,31 +120,27 @@ methods:
       Sets the subject of an appointment or message.
 
 
-      The `setAsync` method starts an asynchronous call to the Exchange server
-      to set the subject of an appointment or message. Setting the subject
-      overwrites the current subject, but leaves any prefixes, such as "Fwd:" or
-      "Re:" in place.
+      The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or
+      message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
+      place.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The subject parameter is longer than
-      255 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The subject parameter is longer than 255 characters.
 
 
       #### Examples
@@ -171,8 +148,7 @@ methods:
 
       ```javascript
 
-      Office.context.mailbox.item.subject.setAsync("New subject!", function
-      (asyncResult) {
+      Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
           if (asyncResult.status === "failed") {
               console.log("Action failed with error: " + asyncResult.error.message);
           }
@@ -183,29 +159,23 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(subject: string, options?: Office.AsyncContextOptions,
-        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
+        setAsync(subject: string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: subject
-          description: >-
-            The subject of the appointment or message. The string is limited to
-            255 characters.
+          description: The subject of the appointment or message. The string is limited to 255 characters.
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. If setting the subject fails, the
-            `asyncResult.error` property will contain an error code.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If setting the subject fails, the `asyncResult.error`
+            property will contain an error code.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

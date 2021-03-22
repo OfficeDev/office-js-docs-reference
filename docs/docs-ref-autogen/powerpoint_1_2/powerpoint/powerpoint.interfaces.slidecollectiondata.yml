@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.SlideCollectionData
 uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `slideCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

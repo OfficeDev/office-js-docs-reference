@@ -3,13 +3,10 @@ name: Word.ContentControlEventArgs
 uid: 'word!Word.ContentControlEventArgs:interface'
 package: word!
 fullName: Word.ContentControlEventArgs
-summary: >-
+summary: |-
   Provides information about the content control that raised an event.
 
-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -24,8 +21,7 @@ properties:
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -42,20 +38,17 @@ properties:
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        eventType: Word.EventType | "ContentControlDeleted" |
-        "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-        "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
         "AnnotationDeleted";
       return:
         type: >-
-          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
-          "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-          "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
           "AnnotationDeleted"

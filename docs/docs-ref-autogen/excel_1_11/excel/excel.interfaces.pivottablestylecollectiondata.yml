@@ -3,9 +3,7 @@ name: Excel.Interfaces.PivotTableStyleCollectionData
 uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotTableStyleCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pivotTableStyleCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `pivotTableStyleCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -4,15 +4,11 @@ uid: 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.NamedItemLoadOptions
 summary: >-
-  Represents a defined name for a range of cells or value. Names can be
-  primitive named objects (as seen in the type below), range object, or a
-  reference to a range. This object can be used to obtain range object
-  associated with names.
+  Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
+  below), range object, or a reference to a range. This object can be used to obtain range object associated with names.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,9 +19,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +32,10 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       The name of the object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,14 +48,11 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Specifies the type of the value returned by the name's formula. See
-      Excel.NamedItemType for details.
+      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
 
 
-      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
-      1.7 for
-      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -75,14 +64,10 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#value:member'
     package: excel!
     fullName: value
-    summary: >-
-      Represents the value computed by the name's formula. For a named range,
-      will return the range address.
+    summary: |-
+      Represents the value computed by the name's formula. For a named range, will return the range address.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,13 +79,10 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the object is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

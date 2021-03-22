@@ -14,8 +14,8 @@ properties:
     package: office!
     fullName: binding
     summary: >-
-      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that
-      represents the binding that raised the SelectionChanged event.
+      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that represents the binding that raised the
+      SelectionChanged event.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,19 +28,16 @@ properties:
     package: office!
     fullName: columnCount
     summary: >-
-      Gets the number of columns selected. If a single cell is selected returns
-      1.
+      Gets the number of columns selected. If a single cell is selected returns 1.
 
 
-      If the user makes a non-contiguous selection, the count for the last
-      contiguous selection within the binding is returned.
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
 
 
-      For Word, this property will work only for bindings of
-      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
-      binding is of type "matrix", null is returned. Also, the call will fail if
-      the table contains merged cells, because the structure of the table must
-      be uniform for this property to work correctly.
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,11 +53,11 @@ properties:
 
           ```javascript
 
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
 
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
 
           // and the number of row and columns selected.
 
@@ -94,15 +91,13 @@ properties:
       Gets the number of rows selected. If a single cell is selected returns 1.
 
 
-      If the user makes a non-contiguous selection, the count for the last
-      contiguous selection within the binding is returned.
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
 
 
-      For Word, this property will work only for bindings of
-      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
-      binding is of type "matrix", null is returned. Also, the call will fail if
-      the table contains merged cells, because the structure of the table must
-      be uniform for this property to work correctly.
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -118,11 +113,11 @@ properties:
 
           ```javascript
 
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
 
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
 
           // and the number of row and columns selected.
 
@@ -153,19 +148,16 @@ properties:
     package: office!
     fullName: startColumn
     summary: >-
-      The zero-based index of the first column of the selection counting from
-      the leftmost column in the binding.
+      The zero-based index of the first column of the selection counting from the leftmost column in the binding.
 
 
-      If the user makes a non-contiguous selection, the coordinates for the last
-      contiguous selection within the binding are returned.
+      If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding
+      are returned.
 
 
-      For Word, this property will work only for bindings of
-      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
-      binding is of type "matrix", null is returned. Also, the call will fail if
-      the table contains merged cells, because the structure of the table must
-      be uniform for this property to work correctly.
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,11 +173,11 @@ properties:
 
           ```javascript
 
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
 
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
 
           // and the number of row and columns selected.
 
@@ -216,19 +208,16 @@ properties:
     package: office!
     fullName: startRow
     summary: >-
-      The zero-based index of the first row of the selection counting from the
-      first row in the binding.
+      The zero-based index of the first row of the selection counting from the first row in the binding.
 
 
-      If the user makes a non-contiguous selection, the coordinates for the last
-      contiguous selection within the binding are returned.
+      If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding
+      are returned.
 
 
-      For Word, this property will work only for bindings of
-      [Office.BindingType](xref:office!Office.BindingType:enum) "table". If the
-      binding is of type "matrix", null is returned. Also, the call will fail if
-      the table contains merged cells, because the structure of the table must
-      be uniform for this property to work correctly.
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -244,11 +233,11 @@ properties:
 
           ```javascript
 
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
 
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
 
           // and the number of row and columns selected.
 
@@ -279,8 +268,8 @@ properties:
     package: office!
     fullName: type
     summary: >-
-      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration
-      value that identifies the kind of event that was raised.
+      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
+      that was raised.
     remarks: ''
     isPreview: false
     isDeprecated: false

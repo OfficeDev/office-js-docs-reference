@@ -3,13 +3,10 @@ name: Visio.ShapeMouseEnterEventArgs
 uid: 'visio!Visio.ShapeMouseEnterEventArgs:interface'
 package: visio!
 fullName: Visio.ShapeMouseEnterEventArgs
-summary: >-
+summary: |-
   Provides information about the shape that raised the ShapeMouseEnter event.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: |-
 
 
@@ -40,14 +37,10 @@ properties:
     uid: 'visio!Visio.ShapeMouseEnterEventArgs#pageName:member'
     package: visio!
     fullName: pageName
-    summary: >-
-      Gets the name of the page which has the shape object that raised the
-      ShapeMouseEnter event.
+    summary: |-
+      Gets the name of the page which has the shape object that raised the ShapeMouseEnter event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -59,13 +52,10 @@ properties:
     uid: 'visio!Visio.ShapeMouseEnterEventArgs#shapeName:member'
     package: visio!
     fullName: shapeName
-    summary: >-
+    summary: |-
       Gets the name of the shape object that raised the ShapeMouseEnter event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

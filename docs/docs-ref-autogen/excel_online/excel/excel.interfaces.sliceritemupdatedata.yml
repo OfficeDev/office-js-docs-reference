@@ -3,9 +3,7 @@ name: Excel.Interfaces.SlicerItemUpdateData
 uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.SlicerItemUpdateData
-summary: >-
-  An interface for updating data on the SlicerItem object, for use in
-  `slicerItem.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,14 +14,11 @@ properties:
     package: excel!
     fullName: isSelected
     summary: >-
-      True if the slicer item is selected. Setting this value will not clear
-      other SlicerItems' selected state. By default, if the slicer item is the
-      only one selected, when it is deselected, all items will be selected.
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. By
+      default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

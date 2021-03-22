@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartSeriesData
 uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesData
-summary: >-
-  An interface describing the data returned by calling
-  `chartSeries.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartSeries.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesData#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart series, which includes fill and line
-      formatting.
+    summary: |-
+      Represents the formatting of a chart series, which includes fill and line formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesData#name:member'
     package: excel!
     fullName: name
-    summary: >-
-      Specifies the name of a series in a chart. The name's length should not be
-      greater than 255 characters.
+    summary: |-
+      Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesData#points:member'
     package: excel!
     fullName: points
-    summary: >-
+    summary: |-
       Returns a collection of all points in the series.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

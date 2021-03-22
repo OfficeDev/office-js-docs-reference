@@ -3,13 +3,10 @@ name: Excel.TableSort
 uid: 'excel!Excel.TableSort:class'
 package: excel!
 fullName: Excel.TableSort
-summary: >-
+summary: |-
   Manages sorting operations on `Table` objects.
 
-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'excel!Excel.TableSort#fields:member'
     package: excel!
     fullName: fields
-    summary: >-
+    summary: |-
       Specifies the current conditions used to last sort the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +45,10 @@ properties:
     uid: 'excel!Excel.TableSort#matchCase:member'
     package: excel!
     fullName: matchCase
-    summary: >-
+    summary: |-
       Specifies if the casing impacts the last sort of the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,14 +60,10 @@ properties:
     uid: 'excel!Excel.TableSort#method:member'
     package: excel!
     fullName: method
-    summary: >-
-      Represents the Chinese character ordering method last used to sort the
-      table.
+    summary: |-
+      Represents the Chinese character ordering method last used to sort the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,20 +76,15 @@ methods:
     uid: 'excel!Excel.TableSort#apply:member(1)'
     package: excel!
     fullName: 'apply(fields, matchCase, method)'
-    summary: >-
+    summary: |-
       Perform a sort operation.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        apply(fields: Excel.SortField[], matchCase?: boolean, method?:
-        Excel.SortMethod): void;
+      content: 'apply(fields: Excel.SortField[], matchCase?: boolean, method?: Excel.SortMethod): void;'
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -142,20 +124,15 @@ methods:
     uid: 'excel!Excel.TableSort#apply:member(2)'
     package: excel!
     fullName: 'apply(fields, matchCase, methodString)'
-    summary: >-
+    summary: |-
       Perform a sort operation.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        apply(fields: Excel.SortField[], matchCase?: boolean, methodString?:
-        "PinYin" | "StrokeCount"): void;
+      content: 'apply(fields: Excel.SortField[], matchCase?: boolean, methodString?: "PinYin" | "StrokeCount"): void;'
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -174,13 +151,11 @@ methods:
     package: excel!
     fullName: clear()
     summary: >-
-      Clears the sorting that is currently on the table. While this doesn't
-      modify the table's ordering, it clears the state of the header buttons.
+      Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the
+      state of the header buttons.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -194,8 +169,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -213,8 +188,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -222,9 +197,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.TableSort;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.TableSort:class" />'
@@ -234,8 +207,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -248,10 +221,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -264,13 +235,10 @@ methods:
     uid: 'excel!Excel.TableSort#reapply:member(1)'
     package: excel!
     fullName: reapply()
-    summary: >-
+    summary: |-
       Reapplies the current sorting parameters to the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -284,13 +252,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.TableSort object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.TableSortData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.TableSortData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

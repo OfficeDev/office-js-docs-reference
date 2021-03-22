@@ -3,9 +3,7 @@ name: Office.InitializationReason
 uid: 'office!Office.InitializationReason:enum'
 package: office!
 fullName: Office.InitializationReason
-summary: >-
-  Specifies whether the add-in was just inserted or was already contained in the
-  document.
+summary: Specifies whether the add-in was just inserted or was already contained in the document.
 remarks: ''
 isPreview: false
 isDeprecated: false

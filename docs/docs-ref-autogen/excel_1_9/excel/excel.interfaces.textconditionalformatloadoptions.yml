@@ -3,13 +3,10 @@ name: Excel.Interfaces.TextConditionalFormatLoadOptions
 uid: 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TextConditionalFormatLoadOptions
-summary: >-
+summary: |-
   Represents a specific text conditional format.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,35 +30,25 @@ properties:
     uid: 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the conditional format's font,
-      fill, borders, and other properties.
+    summary: |-
+      Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface" />'
   - name: rule
     uid: 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions#rule:member'
     package: excel!
     fullName: rule
-    summary: >-
+    summary: |-
       The rule of the conditional format.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

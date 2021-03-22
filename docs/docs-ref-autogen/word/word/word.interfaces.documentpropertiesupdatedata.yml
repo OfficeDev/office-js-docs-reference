@@ -3,9 +3,7 @@ name: Word.Interfaces.DocumentPropertiesUpdateData
 uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.DocumentPropertiesUpdateData
-summary: >-
-  An interface for updating data on the DocumentProperties object, for use in
-  `documentProperties.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#author:member'
     package: word!
     fullName: author
-    summary: >-
+    summary: |-
       Gets or sets the author of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#category:member'
     package: word!
     fullName: category
-    summary: >-
+    summary: |-
       Gets or sets the category of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +43,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#comments:member'
     package: word!
     fullName: comments
-    summary: >-
+    summary: |-
       Gets or sets the comments of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +58,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#company:member'
     package: word!
     fullName: company
-    summary: >-
+    summary: |-
       Gets or sets the company of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -87,13 +73,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#format:member'
     package: word!
     fullName: format
-    summary: >-
+    summary: |-
       Gets or sets the format of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,13 +88,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#keywords:member'
     package: word!
     fullName: keywords
-    summary: >-
+    summary: |-
       Gets or sets the keywords of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -123,13 +103,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#manager:member'
     package: word!
     fullName: manager
-    summary: >-
+    summary: |-
       Gets or sets the manager of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -141,13 +118,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#subject:member'
     package: word!
     fullName: subject
-    summary: >-
+    summary: |-
       Gets or sets the subject of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -159,13 +133,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#title:member'
     package: word!
     fullName: title
-    summary: >-
+    summary: |-
       Gets or sets the title of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

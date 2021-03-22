@@ -3,13 +3,10 @@ name: Excel.Interfaces.SlicerItemLoadOptions
 uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.SlicerItemLoadOptions
-summary: >-
+summary: |-
   Represents a slicer item in a slicer.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#hasData:member'
     package: excel!
     fullName: hasData
-    summary: >-
+    summary: |-
       True if the slicer item has data.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,14 +46,11 @@ properties:
     package: excel!
     fullName: isSelected
     summary: >-
-      True if the slicer item is selected. Setting this value will not clear
-      other SlicerItems' selected state. By default, if the slicer item is the
-      only one selected, when it is deselected, all items will be selected.
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. By
+      default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,13 +62,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#key:member'
     package: excel!
     fullName: key
-    summary: >-
+    summary: |-
       Represents the unique value representing the slicer item.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -90,13 +77,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Represents the title displayed in the UI.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

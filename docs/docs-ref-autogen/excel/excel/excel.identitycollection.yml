@@ -7,8 +7,7 @@ summary: >-
   Represents a collection of user identities.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
 isPreview: true
@@ -20,8 +19,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -39,8 +38,7 @@ methods:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -62,8 +60,7 @@ methods:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -81,8 +78,7 @@ methods:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -100,8 +96,7 @@ methods:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -109,14 +104,10 @@ methods:
       content: 'getItemAt(index: number): OfficeExtension.ClientResult<Excel.Identity>;'
       parameters:
         - id: index
-          description: >-
-            The items in the document user identity collection do not have a
-            particular order.
+          description: The items in the document user identity collection do not have a particular order.
           type: number
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
-          uid="excel!Excel.Identity:interface" />&gt;
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.Identity:interface" />&gt;'
         description: The document user identity at the given index.
   - name: remove(assignee)
     uid: 'excel!Excel.IdentityCollection#remove:member(1)'
@@ -127,8 +118,7 @@ methods:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -146,13 +136,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.IdentityCollection object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.IdentityCollectionData`<!-- -->) that contains shallow
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.IdentityCollection object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.IdentityCollectionData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: true

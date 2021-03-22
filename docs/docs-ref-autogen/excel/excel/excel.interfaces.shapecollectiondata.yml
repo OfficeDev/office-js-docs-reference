@@ -3,9 +3,7 @@ name: Excel.Interfaces.ShapeCollectionData
 uid: 'excel!Excel.Interfaces.ShapeCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.ShapeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `shapeCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

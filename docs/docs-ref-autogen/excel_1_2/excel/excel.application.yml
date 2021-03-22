@@ -3,13 +3,10 @@ name: Excel.Application
 uid: 'excel!Excel.Application:class'
 package: excel!
 fullName: Excel.Application
-summary: >-
+summary: |-
   Represents the Excel application that manages the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,34 +17,28 @@ properties:
     package: excel!
     fullName: calculationMode
     summary: >-
-      Returns the calculation mode used in the workbook, as defined by the
-      constants in Excel.CalculationMode. Possible values are: `Automatic`<!--
-      -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->,
-      where Excel controls recalculation but ignores changes in tables;
-      `Manual`<!-- -->, where calculation is done when the user requests it.
+      Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
+      values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel
+      controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when the user
+      requests it.
 
 
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        calculationMode: Excel.CalculationMode | "Automatic" |
-        "AutomaticExceptTables" | "Manual";
+      content: 'calculationMode: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";'
       return:
-        type: >-
-          <xref uid="excel!Excel.CalculationMode:enum" /> | "Automatic" |
-          "AutomaticExceptTables" | "Manual"
+        type: '<xref uid="excel!Excel.CalculationMode:enum" /> | "Automatic" | "AutomaticExceptTables" | "Manual"'
   - name: context
     uid: 'excel!Excel.Application#context:member'
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -60,13 +51,10 @@ methods:
     uid: 'excel!Excel.Application#calculate:member(1)'
     package: excel!
     fullName: calculate(calculationType)
-    summary: >-
+    summary: |-
       Recalculate all currently opened workbooks in Excel.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,9 +62,7 @@ methods:
       content: 'calculate(calculationType: Excel.CalculationType): void;'
       parameters:
         - id: calculationType
-          description: >-
-            Specifies the calculation type to use. See Excel.CalculationType for
-            details.
+          description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type: '<xref uid="excel!Excel.CalculationType:enum" />'
       return:
         type: void
@@ -85,25 +71,18 @@ methods:
     uid: 'excel!Excel.Application#calculate:member(2)'
     package: excel!
     fullName: calculate(calculationTypeString)
-    summary: >-
+    summary: |-
       Recalculate all currently opened workbooks in Excel.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        calculate(calculationTypeString: "Recalculate" | "Full" |
-        "FullRebuild"): void;
+      content: 'calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;'
       parameters:
         - id: calculationTypeString
-          description: >-
-            Specifies the calculation type to use. See Excel.CalculationType for
-            details.
+          description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type: '"Recalculate" | "Full" | "FullRebuild"'
       return:
         type: void
@@ -128,21 +107,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ApplicationLoadOptions):
-        Excel.Application;
+      content: 'load(options?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.ApplicationLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.ApplicationLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.Application:class" />'
         description: ''
@@ -151,8 +126,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -160,9 +135,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Application;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Application:class" />'
@@ -190,8 +163,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -204,10 +177,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -221,9 +192,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -231,22 +201,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ApplicationUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.ApplicationUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.ApplicationUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -255,9 +218,7 @@ methods:
     uid: 'excel!Excel.Application#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -275,13 +236,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Application
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

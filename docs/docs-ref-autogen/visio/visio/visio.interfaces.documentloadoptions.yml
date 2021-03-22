@@ -3,13 +3,10 @@ name: Visio.Interfaces.DocumentLoadOptions
 uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.DocumentLoadOptions
-summary: >-
+summary: |-
   Represents the Document class.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentLoadOptions#application:member'
     package: visio!
     fullName: application
-    summary: >-
+    summary: |-
       Represents a Visio application instance that contains this document.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,19 +43,14 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentLoadOptions#view:member'
     package: visio!
     fullName: view
-    summary: >-
+    summary: |-
       Returns the DocumentView object.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'view?: Visio.Interfaces.DocumentViewLoadOptions;'
       return:
-        type: >-
-          <xref uid="visio!Visio.Interfaces.DocumentViewLoadOptions:interface"
-          />
+        type: '<xref uid="visio!Visio.Interfaces.DocumentViewLoadOptions:interface" />'

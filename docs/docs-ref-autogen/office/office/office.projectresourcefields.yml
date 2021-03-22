@@ -5,17 +5,15 @@ package: office!
 fullName: Office.ProjectResourceFields
 summary: >-
   Specifies the resource fields that are available as a parameter for the
-  [Document](xref:office!Office.Document:interface)<!--
-  -->.getResourceFieldAsync method.
+  [Document](xref:office!Office.Document:interface)<!-- -->.getResourceFieldAsync method.
 remarks: >-
   A ProjectResourceFields constant can be used as a parameter of the
-  [Document](xref:office!Office.Document:interface)<!--
-  -->.getResourceFieldAsync method.
+  [Document](xref:office!Office.Document:interface)<!-- -->.getResourceFieldAsync method.
 
 
   For more information about working with fields in Project, see [Available
-  fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
-  reference. In Project Help, search for Available fields.
+  fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460) reference.
+  In Project Help, search for Available fields.
 isPreview: false
 isDeprecated: false
 fields:
@@ -23,9 +21,8 @@ fields:
     uid: 'office!Office.ProjectResourceFields.Accrual:member'
     package: office!
     summary: >-
-      The accrual method that defines how a task accrues the cost of the
-      resource: Accrues when the task starts = 1, accrues when the task ends =
-      2, accrues as the task progresses (prorated) = 3.
+      The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
   - name: ActualCost
     uid: 'office!Office.ProjectResourceFields.ActualCost:member'
     package: office!
@@ -41,9 +38,7 @@ fields:
   - name: ActualOvertimeWorkProtected
     uid: 'office!Office.ProjectResourceFields.ActualOvertimeWorkProtected:member'
     package: office!
-    summary: >-
-      The actual overtime work for the resource that has been protected (made
-      read-only).
+    summary: The actual overtime work for the resource that has been protected (made read-only).
   - name: ActualWork
     uid: 'office!Office.ProjectResourceFields.ActualWork:member'
     package: office!
@@ -231,9 +226,7 @@ fields:
   - name: BaselineWork
     uid: 'office!Office.ProjectResourceFields.BaselineWork:member'
     package: office!
-    summary: >-
-      The baseline work for the resource for assignments in the project, in
-      minutes.
+    summary: 'The baseline work for the resource for assignments in the project, in minutes.'
   - name: BudgetCost
     uid: 'office!Office.ProjectResourceFields.BudgetCost:member'
     package: office!
@@ -505,9 +498,7 @@ fields:
   - name: Generic
     uid: 'office!Office.ProjectResourceFields.Generic:member'
     package: office!
-    summary: >-
-      Indicates whether the resource is a generic resource (identified by skill
-      rather than by name).
+    summary: Indicates whether the resource is a generic resource (identified by skill rather than by name).
   - name: Group
     uid: 'office!Office.ProjectResourceFields.Group:member'
     package: office!
@@ -824,8 +815,8 @@ fields:
     uid: 'office!Office.ProjectResourceFields.Units:member'
     package: office!
     summary: >-
-      The percentage of work units that the resource has assigned in the
-      project. If the resource is working full-time on the project, Units = 100.
+      The percentage of work units that the resource has assigned in the project. If the resource is working full-time
+      on the project, Units = 100.
   - name: Work
     uid: 'office!Office.ProjectResourceFields.Work:member'
     package: office!

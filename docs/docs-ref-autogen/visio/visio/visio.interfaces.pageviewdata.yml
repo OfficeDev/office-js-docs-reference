@@ -13,14 +13,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageViewData#zoom:member'
     package: visio!
     fullName: zoom
-    summary: >-
-      Get and set Page's Zoom level. The value can be between 10 and 400 and
-      denotes the percentage of zoom.
+    summary: |-
+      Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

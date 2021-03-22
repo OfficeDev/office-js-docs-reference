@@ -3,13 +3,10 @@ name: PowerPoint.Interfaces.SlideCollectionLoadOptions
 uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideCollectionLoadOptions
-summary: >-
+summary: |-
   Represents the collection of slides in the presentation.
 
-
-  \[ [API set: PowerPointApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the unique ID of the slide.
 
-
-      \[ [API set: PowerPointApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,43 +45,29 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#layout:member'
     package: powerpoint!
     fullName: layout
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the layout of the slide.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface"
-          />
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface" />'
   - name: slideMaster
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#slideMaster:member
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#slideMaster:member'
     package: powerpoint!
     fullName: slideMaster
-    summary: >-
-      For EACH ITEM in the collection: Gets the `SlideMaster` object that
-      represents the slide's default content.
+    summary: |-
+      For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface"
-          />
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface" />'

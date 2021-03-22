@@ -3,13 +3,10 @@ name: OneNote.Notebook
 uid: 'onenote!OneNote.Notebook:class'
 package: onenote!
 fullName: OneNote.Notebook
-summary: >-
+summary: |-
   Represents a OneNote notebook. Notebooks contain section groups and sections.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'onenote!OneNote.Notebook#baseUrl:member'
     package: onenote!
     fullName: baseUrl
-    summary: >-
+    summary: |-
       The url of the site that this notebook is located. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'onenote!OneNote.Notebook#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: >-
+    summary: |-
       The client url of the notebook. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,8 +47,8 @@ properties:
     package: onenote!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +60,10 @@ properties:
     uid: 'onenote!OneNote.Notebook#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the notebook. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -87,14 +75,10 @@ properties:
     uid: 'onenote!OneNote.Notebook#isVirtual:member'
     package: onenote!
     fullName: isVirtual
-    summary: >-
-      True if the Notebook is not created by the user (i.e. 'Misplaced
-      Sections'). Read only
+    summary: |-
+      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
 
-
-      \[ [API set: OneNoteApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,13 +90,10 @@ properties:
     uid: 'onenote!OneNote.Notebook#name:member'
     package: onenote!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the name of the notebook. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -124,13 +105,10 @@ properties:
     uid: 'onenote!OneNote.Notebook#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: >-
+    summary: |-
       The section groups in the notebook. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -142,13 +120,10 @@ properties:
     uid: 'onenote!OneNote.Notebook#sections:member'
     package: onenote!
     fullName: sections
-    summary: >-
+    summary: |-
       The the sections of the notebook. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -161,13 +136,10 @@ methods:
     uid: 'onenote!OneNote.Notebook#addSection:member(1)'
     package: onenote!
     fullName: addSection(name)
-    summary: >-
+    summary: |-
       Adds a new section to the end of the notebook.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -213,13 +185,10 @@ methods:
     uid: 'onenote!OneNote.Notebook#addSectionGroup:member(1)'
     package: onenote!
     fullName: addSectionGroup(name)
-    summary: >-
+    summary: |-
       Adds a new section group to the end of the notebook.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -265,13 +234,10 @@ methods:
     uid: 'onenote!OneNote.Notebook#getRestApiId:member(1)'
     package: onenote!
     fullName: getRestApiId()
-    summary: >-
+    summary: |-
       Gets the REST API ID.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -306,30 +272,26 @@ methods:
     package: onenote!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.Notebook` - Where option is a
-      comma-delimited string or an array of strings that specify the properties
-      to load.
+      `load(option?: string | string[]): OneNote.Notebook` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.Notebook` -
-      Where option.select is a comma-delimited string that specifies the
-      properties to load, and options.expand is a comma-delimited string that
+      `load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): OneNote.Notebook` - Only available on collection types. It is
-      similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Notebook` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,9 +299,7 @@ methods:
       parameters:
         - id: option
           description: ''
-          type: >-
-            <xref uid="onenote!OneNote.Interfaces.NotebookLoadOptions:interface"
-            />
+          type: '<xref uid="onenote!OneNote.Interfaces.NotebookLoadOptions:interface" />'
       return:
         type: '<xref uid="onenote!OneNote.Notebook:class" />'
         description: ''
@@ -348,8 +308,8 @@ methods:
     package: onenote!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -357,9 +317,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): OneNote.Notebook;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="onenote!OneNote.Notebook:class" />'
@@ -498,22 +456,18 @@ methods:
     package: onenote!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
-        OneNote.Notebook;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Notebook;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that
-            specifies the properties to load, and propertyNamesAndPaths.expand
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type: '{ select?: string; expand?: string; }'
       return:
         type: '<xref uid="onenote!OneNote.Notebook:class" />'
@@ -523,13 +477,11 @@ methods:
     package: onenote!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original OneNote.Notebook object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `OneNote.Interfaces.NotebookData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Notebook object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.NotebookData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -543,13 +495,11 @@ methods:
     package: onenote!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      context.trackedObjects.add(thisObject). If you are using this object
-      across ".sync" calls and outside the sequential execution of a ".run"
-      batch, and get an "InvalidObjectPath" error when setting a property or
-      invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -563,12 +513,10 @@ methods:
     package: onenote!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects
-      slows down the host application, so please remember to free any objects
-      you add, once you're done using them. You will need to call
-      "context.sync()" before the memory release takes effect.
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

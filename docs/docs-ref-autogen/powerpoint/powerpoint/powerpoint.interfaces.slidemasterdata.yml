@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.SlideMasterData
 uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterData
-summary: >-
-  An interface describing the data returned by calling
-  `slideMaster.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideMaster.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterData#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the unique ID of the Slide Master.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterData#name:member'
     package: powerpoint!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the unique name of the Slide Master.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

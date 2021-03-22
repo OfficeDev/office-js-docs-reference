@@ -7,8 +7,7 @@ summary: >-
   Represents a recorded change to the task.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
 isPreview: true
@@ -20,9 +19,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -35,14 +33,12 @@ properties:
     package: excel!
     fullName: assignee
     summary: >-
-      Represents the user assigned to the task for an `assign` change record
-      type, or the user unassigned from the task for an `unassign` change record
-      type.
+      Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task
+      for an `unassign` change record type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -59,8 +55,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -73,13 +68,11 @@ properties:
     package: excel!
     fullName: commentId
     summary: >-
-      Represents the ID of the `Comment` or `CommentReply` to which the task
-      change is anchored.
+      Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -88,18 +81,15 @@ properties:
       return:
         type: boolean
   - name: createdDateTime
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeLoadOptions#createdDateTime:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeLoadOptions#createdDateTime:member'
     package: excel!
     fullName: createdDateTime
     summary: >-
-      Represents the creation date and time of the task change record. All dates
-      are in UTC.
+      Represents the creation date and time of the task change record. All dates are in UTC.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -112,15 +102,13 @@ properties:
     package: excel!
     fullName: dueDateTime
     summary: >-
-      Represents the task's due date and time, in UTC time zone. It is used for
-      the `setSchedule` change record type. Can be set to `null` to remove the
-      due date and time. It should be set together with `startDateTime` to avoid
+      Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
+      Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid
       conflicts.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -137,8 +125,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -147,21 +134,17 @@ properties:
       return:
         type: boolean
   - name: percentComplete
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeLoadOptions#percentComplete:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeLoadOptions#percentComplete:member'
     package: excel!
     fullName: percentComplete
     summary: >-
-      Represents the task's completion percentage. It is used for the
-      `setPercentComplete` change record type. This is a value between 0 and
-      100, where 100 represents a completed task. Changing this value to 100
-      also completes the associated comment. Changing the completion from 100 to
-      a lower value reactivates the associated comment.
+      Represents the task's completion percentage. It is used for the `setPercentComplete` change record type. This is a
+      value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the
+      associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -174,14 +157,12 @@ properties:
     package: excel!
     fullName: priority
     summary: >-
-      Represents the task's priority. It is used for the `setPriority` change
-      record type. This is a value between 0 and 10, with 5 being the default
-      priority if not set, and where 0 represents the highest priority.
+      Represents the task's priority. It is used for the `setPriority` change record type. This is a value between 0 and
+      10, with 5 being the default priority if not set, and where 0 represents the highest priority.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -194,15 +175,13 @@ properties:
     package: excel!
     fullName: startDateTime
     summary: >-
-      Represents the task's start date and time, in UTC time zone. It is used
-      for the `setSchedule` change record type. Can be set to `null` to remove
-      the start date and time. It should be set together with `dueDateTime` to
-      avoid conflicts.
+      Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
+      Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid
+      conflicts.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -215,13 +194,11 @@ properties:
     package: excel!
     fullName: title
     summary: >-
-      Represents the task's title. It is used for the `setTitle` change record
-      type.
+      Represents the task's title. It is used for the `setTitle` change record type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -234,14 +211,12 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Represents the action type of the task change record. Some examples of
-      action types are `assign`<!-- -->, `undo`<!-- -->, and `setPriority`<!--
-      -->.
+      Represents the action type of the task change record. Some examples of action types are `assign`<!-- -->,
+      `undo`<!-- -->, and `setPriority`<!-- -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -254,13 +229,11 @@ properties:
     package: excel!
     fullName: undoHistoryId
     summary: >-
-      Represents the `DocumentTaskChange.id` property that was undone for the
-      `undo` change record type.
+      Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

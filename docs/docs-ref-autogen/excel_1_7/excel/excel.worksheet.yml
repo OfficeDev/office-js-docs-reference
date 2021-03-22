@@ -4,16 +4,12 @@ uid: 'excel!Excel.Worksheet:class'
 package: excel!
 fullName: Excel.Worksheet
 summary: >-
-  An Excel worksheet is a grid of cells. It can contain data, tables, charts,
-  etc. To learn more about the worksheet object model, read [Work with
-  worksheets using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!--
-  -->.
+  An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
+  object model, read [Work with worksheets using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,13 +19,10 @@ properties:
     uid: 'excel!Excel.Worksheet#charts:member'
     package: excel!
     fullName: charts
-    summary: >-
+    summary: |-
       Returns a collection of charts that are part of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -42,8 +35,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,14 +48,10 @@ properties:
     uid: 'excel!Excel.Worksheet#freezePanes:member'
     package: excel!
     fullName: freezePanes
-    summary: >-
-      Gets an object that can be used to manipulate frozen panes on the
-      worksheet.
+    summary: |-
+      Gets an object that can be used to manipulate frozen panes on the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -75,14 +64,11 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Returns a value that uniquely identifies the worksheet in a given
-      workbook. The value of the identifier remains the same even when the
-      worksheet is renamed or moved.
+      Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
+      the same even when the worksheet is renamed or moved.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,13 +80,10 @@ properties:
     uid: 'excel!Excel.Worksheet#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       The display name of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -112,13 +95,10 @@ properties:
     uid: 'excel!Excel.Worksheet#names:member'
     package: excel!
     fullName: names
-    summary: >-
+    summary: |-
       Collection of names scoped to the current worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -130,20 +110,15 @@ properties:
     uid: 'excel!Excel.Worksheet#onActivated:member'
     package: excel!
     fullName: onActivated
-    summary: >-
+    summary: |-
       Occurs when the worksheet is activated.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onActivated:
-        OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -169,20 +144,15 @@ properties:
     uid: 'excel!Excel.Worksheet#onChanged:member'
     package: excel!
     fullName: onChanged
-    summary: >-
+    summary: |-
       Occurs when data changes in a specific worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onChanged:
-        OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;
+      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -211,20 +181,15 @@ properties:
     uid: 'excel!Excel.Worksheet#onDeactivated:member'
     package: excel!
     fullName: onDeactivated
-    summary: >-
+    summary: |-
       Occurs when the worksheet is deactivated.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onDeactivated:
-        OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -250,20 +215,15 @@ properties:
     uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
     package: excel!
     fullName: onSelectionChanged
-    summary: >-
+    summary: |-
       Occurs when the selection changes on a specific worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -289,13 +249,10 @@ properties:
     uid: 'excel!Excel.Worksheet#pivotTables:member'
     package: excel!
     fullName: pivotTables
-    summary: >-
+    summary: |-
       Collection of PivotTables that are part of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -332,13 +289,10 @@ properties:
     uid: 'excel!Excel.Worksheet#position:member'
     package: excel!
     fullName: position
-    summary: >-
+    summary: |-
       The zero-based position of the worksheet within the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -369,13 +323,10 @@ properties:
     uid: 'excel!Excel.Worksheet#protection:member'
     package: excel!
     fullName: protection
-    summary: >-
+    summary: |-
       Returns sheet protection object for a worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -424,14 +375,10 @@ properties:
     uid: 'excel!Excel.Worksheet#standardHeight:member'
     package: excel!
     fullName: standardHeight
-    summary: >-
-      Returns the standard (default) height of all the rows in the worksheet, in
-      points.
+    summary: |-
+      Returns the standard (default) height of all the rows in the worksheet, in points.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -444,15 +391,12 @@ properties:
     package: excel!
     fullName: standardWidth
     summary: >-
-      Specifies the standard (default) width of all the columns in the
-      worksheet. One unit of column width is equal to the width of one character
-      in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used.
+      Specifies the standard (default) width of all the columns in the worksheet. One unit of column width is equal to
+      the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is
+      used.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -465,17 +409,13 @@ properties:
     package: excel!
     fullName: tabColor
     summary: >-
-      The tab color of the worksheet. When retrieving the tab color, if the
-      worksheet is invisible, the value will be null. If the worksheet is
-      visible but the tab color is set to auto, an empty string will be
-      returned. Otherwise, the property will be set to a color, in the form
-      "\#123456" When setting the color, use an empty-string to set an "auto"
-      color, or a real color otherwise.
+      The tab color of the worksheet. When retrieving the tab color, if the worksheet is invisible, the value will be
+      null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise,
+      the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string to set an
+      "auto" color, or a real color otherwise.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -506,13 +446,10 @@ properties:
     uid: 'excel!Excel.Worksheet#tables:member'
     package: excel!
     fullName: tables
-    summary: >-
+    summary: |-
       Collection of tables that are part of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -529,29 +466,23 @@ properties:
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'visibility: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
-        type: >-
-          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
-          | "VeryHidden"
+        type: '<xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden" | "VeryHidden"'
 methods:
   - name: activate()
     uid: 'excel!Excel.Worksheet#activate:member(1)'
     package: excel!
     fullName: activate()
-    summary: >-
+    summary: |-
       Activate the worksheet in the Excel UI.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -581,13 +512,10 @@ methods:
     uid: 'excel!Excel.Worksheet#calculate:member(1)'
     package: excel!
     fullName: calculate(markAllDirty)
-    summary: >-
+    summary: |-
       Calculates all cells on a worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -604,32 +532,25 @@ methods:
     uid: 'excel!Excel.Worksheet#copy:member(1)'
     package: excel!
     fullName: 'copy(positionType, relativeTo)'
-    summary: >-
+    summary: |-
       Copies a worksheet and places it at the specified position.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        copy(positionType?: Excel.WorksheetPositionType, relativeTo?:
-        Excel.Worksheet): Excel.Worksheet;
+      content: 'copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
       parameters:
         - id: positionType
           description: >-
-            The location in the workbook to place the newly created worksheet.
-            The default value is "None", which inserts the worksheet at the
-            beginning of the worksheet.
+            The location in the workbook to place the newly created worksheet. The default value is "None", which
+            inserts the worksheet at the beginning of the worksheet.
           type: '<xref uid="excel!Excel.WorksheetPositionType:enum" />'
         - id: relativeTo
           description: >-
-            The existing worksheet which determines the newly created
-            worksheet's position. This is only needed if `positionType` is
-            "Before" or "After".
+            The existing worksheet which determines the newly created worksheet's position. This is only needed if
+            `positionType` is "Before" or "After".
           type: '<xref uid="excel!Excel.Worksheet:class" />'
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -664,32 +585,27 @@ methods:
     uid: 'excel!Excel.Worksheet#copy:member(2)'
     package: excel!
     fullName: 'copy(positionTypeString, relativeTo)'
-    summary: >-
+    summary: |-
       Copies a worksheet and places it at the specified position.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" |
-        "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
+        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet):
+        Excel.Worksheet;
       parameters:
         - id: positionTypeString
           description: >-
-            The location in the workbook to place the newly created worksheet.
-            The default value is "None", which inserts the worksheet at the
-            beginning of the worksheet.
+            The location in the workbook to place the newly created worksheet. The default value is "None", which
+            inserts the worksheet at the beginning of the worksheet.
           type: '"None" | "Before" | "After" | "Beginning" | "End"'
         - id: relativeTo
           description: >-
-            The existing worksheet which determines the newly created
-            worksheet's position. This is only needed if `positionType` is
-            "Before" or "After".
+            The existing worksheet which determines the newly created worksheet's position. This is only needed if
+            `positionType` is "Before" or "After".
           type: '<xref uid="excel!Excel.Worksheet:class" />'
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -699,15 +615,12 @@ methods:
     package: excel!
     fullName: delete()
     summary: >-
-      Deletes the worksheet from the workbook. Note that if the worksheet's
-      visibility is set to "VeryHidden", the delete operation will fail with an
-      `InvalidOperation` exception. You should first change its visibility to
-      hidden or visible before deleting it.
+      Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
+      delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden
+      or visible before deleting it.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -738,14 +651,11 @@ methods:
     package: excel!
     fullName: 'getCell(row, column)'
     summary: >-
-      Gets the range object containing the single cell based on row and column
-      numbers. The cell can be outside the bounds of its parent range, so long
-      as it stays within the worksheet grid.
+      Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
+      bounds of its parent range, so long as it stays within the worksheet grid.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -786,13 +696,11 @@ methods:
     package: excel!
     fullName: getNext(visibleOnly)
     summary: >-
-      Gets the worksheet that follows this one. If there are no worksheets
-      following this one, this method will throw an error.
+      Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an
+      error.
 
 
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -800,9 +708,7 @@ methods:
       content: 'getNext(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -848,13 +754,11 @@ methods:
     package: excel!
     fullName: getNextOrNullObject(visibleOnly)
     summary: >-
-      Gets the worksheet that follows this one. If there are no worksheets
-      following this one, this method will return a null object.
+      Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
+      null object.
 
 
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -862,9 +766,7 @@ methods:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -873,14 +775,10 @@ methods:
     uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
     package: excel!
     fullName: getPrevious(visibleOnly)
-    summary: >-
-      Gets the worksheet that precedes this one. If there are no previous
-      worksheets, this method will throw an error.
+    summary: |-
+      Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -888,9 +786,7 @@ methods:
       content: 'getPrevious(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -932,13 +828,11 @@ methods:
     package: excel!
     fullName: getPreviousOrNullObject(visibleOnly)
     summary: >-
-      Gets the worksheet that precedes this one. If there are no previous
-      worksheets, this method will return a null objet.
+      Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
+      objet.
 
 
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -946,9 +840,7 @@ methods:
       content: 'getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -957,14 +849,10 @@ methods:
     uid: 'excel!Excel.Worksheet#getRange:member(1)'
     package: excel!
     fullName: getRange(address)
-    summary: >-
-      Gets the range object, representing a single rectangular block of cells,
-      specified by the address or name.
+    summary: |-
+      Gets the range object, representing a single rectangular block of cells, specified by the address or name.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -973,9 +861,8 @@ methods:
       parameters:
         - id: address
           description: >-
-            Optional. The string representing the address or name of the range.
-            For example, "A1:B2". If not specified, the entire worksheet range
-            is returned.
+            Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified,
+            the entire worksheet range is returned.
           type: string
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1024,20 +911,16 @@ methods:
     package: excel!
     fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
     summary: >-
-      Gets the range object beginning at a particular row index and column
-      index, and spanning a certain number of rows and columns.
+      Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows
+      and columns.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getRangeByIndexes(startRow: number, startColumn: number, rowCount:
-        number, columnCount: number): Excel.Range;
+      content: 'getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number): Excel.Range;'
       parameters:
         - id: startRow
           description: Start row (zero-indexed).
@@ -1059,15 +942,11 @@ methods:
     package: excel!
     fullName: getUsedRange(valuesOnly)
     summary: >-
-      The used range is the smallest range that encompasses any cells that have
-      a value or formatting assigned to them. If the entire worksheet is blank,
-      this function will return the top left cell (i.e. it will *not* throw an
-      error).
+      The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
+      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1076,8 +955,8 @@ methods:
       parameters:
         - id: valuesOnly
           description: >-
-            Optional. If true, considers only cells with values as used cells
-            (ignoring formatting). \[Api set: ExcelApi 1.2\]
+            Optional. If true, considers only cells with values as used cells (ignoring formatting). \[Api set: ExcelApi
+            1.2\]
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1107,14 +986,11 @@ methods:
     package: excel!
     fullName: getUsedRangeOrNullObject(valuesOnly)
     summary: >-
-      The used range is the smallest range that encompasses any cells that have
-      a value or formatting assigned to them. If the entire worksheet is blank,
-      this function will return a null object.
+      The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
+      If the entire worksheet is blank, this function will return a null object.
 
 
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1132,8 +1008,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1151,8 +1027,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1160,9 +1036,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -1192,8 +1066,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1206,10 +1080,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -1223,9 +1095,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -1233,20 +1104,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.WorksheetUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.WorksheetUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -1255,9 +1121,7 @@ methods:
     uid: 'excel!Excel.Worksheet#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1275,13 +1139,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Worksheet object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

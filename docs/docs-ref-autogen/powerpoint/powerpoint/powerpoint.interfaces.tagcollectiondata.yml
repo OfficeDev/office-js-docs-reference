@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.TagCollectionData
 uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tagCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tagCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

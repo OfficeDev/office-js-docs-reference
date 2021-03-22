@@ -3,14 +3,10 @@ name: Excel.Interfaces.TextRangeLoadOptions
 uid: 'excel!Excel.Interfaces.TextRangeLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TextRangeLoadOptions
-summary: >-
-  Contains the text that is attached to a shape, in addition to properties and
-  methods for manipulating the text.
+summary: |-
+  Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,14 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TextRangeLoadOptions#font:member'
     package: excel!
     fullName: font
-    summary: >-
-      Returns a `ShapeFont` object that represents the font attributes for the
-      text range.
+    summary: |-
+      Returns a `ShapeFont` object that represents the font attributes for the text range.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TextRangeLoadOptions#text:member'
     package: excel!
     fullName: text
-    summary: >-
+    summary: |-
       Represents the plain text content of the text range.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

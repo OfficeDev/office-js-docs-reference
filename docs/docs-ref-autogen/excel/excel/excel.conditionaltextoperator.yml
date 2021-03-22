@@ -3,13 +3,10 @@ name: Excel.ConditionalTextOperator
 uid: 'excel!Excel.ConditionalTextOperator:enum'
 package: excel!
 fullName: Excel.ConditionalTextOperator
-summary: >-
+summary: |-
   Represents the operator of the text conditional format type.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

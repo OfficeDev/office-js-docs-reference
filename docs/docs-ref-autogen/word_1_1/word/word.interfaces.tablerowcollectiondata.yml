@@ -3,9 +3,7 @@ name: Word.Interfaces.TableRowCollectionData
 uid: 'word!Word.Interfaces.TableRowCollectionData:interface'
 package: word!
 fullName: Word.Interfaces.TableRowCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableRowCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableRowCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

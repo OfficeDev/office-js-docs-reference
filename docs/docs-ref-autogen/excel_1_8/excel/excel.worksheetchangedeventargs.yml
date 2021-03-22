@@ -3,13 +3,10 @@ name: Excel.WorksheetChangedEventArgs
 uid: 'excel!Excel.WorksheetChangedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetChangedEventArgs
-summary: >-
+summary: |-
   Provides information about the worksheet that raised the Changed event.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,14 +16,10 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#address:member'
     package: excel!
     fullName: address
-    summary: >-
-      Gets the range address that represents the changed area of a specific
-      worksheet.
+    summary: |-
+      Gets the range address that represents the changed area of a specific worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,38 +31,29 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#changeType:member'
     package: excel!
     fullName: changeType
-    summary: >-
-      Gets the change type that represents how the Changed event is triggered.
-      See Excel.DataChangeType for details.
+    summary: |-
+      Gets the change type that represents how the Changed event is triggered. See Excel.DataChangeType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" |
-        "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" |
-        "CellInserted" | "CellDeleted";
+        changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
+        "ColumnDeleted" | "CellInserted" | "CellDeleted";
       return:
         type: >-
-          <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" |
-          "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
-          "ColumnDeleted" | "CellInserted" | "CellDeleted"
+          <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" |
+          "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"
   - name: source
     uid: 'excel!Excel.WorksheetChangedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: >-
+    summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -81,13 +65,10 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -99,13 +80,10 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: >-
+    summary: |-
       Gets the id of the worksheet in which the data changed.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -118,13 +96,10 @@ methods:
     uid: 'excel!Excel.WorksheetChangedEventArgs#getRange:member(1)'
     package: excel!
     fullName: getRange(ctx)
-    summary: >-
+    summary: |-
       Gets the range that represents the changed area of a specific worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -141,14 +116,10 @@ methods:
     uid: 'excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member(1)'
     package: excel!
     fullName: getRangeOrNullObject(ctx)
-    summary: >-
-      Gets the range that represents the changed area of a specific worksheet.
-      It might return null object.
+    summary: |-
+      Gets the range that represents the changed area of a specific worksheet. It might return null object.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,8 @@ uid: 'outlook!Office.Item:interface'
 package: outlook!
 fullName: Office.Item
 summary: >-
-  The item namespace is used to access the currently selected message, meeting
-  request, or appointment. You can determine the type of the item by using the
-  `itemType` property.
+  The item namespace is used to access the currently selected message, meeting request, or appointment. You can
+  determine the type of the item by using the `itemType` property.
 
 
   To see the full member list, refer to the [Object
@@ -14,8 +13,7 @@ summary: >-
   page.
 
 
-  If you want to see IntelliSense for only a specific type or mode, cast this
-  item to one of the following:
+  If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
 
 
   - [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)
@@ -30,14 +28,13 @@ summary: >-
   - [MessageRead](xref:outlook!Office.MessageRead:interface)
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `Restricted`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `Restricted`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Appointment Organizer, Appointment Attendee, Message Compose, Message
-  Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Appointment Organizer, Appointment Attendee, Message Compose, Message Read
 isPreview: false
 isDeprecated: false
 type: interface

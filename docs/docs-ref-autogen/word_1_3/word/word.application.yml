@@ -3,13 +3,10 @@ name: Word.Application
 uid: 'word!Word.Application:class'
 package: word!
 fullName: Word.Application
-summary: >-
+summary: |-
   Represents the application object.
 
-
-  \[ [API set: WordApi
-  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +31,10 @@ methods:
     uid: 'word!Word.Application#createDocument:member(1)'
     package: word!
     fullName: createDocument(base64File)
-    summary: >-
+    summary: |-
       Creates a new document by using an optional base64 encoded .docx file.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -62,9 +56,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        static newObject(context: OfficeExtension.ClientRequestContext):
-        Word.Application;
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;'
       parameters:
         - id: context
           description: ''
@@ -77,13 +69,11 @@ methods:
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.Application object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Application object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

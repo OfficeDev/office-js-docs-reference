@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.DocumentTaskChangeCollectionUpdateData
 summary: >-
-  An interface for updating data on the DocumentTaskChangeCollection object, for
-  use in `documentTaskChangeCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the DocumentTaskChangeCollection object, for use in
+  `documentTaskChangeCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.DocumentTaskChangeData[];'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData:interface"
-          />[]
+        type: '<xref uid="excel!Excel.Interfaces.DocumentTaskChangeData:interface" />[]'

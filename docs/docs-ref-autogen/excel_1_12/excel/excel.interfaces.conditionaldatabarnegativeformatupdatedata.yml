@@ -4,27 +4,23 @@ uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interfac
 package: excel!
 fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
 summary: >-
-  An interface for updating data on the ConditionalDataBarNegativeFormat object,
-  for use in `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
+  An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in
+  `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: borderColor
-    uid: >-
-      excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#borderColor:member
+    uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#borderColor:member'
     package: excel!
     fullName: borderColor
     summary: >-
-      HTML color code representing the color of the border line, of the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-      "Empty String" if no border is present or set.
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange"). "Empty String" if no border is present or set.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,18 +29,15 @@ properties:
       return:
         type: string
   - name: fillColor
-    uid: >-
-      excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#fillColor:member
+    uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#fillColor:member'
     package: excel!
     fullName: fillColor
     summary: >-
-      HTML color code representing the fill color, of the form \#RRGGBB (e.g.,
-      "FFA500") or as a named HTML color (e.g., "orange").
+      HTML color code representing the fill color, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
+      "orange").
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,18 +46,13 @@ properties:
       return:
         type: string
   - name: matchPositiveBorderColor
-    uid: >-
-      excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#matchPositiveBorderColor:member
+    uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#matchPositiveBorderColor:member'
     package: excel!
     fullName: matchPositiveBorderColor
-    summary: >-
-      Specifies if the negative DataBar has the same border color as the
-      positive DataBar.
+    summary: |-
+      Specifies if the negative DataBar has the same border color as the positive DataBar.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,18 +61,13 @@ properties:
       return:
         type: boolean
   - name: matchPositiveFillColor
-    uid: >-
-      excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#matchPositiveFillColor:member
+    uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData#matchPositiveFillColor:member'
     package: excel!
     fullName: matchPositiveFillColor
-    summary: >-
-      Specifies if the negative DataBar has the same fill color as the positive
-      DataBar.
+    summary: |-
+      Specifies if the negative DataBar has the same fill color as the positive DataBar.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

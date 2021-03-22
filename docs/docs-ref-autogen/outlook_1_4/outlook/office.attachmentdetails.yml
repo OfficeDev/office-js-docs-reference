@@ -3,26 +3,20 @@ name: Office.AttachmentDetails
 uid: 'outlook!Office.AttachmentDetails:interface'
 package: outlook!
 fullName: Office.AttachmentDetails
-summary: >-
+summary: |-
   Represents an attachment on an item from the server. Read mode only.
 
+  An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
 
-  An array of `AttachmentDetails` objects is returned as the attachments
-  property of an appointment or message item.
-
-
-  \[ [API set: Mailbox
-  1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
   #### Examples
@@ -71,9 +65,7 @@ properties:
     syntax:
       content: 'attachmentType: MailboxEnums.AttachmentType | string;'
       return:
-        type: >-
-          <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> |
-          string
+        type: '<xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> | string'
   - name: contentType
     uid: 'outlook!Office.AttachmentDetails#contentType:member'
     package: outlook!
@@ -91,9 +83,8 @@ properties:
     package: outlook!
     fullName: id
     summary: >-
-      Gets the Exchange attachment ID of the attachment. However, if the
-      attachment type is `MailboxEnums.AttachmentType.Cloud`<!-- -->, then a URL
-      for the file is returned.
+      Gets the Exchange attachment ID of the attachment. However, if the attachment type is
+      `MailboxEnums.AttachmentType.Cloud`<!-- -->, then a URL for the file is returned.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,9 +96,7 @@ properties:
     uid: 'outlook!Office.AttachmentDetails#isInline:member'
     package: outlook!
     fullName: isInline
-    summary: >-
-      Gets a value that indicates whether the attachment should be displayed in
-      the body of the item.
+    summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -123,9 +112,8 @@ properties:
       Gets the name of the attachment.
 
 
-      **Important**: For message or appointment items that were attached by
-      drag-and-drop or "Attach Item", `name` includes a file extension in
-      Outlook on Mac, but excludes the extension on the web or Windows.
+      **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item", `name`
+      includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
     remarks: ''
     isPreview: false
     isDeprecated: false

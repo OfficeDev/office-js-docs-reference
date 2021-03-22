@@ -1,32 +1,14 @@
 items:
   - name: API reference
+    href: ~/docs-ref-autogen/overview/office.md
     items:
-      - name: API reference overview
-        href: ../overview/overview.md
-      - name: OneNote
+      - name: onenote
         uid: onenote!
         items:
-          - name: Enums
-            uid: ''
-            items:
-              - name: ErrorCodes
-                uid: 'onenote!OneNote.ErrorCodes:enum'
-              - name: InsertLocation
-                uid: 'onenote!OneNote.InsertLocation:enum'
-              - name: ListType
-                uid: 'onenote!OneNote.ListType:enum'
-              - name: NoteTagStatus
-                uid: 'onenote!OneNote.NoteTagStatus:enum'
-              - name: NoteTagType
-                uid: 'onenote!OneNote.NoteTagType:enum'
-              - name: NumberType
-                uid: 'onenote!OneNote.NumberType:enum'
-              - name: PageContentType
-                uid: 'onenote!OneNote.PageContentType:enum'
-              - name: ParagraphType
-                uid: 'onenote!OneNote.ParagraphType:enum'
           - name: Application
             uid: 'onenote!OneNote.Application:class'
+          - name: ErrorCodes
+            uid: 'onenote!OneNote.ErrorCodes:enum'
           - name: FloatingInk
             uid: 'onenote!OneNote.FloatingInk:class'
           - name: Image
@@ -57,12 +39,206 @@ items:
             uid: 'onenote!OneNote.InkWord:class'
           - name: InkWordCollection
             uid: 'onenote!OneNote.InkWordCollection:class'
+          - name: InsertLocation
+            uid: 'onenote!OneNote.InsertLocation:enum'
+          - name: ApplicationData
+            uid: 'onenote!OneNote.Interfaces.ApplicationData:interface'
+          - name: ApplicationLoadOptions
+            uid: 'onenote!OneNote.Interfaces.ApplicationLoadOptions:interface'
+          - name: CollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
+          - name: FloatingInkData
+            uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+          - name: FloatingInkLoadOptions
+            uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+          - name: ImageData
+            uid: 'onenote!OneNote.Interfaces.ImageData:interface'
+          - name: ImageLoadOptions
+            uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
+          - name: ImageUpdateData
+            uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+          - name: InkAnalysisData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
+          - name: InkAnalysisLineCollectionData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
+          - name: InkAnalysisLineCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
+          - name: InkAnalysisLineCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData:interface'
+          - name: InkAnalysisLineData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
+          - name: InkAnalysisLineLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
+          - name: InkAnalysisLineUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
+          - name: InkAnalysisLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
+          - name: InkAnalysisParagraphCollectionData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
+          - name: InkAnalysisParagraphCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions:interface'
+          - name: InkAnalysisParagraphCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
+          - name: InkAnalysisParagraphData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
+          - name: InkAnalysisParagraphLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
+          - name: InkAnalysisParagraphUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
+          - name: InkAnalysisUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
+          - name: InkAnalysisWordCollectionData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
+          - name: InkAnalysisWordCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
+          - name: InkAnalysisWordCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
+          - name: InkAnalysisWordData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
+          - name: InkAnalysisWordLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
+          - name: InkAnalysisWordUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
+          - name: InkStrokeCollectionData
+            uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
+          - name: InkStrokeCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
+          - name: InkStrokeCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData:interface'
+          - name: InkStrokeData
+            uid: 'onenote!OneNote.Interfaces.InkStrokeData:interface'
+          - name: InkStrokeLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface'
+          - name: InkWordCollectionData
+            uid: 'onenote!OneNote.Interfaces.InkWordCollectionData:interface'
+          - name: InkWordCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
+          - name: InkWordCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
+          - name: InkWordData
+            uid: 'onenote!OneNote.Interfaces.InkWordData:interface'
+          - name: InkWordLoadOptions
+            uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions:interface'
+          - name: NotebookCollectionData
+            uid: 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
+          - name: NotebookCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
+          - name: NotebookCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
+          - name: NotebookData
+            uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
+          - name: NotebookLoadOptions
+            uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
+          - name: NoteTagData
+            uid: 'onenote!OneNote.Interfaces.NoteTagData:interface'
+          - name: NoteTagLoadOptions
+            uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
+          - name: OutlineData
+            uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
+          - name: OutlineLoadOptions
+            uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+          - name: PageCollectionData
+            uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
+          - name: PageCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface'
+          - name: PageCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
+          - name: PageContentCollectionData
+            uid: 'onenote!OneNote.Interfaces.PageContentCollectionData:interface'
+          - name: PageContentCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
+          - name: PageContentCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
+          - name: PageContentData
+            uid: 'onenote!OneNote.Interfaces.PageContentData:interface'
+          - name: PageContentLoadOptions
+            uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
+          - name: PageContentUpdateData
+            uid: 'onenote!OneNote.Interfaces.PageContentUpdateData:interface'
+          - name: PageData
+            uid: 'onenote!OneNote.Interfaces.PageData:interface'
+          - name: PageLoadOptions
+            uid: 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
+          - name: PageUpdateData
+            uid: 'onenote!OneNote.Interfaces.PageUpdateData:interface'
+          - name: ParagraphCollectionData
+            uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
+          - name: ParagraphCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+          - name: ParagraphCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
+          - name: ParagraphData
+            uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
+          - name: ParagraphLoadOptions
+            uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+          - name: ParagraphUpdateData
+            uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
+          - name: RichTextData
+            uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
+          - name: RichTextLoadOptions
+            uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
+          - name: SectionCollectionData
+            uid: 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
+          - name: SectionCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
+          - name: SectionCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData:interface'
+          - name: SectionData
+            uid: 'onenote!OneNote.Interfaces.SectionData:interface'
+          - name: SectionGroupCollectionData
+            uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionData:interface'
+          - name: SectionGroupCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
+          - name: SectionGroupCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface'
+          - name: SectionGroupData
+            uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
+          - name: SectionGroupLoadOptions
+            uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
+          - name: SectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
+          - name: TableCellCollectionData
+            uid: 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
+          - name: TableCellCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
+          - name: TableCellCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData:interface'
+          - name: TableCellData
+            uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
+          - name: TableCellLoadOptions
+            uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
+          - name: TableCellUpdateData
+            uid: 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
+          - name: TableData
+            uid: 'onenote!OneNote.Interfaces.TableData:interface'
+          - name: TableLoadOptions
+            uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
+          - name: TableRowCollectionData
+            uid: 'onenote!OneNote.Interfaces.TableRowCollectionData:interface'
+          - name: TableRowCollectionLoadOptions
+            uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface'
+          - name: TableRowCollectionUpdateData
+            uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
+          - name: TableRowData
+            uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
+          - name: TableRowLoadOptions
+            uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
+          - name: TableUpdateData
+            uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
+          - name: ListType
+            uid: 'onenote!OneNote.ListType:enum'
           - name: Notebook
             uid: 'onenote!OneNote.Notebook:class'
           - name: NotebookCollection
             uid: 'onenote!OneNote.NotebookCollection:class'
           - name: NoteTag
             uid: 'onenote!OneNote.NoteTag:class'
+          - name: NoteTagStatus
+            uid: 'onenote!OneNote.NoteTagStatus:enum'
+          - name: NoteTagType
+            uid: 'onenote!OneNote.NoteTagType:enum'
+          - name: NumberType
+            uid: 'onenote!OneNote.NumberType:enum'
           - name: Outline
             uid: 'onenote!OneNote.Outline:class'
           - name: Page
@@ -73,12 +249,16 @@ items:
             uid: 'onenote!OneNote.PageContent:class'
           - name: PageContentCollection
             uid: 'onenote!OneNote.PageContentCollection:class'
+          - name: PageContentType
+            uid: 'onenote!OneNote.PageContentType:enum'
           - name: Paragraph
             uid: 'onenote!OneNote.Paragraph:class'
           - name: ParagraphCollection
             uid: 'onenote!OneNote.ParagraphCollection:class'
           - name: ParagraphInfo
             uid: 'onenote!OneNote.ParagraphInfo:interface'
+          - name: ParagraphType
+            uid: 'onenote!OneNote.ParagraphType:enum'
           - name: RequestContext
             uid: 'onenote!OneNote.RequestContext:class'
           - name: RichText
@@ -101,229 +281,3 @@ items:
             uid: 'onenote!OneNote.TableRow:class'
           - name: TableRowCollection
             uid: 'onenote!OneNote.TableRowCollection:class'
-      - name: Common API
-        uid: office!
-        items:
-          - name: Office
-            items:
-              - name: Enums
-                uid: ''
-                items:
-                  - name: ActiveView
-                    uid: 'office!Office.ActiveView:enum'
-                  - name: AsyncResultStatus
-                    uid: 'office!Office.AsyncResultStatus:enum'
-                  - name: BindingType
-                    uid: 'office!Office.BindingType:enum'
-                  - name: CoercionType
-                    uid: 'office!Office.CoercionType:enum'
-                  - name: CustomXMLNodeType
-                    uid: 'office!Office.CustomXMLNodeType:enum'
-                  - name: DocumentMode
-                    uid: 'office!Office.DocumentMode:enum'
-                  - name: EventType
-                    uid: 'office!Office.EventType:enum'
-                  - name: FileType
-                    uid: 'office!Office.FileType:enum'
-                  - name: FilterType
-                    uid: 'office!Office.FilterType:enum'
-                  - name: GoToType
-                    uid: 'office!Office.GoToType:enum'
-                  - name: HostType
-                    uid: 'office!Office.HostType:enum'
-                  - name: Index
-                    uid: 'office!Office.Index:enum'
-                  - name: InitializationReason
-                    uid: 'office!Office.InitializationReason:enum'
-                  - name: PlatformType
-                    uid: 'office!Office.PlatformType:enum'
-                  - name: ProjectProjectFields
-                    uid: 'office!Office.ProjectProjectFields:enum'
-                  - name: ProjectResourceFields
-                    uid: 'office!Office.ProjectResourceFields:enum'
-                  - name: ProjectTaskFields
-                    uid: 'office!Office.ProjectTaskFields:enum'
-                  - name: ProjectViewTypes
-                    uid: 'office!Office.ProjectViewTypes:enum'
-                  - name: SelectionMode
-                    uid: 'office!Office.SelectionMode:enum'
-                  - name: StartupBehavior
-                    uid: 'office!Office.StartupBehavior:enum'
-                  - name: Table
-                    uid: 'office!Office.Table:enum'
-                  - name: ValueFormat
-                    uid: 'office!Office.ValueFormat:enum'
-                  - name: VisibilityMode
-                    uid: 'office!Office.VisibilityMode:enum'
-              - name: Actions
-                uid: 'office!Office.Actions:interface'
-              - name: AddBindingFromNamedItemOptions
-                uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
-              - name: AddBindingFromPromptOptions
-                uid: 'office!Office.AddBindingFromPromptOptions:interface'
-              - name: AddBindingFromSelectionOptions
-                uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: Addin
-                uid: 'office!Office.Addin:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
-              - name: AsyncContextOptions
-                uid: 'office!Office.AsyncContextOptions:interface'
-              - name: AsyncResult
-                uid: 'office!Office.AsyncResult:interface'
-              - name: Auth
-                uid: 'office!Office.Auth:interface'
-              - name: AuthOptions
-                uid: 'office!Office.AuthOptions:interface'
-              - name: Binding
-                uid: 'office!Office.Binding:interface'
-              - name: BindingDataChangedEventArgs
-                uid: 'office!Office.BindingDataChangedEventArgs:interface'
-              - name: Bindings
-                uid: 'office!Office.Bindings:interface'
-              - name: BindingSelectionChangedEventArgs
-                uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
-              - name: Context
-                uid: 'office!Office.Context:interface'
-              - name: ContextInformation
-                uid: 'office!Office.ContextInformation:interface'
-              - name: Control
-                uid: 'office!Office.Control:interface'
-              - name: CustomXmlNode
-                uid: 'office!Office.CustomXmlNode:interface'
-              - name: CustomXmlPart
-                uid: 'office!Office.CustomXmlPart:interface'
-              - name: CustomXmlParts
-                uid: 'office!Office.CustomXmlParts:interface'
-              - name: CustomXmlPrefixMappings
-                uid: 'office!Office.CustomXmlPrefixMappings:interface'
-              - name: Dialog
-                uid: 'office!Office.Dialog:interface'
-              - name: DialogOptions
-                uid: 'office!Office.DialogOptions:interface'
-              - name: DialogParentMessageReceivedEventArgs
-                uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
-              - name: Document
-                uid: 'office!Office.Document:interface'
-              - name: DocumentSelectionChangedEventArgs
-                uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
-              - name: Error
-                uid: 'office!Office.Error:interface'
-              - name: File
-                uid: 'office!Office.File:interface'
-              - name: FileProperties
-                uid: 'office!Office.FileProperties:interface'
-              - name: GetBindingDataOptions
-                uid: 'office!Office.GetBindingDataOptions:interface'
-              - name: GetFileOptions
-                uid: 'office!Office.GetFileOptions:interface'
-              - name: GetSelectedDataOptions
-                uid: 'office!Office.GetSelectedDataOptions:interface'
-              - name: GoToByIdOptions
-                uid: 'office!Office.GoToByIdOptions:interface'
-              - name: IPromiseConstructor
-                uid: 'office!Office.IPromiseConstructor:interface'
-              - name: MatrixBinding
-                uid: 'office!Office.MatrixBinding:interface'
-              - name: NodeDeletedEventArgs
-                uid: 'office!Office.NodeDeletedEventArgs:interface'
-              - name: NodeInsertedEventArgs
-                uid: 'office!Office.NodeInsertedEventArgs:interface'
-              - name: NodeReplacedEventArgs
-                uid: 'office!Office.NodeReplacedEventArgs:interface'
-              - name: OfficeTheme
-                uid: 'office!Office.OfficeTheme:interface'
-              - name: RangeCoordinates
-                uid: 'office!Office.RangeCoordinates:interface'
-              - name: RangeFormatConfiguration
-                uid: 'office!Office.RangeFormatConfiguration:interface'
-              - name: RemoveHandlerOptions
-                uid: 'office!Office.RemoveHandlerOptions:interface'
-              - name: RequirementSetSupport
-                uid: 'office!Office.RequirementSetSupport:interface'
-              - name: Ribbon
-                uid: 'office!Office.Ribbon:interface'
-              - name: RibbonUpdaterData
-                uid: 'office!Office.RibbonUpdaterData:interface'
-              - name: SaveSettingsOptions
-                uid: 'office!Office.SaveSettingsOptions:interface'
-              - name: SetBindingDataOptions
-                uid: 'office!Office.SetBindingDataOptions:interface'
-              - name: SetSelectedDataOptions
-                uid: 'office!Office.SetSelectedDataOptions:interface'
-              - name: Settings
-                uid: 'office!Office.Settings:interface'
-              - name: SettingsChangedEventArgs
-                uid: 'office!Office.SettingsChangedEventArgs:interface'
-              - name: Slice
-                uid: 'office!Office.Slice:interface'
-              - name: Tab
-                uid: 'office!Office.Tab:interface'
-              - name: TableBinding
-                uid: 'office!Office.TableBinding:interface'
-              - name: TableData
-                uid: 'office!Office.TableData:class'
-              - name: TextBinding
-                uid: 'office!Office.TextBinding:interface'
-              - name: UI
-                uid: 'office!Office.UI:interface'
-              - name: VisibilityModeChangedMessage
-                uid: 'office!Office.VisibilityModeChangedMessage:interface'
-          - name: OfficeExtension
-            items:
-              - name: ClientObject
-                uid: 'office!OfficeExtension.ClientObject:class'
-              - name: ClientRequestContext
-                uid: 'office!OfficeExtension.ClientRequestContext:class'
-              - name: ClientResult
-                uid: 'office!OfficeExtension.ClientResult:class'
-              - name: DebugInfo
-                uid: 'office!OfficeExtension.DebugInfo:interface'
-              - name: EmbeddedOptions
-                uid: 'office!OfficeExtension.EmbeddedOptions:interface'
-              - name: EmbeddedSession
-                uid: 'office!OfficeExtension.EmbeddedSession:class'
-              - name: Error
-                uid: 'office!OfficeExtension.Error:class'
-              - name: ErrorCodes
-                uid: 'office!OfficeExtension.ErrorCodes:class'
-              - name: EventHandlerResult
-                uid: 'office!OfficeExtension.EventHandlerResult:class'
-              - name: EventHandlers
-                uid: 'office!OfficeExtension.EventHandlers:class'
-              - name: EventInfo
-                uid: 'office!OfficeExtension.EventInfo:interface'
-              - name: LoadOption
-                uid: 'office!OfficeExtension.LoadOption:interface'
-              - name: RequestContextDebugInfo
-                uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
-              - name: RequestUrlAndHeaderInfo
-                uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
-              - name: RunOptions
-                uid: 'office!OfficeExtension.RunOptions:interface'
-              - name: TrackedObjects
-                uid: 'office!OfficeExtension.TrackedObjects:class'
-              - name: UpdateOptions
-                uid: 'office!OfficeExtension.UpdateOptions:interface'
-          - name: OfficeRuntime
-            uid: office-runtime!
-            items:
-              - name: ApiInformation
-                uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
-              - name: Auth
-                uid: 'office-runtime!OfficeRuntime.Auth:interface'
-              - name: AuthOptions
-                uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
-              - name: Dialog
-                uid: 'office-runtime!OfficeRuntime.Dialog:interface'
-              - name: DisplayWebDialogOptions
-                uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
-              - name: Storage
-                uid: 'office-runtime!OfficeRuntime.Storage:interface'

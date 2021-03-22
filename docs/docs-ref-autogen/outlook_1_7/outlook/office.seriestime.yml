@@ -4,23 +4,20 @@ uid: 'outlook!Office.SeriesTime:interface'
 package: outlook!
 fullName: Office.SeriesTime
 summary: >-
-  The `SeriesTime` object provides methods to get and set the dates and times of
-  appointments in a recurring series and get the dates and times of meeting
-  requests in a recurring series.
+  The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and
+  get the dates and times of meeting requests in a recurring series.
 
 
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,23 +26,19 @@ methods:
     uid: 'outlook!Office.SeriesTime#getDuration:member(1)'
     package: outlook!
     fullName: getDuration()
-    summary: >-
-      Gets the duration in minutes of a usual instance in a recurring
-      appointment series.
+    summary: |-
+      Gets the duration in minutes of a usual instance in a recurring appointment series.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -53,8 +46,7 @@ methods:
 
       ```javascript
 
-      // This example gets the duration of a usual instance in a recurring
-      appointment series.
+      // This example gets the duration of a usual instance in a recurring appointment series.
 
       Office.context.mailbox.item.recurrence.getAsync(callback);
 
@@ -79,22 +71,19 @@ methods:
     fullName: getEndDate()
     summary: >-
       Gets the end date of a recurrence pattern in the following [ISO
-      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format:
-      "YYYY-MM-DD".
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -126,25 +115,21 @@ methods:
     package: outlook!
     fullName: getEndTime()
     summary: >-
-      Gets the end time of a usual appointment or meeting request instance of a
-      recurrence pattern in whichever time zone that the user or add-in set the
-      recurrence pattern using the following [ISO
-      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format:
-      "THH:mm:ss:mmm".
+      Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time
+      zone that the user or add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -152,8 +137,7 @@ methods:
 
       ```javascript
 
-      // This example gets the end time of a usual instance in a recurring
-      appointment series.
+      // This example gets the end time of a usual instance in a recurring appointment series.
 
       Office.context.mailbox.item.recurrence.getAsync(callback);
 
@@ -178,22 +162,19 @@ methods:
     fullName: getStartDate()
     summary: >-
       Gets the start date of a recurrence pattern in the following [ISO
-      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format:
-      "YYYY-MM-DD".
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -225,25 +206,21 @@ methods:
     package: outlook!
     fullName: getStartTime()
     summary: >-
-      Gets the start time of a usual appointment instance of a recurrence
-      pattern in whichever time zone that the user/add-in set the recurrence
-      pattern using the following [ISO
-      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format:
-      "THH:mm:ss:mmm".
+      Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the
+      user/add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -272,22 +249,20 @@ methods:
     package: outlook!
     fullName: setDuration(minutes)
     summary: >-
-      Sets the duration of all appointments in a recurrence pattern. This will
-      also change the end time of the recurrence pattern.
+      Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the
+      recurrence pattern.
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -324,22 +299,19 @@ methods:
     uid: 'outlook!Office.SeriesTime#setEndDate:member(1)'
     package: outlook!
     fullName: 'setEndDate(year, month, day)'
-    summary: >-
+    summary: |-
       Sets the end date of a recurring appointment series.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -366,8 +338,8 @@ methods:
           type: number
         - id: month
           description: >-
-            The month value of the end date. Valid range is 0-11 where 0
-            represents the 1st month and 11 represents the 12th month.
+            The month value of the end date. Valid range is 0-11 where 0 represents the 1st month and 11 represents the
+            12th month.
           type: number
         - id: day
           description: The day value of the end date.
@@ -379,22 +351,19 @@ methods:
     uid: 'outlook!Office.SeriesTime#setEndDate:member(2)'
     package: outlook!
     fullName: setEndDate(date)
-    summary: >-
+    summary: |-
       Sets the end date of a recurring appointment series.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -421,8 +390,7 @@ methods:
         - id: date
           description: >-
             End date of the recurring appointment series represented in the [ISO
-            8601](https://www.iso.org/iso-8601-date-and-time-format.html) date
-            format: "YYYY-MM-DD".
+            8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
           type: string
       return:
         type: void
@@ -431,22 +399,19 @@ methods:
     uid: 'outlook!Office.SeriesTime#setStartDate:member(1)'
     package: outlook!
     fullName: 'setStartDate(year, month, day)'
-    summary: >-
+    summary: |-
       Sets the start date of a recurring appointment series.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -473,8 +438,8 @@ methods:
           type: number
         - id: month
           description: >-
-            The month value of the start date. Valid range is 0-11 where 0
-            represents the 1st month and 11 represents the 12th month.
+            The month value of the start date. Valid range is 0-11 where 0 represents the 1st month and 11 represents
+            the 12th month.
           type: number
         - id: day
           description: The day value of the start date.
@@ -486,22 +451,19 @@ methods:
     uid: 'outlook!Office.SeriesTime#setStartDate:member(2)'
     package: outlook!
     fullName: setStartDate(date)
-    summary: >-
+    summary: |-
       Sets the start date of a recurring appointment series.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -527,9 +489,8 @@ methods:
       parameters:
         - id: date
           description: >-
-            Start date of the recurring appointment series represented in the
-            [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)
-            date format: "YYYY-MM-DD".
+            Start date of the recurring appointment series represented in the [ISO
+            8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
           type: string
       return:
         type: void
@@ -539,23 +500,20 @@ methods:
     package: outlook!
     fullName: 'setStartTime(hours, minutes)'
     summary: >-
-      Sets the start time of all instances of a recurring appointment series in
-      whichever time zone the recurrence pattern is set (the item's time zone is
-      used by default).
+      Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
+      pattern is set (the item's time zone is used by default).
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -598,23 +556,20 @@ methods:
     package: outlook!
     fullName: setStartTime(time)
     summary: >-
-      Sets the start time of all instances of a recurring appointment series in
-      whichever time zone the recurrence pattern is set (the item's time zone is
-      used by default).
+      Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
+      pattern is set (the item's time zone is used by default).
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -637,9 +592,7 @@ methods:
       content: 'setStartTime(time: string): void;'
       parameters:
         - id: time
-          description: >-
-            Start time of all instances represented by standard datetime string
-            format: "THH:mm:ss:mmm".
+          description: 'Start time of all instances represented by standard datetime string format: "THH:mm:ss:mmm".'
           type: string
       return:
         type: void

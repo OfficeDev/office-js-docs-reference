@@ -3,13 +3,10 @@ name: Office.RecipientsChangedFields
 uid: 'outlook!Office.RecipientsChangedFields:interface'
 package: outlook!
 fullName: Office.RecipientsChangedFields
-summary: >-
+summary: |-
   Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
 
-
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedFields#bcc:member'
     package: outlook!
     fullName: bcc
-    summary: >-
+    summary: |-
       Gets if recipients in the **bcc** field were changed.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedFields#cc:member'
     package: outlook!
     fullName: cc
-    summary: >-
+    summary: |-
       Gets if recipients in the **cc** field were changed.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +46,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedFields#optionalAttendees:member'
     package: outlook!
     fullName: optionalAttendees
-    summary: >-
+    summary: |-
       Gets if optional attendees were changed.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,13 +61,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedFields#requiredAttendees:member'
     package: outlook!
     fullName: requiredAttendees
-    summary: >-
+    summary: |-
       Gets if required attendees were changed.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,13 +76,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedFields#resources:member'
     package: outlook!
     fullName: resources
-    summary: >-
+    summary: |-
       Gets if resources were changed.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -109,13 +91,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedFields#to:member'
     package: outlook!
     fullName: to
-    summary: >-
+    summary: |-
       Gets if recipients in the **to** field were changed.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

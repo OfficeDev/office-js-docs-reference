@@ -13,13 +13,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: >-
+    summary: |-
       The client url of the section. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the section. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#isEncrypted:member'
     package: onenote!
     fullName: isEncrypted
-    summary: >-
+    summary: |-
       True if this section is encrypted with a password. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,13 +58,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#isLocked:member'
     package: onenote!
     fullName: isLocked
-    summary: >-
+    summary: |-
       True if this section is locked. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -85,13 +73,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#name:member'
     package: onenote!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the name of the section. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -103,13 +88,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#pages:member'
     package: onenote!
     fullName: pages
-    summary: >-
+    summary: |-
       The collection of pages in the section. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -121,13 +103,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#webUrl:member'
     package: onenote!
     fullName: webUrl
-    summary: >-
+    summary: |-
       The web url of the page. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

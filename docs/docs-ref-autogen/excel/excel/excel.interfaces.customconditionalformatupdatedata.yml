@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
 summary: >-
-  An interface for updating data on the CustomConditionalFormat object, for use
-  in `customConditionalFormat.set({ ... })`<!-- -->.
+  An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,42 +15,29 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill,
-      borders, and other properties.
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface" />'
   - name: rule
     uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData#rule:member'
     package: excel!
     fullName: rule
-    summary: >-
+    summary: |-
       Specifies the `Rule` object on this conditional format.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rule?: Excel.Interfaces.ConditionalFormatRuleUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface" />'

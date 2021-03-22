@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartSeriesUpdateData
 uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesUpdateData
-summary: >-
-  An interface for updating data on the ChartSeries object, for use in
-  `chartSeries.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the ChartSeries object, for use in `chartSeries.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,121 +13,86 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#axisGroup:member'
     package: excel!
     fullName: axisGroup
-    summary: >-
+    summary: |-
       Specifies the group for the specified series.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" |
-          "Secondary"
+        type: '<xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" | "Secondary"'
   - name: chartType
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member'
     package: excel!
     fullName: chartType
-    summary: >-
+    summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" |
-        "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
-        "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked"
-        | "BarStacked100" | "3DBarClustered" | "3DBarStacked" |
-        "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
-        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" |
-        "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
-        "XYScatterSmoothNoMarkers" | "XYScatterLines" |
-        "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
-        "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
-        "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" |
-        "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" |
-        "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC"
-        | "CylinderColClustered" | "CylinderColStacked" |
-        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked"
-        | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
-        "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
-        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" |
-        "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" |
-        "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" |
-        "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" |
-        "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
-        "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" |
-        "Sunburst" | "Funnel";
+        chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
+        "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100"
+        | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+        "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
+        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" |
+        "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" |
+        "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
+        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
-          "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
-          "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
-          "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
-          "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100"
-          | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" |
-          "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
-          "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" |
-          "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
-          "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
-          "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" |
-          "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" |
-          "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
-          "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
-          "CylinderColStacked100" | "CylinderBarClustered" |
-          "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" |
-          "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" |
-          "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
-          "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
-          "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" |
-          "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine"
-          | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" |
-          "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" |
-          "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" | "ColumnClustered" | "ColumnStacked" |
+          "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" |
+          "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" |
+          "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded"
+          | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" |
+          "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" |
+          "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+          "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+          "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+          "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
+          "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
+          "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
+          "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie"
+          | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap"
+          | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
   - name: dataLabels
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#dataLabels:member'
     package: excel!
     fullName: dataLabels
-    summary: >-
+    summary: |-
       Represents a collection of all dataLabels in the series.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface" />'
   - name: doughnutHoleSize
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#doughnutHoleSize:member'
     package: excel!
     fullName: doughnutHoleSize
     summary: >-
-      Represents the doughnut hole size of a chart series. Only valid on
-      doughnut and doughnutExploded charts. Throws an invalid argument exception
-      on invalid charts.
+      Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
+      invalid argument exception on invalid charts.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -142,14 +105,11 @@ properties:
     package: excel!
     fullName: explosion
     summary: >-
-      Specifies the explosion value for a pie-chart or doughnut-chart slice.
-      Returns 0 (zero) if there's no explosion (the tip of the slice is in the
-      center of the pie).
+      Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion
+      (the tip of the slice is in the center of the pie).
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -161,13 +121,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#filtered:member'
     package: excel!
     fullName: filtered
-    summary: >-
+    summary: |-
       Specifies if the series is filtered. Not applicable for surface charts.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -180,14 +137,11 @@ properties:
     package: excel!
     fullName: firstSliceAngle
     summary: >-
-      Specifies the angle of the first pie-chart or doughnut-chart slice, in
-      degrees (clockwise from vertical). Applies only to pie, 3-D pie, and
-      doughnut charts. Can be a value from 0 through 360.
+      Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies
+      only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -199,36 +153,27 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart series, which includes fill and line
-      formatting.
+    summary: |-
+      Represents the formatting of a chart series, which includes fill and line formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface" />'
   - name: gapWidth
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#gapWidth:member'
     package: excel!
     fullName: gapWidth
     summary: >-
-      Represents the gap width of a chart series. Only valid on bar and column
-      charts, as well as specific classes of line and pie charts. Throws an
-      invalid argument exception on invalid charts.
+      Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
+      line and pie charts. Throws an invalid argument exception on invalid charts.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -240,13 +185,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#hasDataLabels:member'
     package: excel!
     fullName: hasDataLabels
-    summary: >-
+    summary: |-
       Specifies if the series has data labels.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -258,14 +200,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#invertIfNegative:member'
     package: excel!
     fullName: invertIfNegative
-    summary: >-
-      True if Excel inverts the pattern in the item when it corresponds to a
-      negative number.
+    summary: |-
+      True if Excel inverts the pattern in the item when it corresponds to a negative number.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -277,13 +215,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerBackgroundColor:member'
     package: excel!
     fullName: markerBackgroundColor
-    summary: >-
+    summary: |-
       Specifies the markers background color of a chart series.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -295,13 +230,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerForegroundColor:member'
     package: excel!
     fullName: markerForegroundColor
-    summary: >-
+    summary: |-
       Specifies the markers foreground color of a chart series.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -313,13 +245,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerSize:member'
     package: excel!
     fullName: markerSize
-    summary: >-
+    summary: |-
       Specifies the marker size of a chart series.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -331,39 +260,29 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member'
     package: excel!
     fullName: markerStyle
-    summary: >-
-      Specifies the marker style of a chart series. See Excel.ChartMarkerStyle
-      for details.
+    summary: |-
+      Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None"
-        | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" |
-        "Circle" | "Plus" | "Picture";
+        markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" |
+        "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" |
-          "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" |
-          "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" |
+          "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - name: name
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: >-
-      Specifies the name of a series in a chart. The name's length should not be
-      greater than 255 characters.
+    summary: |-
+      Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -376,13 +295,11 @@ properties:
     package: excel!
     fullName: overlap
     summary: >-
-      Specifies how bars and columns are positioned. Can be a value between –100
-      and 100. Applies only to 2-D bar and 2-D column charts.
+      Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
+      2-D column charts.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -394,13 +311,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#plotOrder:member'
     package: excel!
     fullName: plotOrder
-    summary: >-
+    summary: |-
       Specifies the plot order of a chart series within the chart group.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -413,14 +327,11 @@ properties:
     package: excel!
     fullName: secondPlotSize
     summary: >-
-      Specifies the size of the secondary section of either a pie-of-pie chart
-      or a bar-of-pie chart, as a percentage of the size of the primary pie. Can
-      be a value from 5 to 200.
+      Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of
+      the size of the primary pie. Can be a value from 5 to 200.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -432,13 +343,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#showShadow:member'
     package: excel!
     fullName: showShadow
-    summary: >-
+    summary: |-
       Specifies if the series has a shadow.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -450,14 +358,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#smooth:member'
     package: excel!
     fullName: smooth
-    summary: >-
-      Specifies if the series is smooth. Only applicable to line and scatter
-      charts.
+    summary: |-
+      Specifies if the series is smooth. Only applicable to line and scatter charts.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -469,37 +373,29 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member'
     package: excel!
     fullName: splitType
-    summary: >-
-      Specifies the way the two sections of either a pie-of-pie chart or a
-      bar-of-pie chart are split.
+    summary: |-
+      Specifies the way the two sections of either a pie-of-pie chart or a bar-of-pie chart are split.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        splitType?: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" |
-        "SplitByPercentValue" | "SplitByCustomSplit";
+        splitType?: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" |
+        "SplitByCustomSplit";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartSplitType:enum" /> | "SplitByPosition" |
-          "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
+          <xref uid="excel!Excel.ChartSplitType:enum" /> | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" |
+          "SplitByCustomSplit"
   - name: varyByCategories
     uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#varyByCategories:member'
     package: excel!
     fullName: varyByCategories
-    summary: >-
-      True if Excel assigns a different color or pattern to each data marker.
-      The chart must contain only one series.
+    summary: |-
+      True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.CustomPropertyCollectionData
 uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
 package: word!
 fullName: Word.Interfaces.CustomPropertyCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customPropertyCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customPropertyCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

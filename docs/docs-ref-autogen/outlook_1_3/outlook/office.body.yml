@@ -4,23 +4,20 @@ uid: 'outlook!Office.Body:interface'
 package: outlook!
 fullName: Office.Body
 summary: >-
-  The body object provides methods for adding and updating the content of the
-  message or appointment. It is returned in the body property of the selected
-  item.
+  The body object provides methods for adding and updating the content of the message or appointment. It is returned in
+  the body property of the selected item.
 
 
-  \[ [API set: Mailbox
-  1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,30 +30,25 @@ methods:
       Returns the current body in a specified format.
 
 
-      This method returns the entire current body in the format specified by
-      `coercionType`<!-- -->.
+      This method returns the entire current body in the format specified by `coercionType`<!-- -->.
 
 
-      When working with HTML-formatted bodies, it is important to note that the
-      `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value
-      returned from the `getAsync` method will not necessarily be exactly the
-      same as the value that was passed in the `setAsync` method previously. The
-      client may modify the value passed to `setAsync` in order to make it
-      render efficiently with its rendering engine.
+      When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync`
+      methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same
+      as the value that was passed in the `setAsync` method previously. The client may modify the value passed to
+      `setAsync` in order to make it render efficiently with its rendering engine.
 
 
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -73,8 +65,7 @@ methods:
               // Do something with the result.
           });
 
-      // The following is an example of the result parameter passed to the
-      callback function.
+      // The following is an example of the result parameter passed to the callback function.
 
       {
           "value": "TEXT of whole body (including threads below)",
@@ -87,28 +78,23 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(coercionType: Office.CoercionType | string, options?:
-        Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<string>) => void): void;
+        getAsync(coercionType: CommonAPI.CoercionType | string, options?: CommonAPI.AsyncContextOptions, callback?:
+        (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
       parameters:
         - id: coercionType
           description: The format for the returned body.
           type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties: `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties: `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            Office.AsyncResult. The body is provided in the requested format in
-            the `asyncResult.value` property.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type Office.AsyncResult. The body is provided in the requested format in the
+            `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -116,22 +102,19 @@ methods:
     uid: 'outlook!Office.Body#getTypeAsync:member(1)'
     package: outlook!
     fullName: 'getTypeAsync(options, callback)'
-    summary: >-
+    summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
-
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -152,24 +135,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getTypeAsync(options?: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<Office.CoercionType>) => void): void;
+        getTypeAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void): void;
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. The content type is returned as one of
-            the `CoercionType` values in the `asyncResult.value` property.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. The content type is returned as one of the `CoercionType`
+            values in the `asyncResult.value` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;<xref uid="office!Office.CoercionType:enum" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.CoercionType:enum" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -181,43 +162,36 @@ methods:
       Adds the specified content to the beginning of the item body.
 
 
-      The `prependAsync` method inserts the specified string at the beginning of
-      the item body. After insertion, the cursor is returned to its original
-      place, relative to the inserted content.
+      The `prependAsync` method inserts the specified string at the beginning of the item body. After insertion, the
+      cursor is returned to its original place, relative to the inserted content.
 
 
-      When working with HTML-formatted bodies, it's important to note that the
-      client may modify the value passed to `prependAsync` in order to make it
-      render efficiently with its rendering engine. This means that the value
-      returned from a subsequent call to `Body.getAsync` method will not
-      necessarily exactly contain the value that was passed in the
-      `prependAsync` method previously.
+      When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
+      `prependAsync` in order to make it render efficiently with its rendering engine. This means that the value
+      returned from a subsequent call to `Body.getAsync` method will not necessarily exactly contain the value that was
+      passed in the `prependAsync` method previously.
 
 
-      When including links in HTML markup, you can disable online link preview
-      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
-      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than
-      1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
 
 
       #### Examples
@@ -225,8 +199,7 @@ methods:
 
       ```javascript
 
-      // When including links in HTML markup, you can disable online link
-      preview
+      // When including links in HTML markup, you can disable online link preview
 
       // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
@@ -239,34 +212,26 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        prependAsync(data: string, options?: Office.AsyncContextOptions &
-        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
-        => void): void;
+        prependAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: data
-          description: >-
-            The string to be inserted at the beginning of the body. The string
-            is limited to 1,000,000 characters.
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
-            `coercionType`<!-- -->: The desired format for the body. The string
-            in the `data` parameter will be converted to this format.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The
+            desired format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. Any errors encountered will be
-            provided in the `asyncResult.error` property.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
+            `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -278,42 +243,36 @@ methods:
       Replaces the entire body with the specified text.
 
 
-      When working with HTML-formatted bodies, it is important to note that the
-      `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value
-      returned from the `getAsync` method will not necessarily be exactly the
-      same as the value that was passed in the `setAsync` method previously. The
-      client may modify the value passed to `setAsync` in order to make it
-      render efficiently with its rendering engine.
+      When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync`
+      methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same
+      as the value that was passed in the `setAsync` method previously. The client may modify the value passed to
+      `setAsync` in order to make it render efficiently with its rendering engine.
 
 
-      When including links in HTML markup, you can disable online link preview
-      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
-      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than
-      1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
-      set to `Office.CoercionType.Html` and the message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
+      message body is in plain text.
 
 
       #### Examples
@@ -321,8 +280,7 @@ methods:
 
       ```javascript
 
-      // When including links in HTML markup, you can disable online link
-      preview
+      // When including links in HTML markup, you can disable online link preview
 
       // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
@@ -338,8 +296,7 @@ methods:
       });
 
 
-      // The following is an example of the result parameter passed to the
-      callback function.
+      // The following is an example of the result parameter passed to the callback function.
 
       {
           "value":null,
@@ -352,34 +309,26 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(data: string, options?: Office.AsyncContextOptions &
-        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
-        => void): void;
+        setAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: data
-          description: >-
-            The string that will replace the existing body. The string is
-            limited to 1,000,000 characters.
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
-            `coercionType`<!-- -->: The desired format for the body. The string
-            in the `data` parameter will be converted to this format.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The
+            desired format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            Office.AsyncResult. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
+            property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -391,42 +340,36 @@ methods:
       Replaces the selection in the body with the specified text.
 
 
-      The `setSelectedDataAsync` method inserts the specified string at the
-      cursor location in the body of the item, or, if text is selected in the
-      editor, it replaces the selected text. If the cursor was never in the body
-      of the item, or if the body of the item lost focus in the UI, the string
-      will be inserted at the top of the body content. After insertion, the
-      cursor is placed at the end of the inserted content.
+      The `setSelectedDataAsync` method inserts the specified string at the cursor location in the body of the item, or,
+      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
+      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
+      insertion, the cursor is placed at the end of the inserted content.
 
 
-      When including links in HTML markup, you can disable online link preview
-      by setting the id attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
-      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than
-      1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
-      set to `Office.CoercionType.Html` and the message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
+      message body is in plain text.
 
 
       #### Examples
@@ -434,8 +377,7 @@ methods:
 
       ```javascript
 
-      // When including links in HTML markup, you can disable online link
-      preview
+      // When including links in HTML markup, you can disable online link preview
 
       // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
@@ -448,34 +390,26 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions
-        & CoercionTypeOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: data
-          description: >-
-            The string that will replace the existing body. The string is
-            limited to 1,000,000 characters.
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
-            `coercionType`<!-- -->: The desired format for the body. The string
-            in the `data` parameter will be converted to this format.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The
+            desired format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. Any errors encountered will be
-            provided in the `asyncResult.error` property.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
+            `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

@@ -3,13 +3,10 @@ name: OneNote.Interfaces.PageCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PageCollectionLoadOptions
-summary: >-
+summary: |-
   Represents a collection of pages.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -28,18 +25,13 @@ properties:
       return:
         type: boolean
   - name: classNotebookPageSource
-    uid: >-
-      onenote!OneNote.Interfaces.PageCollectionLoadOptions#classNotebookPageSource:member
+    uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#classNotebookPageSource:member'
     package: onenote!
     fullName: classNotebookPageSource
-    summary: >-
-      For EACH ITEM in the collection: Gets the ClassNotebookPageSource to the
-      page.
+    summary: |-
+      For EACH ITEM in the collection: Gets the ClassNotebookPageSource to the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: The client url of the page. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,35 +58,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#contents:member'
     package: onenote!
     fullName: contents
-    summary: >-
-      For EACH ITEM in the collection: The collection of PageContent objects on
-      the page. Read only
+    summary: |-
+      For EACH ITEM in the collection: The collection of PageContent objects on the page. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface" />'
   - name: id
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the ID of the page. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,39 +85,30 @@ properties:
       return:
         type: boolean
   - name: inkAnalysisOrNull
-    uid: >-
-      onenote!OneNote.Interfaces.PageCollectionLoadOptions#inkAnalysisOrNull:member
+    uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#inkAnalysisOrNull:member'
     package: onenote!
     fullName: inkAnalysisOrNull
     summary: >-
-      For EACH ITEM in the collection: Text interpretation for the ink on the
-      page. Returns null if there is no ink analysis information. Read only.
+      For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink
+      analysis information. Read only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />'
   - name: pageLevel
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#pageLevel:member'
     package: onenote!
     fullName: pageLevel
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the indentation level of the
-      page.
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the indentation level of the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,13 +120,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#parentSection:member'
     package: onenote!
     fullName: parentSection
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the section that contains the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -168,13 +135,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#title:member'
     package: onenote!
     fullName: title
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets or sets the title of the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -186,13 +150,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#webUrl:member'
     package: onenote!
     fullName: webUrl
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: The web url of the page. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

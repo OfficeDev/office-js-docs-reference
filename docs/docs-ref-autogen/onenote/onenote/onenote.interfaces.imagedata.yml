@@ -13,13 +13,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageData#description:member'
     package: onenote!
     fullName: description
-    summary: >-
+    summary: |-
       Gets or sets the description of the Image.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageData#height:member'
     package: onenote!
     fullName: height
-    summary: >-
+    summary: |-
       Gets or sets the height of the Image layout.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageData#hyperlink:member'
     package: onenote!
     fullName: hyperlink
-    summary: >-
+    summary: |-
       Gets or sets the hyperlink of the Image.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,13 +58,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageData#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the Image object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -85,14 +73,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageData#ocrData:member'
     package: onenote!
     fullName: ocrData
-    summary: >-
-      Gets the data obtained by OCR (Optical Character Recognition) of this
-      Image, such as OCR text and language.
+    summary: |-
+      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -104,13 +88,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageData#width:member'
     package: onenote!
     fullName: width
-    summary: >-
+    summary: |-
       Gets or sets the width of the Image layout.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -7,8 +7,7 @@ summary: >-
   Represents a collection of tasks.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
 isPreview: true
@@ -20,9 +19,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -35,13 +33,11 @@ properties:
     package: excel!
     fullName: comment
     summary: >-
-      For EACH ITEM in the collection: Gets the comment associated with the
-      task.
+      For EACH ITEM in the collection: Gets the comment associated with the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -50,18 +46,15 @@ properties:
       return:
         type: '<xref uid="excel!Excel.Interfaces.CommentLoadOptions:interface" />'
   - name: completedBy
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#completedBy:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#completedBy:member'
     package: excel!
     fullName: completedBy
     summary: >-
-      For EACH ITEM in the collection: Gets the most recent user to have
-      completed the task.
+      For EACH ITEM in the collection: Gets the most recent user to have completed the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -70,18 +63,15 @@ properties:
       return:
         type: boolean
   - name: completedDateTime
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#completedDateTime:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#completedDateTime:member'
     package: excel!
     fullName: completedDateTime
     summary: >-
-      For EACH ITEM in the collection: Gets the date and time that the task was
-      completed. All dates are in UTC.
+      For EACH ITEM in the collection: Gets the date and time that the task was completed. All dates are in UTC.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -98,8 +88,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -108,18 +97,15 @@ properties:
       return:
         type: boolean
   - name: createdDateTime
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#createdDateTime:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#createdDateTime:member'
     package: excel!
     fullName: createdDateTime
     summary: >-
-      For EACH ITEM in the collection: Gets the date and time that the task was
-      created. All dates are in UTC.
+      For EACH ITEM in the collection: Gets the date and time that the task was created. All dates are in UTC.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -136,8 +122,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -146,19 +131,16 @@ properties:
       return:
         type: boolean
   - name: percentComplete
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#percentComplete:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#percentComplete:member'
     package: excel!
     fullName: percentComplete
     summary: >-
-      For EACH ITEM in the collection: Specifies the completion percentage of
-      the task. This is a value between 0 and 100, where 100 represents a
-      completed task.
+      For EACH ITEM in the collection: Specifies the completion percentage of the task. This is a value between 0 and
+      100, where 100 represents a completed task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -171,13 +153,12 @@ properties:
     package: excel!
     fullName: priority
     summary: >-
-      For EACH ITEM in the collection: Specifies the priority of the task. This
-      is a value between 0 and 10, where 0 represents the highest priority.
+      For EACH ITEM in the collection: Specifies the priority of the task. This is a value between 0 and 10, where 0
+      represents the highest priority.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -186,18 +167,15 @@ properties:
       return:
         type: boolean
   - name: startAndDueDateTime
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#startAndDueDateTime:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#startAndDueDateTime:member'
     package: excel!
     fullName: startAndDueDateTime
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the date and time the task
-      should start and is due.
+      For EACH ITEM in the collection: Gets or sets the date and time the task should start and is due.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -214,8 +192,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

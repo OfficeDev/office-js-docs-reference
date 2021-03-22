@@ -14,15 +14,12 @@ properties:
     package: excel!
     fullName: delayForCellEdit
     summary: >-
-      Determines whether Excel will delay the batch request until the user exits
-      cell edit mode.
+      Determines whether Excel will delay the batch request until the user exits cell edit mode.
 
 
-      When false, if the user is in cell edit when the batch request is
-      processed by the host, the batch will automatically fail. When true, the
-      batch request will be executed immediately if the user is not in cell edit
-      mode, but if the user is in cell edit mode the batch request will be
-      delayed until the user exits cell edit mode.
+      When false, if the user is in cell edit when the batch request is processed by the host, the batch will
+      automatically fail. When true, the batch request will be executed immediately if the user is not in cell edit
+      mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -30,6 +27,4 @@ properties:
       content: 'delayForCellEdit?: boolean;'
       return:
         type: boolean
-extends: >-
-  <xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref
-  uid="excel!Excel.Session:interface" />&gt; 
+extends: '<xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref uid="excel!Excel.Session:interface" />&gt; '

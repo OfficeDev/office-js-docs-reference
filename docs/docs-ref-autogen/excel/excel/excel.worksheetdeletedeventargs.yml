@@ -3,13 +3,10 @@ name: Excel.WorksheetDeletedEventArgs
 uid: 'excel!Excel.WorksheetDeletedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetDeletedEventArgs
-summary: >-
+summary: |-
   Provides information about the worksheet that raised the deleted event.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.WorksheetDeletedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: >-
+    summary: |-
       Gets the source of the event. See `Excel.EventSource` for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.WorksheetDeletedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event. See `Excel.EventType` for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +46,10 @@ properties:
     uid: 'excel!Excel.WorksheetDeletedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: >-
+    summary: |-
       Gets the ID of the worksheet that is deleted from the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

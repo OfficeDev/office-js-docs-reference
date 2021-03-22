@@ -3,13 +3,10 @@ name: Excel.PivotFilterType
 uid: 'excel!Excel.PivotFilterType:enum'
 package: excel!
 fullName: Excel.PivotFilterType
-summary: >-
+summary: |-
   A simple enum that represents a type of filter for a PivotField.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -18,15 +15,15 @@ fields:
     uid: 'excel!Excel.PivotFilterType.date:member'
     package: excel!
     summary: >-
-      Filters PivotItems with a date in place of a label. Note: A PivotField
-      cannot simultaneously have a label filter and a date filter applied.
+      Filters PivotItems with a date in place of a label. Note: A PivotField cannot simultaneously have a label filter
+      and a date filter applied.
     value: '"Date"'
   - name: label
     uid: 'excel!Excel.PivotFilterType.label:member'
     package: excel!
     summary: >-
-      Filters PivotItems based on their labels. Note: A PivotField cannot
-      simultaneously have a label filter and a date filter applied.
+      Filters PivotItems based on their labels. Note: A PivotField cannot simultaneously have a label filter and a date
+      filter applied.
     value: '"Label"'
   - name: manual
     uid: 'excel!Excel.PivotFilterType.manual:member'
@@ -41,7 +38,5 @@ fields:
   - name: value
     uid: 'excel!Excel.PivotFilterType.value:member'
     package: excel!
-    summary: >-
-      Filters based on the value of a PivotItem with respect to a
-      DataPivotHierarchy.
+    summary: Filters based on the value of a PivotItem with respect to a DataPivotHierarchy.
     value: '"Value"'

@@ -3,13 +3,10 @@ name: Word.Interfaces.CustomXmlPartLoadOptions
 uid: 'word!Word.Interfaces.CustomXmlPartLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CustomXmlPartLoadOptions
-summary: >-
+summary: |-
   Represents a custom XML part.
 
-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -39,8 +35,7 @@ properties:
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -57,8 +52,7 @@ properties:
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

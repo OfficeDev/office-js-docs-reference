@@ -3,9 +3,7 @@ name: Excel.Interfaces.DatetimeFormatInfoData
 uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
 package: excel!
 fullName: Excel.Interfaces.DatetimeFormatInfoData
-summary: >-
-  An interface describing the data returned by calling
-  `datetimeFormatInfo.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData#dateSeparator:member'
     package: excel!
     fullName: dateSeparator
-    summary: >-
-      Gets the string used as the date separator. This is based on current
-      system settings.
+    summary: |-
+      Gets the string used as the date separator. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData#longDatePattern:member'
     package: excel!
     fullName: longDatePattern
-    summary: >-
-      Gets the format string for a long date value. This is based on current
-      system settings.
+    summary: |-
+      Gets the format string for a long date value. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,14 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData#longTimePattern:member'
     package: excel!
     fullName: longTimePattern
-    summary: >-
-      Gets the format string for a long time value. This is based on current
-      system settings.
+    summary: |-
+      Gets the format string for a long time value. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,14 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData#shortDatePattern:member'
     package: excel!
     fullName: shortDatePattern
-    summary: >-
-      Gets the format string for a short date value. This is based on current
-      system settings.
+    summary: |-
+      Gets the format string for a short date value. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,14 +73,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData#timeSeparator:member'
     package: excel!
     fullName: timeSeparator
-    summary: >-
-      Gets the string used as the time separator. This is based on current
-      system settings.
+    summary: |-
+      Gets the string used as the time separator. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

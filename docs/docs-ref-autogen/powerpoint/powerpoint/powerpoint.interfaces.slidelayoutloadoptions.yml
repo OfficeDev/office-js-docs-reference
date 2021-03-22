@@ -3,13 +3,10 @@ name: PowerPoint.Interfaces.SlideLayoutLoadOptions
 uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutLoadOptions
-summary: >-
+summary: |-
   Represents the layout of a slide.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the unique ID of the slide layout.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -52,13 +45,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#name:member'
     package: powerpoint!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the name of the slide layout.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

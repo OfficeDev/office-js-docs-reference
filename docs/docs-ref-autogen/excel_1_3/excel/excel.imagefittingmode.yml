@@ -3,10 +3,7 @@ name: Excel.ImageFittingMode
 uid: 'excel!Excel.ImageFittingMode:enum'
 package: excel!
 fullName: Excel.ImageFittingMode
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

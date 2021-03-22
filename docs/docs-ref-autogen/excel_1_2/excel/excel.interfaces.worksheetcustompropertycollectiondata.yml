@@ -3,9 +3,7 @@ name: Excel.Interfaces.WorksheetCustomPropertyCollectionData
 uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `worksheetCustomPropertyCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `worksheetCustomPropertyCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,7 +20,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.WorksheetCustomPropertyData[];'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface"
-          />[]
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface" />[]'

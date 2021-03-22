@@ -3,10 +3,7 @@ name: Word.HeaderFooterType
 uid: 'word!Word.HeaderFooterType:enum'
 package: word!
 fullName: Word.HeaderFooterType
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,6 +22,6 @@ fields:
     uid: 'word!Word.HeaderFooterType.primary:member'
     package: word!
     summary: >-
-      Returns the header or footer on all pages of a section, but excludes the
-      first page or odd pages if they are different.
+      Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are
+      different.
     value: '"Primary"'

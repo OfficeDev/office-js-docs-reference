@@ -3,13 +3,10 @@ name: Excel.ChartTextHorizontalAlignment
 uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
 package: excel!
 fullName: Excel.ChartTextHorizontalAlignment
-summary: >-
+summary: |-
   Represents the horizontal alignment for the specified object.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

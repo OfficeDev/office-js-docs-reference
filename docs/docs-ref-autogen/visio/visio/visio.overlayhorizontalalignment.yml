@@ -3,13 +3,10 @@ name: Visio.OverlayHorizontalAlignment
 uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
 package: visio!
 fullName: Visio.OverlayHorizontalAlignment
-summary: >-
+summary: |-
   Represents the Horizontal Alignment of the Overlay relative to the shape.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

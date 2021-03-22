@@ -3,13 +3,10 @@ name: Excel.PictureFormat
 uid: 'excel!Excel.PictureFormat:enum'
 package: excel!
 fullName: Excel.PictureFormat
-summary: >-
+summary: |-
   The format of the image.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

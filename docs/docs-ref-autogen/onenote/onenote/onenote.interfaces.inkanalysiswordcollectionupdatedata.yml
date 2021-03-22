@@ -4,16 +4,15 @@ uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
 summary: >-
-  An interface for updating data on the InkAnalysisWordCollection object, for
-  use in "inkAnalysisWordCollection.set(<!-- -->{ ... }<!-- -->)".
+  An interface for updating data on the InkAnalysisWordCollection object, for use in "inkAnalysisWordCollection.set(<!--
+  -->{ ... }<!-- -->)".
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member'
     package: onenote!
     fullName: items
     summary: ''
@@ -23,6 +22,4 @@ properties:
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface"
-          />[]
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface" />[]'

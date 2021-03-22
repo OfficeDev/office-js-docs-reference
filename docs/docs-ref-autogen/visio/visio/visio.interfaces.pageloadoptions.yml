@@ -3,13 +3,10 @@ name: Visio.Interfaces.PageLoadOptions
 uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.PageLoadOptions
-summary: >-
+summary: |-
   Represents the Page class.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageLoadOptions#height:member'
     package: visio!
     fullName: height
-    summary: >-
+    summary: |-
       Returns the height of the page. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageLoadOptions#index:member'
     package: visio!
     fullName: index
-    summary: >-
+    summary: |-
       Index of the Page. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,13 +58,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageLoadOptions#isBackground:member'
     package: visio!
     fullName: isBackground
-    summary: >-
+    summary: |-
       Whether the page is a background page or not. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -85,13 +73,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageLoadOptions#name:member'
     package: visio!
     fullName: name
-    summary: >-
+    summary: |-
       Page name. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -103,13 +88,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageLoadOptions#view:member'
     package: visio!
     fullName: view
-    summary: >-
+    summary: |-
       Returns the view of the page.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -121,13 +103,10 @@ properties:
     uid: 'visio!Visio.Interfaces.PageLoadOptions#width:member'
     package: visio!
     fullName: width
-    summary: >-
+    summary: |-
       Returns the width of the page. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

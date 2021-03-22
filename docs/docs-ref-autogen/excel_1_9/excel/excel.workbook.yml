@@ -4,16 +4,12 @@ uid: 'excel!Excel.Workbook:class'
 package: excel!
 fullName: Excel.Workbook
 summary: >-
-  Workbook is the top level object which contains related workbook objects such
-  as worksheets, tables, ranges, etc. To learn more about the workbook object
-  model, read [Work with workbooks using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
-  -->.
+  Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To
+  learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,13 +19,10 @@ properties:
     uid: 'excel!Excel.Workbook#application:member'
     package: excel!
     fullName: application
-    summary: >-
+    summary: |-
       Represents the Excel application instance that contains this workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,13 +34,10 @@ properties:
     uid: 'excel!Excel.Workbook#autoSave:member'
     package: excel!
     fullName: autoSave
-    summary: >-
+    summary: |-
       Specifies if the workbook is in autosave mode.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -59,13 +49,10 @@ properties:
     uid: 'excel!Excel.Workbook#bindings:member'
     package: excel!
     fullName: bindings
-    summary: >-
+    summary: |-
       Represents a collection of bindings that are part of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -77,13 +64,10 @@ properties:
     uid: 'excel!Excel.Workbook#calculationEngineVersion:member'
     package: excel!
     fullName: calculationEngineVersion
-    summary: >-
+    summary: |-
       Returns a number about the version of Excel Calculation Engine.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -96,14 +80,11 @@ properties:
     package: excel!
     fullName: chartDataPointTrack
     summary: >-
-      True if all charts in the workbook are tracking the actual data points to
-      which they are attached. False if the charts track the index of the data
-      points.
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -116,8 +97,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -129,13 +110,10 @@ properties:
     uid: 'excel!Excel.Workbook#customXmlParts:member'
     package: excel!
     fullName: customXmlParts
-    summary: >-
+    summary: |-
       Represents the collection of custom XML parts contained by this workbook.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -147,13 +125,10 @@ properties:
     uid: 'excel!Excel.Workbook#dataConnections:member'
     package: excel!
     fullName: dataConnections
-    summary: >-
+    summary: |-
       Represents all data connections in the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -165,14 +140,10 @@ properties:
     uid: 'excel!Excel.Workbook#functions:member'
     package: excel!
     fullName: functions
-    summary: >-
-      Represents a collection of worksheet functions that can be used for
-      computation.
+    summary: |-
+      Represents a collection of worksheet functions that can be used for computation.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -185,14 +156,11 @@ properties:
     package: excel!
     fullName: isDirty
     summary: >-
-      Specifies if changes have been made since the workbook was last saved. You
-      can set this property to true if you want to close a modified workbook
-      without either saving it or being prompted to save it.
+      Specifies if changes have been made since the workbook was last saved. You can set this property to true if you
+      want to close a modified workbook without either saving it or being prompted to save it.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -204,13 +172,10 @@ properties:
     uid: 'excel!Excel.Workbook#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the workbook name.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -222,14 +187,10 @@ properties:
     uid: 'excel!Excel.Workbook#names:member'
     package: excel!
     fullName: names
-    summary: >-
-      Represents a collection of workbook scoped named items (named ranges and
-      constants).
+    summary: |-
+      Represents a collection of workbook scoped named items (named ranges and constants).
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -241,43 +202,32 @@ properties:
     uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
     package: excel!
     fullName: onAutoSaveSettingChanged
-    summary: >-
+    summary: |-
       Occurs when the autoSave setting is changed on the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAutoSaveSettingChanged:
-        OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;
+      content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface"
-          />&gt;
+          uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Workbook#onSelectionChanged:member'
     package: excel!
     fullName: onSelectionChanged
-    summary: >-
+    summary: |-
       Occurs when the selection in the document is changed.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -286,13 +236,10 @@ properties:
     uid: 'excel!Excel.Workbook#pivotTables:member'
     package: excel!
     fullName: pivotTables
-    summary: >-
+    summary: |-
       Represents a collection of PivotTables associated with the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -329,13 +276,10 @@ properties:
     uid: 'excel!Excel.Workbook#previouslySaved:member'
     package: excel!
     fullName: previouslySaved
-    summary: >-
+    summary: |-
       Specifies if the workbook has ever been saved locally or online.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -347,13 +291,10 @@ properties:
     uid: 'excel!Excel.Workbook#properties:member'
     package: excel!
     fullName: properties
-    summary: >-
+    summary: |-
       Gets the workbook properties.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -402,13 +343,10 @@ properties:
     uid: 'excel!Excel.Workbook#protection:member'
     package: excel!
     fullName: protection
-    summary: >-
+    summary: |-
       Returns the protection object for a workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -420,13 +358,10 @@ properties:
     uid: 'excel!Excel.Workbook#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: >-
+    summary: |-
       True if the workbook is open in Read-only mode.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -438,13 +373,10 @@ properties:
     uid: 'excel!Excel.Workbook#settings:member'
     package: excel!
     fullName: settings
-    summary: >-
+    summary: |-
       Represents a collection of Settings associated with the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -456,13 +388,10 @@ properties:
     uid: 'excel!Excel.Workbook#styles:member'
     package: excel!
     fullName: styles
-    summary: >-
+    summary: |-
       Represents a collection of styles associated with the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -507,13 +436,10 @@ properties:
     uid: 'excel!Excel.Workbook#tables:member'
     package: excel!
     fullName: tables
-    summary: >-
+    summary: |-
       Represents a collection of tables associated with the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -526,14 +452,11 @@ properties:
     package: excel!
     fullName: usePrecisionAsDisplayed
     summary: >-
-      True if calculations in this workbook will be done using only the
-      precision of the numbers as they're displayed. Data will permanently lose
-      accuracy when switching this property from false to true.
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -545,13 +468,10 @@ properties:
     uid: 'excel!Excel.Workbook#worksheets:member'
     package: excel!
     fullName: worksheets
-    summary: >-
+    summary: |-
       Represents a collection of worksheets associated with the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -564,13 +484,10 @@ methods:
     uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
     package: excel!
     fullName: getActiveCell()
-    summary: >-
+    summary: |-
       Gets the currently active cell from the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -606,13 +523,11 @@ methods:
     package: excel!
     fullName: getActiveChart()
     summary: >-
-      Gets the currently active chart in the workbook. If there is no active
-      chart, an `ItemNotFound` exception is thrown.
+      Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is
+      thrown.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -625,14 +540,10 @@ methods:
     uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
     package: excel!
     fullName: getActiveChartOrNullObject()
-    summary: >-
-      Gets the currently active chart in the workbook. If there is no active
-      chart, a null object is returned.
+    summary: |-
+      Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -646,36 +557,29 @@ methods:
     package: excel!
     fullName: getIsActiveCollabSession()
     summary: >-
-      True if the workbook is being edited by multiple users (co-authoring).
-      Please be aware there might be some delay between when the workbook status
-      changes and when the changes are reflected on the result of the method.
+      True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
+      between when the workbook status changes and when the changes are reflected on the result of the method.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
   - name: getSelectedRange()
     uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
     package: excel!
     fullName: getSelectedRange()
     summary: >-
-      Gets the currently selected single range from the workbook. If there are
-      multiple ranges selected, this method will throw an error.
+      Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
+      will throw an error.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -707,14 +611,11 @@ methods:
     package: excel!
     fullName: getSelectedRanges()
     summary: >-
-      Gets the currently selected one or more ranges from the workbook. Unlike
-      getSelectedRange(), this method returns a RangeAreas object that
-      represents all the selected ranges.
+      Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
+      RangeAreas object that represents all the selected ranges.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -747,8 +648,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -766,8 +667,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -775,9 +676,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Workbook:class" />'
@@ -787,8 +686,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -801,10 +700,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -818,9 +715,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -828,20 +724,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.WorkbookUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -850,9 +741,7 @@ methods:
     uid: 'excel!Excel.Workbook#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -870,13 +759,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Workbook object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

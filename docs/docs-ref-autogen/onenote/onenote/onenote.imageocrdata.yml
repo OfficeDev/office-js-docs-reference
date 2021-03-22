@@ -3,13 +3,10 @@ name: OneNote.ImageOcrData
 uid: 'onenote!OneNote.ImageOcrData:interface'
 package: onenote!
 fullName: OneNote.ImageOcrData
-summary: >-
+summary: |-
   Represents data obtained by OCR (optical character recognition) of an image.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'onenote!OneNote.ImageOcrData#ocrLanguageId:member'
     package: onenote!
     fullName: ocrLanguageId
-    summary: >-
+    summary: |-
       Represents the OCR language, with values such as EN-US
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'onenote!OneNote.ImageOcrData#ocrText:member'
     package: onenote!
     fullName: ocrText
-    summary: >-
+    summary: |-
       Represents the text obtained by OCR of the image
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

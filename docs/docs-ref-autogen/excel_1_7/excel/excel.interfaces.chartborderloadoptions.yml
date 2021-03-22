@@ -3,13 +3,10 @@ name: Excel.Interfaces.ChartBorderLoadOptions
 uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartBorderLoadOptions
-summary: >-
+summary: |-
   Represents the border formatting of a chart element.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#color:member'
     package: excel!
     fullName: color
-    summary: >-
+    summary: |-
       HTML color code representing the color of borders in the chart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,14 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#lineStyle:member'
     package: excel!
     fullName: lineStyle
-    summary: >-
-      Represents the line style of the border. See Excel.ChartLineStyle for
-      details.
+    summary: |-
+      Represents the line style of the border. See Excel.ChartLineStyle for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -71,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions#weight:member'
     package: excel!
     fullName: weight
-    summary: >-
+    summary: |-
       Represents weight of the border, in points.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

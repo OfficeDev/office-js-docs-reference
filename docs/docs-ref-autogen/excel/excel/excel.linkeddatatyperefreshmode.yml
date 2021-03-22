@@ -7,8 +7,7 @@ summary: >-
   Representation of a refresh mode.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
 isPreview: true
@@ -27,9 +26,7 @@ fields:
   - name: periodic
     uid: 'excel!Excel.LinkedDataTypeRefreshMode.periodic:member'
     package: excel!
-    summary: >-
-      Refresh periodically based on an interval. It will also trigger a refresh
-      on workbook load.
+    summary: Refresh periodically based on an interval. It will also trigger a refresh on workbook load.
     value: '"Periodic"'
   - name: unknown
     uid: 'excel!Excel.LinkedDataTypeRefreshMode.unknown:member'

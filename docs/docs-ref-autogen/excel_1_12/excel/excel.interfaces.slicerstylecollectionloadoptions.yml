@@ -3,13 +3,10 @@ name: Excel.Interfaces.SlicerStyleCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.SlicerStyleCollectionLoadOptions
-summary: >-
+summary: |-
   Represents a collection of SlicerStyle objects.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the name of the SlicerStyle.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,14 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: >-
-      For EACH ITEM in the collection: Specifies if this SlicerStyle object is
-      read-only.
+    summary: |-
+      For EACH ITEM in the collection: Specifies if this SlicerStyle object is read-only.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

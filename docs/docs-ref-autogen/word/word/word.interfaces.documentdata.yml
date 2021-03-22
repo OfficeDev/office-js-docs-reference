@@ -3,9 +3,7 @@ name: Word.Interfaces.DocumentData
 uid: 'word!Word.Interfaces.DocumentData:interface'
 package: word!
 fullName: Word.Interfaces.DocumentData
-summary: >-
-  An interface describing the data returned by calling `document.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `document.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,13 +14,11 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the document. The body is the text that excludes
-      headers, footers, footnotes, textboxes, etc.. Read-only.
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc.. Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,14 +31,11 @@ properties:
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of content control objects in the document. This
-      includes content controls in the body of the document, headers, footers,
-      textboxes, etc.. Read-only.
+      Gets the collection of content control objects in the document. This includes content controls in the body of the
+      document, headers, footers, textboxes, etc.. Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -59,8 +52,7 @@ properties:
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -72,13 +64,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentData#properties:member'
     package: word!
     fullName: properties
-    summary: >-
+    summary: |-
       Gets the properties of the document. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,14 +80,11 @@ properties:
     package: word!
     fullName: saved
     summary: >-
-      Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
-      Read-only.
+      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
+      changed since it was saved. Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,13 +96,10 @@ properties:
     uid: 'word!Word.Interfaces.DocumentData#sections:member'
     package: word!
     fullName: sections
-    summary: >-
+    summary: |-
       Gets the collection of section objects in the document. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -133,8 +116,7 @@ properties:
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

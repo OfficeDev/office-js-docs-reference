@@ -13,14 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#address:member'
     package: excel!
     fullName: address
-    summary: >-
-      Specifies the range reference in A1-style. Address value will contain the
-      Sheet reference (e.g., "Sheet1!A1:B4").
+    summary: |-
+      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -32,14 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#addressLocal:member'
     package: excel!
     fullName: addressLocal
-    summary: >-
-      Specifies the range reference for the specified range in the language of
-      the user.
+    summary: |-
+      Specifies the range reference for the specified range in the language of the user.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +44,11 @@ properties:
     package: excel!
     fullName: cellCount
     summary: >-
-      Specifies the number of cells in the range. This API will return -1 if the
-      cell count exceeds 2^31-1 (2,147,483,647).
+      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
+      (2,147,483,647).
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#columnCount:member'
     package: excel!
     fullName: columnCount
-    summary: >-
+    summary: |-
       Specifies the total number of columns in the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +75,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#columnHidden:member'
     package: excel!
     fullName: columnHidden
-    summary: >-
+    summary: |-
       Represents if all columns of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,13 +90,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#columnIndex:member'
     package: excel!
     fullName: columnIndex
-    summary: >-
+    summary: |-
       Specifies the column number of the first cell in the range. Zero-indexed.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -124,33 +105,25 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#conditionalFormats:member'
     package: excel!
     fullName: conditionalFormats
-    summary: >-
+    summary: |-
       The collection of ConditionalFormats that intersect the range.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'conditionalFormats?: Excel.Interfaces.ConditionalFormatData[];'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface"
-          />[]
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface" />[]'
   - name: dataValidation
     uid: 'excel!Excel.Interfaces.RangeData#dataValidation:member'
     package: excel!
     fullName: dataValidation
-    summary: >-
+    summary: |-
       Returns a data validation object.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -162,14 +135,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the range's font, fill, borders,
-      alignment, and other properties.
+    summary: |-
+      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,14 +150,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#formulas:member'
     package: excel!
     fullName: formulas
-    summary: >-
-      Represents the formula in A1-style notation. If a cell has no formula, its
-      value is returned instead.
+    summary: |-
+      Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -201,15 +166,12 @@ properties:
     package: excel!
     fullName: formulasLocal
     summary: >-
-      Represents the formula in A1-style notation, in the user's language and
-      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
-      would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
-      value is returned instead.
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
+      returned instead.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -221,14 +183,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#formulasR1C1:member'
     package: excel!
     fullName: formulasR1C1
-    summary: >-
-      Represents the formula in R1C1-style notation. If a cell has no formula,
-      its value is returned instead.
+    summary: |-
+      Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -240,13 +198,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#hidden:member'
     package: excel!
     fullName: hidden
-    summary: >-
+    summary: |-
       Represents if all cells of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -258,13 +213,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#hyperlink:member'
     package: excel!
     fullName: hyperlink
-    summary: >-
+    summary: |-
       Represents the hyperlink for the current range.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -276,13 +228,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#isEntireColumn:member'
     package: excel!
     fullName: isEntireColumn
-    summary: >-
+    summary: |-
       Represents if the current range is an entire column.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -294,13 +243,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#isEntireRow:member'
     package: excel!
     fullName: isEntireRow
-    summary: >-
+    summary: |-
       Represents if the current range is an entire row.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -312,13 +258,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: >-
+    summary: |-
       Represents Excel's number format code for the given range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -331,16 +274,12 @@ properties:
     package: excel!
     fullName: numberFormatLocal
     summary: >-
-      Represents Excel's number format code for the given range, based on the
-      language settings of the user.​ Excel does not perform any language or
-      format coercion when getting or setting the `numberFormatLocal` property.
-      Any returned text uses the locally-formatted strings based on the language
-      specified in the system settings.
+      Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
+      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
+      text uses the locally-formatted strings based on the language specified in the system settings.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -352,13 +291,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#rowCount:member'
     package: excel!
     fullName: rowCount
-    summary: >-
+    summary: |-
       Returns the total number of rows in the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -370,13 +306,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#rowHidden:member'
     package: excel!
     fullName: rowHidden
-    summary: >-
+    summary: |-
       Represents if all rows of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -388,13 +321,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#rowIndex:member'
     package: excel!
     fullName: rowIndex
-    summary: >-
+    summary: |-
       Returns the row number of the first cell in the range. Zero-indexed.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -407,15 +337,12 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Represents the style of the current range. If the styles of the cells are
-      inconsistent, null will be returned. For custom styles, the style name
-      will be returned. For built-in styles, a string representing a value in
-      the BuiltInStyle enum will be returned.
+      Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
+      custom styles, the style name will be returned. For built-in styles, a string representing a value in the
+      BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -428,14 +355,11 @@ properties:
     package: excel!
     fullName: text
     summary: >-
-      Text values of the specified range. The Text value will not depend on the
-      cell width. The \# sign substitution that happens in Excel UI will not
-      affect the text value returned by the API.
+      Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
+      that happens in Excel UI will not affect the text value returned by the API.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -448,14 +372,11 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -467,13 +388,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeData#valueTypes:member'
     package: excel!
     fullName: valueTypes
-    summary: >-
+    summary: |-
       Specifies the type of data in each cell.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

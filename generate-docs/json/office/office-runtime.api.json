@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.5.0",
+    "toolVersion": "7.13.2",
     "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
@@ -75,6 +75,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 5,
                     "endIndex": 6
@@ -169,6 +170,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 5
@@ -242,6 +244,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "allowConsentPrompt",
                   "propertyTypeTokenRange": {
@@ -267,6 +270,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "allowSignInPrompt",
                   "propertyTypeTokenRange": {
@@ -292,6 +296,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "asyncContext",
                   "propertyTypeTokenRange": {
@@ -317,6 +322,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "authChallenge",
                   "propertyTypeTokenRange": {
@@ -342,6 +348,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "forceAddAccount",
                   "propertyTypeTokenRange": {
@@ -367,6 +374,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "forceConsent",
                   "propertyTypeTokenRange": {
@@ -392,6 +400,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "forMSGraphAccess",
                   "propertyTypeTokenRange": {
@@ -438,6 +447,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
@@ -554,6 +564,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "displayInIFrame",
                   "propertyTypeTokenRange": {
@@ -579,6 +590,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "height",
                   "propertyTypeTokenRange": {
@@ -604,6 +616,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "onClose",
                   "propertyTypeTokenRange": {
@@ -638,6 +651,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "onMessage",
                   "propertyTypeTokenRange": {
@@ -681,6 +695,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "onRuntimeError",
                   "propertyTypeTokenRange": {
@@ -706,6 +721,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "width",
                   "propertyTypeTokenRange": {
@@ -760,6 +776,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 5
@@ -808,6 +825,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 5
@@ -848,6 +866,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
@@ -888,6 +907,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 5
@@ -936,6 +956,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 5
@@ -992,6 +1013,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 5,
                     "endIndex": 7
@@ -1047,6 +1069,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 5

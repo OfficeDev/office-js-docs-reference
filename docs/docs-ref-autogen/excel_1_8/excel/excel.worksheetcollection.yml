@@ -3,13 +3,10 @@ name: Excel.WorksheetCollection
 uid: 'excel!Excel.WorksheetCollection:class'
 package: excel!
 fullName: Excel.WorksheetCollection
-summary: >-
+summary: |-
   Represents a collection of worksheet objects that are part of the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -45,20 +42,15 @@ properties:
     uid: 'excel!Excel.WorksheetCollection#onActivated:member'
     package: excel!
     fullName: onActivated
-    summary: >-
+    summary: |-
       Occurs when any worksheet in the workbook is activated.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onActivated:
-        OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -87,20 +79,15 @@ properties:
     uid: 'excel!Excel.WorksheetCollection#onAdded:member'
     package: excel!
     fullName: onAdded
-    summary: >-
+    summary: |-
       Occurs when a new worksheet is added to the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAdded:
-        OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>;
+      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -129,20 +116,15 @@ properties:
     uid: 'excel!Excel.WorksheetCollection#onCalculated:member'
     package: excel!
     fullName: onCalculated
-    summary: >-
+    summary: |-
       Occurs when any worksheet in the workbook is calculated.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onCalculated:
-        OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
+      content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -151,20 +133,15 @@ properties:
     uid: 'excel!Excel.WorksheetCollection#onDeactivated:member'
     package: excel!
     fullName: onDeactivated
-    summary: >-
+    summary: |-
       Occurs when any worksheet in the workbook is deactivated.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onDeactivated:
-        OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -193,20 +170,15 @@ properties:
     uid: 'excel!Excel.WorksheetCollection#onDeleted:member'
     package: excel!
     fullName: onDeleted
-    summary: >-
+    summary: |-
       Occurs when a worksheet is deleted from the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onDeleted:
-        OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -217,14 +189,11 @@ methods:
     package: excel!
     fullName: add(name)
     summary: >-
-      Adds a new worksheet to the workbook. The worksheet will be added at the
-      end of existing worksheets. If you wish to activate the newly added
-      worksheet, call ".activate() on it.
+      Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
+      to activate the newly added worksheet, call ".activate() on it.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -233,9 +202,8 @@ methods:
       parameters:
         - id: name
           description: >-
-            Optional. The name of the worksheet to be added. If specified, name
-            should be unqiue. If not specified, Excel determines the name of the
-            new worksheet.
+            Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified,
+            Excel determines the name of the new worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -263,13 +231,10 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
     package: excel!
     fullName: getActiveWorksheet()
-    summary: >-
+    summary: |-
       Gets the currently active worksheet in the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -300,13 +265,10 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
     package: excel!
     fullName: getCount(visibleOnly)
-    summary: >-
+    summary: |-
       Gets the number of worksheets in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -314,9 +276,7 @@ methods:
       content: 'getCount(visibleOnly?: boolean): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
@@ -325,13 +285,10 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     package: excel!
     fullName: getFirst(visibleOnly)
-    summary: >-
+    summary: |-
       Gets the first worksheet in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -339,9 +296,7 @@ methods:
       content: 'getFirst(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -386,13 +341,10 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: >-
+    summary: |-
       Gets a worksheet object using its Name or ID.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -409,14 +361,10 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: >-
-      Gets a worksheet object using its Name or ID. If the worksheet does not
-      exist, will return a null object.
+    summary: |-
+      Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -433,13 +381,10 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
     package: excel!
     fullName: getLast(visibleOnly)
-    summary: >-
+    summary: |-
       Gets the last worksheet in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -447,9 +392,7 @@ methods:
       content: 'getLast(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: >-
-            Optional. If true, considers only visible worksheets, skipping over
-            any hidden ones.
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -495,22 +438,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
+        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.WorksheetCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
@@ -520,8 +461,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -529,9 +470,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
@@ -563,22 +502,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.WorksheetCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
@@ -588,23 +523,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.WorksheetCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

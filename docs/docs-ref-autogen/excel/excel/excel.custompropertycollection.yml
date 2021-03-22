@@ -3,13 +3,10 @@ name: Excel.CustomPropertyCollection
 uid: 'excel!Excel.CustomPropertyCollection:class'
 package: excel!
 fullName: Excel.CustomPropertyCollection
-summary: >-
+summary: |-
   Contains the collection of custom properties.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -46,13 +43,10 @@ methods:
     uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
     package: excel!
     fullName: 'add(key, value)'
-    summary: >-
+    summary: |-
       Creates a new or sets an existing custom property.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -61,16 +55,13 @@ methods:
       parameters:
         - id: key
           description: >-
-            Required. The custom property's key, which is case-insensitive. The
-            key is limited to 255 characters outside of Excel on the web (larger
-            keys are automatically trimmed to 255 characters on other
-            platforms).
+            Required. The custom property's key, which is case-insensitive. The key is limited to 255 characters outside
+            of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
           type: string
         - id: value
           description: >-
-            Required. The custom property's value. The value is limited to 255
-            characters outside of Excel on the web (larger values are
-            automatically trimmed to 255 characters on other platforms).
+            Required. The custom property's value. The value is limited to 255 characters outside of Excel on the web
+            (larger values are automatically trimmed to 255 characters on other platforms).
           type: any
       return:
         type: '<xref uid="excel!Excel.CustomProperty:class" />'
@@ -104,13 +95,10 @@ methods:
     uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
     package: excel!
     fullName: deleteAll()
-    summary: >-
+    summary: |-
       Deletes all custom properties in this collection.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -123,13 +111,10 @@ methods:
     uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the count of custom properties.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -143,13 +128,11 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: >-
-      Gets a custom property object by its key, which is case-insensitive.
-      Throws an error if the custom property does not exist.
+      Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does
+      not exist.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -167,17 +150,14 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a custom property object by its key, which is case-insensitive. If
-      the custom property doesn't exist, then this function will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further
+      Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then
+      this function will return an object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -195,22 +175,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.CustomPropertyCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.CustomPropertyCollection;
+        load(options?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CustomPropertyCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.CustomPropertyCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.CustomPropertyCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
@@ -220,8 +198,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -229,9 +207,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.CustomPropertyCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
@@ -241,22 +217,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.CustomPropertyCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
@@ -266,23 +238,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.CustomPropertyCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.CustomPropertyCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.CustomPropertyCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.CustomPropertyCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.CustomPropertyCollectionData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.CustomPropertyCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

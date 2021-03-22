@@ -3,13 +3,10 @@ name: Excel.AggregationFunction
 uid: 'excel!Excel.AggregationFunction:enum'
 package: excel!
 fullName: Excel.AggregationFunction
-summary: >-
+summary: |-
   Aggregation function for the DataPivotField.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,58 +19,42 @@ fields:
   - name: average
     uid: 'excel!Excel.AggregationFunction.average:member'
     package: excel!
-    summary: >-
-      Aggregate using the average of the data, equivalent to the AVERAGE
-      function.
+    summary: 'Aggregate using the average of the data, equivalent to the AVERAGE function.'
     value: '"Average"'
   - name: count
     uid: 'excel!Excel.AggregationFunction.count:member'
     package: excel!
-    summary: >-
-      Aggregate using the count of items in the data, equivalent to the COUNTA
-      function.
+    summary: 'Aggregate using the count of items in the data, equivalent to the COUNTA function.'
     value: '"Count"'
   - name: countNumbers
     uid: 'excel!Excel.AggregationFunction.countNumbers:member'
     package: excel!
-    summary: >-
-      Aggregate using the count of numbers in the data, equivalent to the COUNT
-      function.
+    summary: 'Aggregate using the count of numbers in the data, equivalent to the COUNT function.'
     value: '"CountNumbers"'
   - name: max
     uid: 'excel!Excel.AggregationFunction.max:member'
     package: excel!
-    summary: >-
-      Aggregate using the maximum value of the data, equivalent to the MAX
-      function.
+    summary: 'Aggregate using the maximum value of the data, equivalent to the MAX function.'
     value: '"Max"'
   - name: min
     uid: 'excel!Excel.AggregationFunction.min:member'
     package: excel!
-    summary: >-
-      Aggregate using the minimum value of the data, equivalent to the MIN
-      function.
+    summary: 'Aggregate using the minimum value of the data, equivalent to the MIN function.'
     value: '"Min"'
   - name: product
     uid: 'excel!Excel.AggregationFunction.product:member'
     package: excel!
-    summary: >-
-      Aggregate using the product of the data, equivalent to the PRODUCT
-      function.
+    summary: 'Aggregate using the product of the data, equivalent to the PRODUCT function.'
     value: '"Product"'
   - name: standardDeviation
     uid: 'excel!Excel.AggregationFunction.standardDeviation:member'
     package: excel!
-    summary: >-
-      Aggregate using the standard deviation of the data, equivalent to the
-      STDEV function.
+    summary: 'Aggregate using the standard deviation of the data, equivalent to the STDEV function.'
     value: '"StandardDeviation"'
   - name: standardDeviationP
     uid: 'excel!Excel.AggregationFunction.standardDeviationP:member'
     package: excel!
-    summary: >-
-      Aggregate using the standard deviation of the data, equivalent to the
-      STDEVP function.
+    summary: 'Aggregate using the standard deviation of the data, equivalent to the STDEVP function.'
     value: '"StandardDeviationP"'
   - name: sum
     uid: 'excel!Excel.AggregationFunction.sum:member'

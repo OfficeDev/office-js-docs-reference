@@ -14,31 +14,22 @@ functions:
   - name: 'OfficeRuntime.displayWebDialog(url, options)'
     uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
     package: office-runtime!
-    summary: >-
+    summary: |-
       Method that enables a pop up web dialog box.
 
-
-      \[ [API set: SharedRuntime
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function displayWebDialog(url: string, options?:
-        DisplayWebDialogOptions): Promise<Dialog>;
+      content: 'export function displayWebDialog(url: string, options?: DisplayWebDialogOptions): Promise<Dialog>;'
       parameters:
         - id: url
           description: Must be a string.
           type: string
         - id: options
           description: Optional parameter. Must be of type DisplayWebDialogOptions.
-          type: >-
-            <xref
-            uid="office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface"
-            />
+          type: '<xref uid="office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface" />'
       return:
-        type: >-
-          Promise&lt;<xref uid="office-runtime!OfficeRuntime.Dialog:interface"
-          />&gt;
+        type: 'Promise&lt;<xref uid="office-runtime!OfficeRuntime.Dialog:interface" />&gt;'
         description: ''

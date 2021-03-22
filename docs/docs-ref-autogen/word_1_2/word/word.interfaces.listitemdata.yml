@@ -3,9 +3,7 @@ name: Word.Interfaces.ListItemData
 uid: 'word!Word.Interfaces.ListItemData:interface'
 package: word!
 fullName: Word.Interfaces.ListItemData
-summary: >-
-  An interface describing the data returned by calling `listItem.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `listItem.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

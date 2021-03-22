@@ -4,13 +4,11 @@ uid: 'excel!Excel.AutoFilter:class'
 package: excel!
 fullName: Excel.AutoFilter
 summary: >-
-  Represents the AutoFilter object. AutoFilter turns the values in Excel column
-  into specific filters based on the cell contents.
+  Represents the AutoFilter object. AutoFilter turns the values in Excel column into specific filters based on the cell
+  contents.
 
 
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +19,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +32,10 @@ properties:
     uid: 'excel!Excel.AutoFilter#criteria:member'
     package: excel!
     fullName: criteria
-    summary: >-
+    summary: |-
       An array that holds all the filter criteria in the autofiltered range.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +47,10 @@ properties:
     uid: 'excel!Excel.AutoFilter#enabled:member'
     package: excel!
     fullName: enabled
-    summary: >-
+    summary: |-
       Specifies if the AutoFilter is enabled.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +62,10 @@ properties:
     uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
     package: excel!
     fullName: isDataFiltered
-    summary: >-
+    summary: |-
       Specifies if the AutoFilter has filter criteria.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,21 +78,15 @@ methods:
     uid: 'excel!Excel.AutoFilter#apply:member(1)'
     package: excel!
     fullName: 'apply(range, columnIndex, criteria)'
-    summary: >-
-      Applies the AutoFilter to a range. This filters the column if column index
-      and filter criteria are specified.
+    summary: |-
+      Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        apply(range: Range | string, columnIndex?: number, criteria?:
-        Excel.FilterCriteria): void;
+      content: 'apply(range: Range | string, columnIndex?: number, criteria?: Excel.FilterCriteria): void;'
       parameters:
         - id: range
           description: The range over which the AutoFilter will apply on.
@@ -141,13 +124,10 @@ methods:
     uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
     package: excel!
     fullName: clearCriteria()
-    summary: >-
+    summary: |-
       Clears the filter criteria of the AutoFilter.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -160,14 +140,10 @@ methods:
     uid: 'excel!Excel.AutoFilter#getRange:member(1)'
     package: excel!
     fullName: getRange()
-    summary: >-
-      Returns the Range object that represents the range to which the AutoFilter
-      applies.
+    summary: |-
+      Returns the Range object that represents the range to which the AutoFilter applies.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,14 +157,11 @@ methods:
     package: excel!
     fullName: getRangeOrNullObject()
     summary: >-
-      Returns the Range object that represents the range to which the AutoFilter
-      applies. If there is no Range object associated with the AutoFilter, this
-      method returns a null object.
+      Returns the Range object that represents the range to which the AutoFilter applies. If there is no Range object
+      associated with the AutoFilter, this method returns a null object.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -202,21 +175,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.AutoFilterLoadOptions):
-        Excel.AutoFilter;
+      content: 'load(options?: Excel.Interfaces.AutoFilterLoadOptions): Excel.AutoFilter;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.AutoFilter:class" />'
         description: ''
@@ -225,8 +194,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -234,9 +203,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.AutoFilter;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.AutoFilter:class" />'
@@ -246,8 +213,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -260,10 +227,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -276,13 +241,10 @@ methods:
     uid: 'excel!Excel.AutoFilter#reapply:member(1)'
     package: excel!
     fullName: reapply()
-    summary: >-
+    summary: |-
       Applies the specified Autofilter object currently on the range.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -295,13 +257,10 @@ methods:
     uid: 'excel!Excel.AutoFilter#remove:member(1)'
     package: excel!
     fullName: remove()
-    summary: >-
+    summary: |-
       Removes the AutoFilter for the range.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -315,13 +274,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.AutoFilter object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.AutoFilterData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.AutoFilter object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.AutoFilterData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

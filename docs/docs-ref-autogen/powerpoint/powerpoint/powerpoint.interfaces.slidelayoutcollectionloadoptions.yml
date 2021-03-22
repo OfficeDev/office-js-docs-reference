@@ -3,27 +3,22 @@ name: PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions
 uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions
-summary: >-
+summary: |-
   Represents the collection of layouts provided by the Slide Master for slides.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#$all:member
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#$all:member'
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -32,17 +27,13 @@ properties:
       return:
         type: boolean
   - name: id
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#id:member
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the unique ID of the slide layout.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -51,17 +42,13 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#name:member
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#name:member'
     package: powerpoint!
     fullName: name
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the name of the slide layout.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

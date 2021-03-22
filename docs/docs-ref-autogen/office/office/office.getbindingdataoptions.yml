@@ -14,9 +14,8 @@ properties:
     package: office!
     fullName: asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -29,9 +28,8 @@ properties:
     package: office!
     fullName: coercionType
     summary: >-
-      The expected shape of the selection. Use
-      [Office.CoercionType](xref:office!Office.CoercionType:enum) or text value.
-      Default: The original, uncoerced type of the binding.
+      The expected shape of the selection. Use [Office.CoercionType](xref:office!Office.CoercionType:enum) or text
+      value. Default: The original, uncoerced type of the binding.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -44,8 +42,8 @@ properties:
     package: office!
     fullName: columnCount
     summary: >-
-      For table or matrix bindings, specifies the number of columns offset from
-      the startColumn. Default is all subsequent columns.
+      For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all
+      subsequent columns.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -58,9 +56,8 @@ properties:
     package: office!
     fullName: filterType
     summary: >-
-      Specify whether to get only the visible (filtered in) data or all the data
-      (default is all). Useful when filtering data. Use Office.FilterType or
-      text value.
+      Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering
+      data. Use Office.FilterType or text value.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,8 +70,8 @@ properties:
     package: office!
     fullName: rowCount
     summary: >-
-      For table or matrix bindings, specifies the number of rows offset from the
-      startRow. Default is all subsequent rows.
+      For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent
+      rows.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -87,14 +84,13 @@ properties:
     package: office!
     fullName: rows
     summary: >-
-      Only for table bindings in content add-ins for Access. Specifies the
-      pre-defined string "thisRow" to get data in the currently selected row.
+      Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
+      the currently selected row.
 
 
-      **Important**: We no longer recommend that you create and use Access web
-      apps and databases in SharePoint. As an alternative, we recommend that you
-      use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build
-      no-code business solutions for web and mobile devices.
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As an
+      alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
+      business solutions for web and mobile devices.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,8 +103,8 @@ properties:
     package: office!
     fullName: startColumn
     summary: >-
-      For table or matrix bindings, specifies the zero-based starting column for
-      a subset of the data in the binding. Default is first column.
+      For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding.
+      Default is first column.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -121,8 +117,8 @@ properties:
     package: office!
     fullName: startRow
     summary: >-
-      For table or matrix bindings, specifies the zero-based starting row for a
-      subset of the data in the binding. Default is first row.
+      For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding.
+      Default is first row.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -135,9 +131,8 @@ properties:
     package: office!
     fullName: valueFormat
     summary: >-
-      Specifies whether values, such as numbers and dates, are returned with
-      their formatting applied. Use Office.ValueFormat or text value. Default:
-      Unformatted data.
+      Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use
+      Office.ValueFormat or text value. Default: Unformatted data.
     remarks: ''
     isPreview: false
     isDeprecated: false

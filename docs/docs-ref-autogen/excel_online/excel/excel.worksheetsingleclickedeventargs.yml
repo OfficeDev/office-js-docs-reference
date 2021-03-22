@@ -3,14 +3,10 @@ name: Excel.WorksheetSingleClickedEventArgs
 uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetSingleClickedEventArgs
-summary: >-
-  Provides information about the left-clicked/tapped event and its related
-  worksheet.
+summary: |-
+  Provides information about the left-clicked/tapped event and its related worksheet.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,14 +16,10 @@ properties:
     uid: 'excel!Excel.WorksheetSingleClickedEventArgs#address:member'
     package: excel!
     fullName: address
-    summary: >-
-      Gets the address that represents the cell which was left-clicked/tapped
-      for a specific worksheet.
+    summary: |-
+      Gets the address that represents the cell which was left-clicked/tapped for a specific worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -66,14 +58,11 @@ properties:
     package: excel!
     fullName: offsetX
     summary: >-
-      The distance, in points, from the left-clicked/tapped point to the left
-      (or right for right-to-left languages) gridline edge of the
-      left-clicked/tapped cell.
+      The distance, in points, from the left-clicked/tapped point to the left (or right for right-to-left languages)
+      gridline edge of the left-clicked/tapped cell.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -86,13 +75,11 @@ properties:
     package: excel!
     fullName: offsetY
     summary: >-
-      The distance, in points, from the left-clicked/tapped point to the top
-      gridline edge of the left-clicked/tapped cell.
+      The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped
+      cell.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -104,13 +91,10 @@ properties:
     uid: 'excel!Excel.WorksheetSingleClickedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -122,13 +106,10 @@ properties:
     uid: 'excel!Excel.WorksheetSingleClickedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: >-
+    summary: |-
       Gets the id of the worksheet in which the cell was left-clicked/tapped.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

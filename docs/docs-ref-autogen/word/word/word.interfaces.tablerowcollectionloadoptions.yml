@@ -3,13 +3,10 @@ name: Word.Interfaces.TableRowCollectionLoadOptions
 uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.TableRowCollectionLoadOptions
-summary: >-
+summary: |-
   Contains the collection of the document's TableRow objects.
 
-
-  \[ [API set: WordApi
-  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +30,10 @@ properties:
     uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#cellCount:member'
     package: word!
     fullName: cellCount
-    summary: >-
-      For EACH ITEM in the collection: Gets the number of cells in the row.
-      Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,13 +46,11 @@ properties:
     package: word!
     fullName: font
     summary: >-
-      For EACH ITEM in the collection: Gets the font. Use this to get and set
-      font name, size, color, and other properties.
+      For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other
+      properties.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,19 +59,15 @@ properties:
       return:
         type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
   - name: horizontalAlignment
-    uid: >-
-      word!Word.Interfaces.TableRowCollectionLoadOptions#horizontalAlignment:member
+    uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#horizontalAlignment:member'
     package: word!
     fullName: horizontalAlignment
     summary: >-
-      For EACH ITEM in the collection: Gets and sets the horizontal alignment of
-      every cell in the row. The value can be 'Left', 'Centered', 'Right', or
-      'Justified'.
+      For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be
+      'Left', 'Centered', 'Right', or 'Justified'.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,14 +80,11 @@ properties:
     package: word!
     fullName: isHeader
     summary: >-
-      For EACH ITEM in the collection: Checks whether the row is a header row.
-      Read-only. To set the number of header rows, use HeaderRowCount on the
-      Table object.
+      For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header
+      rows, use HeaderRowCount on the Table object.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -113,13 +96,10 @@ properties:
     uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets parent table.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -131,14 +111,10 @@ properties:
     uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#preferredHeight:member'
     package: word!
     fullName: preferredHeight
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the preferred height of the
-      row in points.
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the preferred height of the row in points.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,14 +126,10 @@ properties:
     uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#rowIndex:member'
     package: word!
     fullName: rowIndex
-    summary: >-
-      For EACH ITEM in the collection: Gets the index of the row in its parent
-      table. Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -170,13 +142,11 @@ properties:
     package: word!
     fullName: shadingColor
     summary: >-
-      For EACH ITEM in the collection: Gets and sets the shading color. Color is
-      specified in "\#RRGGBB" format or by using the color name.
+      For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by
+      using the color name.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -188,14 +158,10 @@ properties:
     uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#values:member'
     package: word!
     fullName: values
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the text values in the row,
-      as a 2D Javascript array.
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the text values in the row, as a 2D Javascript array.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -204,18 +170,15 @@ properties:
       return:
         type: boolean
   - name: verticalAlignment
-    uid: >-
-      word!Word.Interfaces.TableRowCollectionLoadOptions#verticalAlignment:member
+    uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#verticalAlignment:member'
     package: word!
     fullName: verticalAlignment
     summary: >-
-      For EACH ITEM in the collection: Gets and sets the vertical alignment of
-      the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+      For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be
+      'Top', 'Center', or 'Bottom'.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

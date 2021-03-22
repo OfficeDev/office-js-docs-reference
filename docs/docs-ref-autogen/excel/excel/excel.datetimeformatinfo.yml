@@ -3,14 +3,10 @@ name: Excel.DatetimeFormatInfo
 uid: 'excel!Excel.DatetimeFormatInfo:class'
 package: excel!
 fullName: Excel.DatetimeFormatInfo
-summary: >-
-  Defines the culturally appropriate format of displaying numbers. This is based
-  on current system culture settings.
+summary: |-
+  Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +30,10 @@ properties:
     uid: 'excel!Excel.DatetimeFormatInfo#dateSeparator:member'
     package: excel!
     fullName: dateSeparator
-    summary: >-
-      Gets the string used as the date separator. This is based on current
-      system settings.
+    summary: |-
+      Gets the string used as the date separator. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,14 +45,10 @@ properties:
     uid: 'excel!Excel.DatetimeFormatInfo#longDatePattern:member'
     package: excel!
     fullName: longDatePattern
-    summary: >-
-      Gets the format string for a long date value. This is based on current
-      system settings.
+    summary: |-
+      Gets the format string for a long date value. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,14 +60,10 @@ properties:
     uid: 'excel!Excel.DatetimeFormatInfo#longTimePattern:member'
     package: excel!
     fullName: longTimePattern
-    summary: >-
-      Gets the format string for a long time value. This is based on current
-      system settings.
+    summary: |-
+      Gets the format string for a long time value. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,14 +75,10 @@ properties:
     uid: 'excel!Excel.DatetimeFormatInfo#shortDatePattern:member'
     package: excel!
     fullName: shortDatePattern
-    summary: >-
-      Gets the format string for a short date value. This is based on current
-      system settings.
+    summary: |-
+      Gets the format string for a short date value. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,14 +90,10 @@ properties:
     uid: 'excel!Excel.DatetimeFormatInfo#timeSeparator:member'
     package: excel!
     fullName: timeSeparator
-    summary: >-
-      Gets the string used as the time separator. This is based on current
-      system settings.
+    summary: |-
+      Gets the string used as the time separator. This is based on current system settings.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -131,22 +107,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DatetimeFormatInfoLoadOptions):
-        Excel.DatetimeFormatInfo;
+      content: 'load(options?: Excel.Interfaces.DatetimeFormatInfoLoadOptions): Excel.DatetimeFormatInfo;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.DatetimeFormatInfo:class" />'
         description: ''
@@ -155,8 +126,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -164,9 +135,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.DatetimeFormatInfo;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.DatetimeFormatInfo:class" />'
@@ -176,8 +145,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -190,10 +159,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -207,13 +174,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.DatetimeFormatInfo object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.DatetimeFormatInfoData`<!-- -->) that contains shallow
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.DatetimeFormatInfo object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.DatetimeFormatInfoData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false

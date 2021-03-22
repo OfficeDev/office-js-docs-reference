@@ -3,9 +3,7 @@ name: Excel.Interfaces.NamedItemData
 uid: 'excel!Excel.Interfaces.NamedItemData:interface'
 package: excel!
 fullName: Excel.Interfaces.NamedItemData
-summary: >-
-  An interface describing the data returned by calling `namedItem.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `namedItem.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       The name of the object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,37 +29,28 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Specifies the type of the value returned by the name's formula. See
-      Excel.NamedItemType for details.
+      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
 
 
-      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
-      1.7 for
-      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean"
-        | "Range" | "Error" | "Array";
+      content: 'type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";'
       return:
         type: >-
-          <xref uid="excel!Excel.NamedItemType:enum" /> | "String" | "Integer" |
-          "Double" | "Boolean" | "Range" | "Error" | "Array"
+          <xref uid="excel!Excel.NamedItemType:enum" /> | "String" | "Integer" | "Double" | "Boolean" | "Range" |
+          "Error" | "Array"
   - name: value
     uid: 'excel!Excel.Interfaces.NamedItemData#value:member'
     package: excel!
     fullName: value
-    summary: >-
-      Represents the value computed by the name's formula. For a named range,
-      will return the range address.
+    summary: |-
+      Represents the value computed by the name's formula. For a named range, will return the range address.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -76,13 +62,10 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemData#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the object is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

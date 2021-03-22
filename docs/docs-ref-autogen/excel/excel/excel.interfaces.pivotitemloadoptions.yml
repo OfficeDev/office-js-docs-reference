@@ -3,13 +3,10 @@ name: Excel.Interfaces.PivotItemLoadOptions
 uid: 'excel!Excel.Interfaces.PivotItemLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotItemLoadOptions
-summary: >-
+summary: |-
   Represents the Excel PivotItem.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       ID of the PivotItem.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,14 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#isExpanded:member'
     package: excel!
     fullName: isExpanded
-    summary: >-
-      Determines whether the item is expanded to show child items or if it's
-      collapsed and child items are hidden.
+    summary: |-
+      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -71,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Name of the PivotItem.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,13 +75,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the PivotItem is visible.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

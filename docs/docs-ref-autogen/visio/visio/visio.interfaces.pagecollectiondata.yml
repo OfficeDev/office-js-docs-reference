@@ -3,9 +3,7 @@ name: Visio.Interfaces.PageCollectionData
 uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
 package: visio!
 fullName: Visio.Interfaces.PageCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "pageCollection.toJSON()".
+summary: An interface describing the data returned by calling "pageCollection.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false

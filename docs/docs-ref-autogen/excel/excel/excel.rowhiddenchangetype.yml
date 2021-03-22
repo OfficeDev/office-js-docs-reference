@@ -3,10 +3,7 @@ name: Excel.RowHiddenChangeType
 uid: 'excel!Excel.RowHiddenChangeType:enum'
 package: excel!
 fullName: Excel.RowHiddenChangeType
-summary: >-
-  \[ [API set: ExcelApi
-  1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

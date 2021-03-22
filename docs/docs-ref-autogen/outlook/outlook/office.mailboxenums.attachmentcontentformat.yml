@@ -3,17 +3,14 @@ name: Office.MailboxEnums.AttachmentContentFormat
 uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
 package: outlook!
 fullName: Office.MailboxEnums.AttachmentContentFormat
-summary: >-
+summary: |-
   Specifies the formatting that applies to an attachment's content.
 
-
-  \[ [API set: Mailbox
-  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 fields:
@@ -25,16 +22,12 @@ fields:
   - name: Eml
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member'
     package: outlook!
-    summary: >-
-      The content of the attachment is returned as a string representing an .eml
-      formatted file.
+    summary: The content of the attachment is returned as a string representing an .eml formatted file.
     value: '"eml"'
   - name: ICalendar
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member'
     package: outlook!
-    summary: >-
-      The content of the attachment is returned as a string representing an
-      .icalendar formatted file.
+    summary: The content of the attachment is returned as a string representing an .icalendar formatted file.
     value: '"iCalendar"'
   - name: Url
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'

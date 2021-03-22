@@ -3,13 +3,10 @@ name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
 uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
-summary: >-
+summary: |-
   Represents an IconSet criteria for conditional formatting.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,15 +31,12 @@ properties:
     package: excel!
     fullName: criteria
     summary: >-
-      An array of Criteria and IconSets for the rules and potential custom icons
-      for conditional icons. Note that for the first criterion only the custom
-      icon can be modified, while type, formula, and operator will be ignored
-      when set.
+      An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
+      the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
+      set.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,18 +45,13 @@ properties:
       return:
         type: boolean
   - name: reverseIconOrder
-    uid: >-
-      excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#reverseIconOrder:member
+    uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#reverseIconOrder:member'
     package: excel!
     fullName: reverseIconOrder
-    summary: >-
-      If true, reverses the icon orders for the IconSet. Note that this cannot
-      be set if custom icons are used.
+    summary: |-
+      If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,17 +60,13 @@ properties:
       return:
         type: boolean
   - name: showIconOnly
-    uid: >-
-      excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#showIconOnly:member
+    uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#showIconOnly:member'
     package: excel!
     fullName: showIconOnly
-    summary: >-
+    summary: |-
       If true, hides the values and only shows icons.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,13 +78,10 @@ properties:
     uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#style:member'
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       If set, displays the IconSet option for the conditional format.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

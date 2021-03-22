@@ -13,13 +13,10 @@ properties:
     uid: 'visio!Visio.Interfaces.SelectionData#shapes:member'
     package: visio!
     fullName: shapes
-    summary: >-
+    summary: |-
       Gets the Shapes of the Selection. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

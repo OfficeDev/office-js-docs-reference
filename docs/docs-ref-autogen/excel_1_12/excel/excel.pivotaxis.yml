@@ -3,13 +3,10 @@ name: Excel.PivotAxis
 uid: 'excel!Excel.PivotAxis:enum'
 package: excel!
 fullName: Excel.PivotAxis
-summary: >-
+summary: |-
   Represents the axis from which to get the PivotItems.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

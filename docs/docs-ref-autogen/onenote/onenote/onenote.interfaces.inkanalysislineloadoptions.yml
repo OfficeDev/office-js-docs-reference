@@ -3,14 +3,10 @@ name: OneNote.Interfaces.InkAnalysisLineLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLineLoadOptions
-summary: >-
-  Represents ink analysis data for an identified text line formed by ink
-  strokes.
+summary: |-
+  Represents ink analysis data for an identified text line formed by ink strokes.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -32,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the InkAnalysisLine object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -50,41 +43,29 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: >-
+    summary: |-
       Reference to the parent InkAnalysisParagraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface" />'
   - name: words
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#words:member'
     package: onenote!
     fullName: words
-    summary: >-
+    summary: |-
       Gets the ink analysis words in this ink analysis line.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'words?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface" />'

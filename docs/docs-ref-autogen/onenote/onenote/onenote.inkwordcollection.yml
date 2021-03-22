@@ -3,13 +3,10 @@ name: OneNote.InkWordCollection
 uid: 'onenote!OneNote.InkWordCollection:class'
 package: onenote!
 fullName: OneNote.InkWordCollection
-summary: >-
+summary: |-
   Represents a collection of InkWord objects.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: onenote!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'onenote!OneNote.InkWordCollection#count:member'
     package: onenote!
     fullName: count
-    summary: >-
+    summary: |-
       Returns the number of InkWords in the page. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -64,13 +58,10 @@ methods:
     uid: 'onenote!OneNote.InkWordCollection#getItem:member(1)'
     package: onenote!
     fullName: getItem(index)
-    summary: >-
+    summary: |-
       Gets a InkWord object by ID or by its index in the collection. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -78,9 +69,7 @@ methods:
       content: 'getItem(index: number | string): OneNote.InkWord;'
       parameters:
         - id: index
-          description: >-
-            The ID of the InkWord object, or the index location of the InkWord
-            object in the collection.
+          description: 'The ID of the InkWord object, or the index location of the InkWord object in the collection.'
           type: number | string
       return:
         type: '<xref uid="onenote!OneNote.InkWord:class" />'
@@ -89,13 +78,10 @@ methods:
     uid: 'onenote!OneNote.InkWordCollection#getItemAt:member(1)'
     package: onenote!
     fullName: getItemAt(index)
-    summary: >-
+    summary: |-
       Gets a InkWord on its position in the collection.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -113,43 +99,37 @@ methods:
     package: onenote!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.InkWordCollection` - Where
-      option is a comma-delimited string or an array of strings that specify the
-      properties to load.
+      `load(option?: string | string[]): OneNote.InkWordCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }):
-      OneNote.InkWordCollection` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a
-      comma-delimited string that specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): OneNote.InkWordCollection` - Only available on collection
-      types. It is similar to the preceding signature. Option.top specifies the
-      maximum number of collection items that can be included in the result.
-      Option.skip specifies the number of items that are to be skipped and not
-      included in the result. If option.top is specified, the result set will
-      start after skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWordCollection` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(option?: OneNote.Interfaces.InkWordCollectionLoadOptions &
-        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkWordCollection;
+        load(option?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.InkWordCollection;
       parameters:
         - id: option
           description: ''
           type: >-
-            <xref
-            uid="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface" /> & <xref
             uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="onenote!OneNote.InkWordCollection:class" />'
@@ -159,8 +139,8 @@ methods:
     package: onenote!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -168,9 +148,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): OneNote.InkWordCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="onenote!OneNote.InkWordCollection:class" />'
@@ -197,37 +175,29 @@ methods:
     package: onenote!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `OneNote.InkWordCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `OneNote.Interfaces.InkWordCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `OneNote.InkWordCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): OneNote.Interfaces.InkWordCollectionData;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.InkWordCollectionData:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkWordCollectionData:interface" />'
         description: ''
   - name: track()
     uid: 'onenote!OneNote.InkWordCollection#track:member(1)'
     package: onenote!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      context.trackedObjects.add(thisObject). If you are using this object
-      across ".sync" calls and outside the sequential execution of a ".run"
-      batch, and get an "InvalidObjectPath" error when setting a property or
-      invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -241,12 +211,10 @@ methods:
     package: onenote!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects
-      slows down the host application, so please remember to free any objects
-      you add, once you're done using them. You will need to call
-      "context.sync()" before the memory release takes effect.
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

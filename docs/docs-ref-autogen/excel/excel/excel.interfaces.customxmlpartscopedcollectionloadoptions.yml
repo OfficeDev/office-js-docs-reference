@@ -4,28 +4,23 @@ uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
 summary: >-
-  A scoped collection of custom XML parts. A scoped collection is the result of
-  some operation (e.g., filtering by namespace). A scoped collection cannot be
-  scoped any further.
+  A scoped collection of custom XML parts. A scoped collection is the result of some operation (e.g., filtering by
+  namespace). A scoped collection cannot be scoped any further.
 
 
-  \[ [API set: ExcelApi
-  1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member
+    uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member'
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +32,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: The custom XML part's ID.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,17 +44,13 @@ properties:
       return:
         type: boolean
   - name: namespaceUri
-    uid: >-
-      excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member
+    uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
     package: excel!
     fullName: namespaceUri
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: The custom XML part's namespace URI.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

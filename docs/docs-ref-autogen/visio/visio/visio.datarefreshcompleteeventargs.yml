@@ -3,14 +3,10 @@ name: Visio.DataRefreshCompleteEventArgs
 uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
 package: visio!
 fullName: Visio.DataRefreshCompleteEventArgs
-summary: >-
-  Provides information about the document that raised the DataRefreshComplete
-  event.
+summary: |-
+  Provides information about the document that raised the DataRefreshComplete event.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: |-
 
 
@@ -42,13 +38,10 @@ properties:
     uid: 'visio!Visio.DataRefreshCompleteEventArgs#document:member'
     package: visio!
     fullName: document
-    summary: >-
+    summary: |-
       Gets the document object that raised the DataRefreshComplete event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -60,13 +53,10 @@ properties:
     uid: 'visio!Visio.DataRefreshCompleteEventArgs#success:member'
     package: visio!
     fullName: success
-    summary: >-
+    summary: |-
       Gets the success or failure of the DataRefreshComplete event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
