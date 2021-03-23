@@ -83,204 +83,204 @@ items:
             items:
               - name: Enums
                 uid: ''
-                items: []
-              - name: f
+                items:
+                  - name: ActiveView
+                    uid: 'office!Office.ActiveView:enum'
+                  - name: AsyncResultStatus
+                    uid: 'office!Office.AsyncResultStatus:enum'
+                  - name: BindingType
+                    uid: 'office!Office.BindingType:enum'
+                  - name: CoercionType
+                    uid: 'office!Office.CoercionType:enum'
+                  - name: CustomXMLNodeType
+                    uid: 'office!Office.CustomXMLNodeType:enum'
+                  - name: DocumentMode
+                    uid: 'office!Office.DocumentMode:enum'
+                  - name: EventType
+                    uid: 'office!Office.EventType:enum'
+                  - name: FileType
+                    uid: 'office!Office.FileType:enum'
+                  - name: FilterType
+                    uid: 'office!Office.FilterType:enum'
+                  - name: GoToType
+                    uid: 'office!Office.GoToType:enum'
+                  - name: HostType
+                    uid: 'office!Office.HostType:enum'
+                  - name: Index
+                    uid: 'office!Office.Index:enum'
+                  - name: InitializationReason
+                    uid: 'office!Office.InitializationReason:enum'
+                  - name: PlatformType
+                    uid: 'office!Office.PlatformType:enum'
+                  - name: ProjectProjectFields
+                    uid: 'office!Office.ProjectProjectFields:enum'
+                  - name: ProjectResourceFields
+                    uid: 'office!Office.ProjectResourceFields:enum'
+                  - name: ProjectTaskFields
+                    uid: 'office!Office.ProjectTaskFields:enum'
+                  - name: ProjectViewTypes
+                    uid: 'office!Office.ProjectViewTypes:enum'
+                  - name: SelectionMode
+                    uid: 'office!Office.SelectionMode:enum'
+                  - name: StartupBehavior
+                    uid: 'office!Office.StartupBehavior:enum'
+                  - name: Table
+                    uid: 'office!Office.Table:enum'
+                  - name: ValueFormat
+                    uid: 'office!Office.ValueFormat:enum'
+                  - name: VisibilityMode
+                    uid: 'office!Office.VisibilityMode:enum'
+              - name: Actions
                 uid: 'office!Office.Actions:interface'
-              - name: f
-                uid: 'office!Office.ActiveView:enum'
-              - name: f
+              - name: AddBindingFromNamedItemOptions
                 uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
-              - name: f
+              - name: AddBindingFromPromptOptions
                 uid: 'office!Office.AddBindingFromPromptOptions:interface'
-              - name: f
+              - name: AddBindingFromSelectionOptions
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: f
+              - name: Addin
                 uid: 'office!Office.Addin:interface'
-              - name: f
+              - name: 'office!AddinCommands.Event:interface'
                 uid: 'office!Office.AddinCommands.Event:interface'
-              - name: f
+              - name: 'office!AddinCommands.EventCompletedOptions:interface'
                 uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
-              - name: f
+              - name: 'office!AddinCommands.Source:interface'
                 uid: 'office!Office.AddinCommands.Source:interface'
-              - name: f
+              - name: AsyncContextOptions
                 uid: 'office!Office.AsyncContextOptions:interface'
-              - name: f
+              - name: AsyncResult
                 uid: 'office!Office.AsyncResult:interface'
-              - name: f
-                uid: 'office!Office.AsyncResultStatus:enum'
-              - name: f
+              - name: Auth
                 uid: 'office!Office.Auth:interface'
-              - name: f
+              - name: AuthOptions
                 uid: 'office!Office.AuthOptions:interface'
-              - name: f
+              - name: Binding
                 uid: 'office!Office.Binding:interface'
-              - name: f
+              - name: BindingDataChangedEventArgs
                 uid: 'office!Office.BindingDataChangedEventArgs:interface'
-              - name: f
+              - name: Bindings
                 uid: 'office!Office.Bindings:interface'
-              - name: f
+              - name: BindingSelectionChangedEventArgs
                 uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
-              - name: f
-                uid: 'office!Office.BindingType:enum'
-              - name: f
-                uid: 'office!Office.CoercionType:enum'
-              - name: f
+              - name: Context
                 uid: 'office!Office.Context:interface'
-              - name: f
+              - name: ContextInformation
                 uid: 'office!Office.ContextInformation:interface'
-              - name: f
+              - name: Control
                 uid: 'office!Office.Control:interface'
-              - name: f
+              - name: CustomXmlNode
                 uid: 'office!Office.CustomXmlNode:interface'
-              - name: f
-                uid: 'office!Office.CustomXMLNodeType:enum'
-              - name: f
+              - name: CustomXmlPart
                 uid: 'office!Office.CustomXmlPart:interface'
-              - name: f
+              - name: CustomXmlParts
                 uid: 'office!Office.CustomXmlParts:interface'
-              - name: f
+              - name: CustomXmlPrefixMappings
                 uid: 'office!Office.CustomXmlPrefixMappings:interface'
-              - name: f
+              - name: Dialog
                 uid: 'office!Office.Dialog:interface'
-              - name: f
+              - name: DialogOptions
                 uid: 'office!Office.DialogOptions:interface'
-              - name: f
+              - name: DialogParentMessageReceivedEventArgs
                 uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
-              - name: f
+              - name: Document
                 uid: 'office!Office.Document:interface'
-              - name: f
-                uid: 'office!Office.DocumentMode:enum'
-              - name: f
+              - name: DocumentSelectionChangedEventArgs
                 uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
-              - name: f
+              - name: Error
                 uid: 'office!Office.Error:interface'
-              - name: f
-                uid: 'office!Office.EventType:enum'
-              - name: f
+              - name: File
                 uid: 'office!Office.File:interface'
-              - name: f
+              - name: FileProperties
                 uid: 'office!Office.FileProperties:interface'
-              - name: f
-                uid: 'office!Office.FileType:enum'
-              - name: f
-                uid: 'office!Office.FilterType:enum'
-              - name: f
+              - name: GetBindingDataOptions
                 uid: 'office!Office.GetBindingDataOptions:interface'
-              - name: f
+              - name: GetFileOptions
                 uid: 'office!Office.GetFileOptions:interface'
-              - name: f
+              - name: GetSelectedDataOptions
                 uid: 'office!Office.GetSelectedDataOptions:interface'
-              - name: f
+              - name: GoToByIdOptions
                 uid: 'office!Office.GoToByIdOptions:interface'
-              - name: f
-                uid: 'office!Office.GoToType:enum'
-              - name: f
-                uid: 'office!Office.HostType:enum'
-              - name: f
-                uid: 'office!Office.Index:enum'
-              - name: f
-                uid: 'office!Office.InitializationReason:enum'
-              - name: f
+              - name: IPromiseConstructor
                 uid: 'office!Office.IPromiseConstructor:interface'
-              - name: f
+              - name: MatrixBinding
                 uid: 'office!Office.MatrixBinding:interface'
-              - name: f
+              - name: NodeDeletedEventArgs
                 uid: 'office!Office.NodeDeletedEventArgs:interface'
-              - name: f
+              - name: NodeInsertedEventArgs
                 uid: 'office!Office.NodeInsertedEventArgs:interface'
-              - name: f
+              - name: NodeReplacedEventArgs
                 uid: 'office!Office.NodeReplacedEventArgs:interface'
-              - name: f
+              - name: OfficeTheme
                 uid: 'office!Office.OfficeTheme:interface'
-              - name: f
-                uid: 'office!Office.PlatformType:enum'
-              - name: f
-                uid: 'office!Office.ProjectProjectFields:enum'
-              - name: f
-                uid: 'office!Office.ProjectResourceFields:enum'
-              - name: f
-                uid: 'office!Office.ProjectTaskFields:enum'
-              - name: f
-                uid: 'office!Office.ProjectViewTypes:enum'
-              - name: f
+              - name: RangeCoordinates
                 uid: 'office!Office.RangeCoordinates:interface'
-              - name: f
+              - name: RangeFormatConfiguration
                 uid: 'office!Office.RangeFormatConfiguration:interface'
-              - name: f
+              - name: RemoveHandlerOptions
                 uid: 'office!Office.RemoveHandlerOptions:interface'
-              - name: f
+              - name: RequirementSetSupport
                 uid: 'office!Office.RequirementSetSupport:interface'
-              - name: f
+              - name: Ribbon
                 uid: 'office!Office.Ribbon:interface'
-              - name: f
+              - name: RibbonUpdaterData
                 uid: 'office!Office.RibbonUpdaterData:interface'
-              - name: f
+              - name: SaveSettingsOptions
                 uid: 'office!Office.SaveSettingsOptions:interface'
-              - name: f
-                uid: 'office!Office.SelectionMode:enum'
-              - name: f
+              - name: SetBindingDataOptions
                 uid: 'office!Office.SetBindingDataOptions:interface'
-              - name: f
+              - name: SetSelectedDataOptions
                 uid: 'office!Office.SetSelectedDataOptions:interface'
-              - name: f
+              - name: Settings
                 uid: 'office!Office.Settings:interface'
-              - name: f
+              - name: SettingsChangedEventArgs
                 uid: 'office!Office.SettingsChangedEventArgs:interface'
-              - name: f
+              - name: Slice
                 uid: 'office!Office.Slice:interface'
-              - name: f
-                uid: 'office!Office.StartupBehavior:enum'
-              - name: f
+              - name: Tab
                 uid: 'office!Office.Tab:interface'
-              - name: f
-                uid: 'office!Office.Table:enum'
-              - name: f
+              - name: TableBinding
                 uid: 'office!Office.TableBinding:interface'
-              - name: f
+              - name: TableData
                 uid: 'office!Office.TableData:class'
-              - name: f
+              - name: TextBinding
                 uid: 'office!Office.TextBinding:interface'
-              - name: f
+              - name: UI
                 uid: 'office!Office.UI:interface'
-              - name: f
-                uid: 'office!Office.ValueFormat:enum'
-              - name: f
-                uid: 'office!Office.VisibilityMode:enum'
-              - name: f
+              - name: VisibilityModeChangedMessage
                 uid: 'office!Office.VisibilityModeChangedMessage:interface'
-              - name: f
+              - name: ClientObject
                 uid: 'office!OfficeExtension.ClientObject:class'
-              - name: f
+              - name: ClientRequestContext
                 uid: 'office!OfficeExtension.ClientRequestContext:class'
-              - name: f
+              - name: ClientResult
                 uid: 'office!OfficeExtension.ClientResult:class'
-              - name: f
+              - name: DebugInfo
                 uid: 'office!OfficeExtension.DebugInfo:interface'
-              - name: f
+              - name: EmbeddedOptions
                 uid: 'office!OfficeExtension.EmbeddedOptions:interface'
-              - name: f
+              - name: EmbeddedSession
                 uid: 'office!OfficeExtension.EmbeddedSession:class'
-              - name: f
+              - name: Error
                 uid: 'office!OfficeExtension.Error:class'
-              - name: f
+              - name: ErrorCodes
                 uid: 'office!OfficeExtension.ErrorCodes:class'
-              - name: f
+              - name: EventHandlerResult
                 uid: 'office!OfficeExtension.EventHandlerResult:class'
-              - name: f
+              - name: EventHandlers
                 uid: 'office!OfficeExtension.EventHandlers:class'
-              - name: f
+              - name: EventInfo
                 uid: 'office!OfficeExtension.EventInfo:interface'
-              - name: f
+              - name: LoadOption
                 uid: 'office!OfficeExtension.LoadOption:interface'
-              - name: f
+              - name: RequestContextDebugInfo
                 uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
-              - name: f
+              - name: RequestUrlAndHeaderInfo
                 uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
-              - name: f
+              - name: RunOptions
                 uid: 'office!OfficeExtension.RunOptions:interface'
-              - name: f
+              - name: TrackedObjects
                 uid: 'office!OfficeExtension.TrackedObjects:class'
-              - name: f
+              - name: UpdateOptions
                 uid: 'office!OfficeExtension.UpdateOptions:interface'
           - name: OfficeRuntime
             uid: office-runtime!

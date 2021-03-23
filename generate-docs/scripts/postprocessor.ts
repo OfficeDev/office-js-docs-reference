@@ -340,9 +340,10 @@ function fixCommonToc(tocPath: string): Toc {
                 membersToMove.items.forEach((namespaceItem, namespaceIndex) => {
                     // Scan UID for namespace to add to name.
                      if (namespaceItem.uid) {
-                        let subNamespaceMatch = namespaceItem.uid.replace(/\w+\.(\w+\.\w+)/g, "$1");
-                        if (subNamespaceMatch) {
-                            namespaceItem.name = subNamespaceMatch[1];
+                        const namespaceRegexPattern = /\w+\.(\w+\.\w+)/g;
+                        let matchResults = namespaceItem.uid.match(namespaceRegexPattern);
+                        if (matchResults) {
+                            namespaceItem.name = namespaceItem.uid.replace(namespaceRegexPattern, "$1");
                         }
                     }
                 });
