@@ -17,24 +17,6 @@ items:
             uid: 'powerpoint!PowerPoint.Application:class'
           - name: InsertSlideOptions
             uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
-          - name: CollectionLoadOptions
-            uid: 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
-          - name: PresentationData
-            uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
-          - name: PresentationLoadOptions
-            uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
-          - name: SlideCollectionData
-            uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
-          - name: SlideCollectionLoadOptions
-            uid: >-
-              powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface
-          - name: SlideCollectionUpdateData
-            uid: >-
-              powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface
-          - name: SlideData
-            uid: 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
-          - name: SlideLoadOptions
-            uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
           - name: Presentation
             uid: 'powerpoint!PowerPoint.Presentation:class'
           - name: RequestContext

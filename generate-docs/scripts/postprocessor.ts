@@ -251,36 +251,32 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                 });
             } else {
                 let primaryList = [] as any;
-                if (packageName.toLocaleLowerCase().includes("excel")) {
-                    // Excel has more subfolders and needs special casing to order them correctly.
-                    let enumList = membersToMove.items.filter(item => {
-                        return enumFilter.indexOf(item.name) >= 0;
-                    });
-                    let iconSetList = membersToMove.items.filter(item => {
-                        return excelIconSetFilter.indexOf(item.name) >= 0;
-                    });
-                    primaryList = membersToMove.items.filter(item => {
-                        return generalFilter.indexOf(item.name) < 0;
-                    });
-
-                    let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                    let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
-                    primaryList.unshift(excelIconSetRoot);
-                    primaryList.unshift(excelEnumRoot);
-                    if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
-                        primaryList.unshift(customFunctionsRoot);
-                    }
-                } else if (membersToMove.items) {
+                if (membersToMove.items) {
                     let enumList = membersToMove.items.filter(item => {
                         return enumFilter.indexOf(item.name) >= 0;
                     });
                     primaryList = membersToMove.items.filter(item => {
-                        return generalFilter.indexOf(item.name) < 0;
+                        // Remove previous chosen items and anything with the "Interfaces" namespace (those are Rich API duplicates for load/set).
+                        return generalFilter.indexOf(item.name) < 0 && item.uid.indexOf(".Interfaces.") < 0;
                     });
 
                     if (enumList) {
                         let enumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                        primaryList.unshift(enumRoot);
+                        if (packageName.toLocaleLowerCase().includes("excel")) {
+                            // Excel has also has subfolders for icon sets and custom functions. They need to be correctly ordered.
+                            let iconSetList = membersToMove.items.filter(item => {
+                                return excelIconSetFilter.indexOf(item.name) >= 0;
+                            });
+        
+                            let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                            primaryList.unshift(excelIconSetRoot);
+                            primaryList.unshift(enumRoot);            
+                            if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
+                                primaryList.unshift(customFunctionsRoot);
+                            }
+                        } else {
+                            primaryList.unshift(enumRoot);
+                        }
                     }
                 }
 
