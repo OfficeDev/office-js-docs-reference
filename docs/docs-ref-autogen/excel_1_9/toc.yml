@@ -1909,6 +1909,8 @@ items:
                 uid: 'office!Office.UI:interface'
               - name: VisibilityModeChangedMessage
                 uid: 'office!Office.VisibilityModeChangedMessage:interface'
+          - name: OfficeExtension
+            items:
               - name: ClientObject
                 uid: 'office!OfficeExtension.ClientObject:class'
               - name: ClientRequestContext

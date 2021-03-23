@@ -319,13 +319,12 @@ function fixCommonToc(tocPath: string): Toc {
         "href": "../overview/overview.md"
     }] as any;
 
-    
+    // Create roots for items we want to reorder.
     let commonRoot = {
         "name": 'Common API',
         "uid": "office!",
         "items": [] as any
     }
-
     newToc.items[0].items.push(commonRoot);
 
     // create folders for common (shared) API subcategories
@@ -336,15 +335,13 @@ function fixCommonToc(tocPath: string): Toc {
         rootItem.items.forEach((packageItem, packageIndex) => {
             membersToMove.items = packageItem.items;
             if (packageItem.name.toLocaleLowerCase() === 'office') {
-
-                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {
+                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {                    
                     // Scan UID for namespace to add to name.
                      if (namespaceItem.uid) {
                         let regex = /\w+\.(\w+\.\w+)/g
                         let matchResults = regex.exec(namespaceItem.uid);
                         if (matchResults) {
-                            namespaceItem.name = matchResults[1]
-                            console.log(namespaceItem.name);
+                            namespaceItem.name = matchResults[1];
                         }
                     }
                 });
@@ -352,8 +349,11 @@ function fixCommonToc(tocPath: string): Toc {
                 let enumList = membersToMove.items.filter(item => {
                     return sharedEnumFilter.indexOf(item.name) >= 0;
                 });
+                let officeExtensionList = membersToMove.items.filter(item => {
+                    return item.uid.indexOf("office!OfficeExtension.") >= 0;
+                });
                 let primaryList = membersToMove.items.filter(item => {
-                    return sharedEnumFilter.indexOf(item.name) < 0;
+                    return sharedEnumFilter.indexOf(item.name) < 0 && item.uid.indexOf("office!OfficeExtension.") < 0;
                 });
 
                 let sharedEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
@@ -362,6 +362,10 @@ function fixCommonToc(tocPath: string): Toc {
                     "name": 'Office',
                     "uid": packageItem.uid,
                     "items": primaryList
+                });
+                commonRoot.items.push({
+                    "name": 'OfficeExtension',
+                    "items": officeExtensionList
                 });
             } else if (packageItem.name === 'office-runtime') {
                 commonRoot.items.push({
