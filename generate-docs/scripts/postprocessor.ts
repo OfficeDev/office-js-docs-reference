@@ -319,6 +319,15 @@ function fixCommonToc(tocPath: string): Toc {
         "href": "../overview/overview.md"
     }] as any;
 
+    
+    let commonRoot = {
+        "name": 'Common API',
+        "uid": "common-api",
+        "items": [] as any
+    }
+
+    newToc.items[0].items.push(commonRoot);
+
     // create folders for common (shared) API subcategories
     let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
 
@@ -327,6 +336,17 @@ function fixCommonToc(tocPath: string): Toc {
         rootItem.items.forEach((packageItem, packageIndex) => {
             membersToMove.items = packageItem.items;
             if (packageItem.name.toLocaleLowerCase() === 'office') {
+
+                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {
+                    // Scan UID for namespace to add to name.
+                     if (namespaceItem.uid) {
+                        let subNamespaceMatch = namespaceItem.uid.replace(/\w+\.(\w+\.\w+)/g, "$1");
+                        if (subNamespaceMatch) {
+                            namespaceItem.name = subNamespaceMatch[1];
+                        }
+                    }
+                });
+
                 let enumList = membersToMove.items.filter(item => {
                     return sharedEnumFilter.indexOf(item.name) >= 0;
                 });
@@ -336,13 +356,13 @@ function fixCommonToc(tocPath: string): Toc {
 
                 let sharedEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                 primaryList.unshift(sharedEnumRoot);            
-                newToc.items[0].items.push({
-                    "name": 'Common API',
+                commonRoot.items.push({
+                    "name": 'Office',
                     "uid": packageItem.uid,
-                    "items": packageItem.items
+                    "items": primaryList
                 });
             } else if (packageItem.name === 'office-runtime') {
-                newToc.items[0].items.push({
+                commonRoot.items.push({
                     "name": 'OfficeRuntime',
                     "uid": "office-runtime!",
                     "items": packageItem.items
