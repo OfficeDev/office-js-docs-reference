@@ -161,6 +161,11 @@ methods:
 
 
 
+      <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Dialog
+      object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td>
+      </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
+      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
+      passed one as the asyncContext parameter.</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -255,6 +260,7 @@ methods:
 
 
       **displayDialogAsync Errors**:
+
 
     isPreview: false
     isDeprecated: false
