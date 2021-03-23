@@ -261,7 +261,8 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                     });
 
                     if (enumList) {
-                        let enumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                        const enumRootName = packageName.toLocaleLowerCase().includes("outlook") ? "MailboxEnums" : "Enums";
+                        let enumRoot = {"name": enumRootName, "uid": "", "items": enumList};
                         if (packageName.toLocaleLowerCase().includes("excel")) {
                             // Excel has also has subfolders for icon sets and custom functions. They need to be correctly ordered.
                             let iconSetList = membersToMove.items.filter(item => {
@@ -277,7 +278,19 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                         } else {
                             primaryList.unshift(enumRoot);
                         }
-                    }
+                    }                    
+
+                    // Address any nested namespaces
+                    primaryList.forEach((namespaceItem, namespaceIndex) => {
+                        // Scan UID for namespace to add to name.
+                        if (namespaceItem.uid) {
+                            let regex = /\w+\.(\w+\.\w+)/g
+                            let matchResults = regex.exec(namespaceItem.uid);
+                            if (matchResults) {
+                                namespaceItem.name = matchResults[1];
+                            }
+                        }
+                    });
                 }
 
                 newToc.items[0].items.push({

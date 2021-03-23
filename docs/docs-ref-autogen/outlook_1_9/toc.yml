@@ -6,7 +6,7 @@ items:
       - name: Outlook
         uid: outlook!
         items:
-          - name: Enums
+          - name: MailboxEnums
             uid: ''
             items:
               - name: AttachmentContentFormat
