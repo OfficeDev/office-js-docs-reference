@@ -888,7 +888,7 @@ items:
           - name: WorksheetCollection
             uid: 'excel!Excel.WorksheetCollection:class'
       - name: Common API
-        uid: common-api
+        uid: office!
         items:
           - name: Office
             uid: office!

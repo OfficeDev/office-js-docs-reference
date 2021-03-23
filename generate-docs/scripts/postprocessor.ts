@@ -322,7 +322,7 @@ function fixCommonToc(tocPath: string): Toc {
     
     let commonRoot = {
         "name": 'Common API',
-        "uid": "common-api",
+        "uid": "office!",
         "items": [] as any
     }
 
@@ -365,7 +365,7 @@ function fixCommonToc(tocPath: string): Toc {
             } else if (packageItem.name === 'office-runtime') {
                 commonRoot.items.push({
                     "name": 'OfficeRuntime',
-                    "uid": "office-runtime!",
+                    "uid": packageItem.uid,
                     "items": packageItem.items
                 });
             }

@@ -166,7 +166,7 @@ items:
           - name: UserProfile
             uid: 'outlook!Office.UserProfile:interface'
       - name: Common API
-        uid: common-api
+        uid: office!
         items:
           - name: Office
             uid: office!
