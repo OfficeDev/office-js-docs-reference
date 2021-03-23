@@ -4,9 +4,13 @@ uid: 'office!Office.UI:interface'
 package: office!
 fullName: Office.UI
 summary: >-
-  Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
+  Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your
+  Office Add-ins.
 
-  Visit [Use the Dialog API in your Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins) for more  information.
+
+  Visit "[Use the Dialog API in your Office
+  Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
+  information.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -160,12 +164,14 @@ methods:
       **displayDialogAsync Errors**:
 
 
-      <table> 
-        <tr> <th>Code number</th> <th>Meaning</th> </tr> 
-        <tr> <td>12004</td> <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the AppDomains section of the add-in manifest.</td> </tr>
-        <tr> <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> 
-        <tr> <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td> </tr> 
-        <tr> <td>12009</td> <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td> </tr>
+      <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
+      displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
+      and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td> </tr> <tr>
+      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some
+      versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> <tr>
+      <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog
+      box open at a time.</td> </tr> <tr> <td>12009</td> <td>The user chose to ignore the dialog box. This error can
+      occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td> </tr>
       </table>
 
 
@@ -274,13 +280,16 @@ methods:
       **displayDialogAsync Errors**:
 
 
-      <table> 
-        <tr> <th>Code number</th> <th>Meaning</th> </tr> 
-        <tr> <td>12004</td> <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the AppDomains section of the add-in manifest.</td> </tr>
-        <tr> <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> 
-        <tr> <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td> </tr> 
-        <tr> <td>12009</td> <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td> </tr>
+      <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
+      displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
+      and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td> </tr> <tr>
+      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some
+      versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> <tr>
+      <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog
+      box open at a time.</td> </tr> <tr> <td>12009</td> <td>The user chose to ignore the dialog box. This error can
+      occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td> </tr>
       </table>
+
 
       In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult
       object to return the following information.
@@ -291,7 +300,6 @@ methods:
       </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
       passed one as the asyncContext parameter.</td> </tr> </table>
-
     isPreview: false
     isDeprecated: false
     syntax:

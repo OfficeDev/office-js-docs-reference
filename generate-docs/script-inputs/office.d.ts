@@ -960,7 +960,7 @@ declare namespace Office {
         *   </tr>
         *   <tr>
         *     <td>12004</td>
-        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td>
+        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
         *   </tr>
         *   <tr>
         *     <td>12005</td>
@@ -1061,7 +1061,7 @@ declare namespace Office {
         *   </tr>
         *   <tr>
         *     <td>12004</td>
-        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td>
+        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
         *   </tr>
         *   <tr>
         *     <td>12005</td>
