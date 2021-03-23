@@ -95,11 +95,11 @@ items:
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
               - name: Addin
                 uid: 'office!Office.Addin:interface'
-              - name: 'office!AddinCommands.Event:interface'
+              - name: AddinCommands.Event
                 uid: 'office!Office.AddinCommands.Event:interface'
-              - name: 'office!AddinCommands.EventCompletedOptions:interface'
+              - name: AddinCommands.EventCompletedOptions
                 uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
-              - name: 'office!AddinCommands.Source:interface'
+              - name: AddinCommands.Source
                 uid: 'office!Office.AddinCommands.Source:interface'
               - name: AsyncContextOptions
                 uid: 'office!Office.AsyncContextOptions:interface'
