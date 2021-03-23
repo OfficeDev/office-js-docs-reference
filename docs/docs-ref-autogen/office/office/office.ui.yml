@@ -4,13 +4,9 @@ uid: 'office!Office.UI:interface'
 package: office!
 fullName: Office.UI
 summary: >-
-  Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your
-  Office Add-ins.
+  Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
 
-
-  Visit "[Use the Dialog API in your Office
-  Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
-  information.
+  Visit [Use the Dialog API in your Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins) for more  information.
 remarks: ''
 isPreview: false
 isDeprecated: false
