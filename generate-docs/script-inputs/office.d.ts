@@ -878,8 +878,7 @@ declare namespace Office {
         interface Source {
 
             /**
-             * The ID of the control that triggered calling this function. The ID comes from the manifest and is the unique ID of your Office Add-in 
-             * as a GUID.
+             * The ID of the control that triggered calling this function. The ID comes from the manifest.
              */
             id: string;
         }
