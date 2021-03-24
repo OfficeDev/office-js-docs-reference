@@ -194,7 +194,7 @@ methods:
       <td>12004</td> <td>The domain of the URL passed to displayDialogAsync is
       not trusted. The domain must be either the same domain as the host page
       (including protocol and port number), or it must be registered in the
-      <AppDomains> section of the add-in manifest.</td> </tr> <tr>
+      `AppDomains` section of the add-in manifest.</td> </tr> <tr>
       <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP
       protocol. HTTPS is required. (In some versions of Office, the error
       message returned with 12005 is the same one returned for 12004.)</td>
@@ -331,7 +331,7 @@ methods:
       <td>12004</td> <td>The domain of the URL passed to displayDialogAsync is
       not trusted. The domain must be either the same domain as the host page
       (including protocol and port number), or it must be registered in the
-      <AppDomains> section of the add-in manifest.</td> </tr> <tr>
+      `AppDomains` section of the add-in manifest.</td> </tr> <tr>
       <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP
       protocol. HTTPS is required. (In some versions of Office, the error
       message returned with 12005 is the same one returned for 12004.)</td>
